@@ -206,16 +206,31 @@ def has_any(ings, keys):
     return any(any(k in i for k in keys) for i in up)
 
 
+# color-cosmetic / makeup terms — excluded from "sunscreen" even if they carry SPF
+MAKEUP_TERMS = [
+    "FOUNDATION", "BB CREAM", "CC CREAM", "CUSHION", "BLUSH", "CONCEALER",
+    "PRIMER", "SETTING", "POWDER", "LIPSTICK", "LIP TINT", "MASCARA",
+    "EYESHADOW", "BRONZER", "HIGHLIGHTER", "TINTED",
+]
+
+
 def categorize(title, dosage, actives, has_spf):
+    """A product is 'sunscreen' if it has SPF (or sunscreen wording) AND is not a color cosmetic.
+    SPF moisturizers / day creams count as sunscreen (function-first). Tinted/makeup excluded
+    (tinted is also hard-gated downstream)."""
     t = (title + " " + (dosage or "")).upper()
-    if has_spf or "SUNSCREEN" in t or "SPF" in t:
-        return "sunscreen"
+    is_makeup = any(m in t for m in MAKEUP_TERMS)
+    looks_like_sunscreen = has_spf or "SUNSCREEN" in t or "SUNBLOCK" in t or "SUN LOTION" in t
     if "DIAPER" in t or "RASH" in t:
         return "diaper_cream"
-    if "LIP" in t and "BALM" in t:
-        return "lip_balm"
     if "CALAMINE" in t:
         return "calamine"
+    if "LIP" in t and "BALM" in t:
+        return "lip_balm"
+    if is_makeup:
+        return "makeup"          # color cosmetic — excluded from sunscreen filter
+    if looks_like_sunscreen:
+        return "sunscreen"
     return "other"
 
 
@@ -303,7 +318,7 @@ def main():
         src_counts[r["inactive_source"]] = src_counts.get(r["inactive_source"], 0) + 1
     master = {
         "metadata": {
-            "scraper_version": "2.0",
+            "scraper_version": "2.1",
             "search_method": "ingredient_unii",
             "unii_searched": UNII,
             "total_products": len(records),
