@@ -31,6 +31,7 @@ UA = {"User-Agent": "TinySafe-research/2.0 (contact: support@tinysafe.app)"}
 # UNII codes (FDA Unique Ingredient Identifiers)
 UNII = {"SOI2LOH54Z": "ZINC OXIDE", "15FIX9V2JP": "TITANIUM DIOXIDE"}
 UNII_CODESYSTEM = "2.16.840.1.113883.4.9"  # SPL에서 UNII를 나타내는 OID
+NDC_CODESYSTEM = "2.16.840.1.113883.6.69"   # SPL에서 NDC를 나타내는 OID
 
 CHEMICAL_FILTERS = [
     "AVOBENZONE", "OXYBENZONE", "OCTINOXATE", "OCTYL METHOXYCINNAMATE", "OCTISALATE",
@@ -107,6 +108,34 @@ def search_by_unii(unii, limit=0):
         page += 1
         time.sleep(0.3)
     return out
+
+
+# ---------- NDC 추출 (SPL XML) ----------
+def parse_ndc_xml(xml):
+    """SPL XML의 <code codeSystem=NDC> 요소에서 제품 NDC 추출.
+    manufacturedProduct 는 2-segment (labeler-product, 예: 83252-126),
+    containerPackagedProduct 는 3-segment 패키지 NDC (예: 83252-126-25).
+    반환 (ndc, ndc9): ndc = full 3-segment 우선(없으면 2-segment), ndc9 = 앞 두 segment."""
+    if not xml:
+        return None, None
+    codes = []
+    for m in re.finditer(r"<code\b[^>]*>", xml, re.IGNORECASE):
+        tag = m.group(0)
+        if NDC_CODESYSTEM not in tag:
+            continue
+        cm = re.search(r'code="([^"]+)"', tag)
+        if not cm:
+            continue
+        c = cm.group(1).strip()
+        # NDC shape: labeler(4-5 digits)-product(3-4)-[package(1-2)]
+        if re.fullmatch(r"\d{4,5}-\d{3,4}(-\d{1,2})?", c) and c not in codes:
+            codes.append(c)
+    if not codes:
+        return None, None
+    full = next((c for c in codes if c.count("-") == 2), None)
+    ndc = full or codes[0]
+    ndc9 = "-".join(ndc.split("-")[:2])
+    return ndc, ndc9
 
 
 # ---------- Phase C: active ingredients (UNII 포함) ----------
@@ -591,13 +620,16 @@ def process_setid(item):
     title = item.get("title", "")
     if not setid:
         return None
-    xml = http_xml(f"{BASE}/spls/{setid}.xml")     # fetched ONCE, reused three times
+    xml = http_xml(f"{BASE}/spls/{setid}.xml")     # fetched ONCE, reused four times
     actives = fetch_active(setid, xml)
     inact, src, audit = fetch_inactive(setid, xml)
+    ndc, ndc9 = parse_ndc_xml(xml)
     rec = {
         "setid": setid,
         "title": title,
         "product_name": re.sub(r"\s*\[.*?\]\s*$", "", title).strip(),
+        "ndc": ndc,
+        "ndc9": ndc9,
         "active_ingredients": actives,
         "inactive_ingredients": inact,
         "inactive_source": src,
@@ -663,13 +695,14 @@ def main():
         src_counts[r["inactive_source"]] = src_counts.get(r["inactive_source"], 0) + 1
     master = {
         "metadata": {
-            "scraper_version": "2.1",
+            "scraper_version": "2.2",
             "search_method": "ingredient_unii",
             "unii_searched": UNII,
             "total_products": len(records),
             "inactive_source_breakdown": src_counts,
             "mineral_type_breakdown": _count(records, "mineral_type"),
             "with_spf": sum(1 for r in records if r.get("spf")),
+            "with_ndc": sum(1 for r in records if r.get("ndc")),
             "chemical_filter": sum(1 for r in records if r.get("contains_chemical_filter")),
             "baby_labeled": sum(1 for r in records if r.get("baby_labeled")),
             "ingredients_verified_breakdown": _count(records, "ingredients_verified"),
@@ -717,6 +750,8 @@ def main():
     print(f"inactive source: {src_counts}")
     print(f"inactive MISSING (empty): {empty} ({round(100*empty/max(len(records),1))}%)")
     print(f"with SPF: {master['metadata']['with_spf']} | baby_labeled: {master['metadata']['baby_labeled']}")
+    no_ndc = len(records) - master['metadata']['with_ndc']
+    print(f"with NDC: {master['metadata']['with_ndc']} | NDC missing: {no_ndc} ({round(100*no_ndc/max(len(records),1))}%)")
 
 
 def _count(records, field):
