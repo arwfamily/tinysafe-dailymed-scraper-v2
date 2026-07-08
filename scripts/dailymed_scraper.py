@@ -189,41 +189,55 @@ def normalize(s: str) -> str:
 
 # ---------------------------------------------------------------- the auditor
 
-def audit_completeness(xml_names, text_blob):
+RISK_TOKENS = {
+    "fragrance": [r"\bFRAGRANCE\b", r"\bPARFUM\b"],
+    "oat":       [r"\bAVENA\b", r"\bOAT\b", r"\bOATMEAL\b"],   # \bOAT\b, never bare OAT:
+                                                                 # BENZOATE / NEOPENTANOATE / GOAT MILK
+    "chemical_uv_filter": [r"\bAVOBENZONE\b", r"\bOXYBENZONE\b", r"\bOCTOCRYLENE\b",
+                           r"\bHOMOSALATE\b", r"\bOCTINOXATE\b", r"\bOCTISALATE\b",
+                           r"\bENSULIZOLE\b", r"\bPADIMATE O\b"],
+    "paraben":   [r"PARABEN\b"],
+    "formaldehyde_releaser": [r"\bDMDM HYDANTOIN\b", r"\bDIAZOLIDINYL UREA\b",
+                              r"\bIMIDAZOLIDINYL UREA\b", r"\bQUATERNIUM-15\b"],
+}
+
+
+def _risk_hits(text):
+    up = (text or "").upper()
+    return sorted({k for k, pats in RISK_TOKENS.items()
+                   if any(re.search(p, up) for p in pats)})
+
+
+def audit_completeness(xml_names, text_items, text_blob):
     """
-    Does the structured table account for the body text?
+    Is the structured table complete?
 
-    Returns (verdict, missing_hint) where verdict is one of:
-      "table_complete"   — every structured name appears in the text and the text has
-                           no obvious surplus content
-      "table_incomplete" — the text is materially longer than the table can explain
-      "no_text"          — the label has no inactive-ingredient text section
+    String-mass coverage was the wrong measure: the table uses UNII preferred names
+    ("TRIGLYCERIDES, MEDIUM CHAIN") while the body text uses INCI ("caprylic/capric
+    triglyceride"). Comparing characters flags naming conventions as missing ingredients.
 
-    We deliberately do NOT split the text here. We measure coverage.
+    Count is naming-agnostic. And the question that actually matters is not "how many"
+    but "does the text disclose a fragrance / an oat / a chemical filter that the table
+    does not". That is precisely what these tables were found to be hiding.
+
+    Returns (verdict, detail) with verdict in
+      "table_complete" | "table_incomplete" | "no_text_section"
     """
-    if not text_blob:
-        return "no_text", None
+    if not text_blob or not text_items:
+        return "no_text_section", {"table_n": len(xml_names), "text_n": 0, "text_only_risk": []}
 
-    body = normalize(text_blob)
-    if not body:
-        return "no_text", None
+    table_risk = _risk_hits(" | ".join(xml_names))
+    text_risk = _risk_hits(" | ".join(text_items))
+    text_only_risk = [r for r in text_risk if r not in table_risk]
 
-    covered = 0
-    for n in xml_names:
-        if normalize(n) and normalize(n) in body:
-            covered += len(normalize(n))
+    detail = {"table_n": len(xml_names), "text_n": len(text_items),
+              "text_only_risk": text_only_risk}
 
-    # How much of the body text is explained by the structured names?
-    # Ingredient lists are almost entirely ingredient names, so a complete table
-    # should cover most of the alphanumeric mass. Separators and the leading
-    # "Inactive ingredients:" account for the rest.
-    lead = normalize("inactive ingredients")
-    body_mass = max(len(body) - len(lead), 1)
-    coverage = covered / body_mass
-
-    if coverage < 0.70:
-        return "table_incomplete", round(coverage, 3)
-    return "table_complete", round(coverage, 3)
+    if text_only_risk:
+        return "table_incomplete", detail          # a hidden allergen or filter. Decisive.
+    if len(text_items) > len(xml_names) + 1:
+        return "table_incomplete", detail          # materially longer
+    return "table_complete", detail
 
 
 # ---------------------------------------------------------------- careful splitter
@@ -282,7 +296,30 @@ def smart_split(text: str):
         for i, orig in enumerate(parens):
             p = p.replace("\x00%d\x00" % i, orig)
         p = re.sub(r"\s+", " ", p).strip(" .").upper()
-        if len(p) > 1 and p not in seen:
+        if not p or len(p) <= 1:
+            continue
+        # A masked parenthetical can swallow a whole run of ingredients. If an item still
+        # carries 2+ top-level commas, it is not one ingredient. Split it again.
+        if p.count(",") >= 2 and p.count("(") == p.count(")"):
+            depth, buf, pieces = 0, "", []
+            for ch in p:
+                if ch == "(":
+                    depth += 1
+                elif ch == ")":
+                    depth -= 1
+                if ch == "," and depth == 0:
+                    pieces.append(buf); buf = ""
+                else:
+                    buf += ch
+            pieces.append(buf)
+            pieces = [x.strip(" .") for x in pieces if len(x.strip(" .")) > 1]
+            # only accept the re-split if it does not shatter a numeric name like 1,2-HEXANEDIOL
+            if all(not re.fullmatch(r"\d+", x) for x in pieces) and len(pieces) >= 3:
+                for x in pieces:
+                    if x not in seen:
+                        seen.add(x); out.append(x)
+                continue
+        if p not in seen:
             seen.add(p)
             out.append(p)
     return out
@@ -324,26 +361,36 @@ def parse_strength(block: str):
 
 def to_percent(strength):
     """
-    Convert to % w/w only when the units permit it. Otherwise return None and let the
-    record carry `needs_review`. Never guess: FDA caps ZnO and TiO2 at 25%.
+    Convert to percent when the units permit it. Returns (percent, basis) or (None, None).
+
+    basis is "w/w" or "w/v" — never conflated. Values above the FDA cap are NOT dropped;
+    they are returned and flagged, because dropping a number is a decision and this
+    function does not get to make it. (Diaper creams legitimately run zinc oxide to 40%.)
     """
     if not strength:
-        return None
+        return None, None
     v, u = strength["value"], strength["unit"].lower()
     pv, pu = strength.get("per_value"), (strength.get("per_unit") or "").lower()
 
     if u in ("%", "pct"):
-        pct = v
-    elif u == "mg" and pu == "g" and pv:
-        pct = v / (pv * 10.0)              # mg per g  → %
-    elif u == "mg" and pu == "ml" and pv:
-        pct = v / (pv * 10.0)              # mg per mL → % w/v, close enough, flag it
-    elif u == "g" and pu == "g" and pv:
-        pct = v / pv * 100.0
-    else:
-        return None
+        return round(v, 3), "w/w"
+    if not pv:
+        return None, None
 
-    return round(pct, 2) if 0 < pct <= 25.0 else None   # out of range → needs_review
+    scale = {"g": 1.0, "mg": 0.001, "kg": 1000.0}.get(u)
+    if scale is None:
+        return None, None
+    grams = v * scale
+
+    if pu in ("g", "kg"):
+        per_g = pv * (1000.0 if pu == "kg" else 1.0)
+        return round(grams / per_g * 100.0, 3), "w/w"
+    if pu in ("ml", "l"):
+        per_ml = pv * (1000.0 if pu == "l" else 1.0)
+        return round(grams / per_ml * 100.0, 3), "w/v"
+    if pu == "1" and pv == 1.0:
+        return None, None
+    return None, None
 
 
 # ---------------------------------------------------------------- water resistance
@@ -388,9 +435,11 @@ def _parse_ingredients_xml(xml, want_active):
         if want_active:
             st = parse_strength(b)
             rec["strength"] = st                      # {value, unit, per_value, per_unit} or None
-            pct = to_percent(st)
+            pct, basis = to_percent(st)
             rec["percent"] = pct
-            rec["percent_needs_review"] = (st is not None and pct is None)
+            rec["percent_basis"] = basis              # "w/w" | "w/v" | None
+            rec["percent_unresolved"] = (st is not None and pct is None)
+            rec["percent_implausible"] = (pct is not None and pct > 25.0)
         seen.add(nm); out.append(rec)
     return out
 
@@ -421,37 +470,50 @@ def fetch_inactive_openfda(setid):
 def fetch_inactive(setid, xml=None):
     """
     SPL states inactive ingredients twice: the structured <ingredient classCode="IACT">
-    table, and the body-text section (LOINC 51727-6). Manufacturers sometimes file an
-    incomplete table (Goongbe: 4 in the table, 32 in the text, incl. FRAGRANCE and
-    SALIX ALBA). Use the text as an auditor first, a source second.
+    table (carries UNII) and the body-text section (LOINC 51727-6). Manufacturers sometimes
+    file an incomplete table.
 
-    Returns (items, source, audit).
+    We keep BOTH. Choosing a winner and discarding the loser is how you lose the ability
+    to check yourself later — the same mistake `promote_enforcement.py` refuses to make
+    when it flags a fuzzy match `needs_review` instead of auto-merging.
+
+    Returns (chosen_items, source, audit).
     """
-    empty_audit = {"ingredients_verified": "openfda_fallback",
-                   "table_coverage": None, "inactive_text_raw": ""}
     if not xml:
-        items, src = fetch_inactive_openfda(setid)
-        return items, (src or "empty"), empty_audit
+        items, src_ = fetch_inactive_openfda(setid)
+        return items, (src_ or "empty"), {
+            "ingredients_verified": "openfda_fallback",
+            "inactive_from_table": [], "inactive_from_text": [],
+            "inactive_text_raw": "", "table_vs_text": None}
 
     table = _parse_ingredients_xml(xml, want_active=False)
-    names = [i["name"] for i in table]
+    table_names = [i["name"] for i in table]
     text_blob = extract_section_text(xml, LOINC_INACTIVE)
-    verdict, coverage = audit_completeness(names, text_blob)
+    text_items = smart_split(text_blob) if text_blob else []
+    verdict, detail = audit_completeness(table_names, text_items, text_blob)
+
+    audit = {"ingredients_verified": verdict,
+             "inactive_from_table": table,
+             "inactive_from_text": text_items,
+             "inactive_text_raw": text_blob,
+             "table_vs_text": detail}
 
     if verdict == "table_incomplete":
-        by_norm = {normalize(i["name"]): i.get("unii") for i in table}
-        items = [{"name": n, "unii": by_norm.get(normalize(n))} for n in smart_split(text_blob)]
-        return items, "spl_text", {"ingredients_verified": "spl_text_used",
-                                   "table_coverage": coverage, "inactive_text_raw": text_blob}
+        by_norm = {normalize(n): i.get("unii") for n, i in zip(table_names, table)}
+        chosen = [{"name": n, "unii": by_norm.get(normalize(n))} for n in text_items]
+        audit["ingredients_verified"] = "spl_text_used"
+        return chosen, "spl_text", audit
 
     if table:
-        verified = "spl_table_matches_text" if verdict == "table_complete" else "no_text_section"
-        return table, "spl_xml", {"ingredients_verified": verified,
-                                  "table_coverage": coverage, "inactive_text_raw": text_blob}
+        return table, "spl_xml", audit
 
-    items, src = fetch_inactive_openfda(setid)
-    return items, (src or "empty"), {"ingredients_verified": "openfda_fallback",
-                                     "table_coverage": coverage, "inactive_text_raw": text_blob}
+    if text_items:
+        audit["ingredients_verified"] = "spl_text_used"
+        return [{"name": n, "unii": None} for n in text_items], "spl_text", audit
+
+    items, src_ = fetch_inactive_openfda(setid)
+    audit["ingredients_verified"] = "openfda_fallback"
+    return items, (src_ or "empty"), audit
 
 
 # ---------- Phase E: enrichment ----------
@@ -612,9 +674,11 @@ def main():
             "baby_labeled": sum(1 for r in records if r.get("baby_labeled")),
             "ingredients_verified_breakdown": _count(records, "ingredients_verified"),
             "water_resistance_breakdown": _count(records, "water_resistance_minutes"),
-            "active_strength_needs_review": sum(1 for r in records
-                                                for a in r.get("active_ingredients", [])
-                                                if a.get("percent_needs_review")),
+            "active_strength_unresolved": sum(1 for r in records
+                                              for a in r.get("active_ingredients", [])
+                                              if a.get("percent_unresolved")),
+            "table_hid_a_risk_ingredient": sum(1 for r in records
+                                               if (r.get("table_vs_text") or {}).get("text_only_risk")),
         },
         "products": records,
     }
@@ -633,12 +697,20 @@ def main():
     empty = src_counts.get("empty", 0)
     ver = _count(records, "ingredients_verified")
     needs_pct = sum(1 for r in records for a in r.get("active_ingredients", [])
-                    if a.get("percent_needs_review"))
+                    if a.get("percent_unresolved"))
+    implaus = sum(1 for r in records for a in r.get("active_ingredients", [])
+                  if a.get("percent_implausible"))
+    hidden = [r["product_name"][:44] for r in records
+              if (r.get("table_vs_text") or {}).get("text_only_risk")]
     wr = _count(records, "water_resistance_minutes")
     print(f"\n--- INGREDIENT COMPLETENESS (the number Track A exists for) ---")
     print(f"ingredients_verified: {ver}")
     print(f"  spl_text_used = structured table was hiding ingredients")
-    print(f"active strengths needing unit review: {needs_pct}")
+    print(f"active strengths with unresolvable units: {needs_pct}")
+    print(f"active percents above the 25% FDA cap (flagged, not dropped): {implaus}")
+    print(f"products whose TEXT discloses a risk ingredient the TABLE omits: {len(hidden)}")
+    for h in hidden[:20]:
+        print(f"    {h}")
     print(f"water_resistance_minutes: {wr}")
     print(f"scope_exclusion_reason: {_count(records, 'scope_exclusion_reason')}")
     print(f"\n--- HEALTH ---")
