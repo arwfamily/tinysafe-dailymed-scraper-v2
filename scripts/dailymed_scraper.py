@@ -290,30 +290,35 @@ def smart_split(text: str):
 
 # ---------------------------------------------------------------- strength + units
 
+def _attr(tag: str, name: str):
+    m = re.search(name + r'\s*=\s*"([^"]*)"', tag, re.IGNORECASE)
+    return m.group(1) if m else None
+
+
 def parse_strength(block: str):
     """
-    Keep the unit and the denominator. `value` alone is meaningless.
-    Returns {"value": float, "unit": str, "per_value": float, "per_unit": str} or None.
+    Keep the unit and the denominator. `value` alone is meaningless:
+    <numerator unit="mg" value="89.6"/><denominator unit="g" value="1"/>  is 8.96%, not 89.6%.
+    Attribute order varies across SPLs, so pull each attribute independently.
     """
-    num = re.search(r'<numerator[^>]*value="([^"]+)"[^>]*unit="([^"]*)"', block, re.IGNORECASE)
-    if not num:
-        num = re.search(r'<numerator[^>]*unit="([^"]*)"[^>]*value="([^"]+)"', block, re.IGNORECASE)
-        if num:
-            num = type("M", (), {"group": lambda _s, i: num.group(2 if i == 1 else 1)})()
-    if not num:
+    nm = re.search(r"<numerator\b[^>]*>", block, re.IGNORECASE)
+    if not nm:
         return None
-    den = re.search(r'<denominator[^>]*value="([^"]+)"[^>]*unit="([^"]*)"', block, re.IGNORECASE)
+    ntag = nm.group(0)
     try:
-        v = float(num.group(1))
-    except ValueError:
+        v = float(_attr(ntag, "value"))
+    except (TypeError, ValueError):
         return None
-    rec = {"value": v, "unit": (num.group(2) or "").strip()}
-    if den:
+    rec = {"value": v, "unit": (_attr(ntag, "unit") or "").strip()}
+
+    dm = re.search(r"<denominator\b[^>]*>", block, re.IGNORECASE)
+    if dm:
+        dtag = dm.group(0)
         try:
-            rec["per_value"] = float(den.group(1))
-        except ValueError:
+            rec["per_value"] = float(_attr(dtag, "value"))
+        except (TypeError, ValueError):
             pass
-        rec["per_unit"] = (den.group(2) or "").strip()
+        rec["per_unit"] = (_attr(dtag, "unit") or "").strip()
     return rec
 
 
@@ -576,6 +581,20 @@ def main():
                 print(f"    processed {done}/{len(items)}", flush=True)
 
     # Phase F: outputs
+    # Nothing vanishes silently: every record carries a scope_exclusion_reason (or None).
+    # TiO2 is an FDA-approved mineral filter — titanium-only products are IN scope.
+    for r in records:
+        reason = None
+        if r.get("category") != "sunscreen":
+            reason = f"Not a sunscreen ({r.get('category')})"
+        elif r.get("contains_chemical_filter"):
+            reason = "Contains a chemical UV filter — not a mineral sunscreen"
+        elif not (r.get("contains_zinc_oxide") or r.get("contains_titanium_dioxide")):
+            reason = "No mineral UV filter"
+        elif not r.get("inactive_ingredients"):
+            reason = "Ingredient list unavailable — we can't verify this one"
+        r["scope_exclusion_reason"] = reason
+
     master_path = os.path.join(args.output_dir, "tinysafe_dailymed_v2_master.json")
     src_counts = {}
     for r in records:
@@ -591,30 +610,22 @@ def main():
             "with_spf": sum(1 for r in records if r.get("spf")),
             "chemical_filter": sum(1 for r in records if r.get("contains_chemical_filter")),
             "baby_labeled": sum(1 for r in records if r.get("baby_labeled")),
+            "ingredients_verified_breakdown": _count(records, "ingredients_verified"),
+            "water_resistance_breakdown": _count(records, "water_resistance_minutes"),
+            "active_strength_needs_review": sum(1 for r in records
+                                                for a in r.get("active_ingredients", [])
+                                                if a.get("percent_needs_review")),
         },
         "products": records,
     }
     json.dump(master, open(master_path, "w"), ensure_ascii=False, indent=1)
     print(f"[F] master → {master_path} ({len(records)})", flush=True)
 
-    # mineral sunscreen filtered: sunscreen + ZnO present + no chemical filter
-    # Nothing vanishes silently: every sunscreen carries a scope_exclusion_reason (or None).
-    # TiO2 is an FDA-approved mineral filter — titanium-only products are IN scope.
-    for r in records:
-        reason = None
-        if r.get("category") != "sunscreen":
-            reason = f"Not a sunscreen ({r.get('category')})"
-        elif r.get("contains_chemical_filter"):
-            reason = "Contains a chemical UV filter — not a mineral sunscreen"
-        elif not (r.get("contains_zinc_oxide") or r.get("contains_titanium_dioxide")):
-            reason = "No mineral UV filter"
-        elif not r.get("inactive_ingredients"):
-            reason = "Ingredient list unavailable — we can't verify this one"
-        r["scope_exclusion_reason"] = reason
-
     mineral = [r for r in records if r.get("scope_exclusion_reason") is None]
     mineral_path = os.path.join(args.output_dir, "tinysafe_dailymed_v2_mineral_sun.json")
-    json.dump({"metadata": {"count": len(mineral), "filter": "sunscreen + ZnO + no_chemical_filter"},
+    json.dump({"metadata": {"count": len(mineral),
+                            "filter": "sunscreen + (ZnO or TiO2) + no chemical UV filter + ingredient list present",
+                            "note": "scope_exclusion_reason on the master file explains every omission"},
                "products": mineral}, open(mineral_path, "w"), ensure_ascii=False, indent=1)
     print(f"[F] mineral sunscreen → {mineral_path} ({len(mineral)})", flush=True)
 
