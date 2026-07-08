@@ -38,7 +38,11 @@ CHEMICAL_FILTERS = [
     "MERADIMATE", "PADIMATE", "SULISOBENZONE", "DIOXYBENZONE", "CINOXATE", "TROLAMINE SALICYLATE",
 ]
 # salicylate texture/SPF boosters that read as "mineral" but absorb UV (transparency flag)
-HIDDEN_FILTERS = ["BUTYLOCTYL SALICYLATE", "TRIDECYL SALICYLATE", "ETHYL FERULATE"]
+HIDDEN_FILTERS = ["BUTYLOCTYL SALICYLATE", "TRIDECYL SALICYLATE", "ETHYL FERULATE",
+                  "C12-15 ALKYL BENZOATE", "DIETHYLHEXYL SYRINGYLIDENE MALONATE"]
+# NOT a UV filter and NOT a hidden booster: ETHYLHEXYL METHOXYCRYLENE (SolaStay S1).
+# It is a photostabilizer; it returns UV filters to their ground state without absorbing
+# sunlight, and in mineral sunscreens it quenches ROS from ZnO/TiO2. Keep it off both lists.
 BABY_WORDS = ["BABY", "BABIES", "KIDS", "KID", "INFANT", "NEWBORN", "TODDLER", "PEDIATRIC", "CHILDREN"]
 
 
@@ -106,9 +110,9 @@ def search_by_unii(unii, limit=0):
 
 
 # ---------- Phase C: active ingredients (UNII 포함) ----------
-def fetch_active(setid):
-    """SPL XML 1차(UNII 확보) → packaging.json 보조. 반환 [{name,strength,unii}]."""
-    xml = http_xml(f"{BASE}/spls/{setid}.xml")
+def fetch_active(setid, xml=None):
+    """SPL XML 1차(UNII 확보) → packaging.json 보조. 반환 [{name,strength,percent,unii}]."""
+    xml = xml if xml is not None else http_xml(f"{BASE}/spls/{setid}.xml")
     if xml:
         actives = _parse_ingredients_xml(xml, want_active=True)
         if actives:
@@ -126,7 +130,10 @@ def fetch_active(setid):
                         st = (ing.get("strength") or ing.get("active_numerator_strength") or "")
                         un = ing.get("unii") or ing.get("active_moiety_unii")
                         if nm and nm not in seen:
-                            seen.add(nm); actives.append({"name": nm, "strength": str(st), "unii": un})
+                            seen.add(nm)
+                            actives.append({"name": nm, "strength": None, "percent": None,
+                                            "percent_needs_review": True,
+                                            "strength_raw": str(st), "unii": un})
             for v in node.values():
                 walk(v)
         elif isinstance(node, list):
@@ -154,6 +161,203 @@ def _split_list(text):
     return out
 
 
+LOINC_INACTIVE = "51727-6"
+
+
+# ---------- Track A1: body-text audit, strength units, water resistance ----------
+
+
+def extract_section_text(xml: str, loinc_code: str) -> str:
+    """Return the plain text of the SPL section carrying `loinc_code`, or ''."""
+    for m in re.finditer(r"<section\b.*?</section>", xml, re.DOTALL | re.IGNORECASE):
+        block = m.group(0)
+        if not re.search(r'<code\b[^>]*code="%s"' % re.escape(loinc_code), block, re.IGNORECASE):
+            continue
+        tm = re.search(r"<text\b.*?</text>", block, re.DOTALL | re.IGNORECASE)
+        if not tm:
+            continue
+        txt = re.sub(r"<[^>]+>", " ", tm.group(0))
+        txt = txt.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
+        return re.sub(r"\s+", " ", txt).strip()
+    return ""
+
+
+def normalize(s: str) -> str:
+    """Comparison form: uppercase, alphanumerics only. Survives punctuation drift."""
+    return re.sub(r"[^A-Z0-9]", "", s.upper())
+
+
+# ---------------------------------------------------------------- the auditor
+
+def audit_completeness(xml_names, text_blob):
+    """
+    Does the structured table account for the body text?
+
+    Returns (verdict, missing_hint) where verdict is one of:
+      "table_complete"   — every structured name appears in the text and the text has
+                           no obvious surplus content
+      "table_incomplete" — the text is materially longer than the table can explain
+      "no_text"          — the label has no inactive-ingredient text section
+
+    We deliberately do NOT split the text here. We measure coverage.
+    """
+    if not text_blob:
+        return "no_text", None
+
+    body = normalize(text_blob)
+    if not body:
+        return "no_text", None
+
+    covered = 0
+    for n in xml_names:
+        if normalize(n) and normalize(n) in body:
+            covered += len(normalize(n))
+
+    # How much of the body text is explained by the structured names?
+    # Ingredient lists are almost entirely ingredient names, so a complete table
+    # should cover most of the alphanumeric mass. Separators and the leading
+    # "Inactive ingredients:" account for the rest.
+    lead = normalize("inactive ingredients")
+    body_mass = max(len(body) - len(lead), 1)
+    coverage = covered / body_mass
+
+    if coverage < 0.70:
+        return "table_incomplete", round(coverage, 3)
+    return "table_complete", round(coverage, 3)
+
+
+# ---------------------------------------------------------------- careful splitter
+
+_PROTECT = [
+    (re.compile(r"\((.*?)\)"), None),                    # never split inside parentheses
+]
+_SUFFIXES = {"D-", "DL-", "L-", "USP", "NF", "RANDOMIZED", "MEDIUM CHAIN",
+             "HYDROGENATED", "ANHYDROUS", "MONOHYDRATE", "DIHYDRATE"}
+
+
+def smart_split(text: str):
+    """
+    Split a free-text inactive-ingredient statement without shredding chemical names.
+
+    Guards, in order:
+      - strip a leading "Inactive ingredients:" label
+      - mask parenthetical content so its commas are invisible
+      - never split a comma that sits between two digits  (1,2-hexanediol)
+      - never split a comma whose right-hand fragment is a known name suffix
+        (".alpha.-tocopherol acetate, d-"  ·  "triglycerides, medium chain, randomized")
+      - prefer semicolons when the statement uses them
+    """
+    text = re.sub(r"^\s*inactive\s+ingredients?\s*:?\s*", "", text, flags=re.IGNORECASE).strip()
+    text = text.rstrip(" .")
+    if not text:
+        return []
+
+    masked, parens = [], []
+
+    def mask(m):
+        parens.append(m.group(0))
+        return "\x00%d\x00" % (len(parens) - 1)
+
+    text = re.sub(r"\([^()]*\)", mask, text)
+
+    if text.count(";") >= 2:
+        parts = text.split(";")
+    else:
+        # split on commas that are not numeric-internal
+        rough = re.split(r"(?<![0-9]),(?![0-9])", text)
+        parts, buf = [], ""
+        for p in rough:
+            cand = p.strip()
+            if buf and cand.upper().rstrip(" .") in _SUFFIXES:
+                buf = buf + ", " + cand          # re-join a split-off suffix
+                continue
+            if buf:
+                parts.append(buf)
+            buf = cand
+        if buf:
+            parts.append(buf)
+
+    out, seen = [], set()
+    for p in parts:
+        for i, orig in enumerate(parens):
+            p = p.replace("\x00%d\x00" % i, orig)
+        p = re.sub(r"\s+", " ", p).strip(" .").upper()
+        if len(p) > 1 and p not in seen:
+            seen.add(p)
+            out.append(p)
+    return out
+
+
+# ---------------------------------------------------------------- strength + units
+
+def parse_strength(block: str):
+    """
+    Keep the unit and the denominator. `value` alone is meaningless.
+    Returns {"value": float, "unit": str, "per_value": float, "per_unit": str} or None.
+    """
+    num = re.search(r'<numerator[^>]*value="([^"]+)"[^>]*unit="([^"]*)"', block, re.IGNORECASE)
+    if not num:
+        num = re.search(r'<numerator[^>]*unit="([^"]*)"[^>]*value="([^"]+)"', block, re.IGNORECASE)
+        if num:
+            num = type("M", (), {"group": lambda _s, i: num.group(2 if i == 1 else 1)})()
+    if not num:
+        return None
+    den = re.search(r'<denominator[^>]*value="([^"]+)"[^>]*unit="([^"]*)"', block, re.IGNORECASE)
+    try:
+        v = float(num.group(1))
+    except ValueError:
+        return None
+    rec = {"value": v, "unit": (num.group(2) or "").strip()}
+    if den:
+        try:
+            rec["per_value"] = float(den.group(1))
+        except ValueError:
+            pass
+        rec["per_unit"] = (den.group(2) or "").strip()
+    return rec
+
+
+def to_percent(strength):
+    """
+    Convert to % w/w only when the units permit it. Otherwise return None and let the
+    record carry `needs_review`. Never guess: FDA caps ZnO and TiO2 at 25%.
+    """
+    if not strength:
+        return None
+    v, u = strength["value"], strength["unit"].lower()
+    pv, pu = strength.get("per_value"), (strength.get("per_unit") or "").lower()
+
+    if u in ("%", "pct"):
+        pct = v
+    elif u == "mg" and pu == "g" and pv:
+        pct = v / (pv * 10.0)              # mg per g  → %
+    elif u == "mg" and pu == "ml" and pv:
+        pct = v / (pv * 10.0)              # mg per mL → % w/v, close enough, flag it
+    elif u == "g" and pu == "g" and pv:
+        pct = v / pv * 100.0
+    else:
+        return None
+
+    return round(pct, 2) if 0 < pct <= 25.0 else None   # out of range → needs_review
+
+
+# ---------------------------------------------------------------- water resistance
+
+_WR = re.compile(r"water\s*resistant\s*\(?\s*(40|80)\s*minutes?\s*\)?", re.IGNORECASE)
+
+
+def extract_water_resistance(xml: str):
+    """
+    The only claims FDA permits are "Water Resistant (40 minutes)" and "(80 minutes)".
+    Absence of the phrase means the product made no claim — which is itself the answer.
+    Returns 40, 80, or None.
+    """
+    plain = re.sub(r"<[^>]+>", " ", xml)
+    hits = {int(m.group(1)) for m in _WR.finditer(plain)}
+    return max(hits) if hits else None
+
+
+
 # ---------- SPL XML 성분 파서 (UNII 추출 핵심) ----------
 def _parse_ingredients_xml(xml, want_active):
     """<ingredient classCode> 블록에서 name + UNII 추출. 정규식 기반(기존 스타일 유지)."""
@@ -177,17 +381,18 @@ def _parse_ingredients_xml(xml, want_active):
                     unii = um.group(1); break
         rec = {"name": nm, "unii": unii}
         if want_active:
-            sm = re.search(r'<numerator[^>]*value="([^"]+)"', b, re.IGNORECASE)
-            if sm:
-                rec["strength"] = sm.group(1)
+            st = parse_strength(b)
+            rec["strength"] = st                      # {value, unit, per_value, per_unit} or None
+            pct = to_percent(st)
+            rec["percent"] = pct
+            rec["percent_needs_review"] = (st is not None and pct is None)
         seen.add(nm); out.append(rec)
     return out
 
 
-# ---------- Phase D: inactive ingredients (XML 1차로 뒤집음, UNII 확보) ----------
-def fetch_inactive_xml(setid):
-    """SPL XML에서 IACT 성분 + UNII. 반환 (list[{name,unii}], 'spl_xml') 또는 ([], None)."""
-    xml = http_xml(f"{BASE}/spls/{setid}.xml")
+# ---------- Phase D: inactive ingredients (XML table -> audited against body text) ----------
+def fetch_inactive_xml(setid, xml=None):
+    xml = xml if xml is not None else http_xml(f"{BASE}/spls/{setid}.xml")
     if not xml:
         return [], None
     items = _parse_ingredients_xml(xml, want_active=False)
@@ -195,7 +400,7 @@ def fetch_inactive_xml(setid):
 
 
 def fetch_inactive_openfda(setid):
-    """openFDA 보조(텍스트라 UNII 없음 → None). 반환 (list[{name,unii=None}], 'openfda') 또는 ([], None)."""
+    """openFDA 보조(텍스트라 UNII 없음). 반환 (list[{name,unii=None}], 'openfda') 또는 ([], None)."""
     d = http_json(f"{OPENFDA}?search=set_id:{setid}&limit=1")
     if not d or not d.get("results"):
         return [], None
@@ -203,19 +408,45 @@ def fetch_inactive_openfda(setid):
     raw = res.get("inactive_ingredient") or []
     names = []
     for blob in raw:
-        names += _split_list(blob)
+        names += smart_split(blob)
     items = [{"name": n, "unii": None} for n in names]
     return (items, "openfda") if items else ([], None)
 
 
-def fetch_inactive(setid):
-    """UNII 확보 우선: XML(1차) → openFDA(보조). 기존과 우선순위 뒤집힘."""
-    items, src = fetch_inactive_xml(setid)
-    if items:
-        return items, src
-    time.sleep(0.2)
+def fetch_inactive(setid, xml=None):
+    """
+    SPL states inactive ingredients twice: the structured <ingredient classCode="IACT">
+    table, and the body-text section (LOINC 51727-6). Manufacturers sometimes file an
+    incomplete table (Goongbe: 4 in the table, 32 in the text, incl. FRAGRANCE and
+    SALIX ALBA). Use the text as an auditor first, a source second.
+
+    Returns (items, source, audit).
+    """
+    empty_audit = {"ingredients_verified": "openfda_fallback",
+                   "table_coverage": None, "inactive_text_raw": ""}
+    if not xml:
+        items, src = fetch_inactive_openfda(setid)
+        return items, (src or "empty"), empty_audit
+
+    table = _parse_ingredients_xml(xml, want_active=False)
+    names = [i["name"] for i in table]
+    text_blob = extract_section_text(xml, LOINC_INACTIVE)
+    verdict, coverage = audit_completeness(names, text_blob)
+
+    if verdict == "table_incomplete":
+        by_norm = {normalize(i["name"]): i.get("unii") for i in table}
+        items = [{"name": n, "unii": by_norm.get(normalize(n))} for n in smart_split(text_blob)]
+        return items, "spl_text", {"ingredients_verified": "spl_text_used",
+                                   "table_coverage": coverage, "inactive_text_raw": text_blob}
+
+    if table:
+        verified = "spl_table_matches_text" if verdict == "table_complete" else "no_text_section"
+        return table, "spl_xml", {"ingredients_verified": verified,
+                                  "table_coverage": coverage, "inactive_text_raw": text_blob}
+
     items, src = fetch_inactive_openfda(setid)
-    return items, (src or "empty")
+    return items, (src or "empty"), {"ingredients_verified": "openfda_fallback",
+                                     "table_coverage": coverage, "inactive_text_raw": text_blob}
 
 
 # ---------- Phase E: enrichment ----------
@@ -293,9 +524,9 @@ def process_setid(item):
     title = item.get("title", "")
     if not setid:
         return None
-    actives = fetch_active(setid)
-    inact, src = fetch_inactive(setid)
-    # try to read dosage form from the title bracket if present
+    xml = http_xml(f"{BASE}/spls/{setid}.xml")     # fetched ONCE, reused three times
+    actives = fetch_active(setid, xml)
+    inact, src, audit = fetch_inactive(setid, xml)
     rec = {
         "setid": setid,
         "title": title,
@@ -304,8 +535,10 @@ def process_setid(item):
         "inactive_ingredients": inact,
         "inactive_source": src,
         "inactive_count": len(inact),
+        "water_resistance_minutes": extract_water_resistance(xml) if xml else None,
         "dailymed_url": f"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={setid}",
     }
+    rec.update(audit)
     return enrich(rec)
 
 
@@ -365,10 +598,21 @@ def main():
     print(f"[F] master → {master_path} ({len(records)})", flush=True)
 
     # mineral sunscreen filtered: sunscreen + ZnO present + no chemical filter
-    mineral = [r for r in records
-               if r.get("category") == "sunscreen"
-               and r.get("contains_zinc_oxide")
-               and not r.get("contains_chemical_filter")]
+    # Nothing vanishes silently: every sunscreen carries a scope_exclusion_reason (or None).
+    # TiO2 is an FDA-approved mineral filter — titanium-only products are IN scope.
+    for r in records:
+        reason = None
+        if r.get("category") != "sunscreen":
+            reason = f"Not a sunscreen ({r.get('category')})"
+        elif r.get("contains_chemical_filter"):
+            reason = "Contains a chemical UV filter — not a mineral sunscreen"
+        elif not (r.get("contains_zinc_oxide") or r.get("contains_titanium_dioxide")):
+            reason = "No mineral UV filter"
+        elif not r.get("inactive_ingredients"):
+            reason = "Ingredient list unavailable — we can't verify this one"
+        r["scope_exclusion_reason"] = reason
+
+    mineral = [r for r in records if r.get("scope_exclusion_reason") is None]
     mineral_path = os.path.join(args.output_dir, "tinysafe_dailymed_v2_mineral_sun.json")
     json.dump({"metadata": {"count": len(mineral), "filter": "sunscreen + ZnO + no_chemical_filter"},
                "products": mineral}, open(mineral_path, "w"), ensure_ascii=False, indent=1)
@@ -376,6 +620,16 @@ def main():
 
     # quick health report
     empty = src_counts.get("empty", 0)
+    ver = _count(records, "ingredients_verified")
+    needs_pct = sum(1 for r in records for a in r.get("active_ingredients", [])
+                    if a.get("percent_needs_review"))
+    wr = _count(records, "water_resistance_minutes")
+    print(f"\n--- INGREDIENT COMPLETENESS (the number Track A exists for) ---")
+    print(f"ingredients_verified: {ver}")
+    print(f"  spl_text_used = structured table was hiding ingredients")
+    print(f"active strengths needing unit review: {needs_pct}")
+    print(f"water_resistance_minutes: {wr}")
+    print(f"scope_exclusion_reason: {_count(records, 'scope_exclusion_reason')}")
     print(f"\n--- HEALTH ---")
     print(f"inactive source: {src_counts}")
     print(f"inactive MISSING (empty): {empty} ({round(100*empty/max(len(records),1))}%)")
