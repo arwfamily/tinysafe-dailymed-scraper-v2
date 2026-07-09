@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-TinySafe DailyMed Scraper v2.0
+TinySafe DailyMed Scraper v2.3
 ==============================
 INGREDIENT-BASED search (not keyword). Collects every SPL whose ACTIVE ingredient
 contains Zinc Oxide and/or Titanium Dioxide — regardless of "baby"/"mineral" wording.
@@ -13,6 +13,8 @@ Pipeline:
   Phase C  active  : /v2/spls/{setid}/packaging.json  → active ingredients (name + strength)
   Phase D  inactive: openFDA (primary) → SPL XML IACT classCode (fallback)  [active never leaks]
   Phase E  enrich  : SPF parse, mineral_type, chemical/hidden-filter flags, baby_labeled, category
+  Phase E2 brand   : consumer brand via openFDA NDC directory (product_ndc lookup on ndc9),
+                     cached per ndc9/labeler, throttled, manufacturer-name guarded
   Phase F  output  : raw master (everything) + sunscreen-filtered mineral file
 
 Outputs:
@@ -22,10 +24,11 @@ Outputs:
 
 import argparse, json, os, re, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import urllib.request, urllib.error
+import urllib.request, urllib.error, urllib.parse
 
 BASE = "https://dailymed.nlm.nih.gov/dailymed/services/v2"
 OPENFDA = "https://api.fda.gov/drug/label.json"
+OPENFDA_NDC = "https://api.fda.gov/drug/ndc.json"
 UA = {"User-Agent": "TinySafe-research/2.0 (contact: support@tinysafe.app)"}
 
 # UNII codes (FDA Unique Ingredient Identifiers)
@@ -136,6 +139,82 @@ def parse_ndc_xml(xml):
     ndc = full or codes[0]
     ndc9 = "-".join(ndc.split("-")[:2])
     return ndc, ndc9
+
+
+# ---------- Phase E2: consumer brand via openFDA NDC directory ----------
+# The NDC's labeler segment maps to the registered brand in the FDA NDC directory.
+# openFDA returns the actual consumer brand_name ("Baby Bum", "Sky and Sol") where
+# SPL only exposes a manufacturer ("Baxter Laboratories", "TALLOW AND SOL").
+
+MANUFACTURER_RE = re.compile(
+    r"\b(LABS?|LLC|INC|LABORATORIES|HOLDINGS|PHARMA\w*|CELESTIAL)\b|PRIVATE\s+LABEL",
+    re.IGNORECASE)
+
+
+def looks_like_manufacturer(name):
+    """True when a labeler_name reads as a manufacturer, not a consumer brand.
+    Same rule as build_baby_feed.py — never show a manufacturer as the brand."""
+    return bool(name and MANUFACTURER_RE.search(name))
+
+
+def _openfda_ndc_query(search_expr):
+    url = f"{OPENFDA_NDC}?search={urllib.parse.quote(search_expr, safe='')}&limit=1"
+    d = http_json(url)   # http_json already retries and returns None on 404 (= no results)
+    if not d or not d.get("results"):
+        return None
+    return d["results"][0]
+
+
+def resolve_brand(ndc9, ndc9_cache, labeler_cache):
+    """
+    Resolve the consumer brand for one ndc9 (labeler-product, e.g. "72113-117").
+    Returns (brand, brand_source) with brand_source in
+      "openfda_brand" | "openfda_labeler" | "none".
+
+    Primary : product_ndc:"{ndc9}"    → brand_name > brand_name_base > labeler_name
+    Fallback: product_ndc:{labeler}*  → labeler_name ONLY. Never a sibling product's
+              brand_name: labeler codes are shared across distinct consumer brands
+              (72113 carries both Evereden and Eden Brands lines), so a sibling's
+              brand_name would be a wrong-brand leak.
+              NOTE: the quoted form product_ndc:"{labeler}-*" 404s on openFDA;
+              the unquoted trailing-wildcard form is the syntax that works.
+
+    Guardrails:
+      - a labeler_name that reads as a manufacturer is never stored as brand —
+        brand stays null so downstream (build_baby_feed.py) keeps its
+        name-extracted brand instead.
+      - any openFDA hiccup degrades to (None, "none") — never fails the scrape.
+    """
+    if not ndc9:
+        return None, "none"
+    if ndc9 in ndc9_cache:
+        return ndc9_cache[ndc9]
+    result = (None, "none")
+    try:
+        res = _openfda_ndc_query(f'product_ndc:"{ndc9}"')
+        time.sleep(0.3)                       # unkeyed openFDA budget ~240 req/min
+        if res:
+            brand = (res.get("brand_name") or res.get("brand_name_base") or "").strip()
+            labeler = (res.get("labeler_name") or "").strip()
+            if brand:
+                result = (brand, "openfda_brand")
+            elif labeler and not looks_like_manufacturer(labeler):
+                result = (labeler, "openfda_labeler")
+        else:
+            code = ndc9.split("-")[0]
+            if code in labeler_cache:
+                labeler = labeler_cache[code]
+            else:
+                res2 = _openfda_ndc_query(f"product_ndc:{code}*")
+                time.sleep(0.3)
+                labeler = (res2.get("labeler_name") or "").strip() if res2 else ""
+                labeler_cache[code] = labeler
+            if labeler and not looks_like_manufacturer(labeler):
+                result = (labeler, "openfda_labeler")
+    except Exception:
+        result = (None, "none")
+    ndc9_cache[ndc9] = result
+    return result
 
 
 # ---------- Phase C: active ingredients (UNII 포함) ----------
@@ -674,6 +753,19 @@ def main():
             if done % 50 == 0:
                 print(f"    processed {done}/{len(items)}", flush=True)
 
+    # Phase E2: consumer brand via openFDA NDC directory (serial, cached, throttled).
+    # Deduped by ndc9 — many products share one; ~520 products = a few hundred calls,
+    # well inside the unkeyed 240/min · 120k/day openFDA budget.
+    print(f"[E2] resolving consumer brands via openFDA NDC directory ...", flush=True)
+    ndc9_cache, labeler_cache = {}, {}
+    for i, r in enumerate(records):
+        brand, source = resolve_brand(r.get("ndc9"), ndc9_cache, labeler_cache)
+        r["brand"] = brand
+        r["brand_source"] = source
+        if (i + 1) % 100 == 0:
+            print(f"    brand {i + 1}/{len(records)} (unique ndc9: {len(ndc9_cache)})", flush=True)
+    print(f"    brand_source: {_count(records, 'brand_source')}", flush=True)
+
     # Phase F: outputs
     # Nothing vanishes silently: every record carries a scope_exclusion_reason (or None).
     # TiO2 is an FDA-approved mineral filter — titanium-only products are IN scope.
@@ -695,16 +787,18 @@ def main():
         src_counts[r["inactive_source"]] = src_counts.get(r["inactive_source"], 0) + 1
     master = {
         "metadata": {
-            "scraper_version": "2.2",
+            "scraper_version": "2.3",
             "search_method": "ingredient_unii",
             "unii_searched": UNII,
             "total_products": len(records),
             "inactive_source_breakdown": src_counts,
             "mineral_type_breakdown": _count(records, "mineral_type"),
             "with_spf": sum(1 for r in records if r.get("spf")),
-            "with_ndc": sum(1 for r in records if r.get("ndc")),
             "chemical_filter": sum(1 for r in records if r.get("contains_chemical_filter")),
             "baby_labeled": sum(1 for r in records if r.get("baby_labeled")),
+            "with_ndc": sum(1 for r in records if r.get("ndc")),
+            "with_brand": sum(1 for r in records if r.get("brand")),
+            "brand_source_breakdown": _count(records, "brand_source"),
             "ingredients_verified_breakdown": _count(records, "ingredients_verified"),
             "water_resistance_breakdown": _count(records, "water_resistance_minutes"),
             "active_strength_unresolved": sum(1 for r in records
@@ -752,6 +846,8 @@ def main():
     print(f"with SPF: {master['metadata']['with_spf']} | baby_labeled: {master['metadata']['baby_labeled']}")
     no_ndc = len(records) - master['metadata']['with_ndc']
     print(f"with NDC: {master['metadata']['with_ndc']} | NDC missing: {no_ndc} ({round(100*no_ndc/max(len(records),1))}%)")
+    wb = master['metadata']['with_brand']
+    print(f"brand: {wb} ({round(100*wb/max(len(records),1))}%) | brand_source: {master['metadata']['brand_source_breakdown']}")
 
 
 def _count(records, field):
