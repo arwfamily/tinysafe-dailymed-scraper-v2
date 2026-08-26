@@ -374,14 +374,96 @@ def _attach_strength(rec, block):
     return rec
 
 
+# ---------- Drug Facts panel: the label's own statement of concentration ----
+#
+# WHY THE PANEL COMES FIRST
+#   The ratio fields cannot be resolved from the ratio fields. Verified against
+#   6,521 labels, the string "MG in 1 ML" carries two incompatible meanings:
+#       Neutrogena     216 mg/1 mL  ->  panel says 21.6 %   (divide by ten)
+#       American Crew  5.0 mg/1 mL  ->  panel says  5.0 %   (numerator IS the %)
+#   Both are plausible concentrations, so no arithmetic rule can separate them.
+#   The same split appears in G/50 mL: Isa Knox files 15.52 g/50 mL and prints
+#   15.52 %, while the arithmetic says 31.04 %.
+#
+#   The Drug Facts panel is not a second opinion — it is the number the labeler
+#   is legally required to print for the consumer under 21 CFR 201.66. When the
+#   panel states a percentage, that IS the concentration; computing one instead
+#   was solving a problem that did not need solving.
+#
+#   So: read the panel first, fall back to the ratio only when the panel is
+#   silent, and record which source was used so any figure can be traced.
+#
+#   The SPL XML is already fetched for the inactive-ingredient list, so this
+#   costs no extra requests.
+
+_ACTIVE_SECTION = re.compile(
+    r"<(?:component|section)\b[^>]*>(?:(?!</section>).)*?"
+    r"(?:55106-9|Active\s+ingredient)"
+    r"((?:(?!</section>).)*)</section>",
+    re.IGNORECASE | re.DOTALL)
+_STRIP_TAGS = re.compile(r"<[^>]+>")
+_NAME_PCT = re.compile(
+    r"([A-Za-z][A-Za-z0-9 ,'\-/]{2,44}?)\s*[\(\.\:\s]*\s*([\d]+(?:\.[\d]+)?)\s*%",
+    re.IGNORECASE)
+
+
+def parse_drug_facts_percents(xml):
+    """{normalised ingredient name: percent} as printed on the Drug Facts panel."""
+    if not xml:
+        return {}
+    out = {}
+    for m in _ACTIVE_SECTION.finditer(xml):
+        text = re.sub(r"\s+", " ", _STRIP_TAGS.sub(" ", m.group(1)))
+        for nm, pct in _NAME_PCT.findall(text):
+            key = re.sub(r"[^A-Z0-9 ]", " ", nm.upper())
+            key = re.sub(r"\s+", " ", key).strip()
+            key = re.sub(r"^(ACTIVE INGREDIENTS?|INGREDIENT|PURPOSE)\s+", "", key)
+            if len(key) < 3:
+                continue
+            try:
+                v = float(pct)
+            except ValueError:
+                continue
+            if 0 < v <= 100:
+                out.setdefault(key, v)
+    return out
+
+
+def apply_panel_percents(actives, panel):
+    """Overwrite computed percents with the label's printed value where present."""
+    if not panel:
+        return actives
+    for a in actives:
+        nm = re.sub(r"[^A-Z0-9 ]", " ", str(a.get("name") or "").upper())
+        nm = re.sub(r"\s+", " ", nm).strip()
+        hit = panel.get(nm)
+        if hit is None:
+            for k, v in panel.items():
+                if nm and (nm in k or k in nm):
+                    hit = v
+                    break
+        if hit is not None:
+            a["percent_ww"] = hit
+            a["percent_basis"] = "drug_facts_panel"
+            a["percent_source"] = "label"
+        elif a.get("percent_ww") is not None:
+            a["percent_source"] = "computed_from_ratio"
+    return actives
+
+
 # ---------- Phase D: inactive ingredients (XML 1차로 뒤집음, UNII 확보) ----------
 def fetch_inactive_xml(setid):
-    """SPL XML에서 IACT 성분 + UNII. 반환 (list[{name,unii}], 'spl_xml') 또는 ([], None)."""
+    """
+    SPL XML에서 IACT 성분 + UNII + Drug Facts 패널 농도.
+    반환 (list[{name,unii}], source, panel_percents).
+    One fetch, three things — the panel is in the same document.
+    """
     xml = http_xml(f"{BASE}/spls/{setid}.xml")
     if not xml:
-        return [], None
+        return [], None, {}
     items = _parse_ingredients_xml(xml, want_active=False)
-    return (items, "spl_xml") if items else ([], None)
+    panel = parse_drug_facts_percents(xml)
+    return ((items, "spl_xml", panel) if items else ([], None, panel))
 
 
 def fetch_inactive_openfda(setid):
@@ -399,13 +481,13 @@ def fetch_inactive_openfda(setid):
 
 
 def fetch_inactive(setid):
-    """UNII 확보 우선: XML(1차) → openFDA(보조). 기존과 우선순위 뒤집힘."""
-    items, src = fetch_inactive_xml(setid)
+    """UNII 확보 우선: XML(1차) → openFDA(보조). 반환에 패널 농도 포함."""
+    items, src, panel = fetch_inactive_xml(setid)
     if items:
-        return items, src
+        return items, src, panel
     time.sleep(0.2)
-    items, src = fetch_inactive_openfda(setid)
-    return items, (src or "empty")
+    items, src2 = fetch_inactive_openfda(setid)
+    return items, (src2 or "empty"), panel
 
 
 # ---------- Phase E: enrichment ----------
@@ -484,7 +566,11 @@ def process_setid(item):
     if not setid:
         return None
     actives = fetch_active(setid)
-    inact, src = fetch_inactive(setid)
+    inact, src, panel = fetch_inactive(setid)
+    # The label's own printed percentage outranks anything derived from the
+    # ratio fields. Verified across 6,521 sunscreens: the ratio is ambiguous,
+    # the panel is not.
+    actives = apply_panel_percents(actives, panel)
     # try to read dosage form from the title bracket if present
     rec = {
         "setid": setid,
@@ -493,6 +579,7 @@ def process_setid(item):
         "active_ingredients": actives,
         "inactive_ingredients": inact,
         "inactive_source": src,
+        "panel_percents_found": len(panel or {}),
         "inactive_count": len(inact),
         "dailymed_url": f"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={setid}",
     }
@@ -549,7 +636,7 @@ def main():
         src_counts[r["inactive_source"]] = src_counts.get(r["inactive_source"], 0) + 1
     master = {
         "metadata": {
-            "scraper_version": "2.6",
+            "scraper_version": "2.7",
             "search_method": "ingredient_unii",
             "unii_searched": UNII,
             "unii_seed_source": ("resolved_file" if UNII != UNII_FALLBACK

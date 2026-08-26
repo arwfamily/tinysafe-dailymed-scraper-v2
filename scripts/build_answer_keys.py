@@ -444,6 +444,11 @@ def load_regulatory():
                "cond": ["requirements", "conditions"]},
         "KR": {"files": ["kr_uv_filters_partial.jsonl", "kr_uv_filters.jsonl"],
                "label": "MFDS 화장품 안전기준 별표2",
+               # This extract is PARTIAL. Absence from it means "not collected",
+               # never "not permitted" — a distinction that matters because a
+               # published page saying Korea does not allow a filter Korea does
+               # allow is the kind of error that discredits every other row.
+               "partial": True,
                "name": ["inci_name", "name"],
                "max": ["max_concentration_pct", "max_concentration_percent"],
                "cond": ["conditions", "requirements"]},
@@ -475,8 +480,34 @@ def load_regulatory():
                 rows = (doc if isinstance(doc, list)
                         else doc.get("ingredients", doc.get("data", [])))
         found[juris] = {"source": spec["label"], "file": os.path.basename(path),
-                        "rows": rows, "spec": spec}
+                        "rows": rows, "spec": spec,
+                        "partial": bool(spec.get("partial"))}
     return found, missing
+
+
+# The TGA determination puts most numeric caps in the requirements PROSE, not
+# in a numeric field: 4,792 of 5,246 ingredients have an empty
+# max_concentration_percent, and 203 of those state a cap in words. For UV
+# filters the miss rate was total — bemotrizinol, homosalate, octocrylene,
+# oxybenzone, padimate O, sulisobenzone, trolamine salicylate, cinoxate all
+# carry "must not be more than N%" in the text and nothing in the field.
+# Reading only the field published "permitted, no numeric cap" for nine filters
+# that are, in fact, capped.
+_AU_CAP_IN_TEXT = re.compile(
+    r"(?:concentration[^.]{0,80}?)?must not be more than\s*([\d.]+)\s*%",
+    re.IGNORECASE)
+
+
+def _au_cap_from_requirements(row):
+    txt = str(row.get("requirements") or row.get("conditions") or "")
+    m = _AU_CAP_IN_TEXT.search(txt)
+    if not m:
+        return None
+    try:
+        v = float(m.group(1))
+    except ValueError:
+        return None
+    return v if 0 < v <= 100 else None
 
 
 def _first(row, keys):
@@ -544,8 +575,11 @@ def build_matrix(found):
             # Ethylhexyl Methoxycinnamate). Index the aliases too or the
             # comparison rows silently never line up.
             keys = [key] + [norm(a) for a in (row.get("alt_names") or [])]
+            mx = _first(row, spec["max"])
+            if mx is None and juris == "AU":
+                mx = _au_cap_from_requirements(row)
             entry = {
-                "max_percent": _first(row, spec["max"]),
+                "max_percent": mx,
                 "conditions": _first(row, spec["cond"]),
                 "source": blob["source"],
             }
@@ -569,7 +603,8 @@ def build_matrix(found):
                     continue
             matrix[root][juris] = entry
         stats[juris] = {"rows": len(blob["rows"]), "named": kept,
-                        "file": blob["file"]}
+                        "file": blob["file"],
+                        "coverage": "partial" if blob.get("partial") else "complete"}
 
     # attach every known spelling to its row so a lookup by any name lands here
     out = {}
@@ -673,10 +708,14 @@ def check_legality(prods, matrix):
             # Bases that resolve to a true w/w percentage, each validated
             # against the label text on the sunscreen corpus. v/v and v/w are
             # excluded: without density they are not comparable to a w/w limit.
-            if a.get("percent_basis") not in (
-                    "w/w", "percent_literal", "unitless_assumed_percent",
-                    "w/w_from_mass_per_volume", "percent_from_numerator",
-                    "percent_from_unit_denominator"):
+            # Only the label's own printed percentage is used for a compliance
+            # verdict. Every arithmetic rule was checked against the Drug Facts
+            # panel on 6,521 sunscreens and none reached 98%: the ratio fields
+            # are ambiguous at the source (216 mg/1 mL means 21.6%, 5 mg/1 mL
+            # means 5%), so a derived figure cannot carry a claim about someone
+            # else's product. Derived values stay in the record for analysis and
+            # are reported UNKNOWN here.
+            if a.get("percent_basis") != "drug_facts_panel":
                 unknown_any = True
                 details.append({"ingredient": a.get("name"),
                                 "issue": f"basis {a.get('percent_basis')} is not "
