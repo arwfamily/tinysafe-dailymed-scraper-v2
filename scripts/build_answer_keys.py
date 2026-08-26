@@ -276,45 +276,109 @@ def join_recalls(prods, idx, distinctive):
 
 # ------------------------------------------------------- jurisdiction matrix
 def load_regulatory():
-    """Read whatever regulatory files exist. Report the ones that do not."""
+    """
+    Read whatever regulatory files exist and report the ones that do not.
+
+    Field names differ per source because each was extracted from a different
+    legal text, so the mapping is declared here rather than guessed:
+      EU Annex VI   inci_name / max_concentration_pct     / product_type_condition
+      AU TGA        name      / max_concentration_percent / requirements
+                    (wrapped: {"ingredients": [...]})
+      KR 별표2       inci_name / max_concentration_pct    / source_status
+      US M020       inci_name / max_concentration_percent
+    """
     wanted = {
-        "EU": ("eu_annex_vi.jsonl", "EU Cosmetics Regulation Annex VI"),
-        "AU": ("au_permissible_ingredients.json", "TGA Permissible Ingredients Determination"),
-        "KR": ("kr_uv_filters.jsonl", "MFDS 화장품 안전기준 별표2"),
-        "US": ("us_monograph_m020.jsonl", "FDA OTC Monograph M020"),
+        "EU": {"files": ["eu_annex_vi.jsonl"],
+               "label": "EU Cosmetics Regulation Annex VI",
+               "name": ["inci_name", "inci", "name"],
+               "max": ["max_concentration_pct", "max_concentration_percent",
+                       "max_percent"],
+               "cond": ["product_type_condition", "conditions"]},
+        "AU": {"files": ["au_permissible_ingredients.json"],
+               "label": "TGA Permissible Ingredients Determination",
+               "name": ["name", "inci_name"],
+               "max": ["max_concentration_percent"],
+               "cond": ["requirements", "conditions"]},
+        "KR": {"files": ["kr_uv_filters_partial.jsonl", "kr_uv_filters.jsonl"],
+               "label": "MFDS 화장품 안전기준 별표2",
+               "name": ["inci_name", "name"],
+               "max": ["max_concentration_pct", "max_concentration_percent"],
+               "cond": ["conditions", "requirements"]},
+        "US": {"files": ["us_monograph_m020.jsonl"],
+               "label": "FDA OTC Monograph M020",
+               "name": ["inci_name", "name"],
+               "max": ["max_concentration_percent", "max_percent"],
+               "cond": ["conditions"]},
     }
     found, missing = {}, {}
-    for juris, (fn, label) in wanted.items():
-        path = os.path.join(REG_DIR, fn)
-        if not os.path.exists(path):
-            missing[juris] = {"expected_file": path, "source": label}
+    for juris, spec in wanted.items():
+        path = None
+        for fn in spec["files"]:
+            p = os.path.join(REG_DIR, fn)
+            if os.path.exists(p):
+                path = p
+                break
+        if not path:
+            missing[juris] = {"expected": [os.path.join(REG_DIR, f)
+                                           for f in spec["files"]],
+                              "source": spec["label"]}
             continue
-        rows = []
         with open(path, encoding="utf-8") as f:
-            if fn.endswith(".jsonl"):
+            if path.endswith(".jsonl"):
                 rows = [json.loads(l) for l in f if l.strip()]
             else:
                 doc = json.load(f)
-                rows = doc if isinstance(doc, list) else doc.get(
-                    "ingredients", doc.get("data", []))
-        found[juris] = {"source": label, "file": fn, "rows": rows}
+                rows = (doc if isinstance(doc, list)
+                        else doc.get("ingredients", doc.get("data", [])))
+        found[juris] = {"source": spec["label"], "file": os.path.basename(path),
+                        "rows": rows, "spec": spec}
     return found, missing
 
 
+def _first(row, keys):
+    for k in keys:
+        if row.get(k) not in (None, ""):
+            return row.get(k)
+    return None
+
+
 def build_matrix(found):
+    """ingredient -> jurisdiction -> limit. Only rows with a usable name."""
     matrix = defaultdict(dict)
+    stats = {}
     for juris, blob in found.items():
+        spec = blob["spec"]
+        kept = 0
         for row in blob["rows"]:
-            key = norm(row.get("inci") or row.get("name") or row.get("ingredient"))
+            key = norm(_first(row, spec["name"]))
             if not key:
                 continue
-            matrix[key][juris] = {
-                "max_percent": row.get("max_concentration_percent")
-                               or row.get("max_percent"),
-                "conditions": row.get("requirements") or row.get("conditions"),
+            kept += 1
+            entry = {
+                "max_percent": _first(row, spec["max"]),
+                "conditions": _first(row, spec["cond"]),
                 "source": blob["source"],
             }
-    return matrix
+            if row.get("source_status"):
+                entry["source_status"] = row["source_status"]
+            for flag in ("is_active", "is_excipient", "dermal_topical_only",
+                         "is_nano", "warning_statement_required"):
+                if row.get(flag):
+                    entry[flag] = row[flag]
+            # several AU rows share a normalised name; keep the tightest limit
+            prev = matrix[key].get(juris)
+            if prev and prev.get("max_percent") is not None:
+                if entry["max_percent"] is None:
+                    continue
+                try:
+                    if float(entry["max_percent"]) >= float(prev["max_percent"]):
+                        continue
+                except (TypeError, ValueError):
+                    continue
+            matrix[key][juris] = entry
+        stats[juris] = {"rows": len(blob["rows"]), "named": kept,
+                        "file": blob["file"]}
+    return matrix, stats
 
 
 # ------------------------------------------------------------------ main
@@ -386,10 +450,18 @@ def main():
     found, missing = load_regulatory()
     print(f"\n--- JURISDICTION MATRIX ---")
     for j, m in missing.items():
-        print(f"  MISSING {j}: {m['expected_file']}  ({m['source']})")
+        print(f"  MISSING {j}: {' or '.join(m['expected'])}  ({m['source']})")
     if found:
-        matrix = build_matrix(found)
+        matrix, stats = build_matrix(found)
+        for j, st in stats.items():
+            print(f"  {j}: {st['named']}/{st['rows']} named rows from {st['file']}")
+        multi = sum(1 for v in matrix.values() if len(v) > 1)
+        with_limit = sum(1 for v in matrix.values()
+                         if any(x.get("max_percent") is not None for x in v.values()))
         doc = {
+            "coverage": stats,
+            "ingredients_in_multiple_jurisdictions": multi,
+            "ingredients_with_a_numeric_limit": with_limit,
             "built_on": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
             "jurisdictions_present": sorted(found),
             "jurisdictions_missing": sorted(missing),
@@ -400,6 +472,8 @@ def main():
                   encoding="utf-8") as f:
             json.dump(doc, f, ensure_ascii=False, indent=1)
         print(f"  built: {len(matrix)} ingredients across {sorted(found)}")
+        print(f"         {multi} appear in 2+ jurisdictions "
+              f"(these are the comparison rows), {with_limit} carry a numeric limit")
     else:
         print("  no regulatory files present — matrix not built.")
         print("  drop the EU/AU/KR/US regulatory JSON into data/regulatory/ "
