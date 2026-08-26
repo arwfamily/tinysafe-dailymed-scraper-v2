@@ -1,0 +1,7211 @@
+{
+ "built_on": "2026-08-26",
+ "products_examined": 13285,
+ "seeded_uniis": 19,
+ "how_to_promote": "add the NAME to UV_FILTERS in scripts/resolve_uniis.py; the next run resolves it from DailyMed. Never paste the UNII by hand — let the resolver confirm it.",
+ "candidates": [
+  {
+   "unii": "25X51I8RD4",
+   "name": "NIACINAMIDE",
+   "name_variants": [
+    "NIACINAMIDE"
+   ],
+   "product_count": 80,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 61,
+    "15FIX9V2JP": 22,
+    "4Y5P7MUD51": 9,
+    "4X49Y0596W": 5,
+    "5A68WGF6WM": 3,
+    "G63QQF2NOX": 3,
+    "V06SV4M95S": 2,
+    "9YQ9DI1W42": 2,
+    "PWZ1720CBH": 2,
+    "95OOS7VE0Y": 1,
+    "TL2TJE8QTX": 2
+   },
+   "example_setids": [
+    "511eaced-c4d8-ae94-e063-6394a90a320e",
+    "512185a5-5c1d-ef9f-e063-6394a90a81af",
+    "4c531280-bc5b-1cf2-e063-6394a90a034a",
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "4f8ade09-4f7a-80bd-e063-6394a90a0843"
+   ]
+  },
+  {
+   "unii": "XV74C1N1AE",
+   "name": "HYDROQUINONE",
+   "name_variants": [
+    "HYDROQUINONE"
+   ],
+   "product_count": 75,
+   "co_occurs_with_seeds": {
+    "V06SV4M95S": 12,
+    "4X49Y0596W": 12,
+    "SOI2LOH54Z": 34,
+    "15FIX9V2JP": 4,
+    "4Y5P7MUD51": 52,
+    "95OOS7VE0Y": 3,
+    "G63QQF2NOX": 1,
+    "Z11006CMUZ": 7
+   },
+   "example_setids": [
+    "ca931d1c-4df4-47ce-8d5c-cd8c3e38c02b",
+    "16efa2db-8172-4026-a519-08f53d68b3c9",
+    "e19b824f-4438-48c8-af4c-29be197f9cdc",
+    "e63327db-fb96-411c-945a-abe801d38045",
+    "a9ceacb3-d6e4-4316-a4e9-f15e574cdda0"
+   ]
+  },
+  {
+   "unii": "PQ6CK8PD0R",
+   "name": "ASCORBIC ACID",
+   "name_variants": [
+    "ASCORBIC ACID"
+   ],
+   "product_count": 52,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 48,
+    "15FIX9V2JP": 4,
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 2,
+    "TL2TJE8QTX": 2
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "1aaf5942-ff13-ee07-e063-6394a90acd28",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36"
+   ]
+  },
+  {
+   "unii": "TLM2976OFR",
+   "name": "RIBOFLAVIN",
+   "name_variants": [
+    "RIBOFLAVIN"
+   ],
+   "product_count": 50,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 47,
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1,
+    "TL2TJE8QTX": 2
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf"
+   ]
+  },
+  {
+   "unii": "68Y4CF58BV",
+   "name": "PYRIDOXINE HYDROCHLORIDE",
+   "name_variants": [
+    "PYRIDOXINE HYDROCHLORIDE"
+   ],
+   "product_count": 50,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 48,
+    "TL2TJE8QTX": 2
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "9b71b219-91ae-46b2-8fb5-d3d118d73873"
+   ]
+  },
+  {
+   "unii": "1K09F3G675",
+   "name": "FERRIC OXIDE RED",
+   "name_variants": [
+    "FERRIC OXIDE RED"
+   ],
+   "product_count": 46,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 42,
+    "15FIX9V2JP": 4
+   },
+   "example_setids": [
+    "9ddcd6ba-1aed-48f8-a91a-54bd6f0d9308",
+    "57110309-9a3d-025f-e063-6394a90a015a",
+    "571083ce-cd35-a638-e063-6394a90ae4c7",
+    "c7ef0ef3-6861-4b94-af4b-371fee8c1f3d",
+    "54f12005-acfe-4821-e063-6394a90ac304"
+   ]
+  },
+  {
+   "unii": "935E97BOY8",
+   "name": "FOLIC ACID",
+   "name_variants": [
+    "FOLIC ACID"
+   ],
+   "product_count": 46,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 44,
+    "TL2TJE8QTX": 2
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "9b71b219-91ae-46b2-8fb5-d3d118d73873"
+   ]
+  },
+  {
+   "unii": "1C6V77QF41",
+   "name": "CHOLECALCIFEROL",
+   "name_variants": [
+    "CHOLECALCIFEROL"
+   ],
+   "product_count": 42,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 41,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "9b71b219-91ae-46b2-8fb5-d3d118d73873",
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf"
+   ]
+  },
+  {
+   "unii": "P6YC3EG204",
+   "name": "CYANOCOBALAMIN",
+   "name_variants": [
+    "CYANOCOBALAMIN"
+   ],
+   "product_count": 42,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 41,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "9b71b219-91ae-46b2-8fb5-d3d118d73873",
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf"
+   ]
+  },
+  {
+   "unii": "K72T3FS567",
+   "name": "ADENOSINE",
+   "name_variants": [
+    "ADENOSINE"
+   ],
+   "product_count": 37,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 19,
+    "15FIX9V2JP": 35,
+    "ANQ870JD20": 3,
+    "5A68WGF6WM": 6,
+    "4Y5P7MUD51": 15,
+    "4X49Y0596W": 10,
+    "G63QQF2NOX": 3,
+    "V06SV4M95S": 2,
+    "9YQ9DI1W42": 2,
+    "PWZ1720CBH": 2
+   },
+   "example_setids": [
+    "9e46328d-1d10-350b-e053-2995a90ad27e",
+    "9b571d4e-03c8-5a37-e053-2a95a90add36",
+    "3bbcb812-feff-3b00-e054-00144ff88e88",
+    "3bbc61e1-72c5-6681-e054-00144ff8d46c",
+    "565cc2fb-8b1c-4fb3-a4f7-6af3656e5d4d"
+   ]
+  },
+  {
+   "unii": "8K0I04919X",
+   "name": "THIAMINE MONONITRATE",
+   "name_variants": [
+    "THIAMINE MONONITRATE"
+   ],
+   "product_count": 31,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 31
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf"
+   ]
+  },
+  {
+   "unii": "01YAE03M7J",
+   "name": "BETA CAROTENE",
+   "name_variants": [
+    "BETA CAROTENE",
+    ".BETA.-CAROTENE"
+   ],
+   "product_count": 28,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 27,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "3927b074-d72a-4d8c-9f7e-15c42a830945",
+    "40fa2c3a-f41f-434c-91de-5150a18d3e4b"
+   ]
+  },
+  {
+   "unii": "V1XJQ704R4",
+   "name": "CUPRIC OXIDE",
+   "name_variants": [
+    "CUPRIC OXIDE"
+   ],
+   "product_count": 28,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 28
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "3927b074-d72a-4d8c-9f7e-15c42a830945"
+   ]
+  },
+  {
+   "unii": "WR1WPI7EW8",
+   "name": ".ALPHA.-TOCOPHEROL ACETATE, DL-",
+   "name_variants": [
+    ".ALPHA.-TOCOPHEROL ACETATE, DL-"
+   ],
+   "product_count": 27,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 24,
+    "15FIX9V2JP": 2,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "3927b074-d72a-4d8c-9f7e-15c42a830945",
+    "40fa2c3a-f41f-434c-91de-5150a18d3e4b"
+   ]
+  },
+  {
+   "unii": "E1UOL152H7",
+   "name": "IRON",
+   "name_variants": [
+    "IRON"
+   ],
+   "product_count": 24,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 24
+   },
+   "example_setids": [
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "9b71b219-91ae-46b2-8fb5-d3d118d73873",
+    "3927b074-d72a-4d8c-9f7e-15c42a830945",
+    "40fa2c3a-f41f-434c-91de-5150a18d3e4b",
+    "430eb254-39a3-4642-95b5-17009a2610b5"
+   ]
+  },
+  {
+   "unii": "H0G9379FGK",
+   "name": "CALCIUM CARBONATE",
+   "name_variants": [
+    "CALCIUM CARBONATE"
+   ],
+   "product_count": 23,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 23
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "3161469e-6402-607a-e054-00144ff88e88",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf"
+   ]
+  },
+  {
+   "unii": "C5INA23HXF",
+   "name": "ARBUTIN",
+   "name_variants": [
+    "ARBUTIN"
+   ],
+   "product_count": 20,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 19,
+    "SOI2LOH54Z": 14,
+    "ANQ870JD20": 3,
+    "5A68WGF6WM": 3,
+    "4Y5P7MUD51": 11,
+    "4X49Y0596W": 6
+   },
+   "example_setids": [
+    "3bbcb812-feff-3b00-e054-00144ff88e88",
+    "3bbc61e1-72c5-6681-e054-00144ff8d46c",
+    "565cc2fb-8b1c-4fb3-a4f7-6af3656e5d4d",
+    "6f666277-c4c0-45ce-a478-9db2f21461a6",
+    "7eee940a-96c6-4d37-9991-fa84b1b4f02b"
+   ]
+  },
+  {
+   "unii": "R5L488RY0Q",
+   "name": "FERROUS FUMARATE",
+   "name_variants": [
+    "FERROUS FUMARATE"
+   ],
+   "product_count": 16,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 16
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "17559a44-94b7-9ca0-e063-6294a90a2123",
+    "07131644-0195-8510-e063-6294a90acd0f"
+   ]
+  },
+  {
+   "unii": "6SO6U10H04",
+   "name": "BIOTIN",
+   "name_variants": [
+    "BIOTIN"
+   ],
+   "product_count": 14,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 10,
+    "TL2TJE8QTX": 4
+   },
+   "example_setids": [
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "b9b71fa4-89c7-4f5b-8174-950649434ba5",
+    "f05f4cec-3932-4198-9c86-d03bd13bc69d",
+    "a039781e-e59e-4423-84b4-8a8753706731",
+    "4eb71974-0bd1-41e6-8792-98afe2ec97e6"
+   ]
+  },
+  {
+   "unii": "3LE3D9D6OY",
+   "name": "VITAMIN A ACETATE",
+   "name_variants": [
+    "VITAMIN A ACETATE"
+   ],
+   "product_count": 13,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 13
+   },
+   "example_setids": [
+    "1b8ef3ea-5563-48ef-ba5e-27e0b454efb9",
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "ed793721-e869-43de-9d6e-6dc9c8230e36",
+    "17559a44-94b7-9ca0-e063-6294a90a2123",
+    "cb5c567a-8733-4004-832e-de8132b8da9e"
+   ]
+  },
+  {
+   "unii": "X66NSO3N35",
+   "name": "THIAMINE",
+   "name_variants": [
+    "THIAMINE"
+   ],
+   "product_count": 13,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 13
+   },
+   "example_setids": [
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "b9b71fa4-89c7-4f5b-8174-950649434ba5",
+    "6aead698-0370-4d05-9e22-61b9ea5f6b61",
+    "21c64db9-718e-4fbd-9baf-6ab101940595",
+    "e5027852-b374-10e4-7acd-42f9ada83f81"
+   ]
+  },
+  {
+   "unii": "1C4QK22F9J",
+   "name": "POTASSIUM IODIDE",
+   "name_variants": [
+    "POTASSIUM IODIDE"
+   ],
+   "product_count": 13,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 13
+   },
+   "example_setids": [
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf",
+    "3927b074-d72a-4d8c-9f7e-15c42a830945",
+    "40fa2c3a-f41f-434c-91de-5150a18d3e4b",
+    "17559a44-94b7-9ca0-e063-6294a90a2123"
+   ]
+  },
+  {
+   "unii": "712K4CDC10",
+   "name": "HYPOCHLOROUS ACID",
+   "name_variants": [
+    "HYPOCHLOROUS ACID"
+   ],
+   "product_count": 13,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 13
+   },
+   "example_setids": [
+    "bfea294b-b9bc-77a3-e053-2995a90a28c4",
+    "ae76149e-29eb-5ee4-e053-2995a90a7957",
+    "ae761576-fa56-2eea-e053-2a95a90a79c4",
+    "ab7a0c8d-ab13-5f97-e053-2995a90aac34",
+    "aa878b4e-ec89-1cf4-e053-2a95a90a86f6"
+   ]
+  },
+  {
+   "unii": "568ET80C3D",
+   "name": "CALCIUM PANTOTHENATE",
+   "name_variants": [
+    "CALCIUM PANTOTHENATE"
+   ],
+   "product_count": 12,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 10,
+    "TL2TJE8QTX": 2
+   },
+   "example_setids": [
+    "b1e8552f-e552-48ee-95bd-0a346794314e",
+    "b9b71fa4-89c7-4f5b-8174-950649434ba5",
+    "f05f4cec-3932-4198-9c86-d03bd13bc69d",
+    "a039781e-e59e-4423-84b4-8a8753706731",
+    "4eb71974-0bd1-41e6-8792-98afe2ec97e6"
+   ]
+  },
+  {
+   "unii": "S7V92P67HO",
+   "name": "ARSENIC TRIOXIDE",
+   "name_variants": [
+    "ARSENIC TRIOXIDE"
+   ],
+   "product_count": 12,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 12,
+    "15FIX9V2JP": 8
+   },
+   "example_setids": [
+    "c442a928-4745-40d9-e053-2a95a90ad36c",
+    "f4378d84-73d5-2170-e053-2a95a90a41c6",
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504"
+   ]
+  },
+  {
+   "unii": "8I3XWY40L9",
+   "name": "ENZACAMENE",
+   "name_variants": [
+    "ENZACAMENE"
+   ],
+   "product_count": 12,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 12,
+    "SOI2LOH54Z": 6,
+    "15FIX9V2JP": 8,
+    "G63QQF2NOX": 8,
+    "5A68WGF6WM": 2,
+    "PWZ1720CBH": 1,
+    "V06SV4M95S": 1,
+    "4X49Y0596W": 3
+   },
+   "example_setids": [
+    "ea926d9b-7bb5-4480-98b8-d80e4b3f1a67",
+    "89f07708-6cbf-4e2c-bb20-afbe96e6d0a7",
+    "c0c6fcf3-0bff-49c4-bbb5-b2f1c0288549",
+    "2eda1a2b-e024-449b-9553-839cdad9aab3",
+    "5c3d1a2b-28f1-4b8a-a018-dcbe3b12ea62"
+   ]
+  },
+  {
+   "unii": "9E8X80D2L0",
+   "name": ".ALPHA.-TOCOPHEROL ACETATE",
+   "name_variants": [
+    ".ALPHA.-TOCOPHEROL ACETATE",
+    "ALPHA-TOCOPHEROL ACETATE"
+   ],
+   "product_count": 11,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 11,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "4f8ade09-4f7a-80bd-e063-6394a90a0843",
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "e5027852-b374-10e4-7acd-42f9ada83f81",
+    "30ee4797-f1cd-4169-9434-69300dbecc86",
+    "c02cc80c-adb1-5582-6f60-d819a1e41748"
+   ]
+  },
+  {
+   "unii": "789U1901C5",
+   "name": "COPPER",
+   "name_variants": [
+    "COPPER"
+   ],
+   "product_count": 11,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 9,
+    "15FIX9V2JP": 6,
+    "TL2TJE8QTX": 2
+   },
+   "example_setids": [
+    "6aead698-0370-4d05-9e22-61b9ea5f6b61",
+    "21c64db9-718e-4fbd-9baf-6ab101940595",
+    "6f780f7c-e712-4961-9752-6231213856e8",
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341"
+   ]
+  },
+  {
+   "unii": "376KTP06K8",
+   "name": "AMILOXATE",
+   "name_variants": [
+    "AMILOXATE"
+   ],
+   "product_count": 11,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 10,
+    "4X49Y0596W": 5,
+    "SOI2LOH54Z": 5,
+    "15FIX9V2JP": 10,
+    "G63QQF2NOX": 2,
+    "PWZ1720CBH": 4,
+    "ANQ870JD20": 2,
+    "9YQ9DI1W42": 1
+   },
+   "example_setids": [
+    "18a533a4-ca50-4f98-a04f-663861cc65bd",
+    "705f9494-f60b-f5fb-e053-2991aa0adda4",
+    "47511c2b-f83f-43bf-963d-0b1ab6a9c673",
+    "4b50f047-3a69-4194-8e56-bd3c49b4c540",
+    "b81b277d-de03-4130-812b-37ef5d54feb2"
+   ]
+  },
+  {
+   "unii": "ZAD9OKH9JC",
+   "name": "DOCONEXENT",
+   "name_variants": [
+    "DOCONEXENT"
+   ],
+   "product_count": 10,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 10
+   },
+   "example_setids": [
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf",
+    "3927b074-d72a-4d8c-9f7e-15c42a830945",
+    "40fa2c3a-f41f-434c-91de-5150a18d3e4b",
+    "430eb254-39a3-4642-95b5-17009a2610b5",
+    "5e34e3d7-74f6-4e56-8a48-e6ed886f5aff"
+   ]
+  },
+  {
+   "unii": "A9R10K3F2F",
+   "name": "LEVOMEFOLATE CALCIUM",
+   "name_variants": [
+    "LEVOMEFOLATE CALCIUM"
+   ],
+   "product_count": 10,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 10
+   },
+   "example_setids": [
+    "3927b074-d72a-4d8c-9f7e-15c42a830945",
+    "40fa2c3a-f41f-434c-91de-5150a18d3e4b",
+    "430eb254-39a3-4642-95b5-17009a2610b5",
+    "5e34e3d7-74f6-4e56-8a48-e6ed886f5aff",
+    "17559a44-94b7-9ca0-e063-6294a90a2123"
+   ]
+  },
+  {
+   "unii": "H6241UJ22B",
+   "name": "SELENIUM",
+   "name_variants": [
+    "SELENIUM"
+   ],
+   "product_count": 10,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 9,
+    "15FIX9V2JP": 6,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b9b71fa4-89c7-4f5b-8174-950649434ba5",
+    "17559a44-94b7-9ca0-e063-6294a90a2123",
+    "07131644-0195-8510-e063-6294a90acd0f",
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341"
+   ]
+  },
+  {
+   "unii": "A2I8C7HI9T",
+   "name": "METHYLPARABEN",
+   "name_variants": [
+    "METHYLPARABEN"
+   ],
+   "product_count": 10,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 9,
+    "SOI2LOH54Z": 9,
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "Z8IX2SC1OH",
+   "name": "PROPYLPARABEN",
+   "name_variants": [
+    "PROPYLPARABEN"
+   ],
+   "product_count": 10,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 9,
+    "SOI2LOH54Z": 9,
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "E4GA8884NN",
+   "name": "PHOSPHORIC ACID",
+   "name_variants": [
+    "PHOSPHORIC ACID"
+   ],
+   "product_count": 9,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 9,
+    "15FIX9V2JP": 8
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98",
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "059QF0KO0R",
+   "name": "WATER",
+   "name_variants": [
+    "WATER"
+   ],
+   "product_count": 9,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "15FIX9V2JP": 4,
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 4,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 5,
+    "95OOS7VE0Y": 2
+   },
+   "example_setids": [
+    "396393c4-b50c-3877-e063-6294a90a0e9b",
+    "524384e9-b3f8-4c13-e063-6394a90a8973",
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2"
+   ]
+  },
+  {
+   "unii": "Z0H242BBR1",
+   "name": "ASPARTAME",
+   "name_variants": [
+    "ASPARTAME"
+   ],
+   "product_count": 9,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 9,
+    "SOI2LOH54Z": 9
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "588X2YUY0A",
+   "name": "METHYLENE CHLORIDE",
+   "name_variants": [
+    "METHYLENE CHLORIDE"
+   ],
+   "product_count": 9,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 9,
+    "SOI2LOH54Z": 9
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "OJ245FE5EU",
+   "name": "SODIUM BENZOATE",
+   "name_variants": [
+    "SODIUM BENZOATE"
+   ],
+   "product_count": 9,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 9,
+    "SOI2LOH54Z": 9
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "9VU1KI44GP",
+   "name": "VITAMIN D",
+   "name_variants": [
+    "VITAMIN D"
+   ],
+   "product_count": 8,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 8
+   },
+   "example_setids": [
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "6aead698-0370-4d05-9e22-61b9ea5f6b61",
+    "21c64db9-718e-4fbd-9baf-6ab101940595",
+    "e5027852-b374-10e4-7acd-42f9ada83f81",
+    "c02cc80c-adb1-5582-6f60-d819a1e41748"
+   ]
+  },
+  {
+   "unii": "M572600E5P",
+   "name": "THIAMINE HYDROCHLORIDE",
+   "name_variants": [
+    "THIAMINE HYDROCHLORIDE"
+   ],
+   "product_count": 8,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5,
+    "TL2TJE8QTX": 3
+   },
+   "example_setids": [
+    "eb18487c-5a55-4f2d-a59d-731788508171",
+    "00c008e9-f314-4d35-bb2a-6140f970d429",
+    "a2506c4b-63d2-4b55-930e-15f74c1637cc",
+    "6f780f7c-e712-4961-9752-6231213856e8",
+    "a6db9e3b-610b-4225-a7b5-2318567d937c"
+   ]
+  },
+  {
+   "unii": "1Q73Q2JULR",
+   "name": "SODIUM CITRATE",
+   "name_variants": [
+    "SODIUM CITRATE",
+    "SODIUM CITRATE, UNSPECIFIED FORM"
+   ],
+   "product_count": 8,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 8,
+    "SOI2LOH54Z": 8
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a"
+   ]
+  },
+  {
+   "unii": "3K9958V90M",
+   "name": "ALCOHOL",
+   "name_variants": [
+    "ALCOHOL"
+   ],
+   "product_count": 8,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 4,
+    "V06SV4M95S": 3,
+    "4X49Y0596W": 3,
+    "G63QQF2NOX": 3,
+    "5A68WGF6WM": 3,
+    "4Y5P7MUD51": 3,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "bfe9c7fd-1e43-627d-e053-2a95a90ae03c",
+    "de9c0a5a-0ad1-477d-bee5-47bbc50efe8d",
+    "82812f88-3c26-46e1-8b98-ec782cea177a",
+    "f57bc089-405b-cdcd-e053-2995a90a9d12"
+   ]
+  },
+  {
+   "unii": "81G40H8B0T",
+   "name": "VITAMIN A",
+   "name_variants": [
+    "VITAMIN A"
+   ],
+   "product_count": 7,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 7
+   },
+   "example_setids": [
+    "b9b71fa4-89c7-4f5b-8174-950649434ba5",
+    "07131644-0195-8510-e063-6294a90acd0f",
+    "6aead698-0370-4d05-9e22-61b9ea5f6b61",
+    "21c64db9-718e-4fbd-9baf-6ab101940595",
+    "e858f2b0-68d6-4b87-ac32-a1cb74282e4d"
+   ]
+  },
+  {
+   "unii": "9679TC07X4",
+   "name": "IODINE",
+   "name_variants": [
+    "IODINE"
+   ],
+   "product_count": 7,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 7,
+    "15FIX9V2JP": 6
+   },
+   "example_setids": [
+    "b8400f29-12dd-4b65-9b05-79f34120932d",
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a"
+   ]
+  },
+  {
+   "unii": "7E889U5RNN",
+   "name": "CHELIDONIUM MAJUS",
+   "name_variants": [
+    "CHELIDONIUM MAJUS",
+    "CHELIDONIUM MAJUS WHOLE"
+   ],
+   "product_count": 7,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 7,
+    "SOI2LOH54Z": 7
+   },
+   "example_setids": [
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a",
+    "e39235ea-2a2f-44a7-92d6-fb1d428ebabd"
+   ]
+  },
+  {
+   "unii": "C88X29Y479",
+   "name": "LYCOPODIUM CLAVATUM SPORE",
+   "name_variants": [
+    "LYCOPODIUM CLAVATUM SPORE"
+   ],
+   "product_count": 7,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 7,
+    "SOI2LOH54Z": 7
+   },
+   "example_setids": [
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a"
+   ]
+  },
+  {
+   "unii": "5EM498GW35",
+   "name": "FRAGRANCE 13576",
+   "name_variants": [
+    "FRAGRANCE 13576"
+   ],
+   "product_count": 7,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 4,
+    "15FIX9V2JP": 3,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 5,
+    "95OOS7VE0Y": 2
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2",
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6",
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "MLM29U2X85",
+   "name": "CALCIUM CITRATE",
+   "name_variants": [
+    "CALCIUM CITRATE"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 6
+   },
+   "example_setids": [
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "e5027852-b374-10e4-7acd-42f9ada83f81",
+    "c02cc80c-adb1-5582-6f60-d819a1e41748",
+    "8ee7be74-6442-5692-edab-5d8626a510dd",
+    "32943e5e-f2c2-25de-6075-6ca42c87adb5"
+   ]
+  },
+  {
+   "unii": "F9S9FFU82N",
+   "name": "LACTIC ACID, L-",
+   "name_variants": [
+    "LACTIC ACID, L-"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 6
+   },
+   "example_setids": [
+    "c442a928-4745-40d9-e053-2a95a90ad36c",
+    "6b658f98-d6e9-9ac9-e053-2991aa0ab3b0",
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "A7E6112E4N",
+   "name": ".ALPHA.-TOCOPHEROL ACETATE, D-",
+   "name_variants": [
+    ".ALPHA.-TOCOPHEROL ACETATE, D-"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5,
+    "4Y5P7MUD51": 1,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "430eb254-39a3-4642-95b5-17009a2610b5",
+    "5e34e3d7-74f6-4e56-8a48-e6ed886f5aff",
+    "6bffb66f-6b1b-44e2-ba4d-211091e99ef7",
+    "b8400f29-12dd-4b65-9b05-79f34120932d",
+    "2da88fad-39b0-4d6d-a65e-c7a8b66a96b0"
+   ]
+  },
+  {
+   "unii": "GW89575KF9",
+   "name": "SQUALANE",
+   "name_variants": [
+    "SQUALANE"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5,
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "19402859-2553-b06e-e063-6294a90ae4a0",
+    "173a050f-1792-0468-e063-6294a90a264c",
+    "17246ea4-733d-35e5-e063-6394a90a316f",
+    "148d43f8-68e0-eb89-e063-6394a90adce0",
+    "14508f1c-bedf-c367-e063-6294a90a1c7c"
+   ]
+  },
+  {
+   "unii": "71M78END5S",
+   "name": "OMEGA-3 FATTY ACIDS",
+   "name_variants": [
+    "OMEGA-3 FATTY ACIDS"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 6
+   },
+   "example_setids": [
+    "5fbe6e38-60e6-4d6d-bb8f-191755c3d2fa",
+    "b8400f29-12dd-4b65-9b05-79f34120932d",
+    "7f085be5-1e64-48de-b74d-8bd4d51115fc",
+    "dbf5bb0d-fe79-4ba9-84c1-7442b0e66cef",
+    "0b2d95e4-5846-47dd-bddf-53a7db0dadbe"
+   ]
+  },
+  {
+   "unii": "EC228KGY00",
+   "name": "ATRACTYLODES JAPONICA ROOT OIL",
+   "name_variants": [
+    "ATRACTYLODES JAPONICA ROOT OIL"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4,
+    "9YQ9DI1W42": 2,
+    "15FIX9V2JP": 6,
+    "4Y5P7MUD51": 4,
+    "4X49Y0596W": 1,
+    "PWZ1720CBH": 1,
+    "5A68WGF6WM": 1,
+    "ANQ870JD20": 1
+   },
+   "example_setids": [
+    "a52265f1-712f-46c7-80e4-c0b50d8b55e6",
+    "f2c7c787-92eb-4ba6-9cb2-db4e5306a5d7",
+    "3b4ab30b-920a-4790-8f3b-8c744f2f6a57",
+    "f64f75d4-1a02-4463-bcc0-a923dadd1b19",
+    "65a594ec-65e2-4289-bba6-ca6054d4dd06"
+   ]
+  },
+  {
+   "unii": "Q4EWM09M3O",
+   "name": "PEUMUS BOLDUS LEAF",
+   "name_variants": [
+    "PEUMUS BOLDUS LEAF"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 6,
+    "SOI2LOH54Z": 6
+   },
+   "example_setids": [
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a",
+    "e39235ea-2a2f-44a7-92d6-fb1d428ebabd"
+   ]
+  },
+  {
+   "unii": "1WZA4Y92EX",
+   "name": "PETROSELINUM CRISPUM WHOLE",
+   "name_variants": [
+    "PETROSELINUM CRISPUM WHOLE",
+    "PETROSELINUM CRISPUM"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 6,
+    "SOI2LOH54Z": 6
+   },
+   "example_setids": [
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a",
+    "e39235ea-2a2f-44a7-92d6-fb1d428ebabd"
+   ]
+  },
+  {
+   "unii": "39981FM375",
+   "name": "TARAXACUM OFFICINALE",
+   "name_variants": [
+    "TARAXACUM OFFICINALE"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 6,
+    "SOI2LOH54Z": 6
+   },
+   "example_setids": [
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a",
+    "e39235ea-2a2f-44a7-92d6-fb1d428ebabd"
+   ]
+  },
+  {
+   "unii": "3G0H8C9362",
+   "name": "COBALT",
+   "name_variants": [
+    "COBALT"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 6,
+    "SOI2LOH54Z": 6
+   },
+   "example_setids": [
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a",
+    "e39235ea-2a2f-44a7-92d6-fb1d428ebabd"
+   ]
+  },
+  {
+   "unii": "J41CSQ7QDS",
+   "name": "ZINC",
+   "name_variants": [
+    "ZINC"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 6,
+    "SOI2LOH54Z": 6
+   },
+   "example_setids": [
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a",
+    "e39235ea-2a2f-44a7-92d6-fb1d428ebabd"
+   ]
+  },
+  {
+   "unii": "1P9D0Z171K",
+   "name": "BUTYLATED HYDROXYTOLUENE",
+   "name_variants": [
+    "BUTYLATED HYDROXYTOLUENE"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 3,
+    "15FIX9V2JP": 3,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 5,
+    "95OOS7VE0Y": 2
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2",
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6",
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc"
+   ]
+  },
+  {
+   "unii": "6DC9Q167V3",
+   "name": "PROPYLENE GLYCOL",
+   "name_variants": [
+    "PROPYLENE GLYCOL"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 3,
+    "G63QQF2NOX": 3,
+    "15FIX9V2JP": 4,
+    "4X49Y0596W": 3,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 5,
+    "V06SV4M95S": 1,
+    "95OOS7VE0Y": 3
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2",
+    "dfd8be45-7a69-acf3-e053-2a95a90a4b38",
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc"
+   ]
+  },
+  {
+   "unii": "HIE492ZZ3T",
+   "name": "PHENOXYETHANOL",
+   "name_variants": [
+    "PHENOXYETHANOL"
+   ],
+   "product_count": 6,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 4,
+    "15FIX9V2JP": 3,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 4,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2",
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6",
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "ETJ7Z6XBU4",
+   "name": "SILICON DIOXIDE",
+   "name_variants": [
+    "SILICON DIOXIDE"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2,
+    "15FIX9V2JP": 3,
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98",
+    "d374bcd9-7614-4252-9ffd-4b0abc8527dd",
+    "1fc3f3d8-333f-5e1d-e063-6294a90a00a8",
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2"
+   ]
+  },
+  {
+   "unii": "VW4H1CYW1K",
+   "name": "MICONAZOLE NITRATE",
+   "name_variants": [
+    "MICONAZOLE NITRATE"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5
+   },
+   "example_setids": [
+    "b44b452d-3630-4cb5-8ed1-1f8edac4690c",
+    "b026bc7d-3a18-41e8-88c4-1e063cd2f42c",
+    "56191aba-7e85-220a-e054-00144ff88e88",
+    "4114c685-acd1-4c65-842b-1cb7840852dc",
+    "8d8aaac5-3203-4ade-ae74-e2ea469dae18"
+   ]
+  },
+  {
+   "unii": "F05Q2T2JA0",
+   "name": "DOCUSATE SODIUM",
+   "name_variants": [
+    "DOCUSATE SODIUM"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5
+   },
+   "example_setids": [
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "e5027852-b374-10e4-7acd-42f9ada83f81",
+    "8ee7be74-6442-5692-edab-5d8626a510dd",
+    "32943e5e-f2c2-25de-6075-6ca42c87adb5",
+    "62d662f4-a16f-fca3-3bd7-2a407c7bbd13"
+   ]
+  },
+  {
+   "unii": "LAV5U5022Y",
+   "name": "METHYL SALICYLATE",
+   "name_variants": [
+    "METHYL SALICYLATE"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5
+   },
+   "example_setids": [
+    "2013ea44-e2ea-4b36-bddb-7f64163284b6",
+    "a851854a-5dfe-4bd5-95f6-67c3f13f1187",
+    "b37a0686-39f6-36cc-e053-2995a90a831e",
+    "c5ef616b-76c9-347f-e053-2a95a90a1dfa",
+    "85171b3e-01f6-49d0-b313-1b6e939fcadd"
+   ]
+  },
+  {
+   "unii": "AV092KU4JH",
+   "name": "PEPPERMINT OIL",
+   "name_variants": [
+    "PEPPERMINT OIL"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5
+   },
+   "example_setids": [
+    "2013ea44-e2ea-4b36-bddb-7f64163284b6",
+    "a851854a-5dfe-4bd5-95f6-67c3f13f1187",
+    "b37a0686-39f6-36cc-e053-2995a90a831e",
+    "c5ef616b-76c9-347f-e053-2a95a90a1dfa",
+    "85171b3e-01f6-49d0-b313-1b6e939fcadd"
+   ]
+  },
+  {
+   "unii": "R0ZB2556P8",
+   "name": "TOCOPHEROL",
+   "name_variants": [
+    "TOCOPHEROL"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "4Y5P7MUD51": 2,
+    "15FIX9V2JP": 1,
+    "4X49Y0596W": 1,
+    "PWZ1720CBH": 1,
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "9b71b219-91ae-46b2-8fb5-d3d118d73873",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2",
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6",
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc",
+    "1ae6c49a-3861-29b3-e063-6394a90aa323"
+   ]
+  },
+  {
+   "unii": "183E4W213W",
+   "name": "CALCIUM ASCORBATE",
+   "name_variants": [
+    "CALCIUM ASCORBATE"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5
+   },
+   "example_setids": [
+    "9b71b219-91ae-46b2-8fb5-d3d118d73873",
+    "430eb254-39a3-4642-95b5-17009a2610b5",
+    "5e34e3d7-74f6-4e56-8a48-e6ed886f5aff",
+    "5fbe6e38-60e6-4d6d-bb8f-191755c3d2fa",
+    "6bffb66f-6b1b-44e2-ba4d-211091e99ef7"
+   ]
+  },
+  {
+   "unii": "N9PR3490H9",
+   "name": ".ALPHA.-TOCOPHEROL, D-",
+   "name_variants": [
+    ".ALPHA.-TOCOPHEROL, D-"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5
+   },
+   "example_setids": [
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf",
+    "a039781e-e59e-4423-84b4-8a8753706731",
+    "4eb71974-0bd1-41e6-8792-98afe2ec97e6",
+    "5fbe6e38-60e6-4d6d-bb8f-191755c3d2fa",
+    "a6e66b41-30c7-41dc-8cb7-630954027193"
+   ]
+  },
+  {
+   "unii": "639KR60Q1Q",
+   "name": "GELSEMIUM SEMPERVIRENS ROOT",
+   "name_variants": [
+    "GELSEMIUM SEMPERVIRENS ROOT"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "c442a928-4745-40d9-e053-2a95a90ad36c",
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "11E6VI8VEG",
+   "name": "PHYTOLACCA AMERICANA ROOT",
+   "name_variants": [
+    "PHYTOLACCA AMERICANA ROOT"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "c442a928-4745-40d9-e053-2a95a90ad36c",
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961",
+    "319ee2fe-58e3-495e-bf0d-df201f6fbb1c"
+   ]
+  },
+  {
+   "unii": "6IO182RP7A",
+   "name": "TOXICODENDRON PUBESCENS LEAF",
+   "name_variants": [
+    "TOXICODENDRON PUBESCENS LEAF"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 5,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961",
+    "862e062b-e00d-42ae-9b96-6230d2092db3"
+   ]
+  },
+  {
+   "unii": "1HG84L3525",
+   "name": "FORMALDEHYDE",
+   "name_variants": [
+    "FORMALDEHYDE"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 5,
+    "SOI2LOH54Z": 5
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a",
+    "e39235ea-2a2f-44a7-92d6-fb1d428ebabd",
+    "319ee2fe-58e3-495e-bf0d-df201f6fbb1c",
+    "8eda3e2f-8991-4f2c-8077-9b711261f71b"
+   ]
+  },
+  {
+   "unii": "F8DRP5BB29",
+   "name": "POLYSILICONE-15",
+   "name_variants": [
+    "POLYSILICONE-15"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "9YQ9DI1W42": 3,
+    "15FIX9V2JP": 3,
+    "4X49Y0596W": 2,
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 1,
+    "V06SV4M95S": 1,
+    "XQN8R9SAK4": 1,
+    "M94R1PM439": 1,
+    "ANQ870JD20": 1
+   },
+   "example_setids": [
+    "a52265f1-712f-46c7-80e4-c0b50d8b55e6",
+    "fe95fdbf-73df-a587-e053-6394a90a53a0",
+    "a7da1a3d-4800-4671-956d-b6477b2c809c",
+    "0f8e08bf-4b14-bdad-e063-6394a90a34e1",
+    "2dc19f13-1dad-470e-8267-3c72267f3156"
+   ]
+  },
+  {
+   "unii": "RMB44WO89X",
+   "name": "HYDROXYPROLINE",
+   "name_variants": [
+    "HYDROXYPROLINE"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 5,
+    "15FIX9V2JP": 4,
+    "SOI2LOH54Z": 1,
+    "4X49Y0596W": 1,
+    "9YQ9DI1W42": 1,
+    "ANQ870JD20": 1
+   },
+   "example_setids": [
+    "3b4ab30b-920a-4790-8f3b-8c744f2f6a57",
+    "77a3cfe0-ee59-4964-848f-650023cbb726",
+    "5a62f2bb-907d-41d8-a82a-ec1b59dd6af3",
+    "adef3aa6-3369-4da2-b7c4-37d80ccdad66",
+    "72d00b26-5e1f-4403-afab-dbeddc37f359"
+   ]
+  },
+  {
+   "unii": "MLT3645I99",
+   "name": "BISPHENOL A",
+   "name_variants": [
+    "BISPHENOL A"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 5,
+    "SOI2LOH54Z": 5
+   },
+   "example_setids": [
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a",
+    "e39235ea-2a2f-44a7-92d6-fb1d428ebabd"
+   ]
+  },
+  {
+   "unii": "4632WW1X5A",
+   "name": "GLYPHOSATE",
+   "name_variants": [
+    "GLYPHOSATE"
+   ],
+   "product_count": 5,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 5,
+    "SOI2LOH54Z": 5
+   },
+   "example_setids": [
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a",
+    "e39235ea-2a2f-44a7-92d6-fb1d428ebabd"
+   ]
+  },
+  {
+   "unii": "8SKN0B0MIM",
+   "name": "BENZOIC ACID",
+   "name_variants": [
+    "BENZOIC ACID"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3,
+    "15FIX9V2JP": 2,
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98",
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1",
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6"
+   ]
+  },
+  {
+   "unii": "27YLU75U4W",
+   "name": "PHOSPHORUS",
+   "name_variants": [
+    "PHOSPHORUS"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4,
+    "15FIX9V2JP": 2
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98",
+    "f4378d84-73d5-2170-e053-2a95a90a41c6",
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "O8232NY3SJ",
+   "name": "STARCH, CORN",
+   "name_variants": [
+    "STARCH, CORN"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "9f12dee2-7afa-45e9-a729-0fd42bb77715",
+    "ffc92a0f-a7cf-4a46-b2f1-089df2bbb96b",
+    "e39032d1-c8cd-4a41-af10-126970b8ad38",
+    "e4a621d1-5687-413f-b0f6-a14ca4a21104"
+   ]
+  },
+  {
+   "unii": "H4N855PNZ1",
+   "name": ".ALPHA.-TOCOPHEROL",
+   "name_variants": [
+    ".ALPHA.-TOCOPHEROL"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3,
+    "5A68WGF6WM": 1,
+    "G63QQF2NOX": 1,
+    "15FIX9V2JP": 1,
+    "4X49Y0596W": 1,
+    "PWZ1720CBH": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "426c0602-63a5-104b-e063-6294a90ae964",
+    "07131644-0195-8510-e063-6294a90acd0f",
+    "e858f2b0-68d6-4b87-ac32-a1cb74282e4d",
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e"
+   ]
+  },
+  {
+   "unii": "339NCG44TV",
+   "name": "PHENOL",
+   "name_variants": [
+    "PHENOL"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3,
+    "4Y5P7MUD51": 1,
+    "4X49Y0596W": 1
+   },
+   "example_setids": [
+    "327038a1-b825-1199-e063-6394a90a7f5f",
+    "81787b60-bd34-67a3-e053-2a91aa0abc75",
+    "83828dc6-a801-6f41-e053-2991aa0a524b",
+    "4121d671-521c-4f36-b2db-652c13f730c6"
+   ]
+  },
+  {
+   "unii": "RN2HC612GY",
+   "name": "CAIRINA MOSCHATA HEART/LIVER AUTOLYSATE",
+   "name_variants": [
+    "CAIRINA MOSCHATA HEART/LIVER AUTOLYSATE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "c442a928-4745-40d9-e053-2a95a90ad36c",
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "R9HH0NDE2E",
+   "name": "INFLUENZA A VIRUS",
+   "name_variants": [
+    "INFLUENZA A VIRUS",
+    "INFLUENZA A VIRUS WHOLE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "c442a928-4745-40d9-e053-2a95a90ad36c",
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "86Q357L16B",
+   "name": "ZINC CHLORIDE",
+   "name_variants": [
+    "ZINC CHLORIDE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "c442a928-4745-40d9-e053-2a95a90ad36c",
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "3M4G523W1G",
+   "name": "SILVER",
+   "name_variants": [
+    "SILVER"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "15FIX9V2JP": 3
+   },
+   "example_setids": [
+    "f4378d84-73d5-2170-e053-2a95a90a41c6",
+    "a84278ef-350b-6ebb-e053-2995a90ac6d5",
+    "0a8e1c7f-f7cc-43e7-956e-48524777012e",
+    "a445f16a-2b6c-a220-e053-2995a90ac12a"
+   ]
+  },
+  {
+   "unii": "T7J046YI2B",
+   "name": "BRYONIA ALBA ROOT",
+   "name_variants": [
+    "BRYONIA ALBA ROOT"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "f4378d84-73d5-2170-e053-2a95a90a41c6",
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "TC2D6JAD40",
+   "name": "DIPHENHYDRAMINE HYDROCHLORIDE",
+   "name_variants": [
+    "DIPHENHYDRAMINE HYDROCHLORIDE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2,
+    "V06SV4M95S": 2,
+    "4X49Y0596W": 2,
+    "G63QQF2NOX": 2,
+    "5A68WGF6WM": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "6f68cbbb-6269-4bb3-8cc9-50b146703b42",
+    "12f880e4-9f9e-4461-b0c2-884ed82272a9",
+    "f57bc089-405b-cdcd-e053-2995a90a9d12",
+    "095855ef-85f5-dacd-e063-6294a90a597c"
+   ]
+  },
+  {
+   "unii": "3XUS85K0RA",
+   "name": "BUTYLENE GLYCOL",
+   "name_variants": [
+    "BUTYLENE GLYCOL"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "5A68WGF6WM": 3,
+    "G63QQF2NOX": 3,
+    "15FIX9V2JP": 3,
+    "4X49Y0596W": 3,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 3,
+    "V06SV4M95S": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "1d044a83-db6e-299c-e063-6394a90ac09c",
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2",
+    "dfd8be45-7a69-acf3-e053-2a95a90a4b38"
+   ]
+  },
+  {
+   "unii": "5DQP25600A",
+   "name": "SODIUM SELENATE",
+   "name_variants": [
+    "SODIUM SELENATE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "eb18487c-5a55-4f2d-a59d-731788508171",
+    "00c008e9-f314-4d35-bb2a-6140f970d429",
+    "a2506c4b-63d2-4b55-930e-15f74c1637cc",
+    "c920c091-1eef-49e1-a697-eb5bf6aae145"
+   ]
+  },
+  {
+   "unii": "1D1K0N0VVC",
+   "name": "VITAMIN A PALMITATE",
+   "name_variants": [
+    "VITAMIN A PALMITATE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "a039781e-e59e-4423-84b4-8a8753706731",
+    "4eb71974-0bd1-41e6-8792-98afe2ec97e6",
+    "a6e66b41-30c7-41dc-8cb7-630954027193",
+    "30ee4797-f1cd-4169-9434-69300dbecc86"
+   ]
+  },
+  {
+   "unii": "6WQ62TAQ6Z",
+   "name": "IRON PENTACARBONYL",
+   "name_variants": [
+    "IRON PENTACARBONYL"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "5fbe6e38-60e6-4d6d-bb8f-191755c3d2fa",
+    "6f780f7c-e712-4961-9752-6231213856e8",
+    "a6db9e3b-610b-4225-a7b5-2318567d937c",
+    "1af224e5-440b-4376-bcb6-625563a4bf29"
+   ]
+  },
+  {
+   "unii": "VBJ9L90P4L",
+   "name": "IRON PROTEIN SUCCINYLATE",
+   "name_variants": [
+    "IRON PROTEIN SUCCINYLATE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "7f085be5-1e64-48de-b74d-8bd4d51115fc",
+    "dbf5bb0d-fe79-4ba9-84c1-7442b0e66cef",
+    "0b2d95e4-5846-47dd-bddf-53a7db0dadbe",
+    "2d7a7f8e-81ac-4486-811b-beaab6b0d3f8"
+   ]
+  },
+  {
+   "unii": "IW3QLZ8MRC",
+   "name": "FERROUS BISGLYCINATE HYDROCHLORIDE",
+   "name_variants": [
+    "FERROUS BISGLYCINATE HYDROCHLORIDE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "7f085be5-1e64-48de-b74d-8bd4d51115fc",
+    "dbf5bb0d-fe79-4ba9-84c1-7442b0e66cef",
+    "0b2d95e4-5846-47dd-bddf-53a7db0dadbe",
+    "2d7a7f8e-81ac-4486-811b-beaab6b0d3f8"
+   ]
+  },
+  {
+   "unii": "U6WSN5SQ1Z",
+   "name": "ZINC GLUCONATE",
+   "name_variants": [
+    "ZINC GLUCONATE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2,
+    "TL2TJE8QTX": 2
+   },
+   "example_setids": [
+    "3728e3fb-4500-4be2-8b1c-50df511b2d1a",
+    "f7213e28-b85d-46fc-8ad7-9067b7e3e51a",
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99",
+    "7848062d-d9e0-434a-bd07-7e08bac1f02c"
+   ]
+  },
+  {
+   "unii": "C9H2L21V7U",
+   "name": "MEDIUM-CHAIN TRIGLYCERIDES",
+   "name_variants": [
+    "MEDIUM-CHAIN TRIGLYCERIDES"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "G63QQF2NOX": 2,
+    "4Y5P7MUD51": 2,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "958c5e9c-daa6-4aed-a9aa-f72041d0d67c",
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6",
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6",
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc"
+   ]
+  },
+  {
+   "unii": "T0H3L6C7I5",
+   "name": "FORMALDEHYDE SOLUTION",
+   "name_variants": [
+    "FORMALDEHYDE SOLUTION"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 4,
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "4G174V5051",
+   "name": "BETA VULGARIS",
+   "name_variants": [
+    "BETA VULGARIS",
+    "BETA VULGARIS WHOLE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 4,
+    "SOI2LOH54Z": 4
+   },
+   "example_setids": [
+    "25036c26-1c21-4e5a-b4db-b8e177458341",
+    "d3c163e3-118e-499e-ac73-bf5af08bab7a",
+    "e39235ea-2a2f-44a7-92d6-fb1d428ebabd",
+    "8eda3e2f-8991-4f2c-8077-9b711261f71b"
+   ]
+  },
+  {
+   "unii": "0A5MM307FC",
+   "name": "CARBOMER HOMOPOLYMER, UNSPECIFIED TYPE",
+   "name_variants": [
+    "CARBOMER HOMOPOLYMER, UNSPECIFIED TYPE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "15FIX9V2JP": 2,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 4,
+    "95OOS7VE0Y": 2
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2",
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc",
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "9M64UO4C25",
+   "name": "CETEARYL ETHYLHEXANOATE",
+   "name_variants": [
+    "CETEARYL ETHYLHEXANOATE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 2,
+    "95OOS7VE0Y": 2
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6",
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc",
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "701M4TTV9O",
+   "name": "BENZOPHENONE",
+   "name_variants": [
+    "BENZOPHENONE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "G63QQF2NOX": 3,
+    "4Y5P7MUD51": 2,
+    "4X49Y0596W": 2,
+    "V06SV4M95S": 1,
+    "5A68WGF6WM": 1
+   },
+   "example_setids": [
+    "c16e8c37-6773-4fc9-9ea8-bda005742988",
+    "bb41535e-5970-4f3a-9def-685cdc183ca9",
+    "8d343fec-85a7-613b-e053-2a95a90a4a78",
+    "5a68508b-f1fa-4f03-b28a-554e24cf58d6"
+   ]
+  },
+  {
+   "unii": "94ZLA3W45F",
+   "name": "ARGININE",
+   "name_variants": [
+    "ARGININE"
+   ],
+   "product_count": 4,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 4
+   },
+   "example_setids": [
+    "fe274cab-a945-4379-a92c-c8f18bd63c1e",
+    "0d65128b-8eb7-440b-870a-7e3be18152b3",
+    "5d0feba6-f5c7-4b46-8da1-8effcc98c8ec",
+    "e3f7cd1d-a5cd-4baf-a62b-c55e5768ccf2"
+   ]
+  },
+  {
+   "unii": "2DI9HA706A",
+   "name": "ESTRONE",
+   "name_variants": [
+    "ESTRONE"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3,
+    "15FIX9V2JP": 2
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98",
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "2P299V784P",
+   "name": "LEAD",
+   "name_variants": [
+    "LEAD"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3,
+    "15FIX9V2JP": 2
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98",
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "YUL4LO94HK",
+   "name": "RESORCINOL",
+   "name_variants": [
+    "RESORCINOL"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3,
+    "15FIX9V2JP": 2
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98",
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "F2VW3D43YT",
+   "name": "AZELAIC ACID",
+   "name_variants": [
+    "AZELAIC ACID"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "511eaced-c4d8-ae94-e063-6394a90a320e",
+    "512185a5-5c1d-ef9f-e063-6394a90a81af",
+    "4c531280-bc5b-1cf2-e063-6394a90a034a"
+   ]
+  },
+  {
+   "unii": "P0M7O4Y7YD",
+   "name": "CALENDULA OFFICINALIS FLOWER",
+   "name_variants": [
+    "CALENDULA OFFICINALIS FLOWER"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "4cd03bed-99be-e4e8-e063-6294a90a9454",
+    "48c1c11d-296b-5e48-e054-00144ff8d46c",
+    "4833e5fb-d6f3-653c-e054-00144ff8d46c"
+   ]
+  },
+  {
+   "unii": "512OYT1CRR",
+   "name": "COCOA BUTTER",
+   "name_variants": [
+    "COCOA BUTTER"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "5516f800-d3fa-4b90-a3eb-c0bdf3183b9b",
+    "339576cb-8ec5-4da9-9c5c-daaed1610a5b",
+    "1e5ea5fd-4394-4b7c-bcbc-6c443d1135d7"
+   ]
+  },
+  {
+   "unii": "6K2W7T9V6Y",
+   "name": "CHOLINE BITARTRATE",
+   "name_variants": [
+    "CHOLINE BITARTRATE"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf",
+    "17559a44-94b7-9ca0-e063-6294a90a2123",
+    "7848062d-d9e0-434a-bd07-7e08bac1f02c"
+   ]
+  },
+  {
+   "unii": "LU4B53JYVE",
+   "name": ".ALPHA.-TOCOPHEROL SUCCINATE, D-",
+   "name_variants": [
+    ".ALPHA.-TOCOPHEROL SUCCINATE, D-"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "b9b71fa4-89c7-4f5b-8174-950649434ba5",
+    "6aead698-0370-4d05-9e22-61b9ea5f6b61",
+    "c920c091-1eef-49e1-a697-eb5bf6aae145"
+   ]
+  },
+  {
+   "unii": "LRX7AJ16DT",
+   "name": "CUPRIC SULFATE",
+   "name_variants": [
+    "CUPRIC SULFATE"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "b9b71fa4-89c7-4f5b-8174-950649434ba5",
+    "5fbe6e38-60e6-4d6d-bb8f-191755c3d2fa",
+    "6bffb66f-6b1b-44e2-ba4d-211091e99ef7"
+   ]
+  },
+  {
+   "unii": "FM5526K07A",
+   "name": "ZINC ACETATE",
+   "name_variants": [
+    "ZINC ACETATE"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "V06SV4M95S": 2,
+    "4X49Y0596W": 2,
+    "G63QQF2NOX": 2,
+    "5A68WGF6WM": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "c442a928-4745-40d9-e053-2a95a90ad36c",
+    "f57bc089-405b-cdcd-e053-2995a90a9d12",
+    "095855ef-85f5-dacd-e063-6294a90a597c"
+   ]
+  },
+  {
+   "unii": "1314JZ2X6W",
+   "name": "INFLUENZA B VIRUS",
+   "name_variants": [
+    "INFLUENZA B VIRUS",
+    "INFLUENZA B VIRUS WHOLE"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "c442a928-4745-40d9-e053-2a95a90ad36c",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "K49155WL9Y",
+   "name": "SHEA BUTTER",
+   "name_variants": [
+    "SHEA BUTTER"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2,
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "263be671-740b-1228-e063-6394a90ad2c7",
+    "218451e8-d0d2-341b-e063-6394a90a489e",
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "R4KO0DY52L",
+   "name": "CHLORHEXIDINE",
+   "name_variants": [
+    "CHLORHEXIDINE"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "263be671-740b-1228-e063-6394a90ad2c7",
+    "2509eeca-d9df-b161-e063-6394a90abb54",
+    "218451e8-d0d2-341b-e063-6394a90a489e"
+   ]
+  },
+  {
+   "unii": "LKG8494WBH",
+   "name": "BENZYL ALCOHOL",
+   "name_variants": [
+    "BENZYL ALCOHOL"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3,
+    "15FIX9V2JP": 2
+   },
+   "example_setids": [
+    "6f68cbbb-6269-4bb3-8cc9-50b146703b42",
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "KV2JZ1BI6Z",
+   "name": "PYRIDOXINE",
+   "name_variants": [
+    "PYRIDOXINE"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "07131644-0195-8510-e063-6294a90acd0f",
+    "e858f2b0-68d6-4b87-ac32-a1cb74282e4d",
+    "2da88fad-39b0-4d6d-a65e-c7a8b66a96b0"
+   ]
+  },
+  {
+   "unii": "XGF7L72M0F",
+   "name": "FISH OIL",
+   "name_variants": [
+    "FISH OIL"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "a039781e-e59e-4423-84b4-8a8753706731",
+    "4eb71974-0bd1-41e6-8792-98afe2ec97e6",
+    "a6e66b41-30c7-41dc-8cb7-630954027193"
+   ]
+  },
+  {
+   "unii": "WAT0DDB505",
+   "name": "CALCIUM SULFATE",
+   "name_variants": [
+    "CALCIUM SULFATE"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "21c64db9-718e-4fbd-9baf-6ab101940595",
+    "58754e85-0104-44ec-bb0a-acc64677e329",
+    "157d1a6c-9596-4118-9792-f195edd6d90f"
+   ]
+  },
+  {
+   "unii": "5EF0HWI5WU",
+   "name": "BAPTISIA TINCTORIA ROOT",
+   "name_variants": [
+    "BAPTISIA TINCTORIA ROOT"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "S546YLW6E6",
+   "name": "EUCALYPTUS GLOBULUS LEAF",
+   "name_variants": [
+    "EUCALYPTUS GLOBULUS LEAF"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "1W0775VX6E",
+   "name": "EUPATORIUM PERFOLIATUM FLOWERING TOP",
+   "name_variants": [
+    "EUPATORIUM PERFOLIATUM FLOWERING TOP"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "J10PD1AQ0N",
+   "name": "WYETHIA HELENIOIDES ROOT",
+   "name_variants": [
+    "WYETHIA HELENIOIDES ROOT"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "H2ZEY72PME",
+   "name": "ZINC ACETATE ANHYDROUS",
+   "name_variants": [
+    "ZINC ACETATE ANHYDROUS"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "922e1328-8237-45f3-98d8-b6e467c1096e",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "3B8D35Y7S4",
+   "name": "LACTIC ACID, DL-",
+   "name_variants": [
+    "LACTIC ACID, DL-"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "862e062b-e00d-42ae-9b96-6230d2092db3",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "R57ZHV85D4",
+   "name": "BORIC ACID",
+   "name_variants": [
+    "BORIC ACID"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 3
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "157d1a6c-9596-4118-9792-f195edd6d90f",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "SD418S06XD",
+   "name": "ETHYL METHOXYCINNAMATE",
+   "name_variants": [
+    "ETHYL METHOXYCINNAMATE"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "V06SV4M95S": 1,
+    "5A68WGF6WM": 2
+   },
+   "example_setids": [
+    "1ce0d6c4-e3cc-d9b9-e063-6294a90a9199",
+    "197e8a7b-1179-d625-e063-6294a90ae12d",
+    "1c415f40-7462-c66f-e063-6294a90ae9ea"
+   ]
+  },
+  {
+   "unii": "0RBV727H71",
+   "name": "LINOLENIC ACID",
+   "name_variants": [
+    "LINOLENIC ACID"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 3,
+    "15FIX9V2JP": 2,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2",
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "023C2WHX2V",
+   "name": "TROMETHAMINE",
+   "name_variants": [
+    "TROMETHAMINE"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "15FIX9V2JP": 3,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 3,
+    "4Y5P7MUD51": 3,
+    "ANQ870JD20": 1,
+    "9YQ9DI1W42": 1
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2",
+    "e6937dda-afe6-4f65-83e8-1a5a6ba15390"
+   ]
+  },
+  {
+   "unii": "9KJL21T0QJ",
+   "name": "LINOLEIC ACID",
+   "name_variants": [
+    "LINOLEIC ACID"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 3,
+    "15FIX9V2JP": 2,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2",
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "9M7A3K4339",
+   "name": "C12-20 ACID PEG-8 ESTER",
+   "name_variants": [
+    "C12-20 ACID PEG-8 ESTER"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "4Y5P7MUD51": 2,
+    "95OOS7VE0Y": 2
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc",
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "4ELV7Z65AP",
+   "name": "STEARIC ACID",
+   "name_variants": [
+    "STEARIC ACID"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 3,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "77a3cfe0-ee59-4964-848f-650023cbb726",
+    "5a62f2bb-907d-41d8-a82a-ec1b59dd6af3"
+   ]
+  },
+  {
+   "unii": "2WID9OCG7P",
+   "name": "HYDROLYSED MARINE COLLAGEN (ENZYMATIC; 2000 MW)",
+   "name_variants": [
+    "HYDROLYSED MARINE COLLAGEN (ENZYMATIC; 2000 MW)"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 2,
+    "4Y5P7MUD51": 2,
+    "5A68WGF6WM": 1,
+    "8NT850T0YS": 1,
+    "9YQ9DI1W42": 1
+   },
+   "example_setids": [
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6",
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6",
+    "3f605561-e310-5bdb-e063-6394a90a28a8"
+   ]
+  },
+  {
+   "unii": "936JST6JCN",
+   "name": "CETYL ALCOHOL",
+   "name_variants": [
+    "CETYL ALCOHOL"
+   ],
+   "product_count": 3,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 3,
+    "95OOS7VE0Y": 2
+   },
+   "example_setids": [
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6",
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc",
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "8PI54V663Y",
+   "name": "OATMEAL",
+   "name_variants": [
+    "OATMEAL"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 1,
+    "SOI2LOH54Z": 2,
+    "5A68WGF6WM": 1,
+    "4X49Y0596W": 1,
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "a13f0275-5add-4464-88d4-ff9823274325",
+    "385dd757-740b-8324-e063-6294a90afeee"
+   ]
+  },
+  {
+   "unii": "BQN1B9B9HA",
+   "name": "POTASSIUM CARBONATE",
+   "name_variants": [
+    "POTASSIUM CARBONATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98",
+    "862e062b-e00d-42ae-9b96-6230d2092db3"
+   ]
+  },
+  {
+   "unii": "2788Z9758H",
+   "name": "GLYCYRRHIZA GLABRA (LICORICE) ROOT",
+   "name_variants": [
+    "GLYCYRRHIZA GLABRA (LICORICE) ROOT",
+    "GLYCYRRHIZA GLABRA"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "4f8ade09-4f7a-80bd-e063-6394a90a0843",
+    "225bb12a-9abc-b5c2-e063-6394a90ab57e"
+   ]
+  },
+  {
+   "unii": "YSE9PPT4TH",
+   "name": "SODIUM HYALURONATE",
+   "name_variants": [
+    "SODIUM HYALURONATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "4f8ade09-4f7a-80bd-e063-6394a90a0843",
+    "4dd1b722-4448-9675-e063-6294a90a5f4f"
+   ]
+  },
+  {
+   "unii": "ZY81Z83H0X",
+   "name": "ALOE VERA LEAF",
+   "name_variants": [
+    "ALOE VERA LEAF"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "4Y5P7MUD51": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "4cd03bed-99be-e4e8-e063-6294a90a9454",
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc"
+   ]
+  },
+  {
+   "unii": "362O9ITL9D",
+   "name": "ACETAMINOPHEN",
+   "name_variants": [
+    "ACETAMINOPHEN"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "4b8f7a5a-2fc4-ea00-e063-6294a90ab95b",
+    "4b1b7294-aca6-45fa-a008-c1869131b2a3"
+   ]
+  },
+  {
+   "unii": "VZJ9F3C3SB",
+   "name": "BERBERIS AQUIFOLIUM ROOT BARK",
+   "name_variants": [
+    "BERBERIS AQUIFOLIUM ROOT BARK",
+    "MAHONIA AQUIFOLIUM ROOT BARK"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "388de556-9a81-aecc-e063-6394a90a1e17",
+    "157d1a6c-9596-4118-9792-f195edd6d90f"
+   ]
+  },
+  {
+   "unii": "U1B11I423Z",
+   "name": "FERROUS GLUCONATE",
+   "name_variants": [
+    "FERROUS GLUCONATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "81e639d7-352e-4eaa-87d9-582da68b9728",
+    "7848062d-d9e0-434a-bd07-7e08bac1f02c"
+   ]
+  },
+  {
+   "unii": "G07GZ97H65",
+   "name": "CLOTRIMAZOLE",
+   "name_variants": [
+    "CLOTRIMAZOLE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "94bab0bd-c0b7-42f5-9e3c-911408817aed",
+    "c47f8a9c-9c86-4068-814e-05ab2090d19e"
+   ]
+  },
+  {
+   "unii": "826Y60901U",
+   "name": "BETAMETHASONE DIPROPIONATE",
+   "name_variants": [
+    "BETAMETHASONE DIPROPIONATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "94bab0bd-c0b7-42f5-9e3c-911408817aed",
+    "c47f8a9c-9c86-4068-814e-05ab2090d19e"
+   ]
+  },
+  {
+   "unii": "394XK0IH40",
+   "name": "PHOSPHATIDYL SERINE",
+   "name_variants": [
+    "PHOSPHATIDYL SERINE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "21469f58-1d70-774f-e063-6294a90af039",
+    "410c40fd-cf94-0301-e063-6294a90ae2de"
+   ]
+  },
+  {
+   "unii": "19FUJ2C58T",
+   "name": "GINKGO BILOBA LEAF",
+   "name_variants": [
+    "GINKGO BILOBA LEAF"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "21469f58-1d70-774f-e063-6294a90af039",
+    "410c40fd-cf94-0301-e063-6294a90ae2de"
+   ]
+  },
+  {
+   "unii": "04JA59TNSJ",
+   "name": "PHENYLEPHRINE HYDROCHLORIDE",
+   "name_variants": [
+    "PHENYLEPHRINE HYDROCHLORIDE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "6844ad63-512d-496a-9458-011894185b0d",
+    "80863615-a588-4178-a329-757f6530431e"
+   ]
+  },
+  {
+   "unii": "91MBZ8H3QO",
+   "name": "SODIUM BORATE",
+   "name_variants": [
+    "SODIUM BORATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3161469e-6402-607a-e054-00144ff88e88",
+    "157d1a6c-9596-4118-9792-f195edd6d90f"
+   ]
+  },
+  {
+   "unii": "AAN7QOV9EA",
+   "name": "ICOSAPENT",
+   "name_variants": [
+    "ICOSAPENT"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf",
+    "e5027852-b374-10e4-7acd-42f9ada83f81"
+   ]
+  },
+  {
+   "unii": "42Z2K6ZL8P",
+   "name": "MANGANESE",
+   "name_variants": [
+    "MANGANESE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "b9b71fa4-89c7-4f5b-8174-950649434ba5",
+    "2da88fad-39b0-4d6d-a65e-c7a8b66a96b0"
+   ]
+  },
+  {
+   "unii": "0R0008Q3JB",
+   "name": "CHROMIUM",
+   "name_variants": [
+    "CHROMIUM"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "b9b71fa4-89c7-4f5b-8174-950649434ba5",
+    "07131644-0195-8510-e063-6294a90acd0f"
+   ]
+  },
+  {
+   "unii": "73Y7P0K73Y",
+   "name": "ALPHA LIPOIC ACID",
+   "name_variants": [
+    "ALPHA LIPOIC ACID",
+    "THIOCTIC ACID"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "b9b71fa4-89c7-4f5b-8174-950649434ba5",
+    "c920c091-1eef-49e1-a697-eb5bf6aae145"
+   ]
+  },
+  {
+   "unii": "X72A60C9MT",
+   "name": "LUTEIN",
+   "name_variants": [
+    "LUTEIN"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "b9b71fa4-89c7-4f5b-8174-950649434ba5",
+    "c920c091-1eef-49e1-a697-eb5bf6aae145"
+   ]
+  },
+  {
+   "unii": "5K1UO2888Y",
+   "name": "BAPTISIA TINCTORIA",
+   "name_variants": [
+    "BAPTISIA TINCTORIA",
+    "BAPTISIA TINCTORIA WHOLE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "c442a928-4745-40d9-e053-2a95a90ad36c",
+    "f4378d84-73d5-2170-e053-2a95a90a41c6"
+   ]
+  },
+  {
+   "unii": "DD5FO1WKFU",
+   "name": "CAUSTICUM",
+   "name_variants": [
+    "CAUSTICUM"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "f4378d84-73d5-2170-e053-2a95a90a41c6",
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771"
+   ]
+  },
+  {
+   "unii": "V1IA3S3CUS",
+   "name": "CNIDIUM MONNIERI FRUIT EXTRACT",
+   "name_variants": [
+    "CNIDIUM MONNIERI FRUIT EXTRACT",
+    "CNIDIUM MONNIERI FRUIT"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "263be671-740b-1228-e063-6394a90ad2c7",
+    "218451e8-d0d2-341b-e063-6394a90a489e"
+   ]
+  },
+  {
+   "unii": "24WE03BX2T",
+   "name": "LEVOMENOL",
+   "name_variants": [
+    "LEVOMENOL"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "263be671-740b-1228-e063-6394a90ad2c7",
+    "218451e8-d0d2-341b-e063-6394a90a489e"
+   ]
+  },
+  {
+   "unii": "515610SU8C",
+   "name": "MACADAMIA OIL",
+   "name_variants": [
+    "MACADAMIA OIL"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "263be671-740b-1228-e063-6394a90ad2c7",
+    "218451e8-d0d2-341b-e063-6394a90a489e"
+   ]
+  },
+  {
+   "unii": "81AH48963U",
+   "name": "MOLYBDENUM",
+   "name_variants": [
+    "MOLYBDENUM"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "17559a44-94b7-9ca0-e063-6294a90a2123",
+    "07131644-0195-8510-e063-6294a90acd0f"
+   ]
+  },
+  {
+   "unii": "W00LYS4T26",
+   "name": "MANGANESE SULFATE",
+   "name_variants": [
+    "MANGANESE SULFATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "17559a44-94b7-9ca0-e063-6294a90a2123",
+    "07131644-0195-8510-e063-6294a90acd0f"
+   ]
+  },
+  {
+   "unii": "BR1SN1JS2W",
+   "name": "METHYLCOBALAMIN",
+   "name_variants": [
+    "METHYLCOBALAMIN"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "17559a44-94b7-9ca0-e063-6294a90a2123",
+    "a7382d84-1d5f-4d09-962f-b26f265af65e"
+   ]
+  },
+  {
+   "unii": "O80TY208ZW",
+   "name": "ARNICA MONTANA",
+   "name_variants": [
+    "ARNICA MONTANA"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "6b658f98-d6e9-9ac9-e053-2991aa0ab3b0",
+    "862e062b-e00d-42ae-9b96-6230d2092db3"
+   ]
+  },
+  {
+   "unii": "8406EY2OQA",
+   "name": "COBALAMIN",
+   "name_variants": [
+    "COBALAMIN"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "cb5c567a-8733-4004-832e-de8132b8da9e",
+    "adc77b02-a00f-430b-ae61-f89387b6fe3b"
+   ]
+  },
+  {
+   "unii": "19F5HK2737",
+   "name": "PANTOTHENIC ACID",
+   "name_variants": [
+    "PANTOTHENIC ACID"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "6aead698-0370-4d05-9e22-61b9ea5f6b61",
+    "c920c091-1eef-49e1-a697-eb5bf6aae145"
+   ]
+  },
+  {
+   "unii": "H7426RGB3L",
+   "name": "FERROUS ASPARTO GLYCINATE",
+   "name_variants": [
+    "FERROUS ASPARTO GLYCINATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "5fbe6e38-60e6-4d6d-bb8f-191755c3d2fa",
+    "6bffb66f-6b1b-44e2-ba4d-211091e99ef7"
+   ]
+  },
+  {
+   "unii": "RV823G6G67",
+   "name": "COPPER GLUCONATE",
+   "name_variants": [
+    "COPPER GLUCONATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "c920c091-1eef-49e1-a697-eb5bf6aae145",
+    "7848062d-d9e0-434a-bd07-7e08bac1f02c"
+   ]
+  },
+  {
+   "unii": "SB0N2N0WV6",
+   "name": "LYCOPENE",
+   "name_variants": [
+    "LYCOPENE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "4Y5P7MUD51": 1,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "c920c091-1eef-49e1-a697-eb5bf6aae145",
+    "d71b2d4b-a5db-4f69-a194-626466338efc"
+   ]
+  },
+  {
+   "unii": "7J95K7ID2S",
+   "name": "SCUTELLARIA BAICALENSIS ROOT",
+   "name_variants": [
+    "SCUTELLARIA BAICALENSIS ROOT"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "4Y5P7MUD51": 1,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "aeee6299-9b6e-1a4e-e053-2995a90a7ab2",
+    "225bb12a-9abc-b5c2-e063-6394a90ab57e"
+   ]
+  },
+  {
+   "unii": "ND2M416302",
+   "name": "ISOPROPYL ALCOHOL",
+   "name_variants": [
+    "ISOPROPYL ALCOHOL"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "aa1a2570-4076-3ed8-e053-2995a90ac5dd",
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "S003A158SB",
+   "name": "CINCHONA OFFICINALIS BARK",
+   "name_variants": [
+    "CINCHONA OFFICINALIS BARK"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "KPS1B1162N",
+   "name": "SOLANUM DULCAMARA TOP",
+   "name_variants": [
+    "SOLANUM DULCAMARA TOP"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771",
+    "f586ae3b-ae95-4dad-ba24-f497bc4e1961"
+   ]
+  },
+  {
+   "unii": "2679MF687A",
+   "name": "NIACIN",
+   "name_variants": [
+    "NIACIN"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "e858f2b0-68d6-4b87-ac32-a1cb74282e4d",
+    "7848062d-d9e0-434a-bd07-7e08bac1f02c"
+   ]
+  },
+  {
+   "unii": "SY7Q814VUP",
+   "name": "CALCIUM",
+   "name_variants": [
+    "CALCIUM"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "e858f2b0-68d6-4b87-ac32-a1cb74282e4d",
+    "7848062d-d9e0-434a-bd07-7e08bac1f02c"
+   ]
+  },
+  {
+   "unii": "EJ27X76M46",
+   "name": "UBIDECARENONE",
+   "name_variants": [
+    "UBIDECARENONE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "K0U68Q2TXA",
+   "name": "CORTICOTROPIN",
+   "name_variants": [
+    "CORTICOTROPIN"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "883WKN7W8X",
+   "name": "CORTISONE ACETATE",
+   "name_variants": [
+    "CORTISONE ACETATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "3T8H1794QW",
+   "name": "EUGENOL",
+   "name_variants": [
+    "EUGENOL"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "2KR89I4H1Y",
+   "name": "STEARYL ALCOHOL",
+   "name_variants": [
+    "STEARYL ALCOHOL"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "VCQ006KQ1E",
+   "name": "XYLITOL",
+   "name_variants": [
+    "XYLITOL"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "4R7X1O2820",
+   "name": "CHLORINE",
+   "name_variants": [
+    "CHLORINE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "1VPU26JZZ4",
+   "name": "POTASSIUM SORBATE",
+   "name_variants": [
+    "POTASSIUM SORBATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "506T60A25R",
+   "name": "SORBITOL",
+   "name_variants": [
+    "SORBITOL"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "8CRQ2TH63M",
+   "name": "ISOPROPYL PALMITATE",
+   "name_variants": [
+    "ISOPROPYL PALMITATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "Q40Q9N063P",
+   "name": "ACETIC ACID",
+   "name_variants": [
+    "ACETIC ACID"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "GN5P7K3T8S",
+   "name": "PHENYLBUTAZONE",
+   "name_variants": [
+    "PHENYLBUTAZONE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477",
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "9YY2F980SV",
+   "name": "MANGANESE GLUCONATE",
+   "name_variants": [
+    "MANGANESE GLUCONATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "34beae32-51e4-4bdc-8ca5-1d8d79f193b2",
+    "7848062d-d9e0-434a-bd07-7e08bac1f02c"
+   ]
+  },
+  {
+   "unii": "964MRK2PEL",
+   "name": "SELENOMETHIONINE",
+   "name_variants": [
+    "SELENOMETHIONINE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "34beae32-51e4-4bdc-8ca5-1d8d79f193b2",
+    "ad02306c-e1a3-441d-825e-d79047c61022"
+   ]
+  },
+  {
+   "unii": "3SCV180C9W",
+   "name": "BETAINE",
+   "name_variants": [
+    "BETAINE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 2,
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "4dbb36fe-9888-4806-8946-10cc0c81d270",
+    "9622b0a4-a4ae-403e-9645-16240faab3bd"
+   ]
+  },
+  {
+   "unii": "07V4DX094T",
+   "name": "SAMBUCUS NIGRA FLOWER",
+   "name_variants": [
+    "SAMBUCUS NIGRA FLOWER"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "3728e3fb-4500-4be2-8b1c-50df511b2d1a",
+    "f7213e28-b85d-46fc-8ad7-9067b7e3e51a"
+   ]
+  },
+  {
+   "unii": "U946SH95EE",
+   "name": "MILK THISTLE",
+   "name_variants": [
+    "MILK THISTLE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "b5778211-0e3e-44ef-bd65-a76a68cf1504",
+    "8a3b75ca-8fec-4318-8a55-8bde0b82637d"
+   ]
+  },
+  {
+   "unii": "IYR6K8KQ5K",
+   "name": "SOPHORA FLAVESCENS ROOT",
+   "name_variants": [
+    "SOPHORA FLAVESCENS ROOT"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "4X49Y0596W": 1
+   },
+   "example_setids": [
+    "225bb12a-9abc-b5c2-e063-6394a90ab57e",
+    "2e65d47e-f08e-4ff8-e063-6294a90a6d8b"
+   ]
+  },
+  {
+   "unii": "2UTZ0QC864",
+   "name": "ISCOTRIZINOL",
+   "name_variants": [
+    "ISCOTRIZINOL"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "4X49Y0596W": 1,
+    "15FIX9V2JP": 1,
+    "5A68WGF6WM": 1,
+    "XQN8R9SAK4": 2,
+    "ANQ870JD20": 1,
+    "8NT850T0YS": 1
+   },
+   "example_setids": [
+    "1cf0a682-d4c4-ce66-e063-6294a90a4a43",
+    "38898014-eefe-73ec-e063-6394a90a3738"
+   ]
+  },
+  {
+   "unii": "7QWM220FJH",
+   "name": "SQUALENE",
+   "name_variants": [
+    "SQUALENE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1,
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "a1538692-ca00-4e52-9b7e-409767ee27e1",
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "71DD5V995L",
+   "name": "CARBOMER COPOLYMER TYPE A (ALLYL PENTAERYTHRITOL CROSSLINKED)",
+   "name_variants": [
+    "CARBOMER COPOLYMER TYPE A (ALLYL PENTAERYTHRITOL CROSSLINKED)"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "15FIX9V2JP": 2,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2"
+   ]
+  },
+  {
+   "unii": "Z47NNT4J11",
+   "name": "POLY(METHYL METHACRYLATE; 450000 MW)",
+   "name_variants": [
+    "POLY(METHYL METHACRYLATE; 450000 MW)"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "15FIX9V2JP": 2,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2"
+   ]
+  },
+  {
+   "unii": "B697894SGQ",
+   "name": "POLYETHYLENE GLYCOL 400",
+   "name_variants": [
+    "POLYETHYLENE GLYCOL 400"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "15FIX9V2JP": 2,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2"
+   ]
+  },
+  {
+   "unii": "QN83US2B0N",
+   "name": "ASCORBYL PALMITATE",
+   "name_variants": [
+    "ASCORBYL PALMITATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "15FIX9V2JP": 2,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2"
+   ]
+  },
+  {
+   "unii": "O4M0347C6A",
+   "name": "C20-22 ALCOHOLS",
+   "name_variants": [
+    "C20-22 ALCOHOLS"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "15FIX9V2JP": 2,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2"
+   ]
+  },
+  {
+   "unii": "I670DAL4SZ",
+   "name": "CHLORPHENESIN",
+   "name_variants": [
+    "CHLORPHENESIN"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 2,
+    "G63QQF2NOX": 2,
+    "15FIX9V2JP": 2,
+    "4X49Y0596W": 2,
+    "PWZ1720CBH": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+    "ec83846f-11c0-8f59-e053-2995a90ab9d2"
+   ]
+  },
+  {
+   "unii": "230OU9XXE4",
+   "name": "GLYCERYL MONOSTEARATE",
+   "name_variants": [
+    "GLYCERYL MONOSTEARATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "4Y5P7MUD51": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc"
+   ]
+  },
+  {
+   "unii": "D81QY6I88E",
+   "name": "LINALOOL, (+/-)-",
+   "name_variants": [
+    "LINALOOL, (+/-)-"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "9O3K93S3TK",
+   "name": "TROLAMINE",
+   "name_variants": [
+    "TROLAMINE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "4Y5P7MUD51": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc"
+   ]
+  },
+  {
+   "unii": "9XP4LC555B",
+   "name": "ISOMETHYL-.ALPHA.-IONONE",
+   "name_variants": [
+    "ISOMETHYL-.ALPHA.-IONONE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6"
+   ]
+  },
+  {
+   "unii": "P01OUT964K",
+   "name": ".BETA.-CITRONELLOL, (R)-",
+   "name_variants": [
+    ".BETA.-CITRONELLOL, (R)-"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb",
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6"
+   ]
+  },
+  {
+   "unii": "7D4Q5YJ8NV",
+   "name": "BIS-ETHYLHEXYL HYDROXYDIMETHOXY BENZYLMALONATE",
+   "name_variants": [
+    "BIS-ETHYLHEXYL HYDROXYDIMETHOXY BENZYLMALONATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 2,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "d189a85e-9537-5d8b-e053-2a95a90ac409",
+    "d18a42cb-b735-9c36-e053-2a95a90a25ea"
+   ]
+  },
+  {
+   "unii": "S3KFG6Q5X8",
+   "name": "ETHYLHEXYL METHOXYCRYLENE",
+   "name_variants": [
+    "ETHYLHEXYL METHOXYCRYLENE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "96cd06b2-921a-1647-e053-2995a90a5271",
+    "c16e8c37-6773-4fc9-9ea8-bda005742988"
+   ]
+  },
+  {
+   "unii": "WQZ3G9PF0H",
+   "name": "ATROPA BELLADONNA",
+   "name_variants": [
+    "ATROPA BELLADONNA"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 2,
+    "SOI2LOH54Z": 2
+   },
+   "example_setids": [
+    "319ee2fe-58e3-495e-bf0d-df201f6fbb1c",
+    "8eda3e2f-8991-4f2c-8077-9b711261f71b"
+   ]
+  },
+  {
+   "unii": "241ATL177A",
+   "name": "SOYBEAN OIL",
+   "name_variants": [
+    "SOYBEAN OIL"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 2,
+    "4X49Y0596W": 2,
+    "95OOS7VE0Y": 2,
+    "15FIX9V2JP": 2
+   },
+   "example_setids": [
+    "ffec35ba-1267-461f-bfcd-25ed28482ada",
+    "acc70903-6f3a-45db-a1d5-f586341d2214"
+   ]
+  },
+  {
+   "unii": "U3RSY48JW5",
+   "name": "BENZOCAINE",
+   "name_variants": [
+    "BENZOCAINE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "V06SV4M95S": 2,
+    "4X49Y0596W": 2,
+    "G63QQF2NOX": 2,
+    "5A68WGF6WM": 2,
+    "4Y5P7MUD51": 2
+   },
+   "example_setids": [
+    "f57bc089-405b-cdcd-e053-2995a90a9d12",
+    "095855ef-85f5-dacd-e063-6294a90a597c"
+   ]
+  },
+  {
+   "unii": "7X6O37OK2I",
+   "name": ".ALPHA.-HEXYLCINNAMALDEHYDE",
+   "name_variants": [
+    ".ALPHA.-HEXYLCINNAMALDEHYDE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 2,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6",
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "GFD7C86Q1W",
+   "name": "LIMONENE, (+)-",
+   "name_variants": [
+    "LIMONENE, (+)-"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 2,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6",
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "FCZ5MH785I",
+   "name": "GLYCERYL STEARATE SE",
+   "name_variants": [
+    "GLYCERYL STEARATE SE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 2,
+    "95OOS7VE0Y": 2
+   },
+   "example_setids": [
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc",
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "7THJ3EG9SY",
+   "name": "CHOLINE HYDROXIDE",
+   "name_variants": [
+    "CHOLINE HYDROXIDE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 2
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99",
+    "a7382d84-1d5f-4d09-962f-b26f265af65e"
+   ]
+  },
+  {
+   "unii": "4L6452S749",
+   "name": "INOSITOL",
+   "name_variants": [
+    "INOSITOL"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 2
+   },
+   "example_setids": [
+    "a7382d84-1d5f-4d09-962f-b26f265af65e",
+    "7848062d-d9e0-434a-bd07-7e08bac1f02c"
+   ]
+  },
+  {
+   "unii": "2EH13UN8D3",
+   "name": "BUTYLOCTYL SALICYLATE",
+   "name_variants": [
+    "BUTYLOCTYL SALICYLATE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "8NT850T0YS": 2,
+    "PWZ1720CBH": 2,
+    "XQN8R9SAK4": 2,
+    "ANQ870JD20": 2
+   },
+   "example_setids": [
+    "4e696d29-fbbb-4999-e063-6394a90a26a4",
+    "3dfe5db3-6a5b-24cd-e063-6394a90aa744"
+   ]
+  },
+  {
+   "unii": "DJO934BRBD",
+   "name": "ALFALFA",
+   "name_variants": [
+    "ALFALFA"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "4XYU5U00C4",
+   "name": "D&AMP;C BLACK NO. 2",
+   "name_variants": [
+    "D&AMP;C BLACK NO. 2"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "BJ7YPN79A1",
+   "name": "CETRARIA ISLANDICA SUBSP. ISLANDICA",
+   "name_variants": [
+    "CETRARIA ISLANDICA SUBSP. ISLANDICA"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "535G2ABX9M",
+   "name": "FUCUS VESICULOSUS",
+   "name_variants": [
+    "FUCUS VESICULOSUS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "88XHZ13131",
+   "name": "FUMARIC ACID",
+   "name_variants": [
+    "FUMARIC ACID"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "6EC706HI7F",
+   "name": "PORK LIVER",
+   "name_variants": [
+    "PORK LIVER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "3JYG22FD73",
+   "name": "WOOD CREOSOTE",
+   "name_variants": [
+    "WOOD CREOSOTE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "451W47IQ8X",
+   "name": "SODIUM CHLORIDE",
+   "name_variants": [
+    "SODIUM CHLORIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "I9O0E3H2ZE",
+   "name": "PARAFFIN",
+   "name_variants": [
+    "PARAFFIN"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "1C89KKC04E",
+   "name": "KEROSENE",
+   "name_variants": [
+    "KEROSENE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "YFH4WC535J",
+   "name": "PINE TAR",
+   "name_variants": [
+    "PINE TAR"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "W2469WNO6U",
+   "name": "PLANTAGO MAJOR",
+   "name_variants": [
+    "PLANTAGO MAJOR"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "I76KB35JEV",
+   "name": "PULSATILLA VULGARIS",
+   "name_variants": [
+    "PULSATILLA VULGARIS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "R74O7T8569",
+   "name": "RADIUM BROMIDE",
+   "name_variants": [
+    "RADIUM BROMIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "28A37T47QO",
+   "name": "PHENYL SALICYLATE",
+   "name_variants": [
+    "PHENYL SALICYLATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "M9VVZ08EKQ",
+   "name": "COMFREY ROOT",
+   "name_variants": [
+    "COMFREY ROOT"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "6YR2608RSU",
+   "name": "TOBACCO LEAF",
+   "name_variants": [
+    "TOBACCO LEAF"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "C5H0QJ6V7F",
+   "name": "TURPENTINE OIL",
+   "name_variants": [
+    "TURPENTINE OIL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "0B4FDL9I6P",
+   "name": "THYROID, UNSPECIFIED",
+   "name_variants": [
+    "THYROID, UNSPECIFIED"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "3IXW0F6P8W",
+   "name": "ELYMUS REPENS ROOT",
+   "name_variants": [
+    "ELYMUS REPENS ROOT"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b06b4794-e5bb-4ccd-87fd-37afca7b0f98"
+   ]
+  },
+  {
+   "unii": "VC855RRT77",
+   "name": "CAMELLIA SINENSIS LEAF OIL",
+   "name_variants": [
+    "CAMELLIA SINENSIS LEAF OIL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "587220c9-0ae9-3438-e063-6394a90a0a86"
+   ]
+  },
+  {
+   "unii": "8FP93ED6H2",
+   "name": "HAMAMELIS VIRGINIANA (WITCH HAZEL) LEAF WATER",
+   "name_variants": [
+    "HAMAMELIS VIRGINIANA (WITCH HAZEL) LEAF WATER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "587220c9-0ae9-3438-e063-6394a90a0a86"
+   ]
+  },
+  {
+   "unii": "K3D86KJ24N",
+   "name": "UNDECYLENIC ACID",
+   "name_variants": [
+    "UNDECYLENIC ACID"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "587220c9-0ae9-3438-e063-6394a90a0a86"
+   ]
+  },
+  {
+   "unii": "G2SH0XKK91",
+   "name": "RETINOL",
+   "name_variants": [
+    "RETINOL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "4f8ade09-4f7a-80bd-e063-6394a90a0843"
+   ]
+  },
+  {
+   "unii": "38H206R00R",
+   "name": "DIPEPTIDE DIAMINOBUTYROYL BENZYLAMIDE DIACETATE",
+   "name_variants": [
+    "DIPEPTIDE DIAMINOBUTYROYL BENZYLAMIDE DIACETATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "4f8ade09-4f7a-80bd-e063-6394a90a0843"
+   ]
+  },
+  {
+   "unii": "L4EL31FWIL",
+   "name": "ACETYL HEXAPEPTIDE-8",
+   "name_variants": [
+    "ACETYL HEXAPEPTIDE-8"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "4f8ade09-4f7a-80bd-e063-6394a90a0843"
+   ]
+  },
+  {
+   "unii": "Y1DFQ308G8",
+   "name": "ACETYL TETRAPEPTIDE-5",
+   "name_variants": [
+    "ACETYL TETRAPEPTIDE-5"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "4f8ade09-4f7a-80bd-e063-6394a90a0843"
+   ]
+  },
+  {
+   "unii": "6MW60CB71P",
+   "name": "3-O-ETHYL ASCORBIC ACID",
+   "name_variants": [
+    "3-O-ETHYL ASCORBIC ACID"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "4f8ade09-4f7a-80bd-e063-6394a90a0843"
+   ]
+  },
+  {
+   "unii": "8138AB7E8Y",
+   "name": "ECLIPTA PROSTRATA WHOLE",
+   "name_variants": [
+    "ECLIPTA PROSTRATA WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "4cd03bed-99be-e4e8-e063-6294a90a9454"
+   ]
+  },
+  {
+   "unii": "69VJ1LPN1S",
+   "name": "CANNABIS SATIVA SEED OIL",
+   "name_variants": [
+    "CANNABIS SATIVA SEED OIL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "4cd03bed-99be-e4e8-e063-6294a90a9454"
+   ]
+  },
+  {
+   "unii": "7M867G6T1U",
+   "name": "CENTELLA ASIATICA WHOLE",
+   "name_variants": [
+    "CENTELLA ASIATICA WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "388de556-9a81-aecc-e063-6394a90a1e17"
+   ]
+  },
+  {
+   "unii": "OSD78555ZM",
+   "name": "POTASSIUM BROMIDE",
+   "name_variants": [
+    "POTASSIUM BROMIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "388de556-9a81-aecc-e063-6394a90a1e17"
+   ]
+  },
+  {
+   "unii": "K89MJ0S5VY",
+   "name": "OXYMETAZOLINE HYDROCHLORIDE",
+   "name_variants": [
+    "OXYMETAZOLINE HYDROCHLORIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "c5d52f13-a649-9579-e053-2a95a90a062c"
+   ]
+  },
+  {
+   "unii": "V5VD430YW9",
+   "name": "ALOE",
+   "name_variants": [
+    "ALOE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "426c0602-63a5-104b-e063-6294a90ae964"
+   ]
+  },
+  {
+   "unii": "101I4J0U34",
+   "name": "WITCH HAZEL",
+   "name_variants": [
+    "WITCH HAZEL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "426c0602-63a5-104b-e063-6294a90ae964"
+   ]
+  },
+  {
+   "unii": "HDA46400N5",
+   "name": "PREVITAMIN D3",
+   "name_variants": [
+    "PREVITAMIN D3"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3161469e-6402-607a-e054-00144ff88e88"
+   ]
+  },
+  {
+   "unii": "98PI200987",
+   "name": "LIDOCAINE",
+   "name_variants": [
+    "LIDOCAINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "d2a769e2-afd0-aed2-e053-2995a90ad429"
+   ]
+  },
+  {
+   "unii": "DHA8014SS1",
+   "name": "ANTAZOLINE",
+   "name_variants": [
+    "ANTAZOLINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "9b71b219-91ae-46b2-8fb5-d3d118d73873"
+   ]
+  },
+  {
+   "unii": "NP3JD65NPY",
+   "name": "CALCIUM FORMATE",
+   "name_variants": [
+    "CALCIUM FORMATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf"
+   ]
+  },
+  {
+   "unii": "SFW1D987QV",
+   "name": "FERROUS BISGLYCINATE",
+   "name_variants": [
+    "FERROUS BISGLYCINATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf"
+   ]
+  },
+  {
+   "unii": "S033EH8359",
+   "name": "SODIUM ASCORBATE",
+   "name_variants": [
+    "SODIUM ASCORBATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf"
+   ]
+  },
+  {
+   "unii": "ZO763K43XR",
+   "name": "ALPHA-TOCOPHERYLQUINONE",
+   "name_variants": [
+    "ALPHA-TOCOPHERYLQUINONE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "2dd25bf2-f1a7-4bc4-bdf2-12d9065ea0cf"
+   ]
+  },
+  {
+   "unii": "IR986LE7DF",
+   "name": "SOLANUM DULCAMARA STEM",
+   "name_variants": [
+    "SOLANUM DULCAMARA STEM"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "f4378d84-73d5-2170-e053-2a95a90a41c6"
+   ]
+  },
+  {
+   "unii": "VB06AV5US8",
+   "name": "ECHINACEA ANGUSTIFOLIA",
+   "name_variants": [
+    "ECHINACEA ANGUSTIFOLIA"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "f4378d84-73d5-2170-e053-2a95a90a41c6"
+   ]
+  },
+  {
+   "unii": "MN0RX54EQA",
+   "name": "ZINC VALERATE DIHYDRATE",
+   "name_variants": [
+    "ZINC VALERATE DIHYDRATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "f4378d84-73d5-2170-e053-2a95a90a41c6"
+   ]
+  },
+  {
+   "unii": "T4423S18FM",
+   "name": "POTASSIUM DICHROMATE",
+   "name_variants": [
+    "POTASSIUM DICHROMATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "f4378d84-73d5-2170-e053-2a95a90a41c6"
+   ]
+  },
+  {
+   "unii": "660YQ98I10",
+   "name": "POTASSIUM CHLORIDE",
+   "name_variants": [
+    "POTASSIUM CHLORIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "f4378d84-73d5-2170-e053-2a95a90a41c6"
+   ]
+  },
+  {
+   "unii": "53GH7MZT1R",
+   "name": "MERCURIC CHLORIDE",
+   "name_variants": [
+    "MERCURIC CHLORIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "f4378d84-73d5-2170-e053-2a95a90a41c6"
+   ]
+  },
+  {
+   "unii": "4M1169RWJD",
+   "name": "PULSATILLA PATENS WHOLE",
+   "name_variants": [
+    "PULSATILLA PATENS WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "f4378d84-73d5-2170-e053-2a95a90a41c6"
+   ]
+  },
+  {
+   "unii": "M7T6H7D4IF",
+   "name": "POLYGALA SENEGA ROOT",
+   "name_variants": [
+    "POLYGALA SENEGA ROOT"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "f4378d84-73d5-2170-e053-2a95a90a41c6"
+   ]
+  },
+  {
+   "unii": "C5529G5JPQ",
+   "name": "GINGER",
+   "name_variants": [
+    "GINGER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "4b1b7294-aca6-45fa-a008-c1869131b2a3"
+   ]
+  },
+  {
+   "unii": "557II4LLC3",
+   "name": "FENNEL",
+   "name_variants": [
+    "FENNEL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "4b1b7294-aca6-45fa-a008-c1869131b2a3"
+   ]
+  },
+  {
+   "unii": "TA4JCF9S1J",
+   "name": "HIPPOPHAE RHAMNOIDES FRUIT OIL",
+   "name_variants": [
+    "HIPPOPHAE RHAMNOIDES FRUIT OIL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "2509eeca-d9df-b161-e063-6394a90abb54"
+   ]
+  },
+  {
+   "unii": "1Z74184RGV",
+   "name": "EGG PHOSPHOLIPIDS",
+   "name_variants": [
+    "EGG PHOSPHOLIPIDS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "2509eeca-d9df-b161-e063-6394a90abb54"
+   ]
+  },
+  {
+   "unii": "PH41D05744",
+   "name": "BENZETHONIUM CHLORIDE",
+   "name_variants": [
+    "BENZETHONIUM CHLORIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "4a8dbbe2-91cf-4003-898d-df721b2c31cf"
+   ]
+  },
+  {
+   "unii": "KXI2J76489",
+   "name": "IODOFORM",
+   "name_variants": [
+    "IODOFORM"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "bb1ce9d8-bd98-43e9-a773-2ba991f07e59"
+   ]
+  },
+  {
+   "unii": "A150AY412V",
+   "name": "CHROMIUM NICOTINATE",
+   "name_variants": [
+    "CHROMIUM NICOTINATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "17559a44-94b7-9ca0-e063-6294a90a2123"
+   ]
+  },
+  {
+   "unii": "569DQM74SC",
+   "name": "ACETATE ION",
+   "name_variants": [
+    "ACETATE ION"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "f05f4cec-3932-4198-9c86-d03bd13bc69d"
+   ]
+  },
+  {
+   "unii": "HBB4YPO93U",
+   "name": "CALCIUM THREONATE",
+   "name_variants": [
+    "CALCIUM THREONATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "5fbe6e38-60e6-4d6d-bb8f-191755c3d2fa"
+   ]
+  },
+  {
+   "unii": "S71T8B8Z6P",
+   "name": "CHROMIUM PICOLINATE",
+   "name_variants": [
+    "CHROMIUM PICOLINATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "c920c091-1eef-49e1-a697-eb5bf6aae145"
+   ]
+  },
+  {
+   "unii": "15E7C67EE8",
+   "name": "LAMINARIA DIGITATA",
+   "name_variants": [
+    "LAMINARIA DIGITATA"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "21c64db9-718e-4fbd-9baf-6ab101940595"
+   ]
+  },
+  {
+   "unii": "1K573LC5TV",
+   "name": "POTASSIUM SULFATE",
+   "name_variants": [
+    "POTASSIUM SULFATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "21c64db9-718e-4fbd-9baf-6ab101940595"
+   ]
+  },
+  {
+   "unii": "N9E3X5056Q",
+   "name": "BORON",
+   "name_variants": [
+    "BORON"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "319e1d98-3b70-6af4-e054-00144ff8d46c"
+   ]
+  },
+  {
+   "unii": "1BEM3U6LQQ",
+   "name": "REHMANNIA GLUTINOSA ROOT",
+   "name_variants": [
+    "REHMANNIA GLUTINOSA ROOT"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "aeee6299-9b6e-1a4e-e053-2995a90a7ab2"
+   ]
+  },
+  {
+   "unii": "FGL3685T2X",
+   "name": "CHAMOMILE",
+   "name_variants": [
+    "CHAMOMILE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "af2aa03b-2ad6-779d-e053-2a95a90a92fb"
+   ]
+  },
+  {
+   "unii": "42B5YD8F0K",
+   "name": "GLYCYRRHIZA URALENSIS ROOT",
+   "name_variants": [
+    "GLYCYRRHIZA URALENSIS ROOT"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "aeb22a48-94ee-62c5-e053-2a95a90a0284"
+   ]
+  },
+  {
+   "unii": "7M7E9A2C8J",
+   "name": "PAEONIA SUFFRUTICOSA ROOT",
+   "name_variants": [
+    "PAEONIA SUFFRUTICOSA ROOT"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "aeb22a48-94ee-62c5-e053-2a95a90a0284"
+   ]
+  },
+  {
+   "unii": "Z02066SV11",
+   "name": "ERIOBOTRYA JAPONICA LEAF",
+   "name_variants": [
+    "ERIOBOTRYA JAPONICA LEAF"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "aeb22a48-94ee-62c5-e053-2a95a90a0284"
+   ]
+  },
+  {
+   "unii": "VSW71SS07I",
+   "name": "LACHESIS MUTA VENOM",
+   "name_variants": [
+    "LACHESIS MUTA VENOM"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "e5ecfc11-d8e1-4341-bccb-a705a24dc771"
+   ]
+  },
+  {
+   "unii": "7QWA1RIO01",
+   "name": ".ALPHA.-TOCOPHEROL, DL-",
+   "name_variants": [
+    ".ALPHA.-TOCOPHEROL, DL-"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "6f780f7c-e712-4961-9752-6231213856e8"
+   ]
+  },
+  {
+   "unii": "Q65PL71Q1A",
+   "name": "LEVOMEFOLATE GLUCOSAMINE",
+   "name_variants": [
+    "LEVOMEFOLATE GLUCOSAMINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "6f780f7c-e712-4961-9752-6231213856e8"
+   ]
+  },
+  {
+   "unii": "8ZYQ1474W7",
+   "name": "SODIUM FLUORIDE",
+   "name_variants": [
+    "SODIUM FLUORIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "6f780f7c-e712-4961-9752-6231213856e8"
+   ]
+  },
+  {
+   "unii": "5688UTC01R",
+   "name": "TRETINOIN",
+   "name_variants": [
+    "TRETINOIN"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "24682288-1be4-42af-e054-00144ff88e88"
+   ]
+  },
+  {
+   "unii": "398IYQ16YV",
+   "name": "SUS SCROFA ADRENAL GLAND",
+   "name_variants": [
+    "SUS SCROFA ADRENAL GLAND"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "466251J72G",
+   "name": "PORK BRAIN",
+   "name_variants": [
+    "PORK BRAIN"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "X7BCI5P86H",
+   "name": "PORK KIDNEY",
+   "name_variants": [
+    "PORK KIDNEY"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "DIF093I037",
+   "name": "AMANITA MUSCARIA VAR. MUSCARIA FRUITING BODY",
+   "name_variants": [
+    "AMANITA MUSCARIA VAR. MUSCARIA FRUITING BODY"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "LZB7TFX1LT",
+   "name": "PROTORTONIA CACTI",
+   "name_variants": [
+    "PROTORTONIA CACTI"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "Q28R5GF371",
+   "name": "CONIUM MACULATUM FLOWERING TOP",
+   "name_variants": [
+    "CONIUM MACULATUM FLOWERING TOP"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "ZZ4AG7L7VM",
+   "name": "NAJA NAJA VENOM",
+   "name_variants": [
+    "NAJA NAJA VENOM"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "XJJ7QA858R",
+   "name": "LATRODECTUS MACTANS",
+   "name_variants": [
+    "LATRODECTUS MACTANS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "3Y5X6RT823",
+   "name": "CITHARACANTHUS SPINICRUS",
+   "name_variants": [
+    "CITHARACANTHUS SPINICRUS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "2A26YW7PNX",
+   "name": "HUMAN HERPESVIRUS 4",
+   "name_variants": [
+    "HUMAN HERPESVIRUS 4"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "9885M7D6JP",
+   "name": "HUMAN HERPESVIRUS 3",
+   "name_variants": [
+    "HUMAN HERPESVIRUS 3"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "HT3R7C012Q",
+   "name": "MEASLES VIRUS",
+   "name_variants": [
+    "MEASLES VIRUS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "FZJ641678T",
+   "name": "POLIOVIRUS",
+   "name_variants": [
+    "POLIOVIRUS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "77H9EM77P7",
+   "name": "HEPATITIS B VIRUS",
+   "name_variants": [
+    "HEPATITIS B VIRUS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "ADL68M27WD",
+   "name": "HUMAN COXSACKIEVIRUS B1",
+   "name_variants": [
+    "HUMAN COXSACKIEVIRUS B1"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "FYF75V7FDY",
+   "name": "HUMAN COXSACKIEVIRUS B4",
+   "name_variants": [
+    "HUMAN COXSACKIEVIRUS B4"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "3727c403-2a8e-4f99-89d8-57439d7bf477"
+   ]
+  },
+  {
+   "unii": "S2V45N7G3B",
+   "name": "FLAVONE",
+   "name_variants": [
+    "FLAVONE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "34beae32-51e4-4bdc-8ca5-1d8d79f193b2"
+   ]
+  },
+  {
+   "unii": "U4M5Y13FGM",
+   "name": "CHROMIC CHLORIDE CR-51",
+   "name_variants": [
+    "CHROMIC CHLORIDE CR-51"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "34beae32-51e4-4bdc-8ca5-1d8d79f193b2"
+   ]
+  },
+  {
+   "unii": "8EU82FAZ5J",
+   "name": "RIBOPRINE",
+   "name_variants": [
+    "RIBOPRINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "62d662f4-a16f-fca3-3bd7-2a407c7bbd13"
+   ]
+  },
+  {
+   "unii": "T66M6Y3KSA",
+   "name": "POTASSIUM TRIIODIDE",
+   "name_variants": [
+    "POTASSIUM TRIIODIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "62d662f4-a16f-fca3-3bd7-2a407c7bbd13"
+   ]
+  },
+  {
+   "unii": "8CBV67279L",
+   "name": "CUPRIC CATION",
+   "name_variants": [
+    "CUPRIC CATION"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "b8400f29-12dd-4b65-9b05-79f34120932d"
+   ]
+  },
+  {
+   "unii": "2VIO5GL90I",
+   "name": "SNAIL, UNSPECIFIED",
+   "name_variants": [
+    "SNAIL, UNSPECIFIED"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "565cc2fb-8b1c-4fb3-a4f7-6af3656e5d4d"
+   ]
+  },
+  {
+   "unii": "S07O44R1ZM",
+   "name": "CAPSAICIN",
+   "name_variants": [
+    "CAPSAICIN"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "85171b3e-01f6-49d0-b313-1b6e939fcadd"
+   ]
+  },
+  {
+   "unii": "CI71S98N1Z",
+   "name": "POTASSIUM PHOSPHATE, DIBASIC",
+   "name_variants": [
+    "POTASSIUM PHOSPHATE, DIBASIC"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "862e062b-e00d-42ae-9b96-6230d2092db3"
+   ]
+  },
+  {
+   "unii": "70WT22SF4B",
+   "name": "SODIUM PHOSPHATE, DIBASIC, HEPTAHYDRATE",
+   "name_variants": [
+    "SODIUM PHOSPHATE, DIBASIC, HEPTAHYDRATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "862e062b-e00d-42ae-9b96-6230d2092db3"
+   ]
+  },
+  {
+   "unii": "52B1340190",
+   "name": "ASPIDOSPERMA QUEBRACHO-BLANCO BARK",
+   "name_variants": [
+    "ASPIDOSPERMA QUEBRACHO-BLANCO BARK"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "862e062b-e00d-42ae-9b96-6230d2092db3"
+   ]
+  },
+  {
+   "unii": "KUW2Q3U1VV",
+   "name": "CUPRIC SULFATE ANHYDROUS",
+   "name_variants": [
+    "CUPRIC SULFATE ANHYDROUS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "ad02306c-e1a3-441d-825e-d79047c61022"
+   ]
+  },
+  {
+   "unii": "58H6RWO52I",
+   "name": "BACITRACIN",
+   "name_variants": [
+    "BACITRACIN"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "f439fb97-0722-42ee-bc90-67daf0497aa8"
+   ]
+  },
+  {
+   "unii": "18E7415PXQ",
+   "name": "CALENDULA OFFICINALIS FLOWERING TOP",
+   "name_variants": [
+    "CALENDULA OFFICINALIS FLOWERING TOP"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "157d1a6c-9596-4118-9792-f195edd6d90f"
+   ]
+  },
+  {
+   "unii": "ZW3Z11D0JV",
+   "name": "GOLDENSEAL",
+   "name_variants": [
+    "GOLDENSEAL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "157d1a6c-9596-4118-9792-f195edd6d90f"
+   ]
+  },
+  {
+   "unii": "F79059A38U",
+   "name": "ANTIMONY TRISULFIDE",
+   "name_variants": [
+    "ANTIMONY TRISULFIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "157d1a6c-9596-4118-9792-f195edd6d90f"
+   ]
+  },
+  {
+   "unii": "MA9CQJ3F7F",
+   "name": "AVENA SATIVA FLOWERING TOP",
+   "name_variants": [
+    "AVENA SATIVA FLOWERING TOP"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "958c5e9c-daa6-4aed-a9aa-f72041d0d67c"
+   ]
+  },
+  {
+   "unii": "S270N0TRQY",
+   "name": "HYALURONIC ACID",
+   "name_variants": [
+    "HYALURONIC ACID"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "5610c3b7-456b-3bc1-e063-6394a90a3fa8"
+   ]
+  },
+  {
+   "unii": "C32PQ86DH4",
+   "name": "ZINC PCA",
+   "name_variants": [
+    "ZINC PCA"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 1,
+    "15FIX9V2JP": 1,
+    "G63QQF2NOX": 1,
+    "V06SV4M95S": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "4a3d2b18-7de8-f94e-e063-6394a90ae986"
+   ]
+  },
+  {
+   "unii": "14R9K67URN",
+   "name": "2-MERCAPTOETHANOL",
+   "name_variants": [
+    "2-MERCAPTOETHANOL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "2db4bdd8-1049-450a-8642-0e1dbbe5abb3"
+   ]
+  },
+  {
+   "unii": "7U1EE4V452",
+   "name": "CARBON MONOXIDE",
+   "name_variants": [
+    "CARBON MONOXIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "2db4bdd8-1049-450a-8642-0e1dbbe5abb3"
+   ]
+  },
+  {
+   "unii": "BOJ6T9AR90",
+   "name": "BOROSILICATE GLASS",
+   "name_variants": [
+    "BOROSILICATE GLASS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "2db4bdd8-1049-450a-8642-0e1dbbe5abb3"
+   ]
+  },
+  {
+   "unii": "532B59J990",
+   "name": "POLYVINYL ALCOHOL, UNSPECIFIED",
+   "name_variants": [
+    "POLYVINYL ALCOHOL, UNSPECIFIED"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "2db4bdd8-1049-450a-8642-0e1dbbe5abb3"
+   ]
+  },
+  {
+   "unii": "D888C394VO",
+   "name": "MCPA",
+   "name_variants": [
+    "MCPA"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "2db4bdd8-1049-450a-8642-0e1dbbe5abb3"
+   ]
+  },
+  {
+   "unii": "65GQA237EH",
+   "name": "ETHYL BUTYLACETYLAMINOPROPIONATE",
+   "name_variants": [
+    "ETHYL BUTYLACETYLAMINOPROPIONATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "2db4bdd8-1049-450a-8642-0e1dbbe5abb3"
+   ]
+  },
+  {
+   "unii": "W2Z59VSQ0O",
+   "name": "TRALOMETHRIN",
+   "name_variants": [
+    "TRALOMETHRIN"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "2db4bdd8-1049-450a-8642-0e1dbbe5abb3"
+   ]
+  },
+  {
+   "unii": "06JI9W529S",
+   "name": "HOPS OIL",
+   "name_variants": [
+    "HOPS OIL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "2db4bdd8-1049-450a-8642-0e1dbbe5abb3"
+   ]
+  },
+  {
+   "unii": "6ZAE7X688J",
+   "name": "LIQUID PETROLEUM",
+   "name_variants": [
+    "LIQUID PETROLEUM"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "2db4bdd8-1049-450a-8642-0e1dbbe5abb3"
+   ]
+  },
+  {
+   "unii": "4E8QL88U6H",
+   "name": "TARAXACUM MONGOLICUM",
+   "name_variants": [
+    "TARAXACUM MONGOLICUM"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "225bb12a-9abc-b5c2-e063-6394a90ab57e"
+   ]
+  },
+  {
+   "unii": "4465L2WS4Y",
+   "name": "LONICERA JAPONICA FLOWER",
+   "name_variants": [
+    "LONICERA JAPONICA FLOWER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "225bb12a-9abc-b5c2-e063-6394a90ab57e"
+   ]
+  },
+  {
+   "unii": "S4V5BS6GCX",
+   "name": "ISONONYL ISONONANOATE",
+   "name_variants": [
+    "ISONONYL ISONONANOATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "20a0ecf1-9037-363e-e063-6394a90aecdd"
+   ]
+  },
+  {
+   "unii": "KP2MW85SSQ",
+   "name": "TOCOTRIENOLS",
+   "name_variants": [
+    "TOCOTRIENOLS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4X49Y0596W": 1,
+    "15FIX9V2JP": 1,
+    "5A68WGF6WM": 1,
+    "XQN8R9SAK4": 1
+   },
+   "example_setids": [
+    "1cf0a682-d4c4-ce66-e063-6294a90a4a43"
+   ]
+  },
+  {
+   "unii": "ANS7ME8OKC",
+   "name": "DIBENZOYLMETHANE",
+   "name_variants": [
+    "DIBENZOYLMETHANE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "V06SV4M95S": 1,
+    "5A68WGF6WM": 1
+   },
+   "example_setids": [
+    "197e8a7b-1179-d625-e063-6294a90ae12d"
+   ]
+  },
+  {
+   "unii": "97C5T2UQ7J",
+   "name": "CHOLESTEROL",
+   "name_variants": [
+    "CHOLESTEROL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "4TI98Z838E",
+   "name": "ESTRADIOL",
+   "name_variants": [
+    "ESTRADIOL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "4G7DS2Q64Y",
+   "name": "PROGESTERONE",
+   "name_variants": [
+    "PROGESTERONE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "RS7A450LGA",
+   "name": "ANHYDROUS TRISODIUM CITRATE",
+   "name_variants": [
+    "ANHYDROUS TRISODIUM CITRATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "269XH13919",
+   "name": "STRYCHNOS NUX-VOMICA SEED",
+   "name_variants": [
+    "STRYCHNOS NUX-VOMICA SEED"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "a1538692-ca00-4e52-9b7e-409767ee27e1"
+   ]
+  },
+  {
+   "unii": "XF417D3PSL",
+   "name": "ANHYDROUS CITRIC ACID",
+   "name_variants": [
+    "ANHYDROUS CITRIC ACID"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 1,
+    "G63QQF2NOX": 1,
+    "15FIX9V2JP": 1,
+    "4X49Y0596W": 1,
+    "PWZ1720CBH": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "e99d92c4-8768-9c0a-e053-2a95a90a609e"
+   ]
+  },
+  {
+   "unii": "930MLC8XGG",
+   "name": "GRAPE SEED OIL",
+   "name_variants": [
+    "GRAPE SEED OIL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb"
+   ]
+  },
+  {
+   "unii": "2V16EO95H1",
+   "name": "PALMITIC ACID",
+   "name_variants": [
+    "PALMITIC ACID"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb"
+   ]
+  },
+  {
+   "unii": "4DGK8B7I3S",
+   "name": "STARCH, RICE",
+   "name_variants": [
+    "STARCH, RICE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb"
+   ]
+  },
+  {
+   "unii": "G1L3HT4CMH",
+   "name": "HYDROXYACETOPHENONE",
+   "name_variants": [
+    "HYDROXYACETOPHENONE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb"
+   ]
+  },
+  {
+   "unii": "0SG101ZGK9",
+   "name": "PERLITE",
+   "name_variants": [
+    "PERLITE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "eb01a962-ab38-18ec-e053-2995a90acdeb"
+   ]
+  },
+  {
+   "unii": "3485P35DA4",
+   "name": "3-HEXYLOXYPROPYLENE GLYCOL",
+   "name_variants": [
+    "3-HEXYLOXYPROPYLENE GLYCOL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 1,
+    "V06SV4M95S": 1,
+    "5A68WGF6WM": 1,
+    "G63QQF2NOX": 1,
+    "15FIX9V2JP": 1,
+    "4X49Y0596W": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "dfd8be45-7a69-acf3-e053-2a95a90a4b38"
+   ]
+  },
+  {
+   "unii": "476821E6GS",
+   "name": "PROPYLENE GLYCOL 1-OLEATE",
+   "name_variants": [
+    "PROPYLENE GLYCOL 1-OLEATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 1,
+    "V06SV4M95S": 1,
+    "5A68WGF6WM": 1,
+    "G63QQF2NOX": 1,
+    "15FIX9V2JP": 1,
+    "4X49Y0596W": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "dfd8be45-7a69-acf3-e053-2a95a90a4b38"
+   ]
+  },
+  {
+   "unii": "9G34HU7RV0",
+   "name": "EDETIC ACID",
+   "name_variants": [
+    "EDETIC ACID"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "a8a64cab-007f-094b-e053-2995a90a52ce"
+   ]
+  },
+  {
+   "unii": "36HQN158VC",
+   "name": ".ALPHA.-BISABOLOL, (+/-)-",
+   "name_variants": [
+    ".ALPHA.-BISABOLOL, (+/-)-"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "f43b7112-1034-460f-bcca-7a3b4f325315"
+   ]
+  },
+  {
+   "unii": "8061YMS4RM",
+   "name": "CHLORINE DIOXIDE",
+   "name_variants": [
+    "CHLORINE DIOXIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "ae7cc926-c21c-1306-e053-2995a90ae31a"
+   ]
+  },
+  {
+   "unii": "4JS0838828",
+   "name": "TRIFOLIUM PRATENSE FLOWER",
+   "name_variants": [
+    "TRIFOLIUM PRATENSE FLOWER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "319ee2fe-58e3-495e-bf0d-df201f6fbb1c"
+   ]
+  },
+  {
+   "unii": "A4KL1HMZ7T",
+   "name": "ZANTHOXYLUM AMERICANUM BARK",
+   "name_variants": [
+    "ZANTHOXYLUM AMERICANUM BARK"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "319ee2fe-58e3-495e-bf0d-df201f6fbb1c"
+   ]
+  },
+  {
+   "unii": "YD01N1999R",
+   "name": "PEG-100 STEARATE",
+   "name_variants": [
+    "PEG-100 STEARATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "c16e8c37-6773-4fc9-9ea8-bda005742988"
+   ]
+  },
+  {
+   "unii": "GU1F20FJVL",
+   "name": "LYCOPODIUM COMPLANATUM SPORE",
+   "name_variants": [
+    "LYCOPODIUM COMPLANATUM SPORE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "SOI2LOH54Z": 1
+   },
+   "example_setids": [
+    "8eda3e2f-8991-4f2c-8077-9b711261f71b"
+   ]
+  },
+  {
+   "unii": "LDC331P08E",
+   "name": "OCTYLTRIETHOXYSILANE",
+   "name_variants": [
+    "OCTYLTRIETHOXYSILANE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "33d43f13-3793-45b6-a360-4c9a41568bd4"
+   ]
+  },
+  {
+   "unii": "58N5X5H9XU",
+   "name": "ATRACTYLODES JAPONICA ROOT",
+   "name_variants": [
+    "ATRACTYLODES JAPONICA ROOT"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "15FIX9V2JP": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "33d43f13-3793-45b6-a360-4c9a41568bd4"
+   ]
+  },
+  {
+   "unii": "724GKU717M",
+   "name": "JOJOBA OIL",
+   "name_variants": [
+    "JOJOBA OIL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 1,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "d71b2d4b-a5db-4f69-a194-626466338efc"
+   ]
+  },
+  {
+   "unii": "W8K377W98I",
+   "name": "SACCHARIDE ISOMERATE",
+   "name_variants": [
+    "SACCHARIDE ISOMERATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 1,
+    "15FIX9V2JP": 1
+   },
+   "example_setids": [
+    "d71b2d4b-a5db-4f69-a194-626466338efc"
+   ]
+  },
+  {
+   "unii": "2KAG279R6R",
+   "name": "DEHYDROACETIC ACID",
+   "name_variants": [
+    "DEHYDROACETIC ACID"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6"
+   ]
+  },
+  {
+   "unii": "ZR28QKN0WT",
+   "name": "HYDROLYZED BOVINE ELASTIN (BASE; 1000 MW)",
+   "name_variants": [
+    "HYDROLYZED BOVINE ELASTIN (BASE; 1000 MW)"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6"
+   ]
+  },
+  {
+   "unii": "ISE9I7DNUG",
+   "name": "COCO-GLYCERIDES",
+   "name_variants": [
+    "COCO-GLYCERIDES"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6"
+   ]
+  },
+  {
+   "unii": "2DMT128M1S",
+   "name": "CETOSTEARYL ALCOHOL",
+   "name_variants": [
+    "CETOSTEARYL ALCOHOL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6"
+   ]
+  },
+  {
+   "unii": "AET12U8B74",
+   "name": "VIOLA ODORATA",
+   "name_variants": [
+    "VIOLA ODORATA"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6"
+   ]
+  },
+  {
+   "unii": "B7862WZ632",
+   "name": "POTASSIUM PHOSPHATE, UNSPECIFIED FORM",
+   "name_variants": [
+    "POTASSIUM PHOSPHATE, UNSPECIFIED FORM"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "ebe024f7-7c45-ad60-e053-2995a90a45d6"
+   ]
+  },
+  {
+   "unii": "S347WMO6M4",
+   "name": ".BETA.-SITOSTEROL",
+   "name_variants": [
+    ".BETA.-SITOSTEROL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "X1U1U0N90J",
+   "name": "MALVA SYLVESTRIS FLOWERING TOP",
+   "name_variants": [
+    "MALVA SYLVESTRIS FLOWERING TOP"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "Y1MLS7E68X",
+   "name": "PAPAVER RHOEAS FLOWER",
+   "name_variants": [
+    "PAPAVER RHOEAS FLOWER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "820DPX33S7",
+   "name": "POLYGLYCERYL-4 ISOSTEARATE",
+   "name_variants": [
+    "POLYGLYCERYL-4 ISOSTEARATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "4CG9F9W01Q",
+   "name": "HEXYL LAURATE",
+   "name_variants": [
+    "HEXYL LAURATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "7G1J5DA97F",
+   "name": "WHITE WAX",
+   "name_variants": [
+    "WHITE WAX"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "ZF94AP8MEY",
+   "name": "HYDROGENATED CASTOR OIL",
+   "name_variants": [
+    "HYDROGENATED CASTOR OIL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1
+   },
+   "example_setids": [
+    "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6"
+   ]
+  },
+  {
+   "unii": "77FU10423X",
+   "name": "PADIMATE A",
+   "name_variants": [
+    "PADIMATE A"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "G63QQF2NOX": 1,
+    "4Y5P7MUD51": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "2af02909-7dd9-468d-8f82-f86ef30c7683"
+   ]
+  },
+  {
+   "unii": "7L6DL16P1T",
+   "name": "TROPOLONE",
+   "name_variants": [
+    "TROPOLONE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc"
+   ]
+  },
+  {
+   "unii": "TR046Y3K1G",
+   "name": "1,2-HEXANEDIOL",
+   "name_variants": [
+    "1,2-HEXANEDIOL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc"
+   ]
+  },
+  {
+   "unii": "00YIU5438U",
+   "name": "CAPRYLYL GLYCOL",
+   "name_variants": [
+    "CAPRYLYL GLYCOL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc"
+   ]
+  },
+  {
+   "unii": "ZGR06DO97T",
+   "name": "DECYL OLEATE",
+   "name_variants": [
+    "DECYL OLEATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4Y5P7MUD51": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "eac771e2-4c1b-3808-e053-2995a90ac5fc"
+   ]
+  },
+  {
+   "unii": "L837108USY",
+   "name": "GERANIOL",
+   "name_variants": [
+    "GERANIOL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "VIF565UC2G",
+   "name": "TEA TREE OIL",
+   "name_variants": [
+    "TEA TREE OIL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "S0FAJ1R9CD",
+   "name": "TIOXOLONE",
+   "name_variants": [
+    "TIOXOLONE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "I753WB2F1M",
+   "name": "FD&AMP;C YELLOW NO. 5",
+   "name_variants": [
+    "FD&AMP;C YELLOW NO. 5"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "N863NB338G",
+   "name": "BENZYL BENZOATE",
+   "name_variants": [
+    "BENZYL BENZOATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "WV9CM0O67Z",
+   "name": "PANTHENOL",
+   "name_variants": [
+    "PANTHENOL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "A4VZ22K1WT",
+   "name": "COUMARIN",
+   "name_variants": [
+    "COUMARIN"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "597E9BI3Z3",
+   "name": "ARCTIUM LAPPA ROOT",
+   "name_variants": [
+    "ARCTIUM LAPPA ROOT"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "3NY3SM6B8U",
+   "name": "YEAST, UNSPECIFIED",
+   "name_variants": [
+    "YEAST, UNSPECIFIED"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "T4V6TWG28D",
+   "name": "HYDROXYETHYL CELLULOSE, UNSPECIFIED",
+   "name_variants": [
+    "HYDROXYETHYL CELLULOSE, UNSPECIFIED"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "T7EU0O9VPP",
+   "name": "CITRAL",
+   "name_variants": [
+    "CITRAL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "W2ZU1RY8B0",
+   "name": "GREEN TEA LEAF",
+   "name_variants": [
+    "GREEN TEA LEAF"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "SMD1X3XO9M",
+   "name": "POWDERED CELLULOSE",
+   "name_variants": [
+    "POWDERED CELLULOSE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "7YC686GQ8F",
+   "name": "POLYOXYL 40 HYDROGENATED CASTOR OIL",
+   "name_variants": [
+    "POLYOXYL 40 HYDROGENATED CASTOR OIL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "95OOS7VE0Y": 1,
+    "4Y5P7MUD51": 1
+   },
+   "example_setids": [
+    "eb68c3ab-7835-1a1c-e053-2995a90a0d66"
+   ]
+  },
+  {
+   "unii": "FB0C1XZV4Y",
+   "name": "DIETHYLTOLUAMIDE",
+   "name_variants": [
+    "DIETHYLTOLUAMIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4X49Y0596W": 1,
+    "4Y5P7MUD51": 1,
+    "95OOS7VE0Y": 1
+   },
+   "example_setids": [
+    "6ccdc093-8af9-4bd8-84b0-f229fccd2f1c"
+   ]
+  },
+  {
+   "unii": "Y9H1V576FH",
+   "name": "HONEY",
+   "name_variants": [
+    "HONEY"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 1,
+    "8NT850T0YS": 1,
+    "4Y5P7MUD51": 1,
+    "9YQ9DI1W42": 1
+   },
+   "example_setids": [
+    "3f605561-e310-5bdb-e063-6394a90a28a8"
+   ]
+  },
+  {
+   "unii": "R85W246Z1C",
+   "name": "SACCHAROMYCES LYSATE",
+   "name_variants": [
+    "SACCHAROMYCES LYSATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 1,
+    "8NT850T0YS": 1,
+    "4Y5P7MUD51": 1,
+    "9YQ9DI1W42": 1
+   },
+   "example_setids": [
+    "3f605561-e310-5bdb-e063-6394a90a28a8"
+   ]
+  },
+  {
+   "unii": "CHC1JS541R",
+   "name": "GYNOSTEMMA PENTAPHYLLUM WHOLE",
+   "name_variants": [
+    "GYNOSTEMMA PENTAPHYLLUM WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4X49Y0596W": 1
+   },
+   "example_setids": [
+    "2e65d47e-f08e-4ff8-e063-6294a90a6d8b"
+   ]
+  },
+  {
+   "unii": "7S7TV2F4XC",
+   "name": "STEPHANIA TETRANDRA WHOLE",
+   "name_variants": [
+    "STEPHANIA TETRANDRA WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4X49Y0596W": 1
+   },
+   "example_setids": [
+    "2e65d47e-f08e-4ff8-e063-6294a90a6d8b"
+   ]
+  },
+  {
+   "unii": "U3176B0S5J",
+   "name": "VINCETOXICUM ATRATUM WHOLE",
+   "name_variants": [
+    "VINCETOXICUM ATRATUM WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "4X49Y0596W": 1
+   },
+   "example_setids": [
+    "2e65d47e-f08e-4ff8-e063-6294a90a6d8b"
+   ]
+  },
+  {
+   "unii": "4370DF050B",
+   "name": "CERAMIDE NP",
+   "name_variants": [
+    "CERAMIDE NP"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "5A68WGF6WM": 1
+   },
+   "example_setids": [
+    "1ae6c49a-3861-29b3-e063-6394a90aa323"
+   ]
+  },
+  {
+   "unii": "QBR70R4FBK",
+   "name": "STILLINGIA SYLVATICA ROOT",
+   "name_variants": [
+    "STILLINGIA SYLVATICA ROOT"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "CG6IX3GCMU",
+   "name": "FRAGARIA VESCA FRUIT",
+   "name_variants": [
+    "FRAGARIA VESCA FRUIT"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "G025DAL7CE",
+   "name": "RHEUM PALMATUM ROOT",
+   "name_variants": [
+    "RHEUM PALMATUM ROOT"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "GKN429M9VS",
+   "name": "SEROTONIN HYDROCHLORIDE",
+   "name_variants": [
+    "SEROTONIN HYDROCHLORIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "C1LJO185Q9",
+   "name": "OXITRIPTAN",
+   "name_variants": [
+    "OXITRIPTAN"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "JK8U8K4D6K",
+   "name": "BETAINE HYDROCHLORIDE",
+   "name_variants": [
+    "BETAINE HYDROCHLORIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "K848JZ4886",
+   "name": "CYSTEINE",
+   "name_variants": [
+    "CYSTEINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "73JWT2K6T3",
+   "name": "RACEMETHIONINE",
+   "name_variants": [
+    "RACEMETHIONINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "OF5P57N2ZX",
+   "name": "ALANINE",
+   "name_variants": [
+    "ALANINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "48TCX9A1VT",
+   "name": "CYSTINE",
+   "name_variants": [
+    "CYSTINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "3KX376GY7L",
+   "name": "GLUTAMIC ACID",
+   "name_variants": [
+    "GLUTAMIC ACID"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "0RH81L854J",
+   "name": "GLUTAMINE",
+   "name_variants": [
+    "GLUTAMINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "K3Z4F929H6",
+   "name": "LYSINE",
+   "name_variants": [
+    "LYSINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "AE28F7PNPL",
+   "name": "METHIONINE",
+   "name_variants": [
+    "METHIONINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "452VLY9402",
+   "name": "SERINE",
+   "name_variants": [
+    "SERINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "12H3K5QKN9",
+   "name": "POTASSIUM GLUCONATE",
+   "name_variants": [
+    "POTASSIUM GLUCONATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "7B69B0BD62",
+   "name": "SUS SCROFA THYMUS",
+   "name_variants": [
+    "SUS SCROFA THYMUS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "6RV024OAUQ",
+   "name": "SUS SCROFA THYROID",
+   "name_variants": [
+    "SUS SCROFA THYROID"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "7L3E358N9L",
+   "name": "DOPAMINE HYDROCHLORIDE",
+   "name_variants": [
+    "DOPAMINE HYDROCHLORIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "864G646I84",
+   "name": "LITHIUM BROMIDE",
+   "name_variants": [
+    "LITHIUM BROMIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "0MVO31Q3QS",
+   "name": "CRANBERRY",
+   "name_variants": [
+    "CRANBERRY"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "47E5O17Y3R",
+   "name": "PHENYLALANINE",
+   "name_variants": [
+    "PHENYLALANINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "9N3UK29E57",
+   "name": "SELENIUM DIOXIDE",
+   "name_variants": [
+    "SELENIUM DIOXIDE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "0J8NV9V5Q8",
+   "name": "BORRELIA BURGDORFERI",
+   "name_variants": [
+    "BORRELIA BURGDORFERI"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "Q9L0O73W7L",
+   "name": "COCONUT OIL",
+   "name_variants": [
+    "COCONUT OIL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "4D7G21HDBC",
+   "name": "CANDIDA ALBICANS",
+   "name_variants": [
+    "CANDIDA ALBICANS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "1JQS135EYN",
+   "name": "OXYTOCIN",
+   "name_variants": [
+    "OXYTOCIN"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "GH30P1VXK2",
+   "name": "PUMPKIN SEED",
+   "name_variants": [
+    "PUMPKIN SEED"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "AGN709ANTJ",
+   "name": "LEMON JUICE",
+   "name_variants": [
+    "LEMON JUICE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "U182GP2CF3",
+   "name": "BROMELAINS",
+   "name_variants": [
+    "BROMELAINS"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "025JEQ4O6S",
+   "name": "HIPPEASTRUM PUNICEUM WHOLE",
+   "name_variants": [
+    "HIPPEASTRUM PUNICEUM WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "KK0Z92II8M",
+   "name": "AESCULUS HIPPOCASTANUM FLOWER",
+   "name_variants": [
+    "AESCULUS HIPPOCASTANUM FLOWER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "5ENR9SAN1W",
+   "name": "ILEX AQUIFOLIUM FLOWERING TOP",
+   "name_variants": [
+    "ILEX AQUIFOLIUM FLOWERING TOP"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "EF626V855K",
+   "name": "MALUS DOMESTICA FLOWER",
+   "name_variants": [
+    "MALUS DOMESTICA FLOWER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "b317d812-d6ed-4a2f-93f7-08b12261cc99"
+   ]
+  },
+  {
+   "unii": "P47W069U38",
+   "name": "BEEF HEART",
+   "name_variants": [
+    "BEEF HEART"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "a7382d84-1d5f-4d09-962f-b26f265af65e"
+   ]
+  },
+  {
+   "unii": "W8N8R55022",
+   "name": "BEEF LIVER",
+   "name_variants": [
+    "BEEF LIVER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "a7382d84-1d5f-4d09-962f-b26f265af65e"
+   ]
+  },
+  {
+   "unii": "86507VZR9K",
+   "name": "HORDEUM VULGARE TOP",
+   "name_variants": [
+    "HORDEUM VULGARE TOP"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "a7382d84-1d5f-4d09-962f-b26f265af65e"
+   ]
+  },
+  {
+   "unii": "978D8U419H",
+   "name": "SACCHAROMYCES CEREVISIAE",
+   "name_variants": [
+    "SACCHAROMYCES CEREVISIAE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "a7382d84-1d5f-4d09-962f-b26f265af65e"
+   ]
+  },
+  {
+   "unii": "9DLQ4CIU6V",
+   "name": "PROLINE",
+   "name_variants": [
+    "PROLINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+   ]
+  },
+  {
+   "unii": "9NEZ333N27",
+   "name": "SODIUM",
+   "name_variants": [
+    "SODIUM"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+   ]
+  },
+  {
+   "unii": "FB3DQM32F2",
+   "name": "COLLAGEN ALPHA-1(I) CHAIN BOVINE",
+   "name_variants": [
+    "COLLAGEN ALPHA-1(I) CHAIN BOVINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+   ]
+  },
+  {
+   "unii": "K31S3OG5C4",
+   "name": "MACROCYSTIS PYRIFERA (KELP)",
+   "name_variants": [
+    "MACROCYSTIS PYRIFERA (KELP)"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "7848062d-d9e0-434a-bd07-7e08bac1f02c"
+   ]
+  },
+  {
+   "unii": "K4C08XP666",
+   "name": "TRICALCIUM PHOSPHATE",
+   "name_variants": [
+    "TRICALCIUM PHOSPHATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "7848062d-d9e0-434a-bd07-7e08bac1f02c"
+   ]
+  }
+ ],
+ "unseeded_actives_without_unii": {}
+}
