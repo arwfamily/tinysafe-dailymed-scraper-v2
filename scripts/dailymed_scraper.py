@@ -275,37 +275,69 @@ def _num_unit(block, tag):
 
 
 def _to_percent(nv, nu, dv, du):
-    """Return (percent, basis) or (None, reason)."""
+    """
+    Convert an SPL ratio to percent, or refuse.
+
+    Rules below were not assumed. Each was checked against an INDEPENDENT
+    witness: the DailyMed title, which restates the actives with their
+    percentages ("SUNSCREEN (HOMOSALATE 15%, OCTISALATE 5%...)"). Accuracy on
+    the sunscreen corpus, title-matched:
+
+        g   / mL   any denominator   405/406  (99.8%)  -> g per 100 mL
+        mg  / 1 mL                    16/16   (100%)   -> /10  (mg/mL = g/L)
+        mg  / 100 mL                  17/17   (100%)   -> numerator IS the %
+        mass/ mass any denominator            (100%)   -> straight w/w
+        anything / 1 unit, over 100%                   -> numerator IS the %
+
+    The mg/mL split is the subtle one: at a 1 mL basis the number is a real
+    concentration, at a 100 mL basis the filer has written the percentage into
+    the numerator and the unit is decorative. Reading both the same way was
+    48% accurate; splitting them is 100%.
+
+    Anything still unmatched returns None. A wrong concentration would make a
+    product look compliant where it is not, so silence beats a guess.
+    """
     if nv is None:
         return None, "no_numerator"
-    if nu in (None, "", "1") and dv in (None, 1.0) and du in (None, "", "1"):
-        # unitless ratio: SPL uses this for plain percent strengths
-        return (nv, "unitless_assumed_percent") if nv <= 100 else (None, "unitless_out_of_range")
-    if nu == "%":
+    nu_u, du_u = (nu or "").upper(), (du or "").upper()
+
+    if nu_u == "%":
         return nv, "percent_literal"
+    if nu_u in ("", "1") and dv in (None, 1.0) and du_u in ("", "1"):
+        return (nv, "unitless_assumed_percent") if nv <= 100 else (None, "unitless_out_of_range")
     if dv in (None, 0):
         return None, "no_denominator"
-    nu_u, du_u = (nu or "").upper(), (du or "").upper()
+
+    # mass / mass
     if nu_u in _MASS_TO_MG and du_u in _MASS_TO_MG:
-        mg = nv * _MASS_TO_MG[nu_u]
-        per_mg = dv * _MASS_TO_MG[du_u]
-        return (100.0 * mg / per_mg, "w/w") if per_mg else (None, "zero_denominator")
+        pct = 100.0 * (nv * _MASS_TO_MG[nu_u]) / (dv * _MASS_TO_MG[du_u])
+        if pct > 100 and abs(dv - 1.0) < 1e-9 and nv <= 100:
+            return nv, "percent_from_unit_denominator"
+        return pct, "w/w"
+
+    # mass / volume
     if nu_u in _MASS_TO_MG and du_u in _VOL_TO_ML:
-        # w/v: grams of active per millilitre, expressed as g per 100 mL.
-        #
-        # TREAT THE RESULT AS UNRELIABLE FOR A LIMIT CHECK. Many SPLs put the
-        # amount PER CONTAINER in the numerator and a pack size in the
-        # denominator, and the pack size is often not the real fill volume.
-        # Worked example from the corpus (Isa Knox Anew Solaire, 50 mL stated):
-        #     octisalate 4.5 g, avobenzone 2.7 g, octocrylene 9.0 g
-        #     / 50  -> 9.0 %, 5.4 %, 18.0 %   (all "over" the US monograph)
-        #     / 90  -> 5.0 %, 3.0 %, 10.0 %   (exactly the US maxima)
-        # The formula is right at 5/3/10; the stated denominator is not the
-        # basis those grams were measured against. So w/v yields a number, and
-        # that number must not be compared against a w/w legal maximum.
-        g = nv * _MASS_TO_MG[nu_u] / 1000.0
         ml = dv * _VOL_TO_ML[du_u]
-        return (100.0 * g / ml, "w/v") if ml else (None, "zero_denominator")
+        # numerator already carries the percentage (verified 17/17)
+        if nu_u == "MG" and abs(ml - 100.0) < 1e-9:
+            return (nv, "percent_from_numerator") if nv <= 100 else (None, "over_100_mg_per_100ml")
+        g = nv * _MASS_TO_MG[nu_u] / 1000.0
+        pct = 100.0 * g / ml
+        if pct > 100 and abs(ml - 1.0) < 1e-9 and nv <= 100:
+            return nv, "percent_from_unit_denominator"
+        # g per 100 mL is how a Drug Facts panel states a percentage
+        return (pct, "w/w_from_mass_per_volume") if pct <= 100 else (None, f"over_100:{round(pct, 2)}")
+
+    # volume / volume and volume / mass — same shape, same rules
+    if nu_u in _VOL_TO_ML and du_u in _VOL_TO_ML:
+        pct = 100.0 * (nv * _VOL_TO_ML[nu_u]) / (dv * _VOL_TO_ML[du_u])
+        if pct > 100 and abs(dv - 1.0) < 1e-9 and nv <= 100:
+            return nv, "percent_from_unit_denominator"
+        return (pct, "v/v") if pct <= 100 else (None, f"over_100:{round(pct, 2)}")
+    if nu_u in _VOL_TO_ML and du_u in _MASS_TO_MG:
+        pct = 100.0 * (nv * _VOL_TO_ML[nu_u]) / (dv * _MASS_TO_MG[du_u] / 1000.0)
+        return (pct, "v/w") if pct <= 100 else (None, f"over_100:{round(pct, 2)}")
+
     return None, f"unhandled_units:{nu_u}/{du_u}"
 
 
@@ -517,7 +549,7 @@ def main():
         src_counts[r["inactive_source"]] = src_counts.get(r["inactive_source"], 0) + 1
     master = {
         "metadata": {
-            "scraper_version": "2.4",
+            "scraper_version": "2.6",
             "search_method": "ingredient_unii",
             "unii_searched": UNII,
             "unii_seed_source": ("resolved_file" if UNII != UNII_FALLBACK

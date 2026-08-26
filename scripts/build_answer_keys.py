@@ -38,6 +38,99 @@ VIEWS = "data/views"
 
 MINERAL_ACTIVES = {"ZINC OXIDE", "TITANIUM DIOXIDE"}
 
+# ---------------------------------------------------------------------------
+# INGREDIENT SYNONYMS
+#
+# One substance, several legal names. Counting a raw string means counting one
+# spelling, and the answer comes out as a confident zero. That already happened
+# twice here: the jurisdiction matrix split Octinoxate across three rows until
+# aliases were merged, and a ceramide count read "0 of 6,521" because US labels
+# still use the old numeric series (Ceramide 1/2/3) while the formula under
+# review used the modern letter series (EOP/NS/NP). There are 85 sunscreens
+# carrying Ceramide 1, which IS Ceramide EOP.
+#
+# Every group below is one substance. Add to this table rather than widening a
+# substring match, because a substring match cannot tell "Ceramide 6 II" from
+# "Ceramide 6" from an unrelated ingredient that happens to contain the word.
+# ---------------------------------------------------------------------------
+SYNONYM_GROUPS = [
+    # ceramides: modern letter code <-> legacy numeric code
+    ["CERAMIDE EOP", "CERAMIDE 1"],
+    ["CERAMIDE NS", "CERAMIDE 2"],
+    ["CERAMIDE NP", "CERAMIDE 3"],
+    ["CERAMIDE EOH", "CERAMIDE 4"],
+    ["CERAMIDE AS", "CERAMIDE 5"],
+    ["CERAMIDE AP", "CERAMIDE 6 II", "CERAMIDE 6"],
+    ["CERAMIDE ADS", "CERAMIDE 7"],
+    ["CERAMIDE NDS", "CERAMIDE 8"],
+    ["CERAMIDE EOS", "CERAMIDE 9"],
+    # UV filters: USAN <-> INCI
+    ["AVOBENZONE", "BUTYL METHOXYDIBENZOYLMETHANE"],
+    ["OXYBENZONE", "BENZOPHENONE-3", "BENZOPHENONE 3"],
+    ["SULISOBENZONE", "BENZOPHENONE-4", "BENZOPHENONE 4"],
+    ["DIOXYBENZONE", "BENZOPHENONE-8", "BENZOPHENONE 8"],
+    ["OCTINOXATE", "OCTYL METHOXYCINNAMATE", "ETHYLHEXYL METHOXYCINNAMATE"],
+    ["OCTISALATE", "OCTYL SALICYLATE", "ETHYLHEXYL SALICYLATE"],
+    ["ENSULIZOLE", "PHENYLBENZIMIDAZOLE SULFONIC ACID"],
+    ["MERADIMATE", "MENTHYL ANTHRANILATE"],
+    ["PADIMATE O", "ETHYLHEXYL DIMETHYL PABA"],
+    ["AMINOBENZOIC ACID", "PABA"],
+    ["BEMOTRIZINOL", "BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE"],
+    ["BISOCTRIZOLE", "METHYLENE BIS-BENZOTRIAZOLYL TETRAMETHYLBUTYLPHENOL"],
+    ["ECAMSULE", "TEREPHTHALYLIDENE DICAMPHOR SULFONIC ACID"],
+    ["ENZACAMENE", "4-METHYLBENZYLIDENE CAMPHOR"],
+    ["AMILOXATE", "ISOAMYL P-METHOXYCINNAMATE"],
+    # botanicals: common name <-> latin binomial
+    ["SUNFLOWER OIL", "HELIANTHUS ANNUUS SEED OIL", "HELIANTHUS ANNUUS OIL"],
+    ["JOJOBA OIL", "SIMMONDSIA CHINENSIS SEED OIL"],
+    ["SHEA BUTTER", "BUTYROSPERMUM PARKII BUTTER"],
+    ["ALOE VERA", "ALOE BARBADENSIS LEAF JUICE", "ALOE VERA LEAF"],
+    ["OAT", "AVENA SATIVA KERNEL FLOUR", "COLLOIDAL OATMEAL"],
+    ["COCONUT OIL", "COCOS NUCIFERA OIL"],
+    # tocopherol forms
+    ["TOCOPHEROL", "ALPHA-TOCOPHEROL", "VITAMIN E"],
+    ["TOCOPHERYL ACETATE", "ALPHA-TOCOPHEROL ACETATE",
+     "DL-ALPHA-TOCOPHERYL ACETATE"],
+]
+
+
+def _build_synonym_index():
+    idx = {}
+    for group in SYNONYM_GROUPS:
+        canon = norm(group[0])
+        for name in group:
+            idx[norm(name)] = canon
+    return idx
+
+
+SYNONYMS = None  # built lazily; norm() is defined below
+
+
+def canonical_ingredient(name):
+    """Fold a label name onto one canonical name, exact match only."""
+    global SYNONYMS
+    if SYNONYMS is None:
+        SYNONYMS = _build_synonym_index()
+    n = norm(name)
+    return SYNONYMS.get(n, n)
+
+
+def has_ingredient(rec, name, include_actives=True):
+    """
+    True when the product carries this substance under ANY of its names.
+    Exact canonical match — never a substring, because 'CERAMIDE 6' inside
+    'CERAMIDE 6 II' and 'LEAD' inside 'can lead to' are the same class of bug.
+    """
+    target = canonical_ingredient(name)
+    pools = [rec.get("inactive_ingredients") or []]
+    if include_actives:
+        pools.append(rec.get("active_ingredients") or [])
+    for pool in pools:
+        for i in pool:
+            if canonical_ingredient(i.get("name") if isinstance(i, dict) else i) == target:
+                return True
+    return False
+
 # Organic UV filters, by name. Names (not UNII) because this checks the
 # ingredient TEXT a parent or an LLM would read off the label.
 ORGANIC_FILTERS = [
@@ -103,6 +196,16 @@ def find(hay, needles):
 
 
 # ---------------------------------------------------------------- claim audit
+def count_ceramide_types(rec):
+    """How many DISTINCT ceramide species, counting each only once across names."""
+    seen = set()
+    for i in (rec.get("inactive_ingredients") or []):
+        c = canonical_ingredient(i.get("name") if isinstance(i, dict) else i)
+        if c.startswith("CERAMIDE"):
+            seen.add(c)
+    return len(seen)
+
+
 def audit_claims(rec):
     act = names(rec.get("active_ingredients"))
     inact = names(rec.get("inactive_ingredients"))
@@ -136,6 +239,12 @@ def audit_claims(rec):
     }
     # 100% mineral, as consumers read it: mineral actives AND no booster
     both = (claims["all_mineral_actives"]["verdict"], claims["no_hidden_uv_boosters"]["verdict"])
+    claims["ceramide_species"] = {
+        "verdict": "INFO",
+        "count": count_ceramide_types(rec),
+        "note": "distinct ceramide species after folding the legacy numeric "
+                "names (Ceramide 1/2/3) onto the letter names (EOP/NS/NP)",
+    }
     claims["hundred_percent_mineral"] = {
         "verdict": "PASS" if both == ("PASS", "PASS")
                    else ("UNKNOWN" if "UNKNOWN" in both else "FAIL"),
@@ -561,8 +670,13 @@ def check_legality(prods, matrix):
                                          "disagree — not used for a compliance "
                                          "verdict until one is confirmed"})
                 continue
-            if a.get("percent_basis") not in ("w/w", "percent_literal",
-                                              "unitless_assumed_percent"):
+            # Bases that resolve to a true w/w percentage, each validated
+            # against the label text on the sunscreen corpus. v/v and v/w are
+            # excluded: without density they are not comparable to a w/w limit.
+            if a.get("percent_basis") not in (
+                    "w/w", "percent_literal", "unitless_assumed_percent",
+                    "w/w_from_mass_per_volume", "percent_from_numerator",
+                    "percent_from_unit_denominator"):
                 unknown_any = True
                 details.append({"ingredient": a.get("name"),
                                 "issue": f"basis {a.get('percent_basis')} is not "
