@@ -1,16 +1,27 @@
 name: DailyMed Mineral Scraper v2 (ingredient-based)
 
+# Full run  : limit 0  -> snapshot + canonical + formulation history, committed
+# Smoke test: limit 10 -> snapshot only. A capped run must NEVER touch canonical
+#             or history, or 500 missing products would log as mass delisting.
+
 on:
   workflow_dispatch:
     inputs:
       limit:
-        description: 'Cap setids per UNII (10 = smoke test, 0 = full run)'
+        description: 'Cap setids per UNII (10 = smoke test, 0 = FULL run)'
         required: false
         default: '10'
       parallel:
         description: 'Parallel workers (3-10)'
         required: false
         default: '5'
+  schedule:
+    # Weekly full run, Mondays 09:00 UTC. Reformulation is a slow signal;
+    # weekly is enough and keeps the raw snapshot folder from exploding.
+    - cron: '0 9 * * 1'
+
+permissions:
+  contents: write
 
 jobs:
   scrape:
@@ -29,18 +40,87 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Resolve run mode
+        id: mode
+        run: |
+          LIMIT="${{ github.event.inputs.limit }}"
+          # scheduled runs have no inputs -> always a full run
+          if [ -z "$LIMIT" ]; then LIMIT="0"; fi
+          echo "limit=$LIMIT" >> "$GITHUB_OUTPUT"
+          if [ "$LIMIT" = "0" ]; then
+            echo "partial_flag=" >> "$GITHUB_OUTPUT"
+            echo "MODE: FULL RUN — canonical + history will be updated"
+          else
+            echo "partial_flag=--partial" >> "$GITHUB_OUTPUT"
+            echo "MODE: SMOKE TEST (limit $LIMIT) — snapshot only"
+          fi
+          echo "run_date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      # Resolve UV-filter names -> UNII codes from DailyMed's own service.
+      # Never hardcoded: a wrong code collects nothing, which is indistinguishable
+      # from "this filter isn't used in the US".
+      - name: Resolve UNII codes
+        continue-on-error: true
+        run: python scripts/resolve_uniis.py
+
       - name: Run scraper
         run: |
           mkdir -p output
+          PAR="${{ github.event.inputs.parallel }}"
+          if [ -z "$PAR" ]; then PAR="5"; fi
           python scripts/dailymed_scraper.py \
-            --limit ${{ github.event.inputs.limit }} \
-            --parallel ${{ github.event.inputs.parallel }} \
+            --limit ${{ steps.mode.outputs.limit }} \
+            --parallel "$PAR" \
             --output-dir output
 
-      - name: List output
-        run: ls -la output/
+      - name: Snapshot + formulation history
+        run: |
+          python scripts/snapshot_and_history.py \
+            --master output/tinysafe_dailymed_v2_master.json \
+            --run-date ${{ steps.mode.outputs.run_date }} \
+            ${{ steps.mode.outputs.partial_flag }}
 
-      - name: Upload RAW master (everything)
+      # The scraper's own filtered file is a derived view, not an asset —
+      # regenerate it every run and let it be overwritten.
+      - name: Copy derived mineral view
+        run: |
+          mkdir -p data/views
+          cp output/tinysafe_dailymed_v2_mineral_sun.json data/views/mineral_sunscreens.json
+
+      # Answer keys: the things that have a right answer. Derived and disposable —
+      # delete data/views and a rerun rebuilds them.
+      - name: Fetch recall corpus for the cross-join
+        continue-on-error: true
+        run: |
+          mkdir -p external
+          curl -sSL -o external/recalls_full.jsonl \
+            https://raw.githubusercontent.com/arwfamily/tinysafe-data/main/recalls_full.jsonl
+          wc -l external/recalls_full.jsonl || true
+
+      - name: Build answer keys
+        if: steps.mode.outputs.limit == '0'
+        run: |
+          python scripts/build_answer_keys.py --recalls external/recalls_full.jsonl
+
+      - name: Commit data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git commit -m "data: dailymed run ${{ steps.mode.outputs.run_date }} (limit=${{ steps.mode.outputs.limit }})"
+          # another run may have landed while this one was scraping
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF#refs/heads/}" && break
+            echo "rebase attempt $i failed, retrying"; sleep 5
+          done
+          git push origin HEAD:"${GITHUB_REF#refs/heads/}"
+
+      # Artifacts kept as a convenience download. They expire; the commit does not.
+      - name: Upload RAW master
         uses: actions/upload-artifact@v4
         with:
           name: dailymed-v2-master
