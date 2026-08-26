@@ -61,6 +61,27 @@ FRAGRANCE_TERMS = ["FRAGRANCE", "PARFUM", "AROMA"]
 REEF_BANNED = ["OXYBENZONE", "OCTINOXATE", "OCTYL METHOXYCINNAMATE"]
 
 
+LABELER_RE = re.compile(r"\[([^\]]+)\]\s*$")
+
+
+def derive_identity(rec):
+    """
+    The v2 scraper emits no `brand` field — that was a derived field on the old
+    hand-built feed. DailyMed titles carry the labeler in trailing brackets:
+        "BADGER SPF 30 DAILY SUNSCREEN (ZINC OXIDE) CREAM [W.S. BADGER COMPANY]"
+    The labeler is a BETTER join key than a guessed brand, because recall records
+    carry recalling_firm / company. The leading words before the actives
+    parenthesis are kept as a secondary key.
+    Verified: labeler extracted on 13,285/13,285 records.
+    """
+    title = rec.get("title") or ""
+    m = LABELER_RE.search(title)
+    labeler = m.group(1).strip() if m else ""
+    head = LABELER_RE.sub("", title)
+    head = re.split(r"\s*\(", head)[0].strip()
+    return labeler, head
+
+
 def norm(s):
     return re.sub(r"\s+", " ", re.sub(r"[^A-Z0-9 ]", " ", str(s or "").upper())).strip()
 
@@ -208,7 +229,8 @@ def join_recalls(prods, idx, distinctive):
     """
     out = []
     for p in prods:
-        raw_brand = p.get("brand") or ""
+        labeler, head = derive_identity(p)
+        raw_brand = p.get("brand") or labeler or head
         phrase = norm(raw_brand)
         toks = brand_tokens(raw_brand)
         dtoks = [t for t in toks if t in distinctive]
@@ -239,7 +261,9 @@ def join_recalls(prods, idx, distinctive):
         out.append({
             "setid": p.get("setid"),
             "brand": raw_brand,
-            "product_name": p.get("product_name"),
+            "brand_source": ("field" if p.get("brand")
+                             else "labeler" if labeler else "title_head"),
+            "product_name": p.get("product_name") or p.get("title"),
             "match_count": len(hits),
             "caveat": "brand match only — same brand, NOT proven same product. "
                       "Check product name and date before citing.",

@@ -107,6 +107,12 @@ def co_occurrence(products, seed_codes):
     seen_no_unii = Counter()
 
     for p in products:
+        # Scope to sunscreens. TiO2 is a tablet coating and a colourant, so the
+        # unscoped corpus dragged in multivitamins and skin-lightening products:
+        # the first real run surfaced NIACINAMIDE, FOLIC ACID and RIBOFLAVIN as
+        # "filter candidates". A UV filter candidate must live in a sunscreen.
+        if p.get("category") != "sunscreen":
+            continue
         acts = p.get("active_ingredients") or []
         codes = []
         for a in acts:
@@ -214,6 +220,10 @@ def main():
     print(f"[input] {len(products)} products, {len(seed_codes)} seeded UNIIs",
           flush=True)
 
+    n_sun = sum(1 for p in products if p.get("category") == "sunscreen")
+    print(f"[scope] {n_sun} sunscreen-category products "
+          f"(of {len(products)}) — candidates are drawn from these only",
+          flush=True)
     cands, no_unii = co_occurrence(products, seed_codes)
 
     print("\n--- PASS 1: CO-OCCURRENCE ---")
