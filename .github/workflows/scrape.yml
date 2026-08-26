@@ -65,15 +65,20 @@ jobs:
       # Resolve UV-filter names -> UNII codes from DailyMed's own service.
       # Never hardcoded: a wrong code collects nothing, which is indistinguishable
       # from "this filter isn't used in the US".
+      # Downloads the whole /uniis catalogue once and matches locally.
+      # Non-fatal by design: if it fails the scraper falls back to mineral-only
+      # rather than collecting nothing.
       - name: Resolve UNII codes
         continue-on-error: true
+        timeout-minutes: 25
         run: python scripts/resolve_uniis.py
 
       - name: Run scraper
         run: |
           mkdir -p output
           PAR="${{ github.event.inputs.parallel }}"
-          if [ -z "$PAR" ]; then PAR="5"; fi
+          case "$PAR" in ''|*[!0-9]*) PAR=5 ;; esac
+          if [ "$PAR" -lt 1 ] || [ "$PAR" -gt 16 ]; then PAR=5; fi
           python scripts/dailymed_scraper.py \
             --limit ${{ steps.mode.outputs.limit }} \
             --parallel "$PAR" \
