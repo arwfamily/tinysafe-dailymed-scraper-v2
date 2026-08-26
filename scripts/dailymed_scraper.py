@@ -374,7 +374,8 @@ def process_setid(item):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0, help="cap setids per UNII (0=all; use 10 for smoke test)")
-    ap.add_argument("--parallel", type=int, default=5)
+    ap.add_argument("--parallel", type=int, default=5,
+                    help="worker threads; clamped to 1..16")
     ap.add_argument("--output-dir", default="output")
     args = ap.parse_args()
     os.makedirs(args.output_dir, exist_ok=True)
@@ -392,8 +393,17 @@ def main():
     print(f"[B] unique setids: {len(items)}", flush=True)
 
     # Phase C+D+E (parallel)
+    # A UI input must never be able to crash a run: 0 or a blank box used to
+    # reach ThreadPoolExecutor and raise "max_workers must be greater than 0",
+    # throwing away a completed Phase A.
+    workers = args.parallel if isinstance(args.parallel, int) else 5
+    if workers < 1 or workers > 16:
+        print(f"[!] --parallel {args.parallel} out of range -> clamped to "
+              f"{min(max(workers, 1), 16)}", flush=True)
+        workers = min(max(workers, 1), 16)
+
     records = []
-    with ThreadPoolExecutor(max_workers=args.parallel) as ex:
+    with ThreadPoolExecutor(max_workers=workers) as ex:
         futs = {ex.submit(process_setid, it): it for it in items}
         done = 0
         for f in as_completed(futs):
