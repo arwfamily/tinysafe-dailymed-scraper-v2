@@ -1,0 +1,635 @@
+{
+ "metadata": {
+  "count": 4,
+  "filter": "sunscreen + ZnO + no_chemical_filter"
+ },
+ "products": [
+  {
+   "setid": "59713657-a7ef-1aee-e063-6394a90a326e",
+   "title": "MINERAL SUNSCREEN LOTION [GUANGZHOU ORIGIN BEAUTY COSMETICS CO., LTD.]",
+   "product_name": "MINERAL SUNSCREEN LOTION",
+   "active_ingredients": [
+    {
+     "name": "ZINC OXIDE",
+     "unii": "SOI2LOH54Z",
+     "strength": "10"
+    }
+   ],
+   "inactive_ingredients": [
+    {
+     "name": "WATER",
+     "unii": "059QF0KO0R"
+    },
+    {
+     "name": "ISONONYL ISONONANOATE",
+     "unii": "S4V5BS6GCX"
+    },
+    {
+     "name": "GLYCERIN",
+     "unii": "PDC6A3C0OX"
+    },
+    {
+     "name": "NIACINAMIDE",
+     "unii": "25X51I8RD4"
+    },
+    {
+     "name": "SQUALANE",
+     "unii": "GW89575KF9"
+    },
+    {
+     "name": "CETEARYL ALCOHOL",
+     "unii": "2DMT128M1S"
+    },
+    {
+     "name": "VINYLPYRROLIDONE/HEXADECENE COPOLYMER",
+     "unii": "KFR5QEN0N9"
+    },
+    {
+     "name": "AMMONIUM ACRYLOYLDIMETHYLTAURATE, DIMETHYLACRYLAMIDE, LAURYL METHACRYLATE AND LAURETH-4 METHACRYLATE COPOLYMER, TRIMETHYLOLPROPANE TRIACRYLATE CROSSLINKED (45000 MPA.S)",
+     "unii": "Q7UI015FF9"
+    },
+    {
+     "name": "SODIUM METHYL STEAROYL TAURATE",
+     "unii": "JFM219LJ55"
+    },
+    {
+     "name": "1,2-HEXANEDIOL",
+     "unii": "TR046Y3K1G"
+    },
+    {
+     "name": "HYDROXYACETOPHENONE",
+     "unii": "G1L3HT4CMH"
+    },
+    {
+     "name": "INULIN LAURYL CARBAMATE",
+     "unii": "48RFF58ESG"
+    },
+    {
+     "name": "POLYSORBATE 60",
+     "unii": "CAL22UVI4M"
+    },
+    {
+     "name": "SORBITAN ISOSTEARATE",
+     "unii": "01S2G2C1E4"
+    },
+    {
+     "name": "BISABOLOL",
+     "unii": "24WE03BX2T"
+    },
+    {
+     "name": ".ALPHA.-TOCOPHEROL ACETATE",
+     "unii": "9E8X80D2L0"
+    },
+    {
+     "name": "ALLANTOIN",
+     "unii": "344S277G0Z"
+    },
+    {
+     "name": "HYALURONATE SODIUM",
+     "unii": "YSE9PPT4TH"
+    },
+    {
+     "name": "HYDROLYZED SODIUM HYALURONATE 10",
+     "unii": "AAZ2QV38TA"
+    },
+    {
+     "name": "ACETYL HEXAPEPTIDE-8",
+     "unii": "L4EL31FWIL"
+    },
+    {
+     "name": "ETHYLHEXYLGLYCERIN",
+     "unii": "147D247K3P"
+    },
+    {
+     "name": "XANTHAN GUM",
+     "unii": "TTV12P4NEE"
+    },
+    {
+     "name": "EDETATE DISODIUM",
+     "unii": "7FLD91C86K"
+    },
+    {
+     "name": "HYDROXYETHYL ACRYLATE/SODIUM ACRYLOYLDIMETHYL TAURATE COPOLYMER (45000 MPA.S AT 1%)",
+     "unii": "86FQE96TZ4"
+    },
+    {
+     "name": "COPPER TRIPEPTIDE-1",
+     "unii": "6BJQ43T1I9"
+    }
+   ],
+   "inactive_source": "spl_xml",
+   "inactive_count": 25,
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59713657-a7ef-1aee-e063-6394a90a326e",
+   "spf": null,
+   "contains_zinc_oxide": true,
+   "contains_titanium_dioxide": false,
+   "contains_chemical_filter": false,
+   "has_hidden_chemical_filter": false,
+   "mineral_type": "zinc",
+   "is_hundred_percent_mineral": true,
+   "baby_labeled": false,
+   "category": "sunscreen"
+  },
+  {
+   "setid": "4bbde755-e312-123e-e063-6294a90a467f",
+   "title": "SWEAT RESISTANT SUNSCREEN BODY ORIGINAL (TITANIUM DIOXIDE, ZINC OXIDE) LOTION SWEAT RESISTANT SUNSCREEN BODY COCONUT VANILLA (TITANIUM DIOXIDE, ZINC OXIDE) LOTION SWEAT RESISTANT SUNSCREEN BODY COSTAL SANDALWOOD (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [CLUTCH, INC.]",
+   "product_name": "SWEAT RESISTANT SUNSCREEN BODY ORIGINAL (TITANIUM DIOXIDE, ZINC OXIDE) LOTION SWEAT RESISTANT SUNSCREEN BODY COCONUT VANILLA (TITANIUM DIOXIDE, ZINC OXIDE) LOTION SWEAT RESISTANT SUNSCREEN BODY COSTAL SANDALWOOD (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "active_ingredients": [
+    {
+     "name": "ZINC OXIDE",
+     "unii": "SOI2LOH54Z",
+     "strength": "4"
+    },
+    {
+     "name": "TITANIUM DIOXIDE",
+     "unii": "15FIX9V2JP",
+     "strength": "4.5"
+    }
+   ],
+   "inactive_ingredients": [
+    {
+     "name": "WATER",
+     "unii": "059QF0KO0R"
+    },
+    {
+     "name": "ORYZA SATIVA (RICE) BRAN",
+     "unii": "R60QEP13IC"
+    },
+    {
+     "name": "EDETATE DISODIUM",
+     "unii": "7FLD91C86K"
+    },
+    {
+     "name": "GLYCERIN",
+     "unii": "PDC6A3C0OX"
+    },
+    {
+     "name": "VITIS VINIFERA (GRAPE) SEED",
+     "unii": "C34U15ICXA"
+    },
+    {
+     "name": "DIMETHICONE",
+     "unii": "92RU3N3Y1O"
+    },
+    {
+     "name": "MENTHA PIPERITA (PEPPERMINT) LEAF",
+     "unii": "A389O33LX6"
+    },
+    {
+     "name": "ETHYLHEXYLGLYCERIN",
+     "unii": "147D247K3P"
+    },
+    {
+     "name": "ETHYLHEXYL PALMITATE",
+     "unii": "2865993309"
+    },
+    {
+     "name": "ROSMARINUS OFFICINALIS (ROSEMARY) LEAF OIL",
+     "unii": "8LGU7VM393"
+    },
+    {
+     "name": "SODIUM CHLORIDE",
+     "unii": "451W47IQ8X"
+    },
+    {
+     "name": "CETYL PEG/PPG-10/1 DIMETHICONE (HLB 2)",
+     "unii": "V2W71V8T0X"
+    },
+    {
+     "name": "SILICON DIOXIDE",
+     "unii": "ETJ7Z6XBU4"
+    },
+    {
+     "name": "SORBITAN OLIVATE",
+     "unii": "MDL271E3GR"
+    },
+    {
+     "name": "ALOE BARBADENSIS LEAF JUICE",
+     "unii": "RUE8E6T4NB"
+    },
+    {
+     "name": "STYRENE/ACRYLAMIDE COPOLYMER (MW 500000)",
+     "unii": "5Z4DPO246A"
+    },
+    {
+     "name": "ALUMINUM STARCH OCTENYLSUCCINATE",
+     "unii": "I9PJ0O6294"
+    },
+    {
+     "name": "PUNICA GRANATUM FRUIT JUICE",
+     "unii": "99S671U9KB"
+    },
+    {
+     "name": "PROPANEDIOL",
+     "unii": "5965N8W85T"
+    },
+    {
+     "name": "ALUMINA",
+     "unii": "LMI26O6933"
+    },
+    {
+     "name": "PHENOXYETHANOL",
+     "unii": "HIE492ZZ3T"
+    },
+    {
+     "name": "C12-15 ALKYL BENZOATE",
+     "unii": "A9EJ3J61HQ"
+    },
+    {
+     "name": "CUCUMIS SATIVUS (CUCUMBER) FRUIT",
+     "unii": "YY7C30VXJT"
+    },
+    {
+     "name": "CAMELLIA SINENSIS LEAF",
+     "unii": "W2ZU1RY8B0"
+    },
+    {
+     "name": "HYDROGEN DIMETHICONE (13 CST)",
+     "unii": "4QGR4P2YOI"
+    }
+   ],
+   "inactive_source": "spl_xml",
+   "inactive_count": 25,
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4bbde755-e312-123e-e063-6294a90a467f",
+   "spf": null,
+   "contains_zinc_oxide": true,
+   "contains_titanium_dioxide": true,
+   "contains_chemical_filter": false,
+   "has_hidden_chemical_filter": false,
+   "mineral_type": "zinc_titanium",
+   "is_hundred_percent_mineral": true,
+   "baby_labeled": false,
+   "category": "sunscreen"
+  },
+  {
+   "setid": "4339df13-77d3-31a1-e063-6394a90a5208",
+   "title": "HEADHUNTER SURF SCREEN SPF 50 SUNSCREEN (ZINC OXIDE,TITANIUM DIOXIDE) CREAM [GUANGZHOU TATA BIOTECHNOLOGY CO., LTD.]",
+   "product_name": "HEADHUNTER SURF SCREEN SPF 50 SUNSCREEN (ZINC OXIDE,TITANIUM DIOXIDE) CREAM",
+   "active_ingredients": [
+    {
+     "name": "TITANIUM DIOXIDE",
+     "unii": "15FIX9V2JP",
+     "strength": "5.6"
+    },
+    {
+     "name": "ZINC OXIDE",
+     "unii": "SOI2LOH54Z",
+     "strength": "11"
+    }
+   ],
+   "inactive_ingredients": [
+    {
+     "name": "CI 77492",
+     "unii": "EX438O2MRT"
+    },
+    {
+     "name": "DIMETHICONE",
+     "unii": "92RU3N3Y1O"
+    },
+    {
+     "name": "CI 77491",
+     "unii": "1K09F3G675"
+    },
+    {
+     "name": "TRIETHOXYCAPRYLYLSILANE",
+     "unii": "LDC331P08E"
+    },
+    {
+     "name": "POLYGLYCERYL-4 ISOSTEARATE",
+     "unii": "820DPX33S7"
+    },
+    {
+     "name": "BEESWAX",
+     "unii": "2ZA36H0S2V"
+    },
+    {
+     "name": "MAGNESIUM SULFATE",
+     "unii": "DE08037SAB"
+    },
+    {
+     "name": "CI 77499",
+     "unii": "XM0M87F357"
+    },
+    {
+     "name": "BUTYLOCTYL SALICYLATE",
+     "unii": "2EH13UN8D3"
+    },
+    {
+     "name": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+     "unii": "C9H2L21V7U"
+    },
+    {
+     "name": "BUTYLENE GLYCOL",
+     "unii": "3XUS85K0RA"
+    },
+    {
+     "name": "DISTEARDIMONIUM HECTORITE",
+     "unii": "X687XDK09L"
+    },
+    {
+     "name": "PENTYLENE GLYCOL",
+     "unii": "50C1307PZG"
+    },
+    {
+     "name": "HYDROXYACETOPHENONE",
+     "unii": "G1L3HT4CMH"
+    },
+    {
+     "name": "GLYCERIN",
+     "unii": "PDC6A3C0OX"
+    },
+    {
+     "name": "AQUA",
+     "unii": "059QF0KO0R"
+    },
+    {
+     "name": "PEG-10 DIMETHICONE (600 CST)",
+     "unii": "8PR7V1SVM0"
+    },
+    {
+     "name": "POLYGLYCERYL-2 DIPOLYHYDROXYSTEARATE",
+     "unii": "9229XJ4V12"
+    },
+    {
+     "name": "SILICA",
+     "unii": "ETJ7Z6XBU4"
+    },
+    {
+     "name": "DIPHENYL DIMETHICONE (400 CST)",
+     "unii": "Y5MXX82OQ7"
+    },
+    {
+     "name": "PHENOXYETHANOL",
+     "unii": "HIE492ZZ3T"
+    },
+    {
+     "name": "ALPHA-TOCOPHEROL ACETATE",
+     "unii": "9E8X80D2L0"
+    },
+    {
+     "name": "SODIUM HYALURONATE",
+     "unii": "YSE9PPT4TH"
+    }
+   ],
+   "inactive_source": "spl_xml",
+   "inactive_count": 23,
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4339df13-77d3-31a1-e063-6394a90a5208",
+   "spf": 50,
+   "contains_zinc_oxide": true,
+   "contains_titanium_dioxide": true,
+   "contains_chemical_filter": false,
+   "has_hidden_chemical_filter": true,
+   "mineral_type": "zinc_titanium",
+   "is_hundred_percent_mineral": false,
+   "baby_labeled": false,
+   "category": "sunscreen"
+  },
+  {
+   "setid": "d4d4bfcf-3674-4847-8ad8-1716a8e821ae",
+   "title": "JOURNEE FIRM RICHE BROAD SPECTRUM SUNSCREEN SPF 30 (TITANIUM DIOXIDE AND ZINC OXIDE) CREAM [MERZ NORTH AMERICA, INC.]",
+   "product_name": "JOURNEE FIRM RICHE BROAD SPECTRUM SUNSCREEN SPF 30 (TITANIUM DIOXIDE AND ZINC OXIDE) CREAM",
+   "active_ingredients": [
+    {
+     "name": "TITANIUM DIOXIDE",
+     "unii": "15FIX9V2JP",
+     "strength": "12.25"
+    },
+    {
+     "name": "ZINC OXIDE",
+     "unii": "SOI2LOH54Z",
+     "strength": "10.2"
+    }
+   ],
+   "inactive_ingredients": [
+    {
+     "name": "WATER",
+     "unii": "059QF0KO0R"
+    },
+    {
+     "name": "DIMETHICONE",
+     "unii": "92RU3N3Y1O"
+    },
+    {
+     "name": "COCONUT ALKANES",
+     "unii": "1E5KJY107T"
+    },
+    {
+     "name": "ALKYL (C12-15) BENZOATE",
+     "unii": "A9EJ3J61HQ"
+    },
+    {
+     "name": "ISOHEXADECANE",
+     "unii": "918X1OUF1E"
+    },
+    {
+     "name": "ETHYL TRISILOXANE",
+     "unii": "ZH1WJO5481"
+    },
+    {
+     "name": "POLYHYDROXYSTEARIC ACID (2300 MW)",
+     "unii": "YXH47AOU0F"
+    },
+    {
+     "name": "PEG-10 DIMETHICONE (600 CST)",
+     "unii": "8PR7V1SVM0"
+    },
+    {
+     "name": "ISODODECANE",
+     "unii": "A8289P68Y2"
+    },
+    {
+     "name": "GLYCERIN",
+     "unii": "PDC6A3C0OX"
+    },
+    {
+     "name": "BUTYLOCTYL SALICYLATE",
+     "unii": "2EH13UN8D3"
+    },
+    {
+     "name": "PROPANEDIOL",
+     "unii": "5965N8W85T"
+    },
+    {
+     "name": "SQUALANE",
+     "unii": "GW89575KF9"
+    },
+    {
+     "name": "POLYGLYCERYL-4 DIISOSTEARATE/POLYHYDROXYSTEARATE/SEBACATE",
+     "unii": "687U3PEB2Y"
+    },
+    {
+     "name": "PEG-9 POLYDIMETHYLSILOXYETHYL DIMETHICONE",
+     "unii": "TYP81E471F"
+    },
+    {
+     "name": "ZINC SULFATE, UNSPECIFIED FORM",
+     "unii": "89DS0H96TB"
+    },
+    {
+     "name": "MEDIUM-CHAIN TRIGLYCERIDES",
+     "unii": "C9H2L21V7U"
+    },
+    {
+     "name": "HUMAN SKIN PROTEINS, PARTIALLY HYDROLYZED",
+     "unii": "G9813R29TW"
+    },
+    {
+     "name": "TETRAPEPTIDE-21",
+     "unii": "179JUC43HU"
+    },
+    {
+     "name": "CARNOSINE",
+     "unii": "8HO6PVN24W"
+    },
+    {
+     "name": "TARA SPINOSA FRUIT POD",
+     "unii": "EXY4496LWD"
+    },
+    {
+     "name": "PALMITOYL TRIPEPTIDE-1 ACETATE",
+     "unii": "99B84UAK70"
+    },
+    {
+     "name": "HYALURONATE SODIUM",
+     "unii": "YSE9PPT4TH"
+    },
+    {
+     "name": "GREEN TEA LEAF",
+     "unii": "W2ZU1RY8B0"
+    },
+    {
+     "name": "HELIANTHUS ANNUUS SPROUT",
+     "unii": "4P26HG1S5W"
+    },
+    {
+     "name": "ALUMINUM OXIDE",
+     "unii": "LMI26O6933"
+    },
+    {
+     "name": "CAPRYLYL TRISILOXANE",
+     "unii": "Q95M2P1KJL"
+    },
+    {
+     "name": "COCOYL CAPRYLOCAPRATE",
+     "unii": "8D9H4QU99H"
+    },
+    {
+     "name": "STEARIC ACID",
+     "unii": "4ELV7Z65AP"
+    },
+    {
+     "name": "POLYGLYCERYL-3 OLEATE",
+     "unii": "XRQ165498B"
+    },
+    {
+     "name": "STEARALKONIUM HECTORITE",
+     "unii": "OLX698AH5P"
+    },
+    {
+     "name": "C13-15 ALKANE",
+     "unii": "114P5I43UJ"
+    },
+    {
+     "name": "DIISOSTEAROYL POLYGLYCERYL-3 DIMER DILINOLEATE",
+     "unii": "G3232Z5S2O"
+    },
+    {
+     "name": "DIMETHICONE/VINYL DIMETHICONE CROSSPOLYMER (SOFT PARTICLE)",
+     "unii": "9E4CO0W6C5"
+    },
+    {
+     "name": "PROPYLENE CARBONATE",
+     "unii": "8D08K3S51E"
+    },
+    {
+     "name": "XANTHAN GUM",
+     "unii": "TTV12P4NEE"
+    },
+    {
+     "name": "SODIUM ASCORBYL PHOSPHATE",
+     "unii": "836SJG51DR"
+    },
+    {
+     "name": ".ALPHA.-TOCOPHEROL ACETATE",
+     "unii": "9E8X80D2L0"
+    },
+    {
+     "name": "MALTODEXTRIN",
+     "unii": "7CVR7L4A2D"
+    },
+    {
+     "name": "ETHYLHEXYLGLYCERIN",
+     "unii": "147D247K3P"
+    },
+    {
+     "name": "TRIETHOXYCAPRYLYLSILANE",
+     "unii": "LDC331P08E"
+    },
+    {
+     "name": "PEG/PPG-18/18 DIMETHICONE",
+     "unii": "9H0AO7T794"
+    },
+    {
+     "name": "MELANIN SYNTHETIC (TYROSINE, PEROXIDE)",
+     "unii": "O0CV1RMR44"
+    },
+    {
+     "name": "PENTYLENE GLYCOL",
+     "unii": "50C1307PZG"
+    },
+    {
+     "name": "TOCOPHEROL",
+     "unii": "R0ZB2556P8"
+    },
+    {
+     "name": "FERRIC OXIDE RED",
+     "unii": "1K09F3G675"
+    },
+    {
+     "name": "FERRIC OXIDE YELLOW",
+     "unii": "EX438O2MRT"
+    },
+    {
+     "name": "FERROSOFERRIC OXIDE",
+     "unii": "XM0M87F357"
+    },
+    {
+     "name": "ARGAN OIL",
+     "unii": "4V59G5UW9X"
+    },
+    {
+     "name": "CAPRYLYL GLYCOL",
+     "unii": "00YIU5438U"
+    },
+    {
+     "name": "PASSIFLORA EDULIS SEED OIL",
+     "unii": "F3VOA31UHQ"
+    },
+    {
+     "name": "SHEA BUTTER",
+     "unii": "K49155WL9Y"
+    },
+    {
+     "name": "PHENOXYETHANOL",
+     "unii": "HIE492ZZ3T"
+    },
+    {
+     "name": "CITRIC ACID MONOHYDRATE",
+     "unii": "2968PHW8QP"
+    }
+   ],
+   "inactive_source": "spl_xml",
+   "inactive_count": 54,
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4d4bfcf-3674-4847-8ad8-1716a8e821ae",
+   "spf": 30,
+   "contains_zinc_oxide": true,
+   "contains_titanium_dioxide": true,
+   "contains_chemical_filter": false,
+   "has_hidden_chemical_filter": true,
+   "mineral_type": "zinc_titanium",
+   "is_hundred_percent_mineral": false,
+   "baby_labeled": false,
+   "category": "sunscreen"
+  }
+ ]
+}

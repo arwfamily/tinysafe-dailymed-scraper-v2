@@ -1,0 +1,262 @@
+{
+ "resolved_on": "2026-08-26",
+ "source": "https://dailymed.nlm.nih.gov/dailymed/services/v2/uniis.json (full paged download, matched locally)",
+ "catalogue_rows": 8019,
+ "note": "Only documented /uniis parameters are used (pagesize, page). Matching happens locally so no assumption is made about server-side search behaviour. Codes are never typed by hand.",
+ "usable_count": 19,
+ "filters": [
+  {
+   "query": "ZINC OXIDE",
+   "aliases": [],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "SOI2LOH54Z",
+   "active_moiety": "ZINC OXIDE",
+   "spl_count": 5087,
+   "candidates": []
+  },
+  {
+   "query": "TITANIUM DIOXIDE",
+   "aliases": [],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "15FIX9V2JP",
+   "active_moiety": "TITANIUM DIOXIDE",
+   "spl_count": 4160,
+   "candidates": []
+  },
+  {
+   "query": "AVOBENZONE",
+   "aliases": [
+    "BUTYL METHOXYDIBENZOYLMETHANE"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "G63QQF2NOX",
+   "active_moiety": "AVOBENZONE",
+   "spl_count": 4575,
+   "candidates": []
+  },
+  {
+   "query": "OXYBENZONE",
+   "aliases": [
+    "BENZOPHENONE-3"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "95OOS7VE0Y",
+   "active_moiety": "OXYBENZONE",
+   "spl_count": 1650,
+   "candidates": []
+  },
+  {
+   "query": "OCTINOXATE",
+   "aliases": [
+    "OCTYL METHOXYCINNAMATE",
+    "ETHYLHEXYL METHOXYCINNAMATE"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "4Y5P7MUD51",
+   "active_moiety": "OCTINOXATE",
+   "spl_count": 4027,
+   "candidates": []
+  },
+  {
+   "query": "OCTISALATE",
+   "aliases": [
+    "OCTYL SALICYLATE",
+    "ETHYLHEXYL SALICYLATE"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "4X49Y0596W",
+   "active_moiety": "OCTISALATE",
+   "spl_count": 5415,
+   "candidates": []
+  },
+  {
+   "query": "OCTOCRYLENE",
+   "aliases": [],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "5A68WGF6WM",
+   "active_moiety": "OCTOCRYLENE",
+   "spl_count": 4203,
+   "candidates": []
+  },
+  {
+   "query": "HOMOSALATE",
+   "aliases": [],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "V06SV4M95S",
+   "active_moiety": "HOMOSALATE",
+   "spl_count": 3635,
+   "candidates": []
+  },
+  {
+   "query": "ENSULIZOLE",
+   "aliases": [
+    "PHENYLBENZIMIDAZOLE SULFONIC ACID"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "9YQ9DI1W42",
+   "active_moiety": "ENSULIZOLE",
+   "spl_count": 194,
+   "candidates": []
+  },
+  {
+   "query": "SULISOBENZONE",
+   "aliases": [
+    "BENZOPHENONE-4"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "1W6L629B4K",
+   "active_moiety": "SULISOBENZONE",
+   "spl_count": 4,
+   "candidates": []
+  },
+  {
+   "query": "DIOXYBENZONE",
+   "aliases": [
+    "BENZOPHENONE-8"
+   ],
+   "status": "not_found",
+   "matched_via": "none",
+   "unii": null,
+   "active_moiety": null,
+   "spl_count": null,
+   "candidates": []
+  },
+  {
+   "query": "MERADIMATE",
+   "aliases": [
+    "MENTHYL ANTHRANILATE"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "J9QGD60OUZ",
+   "active_moiety": "MERADIMATE",
+   "spl_count": 30,
+   "candidates": []
+  },
+  {
+   "query": "CINOXATE",
+   "aliases": [],
+   "status": "not_found",
+   "matched_via": "none",
+   "unii": null,
+   "active_moiety": null,
+   "spl_count": null,
+   "candidates": []
+  },
+  {
+   "query": "PADIMATE O",
+   "aliases": [
+    "ETHYLHEXYL DIMETHYL PABA"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "Z11006CMUZ",
+   "active_moiety": "PADIMATE O",
+   "spl_count": 69,
+   "candidates": []
+  },
+  {
+   "query": "TROLAMINE SALICYLATE",
+   "aliases": [],
+   "status": "not_found",
+   "matched_via": "none",
+   "unii": null,
+   "active_moiety": null,
+   "spl_count": null,
+   "candidates": []
+  },
+  {
+   "query": "AMINOBENZOIC ACID",
+   "aliases": [
+    "PABA"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "TL2TJE8QTX",
+   "active_moiety": "AMINOBENZOIC ACID",
+   "spl_count": 8,
+   "candidates": []
+  },
+  {
+   "query": "BEMOTRIZINOL",
+   "aliases": [
+    "BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE",
+    "BEMOTRIZINOLE"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "PWZ1720CBH",
+   "active_moiety": "BEMOTRIZINOL",
+   "spl_count": 34,
+   "candidates": []
+  },
+  {
+   "query": "BISOCTRIZOLE",
+   "aliases": [
+    "METHYLENE BIS-BENZOTRIAZOLYL TETRAMETHYLBUTYLPHENOL"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "8NT850T0YS",
+   "active_moiety": "BISOCTRIZOLE",
+   "spl_count": 8,
+   "candidates": []
+  },
+  {
+   "query": "ECAMSULE",
+   "aliases": [
+    "TEREPHTHALYLIDENE DICAMPHOR SULFONIC ACID"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "M94R1PM439",
+   "active_moiety": "ECAMSULE",
+   "spl_count": 11,
+   "candidates": []
+  },
+  {
+   "query": "DROMETRIZOLE TRISILOXANE",
+   "aliases": [],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "HC22845I1X",
+   "active_moiety": "DROMETRIZOLE TRISILOXANE",
+   "spl_count": 20,
+   "candidates": []
+  },
+  {
+   "query": "OCTYL TRIAZONE",
+   "aliases": [
+    "ETHYLHEXYL TRIAZONE"
+   ],
+   "status": "ok",
+   "matched_via": "alias",
+   "unii": "XQN8R9SAK4",
+   "active_moiety": "ETHYLHEXYL TRIAZONE",
+   "spl_count": 13,
+   "candidates": []
+  },
+  {
+   "query": "DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE",
+   "aliases": [
+    "DHHB"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "ANQ870JD20",
+   "active_moiety": "DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE",
+   "spl_count": 18,
+   "candidates": []
+  }
+ ]
+}
