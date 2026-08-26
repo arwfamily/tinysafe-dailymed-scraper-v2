@@ -436,6 +436,74 @@ def build_matrix(found):
     return out, stats
 
 
+# --------------------------------------------------- cross-border legality
+def check_legality(prods, matrix):
+    """
+    Would this product be legal, as formulated, in each other jurisdiction?
+
+    Only runs on percent_ww, never on the raw strength field. SPL states
+    concentration as a ratio and the first parser kept the numerator alone, so
+    "216" (21.6 % as mg/g) and "3" (3 %) sat in one column indistinguishably.
+    A guess here would say a product is legal where it is not, so anything
+    without a resolved percent is UNKNOWN — never PASS.
+    """
+    alias = {}
+    for root, v in matrix.items():
+        alias[root] = root
+        for a in v.get("also_known_as", []):
+            alias[norm(a)] = root
+
+    rows = []
+    for p in prods:
+        if p.get("category") != "sunscreen":
+            continue
+        acts = p.get("active_ingredients") or []
+        if not acts:
+            continue
+        verdicts, unknown_any = {}, False
+        details = []
+        for a in acts:
+            root = alias.get(norm(a.get("name")))
+            pct = a.get("percent_ww")
+            if root is None:
+                unknown_any = True
+                details.append({"ingredient": a.get("name"),
+                                "issue": "not a mapped UV filter"})
+                continue
+            if pct is None:
+                unknown_any = True
+                details.append({"ingredient": a.get("name"),
+                                "issue": f"no resolved percent "
+                                         f"({a.get('percent_basis')})"})
+                continue
+            for j, lim in matrix[root]["limits"].items():
+                mx = lim.get("max_percent")
+                if mx is None:
+                    continue
+                try:
+                    over = float(pct) > float(mx) + 1e-9
+                except (TypeError, ValueError):
+                    continue
+                if over:
+                    verdicts.setdefault(j, []).append({
+                        "ingredient": root, "percent": pct,
+                        "limit": mx, "listed_as": lim.get("listed_as")})
+        if not verdicts and not unknown_any:
+            continue
+        rows.append({
+            "setid": p.get("setid"),
+            "title": p.get("title"),
+            "over_limit": verdicts,
+            "unresolved": details,
+            "verdict": ("OVER_LIMIT" if verdicts
+                        else "UNKNOWN_insufficient_data"),
+            "caveat": "Compares stated active concentration against the "
+                      "jurisdiction's maximum for that filter. It does not "
+                      "check every other requirement for sale there.",
+        })
+    return rows
+
+
 # ------------------------------------------------------------------ main
 def main():
     ap = argparse.ArgumentParser()
@@ -501,6 +569,8 @@ def main():
     else:
         print("\n--- RECALL JOIN --- skipped (no --recalls path)")
 
+    # 2b. cross-border legality (needs the matrix, so built after it below)
+
     # 3. jurisdiction matrix
     found, missing = load_regulatory()
     print(f"\n--- JURISDICTION MATRIX ---")
@@ -528,6 +598,41 @@ def main():
                   encoding="utf-8") as f:
             json.dump(doc, f, ensure_ascii=False, indent=1)
         print(f"  built: {len(matrix)} ingredients across {sorted(found)}")
+        # legality needs the matrix
+        leg = check_legality(prods, matrix)
+        with open(os.path.join(args.out, "legality_check.jsonl"), "w",
+                  encoding="utf-8") as f:
+            for r in leg:
+                f.write(json.dumps(r, ensure_ascii=False) + "\n")
+        over = [r for r in leg if r["verdict"] == "OVER_LIMIT"]
+        print(f"\n--- CROSS-BORDER LEGALITY ---")
+        print(f"  products flagged over a foreign limit : {len(over)}")
+        byj = defaultdict(int)
+        for r in over:
+            for j in r["over_limit"]:
+                byj[j] += 1
+        for j, n in sorted(byj.items(), key=lambda x: -x[1]):
+            print(f"    would exceed {j} limits: {n}")
+        print(f"  products with unresolved concentration : "
+              f"{len(leg) - len(over)}  (reported UNKNOWN, never PASS)")
+
+        # SELF-CHECK. A US-registered sunscreen exceeding the US monograph is
+        # almost always a unit-conversion error, not a lawbreaking product:
+        # SPL states concentration as a ratio, so 216 mg/g and 3 % both arrive
+        # as bare numbers and a bad conversion inflates one of them tenfold.
+        # This number is therefore a health meter for the strength parser, and
+        # every other jurisdiction's figure is only as good as it is.
+        us_over = byj.get("US", 0)
+        total_sun = sum(1 for p in prods if p.get("category") == "sunscreen")
+        if total_sun and us_over > 0.01 * total_sun:
+            print(f"\n  !! NORMALISATION WARNING: {us_over} US products exceed a "
+                  f"US limit ({100*us_over/total_sun:.1f}% of sunscreens).")
+            print("     US-registered sunscreens comply with M020 by construction,")
+            print("     so this is a percent_ww conversion fault. DO NOT publish")
+            print("     any cross-border figure until this is near zero.")
+        else:
+            print(f"  self-check: {us_over} US-over-US (expected ~0) — "
+                  "normalisation looks sound")
         print(f"         {multi} appear in 2+ jurisdictions "
               f"(these are the comparison rows), {with_limit} carry a numeric limit")
     else:

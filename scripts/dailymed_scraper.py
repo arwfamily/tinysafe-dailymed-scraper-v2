@@ -239,11 +239,85 @@ def _parse_ingredients_xml(xml, want_active):
                     unii = um.group(1); break
         rec = {"name": nm, "unii": unii}
         if want_active:
-            sm = re.search(r'<numerator[^>]*value="([^"]+)"', b, re.IGNORECASE)
-            if sm:
-                rec["strength"] = sm.group(1)
+            _attach_strength(rec, b)
         seen.add(nm); out.append(rec)
     return out
+
+
+# ---------- strength normalisation ----------
+# SPL states a concentration as a RATIO:
+#     <numerator value="216" unit="mg"/><denominator value="1" unit="g"/>
+# The first version of this parser kept numerator@value and threw away both
+# units and the denominator, so "216" (= 21.6 %) and "3" (= 3 %) landed in the
+# same field with nothing to tell them apart. Any cross-jurisdiction limit check
+# was silently impossible: 19,285 actives carried strength_unit = null and two
+# different scales were mixed in one column.
+#
+# Everything below converts to PERCENT W/W, and refuses rather than guesses when
+# the ratio cannot be resolved. A wrong concentration is worse than a missing one
+# — it would make a product look legal in a jurisdiction where it is not.
+
+_MASS_TO_MG = {"MG": 1.0, "G": 1000.0, "GM": 1000.0, "UG": 0.001, "MCG": 0.001,
+               "KG": 1000000.0}
+_VOL_TO_ML = {"ML": 1.0, "L": 1000.0, "CM3": 1.0}
+
+
+def _num_unit(block, tag):
+    m = re.search(rf'<{tag}[^>]*\bvalue="([^"]+)"[^>]*>', block, re.IGNORECASE)
+    if not m:
+        return None, None
+    try:
+        val = float(m.group(1))
+    except ValueError:
+        return None, None
+    um = re.search(rf'<{tag}[^>]*\bunit="([^"]+)"', block, re.IGNORECASE)
+    return val, (um.group(1).strip().upper() if um else None)
+
+
+def _to_percent(nv, nu, dv, du):
+    """Return (percent, basis) or (None, reason)."""
+    if nv is None:
+        return None, "no_numerator"
+    if nu in (None, "", "1") and dv in (None, 1.0) and du in (None, "", "1"):
+        # unitless ratio: SPL uses this for plain percent strengths
+        return (nv, "unitless_assumed_percent") if nv <= 100 else (None, "unitless_out_of_range")
+    if nu == "%":
+        return nv, "percent_literal"
+    if dv in (None, 0):
+        return None, "no_denominator"
+    nu_u, du_u = (nu or "").upper(), (du or "").upper()
+    if nu_u in _MASS_TO_MG and du_u in _MASS_TO_MG:
+        mg = nv * _MASS_TO_MG[nu_u]
+        per_mg = dv * _MASS_TO_MG[du_u]
+        return (100.0 * mg / per_mg, "w/w") if per_mg else (None, "zero_denominator")
+    if nu_u in _MASS_TO_MG and du_u in _VOL_TO_ML:
+        mg = nv * _MASS_TO_MG[nu_u]
+        ml = dv * _VOL_TO_ML[du_u]
+        # w/v is not w/w; reported separately so nobody compares the two
+        return (100.0 * mg / (ml * 1000.0), "w/v") if ml else (None, "zero_denominator")
+    return None, f"unhandled_units:{nu_u}/{du_u}"
+
+
+def _attach_strength(rec, block):
+    nv, nu = _num_unit(block, "numerator")
+    dv, du = _num_unit(block, "denominator")
+    rec["strength"] = None if nv is None else str(nv)
+    rec["strength_unit"] = nu
+    rec["denominator"] = None if dv is None else str(dv)
+    rec["denominator_unit"] = du
+    pct, basis = _to_percent(nv, nu, dv, du)
+    if pct is not None:
+        # nothing on the market legitimately exceeds 100 % w/w
+        if pct > 100:
+            rec["percent_ww"] = None
+            rec["percent_basis"] = f"rejected_over_100:{round(pct, 2)}"
+        else:
+            rec["percent_ww"] = round(pct, 4)
+            rec["percent_basis"] = basis
+    else:
+        rec["percent_ww"] = None
+        rec["percent_basis"] = basis
+    return rec
 
 
 # ---------- Phase D: inactive ingredients (XML 1차로 뒤집음, UNII 확보) ----------
@@ -421,7 +495,7 @@ def main():
         src_counts[r["inactive_source"]] = src_counts.get(r["inactive_source"], 0) + 1
     master = {
         "metadata": {
-            "scraper_version": "2.2",
+            "scraper_version": "2.3",
             "search_method": "ingredient_unii",
             "unii_searched": UNII,
             "unii_seed_source": ("resolved_file" if UNII != UNII_FALLBACK
