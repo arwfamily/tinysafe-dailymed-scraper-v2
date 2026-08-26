@@ -291,16 +291,38 @@ def _to_percent(nv, nu, dv, du):
         per_mg = dv * _MASS_TO_MG[du_u]
         return (100.0 * mg / per_mg, "w/w") if per_mg else (None, "zero_denominator")
     if nu_u in _MASS_TO_MG and du_u in _VOL_TO_ML:
-        mg = nv * _MASS_TO_MG[nu_u]
+        # w/v: grams of active per millilitre, expressed as g per 100 mL.
+        #
+        # TREAT THE RESULT AS UNRELIABLE FOR A LIMIT CHECK. Many SPLs put the
+        # amount PER CONTAINER in the numerator and a pack size in the
+        # denominator, and the pack size is often not the real fill volume.
+        # Worked example from the corpus (Isa Knox Anew Solaire, 50 mL stated):
+        #     octisalate 4.5 g, avobenzone 2.7 g, octocrylene 9.0 g
+        #     / 50  -> 9.0 %, 5.4 %, 18.0 %   (all "over" the US monograph)
+        #     / 90  -> 5.0 %, 3.0 %, 10.0 %   (exactly the US maxima)
+        # The formula is right at 5/3/10; the stated denominator is not the
+        # basis those grams were measured against. So w/v yields a number, and
+        # that number must not be compared against a w/w legal maximum.
+        g = nv * _MASS_TO_MG[nu_u] / 1000.0
         ml = dv * _VOL_TO_ML[du_u]
-        # w/v is not w/w; reported separately so nobody compares the two
-        return (100.0 * mg / (ml * 1000.0), "w/v") if ml else (None, "zero_denominator")
+        return (100.0 * g / ml, "w/v") if ml else (None, "zero_denominator")
     return None, f"unhandled_units:{nu_u}/{du_u}"
 
 
 def _attach_strength(rec, block):
     nv, nu = _num_unit(block, "numerator")
     dv, du = _num_unit(block, "denominator")
+    # numerator == denominator means the SPL states the container against
+    # itself ("12.81 g / 12.81 g"), which is a package fact, not a
+    # concentration. Computing 100 % from it and then calling the product
+    # non-compliant would be our error, not the labeler's.
+    if (nv is not None and dv is not None and nu and du
+            and nu.upper() == du.upper() and abs(nv - dv) < 1e-9):
+        rec.update({"strength": str(nv), "strength_unit": nu,
+                    "denominator": str(dv), "denominator_unit": du,
+                    "percent_ww": None,
+                    "percent_basis": "numerator_equals_denominator"})
+        return rec
     rec["strength"] = None if nv is None else str(nv)
     rec["strength_unit"] = nu
     rec["denominator"] = None if dv is None else str(dv)
@@ -495,7 +517,7 @@ def main():
         src_counts[r["inactive_source"]] = src_counts.get(r["inactive_source"], 0) + 1
     master = {
         "metadata": {
-            "scraper_version": "2.3",
+            "scraper_version": "2.4",
             "search_method": "ingredient_unii",
             "unii_searched": UNII,
             "unii_seed_source": ("resolved_file" if UNII != UNII_FALLBACK

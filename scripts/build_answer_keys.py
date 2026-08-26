@@ -471,6 +471,39 @@ def build_matrix(found):
 
 
 # --------------------------------------------------- cross-border legality
+TITLE_PCT = re.compile(r"([A-Z][A-Z0-9 ,'\-]{3,40}?)\s*\(?\s*([\d.]+)\s*%", re.IGNORECASE)
+
+
+def title_stated_percents(title):
+    """
+    DailyMed titles for OTC sunscreens usually restate the actives with their
+    percentages: "SUNSCREEN STICK (HOMOSALATE 15%, OCTISALATE 5%, ...)".
+    That is an INDEPENDENT witness to the same fact, written by the labeler in
+    prose rather than in the ratio fields, so it can catch the case where the
+    XML parser pairs an ingredient name with the wrong numerator.
+    Observed in the corpus: Coppertone Pure & Simple KIDS, a zinc-only product,
+    came out as "avobenzone 24.08 %" — 24.08 % is the zinc figure.
+    """
+    out = {}
+    for m in TITLE_PCT.finditer(title or ""):
+        name = norm(m.group(1))
+        try:
+            out[name] = float(m.group(2))
+        except ValueError:
+            continue
+    return out
+
+
+def title_disagrees(title_pcts, ing_name, pct):
+    """True when the title states a clearly different number for this active."""
+    n = norm(ing_name)
+    for tname, tpct in title_pcts.items():
+        if n and (n in tname or tname in n) and tpct > 0:
+            if abs(tpct - pct) / max(tpct, 1e-9) > 0.10:
+                return True, tpct
+    return False, None
+
+
 def check_legality(prods, matrix):
     """
     Would this product be legal, as formulated, in each other jurisdiction?
@@ -494,6 +527,7 @@ def check_legality(prods, matrix):
         acts = p.get("active_ingredients") or []
         if not acts:
             continue
+        tpcts = title_stated_percents(p.get("title"))
         verdicts, unknown_any = {}, False
         details = []
         for a in acts:
@@ -510,14 +544,53 @@ def check_legality(prods, matrix):
                                 "issue": f"no resolved percent "
                                          f"({a.get('percent_basis')})"})
                 continue
+            # Legal maxima in M020, Annex VI and 별표2 are all w/w percentages.
+            # A w/v figure is not comparable to them without the product's
+            # density, and in this corpus w/v records are additionally
+            # untrustworthy: the numerator is often the amount per container
+            # against a pack size that is not the real fill volume. Comparing
+            # them anyway made 225 US-registered sunscreens look non-compliant
+            # with the US monograph they were registered under.
+            disagree, stated = title_disagrees(tpcts, a.get("name"), float(pct))
+            if disagree:
+                unknown_any = True
+                details.append({"ingredient": a.get("name"),
+                                "parsed_percent": pct,
+                                "title_states": stated,
+                                "issue": "the label text and the ratio fields "
+                                         "disagree — not used for a compliance "
+                                         "verdict until one is confirmed"})
+                continue
+            if a.get("percent_basis") not in ("w/w", "percent_literal",
+                                              "unitless_assumed_percent"):
+                unknown_any = True
+                details.append({"ingredient": a.get("name"),
+                                "issue": f"basis {a.get('percent_basis')} is not "
+                                         "comparable to a w/w legal maximum"})
+                continue
             for j, lim in matrix[root]["limits"].items():
                 mx = lim.get("max_percent")
                 if mx is None:
                     continue
                 try:
-                    over = float(pct) > float(mx) + 1e-9
+                    pctf, mxf = float(pct), float(mx)
                 except (TypeError, ValueError):
                     continue
+                # No UV filter is legal anywhere above 25 %. A figure far past
+                # that is a filing or parsing fault, not a product that broke
+                # the law, and reporting it as non-compliance would be a
+                # defamatory error rather than a finding. Seen in the corpus:
+                # avobenzone at 75 %, titanium dioxide at 100 %.
+                if pctf > 2 * mxf and pctf > 30:
+                    unknown_any = True
+                    details.append({"ingredient": root, "percent": pctf,
+                                    "issue": "implausible concentration — "
+                                             "treated as a data fault, not a "
+                                             "compliance finding"})
+                    continue
+                # SPL ratios round: 8.429 g / 112.38 g = 7.5004 %, which is the
+                # 7.5 % maximum stated to more digits than it was measured to.
+                over = pctf > mxf * 1.005
                 if over:
                     verdicts.setdefault(j, []).append({
                         "ingredient": root, "percent": pct,
