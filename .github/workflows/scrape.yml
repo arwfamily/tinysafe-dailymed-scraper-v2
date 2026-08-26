@@ -15,6 +15,11 @@ on:
         description: 'Parallel workers (3-10)'
         required: false
         default: '5'
+      enumeration_probe:
+        description: 'Also measure the blind spot by paging the whole OTC monograph category (slow)'
+        required: false
+        type: boolean
+        default: false
   schedule:
     # Weekly full run, Mondays 09:00 UTC. Reformulation is a slow signal;
     # weekly is enough and keeps the raw snapshot folder from exploding.
@@ -97,6 +102,18 @@ jobs:
         run: |
           mkdir -p data/views
           cp output/tinysafe_dailymed_v2_mineral_sun.json data/views/mineral_sunscreens.json
+
+      # Find the filters the net does not know about. Pass 1 is free (reads the
+      # master we just built). The enumeration probe is opt-in because it pages
+      # the entire OTC-monograph category.
+      - name: Discover unseeded actives
+        if: steps.mode.outputs.limit == '0'
+        continue-on-error: true
+        timeout-minutes: 45
+        run: |
+          python scripts/discover_actives.py \
+            --master output/tinysafe_dailymed_v2_master.json \
+            ${{ github.event.inputs.enumeration_probe == 'true' && '--probe' || '' }}
 
       # Answer keys: the things that have a right answer. Derived and disposable —
       # delete data/views and a rerun rebuilds them.
