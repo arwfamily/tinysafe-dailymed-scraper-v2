@@ -344,7 +344,49 @@ def _first(row, keys):
 
 
 def build_matrix(found):
-    """ingredient -> jurisdiction -> limit. Only rows with a usable name."""
+    """
+    ingredient -> jurisdiction -> limit, ONE row per filter.
+
+    Aliases must MERGE, not multiply. The first version indexed each alias as
+    its own key, so Octinoxate / Octyl Methoxycinnamate / Ethylhexyl
+    Methoxycinnamate became three rows and each carried only the jurisdictions
+    that happened to use that spelling. A reader looking up "Octinoxate" saw
+    US 7.5 and dashes everywhere else — the opposite of the truth.
+
+    So names are unioned across jurisdictions first (every alias set links its
+    members), then one canonical row is emitted per group.
+    """
+    # pass 1: union alias groups
+    parent = {}
+
+    def find(x):
+        parent.setdefault(x, x)
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(a, b):
+        ra, rb = find(a), find(b)
+        if ra != rb:
+            parent[rb] = ra
+
+    for juris, blob in found.items():
+        spec = blob["spec"]
+        for row in blob["rows"]:
+            key = norm(_first(row, spec["name"]))
+            if not key:
+                continue
+            find(key)
+            for a in (row.get("alt_names") or []):
+                na = norm(a)
+                if na:
+                    union(key, na)
+
+    groups = defaultdict(set)
+    for k in list(parent):
+        groups[find(k)].add(k)
+
     matrix = defaultdict(dict)
     stats = {}
     for juris, blob in found.items():
@@ -371,23 +413,27 @@ def build_matrix(found):
                 if row.get(flag):
                     entry[flag] = row[flag]
             # several AU rows share a normalised name; keep the tightest limit
-            for kk in keys:
-                if not kk:
+            root = find(key)
+            entry["listed_as"] = key
+            prev = matrix[root].get(juris)
+            if prev and prev.get("max_percent") is not None:
+                if entry["max_percent"] is None:
                     continue
-                prev = matrix[kk].get(juris)
-                if prev and prev.get("max_percent") is not None:
-                    if entry["max_percent"] is None:
+                try:
+                    if float(entry["max_percent"]) >= float(prev["max_percent"]):
                         continue
-                    try:
-                        if float(entry["max_percent"]) >= float(prev["max_percent"]):
-                            continue
-                    except (TypeError, ValueError):
-                        continue
-                matrix[kk][juris] = dict(entry, matched_as=kk if kk == key
-                                         else f"alias of {key}")
+                except (TypeError, ValueError):
+                    continue
+            matrix[root][juris] = entry
         stats[juris] = {"rows": len(blob["rows"]), "named": kept,
                         "file": blob["file"]}
-    return matrix, stats
+
+    # attach every known spelling to its row so a lookup by any name lands here
+    out = {}
+    for root, juris_map in matrix.items():
+        out[root] = {"limits": juris_map,
+                     "also_known_as": sorted(groups.get(root, {root}) - {root})}
+    return out, stats
 
 
 # ------------------------------------------------------------------ main
@@ -464,9 +510,10 @@ def main():
         matrix, stats = build_matrix(found)
         for j, st in stats.items():
             print(f"  {j}: {st['named']}/{st['rows']} named rows from {st['file']}")
-        multi = sum(1 for v in matrix.values() if len(v) > 1)
+        multi = sum(1 for v in matrix.values() if len(v["limits"]) > 1)
         with_limit = sum(1 for v in matrix.values()
-                         if any(x.get("max_percent") is not None for x in v.values()))
+                         if any(x.get("max_percent") is not None
+                                for x in v["limits"].values()))
         doc = {
             "coverage": stats,
             "ingredients_in_multiple_jurisdictions": multi,

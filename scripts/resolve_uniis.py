@@ -77,6 +77,13 @@ UV_FILTERS = [
     ("DROMETRIZOLE TRISILOXANE", []),
     ("OCTYL TRIAZONE", ["ETHYLHEXYL TRIAZONE"]),
     ("DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE", ["DHHB"]),
+    # Found by discover_actives.py in the 2026-08-26 run: real UV filters that
+    # were sitting in collected products without being search seeds themselves.
+    # A product using ONLY one of these was invisible to the net.
+    ("ENZACAMENE", ["4-METHYLBENZYLIDENE CAMPHOR"]),      # 6 products
+    ("AMILOXATE", ["ISOAMYL P-METHOXYCINNAMATE"]),        # 3
+    ("ETHYL METHOXYCINNAMATE", []),                       # 3
+    ("BENZOPHENONE", []),                                 # 3
 ]
 
 
