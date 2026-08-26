@@ -15,6 +15,11 @@ on:
         description: 'Parallel workers (3-10)'
         required: false
         default: '5'
+      verify_strengths:
+        description: 'Check every concentration against the Drug Facts panel (slow, refetches XML)'
+        required: false
+        type: boolean
+        default: false
       enumeration_probe:
         description: 'Also measure the blind spot by paging the whole OTC monograph category (slow)'
         required: false
@@ -114,6 +119,19 @@ jobs:
           python scripts/discover_actives.py \
             --master output/tinysafe_dailymed_v2_master.json \
             ${{ github.event.inputs.enumeration_probe == 'true' && '--probe' || '' }}
+
+      # Check every computed concentration against the Drug Facts panel on the
+      # same label — two independent statements of one fact. Opt-in because it
+      # refetches the SPL XML for each product; non-fatal so a network wobble
+      # cannot lose a completed collection.
+      - name: Verify strengths against the label panel
+        if: steps.mode.outputs.limit == '0' && github.event.inputs.verify_strengths == 'true'
+        continue-on-error: true
+        timeout-minutes: 90
+        run: |
+          python scripts/verify_strengths.py \
+            --canonical data/canonical/us_sunscreens.jsonl \
+            --category sunscreen
 
       # Answer keys: the things that have a right answer. Derived and disposable —
       # delete data/views and a rerun rebuilds them.
