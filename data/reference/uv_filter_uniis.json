@@ -3,7 +3,7 @@
  "source": "https://dailymed.nlm.nih.gov/dailymed/services/v2/uniis.json (full paged download, matched locally)",
  "catalogue_rows": 8019,
  "note": "Only documented /uniis parameters are used (pagesize, page). Matching happens locally so no assumption is made about server-side search behaviour. Codes are never typed by hand.",
- "usable_count": 19,
+ "usable_count": 23,
  "filters": [
   {
    "query": "ZINC OXIDE",
@@ -256,6 +256,50 @@
    "unii": "ANQ870JD20",
    "active_moiety": "DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE",
    "spl_count": 18,
+   "candidates": []
+  },
+  {
+   "query": "ENZACAMENE",
+   "aliases": [
+    "4-METHYLBENZYLIDENE CAMPHOR"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "8I3XWY40L9",
+   "active_moiety": "ENZACAMENE",
+   "spl_count": 13,
+   "candidates": []
+  },
+  {
+   "query": "AMILOXATE",
+   "aliases": [
+    "ISOAMYL P-METHOXYCINNAMATE"
+   ],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "376KTP06K8",
+   "active_moiety": "AMILOXATE",
+   "spl_count": 11,
+   "candidates": []
+  },
+  {
+   "query": "ETHYL METHOXYCINNAMATE",
+   "aliases": [],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "SD418S06XD",
+   "active_moiety": "ETHYL METHOXYCINNAMATE",
+   "spl_count": 5,
+   "candidates": []
+  },
+  {
+   "query": "BENZOPHENONE",
+   "aliases": [],
+   "status": "ok",
+   "matched_via": "exact",
+   "unii": "701M4TTV9O",
+   "active_moiety": "BENZOPHENONE",
+   "spl_count": 8,
    "candidates": []
   }
  ]

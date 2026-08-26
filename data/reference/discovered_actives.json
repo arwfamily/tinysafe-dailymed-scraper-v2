@@ -1,7 +1,7 @@
 {
  "built_on": "2026-08-26",
- "products_examined": 13285,
- "seeded_uniis": 19,
+ "products_examined": 13291,
+ "seeded_uniis": 23,
  "how_to_promote": "add the NAME to UV_FILTERS in scripts/resolve_uniis.py; the next run resolves it from DailyMed. Never paste the UNII by hand — let the resolver confirm it.",
  "candidates": [
   {
@@ -16,6 +16,7 @@
     "SOI2LOH54Z": 10,
     "4Y5P7MUD51": 5,
     "4X49Y0596W": 4,
+    "376KTP06K8": 1,
     "ANQ870JD20": 1,
     "5A68WGF6WM": 1
    },
@@ -39,6 +40,7 @@
     "SOI2LOH54Z": 10,
     "4Y5P7MUD51": 6,
     "4X49Y0596W": 4,
+    "376KTP06K8": 1,
     "ANQ870JD20": 1,
     "5A68WGF6WM": 1
    },
@@ -70,31 +72,6 @@
    ]
   },
   {
-   "unii": "8I3XWY40L9",
-   "name": "ENZACAMENE",
-   "name_variants": [
-    "ENZACAMENE"
-   ],
-   "product_count": 6,
-   "co_occurs_with_seeds": {
-    "4Y5P7MUD51": 6,
-    "SOI2LOH54Z": 4,
-    "G63QQF2NOX": 4,
-    "15FIX9V2JP": 2,
-    "5A68WGF6WM": 2,
-    "PWZ1720CBH": 1,
-    "V06SV4M95S": 1,
-    "4X49Y0596W": 1
-   },
-   "example_setids": [
-    "ea926d9b-7bb5-4480-98b8-d80e4b3f1a67",
-    "2eda1a2b-e024-449b-9553-839cdad9aab3",
-    "5c3d1a2b-28f1-4b8a-a018-dcbe3b12ea62",
-    "b81b277d-de03-4130-812b-37ef5d54feb2",
-    "18283e82-0f2d-1d9b-e063-6294a90a0615"
-   ]
-  },
-  {
    "unii": "GW89575KF9",
    "name": "SQUALANE",
    "name_variants": [
@@ -108,8 +85,8 @@
     "19402859-2553-b06e-e063-6294a90ae4a0",
     "173a050f-1792-0468-e063-6294a90a264c",
     "17246ea4-733d-35e5-e063-6394a90a316f",
-    "14508f1c-bedf-c367-e063-6294a90a1c7c",
-    "148d43f8-68e0-eb89-e063-6394a90adce0"
+    "148d43f8-68e0-eb89-e063-6394a90adce0",
+    "14508f1c-bedf-c367-e063-6294a90a1c7c"
    ]
   },
   {
@@ -132,65 +109,6 @@
     "1aaf5942-ff13-ee07-e063-6394a90acd28",
     "18018314-4ef4-7731-e063-6294a90a4e6a",
     "e99d92c4-8768-9c0a-e053-2a95a90a609e"
-   ]
-  },
-  {
-   "unii": "376KTP06K8",
-   "name": "AMILOXATE",
-   "name_variants": [
-    "AMILOXATE"
-   ],
-   "product_count": 3,
-   "co_occurs_with_seeds": {
-    "15FIX9V2JP": 3,
-    "SOI2LOH54Z": 2,
-    "4Y5P7MUD51": 3,
-    "G63QQF2NOX": 1,
-    "4X49Y0596W": 1
-   },
-   "example_setids": [
-    "4b50f047-3a69-4194-8e56-bd3c49b4c540",
-    "b81b277d-de03-4130-812b-37ef5d54feb2",
-    "49001a18-ae05-493e-92da-95b56401b323"
-   ]
-  },
-  {
-   "unii": "SD418S06XD",
-   "name": "ETHYL METHOXYCINNAMATE",
-   "name_variants": [
-    "ETHYL METHOXYCINNAMATE"
-   ],
-   "product_count": 3,
-   "co_occurs_with_seeds": {
-    "15FIX9V2JP": 2,
-    "V06SV4M95S": 1,
-    "5A68WGF6WM": 2
-   },
-   "example_setids": [
-    "1ce0d6c4-e3cc-d9b9-e063-6294a90a9199",
-    "197e8a7b-1179-d625-e063-6294a90ae12d",
-    "1c415f40-7462-c66f-e063-6294a90ae9ea"
-   ]
-  },
-  {
-   "unii": "701M4TTV9O",
-   "name": "BENZOPHENONE",
-   "name_variants": [
-    "BENZOPHENONE"
-   ],
-   "product_count": 3,
-   "co_occurs_with_seeds": {
-    "15FIX9V2JP": 2,
-    "G63QQF2NOX": 2,
-    "4Y5P7MUD51": 1,
-    "4X49Y0596W": 1,
-    "V06SV4M95S": 1,
-    "5A68WGF6WM": 1
-   },
-   "example_setids": [
-    "c16e8c37-6773-4fc9-9ea8-bda005742988",
-    "bb41535e-5970-4f3a-9def-685cdc183ca9",
-    "5a68508b-f1fa-4f03-b28a-554e24cf58d6"
    ]
   },
   {
@@ -289,6 +207,21 @@
    ]
   },
   {
+   "unii": "7S7TV2F4XC",
+   "name": "STEPHANIA TETRANDRA WHOLE",
+   "name_variants": [
+    "STEPHANIA TETRANDRA WHOLE"
+   ],
+   "product_count": 2,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 2
+   },
+   "example_setids": [
+    "22982b28-37df-ed81-e063-6394a90a77db",
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
+   ]
+  },
+  {
    "unii": "YSE9PPT4TH",
    "name": "SODIUM HYALURONATE",
    "name_variants": [
@@ -366,6 +299,7 @@
    ],
    "product_count": 1,
    "co_occurs_with_seeds": {
+    "SD418S06XD": 1,
     "15FIX9V2JP": 1,
     "V06SV4M95S": 1,
     "5A68WGF6WM": 1
@@ -740,6 +674,7 @@
    "product_count": 1,
    "co_occurs_with_seeds": {
     "15FIX9V2JP": 1,
+    "701M4TTV9O": 1,
     "G63QQF2NOX": 1
    },
    "example_setids": [
@@ -755,6 +690,7 @@
    "product_count": 1,
    "co_occurs_with_seeds": {
     "15FIX9V2JP": 1,
+    "701M4TTV9O": 1,
     "G63QQF2NOX": 1
    },
    "example_setids": [
@@ -898,6 +834,7 @@
     "5A68WGF6WM": 1,
     "8NT850T0YS": 1,
     "4Y5P7MUD51": 1,
+    "8I3XWY40L9": 1,
     "9YQ9DI1W42": 1
    },
    "example_setids": [
@@ -915,6 +852,7 @@
     "5A68WGF6WM": 1,
     "8NT850T0YS": 1,
     "4Y5P7MUD51": 1,
+    "8I3XWY40L9": 1,
     "9YQ9DI1W42": 1
    },
    "example_setids": [
@@ -932,6 +870,7 @@
     "5A68WGF6WM": 1,
     "8NT850T0YS": 1,
     "4Y5P7MUD51": 1,
+    "8I3XWY40L9": 1,
     "9YQ9DI1W42": 1
    },
    "example_setids": [
@@ -964,6 +903,104 @@
    },
    "example_setids": [
     "1ae6c49a-3861-29b3-e063-6394a90aa323"
+   ]
+  },
+  {
+   "unii": "LP618AV2EA",
+   "name": ".BETA.-BISABOLOL",
+   "name_variants": [
+    ".BETA.-BISABOLOL"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22982b28-37df-ed81-e063-6394a90a77db"
+   ]
+  },
+  {
+   "unii": "5U9XZ261ER",
+   "name": "TALLOW ACID, BEEF",
+   "name_variants": [
+    "TALLOW ACID, BEEF"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22982b28-37df-ed81-e063-6394a90a77db"
+   ]
+  },
+  {
+   "unii": "9L0SCP0SKZ",
+   "name": "SAURURUS CHINENSIS FLOWER",
+   "name_variants": [
+    "SAURURUS CHINENSIS FLOWER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22982b28-37df-ed81-e063-6394a90a77db"
+   ]
+  },
+  {
+   "unii": "788QAG3W8A",
+   "name": "PEG-9 DIGLYCIDYL ETHER/SODIUM HYALURONATE CROSSPOLYMER",
+   "name_variants": [
+    "PEG-9 DIGLYCIDYL ETHER/SODIUM HYALURONATE CROSSPOLYMER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22982b28-37df-ed81-e063-6394a90a77db"
+   ]
+  },
+  {
+   "unii": "0WN694NBMM",
+   "name": "TOCOPHERYL RETINOATE",
+   "name_variants": [
+    "TOCOPHERYL RETINOATE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22982b28-37df-ed81-e063-6394a90a77db"
+   ]
+  },
+  {
+   "unii": "6DRV3D37XS",
+   "name": "SAURURUS CHINENSIS WHOLE",
+   "name_variants": [
+    "SAURURUS CHINENSIS WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
+   ]
+  },
+  {
+   "unii": "7C42E2D7B0",
+   "name": "TARAXACUM OFFICINALE WHOLE",
+   "name_variants": [
+    "TARAXACUM OFFICINALE WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
    ]
   }
  ],
