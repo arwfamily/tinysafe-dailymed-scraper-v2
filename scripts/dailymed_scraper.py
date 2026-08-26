@@ -1,15 +1,29 @@
 #!/usr/bin/env python3
 """
-TinySafe DailyMed Scraper v2.0
+TinySafe DailyMed Scraper v2.2
 ==============================
 INGREDIENT-BASED search (not keyword). Collects every SPL whose ACTIVE ingredient
-contains Zinc Oxide and/or Titanium Dioxide — regardless of "baby"/"mineral" wording.
+matches one of the UV-filter UNII seeds — regardless of "baby"/"mineral" wording.
 This is what pulls in adult/family mineral sunscreens (Native, Vanicream, EltaMD)
 that the old keyword scraper missed.
 
+v2.2 — THE NET IS NO LONGER MINERAL-ONLY.
+Seeds are read from data/reference/uv_filter_uniis.json, produced by
+scripts/resolve_uniis.py, which resolves UV-filter NAMES to UNII codes against
+DailyMed's own /uniis service. Codes are never typed by hand: a wrong UNII
+returns zero SPLs, which is indistinguishable from "this filter is not used in
+the US". If the seed file is missing or unusable the scraper falls back to the
+two mineral codes, so a widening attempt can fail without stopping collection.
+
+Why widen: chemical-only sunscreens were structurally uncollectable, so this
+dataset could never compute a mineral-vs-chemical market share — the denominator
+did not exist. It also means a filter entering or leaving the market (FDA
+proposed order OTC000039 would add bemotrizinol to Monograph M020) would be
+invisible. A before/after needs the "before" collected now.
+
 Pipeline:
-  Phase A  search  : /v2/spls.json?unii_code=<UNII>  (ZnO=SOI2LOH54Z, TiO2=15FIX9V2JP), paginated
-  Phase B  dedup   : union of setids across both UNII searches
+  Phase A  search  : /v2/spls.json?unii_code=<UNII> for every seed, paginated
+  Phase B  dedup   : union of setids across all UNII searches
   Phase C  active  : /v2/spls/{setid}/packaging.json  → active ingredients (name + strength)
   Phase D  inactive: openFDA (primary) → SPL XML IACT classCode (fallback)  [active never leaks]
   Phase E  enrich  : SPF parse, mineral_type, chemical/hidden-filter flags, baby_labeled, category
@@ -28,8 +42,56 @@ BASE = "https://dailymed.nlm.nih.gov/dailymed/services/v2"
 OPENFDA = "https://api.fda.gov/drug/label.json"
 UA = {"User-Agent": "TinySafe-research/2.0 (contact: support@tinysafe.app)"}
 
-# UNII codes (FDA Unique Ingredient Identifiers)
-UNII = {"SOI2LOH54Z": "ZINC OXIDE", "15FIX9V2JP": "TITANIUM DIOXIDE"}
+# ---------------------------------------------------------------------------
+# Search seeds (FDA Unique Ingredient Identifiers)
+#
+# Resolved by scripts/resolve_uniis.py from DailyMed's own /uniis service and
+# written to data/reference/uv_filter_uniis.json. Never typed by hand.
+# The two mineral codes are the fallback AND are always kept in the seed set,
+# so widening the net can never accidentally shrink it.
+# ---------------------------------------------------------------------------
+UNII_SEED_FILE = os.path.join("data", "reference", "uv_filter_uniis.json")
+UNII_FALLBACK = {"SOI2LOH54Z": "ZINC OXIDE", "15FIX9V2JP": "TITANIUM DIOXIDE"}
+
+
+def _load_unii_seeds():
+    """Read resolved seeds; fall back to mineral-only on any problem."""
+    try:
+        with open(UNII_SEED_FILE, encoding="utf-8") as f:
+            doc = json.load(f)
+    except FileNotFoundError:
+        print(f"[UNII] no seed file at {UNII_SEED_FILE} -> mineral-only fallback "
+              "(run scripts/resolve_uniis.py to widen the net)", flush=True)
+        return dict(UNII_FALLBACK)
+    except Exception as e:
+        print(f"[UNII] seed file unreadable ({e}) -> mineral-only fallback", flush=True)
+        return dict(UNII_FALLBACK)
+
+    seeds = {}
+    for row in doc.get("filters", []):
+        if row.get("status") in ("ok", "single_inexact") and row.get("unii"):
+            seeds[row["unii"]] = row.get("unii_name") or row.get("query")
+
+    if len(seeds) < 2:
+        print(f"[UNII] seed file has {len(seeds)} usable code(s) -> mineral-only "
+              "fallback", flush=True)
+        return dict(UNII_FALLBACK)
+
+    for code, name in UNII_FALLBACK.items():
+        seeds.setdefault(code, name)      # minerals are never dropped
+
+    skipped = [r["query"] for r in doc.get("filters", [])
+               if r.get("status") not in ("ok", "single_inexact")]
+    print(f"[UNII] {len(seeds)} search seeds (resolved {doc.get('resolved_on')})",
+          flush=True)
+    if skipped:
+        print(f"[UNII] {len(skipped)} unresolved, NOT searched: "
+              f"{', '.join(skipped[:12])}{' ...' if len(skipped) > 12 else ''}",
+          flush=True)
+    return seeds
+
+
+UNII = _load_unii_seeds()
 UNII_CODESYSTEM = "2.16.840.1.113883.4.9"  # SPL에서 UNII를 나타내는 OID
 
 CHEMICAL_FILTERS = [
@@ -349,9 +411,15 @@ def main():
         src_counts[r["inactive_source"]] = src_counts.get(r["inactive_source"], 0) + 1
     master = {
         "metadata": {
-            "scraper_version": "2.1",
+            "scraper_version": "2.2",
             "search_method": "ingredient_unii",
             "unii_searched": UNII,
+            "unii_seed_source": ("resolved_file" if UNII != UNII_FALLBACK
+                                 else "mineral_fallback"),
+            "net_caveat": ("Active-ingredient UNII search. Any sunscreen whose "
+                           "actives are all outside the seed set is NOT collected, "
+                           "so market-share figures are only valid for filters in "
+                           "'unii_searched'."),
             "total_products": len(records),
             "inactive_source_breakdown": src_counts,
             "mineral_type_breakdown": _count(records, "mineral_type"),
