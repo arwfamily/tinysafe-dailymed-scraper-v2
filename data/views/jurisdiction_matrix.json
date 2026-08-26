@@ -3,26 +3,30 @@
   "EU": {
    "rows": 33,
    "named": 33,
-   "file": "eu_annex_vi.jsonl"
+   "file": "eu_annex_vi.jsonl",
+   "coverage": "complete"
   },
   "AU": {
    "rows": 5246,
    "named": 5246,
-   "file": "au_permissible_ingredients.json"
+   "file": "au_permissible_ingredients.json",
+   "coverage": "complete"
   },
   "KR": {
    "rows": 7,
    "named": 7,
-   "file": "kr_uv_filters_partial.jsonl"
+   "file": "kr_uv_filters_partial.jsonl",
+   "coverage": "partial"
   },
   "US": {
    "rows": 17,
    "named": 17,
-   "file": "us_monograph_m020.jsonl"
+   "file": "us_monograph_m020.jsonl",
+   "coverage": "complete"
   }
  },
  "ingredients_in_multiple_jurisdictions": 26,
- "ingredients_with_a_numeric_limit": 491,
+ "ingredients_with_a_numeric_limit": 673,
  "built_on": "2026-08-26",
  "jurisdictions_present": [
   "AU",
@@ -42,7 +46,7 @@
      "listed_as": "CAMPHOR BENZALKONIUM METHOSULFATE"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 6.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the preparation must not be more than 6%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -61,7 +65,7 @@
      "listed_as": "HOMOSALATE"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 15.0,
      "conditions": "For use as an active ingredient only in sunscreens for dermal application. For use as an excipient only in topical medicines for dermal application. Not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 15%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -89,7 +93,7 @@
      "listed_as": "BENZOPHENONE 3"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -117,7 +121,7 @@
      "listed_as": "PHENYLBENZIMIDAZOLE SULFONIC ACID"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 4.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 4%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -156,7 +160,7 @@
      "listed_as": "BUTYL METHOXYDIBENZOYLMETHANE"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in preparation must not be more than 5%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -184,7 +188,7 @@
      "listed_as": "BENZYLIDENE CAMPHOR SULFONIC ACID"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 6.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 6% (as acid). When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -203,7 +207,7 @@
      "listed_as": "OCTOCRYLENE"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -247,7 +251,7 @@
      "listed_as": "ETHYLHEXYL METHOXYCINNAMATE"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -283,7 +287,7 @@
      "listed_as": "PEG 25 PABA"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -313,7 +317,7 @@
      "listed_as": "ETHYLHEXYL TRIAZONE"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 5%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -369,7 +373,7 @@
      "listed_as": "ETHYLHEXYL SALICYLATE"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 5%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -405,7 +409,7 @@
      "listed_as": "ETHYLHEXYL DIMETHYL PABA"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 8.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 8%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -444,7 +448,7 @@
      "listed_as": "METHYLENE BIS BENZOTRIAZOLYL TETRAMETHYLBUTYLPHENOL"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -494,7 +498,7 @@
      "listed_as": "BIS ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -522,7 +526,7 @@
      "listed_as": "POLYSILICONE 15"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -587,7 +591,7 @@
      "listed_as": "DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -681,7 +685,7 @@
      "listed_as": "METHOXYPROPYLAMINO CYCLOHEXENYLIDENE ETHOXYETHYLCYANOACETATE"
     },
     "AU": {
-     "max_percent": null,
+     "max_percent": 3.0,
      "conditions": "Until 20 June 2027, Methoxypropylamino cyclohexenylidene ethoxyethylcyanoacetate must only be used in a medicine where: (a) BASF Australia Ltd (Client ID 13479) is the sponsor of the medicine (the primary sponsor); or (b) another person is the sponsor of the medicine (the secondary sponsor) and the TGA has been notified that the secondary sponsor has been authorised by the primary sponsor to use the ingredient in the medicine. Methoxypropylamino cyclohexenylidene ethoxyethylcyanoacetate must: (a) only be used as an active ingredient in sunscreens in topical medicines for dermal application; and (b) not be included in medicines that are intended for use on: (i) the eye; or (ii) broken skin. The total concentration of methoxypropylamino cyclohexenylidene ethoxyethylcyanoacetate the medicine must not be more than 3%. Methoxypropylamino cyclohexenylidene ethoxyethylcyanoacetate must not be used in combination with nitrosating substances. The concentration of nitrosamine in the medicine must be less than 0.000005% or 50 ppb. When used in primary sunscreen products, the following warning statements (or words to the same effect) must be included on the medicine label: - (AVOID) ' Avoid prolonged exposure in the sun.'; - (SUNPRO) ' Wear protective clothing - hats and eyewear when exposed to the sun.'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -730,7 +734,7 @@
   "MENTHYL METHYL ETHER": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "(-)-Menthyl methyl ether must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing (-)-menthyl methyl ether must not be more than 5% of the total medicine. When the medicine is for internal use, the maximum recommended daily dose of the medicine must not provide more than 53 micrograms of (-)-menthyl methyl ether.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -826,7 +830,7 @@
   "R ALPHA TERPINYL ACETATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "(R)-alpha-terpinyl acetate must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing (R)-alpha-terpinyl acetate must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -1005,7 +1009,7 @@
   "1 2 3 4 4A 5 8 8A OCTAHYDRO 2 2 6 8 TETRAMETHYL 1 NAPHTHALENOL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only for use in medicines in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total fragrance proprietary excipient formulation in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -1138,7 +1142,7 @@
   "1 8 12 BISABOLATRIENE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "1,8,12-bisabolatriene must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing 1,8,12-bisabolatriene must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -1223,7 +1227,7 @@
   "1 HEPTANOL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "1-heptanol must only be included in medicines when in combination with other permitted ingredients as a flavour or a fragrance proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing 1-heptanol must not be more than 5% of the total medicine. The total concentration of fragrance proprietary excipient formulations containing 1-heptanol must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -1511,7 +1515,7 @@
   "2 3 DIHYDRO 1 1 DIMETHYL 1H INDENE AR PROPANAL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Permitted for use only in combination with other permitted ingredients as part of a fragrance proprietary excipient. The total fragrance proprietary excipient formulation concentration in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -1727,7 +1731,7 @@
   "2 5 DIMETHYL 4 ETHOXY 3 2H FURANONE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use in medicines in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total flavour proprietary excipient formulation in a medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -1931,7 +1935,7 @@
   "2 4 METHYLPHENOXY N 1H PYRAZOL 3 YL N 2 THIENYLMETHYL ACETAMIDE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.015,
      "conditions": "The route of administration of a medicine containing 2-(4-methylphenoxy)-n-1h-pyrazol-3-yl-n-(2-thienylmethyl)acetamide must be limited to dental. The total concentration of 2-(4-methylphenoxy)-N-1H-pyrazol-3-yl-N-(2-thienylmethyl)acetamide in the medicine must not be more than 0.015%. 2-(4-Methylphenoxy)-N-1H-pyrazol-3-yl-N-(2-thienylmethyl)acetamide must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing 2-(4-methylphenoxy)-N-1H-pyrazol-3-yl-N-(2-thienylmethyl)acetamide must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -1943,7 +1947,7 @@
   "2 6 METHYL 8 ISOPROPYL BICYCLO 2 2 2 OCT 5 ENE 2 YL 1 3 DIOXOLANE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "2-(6-methyl-8-isopropyl bicyclo(2.2.2)oct-5-ene-2-yl)-1,3-dioxolane must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing 2-(6-methyl-8-isopropyl bicyclo(2.2.2)oct-5-ene-2-yl)-1,3-dioxolane must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -2136,7 +2140,7 @@
   "2 ETHOXY 9 METHYLENE 2 6 6 TRIMETHYLBICYCLO 3 3 1 NONANE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "2-ethoxy-9-methylene-2,6,6-trimethylbicyclo[3.3.1]nonane must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing 2-ethoxy-9-methylene-2,6,6-trimethylbicyclo[3.3.1]nonane must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -2256,7 +2260,7 @@
   "2 ETHYL N METHYL N 3 METHYLPHENYL BUTANAMIDE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only for use in medicines in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total fragrance proprietary excipient formulation in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -2389,7 +2393,7 @@
   "2 ISOPROPYLPHENOL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "2-Isopropylphenol must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing 2-isopropylphenol must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -2558,7 +2562,7 @@
   "2 METHYL 4 2 2 3 TRIMETHYLCYCLOPENT 3 EN 1 YL PENT 4 EN 1 OL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "2-Methyl-4-(2,2,3-trimethylcyclopent-3-en-1-yl)pent-4-en-1-ol must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing 2-methyl-4-(2,2,3-trimethylcyclopent-3-en-1-yl)pent-4-en-1-ol must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -2678,7 +2682,7 @@
   "2 METHYLDECANAL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only for use in medicines in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total fragrance proprietary excipient formulation in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -3026,7 +3030,7 @@
   "3 4 DIMETHYL PHENYLACETALDEHYDE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "3,4-Dimethyl phenylacetaldehyde must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing 3,4-dimethyl phenylacetaldehyde must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -3146,7 +3150,7 @@
   "3 7 DIMETHYL 1 OCTEN 3 OL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only for use in medicines in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total fragrance proprietary excipient formulation in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -3170,7 +3174,7 @@
   "3 7 DIMETHYL 2 6 OCTADIENAL REACTION PRODUCTS WITH ETHANOL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only for use in medicines in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total fragrance proprietary excipient formulation in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -3194,7 +3198,7 @@
   "3 1 BUTENYL PYRIDINE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "3-(1-Butenyl)-pyridine must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing 3-(1-butenyl)-pyridine must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -3266,7 +3270,7 @@
   "3 METHYLTHIO PROPIONALDEHYDE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "3-(Methylthio) propionaldehyde must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing 3-(methylthio) propionaldehyde must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -3506,7 +3510,7 @@
   "3 METHYLPENTANOIC ACID": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "3-Methylpentanoic acid must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of the flavour proprietary excipient formulation containing 3-methylpentanoic acid must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -3710,7 +3714,7 @@
   "4 1 ETHOXYVINYL 3 3 5 5 TETRAMETHYLCYCLOHEXANONE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "4-(1-Ethoxyvinyl)-3,3,5,5-tetramethylcyclohexanone must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing 4-(1-ethoxyvinyl)-3,3,5,5-tetramethylcyclohexanone must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -3770,7 +3774,7 @@
   "4 PARA HYDROXYPHENYL 2 BUTANONE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "4-(para-hydroxyphenyl)-2-butanone must only be included in medicines when: (a) in combination with other permitted ingredients as a flavour proprietary excipient formulation; (b) in combination with other permitted ingredients as a fragrance proprietary excipient formulation; and/or (c) in topical medicines for dermal application that are not intended for use in the eye or on damaged skin. The total concentration of flavour proprietary excipient formulations containing 4-(para-hydroxyphenyl)-2-butanone must not be more than 5% of the total medicine. The total concentration of fragrance proprietary excipient formulations containing 4-(para-hydroxyphenyl)-2-butanone must not be more than 1% of the total medicine. The concentration of 4-(para-hydroxyphenyl)-2-butanone in a topical medicine for dermal application must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -3807,7 +3811,7 @@
   "4 CYCLOHEXYL 2 METHYL 2 BUTANOL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only for use in medicines in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total fragrance proprietary excipient formulation in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -3940,7 +3944,7 @@
   "4 METHYLBENZYLIDENE CAMPHOR": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 4.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 4%. The following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -4098,7 +4102,7 @@
   "5 ETHYL 2 3 DIMETHYLPYRAZINE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "5-Ethyl-2,3,dimethylpyrazine must not be included in medicines for oral administration. 5-Ethyl-2,3,dimethylpyrazine must only be included in topical medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing 5-ethyl-2,3,dimethylpyrazine must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -4278,7 +4282,7 @@
   "6 ETHYLIDENEOCTAHYDRO 5 8 METHANO 2H 1 BENZOPYRAN": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "6-Ethylideneoctahydro 5,8-methano-2H-1-benzopyran must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing 6-ethylideneoctahydro 5,8-methano-2H-1-benzopyran must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -4326,7 +4330,7 @@
   "6 METHYLQUINOLINE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "6-Methylquinoline must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of the flavour proprietary excipient formulation containing 6-methylquinoline must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -4874,7 +4878,7 @@
   "ACETOXYDIHYDRODICYCLOPENTADIENE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only for use in medicines in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total fragrance proprietary excipient formulation in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -5025,7 +5029,7 @@
   "ACHILLEA MILLEFOLIUM": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Beta-arbutin is a mandatory component of Achillea millefolium. When for oral use, the maximum recommended daily dose must not provide more than 500 mg of beta-arbutin. When for dermal application exclusively to the face: a) the concentration of beta-arbutin in the medicine must not be more than 7%; b) hydroquinone is a mandatory component; and c) the concentration of hydroquinone must not be more than 10 mg/kg or 10 mg/L or 0.001%. When for use other than oral or dermal application exclusively to the face, the concentration of beta-arbutin in the medicine must not be more than 10 mg/kg or 10 mg/L or 0.001%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -6885,7 +6889,7 @@
   "ALPHA SANTALOL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "alpha-Santalol must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing alpha-santalol must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -7624,7 +7628,7 @@
   "AMYL ACETATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use in: - topical medicines for dermal application; or - combination with other permitted ingredients as a flavour proprietary excipient formulation. The total flavour proprietary excipient formulation in a medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -8801,7 +8805,7 @@
   "ARCTOSTAPHYLOS UVA URSI": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Beta-arbutin is a mandatory component of Arctostaphylos uva-ursi. When for oral use, the maximum recommended daily dose must not provide more than 500 mg of beta-arbutin. When for dermal application exclusively to the face: a) the concentration of beta-arbutin in the medicine must not be more than 7%; b) hydroquinone is a mandatory component; and c) the concentration of hydroquinone must not be more than 10 mg/kg or 10 mg/L or 0.001%. When for use other than oral or dermal application exclusively to the face, the concentration of beta-arbutin in the medicine must not be more than 10 mg/kg or 10 mg/L or 0.001%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -9073,7 +9077,7 @@
   "ARTEMISIA DRACUNCULUS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 4.0,
      "conditions": "Thujone is a mandatory component of Artemisia dracunculus. The concentration of thujone in the medicine must not be more than 4%. The following warning statement is required on the medicine label: - (PREGNT2) ‘Do not use if pregnant or likely to become pregnant’ (or words to that effect); unless the ingredient is: (a) a steam-distilled essential oil; and (b) for use in combination with other permitted ingredients as part of a fragrance or flavour proprietary excipient formulation where: (i) the total concentration of fragrance proprietary excipient formulations containing Artemisia dracunculus is not more than 1% of the total medicine; or (ii) the total concentration of flavour proprietary excipient formulations containing Artemisia dracunculus is not more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -9087,7 +9091,7 @@
   "ARTEMISIA FRIGIDA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 4.0,
      "conditions": "Thujone is a mandatory component of Artemisia frigida. The concentration of thujone in the medicine must not be more than 4%. The following warning statement is required on the medicine label: - (PREGNT2) ‘Do not use if pregnant or likely to become pregnant’ (or words to that effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -9124,7 +9128,7 @@
   "ARTEMISIA OIL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Thujone is a mandatory component of artemisia oil. Only permitted for use in medicines containing 4% or less of thujone. Permitted for use only in combination with other permitted ingredients as a flavour or a fragrance. If used in a flavour the total flavour concentration in a medicine must not be more than 5%. If used in a fragrance the total fragrance concentration in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -9136,7 +9140,7 @@
   "ARTEMISIA PALLENS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 4.0,
      "conditions": "Thujone is a mandatory component of Artemisia pallens. The concentration of thujone in the medicine must not be more than 4%. The following warning statement is required on the medicine label: - (PREGNT2) ‘Do not use if pregnant or likely to become pregnant’ (or words to that effect); unless the ingredient is: (a) a steam-distilled essential oil; and (b) for use in combination with other permitted ingredients as part of a fragrance or flavour proprietary excipient formulation where: (i) the total concentration of fragrance proprietary excipient formulations containing Artemisia pallens is not more than 1% of the total medicine; or (ii) the total concentration of flavour proprietary excipient formulations containing Artemisia pallens is not more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -9162,7 +9166,7 @@
   "ARTEMISIA VULGARIS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 4.0,
      "conditions": "Thujone is a mandatory component of Artemisia vulgaris. The concentration of thujone in the medicine must not be more than 4%. The following warning statement is required on the medicine label: - (PREGNT2) ‘Do not use if pregnant or likely to become pregnant’ (or words to that effect); unless the ingredient is: (a) a steam-distilled essential oil; and (b) for use in combination with other permitted ingredients as part of a fragrance or flavour proprietary excipient formulation where: (i) the total concentration of fragrance proprietary excipient formulations containing Artemisia vulgaris is not more than 1% of the total medicine; or (ii) the total concentration of flavour proprietary excipient formulations containing Artemisia vulgaris is not more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -10284,7 +10288,7 @@
   "BEHENTRIMONIUM METILSULFATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.06,
      "conditions": "Behentrimonium metilsulfate must: (a) Only be used in topical medicines for dermal application; and (b) Not be included in medicines intended for use on broken skin or in the eye. The concentration in the medicine must not be more than 1.06%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -10407,7 +10411,7 @@
   "BENZALKONIUM CHLORIDE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use in topical medicines for dermal application and nasal sprays. When benzalkonium chloride is used in a topical medicine for dermal application, the concentration in the medicine must not be more than 5%. When benzalkonium chloride is used in a nasal spray dosage form, the concentration of benzalkonium chloride in the medicine must not be more than 0.03%. When benzalkonium chloride is used in a nasal spray dosage form which is either: (i) indicated for use in children; or (ii) not specifically indicated for adults only; the following warning statement is required on the medicine label: - (NTAKEN2) 'Not to be used by children under 2 years old' (or words to that effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -10472,7 +10476,7 @@
   "BENZOPHENONE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Permitted for topical use only in combination with other permitted ingredients as a fragrance. The total concentration of fragrance proprietary excipient formulations containing benzophenone must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -10484,7 +10488,7 @@
   "BENZOTHIAZOLE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Benzothiazole must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing benzothiazole must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -11112,7 +11116,7 @@
   "BETULA LENTA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.001,
      "conditions": "Methyl salicylate is a mandatory component of Betula lenta. Not to be included in medicines for use in the eye or on damaged skin. When used internally, the concentration of methyl salicylate in the medicine must not be more than 0.001%. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is other than spray, the medicine requires child resistant packaging. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is spray, the medicine does not require child resistant packaging if: - the delivery device is engaged into the container in such a way that prevents it from being readily removed; - direct suction through the delivery device results in delivery of no more than one dosage unit; and - actuation of the spray device is ergonomically difficult for young children to accomplish. The following warning statement is required on the medicine label: - (METSAL) ‘Contains methyl salicylate’ (or words to that effect). When for use in topical medicines for dermal application: i) the concentration of methyl salicylate in the medicine must not be more than 25%; ii) the following warning statements are required on the medicine label: - (PREGNT2) 'Do not use if pregnant or likely to become pregnant' (or words to that effect); - (CHILD4) 'Do not use [this product/insert name of product] in children 6 years of age or less'; - (SENS) 'Application to skin may increase sensitivity to sunlight.' (or words to that effect); - (AVOID) 'Avoid prolonged exposure in the sun' (or words to that effect); iii) if the concentration of methyl salicylate in the medicine is greater than 1%, the following warning statement is required on the medicine label: - (IRRIT) 'If irritation develops, discontinue use'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -11126,7 +11130,7 @@
   "BETULA NIGRA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.001,
      "conditions": "Cresol, eugenol and methyl salicylate are mandatory components of Betula nigra. For external use only when the total concentration of cresols, xylenols and other phenol homologues in the medicine is greater than 3%. When for internal use, the concentration of eugenol in the medicine must not exceed 0.06%. When the concentration of eugenol in the medicine is more than 25%: a) the nominal capacity of the container must be no more than 25 mL; b) the medicine must be fitted with a restricted flow insert; c) when the nominal capacity of the container is more than 15 mL, the medicine must be fitted with a child resistant closure; and d) the medicine requires the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); and - (NTAKEN) 'Not to be taken'. Not to be included in medicines for use in the eye or on damaged skin. When used internally, the concentration of methyl salicylate in the medicine must not be more than 0.001%. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is other than spray, the medicine requires child resistant packaging. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is spray, the medicine does not require child resistant packaging if: - the delivery device is engaged into the container in such a way that prevents it from being readily removed; - direct suction through the delivery device results in delivery of no more than one dosage unit; and - actuation of the spray device is ergonomically difficult for young children to accomplish. The following warning statement is required on the medicine label: - (METSAL) ‘Contains methyl salicylate’ (or words to that effect). When for use in topical medicines for dermal application: i) the concentration of methyl salicylate in the medicine must not be more than 25%; ii) the following warning statements are required on the medicine label: - (PREGNT2) 'Do not use if pregnant or likely to become pregnant' (or words to that effect); - (CHILD4) 'Do not use [this product/insert name of product] in children 6 years of age or less'; - (SENS) 'Application to skin may increase sensitivity to sunlight.' (or words to that effect); - (AVOID) 'Avoid prolonged exposure in the sun' (or words to that effect); iii) if the concentration of methyl salicylate in the medicine is greater than 1%, the following warning statement is required on the medicine label: - (IRRIT) 'If irritation develops, discontinue use'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -11140,7 +11144,7 @@
   "BETULA PENDULA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.001,
      "conditions": "Methyl salicylate is a mandatory component of Betula pendula. Not to be included in medicines for use in the eye or on damaged skin. When used internally, the concentration of methyl salicylate in the medicine must not be more than 0.001%. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is other than spray, the medicine requires child resistant packaging. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is spray, the medicine does not require child resistant packaging if: - the delivery device is engaged into the container in such a way that prevents it from being readily removed; - direct suction through the delivery device results in delivery of no more than one dosage unit; and - actuation of the spray device is ergonomically difficult for young children to accomplish. The following warning statement is required on the medicine label: - (METSAL) 'Contains methyl salicylate' (or words to that effect). When for use in topical medicines for dermal application: i) the concentration of methyl salicylate in the medicine must not be more than 25% ii) the following warning statements are required on the medicine label: - (PREGNT2) 'Do not use if pregnant or likely to become pregnant' (or words to that effect); - (CHILD4) 'Do not use [this product/insert name of product] in children 6 years of age or less'; - (SENS) 'Application to skin may increase sensitivity to sunlight.' (or words to that effect); - (AVOID) 'Avoid prolonged exposure in the sun' (or words to that effect); iii) if the concentration of methyl salicylate in the medicine is greater than 1%, the following warning statement is required on the medicine label: - (IRRIT) 'If irritation develops, discontinue use'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -11350,7 +11354,7 @@
   "BIRCH LEAF DRY": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.001,
      "conditions": "Methyl salicylate is a mandatory component of birch leaf dry. Not to be included in medicines for use in the eye or on damaged skin. When used internally, the concentration of methyl salicylate in the medicine must not be more than 0.001%. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is other than spray, the medicine requires child resistant packaging. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is spray, the medicine does not require child resistant packaging if: - the delivery device is engaged into the container in such a way that prevents it from being readily removed; - direct suction through the delivery device results in delivery of no more than one dosage unit; and - actuation of the spray device is ergonomically difficult for young children to accomplish. The following warning statement is required on the medicine label: - (METSAL) 'Contains methyl salicylate' (or words to that effect). When for use in topical medicines for dermal application: i) the concentration of methyl salicylate in the medicine must not be more than 25%; ii) the following warning statements are required on the medicine label: - (PREGNT2) 'Do not use if pregnant or likely to become pregnant' (or words to that effect); - (CHILD4) 'Do not use [this product/insert name of product] in children 6 years of age or less'; - (SENS) 'Application to skin may increase sensitivity to sunlight.' (or words to that effect); and - (AVOID) 'Avoid prolonged exposure in the sun' (or words to that effect); iii) if the concentration of methyl salicylate in the medicine is greater than 1%, the following warning statement is required on the medicine label: - (IRRIT) 'If irritation develops, discontinue use'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -11443,7 +11447,7 @@
   "BIS STEARYL DIMETICONE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 2.3,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 2.30%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -11494,7 +11498,7 @@
   "BITTER ALMOND OIL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Bitter almond oil must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing bitter almond oil must not be more than 5% of the medicine. The concentration of amygdalin in the medicine must not be more than 10 mg/kg.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -13102,7 +13106,7 @@
   "C10 12 ALKANE CYCLOALKANE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only permitted for use in solid or semi-solid medicines or in medicines: (a) containing 25% or less of hydrocarbons, liquid; or (b) when packed in pressurised spray packs; or (c) when packed in containers with a capacity of 2 millilitres or less. Permitted for use only in combination with other permitted ingredients as a fragrance. If used in a fragrance the total fragrance concentration in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -13127,7 +13131,7 @@
   "C11 13 ALKANE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -13230,7 +13234,7 @@
   "C12 22 ALKYL ACRYLATE HYDROXYETHYLACRYLATE COPOLYMER": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in topical medicines intended for use in the eye or on damaged skin. The concentration of C12-22 alkyl acrylate/hydroxyethylacrylate copolymer in the medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -13269,7 +13273,7 @@
   "C15 16 ISOPARAFFIN": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 50.0,
      "conditions": "C15-16 isoparaffin must only be included in topical medicines: (a) for dermal application; and (b) where the dosage form of the medicine is not spray. The total concentration of C15-16 isoparaffin and C17-18 isoparaffin in the medicine must not be more than 50%. When the nominal capacity of the container is more than 2 mL and the medicine is not a solid or semi-solid preparation, the total concentration of designated solvents (including C15-16 isoparaffin) in the medicine must not be more than 25%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -13294,7 +13298,7 @@
   "C17 18 ISOPARAFFIN": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 50.0,
      "conditions": "C17-18 isoparaffin must only be included in topical medicines: (a) for dermal application; and (b) where the dosage form of the medicine is not spray. The total concentration of C15-16 isoparaffin and C17-18 isoparaffin in the medicine must not be more than 50%. When the nominal capacity of the container is more than 2 mL and the medicine is not a solid or semi-solid preparation, the total concentration of designated solvents (including C17-18 isoparaffin) in the medicine must not be more than 25%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -13497,7 +13501,7 @@
   "CAFFEINE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "When used as an excipient, only for use in topical medicines for dermal application. Only for use as an active ingredient for: (a) oral use in adults when the medicine consists principally of one or more designated active ingredients prescribed in Schedule 14 to the Regulations (other than caffeine); and (b) Topical medicines for dermal application that are directed for use in adults only. When for topical application: (a) the concentration of total caffeine in the medicine must not be more than 1%; and (b) the medicine must not be intended for use on broken skin. When for internal use or oral application, the maximum recommended daily dose of the medicine must provide no more than 100 mg of caffeine from this ingredient. When for internal use or oral application, the following warning statement is required on the medicine label: - (ADULT) 'Adults only' (or words to that effect). When the medicine is packaged for supply as a divided preparation and is for internal use or oral application, the medicine must not contain a concentration of total caffeine greater than 33%. When the medicine is packaged for supply as an undivided preparation and is for internal use or oral application, the medicine must not contain a concentration of total caffeine greater than 1%. When the medicine is for internal use or oral application, a maximum recommended dose of the medicine must not provide more than 100 mg of total caffeine within a 3 hour period. When the maximum recommended daily dose of the medicine provides greater than 10 mg of total caffeine and the medicine is for internal use or oral application, the following warning statements are required on the label: - (CAFF) 'Contains [state quantity per dosage unit or per mL or per gram of product] total caffeine [per dosage unit or per mL or per gram]. A cup of instant coffee contains approximately 80 mg of caffeine.' - (CAFFPREG) ‘Caffeine intake more than 200 mg per day is not recommended during pregnancy or breastfeeding.’ When the maximum recommended daily dose of the medicine provides greater than 80 mg of total caffeine and the medicines is for internal use or oral application, the following warning statements are required on the label: - (CAFFLMT) 'Limit the use of caffeine-containing products (including tea and coffee) when taking this product.' - (CAFFCYP) ‘Caffeine interacts with enzyme CYP1A2 in the liver. Consult your health professional before taking with other medicines’ (or words to that effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -14491,7 +14495,7 @@
   "CAMELLIA SINENSIS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Caffeine is a mandatory component of Camellia sinensis. When the medicine is packaged for supply as a divided preparation and is for internal use or oral application, the medicine must not contain a concentration of total caffeine greater than 33%. When for internal use or oral application, the maximum recommended daily dose of the medicine must provide no more than 400 mg of total caffeine. When the medicine is packaged for supply as an undivided preparation and is for internal use or oral application, the medicine must not contain a concentration of total caffeine greater than 1%. When the medicine is for internal use or oral application, a maximum recommended dose of the medicine must not provide more than 100 mg of total caffeine within a 3 hour period. When the maximum recommended daily dose of the medicine provides greater than 10 mg of total caffeine and the medicine is for internal use or oral application, the following warning statements are required on the label: - (ADULT) 'Adults only' (or words to that effect). - (CAFF) 'Contains [state quantity per dosage unit or per mL or per gram of product] total caffeine [per dosage unit or per mL or per gram]. A cup of instant coffee contains approximately 80mg of caffeine.' - (CAFFPREG) ‘Caffeine intake more than 200 mg per day is not recommended during pregnancy or breastfeeding.’ When the maximum recommended daily dose of the medicine provides greater than 80 mg of total caffeine and the medicines is for internal use or oral application, the following warning statements are required on the label: - (CAFFLMT) 'Limit the use of caffeine-containing products (including tea and coffee) when taking this product.' - (CAFFCYP) ‘Caffeine interacts with enzyme CYP1A2 in the liver. Consult your health professional before taking with other medicines’ (or words to that effect). When used in oral medicines, the following warning statements are required on the medicine label: - (CAMELLIA) 'In rare cases, Camellia sinensis may harm the liver. Stop use and see a doctor if you have yellowing skin/eyes, or unusual: fatigue, nausea, appetite loss, abdominal pain, dark urine, or itching.'; and - (FOOD) ‘To be taken with food.’ unless when: (a) the preparation of Camellia sinensis is derived from an aqueous extract and contains 300 mg or less epigallocatechin-3-gallate per maximum recommended daily dose; or (b) Camellia sinensis is used in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing Camellia sinensis must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -14542,7 +14546,7 @@
   "CAMPHOR OIL BROWN": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 12.5,
      "conditions": "Camphor, cineole and safrole are mandatory components of camphor oil brown. In solid and semi solid preparations, the concentration of camphor must not be more than 12.5%. In liquid preparations other than essential oils, the concentration of camphor must not be more than 2.5%. In essential oil preparations, if the concentration of camphor is more than 2.5% but less than or equal to 10%, and the nominal capacity of the container is less than 25 millilitres, the medicine must have a restricted flow insert fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); - (NTAKEN) 'Not to be taken'; and - (BABY4) ‘Do not apply to infants under 12 months of age except on the advice of a doctor or pharmacist’ (or words to that effect). In essential oil preparations, if the concentration of camphor is more than 10%, and the nominal capacity of the container is less than 15 millilitres, the medicine must have a restricted flow insert fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); - (NTAKEN) 'Not to be taken'; and - (BABY4) ‘Do not apply to infants under 12 months of age except on the advice of a doctor or pharmacist’ (or words to that effect). In essential oil preparations, if the concentration of camphor is more than 10%, and the nominal capacity of the container is more than 15 millilitres but less than or equal to 25 millilitres, the medicine must have a restricted flow insert and child resistant closure fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); - (NTAKEN) 'Not to be taken'; and - (BABY4) ‘Do not apply to infants under 12 months of age except on the advice of a doctor or pharmacist’ (or words to that effect). When the concentration of cineole in the preparation is more than 25%, the nominal capacity of the container must not be more than 25 millilitres. When the concentration of cineole in the preparation is more than 25% and the nominal capacity of the container is more than 15 millilitres but less than or equal to 25 millilitres, the medicine must have a child resistant closure and restricted flow insert fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); and - (NTAKEN) 'Not to be taken'. When the concentration of cineole in the preparation is more than 25% and the nominal capacity of the container is not more than 15 millilitres, the medicine must have the restricted flow insert fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); and - (NTAKEN) 'Not to be taken'. When for internal use the concentration of safrole in a medicine must not be more than 0.1%. When for topical use the concentration of safrole in a medicine must not be more than 1.0%. If the concentration of camphor is more than 2.5%, the nominal capacity of the container must not be more than 25 millilitres.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -14555,7 +14559,7 @@
   "CAMPHOR OIL WHITE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 12.5,
      "conditions": "Camphor and safrole are mandatory components of camphor oil white. In solid and semi solid preparations, the concentration of camphor must not be more than 12.5%. In liquid preparations other than essential oils, the concentration of camphor must not be more than 2.5%. In essential oil preparations, if the concentration of camphor is more than 2.5% but less than or equal to 10%, and the nominal capacity of the container is less than 25 millilitres, the medicine must have a restricted flow insert fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); - (NTAKEN) 'Not to be taken'; and - (BABY4) ‘Do not apply to infants under 12 months of age except on the advice of a doctor or pharmacist’ (or words to that effect). In essential oil preparations, if the concentration of camphor is more than 10%, and the nominal capacity of the container is less than 15 millilitres, the medicine must have a restricted flow insert fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); - (NTAKEN) 'Not to be taken'; and - (BABY4) ‘Do not apply to infants under 12 months of age except on the advice of a doctor or pharmacist’ (or words to that effect). In essential oil preparations, if the concentration of camphor is more than 10%, and the nominal capacity of the container is more than 15 millilitres but less than or equal to 25 millilitres, the medicine must have a restricted flow insert and child resistant closure fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); - (NTAKEN) 'Not to be taken'; and - (BABY4) ‘Do not apply to infants under 12 months of age except on the advice of a doctor or pharmacist’ (or words to that effect). When for internal use the concentration of safrole in a medicine must not be more than 0.1%. When for topical use the concentration of safrole in a medicine must not be more than 1.0%. If the concentration of camphor is more than 2.5%, the nominal capacity of the container must not be more than 25 millilitres.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -14667,7 +14671,7 @@
   "CANDIDA UTILIS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "When used as an excipient, only for use in medicines in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total flavour proprietary excipient formulation in a medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -14801,7 +14805,7 @@
   "CAPRYLOYL GLYCERIN SEBACIC ACID COPOLYMER": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -14814,7 +14818,7 @@
   "CAPRYLOYL GLYCINE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 2.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 2%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -14827,7 +14831,7 @@
   "CAPRYLOYL SALICYLIC ACID": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.3,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye or on damaged skin. The concentration in the medicine must not be more than 0.3%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -14967,7 +14971,7 @@
   "CARAPICHEA IPECACUANHA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.2,
      "conditions": "Emetine is a mandatory component of Carapichea ipecacuanha. The concentration of emetine in the medicine must not be more than 0.2%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -15626,7 +15630,7 @@
   "CASCARILLA OIL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "The medicine must not contain more than 1 mg of the equivalent dry herbal material per the maximum recommended daily dose. When for use as an excipient ingredient, cascarilla oil must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing cascarilla oil must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -15699,7 +15703,7 @@
   "CASSIA FISTULA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Hydroxyanthracene glycosides calculated as sennoside B is a mandatory component of Cassia fistula when the route of administration is oral. When used in oral medicines, if the maximum recommended daily dose contains more than 10 mg of hydroxyanthracene derivatives the medicine requires the following warning statements on the medicine label: - (CHILD3) ‘Use in children under 12 years is not recommended’; - (LAX2) ‘Prolonged use may cause serious bowel problems’; and - (LAX3) ‘Do not use when abdominal pain, nausea or vomiting are present, or if you develop diarrhoea. If you are pregnant or breast feeding, seek the advice of a healthcare professional before taking this product' (or words to that effect). When promoted or marketed as a laxative, the medicine requires the following warning statement on the medicine label: - (LAX1) ‘Drink plenty of water' (or words to that effect). When not promoted or marketed as laxative, the medicine requires the following warning statements on the medicine label: - (LAX5) ‘This product contains [name of the herb(s) or the chemical component(s)]’; and - (LAX4) ‘This product may have laxative effect’. When used in oral medicines, if the maximum recommended daily dose contains less than 10 mg of hydroxyanthracene derivatives and is promoted or marketed as laxative, the medicine requires the following warning statements on the medicine label: - (CHILD3) ‘Use in children under 12 years is not recommended’; - (LAX1) ‘Drink plenty of water' (or words to that effect); and - (LAX2) ‘Prolonged use may cause serious bowel problems’. When Cassia fistula is for use as an excipient: (a) the plant part must be fruit; and (b) must only be included in medicines when in combination with other permitted ingredients as a: (i) flavour proprietary excipient formulation when the plant preparation is an extract; and/or (ii) fragrance proprietary excipient formulation when the plant preparation is an essential oil. The total concentration of flavour proprietary excipient formulations containing Cassia fistula must not be more than 5% of the total medicine. The total concentration of fragrance proprietary excipient formulations containing Cassia fistula must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -16443,7 +16447,7 @@
   "CETEARYL NONANOATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in topical medicines intended for use in the eye. The concentration in the medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -17029,7 +17033,7 @@
   "CHIMAPHILA UMBELLATA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Beta-arbutin is a mandatory component of Chimaphila umbellata. When for oral use, the maximum recommended daily dose must not provide more than 500 mg of beta-arbutin. When for dermal application exclusively to the face: a) the concentration of beta-arbutin in the medicine must not be more than 7%; b) hydroquinone is a mandatory component; and c) the concentration of hydroquinone must not be more than 10 mg/kg or 10 mg/L or 0.001%. When for use other than oral or dermal application exclusively to the face, the concentration of beta-arbutin in the medicine must not be more than 10 mg/kg or 10 mg/L or 0.001%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -17788,7 +17792,7 @@
   "CINOXATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 6.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 6%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -17820,7 +17824,7 @@
   "CIS 3 HEXEN 1 OL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "cis-3-Hexen-1-ol must only be included in medicines when in combination with other permitted ingredients as a flavour or fragrance proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing cis-3-hexen-1-ol must not be more than 5% of the total medicine. The total concentration of fragrance proprietary excipient formulations containing cis-3-hexen-1-ol must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -18561,7 +18565,7 @@
   "CITRUS OIL TERPENES AND TERPENOIDS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Citrus oil terpenes and terpenoids must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing citrus oil terpenes and terpenoids must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -20372,7 +20376,7 @@
   "CROCUS SATIVUS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "When Crocus sativus is used as an excipient: (a) the ingredient must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation; (b) the plant part must be stigma and/or style; (c) the plant preparation must be fresh or dry; and (d) the total concentration of flavour proprietary excipient formulations containing the ingredient must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -21125,7 +21129,7 @@
   "CYMBOPOGON FLEXUOSUS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "When for topical use, aldehydes calculated as citral is a mandatory component of Cymbopogon flexuosus and the concentration of aldehydes calculated as citral in the medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -21310,7 +21314,7 @@
   "CYSTEINE HYDROCHLORIDE MONOHYDRATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "When used as an excipient, permitted for use only in combination with other permitted ingredients as part of a flavour proprietary excipient and the total flavour proprietary excipient formulation concentration in a medicine must not be more than 5%. The maximum recommended daily dose must contain no more than 652 mg of cysteine hydrochloride monohydrate. When cysteine, cystine and/or their salts are used in combination, the medicine must not provide more than a total of 450 mg cysteine per maximum recommended daily dose.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -21435,7 +21439,7 @@
   "D GLUCOSE POLYMER WITH XYLITOL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "The route of administration for medicines that contain D-glucose, polymer with xylitol must be limited to topical for dermal use. The total concentration of D-glucose, polymer with xylitol in the medicine must not be more than 5%. The following warning statements (or words to the same effect) are required on the medicine label: - (EYE) ‘Avoid contact with eyes'; and - (BROKEN) ‘Use on unbroken skin only’.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -21460,7 +21464,7 @@
   "D PULEGONE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 4.0,
      "conditions": "Permitted for use only in combination with other permitted ingredients as a flavour. If used in a flavour the total flavour concentration in a medicine must be no more than 5%. The concentration of d-pulegone in the medicine must not be more than 4%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -21680,7 +21684,7 @@
   "DECAHYDRO 1 1 7 TRIMETHYL 3A 7 METHANO 3AH CYCLOPENTACYCLOOCT 3 YL FORMATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Decahydro-1,1,7-trimethyl-3a,7-methano-3ah-cyclopentacyclooct-3-yl formate must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing decahydro-1,1,7-trimethyl-3a,7-methano-3ah-cyclopentacyclooct-3-yl formate must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -22680,7 +22684,7 @@
   "DIETHYL HYDROGEN 2 HYDROXYPROPANE 1 2 3 TRICARBOXYLATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Diethyl hydrogen 2-hydroxypropane-1,2,3-tricarboxylate must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing diethyl hydrogen 2-hydroxypropane-1,2,3-tricarboxylate must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -23498,7 +23502,7 @@
   "DIMETICONE 1 5": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 23.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines for use in the eye or on damaged skin. The concentration in the medicine must not be more than 23%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -23780,7 +23784,7 @@
   "DIMETICONOL PROPYLSILSESQUIOXANE SILICATE CROSSPOLYMER": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye or damaged skin. The concentration in the medicine must not be more than 10%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -24231,7 +24235,7 @@
   "DISODIUM EDETATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.25,
      "conditions": "Edetic acid is a mandatory component of disodium edetate. The total concentration of edetic acid in the medicine must not be more than 0.25%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -24280,7 +24284,7 @@
   "DISODIUM LAURIL SULFOSUCCINATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.35,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 0.35%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -24332,7 +24336,7 @@
   "DISODIUM PYROPHOSPHATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Disodium pyrophosphate must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing disodium pyrophosphate must not be more than 5% of the total medicine. The maximum recommended daily dose of the medicine must not provide more than 2.4 g of phosphorus. The following statement (or words to the same effect) is required on the medicine label: - (PHOS) ‘Contains phosphorus’.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -25720,7 +25724,7 @@
   "ETHOHEXADIOL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use in topical medicines for dermal application. The total concentration of ethohexadiol in the medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -26448,7 +26452,7 @@
   "ETHYL PHENYLGLYCIDATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 2.4e-06,
      "conditions": "Ethyl phenylglycidate must only be used in medicines in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The concentration of ethyl phenylglycidate in a medicine must not be more than 0.0000024% w/w (equivalent to 24 parts per billion).",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -26472,7 +26476,7 @@
   "ETHYL PYRUVATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Ethyl pyruvate must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of the flavour proprietary excipient formulation containing ethyl pyruvate must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -26568,7 +26572,7 @@
   "ETHYL TRANS 2 HEXENOATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Ethyl trans-2-hexenoate must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing ethyl trans-2-hexenoate must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -27255,7 +27259,7 @@
   "EUTERPE OLERACEA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "The plant part must be derived from the fruit. When used as an excipient: - permitted for use only in combination with other permitted ingredients as a flavour proprietary excipient formulation; - the total flavour proprietary excipient formulation in a medicine must not be more than 5%; and - the following warning statement is required on the medicine label: - (ACAI) ‘Contains acai’.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -27877,7 +27881,7 @@
   "FILIPENDULA ULMARIA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.001,
      "conditions": "Methyl salicylate is a mandatory component of Filipendula ulmaria. Not to be included in medicines for use in the eye or on damaged skin. When used internally, the concentration of methyl salicylate in the medicine must not be more than 0.001%. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is other than spray, the medicine requires child resistant packaging. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is spray, the medicine does not require child resistant packaging if: - the delivery device is engaged into the container in such a way that prevents it from being readily removed; - direct suction through the delivery device results in delivery of no more than one dosage unit; and - actuation of the spray device is ergonomically difficult for young children to accomplish. The following warning statement is required on the medicine label: - (METSAL) 'Contains methyl salicylate' (or words to that effect). When for use in topical medicines for dermal application: i) the concentration of methyl salicylate in the medicine must not be more than 25%; ii) the following warning statements are required on the medicine label: - (PREGNT2) 'Do not use if pregnant or likely to become pregnant' (or words to that effect); - (CHILD4) 'Do not use [this product/insert name of product] in children 6 years of age or less'; - (SENS) 'Application to skin may increase sensitivity to sunlight.' (or words to that effect); - (AVOID) 'Avoid prolonged exposure in the sun' (or words to that effect); iii) if the concentration of methyl salicylate in the medicine is greater than 1%, the following warning statement is required on the medicine label: - (IRRIT) 'If irritation develops, discontinue use'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -28328,7 +28332,7 @@
   "FULLY HYDROGENATED RAPESEED OIL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Fully hydrogenated rapeseed oil must only be used in topical medicines for dermal application. The total concentration of fully hydrogenated rapeseed oil in the medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -28390,7 +28394,7 @@
   "FURFURAL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Permitted for use only in medicines containing 0.1% or less of furfural and in combination with other permitted ingredients as a flavour or a fragrance. If used in a flavour the total flavour concentration in a medicine must not be more than 5%. If used in a fragrance the total fragrance concentration in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -28952,7 +28956,7 @@
   "GAULTHERIA PROCUMBENS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.001,
      "conditions": "Methyl salicylate is a mandatory component of Gaultheria procumbens. Not to be included in medicines for use in the eye or on damaged skin. When used internally, the concentration of methyl salicylate in the medicine must not be more than 0.001%. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is other than spray, the medicine requires child resistant packaging. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is spray, the medicine does not require child resistant packaging if: - the delivery device is engaged into the container in such a way that prevents it from being readily removed; - direct suction through the delivery device results in delivery of no more than one dosage unit; and - actuation of the spray device is ergonomically difficult for young children to accomplish. The following warning statement is required on the medicine label: - (METSAL) 'Contains methyl salicylate' (or words to that effect). When for use in topical medicines for dermal application: i) the concentration of methyl salicylate in the medicine must not be more than 25%; ii) the following warning statements are required on the medicine label: - (PREGNT2) 'Do not use if pregnant or likely to become pregnant' (or words to that effect); - (CHILD4) 'Do not use [this product/insert name of product] in children 6 years of age or less'; - (SENS) 'Application to skin may increase sensitivity to sunlight.' (or words to that effect); and - (AVOID) 'Avoid prolonged exposure in the sun' (or words to that effect); iii) if the concentration of methyl salicylate in the medicine is greater than 1%, the following warning statement is required on the medicine label: - (IRRIT) 'If irritation develops, discontinue use'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -29988,7 +29992,7 @@
   "GLYCERYL MONO AND DICAPRYLOCAPRATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only permitted for use in medicines limited to oral routes of administration, or when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The maximum recommended oral daily dose of the medicine must not provide more than 8 mg of glyceryl mono and dicaprylocaprate. The total concentration of fragrance proprietary excipient formulations containing glyceryl mono and dicaprylocaprate must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -31820,7 +31824,7 @@
   "HEXYL PROPIONATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use in medicines in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total flavour proprietary excipient formulation in a medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -32191,7 +32195,7 @@
   "HONEY EXTRACT": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Honey extract must not be included in medicines intended for use in the eye. The concentration of honey extract in the medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -32475,7 +32479,7 @@
   "HYDROGENATED C6 14 OLEFIN POLYMERS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Only permitted for use in solid or semi-solid medicines for dermal application or in topical medicines for dermal application: (a) containing 25% or less of hydrocarbons, liquid; or (b) when packed in pressurised spray packs; or (c) when packed in containers with a capacity of 2 millilitres or less. Not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 7%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -34334,7 +34338,7 @@
   "ISOAMYL METHOXYCINNAMATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -34816,7 +34820,7 @@
   "ISOEUGENOL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.02,
      "conditions": "Permitted for use only in combination with other permitted ingredients as a flavour or a fragrance. If used in a flavour the total flavour concentration in a medicine must be no more than 5%. If used in a fragrance the total fragrance concentration in a medicine must be no more 1%. When the medicine is for dermal use, the total concentration of isoeugenol in the medicine must not be more than 0.02%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -34865,7 +34869,7 @@
   "ISOJASMONE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Permitted for use only in combination with other permitted ingredients as a flavour proprietary excipient formulation or fragrance proprietary excipient formulation. The total flavour proprietary excipient formulation in a medicine must not be more than 5%. The total fragrance proprietary excipient formulation in a medicine must not be more 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -35670,7 +35674,7 @@
   "KALMIA LATIFOLIA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Beta-arbutin is a mandatory component of Kalmia latifolia. When for oral use, the maximum recommended daily dose must not provide more than 500 mg of beta-arbutin. When for dermal application exclusively to the face: a) the concentration of beta-arbutin in the medicine must not be more than 7%; b) hydroquinone is a mandatory component; and c) the concentration of hydroquinone must not be more than 10 mg/kg or 10 mg/L or 0.001%. When for use other than oral or dermal application exclusively to the face, the concentration of beta-arbutin in the medicine must not be more than 10 mg/kg or 10 mg/L or 0.001%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -35891,7 +35895,7 @@
   "L LIMONENE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "L-limonene must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation or a fragrance proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing l-limonene must not be more than 5% of the total medicine. The total concentration of fragrance proprietary excipient formulations containing l-limonene must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -36894,7 +36898,7 @@
   "LAURYL METHACRYLATE SODIUM METHACRYLATE CROSSPOLYMER DISPERSION 40 PER CENT": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 8.0,
      "conditions": "Until 10 December 2027, lauryl methacrylate/sodium methacrylate crosspolymer dispersion (40 per cent) must only be used in a medicine where: (a) Kao Australia Pty Ltd is the sponsor of the medicine (the primary sponsor); or (b) another person is the sponsor of the medicine (the secondary sponsor) and the TGA has been notified that the secondary sponsor has been authorised by the primary sponsor to use the ingredient in the medicine. Lauryl methacrylate/sodium methacrylate crosspolymer dispersion (40 per cent) must: (a) only be used in topical medicines for dermal application; and (b) not be included in medicines intended for use on broken skin. The following warning statement (or words to the same effect) must be included on the medicine label: (a) - (EYE) ‘Avoid contact with eyes'. The total concentration of lauryl methacrylate/sodium methacrylate crosspolymer dispersion (40 per cent) in a medicine must not be more than 8%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -37185,7 +37189,7 @@
   "LEDUM PALUSTRE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Beta-arbutin is a mandatory component of Ledum palustre. When for dermal application exclusively to the face: a) the concentration of beta-arbutin in the medicine must not be more than 7%; b) hydroquinone is a mandatory component; and c) the concentration of hydroquinone must not be more than 10 mg/kg or 10 mg/L or 0.001%. When for topical use other than dermal application exclusively to the face, the concentration of beta-arbutin in the medicine must not be more than 10 mg/kg or 10 mg/L or 0.001%. When the route of administration is other than topical, the maximum recommended daily dose must not contain more than 0.001 mg of the equivalent dry herbal material of Ledum palustre.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -37755,7 +37759,7 @@
   "LIME OIL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Lime oil must only be included in medicines when in combination with other permitted ingredients as a flavour or a fragrance proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing lime oil must not be more than 5% of the total medicine. The total concentration of fragrance proprietary excipient formulations containing lime oil must not be more than 1% of the total medicine. When for other than internal use: (a) the concentration of lime oil in the medicine must not be more than 0.5%; or (b) the following warning statement (or words to the same effect) is required on the medicine label: - (SENS) ‘Application to the skin may increase sensitivity to sunlight’.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -38076,7 +38080,7 @@
   "LINSEED OIL FATTY ACIDS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Linseed oil fatty acids must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing linseed oil fatty acids must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -38275,7 +38279,7 @@
   "LITCHI CHINENSIS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "When used as an excipient, Litchi chinensis must only be included in medicines when the plant part is fruit, in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing Litchi chinensis must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -40322,7 +40326,7 @@
   "MEADOWSWEET HERB DRY": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.001,
      "conditions": "Methyl salicylate is a mandatory component of meadowsweet herb dry. Not to be included in medicines for use in the eye or on damaged skin. When used internally, the concentration of methyl salicylate in the medicine must not be more than 0.001%. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is other than spray, the medicine requires child resistant packaging. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is spray, the medicine does not require child resistant packaging if: - the delivery device is engaged into the container in such a way that prevents it from being readily removed; - direct suction through the delivery device results in delivery of no more than one dosage unit; and - actuation of the spray device is ergonomically difficult for young children to accomplish. The following warning statement is required on the medicine label: - (METSAL) 'Contains methyl salicylate' (or words to that effect). When for use in topical medicines for dermal application i) the concentration of methyl salicylate in the medicine must not be more than 25% ii) the following warning statements are required on the medicine label: - (PREGNT2) 'Do not use if pregnant or likely to become pregnant' (or words to that effect); - (CHILD4) 'Do not use [this product/insert name of product] in children 6 years of age or less'; - (SENS) 'Application to skin may increase sensitivity to sunlight.' (or words to that effect); - (AVOID) 'Avoid prolonged exposure in the sun' (or words to that effect); iii) if the concentration of methyl salicylate in the medicine is greater than 1%, the following warning statement is required on the medicine label: - (IRRIT) 'If irritation develops, discontinue use'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -40607,7 +40611,7 @@
   "MENTHA ARVENSIS OIL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Permitted for use only in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total flavour proprietary excipient formulation in a medicine must not be more than 5%. Menthol is a mandatory component of Mentha arvensis oil. When the medicine is for topical use for dermal application: (i) the medicine must not be intended for use in the eye or on damaged skin; (ii) the medicine must not deliver more than 25% total menthol when administered according to the directions for use; (iii) the following warning statements is required on the medicine label: - (EYE) Avoid contact with eyes (or words to that effect). (iv) if the medicine delivers more than 1% total menthol when administered according to the directions for use, the following warning statements are required on the medicine label: - (SKTEST) If you have sensitive skin, test this product on a small area of skin before applying it to a large area; - (IRRIT) If irritation develops, discontinue use. (v) if the medicine delivers more than 5% total menthol when administered according to the directions for use, the following warning statement is required on the medicine label: – (MENTH) Contains a high concentration of menthol, which can cause severe skin irritation. When the medicine is for internal use, the maximum recommended daily dose must not contain more than 1 gram of menthol.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -40689,7 +40693,7 @@
   "MENTHADIENYL ACETATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Menthadienyl acetate must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of the flavour proprietary excipient formulation containing menthadienyl acetate must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -40811,7 +40815,7 @@
   "MERADIMATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 5%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -40955,7 +40959,7 @@
   "METHYL 2 6 6 TRIMETHYLCYCLOHEX 2 ENE 1 CARBOXYLATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only for use in medicines in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total fragrance proprietary excipient formulation in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -41040,7 +41044,7 @@
   "METHYL ACRYLATE METHYL METHACRYLATE AND METHACRYLIC ACID COPOLYMER DISPERSION 30 PER CENT": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Methyl methacrylate is a mandatory component of methyl acrylate, methyl methacrylate and methacrylic acid copolymer dispersion (30 per cent). The total concentration of methyl methacrylate as residual monomer in the medicine must not be more than 1%. The route of administration for medicines that contain methyl acrylate, methyl methacrylate and methacrylic acid copolymer dispersion (30 per cent) must be limited to oral use. Methyl acrylate, methyl methacrylate and methacrylic acid copolymer dispersion (30 per cent) is not permitted for use in children under the age of 4 years. The maximum recommended daily dose of the medicine must not provide more than: (a) 667 milligrams of methyl acrylate, methyl methacrylate and methacrylic acid copolymer dispersion (30 per cent) to individuals aged 4 to 17 years (inclusive); and (b) 2.33 grams of methyl acrylate, methyl methacrylate and methacrylic acid copolymer dispersion (30 per cent) to individuals aged 18 years and above.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -41384,7 +41388,7 @@
   "METHYL HEPTANOATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Permitted for use only in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total flavour proprietary excipient formulation in a medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -41457,7 +41461,7 @@
   "METHYL HYDROJASMONATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Methyl hydrojasmonate must: (a) only be used in topical medicines for dermal application; or (b) only be included in medicines when combined with other permissible ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing methyl hydrojasmonate must not be more than 5% of the medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -41590,7 +41594,7 @@
   "METHYL METHACRYLATE CROSSPOLYMER": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 4.85,
      "conditions": "Methyl methacrylate is a mandatory component of methyl methacrylate crosspolymer. Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. When the concentration of methyl methacrylate crosspolymer is greater than 1%, the medicine must not be intended for use on damaged skin. The total concentration of methyl methacrylate crosspolymer in the medicine must not be more than 4.85%. The total concentration of methyl methacrylate as residual monomer in the medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -41759,7 +41763,7 @@
   "METHYL SALICYLATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.001,
      "conditions": "Not to be included in medicines for use in the eye or on damaged skin. When used internally, the concentration in the medicine must not be more than 0.001%. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is other than spray, the medicine requires child resistant packaging. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is spray, the medicine does not require child resistant packaging if: - the delivery device is engaged into the container in such a way that prevents it from being readily removed; - direct suction through the delivery device results in delivery of no more than one dosage unit; and - actuation of the spray device is ergonomically difficult for young children to accomplish. The following warning statement is required on the medicine label: - (METSAL) 'Contains methyl salicylate' (or words to that effect). When for use in topical medicines for dermal application: i) the concentration of methyl salicylate in the medicine must not be more than 25%; ii) the following warning statements are required on the medicine label: - (PREGNT2) 'Do not use if pregnant or likely to become pregnant' (or words to that effect); - (CHILD4) 'Do not use [this product/insert name of product] in children 6 years of age or less'; - (SENS) 'Application to skin may increase sensitivity to sunlight' (or words to that effect); - (AVOID) 'Avoid prolonged exposure in the sun' (or words to that effect); iii) if the concentration of methyl salicylate in the medicine is greater than 1%, the following warning statement is required on the medicine label: - (IRRIT) 'If irritation develops, discontinue use'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -42378,7 +42382,7 @@
   "MONOMENTHYL GLUTARATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Monomenthyl glutarate must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing monomenthyl glutarate must not be more than 5% of the total medicine. The maximum recommended daily dose of the medicine must not provide more than 1.8mg of monomenthyl glutarate.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -42390,7 +42394,7 @@
   "MONOMENTHYL SUCCINATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Monomenthyl succinate must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of the flavour proprietary excipient formulation containing monomenthyl succinate must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -43039,7 +43043,7 @@
   "N 2 PYRIDIN 2 YL ETHYL P MENTHANE 3 CARBOXAMIDE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "N-(2-(pyridin-2-yl)ethyl)-p-menthane-3-carboxamide must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing N-(2-(pyridin-2-yl)ethyl)-p-menthane-3-carboxamide must not be more than 5% of the total medicine. The maximum recommended daily dose of the medicine must not provide more than 90 micrograms of N-(2-(pyridin-2-yl)ethyl)-p-menthane-3-carboxamide.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -43198,7 +43202,7 @@
   "NEOHESPERIDIN DIHYDROCHALCONE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.1,
      "conditions": "The routes of administration for medicines that contain neohesperidin-dihydrochalcone must be limited to: (a) topical for dermal application; and (b) oral. When used in topical medicines for dermal application: (a) neohesperidin-dihydrochalcone must not be included in medicines intended for use in the eye or on damaged skin; and (b) the concentration of neohesperidin-dihydrochalcone in the medicine must not be more than 0.1%. When used in oral medicines: (a) the concentration in the medicine must not be more than 0.1%; and (b) the following warning statement (or words to that effect) is required on the medicine label: - (NTAKEN3) 'Not to be taken by children under 3 years old'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -43250,7 +43254,7 @@
   "NEOPENTYL GLYCOL DIOCTANOATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 8.1,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 8.1%. When the concentration of neopentyl glycol dioctanoate is greater than 5%, the medicine must not be intended for use on damaged skin.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -43543,7 +43547,7 @@
   "NONIVAMIDE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Nonivamide must only be included in medicines when in combination with other permitted ingredients as a flavour or fragrance proprietary excipient formulation. The ingredient is not to be included in medicines intended for use in the eye. The total concentration of flavour proprietary excipient formulations containing nonivamide must not be more than 5% of the total medicine. The total concentration of fragrance proprietary excipient formulations containing nonivamide must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -43766,7 +43770,7 @@
   "NYCTANTHES ARBOR TRISTIS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.001,
      "conditions": "When the plant part is leaf: a) methyl salicylate is a mandatory component of Nyctanthes arbor-tristis; b) not to be included in medicines for use in the eye or on damaged skin; c) when used internally, the concentration of methyl salicylate in the medicine must not be more than 0.001%; d) when the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is other than spray, the medicine requires child resistant packaging; e) when the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is spray, the medicine does not require child resistant packaging if: - the delivery device is engaged into the container in such a way that prevents it from being readily removed; - direct suction through the delivery device results in delivery of no more than one dosage unit; and - actuation of the spray device is ergonomically difficult for young children to accomplish; f) the following warning statement is required on the medicine label: - (METSAL) ‘Contains methyl salicylate’ (or words to that effect); and g) when for use in topical medicines for dermal application: i) the concentration of methyl salicylate in the medicine must not be more than 25% ii) the following warning statements are required on the medicine label: - (PREGNT2) 'Do not use if pregnant or likely to become pregnant' (or words to that effect); - (CHILD4) 'Do not use [this product/insert name of product] in children 6 years of age or less'; - (SENS) 'Application to skin may increase sensitivity to sunlight' (or words to that effect); - (AVOID) 'Avoid prolonged exposure in the sun' (or words to that effect); iii) if the concentration of methyl salicylate in the medicine is greater than 1%, the following warning statement is required on the medicine label: - (IRRIT) 'If irritation develops, discontinue use'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -43944,7 +43948,7 @@
   "OCIMUM KILIMANDSCHARICUM": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 12.5,
      "conditions": "Camphor is a mandatory component of Ocimum kilimandscharicum. In solid and semi solid preparations, the concentration of camphor must not be more than 12.5%. In liquid preparations, the nominal capacity of the container must not be more than 25 millilitres. In liquid preparations other than essential oils or distillates, the concentration of camphor must not be more than 2.5%. In essential oil or distillate preparations, if the concentration of camphor is more than 2.5% but less than or equal to 10%, and the nominal capacity of the container is less than 25 millilitres, the medicine must have a restricted flow insert fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); - (NTAKEN) 'Not to be taken'; and - (BABY4) ‘Do not apply to infants under 12 months of age except on the advice of a doctor or pharmacist’ (or words to that effect). In essential oil or distillate preparations, if the concentration of camphor is more than 10%, and the nominal capacity of the container is less than 15 millilitres, the medicine must have a restricted flow insert fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); - (NTAKEN) 'Not to be taken'; and - (BABY4) ‘Do not apply to infants under 12 months of age except on the advice of a doctor or pharmacist’ (or words to that effect). In essential oil or distillate preparations, if the concentration of camphor is more than 10%, and the nominal capacity of the container is more than 15 millilitres but less than or equal to 25 millilitres, the medicine must have a restricted flow insert and child resistant closure fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); - (NTAKEN) 'Not to be taken'; and - (BABY4) ‘Do not apply to infants under 12 months of age except on the advice of a doctor or pharmacist’ (or words to that effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -44142,7 +44146,7 @@
   "OCTYL CROTONATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Octyl crotonate must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing octyl crotonate must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -44218,7 +44222,7 @@
   "OCTYLBICYCLOHEPTENEDICARBOXIMIDE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use in topical medicines for dermal application. The total concentration of octylbicycloheptenedicarboximide in the medicine must not be more than 10%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -44759,7 +44763,7 @@
   "ORANGE OIL BITTER": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Orange oil bitter must only be included in medicines when in combination with other permitted ingredients as a flavour or fragrance proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing orange oil bitter must not be more than 5% of the total medicine. The total concentration of fragrance proprietary excipient formulations containing orange oil bitter must not be more than 1% of the total medicine. The warning statement (SENS) 'Application to skin may increase sensitivity to sunlight' or words to that effect must be included on the medicine label unless the medicine is: a) for internal use; b) in preparations containing 1.4% or less of orange oil bitter; or c) for use in soaps or bath or shower gels that are washed off the skin.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -44886,7 +44890,7 @@
   "ORIGANUM MAJORANA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Beta-arbutin is a mandatory component of Origanum majorana. When for oral use, the maximum recommended daily dose must not provide more than 500 mg of beta-arbutin. When for dermal application exclusively to the face: a) the concentration of beta-arbutin in the medicine must not be more than 7%; b) hydroquinone is a mandatory component; and c) the concentration of hydroquinone must not be more than 10 mg/kg or 10 mg/L or 0.001%. When for use other than oral or dermal application exclusively to the face, the concentration of beta-arbutin in the medicine must not be more than 10 mg/kg or 10 mg/L or 0.001%. When the plant preparation is oil or distillate, and the concentration of Origanum majorana oil or distillate within the medicine is more than 50%: a) the nominal capacity of the container must not be more than 50 mL; b) a restricted flow insert must be fitted on the container; and c) the following warning statement is required on the label: - (CHILD) 'Keep out of reach of children' (or words to that effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -45170,7 +45174,7 @@
   "OXACEPROL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.15,
      "conditions": "Until 12 June 2028, oxaceprol must only be used in a medicine where: (a) Beiersdorf Australia Ltd (Client ID 60) is the sponsor of the medicine (the primary sponsor); or (b) another person is the sponsor of the medicine (the secondary sponsor) and the TGA has been notified that the secondary sponsor has been authorised by the primary sponsor to use the ingredient in the medicine. Oxaceprol must: (a) only be use in topical medicines for dermal application; and (b) not be included in medicines intended for use on broken skin. The following warning statement (or words to the same effect) is required on the medicine label: - (EYE) ‘Avoid contact with eyes'. The concentration of oxaceprol in the medicine must not be more than 0.15%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -45843,7 +45847,7 @@
   "PARA ETHYL CRESOXYACETATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Para-ethyl cresoxyacetate must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing para-ethyl cresoxyacetate must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -45939,7 +45943,7 @@
   "PARA PROPYL ANISOLE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Para-propyl anisole must only be included in medicines when in combination with other permitted ingredients as a fragrance and/or flavour proprietary excipient formulation. The total concentration of fragrance proprietary excipient formulations containing para-propyl anisole must not be more than 1% of the total medicine. The total concentration of flavour proprietary excipient formulations containing para-propyl anisole must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -46047,7 +46051,7 @@
   "PARSLEY HERB DRY": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "The following warning statement must be included on the label of a medicine containing parsley herb dry: - (PREGNT2) ‘Do not use if pregnant or likely to become pregnant.’ unless when: (a) parsley herb dry is used as an active homoeopathic ingredient at a homoeopathic potency of more than 12X; or (b) parsley herb dry is used as an excipient in a flavour where the total concentration of flavour proprietary excipient formulations containing parsley herb dry must not be more than 5% of the total medicine; or (c) parsley herb dry is used as an excipient in a fragrance where the total concentration of fragrance proprietary excipient formulations containing parsley herb dry must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -46061,7 +46065,7 @@
   "PARSLEY HERB OIL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "The following warning statement must be included on the label of a medicine containing parsley herb oil: - (PREGNT2) ‘Do not use if pregnant or likely to become pregnant.’ unless when: (a) parsley herb oil is used as an active homoeopathic ingredient at a homoeopathic potency of more than 12X; or (b) parsley herb oil is used as an excipient in a flavour where the total concentration of flavour proprietary excipient formulations containing parsley herb oil must not be more than 5% of the total medicine; or (c) parsley herb oil is used as an excipient in a fragrance where the total concentration of fragrance proprietary excipient formulations containing parsley herb oil must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -46075,7 +46079,7 @@
   "PARSLEY HERB POWDER": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "The following warning statement must be included on the label of a medicine containing parsley herb powder: - (PREGNT2) ‘Do not use if pregnant or likely to become pregnant.’ unless when: (a) parsley herb powder is used as an active homoeopathic ingredient at a homoeopathic potency of more than 12X; or (b) parsley herb powder is used as an excipient in a flavour where the total concentration of flavour proprietary excipient formulations containing parsley herb powder must not be more than 5% of the total medicine; or (c) parsley herb powder is used as an excipient in a fragrance where the total concentration of fragrance proprietary excipient formulations containing parsley herb powder must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -46089,7 +46093,7 @@
   "PARSLEY SEED OIL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "The following warning statement must be included on the label of a medicine containing parsley seed oil: - (PREGNT2) ‘Do not use if pregnant or likely to become pregnant.’ unless when: (a) parsley seed oil is used as an active homoeopathic ingredient at a homoeopathic potency of more than 12X; or (b) parsley seed oil is used as an excipient in a flavour where the total concentration of a flavour proprietary excipient formulations containing parsley seed oil must not be more than 5% of the total medicine; or (c) parsley seed oil is used as an excipient in a fragrance where the total concentration of fragrance excipient formulations containing parsley seed oil must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -47296,7 +47300,7 @@
   "PERMETHRIN": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 2.0,
      "conditions": "The total concentration of permethrin in the medicine must not be more than 2%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -47445,7 +47449,7 @@
   "PETROSELINUM CRISPUM": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "The following warning statement must be included on the label of a medicine containing Petroselinum crispum: - (PREGNT2) ‘Do not use if pregnant or likely to become pregnant.’ unless when: (a) Petroselinum crispum is used as an active homoeopathic ingredient at a homoeopathic potency of more than 12X; or (b) Petroselinum crispum is used as an excipient where the total concentration of flavour proprietary excipient formulations containing Petroselinum crispum must not be more than 5% of the total medicine; or (c) Petroselinum crispum is used as an excipient in a fragrance where the total concentration of fragrance proprietary excipient formulations containing Petroselinum crispum must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -47731,7 +47735,7 @@
   "PHENOXYETHANOL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Phenoxyethanol must only be used in topical medicines for dermal application and not be included in medicines that are intended for use in the eye. The concentration of phenoxyethanol in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -48883,7 +48887,7 @@
   "PIPERINE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Permitted for use only in combination with other permitted ingredients as a flavour proprietary formulation. The total flavour proprietary formulation in a medicine must not be more than 5% and the concentration of piperine in the medicine must not be more than 0.15%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -49433,7 +49437,7 @@
   "POLYACRYLATE DISPERSION 30 PER CENT": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Methyl methacrylate is a mandatory component of polyacrylate dispersion (30 per cent). The total concentration of methyl methacrylate as residual monomer in the medicine must not be more than 1%. The route of administration for medicines that contain polyacrylate dispersion (30 per cent) must be limited to oral use. Polyacrylate dispersion (30 per cent) is not permitted for use in children under the age of 4 years. The maximum recommended daily dose of the medicine must not provide more than: a) 1.33 grams of polyacrylate dispersion (30 per cent) to individuals aged 4 to 17 years (inclusive); and b) 4.67 grams of polyacrylate dispersion (30 per cent) to individuals aged 18 years and above.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -49725,7 +49729,7 @@
   "POLYGLYCERYL 2 CAPRATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.5,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use on damaged skin or in the eye. The concentration in the medicine must not be more than 0.5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -49764,7 +49768,7 @@
   "POLYGLYCERYL 2 DISTEARATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 3.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 3%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -49790,7 +49794,7 @@
   "POLYGLYCERYL 2 TRIISOSTEARATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. When the concentration of polyglyceryl-2 triisostearate is greater than 3%, the medicine must not be intended for use on damaged skin. The concentration in the medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -50059,7 +50063,7 @@
   "POLYISOBUTYLENE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 30.0,
      "conditions": "Polyisobutylene must only be used when the dosage form is 'chewing gum' or ‘dermal patch’. When used as a dermal patch, the total concentration of polyisobutylene in the medicine must not be more than 30%. Polyisobutylene must comply with: (a) the Polyisobutylene monograph in the Food Chemicals Codex published by the United States Pharmacopeial Convention, as in force or existing from time to time; and (b) the requirements for residual solvents and catalysts in the British Pharmacopoeia or the United States Pharmacopeia National Formulary, as in force or existing from time to time.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -50108,7 +50112,7 @@
   "POLYMETHYL METHACRYLATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Methyl methacrylate is a mandatory component of polymethyl methacrylate. Only for use in topical medicines for dermal application. The total concentration of methyl methacrylate as residual monomer in the medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -50249,7 +50253,7 @@
   "POLYQUATERNIUM 4": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.4,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 0.4%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -50846,7 +50850,7 @@
   "POTASSIUM CHLORIDE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 3.75,
      "conditions": "When for oral use: (a) potassium is a mandatory component of potassium chloride; (b) the medicine requires the following warning statement on the medicine label: - 'If you have kidney disease or are taking heart or blood pressure medicines - consult your doctor or pharmacist before use. Keep out of reach of children.'; and (c) except when the medicine is for use as oral rehydration therapy, the amount of potassium chloride per dosage unit must not be more than 550 mg. Medicines containing potassium chloride for use as oral rehydration therapy, are subject to the following conditions: (a) the medicine complies with the requirements specified in the British Pharmacopoeia, as in force or existing from time to time, for Oral Rehydration Salts; (b) the sodium, potassium and glucose content, and total osmolarity of the solution after it has been prepared according to the instructions on the packet are consistent with the criteria specified by the World Health Organisation (WHO) and the United Nations Children's Fund (UNICEF) in the document 'Expert consultation on oral rehydration salts formulation' 18 July 2001; and (c) the following warning statements are required on the medicine label: - (UOAD) 'Use only as directed' - (DIAR3) 'If diarrhoea persists, seek medical advice.' When for dental use, the concentration of potassium chloride in the medicine must not be more than 3.75%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -51584,7 +51588,7 @@
   "PROPAN 1 OL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 18.0,
      "conditions": "Only for use in: - topical medicines for dermal application; or - in combination with other permitted ingredients as a flavour proprietary excipient formulation. The concentration of propan-1-ol in the medicine must not be more than 18%. When used in medicines in combination with other permitted ingredients as a flavour proprietary excipient formulation, the total flavour proprietary excipient formulation in a medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -52701,7 +52705,7 @@
   "PYRUS COMMUNIS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Beta-arbutin is a mandatory component of Pyrus communis. When for oral use, the maximum recommended daily dose must not provide more than 500 mg of beta-arbutin. When for dermal application exclusively to the face: a) the concentration of beta-arbutin in the medicine must not be more than 7%; b) hydroquinone is a mandatory component; and c) the concentration of hydroquinone must not be more than 10 mg/kg or 10 mg/L or 0.001%. When for use other than oral or dermal application exclusively to the face, the concentration of beta-arbutin in the medicine must not be more than 10 mg/kg or 10 mg/L or 0.001%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -52714,7 +52718,7 @@
   "PYRUS PYRIFOLIA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Beta-arbutin is a mandatory component of Pyrus pyrifolia. When for oral use, the maximum recommended daily dose must not provide more than 500 mg of beta-arbutin. When for dermal application exclusively to the face: a) the concentration of beta-arbutin in the medicine must not be more than 7%; b) hydroquinone is a mandatory component; and c) the concentration of hydroquinone must not be more than 10 mg/kg or 10 mg/L or 0.001%. When for use other than oral or dermal application exclusively to the face, the concentration of beta-arbutin in the medicine must not be more than 10 mg/kg or 10 mg/L or 0.001%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -53673,7 +53677,7 @@
   "RHODODENDRON FERRUGINEUM": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Beta-arbutin is a mandatory component of Rhododendron ferrugineum. When for oral use, the maximum recommended daily dose must not provide more than 500 mg of beta-arbutin. When for dermal application exclusively to the face: a) the concentration of beta-arbutin in the medicine must not be more than 7%; b) hydroquinone is a mandatory component; and c) the concentration of hydroquinone must not be more than 10 mg/kg or 10 mg/L or 0.001%. When for use other than oral or dermal application exclusively to the face, the concentration of beta-arbutin in the medicine must not be more than 10 mg/kg or 10 mg/L or 0.001%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -54278,7 +54282,7 @@
   "ROSMARINUS OFFICINALIS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 12.5,
      "conditions": "Camphor and cineole are mandatory components of Rosmarinus officinalis except when the plant preparation is an essential oil or distillate. In solid and semi-solid preparations, the concentration of camphor must not be more than 12.5%. In liquid preparations other than essential oils or distillates, the concentration of camphor must not be more than 2.5%. When the concentration of cineole in the preparation other than essential oils or distillates is more than 25%, the nominal capacity of the container must not be more than 25 millilitres. In liquid preparations other than essential oils or distillates, when the concentration of cineole in the preparation is more than 25% and the nominal capacity of the container is more than 15 millilitres but less than or equal to 25 millilitres, the medicine must have a child resistant closure and restricted flow insert fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); and - (NTAKEN) 'Not to be taken'. In liquid preparations other than essential oils or distillates, when the concentration of cineole in the preparation is more than 25% and the nominal capacity of the container is no more than 15 millilitres, the medicine must have a restricted flow insert fitted on the container and include the following warning statements on the medicine label: - (CHILD) 'Keep out of reach of children' (or words to that effect); and - (NTAKEN) 'Not to be taken'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -54483,7 +54487,7 @@
   "RUE OIL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Where used as an active ingredient: (a) rue oil must only be used as a homoeopathic ingredient; (b) the routes of administration for medicines that contain rue oil must be: (i) topical for dermal use; and (ii) oral; (c) where the homoeopathic potency of the medicine containing rue oil is 12X or lower, the following warning statement must be included on the medicine label: - (PREGNT3) ‘Do not use if pregnant or likely to become pregnant, or during lactation.’; and (d) where the medicine is for dermal use, the following statement is required on the medicine: - (SENS) ‘Application to skin may increase sensitivity to sunlight’ (or words to that effect). Where used as an excipient ingredient: (a) the route of administration for medicines that contain rue oil must be topical; (b) rue oil must only be included in medicines when combined with other permissible ingredients as a fragrance proprietary excipient formulation; (c) the total concentration of fragrance proprietary excipient formulations containing rue oil must not be more than 1% of the total medicine; and (d) the total concentration of rue oil in the medicine must not be more than 0.15%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -54594,7 +54598,7 @@
   "RUTA GRAVEOLENS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Where used as an active ingredient: (a) Ruta graveolens must only be used as a homoeopathic ingredient; (b) the routes of administration for medicines that contain Ruta graveolens must be: (i) topical for dermal use; and (ii) oral; (c) where the homoeopathic potency of the medicine containing Ruta graveolens is 12X or lower, the following warning statement must be included on the medicine label: - (PREGNT3) ‘Do not use if pregnant or likely to become pregnant, or during lactation.’; and (d) where the medicine is for dermal use, the following statement is required on the medicine: - (SENS) ‘Application to skin may increase sensitivity to sunlight’ (or words to that effect). Where used as an excipient ingredient: (a) the route of administration for medicines that contain Ruta graveolens must be topical; (b) Ruta graveolens must only be included in medicines when combined with other permissible ingredients as a fragrance proprietary excipient formulation; (c) the total concentration of fragrance proprietary excipient formulations containing Ruta graveolens must not be more than 1% of the total medicine; and (d) the total concentration of Ruta graveolens in the medicine must not be more than 0.15%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -54670,7 +54674,7 @@
   "SABINENE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Sabinene must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing sabinene must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -55337,7 +55341,7 @@
   "SAXIFRAGA STOLONIFERA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.0816,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 0.0816%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -56098,7 +56102,7 @@
   "SHEA BUTTER ETHYL ESTERS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 30.0,
      "conditions": "Shea butter ethyl esters must: (a) Only be used in topical medicines for dermal application; and (b) Not be included in medicines intended for use on broken skin. The total concentration of shea butter ethyl esters in the medicine must not be more than 30%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -56262,7 +56266,7 @@
   "SILVER": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only for use as an active homoeopathic ingredient. When for external use, the total concentration of silver in the medicine must not be more than 1%. When for oral use: (a) the total concentration of silver in the medicine must not be more than 0.3%; and (b) the following warning statement is required on the medicine label: - ‘Overuse may stain skin or mouth.’ (or words to that effect).",
      "source": "TGA Permissible Ingredients Determination",
      "warning_statement_required": true,
@@ -56774,7 +56778,7 @@
   "SODIUM CALCIUM EDETATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "When for oral use, sodium is a mandatory component of sodium calcium edetate. Sodium calcium edetate must only be included in medicines when: (a) the route of administration is limited to topical for dermal use; or (b) in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of sodium calcium edetate in the medicine must not exceed 0.32%. The total concentration of flavour proprietary excipient formulations containing sodium calcium edetate must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -56886,7 +56890,7 @@
   "SODIUM CHONDROITIN SULFATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.001,
      "conditions": "When used as an excipient ingredient: a) only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye; b) the concentration in the medicine must not be more than 0.001%. When used as an active ingredient: a) the route of administration must only be oral; b) the maximum daily dose must not provide more than 1,200 mg of sodium chondroitin sulfate; c) the following statements must be included on the medicine label: - (ADULT) ‘Adults only' (or words to that effect); - (PREGNT) ‘Not recommended for use by pregnant and lactating women’ (or words to that effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -57092,7 +57096,7 @@
   "SODIUM HYDROXIDE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "The concentration of sodium hydroxide in the medicine must not be more than 5%. When used in a solid preparation, the pH of a 10 g/L aqueous solution must not be more than 11.5. When used in a liquid or a semi-solid preparation, the pH of the preparation must not exceed 11.5.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -57319,7 +57323,7 @@
   "SODIUM METAPHOSPHATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.1,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye or damaged skin. The concentration in the medicine must not be more than 0.1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -57483,7 +57487,7 @@
   "SODIUM POLYACRYLATE STARCH": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -58007,7 +58011,7 @@
   "SORBITAN DISTEARATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.15,
      "conditions": "Until 10 December 2027, Sorbitan distearate must only be used in a medicine where: (a) Kao Australia Pty Ltd is the sponsor of the medicine (the primary sponsor); or (b) another person is the sponsor of the medicine (the secondary sponsor) and the TGA has been notified that the secondary sponsor has been authorised by the primary sponsor to use the ingredient in the medicine. Sorbitan distearate must: (a) only be used in topical medicines for dermal application; and (b) not be included in medicines intended for use on broken skin. The total concentration of sorbitan distearate in a medicine must not be more than 0.15%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -58705,7 +58709,7 @@
   "STANNIC OXIDE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.2,
      "conditions": "Stannic oxide must only be used in topical medicines for dermal application. The total concentration of stannic oxide in the medicine must not be more than 0.2%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -58974,7 +58978,7 @@
   "STEAROYL GLUTAMIC ACID": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.058,
      "conditions": "Until 10 December 2027, Stearoyl glutamic acid must only be used in a medicine where: (a) Kao Australia Pty Ltd is the sponsor of the medicine (the primary sponsor); or (b) another person is the sponsor of the medicine (the secondary sponsor) and the TGA has been notified that the secondary sponsor has been authorised by the primary sponsor to use the ingredient in the medicine. Stearoyl glutamic acid must: (a) only be used in topical medicines for dermal application; and (b) not be included in medicines intended for use on broken skin. The following warning statement (or words to the same effect) must be included on the medicine label: (a) - (EYE) ‘Avoid contact with eyes'. The total concentration of stearoyl glutamic acid in a medicine must not be more than 0.058%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -59025,7 +59029,7 @@
   "STEARYL BEHENATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 3.5,
      "conditions": "Only for use as an excipient ingredient for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 3.5% in the final formulation.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -59415,7 +59419,7 @@
   "STYRALLYL PROPIONATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "Only for use in medicines in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total fragrance proprietary excipient formulation in a medicine must not be more than 1%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -59774,7 +59778,7 @@
   "SULISOBENZONE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -59796,7 +59800,7 @@
   "SULISOBENZONE SODIUM": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -60055,7 +60059,7 @@
   "SYZYGIUM JAMBOS": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.0693,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 0.0693%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -60093,7 +60097,7 @@
   "TAGETES ERECTA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "When used as an excipient ingredient, only for use in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total flavour proprietary excipient formulation in a medicine must not be more than 5%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -60499,7 +60503,7 @@
   "TERMINALIA FERDINANDIANA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.3,
      "conditions": "When used as an active ingredient: (a) the plant part must be from fruit flesh or seed only; and (b) the plant preparation must be limited to fresh, dry, powder. and extraction preparations with water as the only solvent. When used as an excipient ingredient: (a) the route of administration for medicines that contain Terminalia ferdinandiana must be limited to topical for dermal use; (b) medicines that contain Terminalia ferdinandiana are not to be intended for use on damaged skin or in the eye; and (c) the concentration of Terminalia ferdinandiana in the medicine must not be more than 0.3%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -61172,7 +61176,7 @@
   "THYMOL METHYL ETHER": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Thymol methyl ether must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of the flavour proprietary excipient formulation containing thymol methyl ether must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -61826,7 +61830,7 @@
   "TRANS 2 OCTENAL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 1.0,
      "conditions": "trans-2-Octenal must only be included in medicines when in combination with other permitted ingredients as a fragrance proprietary excipient formulation. The total concentration of the fragrance proprietary excipient formulation containing trans-2-octenal must not be more than 1% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -62700,7 +62704,7 @@
   "TRIS BIPHENYL TRIAZINE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 10.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 10%. When used topically, the dosage form must not be spray. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -62842,7 +62846,7 @@
   "TROLAMINE SALICYLATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 12.0,
      "conditions": "Only for use as an active ingredient in sunscreens for dermal application and not to be included in medicines intended for use in the eye. The concentration in the medicine must not be more than 12%. When used in primary sunscreen products, the following warning statements are required on the label: - (AVOID) 'Avoid prolonged exposure in the sun' (or words to this effect); and - (SUNPRO) 'Wear protective clothing - hats and eyewear when exposed to the sun' (or words to this effect).",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -62971,7 +62975,7 @@
   "TURNERA DIFFUSA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Beta-arbutin is a mandatory component of Turnera diffusa. When for oral use, the maximum recommended daily dose must not provide more than 500 mg of beta-arbutin. When for dermal application exclusively to the face: a) the concentration of beta-arbutin in the medicine must not be more than 7%; b) hydroquinone is a mandatory component; and c) the concentration of hydroquinone must not be more than 10 mg/kg or 10 mg/L or 0.001%. When for use other than oral or dermal application exclusively to the face, the concentration of beta-arbutin in the medicine must not be more than 10 mg/kg or 10 mg/L or 0.001%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -62996,7 +63000,7 @@
   "TURPENTINE OIL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 25.0,
      "conditions": "Only permitted for use when turpentine oil is derived from sources other than mineral turpentine. The concentration in the medicine must not be more than 25%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -63058,7 +63062,7 @@
   "UBIDECARENONE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.05,
      "conditions": "When used as an excipient, the route of administration must be topical and the concentration in the medicine must not be more than 0.05%. Not to be included in medicines intended for use in the eye. When for internal use, the maximum recommended daily dose must not provide more than 300 milligrams of ubidecarenone. When for internal use in combination with Ubiquinol-10, the maximum recommended daily dose must not provide more than 300 milligrams of ubiquinol-10 and ubidecarenone combined. When for internal use, the following warning statement is required on the medicine label: - (WARF) 'Do not take while on warfarin therapy without medical advice'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -63575,7 +63579,7 @@
   "VACCINIUM VITIS IDAEA": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 7.0,
      "conditions": "Beta-arbutin is a mandatory component of Vaccinium vitis-idaea. When for oral use, the maximum recommended daily dose must not provide more than 500 mg of beta-arbutin. When for dermal application exclusively to the face: a) the concentration of beta-arbutin in the medicine must not be more than 7%; b) hydroquinone is a mandatory component; and c) the concentration of hydroquinone must not be more than 10 mg/kg or 10 mg/L or 0.001%. When for use other than oral or dermal application exclusively to the face, the concentration of beta-arbutin in the medicine must not be more than 10 mg/kg or 10 mg/L or 0.001%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -63833,7 +63837,7 @@
   "VANILLIN ACETATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Vanillin acetate must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing vanillin acetate must not be more than 5% of the total medicine. The maximum recommended daily dose of the medicine must not provide more than 1.8 micrograms of vanillin acetate.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -64406,7 +64410,7 @@
   "VP ACRYLATES LAURYL METHACRYLATE COPOLYMER": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 2.0,
      "conditions": "Only for use in topical medicines for dermal application and not to be included in topical medicines intended for use in the eye. The concentration in the medicine must not be more than 2.00%.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -64735,7 +64739,7 @@
   "WINTERGREEN OIL": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.001,
      "conditions": "Methyl salicylate is a mandatory component of wintergreen oil. Not to be included in medicines for use in the eye or on damaged skin. When used internally, the concentration of methyl salicylate in the medicine must not be more than 0.001%. When the concentration of methyl salicylate in a liquid preparation is more than 5% and the dosage form is other than spray, the medicine requires child resistant packaging. When the concentration of methyl salicylate in a liquid preparation is more than 5%, and the dosage form is spray, the medicine does not require child resistant packaging if: - the delivery device is engaged into the container in such a way that prevents it from being readily removed; - direct suction through the delivery device results in delivery of no more than one dosage unit; and - actuation of the spray device is ergonomically difficult for young children to accomplish. The following warning statement is required on the medicine label: - (METSAL) 'Contains methyl salicylate' (or words to that effect). When for use in topical medicines for dermal application: i) the concentration of methyl salicylate in the medicine must not be more than 25%; ii) the following warning statements are required on the medicine label: - (PREGNT2) 'Do not use if pregnant or likely to become pregnant' (or words to that effect); - (CHILD4) 'Do not use [this product/insert name of product] in children 6 years of age or less'; - (SENS) 'Application to skin may increase sensitivity to sunlight' (or words to that effect); - (AVOID) 'Avoid prolonged exposure in the sun' (or words to that effect); iii) if the concentration of methyl salicylate in the medicine is greater than 1%, the following warning statement is required on the medicine label: - (IRRIT) 'If irritation develops, discontinue use'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -64815,7 +64819,7 @@
   "XANTHIUM SIBIRICUM": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.35,
      "conditions": "Carboxyatractyloside is a mandatory component of Xanthium sibiricum and the concentration of carboxyatractyloside must not be more than 0.35% of Xanthium sibiricum. Atractyloside is a mandatory component of Xanthium sibiricum and the concentration of atractyloside must not be more than 0.3% of Xanthium sibiricum. The route of administration for medicines that contain Xanthium sibiricum must be oral. The plant part must be fruit that is dried, cooked and had the spines removed. The plant preparation must be dry, powder, or extraction preparations with water as the only solvent. The maximum recommended daily dose of the medicine must not exceed 10 g of Xanthium sibiricum. A medicine containing Xanthium sibiricum must not be indicated for use in children, those who are pregnant, likely to become pregnant, or lactating.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -64827,7 +64831,7 @@
   "XANTHIUM STRUMARIUM": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 0.35,
      "conditions": "Carboxyatractyloside is a mandatory component of Xanthium strumarium and the concentration of carboxyatractyloside must not be more than 0.35% of Xanthium strumarium. Atractyloside is a mandatory component of Xanthium strumarium and the concentration of atractyloside must not be more than 0.3% of Xanthium strumarium. The route of administration for medicines that contain Xanthium strumarium must be oral. The plant part must be fruit that is dried, cooked and had the spines removed. The plant preparation must be dry, powder, or extraction preparations with water as the only solvent. The maximum recommended daily dose of the medicine must not exceed 10 g of Xanthium strumarium. A medicine containing Xanthium strumarium must not be indicated for use in children, those who are pregnant, likely to become pregnant, or lactating.",
      "source": "TGA Permissible Ingredients Determination",
      "is_active": true,
@@ -65070,7 +65074,7 @@
   "Z BETA DAMASCONE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 5.0,
      "conditions": "Z – beta damascone must only be included in medicines when in combination with other permitted ingredients as a flavour proprietary excipient formulation. The total concentration of flavour proprietary excipient formulations containing Z – beta damascone must not be more than 5% of the total medicine.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -65356,7 +65360,7 @@
   "ZINC LACTATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 2.5,
      "conditions": "Only for use in topical and dental medicines and not to be included in medicines intended for use in the eye. The concentration of zinc lactate in a medicine intended for topical use should not be more than 2%. The concentration of zinc lactate in a medicine for 'dental' use in toothpaste medicines must not be more than 2.5%. Zinc lactate is not to be included in dental/toothpaste medicines intended for use by children less than 12 years old. Medicines containing zinc lactate for dental use require the following warning statement (or words to the same effect) on the medicine label: - (CHILD3) 'Use in children under 12 years is not recommended'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
@@ -65369,7 +65373,7 @@
   "ZINC LACTATE DIHYDRATE": {
    "limits": {
     "AU": {
-     "max_percent": null,
+     "max_percent": 2.5,
      "conditions": "Only for use in topical and dental medicines and not to be included in medicines intended for use in the eye. The concentration of zinc lactate dihydrate in a medicine intended for topical use should not be more than 2%. The concentration of zinc lactate dihydrate in a medicine for 'dental' use in toothpaste medicines must not be more than 2.5%. Zinc lactate dihydrate is not to be included in dental/toothpaste medicines intended for use by children less than 12 years old. Medicines containing zinc lactate dihydrate for dental use require the following warning statement (or words to the same effect) on the medicine label: - (CHILD3) 'Use in children under 12 years is not recommended'.",
      "source": "TGA Permissible Ingredients Determination",
      "is_excipient": true,
