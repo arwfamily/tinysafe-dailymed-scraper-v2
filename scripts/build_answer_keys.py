@@ -163,37 +163,47 @@ def brand_tokens(text):
             if len(t) > 2 and t not in STOP and not t.isdigit()]
 
 
+SUNSCREEN_SIGNAL = re.compile(
+    r"\bsunscreen|\bsunblock|\bsun block|\bSPF\s*\d|\bsun care|\bafter ?sun"
+    r"|zinc oxide|titanium dioxide|avobenzone|octinoxate|octocrylene|oxybenzone"
+    r"|homosalate|octisalate|ensulizole|bemotrizinol|padimate|sulisobenzone",
+    re.IGNORECASE)
+
+DISTRIBUTOR_HINT = re.compile(
+    r"\bKROGER\b|\bWALGREEN|\bCVS\b|\bWAL[- ]?MART\b|\bTARGET CORP"
+    r"|\bCOSTCO\b|\bCARDINAL HEALTH\b|\bMCKESSON\b|\bAMERISOURCE"
+    r"|\bRITE AID\b|\bDOLLAR (GENERAL|TREE)\b|\bSAFEWAY\b|\bALBERTSONS\b"
+    r"|\bPUBLIX\b|\bH-?E-?B\b|\bMEIJER\b|\bFAMILY DOLLAR\b|\bTOPCO\b",
+    re.IGNORECASE)
+
+COMMON_TOKENS = set()
+
+
 def build_recall_index(recall_path):
     """
-    Two passes.
+    Keep only recalls whose OWN TEXT names a sunscreen or a UV filter.
 
-    Pass 1 learns which tokens are DISTINCTIVE, from the data rather than from a
-    hand-written stoplist. A token appearing in a large share of recall records
-    ('CARE', 'NATURAL', 'MINERAL', 'REPAIR', 'PHYSICAL') identifies nothing;
-    matching on it produced 282/520 false hits on the first real run.
-
-    Pass 2 indexes each recall under its distinctive tokens only.
+    Matching on company alone put Kroger's Halloween candles, acetaminophen and
+    hooded sweatshirts against 797 sunscreen products, because a distributor
+    labels everything it sells and recalls everything it labels. Of 6,279
+    recall records exactly 15 mention a sunscreen; the other 6,264 cannot be
+    about one no matter whose name is on the package.
     """
-    rows = []
+    all_rows = []
     with open(recall_path, encoding="utf-8") as f:
         for line in f:
             if line.strip():
-                rows.append(json.loads(line))
+                all_rows.append(json.loads(line))
 
-    df = defaultdict(int)
-    for r in rows:
-        fields = " ".join(str(r.get(k) or "") for k in
-                          ("brand", "recalling_firm", "company", "product_name",
-                           "display_name", "heading"))
-        for t in set(brand_tokens(fields)):
-            df[t] += 1
+    def blob(r):
+        return " ".join(str(r.get(k) or "") for k in
+                        ("product_name", "display_name", "heading",
+                         "reason", "plain_reason", "hazard_text"))
 
-    n = len(rows)
-    # a token carried by more than 0.3% of all recalls is a common word here
-    cutoff = max(4, int(0.003 * n))
-    distinctive = {t for t, c in df.items() if c <= cutoff}
+    rows = [r for r in all_rows if SUNSCREEN_SIGNAL.search(blob(r))]
 
     idx = defaultdict(list)
+    tokens = set()
     for r in rows:
         fields = " ".join(str(r.get(k) or "") for k in
                           ("brand", "recalling_firm", "company", "product_name",
@@ -209,15 +219,35 @@ def build_recall_index(recall_path):
             "status": r.get("status"),
             "classification": r.get("classification"),
             "deaths_reported": r.get("deaths_reported"),
-            "_haystack": norm(fields),
             "_brandstack": norm(" ".join(str(r.get(k) or "") for k in
                                          ("brand", "recalling_firm", "company",
                                           "product_name", "display_name"))),
         }
         for t in set(brand_tokens(fields)):
-            if t in distinctive:
-                idx[t].append(stub)
-    return idx, n, distinctive, cutoff
+            idx[t].append(stub)
+            tokens.add(t)
+    return idx, len(all_rows), tokens, None, len(rows)
+
+
+def product_side_common_tokens(prods, max_share=0.005):
+    """
+    Judge a token's distinctiveness against the 13,000-product corpus, not
+    against 15 recalls. In a set that small every token looks rare, so SKIN,
+    CARE and SUN were briefly treated as identifying and matched Kabana's
+    recall onto every company with "Skin Care" in its name.
+    """
+    df = defaultdict(int)
+    seen = set()
+    for p in prods:
+        labeler, head = derive_identity(p)
+        key = norm(labeler or head)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        for t in set(brand_tokens(key)):
+            df[t] += 1
+    n = max(1, len(seen))
+    return {t for t, c in df.items() if c > max_share * n}, n
 
 
 def join_recalls(prods, idx, distinctive):
@@ -233,13 +263,17 @@ def join_recalls(prods, idx, distinctive):
         raw_brand = p.get("brand") or labeler or head
         phrase = norm(raw_brand)
         toks = brand_tokens(raw_brand)
-        dtoks = [t for t in toks if t in distinctive]
+        dtoks = [t for t in toks if t in distinctive and t not in COMMON_TOKENS]
         if not phrase or len(phrase) < 4 or not dtoks:
             continue
         # A one-word brand that is also a common English/product word will match
         # by accident ("Zinc" hit zinc oxide ointment; "Cloud", "Beyond").
         # Require either a multi-word brand or a single word that is not generic.
         if len(toks) == 1 and toks[0] in GENERIC_SINGLE_WORD_BRANDS:
+            continue
+        # a distributor's name links a recall to distribution, not to this
+        # formulation — the finding wanted is "this maker's product failed"
+        if DISTRIBUTOR_HINT.search(raw_brand):
             continue
         hits = {}
         for t in dtoks:
@@ -552,7 +586,9 @@ def main():
 
     # 2. recall join
     if args.recalls and os.path.exists(args.recalls):
-        idx, n, distinctive, cutoff = build_recall_index(args.recalls)
+        idx, n, distinctive, cutoff, kept = build_recall_index(args.recalls)
+        global COMMON_TOKENS
+        COMMON_TOKENS, n_lab = product_side_common_tokens(prods)
         joined = join_recalls(prods, idx, distinctive)
         with open(os.path.join(args.out, "recall_join.jsonl"), "w", encoding="utf-8") as f:
             for j in joined:
@@ -561,11 +597,22 @@ def main():
         print(f"recall records indexed : {n}")
         print(f"distinctive tokens     : {len(distinctive)} (a token in >{cutoff} recalls is treated as a common word)")
         print(f"products with a match  : {len(joined)}/{len(prods)}")
-        for j in joined[:10]:
-            top = j["recalls"][0]
-            print(f"  {j['brand']:22} {j['match_count']:3} hits | latest "
-                  f"{str(top.get('recall_date'))[:10]} {str(top.get('hazard'))[:14]} "
-                  f"| {str(top.get('product_name'))[:44]}")
+        by_co = defaultdict(lambda: {"skus": 0, "recalls": {}, "label": ""})
+        for j in joined:
+            e = by_co[norm(j["brand"])]
+            e["skus"] += 1
+            e["label"] = j["brand"]
+            for rc in j["recalls"]:
+                e["recalls"][rc["recall_id"]] = rc
+        print(f"  = {len(by_co)} companies")
+        for _, e in sorted(by_co.items(), key=lambda x: -len(x[1]["recalls"]))[:12]:
+            rl = sorted(e["recalls"].values(),
+                        key=lambda x: str(x.get("recall_date") or ""), reverse=True)
+            print(f"  {e['label'][:30]:30} {len(rl):2} recalls | {e['skus']:3} SKUs")
+            for rc in rl[:2]:
+                print(f"       {str(rc.get('recall_date'))[:8]} "
+                      f"{str(rc.get('hazard'))[:13]:13} "
+                      f"{str(rc.get('product_name'))[:50]}")
     else:
         print("\n--- RECALL JOIN --- skipped (no --recalls path)")
 
