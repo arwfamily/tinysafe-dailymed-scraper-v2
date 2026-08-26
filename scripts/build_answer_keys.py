@@ -307,7 +307,8 @@ def load_regulatory():
         "US": {"files": ["us_monograph_m020.jsonl"],
                "label": "FDA OTC Monograph M020",
                "name": ["inci_name", "name"],
-               "max": ["max_concentration_percent", "max_percent"],
+               "max": ["max_concentration_pct", "max_concentration_percent",
+                       "max_percent"],
                "cond": ["conditions"]},
     }
     found, missing = {}, {}
@@ -354,6 +355,10 @@ def build_matrix(found):
             if not key:
                 continue
             kept += 1
+            # Same filter, different legal name per jurisdiction (Octinoxate vs
+            # Ethylhexyl Methoxycinnamate). Index the aliases too or the
+            # comparison rows silently never line up.
+            keys = [key] + [norm(a) for a in (row.get("alt_names") or [])]
             entry = {
                 "max_percent": _first(row, spec["max"]),
                 "conditions": _first(row, spec["cond"]),
@@ -366,16 +371,20 @@ def build_matrix(found):
                 if row.get(flag):
                     entry[flag] = row[flag]
             # several AU rows share a normalised name; keep the tightest limit
-            prev = matrix[key].get(juris)
-            if prev and prev.get("max_percent") is not None:
-                if entry["max_percent"] is None:
+            for kk in keys:
+                if not kk:
                     continue
-                try:
-                    if float(entry["max_percent"]) >= float(prev["max_percent"]):
+                prev = matrix[kk].get(juris)
+                if prev and prev.get("max_percent") is not None:
+                    if entry["max_percent"] is None:
                         continue
-                except (TypeError, ValueError):
-                    continue
-            matrix[key][juris] = entry
+                    try:
+                        if float(entry["max_percent"]) >= float(prev["max_percent"]):
+                            continue
+                    except (TypeError, ValueError):
+                        continue
+                matrix[kk][juris] = dict(entry, matched_as=kk if kk == key
+                                         else f"alias of {key}")
         stats[juris] = {"rows": len(blob["rows"]), "named": kept,
                         "file": blob["file"]}
     return matrix, stats
