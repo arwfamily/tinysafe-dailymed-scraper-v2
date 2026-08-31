@@ -1,7 +1,7 @@
 {
- "resolved_on": "2026-08-26",
+ "resolved_on": "2026-08-31",
  "source": "https://dailymed.nlm.nih.gov/dailymed/services/v2/uniis.json (full paged download, matched locally)",
- "catalogue_rows": 8019,
+ "catalogue_rows": 8023,
  "note": "Only documented /uniis parameters are used (pagesize, page). Matching happens locally so no assumption is made about server-side search behaviour. Codes are never typed by hand.",
  "usable_count": 23,
  "filters": [
@@ -12,7 +12,7 @@
    "matched_via": "exact",
    "unii": "SOI2LOH54Z",
    "active_moiety": "ZINC OXIDE",
-   "spl_count": 5087,
+   "spl_count": 5077,
    "candidates": []
   },
   {
@@ -22,7 +22,7 @@
    "matched_via": "exact",
    "unii": "15FIX9V2JP",
    "active_moiety": "TITANIUM DIOXIDE",
-   "spl_count": 4160,
+   "spl_count": 4150,
    "candidates": []
   },
   {
@@ -34,7 +34,7 @@
    "matched_via": "exact",
    "unii": "G63QQF2NOX",
    "active_moiety": "AVOBENZONE",
-   "spl_count": 4575,
+   "spl_count": 4574,
    "candidates": []
   },
   {
@@ -46,7 +46,7 @@
    "matched_via": "exact",
    "unii": "95OOS7VE0Y",
    "active_moiety": "OXYBENZONE",
-   "spl_count": 1650,
+   "spl_count": 1651,
    "candidates": []
   },
   {
@@ -59,7 +59,7 @@
    "matched_via": "exact",
    "unii": "4Y5P7MUD51",
    "active_moiety": "OCTINOXATE",
-   "spl_count": 4027,
+   "spl_count": 4022,
    "candidates": []
   },
   {
@@ -72,7 +72,7 @@
    "matched_via": "exact",
    "unii": "4X49Y0596W",
    "active_moiety": "OCTISALATE",
-   "spl_count": 5415,
+   "spl_count": 5418,
    "candidates": []
   },
   {
@@ -104,7 +104,7 @@
    "matched_via": "exact",
    "unii": "9YQ9DI1W42",
    "active_moiety": "ENSULIZOLE",
-   "spl_count": 194,
+   "spl_count": 195,
    "candidates": []
   },
   {
@@ -197,7 +197,7 @@
    "matched_via": "exact",
    "unii": "PWZ1720CBH",
    "active_moiety": "BEMOTRIZINOL",
-   "spl_count": 34,
+   "spl_count": 35,
    "candidates": []
   },
   {

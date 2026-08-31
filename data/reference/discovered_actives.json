@@ -1,6 +1,6 @@
 {
- "built_on": "2026-08-26",
- "products_examined": 13291,
+ "built_on": "2026-08-31",
+ "products_examined": 13283,
  "seeded_uniis": 23,
  "how_to_promote": "add the NAME to UV_FILTERS in scripts/resolve_uniis.py; the next run resolves it from DailyMed. Never paste the UNII by hand — let the resolver confirm it.",
  "candidates": [
@@ -254,24 +254,6 @@
    },
    "example_setids": [
     "f64f75d4-1a02-4463-bcc0-a923dadd1b19"
-   ]
-  },
-  {
-   "unii": "C32PQ86DH4",
-   "name": "ZINC PCA",
-   "name_variants": [
-    "ZINC PCA"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "5A68WGF6WM": 1,
-    "15FIX9V2JP": 1,
-    "G63QQF2NOX": 1,
-    "V06SV4M95S": 1,
-    "4Y5P7MUD51": 1
-   },
-   "example_setids": [
-    "4a3d2b18-7de8-f94e-e063-6394a90ae986"
    ]
   },
   {
