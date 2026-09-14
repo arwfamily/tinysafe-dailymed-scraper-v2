@@ -1,6 +1,6 @@
 {
- "built_on": "2026-09-07",
- "products_examined": 13301,
+ "built_on": "2026-09-14",
+ "products_examined": 13297,
  "seeded_uniis": 23,
  "how_to_promote": "add the NAME to UV_FILTERS in scripts/resolve_uniis.py; the next run resolves it from DailyMed. Never paste the UNII by hand — let the resolver confirm it.",
  "candidates": [
@@ -857,34 +857,6 @@
    },
    "example_setids": [
     "3f605561-e310-5bdb-e063-6394a90a28a8"
-   ]
-  },
-  {
-   "unii": "4370DF050B",
-   "name": "CERAMIDE NP",
-   "name_variants": [
-    "CERAMIDE NP"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "5A68WGF6WM": 1
-   },
-   "example_setids": [
-    "1ae6c49a-3861-29b3-e063-6394a90aa323"
-   ]
-  },
-  {
-   "unii": "R0ZB2556P8",
-   "name": "TOCOPHEROL",
-   "name_variants": [
-    "TOCOPHEROL"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "5A68WGF6WM": 1
-   },
-   "example_setids": [
-    "1ae6c49a-3861-29b3-e063-6394a90aa323"
    ]
   },
   {

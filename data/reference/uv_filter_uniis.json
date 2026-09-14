@@ -1,7 +1,7 @@
 {
- "resolved_on": "2026-09-07",
+ "resolved_on": "2026-09-14",
  "source": "https://dailymed.nlm.nih.gov/dailymed/services/v2/uniis.json (full paged download, matched locally)",
- "catalogue_rows": 8026,
+ "catalogue_rows": 8030,
  "note": "Only documented /uniis parameters are used (pagesize, page). Matching happens locally so no assumption is made about server-side search behaviour. Codes are never typed by hand.",
  "usable_count": 23,
  "filters": [
@@ -12,7 +12,7 @@
    "matched_via": "exact",
    "unii": "SOI2LOH54Z",
    "active_moiety": "ZINC OXIDE",
-   "spl_count": 5082,
+   "spl_count": 5078,
    "candidates": []
   },
   {
@@ -34,7 +34,7 @@
    "matched_via": "exact",
    "unii": "G63QQF2NOX",
    "active_moiety": "AVOBENZONE",
-   "spl_count": 4593,
+   "spl_count": 4596,
    "candidates": []
   },
   {
@@ -59,7 +59,7 @@
    "matched_via": "exact",
    "unii": "4Y5P7MUD51",
    "active_moiety": "OCTINOXATE",
-   "spl_count": 4022,
+   "spl_count": 4019,
    "candidates": []
   },
   {
@@ -72,7 +72,7 @@
    "matched_via": "exact",
    "unii": "4X49Y0596W",
    "active_moiety": "OCTISALATE",
-   "spl_count": 5432,
+   "spl_count": 5433,
    "candidates": []
   },
   {
@@ -197,7 +197,7 @@
    "matched_via": "exact",
    "unii": "PWZ1720CBH",
    "active_moiety": "BEMOTRIZINOL",
-   "spl_count": 37,
+   "spl_count": 38,
    "candidates": []
   },
   {
