@@ -1,6 +1,6 @@
 {
- "built_on": "2026-09-14",
- "products_examined": 13297,
+ "built_on": "2026-09-21",
+ "products_examined": 13302,
  "seeded_uniis": 23,
  "how_to_promote": "add the NAME to UV_FILTERS in scripts/resolve_uniis.py; the next run resolves it from DailyMed. Never paste the UNII by hand — let the resolver confirm it.",
  "candidates": [
