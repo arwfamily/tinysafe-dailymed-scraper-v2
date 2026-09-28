@@ -1,7 +1,7 @@
 {
- "resolved_on": "2026-09-21",
+ "resolved_on": "2026-09-28",
  "source": "https://dailymed.nlm.nih.gov/dailymed/services/v2/uniis.json (full paged download, matched locally)",
- "catalogue_rows": 8042,
+ "catalogue_rows": 8040,
  "note": "Only documented /uniis parameters are used (pagesize, page). Matching happens locally so no assumption is made about server-side search behaviour. Codes are never typed by hand.",
  "usable_count": 23,
  "filters": [
@@ -12,7 +12,7 @@
    "matched_via": "exact",
    "unii": "SOI2LOH54Z",
    "active_moiety": "ZINC OXIDE",
-   "spl_count": 5079,
+   "spl_count": 5082,
    "candidates": []
   },
   {
@@ -22,7 +22,7 @@
    "matched_via": "exact",
    "unii": "15FIX9V2JP",
    "active_moiety": "TITANIUM DIOXIDE",
-   "spl_count": 4145,
+   "spl_count": 4146,
    "candidates": []
   },
   {
@@ -34,7 +34,7 @@
    "matched_via": "exact",
    "unii": "G63QQF2NOX",
    "active_moiety": "AVOBENZONE",
-   "spl_count": 4600,
+   "spl_count": 4603,
    "candidates": []
   },
   {
@@ -46,7 +46,7 @@
    "matched_via": "exact",
    "unii": "95OOS7VE0Y",
    "active_moiety": "OXYBENZONE",
-   "spl_count": 1651,
+   "spl_count": 1660,
    "candidates": []
   },
   {
@@ -59,7 +59,7 @@
    "matched_via": "exact",
    "unii": "4Y5P7MUD51",
    "active_moiety": "OCTINOXATE",
-   "spl_count": 4020,
+   "spl_count": 4027,
    "candidates": []
   },
   {
@@ -72,7 +72,7 @@
    "matched_via": "exact",
    "unii": "4X49Y0596W",
    "active_moiety": "OCTISALATE",
-   "spl_count": 5436,
+   "spl_count": 5440,
    "candidates": []
   },
   {
@@ -82,7 +82,7 @@
    "matched_via": "exact",
    "unii": "5A68WGF6WM",
    "active_moiety": "OCTOCRYLENE",
-   "spl_count": 4188,
+   "spl_count": 4192,
    "candidates": []
   },
   {
@@ -92,7 +92,7 @@
    "matched_via": "exact",
    "unii": "V06SV4M95S",
    "active_moiety": "HOMOSALATE",
-   "spl_count": 3628,
+   "spl_count": 3631,
    "candidates": []
   },
   {
@@ -197,7 +197,7 @@
    "matched_via": "exact",
    "unii": "PWZ1720CBH",
    "active_moiety": "BEMOTRIZINOL",
-   "spl_count": 38,
+   "spl_count": 39,
    "candidates": []
   },
   {
