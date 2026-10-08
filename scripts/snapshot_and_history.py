@@ -97,22 +97,31 @@ FINGERPRINT_VERSION = 2
 # or every reparsed product will be logged as reformulated.
 
 
+_UNIT = {"G": 1.0, "MG": 1e-3, "UG": 1e-6, "MCG": 1e-6, "KG": 1e3, "ML": 1.0, "L": 1e3}
+
+
 def strength_key(a):
+    """Percent to 0.1 (7.49 vs 7.5 is a parser/rounding difference, not a
+    reformulation). From the label percentage when read; otherwise from the
+    SPL fraction when its units convert (mL taken as g); otherwise the raw
+    fraction text."""
     if not isinstance(a, dict):
         return ""
     p = a.get("percent_ww")
     if isinstance(p, (int, float)):
-        return f"P{round(float(p), 2):g}"
-    def num(x):
-        try:
-            return f"{float(x):g}"
-        except (TypeError, ValueError):
-            return norm_strength(x)
+        return f"P{round(float(p), 1):g}"
+    try:
+        n, d = float(a.get("strength")), float(a.get("denominator"))
+        nu, du = (a.get("strength_unit") or "").upper(), (a.get("denominator_unit") or "").upper()
+        if nu in _UNIT and du in _UNIT and d > 0:
+            return f"Q{round(100 * n * _UNIT[nu] / (d * _UNIT[du]), 1):g}"
+    except (TypeError, ValueError):
+        pass
     n, d = a.get("strength"), a.get("denominator")
     if n is None:
         return ""
-    return (f"R{num(n)}{(a.get('strength_unit') or '').upper()}"
-            f"/{num(d) if d is not None else ''}{(a.get('denominator_unit') or '').upper()}")
+    return (f"R{norm_strength(n)}{(a.get('strength_unit') or '').upper()}"
+            f"/{norm_strength(d)}{(a.get('denominator_unit') or '').upper()}")
 
 
 def formulation_fingerprint(rec):
