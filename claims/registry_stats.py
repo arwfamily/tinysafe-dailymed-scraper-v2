@@ -17,6 +17,7 @@ import csv
 import glob
 import json
 import os
+import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CANON = os.path.join(ROOT, "data", "canonical", "us_sunscreens.jsonl")
@@ -82,7 +83,7 @@ def load():
     uniq = {}
     for r in sorted(baby, key=lambda r: r["setid"]):
         uniq.setdefault(r["formulation_hash"], r)
-    return review, snapshot, list(uniq.values())
+    return review, snapshot, list(uniq.values()), recs, include
 
 
 def source(review, snapshot):
@@ -102,8 +103,47 @@ CAVEAT = ("DailyMed lists drug labels submitted to the FDA, including labels for
           "is on US shelves today.")
 
 
+PAIRS_CSV = os.path.join(ROOT, "claims", "same_ingredient_list_pairs.csv")
+_FORMS = ["LOTION", "SPRAY", "STICK", "CREAM", "GEL", "OIL", "AEROSOL", "LIQUID", "MIST"]
+_TITLE_ACTIVES = ["AVOBENZONE", "HOMOSALATE", "OCTISALATE", "OCTOCRYLENE", "OXYBENZONE", "OCTINOXATE",
+                  "ZINC OXIDE", "TITANIUM"]
+
+
+def same_list_pairs(forms, recs, include):
+    """Baby/kids formulations whose DailyMed record lists exactly the same
+    ingredients as a label that does not say baby or kids. Conservative:
+      - same fingerprint v2 (actives at the same label percentage, same
+        inactives in the same order)
+      - the baby record has >=5 inactives and a label percentage for every active
+      - the titles name the same actives, the same form (lotion/spray/...)
+        and no conflicting SPF number
+    """
+    spf = lambda t: (lambda m: int(m.group(1)) if m else None)(re.search(r"(?:SPF|FPS)\s*(\d+)", t.upper()))
+    form = lambda t: {f for f in _FORMS if re.search(r"\b" + f + r"\b", t.upper())}
+    tact = lambda t: {w for w in _TITLE_ACTIVES if w in t.upper()}
+    by = {}
+    for r in recs:
+        by.setdefault(r["formulation_hash"], []).append(r)
+    out = []
+    for r in forms:
+        if len(r.get("inactive_ingredients") or []) < 5:
+            continue
+        if not all(isinstance(a.get("percent_ww"), (int, float)) for a in r.get("active_ingredients") or []):
+            continue
+        twins = [x for x in by.get(r["formulation_hash"], []) if x["setid"] not in include
+                 and tact(x["title"]) == tact(r["title"]) and form(x["title"]) == form(r["title"])
+                 and (not spf(x["title"]) or not spf(r["title"]) or spf(x["title"]) == spf(r["title"]))]
+        if twins:
+            out.append((r, sorted(twins, key=lambda x: x["setid"])))
+    return out
+
+
+def same_labeler(r, twins):
+    return any((x.get("labeler_from_title") or "") == (r.get("labeler_from_title") or "") for x in twins)
+
+
 def main():
-    review, snapshot, forms = load()
+    review, snapshot, forms, recs, include = load()
     src = source(review, snapshot)
     N = len(forms)
     claims = []
@@ -167,6 +207,44 @@ def main():
                     "by_percent": by_percent},
          "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py", "verified_date": snapshot},
     ]
+    pairs = same_list_pairs(forms, recs, include)
+    # Structured SPL tables can omit printed items (e.g. fragrance), so a pair
+    # only counts once the printed Drug Facts lists were compared and matched.
+    check_path = os.path.join(ROOT, "claims", "same_list_label_check.json")
+    printed = {}
+    if os.path.exists(check_path):
+        for c in json.load(open(check_path, encoding="utf-8"))["pairs"]:
+            printed[(c["baby"], c["other"])] = c["verdict"]
+    checked_pairs = [(r, [x for x in t if printed.get((r["dailymed_url"], x["dailymed_url"])) == "match"]) for r, t in pairs]
+    checked_pairs = [(r, t) for r, t in checked_pairs if t]
+    pairs_checked_all = bool(printed) and all((r["dailymed_url"], x["dailymed_url"]) in printed for r, t in pairs for x in t)
+    with open(PAIRS_CSV, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["baby_kids_title", "baby_kids_dailymed", "same_list_title", "same_list_dailymed", "same_company"])
+        for r, twins in sorted(pairs, key=lambda p: p[0]["title"]):
+            for x in twins:
+                w.writerow([r["title"], r["dailymed_url"], x["title"], x["dailymed_url"],
+                            "yes" if (x.get("labeler_from_title") or "") == (r.get("labeler_from_title") or "") else "no"])
+    n_same_co = sum(1 for r, t in checked_pairs if same_labeler(r, t))
+    claims.append({
+        "id": "US-BABY-SAME-LIST", "status": "verified" if pairs_checked_all else "provisional_do_not_publish",
+        "blocker": None if pairs_checked_all else "printed Drug Facts comparison (scripts/verify_same_list.py) not run for every candidate pair",
+        "candidates_structured": len(pairs), "jurisdiction": "US",
+        "ingredient_slugs": [], "finding": "same-ingredient-list",
+        "claim": f"{len(checked_pairs)} of {N} baby/kids formulations print the same ingredient list as a non-baby label.",
+        "publishable_sentence": (f"{len(checked_pairs)} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed "
+                                 f"label database print exactly the same ingredients as a sunscreen whose label does not say "
+                                 f"baby or kids: the same active ingredients at the same percentages and the same inactive "
+                                 f"ingredients in the Drug Facts. In at least {n_same_co} cases both labels name the same labeler."),
+        "legal_framing": ("Not a violation: nothing requires a baby or kids sunscreen to have a different formula. "
+                          "The finding compares what the label records state; it does not show how the products are made."),
+        "numerator": len(checked_pairs), "denominator": N, "population": POP,
+        "detail": {"same_company": n_same_co, "pairs_csv": f"{REPO_URL}/claims/same_ingredient_list_pairs.csv",
+                   "pairs": [{"baby": [r["title"], r["dailymed_url"]],
+                              "same_list": [[x["title"], x["dailymed_url"]] for x in t],
+                              "same_company": same_labeler(r, t)} for r, t in sorted(checked_pairs, key=lambda p: p[0]["title"])]},
+        "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py (same_list_pairs)",
+        "verified_date": snapshot})
     mineral = [r for r in forms if r.get("is_mineral_only_actives")]
     M = len(mineral)
     zno = sum(1 for r in mineral if r.get("contains_zinc_oxide"))

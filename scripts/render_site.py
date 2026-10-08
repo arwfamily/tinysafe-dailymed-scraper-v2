@@ -41,6 +41,10 @@ FINDINGS = {  # display order = dict order
         "title": "Homosalate in baby sunscreens: US levels vs the EU limit",
         "eyebrow": "Finding · US labels × EU law",
         "caption": "Each door is one baby or kids formula. Filled: homosalate above 7.34%."},
+    "same-ingredient-list": {
+        "title": "Same ingredient list, different label",
+        "eyebrow": "Finding · US labels × US labels",
+        "caption": "Each door is one baby or kids formula. Filled: prints the same ingredients as a label that does not say baby or kids."},
     "butyloctyl-salicylate": {
         "title": "Butyloctyl salicylate in mineral baby sunscreens",
         "eyebrow": "Finding · US labels",
@@ -280,6 +284,9 @@ details p{margin:10px 0 0;max-width:64ch}
 .minis{display:grid;gap:14px;margin-top:14px}@media(min-width:720px){.minis{grid-template-columns:1fr 1fr}}
 .card.mini{display:flex;flex-direction:column;gap:10px;text-decoration:none;padding:24px}
 .card.mini:hover{border-color:var(--ink)}.card.mini h3{font-size:22px}.card.mini .fig{font-size:44px}.card.mini .more{margin-top:auto}
+.tablewrap{overflow-x:auto}table.pairs{width:100%;border-collapse:collapse;font-size:14px}
+.pairs th{font-weight:500;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);text-align:left;padding:10px 8px;border-bottom:1px solid var(--ink)}
+.pairs td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}.pairs a{text-decoration:none}.pairs a:hover{text-decoration:underline}
 .bars{list-style:none;padding:0;margin:0;display:grid;gap:8px;max-width:720px}
 .bars li{display:grid;grid-template-columns:minmax(120px,190px) 1fr 44px;gap:12px;align-items:center;font-size:15px}
 .bars.pct li{grid-template-columns:64px 1fr 44px}
@@ -540,6 +547,26 @@ def finding_body(d, f):
              "Non-compliant products could not be made available on the EU market from July 1, 2025."),
             ("How were these products selected?", howto),
         ]
+    elif key == "same-ingredient-list":
+        det = f["detail"]
+        us = _lim(d, "zinc-oxide", "US")
+        rows = "".join(
+            f'<tr><td><a href="{E(p["baby"][1])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["baby"][0]))}</span></a></td><td>'
+            + "<br>".join(f'<a href="{E(u)}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(t))}</span></a>' for t, u in p["same_list"])
+            + f'</td><td>{"Yes" if p["same_company"] else "Different name"}</td></tr>' for p in det["pairs"])
+        mean = f"""
+<p>The US sunscreen monograph sets one limit per active ingredient. It has no separate formula rules for products labeled for babies or kids. {src_chip("FDA M020", us["source"]["url"], us["source"]["title"])}</p>
+<p>So a baby or kids label can carry exactly the same formula as another sunscreen. This finding counts how often the printed Drug Facts of a baby or kids label match another label item for item.</p>"""
+        extra = f"""<section><p class="eyebrow">Every pair</p><h2>The labels, side by side</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Same ingredients as</th><th>Same labeler</th></tr></thead><tbody>{rows}</tbody></table></div>
+<p class="fine">Each name links to its FDA DailyMed record. <a href="{E(det["pairs_csv"])}">Download the list (CSV)</a>.</p></section>"""
+        faq = [
+            ("Is it wrong to sell the same formula under a baby label?", f["legal_framing"]),
+            ("How was \"the same\" decided?",
+             "Both labels list the same active ingredients at the same percentages, and the printed Drug Facts list the "
+             "same inactive ingredients. Pairs whose SPF, product form or named actives differ were left out."),
+            ("How were these products selected?", howto),
+        ]
     else:  # butyloctyl-salicylate
         mean = f"""
 <p>On a US sunscreen, the Active ingredients section of the Drug Facts label lists the product's active ingredients. Butyloctyl salicylate is not an FDA sunscreen active ingredient, so it appears under Inactive ingredients. {src_chip("21 CFR 201.66", DRUG_FACTS["url"], DRUG_FACTS["title"])}</p>
@@ -594,7 +621,7 @@ def page_finding(d, f):
  {units(f["numerator"], f["denominator"], 30 if f["denominator"] > 200 else 21, f'{f["numerator"]} of {f["denominator"]}')}
  <p class="fine">{E(meta["caption"])}</p></div>
  <div><p class="sentence">{E(f["sentence"])}</p>
- <div class="chips">{src_chip(src_label, isrc.get("url", ""), isrc.get("title", ""))}{src_chip("Registry data", s["url"])}{src_chip("Review file", s["list_url"])}{src_chip("Method", s["method_url"])}</div>
+ <div class="chips">{src_chip(src_label, isrc["url"], isrc.get("title", "")) if isrc.get("url") else ""}{src_chip("Registry data", s["url"])}{src_chip("Review file", s["list_url"])}{src_chip("Method", s["method_url"])}</div>
  <p class="framing">{E(f["legal_framing"])}</p>
  <p class="fine">{E(f["caveat"])}</p></div></div></section>
 {extra}
@@ -680,7 +707,8 @@ def check(pages, d, notes):
             errs.append(f"finding {f['finding']}: no title in FINDING_TITLES")
     n_limits = sum(len(i["limits"]) for i in d["ingredients"])
     for path, h in pages.items():
-        text = re.sub(r"<script.*?</script>|<style.*?</style>", " ", h, flags=re.S)
+        # product names are quoted data, not our wording: exempt from the phrase check
+        text = re.sub(r"<script.*?</script>|<style.*?</style>|<span class=\"pname\">.*?</span>", " ", h, flags=re.S)
         text = html.unescape(re.sub(r"<[^>]+>", " ", text)).lower()
         ld = " ".join(re.findall(r'<script type="application/ld\+json">(.*?)</script>', h, re.S)).lower()
         for p in FORBIDDEN:

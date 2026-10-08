@@ -1,0 +1,28 @@
+name: Verify same-ingredient-list pairs (printed Drug Facts)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: Compare printed Drug Facts for every candidate pair
+        run: python scripts/verify_same_list.py
+      - name: Rebuild claims, evidence and pages
+        run: |
+          python claims/registry_stats.py
+          python scripts/build_evidence.py
+          python scripts/render_site.py --check
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add claims/ site/
+          git diff --cached --quiet && { echo "no change"; exit 0; }
+          git commit -m "claims: printed-label check of same-ingredient-list pairs"
+          git push

@@ -684,6 +684,36 @@
       "verified_date": "2026-10-05"
     },
     {
+      "id": "US-BABY-SAME-LIST",
+      "status": "provisional_do_not_publish",
+      "blocker": "printed Drug Facts comparison (scripts/verify_same_list.py) not run for every candidate pair",
+      "candidates_structured": 66,
+      "jurisdiction": "US",
+      "ingredient_slugs": [],
+      "finding": "same-ingredient-list",
+      "claim": "0 of 354 baby/kids formulations print the same ingredient list as a non-baby label.",
+      "publishable_sentence": "0 of the 354 baby and kids sunscreen formulas listed in the FDA's DailyMed label database print exactly the same ingredients as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the Drug Facts. In at least 0 cases both labels name the same labeler.",
+      "legal_framing": "Not a violation: nothing requires a baby or kids sunscreen to have a different formula. The finding compares what the label records state; it does not show how the products are made.",
+      "numerator": 0,
+      "denominator": 354,
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+      "detail": {
+        "same_company": 0,
+        "pairs_csv": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/same_ingredient_list_pairs.csv",
+        "pairs": []
+      },
+      "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+      "site_source": {
+        "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "snapshot": "2026-10-05"
+      },
+      "method": "claims/registry_stats.py (same_list_pairs)",
+      "verified_date": "2026-10-05"
+    },
+    {
       "id": "US-BABY-MINERAL-ZNO",
       "status": "verified",
       "jurisdiction": "US",
