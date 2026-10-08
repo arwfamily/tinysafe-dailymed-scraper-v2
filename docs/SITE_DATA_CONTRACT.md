@@ -1,0 +1,135 @@
+# Site data contract — arwhouse.com evidence pages
+
+Status: v1, 2026-10-08. Owner decisions (Angela Lee, 2026-10-08):
+
+1. Every word on the site is English.
+2. The evidence pages live on **arwhouse.com** (not tinysafe.app).
+3. Every number on a page links to its own source, at the cell level.
+4. v1 includes registry measurements (what share of real baby sunscreens
+   contain an ingredient), but only numbers marked `verified`.
+5. `/radar/` (reformulation alerts) is on hold until formulation history is
+   rebuilt and audited.
+
+This file defines what the data side delivers and what the site may do with it.
+The site never types, edits, rounds or recomputes a number. If a number is
+wrong, it is fixed in the data repo and regenerated.
+
+---
+
+## 1. What the data side delivers
+
+One file per build: `site/evidence.json`, generated in
+`arwfamily/tinysafe-dailymed-scraper-v2` from the jurisdiction matrix, the
+US registry and the claim ledger. Shape:
+
+```json
+{
+  "built_on": "2026-10-12",
+  "commit": "4a0c6af",
+  "ingredients": [
+    {
+      "slug": "zinc-oxide",
+      "name": "Zinc Oxide",
+      "also_known_as": ["CI 77947"],
+      "role": "uv_filter_mineral",
+      "limits": [
+        {
+          "jurisdiction": "US",
+          "status": "permitted",
+          "max_percent": 25.0,
+          "conditions": [],
+          "source": {
+            "title": "FDA OTC Monograph M020, § M020.10(p)",
+            "url": "https://www.accessdata.fda.gov/...M020...pdf",
+            "version": "Final Administrative Order OTC000006, posted 2021-09-24",
+            "verified_date": "2026-10-08"
+          }
+        }
+      ],
+      "registry": [
+        {
+          "id": "US-BABY-ZNO-SHARE",
+          "status": "verified",
+          "sentence": "160 of 163 baby mineral sunscreen formulas registered with the FDA contain zinc oxide.",
+          "numerator": 160,
+          "denominator": 163,
+          "population": "unique formulations, baby-labeled, mineral-only actives, product_type=sunscreen",
+          "source": {
+            "title": "FDA DailyMed SPL registry, ARW House analysis",
+            "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/<commit>/data/canonical/us_sunscreens.jsonl",
+            "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/<commit>/scripts/verify_ledger.py",
+            "snapshot": "2026-10-05",
+            "verified_date": "2026-10-08"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+(The registry numbers above illustrate the shape. They are not yet verified —
+see §3.)
+
+### Allowed `status` values for a limit
+
+| status | what the site shows |
+|---|---|
+| `permitted` | "Permitted up to X%" (+ conditions, each on its own line) |
+| `permitted_with_conditions` | max per condition, e.g. EU oxybenzone 6% face/hand/lip, 2.2% body, 0.5% formulation protection |
+| `approved_product_only` | "Not in the monograph; allowed only in specifically FDA-approved products" (e.g. ecamsule, US, since 2006) |
+| `removal_finalized_not_yet_effective` | "Removal finalized; takes effect {date}" |
+| `removed` | "Removed on {date}" |
+| `not_listed` | "Not on this jurisdiction's permitted list" — never "banned" |
+| `listed_no_numeric_limit` | "Permitted; no concentration limit in the regulation" |
+
+A missing entry is **not** the same as `not_listed`. If the data side has no
+row, the site shows "Not yet reviewed" and no badge.
+
+---
+
+## 2. Rules for the site
+
+1. **Cell-level sources.** Every limit cell and every registry sentence
+   renders its own `source.url` as a link, with `version` and
+   `verified_date` visible on hover or in a footnote. No page-level "Sources"
+   list as a substitute.
+2. **Only `status: "verified"` registry numbers are rendered.** Anything else
+   is not shown at all, not even greyed out.
+3. **No other numbers.** A percentage, count or ratio that is not in
+   `evidence.json` does not go on the page. Prose may say "most", "some" only
+   if the sentence comes from `evidence.json`.
+4. **Wording comes from the data side** for limits and registry sentences.
+   The site may write the surrounding explanation (what an ingredient does,
+   how to read a label) but must not restate a number in its own words.
+5. **No safety verdicts.** "Permitted / not listed / removed", never "safe /
+   dangerous". Medical guidance only as attributed summaries (AAP, FDA,
+   Health Canada, TGA/Cancer Council, NHS), each with its own link.
+6. **No product rankings on evidence pages.** No Sunnytime mentions on
+   evidence pages. Footer disclosure on every page:
+   "ARW House also makes Sunnytime, a mineral baby sunscreen. This page does
+   not rank or recommend products."
+7. **Structured data.** Each ingredient page: `FAQPage` for its FAQ,
+   `Dataset` pointing to `evidence.json` (with `dateModified = built_on`),
+   `Organization` = ARW House. Tables are real `<table>` elements.
+8. **Date-aware statuses** are rendered from the data as delivered. The site
+   does not compute "today vs effective date"; the data side does.
+
+---
+
+## 3. What is verified today (2026-10-08)
+
+| Item | State | Blocker |
+|---|---|---|
+| US M020 limits incl. bemotrizinol, PABA/trolamine | verified | — |
+| EU Annex VI limits | verified (values) | conditions not yet structured per product type |
+| AU limits | **not publishable** | parser misses most limits (e.g. TiO2 25%, drometrizole trisiloxane 10%) |
+| Name merging across jurisdictions | **not publishable** | benzophenone-4/sulisobenzone and ecamsule/terephthalylidene split |
+| Ecamsule US status | needs `approved_product_only` | status not modelled yet |
+| Canada limits | not collected | Health Canada sunscreen monograph not in the matrix |
+| US registry shares (baby) | **not publishable** | baby list (421 + 42 brand-only) needs human review |
+| Hidden UV absorbers (BOS etc.) shares | **not publishable** | same baby review; method fixed in classifier v2 |
+
+The data side fixes the matrix items first, then the baby review, then
+marks registry numbers `verified` in the claim ledger. `evidence.json` is
+generated only from those.
