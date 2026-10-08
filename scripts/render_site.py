@@ -34,7 +34,7 @@ REPO = "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2"
 
 FINDINGS = {  # display order = dict order
     "fda-more-data": {
-        "title": "Over half of baby and kids sunscreen labels use an ingredient the FDA has proposed needs more safety data",
+        "title": "Over half of baby and kids sunscreen formulas in DailyMed use an ingredient the FDA has proposed needs more safety data",
         "eyebrow": "Finding · DailyMed labels × FDA review",
         "caption": "Each door is one baby or kids formula. Filled: contains at least one of the 12 ingredients."},
     "homosalate-eu-limit": {
@@ -381,10 +381,10 @@ def page_index(d, notes):
 {site_notes}
 """
     ld = [{"@context": "https://schema.org", "@type": "Dataset",
-           "name": "Baby sunscreen ingredient evidence: UV filter limits (US, EU, Australia) and US baby and kids label counts",
+           "name": "Baby sunscreen ingredient evidence: UV filter limits (US, EU, Australia) and baby and kids label counts from FDA DailyMed",
            "description": (f"Maximum permitted concentrations for {len(d['ingredients'])} sunscreen UV filters in the United States, "
                            f"European Union and Australia, each linked to its regulatory source, plus counts of how many "
-                           f"{pop['formulations']} US baby and kids sunscreen formulas in FDA DailyMed list each filter."),
+                           f"{pop['formulations']} baby and kids sunscreen formulas in FDA DailyMed list each filter."),
            "url": SITE + BASE, "dateModified": d["built_on"], "creator": org(), "author": person(),
            "publisher": org(),
            "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
@@ -392,7 +392,7 @@ def page_index(d, notes):
            "isBasedOn": sorted({l["source"]["url"] for i in d["ingredients"] for l in i["limits"]})}]
     return shell(BASE, "Baby Sunscreen Ingredient Evidence — UV filter limits in the US, EU and Australia · ARW House",
                  f"Legal limits for {len(d['ingredients'])} sunscreen UV filters in the US, EU and Australia, and how often "
-                 f"US baby and kids sunscreen labels list each one. Every number linked to its source.",
+                 f"baby and kids sunscreen labels in FDA DailyMed list each one. Every number linked to its source.",
                  body, ld, "Library")
 
 
@@ -434,7 +434,7 @@ def page_ingredient(d, i, prev, nxt, notes):
  <div class="chips">{src_chip("Registry data", s["url"])}{src_chip("Review file", s["list_url"])}{src_chip("Method", s["method_url"])}</div>
  <p class="fine">DailyMed snapshot {E(s["snapshot"])}.</p></div></div>"""
     if regh:
-        regh = f'<section><p class="eyebrow">On DailyMed labels</p><h2>How often baby and kids sunscreens list it</h2>{regh}</section>'
+        regh = f'<section><p class="eyebrow">On DailyMed labels</p><h2>How often baby and kids sunscreen formulas list it</h2>{regh}</section>'
     own = [n for n in notes if i["slug"] in n["applies_to"]] + [n for n in notes if "site" in n["applies_to"]]
     notesh = "".join(
         f'<div class="notebox" style="margin-top:14px"><h3>{E(n["heading"])}</h3><p>{E(n["text"])}</p>'
@@ -442,7 +442,7 @@ def page_ingredient(d, i, prev, nxt, notes):
     faq = [(f"What is the maximum concentration of {i['name'].lower()} allowed in sunscreen?", i["summary"])]
     for r in reg:
         if r["id"].startswith("US-BABY-ACTIVE-"):
-            faq.append((f"How many US baby and kids sunscreens list {i['name'].lower()} as an active ingredient?", r["sentence"]))
+            faq.append((f"How many baby and kids sunscreen formulas in the FDA's DailyMed list {i['name'].lower()} as an active ingredient?", r["sentence"]))
     faqh = "".join(f"<details><summary>{E(q)}</summary><p>{E(a)}</p></details>" for q, a in faq)
     aka = f'<p class="fine">Also listed as {E(", ".join(a.title() for a in i["also_known_as"]))}.</p>' if i["also_known_as"] else ""
     pn = (f'<div class="pn">' + (f'<a href="{BASE}/ingredients/{prev["slug"]}">← {E(prev["name"])}</a>' if prev else "<span></span>")
@@ -459,7 +459,7 @@ def page_ingredient(d, i, prev, nxt, notes):
 <section><h2>Questions</h2>{faqh}</section>
 <section>{pn}</section>"""
     path = f"{BASE}/ingredients/{i['slug']}"
-    ld = [{"@context": "https://schema.org", "@type": "WebPage", "name": f"{i['name']} in sunscreen: legal limits and US baby label data",
+    ld = [{"@context": "https://schema.org", "@type": "WebPage", "name": f"{i['name']} in sunscreen: legal limits and baby label data from FDA DailyMed",
            "url": SITE + path, "dateModified": d["built_on"], "author": person(), "publisher": org(),
            "about": {"@type": "ChemicalSubstance", "name": i["name"], "alternateName": i["also_known_as"]},
            "citation": sorted({l["source"]["url"] for l in i["limits"]})},
@@ -539,7 +539,7 @@ def finding_body(d, f):
 <p>In the EU, Regulation (EU) 2022/2195 set the limit at 7.34% and allowed homosalate only in face products, excluding propellant sprays. Products that did not comply could no longer be made available on the EU market from July 1, 2025. {src_chip("EU Annex VI", isrc.get("url", ""), isrc.get("title", ""))}</p>"""
         extra = f"""<section><p class="eyebrow">Concentrations on the labels</p><h2>Homosalate level in each of the {sum(v for _, v in det["by_percent"])} formulas</h2>
 <ul class="bars pct">{bars}</ul>
-<p class="fine">Filled bars are above 7.34%. {det["excluded_unreliable_percent"]} more formulas with homosalate were left out because their structured label data lists an active ingredient above its US legal maximum, so their percentages cannot be trusted.</p></section>"""
+<p class="fine">Filled bars are above 7.34%.{(" " + str(det["excluded_unreliable_percent"]) + " more formulas with homosalate were left out because their structured label data lists an active ingredient above its US legal maximum, so their percentages cannot be trusted.") if det["excluded_unreliable_percent"] else ""}</p></section>"""
         faq = [
             ("Are these sunscreens illegal?", f["legal_framing"]),
             ("What is the EU limit for homosalate?",
@@ -653,7 +653,7 @@ def page_findings_index(d):
            "url": SITE + path, "dateModified": d["built_on"], "author": person(), "publisher": org(),
            "hasPart": [{"@type": "Dataset", "name": FINDINGS[f["finding"]]["title"], "url": f"{SITE}{BASE}/findings/{f['finding']}"} for f in fs]}]
     return path, shell(path, "Findings — baby sunscreen labels, counted · ARW House Evidence",
-                       "Counts of US baby and kids sunscreen labels checked against FDA and EU rules, each linked to its data and sources.",
+                       "Counts of baby and kids sunscreen labels in FDA DailyMed checked against FDA and EU rules, each linked to its data and sources.",
                        body, ld, "Findings")
 
 

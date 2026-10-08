@@ -18,6 +18,7 @@ import glob
 import json
 import os
 import re
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CANON = os.path.join(ROOT, "data", "canonical", "us_sunscreens.jsonl")
@@ -108,10 +109,14 @@ def load():
             if l.strip():
                 c = json.loads(l)
                 fixes[c["setid"]] = c
+    sys.path.insert(0, os.path.join(ROOT, "scripts"))
+    from snapshot_and_history import formulation_fingerprint
     for r in recs:
         if r["setid"] in fixes:
             r.update(fixes[r["setid"]]["use"])
             r["_corrected"] = True
+            # identity must follow the corrected formula, not the erroneous filing
+            r["formulation_hash"] = formulation_fingerprint(r)[0]
     baby = [r for r in recs if r["setid"] in include]
     # Owner population is "labels that say baby or kids". Two kinds of record
     # are not a US baby sunscreen label and are left out, by rule, with reasons
