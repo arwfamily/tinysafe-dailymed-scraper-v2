@@ -383,7 +383,7 @@ def page_index(d, notes):
     ld = [{"@context": "https://schema.org", "@type": "Dataset",
            "name": "Baby sunscreen ingredient evidence: UV filter limits (US, EU, Australia) and baby and kids label counts from FDA DailyMed",
            "description": (f"Maximum permitted concentrations for {len(d['ingredients'])} sunscreen UV filters in the United States, "
-                           f"European Union and Australia, each linked to its regulatory source, plus counts of how many "
+                           f"European Union and Australia, each linked to its regulatory source, plus how many of "
                            f"{pop['formulations']} baby and kids sunscreen formulas in FDA DailyMed list each filter."),
            "url": SITE + BASE, "dateModified": d["built_on"], "creator": org(), "author": person(),
            "publisher": org(),
@@ -682,7 +682,7 @@ def page_method(d, notes):
 <p>Each legal limit comes from the regulatory text of its jurisdiction: the FDA's OTC sunscreen monograph (M020) and its final orders, Annex VI of the EU Cosmetics Regulation, and Australia's Permissible Ingredients Determination. Each limit on this site links to the exact document and version it was read from.</p>
 <p>Some statuses depend on a date. When an FDA removal order takes effect, the status changes on the next weekly rebuild.</p></div>
 <div><h2>Label counts</h2>
-<p>Population: {E(pop["definition"])}. {pop["formulations"]} unique formulations, {pop["mineral_only"]} with only mineral actives. Labels with the same active ingredients at the same percentages and the same inactive ingredients are counted once. DailyMed snapshot {E(pop["snapshot"])}.</p>
+<p>Population: {E(pop["definition"])}. {pop["formulations"]} unique formulations, {pop["mineral_only"]} with only mineral actives. Labels with the same active ingredients at the same percentages, the same inactive ingredients and the same form (lotion, cream, stick, spray) are counted once; pump and aerosol sprays count as one form because filers code them inconsistently. DailyMed snapshot {E(pop["snapshot"])}.</p>
 <p>DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.</p>
 <p>Left out of the counts, by rule: labels for another market, labels that do not meet US sunscreen limits as listed (an active above its US limit, or an active not permitted in the US), and listings that bundle several products. <a href="{REPO}/blob/main/claims/population_exclusions.csv">Every label left out, with its reason</a>. Where a manufacturer's structured filing contradicts its own Drug Facts, the Drug Facts are used: <a href="{REPO}/blob/main/data/corrections/spl_label_errors.jsonl">corrections</a>.</p>
 <p><a href="{REPO}/blob/main/claims/{E(pop["review_file"])}">Review file</a> · <a href="{REPO}/blob/main/claims/registry_stats.py">Counting script</a> · <a href="{REPO}/blob/main/docs/SITE_DATA_CONTRACT.md">Publishing rules</a></p></div></section>

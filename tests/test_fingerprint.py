@@ -34,5 +34,15 @@ class T(unittest.TestCase):
         self.assertEqual(formulation_fingerprint(a)[0], formulation_fingerprint(b)[0])
         self.assertEqual(formulation_fingerprint(a)[0], formulation_fingerprint(c)[0])
 
+class Spray(unittest.TestCase):
+    def test_spray_and_aerosol_spray_are_one_form(self):
+        x = {"strength": "1", "strength_unit": "G", "denominator": "100", "denominator_unit": "G", "percent_ww": 1}
+        a = {"active_ingredients": [dict(x, unii="A", name="A")], "inactive_ingredients": INACT, "dosage_form": "SPRAY"}
+        b = dict(a, dosage_form="AEROSOL, SPRAY")
+        c = dict(a, dosage_form="LOTION")
+        self.assertEqual(formulation_fingerprint(a)[0], formulation_fingerprint(b)[0])
+        self.assertNotEqual(formulation_fingerprint(a)[0], formulation_fingerprint(c)[0])
+
+
 if __name__ == "__main__":
     unittest.main()

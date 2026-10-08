@@ -86,7 +86,9 @@ def norm_strength(s):
     return "".join(str(s).split()).upper()
 
 
-FINGERPRINT_VERSION = 3
+FINGERPRINT_VERSION = 4
+# v4 (2026-10-08): spray forms normalised; filers code the same aerosol as
+# 'SPRAY' or 'AEROSOL, SPRAY' (verified: Coppertone 09a97e3f, a can, filed SPRAY).
 # v3 (2026-10-08): dosage_form is now read from the SPL, so every hash moves once.
 # v1 (until 2026-10-08) keyed actives on the SPL numerator only, so 23.4% and
 # 20% zinc oxide (234 mg/1 g vs 234 mg/1.17 g) hashed alike. Keying on the raw
@@ -141,6 +143,8 @@ def formulation_fingerprint(rec):
     # structured order differs from Drug Facts), so order is noise for identity.
     inactives = sorted({ing_key(i) for i in (rec.get("inactive_ingredients") or [])})
     dosage = (rec.get("dosage_form") or "").strip().upper()
+    if "SPRAY" in dosage or "AEROSOL" in dosage:
+        dosage = "SPRAY"
     payload = {"actives": actives, "inactives": inactives, "dosage": dosage}
     blob = json.dumps(payload, sort_keys=True, ensure_ascii=False)
     return hashlib.sha256(blob.encode("utf-8")).hexdigest()[:16], payload

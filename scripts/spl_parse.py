@@ -107,12 +107,18 @@ def _product(mp, index):
 
 # ---- printed text ---------------------------------------------------------
 _PCT = re.compile(r"([A-Za-z][A-Za-z0-9 ,'/\-]{2,60}?)\s*[\(\.\:\s]*\s*(\d+(?:\.\d+)?)\s*%")
-_HEAD = re.compile(r"^\s*(?:inactive\s+ingredients?|ingredients?)\s*[:\-]?\s*", re.I)
+# headings as printed, including misspellings and bilingual Canadian headings
+_HEAD = re.compile(r"^\s*(?:(?:inactive|non[- ]medicinal|other)\s+)?ingr\w*?(?:ients?|edients?|dients?)?"
+                   r"(?:\s*/\s*ingr[ée]dients\s+non\s+m[ée]dicinaux)?\s*[:\-]?\s*", re.I)
+_TRAILER = re.compile(r"\b(?:made in|manufactured (?:by|for)|distributed by|dist\. by|questions\??|other information|"
+                      r"keep out of reach|for external use)\b.*$", re.I | re.S)
+_JUNK = re.compile(r"^(?:etc\.?|\d+(?:\.\d+)?|\d{1,2}[-/]\d{1,2}[-/]\d{2,4})$", re.I)
 
 
 def split_ingredient_list(text):
     """Split a printed list on commas/semicolons that are not inside brackets."""
-    text = _HEAD.sub("", text or "").strip().rstrip(".")
+    text = _HEAD.sub("", text or "").strip()
+    text = _TRAILER.sub("", text).strip().rstrip(".")
     text = re.sub(r",(?=\d)", "\u2063", text)  # 1,2-hexanediol stays one item
     out, depth, cur = [], 0, []
     for ch in text:
@@ -131,7 +137,8 @@ def split_ingredient_list(text):
         x = x.replace("\u2063", ",")
         x = re.sub(r"\s+", " ", x).strip(" .*•·■")
         x = re.sub(r"^and\s+", "", x, flags=re.I)
-        if x and len(x) <= 120:
+        x = _HEAD.sub("", x) if items == [] else x
+        if x and len(x) <= 120 and not _JUNK.match(x):
             items.append(x)
     return items
 

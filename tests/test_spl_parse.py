@@ -65,6 +65,12 @@ class PrintedFullIngredientList(unittest.TestCase):
         self.assertEqual(split_ingredient_list("Inactive ingredients: water, 1,2-hexanediol, extract (calendula, chamomile); BHT"),
                          ["water", "1,2-hexanediol", "extract (calendula, chamomile)", "BHT"])
 
+    def test_headings_trailers_and_junk_are_not_ingredients(self):
+        self.assertEqual(split_ingredient_list("Inactive Ingrdients Ethylhexyl Palmitate, Water, etc. MADE IN U.S.A. DISTRIBUTED BY: X"),
+                         ["Ethylhexyl Palmitate", "Water"])
+        self.assertEqual(split_ingredient_list("Non-medicinal Ingredients/ Ingrédients non médicinaux : Aqua, Glycerin, 01-01-2018"),
+                         ["Aqua", "Glycerin"])
+
     def test_inci_to_spl_names(self):
         pairs, un_p, _ = match_inactives(["triethanolamine", "disodium EDTA", "cyclopentasiloxane", "Aqua"],
                                          ["TROLAMINE", "EDETATE DISODIUM", "CYCLOMETHICONE 5", "WATER"])
