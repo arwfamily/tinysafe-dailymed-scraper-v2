@@ -1,15 +1,115 @@
 {
  "run_date": "2026-10-08",
  "all_labels": {
-  "new": 594,
+  "new": 845,
   "delisted": 3
  },
  "baby_labels": {
-  "new": 19
+  "new": 25
  },
- "baby_population_live": 437,
- "new_baby_decisions": [],
- "review_queue": 5,
+ "baby_population_live": 443,
+ "new_baby_decisions": [
+  {
+   "setid": "3a87d88e-3cb7-499c-9d04-d172f7f6bde7",
+   "decision": "include",
+   "stage": "auto",
+   "reason": "auto-rule v1: baby/kids word in product name, sunscreen, not a kit",
+   "decided_on": "2026-10-08",
+   "title": "PREMIUM NATURAL SUNSCREEN BROAD SPECTRUM SPF 30 BABY BUM (ZINC OXIDE) STICK [BAXTER LABERATORIES]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a87d88e-3cb7-499c-9d04-d172f7f6bde7"
+  },
+  {
+   "setid": "492c44e3-4369-4367-939b-def1fd87de01",
+   "decision": "include",
+   "stage": "auto",
+   "reason": "auto-rule v1: baby/kids word in product name, sunscreen, not a kit",
+   "decided_on": "2026-10-08",
+   "title": "BABY BUM MINERAL SPF50 SUNSCREEN (ZINC OXIDE) STICK [SUN BUM LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=492c44e3-4369-4367-939b-def1fd87de01"
+  },
+  {
+   "setid": "5a8a9fda-6b60-4087-81a2-45e1ef5d1b1e",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-08",
+   "title": "DG BABY DIAPER RASH (ZINC OXIDE) OINTMENT [DOLGENCORP INC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a8a9fda-6b60-4087-81a2-45e1ef5d1b1e"
+  },
+  {
+   "setid": "606d2aea-26c1-44a1-8452-02663b3e51dd",
+   "decision": "include",
+   "stage": "auto",
+   "reason": "auto-rule v1: baby/kids word in product name, sunscreen, not a kit",
+   "decided_on": "2026-10-08",
+   "title": "BABY BUM SPF50 MINERAL SUNSCREEN (ZINC OXIDE) CREAM [SUN BUM, LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606d2aea-26c1-44a1-8452-02663b3e51dd"
+  },
+  {
+   "setid": "8e32f17b-0e1a-4165-a20c-44d99516b235",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-08",
+   "title": "DR. OBERON DIAPER RASH BABY CREAM (ZINC OXIDE, DIMETHICONE) CREAM [OBERON COSMETIC CO., LTD.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8e32f17b-0e1a-4165-a20c-44d99516b235"
+  },
+  {
+   "setid": "a2a41914-c98b-4b35-9d12-6fb0041c7e1d",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-08",
+   "title": "BABY DIAPER (ZINC OXIDE) CREAM [TELLURIAN]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a2a41914-c98b-4b35-9d12-6fb0041c7e1d"
+  },
+  {
+   "setid": "a93cd61a-ae83-4c45-8fca-f904b5cf706d",
+   "decision": "queue",
+   "stage": "pending",
+   "reason": "brand on the baby-brand list; check the product itself",
+   "decided_on": "2026-10-08",
+   "title": "PIPETTE MINERAL SUNSCREEN BROAD SPECTRUM SPF50 (ZINC OXIDE) LOTION [AMYRIS, INC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a93cd61a-ae83-4c45-8fca-f904b5cf706d"
+  },
+  {
+   "setid": "af6b7f9f-9ca5-4c59-be78-d68286451ac3",
+   "decision": "include",
+   "stage": "auto",
+   "reason": "auto-rule v1: baby/kids word in product name, sunscreen, not a kit",
+   "decided_on": "2026-10-08",
+   "title": "BABY DONNA SHEER SPF SUNSCREEN STICK (ZINC OXIDE) STICK [BABYDONNA LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=af6b7f9f-9ca5-4c59-be78-d68286451ac3"
+  },
+  {
+   "setid": "b3190e6c-5eee-4ac8-e053-2a95a90afa29",
+   "decision": "include",
+   "stage": "auto",
+   "reason": "auto-rule v1: baby/kids word in product name, sunscreen, not a kit",
+   "decided_on": "2026-10-08",
+   "title": "ZINC FIVE-O ZINXATION KIDS SUNSCREEN SPF-50 (ZINC OXIDE) LOTION [ASTIVITA LIMITED]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3190e6c-5eee-4ac8-e053-2a95a90afa29"
+  },
+  {
+   "setid": "b3199cf4-eb90-68c2-e053-2a95a90a8a29",
+   "decision": "include",
+   "stage": "auto",
+   "reason": "auto-rule v1: baby/kids word in product name, sunscreen, not a kit",
+   "decided_on": "2026-10-08",
+   "title": "ZINC FIVE-O ZINXATION BABY MINERAL SUNSCREEN SPF-50 (ZINC OXIDE) LOTION [ASTIVITA LIMITED]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3199cf4-eb90-68c2-e053-2a95a90a8a29"
+  },
+  {
+   "setid": "c46d5dfe-259a-1699-e053-2a95a90aba06",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-08",
+   "title": "BABY BUM DIAPER RASH (ZINC OXIDE) CREAM [SUN BUM LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c46d5dfe-259a-1699-e053-2a95a90aba06"
+  }
+ ],
+ "review_queue": 6,
  "changes": [
   {
    "setid": "5cd3834a-a47f-dc91-e063-6294a90a7d7e",
@@ -5376,6 +5476,2265 @@
    "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=071038d9-8179-6953-e063-6394a90a8a84",
    "baby": false,
    "label_date": "20231006",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "ef4f424f-bf80-47b1-9ab7-75c34b4838bb",
+   "change": "new",
+   "product": "BROAD SPECTRUM CAT DEWORMER (PRAZIQUANTEL, PYRANTEL PAMOATE TABLETS) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ef4f424f-bf80-47b1-9ab7-75c34b4838bb",
+   "baby": false,
+   "label_date": "20260929",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4f70fe9a-10db-46af-9cff-a636f05c5734",
+   "change": "new",
+   "product": "BROAD SPECTRUM CAT AND DOG DEWORMER (PRAZIQUANTEL, PYRANTEL PAMOATE TABLETS) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f70fe9a-10db-46af-9cff-a636f05c5734",
+   "baby": false,
+   "label_date": "20260909",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "fb09c763-06d9-4f55-aa0e-2530ce07c5a6",
+   "change": "new",
+   "product": "NURTIVA (VITAMIN A, THIAMINE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HCL, CYANOCOBALAMIN, ASCORBIC ACID, D-ALPHA TOCOPHEROL SUCCINATE, FOLIC ACID, CALCIUM, CHROMIUM, FERROUS FUMARATE, IODINE, MAGNESIUM OXIDE, MANGANESE SULFATE, MOLYBDENUM, SELENIUM, ZINC OXIDE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fb09c763-06d9-4f55-aa0e-2530ce07c5a6",
+   "baby": false,
+   "label_date": "20260914",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9f895a3c-4aa1-4cbd-a22b-28ce95e15aa0",
+   "change": "new",
+   "product": "LFHYM BROAD SPECTRUM CAT DEWORMER (PRAZIQUANTEL, PYRANTEL PAMOATE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f895a3c-4aa1-4cbd-a22b-28ce95e15aa0",
+   "baby": false,
+   "label_date": "20260811",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "da53ce22-b0a3-4c91-94df-e03693aec841",
+   "change": "new",
+   "product": "COMPLETE NATAL DHA (.BETA.-CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHERYO ACETATE, DL, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, MAGNESIUM OXIDE, ZINC OXIDE, CUPRIC OXIDE, AND DOCONEXENT) KIT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da53ce22-b0a3-4c91-94df-e03693aec841",
+   "baby": false,
+   "label_date": "20220126",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9b79c950-4312-4a53-9e36-fb8e00b053df",
+   "change": "new",
+   "product": "PRENATE ELITE (.BETA.-CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, LEVOMEFOLATE CALCIUM, CALCIUM FORMATE, FERROUS ASPARTO GLYCINATE, CYANOCOBALAMIN, BIOTIN, POTASSIUM IODIDE, MAGNESIUM OXIDE, ZINC OXIDE AND CUPRIC OXIDE) TABLET, COATED",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b79c950-4312-4a53-9e36-fb8e00b053df",
+   "baby": false,
+   "label_date": "20260612",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c121842b-9fb7-4f5d-b32c-85ec523715d7",
+   "change": "new",
+   "product": "JEFFERS SCRATCHES AWAY (ZINC OXIDE) PASTE",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c121842b-9fb7-4f5d-b32c-85ec523715d7",
+   "baby": false,
+   "label_date": "20260505",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c1d76049-a036-48f7-bf3a-0aab5ddfff7c",
+   "change": "new",
+   "product": "MULTIMIN 90 (ZINC OXIDE, MANGANESE CARBONATE, SODIUM SELENITE, COPPER CARBONATE) INJECTION, SOLUTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c1d76049-a036-48f7-bf3a-0aab5ddfff7c",
+   "baby": false,
+   "label_date": "20260623",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "52e09e67-ae5b-d826-e063-6294a90ae3ff",
+   "change": "new",
+   "product": "ANHONGYU HYDRADOUBLE SUNSCREEN LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52e09e67-ae5b-d826-e063-6294a90ae3ff",
+   "baby": false,
+   "label_date": "20260528",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "1038ed7d-69b2-47ef-97b4-51c06fd39d3a",
+   "change": "new",
+   "product": "PRENOVA (BETA CAROTENE, THIAMINE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HCL, CYANOCOBALAMIN, ASCORBIC ACID, DL-ALPHA TOCOPHERYL ACETATE, FOLIC ACID, CALCIUM CARBONATE, FERROUS FUMARATE, ZINC OXIDE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1038ed7d-69b2-47ef-97b4-51c06fd39d3a",
+   "baby": false,
+   "label_date": "20260520",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "8bf57652-5750-4111-acef-45c5fdc676af",
+   "change": "new",
+   "product": "SKINUVA BRUISE (ARNICA MONTANA, BROMELAIN, GRAPE SEED EXTRACT, VITAMIN C, RUTIN, ZINC OXIDE, CELLULOSE) CAPSULE",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf57652-5750-4111-acef-45c5fdc676af",
+   "baby": false,
+   "label_date": "20260209",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c21e1652-5e53-4804-84c6-7da61cc9d05d",
+   "change": "new",
+   "product": "EQUISHIELD SB (ZINC OXIDE,CHLORHEXIDINE GLUCONATE,CITRONELLA) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c21e1652-5e53-4804-84c6-7da61cc9d05d",
+   "baby": false,
+   "label_date": "20251223",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "39bd64e4-e330-4a3f-b873-3d71b07e54aa",
+   "change": "new",
+   "product": "OB COMPLETE ONE (FISH OIL, DOCONEXENT, ICOSAPENT, CALCIUM ASCORBATE, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, D-, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, BIOTIN, CALCIUM THREONATE, CALCIUM MALATE, CALCIUM CARBONATE, IRON, FERROUS ASPARTO GLYCINATE, POTASSIUM IODIDE, MAGNESIUM OXIDE, ZINC OXIDE, AND CUPRIC SULFATE) CAPSULE, LIQUID FILLED",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=39bd64e4-e330-4a3f-b873-3d71b07e54aa",
+   "baby": false,
+   "label_date": "20220218",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "a4f80fca-e532-42a9-a6ae-125925cfb3f1",
+   "change": "new",
+   "product": "ONE NATAL RX (VITAMIN A, ASCORBIC ACID, CHOLECALCIFEROL, DL-ALPHA TOCOPHERYL ACETATE, THIAMINE MONONITRATE, VITAMIN B2, NIACINAMIDE, PYRIDOXINE HCL, FOLIC ACID, CYANOCOBALAMIN, CALCIUM CARBONATE, FERROUS FUMARATE, ZINC OXIDE, CUPRIC OXIDE, INOSITOL, CITRUS BIOFLAVONOIDS FRUIT COMPLEX, BORON CITRATE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4f80fca-e532-42a9-a6ae-125925cfb3f1",
+   "baby": false,
+   "label_date": "20250825",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "8a359ea4-b9f7-4a4c-ba96-b5c0a38933a9",
+   "change": "new",
+   "product": "WESNATE DHA (ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL, D-, THIAMINE MONONITRATE, RIBOFLAVIN, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, FERROUS FUMARATE, MAGNESIUM OXIDE, ZINC OXIDE, CUPRIC SULFATE, AND OMEGA-3 FATTY ACIDS) CAPSULE, GELATIN COATED",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a359ea4-b9f7-4a4c-ba96-b5c0a38933a9",
+   "baby": false,
+   "label_date": "20250709",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "61945c85-3c9a-4b57-a8e1-79dd0469a042",
+   "change": "new",
+   "product": "NESTABS PRENATAL MULTI-VITAMIN/MINERAL SUPPLEMENT (MULTI-VITAMIN/MINERAL SUPPLEMENT WITH SODIUM ASCORBATE, CHOLECALCIFEROL, DI-ALPHA-TOCOPHERYL ACETATE, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HCL, FOLIC ACID, CYANOCOBALAMIN, CALCIUM FORMATE, CALCIUM CARBONATE, FERROUS (II) BIS-GLYCINATE CHELATE, POTASSIUM IODIDE, ZINC OXIDE, AND CHOLINE BITARTRATE) TABLET, FILM COATED",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=61945c85-3c9a-4b57-a8e1-79dd0469a042",
+   "baby": false,
+   "label_date": "20250513",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "635104e6-6a53-4684-ac9a-7ac31b33083d",
+   "change": "new",
+   "product": "SE-NATAL 19 (.BETA.-CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, CALCIUM PANTOTHENATE, CALCIUM CARBONATE, FERROUS FUMARATE, ZINC OXIDE AND DOCUSATE SODIUM ) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=635104e6-6a53-4684-ac9a-7ac31b33083d",
+   "baby": false,
+   "label_date": "20250224",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "0ce13168-11ed-4f49-86da-59bd8b906e65",
+   "change": "new",
+   "product": "NEO-VITAL RX (VITAMIN A, ASCORBIC ACID, CHOLECALCIFEROL, DL-ALPHA TOCOPHERYL ACETATE, THIAMINE MONONITRATE, VITAMIN B2, NIACINAMIDE, PYRIDOXINE HCL, FOLIC ACID, CYANOCOBALAMIN, CALCIUM CARBONATE, FERROUS FUMARATE, ZINC OXIDE, CUPRIC OXIDE, INOSITOL, CITRUS BIOFLAVONOIDS FRUIT COMPLEX, BORON CITRATE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0ce13168-11ed-4f49-86da-59bd8b906e65",
+   "baby": false,
+   "label_date": "20241030",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "8c1b2367-cec5-4a18-82a0-e132b4aece3a",
+   "change": "new",
+   "product": "C-NATE DHA (OMEGA-3 FATTY ACIDS, ICOSAPENT, DOCONEXENT, THIAMINE MONONITRATE, RIBOFLAVIN, PYRIDOXINE HYDROCHLORIDE, CYANOCOBALAMIN, FOLIC ACID, CHOLECALCIFEROL, ASCORBIC ACID, .ALPHA.-TOCOPHEROL, D-, CUPRIC SULFATE, ZINC OXIDE, FERROUS FUMARATE AND MAGNESIUM OXIDE) CAPSULE, GELATIN COATED",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8c1b2367-cec5-4a18-82a0-e132b4aece3a",
+   "baby": false,
+   "label_date": "20240122",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9f4ce551-7a80-4ddb-a014-95c44b54a420",
+   "change": "new",
+   "product": "PNV-SELECT (VITAMIN A ACETATE, ASCORBIC ACID, CHOLECALCIFEROL, ALPHA-TOCOPHEROL ACETATE, DL, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, BIOTIN, CALCIUM PANTOTHENATE, CALCIUM CARBONATE, FERROUS FUMARATE, POTASSIUM IODIDE, MAGNESIUM OXIDE, ZINC OXIDE AND CUPRIC OXIDE) TABLET, FILM COATED",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f4ce551-7a80-4ddb-a014-95c44b54a420",
+   "baby": false,
+   "label_date": "20240116",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "06dd53f5-b5ba-4987-9ae7-176883ac3471",
+   "change": "new",
+   "product": "WESTAB PLUS (VITAMIN A ACETATE, BETA CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, CALCIUM CARBONATE, FERROUS FUMARATE, ZINC OXIDE, AND CUPRIC OXIDE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06dd53f5-b5ba-4987-9ae7-176883ac3471",
+   "baby": false,
+   "label_date": "20231205",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "27f1c843-7064-4656-b52e-dd572e57eea4",
+   "change": "new",
+   "product": "EQUISHIELD SB (ZINC OXIDE,CHLORHEXIDINE GLUCONATE,CITRONELLA) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27f1c843-7064-4656-b52e-dd572e57eea4",
+   "baby": false,
+   "label_date": "20231127",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6749570e-d93b-482f-b7e8-80f8a65a55fc",
+   "change": "new",
+   "product": "PRENATAL PLUS MULTIVITAMIN PLUS DHA MINICAPS (VITAMIN A, ASCORBIC ACID, CHOLECALCIFEROL, TOCOPHEROL, THIAMINE MONONITRATE, RIBOFLAVIN, PYRIDOXINE, FOLIC ACID, CYANOCOBALAMIN, CALCIUM CARBONATE, FERROUS FUMARATE, ZINC OXIDE, CUPRIC OXIDE, NIACINAMIDE, AND FISH OIL) KIT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6749570e-d93b-482f-b7e8-80f8a65a55fc",
+   "baby": false,
+   "label_date": "20231107",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b48df1af-b18a-4b47-9849-dbad67a0d97f",
+   "change": "new",
+   "product": "PNV PRENATAL PLUS MULTIVITAMIN (VITAMIN A ACETATE, .BETA.-CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, CALCIUM CARBONATE, FERROUS FUMARATE, ZINC OXIDE, AND CUPRIC OXIDE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b48df1af-b18a-4b47-9849-dbad67a0d97f",
+   "baby": false,
+   "label_date": "20231107",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "017bd43b-ad7d-7d7b-e063-6294a90a97b2",
+   "change": "new",
+   "product": "ETHICAL ZINC DAILY WEAR TINTED FACIAL SUNSCREEN DARK TINT SPF-50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=017bd43b-ad7d-7d7b-e063-6294a90a97b2",
+   "baby": false,
+   "label_date": "20230925",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "017c076d-67d2-f236-e063-6294a90aabf5",
+   "change": "new",
+   "product": "ETHICAL ZINC DAILY WEAR TINTED FACIAL SUNSCREEN LIGHT TINT SPF-50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=017c076d-67d2-f236-e063-6294a90aabf5",
+   "baby": false,
+   "label_date": "20230925",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "44b65c5e-9435-44f0-a95b-f4fdceffa575",
+   "change": "new",
+   "product": "ETHICAL ZINC DAILY WEAR LIGHT SUNSCREEN SPF-50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44b65c5e-9435-44f0-a95b-f4fdceffa575",
+   "baby": false,
+   "label_date": "20230925",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4a8046e3-ddf5-4d57-9dd7-62013fed4ea9",
+   "change": "new",
+   "product": "ETHICAL ZINC NATURAL CLEAR ZINC SUNSCREEN SPF-50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a8046e3-ddf5-4d57-9dd7-62013fed4ea9",
+   "baby": false,
+   "label_date": "20230925",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "fae21e0a-5e41-bffb-e053-6294a90afb9d",
+   "change": "new",
+   "product": "UNIVERSAL GLOW DAILY DEFENSE SPF 40 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fae21e0a-5e41-bffb-e053-6294a90afb9d",
+   "baby": false,
+   "label_date": "20230504",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "af6b7f9f-9ca5-4c59-be78-d68286451ac3",
+   "change": "new",
+   "product": "BABY DONNA SHEER SPF SUNSCREEN STICK (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=af6b7f9f-9ca5-4c59-be78-d68286451ac3",
+   "baby": true,
+   "label_date": "20230228",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "f3856094-a55a-6982-e053-2a95a90accb2",
+   "change": "new",
+   "product": "PROTECTING BASE SUNCREAM (CITRONELLOL, GERANIOL, LINALOOL) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f3856094-a55a-6982-e053-2a95a90accb2",
+   "baby": false,
+   "label_date": "20230130",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "cc37a6e8-3ce3-5eb4-e053-2995a90a217a",
+   "change": "new",
+   "product": "MINERAL SUNSCREEN SPF 30 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cc37a6e8-3ce3-5eb4-e053-2995a90a217a",
+   "baby": false,
+   "label_date": "20230110",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "eb070c0e-d7f1-f554-e053-2995a90a392b",
+   "change": "new",
+   "product": "DAILY SPF PRIMER SPF 50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eb070c0e-d7f1-f554-e053-2995a90a392b",
+   "baby": false,
+   "label_date": "20230106",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "be6f53da-7f28-4404-8cc2-943bbaa0b2bf",
+   "change": "new",
+   "product": "FORTICEPT PAW-FORTE (BENZETHONIUM CHLORIDE, ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=be6f53da-7f28-4404-8cc2-943bbaa0b2bf",
+   "baby": false,
+   "label_date": "20230105",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "2c448de2-a149-4392-8f78-b5e2bac82aa9",
+   "change": "new",
+   "product": "DERMOSCRIBE DIAPER (CLIOQUINOL, ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c448de2-a149-4392-8f78-b5e2bac82aa9",
+   "baby": false,
+   "label_date": "20221222",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "975bf0fb-2832-486a-942e-d6ef83855881",
+   "change": "new",
+   "product": "QUALITY CHOICE MAXIMUM STRENGTH ZINC OXIDE (ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=975bf0fb-2832-486a-942e-d6ef83855881",
+   "baby": false,
+   "label_date": "20221216",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4ac2f15b-0ba7-434d-9e5d-f6d0f2a7e7db",
+   "change": "new",
+   "product": "SUN GOO MINERAL SUN STICK (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ac2f15b-0ba7-434d-9e5d-f6d0f2a7e7db",
+   "baby": false,
+   "label_date": "20221130",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "a93cd61a-ae83-4c45-8fca-f904b5cf706d",
+   "change": "new",
+   "product": "PIPETTE MINERAL SUNSCREEN BROAD SPECTRUM SPF50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a93cd61a-ae83-4c45-8fca-f904b5cf706d",
+   "baby": false,
+   "label_date": "20221103",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4b1ff0d2-612c-4442-889c-c75ae57bfdda",
+   "change": "new",
+   "product": "SUNNY SKIN SUPER SUN SPF50 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b1ff0d2-612c-4442-889c-c75ae57bfdda",
+   "baby": false,
+   "label_date": "20221028",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "8f338854-1bcf-4dc4-8da2-46c3033fa042",
+   "change": "new",
+   "product": "SUNNY SKIN GLOW FILTER SPF50 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f338854-1bcf-4dc4-8da2-46c3033fa042",
+   "baby": false,
+   "label_date": "20221027",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "db4d2f39-bdce-f1e2-e053-2a95a90a2b4a",
+   "change": "new",
+   "product": "CORAL SURE SUNSCREEN SPF 35 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db4d2f39-bdce-f1e2-e053-2a95a90a2b4a",
+   "baby": false,
+   "label_date": "20220710",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9f4bcb43-ed4a-4691-8523-9bf410aac5bd",
+   "change": "new",
+   "product": "WELL AND GOOD RELIEVE EAR POWDER (ZINC OXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f4bcb43-ed4a-4691-8523-9bf410aac5bd",
+   "baby": false,
+   "label_date": "20220916",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "e078798d-24da-9adf-e053-2995a90a76de",
+   "change": "new",
+   "product": "WAX SPF 50 (ZINC OXIDE, ALLANTOIN) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e078798d-24da-9adf-e053-2995a90a76de",
+   "baby": false,
+   "label_date": "20220602",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "e0787c0a-b4a7-5302-e053-2995a90a0c85",
+   "change": "new",
+   "product": "WINTER SKIN PROTECTANT (ZINC OXIDE, ALLANTOIN) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0787c0a-b4a7-5302-e053-2995a90a0c85",
+   "baby": false,
+   "label_date": "20220602",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "224b8f18-e4f9-4436-98d5-2dab36548f0c",
+   "change": "new",
+   "product": "KROGER ODOR FREE ARTHRICREAM RUB PAIN RELIEVING (TROLAMINE SALICYLATE 10%) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=224b8f18-e4f9-4436-98d5-2dab36548f0c",
+   "baby": false,
+   "label_date": "20220425",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "e5960f4e-b103-477b-9d90-80a43595130e",
+   "change": "new",
+   "product": "E-KO SKIN CARE SPF 50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5960f4e-b103-477b-9d90-80a43595130e",
+   "baby": false,
+   "label_date": "20220405",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "df37b6b4-24b4-5b33-e053-2995a90aa4a3",
+   "change": "new",
+   "product": "SENSIBLE SPF 32 MINERAL SUNSCREEN (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df37b6b4-24b4-5b33-e053-2995a90aa4a3",
+   "baby": false,
+   "label_date": "20220517",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "cbd899ca-80da-4a1b-9b32-2148759d9424",
+   "change": "new",
+   "product": "ZINC-OXYDE PLUS (MENTHOL, ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbd899ca-80da-4a1b-9b32-2148759d9424",
+   "baby": false,
+   "label_date": "20220224",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "bccabe64-2747-676d-e053-2a95a90a34ba",
+   "change": "new",
+   "product": "SUN BUM MINERAL SUNSCREEN FACE STICK SPF 50 (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bccabe64-2747-676d-e053-2a95a90a34ba",
+   "baby": false,
+   "label_date": "20220204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c46d5dfe-259a-1699-e053-2a95a90aba06",
+   "change": "new",
+   "product": "BABY BUM DIAPER RASH (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c46d5dfe-259a-1699-e053-2a95a90aba06",
+   "baby": false,
+   "label_date": "20220204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "dd65e724-2586-4334-932f-5a7b5b8609f3",
+   "change": "new",
+   "product": "SUN BUM SIGNATURE SPF 30 SUNSCREEN LIP BALM (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd65e724-2586-4334-932f-5a7b5b8609f3",
+   "baby": false,
+   "label_date": "20220204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "830e3031-9076-4c5a-b964-880e799953a8",
+   "change": "new",
+   "product": "SUN BUM MINERAL SPF30 SUNSCREEN (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=830e3031-9076-4c5a-b964-880e799953a8",
+   "baby": false,
+   "label_date": "20220204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "bcceae3e-e64b-23e3-e053-2a95a90ad0eb",
+   "change": "new",
+   "product": "SUN BUM MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bcceae3e-e64b-23e3-e053-2a95a90ad0eb",
+   "baby": false,
+   "label_date": "20220204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "492c44e3-4369-4367-939b-def1fd87de01",
+   "change": "new",
+   "product": "BABY BUM MINERAL SPF50 SUNSCREEN (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=492c44e3-4369-4367-939b-def1fd87de01",
+   "baby": true,
+   "label_date": "20220204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "bcd0d483-f506-4c7c-e053-2995a90a5733",
+   "change": "new",
+   "product": "SUN BUM MINERAL SUNSCREEN BROAD SPECTRUM SPF 50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bcd0d483-f506-4c7c-e053-2995a90a5733",
+   "baby": false,
+   "label_date": "20220204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "606d2aea-26c1-44a1-8452-02663b3e51dd",
+   "change": "new",
+   "product": "BABY BUM SPF50 MINERAL SUNSCREEN (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606d2aea-26c1-44a1-8452-02663b3e51dd",
+   "baby": true,
+   "label_date": "20220204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b318f457-c975-41d5-e053-2a95a90ab2d4",
+   "change": "new",
+   "product": "THERMASUN ZINXATION MINERAL ZINC FACIAL SUNSCREEN - ACNE PRONE SKIN SPF-50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b318f457-c975-41d5-e053-2a95a90ab2d4",
+   "baby": false,
+   "label_date": "20220127",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b3190e6c-5eee-4ac8-e053-2a95a90afa29",
+   "change": "new",
+   "product": "ZINC FIVE-O ZINXATION KIDS SUNSCREEN SPF-50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3190e6c-5eee-4ac8-e053-2a95a90afa29",
+   "baby": true,
+   "label_date": "20220127",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b3199cf4-eb90-68c2-e053-2a95a90a8a29",
+   "change": "new",
+   "product": "ZINC FIVE-O ZINXATION BABY MINERAL SUNSCREEN SPF-50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3199cf4-eb90-68c2-e053-2a95a90a8a29",
+   "baby": true,
+   "label_date": "20220127",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "1c91079b-546e-400a-a342-b2223cd26a01",
+   "change": "new",
+   "product": "OB COMPLETE PRENATAL (.BETA.-CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL SUCCINATE, D-, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, PANTOTHENIC ACID, IRON PENTACARBONYL, MAGNESIUM OXIDE, ZINC OXIDE, AND COPPER GLUCONATE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c91079b-546e-400a-a342-b2223cd26a01",
+   "baby": false,
+   "label_date": "20191211",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b318e85f-cec9-85d5-e053-2a95a90a6e3c",
+   "change": "new",
+   "product": "ZINC FIVE-O SPF-50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b318e85f-cec9-85d5-e053-2a95a90a6e3c",
+   "baby": false,
+   "label_date": "20220127",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "12540242-7d40-4c0e-aa44-1c393223cb86",
+   "change": "new",
+   "product": "GET MR SKINCARE DAILY PROTECTION SPF30 SUNSCREEN (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12540242-7d40-4c0e-aa44-1c393223cb86",
+   "baby": false,
+   "label_date": "20220124",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9156d2cc-5f76-4c65-9aed-71d155d8246e",
+   "change": "new",
+   "product": "MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9156d2cc-5f76-4c65-9aed-71d155d8246e",
+   "baby": false,
+   "label_date": "20220121",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6052a964-eeb1-a4be-e053-2a91aa0aaa19",
+   "change": "new",
+   "product": "CALAMINE (CALAMINE 8% AND ZINC OXIDE 8%) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6052a964-eeb1-a4be-e053-2a91aa0aaa19",
+   "baby": false,
+   "label_date": "20211223",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6199a79c-c1a3-40e7-9553-3c420b5e75ae",
+   "change": "new",
+   "product": "ZINC OXIDE (DAILY FACE CREAM BROAD SPECTRUM SPF 20) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6199a79c-c1a3-40e7-9553-3c420b5e75ae",
+   "baby": false,
+   "label_date": "20211019",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "5d28bedf-e8c6-4856-b345-55537c73f832",
+   "change": "new",
+   "product": "MINERAL SUNSCREEN STICK SPF 50 SUPERGOOP (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d28bedf-e8c6-4856-b345-55537c73f832",
+   "baby": false,
+   "label_date": "20211011",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "8b59f588-65a2-43bb-9ead-3f9d800e3f1d",
+   "change": "new",
+   "product": "PLANT AND MINERAL SUNSCREEN SPF 50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b59f588-65a2-43bb-9ead-3f9d800e3f1d",
+   "baby": false,
+   "label_date": "20210913",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "bd3644fc-f33e-7e95-e053-2a95a90a160c",
+   "change": "new",
+   "product": "KRT ATHLETIC MUSCLE GEL (TROLAMINE SALICYLATE) GEL",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bd3644fc-f33e-7e95-e053-2a95a90a160c",
+   "baby": false,
+   "label_date": "20210812",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "f84d8601-3526-4d85-9e38-30fd9e8e187b",
+   "change": "new",
+   "product": "INVISIBLE HERO SPF30 (SUNSCREEN) LIQUID",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f84d8601-3526-4d85-9e38-30fd9e8e187b",
+   "baby": false,
+   "label_date": "20210801",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9e414f95-a9af-6399-e053-2995a90a72c4",
+   "change": "new",
+   "product": "CURETECH ENSHIELD EN SHIELD ALOE SOFT VITAMIN ENRICHED (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e414f95-a9af-6399-e053-2995a90a72c4",
+   "baby": false,
+   "label_date": "20210811",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b4bb5059-2daa-9340-e053-2995a90a3c5d",
+   "change": "new",
+   "product": "ZINXATION SUNSCREEN SPF-50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b4bb5059-2daa-9340-e053-2995a90a3c5d",
+   "baby": false,
+   "label_date": "20210729",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4919d632-8ebd-43fb-9c5a-99874c737a7b",
+   "change": "new",
+   "product": "BEAUTY COUNTER DEW SKIN MOISTURIZER TAN SPF 20 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4919d632-8ebd-43fb-9c5a-99874c737a7b",
+   "baby": false,
+   "label_date": "20200624",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "f75f70c4-7fba-4f01-a485-ad1d34500f8d",
+   "change": "new",
+   "product": "SPF VENTURES BRUSH ON BLOCK (ZINC OXIDE 21.4%) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f75f70c4-7fba-4f01-a485-ad1d34500f8d",
+   "baby": false,
+   "label_date": "20210516",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4f622019-0019-4952-835d-86616c5a7c2e",
+   "change": "new",
+   "product": "ZINC OXIDE POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f622019-0019-4952-835d-86616c5a7c2e",
+   "baby": false,
+   "label_date": "20220317",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "10f86ac6-4d53-461a-88c8-3bc99fe2346c",
+   "change": "new",
+   "product": "PREPLUS (VITAMIN A ACETATE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, CALCIUM, FERROUS FUMARATE, ZINC OXIDE, AND CUPRIC OXIDE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10f86ac6-4d53-461a-88c8-3bc99fe2346c",
+   "baby": false,
+   "label_date": "20210301",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "60e9456d-4cbf-4222-8f37-0e78c33cc792",
+   "change": "new",
+   "product": "NATUROPATHICA (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=60e9456d-4cbf-4222-8f37-0e78c33cc792",
+   "baby": false,
+   "label_date": "20210201",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "54bb7fd5-87f6-4747-902e-998fec764839",
+   "change": "new",
+   "product": "NATUROPATHICA CALENDULA AND BUTTERFLY GINGER SPF 40 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54bb7fd5-87f6-4747-902e-998fec764839",
+   "baby": false,
+   "label_date": "20210210",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c6f28076-0ffc-4850-b544-656532355537",
+   "change": "new",
+   "product": "MAXIMUM STRENGTH DIAPER RASH (ZINC OXIDE OINTMENT) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c6f28076-0ffc-4850-b544-656532355537",
+   "baby": false,
+   "label_date": "20210129",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "ec8cb1bb-65f1-4f26-a542-a62aea6f16a2",
+   "change": "new",
+   "product": "CELESTY AGELESS SERIES AGE-DEFYING SUNSCREEN SPF 30 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ec8cb1bb-65f1-4f26-a542-a62aea6f16a2",
+   "baby": false,
+   "label_date": "20201209",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c46618ed-25c3-4a1e-b5ef-4c1997848cda",
+   "change": "new",
+   "product": "CELESTY OIL CONTROL SERIES MATTIFYING SUNSCREEN SPF 30 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c46618ed-25c3-4a1e-b5ef-4c1997848cda",
+   "baby": false,
+   "label_date": "20201210",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "84af0590-db35-2b23-e053-2a91aa0a89c0",
+   "change": "new",
+   "product": "TEDS TOPICAL PAIN GEL ROLL ON (TROLAMINE SALICYLATE 10%) GEL",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84af0590-db35-2b23-e053-2a91aa0a89c0",
+   "baby": false,
+   "label_date": "20210111",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c8d23e0a-3165-4eea-8576-acebcd36a0bb",
+   "change": "new",
+   "product": "CELESTY ANTIOXIDANT SERIES REJUVENATING SUNSCREEN SPF 30 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8d23e0a-3165-4eea-8576-acebcd36a0bb",
+   "baby": false,
+   "label_date": "20201209",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "76e2902f-78dc-41a4-ae50-295515d15f23",
+   "change": "new",
+   "product": "CELESTY SENSITIVE SKIN SERIES SUNSCREEN SPF30 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76e2902f-78dc-41a4-ae50-295515d15f23",
+   "baby": false,
+   "label_date": "20201214",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "94defcd9-5387-442f-8933-ab1e53668d8b",
+   "change": "new",
+   "product": "MOTHER SPF - DAILY FACE AND BODY SPF30 BROAD SPECTRUM (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94defcd9-5387-442f-8933-ab1e53668d8b",
+   "baby": false,
+   "label_date": "20201231",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b3f80cad-d075-415d-e053-2a95a90a1ba7",
+   "change": "new",
+   "product": "JIKIMI PHYTONCIDE (TITANIUM DIOXIDE, HYPOCHLOROUS ACID) LIQUID",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3f80cad-d075-415d-e053-2a95a90a1ba7",
+   "baby": false,
+   "label_date": "20201113",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "5a50e767-898f-414d-90a2-a4b56799efcc",
+   "change": "new",
+   "product": "PEOPLE4OCEAN SPF50 SUNSCREEN VEGAN (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a50e767-898f-414d-90a2-a4b56799efcc",
+   "baby": false,
+   "label_date": "20200701",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "7ef6171c-c71c-46de-bc46-dd02384231d9",
+   "change": "new",
+   "product": "CALMPOSE REPAIRY LIGHT DERMA SUN (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7ef6171c-c71c-46de-bc46-dd02384231d9",
+   "baby": false,
+   "label_date": "20201030",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "d21fb067-35c0-411c-828a-344ec4a84bb6",
+   "change": "new",
+   "product": "PEOPLE4OCEAN SPF50 SUNSCREEN (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d21fb067-35c0-411c-828a-344ec4a84bb6",
+   "baby": false,
+   "label_date": "20200701",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "605258e1-e509-4086-e053-2a91aa0af29f",
+   "change": "new",
+   "product": "CALAMINE PHENOLATED TOPICAL SUSPENSION (CALAMINE AND ZINC OXIDE AND PHENOL) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=605258e1-e509-4086-e053-2a91aa0af29f",
+   "baby": false,
+   "label_date": "20200619",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "96700ded-bccb-4d7a-a7ea-f4b4bcbc3879",
+   "change": "new",
+   "product": "PEOPLE4OCEAN SPF30 SUNSCREEN (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=96700ded-bccb-4d7a-a7ea-f4b4bcbc3879",
+   "baby": false,
+   "label_date": "20200512",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c5574cfd-5b96-4036-8704-2c058dca5db3",
+   "change": "new",
+   "product": "TIEGE HANLEY MOISTURIZING LIP BALM SPF 30 (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5574cfd-5b96-4036-8704-2c058dca5db3",
+   "baby": false,
+   "label_date": "20200413",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9f065c21-64e3-27fd-e053-2995a90a8d82",
+   "change": "new",
+   "product": "RIPTIDE SUNSCREEN WHITE (ZINC OXIDE) PASTE",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f065c21-64e3-27fd-e053-2995a90a8d82",
+   "baby": false,
+   "label_date": "20200220",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9f0661f9-b4e0-0f1f-e053-2995a90abf2d",
+   "change": "new",
+   "product": "RIPTIDE SUNSCREEN TINTED (ZINC OXIDE) PASTE",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f0661f9-b4e0-0f1f-e053-2995a90abf2d",
+   "baby": false,
+   "label_date": "20200220",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9e3def80-b173-7422-e053-2a95a90ac0b8",
+   "change": "new",
+   "product": "CURETECH SKIN PROTECTANT (ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e3def80-b173-7422-e053-2a95a90ac0b8",
+   "baby": false,
+   "label_date": "20200210",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "f44fc85f-c8c0-4bbf-a0c1-de342b0365ce",
+   "change": "new",
+   "product": "ZINC OXIDE POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f44fc85f-c8c0-4bbf-a0c1-de342b0365ce",
+   "baby": false,
+   "label_date": "20211130",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "06c855f9-9de2-4844-a726-73169a4724e9",
+   "change": "new",
+   "product": "FOOT DETOX (ZINC OXIDE) PATCH",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06c855f9-9de2-4844-a726-73169a4724e9",
+   "baby": false,
+   "label_date": "20200117",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "df95a616-714e-4727-af91-1b993a55b661",
+   "change": "new",
+   "product": "DERMAZOR PSORIASIS AND SEBORRHEIC DERMATITIS (SALICYLIC ACID, ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df95a616-714e-4727-af91-1b993a55b661",
+   "baby": false,
+   "label_date": "20200116",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "38d66ea2-4c95-4a7c-88ca-d74a6d972228",
+   "change": "new",
+   "product": "DIAPER (ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=38d66ea2-4c95-4a7c-88ca-d74a6d972228",
+   "baby": false,
+   "label_date": "20191203",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "59b4a7d3-5805-4d0f-8080-9efc5813dc49",
+   "change": "new",
+   "product": "CANNAFLEX (TROLAMINE SALICYLATE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59b4a7d3-5805-4d0f-8080-9efc5813dc49",
+   "baby": false,
+   "label_date": "20191016",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "7aa261d1-15a2-e0ab-e053-2a91aa0ad2a0",
+   "change": "new",
+   "product": "CANNESSENTIA PAIN RELIEF CREAM (TROLAMINE SALICYLATE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7aa261d1-15a2-e0ab-e053-2a91aa0ad2a0",
+   "baby": false,
+   "label_date": "20191218",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "f1662d23-4de7-48ba-ac25-4536ec8094df",
+   "change": "new",
+   "product": "SPF 30 MINERAL SUN STICK (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1662d23-4de7-48ba-ac25-4536ec8094df",
+   "baby": false,
+   "label_date": "20190823",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4cdf676e-9558-4006-9294-9f13003857d5",
+   "change": "new",
+   "product": "NATURAL MINERAL FORMULA (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4cdf676e-9558-4006-9294-9f13003857d5",
+   "baby": false,
+   "label_date": "20190821",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c5de0eef-532c-4c29-9d92-07af28fddb69",
+   "change": "new",
+   "product": "NATURAL MINERAL FORMULA (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5de0eef-532c-4c29-9d92-07af28fddb69",
+   "baby": false,
+   "label_date": "20190821",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6a63e108-65f7-49b5-8ed1-5016d446ec2e",
+   "change": "new",
+   "product": "MINERAL SUNSCREEN - WATER RESISTANT SPF-50 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a63e108-65f7-49b5-8ed1-5016d446ec2e",
+   "baby": false,
+   "label_date": "20190728",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "820f5504-0320-439a-81dd-b1b4f7e5bd47",
+   "change": "new",
+   "product": "DARK CC CREME BROAD SPECTRUM SPF 15 JAFRA (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=820f5504-0320-439a-81dd-b1b4f7e5bd47",
+   "baby": false,
+   "label_date": "20190617",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "a3732451-ac84-4c56-8e01-3c92c3e857b3",
+   "change": "new",
+   "product": "PREMIUM SUNSCREEN SPF-30 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a3732451-ac84-4c56-8e01-3c92c3e857b3",
+   "baby": false,
+   "label_date": "20190728",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6cc183be-1813-4ec3-9e30-52752323c840",
+   "change": "new",
+   "product": "SUNSCREEN SPF-30 (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6cc183be-1813-4ec3-9e30-52752323c840",
+   "baby": false,
+   "label_date": "20190524",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "52378e92-b386-453d-a4a6-cc1ab49aed97",
+   "change": "new",
+   "product": "MEDIUMCC CREME BROAD SPECTRUM SPF 15 JAFRA (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52378e92-b386-453d-a4a6-cc1ab49aed97",
+   "baby": false,
+   "label_date": "20190528",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "7afc8a56-7ca0-4147-a19e-b7aa2b4b9377",
+   "change": "new",
+   "product": "SUNSCREEN SPF-50 TINTED (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7afc8a56-7ca0-4147-a19e-b7aa2b4b9377",
+   "baby": false,
+   "label_date": "20190524",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "984100a1-d4be-49c2-bce1-0430cbe96f08",
+   "change": "new",
+   "product": "INMOTION PAIN CREME ORIGINAL STRENGTH (MENTHOL, UNSPECIFIED FORM AND TROLAMINE SALICYLATE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=984100a1-d4be-49c2-bce1-0430cbe96f08",
+   "baby": false,
+   "label_date": "20190515",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "779d027c-c975-4aeb-b976-e23955bd3b5f",
+   "change": "new",
+   "product": "INMOTION PAIN CREME ULTRA STRENGTH (MENTHOL, UNSPECIFIED FORM AND TROLAMINE SALICYLATE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=779d027c-c975-4aeb-b976-e23955bd3b5f",
+   "baby": false,
+   "label_date": "20190515",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4a0a8542-4916-4562-829a-0d886f152fa8",
+   "change": "new",
+   "product": "LIGHT CC CREME BROAD SPECTRUM SPF 15 JAFRA (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a0a8542-4916-4562-829a-0d886f152fa8",
+   "baby": false,
+   "label_date": "20190514",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6567d2d9-cc58-4918-9da9-acc113cafc0f",
+   "change": "new",
+   "product": "SUNSCREEN SPF-50 (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6567d2d9-cc58-4918-9da9-acc113cafc0f",
+   "baby": false,
+   "label_date": "20190411",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "39c9c1c3-fde9-42a5-8f76-43af06b6be30",
+   "change": "new",
+   "product": "ALL NATURAL LIP BALM SPF-30 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=39c9c1c3-fde9-42a5-8f76-43af06b6be30",
+   "baby": false,
+   "label_date": "20190411",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6f04df68-d6d4-fc31-e053-2991aa0a779b",
+   "change": "new",
+   "product": "CLEAN (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f04df68-d6d4-fc31-e053-2991aa0a779b",
+   "baby": false,
+   "label_date": "20190329",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6f04e9e1-f592-997d-e053-2a91aa0a81eb",
+   "change": "new",
+   "product": "CLEAN TINTED (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f04e9e1-f592-997d-e053-2a91aa0a81eb",
+   "baby": false,
+   "label_date": "20190329",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "81785daa-1ceb-6291-e053-2991aa0a7ddd",
+   "change": "new",
+   "product": "DR. SMARTH ALOE SOFT VITAMIN ENRICHED (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=81785daa-1ceb-6291-e053-2991aa0a7ddd",
+   "baby": false,
+   "label_date": "20190209",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6f55b142-e726-400a-ab4f-59630b49208f",
+   "change": "new",
+   "product": "NON-NANO SUNSCREEN SPF 40 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f55b142-e726-400a-ab4f-59630b49208f",
+   "baby": false,
+   "label_date": "20190227",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "8eb6bb79-46c0-4cc2-a81a-fb3203b8c97f",
+   "change": "new",
+   "product": "MYOFLEX (TROLAMINE SALICYLATE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8eb6bb79-46c0-4cc2-a81a-fb3203b8c97f",
+   "baby": false,
+   "label_date": "20160615",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "5b5fd17a-255f-c937-e053-2a91aa0a1391",
+   "change": "new",
+   "product": "OLP DIAPER RASH CREAM A AND D (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b5fd17a-255f-c937-e053-2a91aa0a1391",
+   "baby": false,
+   "label_date": "20181126",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c3e0af81-b21a-4c09-8ec4-64d1b658b870",
+   "change": "new",
+   "product": "ZINC OXIDE 20% (ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c3e0af81-b21a-4c09-8ec4-64d1b658b870",
+   "baby": false,
+   "label_date": "20180905",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "76286a04-0343-de77-e053-2991aa0a3f20",
+   "change": "new",
+   "product": "GLINT EN SHIELD ALOE SOFT VITAMIN ENRICHED (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76286a04-0343-de77-e053-2991aa0a3f20",
+   "baby": false,
+   "label_date": "20180918",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "ffa11510-a1f1-4a8f-b751-4f4d90f39b7b",
+   "change": "new",
+   "product": "VILLAGE11FACTORY PINK CALMING SUN BLOCK (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ffa11510-a1f1-4a8f-b751-4f4d90f39b7b",
+   "baby": false,
+   "label_date": "20180807",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "140840db-6676-4488-9358-d25fd4d60e1f",
+   "change": "new",
+   "product": "FLEXPOWER SUN BLOCK (DIMETHICONE) GEL",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=140840db-6676-4488-9358-d25fd4d60e1f",
+   "baby": false,
+   "label_date": "20180829",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "dd95db29-0be7-4b46-8631-62b58bd267c2",
+   "change": "new",
+   "product": "PAIN RELIEVING TOPICAL ANALGESIC (TROLAMINE SALICYLATE 10%) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd95db29-0be7-4b46-8631-62b58bd267c2",
+   "baby": false,
+   "label_date": "20180626",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9bb5ae67-3e38-492e-a0fc-ce8ce0828303",
+   "change": "new",
+   "product": "ARTHRITIS RELIEF (TROLAMINE SALICYLATE 10%) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9bb5ae67-3e38-492e-a0fc-ce8ce0828303",
+   "baby": false,
+   "label_date": "20180709",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "e656c7e7-5de4-4e3c-b714-bec2dd63a852",
+   "change": "new",
+   "product": "MEMBERS MARK DIAPER RASH (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e656c7e7-5de4-4e3c-b714-bec2dd63a852",
+   "baby": false,
+   "label_date": "20180321",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "a72e484d-a911-4870-b923-6650933ea902",
+   "change": "new",
+   "product": "GERIGARD-SKIN PROTECTANT (ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a72e484d-a911-4870-b923-6650933ea902",
+   "baby": false,
+   "label_date": "20180118",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "61e1af5e-d782-a3b6-e053-2a91aa0ad098",
+   "change": "new",
+   "product": "REAL TIME PAIN RELIEF THERAPEUTIC HAND CREAM (TROLAMINE SALICYLATE 10%) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=61e1af5e-d782-a3b6-e053-2a91aa0ad098",
+   "baby": false,
+   "label_date": "20180103",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "44ec8ca9-4110-48f2-b519-3dda84a05ad1",
+   "change": "new",
+   "product": "AMMENS MEDICATED POWDER ORIGINAL (ZINC OXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44ec8ca9-4110-48f2-b519-3dda84a05ad1",
+   "baby": false,
+   "label_date": "20171229",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "89bdf852-9420-4736-b50d-0af55afb6bd3",
+   "change": "new",
+   "product": "EVERYDAY SHEER COVERAGE MEDIUM TINT SPF 20 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89bdf852-9420-4736-b50d-0af55afb6bd3",
+   "baby": false,
+   "label_date": "20171220",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "fc6db9f3-9059-40bb-84bf-69a3c0838bfa",
+   "change": "new",
+   "product": "AMMENS MEDICATED POWDER SHOWER FRESH (ZINC OXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fc6db9f3-9059-40bb-84bf-69a3c0838bfa",
+   "baby": false,
+   "label_date": "20171229",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c70a3f80-84a9-4ce7-88a1-4c50d15d758c",
+   "change": "new",
+   "product": "EVERYDAY SHEER COVERAGE LIGHT TINT SPF 20 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c70a3f80-84a9-4ce7-88a1-4c50d15d758c",
+   "baby": false,
+   "label_date": "20171215",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6050b319-9902-333d-e053-2a91aa0ad1f3",
+   "change": "new",
+   "product": "CALAMINE (CALAMINE 8% AND ZINC OXIDE 8%) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6050b319-9902-333d-e053-2a91aa0ad1f3",
+   "baby": false,
+   "label_date": "20171214",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "a149b716-58f5-4da1-b330-f79fa7596c18",
+   "change": "new",
+   "product": "MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 (ZINC OXIDE AND TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a149b716-58f5-4da1-b330-f79fa7596c18",
+   "baby": false,
+   "label_date": "20171212",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "fc316b19-c1cf-4b5b-9f22-9672b7d0cbff",
+   "change": "new",
+   "product": "PYRATINE XR CREME WITH SUNSCREEN BROAD SPECTRUM SPF30 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fc316b19-c1cf-4b5b-9f22-9672b7d0cbff",
+   "baby": false,
+   "label_date": "20171207",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "526e3b68-4b2d-4fbf-8d7c-de4e59e1ca58",
+   "change": "new",
+   "product": "SHEERZINC SPF 30 TINTED - NUDE (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=526e3b68-4b2d-4fbf-8d7c-de4e59e1ca58",
+   "baby": false,
+   "label_date": "20171128",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "42b5b8e8-33a8-4263-b8ff-f204948cfb37",
+   "change": "new",
+   "product": "BROAD SPECTRUM SPF 30 FOR FACE AND BODY (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42b5b8e8-33a8-4263-b8ff-f204948cfb37",
+   "baby": false,
+   "label_date": "20171204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "511eda83-12d2-4f42-b1ed-6ac95f8de595",
+   "change": "new",
+   "product": "TINTED CLEAR ZINC SOLAR PROTECTION SPF 30 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=511eda83-12d2-4f42-b1ed-6ac95f8de595",
+   "baby": false,
+   "label_date": "20171204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c6cad530-786f-434a-b3e0-a7664a9e76a5",
+   "change": "new",
+   "product": "LIGHT TINT CLEAR ZINC SOLAR PROTECTION SPF 30 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c6cad530-786f-434a-b3e0-a7664a9e76a5",
+   "baby": false,
+   "label_date": "20171204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "0a9834ad-f867-4b37-9e3c-f3a4d388dc4c",
+   "change": "new",
+   "product": "SHEERZINC SPF 30 TINTED - SUNKISSED (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a9834ad-f867-4b37-9e3c-f3a4d388dc4c",
+   "baby": false,
+   "label_date": "20171128",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "517ef618-f5f3-43a5-90cd-a7b6b196bffb",
+   "change": "new",
+   "product": "SHEERZINC SPF 30 TINTED - TAN (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=517ef618-f5f3-43a5-90cd-a7b6b196bffb",
+   "baby": false,
+   "label_date": "20171128",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b3ac69c7-5df7-4f47-a3a7-8461892b4276",
+   "change": "new",
+   "product": "PAIN RELIEF CREAM (TROLAMINE SALICYLATE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3ac69c7-5df7-4f47-a3a7-8461892b4276",
+   "baby": false,
+   "label_date": "20171127",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "a4d15311-9d6f-40d2-b48e-9cbc63ccc6a9",
+   "change": "new",
+   "product": "PNV PRENATAL PLUS MULTIVITAMIN (VITAMIN A ACETATE, .BETA.-CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, CALCIUM CARBONATE, FERROUS FUMARATE, ZINC OXIDE, AND CUPRIC OXIDE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4d15311-9d6f-40d2-b48e-9cbc63ccc6a9",
+   "baby": false,
+   "label_date": "20171023",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "2accc387-0ebd-4c08-b809-8be23679150a",
+   "change": "new",
+   "product": "ASPER-FLEX CREAM (TROLAMINE SALICYLATE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2accc387-0ebd-4c08-b809-8be23679150a",
+   "baby": false,
+   "label_date": "20170911",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "575d6841-9ec8-4133-843f-480620a60df6",
+   "change": "new",
+   "product": "MEMBERS MARK DIAPER RASH (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575d6841-9ec8-4133-843f-480620a60df6",
+   "baby": false,
+   "label_date": "20170808",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "fe115e44-e97d-4cbc-8ec8-ebcae7f9e3f3",
+   "change": "new",
+   "product": "TENA (ZINC OXIDE PROTECTIVE CREAM) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fe115e44-e97d-4cbc-8ec8-ebcae7f9e3f3",
+   "baby": false,
+   "label_date": "20170718",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4b58519d-055d-0b28-e054-00144ff8d46c",
+   "change": "new",
+   "product": "ZINC OXIDE (ZINC OXIDE OINTMENT) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b58519d-055d-0b28-e054-00144ff8d46c",
+   "baby": false,
+   "label_date": "20170322",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4e7798fb-1b01-62e3-e054-00144ff8d46c",
+   "change": "new",
+   "product": "100% PURE YERBA MATE MIST SPF 30 (ZINC OXIDE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e7798fb-1b01-62e3-e054-00144ff8d46c",
+   "baby": false,
+   "label_date": "20170501",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b79fae23-5c70-4956-bfdb-af8da50c30bb",
+   "change": "new",
+   "product": "TRADER JOE S MINERAL SUNSCREEN (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b79fae23-5c70-4956-bfdb-af8da50c30bb",
+   "baby": false,
+   "label_date": "20170225",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "2dd63063-45c1-4029-99ac-0962a27a5ddc",
+   "change": "new",
+   "product": "STUDIO 35 EXTERNAL ANALGESIC MEDICATED BODY (MENTHOL AND ZINC OXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2dd63063-45c1-4029-99ac-0962a27a5ddc",
+   "baby": false,
+   "label_date": "20170208",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "3a87d88e-3cb7-499c-9d04-d172f7f6bde7",
+   "change": "new",
+   "product": "PREMIUM NATURAL SUNSCREEN BROAD SPECTRUM SPF 30 BABY BUM (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a87d88e-3cb7-499c-9d04-d172f7f6bde7",
+   "baby": true,
+   "label_date": "20170105",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "a11c940e-5956-4509-abc4-af1a815a2e65",
+   "change": "new",
+   "product": "SUN NATURAL SUNSCREEN (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a11c940e-5956-4509-abc4-af1a815a2e65",
+   "baby": false,
+   "label_date": "20161118",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "d038eb6f-ab84-4502-aa15-0cf21a9a8f0c",
+   "change": "new",
+   "product": "GOOD NEIGHBOR PHARMACY DIAPER RASH (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d038eb6f-ab84-4502-aa15-0cf21a9a8f0c",
+   "baby": false,
+   "label_date": "20161006",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "52cc4bd5-427f-4a5e-8da0-a4cca3258899",
+   "change": "new",
+   "product": "NICAPRIN (NICOTINAMIDE, FOLIC ACID, PYRIDOXINE HYDROCHLORIDE, CUPRIC OXIDE, ZINC OXIDE, AND SOLIPRIN) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52cc4bd5-427f-4a5e-8da0-a4cca3258899",
+   "baby": false,
+   "label_date": "20160923",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4f639436-d06f-45fb-9946-703d61e357b5",
+   "change": "new",
+   "product": "SPF 30 MINERAL SUNSCREEN FACE NECK (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f639436-d06f-45fb-9946-703d61e357b5",
+   "baby": false,
+   "label_date": "20160711",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "29b494f7-ec52-68cc-e054-00144ff8d46c",
+   "change": "new",
+   "product": "NATURAL SUNSCREEN (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=29b494f7-ec52-68cc-e054-00144ff8d46c",
+   "baby": false,
+   "label_date": "20160512",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "77e777c1-748b-a48d-e053-2991aa0ac280",
+   "change": "new",
+   "product": "SPF 25 FINISHING POWDER (ZINC OXIDE, TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77e777c1-748b-a48d-e053-2991aa0ac280",
+   "baby": false,
+   "label_date": "20181012",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9286959d-7c28-48bf-a7a4-594b8fe2c8da",
+   "change": "new",
+   "product": "NATURAL SUNSCREEN (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9286959d-7c28-48bf-a7a4-594b8fe2c8da",
+   "baby": false,
+   "label_date": "20160405",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b05b40a9-f02e-43a3-9546-81e14df86972",
+   "change": "new",
+   "product": "DAILY FACE BROAD SPECTRUM (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b05b40a9-f02e-43a3-9546-81e14df86972",
+   "baby": false,
+   "label_date": "20160404",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "29ddb0ac-a375-1a20-e054-00144ff8d46c",
+   "change": "new",
+   "product": "TONYMOLY MY SUNNY WATERY SUN GEL (ETHYLHEXYL METHOXYCINNAMATE) GEL",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=29ddb0ac-a375-1a20-e054-00144ff8d46c",
+   "baby": false,
+   "label_date": "20160204",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6366ccc1-7a81-4d38-8886-63d38509ffff",
+   "change": "new",
+   "product": "GOODSENSE DIAPER RASH (ZINC OXIDE) PASTE",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6366ccc1-7a81-4d38-8886-63d38509ffff",
+   "baby": false,
+   "label_date": "20160105",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "e554e0db-5f15-46d4-be02-dba3ba845063",
+   "change": "new",
+   "product": "VIRT-NATE DHA (ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL, D-, THIAMINE MONONITRATE, RIBOFLAVIN, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, FERROUS FUMARATE, MAGNESIUM OXIDE, ZINC OXIDE, CUPRIC SULFATE, AND OMEGA-3 FATTY ACIDS) CAPSULE",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e554e0db-5f15-46d4-be02-dba3ba845063",
+   "baby": false,
+   "label_date": "20160121",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "48369e49-14c5-439d-a290-4686cdce2d31",
+   "change": "new",
+   "product": "THRIVITE 19 (.BETA.-CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, CALCIUM PANTOTHENATE, CALCIUM CARBONATE, FERROUS FUMARATE, ZINC OXIDE AND DOCUSATE SODIUM) TABLET, COATED",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48369e49-14c5-439d-a290-4686cdce2d31",
+   "baby": false,
+   "label_date": "20150801",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "0fb20544-54bd-4f7a-8372-8a4dd1d79d21",
+   "change": "new",
+   "product": "CALADROX (MENTHOL, ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0fb20544-54bd-4f7a-8372-8a4dd1d79d21",
+   "baby": false,
+   "label_date": "20150929",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "cff1d197-23f0-457d-aa14-c84a57f07861",
+   "change": "new",
+   "product": "SCARSCREEN (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cff1d197-23f0-457d-aa14-c84a57f07861",
+   "baby": false,
+   "label_date": "20150915",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6dc568bf-88b7-42e1-bdd0-835ec65aaa9a",
+   "change": "new",
+   "product": "SUNCLEAR (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6dc568bf-88b7-42e1-bdd0-835ec65aaa9a",
+   "baby": false,
+   "label_date": "20150826",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "f0f94ab7-7466-4434-81da-1a89a7755cf1",
+   "change": "new",
+   "product": "ARTHRITIS WITH ALOE CVS (TROLAMINE SALICYLATE 10%) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f0f94ab7-7466-4434-81da-1a89a7755cf1",
+   "baby": false,
+   "label_date": "20150417",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "5a8a9fda-6b60-4087-81a2-45e1ef5d1b1e",
+   "change": "new",
+   "product": "DG BABY DIAPER RASH (ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a8a9fda-6b60-4087-81a2-45e1ef5d1b1e",
+   "baby": false,
+   "label_date": "20150702",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "781433aa-8141-47cc-aa51-14364cce184c",
+   "change": "new",
+   "product": "WHY DIAPER RASH PADS (ZINC OXIDE) CLOTH",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=781433aa-8141-47cc-aa51-14364cce184c",
+   "baby": false,
+   "label_date": "20150123",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "a2a41914-c98b-4b35-9d12-6fb0041c7e1d",
+   "change": "new",
+   "product": "BABY DIAPER (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a2a41914-c98b-4b35-9d12-6fb0041c7e1d",
+   "baby": false,
+   "label_date": "20141115",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "8e32f17b-0e1a-4165-a20c-44d99516b235",
+   "change": "new",
+   "product": "DR. OBERON DIAPER RASH BABY CREAM (ZINC OXIDE, DIMETHICONE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8e32f17b-0e1a-4165-a20c-44d99516b235",
+   "baby": false,
+   "label_date": "20140626",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "2d69b75e-55e0-49f5-8646-8befcc941b0a",
+   "change": "new",
+   "product": "MAKESENSE (PHENYLEPHRINE HYDROCHLORIDE ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d69b75e-55e0-49f5-8646-8befcc941b0a",
+   "baby": false,
+   "label_date": "20140811",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "34d3382c-8ccd-4d1c-805d-223b4ca05d04",
+   "change": "new",
+   "product": "PRE-TABS DHA PRENATAL MULTI-VITAMIN/MINERAL SUPPLEMENT WITH DHA/EPA (SODIUM ASCORBATE, CHOLECALCIFEROL, DI-ALPHA-TOCOPHERYL ACETATE, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HCL, FOLIC ACID, CYANOCOBALAMIN, CALCIUM FORMATE, CALCIUM CARBONATE, FERROUS (II) BIS-GLYCINATE CHELATE, POTASSIUM IODIDE, ZINC OXIDE, CHOLINE BITARTRATE, WITH DOCONEXENT AND ICOSAPENT) KIT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=34d3382c-8ccd-4d1c-805d-223b4ca05d04",
+   "baby": false,
+   "label_date": "20130915",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4bbc43bd-bb6b-4799-9a40-e6505f40ebc2",
+   "change": "new",
+   "product": "CVS PHARMACY RASH CREAM (ZINC OXIDE, PETROLATUM) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4bbc43bd-bb6b-4799-9a40-e6505f40ebc2",
+   "baby": false,
+   "label_date": "20140520",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4443398b-4073-448e-e054-00144ff8d46c",
+   "change": "new",
+   "product": "YOUNIQUE ROYALTY HYDRATING DAY CREAM SPF 20 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION YOUNIQUE ROYALTY RENEWING DAY CREAM SPF 20 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4443398b-4073-448e-e054-00144ff8d46c",
+   "baby": false,
+   "label_date": "20171113",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "03319707-8c1d-408c-b173-3c384ef1271c",
+   "change": "new",
+   "product": "ATTENDS DAILY BARRIER (DIMETHICONE, ZINC OXIDE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03319707-8c1d-408c-b173-3c384ef1271c",
+   "baby": false,
+   "label_date": "20140306",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "7252a3d1-d239-42bb-9fba-4ed6f27e1bb0",
+   "change": "new",
+   "product": "ATTENDS ADVANCED BARRIER (ZINC OXIDE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7252a3d1-d239-42bb-9fba-4ed6f27e1bb0",
+   "baby": false,
+   "label_date": "20140306",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b5b1f3a2-7fba-4c2e-aee9-a0bf28ae1364",
+   "change": "new",
+   "product": "ALCIS DAILY RELIEF PAIN RELIEF (TROLAMINE SALICYLATE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5b1f3a2-7fba-4c2e-aee9-a0bf28ae1364",
+   "baby": false,
+   "label_date": "20130628",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b0addefd-148c-423b-bcff-332c255a2d90",
+   "change": "new",
+   "product": "HEALTHY MAMABE WELL ROUNDED BE WELL ROUNDED (.BETA.-CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE, RIBOFLAVIN, NIACIN, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, METHYLCOBALAMIN, CALCIUM CARBONATE, FERROUS BISGLYCINATE, ZINC OXIDE, COPPER, CALCIUM PANTOTHENATE,MAGNESIUM OXIDE ) TABLET, FILM COATED",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0addefd-148c-423b-bcff-332c255a2d90",
+   "baby": false,
+   "label_date": "20130709",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "5466ef79-a36c-465d-a4b8-a1c01854fe29",
+   "change": "new",
+   "product": "MEDPRIDE EN SHIELD (ZINC OXIDE DIMETHICONE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5466ef79-a36c-465d-a4b8-a1c01854fe29",
+   "baby": false,
+   "label_date": "20130603",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "393eba67-1314-4495-83f5-438e91088aba",
+   "change": "new",
+   "product": "AMMENS MEDICATED POWDER SHOWER FRESH FORMULA (ZINC OXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=393eba67-1314-4495-83f5-438e91088aba",
+   "baby": false,
+   "label_date": "20130521",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "8e264662-b5c8-4e64-a02b-c4f3e01564fb",
+   "change": "new",
+   "product": "AMMENS MEDICATED POWDER ORIGINAL (ZINC OXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8e264662-b5c8-4e64-a02b-c4f3e01564fb",
+   "baby": false,
+   "label_date": "20130514",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "595fb3a3-36f8-48f8-9dfd-e1f70376b66c",
+   "change": "new",
+   "product": "BODY (MENTHOL, ZINC OXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=595fb3a3-36f8-48f8-9dfd-e1f70376b66c",
+   "baby": false,
+   "label_date": "20130318",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "ed9a74f0-6a38-49a2-93c0-44bf61a9e836",
+   "change": "new",
+   "product": "FORMULA 21 DIAPER RASH (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ed9a74f0-6a38-49a2-93c0-44bf61a9e836",
+   "baby": false,
+   "label_date": "20120124",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4b5b4802-8f68-4686-851e-c28d5f3c3a4a",
+   "change": "new",
+   "product": "RED ORANGE JELLY BB SPF20 PA PLUS PLUS NO.1 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b5b4802-8f68-4686-851e-c28d5f3c3a4a",
+   "baby": false,
+   "label_date": "20111115",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6774a54e-5328-44a0-8402-e859c93716c2",
+   "change": "new",
+   "product": "MISA CHO BO YANG BB SPF30 PA PLUS PLUS NO.1 NATURAL BEIGE (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6774a54e-5328-44a0-8402-e859c93716c2",
+   "baby": false,
+   "label_date": "20111120",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "f1759206-ac75-4399-8870-07a24a21db0b",
+   "change": "new",
+   "product": "RED ORANGE JELLY BB SPF20 PA PLUS PLUS NO.2 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1759206-ac75-4399-8870-07a24a21db0b",
+   "baby": false,
+   "label_date": "20111116",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "356f526b-d402-41e6-a8b5-339b8c610dd1",
+   "change": "new",
+   "product": "ESOPINIO FRESH AND CLEAR FOUNDATION SPF20 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=356f526b-d402-41e6-a8b5-339b8c610dd1",
+   "baby": false,
+   "label_date": "20110829",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "8f9b2c24-21ee-43fd-a0e0-0cb1d0391400",
+   "change": "new",
+   "product": "RED ORANGE SUN SPF 45 PA PLUS PLUS PLUS (TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f9b2c24-21ee-43fd-a0e0-0cb1d0391400",
+   "baby": false,
+   "label_date": "20111009",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b1313caa-af81-4823-a019-8894fd0af52b",
+   "change": "new",
+   "product": "ESOPINIO SUN SHIELD PLUS SPF 35 PA (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b1313caa-af81-4823-a019-8894fd0af52b",
+   "baby": false,
+   "label_date": "20110828",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "46bffc62-3cd5-4493-880c-037feb7b346c",
+   "change": "new",
+   "product": "KENDALL SOOTHING (ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46bffc62-3cd5-4493-880c-037feb7b346c",
+   "baby": false,
+   "label_date": "20110427",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "e1cfadb7-7370-4735-a87a-071c6eedd87a",
+   "change": "new",
+   "product": "ARTHRICREAM WITH ALOE (TROLAMINE SALICYLATE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e1cfadb7-7370-4735-a87a-071c6eedd87a",
+   "baby": false,
+   "label_date": "20110209",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "c93e39fc-a3cc-49ab-9598-792747f09a6d",
+   "change": "new",
+   "product": "CARGO TINTED MOISTURIZER SPF 20 (TITANIUM DIOXIDE AND ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c93e39fc-a3cc-49ab-9598-792747f09a6d",
+   "baby": false,
+   "label_date": "20110415",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "eaf411f4-4332-4868-b10c-b084b555c3b8",
+   "change": "new",
+   "product": "PUTTO ATO SECRET UV FACE SPF 6 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eaf411f4-4332-4868-b10c-b084b555c3b8",
+   "baby": false,
+   "label_date": "20110217",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "3d7c72b7-35e1-4029-9e1a-758743e23573",
+   "change": "new",
+   "product": "DERMAQUEST TM SKIN THERAPY, BREATHABLE COVERAGE TM MINERAL FOUNDATION SPF-30, DERMAMINERALS TM (ZINC OXIDE AND TITANIUM DIOXIDE ) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3d7c72b7-35e1-4029-9e1a-758743e23573",
+   "baby": false,
+   "label_date": "20110223",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "20cfcafb-34a8-4632-86b7-4961623cfc1f",
+   "change": "new",
+   "product": "PRENATAL PLUS (VITAMIN A ACETATE, BETA CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, CALCIUM CARBONATE, FERROUS FUMARATE, ZINC OXIDE, CUPRIC OXIDE) TABLET, FILM COATED",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20cfcafb-34a8-4632-86b7-4961623cfc1f",
+   "baby": false,
+   "label_date": "20100908",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "71c0cfcf-e6b9-47ae-8039-391702a0ab68",
+   "change": "new",
+   "product": "BAL-CARE DHA ESSENTIAL (BETA CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, CALCIUM CARBONATE, SODIUM FEREDETATE, MAGNESIUM OXIDE, ZINC OXIDE, CUPRIC OXIDE, IRON SUCROSE, IODINE, OMEGA 3 FATTY ACIDS ) KIT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=71c0cfcf-e6b9-47ae-8039-391702a0ab68",
+   "baby": false,
+   "label_date": "20120501",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b2f0ca0d-76e9-45f0-bf60-e9781c227676",
+   "change": "new",
+   "product": "BAL-CARE DHA (BETA CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE MONONITRATE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, CALCIUM CARBONATE, SODIUM FEREDETATE, MAGNESIUM OXIDE, ZINC OXIDE, CUPRIC OXIDE, IRON SUCROSE, IODINE, OMEGA 3 FATTY ACIDS ) KIT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b2f0ca0d-76e9-45f0-bf60-e9781c227676",
+   "baby": false,
+   "label_date": "20120501",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "03382d4f-0241-43c6-b6b6-b6c6ccd05b50",
+   "change": "new",
+   "product": "HYDRO SPLASH BB SPF20 PA (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03382d4f-0241-43c6-b6b6-b6c6ccd05b50",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "0a9474a9-c088-4e06-90af-f044c6493e7f",
+   "change": "new",
+   "product": "PHYTOGENIC INFINITE POWDER FOUNDATION SPF20 NB21 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a9474a9-c088-4e06-90af-f044c6493e7f",
+   "baby": false,
+   "label_date": "20100929",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "12409ef5-8b25-41e2-b901-471829e8dab3",
+   "change": "new",
+   "product": "PHYTOGENIC INFINITE POWDER FOUNDATION SPF20 NB23 (TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12409ef5-8b25-41e2-b901-471829e8dab3",
+   "baby": false,
+   "label_date": "20100929",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "1c343d1f-d04d-4cf8-a8f1-94a9cacef93b",
+   "change": "new",
+   "product": "CHARMZONE NATURAL SKINADE BB CREAM (SPF20 PA) (TITANIUM DIOXIDE, ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c343d1f-d04d-4cf8-a8f1-94a9cacef93b",
+   "baby": false,
+   "label_date": "20091109",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "1c89a96f-9013-49c8-8f79-d53d822ed24c",
+   "change": "new",
+   "product": "THE FLOWER UV INTENSE PACT SPF50 PA NB21 (ZINC OXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c89a96f-9013-49c8-8f79-d53d822ed24c",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "272461ba-cd0f-43c4-9cf0-732b199cedaa",
+   "change": "new",
+   "product": "DR YOUNG 2P BRIGHTENING UV SUN BLOCK SPF50 PA (ARBUTIN) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=272461ba-cd0f-43c4-9cf0-732b199cedaa",
+   "baby": false,
+   "label_date": "20091001",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "41e058ac-2230-4047-8f6e-3054167a881b",
+   "change": "new",
+   "product": "NATURAL SUN AQ POWER LONG LASTING SUN SPF45 PA (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41e058ac-2230-4047-8f6e-3054167a881b",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "269986f7-4a7d-4cbb-8a8b-8502012fcbf0",
+   "change": "new",
+   "product": "PHYTOGENIC INFINITE POWDER FOUNDATION SPF20 NB25 (TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=269986f7-4a7d-4cbb-8a8b-8502012fcbf0",
+   "baby": false,
+   "label_date": "20100929",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "5f0fbe86-ae3b-4790-b4ce-b9b8b975708f",
+   "change": "new",
+   "product": "SKIN 79 THE PRESTIGE BEBLESH BALM (5G) (ZINC OXIDE, TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f0fbe86-ae3b-4790-b4ce-b9b8b975708f",
+   "baby": false,
+   "label_date": "20091109",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "44e75905-613c-44b9-b8cc-06e7877a0a24",
+   "change": "new",
+   "product": "NEO CLASSIC HOMME BB SPF20 PA (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44e75905-613c-44b9-b8cc-06e7877a0a24",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "49948094-0050-46a0-8848-967f81d5b797",
+   "change": "new",
+   "product": "PHYTOGENIC INFINITE FOUNDATION SPF20 NB25 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=49948094-0050-46a0-8848-967f81d5b797",
+   "baby": false,
+   "label_date": "20100929",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "582f1761-76c0-435d-80d5-0cbff289f649",
+   "change": "new",
+   "product": "FLEBEAUTE COLLAGENIC TWO WAY CAKE SPF17 PA NB21 (TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=582f1761-76c0-435d-80d5-0cbff289f649",
+   "baby": false,
+   "label_date": "20100713",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "5eda7827-e39a-49ed-a539-1c8dda204263",
+   "change": "new",
+   "product": "PHYTOGENIC INFINITE POWDER FOUNDATION SPF20 RB23 (TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eda7827-e39a-49ed-a539-1c8dda204263",
+   "baby": false,
+   "label_date": "20100929",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "83034652-aaf9-4183-9296-8a38261dea42",
+   "change": "new",
+   "product": "SKIN 79 SUPER PLUS BEBLESH BALM SPF25 PA (40G) (TITANIUM DIOXIDE, ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83034652-aaf9-4183-9296-8a38261dea42",
+   "baby": false,
+   "label_date": "20091109",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "60113467-4315-4f4f-acbf-eddcf5f9fd6f",
+   "change": "new",
+   "product": "FLEBEAUTE COLLAGENIC TWO WAY CAKE SPF17 PA NB23 (TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=60113467-4315-4f4f-acbf-eddcf5f9fd6f",
+   "baby": false,
+   "label_date": "20100713",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "87360135-8b4e-4bf8-b0c2-ccbe77df8780",
+   "change": "new",
+   "product": "LYCOGEL COVER AND RECOVERY - BREATHABLE CAMOUFLAGE - SPF 30 WITH LYCO COMPLEX (TITANIUM DIOXIDE AND ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=87360135-8b4e-4bf8-b0c2-ccbe77df8780",
+   "baby": false,
+   "label_date": "20100205",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "66461eaf-7755-490c-81a2-1e793c124309",
+   "change": "new",
+   "product": "MISSHA M VITA BB SPF20 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=66461eaf-7755-490c-81a2-1e793c124309",
+   "baby": false,
+   "label_date": "20100518",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "6dbfe4b8-db7a-489b-ae51-21ceb9d4aa50",
+   "change": "new",
+   "product": "NBB (ZINC OXIDE, ZINC GLUCONATE, AND SAMBUCUS NIGRA FLOWERING TOP) SPRAY, METERED",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6dbfe4b8-db7a-489b-ae51-21ceb9d4aa50",
+   "baby": false,
+   "label_date": "20100524",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "753605c9-5a25-4062-958e-f76cdae5ae1a",
+   "change": "new",
+   "product": "PHYTOGENIC INFINITE MAKEUP BASE SPF15 GREEN (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=753605c9-5a25-4062-958e-f76cdae5ae1a",
+   "baby": false,
+   "label_date": "20100929",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "886c2091-8dad-429f-b657-d521c6663890",
+   "change": "new",
+   "product": "FLEBEAUTE COLLAGENIC FOUNDATION SPF20 PA NB23 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=886c2091-8dad-429f-b657-d521c6663890",
+   "baby": false,
+   "label_date": "20100712",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "8b076b59-e90b-4f78-851d-b13f407fc3af",
+   "change": "new",
+   "product": "MYUNG HAN MI IN DO FOUNDATION SPF20 PA NB21 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b076b59-e90b-4f78-851d-b13f407fc3af",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "945b9c6c-18b8-41ed-bc63-7052be219b38",
+   "change": "new",
+   "product": "MYUNG HAN MI IN DO FOUNDATION SPF20 PA NB23 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=945b9c6c-18b8-41ed-bc63-7052be219b38",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b66b24bb-3961-45ed-88d2-4e81c2ff7ff7",
+   "change": "new",
+   "product": "LYCOGEL COVER AND RECOVERY - BREATHABLE CONCEALER - SPF 30 WITH LYCO COMPLEX (TITANIUM DIOXIDE AND ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b66b24bb-3961-45ed-88d2-4e81c2ff7ff7",
+   "baby": false,
+   "label_date": "20100208",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "cd4385d1-ffb0-477f-8536-af19cbb3568b",
+   "change": "new",
+   "product": "SKIN 79 THE PRESTIGE BEBLESH BALM (40G) (ZINC OXIDE, TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd4385d1-ffb0-477f-8536-af19cbb3568b",
+   "baby": false,
+   "label_date": "20091109",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9842c485-9f9e-463a-b7ae-9c3ede3c84ba",
+   "change": "new",
+   "product": "NATURAL SUN AQ SUPER PERFECT SUN SPF50 PA (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9842c485-9f9e-463a-b7ae-9c3ede3c84ba",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "9a8e366a-7a08-4e79-901e-1ce40a436f0d",
+   "change": "new",
+   "product": "MYUNG HAN MI IN DO MAKEUP BASE SPF20 PA 01 GREEN (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a8e366a-7a08-4e79-901e-1ce40a436f0d",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "a1aa72d9-3733-43b8-a810-508f0eb78bf9",
+   "change": "new",
+   "product": "PHYTOGENIC INFINITE FOUNDATION SPF20 NB23 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a1aa72d9-3733-43b8-a810-508f0eb78bf9",
+   "baby": false,
+   "label_date": "20100929",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "a22ae755-72ee-47f5-bd22-b5e15c663d27",
+   "change": "new",
+   "product": "FLEBEAUTE COLLAGENIC TWO WAY CAKE SPF17 PA NB25 (TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a22ae755-72ee-47f5-bd22-b5e15c663d27",
+   "baby": false,
+   "label_date": "20100713",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "d4ee37c1-e1cf-43a9-b7da-f4606f29df30",
+   "change": "new",
+   "product": "MYUNG HAN MI IN DO TWO WAY CAKE SPF35 PA NB23 (TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4ee37c1-e1cf-43a9-b7da-f4606f29df30",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "d00bffb6-a6db-410c-bc48-59125e11b8d8",
+   "change": "new",
+   "product": "THE FLOWER UV INTENSE PACT SPF50 PA NB23 (ZINC OXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d00bffb6-a6db-410c-bc48-59125e11b8d8",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "d5d1cd63-dab1-42b7-8d49-dc254ba6784c",
+   "change": "new",
+   "product": "THE SKIN EXTRA BB SPF20 PA (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5d1cd63-dab1-42b7-8d49-dc254ba6784c",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "d81ecc9d-2dfc-4778-8219-d0a697be371c",
+   "change": "new",
+   "product": "CHARMZONE NATURAL SKINADE BB CREAM (SPF20 PA) (TITANIUM DIOXIDE ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d81ecc9d-2dfc-4778-8219-d0a697be371c",
+   "baby": false,
+   "label_date": "20091109",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "de60727b-a136-4043-848d-60e7c48366ca",
+   "change": "new",
+   "product": "MYUNG HAN MI IN DO RECOVERY BB SPF25 PA (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de60727b-a136-4043-848d-60e7c48366ca",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "69a7511b-2d28-43aa-8e7a-7214d1f2f3ab",
+   "change": "new",
+   "product": "SUPERNATURAL SUPERBEAUTIFUL MAKEUP SPF 15 (TITANIUM DIOXIDE AND ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=69a7511b-2d28-43aa-8e7a-7214d1f2f3ab",
+   "baby": false,
+   "label_date": "20100123",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "df89f414-d593-443e-8905-cbfa573255f8",
+   "change": "new",
+   "product": "MYUNG HAN MI IN DO TWO WAY CAKE SPF35 PA NB21 (TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df89f414-d593-443e-8905-cbfa573255f8",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "f9e48ab7-6d60-41a0-94c6-f5c25ce971cc",
+   "change": "new",
+   "product": "NATURAL SUN AQ SUPER WHITE SUN SPF50 PA (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9e48ab7-6d60-41a0-94c6-f5c25ce971cc",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "5dd1cc8b-d76c-4251-93ab-90ce7da302d1",
+   "change": "new",
+   "product": "FLEBEAUTE COLLAGENIC MAKE UP BASE SPF20 PA 01GREEN (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5dd1cc8b-d76c-4251-93ab-90ce7da302d1",
+   "baby": false,
+   "label_date": "20100713",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "7ea51e8f-2b84-4fad-9d0f-d224e378fdde",
+   "change": "new",
+   "product": "MISSHA M SIGNATURE RADIANCE FOUNDATION SPF20 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7ea51e8f-2b84-4fad-9d0f-d224e378fdde",
+   "baby": false,
+   "label_date": "20100519",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "86a926e6-765f-4121-a716-90603987783e",
+   "change": "new",
+   "product": "MISSHA M PERFECT COVER BB SPF42 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=86a926e6-765f-4121-a716-90603987783e",
+   "baby": false,
+   "label_date": "20100518",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "95995345-b53e-495f-a888-016c5928a80d",
+   "change": "new",
+   "product": "FLEBEAUTE COLLAGENIC FOUNDATION SPF20 PA NB21 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=95995345-b53e-495f-a888-016c5928a80d",
+   "baby": false,
+   "label_date": "20100712",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "aff0f6e9-6d9f-4b78-a33b-ff8aa4cf0f79",
+   "change": "new",
+   "product": "PHYTOGENIC INFINITE MAKEUP BASE SPF15 PURPLE (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aff0f6e9-6d9f-4b78-a33b-ff8aa4cf0f79",
+   "baby": false,
+   "label_date": "20100930",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b86f1354-600d-426a-8c00-3114bdbc497e",
+   "change": "new",
+   "product": "FLEBEAUTE COLLAGENIC SKIN COVER SPF20 PA NB21 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b86f1354-600d-426a-8c00-3114bdbc497e",
+   "baby": false,
+   "label_date": "20100714",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "bb66faeb-20c4-4ea8-a05b-4f9be8605475",
+   "change": "new",
+   "product": "FLEBEAUTE COLLAGENIC SKIN COVER SPF20 PA NB23 (TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb66faeb-20c4-4ea8-a05b-4f9be8605475",
+   "baby": false,
+   "label_date": "20100713",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "fb37c4f5-2319-4577-a6b0-c6782b4f9c2f",
+   "change": "new",
+   "product": "NWC21 NATURAL SUN PROTECTOR SPF50 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fb37c4f5-2319-4577-a6b0-c6782b4f9c2f",
+   "baby": false,
+   "label_date": "20100901",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "57cd626b-4b6f-4059-a8e2-02b0f059fadb",
+   "change": "new",
+   "product": "ARSAINTE ECO THERAPY SUPER REPAIR SUN SPF45 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57cd626b-4b6f-4059-a8e2-02b0f059fadb",
+   "baby": false,
+   "label_date": "20100712",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "65c71c1d-f846-4162-80a2-0e76bc1100bc",
+   "change": "new",
+   "product": "PHYTOGENIC INFINITE FOUNDATION SPF20 NB21 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65c71c1d-f846-4162-80a2-0e76bc1100bc",
+   "baby": false,
+   "label_date": "20100927",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "98d10756-e523-4ce7-b076-20c08271e4bf",
+   "change": "new",
+   "product": "ARSAINTE ECO THERAPY SUPER REPAIR BB SPF20 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98d10756-e523-4ce7-b076-20c08271e4bf",
+   "baby": false,
+   "label_date": "20100712",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "7a7c0711-3320-43e9-8266-604c0e5e4525",
+   "change": "new",
+   "product": "MISSHA M WATERY B.B SPF 27 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a7c0711-3320-43e9-8266-604c0e5e4525",
+   "baby": false,
+   "label_date": "20100506",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "b13c17b5-b99f-43b0-9b4d-ac2cfd06c443",
+   "change": "new",
+   "product": "MISSHA M SHINY BB SPF27 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b13c17b5-b99f-43b0-9b4d-ac2cfd06c443",
+   "baby": false,
+   "label_date": "20100520",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "98353060-b0c1-4828-a621-77cbf8669a08",
+   "change": "new",
+   "product": "QUICK AND CLEAN OIL FREE SUN SPF35 PA (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98353060-b0c1-4828-a621-77cbf8669a08",
+   "baby": false,
+   "label_date": "20100712",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "8f9e3f16-a967-4143-9f1b-2c0d704a3c75",
+   "change": "new",
+   "product": "NWC21 NATURAL SUN PROTECTOR SPF35 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f9e3f16-a967-4143-9f1b-2c0d704a3c75",
+   "baby": false,
+   "label_date": "20100901",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "1b4ce6a8-51ab-448e-b63f-ea72a8e02a08",
+   "change": "new",
+   "product": "SUPER BB ANTI WRINKLE AND SUN PROTECTION SPF36 (TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b4ce6a8-51ab-448e-b63f-ea72a8e02a08",
+   "baby": false,
+   "label_date": "20100520",
    "found_by": "title_enumeration"
   }
  ]

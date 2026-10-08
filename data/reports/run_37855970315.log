@@ -1,0 +1,22 @@
+[A2] enumerating 159373 SPLs in 1594 pages
+[A2] pages read 1594/1594; missing []
+[A2] listed 159373 SPLs; 13880 sunscreen-titled; 843 not found by UNII search
+[B] unique setids: 14168 (13325 from UNII search, 843 added by title enumeration)
+    processed 1000/14168
+    processed 2000/14168
+    processed 3000/14168
+    processed 4000/14168
+    processed 5000/14168
+    processed 6000/14168
+    processed 7000/14168
+    processed 8000/14168
+    processed 9000/14168
+    processed 10000/14168
+    processed 11000/14168
+    processed 12000/14168
+    processed 13000/14168
+    processed 14000/14168
+[F] master → output/tinysafe_dailymed_v2_master.json (14168; 843 from title enumeration)
+[F] mineral sunscreen → output/tinysafe_dailymed_v2_mineral_sun.json (3876)
+inactive source: {'spl_xml': 13917, 'openfda': 153, 'empty': 98}
+inactive MISSING (empty): 98 (1%)

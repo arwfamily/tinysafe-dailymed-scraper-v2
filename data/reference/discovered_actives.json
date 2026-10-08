@@ -1,6 +1,6 @@
 {
  "built_on": "2026-10-08",
- "products_examined": 13917,
+ "products_examined": 14168,
  "seeded_uniis": 23,
  "how_to_promote": "add the NAME to UV_FILTERS in scripts/resolve_uniis.py; the next run resolves it from DailyMed. Never paste the UNII by hand — let the resolver confirm it.",
  "candidates": [
@@ -108,7 +108,7 @@
     "6f666277-c4c0-45ce-a478-9db2f21461a6",
     "7eee940a-96c6-4d37-9991-fa84b1b4f02b",
     "22a9f2ae-4035-4ede-b324-771da0551444",
-    "7711e9f8-dedd-420c-bc6a-b940005f9899"
+    "1d5d54b7-3549-432b-a47d-b967ce7b5174"
    ]
   },
   {
@@ -168,8 +168,8 @@
     "19402859-2553-b06e-e063-6294a90ae4a0",
     "173a050f-1792-0468-e063-6294a90a264c",
     "17246ea4-733d-35e5-e063-6394a90a316f",
-    "148d43f8-68e0-eb89-e063-6394a90adce0",
-    "14508f1c-bedf-c367-e063-6294a90a1c7c"
+    "14508f1c-bedf-c367-e063-6294a90a1c7c",
+    "148d43f8-68e0-eb89-e063-6394a90adce0"
    ]
   },
   {
