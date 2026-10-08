@@ -241,6 +241,39 @@ def boosters_in(r):
     return [b[0] for b in BOOSTERS if re.search(b[1], t)]
 
 
+# Preservatives that EU law no longer allows in cosmetics like these (in the EU
+# a sunscreen is a cosmetic: Regulation (EC) 1223/2009, recital 7).
+EU_BANNED = [
+    ("isobutylparaben", r"ISOBUTYL ?PARABEN",
+     "Banned from all cosmetics in the EU. Products containing it could no longer be made available on the EU market from July 30, 2015.",
+     "Commission Regulation (EU) No 358/2014", "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0358"),
+    ("methylisothiazolinone", r"(?<!CHLORO)METHYLISOTHIAZOLINONE",
+     "Banned from leave-on cosmetics in the EU. Leave-on products containing it could no longer be made available on the EU market from February 12, 2017.",
+     "Commission Regulation (EU) 2016/1198", "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R1198"),
+]
+EU_COSMETIC_SOURCE = {"title": "Regulation (EC) No 1223/2009 on cosmetic products, recital 7 (sunbathing products)",
+                      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"}
+FRAGRANCE = re.compile(r"\bFRAGRANCE\b|\bPARFUM\b|\bPERFUME\b")
+AAD_FRAGRANCE = {"title": "How can I find eczema friendly products? — American Academy of Dermatology",
+                 "url": "https://www.aad.org/public/diseases/eczema/childhood/triggers/friendly-products",
+                 "checked": "2026-10-08"}
+
+
+def ingredient_items(r):
+    filed = [(i.get("name") if isinstance(i, dict) else str(i)) or "" for i in r.get("inactive_ingredients") or []]
+    return filed, list(r.get("printed_inactives") or [])
+
+
+def where_listed(r, pat):
+    filed, printed = ingredient_items(r)
+    out = []
+    if any(re.search(pat, x.upper()) for x in filed):
+        out.append("FDA filing")
+    if any(re.search(pat, x.upper()) for x in printed):
+        out.append("printed label")
+    return out
+
+
 def main():
     review, snapshot, forms, recs, include = load()
     src = source(review, snapshot)
@@ -424,6 +457,66 @@ def main():
             "lists_used": "inactive ingredients as filed with the FDA plus the printed Drug Facts ingredient list"},
         "caveat": CAVEAT, "site_source": src,
         "method": "claims/registry_stats.py (BOOSTERS, full_ingredient_text)", "verified_date": snapshot})
+
+    # EU-banned preservatives
+    eu_rows = []
+    for r in forms:
+        found = [(n, where_listed(r, pat)) for n, pat, *_ in EU_BANNED]
+        found = [(n, w) for n, w in found if w]
+        if found:
+            ed = r.get("effective_date") or ""
+            eu_rows.append({"title": r["title"], "url": r["dailymed_url"],
+                            "label_date": f"{ed[:4]}-{ed[4:6]}-{ed[6:]}" if len(ed) == 8 else ed,
+                            "ingredients": [n for n, _ in found], "listed_in": sorted({x for _, w in found for x in w})})
+    eu_per = collections.Counter(n for row in eu_rows for n in row["ingredients"])
+    claims.append({
+        "id": "US-BABY-EU-BANNED-PRESERVATIVES", "status": "verified", "jurisdiction": "US",
+        "ingredient_slugs": [], "finding": "eu-banned-preservatives",
+        "claim": (f"{len(eu_rows)} of {N} baby/kids sunscreen formulations list isobutylparaben "
+                  f"({eu_per['isobutylparaben']}) or methylisothiazolinone ({eu_per['methylisothiazolinone']})."),
+        "publishable_sentence": (f"{len(eu_rows)} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed "
+                                 f"label database list a preservative that the EU no longer allows in products like them: "
+                                 f"isobutylparaben in {eu_per['isobutylparaben']}, banned from all EU cosmetics, and "
+                                 f"methylisothiazolinone in {eu_per['methylisothiazolinone']}, banned from EU leave-on cosmetics."),
+        "legal_framing": ("Not a violation in the US: neither preservative is banned in US sunscreens. In the EU a "
+                          "sunscreen is a cosmetic, so EU cosmetics law applies to it. The finding compares label "
+                          "records with EU law; it is not about any brand."),
+        "numerator": len(eu_rows), "denominator": N, "population": POP,
+        "ingredient_source": {"title": EU_BANNED[0][3], "url": EU_BANNED[0][4], "checked": "2026-10-08"},
+        "detail": {
+            "eu_cosmetic_source": EU_COSMETIC_SOURCE,
+            "other_banned_parabens_found": sum(1 for r in forms if any(
+                where_listed(r, pat) for pat in (r"ISOPROPYL ?PARABEN", r"PHENYL ?PARABEN", r"BENZYL ?PARABEN", r"PENTYL ?PARABEN"))),
+            "ingredients": [{"name": n, "count": eu_per[n], "rule": rule, "source": {"title": t, "url": u, "checked": "2026-10-08"}}
+                            for n, _, rule, t, u in EU_BANNED],
+            "formulas": sorted(eu_rows, key=lambda x: (x["ingredients"], x["title"])),
+            "oldest_label": min(x["label_date"] for x in eu_rows) if eu_rows else None,
+            "newest_label": max(x["label_date"] for x in eu_rows) if eu_rows else None},
+        "caveat": CAVEAT, "site_source": src,
+        "method": "claims/registry_stats.py (EU_BANNED, where_listed)", "verified_date": snapshot})
+
+    # Fragrance
+    fr = [r for r in forms if any(FRAGRANCE.search(x.upper()) for x in sum(ingredient_items(r), []))]
+    fr_min = sum(1 for r in fr if r.get("is_mineral_only_actives"))
+    claims.append({
+        "id": "US-BABY-FRAGRANCE", "status": "verified", "jurisdiction": "US",
+        "ingredient_slugs": [], "finding": "fragrance",
+        "claim": f"{len(fr)} of {N} baby/kids sunscreen formulations list fragrance (or parfum) as an ingredient.",
+        "publishable_sentence": (f"{len(fr)} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed label "
+                                 f"database list fragrance (or parfum) as an ingredient. For children with eczema, the "
+                                 f"American Academy of Dermatology advises a sunscreen that is fragrance-free."),
+        "legal_framing": ("Not a violation: fragrance is allowed in US sunscreens. The finding counts what the "
+                          "ingredient lists say; it is not about any brand."),
+        "numerator": len(fr), "denominator": N, "population": POP,
+        "ingredient_source": AAD_FRAGRANCE,
+        "detail": {"mineral": [fr_min, M], "other": [len(fr) - fr_min, N - M],
+                   "formulas": [{"title": r["title"], "url": r["dailymed_url"],
+                                 "mineral": bool(r.get("is_mineral_only_actives")),
+                                 "listed_in": where_listed(r, FRAGRANCE.pattern)}
+                                for r in sorted(fr, key=lambda r: r["title"])],
+                   "not_counted": "essential oils and other single scent ingredients; only fragrance, parfum or perfume"},
+        "caveat": CAVEAT, "site_source": src,
+        "method": "claims/registry_stats.py (FRAGRANCE)", "verified_date": snapshot})
 
     with open(LEDGER, encoding="utf-8") as f:
         ledger = json.load(f)

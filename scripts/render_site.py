@@ -49,6 +49,14 @@ FINDINGS = {  # display order = dict order
         "title": "SPF boosters in mineral baby sunscreens",
         "eyebrow": "Finding · DailyMed labels × manufacturer data",
         "caption": "Each door is one mineral baby or kids formula. Filled: contains at least one of the six booster ingredients."},
+    "eu-banned-preservatives": {
+        "title": "Preservatives banned in EU cosmetics, found in US baby sunscreen labels",
+        "eyebrow": "Finding · DailyMed labels × EU law",
+        "caption": "Each door is one baby or kids formula. Filled: lists isobutylparaben or methylisothiazolinone."},
+    "fragrance": {
+        "title": "Fragrance in baby and kids sunscreens",
+        "eyebrow": "Finding · DailyMed labels × AAD guidance",
+        "caption": "Each door is one baby or kids formula. Filled: lists fragrance or parfum."},
 }
 FINDING_TITLES = {k: v["title"] for k, v in FINDINGS.items()}
 JUR_NAME = {"US": "United States", "EU": "European Union", "AU": "Australia"}
@@ -568,6 +576,67 @@ def finding_body(d, f):
              "differ, or whose Drug Facts could not be read, were left out."),
             ("How were these products selected?", howto),
         ]
+    elif key == "eu-banned-preservatives":
+        det = f["detail"]
+        ec = det["eu_cosmetic_source"]
+        rows = "".join(
+            f'<tr><td><b>{E(x["name"])}</b></td><td class="num">{x["count"]}</td>'
+            f'<td>{E(x["rule"])} {src_chip("EU law", x["source"]["url"], x["source"]["title"])}</td></tr>'
+            for x in det["ingredients"])
+        frows = "".join(
+            f'<tr><td><a href="{E(p["url"])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["title"]))}</span></a></td>'
+            f'<td>{E(", ".join(p["ingredients"]))}</td><td>{E(p["label_date"])}</td><td>{E(", ".join(p["listed_in"]))}</td></tr>'
+            for p in det["formulas"])
+        mean = f"""
+<p>In the EU, a sunscreen is a cosmetic, so EU cosmetics law decides which preservatives it may contain. {src_chip("EU law", ec["url"], ec["title"])}</p>
+<p>The EU has banned isobutylparaben from all cosmetics and methylisothiazolinone from leave-on cosmetics, which include sunscreens. US rules for sunscreen inactive ingredients have no such ban. This finding counts baby and kids labels in DailyMed that list either one.</p>"""
+        extra = f"""<section><p class="eyebrow">Two preservatives</p><h2>What the EU decided, and how many labels list each</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Ingredient</th><th>Formulas</th><th>EU rule</th></tr></thead><tbody>{rows}</tbody></table></div></section>
+<section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} labels</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Lists</th><th>Label version date</th><th>Where it is listed</th></tr></thead><tbody>{frows}</tbody></table></div>
+<p class="fine">Each name links to its FDA DailyMed record. The date is that of the label version currently in DailyMed; an old label date does not show whether the product is still sold.</p></section>"""
+        faq = [
+            ("Are these products illegal?", f["legal_framing"]),
+            ("What exactly did the EU ban?",
+             "Isobutylparaben was added to the list of substances banned in cosmetics by Commission Regulation (EU) No 358/2014; "
+             "products containing it could no longer be made available on the EU market from July 30, 2015. "
+             "Methylisothiazolinone was limited to rinse-off products by Commission Regulation (EU) 2016/1198, so leave-on "
+             "products containing it could no longer be made available from February 12, 2017."),
+            ("Are other parabens banned too?",
+             "This finding counts only isobutylparaben among the parabens. The same EU regulation also banned isopropylparaben, "
+             "phenylparaben, benzylparaben and pentylparaben; "
+             + ("none of the baby and kids labels lists them. " if not det["other_banned_parabens_found"]
+                else f"{det['other_banned_parabens_found']} baby and kids formulas list one of them and are not counted here. ")
+             + "Methylparaben, "
+             "ethylparaben, propylparaben and butylparaben remain allowed in the EU within limits."),
+            ("How were these products selected?", howto),
+        ]
+    elif key == "fragrance":
+        det = f["detail"]
+        (mn, md), (on, od) = det["mineral"], det["other"]
+        frows = "".join(
+            f'<tr><td><a href="{E(p["url"])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["title"]))}</span></a></td>'
+            f'<td>{"Mineral only" if p["mineral"] else "Other filters"}</td><td>{E(", ".join(p["listed_in"]))}</td></tr>'
+            for p in det["formulas"])
+        mean = f"""
+<p>For children with eczema, the American Academy of Dermatology advises a sunscreen that is fragrance-free, and advises choosing fragrance-free rather than unscented products. {src_chip("AAD", isrc["url"], isrc["title"])}</p>
+<p>This finding counts the baby and kids sunscreen labels whose ingredient list names fragrance, parfum or perfume. It is about what the labels say, not about any brand.</p>"""
+        extra = f"""<section><p class="eyebrow">Mineral and other filters</p><h2>Fragrance by type of sunscreen</h2>
+<ul class="bars"><li><span>Mineral only</span><span class="bar"><i style="width:{100 * mn / md:.1f}%"></i></span><b>{mn} of {md}</b></li>
+<li><span>Other filters</span><span class="bar"><i style="width:{100 * on / od:.1f}%"></i></span><b>{on} of {od}</b></li></ul>
+<p class="fine">Not counted: {E(det["not_counted"])}.</p></section>
+<section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} labels</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Type</th><th>Where it is listed</th></tr></thead><tbody>{frows}</tbody></table></div>
+<p class="fine">Each name links to its FDA DailyMed record.</p></section>"""
+        faq = [
+            ("Is fragrance allowed in baby sunscreen?", f["legal_framing"]),
+            ("What does the American Academy of Dermatology say?",
+             "For children with eczema, it advises a sunscreen that is fragrance-free, with titanium dioxide and/or zinc oxide, "
+             "broad-spectrum protection and SPF 30 or higher, and it advises choosing fragrance-free rather than unscented products."),
+            ("Do mineral sunscreens contain fragrance?",
+             f"Some do: {mn} of the {md} mineral-only baby and kids formulas list fragrance, against {on} of the {od} formulas that use other filters."),
+            ("How were these products selected?", howto),
+        ]
     else:  # mineral-sunscreen-boosters
         det = f["detail"]
         mx = max(x["count"] for x in det["ingredients"])
@@ -628,7 +697,8 @@ def page_finding(d, f):
     mean, extra, faq, howto = finding_body(d, f)
     faqh = "".join(f"<details><summary>{E(q)}</summary><p>{E(a)}</p></details>" for q, a in faq)
     src_label = {"mineral-sunscreen-boosters": "Drug Facts rule", "fda-more-data": "FDA source",
-                 "homosalate-eu-limit": "EU law"}.get(f["finding"], "Source")
+                 "homosalate-eu-limit": "EU law", "eu-banned-preservatives": "EU law",
+                 "fragrance": "AAD guidance"}.get(f["finding"], "Source")
     body = f"""
 <p class="crumb"><a href="{BASE}">Library</a> / <a href="{BASE}/findings">Findings</a></p>
 <div class="hero" style="padding-top:28px"><p class="eyebrow">{E(meta["eyebrow"])}</p>
