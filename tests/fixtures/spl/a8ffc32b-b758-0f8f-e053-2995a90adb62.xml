@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="086810e8-468b-f9d2-e063-6394a90a583b"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>BS SPF 15 Lemonade Lip Balm</title>
+   <effectiveTime value="20231023"/>
+   <setId root="a8ffc32b-b758-0f8f-e053-2995a90adb62"/>
+   <versionNumber value="3"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="083819404"/>
+            <name>Raining Rose, Inc</name>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="0868a991-6575-4ad5-e063-6394a90a1073"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20231023"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="65692-0529" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Lemonade SPF 15 Broad Spectrum Lip Balm</name>
+                        <formCode code="C42991" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="STICK"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Lemonade SPF 15 Broad Spectrum Lip Balm</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="HS7EB0C1ZH" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUNFLOWER OIL MONO/DIGLYCERIDES</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3W1JG795YI" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SUNFLOWER OIL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="R0ZB2556P8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TOCOPHEROL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="IJ67X351P9" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ROSEMARY</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7G1J5DA97F" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>WHITE WAX</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="6UYK2W1W1E" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>OLIVE OIL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="69VJ1LPN1S" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CANNABIS SATIVA SEED OIL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ZY81Z83H0X" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ALOE VERA LEAF</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="g" value="0.21"/>
+                              <denominator unit="g" value="4.25"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="4X49Y0596W" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>OCTISALATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4X49Y0596W" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>OCTISALATE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="g" value="0.09"/>
+                              <denominator unit="g" value="4.25"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="G63QQF2NOX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>AVOBENZONE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="G63QQF2NOX" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>AVOBENZONE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="g" value="0.06"/>
+                              <denominator unit="g" value="4.25"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="5A68WGF6WM" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>OCTOCRYLENE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="5A68WGF6WM" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>OCTOCRYLENE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="g" value="0.28"/>
+                              <denominator unit="g" value="4.25"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="4Y5P7MUD51" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>OCTINOXATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4Y5P7MUD51" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>OCTINOXATE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="241ATL177A" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SOYBEAN OIL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="331KBJ17RK" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CANOLA OIL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="4.25" unit="g"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="65692-0529-1" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C42794" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TUBE"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20200217"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="M020" root="2.16.840.1.113883.3.9421"/>
+                           <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20200217"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLFLAVOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C73396" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="LEMON" xsi:type="CE">
+                              <originalText/>
+                           </value>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_44be6b37-426b-0162-e054-00144ff8d46c">
+               <id root="a8ffcab4-1203-1d29-e053-2a95a90a14b5"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>Active Ingredients</title>
+               <text>
+                  <paragraph>Avobenzone 2.0%</paragraph>
+                  <paragraph>Octinoxate 6.5%</paragraph>
+                  <paragraph>Octisalate 5.0%</paragraph>
+                  <paragraph>Octocrylene 1.5%</paragraph>
+               </text>
+               <effectiveTime value="20200217"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_44d12e52-98ce-393f-e054-00144ff88e88">
+               <id root="a8ffcab4-1204-1d29-e053-2a95a90a14b5"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>Purpose</title>
+               <text>
+                  <paragraph>Sunscreen</paragraph>
+               </text>
+               <effectiveTime value="20200217"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_494a81f9-6866-1b83-e054-00144ff88e88">
+               <id root="a8ffcab4-1205-1d29-e053-2a95a90a14b5"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>Warnings</title>
+               <text>
+                  <paragraph>For external use only</paragraph>
+                  <paragraph/>
+               </text>
+               <effectiveTime value="20200217"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_494ad5a9-a59e-26d4-e054-00144ff8d46c">
+               <id root="a8ffcab4-1206-1d29-e053-2a95a90a14b5"/>
+               <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+               <title>Do not use</title>
+               <text>
+                  <paragraph>on damaged or broken skin.</paragraph>
+               </text>
+               <effectiveTime value="20200217"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_44d12e52-98d4-393f-e054-00144ff88e88">
+               <id root="a8ffcab4-1207-1d29-e053-2a95a90a14b5"/>
+               <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+               <title>Stop Use and ask a doctor if</title>
+               <text>
+                  <paragraph>Rash Occurs</paragraph>
+               </text>
+               <effectiveTime value="20200217"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_494a81f9-6863-1b83-e054-00144ff88e88">
+               <id root="a8ffcab4-1208-1d29-e053-2a95a90a14b5"/>
+               <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+               <title>When Using this Product</title>
+               <text>
+                  <paragraph>Keep out of eyes. Rinse well with water to remove.</paragraph>
+               </text>
+               <effectiveTime value="20200217"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_44d12888-4578-37b4-e054-00144ff88e88">
+               <id root="a8ffcab4-1209-1d29-e053-2a95a90a14b5"/>
+               <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+               <title>Keep out of reach of children</title>
+               <text>
+                  <paragraph>Keep out of reach of children.</paragraph>
+                  <paragraph>If swallowed, get medical help or contact a Poison Control Center right away.</paragraph>
+               </text>
+               <effectiveTime value="20200217"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_494af611-8cb7-2aa6-e054-00144ff8d46c">
+               <id root="a8ffcab4-120a-1d29-e053-2a95a90a14b5"/>
+               <code code="60562-6" codeSystem="2.16.840.1.113883.6.1" displayName="ROUTE, METHOD AND FREQUENCY OF ADMINISTRATION"/>
+               <title>Directions</title>
+               <text>
+                  <paragraph>Apply liberally 15 minutes before sun exposure</paragraph>
+                  <paragraph>Use a water resistant sunscreen if swimming or sweating</paragraph>
+                  <paragraph>Reapply at least every 2 hours
+  
+       
+ 
+  
+       
+ 
+  
+       
+ 
+  <br/>
+Children under 6 months of age: 
+  
+       
+ 
+  
+       
+ 
+  
+       
+ 
+  <content styleCode="bold">Ask a doctor</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200217"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_494b02f3-8ec2-2ca9-e054-00144ff88e88">
+               <id root="b3c41e2f-ce44-c8e5-e053-2a95a90a9021"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>Inactive ingredients:</title>
+               <text>
+                  <paragraph>Sunflower oil*, Beeswax, Olive Oil*, Flavor, Hemp Seed Oil*, Soybean Oil, Sunflower Seed Oil Glycerides, Rosemary Extract, Vitamin E, Aloe Extract, Canola Oil. * Organic</paragraph>
+               </text>
+               <effectiveTime value="20200217"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_08686742-a92f-309e-e063-6294a90a7d25">
+               <id root="08686742-a92e-309e-e063-6294a90a7d25"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <text>
+                  <paragraph>Helps prevent sunburn</paragraph>
+               </text>
+               <effectiveTime value="20231023"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_08686b3a-f104-7d96-e063-6394a90a7c00">
+               <id root="08686b3a-f103-7d96-e063-6394a90a7c00"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <text>
+                  <paragraph>Apply liberally 15 minutes before sun exposure</paragraph>
+               </text>
+               <effectiveTime value="20231023"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_44d12888-458c-37b4-e054-00144ff88e88">
+               <id root="b3c46a30-7fef-0dc4-e053-2995a90aa571"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Package Label</title>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_b3c46a1a-5da6-872a-e053-2995a90a8db8"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20200217"/>
+               <component>
+                  <observationMedia ID="img_b3c46a1a-5da6-872a-e053-2995a90a8db8">
+                     <text>C10413 Lemonade Premium SPF 15 BS LB</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="C10413 LEMONADE PREMIUM SPF 15 BS LB.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

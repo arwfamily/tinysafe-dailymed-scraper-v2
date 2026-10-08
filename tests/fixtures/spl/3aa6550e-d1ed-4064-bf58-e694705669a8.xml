@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="http://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="289b4459-15ba-45f6-b571-51559b4b2d2e"/>
+   <code code="34390-5" displayName="HUMAN OTC DRUG LABEL" codeSystem="2.16.840.1.113883.6.1"/>
+   <title>Banana Boat Ultra Mist Kids FPS 60 LATAM</title>
+   <effectiveTime value="20100424"/>
+   <setId root="3aa6550e-d1ed-4064-bf58-e694705669a8"/>
+   <versionNumber value="2"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="024213616" root="1.3.6.1.4.1.519.1"/>
+            <name>Accra-Pac, Inc.</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="024213616" root="1.3.6.1.4.1.519.1"/>
+                        <name>Accra-Pac, Inc.</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C43360" displayName="MANUFACTURE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="1d85655e-8bf2-4a48-9c1d-d474ffff46d3"/>
+               <code code="48780-1" displayName="SPL LISTING DATA ELEMENTS SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <effectiveTime value="20100424"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="17630-2045" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Banana Boat Ultra Mist Kids FPS 60 LATAM</name>
+                        <formCode code="C42989" displayName="SPRAY" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Homosalate and Octinoxate and Octisalate and Octocrylene and Oxybenzone and Avobenzone</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mL" value="0.10"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="V06SV4M95S" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>HOMOSALATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="V06SV4M95S" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>HOMOSALATE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mL" value="0.075"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="4Y5P7MUD51" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>OCTINOXATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4Y5P7MUD51" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>OCTINOXATE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mL" value="0.05"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="4X49Y0596W" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>OCTISALATE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="4X49Y0596W" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>OCTISALATE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mL" value="0.05"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="5A68WGF6WM" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>OCTOCRYLENE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="5A68WGF6WM" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>OCTOCRYLENE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIB">
+                           <quantity>
+                              <numerator unit="mL" value="0.03"/>
+                              <denominator unit="mL" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="G63QQF2NOX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>AVOBENZONE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="G63QQF2NOX" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>AVOBENZONE</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="PWZ1720CBH" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>BEMOTRIZINOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="00YIU5438U" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>CAPRYLYL GLYCOL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="451W47IQ8X" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM CHLORIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="PDC6A3C0OX" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GLYCERIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="1Q73Q2JULR" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM CITRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7FLD91C86K" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>EDETATE DISODIUM</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="C9H2L21V7U" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MEDIUM-CHAIN TRIGLYCERIDES</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="8D08K3S51E" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>PROPYLENE CARBONATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="0T8392U5N1" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GLUCOSE OXIDASE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ZY81Z83H0X" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ALOE VERA LEAF</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="A7E6112E4N" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>.ALPHA.-TOCOPHEROL ACETATE, D-</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="1D1K0N0VVC" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>VITAMIN A PALMITATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="836SJG51DR" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>SODIUM ASCORBYL PHOSPHATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="B697894SGQ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>POLYETHYLENE GLYCOL 400</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="mL" value="175"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="17630-2045-1" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43180" displayName="CAN" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="part352" root="2.16.840.1.113883.3.149"/>
+                           <code code="C73603" displayName="OTC MONOGRAPH FINAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20100309"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38304" displayName="TOPICAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="6392708f-3f72-41d6-a28c-1f51d698fb10"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="42229-5" displayName="SPL UNCLASSIFIED SECTION"/>
+               <title/>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Drug Facts</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Active Ingredients</content>
+                  </paragraph>
+                  <paragraph>Homosalate 0.10mL / 1mL</paragraph>
+                  <paragraph>Octinoxate 0.075mL / 1mL</paragraph>
+                  <paragraph>Octisalate 0.05mL / 1mL</paragraph>
+                  <paragraph>Octocrylene 0.05mL / 1mL</paragraph>
+                  <paragraph>Avobenzone 0.03mL / 1mL</paragraph>
+               </text>
+               <effectiveTime value="20100424"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="f7fe63e0-6b5d-433a-ae54-da059062670c"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="34068-7" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>
+                  <content styleCode="bold">INSTRUCCIONES: </content>
+               </title>
+               <text>
+                  <paragraph>Aplíque generosamente o libremente media hora antes de la exposición al sol y como sea necesario. Para mantener la protección, repita cada dos horas al transpirar, bañarse, o secarse. Es necesario reiterar la aplicación para mantener la efectividad del producto.</paragraph>
+               </text>
+               <effectiveTime value="20100424"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="9c56851a-b6a1-4961-a9b3-ef22aec084a5"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="42232-9" displayName="PRECAUTIONS SECTION"/>
+               <title>
+                  <content styleCode="bold">PRECAUCIONES: </content>
+               </title>
+               <text>
+                  <paragraph>Para uso externo. Puede causar irritación a los ojos. Suspenda su empleo si se presentan signos de irritación o salpullido. No exponer lactantes y niños menores a radiación solar. Para niños menores de seis (6) meses consulte al médico. La exposición excesiva al sol es un peligro importante para la salud. Inflamable. No pulverizar cerca de llama. No perforar ni incinerar. No exponer al sol ni a temperaturas superiores a 50° C. Proteger los ojos durante la aplicación. Mantener fuera del alcance de los niños.</paragraph>
+               </text>
+               <effectiveTime value="20100424"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="631cddee-7510-4f44-8004-c7d2a681b605"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="51727-6" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="bold">INGREDIENTS: </content>
+               </title>
+               <text>
+                  <paragraph>Aqua, Isohexadecane, Homosalate, Ethylhexyl Methoxycinnamate, Ethylhexyl Salicylate, Octocrylene, Cetyl PEG/PPG-10/1 Dimethicone, Butyl Methoxydibenzoylmethane, Bis-ethylhexyloxyphenol Methoxyphenyl Triazine, PEG-8, C30-38 Olefin/Isopropyl Maleate/MA Copolymer, Caprylyl Glycol, Glucose, Sodium Chloride, Glycerin, Sodium Citrate, Disodium EDTA, Caprylic/Capric Triglycerides, Stearlkonium Hectorite, Propylene Carbonate, Lactoperoxidase, Glucose Oxidase, Aloe Barbadensis, Tocopheryl Acetate, Retinyl Palmitate, Tocopherol, Sodium Ascorbyl Phosphate</paragraph>
+               </text>
+               <effectiveTime value="20100424"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="0af6e15b-4131-4f86-85af-175f3353fc82"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="51727-6" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="bold">INGREDIENTES: </content>
+               </title>
+               <text>
+                  <paragraph>Agua, isohexadecano, homosalato, metoxicinamato de etilo, salicilato de etilo, octocrileno, cetil PEG/PPG-10/1 dimeticona, butil metoxidibenzoilmetano, bis-etilhexiloxifenol metoxifenil triazina, PEG-8, copolímero de MA/olefin C30-38/maleato de isopropilo, caprilil glicol, glucosa, cloruro de sodio, glicerina, citrato de sodio, ácido etilendiaminotetraacético disódico (EDTA), triglicerido caprilico / cáprico, hectorita de estearalconio, carbonato de propileno, lactoperoxidasa, glucose oxidasa, Aloe barbadensis, acetato de tocoferilo, palmitato de retinilo, tocoferol, ascorbil fosfato de sodio</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">HECHO EN E.U.A. </content>
+                  </paragraph>
+                  <paragraph>Importado y distribuido por: EVEREADY DE MÉXICO, S.A. de C.V. Jaime Balmes No. 11, Torre A, Piso 3, Col. Los Morales Polanco, C.P. 11510 México, D.F., R.F.C. EME-861014-J90. Tels. Atención al Consumidor: De Provincia al 01 800 7039900. En el D.F. al 91382057. SCHICK &amp; ENERGIZER PERÚ, S.A. Av. Baquíjano y Carrillo (Ex-Jorge Chávez) N° 336, Miraflores. Lima 18 – Perú. Telif. 2429600. RUC: 20506285586. EVEREADY ECUADOR, C.A. Avda. Interoceánica Km. 4-1/2 (Vía Cumbaya-Miravalle) P.O. Box 17-17-1764, Quito-Ecuador, Telf. (593-2) 2899450. EVEREADY DE COLOMBIA, S.A. Transv. 18 No. 96 – 41 P i s o 8 B o g o t á - C o l omb i a . ENERGIZER ARGENTINA, S.A. Tucumán 540, Piso 22 "A" C.A.B.A. L e g a j o N o . 2 7 0 5 P r o d u c t o Cosmé t i co. Aprobado s e gún Resolución 155/98 Tel. At. al Cons. (011) 4742 - 8193.</paragraph>
+                  <paragraph>©2010 Sun Pharmaceuticals, LLC</paragraph>
+                  <paragraph>Manufactured by:  Accra Pac, Inc (dba KIK Custom Products)</paragraph>
+               </text>
+               <effectiveTime value="20100424"/>
+            </section>
+         </component>
+         <component>
+            <section>
+               <id root="4cacb6e5-4d3b-4f3a-b9d4-caf15a9fcd52"/>
+               <code codeSystem="2.16.840.1.113883.6.1" code="51945-4" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>
+                  <content styleCode="bold">PRINCIPAL DISPLAY PANEL</content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Ultra</content>
+                     <br/>
+                     <content styleCode="bold">Mist</content>
+                     <content styleCode="bold">
+                        <sup>TM</sup>
+                     </content>
+                     <content styleCode="bold">
+                        <br/>BANANA</content>
+                     <content styleCode="bold">
+                        <br/>BOAT</content>
+                     <content styleCode="bold">
+                        <sup>TM</sup>
+                     </content>
+                     <content styleCode="bold">
+                        <br/>Kids</content>
+                     <content styleCode="bold">
+                        <br/>Sin </content>
+                     <content styleCode="bold">Lágrimas</content>
+                     <content styleCode="bold">
+                        <br/>Protector Solar con </content>
+                     <content styleCode="bold">Fotoprotección</content>
+                     <br/>
+                     <content styleCode="bold">Avanzada</content>
+                     <content styleCode="bold"> UVA y UVB</content>
+                     <content styleCode="bold">
+                        <br/>FPS 60</content>
+                     <br/>
+                     <content styleCode="bold">AvoTriplex</content>
+                     <content styleCode="bold">
+                        <sup>TM</sup>
+                     </content>
+                     <content styleCode="bold">
+                        <br/>Alta </content>
+                     <content styleCode="bold">protección</content>
+                     <content styleCode="bold"> UVA</content>
+                     <br/>
+                     <content styleCode="bold">Probado</content>
+                     <content styleCode="bold"> en el sol</content>
+                     <content styleCode="bold">
+                        <br/>y </content>
+                     <content styleCode="bold">laboratorio</content>
+                     <br/>
+                     <content styleCode="bold">Aplicación</content>
+                     <content styleCode="bold"> </content>
+                     <content styleCode="bold">Rápida</content>
+                     <content styleCode="bold"> y </content>
+                     <content styleCode="bold">Uniforme</content>
+                     <br/>
+                     <content styleCode="bold">Hipoalergénico</content>
+                     <br/>
+                     <content styleCode="bold">Resitente</content>
+                     <content styleCode="bold"> al </content>
+                     <content styleCode="bold">agua</content>
+                     <content styleCode="bold">
+                        <br/>Sin </content>
+                     <content styleCode="bold">Fragancia</content>
+                     <br/>
+                     <content styleCode="bold">Contenido</content>
+                     <content styleCode="bold"> </content>
+                     <content styleCode="bold">neto</content>
+                     <content styleCode="bold"> 175 ml</content>
+                  </paragraph>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="MM03000001"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20100424"/>
+               <component>
+                  <observationMedia ID="MM03000001">
+                     <text>PRINCIPAL DISPLAY PANEL
+Banana Boat Ultra Mist Kids FPS 60 LATAM</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="banana-boat-ultra-mist-kids-fps-60-latam-01.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>
