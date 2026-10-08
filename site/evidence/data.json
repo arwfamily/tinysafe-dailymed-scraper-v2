@@ -1,0 +1,1474 @@
+{
+ "built_on": "2026-10-08",
+ "generated_at": "2026-10-08T16:16:46Z",
+ "commit": "06cb117",
+ "contract": "docs/SITE_DATA_CONTRACT.md",
+ "jurisdictions": [
+  "US",
+  "EU",
+  "AU"
+ ],
+ "ingredients": [
+  {
+   "slug": "zinc-oxide",
+   "name": "Zinc Oxide",
+   "matrix_key": "ZINC OXIDE",
+   "also_known_as": [],
+   "role": "uv_filter_mineral",
+   "summary": "Zinc Oxide: up to 25% in the US; up to 25% in the EU; permitted in Australia with no numeric limit.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 25.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 25.0,
+     "conditions": [],
+     "notes": "No inhalable applications; combined with nano form must not exceed 25%",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "listed_no_numeric_limit",
+     "max_percent": null,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-zinc-oxide",
+     "status": "verified",
+     "sentence": "174 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name zinc oxide as an active ingredient.",
+     "numerator": 174,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    },
+    {
+     "id": "US-BABY-MINERAL-ZNO",
+     "status": "verified",
+     "sentence": "160 of the 163 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain zinc oxide.",
+     "numerator": 160,
+     "denominator": 163,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason); mineral-only actives (zinc oxide and/or titanium dioxide)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "titanium-dioxide",
+   "name": "Titanium Dioxide",
+   "matrix_key": "TITANIUM DIOXIDE",
+   "also_known_as": [],
+   "role": "uv_filter_mineral",
+   "summary": "Titanium Dioxide: up to 25% in the US; up to 25% in the EU; up to 25% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 25.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 25.0,
+     "conditions": [],
+     "notes": "Powder form with >=1% particles <=10um aerodynamic diameter must comply with Annex III No 321; combined with nano form must not exceed 25%",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 25.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-titanium-dioxide",
+     "status": "verified",
+     "sentence": "66 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name titanium dioxide as an active ingredient.",
+     "numerator": 66,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "bemotrizinol",
+   "name": "Bemotrizinol",
+   "matrix_key": "BEMOTRIZINOL",
+   "also_known_as": [
+    "BEMT",
+    "BIS ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Bemotrizinol: up to 6% in the US; up to 10% in the EU; up to 10% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 6.0,
+     "conditions": [],
+     "notes": "In force since 2026-08-09 (Final Administrative Order OTC000039). GRASE up to 6% for adults and children 6 months of age and older; finished product SPF >= 2. Permitted dosage forms: oil, lotion, cream, gel, butter, paste, ointment, stick; spray only with no propellant (pump) or with the propellant isolated from the formulation (bag-on-valve). Not permitted: propellant-combined aerosol sprays, powders. Not GRASE in combination with aminobenzoic acid or trolamine salicylate. 18-month marketing exclusivity for DSM Nutritional Products LLC from the effective date.",
+     "source": {
+      "title": "FDA Final Administrative Order OTC000039 (issued 2026-06-10, corrected 2026-08-10)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/Order/OTC000039_Final_Administrative_Order.pdf",
+      "version": "final order; effective 2026-08-09",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": "Bemotrizinol. (US: permitted up to 6% since 2026-08-09 under FDA Final Administrative Order OTC000039.)",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-bemotrizinol",
+     "status": "verified",
+     "sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name bemotrizinol as an active ingredient.",
+     "numerator": 0,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "avobenzone",
+   "name": "Avobenzone",
+   "matrix_key": "AVOBENZONE",
+   "also_known_as": [
+    "BUTYL METHOXYDIBENZOYLMETHANE"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Avobenzone: up to 3% in the US; up to 5% in the EU; up to 5% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 3.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 5.0,
+     "conditions": [],
+     "notes": "Avobenzone",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 5.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-avobenzone",
+     "status": "verified",
+     "sentence": "164 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name avobenzone as an active ingredient.",
+     "numerator": 164,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "oxybenzone",
+   "name": "Oxybenzone",
+   "matrix_key": "OXYBENZONE",
+   "also_known_as": [
+    "BENZOPHENONE 3"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Oxybenzone: up to 6% in the US; limits in the EU depend on product type; up to 10% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 6.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted_with_conditions",
+     "max_percent": 6.0,
+     "conditions": [
+      {
+       "applies_to": "face/hand/lip (no sprays)",
+       "max_percent": 6.0
+      },
+      {
+       "applies_to": "body incl. sprays",
+       "max_percent": 2.2
+      },
+      {
+       "applies_to": "other",
+       "max_percent": 0.5
+      }
+     ],
+     "notes": "Max 0.5% when used only to protect the formulation; label must say 'Contains Benzophenone-3'",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-oxybenzone",
+     "status": "verified",
+     "sentence": "63 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name oxybenzone as an active ingredient.",
+     "numerator": 63,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "octinoxate",
+   "name": "Octinoxate",
+   "matrix_key": "OCTINOXATE",
+   "also_known_as": [
+    "ETHYLHEXYL METHOXYCINNAMATE",
+    "OCTYL METHOXYCINNAMATE"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Octinoxate: up to 7.5% in the US; up to 10% in the EU; up to 10% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 7.5,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": "Octinoxate",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-octinoxate",
+     "status": "verified",
+     "sentence": "52 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octinoxate as an active ingredient.",
+     "numerator": 52,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "homosalate",
+   "name": "Homosalate",
+   "matrix_key": "HOMOSALATE",
+   "also_known_as": [],
+   "role": "uv_filter_organic",
+   "summary": "Homosalate: up to 15% in the US; limits in the EU depend on product type; up to 15% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 15.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted_with_conditions",
+     "max_percent": 7.34,
+     "conditions": [
+      {
+       "applies_to": "Face products except propellant sprays",
+       "max_percent": 7.34
+      }
+     ],
+     "notes": "Lowered by M47; non-compliant products off the EU market from 2025-07-01",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 15.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-homosalate",
+     "status": "verified",
+     "sentence": "154 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name homosalate as an active ingredient.",
+     "numerator": 154,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "octisalate",
+   "name": "Octisalate",
+   "matrix_key": "OCTISALATE",
+   "also_known_as": [
+    "ETHYLHEXYL SALICYLATE",
+    "OCTYL SALICYLATE"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Octisalate: up to 5% in the US; up to 5% in the EU; up to 5% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 5.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 5.0,
+     "conditions": [],
+     "notes": "Octisalate",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 5.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-octisalate",
+     "status": "verified",
+     "sentence": "181 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octisalate as an active ingredient.",
+     "numerator": 181,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "octocrylene",
+   "name": "Octocrylene",
+   "matrix_key": "OCTOCRYLENE",
+   "also_known_as": [],
+   "role": "uv_filter_organic",
+   "summary": "Octocrylene: up to 10% in the US; limits in the EU depend on product type; up to 10% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted_with_conditions",
+     "max_percent": 10.0,
+     "conditions": [
+      {
+       "applies_to": "propellant sprays",
+       "max_percent": 9.0
+      },
+      {
+       "applies_to": "other",
+       "max_percent": 10.0
+      }
+     ],
+     "notes": "Benzophenone impurity/degradant must stay at trace level",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-octocrylene",
+     "status": "verified",
+     "sentence": "162 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octocrylene as an active ingredient.",
+     "numerator": 162,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "ensulizole",
+   "name": "Ensulizole",
+   "matrix_key": "ENSULIZOLE",
+   "also_known_as": [
+    "PHENYLBENZIMIDAZOLE SULFONIC ACID"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Ensulizole: up to 4% in the US; up to 8% in the EU; up to 4% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 4.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 8.0,
+     "conditions": [],
+     "notes": "as acid",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 4.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-ensulizole",
+     "status": "verified",
+     "sentence": "2 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ensulizole as an active ingredient.",
+     "numerator": 2,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "meradimate",
+   "name": "Meradimate",
+   "matrix_key": "MERADIMATE",
+   "also_known_as": [
+    "MENTHYL ANTHRANILATE"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Meradimate: up to 5% in the US; not on the permitted list in the EU; up to 5% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 5.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "not_listed",
+     "max_percent": null,
+     "conditions": [],
+     "source": {
+      "title": "Regulation (EC) No 1223/2009, Annex VI (UV filters)",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "consolidated text 02009R1223, 038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 5.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-meradimate",
+     "status": "verified",
+     "sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name meradimate as an active ingredient.",
+     "numerator": 0,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "dioxybenzone",
+   "name": "Dioxybenzone",
+   "matrix_key": "DIOXYBENZONE",
+   "also_known_as": [
+    "BENZOPHENONE 8"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Dioxybenzone: up to 3% in the US; not on the permitted list in the EU; up to 3% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 3.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "not_listed",
+     "max_percent": null,
+     "conditions": [],
+     "source": {
+      "title": "Regulation (EC) No 1223/2009, Annex VI (UV filters)",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "consolidated text 02009R1223, 038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 3.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-dioxybenzone",
+     "status": "verified",
+     "sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name dioxybenzone as an active ingredient.",
+     "numerator": 0,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "sulisobenzone",
+   "name": "Sulisobenzone",
+   "matrix_key": "SULISOBENZONE",
+   "also_known_as": [
+    "BENZOPHENONE 4",
+    "BENZOPHENONE 4 BENZOPHENONE 5",
+    "BENZOPHENONE 5"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Sulisobenzone: up to 10% in the US; up to 5% in the EU; up to 10% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 5.0,
+     "conditions": [],
+     "notes": "as acid",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-sulisobenzone",
+     "status": "verified",
+     "sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name sulisobenzone as an active ingredient.",
+     "numerator": 0,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "cinoxate",
+   "name": "Cinoxate",
+   "matrix_key": "CINOXATE",
+   "also_known_as": [],
+   "role": "uv_filter_organic",
+   "summary": "Cinoxate: up to 3% in the US; not on the permitted list in the EU; up to 6% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 3.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "not_listed",
+     "max_percent": null,
+     "conditions": [],
+     "source": {
+      "title": "Regulation (EC) No 1223/2009, Annex VI (UV filters)",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "consolidated text 02009R1223, 038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 6.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-cinoxate",
+     "status": "verified",
+     "sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name cinoxate as an active ingredient.",
+     "numerator": 0,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "padimate-o",
+   "name": "Padimate O",
+   "matrix_key": "PADIMATE O",
+   "also_known_as": [
+    "ETHYLHEXYL DIMETHYL PABA"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Padimate O: up to 8% in the US; up to 8% in the EU; up to 8% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "permitted",
+     "max_percent": 8.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 8.0,
+     "conditions": [],
+     "notes": "Padimate O",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 8.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-padimate-o",
+     "status": "verified",
+     "sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name padimate O as an active ingredient.",
+     "numerator": 0,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "paba",
+   "name": "PABA (Aminobenzoic Acid)",
+   "matrix_key": "AMINOBENZOIC ACID",
+   "also_known_as": [
+    "PABA"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "PABA (Aminobenzoic Acid): removal from the permitted list in the US finalized, effective 2027-09-11; not on the permitted list in the EU; not on the permitted list in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "removal_finalized_not_yet_effective",
+     "max_percent": 15.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     },
+     "effective_date": "2027-09-11",
+     "status_source_url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/Order/FinalAdministrativeOrderOTC000008-PABATrolamine.pdf"
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "not_listed",
+     "max_percent": null,
+     "conditions": [],
+     "source": {
+      "title": "Regulation (EC) No 1223/2009, Annex VI (UV filters)",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "consolidated text 02009R1223, 038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "not_listed",
+     "max_percent": null,
+     "conditions": [],
+     "source": {
+      "title": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-paba",
+     "status": "verified",
+     "sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name PABA (aminobenzoic acid) as an active ingredient.",
+     "numerator": 0,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "trolamine-salicylate",
+   "name": "Trolamine Salicylate",
+   "matrix_key": "TROLAMINE SALICYLATE",
+   "also_known_as": [],
+   "role": "uv_filter_organic",
+   "summary": "Trolamine Salicylate: removal from the permitted list in the US finalized, effective 2027-09-11; not on the permitted list in the EU; up to 12% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "removal_finalized_not_yet_effective",
+     "max_percent": 12.0,
+     "conditions": [],
+     "notes": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
+     "source": {
+      "title": "FDA OTC Monograph M020, Sunscreen Drug Products for OTC Human Use, § M020.10",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, deemed effective 2020-03-27 (CARES Act); posted 2021-09-24",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_PRIMARY"
+     },
+     "effective_date": "2027-09-11",
+     "status_source_url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/Order/FinalAdministrativeOrderOTC000008-PABATrolamine.pdf"
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "not_listed",
+     "max_percent": null,
+     "conditions": [],
+     "source": {
+      "title": "Regulation (EC) No 1223/2009, Annex VI (UV filters)",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "consolidated text 02009R1223, 038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 12.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-trolamine-salicylate",
+     "status": "verified",
+     "sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name trolamine salicylate as an active ingredient.",
+     "numerator": 0,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "ecamsule",
+   "name": "Ecamsule",
+   "matrix_key": "ECAMSULE",
+   "also_known_as": [
+    "MEXORYL SX",
+    "TEREPHTHALYLIDENE DICAMPHOR SULFONIC ACID"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Ecamsule: allowed in the US only in specifically approved products; up to 10% in the EU; up to 10% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "approved_product_only",
+     "max_percent": null,
+     "conditions": [],
+     "notes": "Not in OTC Monograph M020. Permitted in the US only in specific products approved by the FDA through a new drug application (first: L'Oreal Anthelios SX, approved 2006).",
+     "source": {
+      "title": "FDA approval of Anthelios SX (ecamsule), 2006 — reported by Dermatology Times",
+      "url": "https://www.dermatologytimes.com/view/fda-approves-sunscreen-product-containing-previously-banned-ingredient",
+      "version": "news report, 2006-08-04",
+      "data_as_of": "2026-10-08",
+      "status": "VERIFIED_SECONDARY"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": "as acid (Ecamsule)",
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-ecamsule",
+     "status": "verified",
+     "sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ecamsule as an active ingredient.",
+     "numerator": 0,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "drometrizole-trisiloxane",
+   "name": "Drometrizole Trisiloxane",
+   "matrix_key": "DROMETRIZOLE TRISILOXANE",
+   "also_known_as": [],
+   "role": "uv_filter_organic",
+   "summary": "Drometrizole Trisiloxane: not on the permitted list in the US; up to 15% in the EU; up to 10% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "not_listed",
+     "max_percent": null,
+     "conditions": [],
+     "source": {
+      "title": "FDA OTC Monograph M020 (Sunscreen Drug Products for OTC Human Use)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, posted 2021-09-24, as amended by OTC000039",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 15.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 10.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-drometrizole-trisiloxane",
+     "status": "verified",
+     "sentence": "2 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name drometrizole trisiloxane as an active ingredient.",
+     "numerator": 2,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "ethylhexyl-triazone",
+   "name": "Ethylhexyl Triazone",
+   "matrix_key": "ETHYLHEXYL TRIAZONE",
+   "also_known_as": [
+    "OCTYL TRIAZONE"
+   ],
+   "role": "uv_filter_organic",
+   "summary": "Ethylhexyl Triazone: not on the permitted list in the US; up to 5% in the EU; up to 5% in Australia.",
+   "limits": [
+    {
+     "jurisdiction": "US",
+     "status": "not_listed",
+     "max_percent": null,
+     "conditions": [],
+     "source": {
+      "title": "FDA OTC Monograph M020 (Sunscreen Drug Products for OTC Human Use)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+      "version": "Final Administrative Order OTC000006, posted 2021-09-24, as amended by OTC000039",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "EU",
+     "status": "permitted",
+     "max_percent": 5.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "EU Regulation (EC) No 1223/2009, Annex VI — consolidated text 02009R1223 — EN — 01.05.2025 — 038.001",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "version": "038.001 (2025-05-01)",
+      "data_as_of": "2026-10-08"
+     }
+    },
+    {
+     "jurisdiction": "AU",
+     "status": "permitted",
+     "max_percent": 5.0,
+     "conditions": [],
+     "notes": null,
+     "source": {
+      "title": "TGA Permissible Ingredients Determination",
+      "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+      "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+      "data_as_of": "2026-10-08"
+     }
+    }
+   ],
+   "registry": [
+    {
+     "id": "US-BABY-ACTIVE-ethylhexyl-triazone",
+     "status": "verified",
+     "sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ethylhexyl triazone as an active ingredient.",
+     "numerator": 0,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     }
+    }
+   ]
+  }
+ ],
+ "findings": [
+  {
+   "finding": "butyloctyl-salicylate",
+   "id": "US-BABY-BOS",
+   "status": "verified",
+   "sentence": "44 of the 163 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not an FDA sunscreen active ingredient; its manufacturer says it can contribute to SPF (no more than 2 SPF units at 5%) and help prevent some UV filters from breaking down.",
+   "numerator": 44,
+   "denominator": 163,
+   "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason); mineral-only actives (zinc oxide and/or titanium dioxide)",
+   "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+   "source": {
+    "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+    "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+    "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+    "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+    "snapshot": "2026-10-05"
+   },
+   "legal_framing": "Not a violation: butyloctyl salicylate is not an FDA sunscreen active, so it belongs with the inactive ingredients, as the rules require. The finding is about how labels work, not about any brand.",
+   "ingredient_source": {
+    "title": "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)",
+    "url": "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/",
+    "checked": "2026-10-08"
+   }
+  }
+ ],
+ "registry_population": {
+  "definition": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+  "formulations": 356,
+  "mineral_only": 163,
+  "review_file": "baby_review_2026-10-08.csv",
+  "snapshot": "2026-10-05"
+ }
+}

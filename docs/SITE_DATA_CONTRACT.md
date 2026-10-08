@@ -163,3 +163,17 @@ row, the site shows "Not yet reviewed" and no badge.
 The data side fixes the matrix items first, then the baby review, then
 marks registry numbers `verified` in the claim ledger. `evidence.json` is
 generated only from those.
+
+## Rendering and deployment (2026-10-08)
+
+- `scripts/render_site.py --check` turns `site/evidence.json` and
+  `content/notes.json` into `site/evidence/**` (library, one page per
+  ingredient, one per finding, method, `data.json`, `sitemap.xml`). CI runs it
+  every week right after `build_evidence.py`; nobody edits these HTML files.
+- Free text about an ingredient lives only in `content/notes.json`, one fact
+  per note, each with its own primary source. No source, no note.
+- The check fails on forbidden wording, on a note without a source, on an
+  unknown finding, or on a limit without its source link.
+- Serving: the Vercel project for this repo uses `site/` as its root
+  (`site/vercel.json`, clean URLs). arwhouse.com proxies `/evidence/*` to it,
+  so canonical URLs are `https://arwhouse.com/evidence/...`.

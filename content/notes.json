@@ -1,0 +1,29 @@
+{
+  "_rule": "Every note is a fact with its own primary source. No source, no note. Text must stay inside what the source says. render_site.py --check refuses a note without source.url.",
+  "notes": [
+    {
+      "id": "NOTE-INFANTS-FDA",
+      "applies_to": ["site"],
+      "heading": "Babies younger than 6 months",
+      "text": "The FDA says sunscreen is not usually the answer for infants. Its advice: keep your baby in the shade as much as possible, cover skin with clothing and a hat, and talk to your pediatrician before using any sunscreen on your baby.",
+      "source": {
+        "title": "FDA Consumer Update — Should You Put Sunscreen on Infants? Not Usually",
+        "url": "https://www.fda.gov/consumers/consumer-updates/should-you-put-sunscreen-infants-not-usually",
+        "version": "content current as of 2026-09-10",
+        "checked": "2026-10-08"
+      }
+    },
+    {
+      "id": "NOTE-HAWAII-ACT104",
+      "applies_to": ["oxybenzone", "octinoxate"],
+      "heading": "Hawaii",
+      "text": "Since January 1, 2021, it has been unlawful to sell, offer for sale, or distribute for sale in Hawaii any sunscreen that contains oxybenzone or octinoxate without a prescription issued by a licensed healthcare provider. This is a state sales rule; it does not change the federal limit shown above.",
+      "source": {
+        "title": "Hawaii Act 104, Session Laws of Hawaii 2018 (SB2571), approved July 3, 2018",
+        "url": "https://data.capitol.hawaii.gov/sessions/sessionlaws/Years/SLH2018/SLH2018_Act104.pdf",
+        "version": "as enacted",
+        "checked": "2026-10-08"
+      }
+    }
+  ]
+}

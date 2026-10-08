@@ -159,6 +159,7 @@ jobs:
         run: |
           python claims/registry_stats.py
           python scripts/build_evidence.py
+          python scripts/render_site.py --check
 
       - name: Commit data
         run: |
