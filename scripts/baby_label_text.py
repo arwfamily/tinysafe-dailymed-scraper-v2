@@ -71,6 +71,10 @@ def extract(setid):
 
 def main():
     ids = [json.loads(l)["setid"] for l in open(VIEW, encoding="utf-8") if l.strip()]
+    queue = os.path.join(ROOT, "claims", "baby_queue.csv")
+    if os.path.exists(queue):  # queued labels need their text for the review
+        import csv
+        ids += [r["setid"] for r in csv.DictReader(open(queue, encoding="utf-8"))]
     ids += [a for a in sys.argv[1:]]
     ids = sorted(set(ids))
     with ThreadPoolExecutor(4) as ex:

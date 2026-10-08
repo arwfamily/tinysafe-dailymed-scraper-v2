@@ -97,6 +97,38 @@ def population_exclusion(r):
     return None
 
 
+_PRODUCTS = None
+
+
+def split_listing(r):
+    """Products of a multi-product listing as records of their own (from the
+    label-text archive, which keeps each product's structured ingredients)."""
+    global _PRODUCTS
+    if _PRODUCTS is None:
+        _PRODUCTS = {}
+        if os.path.exists(LABEL_TEXT):
+            for line in open(LABEL_TEXT, encoding="utf-8"):
+                d = json.loads(line)
+                _PRODUCTS[d["setid"]] = d.get("products") or []
+    out = []
+    labeler = re.search(r"\[([^\]]+)\]\s*$", r["title"])
+    for i, p in enumerate(_PRODUCTS.get(r["setid"], [])):
+        if not p.get("actives"):
+            continue
+        acts = [{"name": a["name"], "unii": a.get("unii"), "percent_ww": a.get("percent_structured")}
+                for a in p["actives"]]
+        name = (p.get("name") or "").upper()
+        out.append({
+            "setid": f"{r['setid']}#{i + 1}",
+            "title": f"{name} (product {i + 1} of {len(_PRODUCTS[r['setid']])} in listing: {r['title']})",
+            "product_name": name, "active_ingredients": acts,
+            "inactive_ingredients": p.get("inactives") or [], "printed_inactives": None,
+            "dosage_form": p.get("dosage_form"), "product_count": 1, "label_flags": r.get("label_flags"),
+            "effective_date": r.get("effective_date"), "dailymed_url": r["dailymed_url"],
+            "labeler": r.get("labeler"), "listing_setid": r["setid"]})
+    return out
+
+
 def load():
     # The decision ledger (scripts/baby_track.py) carries the 2026-10-08 hand
     # review forward and adds rule decisions for every new candidate.
@@ -139,6 +171,21 @@ def load():
             w.writerow([r["setid"], r["title"], why, r["dailymed_url"]])
     out = {r["setid"] for r, _ in excl}
     baby = [r for r in baby if r["setid"] not in out]
+    # A listing that bundles several products is split into its products; each
+    # product that is itself a sunscreen meeting the same rules joins the
+    # population as its own formula (its ingredients come from the filing,
+    # because the printed Drug Facts on such a label cover several products).
+    from classify import classify
+    parts_added = []
+    for r, why in excl:
+        if not why.startswith("not one sunscreen:") or "non-sunscreen drug actives" in why:
+            continue
+        for sub in split_listing(r):
+            sub.update(classify(sub))
+            sub["formulation_hash"] = formulation_fingerprint(sub)[0]
+            if sub.get("product_type") == "sunscreen" and not population_exclusion(sub):
+                parts_added.append(sub)
+    baby += parts_added
     # The formulation hash is built from the FDA filing, and filings often omit
     # fragrance (see the fragrance finding). A scented and an unscented product
     # with the same filing are different formulas, so the printed label's
