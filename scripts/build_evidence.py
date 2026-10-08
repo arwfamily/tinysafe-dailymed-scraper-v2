@@ -159,12 +159,28 @@ def registry_claims(ledger, slug):
     for c in ledger.get("claims", []):
         if c.get("status") != "verified" or slug not in (c.get("ingredient_slugs") or []):
             continue
-        out.append({"id": c["id"], "status": "verified",
-                    "sentence": c["publishable_sentence"],
-                    "numerator": c.get("numerator"), "denominator": c.get("denominator"),
-                    "population": c.get("population"),
-                    "source": c.get("site_source")})
+        out.append(_registry_item(c))
     return out
+
+
+def _registry_item(c):
+    item = {"id": c["id"], "status": "verified",
+            "sentence": c["publishable_sentence"],
+            "numerator": c.get("numerator"), "denominator": c.get("denominator"),
+            "population": c.get("population"),
+            "caveat": c.get("caveat"),
+            "source": c.get("site_source")}
+    if c.get("legal_framing"):
+        item["legal_framing"] = c["legal_framing"]
+    return item
+
+
+def findings(ledger):
+    """Verified registry findings that belong to no single filter page
+    (e.g. UV absorbers hidden among inactive ingredients)."""
+    return [{"finding": c["finding"], **_registry_item(c)}
+            for c in ledger.get("claims", [])
+            if c.get("status") == "verified" and c.get("finding")]
 
 
 def build():
@@ -191,7 +207,9 @@ def build():
             "commit": _commit(),
             "contract": "docs/SITE_DATA_CONTRACT.md",
             "jurisdictions": list(JURISDICTIONS),
-            "ingredients": items}
+            "ingredients": items,
+            "findings": findings(ledger),
+            "registry_population": ledger.get("registry_population")}
 
 
 def check(doc):
@@ -210,6 +228,11 @@ def check(doc):
         for r in it["registry"]:
             if r["status"] != "verified":
                 errors.append(f"{it['slug']}: unverified registry claim {r['id']}")
+            if not (r.get("source") or {}).get("url") or not r.get("caveat"):
+                errors.append(f"{it['slug']}: registry claim {r['id']} lacks source url or caveat")
+    for fnd in doc.get("findings", []):
+        if fnd["status"] != "verified" or not (fnd.get("source") or {}).get("url"):
+            errors.append(f"finding {fnd['id']}: not verified or no source")
     return errors
 
 
@@ -233,7 +256,8 @@ def main():
     os.replace(tmp, OUT)
     n_reg = sum(len(i["registry"]) for i in doc["ingredients"])
     print(f"wrote {OUT}: {len(doc['ingredients'])} ingredients, "
-          f"{sum(len(i['limits']) for i in doc['ingredients'])} cells, {n_reg} verified registry claims")
+          f"{sum(len(i['limits']) for i in doc['ingredients'])} cells, {n_reg} verified registry claims, "
+          f"{len(doc['findings'])} findings")
 
 
 if __name__ == "__main__":

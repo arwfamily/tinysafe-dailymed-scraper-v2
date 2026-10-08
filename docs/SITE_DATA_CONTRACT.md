@@ -75,6 +75,24 @@ US registry and the claim ledger. Shape:
 (The registry numbers above illustrate the shape. They are not yet verified —
 see §3.)
 
+### Registry claims and findings (added 2026-10-08)
+
+- Each `registry` item and each top-level `findings` item carries
+  `sentence`, `numerator`, `denominator`, `population`, `caveat` and
+  `source` (`url` = data file, `list_url` = reviewed product list,
+  `method_url` = the script that computed it, `snapshot`).
+- The site renders `sentence` verbatim and shows `caveat` with it (the
+  caveat says a DailyMed listing is not proof a product is on US shelves).
+- Wording rule: say "listed in the FDA's DailyMed label database", never
+  "registered with the FDA" or "sold in the US". Say "absorbs UV light",
+  never "boosts SPF".
+- `findings` are verified results that belong to no single filter page
+  (hidden UV absorbers, butyloctyl salicylate). They need their own page;
+  they must not be pasted into a filter page.
+- `legal_framing`, when present, must appear next to the finding.
+- Population (owner decision 2026-10-08, strict): labels that say baby or
+  kids, hand-reviewed list in `claims/baby_review_*.csv`.
+
 ### Allowed `status` values for a limit
 
 | status | what the site shows |
@@ -128,13 +146,13 @@ row, the site shows "Not yet reviewed" and no badge.
 | Item | State | Blocker |
 |---|---|---|
 | US M020 limits incl. bemotrizinol, PABA/trolamine | verified | — |
-| EU Annex VI limits | verified (values) | conditions not yet structured per product type |
-| AU limits | **not publishable** | parser misses most limits (e.g. TiO2 25%, drometrizole trisiloxane 10%) |
-| Name merging across jurisdictions | **not publishable** | benzophenone-4/sulisobenzone and ecamsule/terephthalylidene split |
-| Ecamsule US status | needs `approved_product_only` | status not modelled yet |
+| EU Annex VI limits | verified, conditions structured | |
+| AU limits | verified for the 20 filters | own-concentration sentences only |
+| Name merging across jurisdictions | fixed | |
+| Ecamsule US status | `approved_product_only` | source is secondary; replace with Drugs@FDA record |
 | Canada limits | not collected | Health Canada sunscreen monograph not in the matrix |
-| US registry shares (baby) | **not publishable** | baby list (421 + 42 brand-only) needs human review |
-| Hidden UV absorbers (BOS etc.) shares | **not publishable** | same baby review; method fixed in classifier v2 |
+| US registry shares (baby) | verified (strict definition) | 21 claims in evidence.json |
+| Hidden UV absorbers (BOS etc.) shares | verified | 2 findings in evidence.json; need their own page |
 
 The data side fixes the matrix items first, then the baby review, then
 marks registry numbers `verified` in the claim ledger. `evidence.json` is
