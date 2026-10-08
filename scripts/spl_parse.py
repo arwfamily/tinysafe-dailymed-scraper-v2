@@ -208,6 +208,22 @@ def printed_actives(text, extra_names=()):
     return [{"name": k, "percent": v[2]} for k, v in sorted(found.items(), key=lambda kv: kv[1][0])]
 
 
+# Baby/kids words on the principal display panel. Drug Facts phrases that
+# mention children on every sunscreen are removed first.
+_FRONT_NOT_BABY = re.compile(
+    r"(?:REACH OF|SUPERVISION OF|FOR USE ON|USE ON)\s+CHILDREN|CHILDREN UNDER \d+\s*(?:MONTHS|YEARS)|"
+    r"CHILDREN \d+\s*(?:MONTHS|YEARS)|ADULTS AND CHILDREN|INFANTS? UNDER", re.I)
+
+
+def _front_baby_words(front):
+    try:
+        from classify import BABY_RE, BABY_FALSE_POSITIVE
+    except ImportError:
+        return []
+    t = BABY_FALSE_POSITIVE.sub(" ", _FRONT_NOT_BABY.sub(" ", front or ""))
+    return sorted({m.group(0).upper() for m in BABY_RE.finditer(t)})
+
+
 def parse_spl(xml):
     root = ET.fromstring(xml)
     doc = {
@@ -278,6 +294,7 @@ def parse_spl(xml):
         # the claim, not the FDA boilerplate "use a sunscreen with a Broad Spectrum SPF value of 15"
         "broad_spectrum_claim": bool(re.search(r"\bbroad\s+spectrum\b", front, re.I)),
         "spf_printed": int(spf.group(1)) if spf else None,
+        "front_panel_baby_words": _front_baby_words(front),
     }
     return doc
 

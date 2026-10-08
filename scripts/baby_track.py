@@ -64,7 +64,8 @@ def rule(r):
     if sig == "product_name" and pt == "sunscreen" and not KIT.search(title):
         return "include", "auto", RULE
     why = {"brand_name": "baby signal from brand only", "brand_list_review": "brand on the baby-brand list; check the product itself",
-           "product_name": f"baby word in name but product type is {pt}" if pt != "sunscreen" else "looks like a kit or set"}
+           "product_name": f"baby word in name but product type is {pt}" if pt != "sunscreen" else "looks like a kit or set",
+           "front_panel": "baby/kids word on the front panel only: " + ", ".join((r.get("label_flags") or {}).get("front_panel_baby_words") or [])}
     return "queue", "pending", why.get(sig, f"signal {sig}")
 
 

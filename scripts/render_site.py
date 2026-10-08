@@ -45,6 +45,10 @@ FINDINGS = {  # display order = dict order
         "title": "Preservatives banned in EU cosmetics, on US baby sunscreen labels",
         "eyebrow": "Finding · DailyMed labels × EU law",
         "caption": "Each door is one baby or kids formula. Filled: lists isobutylparaben or methylisothiazolinone."},
+    "hawaii-oxybenzone-octinoxate": {
+        "title": "Oxybenzone and octinoxate in baby sunscreens, and Hawaii's law",
+        "eyebrow": "Finding · DailyMed labels × Hawaii law",
+        "caption": "Each door is one baby or kids formula. Filled: contains oxybenzone or octinoxate."},
     "same-ingredient-list": {
         "title": "Same ingredient list, different label",
         "eyebrow": "Finding · DailyMed labels",
@@ -646,6 +650,30 @@ def finding_body(d, f):
              f"Some do: {mn} of the {md} mineral-only baby and kids formulas list fragrance, against {on} of the {od} formulas that use other filters."),
             ("How were these products selected?", howto),
         ]
+    elif key == "hawaii-oxybenzone-octinoxate":
+        det = f["detail"]
+        mx = max(v for _, v in det["per_filter"])
+        bars = "".join(f'<li><a href="{BASE}/ingredients/{E(n)}">{E(n)}</a><span class="bar"><i style="width:{100 * v / mx:.1f}%"></i></span><b>{v}</b></li>'
+                       for n, v in det["per_filter"])
+        frows = "".join(
+            f'<tr><td><a href="{E(p["url"])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["title"]))}</span></a></td>'
+            f'<td>{E(", ".join(p["filters"]))}</td><td>{E(p["label_date"])}</td></tr>' for p in det["formulas"])
+        mean = f"""
+<p>Hawaii law says that beginning January 1, 2021, it is unlawful to sell, offer for sale or distribute for sale in the state any sunscreen that contains oxybenzone or octinoxate, or both, without a prescription issued by a licensed healthcare provider. {src_chip("HRS §342D-21", isrc["url"], isrc["title"])} {src_chip("Act 104 text", det["act_text"]["url"], det["act_text"]["title"])}</p>
+<p>Both remain permitted active ingredients under the FDA sunscreen monograph, and both are among the 12 ingredients the FDA has proposed need more safety data. {src_chip("FDA", FDA_QA_URL, "FDA Q&A on OTC sunscreen")}</p>"""
+        extra = f"""<section><p class="eyebrow">Which filter</p><h2>How many of the {f["denominator"]} formulas list each one</h2>
+<ul class="bars">{bars}</ul>
+<p class="fine">{det["both"]} formulas contain both. The newest label version of {det["label_updated_since_2021"]} of the {f["numerator"]} is dated 2021 or later.</p></section>
+<section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} labels</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Filter</th><th>Label version date</th></tr></thead><tbody>{frows}</tbody></table></div>
+<p class="fine">Each name links to its FDA DailyMed record. The label version date is the date of the newest version in DailyMed; it does not show whether, or where, the product is still sold.</p></section>"""
+        faq = [
+            ("Are these sunscreens illegal?", f["legal_framing"]),
+            ("What does Hawaii's law prohibit?",
+             "From January 1, 2021, selling, offering for sale or distributing for sale in Hawaii a sunscreen that contains "
+             "oxybenzone or octinoxate, or both, without a prescription issued by a licensed healthcare provider."),
+            ("How were these products selected?", howto),
+        ]
     elif key == "parabens":
         det = f["detail"]
         mx = max(v for _, v in det["per_paraben"])
@@ -725,7 +753,7 @@ def page_finding(d, f):
     title = meta["title"]
     mean, extra, faq, howto = finding_body(d, f)
     faqh = "".join(f"<details><summary>{E(q)}</summary><p>{E(a)}</p></details>" for q, a in faq)
-    src_label = {"fda-more-data": "FDA source", "fragrance": "AAD guidance", "parabens": "EU law", "eu-banned-preservatives": "EU law",
+    src_label = {"fda-more-data": "FDA source", "hawaii-oxybenzone-octinoxate": "Hawaii law", "fragrance": "AAD guidance", "parabens": "EU law", "eu-banned-preservatives": "EU law",
                  "homosalate-eu-limit": "EU law", "eu-banned-preservatives": "EU law",
                  "fragrance": "AAD guidance"}.get(f["finding"], "Source")
     body = f"""

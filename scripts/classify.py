@@ -320,6 +320,8 @@ def classify(rec):
         baby_signal = "brand_name"
     elif BABY_BRAND_LABELERS.search(labeler) or BABY_BRAND_LABELERS.search(product):
         baby_signal = "brand_list_review"
+    elif (rec.get("label_flags") or {}).get("front_panel_baby_words"):
+        baby_signal = "front_panel"
     elif BABY_FALSE_POSITIVE.search(product):
         baby_signal = "false_positive_phrase"
     else:

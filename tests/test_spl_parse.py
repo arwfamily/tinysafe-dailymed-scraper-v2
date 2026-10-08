@@ -11,7 +11,7 @@ import unittest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(HERE), "scripts"))
-from spl_parse import label_fields, parse_spl, split_ingredient_list, match_inactives  # noqa: E402
+from spl_parse import label_fields, parse_spl, split_ingredient_list, match_inactives, _front_baby_words  # noqa: E402
 
 
 def fx(prefix):
@@ -102,6 +102,11 @@ class Listing(unittest.TestCase):
 
     def test_boilerplate_is_not_a_broad_spectrum_claim(self):
         self.assertFalse(label_fields(fx("369f449f"))["label_flags"]["broad_spectrum_claim"])
+
+    def test_front_panel_baby_words(self):
+        self.assertIn("KIDS", label_fields(fx("08147940"))["label_flags"]["front_panel_baby_words"])
+        self.assertEqual(_front_baby_words("SPF 50 Sport. Keep out of reach of children. Children under 6 months: ask a doctor"), [])
+        self.assertEqual(_front_baby_words("Gentle for babies and toddlers SPF 50"), ["BABIES", "TODDLERS"])
 
     def test_every_fixture_parses(self):
         for f in glob.glob(os.path.join(HERE, "fixtures", "spl", "*.xml")):

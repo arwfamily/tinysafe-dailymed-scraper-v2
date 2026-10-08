@@ -561,6 +561,39 @@ def main():
         "caveat": CAVEAT, "site_source": src,
         "method": "claims/registry_stats.py (EU_BANNED, where_listed)", "verified_date": snapshot})
 
+    # Hawaii: oxybenzone / octinoxate (HRS 342D-21, from January 1, 2021)
+    hi_rows = []
+    for r in forms:
+        got = sorted(set(r.get("uv_filters_organic") or []) & {"oxybenzone", "octinoxate"})
+        if got:
+            ed = r.get("effective_date") or ""
+            hi_rows.append({"title": r["title"], "url": r["dailymed_url"], "filters": got,
+                            "label_date": f"{ed[:4]}-{ed[4:6]}-{ed[6:]}" if len(ed) == 8 else ed})
+    hi_per = collections.Counter(x for row in hi_rows for x in row["filters"])
+    hi_recent = sum(1 for x in hi_rows if x["label_date"] >= "2021-01-01")
+    claims.append({
+        "id": "US-BABY-HAWAII", "status": "verified", "jurisdiction": "US",
+        "ingredient_slugs": ["oxybenzone", "octinoxate"], "finding": "hawaii-oxybenzone-octinoxate",
+        "claim": (f"{len(hi_rows)} of {N} baby/kids sunscreen formulations list oxybenzone ({hi_per['oxybenzone']}) "
+                  f"or octinoxate ({hi_per['octinoxate']}) as an active ingredient."),
+        "publishable_sentence": (f"{len(hi_rows)} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed "
+                                 f"label database contain oxybenzone or octinoxate. Since January 1, 2021, Hawaii law has "
+                                 f"made it unlawful to sell, offer for sale or distribute for sale in the state a sunscreen "
+                                 f"containing either one without a prescription."),
+        "legal_framing": ("Both ingredients are permitted under the FDA sunscreen monograph. Hawaii's law applies to sales "
+                          "in Hawaii only, and a DailyMed listing does not show where, or whether, a product is sold."),
+        "numerator": len(hi_rows), "denominator": N, "population": POP,
+        "ingredient_source": {"title": "Hawaii Revised Statutes §342D-21 (L 2018, c 104, §2)",
+                              "url": "https://law.justia.com/codes/hawaii/title-19/chapter-342d/section-342d-21/",
+                              "checked": "2026-10-08"},
+        "detail": {"per_filter": [["oxybenzone", hi_per["oxybenzone"]], ["octinoxate", hi_per["octinoxate"]]],
+                   "both": sum(1 for x in hi_rows if len(x["filters"]) == 2),
+                   "label_updated_since_2021": hi_recent,
+                   "act_text": {"title": "SB2571 CD1 (2018), enacted as Act 104", "url": "https://www.legiscan.com/HI/text/SB2571/2018"},
+                   "formulas": sorted(hi_rows, key=lambda x: (x["label_date"], x["title"]), reverse=True)},
+        "caveat": CAVEAT, "site_source": src,
+        "method": "claims/registry_stats.py (Hawaii)", "verified_date": snapshot})
+
     # Parabens
     PARABENS = [("propylparaben", r"(?<![A-Z])PROPYL ?PARABEN"), ("methylparaben", r"(?<![A-Z])METHYL ?PARABEN"),
                 ("butylparaben", r"(?<![A-Z])BUTYL ?PARABEN"), ("ethylparaben", r"(?<![A-Z])ETHYL ?PARABEN"),
