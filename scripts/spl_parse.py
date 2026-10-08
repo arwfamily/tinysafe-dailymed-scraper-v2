@@ -117,8 +117,18 @@ _JUNK = re.compile(r"^(?:etc\.?|\d+(?:\.\d+)?|\d{1,2}[-/]\d{1,2}[-/]\d{2,4})$", 
 
 def split_ingredient_list(text):
     """Split a printed list on commas/semicolons that are not inside brackets."""
-    text = _HEAD.sub("", text or "").strip()
+    text = text or ""
+    # a heading after a product name ("Brand X Baby Inactive ingredients ...")
+    m = re.search(r"(?:inactive|non[- ]medicinal|other)(?:\s+or\s+non[- ]medicinal)?\s+ingr\w*\s*[:\-]?", text[:220], re.I)
+    if m:
+        text = text[m.end():]
+    text = _HEAD.sub("", text).strip()
+    text = re.sub(r"^\s*/?\s*ingr[ée]dients\s+non\s+m\s?[ée]dicinaux\s*[:\-]?\s*", "", text, flags=re.I)  # bilingual heading
+    # a second-language copy that follows in the same section
+    text = re.split(r"\bingr[ée]dients\s+non\s+m\s?[ée]dicinaux\b|\bINGREDIENTES\b", text, flags=re.I)[0]
     text = _TRAILER.sub("", text).strip().rstrip(".")
+    if re.match(r"^\s*see\s+(?:ingredients|label|carton|package)", text, re.I):
+        return []
     text = re.sub(r",(?=\d)", "\u2063", text)  # 1,2-hexanediol stays one item
     out, depth, cur = [], 0, []
     for ch in text:
@@ -135,6 +145,7 @@ def split_ingredient_list(text):
     items = []
     for x in out:
         x = x.replace("\u2063", ",")
+        x = re.sub(r"\s*\.?\s*\*+\s*(?:certified|organic|natural|derived|from)\b.*$", "", x, flags=re.I)  # footnotes
         x = re.sub(r"\s+", " ", x).strip(" .*•·■")
         x = re.sub(r"^and\s+", "", x, flags=re.I)
         x = _HEAD.sub("", x) if items == [] else x

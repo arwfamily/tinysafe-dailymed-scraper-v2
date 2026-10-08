@@ -71,6 +71,12 @@ class PrintedFullIngredientList(unittest.TestCase):
         self.assertEqual(split_ingredient_list("Non-medicinal Ingredients/ Ingrédients non médicinaux : Aqua, Glycerin, 01-01-2018"),
                          ["Aqua", "Glycerin"])
 
+    def test_footnotes_product_name_heading_and_second_language(self):
+        self.assertEqual(split_ingredient_list("Black Girl Sunscreen Baby Inactive ingredients Water, Tocopherol. *Certified Organic Ingredients"),
+                         ["Water", "Tocopherol"])
+        self.assertEqual(split_ingredient_list("Aqua, Glycerin Ingrédients non médicinaux Eau, Glycérine"), ["Aqua", "Glycerin"])
+        self.assertEqual(split_ingredient_list("See ingredients on label"), [])
+
     def test_inci_to_spl_names(self):
         pairs, un_p, _ = match_inactives(["triethanolamine", "disodium EDTA", "cyclopentasiloxane", "Aqua"],
                                          ["TROLAMINE", "EDETATE DISODIUM", "CYCLOMETHICONE 5", "WATER"])
