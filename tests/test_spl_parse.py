@@ -76,6 +76,8 @@ class PrintedFullIngredientList(unittest.TestCase):
                          ["Water", "Tocopherol"])
         self.assertEqual(split_ingredient_list("Aqua, Glycerin Ingrédients non médicinaux Eau, Glycérine"), ["Aqua", "Glycerin"])
         self.assertEqual(split_ingredient_list("See ingredients on label"), [])
+        self.assertEqual(split_ingredient_list("Water, Sodium Benzoate. (1) Certified Organic Ingredient, beeswaxCertified Organic Ingredient, Sorbic Acid Inactive Ingredients"),
+                         ["Water", "Sodium Benzoate", "beeswax", "Sorbic Acid"])
 
     def test_inci_to_spl_names(self):
         pairs, un_p, _ = match_inactives(["triethanolamine", "disodium EDTA", "cyclopentasiloxane", "Aqua"],

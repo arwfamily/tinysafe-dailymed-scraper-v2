@@ -120,7 +120,7 @@ def split_ingredient_list(text):
     text = text or ""
     # a heading after a product name ("Brand X Baby Inactive ingredients ...")
     m = re.search(r"(?:inactive|non[- ]medicinal|other)(?:\s+or\s+non[- ]medicinal)?\s+ingr\w*\s*[:\-]?", text[:220], re.I)
-    if m:
+    if m and "," not in text[:m.start()]:  # only a heading that follows a product name, not a list
         text = text[m.end():]
     text = _HEAD.sub("", text).strip()
     text = re.sub(r"^\s*/?\s*ingr[ée]dients\s+non\s+m\s?[ée]dicinaux\s*[:\-]?\s*", "", text, flags=re.I)  # bilingual heading
@@ -146,6 +146,9 @@ def split_ingredient_list(text):
     for x in out:
         x = x.replace("\u2063", ",")
         x = re.sub(r"\s*\.?\s*\*+\s*(?:certified|organic|natural|derived|from)\b.*$", "", x, flags=re.I)  # footnotes
+        x = re.sub(r"\s*\.?\s*(?:\(\d\)\s*)?certified\s+organic\w*\s+ingredients?\b.*$", "", x, flags=re.I)
+        x = re.sub(r"^\W*=?\s*certified\s+organic\s*", "", x, flags=re.I)
+        x = re.sub(r"\s+(?:inactive|other)\s+ingredients?\s*$", "", x, flags=re.I)
         x = re.sub(r"\s+", " ", x).strip(" .*•·■")
         x = re.sub(r"^and\s+", "", x, flags=re.I)
         x = _HEAD.sub("", x) if items == [] else x
