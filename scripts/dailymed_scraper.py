@@ -603,7 +603,17 @@ def process_setid(item):
             lf = label_fields(xml)
         except Exception as e:  # never lose a record over a parse problem
             lf = {"label_parse_error": str(e)[:200]}
-        rec.update(lf)  # label_actives_proposal is reviewed, never applied here
+        prop = lf.pop("label_actives_proposal", None)
+        rec.update(lf)
+        # keep a proposal only if it really differs from what we hold (our
+        # actives already carry the printed % via apply_panel_percents)
+        if prop:
+            from spl_parse import canon_active
+            have = {canon_active(a.get("name")): a.get("percent_ww") for a in actives}
+            want = {a["name"]: a["percent_ww"] for a in prop}
+            if set(have) != set(want) or any(
+                    have[k] is None or abs(have[k] - v) > max(0.2, 0.1 * v) for k, v in want.items()):
+                rec["label_actives_proposal"] = prop  # reviewed, never applied here
     return enrich(rec)
 
 

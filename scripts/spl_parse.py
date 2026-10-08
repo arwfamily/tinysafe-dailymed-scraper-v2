@@ -353,8 +353,11 @@ def check_label(doc, us_max=None):
             issues.append({"type": "printed_active_missing_from_structured", "name": n, "percent": pct, "structured_location": where})
         else:
             sp = sa[n].get("percent_structured")
+            # only mass/mass fractions are comparable (mg/mL depends on density);
             # grams-per-pack filings round; a real error is large (24.08 vs 3, 10x)
-            if pct is not None and sp is not None and abs(sp - pct) > max(0.2, 0.1 * pct):
+            mass = {"G", "MG", "UG", "MCG", "KG"}
+            ww = (sa[n].get("strength_unit") or "").upper() in mass and (sa[n].get("denominator_unit") or "").upper() in mass
+            if ww and pct is not None and sp is not None and abs(sp - pct) > max(0.2, 0.1 * pct):
                 issues.append({"type": "percent_mismatch", "name": n, "printed": pct, "structured": sp})
     for n, a in sa.items():
         if complete and pa and n not in pa:
