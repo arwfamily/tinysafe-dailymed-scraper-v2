@@ -120,13 +120,19 @@ def split_listing(r):
         name = (p.get("name") or "").upper()
         out.append({
             "setid": f"{r['setid']}#{i + 1}",
-            "title": f"{name} (product {i + 1} of {len(_PRODUCTS[r['setid']])} in listing: {r['title']})",
+            # classified by its own name only; the listing is kept for reference
+            "title": f"{name} [{labeler.group(1) if labeler else ''}]",
+            "listing_title": r["title"], "part": f"product {i + 1} of {len(_PRODUCTS[r['setid']])} in one listing",
             "product_name": name, "active_ingredients": acts,
             "inactive_ingredients": p.get("inactives") or [], "printed_inactives": None,
             "dosage_form": p.get("dosage_form"), "product_count": 1, "label_flags": r.get("label_flags"),
             "effective_date": r.get("effective_date"), "dailymed_url": r["dailymed_url"],
             "labeler": r.get("labeler"), "listing_setid": r["setid"]})
-    return out
+    # When some products in the listing name babies or kids, only those count;
+    # when none does, the listing's own baby/kids title stands for all of them.
+    from classify import BABY_RE
+    named = [p for p in out if BABY_RE.search(p["product_name"])]
+    return named or out
 
 
 def load():
@@ -214,10 +220,11 @@ def source(review, snapshot):
             "snapshot": snapshot}
 
 
-POP = ("unique formulations of sunscreen labels that say baby or kids "
-       "(FDA DailyMed; selected by rule from the label, with edge cases decided by hand "
-       "and every decision recorded with its reason; labels for another market, labels that do not "
-       "meet US sunscreen limits as listed, and multi-product listings left out)")
+POP = ("unique formulations of sunscreen labels that say baby or kids in the product name or on the "
+       "front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand "
+       "and every decision recorded with its reason; a claim such as 'suitable for children' alone does "
+       "not count; labels for another market and labels that do not meet US sunscreen limits as listed "
+       "left out; a listing that bundles several products is split into its products)")
 POP_MIN = POP + "; mineral-only actives (zinc oxide and/or titanium dioxide)"
 CAVEAT = ("DailyMed lists drug labels submitted to the FDA, including labels for products "
           "made in US facilities for other markets. A listing is not proof that a product "
