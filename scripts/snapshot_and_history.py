@@ -38,9 +38,14 @@ STATE = "data/history/_state.json"
 
 # Fields that describe the FORMULA. Changes here = reformulated.
 # Fields outside this set = metadata.
+#
+# Only fields the REGISTER states belong here. spf, category and baby_labeled
+# used to be listed, but they are our own derivations from the title; when the
+# classifier improved (v2, 2026-10-08) every re-derived value would have been
+# logged as a market "metadata" event. A real label change still shows up,
+# because the title itself is tracked.
 META_FIELDS = [
-    "title", "product_name", "dosage_form", "spf", "category",
-    "baby_labeled", "labeler", "brand",
+    "title", "product_name", "dosage_form", "labeler", "brand",
 ]
 
 

@@ -37,6 +37,8 @@ Outputs:
 import argparse, json, os, re, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import urllib.request, urllib.error
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from classify import classify  # noqa: E402
 
 BASE = "https://dailymed.nlm.nih.gov/dailymed/services/v2"
 OPENFDA = "https://api.fda.gov/drug/label.json"
@@ -537,26 +539,14 @@ def categorize(title, dosage, actives, has_spf):
 
 
 def enrich(rec):
-    title = rec.get("title", "")
-    actives = rec.get("active_ingredients", [])
-    inact = rec.get("inactive_ingredients", [])
-    act_names = [a["name"] for a in actives]
-    zno = has_any(act_names, ["ZINC OXIDE"])
-    tio2 = has_any(act_names, ["TITANIUM DIOXIDE"])
-    chem = has_any(act_names, CHEMICAL_FILTERS)
-    spf = parse_spf(title, rec.get("dosage_form", ""))
-    cat = categorize(title, rec.get("dosage_form", ""), act_names, spf is not None)
-    rec["spf"] = spf
-    rec["contains_zinc_oxide"] = zno
-    rec["contains_titanium_dioxide"] = tio2
-    rec["contains_chemical_filter"] = chem
-    inact_names = [i["name"] if isinstance(i, dict) else i for i in inact]
-    rec["has_hidden_chemical_filter"] = has_any(inact_names, HIDDEN_FILTERS)
-    rec["mineral_type"] = ("zinc_titanium" if (zno and tio2) else "zinc" if zno
-                           else "titanium" if tio2 else "none")
-    rec["is_hundred_percent_mineral"] = (zno and not chem and not rec["has_hidden_chemical_filter"])
-    rec["baby_labeled"] = any(w in title.upper() for w in BABY_WORDS)
-    rec["category"] = cat
+    """Classification lives in scripts/classify.py (v2, 2026-10-08).
+
+    The v1 title-substring rules that used to be here misfiled thousands of
+    products (TINTED -> makeup, labeler names -> baby, a 3-entry hidden-filter
+    list). classify() decides from active-ingredient UNIIs first and keeps the
+    same output field names, so every downstream reader keeps working.
+    """
+    rec.update(classify(rec))
     return rec
 
 
