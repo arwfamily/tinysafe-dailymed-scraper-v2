@@ -3603,11 +3603,11 @@
         "octinoxate"
       ],
       "finding": "hawaii-oxybenzone-octinoxate",
-      "claim": "78 of 335 baby/kids sunscreen formulations list oxybenzone (50) or octinoxate (44) as an active ingredient.",
-      "publishable_sentence": "78 of the 335 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain oxybenzone or octinoxate. Since January 1, 2021, Hawaii law has made it unlawful to sell, offer for sale or distribute for sale in the state a sunscreen containing either one without a prescription.",
+      "claim": "78 of 340 baby/kids sunscreen formulations list oxybenzone (50) or octinoxate (44) as an active ingredient.",
+      "publishable_sentence": "78 of the 340 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain oxybenzone or octinoxate. Since January 1, 2021, Hawaii law has made it unlawful to sell, offer for sale or distribute for sale in the state a sunscreen containing either one without a prescription.",
       "legal_framing": "Both ingredients are permitted under the FDA sunscreen monograph. Hawaii's law applies to sales in Hawaii only, and a DailyMed listing does not show where, or whether, a product is sold.",
       "numerator": 78,
-      "denominator": 335,
+      "denominator": 340,
       "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; labels for another market, labels that do not meet US sunscreen limits as listed, and multi-product listings left out)",
       "ingredient_source": {
         "title": "Hawaii Revised Statutes §342D-21 (L 2018, c 104, §2)",
