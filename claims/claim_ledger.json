@@ -1,0 +1,117 @@
+{
+  "ledger": "ARW House baby sunscreen claim ledger",
+  "version": "0.4",
+  "verified_on": "2026-10-08",
+  "rule": "Only claims with status=verified may be published. Every number must be reproducible by the script named in `method`. Wording in `publishable_sentence` is the maximum strength allowed.",
+  "claims": [
+    {
+      "id": "US-HID-001",
+      "status": "provisional_do_not_publish",
+      "jurisdiction": "US",
+      "claim": "Among unique mineral-active baby sunscreen formulations on DailyMed, 49 of 148 (33.1%) contain at least one UV-absorbing excipient not listed as an active ingredient.",
+      "publishable_sentence": "About 1 in 3 baby sunscreens sold as mineral-only in the US also contain an ingredient that absorbs UV light but is not listed as an active ingredient.",
+      "numerator": 49,
+      "denominator": 148,
+      "breakdown": {
+        "butyloctyl salicylate": 45,
+        "ethylhexyl methoxycrylene": 16,
+        "polyester-8": 4,
+        "tridecyl salicylate": 2,
+        "ethyl ferulate": 1
+      },
+      "population": "category=sunscreen AND baby_labeled=true; deduplicated by formulation_hash (391 registrations -> 332 unique formulations); actives contain ZnO and/or TiO2 and no FDA chemical filter",
+      "source": "arwfamily/tinysafe-dailymed-scraper-v2 data/canonical/us_sunscreens.jsonl, snapshot last_seen 2026-10-05 (13,326 rows, of which 6,537 category=sunscreen)",
+      "method": "scripts/verify_ledger.py US-HID-001 (independent regex on inactive ingredient names; does NOT use the pipeline flag has_hidden_chemical_filter)",
+      "supersedes": "45 of 144 (IG series, Aug 2026) — pipeline flag missed ethylhexyl methoxycrylene in 4 ZnO+TiO2 products (Johnson's Baby Mineral SPF30, Aveeno Baby/Kids Daily Moisture Face, one other)",
+      "legal_framing": "Not a violation: these excipients are not FDA-recognised sunscreen actives, so listing them as actives would itself be non-compliant. The finding is about the labeling system, not about any brand.",
+      "known_limits": [
+        "baby_labeled classifier also matches company names (e.g. BABYFACE LLC, Baby Bubba soap); excluding the doubtful cases moves the ratio to ~33-34%, sentence unchanged",
+        "Whether each excipient materially contributes to SPF is product-specific and not measured here; the sentence says 'absorbs UV light', not 'boosts SPF'"
+      ],
+      "blocker": "Repo audit 2026-10-08: (1) category classifier is title-substring based — baby sunscreens labeled TINTED/other are excluded from category=sunscreen; (2) baby_labeled matches labeler names and misses Mustela/Pipette/Babo/Attitude Little Ones; (3) hidden-absorber list here omits diethylhexyl syringylidenemalonate, polysilicone-15, benzylidene dimethoxydimethylindanone. Numerator and denominator will both move. Do NOT publish until recomputed on a hand-reviewed baby list."
+    },
+    {
+      "id": "US-HID-002",
+      "status": "provisional_do_not_publish",
+      "jurisdiction": "US",
+      "claim": "Butyloctyl salicylate alone: 45 of 148 unique mineral-active baby sunscreen formulations (30.4%).",
+      "publishable_sentence": "Nearly 1 in 3 mineral baby sunscreens in the US contain butyloctyl salicylate, a salicylate ester used to raise SPF.",
+      "numerator": 45,
+      "denominator": 148,
+      "population": "same as US-HID-001",
+      "source": "same as US-HID-001",
+      "method": "scripts/verify_ledger.py US-HID-002",
+      "note": "Strongest single-ingredient version; use when the headline must avoid grouping different chemistries.",
+      "blocker": "Repo audit 2026-10-08: (1) category classifier is title-substring based — baby sunscreens labeled TINTED/other are excluded from category=sunscreen; (2) baby_labeled matches labeler names and misses Mustela/Pipette/Babo/Attitude Little Ones; (3) hidden-absorber list here omits diethylhexyl syringylidenemalonate, polysilicone-15, benzylidene dimethoxydimethylindanone. Numerator and denominator will both move. Do NOT publish until recomputed on a hand-reviewed baby list."
+    },
+    {
+      "id": "US-CORPUS-001",
+      "status": "provisional_do_not_publish",
+      "jurisdiction": "US",
+      "claim": "US corpus size",
+      "publishable_sentence": "6,537 sunscreen registrations on DailyMed (5,223 unique formulations), of which 391 are labeled for babies or kids.",
+      "supersedes": "'13,285 US sunscreens' used in chat on 2026-10-08 — 13,326 is the whole corpus including makeup (3,308), lip balm, diaper cream and other SPF products; only 6,537 are category=sunscreen",
+      "method": "scripts/verify_ledger.py US-CORPUS-001",
+      "blocker": "6,537 is the pipeline's category=sunscreen count; audit found ~2,000+ real sunscreens classified as makeup (TINTED) or other. True sunscreen count unknown until reclassified on actives + Drug Facts 'Uses'."
+    },
+    {
+      "id": "AU-BEMT-001",
+      "status": "verified_with_scope_limit",
+      "jurisdiction": "AU",
+      "claim": "144 of 501 ARTG-listed sunscreens in the dataset list bemotrizinol as an active; 11 of them are baby/kids-named (Banana Boat Baby/Kids, Cancer Council Kids).",
+      "publishable_sentence": "In Australia, bemotrizinol is already an active ingredient in at least 144 listed sunscreens, including at least 11 sold for babies and kids.",
+      "numerator": 144,
+      "denominator": 501,
+      "supersedes": "'145' used in chat on 2026-10-08 (145 is the zinc oxide count)",
+      "SCOPE_WARNING": "The 501 products come from an ARTG export of a keyword search for 'sunscreen' (export footer: SearchValues contains 'sunscreen', 2026-08-21) — not a census. Use 'at least N'; no market percentages.",
+      "source": "arwfamily/global-sunscreen data/canonical/au_ingredients.jsonl (501 records)",
+      "method": "scripts/verify_ledger.py AU-BEMT-001",
+      "note_bemt_name": "TGA's own approved name is BEMOTRIZINOL; no name-mapping issue."
+    },
+    {
+      "id": "REG-US-BEMT-001",
+      "status": "verified",
+      "jurisdiction": "US",
+      "claim": "FDA Final Administrative Order OTC000039 (issued 2026-06-10, corrected 2026-08-10, effective 2026-08-09) added bemotrizinol to OTC Monograph M020: up to 6%, GRASE for adults and children 6 months and older; DSM receives 18 months of marketing exclusivity from the effective date; may not be combined with aminobenzoic acid or trolamine salicylate. Permitted dosage forms: oil, lotion, cream, gel, butter, paste, ointment, stick, and spray only as pump or bag-on-valve; NOT permitted: propellant aerosol sprays and powders.",
+      "sources": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/Order/OTC000039_Final_Administrative_Order.pdf",
+        "https://www.govinfo.gov/content/pkg/FR-2026-06-10/html/2026-11578.htm",
+        "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/order/supportDoc/OTC000039/Final_Administrative_Order.pdf",
+        "https://www.spencerfane.com/?p=41806",
+        "https://www.ctpa.org.uk/news/fda-adds-bemotrizinol-to-permitted-sunscreen-active-ingredients-in-the-us-9096",
+        "https://www.venable.com/insights/publications/2026/06/fda-clears-the-way-for-bemotrizinol-first-new-otc"
+      ],
+      "todo": "Order PDF read 2026-10-08 (dosage forms, combinations, exclusivity confirmed). Done.",
+      "credit": "Dosage-form restriction first flagged by Muse package (2026-10-08); verified against Venable analysis. Confirm in order PDF text."
+    },
+    {
+      "id": "REG-US-PABA-TROL-001",
+      "status": "verified",
+      "jurisdiction": "US",
+      "claim": "FDA Final Administrative Order OTC000008-1 (signed 2026-09-08, issued 2026-09-11) amends M020 to remove aminobenzoic acid (PABA) and trolamine salicylate as sunscreen active ingredients, effective 2027-09-11 (or later if disputed).",
+      "publishable_sentence": "In September 2026 the FDA finalized the removal of PABA and trolamine salicylate from the list of permitted US sunscreen ingredients.",
+      "precision_rule": "Until 2027-09-11 both remain listed M020 actives. Say 'removal finalized, effective 2027-09-11', never 'banned' or 'no longer permitted'. The FDA Q&A page lists 2026-09-10; the order PDF says issued 2026-09-11 — the order PDF governs.",
+      "sources": [
+        "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
+        "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/Order/FinalAdministrativeOrderOTC000008-PABATrolamine.pdf"
+      ],
+      "credit": "First flagged by Muse package (2026-10-08); verified on FDA Q&A page.",
+      "todo": null
+    },
+    {
+      "id": "REG-MATRIX-001",
+      "status": "verified",
+      "jurisdiction": "US/EU/AU",
+      "claim": "Jurisdiction matrix for the 20 v1 filters: every cell carries its source document URL; AU caps parsed only from sentences about the ingredient's own concentration.",
+      "method": "tests/test_matrix.py (13 cases) + scripts/build_evidence.py --check",
+      "verified_date": "2026-10-08"
+    }
+  ],
+  "open_issues": [
+    "Both data repos graded D for publication on 2026-10-08 — see audit summary. No registry number is publishable until the CRITICAL fixes land.",
+    "Fix baby_labeled classifier: match product name and label text, not company name.",
+    "Fix has_hidden_chemical_filter: add ethylhexyl methoxycrylene for ZnO+TiO2 products (4 misses).",
+    "Confirm total number of ARTG-listed sunscreens to know what share of the market the 501 represent.",
+    "Re-run every number in the published IG series and the 'Same Formula, Different Label' page against this ledger before reuse."
+  ]
+}
