@@ -722,7 +722,8 @@ def check(pages, d, notes):
         if not (n.get("source") or {}).get("url"):
             errs.append(f"note {n.get('id')}: no source url")
     for f in d["findings"]:
-        if f["finding"] == "fda-more-data" and not f["numerator"] * 2 > f["denominator"]:
+        if (f["finding"] == "fda-more-data" and FINDINGS["fda-more-data"]["title"].startswith("Over half")
+                and not f["numerator"] * 2 > f["denominator"]):
             errs.append("fda-more-data title says 'Over half' but the share is not above 50%")
         if f["finding"] not in FINDING_TITLES:
             errs.append(f"finding {f['finding']}: no title in FINDING_TITLES")
@@ -751,8 +752,25 @@ def check(pages, d, notes):
     return errs
 
 
+def share_words(n, d):
+    """Plain-English share that is true for n/d; never rounds up past a threshold."""
+    x = n / d
+    if x > 0.5:
+        return "Over half"
+    if x >= 0.45:
+        return "Nearly half"
+    if x > 1 / 3:
+        return "Over a third"
+    return f"{n} of {d}"
+
+
 def main():
     d = json.load(open(EVIDENCE, encoding="utf-8"))
+    for f in d["findings"]:
+        if f["finding"] == "fda-more-data":
+            t = FINDINGS["fda-more-data"]["title"].split(" of baby", 1)[1]
+            FINDINGS["fda-more-data"]["title"] = share_words(f["numerator"], f["denominator"]) + " of baby" + t
+            FINDING_TITLES["fda-more-data"] = FINDINGS["fda-more-data"]["title"]
     notes = json.load(open(NOTES, encoding="utf-8"))["notes"]
     pages = {BASE: page_index(d, notes)}
     ings = d["ingredients"]
