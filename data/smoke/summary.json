@@ -10,91 +10,27 @@
   "printed_inactives": 119,
   "label_flags": 150,
   "label_parse_error": 0,
-  "label_actives_proposal": 10
+  "label_actives_proposal": 4
  },
  "checks": {
-  "printed_inactives_unmatched": 111,
-  "percent_mismatch": 31,
   "printed_actives_not_fully_read": 62,
+  "percent_mismatch": 14,
+  "printed_inactives_unmatched": 111,
   "fragrance_printed_not_structured": 44,
   "printed_active_missing_from_structured": 6,
   "structured_active_not_printed": 7,
   "above_us_max": 5
  },
  "flags_true": {
-  "under_6_months_ask_doctor": 82,
-  "spf_printed": 80,
   "broad_spectrum_claim": 34,
+  "spf_printed": 80,
+  "under_6_months_ask_doctor": 82,
   "water_resistant_minutes": 18
  },
  "product_count": {
   "1": 150
  },
  "corrections": [
-  {
-   "setid": "5c912acf-be18-c7f9-e063-6394a90a800b",
-   "title": "BIOCORNEUM SILISHIELD MINERAL SPF 30 LIGHT TONE (LIGHT TONE MINERAL SUNSCREEN SPF 30) GEL ",
-   "filed": [
-    [
-     "ZINC OXIDE",
-     20.8
-    ]
-   ],
-   "label": [
-    [
-     "ZINC OXIDE",
-     20.8
-    ]
-   ]
-  },
-  {
-   "setid": "acfb3067-2ff2-4b30-b88a-2d6a0a9564e3",
-   "title": "RAYITO DE SOL (ENSULIZOLE, SULISOBENZONE) GEL [SISCOM DE ARGENTINA S.A.]",
-   "filed": [
-    [
-     "ENSULIZOLE",
-     4.0
-    ],
-    [
-     "SULISOBENZONE",
-     4.0
-    ]
-   ],
-   "label": [
-    [
-     "ENSULIZOLE",
-     4.0
-    ],
-    [
-     "SULISOBENZONE",
-     4.0
-    ]
-   ]
-  },
-  {
-   "setid": "df2a9021-1a45-4c7c-ad81-627d81af99f4",
-   "title": "RAYITO DE SOL (ENSULIZOLE, SULISOBENZONE) GEL [SISCOM DE ARGENTINA S.A.]",
-   "filed": [
-    [
-     "ENSULIZOLE",
-     4.0
-    ],
-    [
-     "SULISOBENZONE",
-     4.0
-    ]
-   ],
-   "label": [
-    [
-     "ENSULIZOLE",
-     4.0
-    ],
-    [
-     "SULISOBENZONE",
-     4.0
-    ]
-   ]
-  },
   {
    "setid": "b671d630-2b71-66d2-e053-2a95a90a8461",
    "title": "EA EIGHT HR LIP SHEER TINTS (OXYBENZONE, PADIMATE O, PETROLATUM) LIPSTICK [REVLON]",
@@ -260,126 +196,6 @@
     [
      "OCTOCRYLENE",
      8.0
-    ]
-   ]
-  },
-  {
-   "setid": "23b0cf33-725f-4294-a7a4-ca44e45556dd",
-   "title": "SCRUBS SOLAR GUARD SUNSCREEN WIPE SCRUBS SOLAR GUARD (SUNSCREEN WIPE) CLOTH [ITW DYMON]",
-   "filed": [
-    [
-     "HOMOSALATE",
-     2.0
-    ],
-    [
-     "OCTINOXATE",
-     7.5
-    ],
-    [
-     "OCTISALATE",
-     4.0
-    ],
-    [
-     "OXYBENZONE",
-     5.0
-    ]
-   ],
-   "label": [
-    [
-     "HOMOSALATE",
-     2.0
-    ],
-    [
-     "OCTINOXATE",
-     7.5
-    ],
-    [
-     "OCTISALATE",
-     4.0
-    ],
-    [
-     "OXYBENZONE",
-     5.0
-    ]
-   ]
-  },
-  {
-   "setid": "92b1bdbe-aa58-4394-8a91-3c43ab7835ea",
-   "title": "CRC SUNSCREEN TOWEL CRC (SUNSCREEN TOWEL) CLOTH [CRC INDUSTRIES, INC.]",
-   "filed": [
-    [
-     "HOMOSALATE",
-     2.0
-    ],
-    [
-     "OCTINOXATE",
-     7.5
-    ],
-    [
-     "OCTISALATE",
-     4.0
-    ],
-    [
-     "OXYBENZONE",
-     5.0
-    ]
-   ],
-   "label": [
-    [
-     "HOMOSALATE",
-     2.0
-    ],
-    [
-     "OCTINOXATE",
-     7.5
-    ],
-    [
-     "OCTISALATE",
-     4.0
-    ],
-    [
-     "OXYBENZONE",
-     5.0
-    ]
-   ]
-  },
-  {
-   "setid": "c649a9be-5e7a-4436-aea1-017e36b07d08",
-   "title": "SUNSCREEN WIPE KGP (HOMOSALATE OCTINOXATE OCTISALATE OXYBENZONE ) CLOTH [KGP PRODUCTS, INC",
-   "filed": [
-    [
-     "HOMOSALATE",
-     2.0
-    ],
-    [
-     "OCTINOXATE",
-     7.5
-    ],
-    [
-     "OCTISALATE",
-     4.0
-    ],
-    [
-     "OXYBENZONE",
-     5.0
-    ]
-   ],
-   "label": [
-    [
-     "HOMOSALATE",
-     2.0
-    ],
-    [
-     "OCTINOXATE",
-     7.5
-    ],
-    [
-     "OCTISALATE",
-     4.0
-    ],
-    [
-     "OXYBENZONE",
-     5.0
     ]
    ]
   }
