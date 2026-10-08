@@ -245,8 +245,12 @@ def parse_spl(xml):
     }
     act_text = " ".join(sections.get("active", []))
     n_pct = len(re.findall(r"\d+(?:\.\d+)?\s*%", act_text))
+    # any amount printed without a % sign ("Ethyl Methoxycinnamate - 7.5") means
+    # a line we may not have tied to an active: treat the list as not fully read
+    bare = re.sub(r"\d+(?:\.\d+)?\s*%|\bSPF\s*\d+|\(in each[^)]*\)|\d+\s*(?:minutes|hours|months|years|ml|g|oz|fl)\b", " ", act_text, flags=re.I)
+    n_bare = len(re.findall(r"(?<![A-Za-z\-/])\d+(?:\.\d+)?(?![A-Za-z\-/])", bare))
     got = sum(1 for a in doc["printed"]["actives"] if a["percent"] is not None)
-    doc["printed"]["actives_complete"] = bool(act_text) and n_pct > 0 and got == n_pct
+    doc["printed"]["actives_complete"] = bool(act_text) and n_pct > 0 and got == n_pct and n_bare == 0
     doc["flags"] = {
         "under_6_months_ask_doctor": bool(re.search(r"(children|infants?)\s+under\s+6\s+months[^.]{0,40}?(ask|consult)\s+a\s+(doctor|physician)", all_text, re.I)),
         "water_resistant_minutes": int(wr.group(1)) if wr else None,

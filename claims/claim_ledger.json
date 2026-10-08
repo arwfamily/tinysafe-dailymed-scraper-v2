@@ -276,9 +276,9 @@
       "ingredient_slugs": [
         "octisalate"
       ],
-      "claim": "153 of 314 baby/kids sunscreen formulations list octisalate as an active ingredient.",
-      "publishable_sentence": "153 of the 314 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octisalate as an active ingredient.",
-      "numerator": 153,
+      "claim": "152 of 314 baby/kids sunscreen formulations list octisalate as an active ingredient.",
+      "publishable_sentence": "152 of the 314 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octisalate as an active ingredient.",
+      "numerator": 152,
       "denominator": 314,
       "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; labels for another market, labels that do not meet US sunscreen limits as listed, and multi-product listings left out)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
@@ -299,9 +299,9 @@
       "ingredient_slugs": [
         "octocrylene"
       ],
-      "claim": "135 of 314 baby/kids sunscreen formulations list octocrylene as an active ingredient.",
-      "publishable_sentence": "135 of the 314 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octocrylene as an active ingredient.",
-      "numerator": 135,
+      "claim": "136 of 314 baby/kids sunscreen formulations list octocrylene as an active ingredient.",
+      "publishable_sentence": "136 of the 314 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octocrylene as an active ingredient.",
+      "numerator": 136,
       "denominator": 314,
       "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; labels for another market, labels that do not meet US sunscreen limits as listed, and multi-product listings left out)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
@@ -683,18 +683,18 @@
       "id": "US-BABY-SAME-LIST",
       "status": "verified",
       "blocker": null,
-      "candidates_structured": 91,
+      "candidates_structured": 90,
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "same-ingredient-list",
-      "claim": "55 of 314 baby/kids formulations print the same ingredient list as a non-baby label.",
-      "publishable_sentence": "55 of the 314 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 45 cases both labels name the same labeler.",
+      "claim": "54 of 314 baby/kids formulations print the same ingredient list as a non-baby label.",
+      "publishable_sentence": "54 of the 314 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 44 cases both labels name the same labeler.",
       "legal_framing": "Not a violation: nothing requires a baby or kids sunscreen to have a different formula. The finding compares what the label records state; it does not show how the products are made.",
-      "numerator": 55,
+      "numerator": 54,
       "denominator": 314,
       "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; labels for another market, labels that do not meet US sunscreen limits as listed, and multi-product listings left out)",
       "detail": {
-        "same_company": 45,
+        "same_company": 44,
         "pairs_csv": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/same_ingredient_list_pairs.csv",
         "pairs": [
           {
@@ -1334,19 +1334,6 @@
               [
                 "NO-AD 45 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE AND OXYBENZONE) LOTION [SOLSKYN PERSONAL CARE LLC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9751f04c-8d1a-4bf3-80b0-372751a23839"
-              ]
-            ],
-            "same_company": true
-          },
-          {
-            "baby": [
-              "PETER ISLAND CONTINOUS SUNSCREEN KIDS SPF 50 (OXYBENZONE, AVOBENZONE, OCTOCRYLENE) SPRAY [ACCESS BUSINESS GROUP LLC]",
-              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2db243d3-3b59-4be9-967c-0d4aea4d0066"
-            ],
-            "same_list": [
-              [
-                "PETER ISLAND CONTINOUS SUNSCREEN SPF 50 (OXYBENZONE, AVOBENZONE, OCTOCRYLENE) SPRAY [ACCESS BUSINESS GROUP LLC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9721a3ef-0571-44ba-b58d-e510a02d4de9"
               ]
             ],
             "same_company": true
