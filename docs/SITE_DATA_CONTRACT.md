@@ -9,6 +9,10 @@ Status: v1, 2026-10-08. Owner decisions (Angela Lee, 2026-10-08):
    contain an ingredient), but only numbers marked `verified`.
 5. `/radar/` (reformulation alerts) is on hold until formulation history is
    rebuilt and audited.
+6. Byline (decided 2026-10-08): publisher **ARW House**; author
+   **Angela Lee, Founder** on every page, as a named person (Person schema),
+   not an institutional label. A named pharmacist/clinical reviewer is
+   added only once confirmed in writing; until then no reviewer line.
 
 This file defines what the data side delivers and what the site may do with it.
 The site never types, edits, rounds or recomputes a number. If a number is
@@ -111,7 +115,9 @@ row, the site shows "Not yet reviewed" and no badge.
    not rank or recommend products."
 7. **Structured data.** Each ingredient page: `FAQPage` for its FAQ,
    `Dataset` pointing to `evidence.json` (with `dateModified = built_on`),
-   `Organization` = ARW House. Tables are real `<table>` elements.
+   `Organization` = ARW House (publisher), `Person` = Angela Lee, Founder
+   (author), with `datePublished` and `dateModified`. Tables are real
+   `<table>` elements. No "TinySafe Research" or "ARW House Research" labels.
 8. **Date-aware statuses** are rendered from the data as delivered. The site
    does not compute "today vs effective date"; the data side does.
 
