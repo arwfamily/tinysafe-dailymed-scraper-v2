@@ -510,6 +510,29 @@ def _au_cap_from_requirements(row):
     return v if 0 < v <= 100 else None
 
 
+def _regulatory_status(row, today=None):
+    """
+    Regulatory status of one regulatory row, as data the matrix carries.
+
+    A finalized removal that has not yet taken effect (e.g. PABA and trolamine
+    salicylate, Final Administrative Order OTC000008-1, effective 2027-09-11)
+    is still a legal M020 active until that date. Reporting it as "removed"
+    early would be our error; reporting it as plainly permitted would hide a
+    final FDA decision. So the status is date-aware and flips by itself.
+    """
+    today = today or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    pc = row.get("pending_change") or {}
+    if pc.get("type") == "removal" and pc.get("effective"):
+        base = {"status_order": pc.get("order"), "status_source_url": pc.get("source_url")}
+        if today >= pc["effective"]:
+            return {"status": "removed", "removed_on": pc["effective"], **base}
+        return {"status": "removal_finalized_not_yet_effective",
+                "removal_effective": pc["effective"], **base}
+    if row.get("grase") is False:
+        return {"status": "not_grase"}
+    return {}
+
+
 def _first(row, keys):
     for k in keys:
         if row.get(k) not in (None, ""):
@@ -589,6 +612,7 @@ def build_matrix(found):
                          "is_nano", "warning_statement_required"):
                 if row.get(flag):
                     entry[flag] = row[flag]
+            entry.update(_regulatory_status(row))
             # several AU rows share a normalised name; keep the tightest limit
             root = find(key)
             entry["listed_as"] = key

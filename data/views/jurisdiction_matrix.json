@@ -27,7 +27,7 @@
  },
  "ingredients_in_multiple_jurisdictions": 26,
  "ingredients_with_a_numeric_limit": 673,
- "built_on": "2026-10-05",
+ "built_on": "2026-10-08",
  "jurisdictions_present": [
   "AU",
   "EU",
@@ -493,7 +493,7 @@
    "limits": {
     "EU": {
      "max_percent": 10.0,
-     "conditions": "Bemotrizinol — allowed in the EU; still pending in the US",
+     "conditions": "Bemotrizinol. (US: permitted up to 6% since 2026-08-09 under FDA Final Administrative Order OTC000039.)",
      "source": "EU Cosmetics Regulation Annex VI",
      "listed_as": "BIS ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE"
     },
@@ -507,13 +507,14 @@
     },
     "US": {
      "max_percent": 6.0,
-     "conditions": "NOT YET IN FORCE. FDA proposed order OTC000039 would add bemotrizinol at up to 6 percent. Baseline captured before the rule changes.",
+     "conditions": "In force since 2026-08-09 (Final Administrative Order OTC000039). GRASE up to 6% for adults and children 6 months of age and older; finished product SPF >= 2. Permitted dosage forms: oil, lotion, cream, gel, butter, paste, ointment, stick; spray only with no propellant (pump) or with the propellant isolated from the formulation (bag-on-valve). Not permitted: propellant-combined aerosol sprays, powders. Not GRASE in combination with aminobenzoic acid or trolamine salicylate. 18-month marketing exclusivity for DSM Nutritional Products LLC from the effective date.",
      "source": "FDA OTC Monograph M020",
-     "source_status": "VERIFIED_PRIMARY_PROPOSED",
+     "source_status": "VERIFIED_PRIMARY",
      "listed_as": "BEMOTRIZINOL"
     }
    },
    "also_known_as": [
+    "BEMT",
     "BIS ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE"
    ]
   },
@@ -62858,6 +62859,10 @@
      "conditions": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
      "source": "FDA OTC Monograph M020",
      "source_status": "VERIFIED_PRIMARY",
+     "status": "removal_finalized_not_yet_effective",
+     "removal_effective": "2027-09-11",
+     "status_order": "Final Administrative Order OTC000008-1",
+     "status_source_url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/Order/FinalAdministrativeOrderOTC000008-PABATrolamine.pdf",
      "listed_as": "TROLAMINE SALICYLATE"
     }
    },
@@ -65611,6 +65616,10 @@
      "conditions": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
      "source": "FDA OTC Monograph M020",
      "source_status": "VERIFIED_PRIMARY",
+     "status": "removal_finalized_not_yet_effective",
+     "removal_effective": "2027-09-11",
+     "status_order": "Final Administrative Order OTC000008-1",
+     "status_source_url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/Order/FinalAdministrativeOrderOTC000008-PABATrolamine.pdf",
      "listed_as": "AMINOBENZOIC ACID"
     }
    },
