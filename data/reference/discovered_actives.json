@@ -26,7 +26,7 @@
     "16efa2db-8172-4026-a519-08f53d68b3c9",
     "e19b824f-4438-48c8-af4c-29be197f9cdc",
     "e63327db-fb96-411c-945a-abe801d38045",
-    "e9d8488f-b902-45f4-a6d6-c6eb393c8f08"
+    "a9ceacb3-d6e4-4316-a4e9-f15e574cdda0"
    ]
   },
   {
@@ -54,8 +54,8 @@
     "9e46328d-1d10-350b-e053-2995a90ad27e",
     "9b571d4e-03c8-5a37-e053-2a95a90add36",
     "3bbcb812-feff-3b00-e054-00144ff88e88",
-    "6f666277-c4c0-45ce-a478-9db2f21461a6",
-    "7eee940a-96c6-4d37-9991-fa84b1b4f02b"
+    "7eee940a-96c6-4d37-9991-fa84b1b4f02b",
+    "6f666277-c4c0-45ce-a478-9db2f21461a6"
    ]
   },
   {
@@ -105,10 +105,10 @@
    },
    "example_setids": [
     "3bbcb812-feff-3b00-e054-00144ff88e88",
-    "6f666277-c4c0-45ce-a478-9db2f21461a6",
     "7eee940a-96c6-4d37-9991-fa84b1b4f02b",
-    "7711e9f8-dedd-420c-bc6a-b940005f9899",
-    "22a9f2ae-4035-4ede-b324-771da0551444"
+    "6f666277-c4c0-45ce-a478-9db2f21461a6",
+    "22a9f2ae-4035-4ede-b324-771da0551444",
+    "7711e9f8-dedd-420c-bc6a-b940005f9899"
    ]
   },
   {
@@ -123,10 +123,10 @@
    },
    "example_setids": [
     "bfea294b-b9bc-77a3-e053-2995a90a28c4",
-    "ae761576-fa56-2eea-e053-2a95a90a79c4",
     "ae76149e-29eb-5ee4-e053-2995a90a7957",
+    "ae761576-fa56-2eea-e053-2a95a90a79c4",
     "ab7a0c8d-ab13-5f97-e053-2995a90aac34",
-    "aa878b4e-ec8c-1cf4-e053-2a95a90a86f6"
+    "aa878b4e-ec89-1cf4-e053-2a95a90a86f6"
    ]
   },
   {
@@ -297,10 +297,10 @@
     "TL2TJE8QTX": 4
    },
    "example_setids": [
-    "fe274cab-a945-4379-a92c-c8f18bd63c1e",
     "0d65128b-8eb7-440b-870a-7e3be18152b3",
-    "5d0feba6-f5c7-4b46-8da1-8effcc98c8ec",
-    "e3f7cd1d-a5cd-4baf-a62b-c55e5768ccf2"
+    "e3f7cd1d-a5cd-4baf-a62b-c55e5768ccf2",
+    "fe274cab-a945-4379-a92c-c8f18bd63c1e",
+    "5d0feba6-f5c7-4b46-8da1-8effcc98c8ec"
    ]
   },
   {
@@ -470,8 +470,8 @@
    },
    "example_setids": [
     "a84278ef-350b-6ebb-e053-2995a90ac6d5",
-    "0a8e1c7f-f7cc-43e7-956e-48524777012e",
-    "a445f16a-2b6c-a220-e053-2995a90ac12a"
+    "a445f16a-2b6c-a220-e053-2995a90ac12a",
+    "0a8e1c7f-f7cc-43e7-956e-48524777012e"
    ]
   },
   {
@@ -899,8 +899,8 @@
     "SD418S06XD": 2
    },
    "example_setids": [
-    "22982b28-37df-ed81-e063-6394a90a77db",
-    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e",
+    "22982b28-37df-ed81-e063-6394a90a77db"
    ]
   },
   {
@@ -2692,6 +2692,34 @@
    ]
   },
   {
+   "unii": "6DRV3D37XS",
+   "name": "SAURURUS CHINENSIS WHOLE",
+   "name_variants": [
+    "SAURURUS CHINENSIS WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
+   ]
+  },
+  {
+   "unii": "7C42E2D7B0",
+   "name": "TARAXACUM OFFICINALE WHOLE",
+   "name_variants": [
+    "TARAXACUM OFFICINALE WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
+   ]
+  },
+  {
    "unii": "LP618AV2EA",
    "name": ".BETA.-BISABOLOL",
    "name_variants": [
@@ -2760,35 +2788,258 @@
    "example_setids": [
     "22982b28-37df-ed81-e063-6394a90a77db"
    ]
-  },
-  {
-   "unii": "6DRV3D37XS",
-   "name": "SAURURUS CHINENSIS WHOLE",
-   "name_variants": [
-    "SAURURUS CHINENSIS WHOLE"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "SD418S06XD": 1
-   },
-   "example_setids": [
-    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
-   ]
-  },
-  {
-   "unii": "7C42E2D7B0",
-   "name": "TARAXACUM OFFICINALE WHOLE",
-   "name_variants": [
-    "TARAXACUM OFFICINALE WHOLE"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "SD418S06XD": 1
-   },
-   "example_setids": [
-    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
-   ]
   }
  ],
- "unseeded_actives_without_unii": {}
+ "unseeded_actives_without_unii": {},
+ "enumeration_probe": {
+  "category_total_elements": 42361,
+  "pages_scanned": 401,
+  "spls_scanned": 40000,
+  "sunscreen_titles": 5633,
+  "not_in_our_corpus": 375,
+  "complete": false,
+  "examples": [
+   {
+    "setid": "7492cbfd-e1f1-4aed-8ba0-edb4adcc2065",
+    "title": "SUMMER FRIDAYS SHADEDROPS BROAD SPECTRUM SPF 30 MINERAL MILK SUNSCREEN (ZINC OXIDE) CREAM [SUMMER FRIDAYS LLC]"
+   },
+   {
+    "setid": "e6adde28-e520-4714-8730-82efc7399a00",
+    "title": "ZINC OXIDE 14.69% (SUNSCREEN SPF 50) STICK [DUNE SUNCARE]"
+   },
+   {
+    "setid": "20f43844-ef7a-44e2-93c7-5144ec514184",
+    "title": "CARTE BLANCHE MULTI-HYPHENATE BRIGHTENING SKIN TINT MINERAL SPF 35 03 (ZINC OXIDE) LOTION [CARTE BLANCHE BEAUTY, INC.]"
+   },
+   {
+    "setid": "219ddd44-c5fb-49f3-b5b0-1476236464a7",
+    "title": "CARTE BLANCHE MULTI-HYPHENATE BRIGHTENING SKIN TINT MINERAL SPF 35 04 (ZINC OXIDE) LOTION [CARTE BLANCHE BEAUTY, INC.]"
+   },
+   {
+    "setid": "37d13973-73e5-4f6e-9995-7cafea648f8a",
+    "title": "CARTE BLANCHE MULTI-HYPHENATE BRIGHTENING SKIN TINT MINERAL SPF 35 09 (ZINC OXIDE) LOTION [CARTE BLANCHE BEAUTY, INC.]"
+   },
+   {
+    "setid": "4f3f66d3-c8b7-4a62-bb14-f339d6b95d49",
+    "title": "CARTE BLANCHE MULTI-HYPHENATE BRIGHTENING SKIN TINT MINERAL SPF 35 08 (ZINC OXIDE) LOTION [CARTE BLANCHE BEAUTY, INC.]"
+   },
+   {
+    "setid": "620cfb4c-834d-45cf-a280-2c37dce4f293",
+    "title": "CARTE BLANCHE MULTI-HYPHENATE BRIGHTENING SKIN TINT MINERAL SPF 35 07 (ZINC OXIDE) LOTION [CARTE BLANCHE BEAUTY, INC.]"
+   },
+   {
+    "setid": "7b53e976-6321-4df1-bf57-aac9d30ad1ab",
+    "title": "CARTE BLANCHE MULTI-HYPHENATE BRIGHTENING SKIN TINT MINERAL SPF 35 05 (ZINC OXIDE) LOTION [CARTE BLANCHE BEAUTY, INC.]"
+   },
+   {
+    "setid": "838868b4-8f72-431a-bd98-75d44b7c25ab",
+    "title": "SUN FED SUNSCREEN ORANGE DREAM MIST SPF 30 ORANGE CITRUS SCENT (ZINC OXIDE) LIQUID [EARTH SCENTS LLC]"
+   },
+   {
+    "setid": "8e0b6e2b-0731-43e4-b4c9-70bc23925a10",
+    "title": "CARTE BLANCHE MULTI-HYPHENATE BRIGHTENING SKIN TINT MINERAL SPF 35 01 (ZINC OXIDE) LOTION [CARTE BLANCHE BEAUTY, INC.]"
+   },
+   {
+    "setid": "c513b982-f54e-409a-91b8-b3f40336d7a2",
+    "title": "CARTE BLANCHE MULTI-HYPHENATE BRIGHTENING SKIN TINT MINERAL SPF 35 02 (ZINC OXIDE) LOTION [CARTE BLANCHE BEAUTY, INC.]"
+   },
+   {
+    "setid": "ef35dba5-d7ef-4f06-92c2-191bc1e68b64",
+    "title": "CARTE BLANCHE MULTI-HYPHENATE BRIGHTENING SKIN TINT MINERAL SPF 35 06 (ZINC OXIDE) LOTION [CARTE BLANCHE BEAUTY, INC.]"
+   },
+   {
+    "setid": "6af12cd5-246b-4b91-9748-e7b7a5daf298",
+    "title": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 BLUE (ZINC OXIDE) CREAM [ATLANTIS LABORATORIES, INC.]"
+   },
+   {
+    "setid": "192892b0-5632-40c5-a9b8-dcecdbcf2553",
+    "title": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 PINK (ZINC OXIDE) CREAM [SQWEEN LLC]"
+   },
+   {
+    "setid": "1ad346a8-4468-4cc4-a1fe-045b11ae6659",
+    "title": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 ROSE GOLD (ZINC OXIDE) CREAM [SQWEEN LLC]"
+   },
+   {
+    "setid": "b7c79f32-84cf-4059-9418-e142b5710014",
+    "title": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 LIGHT GREEN (ZINC OXIDE) CREAM [SQWEEN LLC]"
+   },
+   {
+    "setid": "d4085917-7090-45e2-8356-77698f78c195",
+    "title": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 BLUE (ZINC OXIDE) CREAM [SQWEEN LLC]"
+   },
+   {
+    "setid": "e8332aa8-d2c5-4b74-9b61-612c2328edfa",
+    "title": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 GOLD (ZINC OXIDE) CREAM [SQWEEN LLC]"
+   },
+   {
+    "setid": "04ecc5e7-0d9e-4bc7-b964-4cbcc6ed06a8",
+    "title": "SUNSKI HOT BLOCK MINERAL SUNSCREEN STICK SPF 50 (ZINC OXIDE) STICK [STEWART CHARLEY VENTURES LLC DBA SUNSKI]"
+   },
+   {
+    "setid": "6ad80af3-78cd-4211-a5f2-68531aae264a",
+    "title": "ALOE UP .5OZ SPF 50 MINERAL SUNSCREEN (ZINC OXIDE 14.69%) STICK [ALOE CARE INTERNATIONAL, LLC]"
+   },
+   {
+    "setid": "7dd2b1cd-e229-4eeb-8122-46fde5af1091",
+    "title": "THE NAKED BEE SPF 50 MINERAL SUNSCREEN (ZINC OXIDE 20%) LOTION [THE NAKED BEE]"
+   },
+   {
+    "setid": "f820a9be-c94d-4fd5-b202-2dda5746a82a",
+    "title": "THE NAKED BEE SPF 50 MINERAL SUNSCREEN (ZINC OXIDE 14.69%) STICK [THE NAKED BEE]"
+   },
+   {
+    "setid": "58dd81db-46d4-d763-e063-6394a90abb0b",
+    "title": "ELTA MD SKINCARE UV STICK BROAD SPECTRUM SPF50 (ZINC OXIDE) STICK [CP SKIN HEALTH GROUP, INC]"
+   },
+   {
+    "setid": "5866e026-a652-3300-e063-6394a90acff0",
+    "title": "STREAM2SEA ECOSTOCK SPF 40 SUNSCREEN (ZINC OXIDE) STICK [STREAM2SEA, LLC]"
+   },
+   {
+    "setid": "5853ae6b-0eaf-e614-e063-6394a90ae91a",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 LIGHT CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "58545633-cb36-6611-e063-6394a90a1f07",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 FAIR CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "585473c3-3ee9-7d84-e063-6394a90abd33",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 LIGHT MEDIUM CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "58547809-3480-1032-e063-6294a90a04c6",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 IVORY CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "58547b48-251a-10eb-e063-6294a90ac95c",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 MEDIUM CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "58547e38-ae84-82ee-e063-6394a90a27d6",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 MEDIUM TAN CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "58548331-38cd-8668-e063-6394a90a3362",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 TAN CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "5854861a-376d-8825-e063-6394a90a8aab",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 MEDIUM HONEY CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "585488af-d14f-8d71-e063-6394a90ac4f0",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 MEDIUM RICH CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "585488c5-fac5-212f-e063-6294a90a00ff",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 HONEY CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "58548e6d-9c82-249c-e063-6294a90a11ad",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 RICH CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "58549160-3594-9056-e063-6394a90abf7d",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 MEDIUM DEEP CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "585498d4-b29c-9580-e063-6394a90adf1e",
+    "title": "CEILE TINT PROTECT TINTED SERUM SPF 50 DEEP CREAM [L&UACUTE;E COSMETICS INC]"
+   },
+   {
+    "setid": "945538b5-5745-42cf-b610-0018ca2ec254",
+    "title": "ELTA MD UV DAILY PEPTIDE LIP BALM SPF 40 (ZINC OXIDE) STICK [CP SKIN HEALTH GROUP, INC]"
+   },
+   {
+    "setid": "2173666b-6c72-449d-9f40-098ea174f3e1",
+    "title": "YOUNIQUE BARE YOU BB TINTED MOISTURIZER SUNSCREEN BROAD SPECTRUM SPF-30 DARK (ZINC OXIDE) CREAM [YOUNIQUE, LLC]"
+   },
+   {
+    "setid": "360ceb90-bec6-4fec-820a-a4d65008b872",
+    "title": "YOUNIQUE BARE YOU BB TINTED MOISTURIZER SUNSCREEN BROAD SPECTRUM SPF-30 DARK DEEP (ZINC OXIDE) CREAM [YOUNIQUE, LLC]"
+   },
+   {
+    "setid": "389fc528-fda5-485a-ab37-f99fcf3ed0b3",
+    "title": "SKINSUIT FACE SPF 50 (ZINC OXIDE) LOTION [SKIN AUTHORITY LLC]"
+   },
+   {
+    "setid": "82769819-b229-4864-9b3c-44f49a68a53a",
+    "title": "YOUNIQUE BARE YOU BB TINTED MOISTURIZER SUNSCREEN BROAD SPECTRUM SPF-30 LIGHT MEDIUM (ZINC OXIDE) CREAM [YOUNIQUE, LLC]"
+   },
+   {
+    "setid": "86c33a9e-9132-4377-8688-41e5844de62c",
+    "title": "YOUNIQUE BARE YOU BB TINTED MOISTURIZER SUNSCREEN BROAD SPECTRUM SPF-30 DEEP (ZINC OXIDE) CREAM [YOUNIQUE, LLC]"
+   },
+   {
+    "setid": "a49dfff1-e9ec-4573-90b0-ef6a7226aa56",
+    "title": "YOUNIQUE BARE YOU BB TINTED MOISTURIZER SUNSCREEN BROAD SPECTRUM SPF-30 MEDIUM (ZINC OXIDE) CREAM [YOUNIQUE, LLC]"
+   },
+   {
+    "setid": "cb24d714-f6cd-4518-b146-627cfe6c2ccd",
+    "title": "SKINSUIT LIP SPF 30 (ZINC OXIDE) GEL [SKIN AUTHORITY LLC]"
+   },
+   {
+    "setid": "cc576b63-caf4-491d-8d7f-027b1127133b",
+    "title": "YOUNIQUE BARE YOU BB TINTED MOISTURIZER SUNSCREEN BROAD SPECTRUM SPF-30 MEDIUM DARK (ZINC OXIDE) CREAM [YOUNIQUE, LLC]"
+   },
+   {
+    "setid": "d728b89c-692f-485b-88c3-929b2f0350d5",
+    "title": "YOUNIQUE BARE YOU BB TINTED MOISTURIZER SUNSCREEN BROAD SPECTRUM SPF-30 FAIR LIGHT (ZINC OXIDE) CREAM [YOUNIQUE, LLC]"
+   },
+   {
+    "setid": "ed700cae-8226-48d9-93ba-03154aa1cae5",
+    "title": "YOUNIQUE BARE YOU BB TINTED MOISTURIZER SUNSCREEN BROAD SPECTRUM SPF-30 FAIR (ZINC OXIDE) CREAM [YOUNIQUE, LLC]"
+   },
+   {
+    "setid": "f93d42a9-b655-4b75-a16d-b29f38f04efc",
+    "title": "YOUNIQUE BARE YOU BB TINTED MOISTURIZER SUNSCREEN BROAD SPECTRUM SPF-30 LIGHT (ZINC OXIDE) CREAM [YOUNIQUE, LLC]"
+   },
+   {
+    "setid": "625523f0-366f-4148-b927-d726b7d1b9f4",
+    "title": "SUNSCREEN IN THE RAW SPF 50 (ZINC OXIDE) CREAM [BIOMIN LLC]"
+   },
+   {
+    "setid": "7f741a91-6ed8-4d08-9196-d15527d044d5",
+    "title": "BASELIFE PURE MINERAL SHIELD SUNSCREEN (ZINC OXIDE) CREAM [WINTECH AMERICA, INC.]"
+   },
+   {
+    "setid": "722462d8-d2ab-44ce-9065-673ab2076269",
+    "title": "HOLYCOW MINERAL TALLOW SUNSCREEN FACE AND BODY SPF 50 (ZINC OXIDE) CREAM [CALM ENTERPRISE LLC]"
+   },
+   {
+    "setid": "560d1d19-87a6-179b-e063-6294a90ada5e",
+    "title": "CIELE LIP AND PROTECT LIPSTICK SPF 60 BONNIE LIPSTICK [DELICATE COSMETICS INC]"
+   },
+   {
+    "setid": "560df34a-e6da-0792-e063-6394a90a7e71",
+    "title": "CIELE LIP AND PROTECT LIPSTICK SPF 60 KELLY LIPSTICK [DELICATE COSMETICS INC]"
+   },
+   {
+    "setid": "560e37ae-87c0-39d2-e063-6394a90a2af4",
+    "title": "CIELE LIP AND PROTECT LIPSTICK SPF 60 LOULOU LIPSTICK [DELICATE COSMETICS INC]"
+   },
+   {
+    "setid": "560e4198-b07c-3d48-e063-6394a90a7be3",
+    "title": "CIELE LIP AND PROTECT LIPSTICK SPF 60 CASSETTE LIPSTICK [DELICATE COSMETICS INC]"
+   },
+   {
+    "setid": "560e47d5-c881-438c-e063-6394a90a3091",
+    "title": "CIELE LIP AND PROTECT LIPSTICK SPF 60 MARGAUX LIPSTICK [DELICATE COSMETICS INC]"
+   },
+   {
+    "setid": "560e5558-8e46-7736-e063-6294a90acb05",
+    "title": "CIELE LIP AND PROTECT LIPSTICK SPF 60 PUZZLE LIPSTICK [DELICATE COSMETICS INC]"
+   },
+   {
+    "setid": "560e5de5-1350-4046-e063-6394a90abffa",
+    "title": "CIELE LIP AND PROTECT LIPSTICK SPF 60 SADDLE LIPSTICK [DELICATE COSMETICS INC]"
+   },
+   {
+    "setid": "2abccc86-01d4-e45c-e063-6294a90a7f8b",
+    "title": "TINTED DAILY WEAR FACE PROTECTION MINERAL BASED SUNSCREEN SPF 16 - MEDIUM TAN (ZINC OXIDE) CREAM TINTED DAILY WEAR FACE PROTECTION MINERAL BASED SUNSCREEN SPF 16 - FAIR LIGHT (ZINC"
+   }
+  ],
+  "coverage_estimate_percent": 93.3
+ }
 }
