@@ -1,0 +1,33 @@
+[baby_track] 2026-10-08: 0 new decisions, queue 5, baby live 437, changes all={'new': 594, 'delisted': 3} baby={'new': 19}
+population: 328 formulations (167 mineral-only), snapshot 2026-10-08
+  US-BABY-ACTIVE-zinc-oxide           178/328
+  US-BABY-ACTIVE-titanium-dioxide      62/328
+  US-BABY-ACTIVE-bemotrizinol           0/328
+  US-BABY-ACTIVE-avobenzone           136/328
+  US-BABY-ACTIVE-oxybenzone            50/328
+  US-BABY-ACTIVE-octinoxate            44/328
+  US-BABY-ACTIVE-homosalate           127/328
+  US-BABY-ACTIVE-octisalate           150/328
+  US-BABY-ACTIVE-octocrylene          134/328
+  US-BABY-ACTIVE-ensulizole             1/328
+  US-BABY-ACTIVE-meradimate             0/328
+  US-BABY-ACTIVE-dioxybenzone           0/328
+  US-BABY-ACTIVE-sulisobenzone          0/328
+  US-BABY-ACTIVE-cinoxate               0/328
+  US-BABY-ACTIVE-padimate-o             0/328
+  US-BABY-ACTIVE-paba                   0/328
+  US-BABY-ACTIVE-trolamine-salicylate    0/328
+  US-BABY-ACTIVE-ecamsule               0/328
+  US-BABY-ACTIVE-drometrizole-trisiloxane    0/328
+  US-BABY-ACTIVE-ethylhexyl-triazone    0/328
+  US-BABY-FDA-MORE-DATA               161/328
+  US-BABY-HOMOSALATE-EU               120/328
+  US-BABY-SAME-LIST                    55/328
+  US-BABY-MINERAL-ZNO                 164/167
+  US-BABY-HIDDEN-UV                    61/167
+  US-BABY-BOS                          51/167
+  US-BABY-MINERAL-BOOSTERS             63/167
+wrote /home/runner/work/tinysafe-dailymed-scraper-v2/tinysafe-dailymed-scraper-v2/site/evidence.json: 20 ingredients, 60 cells, 22 verified registry claims, 4 findings
+RENDER CHECK FAILED:
+  fda-more-data title says 'Over half' but the share is not above 50%
+rendered 27 pages into /home/runner/work/tinysafe-dailymed-scraper-v2/tinysafe-dailymed-scraper-v2/site/evidence (WITH ERRORS)
