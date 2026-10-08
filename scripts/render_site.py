@@ -21,6 +21,7 @@ import os
 import re
 import shutil
 import sys
+import unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Overridable so the arwhouse repo can run this same file on fetched inputs.
@@ -542,6 +543,13 @@ def check(pages, d, notes):
         for p in FORBIDDEN:
             if p in text or p in ld:
                 errs.append(f"{path}: forbidden phrase {p!r}")
+        # Owner rule 2026-10-08: every word and every link on the site is English.
+        foreign = sorted({c for c in h if c.isalpha() and not c.isascii()
+                          and not unicodedata.name(c, "").startswith("LATIN")})
+        if foreign:
+            errs.append(f"{path}: non-English letters {''.join(foreign)[:20]!r}")
+        if any(not u.isascii() for u in re.findall(r'href="([^"]*)"', h)):
+            errs.append(f"{path}: non-ASCII link")
         if 'href=""' in h:
             errs.append(f"{path}: empty link")
     idx = pages[BASE]

@@ -2,7 +2,7 @@
 
 Status: v1, 2026-10-08. Owner decisions (Angela Lee, 2026-10-08):
 
-1. Every word on the site is English.
+1. Every word and every link on the site is English (enforced by render_site.py --check).
 2. The evidence pages live on **arwhouse.com** (not tinysafe.app).
 3. Every number on a page links to its own source, at the cell level.
 4. v1 includes registry measurements (what share of real baby sunscreens
