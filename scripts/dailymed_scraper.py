@@ -39,6 +39,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import urllib.request, urllib.error
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from classify import classify  # noqa: E402
+from spl_parse import label_fields  # noqa: E402
+import threading
 
 BASE = "https://dailymed.nlm.nih.gov/dailymed/services/v2"
 OPENFDA = "https://api.fda.gov/drug/label.json"
@@ -127,7 +129,25 @@ def http_json(url, tries=4, backoff=2.0):
     return None
 
 
+_XML_CACHE = {}
+_XML_LOCK = threading.Lock()
+
+
 def http_xml(url, tries=4, backoff=2.0):
+    """Fetch once per run: fetch_active, fetch_inactive and label_fields all
+    read the same SPL file."""
+    with _XML_LOCK:
+        if url in _XML_CACHE:
+            return _XML_CACHE[url]
+    x = _http_xml(url, tries, backoff)
+    with _XML_LOCK:
+        if len(_XML_CACHE) > 64:
+            _XML_CACHE.clear()
+        _XML_CACHE[url] = x
+    return x
+
+
+def _http_xml(url, tries=4, backoff=2.0):
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers=UA)
@@ -573,6 +593,21 @@ def process_setid(item):
         "inactive_count": len(inact),
         "dailymed_url": f"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={setid}",
     }
+    # Everything else the SPL says: printed full ingredient list (label order),
+    # dosage form, labeler, version/date, monograph, listing flags, and the
+    # structured-vs-printed check. A clear printed-label disagreement corrects
+    # the actives; the filed table is kept beside it.
+    xml = http_xml(f"{BASE}/spls/{setid}.xml")
+    if xml:
+        try:
+            lf = label_fields(xml)
+        except Exception as e:  # never lose a record over a parse problem
+            lf = {"label_parse_error": str(e)[:200]}
+        corrected = lf.pop("label_corrected_actives", None)
+        rec.update(lf)
+        if corrected:
+            rec["structured_actives"] = rec["active_ingredients"]
+            rec["active_ingredients"] = corrected
     return enrich(rec)
 
 

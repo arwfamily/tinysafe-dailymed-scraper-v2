@@ -86,7 +86,8 @@ def norm_strength(s):
     return "".join(str(s).split()).upper()
 
 
-FINGERPRINT_VERSION = 2
+FINGERPRINT_VERSION = 3
+# v3 (2026-10-08): dosage_form is now read from the SPL, so every hash moves once.
 # v1 (until 2026-10-08) keyed actives on the SPL numerator only, so 23.4% and
 # 20% zinc oxide (234 mg/1 g vs 234 mg/1.17 g) hashed alike. Keying on the raw
 # SPL fraction instead is worse: manufacturers' unit typos (mg vs ug, /100 mL
@@ -162,6 +163,8 @@ def key_delta(prev_payload, new_payload):
 def diff_meta(old, new):
     out = {}
     for k in META_FIELDS:
+        if (old or {}).get(k) in (None, "") and (new or {}).get(k) not in (None, ""):
+            continue  # a field we only just started capturing is not a label change
         if (old or {}).get(k) != (new or {}).get(k):
             out[k] = {"from": (old or {}).get(k), "to": (new or {}).get(k)}
     return out

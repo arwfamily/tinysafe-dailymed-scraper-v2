@@ -78,6 +78,8 @@ _US_MAX = {"AVOBENZONE": 3, "OXYBENZONE": 6, "OCTINOXATE": 7.5, "HOMOSALATE": 15
 
 def population_exclusion(r):
     """Reason this record is not a US baby sunscreen label as listed, or None."""
+    if (r.get("product_count") or 1) > 1:
+        return f"not one sunscreen: {r['product_count']} products in one listing"
     if r["setid"] in MULTI_PRODUCT_SPL:
         return "not one sunscreen: " + MULTI_PRODUCT_SPL[r["setid"]]
     if r.get("non_uv_actives"):

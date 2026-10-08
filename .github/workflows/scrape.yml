@@ -61,6 +61,7 @@ jobs:
           python tests/test_classify.py
           python tests/test_matrix.py
           python tests/test_fingerprint.py
+          python tests/test_spl_parse.py
 
       - name: Resolve run mode
         id: mode
@@ -165,8 +166,22 @@ jobs:
           python scripts/build_evidence.py
           python scripts/render_site.py --check
 
+      - name: Smoke summary (capped runs only)
+        if: steps.mode.outputs.limit != '0'
+        run: python scripts/smoke_summary.py output/tinysafe_dailymed_v2_master.json
+
       - name: Commit data
         run: |
+          if [ "${{ steps.mode.outputs.limit }}" != "0" ]; then
+            # a capped run must never commit partial data; only its summary
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/smoke/summary.json
+            git diff --cached --quiet && exit 0
+            git commit -m "smoke: label-field summary (limit=${{ steps.mode.outputs.limit }})"
+            git pull --rebase origin "${GITHUB_REF#refs/heads/}" && git push origin HEAD:"${GITHUB_REF#refs/heads/}"
+            exit 0
+          fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/ site/ claims/

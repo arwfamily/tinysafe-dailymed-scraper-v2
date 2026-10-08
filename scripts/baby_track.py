@@ -59,6 +59,8 @@ def rule(r):
         return "exclude", "auto", "baby word is part of another phrase (classifier false-positive list)"
     if pt in ("skin_protectant", "calamine", "no_uv_filter"):
         return "exclude", "auto", f"not a sunscreen (classifier product type: {pt})"
+    if (r.get("product_count") or 1) > 1:
+        return "queue", "pending", f"{r['product_count']} products in one listing"
     if sig == "product_name" and pt == "sunscreen" and not KIT.search(title):
         return "include", "auto", RULE
     why = {"brand_name": "baby signal from brand only", "brand_list_review": "brand on the baby-brand list; check the product itself",
