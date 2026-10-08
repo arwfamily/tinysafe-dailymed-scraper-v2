@@ -12,19 +12,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          mkdir -p data/smoke
-          : > data/smoke/api_probe.txt
+      - name: Fetch
+        run: |
+          mkdir -p data/smoke/api
+          i=0
           for u in ${{ github.event.inputs.urls }}; do
-            echo "=== $u" >> data/smoke/api_probe.txt
-            curl -fsSL -A "TinySafe-research/1.0 (contact: support@tinysafe.app)" "$u" | python3 -c "
-          import sys,json
-          d=json.load(sys.stdin); m=d.get('metadata',{}); rows=d.get('data',[])
-          print(json.dumps(m)); print('rows',len(rows)); print([r.get('setid') for r in rows][:3])" >> data/smoke/api_probe.txt 2>&1 || echo "curl failed" >> data/smoke/api_probe.txt
+            i=$((i+1))
+            echo "$u" > "data/smoke/api/$i.url"
+            curl -sSL -A "TinySafe-research/1.0 (contact: support@tinysafe.app)" "$u" -o "data/smoke/api/$i.json" || true
             sleep 1
           done
-          cat data/smoke/api_probe.txt
-      - run: |
+          ls -la data/smoke/api
+      - name: Commit
+        run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/smoke/api_probe.txt && git commit -m "probe: DailyMed API" && git pull --rebase --autostash && git push
+          git add data/smoke/api
+          git diff --cached --quiet && exit 0
+          git commit -m "probe: DailyMed API responses"
+          git pull --rebase --autostash origin main && git push origin HEAD:main
