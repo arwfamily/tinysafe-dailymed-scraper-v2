@@ -1,0 +1,1050 @@
+{
+ "run_date": "2026-10-05",
+ "all_labels": {
+  "new": 45,
+  "reformulated": 1,
+  "delisted": 34
+ },
+ "baby_labels": {
+  "new": 3
+ },
+ "baby_population_live": 418,
+ "new_baby_decisions": [
+  {
+   "setid": "01cc78d6-7948-97c4-e063-6394a90a1708",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "DIAPER RASH CREAM (ZINC OXIDE) CREAM [HELLO BELLO]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01cc78d6-7948-97c4-e063-6394a90a1708"
+  },
+  {
+   "setid": "0427bbc9-f4c0-0eb6-e063-6294a90a7199",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABY MANTRA DIAPER CREAM (ZINC OXIDE 10%) OINTMENT [RENU LABORATORIES, LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0427bbc9-f4c0-0eb6-e063-6294a90a7199"
+  },
+  {
+   "setid": "04bec667-a11e-42d2-a4b3-1416eebf1e8d",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABY DIAPER RASH (ZINC OXIDE) OINTMENT [MEIJER, INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04bec667-a11e-42d2-a4b3-1416eebf1e8d"
+  },
+  {
+   "setid": "15c9f3c4-833a-4211-a0d0-31e754e7fb9f",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABYSPA SHEA BUTTER DIAPER (ZINC OXIDE) CREAM [EXPRO3 LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=15c9f3c4-833a-4211-a0d0-31e754e7fb9f"
+  },
+  {
+   "setid": "163f388e-849d-4b7e-93c1-9045d77a9ec2",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "MUSTELA DIAPER RASH 1 2 3 (ZINC OXIDE) CREAM [EXPANSCIENCE LABORATORIES D/B/A MUSTELA]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=163f388e-849d-4b7e-93c1-9045d77a9ec2"
+  },
+  {
+   "setid": "168b31b1-9260-61f8-e054-00144ff8d46c",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BURTS BEES BABY BEE DIAPER RASH (ZINC OXIDE) OINTMENT [BURT'S BEES, INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=168b31b1-9260-61f8-e054-00144ff8d46c"
+  },
+  {
+   "setid": "186a9642-cd73-adfb-e063-6394a90a75c7",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABO BOTANICALS SENSITIVE BABY FRAGRANCE FREE DIAPER RASH (ZINC OXIDE) CREAM [BABO BOTANICALS, INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=186a9642-cd73-adfb-e063-6394a90a75c7"
+  },
+  {
+   "setid": "23a51d1b-6930-45b2-af24-51c44cc2b169",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "TENDER MOMENTS BABY BOTTOM BALM (ZINC OXIDE, DIMETHICONE) CREAM [JAFRA COSMETICS INTERNATIONAL]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23a51d1b-6930-45b2-af24-51c44cc2b169"
+  },
+  {
+   "setid": "26f682f4-2440-f111-e063-6294a90ab4b7",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "baby word is part of another phrase (classifier false-positive list)",
+   "decided_on": "2026-10-05",
+   "title": "DIMPLES BATH CO - SUNSTICK NEW KID ON THE BLOCK (ZINC OXIDE) STICK [DIMPLES BATH CO. LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26f682f4-2440-f111-e063-6294a90ab4b7"
+  },
+  {
+   "setid": "26f85758-820f-3f73-e063-6294a90a289d",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "baby word is part of another phrase (classifier false-positive list)",
+   "decided_on": "2026-10-05",
+   "title": "NEW KID ON THE BLOCK (ZINC OXIDE) LOTION [DIMPLES BATH CO. LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26f85758-820f-3f73-e063-6294a90a289d"
+  },
+  {
+   "setid": "26fec959-c234-6692-e063-6394a90a6600",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "baby word is part of another phrase (classifier false-positive list)",
+   "decided_on": "2026-10-05",
+   "title": "NEW KID ON THE BLOCK (ZINC OXIDE) LOTION [DIMPLES BATH CO. LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26fec959-c234-6692-e063-6394a90a6600"
+  },
+  {
+   "setid": "349d27e8-df53-4d4f-8833-b249e948acee",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABYS BUTT AID (ZINC OXIDE) OINTMENT [GREENBRIER INTERNATIONAL INC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=349d27e8-df53-4d4f-8833-b249e948acee"
+  },
+  {
+   "setid": "369f449f-fb9d-5529-e063-6394a90ac3b2",
+   "decision": "include",
+   "stage": "auto",
+   "reason": "auto-rule v1: baby/kids word in product name, sunscreen, not a kit",
+   "decided_on": "2026-10-05",
+   "title": "BABY BUM MINERAL 50 SUNSCREEN (ZINC OXIDE) LOTION [SUN BUM LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=369f449f-fb9d-5529-e063-6394a90ac3b2"
+  },
+  {
+   "setid": "3727c403-2a8e-4f99-89d8-57439d7bf477",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "baby word is part of another phrase (classifier false-positive list)",
+   "decided_on": "2026-10-05",
+   "title": "NEUROSODE (GLANDULA SUPRARENALIS SUIS, BRAIN (SUIS), KIDNEY (SUIS), UBIQUINONE, AGARICUS MUSCARIUS, COCCUS CACTI, CONIUM MACULATUM, PHOSPHORUS, RHUS TOX, NAJA TRIPUDIANS, LATRODECTUS MACTANS, TARENTULA CUBENSIS, GELSEMIUM SEMPERVIRENS, EPSTEIN BARR NOSODES, HERPES ZOSTER NOSODES, MORBILLINUM, POLIOMYELITIS NOSODES, HEPATITIS B NOSODES, COXSACKIE B1 NOSODES, COXSACKIE B4 NOSODES, ASPARTAME, BENZALKONIUM CHLORIDE, FORMALINUM, METHYLENE CHLORIDE, METHYL PARABEN, PROPYL PARABEN, SODIUM BENZOATE,) LIQUID [SYNERGY FORMULAS, INC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3727c403-2a8e-4f99-89d8-57439d7bf477"
+  },
+  {
+   "setid": "3d3a0d5c-a366-22fc-e063-6394a90a308b",
+   "decision": "include",
+   "stage": "auto",
+   "reason": "auto-rule v1: baby/kids word in product name, sunscreen, not a kit",
+   "decided_on": "2026-10-05",
+   "title": "BABY BUM MINERAL 50 MINERAL SUNSCREEN FACE STICK (ZINC OXIDE) STICK [SUN BUM, LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3d3a0d5c-a366-22fc-e063-6394a90a308b"
+  },
+  {
+   "setid": "42c5cf9a-0a35-5681-e054-00144ff8d46c",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "EARTH BABY DIAPER RASH CREAM (ZINC OXIDE) CREAM [EARTH BABY, INC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42c5cf9a-0a35-5681-e054-00144ff8d46c"
+  },
+  {
+   "setid": "42f14aa6-5694-7727-e063-6294a90a09f3",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABY DIAPER RASH CREAM (ZINC OXIDE) CREAM [HELLO BELLO]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42f14aa6-5694-7727-e063-6294a90a09f3"
+  },
+  {
+   "setid": "452bcb25-848c-e8a7-e063-6394a90ace0f",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "baby word is part of another phrase (classifier false-positive list)",
+   "decided_on": "2026-10-05",
+   "title": "POOLSIDE NOT YOUR BABYS OIL. SPF 30 SUNSCREEN BODY OIL. (HOMOSALATE,OCTOCRYLENE,OCTISALATE,AVOBENZONE) OIL [LONGWAY TECHNOLOGY(GUANGZHOU)CO.,LTD.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=452bcb25-848c-e8a7-e063-6394a90ace0f"
+  },
+  {
+   "setid": "482114d3-793f-46b4-ae93-b278e0613d65",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "AVALON ORGANICS BABY PROTECTIVE ZINC DIAPER BALM (ZINC OXIDE) CREAM [THE HAIN CELESTIAL GROUP, INC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=482114d3-793f-46b4-ae93-b278e0613d65"
+  },
+  {
+   "setid": "4b1b7294-aca6-45fa-a008-c1869131b2a3",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "LITTLE REMEDIES NEW BABY ESSENTIALS (ACETAMINOPHEN, SIMETHICONE, ZINC OXIDE) KIT [MEDTECH PRODUCTS INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b1b7294-aca6-45fa-a008-c1869131b2a3"
+  },
+  {
+   "setid": "53d8a654-aaec-6f91-e063-6394a90a7351",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABY BUM DIAPER (ZINC OXIDE) CREAM [CREATIVE CONSUMER PRODUCTS, INC. DBA (DOING BUSINESS AS) DIONIS GOAT MILK SKINCARE]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53d8a654-aaec-6f91-e063-6394a90a7351"
+  },
+  {
+   "setid": "55a6981c-1b32-f448-e063-6294a90ac6d8",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "DRS. PHARMACY BABY HEALING (ZINC OXIDE) OINTMENT [OL PHARMA TECH, LLC DRS PHARMACY]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55a6981c-1b32-f448-e063-6294a90ac6d8"
+  },
+  {
+   "setid": "5632dde2-f59d-3a45-e063-6394a90a1a24",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABY 3-IN-1 DIAPER RASH PASTE [WALGREENS]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5632dde2-f59d-3a45-e063-6394a90a1a24"
+  },
+  {
+   "setid": "579aa481-f8ec-b263-e063-6394a90a7754",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "ATTITUDE BABY LEAVES DIAPER CREAM - UNSCENTED (ZINC OXIDE) CREAM [9055-7588 QUEBEC INC. (ATTITUDE)]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=579aa481-f8ec-b263-e063-6394a90a7754"
+  },
+  {
+   "setid": "59cf1d1e-e951-9d58-e063-6394a90af0f3",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "MUSTELA DIAPER RASH 1 2 3 (ZINC OXIDE) CREAM [EXPANSCIENCE LABORATORIES D/B/A MUSTELA]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59cf1d1e-e951-9d58-e063-6394a90af0f3"
+  },
+  {
+   "setid": "641465a1-0daf-1bb9-e053-2a91aa0ab25d",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABY DIAPER RASH CREAM (ZINC OXIDE) CREAM [DOTERRA INTERNATIONAL, LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=641465a1-0daf-1bb9-e053-2a91aa0ab25d"
+  },
+  {
+   "setid": "69c1db68-508a-e6e1-e053-2a91aa0a8568",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABY LOVE PERSONAL CARE DIAPER RASH (ZINC OXIDE) CREAM [DELTA BRANDS & PRODUCTS LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=69c1db68-508a-e6e1-e053-2a91aa0a8568"
+  },
+  {
+   "setid": "8b3a3b17-67dd-7a13-e053-2995a90a099c",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "VITABATH BABY SOOTHING RELIEF DIAPER RASH (ZINC OXIDE) CREAM [VITABATH INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b3a3b17-67dd-7a13-e053-2995a90a099c"
+  },
+  {
+   "setid": "8c0cbb66-38aa-4429-a6a0-6c063131296a",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "PURE BABY DIAPER RASH (ZINC OXIDE) CREAM [FISCHER PHARMACEUTICALS LTD]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8c0cbb66-38aa-4429-a6a0-6c063131296a"
+  },
+  {
+   "setid": "8c40daa5-a3fc-51f3-e053-2995a90a6483",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABY BUM (ZINC OXIDE AND LANOLIN) PASTE [BLAIRS FERRY PHARMACY]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8c40daa5-a3fc-51f3-e053-2995a90a6483"
+  },
+  {
+   "setid": "92257e81-4b7f-440b-a714-1aeb81d5c127",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABY MAGIC DIAPER RX (ZINC OXIDE) CREAM [NATERRA INTERNATIONAL INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=92257e81-4b7f-440b-a714-1aeb81d5c127"
+  },
+  {
+   "setid": "9c91c64a-7218-44f6-9d3b-188b392835c7",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABY LOVE DIAPER RASH (ZINC OXIDE) CREAM [PERSONAL CARE PRODUCTS, INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c91c64a-7218-44f6-9d3b-188b392835c7"
+  },
+  {
+   "setid": "9f12dee2-7afa-45e9-a729-0fd42bb77715",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "CALDESENE BABY (STARCH, CORN AND ZINC OXIDE) POWDER [INSIGHT PHARMACEUTICALS LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f12dee2-7afa-45e9-a729-0fd42bb77715"
+  },
+  {
+   "setid": "a289ed3c-3c7a-4eda-bf5e-139203d2e17e",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BOUDREAUXS BABY SHOWER BUNDLE (ZINC OXIDE) KIT [C.B. FLEET COMPANY, INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a289ed3c-3c7a-4eda-bf5e-139203d2e17e"
+  },
+  {
+   "setid": "a6cb4d79-3276-a01d-6d5f-ef624cbeb016",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "PURISTICS BABY ZINC OXIDE DIAPER RASH (ZINC OXIDE) CREAM [SCERENE HEALTHCARE, INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6cb4d79-3276-a01d-6d5f-ef624cbeb016"
+  },
+  {
+   "setid": "b556a47a-b1e5-44d0-801c-3660e1212aca",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "baby word is part of another phrase (classifier false-positive list)",
+   "decided_on": "2026-10-05",
+   "title": "3 CONCEPT EYES BACK TO BABY (TITANIUM DIOXIDE, OCTINOXATE) CREAM [NANDA CO., LTD.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b556a47a-b1e5-44d0-801c-3660e1212aca"
+  },
+  {
+   "setid": "b6e209c8-09be-eac2-e053-2a95a90a4751",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "MY FAIR BABY DIAPER RASH (ZINC OXIDE) CREAM [ANICARE PHARMACEUTICALS PVT. LTD.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6e209c8-09be-eac2-e053-2a95a90a4751"
+  },
+  {
+   "setid": "b8bc92f1-8524-32db-e053-2a95a90a1f46",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABYS BUTT AID (ZINC OXIDE) OINTMENT [AMERICAN CONSUMER PRODUCTS CORP]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b8bc92f1-8524-32db-e053-2a95a90a1f46"
+  },
+  {
+   "setid": "c9483d15-193a-4c5b-8ddd-5df78943627e",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "MEIJER BABY QUICK RELIEF DIAPER RASH (ZINC OXIDE) CREAM [MEIJER DISTRIBUTION INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c9483d15-193a-4c5b-8ddd-5df78943627e"
+  },
+  {
+   "setid": "d66e369e-9b19-b084-e053-2995a90aa259",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABO BOTANICALS SENSITIVE BABY FRAGRANCE FREE DIAPER RASH (ZINC OXIDE) SPRAY [BABO BOTANICALS, INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d66e369e-9b19-b084-e053-2995a90aa259"
+  },
+  {
+   "setid": "d7b19529-d0b2-638b-e053-2a95a90acf2f",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BABYDIAPERCREAM (BABY DIAPER CREAM) CREAM [WHOLE FOODS MARKET]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7b19529-d0b2-638b-e053-2a95a90acf2f"
+  },
+  {
+   "setid": "d9a2aaf6-ab71-97a3-e053-2a95a90a3498",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "MUSTELA DIAPER RASH SPRAYABLE (ZINC OXIDE) CREAM [EXPANSCIENCE LABORATORIES D/B/A MUSTELA]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d9a2aaf6-ab71-97a3-e053-2a95a90a3498"
+  },
+  {
+   "setid": "dd1d8198-bb9d-4508-a971-ae3bc624cdd1",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "ABC ARBONNE BABY CARE DIAPER RASH (DIMETHICONE AND ZINC OXIDE) CREAM [ARBONNE INTERNATIONAL, LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd1d8198-bb9d-4508-a971-ae3bc624cdd1"
+  },
+  {
+   "setid": "e158ba31-e159-4624-a490-fe70baaf4a39",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "HELLO BELLO DIAPER RASH CREAM (ZINC OXIDE) CREAM [TOPIDERM, INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e158ba31-e159-4624-a490-fe70baaf4a39"
+  },
+  {
+   "setid": "e299e5c6-86f5-4233-bdd1-53c8306e9cca",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "LANSINOH BABY (DIMETHICONE) OINTMENT [LANSINOH LABORATORIES, INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e299e5c6-86f5-4233-bdd1-53c8306e9cca"
+  },
+  {
+   "setid": "e39032d1-c8cd-4a41-af10-126970b8ad38",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "MEDICATED CORNSTARCH BABY POWDER (ACTIVE CORN STARCH) POWDER [DAVION, INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e39032d1-c8cd-4a41-af10-126970b8ad38"
+  },
+  {
+   "setid": "e4424d74-f89c-5943-42e8-bf3a38e68619",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: calamine)",
+   "decided_on": "2026-10-05",
+   "title": "BABY ANTI MONKEY BUTT DIAPER RASH (ZINC OXIDE, CALAMINE) CREAM [CLARION BRANDS, LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4424d74-f89c-5943-42e8-bf3a38e68619"
+  },
+  {
+   "setid": "e4a621d1-5687-413f-b0f6-a14ca4a21104",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "MEDICATED CORNSTARCH BABY POWDER (ACTIVE CORN STARCH, ZINC OXIDE, KAOLIN) POWDER [CVS]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4a621d1-5687-413f-b0f6-a14ca4a21104"
+  },
+  {
+   "setid": "e7043223-75ac-4c56-9549-781de3202dc5",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "THINKBABY DIAPER RASH (ZINC OXIDE) CREAM [THINKOPERATIONS,LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e7043223-75ac-4c56-9549-781de3202dc5"
+  },
+  {
+   "setid": "eb8512db-f8a9-432c-8779-2971411ce43d",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "BEBE BOTTOMS (ZINC OXIDE) SPRAY [TARO PHARMACEUTICALS U.S.A., INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eb8512db-f8a9-432c-8779-2971411ce43d"
+  },
+  {
+   "setid": "f214db72-bf4f-46d7-8ffc-6333185a69d5",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "not a sunscreen (classifier product type: skin_protectant)",
+   "decided_on": "2026-10-05",
+   "title": "MATYS BABY DIAPER RASH RELIEF (ZINC OXIDE) OINTMENT [MATYS HEALTHY PRODUCTS LLC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f214db72-bf4f-46d7-8ffc-6333185a69d5"
+  },
+  {
+   "setid": "f6030311-5287-3aa3-e053-2995a90a1b87",
+   "decision": "exclude",
+   "stage": "auto",
+   "reason": "baby word is part of another phrase (classifier false-positive list)",
+   "decided_on": "2026-10-05",
+   "title": "VACATION SPF 30 BABY OIL (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) OIL [VACATION INC.]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f6030311-5287-3aa3-e053-2995a90a1b87"
+  }
+ ],
+ "review_queue": 0,
+ "changes": [
+  {
+   "setid": "551d4961-c15a-283e-e063-6294a90a334a",
+   "change": "new",
+   "product": "BANANA BOAT (ZINC OXIDE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=551d4961-c15a-283e-e063-6294a90a334a",
+   "baby": false
+  },
+  {
+   "setid": "5501ad81-8f63-326b-e063-6394a90ab8d0",
+   "change": "new",
+   "product": "BANANA BOAT (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5501ad81-8f63-326b-e063-6394a90ab8d0",
+   "baby": false
+  },
+  {
+   "setid": "551cf172-5100-7c67-e063-6394a90a26e7",
+   "change": "new",
+   "product": "BANANA BOAT (HOMOSALATE,OCTISALATE,OCTOCRYLENE,ZINC OXIDE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=551cf172-5100-7c67-e063-6394a90a26e7",
+   "baby": false
+  },
+  {
+   "setid": "5b999d26-6220-6e4b-e063-6294a90ae52a",
+   "change": "new",
+   "product": "BANANA BOAT (ZINC OXIDE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b999d26-6220-6e4b-e063-6294a90ae52a",
+   "baby": false
+  },
+  {
+   "setid": "5b9a32ab-4ab7-475d-e063-6294a90a49ba",
+   "change": "new",
+   "product": "BANANA BOAT (TITANIUM DIOXIDE,ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b9a32ab-4ab7-475d-e063-6294a90a49ba",
+   "baby": false
+  },
+  {
+   "setid": "5c01baa8-cee2-ee68-e063-6394a90ac29a",
+   "change": "new",
+   "product": "BANANA BABY (HOMOSALATE,OCTISALATE,OCTOCRYLENE,ZINC OXIDE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c01baa8-cee2-ee68-e063-6394a90ac29a",
+   "baby": true
+  },
+  {
+   "setid": "5c901333-e86a-6669-e063-6294a90aa69c",
+   "change": "new",
+   "product": "PROCURE SKINGUARD (PETROLATUM AND ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c901333-e86a-6669-e063-6294a90aa69c",
+   "baby": false
+  },
+  {
+   "setid": "5c3ea09e-8bf0-7873-e063-6294a90a3fd3",
+   "change": "new",
+   "product": "BANANA BABY (TITANIUM DIOXIDE,ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c3ea09e-8bf0-7873-e063-6294a90a3fd3",
+   "baby": true
+  },
+  {
+   "setid": "5c912acf-be18-c7f9-e063-6394a90a800b",
+   "change": "new",
+   "product": "BIOCORNEUM SILISHIELD MINERAL SPF 30 LIGHT TONE (LIGHT TONE MINERAL SUNSCREEN SPF 30) GEL",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c912acf-be18-c7f9-e063-6394a90a800b",
+   "baby": false
+  },
+  {
+   "setid": "12652c98-e2a8-21fc-e063-6394a90a94cb",
+   "change": "new",
+   "product": "MENTOL CHINO CONCENTRATED (METHYL SALICYLATE, MENTHOL) CREAM MENTOL CHINO FORTE (METHYL SALICYLATE, MENTHOL, CAMPHOR) CREAM BENZO DERMA (BENZOIC ACID, SALICYLIC ACID, SULFUR) CREAM JABON SULFUROSO DEL DR HOLST (SULFUR) SOAP MENTOL CHINO ATHLETIC (METHYL SALICYLATE, MENTHOL, CAMPHOR) LINIMENT KURADOR (ZINC OXIDE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=12652c98-e2a8-21fc-e063-6394a90a94cb",
+   "baby": false
+  },
+  {
+   "setid": "03e002cf-8526-4e0d-94d7-896d3714d539",
+   "change": "new",
+   "product": "D ALBA UV ESSENCE WATERFULL GLOW TINT PINK CORRECTING FACE SUNSCREEN SPF 50 (HOMOSALATE, OCTINOXATE, OCTISALATE, TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03e002cf-8526-4e0d-94d7-896d3714d539",
+   "baby": false
+  },
+  {
+   "setid": "5b101ba5-65bd-8c1e-e063-6294a90ab98e",
+   "change": "new",
+   "product": "LANCOME PARIS TEINT IDOLE ULTRA WEAR BROAD SPECTRUM SPF 25 BREATHABLE COVERAGE FOUNDATION SUNSCREEN (OCTINOXATE AND TITANIUM DIOXIDE) LIQUID",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b101ba5-65bd-8c1e-e063-6294a90ab98e",
+   "baby": false
+  },
+  {
+   "setid": "5b106520-651d-d5f8-e063-6294a90a0412",
+   "change": "new",
+   "product": "LANCOME PARIS TEINT IDOLE ULTRA WEAR BROAD SPECTRUM SPF 25 BREATHABLE COVERAGE FOUNDATION SUNSCREEN (OCTINOXATE AND TITANIUM DIOXIDE) LIQUID",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b106520-651d-d5f8-e063-6294a90a0412",
+   "baby": false
+  },
+  {
+   "setid": "66a36f29-9bc8-4183-acb3-ac7f080369ca",
+   "change": "new",
+   "product": "LANCOME PARIS TEINT IDOLE ULTRA WEAR BROAD SPECTRUM SPF 25 BREATHABLE COVERAGE FOUNDATION SUNSCREEN (OCTINOXATE AND TITANIUM DIOXIDE) LIQUID",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=66a36f29-9bc8-4183-acb3-ac7f080369ca",
+   "baby": false
+  },
+  {
+   "setid": "a8dd72b4-0c04-4cca-a188-c60d5e4785a2",
+   "change": "new",
+   "product": "LANCOME PARIS TEINT IDOLE ULTRA WEAR BROAD SPECTRUM SPF 25 BREATHABLE COVERAGE FOUNDATION SUNSCREEN (OCTINOXATE AND TITANIUM DIOXIDE) LIQUID",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a8dd72b4-0c04-4cca-a188-c60d5e4785a2",
+   "baby": false
+  },
+  {
+   "setid": "46feef09-69ae-41b4-e054-00144ff8d46c",
+   "change": "reformulated",
+   "product": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46feef09-69ae-41b4-e054-00144ff8d46c",
+   "baby": false,
+   "added": [
+    "LAURYL PEG-8 DIMETHICONE (300 CPS)"
+   ],
+   "removed": [],
+   "confidence": "high"
+  },
+  {
+   "setid": "5192a269-96ae-b8e7-e063-6394a90a5ad9",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5192a269-96ae-b8e7-e063-6394a90a5ad9",
+   "baby": false
+  },
+  {
+   "setid": "5256f1f2-dc44-05fc-e063-6294a90a55f1",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5256f1f2-dc44-05fc-e063-6294a90a55f1",
+   "baby": false
+  },
+  {
+   "setid": "52582292-c1e2-1d61-e063-6294a90ad4d8",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52582292-c1e2-1d61-e063-6294a90ad4d8",
+   "baby": false
+  },
+  {
+   "setid": "5258d9f9-a161-4695-e063-6394a90a47f8",
+   "change": "new",
+   "product": "BANANA BABY (AVOBENZONE,OCTISALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5258d9f9-a161-4695-e063-6394a90a47f8",
+   "baby": true
+  },
+  {
+   "setid": "52598c7a-bd2f-3add-e063-6394a90a38e8",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE HOMOSALATE OCTOCRYLENE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52598c7a-bd2f-3add-e063-6394a90a38e8",
+   "baby": false
+  },
+  {
+   "setid": "52bbc6cd-4bc2-7859-e063-6394a90ac87d",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52bbc6cd-4bc2-7859-e063-6394a90ac87d",
+   "baby": false
+  },
+  {
+   "setid": "52e1f59b-acc9-1ee0-e063-6294a90a4a2d",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE/OCTOCRYLENE/OXYBENZONE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52e1f59b-acc9-1ee0-e063-6294a90a4a2d",
+   "baby": false
+  },
+  {
+   "setid": "52e21b63-4a09-3db2-e063-6294a90a8f5d",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,OCTISALATE,OCTOCRYLENE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52e21b63-4a09-3db2-e063-6294a90a8f5d",
+   "baby": false
+  },
+  {
+   "setid": "52e25c17-3072-2572-e063-6294a90af255",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52e25c17-3072-2572-e063-6294a90af255",
+   "baby": false
+  },
+  {
+   "setid": "52e28bdf-8f46-299e-e063-6394a90adff8",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52e28bdf-8f46-299e-e063-6394a90adff8",
+   "baby": false
+  },
+  {
+   "setid": "53d50644-b698-6474-e063-6394a90ac347",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53d50644-b698-6474-e063-6394a90ac347",
+   "baby": false
+  },
+  {
+   "setid": "53ee9b7d-9dff-7121-e063-6394a90ad38f",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53ee9b7d-9dff-7121-e063-6394a90ad38f",
+   "baby": false
+  },
+  {
+   "setid": "53f3762e-3756-9928-e063-6394a90af13e",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53f3762e-3756-9928-e063-6394a90af13e",
+   "baby": false
+  },
+  {
+   "setid": "551baf59-39b8-e994-e063-6294a90a65e6",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=551baf59-39b8-e994-e063-6294a90a65e6",
+   "baby": false
+  },
+  {
+   "setid": "551bd8d9-4ba7-194f-e063-6294a90abcf1",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=551bd8d9-4ba7-194f-e063-6294a90abcf1",
+   "baby": false
+  },
+  {
+   "setid": "551fcab5-4f36-0db1-e063-6294a90a9636",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=551fcab5-4f36-0db1-e063-6294a90a9636",
+   "baby": false
+  },
+  {
+   "setid": "55200f19-42ad-7863-e063-6294a90a487a",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE HOMOSALATE OCTOCRYLENE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55200f19-42ad-7863-e063-6294a90a487a",
+   "baby": false
+  },
+  {
+   "setid": "55205de0-0f3f-70b0-e063-6394a90af733",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,OCTISALATE) OIL",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55205de0-0f3f-70b0-e063-6394a90af733",
+   "baby": false
+  },
+  {
+   "setid": "5520e284-9e98-3152-e063-6294a90ae83b",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE/OCTOCRYLENE/OXYBENZONE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5520e284-9e98-3152-e063-6294a90ae83b",
+   "baby": false
+  },
+  {
+   "setid": "5520e425-d1e8-2c1d-e063-6294a90af839",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5520e425-d1e8-2c1d-e063-6294a90af839",
+   "baby": false
+  },
+  {
+   "setid": "5a9936dd-5d17-9dec-e063-6294a90a985f",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a9936dd-5d17-9dec-e063-6294a90a985f",
+   "baby": false
+  },
+  {
+   "setid": "5b2245e8-a877-e2ff-e063-6394a90a2935",
+   "change": "new",
+   "product": "JACK BLACK LLC (AVOBENZONE/HOMOSALATE/OCTISALATE/PETROLATUM) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b2245e8-a877-e2ff-e063-6394a90a2935",
+   "baby": false
+  },
+  {
+   "setid": "5c167280-250c-c863-e063-6394a90ac883",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c167280-250c-c863-e063-6394a90ac883",
+   "baby": false
+  },
+  {
+   "setid": "5c3f23e3-437d-7b82-e063-6394a90ae3e5",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE ,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c3f23e3-437d-7b82-e063-6394a90ae3e5",
+   "baby": false
+  },
+  {
+   "setid": "5c3f845d-8309-5873-e063-6294a90a7ef7",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c3f845d-8309-5873-e063-6294a90a7ef7",
+   "baby": false
+  },
+  {
+   "setid": "5c414f61-1542-0e7c-e063-6294a90aa9db",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c414f61-1542-0e7c-e063-6294a90aa9db",
+   "baby": false
+  },
+  {
+   "setid": "5c4eb8f8-4afd-eaf3-e063-6294a90ac61a",
+   "change": "new",
+   "product": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c4eb8f8-4afd-eaf3-e063-6294a90ac61a",
+   "baby": false
+  },
+  {
+   "setid": "5c197242-4436-2dff-e063-6294a90adb46",
+   "change": "new",
+   "product": "MEDIK8 ADVANCED DAY UV PROTECT SUNSCREEN BROAD SPECTRUM SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c197242-4436-2dff-e063-6294a90adb46",
+   "baby": false
+  },
+  {
+   "setid": "5c9b063b-1452-aad2-e063-6394a90a843d",
+   "change": "new",
+   "product": "AIRFIT INVISIBLE SUNSCREEN (HOMOSALATE, OCTISALATE, OCTOCRYLENE, AVOBENZONE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c9b063b-1452-aad2-e063-6394a90a843d",
+   "baby": false
+  },
+  {
+   "setid": "53fb8747-0195-57de-e063-6394a90a8865",
+   "change": "new",
+   "product": "BANANA BOAT (HOMOSALATE,OCTOCRYLENE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53fb8747-0195-57de-e063-6394a90a8865",
+   "baby": false
+  },
+  {
+   "setid": "54db8d28-2bb5-3ae4-e063-6294a90aa5ad",
+   "change": "delisted",
+   "product": "BABO BOTANICALS DAILY DEW MILK TINTED MINERAL SUNSCREEN SPF 27 (ZINC OXIDE) LOTION BABO BOTANICALS DAILY DEW MILK MINERAL SUNSCREEN SPF 27 (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54db8d28-2bb5-3ae4-e063-6294a90aa5ad",
+   "baby": false
+  },
+  {
+   "setid": "595304be-197c-46ba-b8eb-d176d359bd4f",
+   "change": "delisted",
+   "product": "TATCHA THE KISSU LIP TINT SPF 25 PLUM BLOSSOM (OCTISALATE, ZINC OXIDE) LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=595304be-197c-46ba-b8eb-d176d359bd4f",
+   "baby": false
+  },
+  {
+   "setid": "c5737032-edf1-b067-e053-2a95a90a5b2f",
+   "change": "delisted",
+   "product": "LASPA BROAD SPECTRUM MINERAL SUNSCREEN SPF 50 ULTRA SUN (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5737032-edf1-b067-e053-2a95a90a5b2f",
+   "baby": false
+  },
+  {
+   "setid": "eba4b13f-bc23-45d5-b01e-8ca10cdbb2cc",
+   "change": "delisted",
+   "product": "CALAMINE PLUS (FERRIC OXIDE RED, PRAMOXINE HYDROCHLORIDE, ZINC OXIDE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eba4b13f-bc23-45d5-b01e-8ca10cdbb2cc",
+   "baby": false
+  },
+  {
+   "setid": "bdc063b6-62c4-17d5-e053-2a95a90ab8e4",
+   "change": "delisted",
+   "product": "NATIVE MINERAL FACE BROAD SPECTRUM SPF 30 COCONUT AND PINEAPPLE (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bdc063b6-62c4-17d5-e053-2a95a90ab8e4",
+   "baby": false
+  },
+  {
+   "setid": "fc03c124-c2b3-48ea-a087-4d956e77eaf7",
+   "change": "delisted",
+   "product": "TATCHA THE KISSU LIP TINT SPF 25 CAMELLIA (OCTISALATE, ZINC OXIDE) LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fc03c124-c2b3-48ea-a087-4d956e77eaf7",
+   "baby": false
+  },
+  {
+   "setid": "ae5eedf3-86c2-69bd-e053-2995a90a43e5",
+   "change": "delisted",
+   "product": "BOOGIE BOTTOMS NO-RUB DIAPER RASH (DIMETHICONE AND ZINC OXIDE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae5eedf3-86c2-69bd-e053-2995a90a43e5",
+   "baby": false
+  },
+  {
+   "setid": "a3329e11-8f1b-4e66-8b51-4ba0208612fd",
+   "change": "delisted",
+   "product": "BOBBI BROWN SKIN FOUNDATION BROAD SPECTRUM SPF 15 (OCTINOXATE AND TITANIUM DIOXIDE) LIQUID",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a3329e11-8f1b-4e66-8b51-4ba0208612fd",
+   "baby": false
+  },
+  {
+   "setid": "dc8d42f9-a619-3f84-e053-2a95a90a8cc7",
+   "change": "delisted",
+   "product": "HAWAIIAN TROPIC EVERYDAY ACTIVE SPF30 (AVOBENZONE,HOMOSALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc8d42f9-a619-3f84-e053-2a95a90a8cc7",
+   "baby": false
+  },
+  {
+   "setid": "767a1504-1e02-1e06-e053-2a91aa0aa4b6",
+   "change": "delisted",
+   "product": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=767a1504-1e02-1e06-e053-2a91aa0aa4b6",
+   "baby": false
+  },
+  {
+   "setid": "97b5aba8-3ba8-1c93-e053-2a95a90a3f57",
+   "change": "delisted",
+   "product": "BANANA BOAT ULTRA SPORT SUNSCREEN BROAD SPECTRUM SPF 50 (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=97b5aba8-3ba8-1c93-e053-2a95a90a3f57",
+   "baby": false
+  },
+  {
+   "setid": "a8ea16dc-055a-43e9-e053-2a95a90a33c5",
+   "change": "delisted",
+   "product": "BANANA BOAT ULTRA SPORT SUNSCREEN BROAD SPECTRUM SPF 30 (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a8ea16dc-055a-43e9-e053-2a95a90a33c5",
+   "baby": false
+  },
+  {
+   "setid": "cd235a0d-072b-a407-e053-2995a90a7b16",
+   "change": "delisted",
+   "product": "BANANA BOAT SPORT ULTRA CLEAR SUNSCREEN BROAD SPECTRUM SPF 65 (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) AEROSOL, SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd235a0d-072b-a407-e053-2995a90a7b16",
+   "baby": false
+  },
+  {
+   "setid": "cd270b6c-e673-3429-e053-2995a90af140",
+   "change": "delisted",
+   "product": "BANANA BOAT SPORT ULTRA SUNSCREEN BROAD SPECTRUM SPF 65 (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd270b6c-e673-3429-e053-2995a90af140",
+   "baby": false
+  },
+  {
+   "setid": "76782de6-a542-6f3e-e053-2a91aa0a5afd",
+   "change": "delisted",
+   "product": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76782de6-a542-6f3e-e053-2a91aa0a5afd",
+   "baby": false
+  },
+  {
+   "setid": "cdd6ffe3-2ae6-44d8-a9b8-45bb134e928c",
+   "change": "delisted",
+   "product": "PROTECT AND PRIME BROAD SPECTRUM SPF30 (AVOBENZONE, OCTINOXATE, OCTOCRYLENE, OXYBENZONE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cdd6ffe3-2ae6-44d8-a9b8-45bb134e928c",
+   "baby": false
+  },
+  {
+   "setid": "d1c69335-70c7-47e7-8267-ed95900cb843",
+   "change": "delisted",
+   "product": "RODIAL BROAD SPECTRUM SPF 50 DROPS ANTI-BLUE LIGHT AND POLLUTION (OCTOCRYLENE, OCTINOXATE, OXYBENZONE, OCTISALATE, AVOBENZONE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d1c69335-70c7-47e7-8267-ed95900cb843",
+   "baby": false
+  },
+  {
+   "setid": "30e10edd-9849-8695-e063-6294a90ade70",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 UNFLAVORED LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30e10edd-9849-8695-e063-6294a90ade70",
+   "baby": false
+  },
+  {
+   "setid": "308e4104-79af-d1c9-e063-6394a90a384a",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 (BLUEBERRY FLAVORED) LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=308e4104-79af-d1c9-e063-6394a90a384a",
+   "baby": false
+  },
+  {
+   "setid": "30a27c5f-912f-a7f5-e063-6294a90a0552",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 WILD CHERRY (LIP BALM SPF15) LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30a27c5f-912f-a7f5-e063-6294a90a0552",
+   "baby": false
+  },
+  {
+   "setid": "30a4a5eb-81c7-e457-e063-6294a90a3137",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 VANILLA (LIP BALM SPF15) LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30a4a5eb-81c7-e457-e063-6294a90a3137",
+   "baby": false
+  },
+  {
+   "setid": "30c746ee-7d43-fd06-e063-6394a90ad3ac",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 BUBBLE GUM LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30c746ee-7d43-fd06-e063-6394a90ad3ac",
+   "baby": false
+  },
+  {
+   "setid": "30c97408-ec0f-f38e-e063-6394a90a4074",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 CHOCOLATE SUNDAE FLAVORED LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30c97408-ec0f-f38e-e063-6394a90a4074",
+   "baby": false
+  },
+  {
+   "setid": "30cb27e9-d345-a5d1-e063-6394a90ad13a",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 PINA COLADA FLAVORED LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30cb27e9-d345-a5d1-e063-6394a90ad13a",
+   "baby": false
+  },
+  {
+   "setid": "30cb9dfc-da4e-d45b-e063-6394a90afacc",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 APPLE PIE FLAVORED LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30cb9dfc-da4e-d45b-e063-6394a90afacc",
+   "baby": false
+  },
+  {
+   "setid": "30cc1b72-437b-68ef-e063-6294a90a263f",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 HONEY ROASTED PEANUT FLAVORED LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30cc1b72-437b-68ef-e063-6294a90a263f",
+   "baby": false
+  },
+  {
+   "setid": "30cca063-57db-ffb4-e063-6294a90aa45b",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 PASSION FRUIT FLAVORED LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30cca063-57db-ffb4-e063-6294a90aa45b",
+   "baby": false
+  },
+  {
+   "setid": "30df181f-2dda-90ea-e063-6394a90a2f69",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 STRAWBERRY SHORTCAKE FLAVORED LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30df181f-2dda-90ea-e063-6394a90a2f69",
+   "baby": false
+  },
+  {
+   "setid": "30de9860-03ef-188c-e063-6294a90a314b",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 PEPPERMINT FLAVORED LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30de9860-03ef-188c-e063-6294a90a314b",
+   "baby": false
+  },
+  {
+   "setid": "30e055e0-13d7-9b04-e063-6294a90a8be8",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 SPEARMINT FLAVORED LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30e055e0-13d7-9b04-e063-6294a90a8be8",
+   "baby": false
+  },
+  {
+   "setid": "30e0c795-c388-287e-e063-6394a90aad25",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 TROPICAL PUNCH FLAVORED LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30e0c795-c388-287e-e063-6394a90aad25",
+   "baby": false
+  },
+  {
+   "setid": "f43429f8-d2cd-4ec8-a088-911d6d2248e5",
+   "change": "delisted",
+   "product": "LIP BALM SPF15 BIRTHDAY CAKE FLAVORED LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f43429f8-d2cd-4ec8-a088-911d6d2248e5",
+   "baby": false
+  },
+  {
+   "setid": "71b5ec12-73b1-494b-b05b-b55c538e43bc",
+   "change": "delisted",
+   "product": "DRAGONS BLOOD SPF15 (OCTINOXATE, HOMOSALATE, OXYBENZONE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=71b5ec12-73b1-494b-b05b-b55c538e43bc",
+   "baby": false
+  },
+  {
+   "setid": "c7f05046-3641-4d7b-8399-f5c7c3e9ed33",
+   "change": "delisted",
+   "product": "SHEER BROAD SPECTRUM SPF45 (ZINC OXIDE, OCTOCRYLENE, OCTINOXATE, OCTISALATE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c7f05046-3641-4d7b-8399-f5c7c3e9ed33",
+   "baby": false
+  }
+ ]
+}

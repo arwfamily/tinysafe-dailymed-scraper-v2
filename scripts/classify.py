@@ -27,7 +27,7 @@ DESIGN
 """
 import re
 
-CLASSIFIER_VERSION = "2.0.0"
+CLASSIFIER_VERSION = "2.0.1"
 
 # ---------------------------------------------------------------------------
 # UV filters as ACTIVE ingredients. Keyed by UNII (from the corpus itself,
@@ -144,6 +144,10 @@ ORAL = re.compile(r"\bTABLETS?\b|\bCAPSULES?\b|\bSOFTGELS?\b|\bCAPLETS?\b|\bCHEW
 # rash / minor irritation; a ZnO-only face cream, serum or foundation is in
 # practice a sunscreen. Recorded with its own basis so it can be audited.
 COSMETIC_FORMAT = re.compile(r"\bFACE\b|\bFACIAL\b|\bMOISTURI[SZ]\w*|\bSERUM\b|\bFOUNDATION\b|\bPRIMER\b|\bDAILY\b|\bLIPS?\b|\bANTI-?AGING\b|\bBEAUTY\b|\bGLOW\b|\bCOMPLEXION\b|\bPROTECTION\b", re.I)
+# An explicit sunscreen word outranks weak protectant cues (2026-10-08: "BUM"
+# in the brands Sun Bum / Baby Bum made 47 zinc sunscreens "skin protectant").
+STRONG_SUN = re.compile(r"\bSUN\s?SCREENS?\b|\bSUN\s?BLOCKS?\b|\bSUNCREEN\b", re.I)
+STRONG_PROTECTANT = re.compile(r"\bDIAPER\b|\bRASH\b|\bWOUND\b|\bCALAMINE\b|\bINCONTINENCE\b|\bPERINEAL\b|\bBEDSORE|\bANTI-?ITCH\b|\bBARRIER CREAM\b", re.I)
 MONOGRAPH_SUNSCREEN = "M020"
 MONOGRAPH_SKIN_PROTECTANT = "M016"
 CALAMINE = re.compile(r"\bCALAMINE\b", re.I)
@@ -258,6 +262,8 @@ def classify(rec):
         verdict, basis = "skin_protectant", "monograph_M016"
     elif not zinc_only:
         verdict, basis = "sunscreen", "tio2_or_organic_active"
+    elif STRONG_SUN.search(product) and not STRONG_PROTECTANT.search(product):
+        verdict, basis = "sunscreen", "zinc_with_sunscreen_word"
     elif sun_cue and not (sp_cue and not spf):
         verdict, basis = "sunscreen", "zinc_with_sun_wording"
     elif sp_cue:

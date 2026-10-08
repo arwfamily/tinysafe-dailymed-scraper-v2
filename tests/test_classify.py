@@ -45,6 +45,14 @@ class SunscreenOrNot(unittest.TestCase):
         r = classify(rec("ISNTREE HYALURONIC ACID NATURAL SUNCREAM (ZINC OXIDE) CREAM [ISNTREE INC.]"))
         self.assertEqual(r["product_type"], "sunscreen")
 
+    def test_brand_bum_is_not_a_diaper_cue(self):  # 2026-10-08: 47 Sun Bum / Baby Bum sunscreens
+        r = classify(rec("BABY BUM MINERAL 50 SUNSCREEN (ZINC OXIDE) LOTION [SUN BUM LLC]"))
+        self.assertEqual(r["product_type"], "sunscreen")
+
+    def test_sunscreen_word_with_diaper_stays_protectant(self):
+        r = classify(rec("BABY BUM DIAPER RASH CREAM (ZINC OXIDE) CREAM [SUN BUM LLC]"))
+        self.assertEqual(r["product_type"], "skin_protectant")
+
     def test_diaper_cream_is_skin_protectant(self):
         r = classify(rec("DESITIN MAXIMUM STRENGTH DIAPER RASH (ZINC OXIDE) PASTE [KENVUE BRANDS LLC]"))
         self.assertEqual(r["product_type"], "skin_protectant")

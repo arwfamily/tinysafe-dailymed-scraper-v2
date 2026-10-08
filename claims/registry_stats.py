@@ -96,7 +96,11 @@ def population_exclusion(r):
 
 
 def load():
-    review = sorted(glob.glob(os.path.join(ROOT, "claims", "baby_review_*.csv")))[-1]
+    # The decision ledger (scripts/baby_track.py) carries the 2026-10-08 hand
+    # review forward and adds rule decisions for every new candidate.
+    review = os.path.join(ROOT, "claims", "baby_decisions.csv")
+    if not os.path.exists(review):
+        review = sorted(glob.glob(os.path.join(ROOT, "claims", "baby_review_*.csv")))[-1]
     with open(review, encoding="utf-8") as f:
         include = {r["setid"] for r in csv.DictReader(f) if r["decision"] == "include"}
     recs = [json.loads(l) for l in open(CANON, encoding="utf-8") if l.strip()]

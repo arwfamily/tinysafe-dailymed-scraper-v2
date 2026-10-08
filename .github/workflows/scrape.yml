@@ -158,6 +158,7 @@ jobs:
         if: steps.mode.outputs.limit == '0'
         # Fails the run if any cell breaks docs/SITE_DATA_CONTRACT.md
         run: |
+          python scripts/baby_track.py
           python claims/registry_stats.py
           python scripts/verify_same_list.py || echo 'printed-label check failed; same-list finding stays held'
           python claims/registry_stats.py

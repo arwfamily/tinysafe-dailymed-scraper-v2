@@ -177,3 +177,15 @@ generated only from those.
 - Serving: the Vercel project for this repo uses `site/` as its root
   (`site/vercel.json`, clean URLs). arwhouse.com proxies `/evidence/*` to it,
   so canonical URLs are `https://arwhouse.com/evidence/...`.
+
+## Baby/kids decisions and weekly tracking (2026-10-08)
+
+- `claims/baby_decisions.csv` is the population ledger: the 2026-10-08 hand
+  review carried forward, plus one rule decision per new candidate
+  (`scripts/baby_track.py`, weekly). Rule: baby/kids word in the product name
+  + product type sunscreen + not a kit -> include; non-sunscreen product types
+  -> exclude; anything else -> `claims/baby_queue.csv`, not counted until a
+  person decides. A decision is never overwritten by the rule.
+- `data/views/baby_sunscreens.jsonl`: the baby subset of the full dataset.
+- `data/reports/<date>.md|json`: every week, all labels and baby labels:
+  new, reformulated (ingredients added/removed), delisted.
