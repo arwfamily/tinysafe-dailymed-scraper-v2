@@ -1,0 +1,10 @@
+{
+  "title": "Baby Sunscreen Label Dataset (US, with EU and Australian limits)",
+  "upload_type": "dataset",
+  "description": "<p>A weekly, reproducible dataset of US sunscreen drug labels from the FDA's DailyMed database, with a week-by-week formulation history and the legal limits of 20 UV filters in the US (FDA OTC monograph M020 and final orders), the EU (Cosmetics Regulation Annex VI) and Australia (TGA Permissible Ingredients Determination), each value linked to its source.</p><p>Includes counts for sunscreen labels that say baby or kids: which UV filters they list, how many contain one of the 12 actives the FDA has proposed need more safety data, homosalate levels against the EU limit, and labels whose Drug Facts list the same ingredients as a label that does not say baby or kids. Every inclusion, exclusion and correction is recorded with its reason.</p><p>A DailyMed listing is not proof that a product is on US shelves. Counts describe labels, not safety or market share.</p><p>Website: https://arwhouse.com/evidence</p>",
+  "creators": [{"name": "Lee, Angela", "affiliation": "ARW House"}],
+  "license": "cc-by-4.0",
+  "keywords": ["sunscreen", "baby sunscreen", "UV filters", "FDA DailyMed", "OTC monograph M020", "EU Annex VI", "TGA", "drug labels", "formulation history"],
+  "related_identifiers": [{"identifier": "https://arwhouse.com/evidence", "relation": "isDocumentedBy", "resource_type": "publication-other"}],
+  "language": "eng"
+}

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Baby Sunscreen Label Dataset (US, with EU and Australian limits)"
+authors:
+  - family-names: Lee
+    given-names: Angela
+    affiliation: ARW House
+publisher:
+  name: ARW House
+url: "https://arwhouse.com/evidence"
+repository-code: "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2"
+license: CC-BY-4.0
+keywords:
+  - sunscreen
+  - baby sunscreen
+  - UV filters
+  - FDA DailyMed
+  - OTC monograph M020
+  - EU Annex VI
+  - TGA
+  - drug labels
