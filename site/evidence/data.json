@@ -1,7 +1,7 @@
 {
  "built_on": "2026-10-08",
- "generated_at": "2026-10-08T16:16:46Z",
- "commit": "06cb117",
+ "generated_at": "2026-10-08T16:28:03Z",
+ "commit": "403b5c2",
  "contract": "docs/SITE_DATA_CONTRACT.md",
  "jurisdictions": [
   "US",
@@ -1249,13 +1249,13 @@
      "status": "approved_product_only",
      "max_percent": null,
      "conditions": [],
-     "notes": "Not in OTC Monograph M020. Permitted in the US only in specific products approved by the FDA through a new drug application (first: L'Oreal Anthelios SX, approved 2006).",
+     "notes": "Not in OTC Monograph M020. Permitted in the US only in specific products approved by the FDA through a new drug application. First: L'Oreal Anthelios SX (2% avobenzone, 2% ecamsule, 10% octocrylene cream), NDA 21-502, approved 2006-07-21.",
      "source": {
-      "title": "FDA approval of Anthelios SX (ecamsule), 2006 — reported by Dermatology Times",
-      "url": "https://www.dermatologytimes.com/view/fda-approves-sunscreen-product-containing-previously-banned-ingredient",
-      "version": "news report, 2006-08-04",
+      "title": "FDA approval letter, NDA 21-502 (Anthelios SX), L'Oreal USA Products, Inc.",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2006/021502ltr.pdf",
+      "version": "signed 2006-07-21; Drugs@FDA original approval date 07/21/2006",
       "data_as_of": "2026-10-08",
-      "status": "VERIFIED_SECONDARY"
+      "status": "VERIFIED_PRIMARY"
      }
     },
     {

@@ -82,8 +82,9 @@ def short_source(jur, src):
             return f"FDA order {m.group(0)}"
         if "Monograph M020" in t:
             return "FDA M020"
-        if "Anthelios" in t:
-            return "Ecamsule approval (news report)"
+        m = re.search(r"NDA \d+-\d+", t)
+        if m:
+            return f"FDA {m.group(0)}"
         return "FDA"
     if jur == "EU":
         return "EU Annex VI"
