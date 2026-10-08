@@ -1,0 +1,838 @@
+{
+ "records": 150,
+ "filled": {
+  "dosage_form": 150,
+  "labeler": 150,
+  "spl_version": 150,
+  "effective_date": 150,
+  "monograph_id": 115,
+  "printed_actives": 132,
+  "printed_inactives": 119,
+  "label_flags": 150,
+  "label_parse_error": 0,
+  "structured_actives": 23
+ },
+ "checks": {
+  "percent_mismatch": 37,
+  "printed_inactives_unmatched": 111,
+  "fragrance_printed_not_structured": 44,
+  "printed_active_missing_from_structured": 16,
+  "structured_active_not_printed": 98,
+  "above_us_max": 5
+ },
+ "flags_true": {
+  "broad_spectrum_claim": 34,
+  "spf_printed": 80,
+  "under_6_months_ask_doctor": 82,
+  "water_resistant_minutes": 18
+ },
+ "product_count": {
+  "1": 150
+ },
+ "corrections": [
+  {
+   "setid": "5c912acf-be18-c7f9-e063-6394a90a800b",
+   "title": "BIOCORNEUM SILISHIELD MINERAL SPF 30 LIGHT TONE (LIGHT TONE MINERAL SUNSCREEN SPF 30) GEL ",
+   "filed": [
+    [
+     "ZINC OXIDE",
+     20.8
+    ]
+   ],
+   "label": [
+    [
+     "ZINC OXIDE",
+     20.8
+    ]
+   ]
+  },
+  {
+   "setid": "acfb3067-2ff2-4b30-b88a-2d6a0a9564e3",
+   "title": "RAYITO DE SOL (ENSULIZOLE, SULISOBENZONE) GEL [SISCOM DE ARGENTINA S.A.]",
+   "filed": [
+    [
+     "ENSULIZOLE",
+     4.0
+    ],
+    [
+     "SULISOBENZONE",
+     4.0
+    ]
+   ],
+   "label": [
+    [
+     "ENSULIZOLE",
+     4.0
+    ],
+    [
+     "SULISOBENZONE",
+     4.0
+    ]
+   ]
+  },
+  {
+   "setid": "df2a9021-1a45-4c7c-ad81-627d81af99f4",
+   "title": "RAYITO DE SOL (ENSULIZOLE, SULISOBENZONE) GEL [SISCOM DE ARGENTINA S.A.]",
+   "filed": [
+    [
+     "ENSULIZOLE",
+     4.0
+    ],
+    [
+     "SULISOBENZONE",
+     4.0
+    ]
+   ],
+   "label": [
+    [
+     "ENSULIZOLE",
+     4.0
+    ],
+    [
+     "SULISOBENZONE",
+     4.0
+    ]
+   ]
+  },
+  {
+   "setid": "b671d630-2b71-66d2-e053-2a95a90a8461",
+   "title": "EA EIGHT HR LIP SHEER TINTS (OXYBENZONE, PADIMATE O, PETROLATUM) LIPSTICK [REVLON]",
+   "filed": [
+    [
+     "PADIMATE O",
+     0.8
+    ],
+    [
+     "PETROLATUM",
+     3.02
+    ],
+    [
+     "OXYBENZONE",
+     3.0
+    ]
+   ],
+   "label": [
+    [
+     "OCTINOXATE",
+     7.5
+    ],
+    [
+     "OXYBENZONE",
+     3.0
+    ],
+    [
+     "AVOBENZONE",
+     2.0
+    ]
+   ]
+  },
+  {
+   "setid": "944f02dc-7b02-4eca-aa2b-b6416cf7bb80",
+   "title": "TRANSLUCENT BROAD SPECTRUM FOUNDATION SPF 50 VERTRA (PADIMATE O, TITANIUM DIOXIDE) STICK [",
+   "filed": [
+    [
+     "PADIMATE O",
+     7.0
+    ],
+    [
+     "TITANIUM DIOXIDE",
+     17.0
+    ]
+   ],
+   "label": [
+    [
+     "TITANIUM DIOXIDE",
+     17.0
+    ]
+   ]
+  },
+  {
+   "setid": "3f42326a-6b33-31eb-e054-00144ff88e88",
+   "title": "SUNSCREEN LIP BALM (PADIMATE O,OCTINOXATE) STICK [NINGBO HUIZE COMMODITY CO.,LTD.]",
+   "filed": [
+    [
+     "OCTINOXATE",
+     4.0
+    ],
+    [
+     "PADIMATE O",
+     7.5
+    ]
+   ],
+   "label": [
+    [
+     "OCTINOXATE",
+     4.0
+    ]
+   ]
+  },
+  {
+   "setid": "5a567960-b083-b17d-e063-6394a90ac6d7",
+   "title": "JUYASUYON CONCEALER SUNSCREEN (OCTINOXATE,OCTOCRYLENE,TITANIUM DIOXIDE,OCTISALATE,BIS-ETHY",
+   "filed": [
+    [
+     "OCTINOXATE",
+     7.5
+    ],
+    [
+     "OCTOCRYLENE",
+     5.0
+    ],
+    [
+     "TITANIUM DIOXIDE",
+     5.0
+    ],
+    [
+     "OCTISALATE",
+     4.0
+    ],
+    [
+     "BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE",
+     1.0
+    ]
+   ],
+   "label": [
+    [
+     "TITANIUM DIOXIDE",
+     5.0
+    ],
+    [
+     "OCTOCRYLENE",
+     5.0
+    ],
+    [
+     "OCTINOXATE",
+     7.5
+    ],
+    [
+     "BEMOTRIZINOL",
+     1.0
+    ],
+    [
+     "OCTISALATE",
+     4.0
+    ]
+   ]
+  },
+  {
+   "setid": "598cfe9e-6ebe-ad18-e063-6294a90ace22",
+   "title": "JUYASUYON SPORT ULTRA SUNSCREEN CREAM (OCTOCRYLENE,OXYBENZONE,AVOBENZONE,BIS-ETHYLHEXYLOXY",
+   "filed": [
+    [
+     "OCTOCRYLENE",
+     7.5
+    ],
+    [
+     "OXYBENZONE",
+     3.5
+    ],
+    [
+     "AVOBENZONE",
+     2.5
+    ],
+    [
+     "BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE",
+     1.0
+    ]
+   ],
+   "label": [
+    [
+     "OCTOCRYLENE",
+     7.5
+    ],
+    [
+     "OXYBENZONE",
+     3.5
+    ],
+    [
+     "AVOBENZONE",
+     2.5
+    ]
+   ]
+  },
+  {
+   "setid": "552a36ed-7a66-4048-e063-6394a90a09bc",
+   "title": "ORLASKIN SPF50 ANTIOXIDANT SOOTHINGCOMPLEX SUNSCREEN (ETHYLHEXYL METHOXYCINNAMATE ETHYLHEX",
+   "filed": [
+    [
+     "AVOBENZONE",
+     3.0
+    ],
+    [
+     "ZINC OXIDE",
+     8.0
+    ],
+    [
+     "ETHYLHEXYL SALICYLATE",
+     5.0
+    ],
+    [
+     "ETHYLHEXYL METHOXYCINNAMATE",
+     5.0
+    ],
+    [
+     "BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE",
+     2.0
+    ]
+   ],
+   "label": [
+    [
+     "OCTOCRYLENE",
+     8.0
+    ],
+    [
+     "ZINC OXIDE",
+     8.0
+    ],
+    [
+     "HOMOSALATE",
+     7.0
+    ],
+    [
+     "OCTISALATE",
+     5.0
+    ],
+    [
+     "AVOBENZONE",
+     3.0
+    ]
+   ]
+  },
+  {
+   "setid": "3264543c-e8f5-da9a-e063-6394a90ac8c6",
+   "title": "ABSOLUT SKIN SPF 50 MOISTURIZING SUNSCREEN (ETHYLHEXYL METHOXYCINNAMATE,ETHYLHEXYL SALICYL",
+   "filed": [
+    [
+     "METHYLENE BIS-BENZOTRIAZOLYL TETRAMETHYLBUTYLPHENOL",
+     2.5
+    ],
+    [
+     "OCTOCRYLENE",
+     2.0
+    ],
+    [
+     "ETHYLHEXYL METHOXYCINNAMATE",
+     5.0
+    ],
+    [
+     "ETHYLHEXYL SALICYLATE",
+     3.0
+    ]
+   ],
+   "label": [
+    [
+     "OCTINOXATE",
+     5.0
+    ],
+    [
+     "OCTISALATE",
+     3.0
+    ],
+    [
+     "OCTOCRYLENE",
+     2.0
+    ]
+   ]
+  },
+  {
+   "setid": "942f5dc3-abef-481b-a5d6-618c39e181b9",
+   "title": "GARNIER OMBRELLE SPF 30 COMPLETE LIGHTWEIGHT (HOMOSALATE, OCTOCRYLENE, OCTISALATE, AVOBENZ",
+   "filed": [
+    [
+     "HOMOSALATE",
+     10.0
+    ],
+    [
+     "OCTOCRYLENE",
+     5.5
+    ],
+    [
+     "OCTISALATE",
+     5.0
+    ],
+    [
+     "AVOBENZONE",
+     3.0
+    ],
+    [
+     "DROMETRIZOLE TRISILOXANE",
+     2.5
+    ],
+    [
+     "ECAMSULE",
+     0.5
+    ]
+   ],
+   "label": [
+    [
+     "HOMOSALATE",
+     10.0
+    ],
+    [
+     "OCTOCRYLENE",
+     5.5
+    ],
+    [
+     "OCTISALATE",
+     5.0
+    ],
+    [
+     "AVOBENZONE",
+     3.0
+    ],
+    [
+     "DROMETRIZOLE TRISILOXANE",
+     2.5
+    ]
+   ]
+  },
+  {
+   "setid": "75e1d81b-4667-4520-b8a6-0354b10b85fe",
+   "title": "GARNIER OMBRELLE SPF 60 FACE ULTRA LIGHT (OCTOCRYLENE, TITANIUM DIOXIDE, AVOBENZONE, DROME",
+   "filed": [
+    [
+     "OCTOCRYLENE",
+     10.0
+    ],
+    [
+     "TITANIUM DIOXIDE",
+     4.15
+    ],
+    [
+     "AVOBENZONE",
+     3.5
+    ],
+    [
+     "DROMETRIZOLE TRISILOXANE",
+     3.0
+    ],
+    [
+     "ECAMSULE",
+     3.0
+    ]
+   ],
+   "label": [
+    [
+     "OCTOCRYLENE",
+     10.0
+    ],
+    [
+     "TITANIUM DIOXIDE",
+     4.15
+    ],
+    [
+     "AVOBENZONE",
+     3.5
+    ],
+    [
+     "DROMETRIZOLE TRISILOXANE",
+     3.0
+    ]
+   ]
+  },
+  {
+   "setid": "ae1e25e0-9559-47b3-bc06-7b8fe1ec6194",
+   "title": "GARNIER OMBRELLE SPF 30 SPORT WATER RESISTANT (AVOBENZONE, OCTOCRYLENE, TEREPHTHALYLIDENE ",
+   "filed": [
+    [
+     "AVOBENZONE",
+     1.5
+    ],
+    [
+     "OCTOCRYLENE",
+     7.0
+    ],
+    [
+     "ECAMSULE",
+     0.5
+    ],
+    [
+     "TITANIUM DIOXIDE",
+     2.5
+    ]
+   ],
+   "label": [
+    [
+     "AVOBENZONE",
+     1.5
+    ],
+    [
+     "OCTOCRYLENE",
+     7.0
+    ],
+    [
+     "TITANIUM DIOXIDE",
+     2.5
+    ]
+   ]
+  },
+  {
+   "setid": "f5143c8d-25a2-43a6-9c08-4d1a43ebd44c",
+   "title": "GARNIER OMBRELLE SPF 60 COMPLETE LIGHTWEIGHT (HOMOSALATE, OCTOCRYLENE, OCTISALATE, AVOBENZ",
+   "filed": [
+    [
+     "HOMOSALATE",
+     10.0
+    ],
+    [
+     "OCTOCRYLENE",
+     7.0
+    ],
+    [
+     "OCTISALATE",
+     5.0
+    ],
+    [
+     "AVOBENZONE",
+     4.0
+    ],
+    [
+     "DROMETRIZOLE TRISILOXANE",
+     2.5
+    ],
+    [
+     "ECAMSULE",
+     0.5
+    ]
+   ],
+   "label": [
+    [
+     "HOMOSALATE",
+     10.0
+    ],
+    [
+     "OCTOCRYLENE",
+     7.0
+    ],
+    [
+     "OCTISALATE",
+     5.0
+    ],
+    [
+     "AVOBENZONE",
+     4.0
+    ],
+    [
+     "DROMETRIZOLE TRISILOXANE",
+     2.5
+    ]
+   ]
+  },
+  {
+   "setid": "ea926d9b-7bb5-4480-98b8-d80e4b3f1a67",
+   "title": "OUTBACK 2-IN-1 INSECT REPELLENT AND PROTECTIVE SUNSCREEN (OCTINOXATE,4-METHYLBENZYLIDENE C",
+   "filed": [
+    [
+     "OCTINOXATE",
+     9.0
+    ],
+    [
+     "ENZACAMENE",
+     1.3
+    ],
+    [
+     "ZINC OXIDE",
+     8.0
+    ]
+   ],
+   "label": [
+    [
+     "OCTINOXATE",
+     9.0
+    ],
+    [
+     "ZINC OXIDE",
+     8.0
+    ]
+   ]
+  },
+  {
+   "setid": "22fdad80-587c-a7e6-e063-6394a90a5f6e",
+   "title": "MELAO TALLOW SUNSCREEN (ETHYLHEXYL METHOXYCINNAMATE) CREAM [GUANGZHOU YILONG COSMETICS CO.",
+   "filed": [
+    [
+     "ETHYL METHOXYCINNAMATE",
+     4.0
+    ],
+    [
+     "STEPHANIA TETRANDRA WHOLE",
+     0.1
+    ],
+    [
+     "SAURURUS CHINENSIS WHOLE",
+     2.0
+    ],
+    [
+     "TARAXACUM OFFICINALE WHOLE",
+     0.8
+    ]
+   ],
+   "label": [
+    [
+     "OCTINOXATE",
+     4.0
+    ]
+   ]
+  },
+  {
+   "setid": "1ce0d6c4-e3cc-d9b9-e063-6294a90a9199",
+   "title": "SCHNEVEU MUL TIPLEX SUNSCREEN (SUNSCREEN) CREAM [RUIAN INFORMATION TECHNOLOGY (GUANGDONG) ",
+   "filed": [
+    [
+     "ETHYL METHOXYCINNAMATE",
+     20.0
+    ],
+    [
+     "TITANIUM DIOXIDE",
+     5.0
+    ]
+   ],
+   "label": [
+    [
+     "OCTINOXATE",
+     8.2
+    ],
+    [
+     "TITANIUM DIOXIDE",
+     5.0
+    ]
+   ]
+  },
+  {
+   "setid": "1c415f40-7462-c66f-e063-6294a90ae9ea",
+   "title": "SHUIHUANJI SUNSCREEN (SUNSCREEN) CREAM [RUIAN INFORMATION TECHNOLOGY (GUANGDONG) CO., LTD.",
+   "filed": [
+    [
+     "ETHYL METHOXYCINNAMATE",
+     20.0
+    ],
+    [
+     "DIMETHICONE CROSSPOLYMER (450000 MPA.S AT 12% IN CYCLOPENTASILOXANE)",
+     6.0
+    ],
+    [
+     "OCTOCRYLENE",
+     5.0
+    ]
+   ],
+   "label": [
+    [
+     "OCTINOXATE",
+     6.5
+    ],
+    [
+     "OCTOCRYLENE",
+     5.0
+    ]
+   ]
+  },
+  {
+   "setid": "8d343fec-85a7-613b-e053-2a95a90a4a78",
+   "title": "COMPLEXION PROTECTION MOISTURIZER SPF (BENZOPHENONE, AVOBENZONE, OCTINOXATE, OCTISALATE CR",
+   "filed": [
+    [
+     "OCTISALATE",
+     5.0
+    ],
+    [
+     "OCTINOXATE",
+     7.5
+    ],
+    [
+     "AVOBENZONE",
+     1.0
+    ],
+    [
+     "BENZOPHENONE",
+     3.6
+    ]
+   ],
+   "label": [
+    [
+     "OXYBENZONE",
+     6.0
+    ],
+    [
+     "AVOBENZONE",
+     1.0
+    ],
+    [
+     "OCTINOXATE",
+     7.5
+    ],
+    [
+     "OCTISALATE",
+     5.0
+    ]
+   ]
+  },
+  {
+   "setid": "5a68508b-f1fa-4f03-b28a-554e24cf58d6",
+   "title": "NANOCARE MOISTURIZING SUNSCREEN SPF 50 (BENZOPHENONE, AVOBENZONE, OCTISALATE, HOMOSALATE, ",
+   "filed": [
+    [
+     "BENZOPHENONE",
+     6.0
+    ],
+    [
+     "AVOBENZONE",
+     3.0
+    ],
+    [
+     "OCTISALATE",
+     5.0
+    ],
+    [
+     "HOMOSALATE",
+     10.0
+    ],
+    [
+     "OCTOCRYLENE",
+     8.0
+    ]
+   ],
+   "label": [
+    [
+     "OXYBENZONE",
+     6.0
+    ],
+    [
+     "AVOBENZONE",
+     3.0
+    ],
+    [
+     "OCTISALATE",
+     5.0
+    ],
+    [
+     "HOMOSALATE",
+     10.0
+    ],
+    [
+     "OCTOCRYLENE",
+     8.0
+    ]
+   ]
+  },
+  {
+   "setid": "23b0cf33-725f-4294-a7a4-ca44e45556dd",
+   "title": "SCRUBS SOLAR GUARD SUNSCREEN WIPE SCRUBS SOLAR GUARD (SUNSCREEN WIPE) CLOTH [ITW DYMON]",
+   "filed": [
+    [
+     "HOMOSALATE",
+     2.0
+    ],
+    [
+     "OCTINOXATE",
+     7.5
+    ],
+    [
+     "OCTISALATE",
+     4.0
+    ],
+    [
+     "OXYBENZONE",
+     5.0
+    ]
+   ],
+   "label": [
+    [
+     "HOMOSALATE",
+     2.0
+    ],
+    [
+     "OCTINOXATE",
+     7.5
+    ],
+    [
+     "OCTISALATE",
+     4.0
+    ],
+    [
+     "OXYBENZONE",
+     5.0
+    ]
+   ]
+  },
+  {
+   "setid": "92b1bdbe-aa58-4394-8a91-3c43ab7835ea",
+   "title": "CRC SUNSCREEN TOWEL CRC (SUNSCREEN TOWEL) CLOTH [CRC INDUSTRIES, INC.]",
+   "filed": [
+    [
+     "HOMOSALATE",
+     2.0
+    ],
+    [
+     "OCTINOXATE",
+     7.5
+    ],
+    [
+     "OCTISALATE",
+     4.0
+    ],
+    [
+     "OXYBENZONE",
+     5.0
+    ]
+   ],
+   "label": [
+    [
+     "HOMOSALATE",
+     2.0
+    ],
+    [
+     "OCTINOXATE",
+     7.5
+    ],
+    [
+     "OCTISALATE",
+     4.0
+    ],
+    [
+     "OXYBENZONE",
+     5.0
+    ]
+   ]
+  },
+  {
+   "setid": "c649a9be-5e7a-4436-aea1-017e36b07d08",
+   "title": "SUNSCREEN WIPE KGP (HOMOSALATE OCTINOXATE OCTISALATE OXYBENZONE ) CLOTH [KGP PRODUCTS, INC",
+   "filed": [
+    [
+     "HOMOSALATE",
+     2.0
+    ],
+    [
+     "OCTINOXATE",
+     7.5
+    ],
+    [
+     "OCTISALATE",
+     4.0
+    ],
+    [
+     "OXYBENZONE",
+     5.0
+    ]
+   ],
+   "label": [
+    [
+     "HOMOSALATE",
+     2.0
+    ],
+    [
+     "OCTINOXATE",
+     7.5
+    ],
+    [
+     "OCTISALATE",
+     4.0
+    ],
+    [
+     "OXYBENZONE",
+     5.0
+    ]
+   ]
+  }
+ ]
+}
