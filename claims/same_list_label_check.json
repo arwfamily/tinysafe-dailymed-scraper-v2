@@ -7944,6 +7944,14 @@
    "diff": null
   },
   {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ac29da76-f638-4947-8d25-055f1f442dbe",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d91e9a20-87c0-43c1-aa85-7506df32983f",
+   "baby_title": "OCEAN POTION 50 INSTANT DRY KID SPOTSTICK (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LIQUID [SUN & SKIN CARE RESEARCH, LLC]",
+   "other_title": "OCEAN POTION INSTANT DRY 50 DAB-ON SPOTSTICK (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LIQUID [SUN & SKIN CARE RESEARCH, LLC]",
+   "verdict": "unreadable",
+   "diff": null
+  },
+  {
    "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=382247c7-77c0-488b-ad98-be15e153c85b",
    "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f2eb1057-1a21-4d7c-a427-9ba66f1e5873",
    "baby_title": "OCEAN POTION INSTANT DRY 50 MIST KIDS SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [SUN & SKIN CARE RESEARCH, LLC]",
@@ -8729,6 +8737,781 @@
      "OCTISALATE": 5.0,
      "OCTOCRYLENE": 2.75,
      "AND OXYBENZONE": 3.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24256e54-ae34-91b2-e063-6394a90a33c0",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "WALGREENS 50 WATERMELON SCENTED CONTINUOUS SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WALGREEN COMPANY]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "SD ALCOHOL 40-B",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2436987c-2afe-06b5-e063-6394a90aceba",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "WALGREENS 50 COCONUT SCENTED CONTINUOUS SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WALGREEN COMPANY]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "SD ALCOHOL 40-B",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2436bd19-2299-6e89-e063-6394a90acd99",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "WALGREENS 50 BANANA SCENTED CONTINUOUS SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WALGREEN COMPANY]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "SD ALCOHOL 40-B",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c5a624a-8844-b782-e063-6294a90a478c",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "OCEAN POTION SUNCARE 50 CONTINUOUS SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [GNL BRANDS INTERNATIONAL, LLC]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "FRAGRANCE",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e518d8a-f52b-4ae1-e063-6394a90aaa1e",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "OCEAN POTION SUNCARE 50 CONTINUOUS SUNSCREEN SCENT OF SUNSHINE (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [GNL BRANDS INTERNATIONAL, LLC]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3edcc26a-d960-3fa8-e063-6394a90ab703",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "KLEIN TOOLS SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [KLEIN TOOLS, INC.]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT"
+    ],
+    "only_other": [
+     "ALCOHOL DENAT",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4978c811-be34-9fc3-e063-6394a90a2d80",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "WALGREENS 50 PINA COLADA SCENTED SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WALGREEN COMPANY]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "SD ALCOHOL 40-B",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=49f030d8-959c-a3cd-e063-6294a90ae1ba",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "WALGREENS 50 PASSION FRUIT SCENTED SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WALGREEN COMPANY]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "SD ALCOHOL 40-B",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a038017-9f15-b4b2-e063-6294a90a1b23",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "WALGREENS 50 CARAMEL AND PISTACHIO SCENTED SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WALGREEN COMPANY]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "SD ALCOHOL 40-B",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e5280b2-1437-4d97-bb4c-db1a1632fea7",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "EQUATE SUNSCREEN SPF 50 SPORT BROADSPECTRUM (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) SPRAY [WALMART]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=509b6c7d-8a28-2d3a-e063-6394a90af068",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "EQUATE SUNSCREEN SPF 50 SPORT BROAD SPECTRUM (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WALMART]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=513bdfb1-6b90-dfc7-e063-6394a90a9ec2",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "TARGET UP AND UP SPF 50 BANANA SCENTED SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "SD ALCOHOL 40-B",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51510195-a577-dce4-e063-6294a90a3e74",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "TARGET UP AND UP SPF 50 COCONUT SCENTED SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "SD ALCOHOL 40-B",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51512b9f-514d-3a29-e063-6294a90ae173",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "TARGET UP AND UP SPF 50 STRAWBERRY SCENTED SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "SD ALCOHOL 40-B",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5151493a-c25a-fb59-e063-6394a90a1034",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "TARGET UP AND UP SPF 50 WATERMELON SCENTED SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "SD ALCOHOL 40-B",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5151560f-350c-88c3-e063-6294a90a3492",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "TARGET UP AND UP SPF 50 PEONY SCENTED SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "SECTION/INACTIVE INGREDIENTS ALCOHOL DENAT",
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "SD ALCOHOL 40-B",
+     "SECTION/INACTIVE INGREDIENTS ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58b5d0ce-9157-9dee-e063-6394a90ab543",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "WALMART EQUATE SUNSCREEN SPF 50 SPORT BROAD SPECTRUM (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WALMART, INC.]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8fda6c78-1b39-6aa6-e053-2995a90a16a2",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "EQUATE SPF 50 ULTRA SUNSCREEN CONTINUOUS (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WAL-MART STORES INC]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a62848fb-7016-3457-e053-2a95a90aa0f1",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "SIGNATURE CARE SPORT SPF 50 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [SAFEWAY, INC.]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER"
+    ],
+    "only_other": [
+     "ACRYLATES/OCTYACRYLAMIDE COPOLYMER"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bbe06f23-0d0f-43ff-9d1b-37a99d9d6206",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "EQUATE-SUNSCREEN BROAD SPECTRUM SPF 50 ULTRA (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE) SPRAY [WAL-MART STORES INC]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4238107-c76c-266a-e053-2a95a90a8978",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "MARKET BASKET CONTINUOUS SUNSCREEN SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE) SPRAY [DEMOULAS SUPER MARKETS, INC.]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f42402ff-0d70-9231-e053-2995a90aa46d",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "CVS HEALTH SPF 50 CLEAR (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE) SPRAY [CVS PHARMACY]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f55828b4-f2a4-13ec-e053-2995a90a0f84",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "EXCHANGE SELECT SPORT SUNSCREEN CONTINUOUS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [ARMY & AIR FORCE EXCHANGE SERVICE]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "PANTHENOL"
+    ],
+    "only_other": [
+     "PANTHENOL ( PROVITAMIN B5 )"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7b32aa8-2e56-3725-e053-6294a90a18d2",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "ALDI LACURA SPORT SUNSCREEN 50 BROAD SPECTRUM SPF 50 CONTINUOUS (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [ALDI INC]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fbd65277-7aff-de19-e053-6394a90a9496",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "BERKLEY JENSEN SPORT SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [BJWC]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b82b6d0d-616d-f041-e053-2995a90ae6a3",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd67b009-accc-6c7b-e053-6294a90ad80e",
+   "baby_title": "TARGET UP AND UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+   "other_title": "FRUIT OF THE EARTH LUV THAT SUN SPORT SUNSCREEN CONTINUOUS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [FRUIT OF THE EARTH, INC.]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "TOCOPHEROL ( VITAMIN E )"
+    ],
+    "only_other": [
+     "TOCOPHEROL"
+    ],
+    "actives_baby": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
+    },
+    "actives_other": {
+     "AVOBENZONE": 3.0,
+     "HOMOSALATE": 10.0,
+     "OCTISALATE": 5.0,
+     "OCTOCRYLENE": 4.0
     },
     "same_order": false
    }

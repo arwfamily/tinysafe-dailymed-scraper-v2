@@ -1,5 +1,5 @@
 {
- "resolved_on": "2026-10-05",
+ "resolved_on": "2026-10-08",
  "source": "https://dailymed.nlm.nih.gov/dailymed/services/v2/uniis.json (full paged download, matched locally)",
  "catalogue_rows": 8038,
  "note": "Only documented /uniis parameters are used (pagesize, page). Matching happens locally so no assumption is made about server-side search behaviour. Codes are never typed by hand.",
@@ -22,7 +22,7 @@
    "matched_via": "exact",
    "unii": "15FIX9V2JP",
    "active_moiety": "TITANIUM DIOXIDE",
-   "spl_count": 4151,
+   "spl_count": 4150,
    "candidates": []
   },
   {
@@ -34,7 +34,7 @@
    "matched_via": "exact",
    "unii": "G63QQF2NOX",
    "active_moiety": "AVOBENZONE",
-   "spl_count": 4623,
+   "spl_count": 4624,
    "candidates": []
   },
   {
@@ -59,7 +59,7 @@
    "matched_via": "exact",
    "unii": "4Y5P7MUD51",
    "active_moiety": "OCTINOXATE",
-   "spl_count": 4027,
+   "spl_count": 4025,
    "candidates": []
   },
   {
@@ -72,7 +72,7 @@
    "matched_via": "exact",
    "unii": "4X49Y0596W",
    "active_moiety": "OCTISALATE",
-   "spl_count": 5443,
+   "spl_count": 5444,
    "candidates": []
   },
   {
@@ -82,7 +82,7 @@
    "matched_via": "exact",
    "unii": "5A68WGF6WM",
    "active_moiety": "OCTOCRYLENE",
-   "spl_count": 4212,
+   "spl_count": 4213,
    "candidates": []
   },
   {
@@ -92,7 +92,7 @@
    "matched_via": "exact",
    "unii": "V06SV4M95S",
    "active_moiety": "HOMOSALATE",
-   "spl_count": 3651,
+   "spl_count": 3653,
    "candidates": []
   },
   {

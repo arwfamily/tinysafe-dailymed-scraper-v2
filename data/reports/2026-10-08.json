@@ -1,0 +1,48 @@
+{
+ "run_date": "2026-10-08",
+ "all_labels": {
+  "new": 2,
+  "delisted": 3
+ },
+ "baby_labels": {},
+ "baby_population_live": 418,
+ "new_baby_decisions": [],
+ "review_queue": 0,
+ "changes": [
+  {
+   "setid": "5cd3834a-a47f-dc91-e063-6294a90a7d7e",
+   "change": "new",
+   "product": "ESFOLIO HYALURONIC PROTECTION SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cd3834a-a47f-dc91-e063-6294a90a7d7e",
+   "baby": false
+  },
+  {
+   "setid": "5cdf96b0-2b31-bb4a-e063-6294a90a77aa",
+   "change": "new",
+   "product": "DAYWEAR UV WATER CREME BROAD SPECTRUM SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cdf96b0-2b31-bb4a-e063-6294a90a77aa",
+   "baby": false
+  },
+  {
+   "setid": "9dc66fbf-bc66-4c60-9675-05b193da91da",
+   "change": "delisted",
+   "product": "10 ARMANI PRIMA CONTROL GLOW MOISTURIZER SBS SPF 35 (OCTINOXATE, TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9dc66fbf-bc66-4c60-9675-05b193da91da",
+   "baby": false
+  },
+  {
+   "setid": "dad1db12-0e36-011e-e053-2995a90a54a1",
+   "change": "delisted",
+   "product": "RENER LIFT MULTI ACTION ULTRA SPF 30 (AVOBENZONE, OCTISALATE, OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dad1db12-0e36-011e-e053-2995a90a54a1",
+   "baby": false
+  },
+  {
+   "setid": "9af44d18-d9b4-48eb-8484-a3b84b7bd115",
+   "change": "delisted",
+   "product": "TEINT MIRACLE OCTINOXATE SUNSCREEN BROAD SPECTRUM SPF 15 (OCTINOXATE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9af44d18-d9b4-48eb-8484-a3b84b7bd115",
+   "baby": false
+  }
+ ]
+}
