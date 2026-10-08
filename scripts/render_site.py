@@ -41,22 +41,26 @@ FINDINGS = {  # display order = dict order
         "title": "Homosalate in baby and kids sunscreen labels: US levels vs the EU limit",
         "eyebrow": "Finding · DailyMed labels × EU law",
         "caption": "Each door is one baby or kids formula. Filled: homosalate above 7.34%."},
+    "eu-banned-preservatives": {
+        "title": "Preservatives banned in EU cosmetics, on US baby sunscreen labels",
+        "eyebrow": "Finding · DailyMed labels × EU law",
+        "caption": "Each door is one baby or kids formula. Filled: lists isobutylparaben or methylisothiazolinone."},
     "same-ingredient-list": {
         "title": "Same ingredient list, different label",
         "eyebrow": "Finding · DailyMed labels",
         "caption": "Each door is one baby or kids formula. Filled: same ingredients as a label that does not say baby or kids."},
-    "mineral-sunscreen-boosters": {
-        "title": "SPF boosters in mineral baby sunscreens",
+    "spf-boosters": {
+        "title": "SPF boosters in baby sunscreens, including mineral ones",
         "eyebrow": "Finding · DailyMed labels × manufacturer data",
-        "caption": "Each door is one mineral baby or kids formula. Filled: contains at least one of the six booster ingredients."},
-    "eu-banned-preservatives": {
-        "title": "Preservatives banned in EU cosmetics, found in US baby sunscreen labels",
-        "eyebrow": "Finding · DailyMed labels × EU law",
-        "caption": "Each door is one baby or kids formula. Filled: lists isobutylparaben or methylisothiazolinone."},
+        "caption": "Each door is one baby or kids formula. Filled: contains at least one of the six booster ingredients."},
     "fragrance": {
         "title": "Fragrance in baby and kids sunscreens",
         "eyebrow": "Finding · DailyMed labels × AAD guidance",
         "caption": "Each door is one baby or kids formula. Filled: lists fragrance or parfum."},
+    "parabens": {
+        "title": "Parabens in baby and kids sunscreens",
+        "eyebrow": "Finding · DailyMed labels × EU law",
+        "caption": "Each door is one baby or kids formula. Filled: lists at least one paraben."},
 }
 FINDING_TITLES = {k: v["title"] for k, v in FINDINGS.items()}
 JUR_NAME = {"US": "United States", "EU": "European Union", "AU": "Australia"}
@@ -624,7 +628,8 @@ def finding_body(d, f):
         extra = f"""<section><p class="eyebrow">Mineral and other filters</p><h2>Fragrance by type of sunscreen</h2>
 <ul class="bars"><li><span>Mineral only</span><span class="bar"><i style="width:{100 * mn / md:.1f}%"></i></span><b>{mn} of {md}</b></li>
 <li><span>Other filters</span><span class="bar"><i style="width:{100 * on / od:.1f}%"></i></span><b>{on} of {od}</b></li></ul>
-<p class="fine">Not counted: {E(det["not_counted"])}.</p></section>
+<p class="fine">Not counted: {E(det["not_counted"])}.</p>
+<p>In {det["printed_only"]} of the {f["numerator"]}, fragrance appears on the printed label but not in the ingredient list the labeler filed with the FDA. Apps and databases that read only the filed list will not see it.</p></section>
 <section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} labels</h2>
 <div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Type</th><th>Where it is listed</th></tr></thead><tbody>{frows}</tbody></table></div>
 <p class="fine">Each name links to its FDA DailyMed record.</p></section>"""
@@ -633,29 +638,53 @@ def finding_body(d, f):
             ("What does the American Academy of Dermatology say?",
              "For children with eczema, it advises a sunscreen that is fragrance-free, with titanium dioxide and/or zinc oxide, "
              "broad-spectrum protection and SPF 30 or higher, and it advises choosing fragrance-free rather than unscented products."),
+            ("Why do some FDA records not show the fragrance?",
+             f"In {det['printed_only']} of the {f['numerator']} formulas, fragrance is printed on the label's Drug Facts but is "
+             "missing from the ingredient list the labeler filed with the FDA. We count what either the printed label or the "
+             "filing lists, and the printed label decides when the two disagree."),
             ("Do mineral sunscreens contain fragrance?",
              f"Some do: {mn} of the {md} mineral-only baby and kids formulas list fragrance, against {on} of the {od} formulas that use other filters."),
             ("How were these products selected?", howto),
         ]
-    else:  # mineral-sunscreen-boosters
+    elif key == "parabens":
+        det = f["detail"]
+        mx = max(v for _, v in det["per_paraben"])
+        bars = "".join(f'<li><span>{E(n)}</span><span class="bar"><i style="width:{100 * v / mx:.1f}%"></i></span><b>{v}</b></li>'
+                       for n, v in det["per_paraben"])
+        frows = "".join(
+            f'<tr><td><a href="{E(p["url"])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["title"]))}</span></a></td>'
+            f'<td>{E(", ".join(p["parabens"]))}</td></tr>' for p in det["formulas"])
+        mean = f"""
+<p>Parabens are preservatives. In the US they are allowed in sunscreens. In the EU, isobutylparaben is banned from all cosmetics. {src_chip("EU 358/2014", "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0358", "Commission Regulation (EU) No 358/2014")}</p>
+<p>The EU also limits propylparaben and butylparaben to 0.14% combined, and does not allow them in leave-on products designed for the nappy area of children under three. {src_chip("EU 1004/2014", isrc["url"], isrc["title"])} Sunscreen labels do not state paraben percentages, so the 0.14% limit cannot be checked from them.</p>"""
+        extra = f"""<section><p class="eyebrow">Which parabens</p><h2>How many of the {f["denominator"]} formulas list each one</h2>
+<ul class="bars">{bars}</ul>
+<p class="fine">One formula can contain several. {det["mineral"][0]} of the {det["mineral"][1]} mineral formulas list a paraben.</p></section>
+<section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} labels</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Parabens listed</th></tr></thead><tbody>{frows}</tbody></table></div>
+<p class="fine">Each name links to its FDA DailyMed record.</p></section>"""
+        faq = [
+            ("Are parabens allowed in baby sunscreen?", f["legal_framing"]),
+            ("How were these products selected?", howto),
+        ]
+    else:  # spf-boosters
         det = f["detail"]
         mx = max(x["count"] for x in det["ingredients"])
         rows = "".join(
-            f'<tr><td><b>{E(x["name"])}</b></td><td class="num">{x["count"]}</td>'
-            f'<td><span class="bar"><i style="width:{100 * x["count"] / mx:.1f}%"></i></span></td>'
+            f'<tr><td><b>{E(x["name"])}</b></td><td class="num">{x["count"]}</td><td class="num">{x["mineral"]}</td>'
             f'<td>{E(x["function"])} {src_chip("Source", x["source"]["url"], x["source"]["title"])}</td></tr>'
             for x in det["ingredients"])
         frows = "".join(
             f'<tr><td><a href="{E(p["url"])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["title"]))}</span></a></td>'
-            f'<td>{E(", ".join(p["boosters"]))}</td></tr>' for p in det["formulas"])
+            f'<td>{"Mineral" if p["mineral"] else "Other"}</td><td>{E(", ".join(p["boosters"]))}</td></tr>' for p in det["formulas"])
         mean = f"""
 <p>A mineral sunscreen's active ingredients are zinc oxide and/or titanium dioxide. On a US sunscreen, the Active ingredients section of the Drug Facts label lists only FDA sunscreen actives. {src_chip("21 CFR 201.66", DRUG_FACTS["url"], DRUG_FACTS["title"])}</p>
-<p>Ingredients that help reach the labeled SPF but are not FDA sunscreen actives therefore appear under Inactive ingredients. This finding counts six of them, each with its manufacturer's or regulator's own description, in the full ingredient lists of mineral baby and kids sunscreens. It is about how labels work, not about any brand.</p>"""
-        extra = f"""<section><p class="eyebrow">Six ingredients</p><h2>How many of the {f["denominator"]} mineral formulas list each one</h2>
-<div class="tablewrap"><table class="pairs"><thead><tr><th>Ingredient</th><th>Formulas</th><th></th><th>What its maker or regulator says it does</th></tr></thead><tbody>{rows}</tbody></table></div>
+<p>Ingredients that help reach the labeled SPF but are not FDA sunscreen actives therefore appear under Inactive ingredients. This finding counts six of them, each with its manufacturer's or regulator's own description, in the full ingredient lists of baby and kids sunscreens. In mineral formulas they matter most, because parents reading only the Active ingredients section see zinc oxide and/or titanium dioxide alone. {det["mineral"][0]} of the {det["mineral"][1]} mineral formulas contain at least one. It is about how labels work, not about any brand.</p>"""
+        extra = f"""<section><p class="eyebrow">Six ingredients</p><h2>How many of the {f["denominator"]} formulas list each one</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Ingredient</th><th>All formulas</th><th>Mineral formulas</th><th>What its maker or regulator says it does</th></tr></thead><tbody>{rows}</tbody></table></div>
 <p class="fine">One formula can contain several; {det["two_or_more"]} contain two or more. Counted in {E(det["lists_used"])}.</p></section>
 <section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} labels</h2>
-<div class="tablewrap"><table class="pairs"><thead><tr><th>Mineral baby or kids label</th><th>Booster ingredients listed</th></tr></thead><tbody>{frows}</tbody></table></div>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Type</th><th>Booster ingredients listed</th></tr></thead><tbody>{frows}</tbody></table></div>
 <p class="fine">Each name links to its FDA DailyMed record.</p></section>"""
         faq = [
             ("Does this mean these products break the law?", f["legal_framing"]),
@@ -696,7 +725,7 @@ def page_finding(d, f):
     title = meta["title"]
     mean, extra, faq, howto = finding_body(d, f)
     faqh = "".join(f"<details><summary>{E(q)}</summary><p>{E(a)}</p></details>" for q, a in faq)
-    src_label = {"mineral-sunscreen-boosters": "Drug Facts rule", "fda-more-data": "FDA source",
+    src_label = {"fda-more-data": "FDA source", "fragrance": "AAD guidance", "parabens": "EU law", "eu-banned-preservatives": "EU law",
                  "homosalate-eu-limit": "EU law", "eu-banned-preservatives": "EU law",
                  "fragrance": "AAD guidance"}.get(f["finding"], "Source")
     body = f"""
@@ -772,6 +801,7 @@ def page_method(d, notes):
 <p>Population: {E(pop["definition"])}. {pop["formulations"]} unique formulations, {pop["mineral_only"]} with only mineral actives. Labels with the same active ingredients at the same percentages, the same inactive ingredients and the same form (lotion, cream, stick, spray) are counted once; pump and aerosol sprays count as one form because filers code them inconsistently. DailyMed snapshot {E(pop["snapshot"])}.</p>
 <p>DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.</p>
 <p>Left out of the counts, by rule: labels for another market, labels that do not meet US sunscreen limits as listed (an active above its US limit, or an active not permitted in the US), and listings that bundle several products. <a href="{REPO}/blob/main/claims/population_exclusions.csv">Every label left out, with its reason</a>. Where a manufacturer's structured filing contradicts its own Drug Facts, the Drug Facts are used: <a href="{REPO}/blob/main/data/corrections/spl_label_errors.jsonl">corrections</a>.</p>
+<p>Inactive ingredients are counted from two lists: the one the labeler filed with the FDA, and the one printed in the label's Drug Facts. When the printed list is readable as text, it decides: an ingredient that appears only in the filing is not counted. When the printed list is only an image, the filing decides. Every finding table shows where each ingredient was listed.</p>
 <p><a href="{REPO}/blob/main/claims/{E(pop["review_file"])}">Review file</a> · <a href="{REPO}/blob/main/claims/registry_stats.py">Counting script</a> · <a href="{REPO}/blob/main/docs/SITE_DATA_CONTRACT.md">Publishing rules</a></p></div></section>
 <section class="cols prose"><div><h2>What we will not publish</h2>
 <p>A sentence about what an ingredient does, unless a source for that exact ingredient says it. A number that has not passed its check. A ranking or a recommendation of products.</p></div>

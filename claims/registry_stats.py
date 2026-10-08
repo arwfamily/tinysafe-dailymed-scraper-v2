@@ -209,7 +209,7 @@ def same_labeler(r, twins):
 # dimethoxydimethylindanone was dropped: Symrise sells it as a skin-care agent,
 # not a UV filter or booster).
 BOOSTERS = [
-    ("butyloctyl salicylate", r"\bBUTYLOCTYL SALICYLATE\b",
+    ("butyloctyl salicylate", r"\bBUT[YL]{2} ?OCTY[LI] ?SA[LI]{1,2}CYLATE\b",
      "Hallstar, a manufacturer, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
      "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)", "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/"),
     ("ethylhexyl methoxycrylene", r"\bETHYLHEXYL METHOXYCRYLENE\b",
@@ -237,8 +237,7 @@ def full_ingredient_text(r):
 
 
 def boosters_in(r):
-    t = full_ingredient_text(r)
-    return [b[0] for b in BOOSTERS if re.search(b[1], t)]
+    return [b[0] for b in BOOSTERS if where_listed(r, b[1])]
 
 
 # Preservatives that EU law no longer allows in cosmetics like these (in the EU
@@ -264,14 +263,57 @@ def ingredient_items(r):
     return filed, list(r.get("printed_inactives") or [])
 
 
+FULL_PRINTED_LIST = 8   # a printed list this long is read as the complete label list
+LABEL_TEXT = os.path.join(ROOT, "data", "views", "baby_label_text.jsonl")
+_SECTION = None
+
+
+def printed_section(setid):
+    """The Inactive ingredients text printed on the label (from the label-text
+    archive, scripts/baby_label_text.py), or '' if the label has none in text."""
+    global _SECTION
+    if _SECTION is None:
+        _SECTION = {}
+        if os.path.exists(LABEL_TEXT):
+            for line in open(LABEL_TEXT, encoding="utf-8"):
+                d = json.loads(line)
+                secs = d.get("sections") or {}
+                txt = " ".join(v for k, v in secs.items() if re.search(r"INACTIVE|^INGREDIENTS", k.upper()))
+                if not txt:
+                    m = re.search(r"INACTIVE INGREDIENTS?[^|]{40,}", (d.get("text") or "").upper())
+                    txt = m.group(0) if m else ""
+                _SECTION[d["setid"]] = txt.upper()
+    return _SECTION.get(setid, "")
+
+
+def _loose(pat):
+    """Pattern for label text with spaces and hyphens removed."""
+    return re.sub(r"\\b|\(\?<![^)]*\)| \?| ", "", pat).replace("-", "")
+
+
 def where_listed(r, pat):
+    """Where an ingredient is listed: [] if not counted.
+    The printed label decides whenever it carries its ingredient list as text:
+      1. a parsed printed list of FULL_PRINTED_LIST+ items, or the label's
+         Inactive ingredients text, mentions it -> counted;
+      2. the label prints its list as text but it is not there -> NOT counted,
+         even if the FDA filing has it (the filing and the label disagree);
+      3. the label's list is an image (no text) -> the FDA filing decides.
+    The text check also tries the pattern with spaces removed, for labels
+    printed without separators; a looser match can only keep a filed
+    ingredient, never add one. Typos are handled in the patterns themselves,
+    never by fuzzy matching (polyester-7 vs polyester-8)."""
     filed, printed = ingredient_items(r)
-    out = []
-    if any(re.search(pat, x.upper()) for x in filed):
-        out.append("FDA filing")
-    if any(re.search(pat, x.upper()) for x in printed):
-        out.append("printed label")
-    return out
+    in_filed = any(re.search(pat, x.upper()) for x in filed)
+    in_list = any(re.search(pat, x.upper()) for x in printed)
+    sec = printed_section(r["setid"])
+    in_sec = bool(sec) and (re.search(pat, sec) is not None)
+    loose = bool(sec) and in_filed and re.search(_loose(pat), re.sub(r"[^A-Z0-9]", "", sec)) is not None
+    if in_list or in_sec:
+        return ["printed label", "FDA filing"] if in_filed else ["printed label"]
+    if len(printed) >= FULL_PRINTED_LIST or len(sec) >= 60:
+        return ["printed label", "FDA filing"] if loose else []
+    return ["FDA filing"] if in_filed else []
 
 
 def main():
@@ -412,7 +454,7 @@ def main():
          "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py + scripts/classify.py (two-tier absorber list)",
          "verified_date": snapshot},
         {"id": "US-BABY-BOS", "status": "verified", "jurisdiction": "US",
-         "ingredient_slugs": [], "superseded_finding": "mineral-sunscreen-boosters",
+         "ingredient_slugs": [], "superseded_finding": "spf-boosters",
          "claim": f"{bos} of {M} mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
          "publishable_sentence": (f"{bos} of the {M} mineral baby and kids sunscreen formulas "
                                   f"listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not "
@@ -430,30 +472,35 @@ def main():
     ]
     for c in claims:
         if c["id"] == "US-BABY-HIDDEN-UV":
-            c["status"], c["superseded_by"] = "superseded", "US-BABY-MINERAL-BOOSTERS"
-    hits = [(r, boosters_in(r)) for r in mineral]
+            c["status"], c["superseded_by"] = "superseded", "US-BABY-BOOSTERS"
+    hits = [(r, boosters_in(r)) for r in forms]
     hits = [(r, b) for r, b in hits if b]
     per = collections.Counter(x for _, b in hits for x in b)
+    per_m = collections.Counter(x for r, b in hits if r.get("is_mineral_only_actives") for x in b)
+    hm = sum(1 for r, _ in hits if r.get("is_mineral_only_actives"))
     claims.append({
-        "id": "US-BABY-MINERAL-BOOSTERS", "status": "verified", "jurisdiction": "US",
-        "ingredient_slugs": [], "finding": "mineral-sunscreen-boosters",
-        "claim": (f"{len(hits)} of {M} mineral-only baby/kids sunscreen formulations list at least one of "
+        "id": "US-BABY-BOOSTERS", "status": "verified", "jurisdiction": "US",
+        "ingredient_slugs": [], "finding": "spf-boosters",
+        "claim": (f"{len(hits)} of {N} baby/kids sunscreen formulations ({hm} of {M} mineral-only) list at least one of "
                   f"{len(BOOSTERS)} synthetic SPF-boosting or UV-filter ingredients among their inactive ingredients."),
-        "publishable_sentence": (f"{len(hits)} of the {M} mineral baby and kids sunscreen formulas listed in the FDA's "
-                                 f"DailyMed label database also contain a synthetic ingredient that its manufacturer "
-                                 f"sells to boost SPF or stabilize UV filters, or that the EU regulates as a UV filter. "
-                                 f"It is listed under Inactive ingredients, not Active ingredients."),
+        "publishable_sentence": (f"{len(hits)} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed "
+                                 f"label database contain a synthetic ingredient that its manufacturer sells to boost SPF "
+                                 f"or stabilize UV filters, or that the EU regulates as a UV filter, listed under Inactive "
+                                 f"ingredients. That includes {hm} of the {M} mineral formulas, whose only active "
+                                 f"ingredients are zinc oxide and/or titanium dioxide."),
         "legal_framing": ("Not a violation: none of these ingredients is an FDA sunscreen active, so they belong with "
                           "the inactive ingredients, as the rules require. The finding is about how labels work, not "
                           "about any brand."),
-        "numerator": len(hits), "denominator": M, "population": POP_MIN,
+        "numerator": len(hits), "denominator": N, "population": POP,
         "detail": {
+            "mineral": [hm, M], "other": [len(hits) - hm, N - M],
             "two_or_more": sum(1 for _, b in hits if len(b) >= 2),
-            "ingredients": [{"name": n, "count": per[n], "function": fn,
+            "ingredients": [{"name": n, "count": per[n], "mineral": per_m[n], "function": fn,
                              "source": {"title": t, "url": u, "checked": "2026-10-08"}}
                             for n, _, fn, t, u in sorted(BOOSTERS, key=lambda b: -per[b[0]])],
-            "formulas": [{"title": r["title"], "url": r["dailymed_url"], "boosters": b}
-                         for r, b in sorted(hits, key=lambda h: (-len(h[1]), h[0]["title"]))],
+            "formulas": [{"title": r["title"], "url": r["dailymed_url"], "boosters": b,
+                          "mineral": bool(r.get("is_mineral_only_actives"))}
+                         for r, b in sorted(hits, key=lambda h: (not h[0].get("is_mineral_only_actives"), -len(h[1]), h[0]["title"]))],
             "lists_used": "inactive ingredients as filed with the FDA plus the printed Drug Facts ingredient list"},
         "caveat": CAVEAT, "site_source": src,
         "method": "claims/registry_stats.py (BOOSTERS, full_ingredient_text)", "verified_date": snapshot})
@@ -495,8 +542,42 @@ def main():
         "caveat": CAVEAT, "site_source": src,
         "method": "claims/registry_stats.py (EU_BANNED, where_listed)", "verified_date": snapshot})
 
+    # Parabens
+    PARABENS = [("propylparaben", r"(?<![A-Z])PROPYL ?PARABEN"), ("methylparaben", r"(?<![A-Z])METHYL ?PARABEN"),
+                ("butylparaben", r"(?<![A-Z])BUTYL ?PARABEN"), ("ethylparaben", r"(?<![A-Z])ETHYL ?PARABEN"),
+                ("isobutylparaben", r"(?<![A-Z])ISOBUTYL ?PARABEN")]
+    pb_rows = []
+    for r in forms:
+        found = [n for n, pat in PARABENS if where_listed(r, pat)]
+        if found:
+            pb_rows.append({"title": r["title"], "url": r["dailymed_url"], "parabens": found,
+                            "mineral": bool(r.get("is_mineral_only_actives"))})
+    pb_per = collections.Counter(n for row in pb_rows for n in row["parabens"])
+    claims.append({
+        "id": "US-BABY-PARABENS", "status": "verified", "jurisdiction": "US",
+        "ingredient_slugs": [], "finding": "parabens",
+        "claim": f"{len(pb_rows)} of {N} baby/kids sunscreen formulations list at least one paraben.",
+        "publishable_sentence": (f"{len(pb_rows)} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed "
+                                 f"label database list at least one paraben preservative: propylparaben in "
+                                 f"{pb_per['propylparaben']}, methylparaben in {pb_per['methylparaben']}, butylparaben in "
+                                 f"{pb_per['butylparaben']}, ethylparaben in {pb_per['ethylparaben']} and isobutylparaben in "
+                                 f"{pb_per['isobutylparaben']}."),
+        "legal_framing": ("Not a violation in the US: parabens are allowed in US sunscreens. In the EU, isobutylparaben is "
+                          "banned from all cosmetics, and propylparaben and butylparaben are limited to 0.14% combined and "
+                          "may not be used in leave-on products designed for the nappy area of children under three. "
+                          "Labels do not state paraben percentages, so the 0.14% limit cannot be checked from them."),
+        "numerator": len(pb_rows), "denominator": N, "population": POP,
+        "ingredient_source": {"title": "Commission Regulation (EU) No 1004/2014 (propylparaben, butylparaben)",
+                              "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R1004",
+                              "checked": "2026-10-08"},
+        "detail": {"per_paraben": [[n, pb_per[n]] for n, _ in PARABENS],
+                   "mineral": [sum(1 for x in pb_rows if x["mineral"]), M],
+                   "formulas": sorted(pb_rows, key=lambda x: (-len(x["parabens"]), x["title"]))},
+        "caveat": CAVEAT, "site_source": src,
+        "method": "claims/registry_stats.py (PARABENS)", "verified_date": snapshot})
+
     # Fragrance
-    fr = [r for r in forms if any(FRAGRANCE.search(x.upper()) for x in sum(ingredient_items(r), []))]
+    fr = [r for r in forms if where_listed(r, FRAGRANCE.pattern)]
     fr_min = sum(1 for r in fr if r.get("is_mineral_only_actives"))
     claims.append({
         "id": "US-BABY-FRAGRANCE", "status": "verified", "jurisdiction": "US",
@@ -514,6 +595,7 @@ def main():
                                  "mineral": bool(r.get("is_mineral_only_actives")),
                                  "listed_in": where_listed(r, FRAGRANCE.pattern)}
                                 for r in sorted(fr, key=lambda r: r["title"])],
+                   "printed_only": sum(1 for r in fr if where_listed(r, FRAGRANCE.pattern) == ["printed label"]),
                    "not_counted": "essential oils and other single scent ingredients; only fragrance, parfum or perfume"},
         "caveat": CAVEAT, "site_source": src,
         "method": "claims/registry_stats.py (FRAGRANCE)", "verified_date": snapshot})
@@ -524,6 +606,8 @@ def main():
     kept = [c for c in ledger["claims"] if c["id"] not in ids]
     # The morning's provisional counts are superseded by the reviewed list.
     for c in kept:
+        if c["id"] == "US-BABY-MINERAL-BOOSTERS":
+            c["status"], c["superseded_by"] = "superseded", "US-BABY-BOOSTERS"
         if c["id"] in ("US-HID-001", "US-HID-002"):
             c["status"] = "superseded"
             c["superseded_by"] = "US-BABY-HIDDEN-UV" if c["id"] == "US-HID-001" else "US-BABY-BOS"

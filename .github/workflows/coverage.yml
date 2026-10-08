@@ -1,0 +1,23 @@
+name: Coverage proof
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r requirements.txt 2>/dev/null || true
+      - run: python scripts/coverage_probe.py
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/reports/coverage_*.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: coverage proof"
+          for i in 1 2 3; do git pull --rebase --autostash origin main && git push origin HEAD:main && break; sleep 10; done
