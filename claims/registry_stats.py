@@ -202,6 +202,45 @@ def same_labeler(r, twins):
     return any((x.get("labeler_from_title") or "") == (r.get("labeler_from_title") or "") for x in twins)
 
 
+# Synthetic ingredients in mineral-only sunscreens that their manufacturer
+# describes as boosting SPF or stabilising UV filters, or that EU law lists as a
+# UV filter. None is an FDA sunscreen active. Each entry carries the source of
+# its function; an ingredient without a source is not counted (benzylidene
+# dimethoxydimethylindanone was dropped: Symrise sells it as a skin-care agent,
+# not a UV filter or booster).
+BOOSTERS = [
+    ("butyloctyl salicylate", r"\bBUTYLOCTYL SALICYLATE\b",
+     "Hallstar, a manufacturer, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
+     "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)", "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/"),
+    ("ethylhexyl methoxycrylene", r"\bETHYLHEXYL METHOXYCRYLENE\b",
+     "Hallstar sells it as SolaStay S1, a photostabilizer, and says it \"photostabilizes and improves mineral filter efficacy\".",
+     "SolaStay S1 brochure — Hallstar Beauty (manufacturer)", "https://www.hallstarbeauty.com/webfoo/wp-content/uploads/SolaStay-S1-Brochure.pdf"),
+    ("polyester-8", r"\bPOLYESTER-8\b",
+     "Hallstar sells it as Polycrylene, a sunscreen photostabilizer, and lists \"SPF Enhancement\" as a feature.",
+     "Polycrylene — Hallstar Beauty (manufacturer)", "https://www.hallstarbeauty.com/product/polycrylene/"),
+    ("tridecyl salicylate", r"\bTRIDECYL SALICYLATE\b",
+     "Vantage sells it as JEECHEM TDS, \"designed for use as a sunscreen booster\", and says it can be combined with titanium dioxide or zinc oxide.",
+     "JEECHEM TDS — Vantage Specialty Ingredients (manufacturer)", "https://www.vantagegrp.com/en/Product/JEECHEM-TDS"),
+    ("polysilicone-15", r"\bPOLYSILICONE-15\b",
+     "A UV filter in the EU, allowed up to 10% under Annex VI of the EU Cosmetics Regulation. It is not an FDA sunscreen active.",
+     "Polysilicone-15 — Cosmile Europe INCI database", "https://cosmileeurope.eu/inci/detail/12473/polysilicone-15/"),
+    ("ethyl ferulate", r"\bETHYL FERULATE\b",
+     "Sold as CaribSun UV, which its supplier describes as having \"antioxidant, free radical scavenging and UV adsorption properties\".",
+     "CaribSun UV (Ethyl Ferulate) — UL Prospector", "https://ulprospector.com/en/na/PersonalCare/Products/25679/Esters/Functionalities/3699/Sunscreen-Agents"),
+]
+
+
+def full_ingredient_text(r):
+    """Inactive ingredients as filed with the FDA plus the printed Drug Facts list."""
+    filed = [(i.get("name") if isinstance(i, dict) else str(i)) or "" for i in r.get("inactive_ingredients") or []]
+    return " | ".join(filed + list(r.get("printed_inactives") or [])).upper()
+
+
+def boosters_in(r):
+    t = full_ingredient_text(r)
+    return [b[0] for b in BOOSTERS if re.search(b[1], t)]
+
+
 def main():
     review, snapshot, forms, recs, include = load()
     src = source(review, snapshot)
@@ -340,7 +379,7 @@ def main():
          "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py + scripts/classify.py (two-tier absorber list)",
          "verified_date": snapshot},
         {"id": "US-BABY-BOS", "status": "verified", "jurisdiction": "US",
-         "ingredient_slugs": [], "finding": "butyloctyl-salicylate",
+         "ingredient_slugs": [], "superseded_finding": "mineral-sunscreen-boosters",
          "claim": f"{bos} of {M} mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
          "publishable_sentence": (f"{bos} of the {M} mineral baby and kids sunscreen formulas "
                                   f"listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not "
@@ -356,6 +395,35 @@ def main():
          "numerator": bos, "denominator": M, "population": POP_MIN,
          "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py", "verified_date": snapshot},
     ]
+    for c in claims:
+        if c["id"] == "US-BABY-HIDDEN-UV":
+            c["status"], c["superseded_by"] = "superseded", "US-BABY-MINERAL-BOOSTERS"
+    hits = [(r, boosters_in(r)) for r in mineral]
+    hits = [(r, b) for r, b in hits if b]
+    per = collections.Counter(x for _, b in hits for x in b)
+    claims.append({
+        "id": "US-BABY-MINERAL-BOOSTERS", "status": "verified", "jurisdiction": "US",
+        "ingredient_slugs": [], "finding": "mineral-sunscreen-boosters",
+        "claim": (f"{len(hits)} of {M} mineral-only baby/kids sunscreen formulations list at least one of "
+                  f"{len(BOOSTERS)} synthetic SPF-boosting or UV-filter ingredients among their inactive ingredients."),
+        "publishable_sentence": (f"{len(hits)} of the {M} mineral baby and kids sunscreen formulas listed in the FDA's "
+                                 f"DailyMed label database also contain a synthetic ingredient that its manufacturer "
+                                 f"sells to boost SPF or stabilize UV filters, or that the EU regulates as a UV filter. "
+                                 f"It is listed under Inactive ingredients, not Active ingredients."),
+        "legal_framing": ("Not a violation: none of these ingredients is an FDA sunscreen active, so they belong with "
+                          "the inactive ingredients, as the rules require. The finding is about how labels work, not "
+                          "about any brand."),
+        "numerator": len(hits), "denominator": M, "population": POP_MIN,
+        "detail": {
+            "two_or_more": sum(1 for _, b in hits if len(b) >= 2),
+            "ingredients": [{"name": n, "count": per[n], "function": fn,
+                             "source": {"title": t, "url": u, "checked": "2026-10-08"}}
+                            for n, _, fn, t, u in sorted(BOOSTERS, key=lambda b: -per[b[0]])],
+            "formulas": [{"title": r["title"], "url": r["dailymed_url"], "boosters": b}
+                         for r, b in sorted(hits, key=lambda h: (-len(h[1]), h[0]["title"]))],
+            "lists_used": "inactive ingredients as filed with the FDA plus the printed Drug Facts ingredient list"},
+        "caveat": CAVEAT, "site_source": src,
+        "method": "claims/registry_stats.py (BOOSTERS, full_ingredient_text)", "verified_date": snapshot})
 
     with open(LEDGER, encoding="utf-8") as f:
         ledger = json.load(f)

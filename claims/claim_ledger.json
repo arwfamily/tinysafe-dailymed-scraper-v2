@@ -1665,7 +1665,7 @@
     },
     {
       "id": "US-BABY-HIDDEN-UV",
-      "status": "provisional_do_not_publish",
+      "status": "superseded",
       "jurisdiction": "US",
       "blocker": "The count is exact, but 'absorbs UV light' is not supported for the two largest ingredients: the butyloctyl salicylate manufacturer (Hallstar) describes SPF contribution and UV-filter stabilisation, not UV absorption; DrugBank DB11226 describes ethylhexyl methoxycrylene as a photostabilizer that works without absorbing sunlight. Each of the 7 ingredients needs its own sourced function before a combined sentence can be published.",
       "ingredient_slugs": [],
@@ -1685,14 +1685,15 @@
         "snapshot": "2026-10-08"
       },
       "method": "claims/registry_stats.py + scripts/classify.py (two-tier absorber list)",
-      "verified_date": "2026-10-08"
+      "verified_date": "2026-10-08",
+      "superseded_by": "US-BABY-MINERAL-BOOSTERS"
     },
     {
       "id": "US-BABY-BOS",
       "status": "verified",
       "jurisdiction": "US",
       "ingredient_slugs": [],
-      "finding": "butyloctyl-salicylate",
+      "superseded_finding": "mineral-sunscreen-boosters",
       "claim": "43 of 150 mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
       "publishable_sentence": "43 of the 150 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not an FDA sunscreen active ingredient. Hallstar, one of its manufacturers, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
       "ingredient_source": {
@@ -1713,6 +1714,475 @@
         "snapshot": "2026-10-08"
       },
       "method": "claims/registry_stats.py",
+      "verified_date": "2026-10-08"
+    },
+    {
+      "id": "US-BABY-MINERAL-BOOSTERS",
+      "status": "verified",
+      "jurisdiction": "US",
+      "ingredient_slugs": [],
+      "finding": "mineral-sunscreen-boosters",
+      "claim": "51 of 150 mineral-only baby/kids sunscreen formulations list at least one of 6 synthetic SPF-boosting or UV-filter ingredients among their inactive ingredients.",
+      "publishable_sentence": "51 of the 150 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database also contain a synthetic ingredient that its manufacturer sells to boost SPF or stabilize UV filters, or that the EU regulates as a UV filter. It is listed under Inactive ingredients, not Active ingredients.",
+      "legal_framing": "Not a violation: none of these ingredients is an FDA sunscreen active, so they belong with the inactive ingredients, as the rules require. The finding is about how labels work, not about any brand.",
+      "numerator": 51,
+      "denominator": 150,
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; labels for another market, labels that do not meet US sunscreen limits as listed, and multi-product listings left out); mineral-only actives (zinc oxide and/or titanium dioxide)",
+      "detail": {
+        "two_or_more": 21,
+        "ingredients": [
+          {
+            "name": "butyloctyl salicylate",
+            "count": 45,
+            "function": "Hallstar, a manufacturer, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
+            "source": {
+              "title": "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)",
+              "url": "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/",
+              "checked": "2026-10-08"
+            }
+          },
+          {
+            "name": "ethylhexyl methoxycrylene",
+            "count": 16,
+            "function": "Hallstar sells it as SolaStay S1, a photostabilizer, and says it \"photostabilizes and improves mineral filter efficacy\".",
+            "source": {
+              "title": "SolaStay S1 brochure — Hallstar Beauty (manufacturer)",
+              "url": "https://www.hallstarbeauty.com/webfoo/wp-content/uploads/SolaStay-S1-Brochure.pdf",
+              "checked": "2026-10-08"
+            }
+          },
+          {
+            "name": "ethyl ferulate",
+            "count": 4,
+            "function": "Sold as CaribSun UV, which its supplier describes as having \"antioxidant, free radical scavenging and UV adsorption properties\".",
+            "source": {
+              "title": "CaribSun UV (Ethyl Ferulate) — UL Prospector",
+              "url": "https://ulprospector.com/en/na/PersonalCare/Products/25679/Esters/Functionalities/3699/Sunscreen-Agents",
+              "checked": "2026-10-08"
+            }
+          },
+          {
+            "name": "polyester-8",
+            "count": 3,
+            "function": "Hallstar sells it as Polycrylene, a sunscreen photostabilizer, and lists \"SPF Enhancement\" as a feature.",
+            "source": {
+              "title": "Polycrylene — Hallstar Beauty (manufacturer)",
+              "url": "https://www.hallstarbeauty.com/product/polycrylene/",
+              "checked": "2026-10-08"
+            }
+          },
+          {
+            "name": "tridecyl salicylate",
+            "count": 2,
+            "function": "Vantage sells it as JEECHEM TDS, \"designed for use as a sunscreen booster\", and says it can be combined with titanium dioxide or zinc oxide.",
+            "source": {
+              "title": "JEECHEM TDS — Vantage Specialty Ingredients (manufacturer)",
+              "url": "https://www.vantagegrp.com/en/Product/JEECHEM-TDS",
+              "checked": "2026-10-08"
+            }
+          },
+          {
+            "name": "polysilicone-15",
+            "count": 2,
+            "function": "A UV filter in the EU, allowed up to 10% under Annex VI of the EU Cosmetics Regulation. It is not an FDA sunscreen active.",
+            "source": {
+              "title": "Polysilicone-15 — Cosmile Europe INCI database",
+              "url": "https://cosmileeurope.eu/inci/detail/12473/polysilicone-15/",
+              "checked": "2026-10-08"
+            }
+          }
+        ],
+        "formulas": [
+          {
+            "title": "ALOE UP SPF 50 KIDS MINERAL (ZINC OXIDE) LOTION [ALOE INTERNATIONAL, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cd5542-947d-a042-e063-6394a90a13f8",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "BABY BARE REPUBLIC MINERAL SUNSCREEN (ZINC OXIDE) LOTION [COOLA, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b292d1a9-7ff8-0faf-e053-2995a90ae342",
+            "boosters": [
+              "butyloctyl salicylate",
+              "tridecyl salicylate"
+            ]
+          },
+          {
+            "title": "BABY SUNSCREEN SPF 50 (TITANIUM DIOXIDE 3.1% ZINC OXIDE 4.0%) LOTION [MEIJER]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1eae935f-942b-4290-91de-8c608f70a7ed",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "BANANA BABY (TITANIUM DIOXIDE,ZINC OXIDE) LOTION [EDGEWELL PERSONAL CARE BRANDS LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c3ea09e-8bf0-7873-e063-6294a90a3fd3",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "BANANA BOAT KIDS MINERAL PROTECTION SPF50 (TITANIUM DIOXIDE,ZINC OXIDE) LOTION [EDGEWELL PERSONAL CARE BRANDS LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7701b5-0c73-b4df-e053-2a95a90a0f1b",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "BRUSH ON BLOCK SPF 50 KIDS MINERAL (ZINC OXIDE) SPRAY [SPF VENTURES, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f17b5fe-44da-964b-e063-6394a90ae699",
+            "boosters": [
+              "butyloctyl salicylate",
+              "tridecyl salicylate"
+            ]
+          },
+          {
+            "title": "COPPERTONE KIDS ROLL-ON SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) LOTION [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f3e1ea21-4a07-3e18-e053-2995a90a0fe7",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "COPPERTONE PURE AND SIMPLE BABY SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) AEROSOL, SPRAY [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=088b7152-d3d1-9e74-e063-6394a90a4152",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "COPPERTONE PURE AND SIMPLE BABY SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) LOTION [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08134b95-1879-27e5-e063-6294a90a29af",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "COPPERTONE WATERBABIES PURE AND SIMPLE SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) SPRAY [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0806bdb9-961f-3146-e063-6294a90a4625",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "DAYLOGIC BABY SPF 60 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [RITE AID]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=269718e2-0a76-4b15-a0ab-b914bc809e41",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "EQUATE SUNSCREEN SPF 50 KIDS BROAD SPECTRUM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [WAL-MART STORES INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=81cb6b2e-1ca3-4a83-a8df-9bfee61e79af",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "EUCERIN BABY SENSITIVE MINERAL SPF 50 SUNSCREEN (ZINC OXIDE) LOTION [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cdb19c82-9845-eabc-e053-2a95a90a31f7",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "KIDCREME MINERAL BROAD SPECTRUM SPF 40 SUNSCREEN UVA-UVB SUNCREEN (TITANIUM DIOXIDE AND ZINC OXIDE) CREAM [MDSOLARSCIENCES]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f0bf232-645a-4f69-b386-3a138a5c9964",
+            "boosters": [
+              "butyloctyl salicylate",
+              "polysilicone-15"
+            ]
+          },
+          {
+            "title": "KIDS MINERAL SUNSCREEN SPF 50 (ZINC OXIDE) SPRAY [HELLO BELLO]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b19f2ae-c7e5-c44c-e063-6394a90a0e68",
+            "boosters": [
+              "butyloctyl salicylate",
+              "polyester-8"
+            ]
+          },
+          {
+            "title": "KIDS MINERAL SUNSCREEN SPF50 (SUNSCREEN) SPRAY [HELLO BELLO]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01cc554b-9241-d891-e063-6394a90a8450",
+            "boosters": [
+              "butyloctyl salicylate",
+              "polyester-8"
+            ]
+          },
+          {
+            "title": "MEIJER BABY TEAR FREE SPF 50 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [MEIJER DISTRIBUTING INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2434de23-bcc9-4a83-9945-16fc3f2b8c61",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "MINERAL KIDCREME SPF 50 (TITANIUM DIOXIDE AND ZINC OXIDE) CREAM [MDSOLARSCIENCES]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9ec56c68-6fea-444b-aeed-0b5d60c42e75",
+            "boosters": [
+              "butyloctyl salicylate",
+              "polysilicone-15"
+            ]
+          },
+          {
+            "title": "RITE AID RENEWAL BABY SUNSCREEN SPF 60 (TITANIUM DIOXIDE ZINC OXIDE) LOTION [RITE AID CORPORATION]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=416b804d-bebf-4c5c-9990-4e830dd37153",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "THINK KIDS MINERAL SPF 50 (ZINC OXIDE AND TITANIUM DIOXIDE) AEROSOL, SPRAY [THINKOPERATIONS,LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=25c59820-a08d-4abe-87ae-a787ac8b2ac2",
+            "boosters": [
+              "butyloctyl salicylate",
+              "polyester-8"
+            ]
+          },
+          {
+            "title": "WALGREENS BABY SPF50 (TITANIUM DIOXIDE AND ZINC OXIDE) LOTION [WALGREEN COMPANY]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd56a2d6-ec92-4670-975b-3da28037773c",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "ATOBOS BABY SUN (TITANIUM DIOXIDE, ZINC OXIDE) CREAM [1004LABORATORY]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d3d0d005-4215-4133-ad8a-13833b86777a",
+            "boosters": [
+              "ethyl ferulate"
+            ]
+          },
+          {
+            "title": "ATOBOS CENTELLA BABY SUN (TITANIUM DIOXIDE, ZINC OXIDE) CREAM [1004LABORATORY]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1030a55e-8159-4645-bda0-13e1d89f00e7",
+            "boosters": [
+              "ethyl ferulate"
+            ]
+          },
+          {
+            "title": "AVEENO KIDS DAILY MOISTURE FACE MINERAL SUNSCREEN SPF 30 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b309bf0-4268-d9e4-e063-6294a90ad2d8",
+            "boosters": [
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "BABO BABY SKIN MINERAL SUNSCREEN FF (MINERAL SUNSCREEN) SPRAY [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0a513a5-18d4-5fca-e053-2a95a90aef93",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BABO BOTANICALS SENSITIVE BABY MINERAL SUNSCREEN SPF30 (ZINC OXIDE) SPRAY [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08a36887-3997-8fff-e063-6394a90ae9d5",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BABO BOTANICALS SENSITIVE BABY MINERAL SUNSCREEN SPF50 (ZINC OXIDE) LOTION [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08a175ae-2307-ef8d-e063-6394a90ad234",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BABY BUM MINERAL 50 MINERAL SUNSCREEN FACE STICK (ZINC OXIDE) STICK [SUN BUM, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3d3a0d5c-a366-22fc-e063-6394a90a308b",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BABY BUM MINERAL 50 SUNSCREEN (ZINC OXIDE) LOTION [SUN BUM LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=369f449f-fb9d-5529-e063-6394a90ac3b2",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BABY MINERAL SUNSCREEN PROBIOTICS SPF55 (ZINC OXIDE) LOTION [HELLO BELLO]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0191b2e4-bcc5-541a-e063-6294a90a0e78",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BABY MINERAL SUNSCREEN SPF55 (ZINC OXIDE) LOTION [HELLO BELLO]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0190eeaf-c5a0-3253-e063-6294a90a43c4",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BABY PURE AND GENTLE SPF 60 SUNSCREEN (TITANIUM DIOXIDE - 6.00% ZINC OXIDE - 4.70%) STICK [CVS]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=372ae3fb-fec0-4c7b-853b-12835c830311",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BABY SKIN MINERAL SUNSCREEN (MINERAL SUNSCREEN) LOTION [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0a4ac6b-8f88-8a9a-e053-2995a90ab10e",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BABYGANICS KIDS SHEER BLEND SPF50 MINERAL SUNSCREEN (ZINC OXIDE) LOTION [KAS DIRECT LLC DBA BABYGANICS]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a143645-3b52-4797-9b26-dc9dd63be38f",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BLACK GIRL SUNSCREEN MAKE IT MINERAL BABY (ZINC OXIDE) LOTION [BLACK GIRL SUNSCREEN]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=302bccc6-7bf3-cc69-e063-6294a90a625c",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BLUE LIZARD BABY SPF 50 SUNSCREEN (TITANIUM DIOXIDE AND ZINC OXIDE) LOTION [CROWN LABORATORIES]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32d6e04a-fa30-ba48-e063-6394a90a1bbf",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BLUE LIZARD KIDS SPF 50 (ZINC OXIDE) SPRAY [CROWN LABORATORIES]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfefb36b-0858-6e4d-e053-2a95a90a01ce",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BLUE LIZARD KIDS SPF 50 SUNSCREEN (TITANIUM DIOXIDE AND ZINC OXIDE) LOTION [CROWN LABORATORIES]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f780daa-4c91-5a68-e063-6394a90afd41",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "BOB KIDS SPF 30 ZINC ONLY (ZINC OXIDE) POWDER [SPF VENTURES, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1aae0291-f16f-7840-e063-6394a90a3443",
+            "boosters": [
+              "ethyl ferulate"
+            ]
+          },
+          {
+            "title": "EVEREDEN KIDS COOLING MINERAL SUNSTICK SPF30 (ZINC OXIDE) STICK [EDEN BRANDS INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=521afa81-737f-81d4-e063-6394a90ad307",
+            "boosters": [
+              "ethyl ferulate"
+            ]
+          },
+          {
+            "title": "FRUIT OF THE EARTH SUN TOWN CITY BABY AND KIDS MINERAL SPF 50 SUNSCREEN (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [FRUIT OF THE EARTH, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f42a0b1e-038d-4fab-e053-2995a90a5364",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "GLOW BABY SUPER LIT SPF 30 (ZINC OXIDE) SPRAY [PACIFICA BEAUTY, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f3d3eee2-a5d9-113b-e053-2995a90a7057",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "HELLO BELLO KIDS MINERAL SUNSCREEN (ZINC OXIDE TITANIUM OXIDE) LOTION [HELLO BELLO]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e7a3e8e-eacf-0a30-e063-6294a90ab7ec",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "JOHNSONS BABY MINERAL SUNSCREEN SPF 30 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4fe04c4b-2751-0561-e063-6394a90af768",
+            "boosters": [
+              "ethylhexyl methoxycrylene"
+            ]
+          },
+          {
+            "title": "KIDS FACE AND BODY SUNSCREEN SPF 50 (ZINC OXIDE) STICK [HELLO BELLO]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01cc4ea0-e3de-32f1-e063-6394a90a1375",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "KIDS MINERAL SUNSCREEN STICK SPF 50 (ZINC OXIDE) STICK [SMALLS BRAND LLC DBA ROE WELLNESS]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c37855b-08c0-0aa7-e063-6394a90a8842",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "KIDSTICK MINERAL BROAD SPECTRUM SPF 40 SUNSCREEN UVA-UVB SUNSCREEN (TITANIUM DIOXIDE AND ZINC OXIDE) STICK [MDSOLARSCIENCES]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a81efaf-9765-4991-81a4-706d204545b3",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "KISS MY FACE KIDS 30 MINERAL SUNSCREEN (TITANIUM DIOXIDE) SPRAY [WINDMILL HEALTH PRODUCTS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f843ddfe-1a5f-4b9d-bf2f-378187c1f6ec",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "MINERAL KIDSTICK SPF 40 MINERAL BROAD SPECTRUM SPF 40 SUNSCREEN UVA-UVB SUNCREEN (TITANIUM DIOXIDE AND ZINC OXIDE) STICK [MDSOLARSCIENCES]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c7f0257-fa12-40d6-9516-824b0e3a182c",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "SPF 50 MINERAL SUNSCREEN BKIDS (ZINC OXIDE) STICK [KAS DIRECT LLC DBA BABYGANICS]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f717cd89-194b-42e3-a079-24b2903deb29",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          },
+          {
+            "title": "SPF50 PLUS MINERAL SUNSCREEN (ZINC OXIDE AND TITANIUM DIOXIDE) SPRAY [KAS DIRECT LLC DBA BABYGANICS]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08e8bc10-85d8-4215-8351-7ec12029416c",
+            "boosters": [
+              "butyloctyl salicylate"
+            ]
+          }
+        ],
+        "lists_used": "inactive ingredients as filed with the FDA plus the printed Drug Facts ingredient list"
+      },
+      "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+      "site_source": {
+        "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "snapshot": "2026-10-08"
+      },
+      "method": "claims/registry_stats.py (BOOSTERS, full_ingredient_text)",
       "verified_date": "2026-10-08"
     }
   ],

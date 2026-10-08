@@ -45,10 +45,10 @@ FINDINGS = {  # display order = dict order
         "title": "Same ingredient list, different label",
         "eyebrow": "Finding · DailyMed labels",
         "caption": "Each door is one baby or kids formula. Filled: same ingredients as a label that does not say baby or kids."},
-    "butyloctyl-salicylate": {
-        "title": "Butyloctyl salicylate in mineral baby sunscreens",
-        "eyebrow": "Finding · DailyMed labels",
-        "caption": "Each door is one mineral baby or kids formula. Filled: contains butyloctyl salicylate."},
+    "mineral-sunscreen-boosters": {
+        "title": "SPF boosters in mineral baby sunscreens",
+        "eyebrow": "Finding · DailyMed labels × manufacturer data",
+        "caption": "Each door is one mineral baby or kids formula. Filled: contains at least one of the six booster ingredients."},
 }
 FINDING_TITLES = {k: v["title"] for k, v in FINDINGS.items()}
 JUR_NAME = {"US": "United States", "EU": "European Union", "AU": "Australia"}
@@ -568,17 +568,34 @@ def finding_body(d, f):
              "differ, or whose Drug Facts could not be read, were left out."),
             ("How were these products selected?", howto),
         ]
-    else:  # butyloctyl-salicylate
+    else:  # mineral-sunscreen-boosters
+        det = f["detail"]
+        mx = max(x["count"] for x in det["ingredients"])
+        rows = "".join(
+            f'<tr><td><b>{E(x["name"])}</b></td><td class="num">{x["count"]}</td>'
+            f'<td><span class="bar"><i style="width:{100 * x["count"] / mx:.1f}%"></i></span></td>'
+            f'<td>{E(x["function"])} {src_chip("Source", x["source"]["url"], x["source"]["title"])}</td></tr>'
+            for x in det["ingredients"])
+        frows = "".join(
+            f'<tr><td><a href="{E(p["url"])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["title"]))}</span></a></td>'
+            f'<td>{E(", ".join(p["boosters"]))}</td></tr>' for p in det["formulas"])
         mean = f"""
-<p>On a US sunscreen, the Active ingredients section of the Drug Facts label lists the product's active ingredients. Butyloctyl salicylate is not an FDA sunscreen active ingredient, so it appears under Inactive ingredients. {src_chip("21 CFR 201.66", DRUG_FACTS["url"], DRUG_FACTS["title"])}</p>
-<p>This finding documents how often that happens in mineral products for babies and kids. It is about how labels work, not about any brand.</p>"""
-        extra = ""
+<p>A mineral sunscreen's active ingredients are zinc oxide and/or titanium dioxide. On a US sunscreen, the Active ingredients section of the Drug Facts label lists only FDA sunscreen actives. {src_chip("21 CFR 201.66", DRUG_FACTS["url"], DRUG_FACTS["title"])}</p>
+<p>Ingredients that help reach the labeled SPF but are not FDA sunscreen actives therefore appear under Inactive ingredients. This finding counts six of them, each with its manufacturer's or regulator's own description, in the full ingredient lists of mineral baby and kids sunscreens. It is about how labels work, not about any brand.</p>"""
+        extra = f"""<section><p class="eyebrow">Six ingredients</p><h2>How many of the {f["denominator"]} mineral formulas list each one</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Ingredient</th><th>Formulas</th><th></th><th>What its maker or regulator says it does</th></tr></thead><tbody>{rows}</tbody></table></div>
+<p class="fine">One formula can contain several; {det["two_or_more"]} contain two or more. Counted in {E(det["lists_used"])}.</p></section>
+<section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} labels</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Mineral baby or kids label</th><th>Booster ingredients listed</th></tr></thead><tbody>{frows}</tbody></table></div>
+<p class="fine">Each name links to its FDA DailyMed record.</p></section>"""
         faq = [
             ("Does this mean these products break the law?", f["legal_framing"]),
-            ("Why does it matter where it is listed?",
-             "On a US sunscreen, the Active ingredients section of the Drug Facts label lists the product's active "
-             "ingredients. Butyloctyl salicylate is not an FDA sunscreen active ingredient, so it appears under Inactive "
-             "ingredients. Parents reading only the Active ingredients section will not see it there."),
+            ("Is a mineral sunscreen with these ingredients still a mineral sunscreen?",
+             "Yes. Its active ingredients are only zinc oxide and/or titanium dioxide. These six ingredients are not "
+             "FDA sunscreen actives, so they appear under Inactive ingredients. Parents reading only the Active "
+             "ingredients section will not see them there."),
+            ("Which ingredients were counted?",
+             "; ".join(f'{x["name"]}: {x["function"]}' for x in det["ingredients"])),
             ("How were these products selected?", howto),
         ]
     return mean, extra, faq, howto
@@ -610,7 +627,7 @@ def page_finding(d, f):
     title = meta["title"]
     mean, extra, faq, howto = finding_body(d, f)
     faqh = "".join(f"<details><summary>{E(q)}</summary><p>{E(a)}</p></details>" for q, a in faq)
-    src_label = {"butyloctyl-salicylate": "Manufacturer source", "fda-more-data": "FDA source",
+    src_label = {"mineral-sunscreen-boosters": "Drug Facts rule", "fda-more-data": "FDA source",
                  "homosalate-eu-limit": "EU law"}.get(f["finding"], "Source")
     body = f"""
 <p class="crumb"><a href="{BASE}">Library</a> / <a href="{BASE}/findings">Findings</a></p>

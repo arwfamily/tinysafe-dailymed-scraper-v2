@@ -166,6 +166,21 @@ jobs:
           python scripts/build_evidence.py
           python scripts/render_site.py --check
 
+      - name: Keep the data of a failed full run on its own branch
+        if: failure() && steps.mode.outputs.limit == '0'
+        run: |
+          python scripts/baby_track.py > data/reports/_failed_build.log 2>&1 || true
+          python claims/registry_stats.py >> data/reports/_failed_build.log 2>&1 || true
+          python scripts/build_evidence.py >> data/reports/_failed_build.log 2>&1 || true
+          python scripts/render_site.py >> data/reports/_failed_build.log 2>&1 || true
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          B="failed-run-${{ github.run_id }}"
+          git checkout -b "$B"
+          git add -f data/ claims/ site/evidence.json
+          git commit -m "failed full run ${{ github.run_id }}: data kept for diagnosis" || true
+          git push origin "$B"
+
       - name: Smoke summary (capped runs only)
         if: steps.mode.outputs.limit != '0'
         run: python scripts/smoke_summary.py output/tinysafe_dailymed_v2_master.json
