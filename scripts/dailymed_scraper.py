@@ -189,6 +189,34 @@ def search_by_unii(unii, limit=0):
     return out
 
 
+SUN_TITLE = re.compile(
+    r"\bSPF\b|\bFPS\b|SUN\s?SCREEN|SUNCREEN|SUN\s?BLOCK|SUNSTICK|SUN\s?CREAM|BROAD[- ]SPECTRUM|"
+    r"ZINC OXIDE|TITANIUM (?:DI)?OXIDE|AVOBENZONE|OXYBENZONE|OCTINOXATE|HOMOSALATE|OCTISALATE|OCTOCRYLENE|"
+    r"ENSULIZOLE|MERADIMATE|DIOXYBENZONE|SULISOBENZONE|CINOXATE|PADIMATE|AMINOBENZOIC|TROLAMINE SALICYLATE|"
+    r"BEMOTRIZINOL|ECAMSULE|DROMETRIZOLE|ETHYLHEXYL (?:METHOXYCINNAMATE|SALICYLATE|TRIAZONE)|"
+    r"BUTYL METHOXYDIBENZOYLMETHANE|BIS-?ETHYLHEXYLOXYPHENOL", re.I)
+
+
+def enumerate_all_spls(max_pages=0):
+    """Every OTC-monograph SPL listing (C200263, ~42k), page by page (max_pages=0: all)."""
+    page, out = 1, []
+    while True:
+        d = http_json(f"{BASE}/spls.json?marketing_category_code=C200263&pagesize=100&page={page}")
+        if not d:
+            break
+        rows = d.get("data", []) or []
+        out += [{"setid": x.get("setid"), "title": x.get("title", "")} for x in rows]
+        meta = d.get("metadata", {}) or {}
+        total = int(meta.get("total_pages", page) or page)
+        if page == 1:
+            print(f"[A2] enumerating {meta.get('total_elements')} SPLs in {total} pages", flush=True)
+        if page >= total or (max_pages and page >= max_pages) or not rows:
+            break
+        page += 1
+        time.sleep(0.2)
+    return out
+
+
 # ---------- Phase C: active ingredients (UNII 포함) ----------
 def fetch_active(setid):
     """SPL XML 1차(UNII 확보) → packaging.json 보조. 반환 [{name,strength,unii}]."""
@@ -585,6 +613,7 @@ def process_setid(item):
     rec = {
         "setid": setid,
         "title": title,
+        "found_by": item.get("found_by", "unii_search"),
         "product_name": re.sub(r"\s*\[.*?\]\s*$", "", title).strip(),
         "active_ingredients": actives,
         "inactive_ingredients": inact,
@@ -635,8 +664,19 @@ def main():
         for r in rows:
             if r["setid"] and r["setid"] not in setid_map:
                 setid_map[r["setid"]] = r
+    n_unii = len(setid_map)
+    # Phase A2 — the UNII search index is incomplete (2026-10-08: it returned
+    # 5,085 zinc oxide SPLs while 5,819 were reachable, and missed new labels
+    # such as Summer Fridays ShadeDrops). Page through every SPL listing and
+    # keep titles that name a UV filter, SPF or sunscreen wording; DailyMed
+    # titles carry the active ingredients in brackets, so this is a reliable net.
+    max_pages = 3 if args.limit else 0
+    for r in enumerate_all_spls(max_pages):
+        if r["setid"] and r["setid"] not in setid_map and SUN_TITLE.search(r["title"] or ""):
+            setid_map[r["setid"]] = {**r, "found_by": "title_enumeration"}
     items = list(setid_map.values())
-    print(f"[B] unique setids: {len(items)}", flush=True)
+    print(f"[B] unique setids: {len(items)} ({n_unii} from UNII search, "
+          f"{len(items) - n_unii} added by title enumeration)", flush=True)
 
     # Phase C+D+E (parallel)
     # A UI input must never be able to crash a run: 0 or a blank box used to

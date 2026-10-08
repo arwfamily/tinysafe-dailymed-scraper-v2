@@ -132,6 +132,10 @@ def main():
         out = {"setid": e["setid"], "change": e["change"], "product": e.get("product_name"),
                "dailymed": f"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={e['setid']}",
                "baby": e["setid"] in baby_ids}
+        if e["change"] == "new":
+            r = recs.get(e["setid"], {})
+            out["label_date"] = r.get("effective_date")
+            out["found_by"] = r.get("found_by")
         if e["change"] == "reformulated":
             out["added"] = names(e, e.get("keys_added") or [])
             out["removed"] = names(prev_event.get(e["setid"], first_by_setid.get(e["setid"], {})), e.get("keys_removed") or [])
