@@ -479,6 +479,11 @@ def load_regulatory():
                 doc = json.load(f)
                 rows = (doc if isinstance(doc, list)
                         else doc.get("ingredients", doc.get("data", [])))
+        if juris == "US":
+            extra = os.path.join(REG_DIR, "us_non_monograph.jsonl")
+            if os.path.exists(extra):
+                with open(extra, encoding="utf-8") as f:
+                    rows = rows + [json.loads(l) for l in f if l.strip()]
         found[juris] = {"source": spec["label"], "file": os.path.basename(path),
                         "rows": rows, "spec": spec,
                         "partial": bool(spec.get("partial"))}
@@ -494,20 +499,103 @@ def load_regulatory():
 # Reading only the field published "permitted, no numeric cap" for nine filters
 # that are, in fact, capped.
 _AU_CAP_IN_TEXT = re.compile(
-    r"(?:concentration[^.]{0,80}?)?must not be more than\s*([\d.]+)\s*%",
+    # The Determination uses two phrasings for the same rule:
+    #   "must not be more than 10%"  (bemotrizinol, homosalate, ...)
+    #   "must be no more than 25%"   (titanium dioxide, drometrizole trisiloxane)
+    # Reading only the first published TiO2 and drometrizole as uncapped.
+    r"(?:concentration[^.]{0,80}?)?must (?:not be more than|be no more than)\s*([\d.]+)\s*%",
+    re.IGNORECASE)
+
+# Per-jurisdiction source for the AU file (no per-row URL in the extract).
+AU_SOURCE = {
+    "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+    "version": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026, F2026L00707, commenced 2026-06-12",
+}
+
+# Same substance, different legal name in different jurisdictions, where no
+# row carries the other name as an alias. Without these the matrix split one
+# filter into two rows (audit 2026-10-08: sulisobenzone showed "EU not
+# listed" although Annex VI permits benzophenone-4 at 5%; ecamsule showed
+# "AU not listed" although the TGA permits it at 10%).
+CROSS_JURISDICTION_SYNONYMS = [
+    ("ECAMSULE", "TEREPHTHALYLIDENE DICAMPHOR SULFONIC ACID"),
+    ("SULISOBENZONE", "BENZOPHENONE 4"),
+    ("DIOXYBENZONE", "BENZOPHENONE 8"),
+    ("AMILOXATE", "ISOAMYL P METHOXYCINNAMATE"),
+    ("ISCOTRIZINOL", "DIETHYLHEXYL BUTAMIDO TRIAZONE"),
+    ("BISOCTRIZOLE", "METHYLENE BIS BENZOTRIAZOLYL TETRAMETHYLBUTYLPHENOL"),
+    ("ENZACAMENE", "4 METHYLBENZYLIDENE CAMPHOR"),
+    ("BISDISULIZOLE DISODIUM", "DISODIUM PHENYL DIBENZIMIDAZOLE TETRASULFONATE"),
+    ("ETHYLHEXYL TRIAZONE", "OCTYL TRIAZONE"),
+]
+
+
+def _name_parts(name):
+    """'Benzophenone-4 / Benzophenone-5' -> both names; one row can list two."""
+    return [p for p in re.split(r"\s+/\s+", str(name or "")) if p.strip()]
+
+
+_COND_PART = re.compile(r"^\s*(?:[a-z]\)\s*)?(.*?)\s*([\d.]+)\s*%\s*$", re.IGNORECASE)
+
+
+def _conditional_limits(text, default_max):
+    """
+    EU Annex VI product-type conditions as data:
+      "a) face/hand/lip (no sprays) 6%; b) body incl. sprays 2.2%; c) other 0.5%"
+        -> [{"applies_to": "face/hand/lip (no sprays)", "max_percent": 6.0}, ...]
+      "Face products except propellant sprays"  (no number)
+        -> [{"applies_to": "Face products except propellant sprays", "max_percent": default_max}]
+    """
+    if not text:
+        return None
+    out = []
+    for part in str(text).split(";"):
+        part = part.strip()
+        if not part:
+            continue
+        m = _COND_PART.match(part)
+        if m:
+            out.append({"applies_to": m.group(1).strip(" :-"), "max_percent": float(m.group(2))})
+        else:
+            out.append({"applies_to": part, "max_percent": default_max})
+    return out or None
+
+
+# "If used in a flavour the TOTAL flavour concentration ... must be no more
+# than 5%" caps the flavour/fragrance blend, not the ingredient. 1,360 AU rows
+# carry only that sentence; reading it as the ingredient's own limit would
+# publish "terpinyl butyrate: max 5%" for a rule that says nothing of the kind.
+# A cap belongs to THIS ingredient only when the sentence is about its own
+# concentration. Rejected (verified on the Determination text, 2026-10-08):
+#   "the total flavour concentration ... no more than 5%"     -> blend cap (1,360 rows)
+#   "the concentration of thujone in the medicine ... 4%"     -> a constituent's cap
+#   "When included in a medicine for use on the lips ... 0.1%" -> a conditional cap
+# A blank is safer than a number that answers a different question.
+_AU_NOT_OWN_CAP = re.compile(r"\btotal\b|\bconcentration of\b|\bwhen\b|\bif\b", re.IGNORECASE)
+_AU_BLEND_CAP = _AU_NOT_OWN_CAP   # kept name used below
+
+
+# Whitelist, not blacklist: the sentence must be about THIS ingredient's own
+# concentration, in one of the forms the Determination uses for that.
+_AU_OWN_CAP_SENTENCE = re.compile(
+    r"^the concentration(?:\s+(?:in|of)\s+(?:the\s+|a\s+)?(?:medicines?|sunscreens?|products?|preparations?))?"
+    r"\s+must\s+(?:not\s+be\s+more\s+than|be\s+no\s+more\s+than)\s*([\d.]+)\s*%",
     re.IGNORECASE)
 
 
 def _au_cap_from_requirements(row):
     txt = str(row.get("requirements") or row.get("conditions") or "")
-    m = _AU_CAP_IN_TEXT.search(txt)
-    if not m:
-        return None
-    try:
-        v = float(m.group(1))
-    except ValueError:
-        return None
-    return v if 0 < v <= 100 else None
+    for sentence in re.split(r"(?<=[.;])\s+", txt):
+        m = _AU_OWN_CAP_SENTENCE.match(sentence.strip())
+        if not m:
+            continue
+        try:
+            v = float(m.group(1))
+        except ValueError:
+            continue
+        if 0 < v <= 100:
+            return v
+    return None
 
 
 def _regulatory_status(row, today=None):
@@ -528,6 +616,8 @@ def _regulatory_status(row, today=None):
             return {"status": "removed", "removed_on": pc["effective"], **base}
         return {"status": "removal_finalized_not_yet_effective",
                 "removal_effective": pc["effective"], **base}
+    if row.get("status_override"):
+        return {"status": row["status_override"]}
     if row.get("grase") is False:
         return {"status": "not_grase"}
     return {}
@@ -575,10 +665,15 @@ def build_matrix(found):
             if not key:
                 continue
             find(key)
-            for a in (row.get("alt_names") or []):
+            names = _name_parts(_first(row, spec["name"])) + list(row.get("alt_names") or [])
+            for a in names:
                 na = norm(a)
                 if na:
                     union(key, na)
+    for a, b in CROSS_JURISDICTION_SYNONYMS:
+        na, nb = norm(a), norm(b)
+        if na in parent or nb in parent:
+            union(na, nb)
 
     groups = defaultdict(set)
     for k in list(parent):
@@ -601,11 +696,18 @@ def build_matrix(found):
             mx = _first(row, spec["max"])
             if mx is None and juris == "AU":
                 mx = _au_cap_from_requirements(row)
+            ptc = row.get("product_type_condition")
             entry = {
                 "max_percent": mx,
-                "conditions": _first(row, spec["cond"]),
-                "source": blob["source"],
+                "conditions": (row.get("conditions") if ptc else _first(row, spec["cond"])),
+                "source": row.get("source") or blob["source"],
+                # cell-level provenance: every number links to the document that states it
+                "source_url": row.get("source_url") or (AU_SOURCE["url"] if juris == "AU" else None),
+                "source_version": row.get("source_version") or (AU_SOURCE["version"] if juris == "AU" else None),
             }
+            if ptc:
+                entry["product_type_condition"] = ptc
+                entry["conditional_limits"] = _conditional_limits(ptc, mx)
             if row.get("source_status"):
                 entry["source_status"] = row["source_status"]
             for flag in ("is_active", "is_excipient", "dermal_topical_only",

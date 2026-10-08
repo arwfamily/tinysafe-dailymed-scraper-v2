@@ -56,8 +56,10 @@ jobs:
             echo "no requirements.txt — scripts are stdlib-only, continuing"
           fi
 
-      - name: Classifier must pass its regression tests first
-        run: python tests/test_classify.py
+      - name: Classifier and matrix must pass their regression tests first
+        run: |
+          python tests/test_classify.py
+          python tests/test_matrix.py
 
       - name: Resolve run mode
         id: mode
