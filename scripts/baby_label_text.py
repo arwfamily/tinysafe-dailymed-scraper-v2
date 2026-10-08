@@ -53,11 +53,20 @@ def extract(setid):
             parts.append((t + " " + b).strip())
             if b:
                 sections.setdefault(t or "(untitled)", b)
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from spl_parse import parse_spl
+        products = [{"name": p["name"], "dosage_form": p["dosage_form"], "ndc_product": p["ndc_product"],
+                     "actives": p["actives"], "inactives": p["inactives"], "parts": p["parts"]}
+                    for p in parse_spl(x.decode("utf-8", "replace"))["products"]]
+    except Exception as e:  # the text archive must not fail over a parse problem
+        products = [{"parse_error": str(e)[:200]}]
     ver = root.find(V3 + "versionNumber")
     eff = root.find(V3 + "effectiveTime")
     return {"setid": setid, "spl_version": ver.get("value") if ver is not None else None,
             "effective_date": eff.get("value") if eff is not None else None,
-            "title": flat(root.find(V3 + "title")), "text": " | ".join(parts), "sections": sections}
+            "title": flat(root.find(V3 + "title")), "text": " | ".join(parts), "sections": sections,
+            "products": products}
 
 
 def main():
