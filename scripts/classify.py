@@ -97,8 +97,11 @@ MINERAL_NAME = [(r"\bZINC OXIDE\b", "zinc oxide"), (r"\bTITANIUM DIOXIDE\b", "ti
 # UV absorbers appearing among INACTIVE ingredients.
 # tier 1: a substance registered as a UV filter by at least one major
 #         regulator (FDA M020, EU Annex VI, TGA, MFDS, MHLW).
-# tier 2: UV-absorbing SPF boosters / photostabilisers that are not
-#         registered filters anywhere but absorb in the UV range by design.
+# tier 2: SPF boosters / photostabilisers that are not registered filters
+#         anywhere. NOT all of them absorb UV (e.g. ethylhexyl methoxycrylene
+#         works without absorbing sunlight, per DrugBank DB11226), so the field
+#         name is historical: never publish "absorbs UV" from this list.
+#         Public wording needs a per-ingredient source (SITE_DATA_CONTRACT.md).
 # Deliberately NOT included (verified in corpus, they are fragrance or
 # antioxidant ingredients, not UV absorbers in practice): benzyl / methyl /
 # hexyl / amyl salicylate, camphor (natural/synthetic), pentaerythrityl

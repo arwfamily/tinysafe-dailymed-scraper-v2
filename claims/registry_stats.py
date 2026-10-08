@@ -68,7 +68,8 @@ def source(review, snapshot):
 
 
 POP = ("unique formulations of sunscreen labels that say baby or kids "
-       "(FDA DailyMed; hand-reviewed list)")
+       "(FDA DailyMed; selected by rule from the label, with edge cases decided by hand "
+       "and every decision recorded with its reason)")
 POP_MIN = POP + "; mineral-only actives (zinc oxide and/or titanium dioxide)"
 CAVEAT = ("DailyMed lists drug labels submitted to the FDA, including labels for products "
           "made in US facilities for other markets. A listing is not proof that a product "
@@ -106,7 +107,13 @@ def main():
                                   f"listed in the FDA's DailyMed label database contain zinc oxide."),
          "numerator": zno, "denominator": M, "population": POP_MIN,
          "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py", "verified_date": snapshot},
-        {"id": "US-BABY-HIDDEN-UV", "status": "verified", "jurisdiction": "US",
+        {"id": "US-BABY-HIDDEN-UV", "status": "provisional_do_not_publish", "jurisdiction": "US",
+         "blocker": ("The count is exact, but 'absorbs UV light' is not supported for the two "
+                     "largest ingredients: the butyloctyl salicylate manufacturer (Hallstar) describes "
+                     "SPF contribution and UV-filter stabilisation, not UV absorption; DrugBank "
+                     "DB11226 describes ethylhexyl methoxycrylene as a photostabilizer that works "
+                     "without absorbing sunlight. Each of the 7 ingredients needs its own sourced "
+                     "function before a combined sentence can be published."),
          "ingredient_slugs": [], "finding": "hidden-uv-absorbers",
          "claim": (f"{hidden} of {M} mineral-only baby/kids sunscreen formulations contain at least "
                    f"one UV-absorbing ingredient that is not listed as an active ingredient."),
@@ -123,8 +130,15 @@ def main():
          "ingredient_slugs": [], "finding": "butyloctyl-salicylate",
          "claim": f"{bos} of {M} mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
          "publishable_sentence": (f"{bos} of the {M} mineral baby and kids sunscreen formulas "
-                                  f"listed in the FDA's DailyMed label database contain butyloctyl salicylate, an ingredient "
-                                  f"that absorbs UV light but is not listed as an active ingredient."),
+                                  f"listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not "
+                                  f"an FDA sunscreen active ingredient; its manufacturer says it can contribute to SPF "
+                                  f"(no more than 2 SPF units at 5%) and help prevent some UV filters from breaking down."),
+         "ingredient_source": {"title": "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)",
+                               "url": "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/",
+                               "checked": "2026-10-08"},
+         "legal_framing": ("Not a violation: butyloctyl salicylate is not an FDA sunscreen active, so it "
+                           "belongs with the inactive ingredients, as the rules require. The finding is "
+                           "about how labels work, not about any brand."),
          "numerator": bos, "denominator": M, "population": POP_MIN,
          "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py", "verified_date": snapshot},
     ]

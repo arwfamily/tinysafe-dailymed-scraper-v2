@@ -172,6 +172,8 @@ def _registry_item(c):
             "source": c.get("site_source")}
     if c.get("legal_framing"):
         item["legal_framing"] = c["legal_framing"]
+    if c.get("ingredient_source"):
+        item["ingredient_source"] = c["ingredient_source"]
     return item
 
 

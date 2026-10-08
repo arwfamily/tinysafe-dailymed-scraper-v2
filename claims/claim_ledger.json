@@ -119,7 +119,7 @@
       "publishable_sentence": "174 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name zinc oxide as an active ingredient.",
       "numerator": 174,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -142,7 +142,7 @@
       "publishable_sentence": "66 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name titanium dioxide as an active ingredient.",
       "numerator": 66,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -165,7 +165,7 @@
       "publishable_sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name bemotrizinol as an active ingredient.",
       "numerator": 0,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -188,7 +188,7 @@
       "publishable_sentence": "164 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name avobenzone as an active ingredient.",
       "numerator": 164,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -211,7 +211,7 @@
       "publishable_sentence": "63 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name oxybenzone as an active ingredient.",
       "numerator": 63,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -234,7 +234,7 @@
       "publishable_sentence": "52 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octinoxate as an active ingredient.",
       "numerator": 52,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -257,7 +257,7 @@
       "publishable_sentence": "154 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name homosalate as an active ingredient.",
       "numerator": 154,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -280,7 +280,7 @@
       "publishable_sentence": "181 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octisalate as an active ingredient.",
       "numerator": 181,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -303,7 +303,7 @@
       "publishable_sentence": "162 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octocrylene as an active ingredient.",
       "numerator": 162,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -326,7 +326,7 @@
       "publishable_sentence": "2 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ensulizole as an active ingredient.",
       "numerator": 2,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -349,7 +349,7 @@
       "publishable_sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name meradimate as an active ingredient.",
       "numerator": 0,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -372,7 +372,7 @@
       "publishable_sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name dioxybenzone as an active ingredient.",
       "numerator": 0,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -395,7 +395,7 @@
       "publishable_sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name sulisobenzone as an active ingredient.",
       "numerator": 0,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -418,7 +418,7 @@
       "publishable_sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name cinoxate as an active ingredient.",
       "numerator": 0,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -441,7 +441,7 @@
       "publishable_sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name padimate O as an active ingredient.",
       "numerator": 0,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -464,7 +464,7 @@
       "publishable_sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name PABA (aminobenzoic acid) as an active ingredient.",
       "numerator": 0,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -487,7 +487,7 @@
       "publishable_sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name trolamine salicylate as an active ingredient.",
       "numerator": 0,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -510,7 +510,7 @@
       "publishable_sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ecamsule as an active ingredient.",
       "numerator": 0,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -533,7 +533,7 @@
       "publishable_sentence": "2 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name drometrizole trisiloxane as an active ingredient.",
       "numerator": 2,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -556,7 +556,7 @@
       "publishable_sentence": "None of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ethylhexyl triazone as an active ingredient.",
       "numerator": 0,
       "denominator": 356,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -579,7 +579,7 @@
       "publishable_sentence": "160 of the 163 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain zinc oxide.",
       "numerator": 160,
       "denominator": 163,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list); mineral-only actives (zinc oxide and/or titanium dioxide)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason); mineral-only actives (zinc oxide and/or titanium dioxide)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -593,8 +593,9 @@
     },
     {
       "id": "US-BABY-HIDDEN-UV",
-      "status": "verified",
+      "status": "provisional_do_not_publish",
       "jurisdiction": "US",
+      "blocker": "The count is exact, but 'absorbs UV light' is not supported for the two largest ingredients: the butyloctyl salicylate manufacturer (Hallstar) describes SPF contribution and UV-filter stabilisation, not UV absorption; DrugBank DB11226 describes ethylhexyl methoxycrylene as a photostabilizer that works without absorbing sunlight. Each of the 7 ingredients needs its own sourced function before a combined sentence can be published.",
       "ingredient_slugs": [],
       "finding": "hidden-uv-absorbers",
       "claim": "50 of 163 mineral-only baby/kids sunscreen formulations contain at least one UV-absorbing ingredient that is not listed as an active ingredient.",
@@ -602,7 +603,7 @@
       "legal_framing": "Not a violation: these ingredients are not FDA sunscreen actives, so listing them as actives would itself be non-compliant. The finding is about how labels work, not about any brand.",
       "numerator": 50,
       "denominator": 163,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list); mineral-only actives (zinc oxide and/or titanium dioxide)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason); mineral-only actives (zinc oxide and/or titanium dioxide)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -621,10 +622,16 @@
       "ingredient_slugs": [],
       "finding": "butyloctyl-salicylate",
       "claim": "44 of 163 mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
-      "publishable_sentence": "44 of the 163 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate, an ingredient that absorbs UV light but is not listed as an active ingredient.",
+      "publishable_sentence": "44 of the 163 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not an FDA sunscreen active ingredient; its manufacturer says it can contribute to SPF (no more than 2 SPF units at 5%) and help prevent some UV filters from breaking down.",
+      "ingredient_source": {
+        "title": "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)",
+        "url": "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/",
+        "checked": "2026-10-08"
+      },
+      "legal_framing": "Not a violation: butyloctyl salicylate is not an FDA sunscreen active, so it belongs with the inactive ingredients, as the rules require. The finding is about how labels work, not about any brand.",
       "numerator": 44,
       "denominator": 163,
-      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list); mineral-only actives (zinc oxide and/or titanium dioxide)",
+      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason); mineral-only actives (zinc oxide and/or titanium dioxide)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -645,7 +652,7 @@
     "Re-run every number in the published IG series and the 'Same Formula, Different Label' page against this ledger before reuse."
   ],
   "registry_population": {
-    "definition": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; hand-reviewed list)",
+    "definition": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
     "formulations": 356,
     "mineral_only": 163,
     "review_file": "baby_review_2026-10-08.csv",

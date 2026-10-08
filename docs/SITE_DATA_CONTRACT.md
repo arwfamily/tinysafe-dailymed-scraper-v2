@@ -84,14 +84,20 @@ see §3.)
 - The site renders `sentence` verbatim and shows `caveat` with it (the
   caveat says a DailyMed listing is not proof a product is on US shelves).
 - Wording rule: say "listed in the FDA's DailyMed label database", never
-  "registered with the FDA" or "sold in the US". Say "absorbs UV light",
-  never "boosts SPF".
+  "registered with the FDA" or "sold in the US". Never describe what a
+  non-active ingredient does (absorbs UV, boosts SPF, stabilises filters)
+  unless the finding carries an `ingredient_source` for that exact ingredient
+  and the sentence stays inside what that source says. (2026-10-08: "absorbs
+  UV light" was withdrawn; the BOS manufacturer and DrugBank do not support it.)
+- A finding with `ingredient_source` must link it next to the sentence.
 - `findings` are verified results that belong to no single filter page
   (hidden UV absorbers, butyloctyl salicylate). They need their own page;
   they must not be pasted into a filter page.
 - `legal_framing`, when present, must appear next to the finding.
 - Population (owner decision 2026-10-08, strict): labels that say baby or
-  kids, hand-reviewed list in `claims/baby_review_*.csv`.
+  kids, selected by rule from the label, edge cases decided by hand; every
+  decision and its reason is in `claims/baby_review_*.csv`. Never say the
+  whole list was reviewed by hand.
 
 ### Allowed `status` values for a limit
 
