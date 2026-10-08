@@ -1241,20 +1241,20 @@
     },
     {
       "id": "US-BABY-SAME-LIST",
-      "status": "provisional_do_not_publish",
-      "blocker": "printed Drug Facts comparison (scripts/verify_same_list.py) not run for every candidate pair",
+      "status": "verified",
+      "blocker": null,
       "candidates_structured": 98,
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "same-ingredient-list",
-      "claim": "51 of 392 baby/kids formulations print the same ingredient list as a non-baby label.",
-      "publishable_sentence": "51 of the 392 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 42 cases both labels name the same labeler.",
+      "claim": "57 of 392 baby/kids formulations print the same ingredient list as a non-baby label.",
+      "publishable_sentence": "57 of the 392 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 47 cases both labels name the same labeler.",
       "legal_framing": "Not a violation: nothing requires a baby or kids sunscreen to have a different formula. The finding compares what the label records state; it does not show how the products are made.",
-      "numerator": 51,
+      "numerator": 57,
       "denominator": 392,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "detail": {
-        "same_company": 42,
+        "same_company": 47,
         "pairs_csv": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/same_ingredient_list_pairs.csv",
         "pairs": [
           {
@@ -1415,6 +1415,49 @@
               [
                 "ATTITUDE SUNLY MINERAL SUNSCREEN STICK UNSCENTED SPF 30 (ZINC OXIDE) STICK [9055-7588 QUEBEC INC. DBA ATTITUDE]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d83c576-5dfb-583a-e063-6294a90a2a28"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53d50644-b698-6474-e063-6394a90ac347"
+            ],
+            "same_list": [
+              [
+                "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c167280-250c-c863-e063-6394a90ac883"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=616d35f6-63d2-3d26-e053-2991aa0a5b44"
+            ],
+            "same_list": [
+              [
+                "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=616d35a1-a139-1974-e053-2a91aa0a20b6"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "BANANA BOAT (ZINC OXIDE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1ba50f16-4b76-825f-e063-6294a90a2a4d"
+            ],
+            "same_list": [
+              [
+                "BANANA BOAT (ZINC OXIDE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1ba57692-c36d-ef4a-e063-6394a90a1236"
+              ],
+              [
+                "BANANA BOAT (ZINC OXIDE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b999d26-6220-6e4b-e063-6294a90ae52a"
               ]
             ],
             "same_company": true
@@ -1707,6 +1750,19 @@
           },
           {
             "baby": [
+              "H.E.B (SPF 50 SUNSCREEN) AEROSOL, SPRAY [H.E.B]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=39bf1379-3dee-4aa0-967a-36faccca4216"
+            ],
+            "same_list": [
+              [
+                "H.E.B (SPF 50 SUNSCREEN) AEROSOL, SPRAY [H.E.B]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c9258ac-8cbe-4acf-9c02-bb993d69a3e5"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
               "HELLO BELLO KIDS MINERAL SUNSCREEN (ZINC OXIDE TITANIUM OXIDE) LOTION [HELLO BELLO]",
               "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e7a3e8e-eacf-0a30-e063-6294a90ab7ec"
             ],
@@ -1838,6 +1894,23 @@
               [
                 "EQUALINE SPORT CONTINUOUS SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [UNITED NATURAL FOODS, INC. DBA UNFI]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f13feba4-25d8-61d0-e053-2995a90aafa8"
+              ]
+            ],
+            "same_company": false
+          },
+          {
+            "baby": [
+              "MINERAL BASED SPF 50 SUNSCREEN (ZINC OXIDE, TITANIUM DIOXIDE) STICK [THE KROGER COMPANY]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4e6936d-a76c-e8fd-e053-2995a90a965f"
+            ],
+            "same_list": [
+              [
+                "MINERAL SUNSCREEN SPF 50 (ZINC OXIDE, TITANIUM DIOXIDE) STICK [TOPCO ASSOCIATES LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfe076fa-f21f-2c46-e053-2a95a90acee4"
+              ],
+              [
+                "MINERAL SUNSCREEN SPF 50 (ZINC OXIDE, TITANIUM DIOXIDE) STICK [WEGMANS FOOD MARKETS INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfe24f55-d0e5-254a-e053-2995a90a2fd3"
               ]
             ],
             "same_company": false
@@ -2064,6 +2137,23 @@
               [
                 "THINKSPORT SUNSCREEN SPF 30 (ZINC OXIDE) STICK [THINKOPERATIONS,LLC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a8591509-65f7-4e62-8642-4b8e63f1fef3"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "ULTRASOL SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY [FISCHER PHARMACEUTICALS LTD]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3515c77-a408-40d7-8254-fe3e6a3e4fac"
+            ],
+            "same_list": [
+              [
+                "ULTRASOL SUNSCREEN SPF45 (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY [FISCHER PHARMACEUTICALS LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a33c156d-0904-42b9-bc04-157559c7fe00"
+              ],
+              [
+                "ULTRASOL SPORT SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY [FISCHER PHARMACEUTICALS LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd26612a-4a92-44b1-995e-f6f27c5ef6f3"
               ]
             ],
             "same_company": true
