@@ -24,5 +24,12 @@ source for that exact statement. Reason in brackets.
 - Octinoxate: "'Reef safe' has no legal definition"
 
 ## Already covered by a sourced note
+- 12 ingredients 'insufficient data' (zinc oxide FAQ, avobenzone, homosalate) -> NOTE-MORE-DATA-12 (FDA Q&A); zinc/titanium GRASE -> NOTE-MINERAL-GRASE
+- Bemotrizinol 'first since the late 1990s' -> NOTE-BEMT-FIRST (FDA press announcement 2026-06-09)
+- PABA/trolamine 'no US product sold' -> NOTE-PABA-TROL-MARKET (FDA Q&A)
 - Hawaii Act 104 (oxybenzone, octinoxate) -> NOTE-HAWAII-ACT104
 - Babies under 6 months -> NOTE-INFANTS-FDA (FDA consumer update; the AAP is not cited)
+
+## Held findings (sourced, but not published)
+- Polysilicone-15 in 2 mineral baby formulas: manufacturer (DSM-Firmenich) calls it a "UV-B absorber"/"polymeric UVB filter"; EU Annex VI 10%, TGA 10%; US: not a sunscreen active. HELD: both formulas are one brand (MDSolarSciences), so a standalone page would single out a brand.
+- Muse dossier 2026-10-08 checked: polyester-8 source (CosmeticsDesign 2012) is about PolycryleneS1, not polyester-8; ethyl ferulate NCATS page not readable (bot wall); "BOS: source-backed absorption" in its verdict contradicts the Hallstar Q&A. Do not cite abnewswire "1,095 products" release (sponsored).

@@ -3,7 +3,9 @@
   "notes": [
     {
       "id": "NOTE-INFANTS-FDA",
-      "applies_to": ["site"],
+      "applies_to": [
+        "site"
+      ],
       "heading": "Babies younger than 6 months",
       "text": "The FDA says sunscreen is not usually the answer for infants. Its advice: keep your baby in the shade as much as possible, cover skin with clothing and a hat, and talk to your pediatrician before using any sunscreen on your baby.",
       "source": {
@@ -15,13 +17,85 @@
     },
     {
       "id": "NOTE-HAWAII-ACT104",
-      "applies_to": ["oxybenzone", "octinoxate"],
+      "applies_to": [
+        "oxybenzone",
+        "octinoxate"
+      ],
       "heading": "Hawaii",
       "text": "Since January 1, 2021, it has been unlawful to sell, offer for sale, or distribute for sale in Hawaii any sunscreen that contains oxybenzone or octinoxate without a prescription issued by a licensed healthcare provider. This is a state sales rule; it does not change the federal limit shown above.",
       "source": {
         "title": "Hawaii Act 104, Session Laws of Hawaii 2018 (SB2571), approved July 3, 2018",
         "url": "https://data.capitol.hawaii.gov/sessions/sessionlaws/Years/SLH2018/SLH2018_Act104.pdf",
         "version": "as enacted",
+        "checked": "2026-10-08"
+      }
+    },
+    {
+      "id": "NOTE-MINERAL-GRASE",
+      "applies_to": [
+        "zinc-oxide",
+        "titanium-dioxide"
+      ],
+      "heading": "FDA safety review",
+      "text": "The FDA's proposed order proposes GRASE (generally recognized as safe and effective) status for sunscreens containing zinc oxide and/or titanium dioxide. The FDA says its review of publicly available evidence found sufficient safety data on both.",
+      "source": {
+        "title": "FDA — Questions and Answers: FDA's regulatory actions on over-the-counter sunscreen",
+        "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
+        "version": "content current as of 2026-09-10",
+        "checked": "2026-10-08"
+      }
+    },
+    {
+      "id": "NOTE-MORE-DATA-12",
+      "applies_to": [
+        "avobenzone",
+        "oxybenzone",
+        "octinoxate",
+        "homosalate",
+        "octisalate",
+        "octocrylene",
+        "ensulizole",
+        "meradimate",
+        "dioxybenzone",
+        "sulisobenzone",
+        "cinoxate",
+        "padimate-o"
+      ],
+      "heading": "FDA safety review",
+      "text": "This is one of 12 sunscreen active ingredients the FDA has proposed are not GRASE (generally recognized as safe and effective) because the public record does not contain sufficient data to support a positive determination. The FDA is asking for safety data on them. It is still listed in the current monograph, with the US limit shown above.",
+      "source": {
+        "title": "FDA — Questions and Answers: FDA's regulatory actions on over-the-counter sunscreen",
+        "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
+        "version": "content current as of 2026-09-10",
+        "checked": "2026-10-08"
+      }
+    },
+    {
+      "id": "NOTE-PABA-TROL-MARKET",
+      "applies_to": [
+        "paba",
+        "trolamine-salicylate"
+      ],
+      "heading": "On US shelves",
+      "text": "The FDA says it is not aware of any sunscreen drug products currently sold in the U.S. that contain PABA or trolamine salicylate.",
+      "source": {
+        "title": "FDA — Questions and Answers: FDA's regulatory actions on over-the-counter sunscreen",
+        "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
+        "version": "content current as of 2026-09-10",
+        "checked": "2026-10-08"
+      }
+    },
+    {
+      "id": "NOTE-BEMT-FIRST",
+      "applies_to": [
+        "bemotrizinol"
+      ],
+      "heading": "Why it was news",
+      "text": "The FDA calls bemotrizinol the first new active ingredient added to the over-the-counter sunscreen monograph since the late 1990s. It is generally recognized as safe and effective for use in sunscreens by adults and children 6 months of age and older.",
+      "source": {
+        "title": "FDA press announcement — FDA Expands Sunscreen Options for the First Time in 20 Years",
+        "url": "https://www.fda.gov/news-events/press-announcements/fda-expands-sunscreen-options-first-time-20-years",
+        "version": "June 9, 2026",
         "checked": "2026-10-08"
       }
     }

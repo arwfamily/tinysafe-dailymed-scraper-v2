@@ -23,9 +23,10 @@ import shutil
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EVIDENCE = os.path.join(ROOT, "site", "evidence.json")
-NOTES = os.path.join(ROOT, "content", "notes.json")
-OUT = os.path.join(ROOT, "site", "evidence")
+# Overridable so the arwhouse repo can run this same file on fetched inputs.
+EVIDENCE = os.environ.get("EVIDENCE_JSON") or os.path.join(ROOT, "site", "evidence.json")
+NOTES = os.environ.get("NOTES_JSON") or os.path.join(ROOT, "content", "notes.json")
+OUT = os.environ.get("OUT_DIR") or os.path.join(ROOT, "site", "evidence")
 SITE = "https://arwhouse.com"
 BASE = "/evidence"
 REPO = "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2"
@@ -578,7 +579,7 @@ def main():
     urls = "".join(f"<url><loc>{SITE}{p}</loc><lastmod>{d['built_on']}</lastmod></url>" for p in pages)
     open(os.path.join(OUT, "sitemap.xml"), "w").write(
         f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>')
-    print(f"rendered {len(pages)} pages into site/evidence/ ({'checks passed' if not errs else 'WITH ERRORS'})")
+    print(f"rendered {len(pages)} pages into {OUT} ({'checks passed' if not errs else 'WITH ERRORS'})")
 
 
 if __name__ == "__main__":
