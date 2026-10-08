@@ -13,10 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Fetch
+        env:
+          URLS: ${{ github.event.inputs.urls }}
         run: |
           mkdir -p data/smoke/api
           i=0
-          for u in ${{ github.event.inputs.urls }}; do
+          for u in $URLS; do
             i=$((i+1))
             echo "$u" > "data/smoke/api/$i.url"
             curl -sSL -A "TinySafe-research/1.0 (contact: support@tinysafe.app)" "$u" -o "data/smoke/api/$i.json" || true
