@@ -169,28 +169,29 @@ def org():
 
 
 CSS = r"""
-:root{--paper:#FAFAF7;--ink:#141613;--grey:#6E766A;--line:rgba(20,22,19,.12);--soft:rgba(20,22,19,.045);
+:root{--paper:#FAFAF7;--ink:#141613;--grey:#6E766A;--hair:#E6E8E0;--line:rgba(20,22,19,.12);--soft:rgba(20,22,19,.045);
 --serif:"Instrument Serif",Georgia,serif;--sans:"DM Sans",-apple-system,"Segoe UI",sans-serif}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#171A16;--ink:#F1F0EA;--grey:#A3A99D;--line:rgba(241,240,234,.14);--soft:rgba(241,240,234,.05)}}
-:root[data-theme="dark"]{--paper:#171A16;--ink:#F1F0EA;--grey:#A3A99D;--line:rgba(241,240,234,.14);--soft:rgba(241,240,234,.05)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#171A16;--ink:#F1F0EA;--grey:#A3A99D;--hair:#2A2E28;--line:rgba(241,240,234,.14);--soft:rgba(241,240,234,.05)}}
+:root[data-theme="dark"]{--paper:#171A16;--ink:#F1F0EA;--grey:#A3A99D;--hair:#2A2E28;--line:rgba(241,240,234,.14);--soft:rgba(241,240,234,.05)}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;font-feature-settings:"tnum" 1}
 a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
 .wrap{max-width:1040px;margin:0 auto;padding:0 16px}
 @media(min-width:720px){.wrap{padding:0 32px}}
-.top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:22px 0 18px;border-bottom:1px solid var(--line)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:66px;position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 85%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 0 0 100vmax color-mix(in srgb,var(--paper) 85%,transparent);clip-path:inset(0 -100vmax)}
 .word{font-family:var(--serif);font-size:26px;text-decoration:none;display:inline-flex;align-items:baseline;gap:9px;white-space:nowrap}
 .word .arch{height:.74em;width:auto}
 .word em{font-style:normal;color:var(--grey)}
-.top{flex-wrap:wrap}.top nav{display:flex;gap:18px;font-size:14px}
+.top{flex-wrap:wrap}.top nav{display:flex;gap:28px;font-size:14px;letter-spacing:.01em}
 .top nav a{text-decoration:none;color:var(--grey)}.top nav a:hover,.top nav a[aria-current]{color:var(--ink)}
 .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin:0 0 14px}
 h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;margin:0}
-h1{font-size:clamp(40px,7vw,72px);line-height:1.02;max-width:16ch}
+h1{font-size:clamp(40px,7vw,72px);line-height:.98;max-width:16ch}
+h1 em{font-style:italic}
 h2{font-size:clamp(28px,4vw,38px);line-height:1.1;margin-bottom:14px}
 h3{font-size:22px;line-height:1.2}
-.hero{padding:56px 0 40px}
+.hero{padding:64px 0 44px}
 .lede{font-size:19px;max-width:58ch;margin:22px 0 0}
 .byline{font-size:14px;color:var(--grey);margin:22px 0 0}
 .crumb{font-size:14px;color:var(--grey);margin:28px 0 0}.crumb a{color:var(--grey)}
@@ -262,7 +263,7 @@ details p{margin:10px 0 0;max-width:64ch}
 .srclist{list-style:none;padding:0;margin:0;font-size:15px}
 .srclist li{padding:12px 0;border-bottom:1px solid var(--line)}
 .srclist span{display:block;font-size:13px;color:var(--grey)}
-footer{border-top:1px solid var(--line);margin-top:24px;padding:28px 0 48px;font-size:13px;color:var(--grey)}
+footer{margin-top:56px;padding:40px 0 70px;font-size:13px;color:var(--grey);background:var(--hair);box-shadow:0 0 0 100vmax var(--hair);clip-path:inset(0 -100vmax)}
 footer .word{font-size:20px;color:var(--ink)}
 footer p{margin:10px 0 0;max-width:72ch}
 """
@@ -332,7 +333,7 @@ def page_index(d, notes):
         for n in notes if "site" in n["applies_to"])
     body = f"""
 <div class="hero"><p class="eyebrow">Baby sunscreen · Evidence library</p>
-<h1>Every sunscreen filter, checked at the source.</h1>
+<h1>Every sunscreen filter, <em>checked at the source.</em></h1>
 <p class="lede">{len(d["ingredients"])} UV filters. Their legal limits in the United States, the European Union and Australia. How often US baby and kids sunscreen labels list each one. Every number opens its source.</p>
 <p class="byline">By Angela Lee, Founder · ARW House · Updated {E(fmt_date(d["built_on"]))}</p></div>
 <div class="ledger">
@@ -502,7 +503,7 @@ def page_method(d, notes):
     srch = "".join(f'<li><a href="{E(u)}" rel="noopener" target="_blank">{E(t)}</a><span>{E(" · ".join(x for x in (j, v) if x))}</span></li>'
                    for u, (t, v, j) in srcs.items())
     body = f"""
-<div class="hero"><p class="eyebrow">Method</p><h1>How every number here is made.</h1>
+<div class="hero"><p class="eyebrow">Method</p><h1>How every number <em>here is made.</em></h1>
 <p class="lede">These pages are rebuilt every week from public regulatory texts and the FDA's DailyMed label database. No number is typed by hand.</p>
 <p class="byline">By Angela Lee, Founder · ARW House · Updated {E(fmt_date(d["built_on"]))}</p></div>
 <section class="cols prose"><div><h2>Limits</h2>
