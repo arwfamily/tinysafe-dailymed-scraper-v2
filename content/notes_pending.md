@@ -33,3 +33,7 @@ source for that exact statement. Reason in brackets.
 ## Held findings (sourced, but not published)
 - Polysilicone-15 in 2 mineral baby formulas: manufacturer (DSM-Firmenich) calls it a "UV-B absorber"/"polymeric UVB filter"; EU Annex VI 10%, TGA 10%; US: not a sunscreen active. HELD: both formulas are one brand (MDSolarSciences), so a standalone page would single out a brand.
 - Muse dossier 2026-10-08 checked: polyester-8 source (CosmeticsDesign 2012) is about PolycryleneS1, not polyester-8; ethyl ferulate NCATS page not readable (bot wall); "BOS: source-backed absorption" in its verdict contradicts the Hallstar Q&A. Do not cite abnewswire "1,095 products" release (sponsored).
+
+## Label audit queue (title vs structured actives, baby set)
+- 2db243d3-3b59-4be9-967c-0d4aea4d0066 Peter Island Kids SPF 50: title names octocrylene, structured data has octisalate. DailyMed page not readable 2026-10-08 (rate limit). Verify Drug Facts; at most +/-1 on octocrylene or octisalate.
+- Checked, data correct (title is stale): Banana Boat Ultra Mist Kids LATAM (3aa6550e), Bull Frog Kids 35 (60cdfbfa) — no oxybenzone in Drug Facts.
