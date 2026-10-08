@@ -60,6 +60,7 @@ jobs:
         run: |
           python tests/test_classify.py
           python tests/test_matrix.py
+          python tests/test_fingerprint.py
 
       - name: Resolve run mode
         id: mode

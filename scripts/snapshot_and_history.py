@@ -86,6 +86,35 @@ def norm_strength(s):
     return "".join(str(s).split()).upper()
 
 
+FINGERPRINT_VERSION = 2
+# v1 (until 2026-10-08) keyed actives on the SPL numerator only, so 23.4% and
+# 20% zinc oxide (234 mg/1 g vs 234 mg/1.17 g) hashed alike. Keying on the raw
+# SPL fraction instead is worse: manufacturers' unit typos (mg vs ug, /100 mL
+# vs /100 g) split one product into several. v2 keys on the percentage the
+# pipeline reads from the label (percent_ww, mostly the Drug Facts panel), and
+# falls back to the raw SPL fraction only when no percentage could be read.
+# RULE: any change to how percent_ww is parsed must bump FINGERPRINT_VERSION,
+# or every reparsed product will be logged as reformulated.
+
+
+def strength_key(a):
+    if not isinstance(a, dict):
+        return ""
+    p = a.get("percent_ww")
+    if isinstance(p, (int, float)):
+        return f"P{round(float(p), 2):g}"
+    def num(x):
+        try:
+            return f"{float(x):g}"
+        except (TypeError, ValueError):
+            return norm_strength(x)
+    n, d = a.get("strength"), a.get("denominator")
+    if n is None:
+        return ""
+    return (f"R{num(n)}{(a.get('strength_unit') or '').upper()}"
+            f"/{num(d) if d is not None else ''}{(a.get('denominator_unit') or '').upper()}")
+
+
 def formulation_fingerprint(rec):
     """
     Canonical representation of the FORMULA only.
@@ -94,7 +123,7 @@ def formulation_fingerprint(rec):
       dosage    : included — lotion vs stick is a formulation fact
     """
     actives = sorted(
-        f"{ing_key(a)}@{norm_strength(a.get('strength') if isinstance(a, dict) else None)}"
+        f"{ing_key(a)}@{strength_key(a)}"
         for a in (rec.get("active_ingredients") or [])
     )
     inactives = [ing_key(i) for i in (rec.get("inactive_ingredients") or [])]
@@ -231,6 +260,7 @@ def main():
 
         now_state[setid] = {
             "formulation_hash": fhash,
+            "fingerprint_version": FINGERPRINT_VERSION,
             "payload": payload,
             "meta": mv,
             "last_seen": args.run_date,
@@ -239,6 +269,10 @@ def main():
 
         if prev is None:
             change = "new"
+            extra = {}
+        elif prev.get("fingerprint_version", 1) != FINGERPRINT_VERSION:
+            # Hash recipe changed, not the product. Never log that as a market event.
+            change = "unchanged"
             extra = {}
         elif prev.get("formulation_hash") != fhash:
             change = "reformulated"
@@ -297,6 +331,10 @@ def main():
 
     for setid in gone:
         prev = seen_before[setid]
+        if prev.get("delisted_on"):
+            # already reported in an earlier run; carry it, never re-log it
+            now_state[setid] = prev
+            continue
         counts["delisted"] += 1
         events.append({
             "observed_on": args.run_date,
