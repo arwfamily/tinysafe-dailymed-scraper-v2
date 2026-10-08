@@ -851,6 +851,54 @@
    }
   },
   {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=369f449f-fb9d-5529-e063-6394a90ac3b2",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a13d4f1-c158-7fa0-e063-6294a90a6fb4",
+   "baby_title": "BABY BUM MINERAL 50 SUNSCREEN (ZINC OXIDE) LOTION [SUN BUM LLC]",
+   "other_title": "SUN BUM 50 MINERAL SUNSCREEN (ZINC OXIDE) LOTION [SUN BUM, LLC]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "BUTYROSPERMUM PARKII ( SHEA BUTTER )"
+    ],
+    "only_other": [
+     "BUTYROSPERMUM PARKII ( SHEA ) BUTTER"
+    ],
+    "actives_baby": {
+     "ZINC OXIDE": 20.0
+    },
+    "actives_other": {
+     "ZINC OXIDE": 20.0
+    },
+    "same_order": false
+   }
+  },
+  {
+   "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=369f449f-fb9d-5529-e063-6394a90ac3b2",
+   "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c483d04-8942-5269-e063-6294a90a3881",
+   "baby_title": "BABY BUM MINERAL 50 SUNSCREEN (ZINC OXIDE) LOTION [SUN BUM LLC]",
+   "other_title": "SUN BUM 50 MINERAL SUNSCREEN 1 OZ (ZINC OXIDE) LOTION [SUN BUM, LLC]",
+   "verdict": "differs",
+   "diff": {
+    "only_baby": [
+     "BUTYROSPERMUM PARKII ( SHEA BUTTER )",
+     "METHYL DIHYDROABIETATE",
+     "SECTION/INACTIVE INGREDIENTS WATER"
+    ],
+    "only_other": [
+     "BUTYROSPERMUM PARKII ( SHEA ) BUTTER",
+     "SECTION/INACTIVE INGREDIENTS METHYL DIHYDROABIETATE",
+     "WATER"
+    ],
+    "actives_baby": {
+     "ZINC OXIDE": 20.0
+    },
+    "actives_other": {
+     "ZINC OXIDE": 20.0
+    },
+    "same_order": false
+   }
+  },
+  {
    "baby": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0a4ac6b-8f88-8a9a-e053-2995a90ab10e",
    "other": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b44273af-881c-6feb-e053-2995a90a099f",
    "baby_title": "BABY SKIN MINERAL SUNSCREEN (MINERAL SUNSCREEN) LOTION [BABO BOTANICALS, INC.]",

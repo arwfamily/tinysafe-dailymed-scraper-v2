@@ -681,8 +681,8 @@
     },
     {
       "id": "US-BABY-SAME-LIST",
-      "status": "provisional_do_not_publish",
-      "blocker": "printed Drug Facts comparison (scripts/verify_same_list.py) not run for every candidate pair",
+      "status": "verified",
+      "blocker": null,
       "candidates_structured": 89,
       "jurisdiction": "US",
       "ingredient_slugs": [],
