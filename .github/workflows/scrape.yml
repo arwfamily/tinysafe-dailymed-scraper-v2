@@ -179,7 +179,7 @@ jobs:
             git add data/smoke/summary.json
             git diff --cached --quiet && exit 0
             git commit -m "smoke: label-field summary (limit=${{ steps.mode.outputs.limit }})"
-            git pull --rebase origin "${GITHUB_REF#refs/heads/}" && git push origin HEAD:"${GITHUB_REF#refs/heads/}"
+            git pull --rebase --autostash origin "${GITHUB_REF#refs/heads/}" && git push origin HEAD:"${GITHUB_REF#refs/heads/}"
             exit 0
           fi
           git config user.name  "github-actions[bot]"
