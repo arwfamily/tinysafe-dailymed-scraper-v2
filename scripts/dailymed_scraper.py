@@ -198,23 +198,43 @@ SUN_TITLE = re.compile(
 
 
 def enumerate_all_spls(max_pages=0):
-    """Every OTC-monograph SPL listing (C200263, ~42k), page by page (max_pages=0: all)."""
-    page, out = 1, []
-    while True:
-        d = http_json(f"{BASE}/spls.json?marketing_category_code=C200263&pagesize=100&page={page}")
-        if not d:
-            break
-        rows = d.get("data", []) or []
-        out += [{"setid": x.get("setid"), "title": x.get("title", "")} for x in rows]
-        meta = d.get("metadata", {}) or {}
-        total = int(meta.get("total_pages", page) or page)
-        if page == 1:
-            print(f"[A2] enumerating {meta.get('total_elements')} SPLs in {total} pages", flush=True)
-        if page >= total or (max_pages and page >= max_pages) or not rows:
-            break
-        page += 1
-        time.sleep(0.2)
-    return out
+    """Every SPL listing in DailyMed (all ~159k, every marketing category: old
+    'monograph final/not final' codes included), page by page. A page that
+    fails after retries is retried once more at the end; if more than 0.5% of
+    pages are still missing the run stops instead of publishing a partial net."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    def page(n):
+        for attempt in range(3):
+            d = http_json(f"{BASE}/spls.json?pagesize=100&page={n}")
+            if d and isinstance(d.get("data"), list):
+                return n, d
+            time.sleep(5 * (attempt + 1))
+        return n, None
+
+    _, first = page(1)
+    if not first:
+        raise SystemExit("[A2] DailyMed listing unavailable")
+    meta = first["metadata"]
+    total = int(meta["total_pages"])
+    if max_pages:
+        total = min(total, max_pages)
+    print(f"[A2] enumerating {meta['total_elements']} SPLs in {meta['total_pages']} pages", flush=True)
+    got = {1: first}
+    with ThreadPoolExecutor(3) as ex:
+        for n, d in ex.map(page, range(2, total + 1)):
+            if d:
+                got[n] = d
+    for n in [n for n in range(1, total + 1) if n not in got]:
+        _, d = page(n)
+        if d:
+            got[n] = d
+    missing = [n for n in range(1, total + 1) if n not in got]
+    print(f"[A2] pages read {len(got)}/{total}; missing {missing[:20]}", flush=True)
+    if len(missing) > 0.005 * total:
+        raise SystemExit(f"[A2] {len(missing)} listing pages unreadable; refusing a partial run")
+    return [{"setid": x.get("setid"), "title": x.get("title", "")}
+            for n in sorted(got) for x in got[n]["data"]]
 
 
 # ---------- Phase C: active ingredients (UNII 포함) ----------
