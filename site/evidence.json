@@ -1,7 +1,7 @@
 {
  "built_on": "2026-10-08",
- "generated_at": "2026-10-08T16:28:03Z",
- "commit": "403b5c2",
+ "generated_at": "2026-10-08T16:55:42Z",
+ "commit": "73c276a",
  "contract": "docs/SITE_DATA_CONTRACT.md",
  "jurisdictions": [
   "US",
@@ -62,8 +62,8 @@
     {
      "id": "US-BABY-ACTIVE-zinc-oxide",
      "status": "verified",
-     "sentence": "174 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name zinc oxide as an active ingredient.",
-     "numerator": 174,
+     "sentence": "175 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name zinc oxide as an active ingredient.",
+     "numerator": 175,
      "denominator": 356,
      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
      "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
@@ -78,9 +78,9 @@
     {
      "id": "US-BABY-MINERAL-ZNO",
      "status": "verified",
-     "sentence": "160 of the 163 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain zinc oxide.",
-     "numerator": 160,
-     "denominator": 163,
+     "sentence": "161 of the 164 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain zinc oxide.",
+     "numerator": 161,
+     "denominator": 164,
      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason); mineral-only actives (zinc oxide and/or titanium dioxide)",
      "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
      "source": {
@@ -287,8 +287,8 @@
     {
      "id": "US-BABY-ACTIVE-avobenzone",
      "status": "verified",
-     "sentence": "164 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name avobenzone as an active ingredient.",
-     "numerator": 164,
+     "sentence": "163 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name avobenzone as an active ingredient.",
+     "numerator": 163,
      "denominator": 356,
      "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
      "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
@@ -525,6 +525,82 @@
       "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
       "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
       "snapshot": "2026-10-05"
+     }
+    },
+    {
+     "id": "US-BABY-HOMOSALATE-EU",
+     "status": "verified",
+     "sentence": "143 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain homosalate above 7.34%, the highest level the EU allows. The EU allows it only in face products; the US allows up to 15% in any sunscreen.",
+     "numerator": 143,
+     "denominator": 356,
+     "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+     "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+     "source": {
+      "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+      "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+      "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+      "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+      "snapshot": "2026-10-05"
+     },
+     "legal_framing": "Legal in the US: the US monograph allows homosalate up to 15%. The EU and the US set different limits; this finding compares them. It does not say any product breaks a rule where it is sold.",
+     "ingredient_source": {
+      "title": "EU Cosmetics Regulation Annex VI entry 3 (homosalate), as amended by Regulation (EU) 2022/2195",
+      "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+      "checked": "2026-10-08"
+     },
+     "detail": {
+      "homosalate_formulas": 154,
+      "excluded_unreliable_percent": 2,
+      "by_percent": [
+       [
+        "15",
+        40
+       ],
+       [
+        "14.7",
+        1
+       ],
+       [
+        "13",
+        18
+       ],
+       [
+        "12",
+        5
+       ],
+       [
+        "10.7",
+        2
+       ],
+       [
+        "10",
+        65
+       ],
+       [
+        "9.8",
+        1
+       ],
+       [
+        "9",
+        10
+       ],
+       [
+        "8.587",
+        1
+       ],
+       [
+        "6",
+        1
+       ],
+       [
+        "5",
+        7
+       ],
+       [
+        "1.5",
+        1
+       ]
+      ]
      }
     }
    ]
@@ -1441,12 +1517,115 @@
  ],
  "findings": [
   {
+   "finding": "fda-more-data",
+   "id": "US-BABY-FDA-MORE-DATA",
+   "status": "verified",
+   "sentence": "192 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain at least one of the 12 active ingredients the FDA says it needs more safety data on. 152 of them contain four or more.",
+   "numerator": 192,
+   "denominator": 356,
+   "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+   "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+   "source": {
+    "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+    "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+    "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+    "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+    "snapshot": "2026-10-05"
+   },
+   "legal_framing": "Legal today: all 12 ingredients are permitted under the current US sunscreen monograph. The FDA has proposed that they need more data before they can be recognized as safe and effective. The finding is about what labels contain, not about any brand.",
+   "ingredient_source": {
+    "title": "FDA — Questions and Answers: FDA's regulatory actions on over-the-counter sunscreen",
+    "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
+    "checked": "2026-10-08"
+   },
+   "detail": {
+    "four_or_more": 152
+   }
+  },
+  {
+   "finding": "homosalate-eu-limit",
+   "id": "US-BABY-HOMOSALATE-EU",
+   "status": "verified",
+   "sentence": "143 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain homosalate above 7.34%, the highest level the EU allows. The EU allows it only in face products; the US allows up to 15% in any sunscreen.",
+   "numerator": 143,
+   "denominator": 356,
+   "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
+   "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+   "source": {
+    "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+    "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+    "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_review_2026-10-08.csv",
+    "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+    "snapshot": "2026-10-05"
+   },
+   "legal_framing": "Legal in the US: the US monograph allows homosalate up to 15%. The EU and the US set different limits; this finding compares them. It does not say any product breaks a rule where it is sold.",
+   "ingredient_source": {
+    "title": "EU Cosmetics Regulation Annex VI entry 3 (homosalate), as amended by Regulation (EU) 2022/2195",
+    "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+    "checked": "2026-10-08"
+   },
+   "detail": {
+    "homosalate_formulas": 154,
+    "excluded_unreliable_percent": 2,
+    "by_percent": [
+     [
+      "15",
+      40
+     ],
+     [
+      "14.7",
+      1
+     ],
+     [
+      "13",
+      18
+     ],
+     [
+      "12",
+      5
+     ],
+     [
+      "10.7",
+      2
+     ],
+     [
+      "10",
+      65
+     ],
+     [
+      "9.8",
+      1
+     ],
+     [
+      "9",
+      10
+     ],
+     [
+      "8.587",
+      1
+     ],
+     [
+      "6",
+      1
+     ],
+     [
+      "5",
+      7
+     ],
+     [
+      "1.5",
+      1
+     ]
+    ]
+   }
+  },
+  {
    "finding": "butyloctyl-salicylate",
    "id": "US-BABY-BOS",
    "status": "verified",
-   "sentence": "44 of the 163 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not an FDA sunscreen active ingredient; its manufacturer says it can contribute to SPF (no more than 2 SPF units at 5%) and help prevent some UV filters from breaking down.",
-   "numerator": 44,
-   "denominator": 163,
+   "sentence": "45 of the 164 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not an FDA sunscreen active ingredient; its manufacturer says it can contribute to SPF (no more than 2 SPF units at 5%) and help prevent some UV filters from breaking down.",
+   "numerator": 45,
+   "denominator": 164,
    "population": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason); mineral-only actives (zinc oxide and/or titanium dioxide)",
    "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
    "source": {
@@ -1467,7 +1646,7 @@
  "registry_population": {
   "definition": "unique formulations of sunscreen labels that say baby or kids (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason)",
   "formulations": 356,
-  "mineral_only": 163,
+  "mineral_only": 164,
   "review_file": "baby_review_2026-10-08.csv",
   "snapshot": "2026-10-05"
  }

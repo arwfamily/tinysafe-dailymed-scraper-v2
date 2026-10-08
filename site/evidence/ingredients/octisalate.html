@@ -105,6 +105,17 @@ details p{margin:10px 0 0;max-width:64ch}
 .srclist{list-style:none;padding:0;margin:0;font-size:15px}
 .srclist li{padding:12px 0;border-bottom:1px solid var(--line)}
 .srclist span{display:block;font-size:13px;color:var(--grey)}
+.minis{display:grid;gap:14px;margin-top:14px}@media(min-width:720px){.minis{grid-template-columns:1fr 1fr}}
+.card.mini{display:flex;flex-direction:column;gap:10px;text-decoration:none;padding:24px}
+.card.mini:hover{border-color:var(--ink)}.card.mini h3{font-size:22px}.card.mini .fig{font-size:44px}.card.mini .more{margin-top:auto}
+.bars{list-style:none;padding:0;margin:0;display:grid;gap:8px;max-width:720px}
+.bars li{display:grid;grid-template-columns:minmax(120px,190px) 1fr 44px;gap:12px;align-items:center;font-size:15px}
+.bars.pct li{grid-template-columns:64px 1fr 44px}
+.bars a{text-decoration:none}.bars a:hover{text-decoration:underline}
+.bars .bar{height:10px;border-radius:999px;background:var(--soft);overflow:hidden;display:block}
+.bars .bar i{display:block;height:100%;background:var(--grey);border-radius:999px}
+.bars:not(.pct) .bar i,.bars .bar i.over{background:var(--ink)}
+.bars b{font-weight:500;text-align:right;font-variant-numeric:tabular-nums}
 footer{margin-top:56px;padding:40px 0 70px;font-size:13px;color:var(--grey);background:var(--hair);box-shadow:0 0 0 100vmax var(--hair);clip-path:inset(0 -100vmax)}
 footer .word{font-size:20px;color:var(--ink)}
 footer p{margin:10px 0 0;max-width:72ch}
@@ -112,7 +123,7 @@ footer p{margin:10px 0 0;max-width:72ch}
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Octisalate in sunscreen: legal limits and US baby label data", "url": "https://arwhouse.com/evidence/ingredients/octisalate", "dateModified": "2026-10-08", "author": {"@type": "Person", "name": "Angela Lee", "jobTitle": "Founder", "worksFor": {"@type": "Organization", "name": "ARW House", "url": "https://arwhouse.com"}}, "publisher": {"@type": "Organization", "name": "ARW House", "url": "https://arwhouse.com"}, "about": {"@type": "ChemicalSubstance", "name": "Octisalate", "alternateName": ["ETHYLHEXYL SALICYLATE", "OCTYL SALICYLATE"]}, "citation": ["https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf", "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf", "https://www.legislation.gov.au/F2026L00707/asmade"]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the maximum concentration of octisalate allowed in sunscreen?", "acceptedAnswer": {"@type": "Answer", "text": "Octisalate: up to 5% in the US; up to 5% in the EU; up to 5% in Australia."}}, {"@type": "Question", "name": "How many US baby and kids sunscreens list octisalate as an active ingredient?", "acceptedAnswer": {"@type": "Answer", "text": "181 of the 356 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octisalate as an active ingredient."}}]}</script>
 </head><body>
 <div class="wrap">
-<header class="top"><a class="word" href="/"><svg class="arch" viewBox="0 0 64 96" fill="none" aria-hidden="true"><path d="M9 94V36a23 23 0 0 1 46 0v58" stroke="currentColor" stroke-width="6" stroke-linecap="square"/><circle cx="44" cy="60" r="3.4" fill="currentColor"/></svg>ARW House <em>Evidence</em></a><nav><a href="/evidence">Library</a><a href="/evidence/findings/butyloctyl-salicylate">Findings</a><a href="/evidence/methodology">Method</a></nav></header>
+<header class="top"><a class="word" href="/"><svg class="arch" viewBox="0 0 64 96" fill="none" aria-hidden="true"><path d="M9 94V36a23 23 0 0 1 46 0v58" stroke="currentColor" stroke-width="6" stroke-linecap="square"/><circle cx="44" cy="60" r="3.4" fill="currentColor"/></svg>ARW House <em>Evidence</em></a><nav><a href="/evidence">Library</a><a href="/evidence/findings">Findings</a><a href="/evidence/methodology">Method</a></nav></header>
 
 <p class="crumb"><a href="/evidence">Library</a> / Octisalate</p>
 <div class="hero" style="padding-top:28px"><p class="eyebrow">Organic UV filter</p>

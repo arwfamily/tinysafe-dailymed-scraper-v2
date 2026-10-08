@@ -32,9 +32,21 @@ SITE = "https://arwhouse.com"
 BASE = "/evidence"
 REPO = "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2"
 
-FINDING_TITLES = {
-    "butyloctyl-salicylate": "Butyloctyl salicylate in mineral baby sunscreens",
+FINDINGS = {  # display order = dict order
+    "fda-more-data": {
+        "title": "Over half of baby sunscreen formulas use an ingredient the FDA wants more safety data on",
+        "eyebrow": "Finding · US labels × FDA review",
+        "caption": "Each door is one baby or kids formula. Filled: contains at least one of the 12 ingredients."},
+    "homosalate-eu-limit": {
+        "title": "Homosalate in baby sunscreens: US levels vs the EU limit",
+        "eyebrow": "Finding · US labels × EU law",
+        "caption": "Each door is one baby or kids formula. Filled: homosalate above 7.34%."},
+    "butyloctyl-salicylate": {
+        "title": "Butyloctyl salicylate in mineral baby sunscreens",
+        "eyebrow": "Finding · US labels",
+        "caption": "Each door is one mineral baby or kids formula. Filled: contains butyloctyl salicylate."},
 }
+FINDING_TITLES = {k: v["title"] for k, v in FINDINGS.items()}
 JUR_NAME = {"US": "United States", "EU": "European Union", "AU": "Australia"}
 JUR_BODY = {"US": "FDA", "EU": "European Commission", "AU": "TGA"}
 ROLE = {"uv_filter_mineral": "Mineral UV filter", "uv_filter_organic": "Organic UV filter"}
@@ -44,6 +56,7 @@ FORBIDDEN = [
     "sold in the us", "hand-reviewed", "reviewed one by one", "product by product",
     "chemical uv filter", "boosts spf", "reef safe", "safest", "best sunscreen",
 ]
+FDA_QA_URL = "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen"
 DRUG_FACTS = {"title": "21 CFR 201.66 — Format and content requirements for OTC drug product labeling (Drug Facts)",
               "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-201/subpart-C/section-201.66"}
 
@@ -264,6 +277,17 @@ details p{margin:10px 0 0;max-width:64ch}
 .srclist{list-style:none;padding:0;margin:0;font-size:15px}
 .srclist li{padding:12px 0;border-bottom:1px solid var(--line)}
 .srclist span{display:block;font-size:13px;color:var(--grey)}
+.minis{display:grid;gap:14px;margin-top:14px}@media(min-width:720px){.minis{grid-template-columns:1fr 1fr}}
+.card.mini{display:flex;flex-direction:column;gap:10px;text-decoration:none;padding:24px}
+.card.mini:hover{border-color:var(--ink)}.card.mini h3{font-size:22px}.card.mini .fig{font-size:44px}.card.mini .more{margin-top:auto}
+.bars{list-style:none;padding:0;margin:0;display:grid;gap:8px;max-width:720px}
+.bars li{display:grid;grid-template-columns:minmax(120px,190px) 1fr 44px;gap:12px;align-items:center;font-size:15px}
+.bars.pct li{grid-template-columns:64px 1fr 44px}
+.bars a{text-decoration:none}.bars a:hover{text-decoration:underline}
+.bars .bar{height:10px;border-radius:999px;background:var(--soft);overflow:hidden;display:block}
+.bars .bar i{display:block;height:100%;background:var(--grey);border-radius:999px}
+.bars:not(.pct) .bar i,.bars .bar i.over{background:var(--ink)}
+.bars b{font-weight:500;text-align:right;font-variant-numeric:tabular-nums}
 footer{margin-top:56px;padding:40px 0 70px;font-size:13px;color:var(--grey);background:var(--hair);box-shadow:0 0 0 100vmax var(--hair);clip-path:inset(0 -100vmax)}
 footer .word{font-size:20px;color:var(--ink)}
 footer p{margin:10px 0 0;max-width:72ch}
@@ -272,7 +296,7 @@ footer p{margin:10px 0 0;max-width:72ch}
 
 def shell(path, title, description, body, ld, current=""):
     canon = SITE + path
-    nav = [("Library", BASE), ("Findings", f"{BASE}/findings/butyloctyl-salicylate"), ("Method", f"{BASE}/methodology")]
+    nav = [("Library", BASE), ("Findings", f"{BASE}/findings"), ("Method", f"{BASE}/methodology")]
     cur = ' aria-current="page"'
     navh = "".join(f'<a href="{u}"{cur if current == n else ""}>{n}</a>' for n, u in nav)
     return f"""<!doctype html>
@@ -317,17 +341,15 @@ def page_index(d, notes):
         rows.append(f'<tr><td class="name"><a href="{BASE}/ingredients/{i["slug"]}">{E(i["name"])}</a>'
                     f'<span>{E(ROLE.get(i["role"], ""))}</span></td>{"".join(tds)}</tr>')
     legend = "".join(f"<li>{glyph(k)}{E(v)}</li>" for k, v in STATUS_WORD.items())
-    f = d["findings"][0] if d["findings"] else None
+    fs = ordered_findings(d)
     finding_html = ""
-    if f:
+    if fs:
+        minis = "".join(finding_card(f, big=False) for f in fs[1:])
         finding_html = f"""
-<section><p class="eyebrow">Finding</p>
-<div class="card finding">
- <div>{units(f["numerator"], f["denominator"], 21, f'{f["numerator"]} of {f["denominator"]}')}
-  <p class="fine">Each door is one mineral baby or kids formula. Filled: contains butyloctyl salicylate.</p></div>
- <div><p class="sentence">{E(f["sentence"])}</p>
-  <a class="more" href="{BASE}/findings/{f["finding"]}">Read the finding →</a></div>
-</div></section>"""
+<section><p class="eyebrow">Findings</p><h2>What the labels show</h2>
+{finding_card(fs[0])}
+<div class="minis">{minis}</div>
+<a class="more" href="{BASE}/findings">All findings →</a></section>"""
     site_notes = "".join(
         f'<section><div class="notebox"><h3>{E(n["heading"])}</h3><p>{E(n["text"])}</p>'
         f'<div class="chips">{src_chip("FDA", n["source"]["url"], n["source"]["title"])}</div></div></section>'
@@ -343,12 +365,12 @@ def page_index(d, notes):
  <div><div class="fig">{pop["formulations"]}</div><div class="figcap">baby and kids sunscreen formulas read from FDA DailyMed</div></div>
  <div><div class="fig">{pop["mineral_only"]}</div><div class="figcap">of them use only mineral actives</div></div>
 </div>
+{finding_html}
 <section><h2>The limits</h2>
 <p class="fine" style="margin:0 0 18px">Maximum concentration of each filter in a finished sunscreen. Tap a filter for conditions, notes and the full source.</p>
 <ul class="legend">{legend}</ul>
 <table class="matrix"><thead><tr><th>Filter</th><th>United States</th><th>European Union</th><th>Australia</th></tr></thead>
 <tbody>{"".join(rows)}</tbody></table></section>
-{finding_html}
 {site_notes}
 """
     ld = [{"@context": "https://schema.org", "@type": "Dataset",
@@ -440,50 +462,171 @@ def page_ingredient(d, i, prev, nxt, notes):
                        i["summary"] + (" " + reg[0]["sentence"] if reg else ""), body, ld)
 
 
-def page_finding(d, f):
+def _lim(d, slug, jur):
+    for i in d["ingredients"]:
+        if i["slug"] == slug:
+            for l in i["limits"]:
+                if l["jurisdiction"] == jur:
+                    return l
+    return None
+
+
+def _reg(d, slug):
+    for i in d["ingredients"]:
+        if i["slug"] == slug:
+            for r in i["registry"]:
+                if r["id"] == f"US-BABY-ACTIVE-{slug}":
+                    return i, r
+    return None, None
+
+
+FDA12 = ["avobenzone", "cinoxate", "dioxybenzone", "ensulizole", "homosalate", "meradimate", "octinoxate",
+         "octisalate", "octocrylene", "oxybenzone", "padimate-o", "sulisobenzone"]
+
+
+def finding_body(d, f):
+    """Per-finding explanation. Every sentence here restates a cited source or
+    a verified number from evidence.json; chips link the source in place."""
     pop = d["registry_population"]
+    key = f["finding"]
+    isrc = f.get("ingredient_source") or {}
+    howto = (f"Population: {pop['definition']}. That is {pop['formulations']} unique formulations, of which "
+             f"{pop['mineral_only']} use only mineral actives (zinc oxide and/or titanium dioxide).")
+    if key == "fda-more-data":
+        rows = []
+        for slug in FDA12:
+            i, r = _reg(d, slug)
+            if r and r["numerator"] > 0:
+                rows.append((r["numerator"], i, r))
+        rows.sort(key=lambda x: -x[0])
+        bars = "".join(
+            f'<li><a href="{BASE}/ingredients/{i["slug"]}">{E(i["name"])}</a>'
+            f'<span class="bar"><i style="width:{100 * n / r["denominator"]:.1f}%"></i></span><b>{n}</b></li>'
+            for n, i, r in rows)
+        zero = [(_reg(d, s)[0] or {}).get("name", s) for s in FDA12 if (_reg(d, s)[1] or {}).get("numerator") == 0]
+        mean = f"""
+<p>The FDA has proposed that 12 sunscreen active ingredients are not GRASE (generally recognized as safe and effective) because the public record does not contain sufficient data to support a positive determination, and it is asking for safety data on them. {src_chip("FDA", FDA_QA_URL, "FDA Q&A on OTC sunscreen")}</p>
+<p>For zinc oxide and titanium dioxide, the FDA says its review of publicly available evidence found sufficient safety data. {src_chip("FDA", FDA_QA_URL, "FDA Q&A on OTC sunscreen")}</p>
+<p>All 12 remain permitted under the current US monograph, at the limits shown on each ingredient page.</p>"""
+        extra = f"""<section><p class="eyebrow">Which of the 12</p><h2>How many of the {f["denominator"]} formulas list each one</h2>
+<ul class="bars">{bars}</ul>
+<p class="fine">{E(", ".join(zero))}: none of the {f["denominator"]}. One formula can contain several; {f["detail"]["four_or_more"]} contain four or more.</p></section>"""
+        faq = [
+            ("Does this mean these sunscreens are unsafe?",
+             "This finding makes no safety judgment. The FDA has proposed that these 12 ingredients need more data before "
+             "they can be recognized as safe and effective, and all 12 remain permitted under the current US monograph."),
+            ("Which sunscreen ingredients does the FDA say have sufficient safety data?",
+             "Zinc oxide and titanium dioxide. The FDA says its review of publicly available evidence found sufficient "
+             "safety data on both."),
+            ("How were these products selected?", howto),
+        ]
+    elif key == "homosalate-eu-limit":
+        us, au, eu = (_lim(d, "homosalate", j) for j in ("US", "AU", "EU"))
+        det = f["detail"]
+        mx = max(v for _, v in det["by_percent"])
+        bars = "".join(
+            f'<li><span>{E(k)}%</span><span class="bar"><i class="{"over" if float(k) > 7.34 else ""}" '
+            f'style="width:{100 * v / mx:.1f}%"></i></span><b>{v}</b></li>' for k, v in det["by_percent"])
+        mean = f"""
+<p>The US monograph permits homosalate up to {fmt_pct(us["max_percent"])} in a sunscreen. {src_chip("FDA M020", us["source"]["url"], us["source"]["title"])} Australia permits up to {fmt_pct(au["max_percent"])}. {src_chip("TGA 2026", au["source"]["url"], au["source"]["title"])}</p>
+<p>In the EU, Regulation (EU) 2022/2195 set the limit at 7.34% and allowed homosalate only in face products, excluding propellant sprays. Products that did not comply could no longer be made available on the EU market from July 1, 2025. {src_chip("EU Annex VI", isrc.get("url", ""), isrc.get("title", ""))}</p>"""
+        extra = f"""<section><p class="eyebrow">Concentrations on the labels</p><h2>Homosalate level in each of the {sum(v for _, v in det["by_percent"])} formulas</h2>
+<ul class="bars pct">{bars}</ul>
+<p class="fine">Filled bars are above 7.34%. {det["excluded_unreliable_percent"]} more formulas with homosalate were left out because their structured label data lists an active ingredient above its US legal maximum, so their percentages cannot be trusted.</p></section>"""
+        faq = [
+            ("Are these sunscreens illegal?", f["legal_framing"]),
+            ("What is the EU limit for homosalate?",
+             "7.34%, and only in face products other than propellant sprays, under Regulation (EU) 2022/2195. "
+             "Non-compliant products could not be made available on the EU market from July 1, 2025."),
+            ("How were these products selected?", howto),
+        ]
+    else:  # butyloctyl-salicylate
+        mean = f"""
+<p>On a US sunscreen, the Active ingredients section of the Drug Facts label lists the product's active ingredients. Butyloctyl salicylate is not an FDA sunscreen active ingredient, so it appears under Inactive ingredients. {src_chip("21 CFR 201.66", DRUG_FACTS["url"], DRUG_FACTS["title"])}</p>
+<p>This finding documents how often that happens in mineral products for babies and kids. It is about how labels work, not about any brand.</p>"""
+        extra = ""
+        faq = [
+            ("Does this mean these products break the law?", f["legal_framing"]),
+            ("Why does it matter where it is listed?",
+             "On a US sunscreen, the Active ingredients section of the Drug Facts label lists the product's active "
+             "ingredients. Butyloctyl salicylate is not an FDA sunscreen active ingredient, so it appears under Inactive "
+             "ingredients. Parents reading only the Active ingredients section will not see it there."),
+            ("How were these products selected?", howto),
+        ]
+    return mean, extra, faq, howto
+
+
+def finding_card(f, big=True):
+    meta = FINDINGS[f["finding"]]
+    cols = 30 if f["denominator"] > 200 else 21
+    if big:
+        return f"""<div class="card finding">
+ <div><div class="fig">{f["numerator"]}<small>of {f["denominator"]}</small></div>
+ {units(f["numerator"], f["denominator"], cols, f'{f["numerator"]} of {f["denominator"]}')}
+ <p class="fine">{E(meta["caption"])}</p></div>
+ <div><p class="eyebrow">{E(meta["eyebrow"])}</p><p class="sentence">{E(f["sentence"])}</p>
+ <a class="more" href="{BASE}/findings/{f["finding"]}">Read the finding →</a></div></div>"""
+    return f"""<a class="card mini" href="{BASE}/findings/{f["finding"]}">
+ <p class="eyebrow">{E(meta["eyebrow"])}</p><div class="fig">{f["numerator"]}<small>of {f["denominator"]}</small></div>
+ <h3>{E(meta["title"])}</h3><span class="more">Read the finding →</span></a>"""
+
+
+def ordered_findings(d):
+    order = list(FINDINGS)
+    return sorted(d["findings"], key=lambda f: order.index(f["finding"]) if f["finding"] in order else 99)
+
+
+def page_finding(d, f):
     s, isrc = f["source"], f.get("ingredient_source") or {}
-    title = FINDING_TITLES[f["finding"]]
-    faq = [
-        ("Does this mean these products break the law?", f["legal_framing"]),
-        ("Why does it matter where it is listed?",
-         "On a US sunscreen, the Active ingredients section of the Drug Facts label lists the product's active "
-         "ingredients. Butyloctyl salicylate is not an FDA sunscreen active ingredient, so it appears under Inactive "
-         "ingredients. Parents reading only the Active ingredients section will not see it there."),
-        ("How were these products selected?",
-         f"The population is {pop['definition']}. That is {pop['formulations']} unique formulations, of which "
-         f"{pop['mineral_only']} use only mineral actives (zinc oxide and/or titanium dioxide)."),
-    ]
+    meta = FINDINGS[f["finding"]]
+    title = meta["title"]
+    mean, extra, faq, howto = finding_body(d, f)
     faqh = "".join(f"<details><summary>{E(q)}</summary><p>{E(a)}</p></details>" for q, a in faq)
+    src_label = {"butyloctyl-salicylate": "Manufacturer source", "fda-more-data": "FDA source",
+                 "homosalate-eu-limit": "EU law"}.get(f["finding"], "Source")
     body = f"""
-<p class="crumb"><a href="{BASE}">Library</a> / Findings</p>
-<div class="hero" style="padding-top:28px"><p class="eyebrow">Finding · US labels</p>
+<p class="crumb"><a href="{BASE}">Library</a> / <a href="{BASE}/findings">Findings</a></p>
+<div class="hero" style="padding-top:28px"><p class="eyebrow">{E(meta["eyebrow"])}</p>
 <h1>{E(title)}</h1>
 <p class="byline">By Angela Lee, Founder · ARW House · Updated {E(fmt_date(d["built_on"]))}</p></div>
 <section><div class="card finding">
  <div><div class="fig">{f["numerator"]}<small>of {f["denominator"]}</small></div>
- {units(f["numerator"], f["denominator"], 21, f'{f["numerator"]} of {f["denominator"]}')}
- <p class="fine">Each door is one mineral baby or kids formula. Filled: contains butyloctyl salicylate.</p></div>
+ {units(f["numerator"], f["denominator"], 30 if f["denominator"] > 200 else 21, f'{f["numerator"]} of {f["denominator"]}')}
+ <p class="fine">{E(meta["caption"])}</p></div>
  <div><p class="sentence">{E(f["sentence"])}</p>
- <div class="chips">{src_chip("Manufacturer source", isrc.get("url", ""), isrc.get("title", ""))}{src_chip("Registry data", s["url"])}{src_chip("Review file", s["list_url"])}{src_chip("Method", s["method_url"])}</div>
+ <div class="chips">{src_chip(src_label, isrc.get("url", ""), isrc.get("title", ""))}{src_chip("Registry data", s["url"])}{src_chip("Review file", s["list_url"])}{src_chip("Method", s["method_url"])}</div>
  <p class="framing">{E(f["legal_framing"])}</p>
  <p class="fine">{E(f["caveat"])}</p></div></div></section>
-<section class="cols prose"><div><h2>How we counted</h2>
-<p>Population: {E(pop["definition"])}. That is {pop["formulations"]} unique formulations, of which {pop["mineral_only"]} use only mineral actives (zinc oxide and/or titanium dioxide). DailyMed snapshot {E(pop["snapshot"])}.</p>
-<p><a href="{E(s["list_url"])}">Every include and exclude decision, with its reason</a> · <a href="{E(s["method_url"])}">The counting script</a></p></div>
-<div><h2>What this means</h2>
-<p>On a US sunscreen, the Active ingredients section of the Drug Facts label lists the product's active ingredients. Butyloctyl salicylate is not an FDA sunscreen active ingredient, so it appears under Inactive ingredients. {src_chip("21 CFR 201.66", DRUG_FACTS["url"], DRUG_FACTS["title"])}</p>
-<p>This finding documents how often that happens in mineral products for babies and kids. It is about how labels work, not about any brand.</p></div></section>
+{extra}
+<section class="cols prose"><div><h2>What this means</h2>{mean}</div>
+<div><h2>How we counted</h2><p>{E(howto)} DailyMed snapshot {E(d["registry_population"]["snapshot"])}.</p>
+<p><a href="{E(s["list_url"])}">Every include and exclude decision, with its reason</a> · <a href="{E(s["method_url"])}">The counting script</a> · <a href="{REPO}/blob/main/data/corrections/spl_label_errors.jsonl">Label errors we corrected</a></p></div></section>
 <section><h2>Questions</h2>{faqh}</section>"""
     path = f"{BASE}/findings/{f['finding']}"
-    ld = [{"@context": "https://schema.org", "@type": "Dataset", "name": title,
-           "description": f"{f['numerator']} of {f['denominator']} mineral baby and kids sunscreen formulas in FDA DailyMed contain butyloctyl salicylate, which is not an FDA sunscreen active ingredient and is listed among the inactive ingredients.",
+    ld = [{"@context": "https://schema.org", "@type": "Dataset", "name": title, "description": f["sentence"],
            "url": SITE + path, "dateModified": d["built_on"], "creator": org(), "author": person(),
-           "isBasedOn": [s["url"], s["list_url"], isrc.get("url", "")],
+           "isBasedOn": [u for u in (s["url"], s["list_url"], isrc.get("url", "")) if u],
            "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE + BASE + "/data.json"}]},
           {"@context": "https://schema.org", "@type": "FAQPage",
            "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}]
     return path, shell(path, f"{title} · ARW House Evidence", f["sentence"], body, ld, "Findings")
+
+
+def page_findings_index(d):
+    fs = ordered_findings(d)
+    cards = "".join(f'<section>{finding_card(f)}</section>' for f in fs)
+    body = f"""
+<div class="hero"><p class="eyebrow">Findings</p><h1>What the labels show, <em>counted.</em></h1>
+<p class="lede">Each finding is a count of US baby and kids sunscreen labels, checked against the rules that apply to them. Every number links to its data and every rule to its source.</p>
+<p class="byline">By Angela Lee, Founder · ARW House · Updated {E(fmt_date(d["built_on"]))}</p></div>
+{cards}"""
+    path = f"{BASE}/findings"
+    ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Findings — ARW House Evidence",
+           "url": SITE + path, "dateModified": d["built_on"], "author": person(), "publisher": org(),
+           "hasPart": [{"@type": "Dataset", "name": FINDINGS[f["finding"]]["title"], "url": f"{SITE}{BASE}/findings/{f['finding']}"} for f in fs]}]
+    return path, shell(path, "Findings — baby sunscreen labels, counted · ARW House Evidence",
+                       "Counts of US baby and kids sunscreen labels checked against FDA and EU rules, each linked to its data and sources.",
+                       body, ld, "Findings")
 
 
 def page_method(d, notes):
@@ -567,9 +710,11 @@ def main():
     for k, i in enumerate(ings):
         p, h = page_ingredient(d, i, ings[k - 1] if k else None, ings[k + 1] if k + 1 < len(ings) else None, notes)
         pages[p] = h
-    for f in d["findings"]:
+    for f in ordered_findings(d):
         p, h = page_finding(d, f)
         pages[p] = h
+    p, h = page_findings_index(d)
+    pages[p] = h
     p, h = page_method(d, notes)
     pages[p] = h
     errs = check(pages, d, notes)

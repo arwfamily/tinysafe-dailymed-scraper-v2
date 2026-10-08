@@ -12,6 +12,7 @@ Every number here is recomputed from two files in this repo; nothing is typed
 by hand. Run after any data refresh:
   python claims/registry_stats.py
 """
+import collections
 import csv
 import glob
 import json
@@ -20,6 +21,19 @@ import os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CANON = os.path.join(ROOT, "data", "canonical", "us_sunscreens.jsonl")
 LEDGER = os.path.join(ROOT, "claims", "claim_ledger.json")
+CORRECTIONS = os.path.join(ROOT, "data", "corrections", "spl_label_errors.jsonl")
+# The 12 actives the FDA has proposed are not GRASE because more data are needed
+# (FDA Q&A, content current as of 2026-09-10). Classifier canonical names.
+FDA_MORE_DATA = ["avobenzone", "oxybenzone", "octinoxate", "homosalate", "octisalate", "octocrylene",
+                 "ensulizole", "meradimate", "dioxybenzone", "sulisobenzone", "cinoxate", "padimate O"]
+FDA_QA = {"title": "FDA — Questions and Answers: FDA's regulatory actions on over-the-counter sunscreen",
+          "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
+          "checked": "2026-10-08"}
+EU_HOMOSALATE = {"title": "EU Cosmetics Regulation Annex VI entry 3 (homosalate), as amended by Regulation (EU) 2022/2195",
+                 "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+                 "checked": "2026-10-08"}
+US_MAX = {"avobenzone": 3, "oxybenzone": 6, "octinoxate": 7.5, "homosalate": 15, "octisalate": 5, "octocrylene": 10,
+          "ensulizole": 4, "zinc oxide": 25, "titanium dioxide": 25}
 REPO_URL = "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main"
 
 FILTERS = [  # slug, display name, classifier canonical name
@@ -52,6 +66,18 @@ def load():
         include = {r["setid"] for r in csv.DictReader(f) if r["decision"] == "include"}
     recs = [json.loads(l) for l in open(CANON, encoding="utf-8") if l.strip()]
     snapshot = max(r.get("last_seen") or "" for r in recs)
+    # Labels whose SPL structured data contradicts their own Drug Facts text.
+    # Each correction carries its evidence; see data/corrections/.
+    fixes = {}
+    if os.path.exists(CORRECTIONS):
+        for l in open(CORRECTIONS, encoding="utf-8"):
+            if l.strip():
+                c = json.loads(l)
+                fixes[c["setid"]] = c
+    for r in recs:
+        if r["setid"] in fixes:
+            r.update(fixes[r["setid"]]["use"])
+            r["_corrected"] = True
     baby = [r for r in recs if r["setid"] in include]
     uniq = {}
     for r in sorted(baby, key=lambda r: r["setid"]):
@@ -93,6 +119,54 @@ def main():
                                      f"in the FDA's DailyMed label database name {name} as an active ingredient."),
             "numerator": n, "denominator": N, "population": POP,
             "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py", "verified_date": snapshot})
+    def pct(r, word):
+        for a in r.get("active_ingredients") or []:
+            if word in (a.get("name") or "").upper():
+                return a.get("percent_ww")
+        return None
+
+    def suspect(r):
+        """Structured data with an active above its US legal maximum is a coding
+        error or a foreign-market label; never use its percentages."""
+        return any((pct(r, n.upper()) or 0) > mx + 0.01 for n, mx in US_MAX.items())
+
+    orgs = lambda r: set(r.get("uv_filters_organic") or [])
+    more_data = [r for r in forms if orgs(r) & set(FDA_MORE_DATA)]
+    four_plus = sum(1 for r in more_data if len(orgs(r) & set(FDA_MORE_DATA)) >= 4)
+    homo = [r for r in forms if "homosalate" in orgs(r)]
+    homo_ok = [r for r in homo if not suspect(r) and pct(r, "HOMOSALATE") is not None]
+    homo_eu = sum(1 for r in homo_ok if pct(r, "HOMOSALATE") > 7.34)
+    by_percent = [[k, v] for k, v in sorted(collections.Counter(f"{pct(r, 'HOMOSALATE'):g}" for r in homo_ok).items(),
+                                           key=lambda kv: -float(kv[0]))]
+    claims += [
+        {"id": "US-BABY-FDA-MORE-DATA", "status": "verified", "jurisdiction": "US",
+         "ingredient_slugs": [], "finding": "fda-more-data",
+         "claim": f"{len(more_data)} of {N} baby/kids sunscreen formulations contain at least one of the 12 actives the FDA has asked for more data on.",
+         "publishable_sentence": (f"{len(more_data)} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed "
+                                  f"label database contain at least one of the 12 active ingredients the FDA says it needs more "
+                                  f"safety data on. {four_plus} of them contain four or more."),
+         "ingredient_source": FDA_QA,
+         "legal_framing": ("Legal today: all 12 ingredients are permitted under the current US sunscreen monograph. "
+                           "The FDA has proposed that they need more data before they can be recognized as safe and "
+                           "effective. The finding is about what labels contain, not about any brand."),
+         "numerator": len(more_data), "denominator": N, "population": POP,
+         "detail": {"four_or_more": four_plus},
+         "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py", "verified_date": snapshot},
+        {"id": "US-BABY-HOMOSALATE-EU", "status": "verified", "jurisdiction": "US",
+         "ingredient_slugs": ["homosalate"], "finding": "homosalate-eu-limit",
+         "claim": f"{homo_eu} of {N} baby/kids sunscreen formulations contain homosalate above 7.34%.",
+         "publishable_sentence": (f"{homo_eu} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed "
+                                  f"label database contain homosalate above 7.34%, the highest level the EU allows. "
+                                  f"The EU allows it only in face products; the US allows up to 15% in any sunscreen."),
+         "ingredient_source": EU_HOMOSALATE,
+         "legal_framing": ("Legal in the US: the US monograph allows homosalate up to 15%. The EU and the US set "
+                           "different limits; this finding compares them. It does not say any product breaks a rule "
+                           "where it is sold."),
+         "numerator": homo_eu, "denominator": N, "population": POP,
+         "detail": {"homosalate_formulas": len(homo), "excluded_unreliable_percent": len(homo) - len(homo_ok),
+                    "by_percent": by_percent},
+         "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py", "verified_date": snapshot},
+    ]
     mineral = [r for r in forms if r.get("is_mineral_only_actives")]
     M = len(mineral)
     zno = sum(1 for r in mineral if r.get("contains_zinc_oxide"))
