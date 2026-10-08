@@ -119,14 +119,17 @@ def formulation_fingerprint(rec):
     """
     Canonical representation of the FORMULA only.
       actives   : sorted (registration order carries no meaning) + strength
-      inactives : original order preserved (order encodes concentration ranking)
+      inactives : as a sorted set (SPL table order is entry order, not concentration)
       dosage    : included — lotion vs stick is a formulation fact
     """
     actives = sorted(
         f"{ing_key(a)}@{strength_key(a)}"
         for a in (rec.get("active_ingredients") or [])
     )
-    inactives = [ing_key(i) for i in (rec.get("inactive_ingredients") or [])]
+    # Sorted: the SPL inactive table order is the filer's entry order, not the
+    # printed concentration order (verified 2026-10-08, Alba Botanica Kids:
+    # structured order differs from Drug Facts), so order is noise for identity.
+    inactives = sorted({ing_key(i) for i in (rec.get("inactive_ingredients") or [])})
     dosage = (rec.get("dosage_form") or "").strip().upper()
     payload = {"actives": actives, "inactives": inactives, "dosage": dosage}
     blob = json.dumps(payload, sort_keys=True, ensure_ascii=False)

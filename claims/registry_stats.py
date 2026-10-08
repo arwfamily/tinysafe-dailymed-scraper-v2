@@ -61,6 +61,39 @@ FILTERS = [  # slug, display name, classifier canonical name
 ]
 
 
+EXCLUSIONS = os.path.join(ROOT, "claims", "population_exclusions.csv")
+# SPLs that bundle several products but whose record holds one product's data
+# (independent audit 2026-10-08).
+MULTI_PRODUCT_SPL = {
+    "c5d52f13-a649-9579-e053-2a95a90a062c": "kit: nasal spray, acne serum and sunscreen in one listing",
+    "247aae3d-1845-4dd8-b774-b9e8214809a2": "two products in one listing; record holds one product's data",
+    "3c470ff8-37d6-a729-e063-6294a90aa525": "two products in one listing; record holds one product's data",
+    "43a6b8e3-49f7-2ac7-e054-00144ff88e88": "two products in one listing; record holds one product's data",
+    "82771f22-0197-40ba-97d2-2386152790ed": "two products in one listing; first product is an adult spray",
+}
+_US_MAX = {"AVOBENZONE": 3, "OXYBENZONE": 6, "OCTINOXATE": 7.5, "HOMOSALATE": 15, "OCTISALATE": 5,
+           "OCTOCRYLENE": 10, "ENSULIZOLE": 4, "ZINC OXIDE": 25, "TITANIUM DIOXIDE": 25}
+
+
+def population_exclusion(r):
+    """Reason this record is not a US baby sunscreen label as listed, or None."""
+    if r["setid"] in MULTI_PRODUCT_SPL:
+        return "not one sunscreen: " + MULTI_PRODUCT_SPL[r["setid"]]
+    if r.get("non_uv_actives"):
+        return "not one sunscreen: non-sunscreen drug actives " + ", ".join(r["non_uv_actives"])
+    t = r["title"].upper()
+    m = re.search(r"\b(LATAM|FPS|CANADA)\b|OMBRELLE", t)
+    if m:
+        return f"label for another market (title says {m.group(0)})"
+    if r.get("non_us_filter_active"):
+        return "does not meet US rules as listed: active not permitted in the US (" + ", ".join(r["non_us_filter_active"]) + ")"
+    for a in r.get("active_ingredients") or []:
+        mx = _US_MAX.get((a.get("name") or "").upper())
+        if mx is not None and (a.get("percent_ww") or 0) > mx + 0.01:
+            return f"does not meet US rules as listed: {a['name'].lower()} {a['percent_ww']:g}% is above the US limit of {mx:g}%"
+    return None
+
+
 def load():
     review = sorted(glob.glob(os.path.join(ROOT, "claims", "baby_review_*.csv")))[-1]
     with open(review, encoding="utf-8") as f:
@@ -80,6 +113,21 @@ def load():
             r.update(fixes[r["setid"]]["use"])
             r["_corrected"] = True
     baby = [r for r in recs if r["setid"] in include]
+    # Owner population is "labels that say baby or kids". Two kinds of record
+    # are not a US baby sunscreen label and are left out, by rule, with reasons
+    # written to claims/population_exclusions.csv.
+    excl = []
+    for r in baby:
+        why = population_exclusion(r)
+        if why:
+            excl.append((r, why))
+    with open(EXCLUSIONS, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["setid", "title", "reason", "dailymed"])
+        for r, why in sorted(excl, key=lambda x: x[0]["title"]):
+            w.writerow([r["setid"], r["title"], why, r["dailymed_url"]])
+    out = {r["setid"] for r, _ in excl}
+    baby = [r for r in baby if r["setid"] not in out]
     uniq = {}
     for r in sorted(baby, key=lambda r: r["setid"]):
         uniq.setdefault(r["formulation_hash"], r)
@@ -96,7 +144,8 @@ def source(review, snapshot):
 
 POP = ("unique formulations of sunscreen labels that say baby or kids "
        "(FDA DailyMed; selected by rule from the label, with edge cases decided by hand "
-       "and every decision recorded with its reason)")
+       "and every decision recorded with its reason; labels for another market, labels that do not "
+       "meet US sunscreen limits as listed, and multi-product listings left out)")
 POP_MIN = POP + "; mineral-only actives (zinc oxide and/or titanium dioxide)"
 CAVEAT = ("DailyMed lists drug labels submitted to the FDA, including labels for products "
           "made in US facilities for other markets. A listing is not proof that a product "
@@ -183,8 +232,8 @@ def main():
          "ingredient_slugs": [], "finding": "fda-more-data",
          "claim": f"{len(more_data)} of {N} baby/kids sunscreen formulations contain at least one of the 12 actives the FDA has asked for more data on.",
          "publishable_sentence": (f"{len(more_data)} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed "
-                                  f"label database contain at least one of the 12 active ingredients the FDA says it needs more "
-                                  f"safety data on. {four_plus} of them contain four or more."),
+                                  f"label database contain at least one of the 12 active ingredients the FDA has proposed need more "
+                                  f"safety data. {four_plus} of them contain four or more."),
          "ingredient_source": FDA_QA,
          "legal_framing": ("Legal today: all 12 ingredients are permitted under the current US sunscreen monograph. "
                            "The FDA has proposed that they need more data before they can be recognized as safe and "
@@ -197,7 +246,7 @@ def main():
          "claim": f"{homo_eu} of {N} baby/kids sunscreen formulations contain homosalate above 7.34%.",
          "publishable_sentence": (f"{homo_eu} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed "
                                   f"label database contain homosalate above 7.34%, the highest level the EU allows. "
-                                  f"The EU allows it only in face products; the US allows up to 15% in any sunscreen."),
+                                  f"The EU allows it only in face products other than propellant sprays; the US allows up to 15% in any sunscreen."),
          "ingredient_source": EU_HOMOSALATE,
          "legal_framing": ("Legal in the US: the US monograph allows homosalate up to 15%. The EU and the US set "
                            "different limits; this finding compares them. It does not say any product breaks a rule "
@@ -233,9 +282,10 @@ def main():
         "ingredient_slugs": [], "finding": "same-ingredient-list",
         "claim": f"{len(checked_pairs)} of {N} baby/kids formulations print the same ingredient list as a non-baby label.",
         "publishable_sentence": (f"{len(checked_pairs)} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed "
-                                 f"label database print exactly the same ingredients as a sunscreen whose label does not say "
-                                 f"baby or kids: the same active ingredients at the same percentages and the same inactive "
-                                 f"ingredients in the Drug Facts. In at least {n_same_co} cases both labels name the same labeler."),
+                                 f"label database list the same ingredients in their Drug Facts as a sunscreen whose label does "
+                                 f"not say baby or kids: the same active ingredients at the same percentages and the same "
+                                 f"inactive ingredients in the same order. In at least {n_same_co} cases both labels name the "
+                                 f"same labeler."),
         "legal_framing": ("Not a violation: nothing requires a baby or kids sunscreen to have a different formula. "
                           "The finding compares what the label records state; it does not show how the products are made."),
         "numerator": len(checked_pairs), "denominator": N, "population": POP,
@@ -283,8 +333,9 @@ def main():
          "claim": f"{bos} of {M} mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
          "publishable_sentence": (f"{bos} of the {M} mineral baby and kids sunscreen formulas "
                                   f"listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not "
-                                  f"an FDA sunscreen active ingredient; its manufacturer says it can contribute to SPF "
-                                  f"(no more than 2 SPF units at 5%) and help prevent some UV filters from breaking down."),
+                                  f"an FDA sunscreen active ingredient. Hallstar, one of its manufacturers, says that at 5% it is "
+                                  f"responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen "
+                                  f"with other filters, and that it can help prevent the breakdown of certain UV filters."),
          "ingredient_source": {"title": "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)",
                                "url": "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/",
                                "checked": "2026-10-08"},

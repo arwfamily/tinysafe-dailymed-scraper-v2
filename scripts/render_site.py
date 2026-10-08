@@ -34,20 +34,20 @@ REPO = "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2"
 
 FINDINGS = {  # display order = dict order
     "fda-more-data": {
-        "title": "Over half of baby sunscreen formulas use an ingredient the FDA wants more safety data on",
-        "eyebrow": "Finding · US labels × FDA review",
+        "title": "Over half of baby and kids sunscreen labels use an ingredient the FDA has proposed needs more safety data",
+        "eyebrow": "Finding · DailyMed labels × FDA review",
         "caption": "Each door is one baby or kids formula. Filled: contains at least one of the 12 ingredients."},
     "homosalate-eu-limit": {
-        "title": "Homosalate in baby sunscreens: US levels vs the EU limit",
-        "eyebrow": "Finding · US labels × EU law",
+        "title": "Homosalate in baby and kids sunscreen labels: US levels vs the EU limit",
+        "eyebrow": "Finding · DailyMed labels × EU law",
         "caption": "Each door is one baby or kids formula. Filled: homosalate above 7.34%."},
     "same-ingredient-list": {
         "title": "Same ingredient list, different label",
-        "eyebrow": "Finding · US labels × US labels",
-        "caption": "Each door is one baby or kids formula. Filled: prints the same ingredients as a label that does not say baby or kids."},
+        "eyebrow": "Finding · DailyMed labels",
+        "caption": "Each door is one baby or kids formula. Filled: same ingredients as a label that does not say baby or kids."},
     "butyloctyl-salicylate": {
         "title": "Butyloctyl salicylate in mineral baby sunscreens",
-        "eyebrow": "Finding · US labels",
+        "eyebrow": "Finding · DailyMed labels",
         "caption": "Each door is one mineral baby or kids formula. Filled: contains butyloctyl salicylate."},
 }
 FINDING_TITLES = {k: v["title"] for k, v in FINDINGS.items()}
@@ -363,8 +363,8 @@ def page_index(d, notes):
         for n in notes if "site" in n["applies_to"])
     body = f"""
 <div class="hero"><p class="eyebrow">Baby sunscreen · Evidence library</p>
-<h1>Every sunscreen filter, <em>checked at the source.</em></h1>
-<p class="lede">{len(d["ingredients"])} UV filters. Their legal limits in the United States, the European Union and Australia. How often US baby and kids sunscreen labels list each one. Every number opens its source.</p>
+<h1>Sunscreen filters, <em>checked at the source.</em></h1>
+<p class="lede">{len(d["ingredients"])} UV filters. Their legal limits in the United States, the European Union and Australia. How often baby and kids sunscreen labels in the FDA's DailyMed database list each one. Every number opens its source.</p>
 <p class="byline">By Angela Lee, Founder · ARW House · Updated {E(fmt_date(d["built_on"]))}</p></div>
 <div class="ledger">
  <div><div class="fig">{len(d["ingredients"])}</div><div class="figcap">UV filters</div></div>
@@ -434,7 +434,7 @@ def page_ingredient(d, i, prev, nxt, notes):
  <div class="chips">{src_chip("Registry data", s["url"])}{src_chip("Review file", s["list_url"])}{src_chip("Method", s["method_url"])}</div>
  <p class="fine">DailyMed snapshot {E(s["snapshot"])}.</p></div></div>"""
     if regh:
-        regh = f'<section><p class="eyebrow">On US labels</p><h2>How often baby and kids sunscreens list it</h2>{regh}</section>'
+        regh = f'<section><p class="eyebrow">On DailyMed labels</p><h2>How often baby and kids sunscreens list it</h2>{regh}</section>'
     own = [n for n in notes if i["slug"] in n["applies_to"]] + [n for n in notes if "site" in n["applies_to"]]
     notesh = "".join(
         f'<div class="notebox" style="margin-top:14px"><h3>{E(n["heading"])}</h3><p>{E(n["text"])}</p>'
@@ -556,15 +556,16 @@ def finding_body(d, f):
             + f'</td><td>{"Yes" if p["same_company"] else "Different name"}</td></tr>' for p in det["pairs"])
         mean = f"""
 <p>The US sunscreen monograph sets one limit per active ingredient. It has no separate formula rules for products labeled for babies or kids. {src_chip("FDA M020", us["source"]["url"], us["source"]["title"])}</p>
-<p>So a baby or kids label can carry exactly the same formula as another sunscreen. This finding counts how often the printed Drug Facts of a baby or kids label match another label item for item.</p>"""
+<p>So a baby or kids label can carry exactly the same formula as another sunscreen. This finding counts how often the Drug Facts of a baby or kids label, as filed with the FDA, match another label item for item.</p>"""
         extra = f"""<section><p class="eyebrow">Every pair</p><h2>The labels, side by side</h2>
 <div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Same ingredients as</th><th>Same labeler</th></tr></thead><tbody>{rows}</tbody></table></div>
 <p class="fine">Each name links to its FDA DailyMed record. <a href="{E(det["pairs_csv"])}">Download the list (CSV)</a>.</p></section>"""
         faq = [
             ("Is it wrong to sell the same formula under a baby label?", f["legal_framing"]),
             ("How was \"the same\" decided?",
-             "Both labels list the same active ingredients at the same percentages, and the printed Drug Facts list the "
-             "same inactive ingredients. Pairs whose SPF, product form or named actives differ were left out."),
+             "Both labels list the same active ingredients at the same percentages, and their Drug Facts, as filed with the "
+             "FDA, list the same inactive ingredients in the same order. Pairs whose SPF, product form or named actives "
+             "differ, or whose Drug Facts could not be read, were left out."),
             ("How were these products selected?", howto),
         ]
     else:  # butyloctyl-salicylate
@@ -644,7 +645,7 @@ def page_findings_index(d):
     cards = "".join(f'<section>{finding_card(f)}</section>' for f in fs)
     body = f"""
 <div class="hero"><p class="eyebrow">Findings</p><h1>What the labels show, <em>counted.</em></h1>
-<p class="lede">Each finding is a count of US baby and kids sunscreen labels, checked against the rules that apply to them. Every number links to its data and every rule to its source.</p>
+<p class="lede">Each finding is a count of baby and kids sunscreen labels in the FDA's DailyMed database, checked against the rules that apply to them. Every number links to its data and every rule to its source.</p>
 <p class="byline">By Angela Lee, Founder · ARW House · Updated {E(fmt_date(d["built_on"]))}</p></div>
 {cards}"""
     path = f"{BASE}/findings"
@@ -681,8 +682,9 @@ def page_method(d, notes):
 <p>Each legal limit comes from the regulatory text of its jurisdiction: the FDA's OTC sunscreen monograph (M020) and its final orders, Annex VI of the EU Cosmetics Regulation, and Australia's Permissible Ingredients Determination. Each limit on this site links to the exact document and version it was read from.</p>
 <p>Some statuses depend on a date. When an FDA removal order takes effect, the status changes on the next weekly rebuild.</p></div>
 <div><h2>Label counts</h2>
-<p>Population: {E(pop["definition"])}. {pop["formulations"]} unique formulations, {pop["mineral_only"]} with only mineral actives. Labels that are identical in formula are counted once. DailyMed snapshot {E(pop["snapshot"])}.</p>
+<p>Population: {E(pop["definition"])}. {pop["formulations"]} unique formulations, {pop["mineral_only"]} with only mineral actives. Labels with the same active ingredients at the same percentages and the same inactive ingredients are counted once. DailyMed snapshot {E(pop["snapshot"])}.</p>
 <p>DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.</p>
+<p>Left out of the counts, by rule: labels for another market, labels that do not meet US sunscreen limits as listed (an active above its US limit, or an active not permitted in the US), and listings that bundle several products. <a href="{REPO}/blob/main/claims/population_exclusions.csv">Every label left out, with its reason</a>. Where a manufacturer's structured filing contradicts its own Drug Facts, the Drug Facts are used: <a href="{REPO}/blob/main/data/corrections/spl_label_errors.jsonl">corrections</a>.</p>
 <p><a href="{REPO}/blob/main/claims/{E(pop["review_file"])}">Review file</a> · <a href="{REPO}/blob/main/claims/registry_stats.py">Counting script</a> · <a href="{REPO}/blob/main/docs/SITE_DATA_CONTRACT.md">Publishing rules</a></p></div></section>
 <section class="cols prose"><div><h2>What we will not publish</h2>
 <p>A sentence about what an ingredient does, unless a source for that exact ingredient says it. A number that has not passed its check. A ranking or a recommendation of products.</p></div>
@@ -703,6 +705,8 @@ def check(pages, d, notes):
         if not (n.get("source") or {}).get("url"):
             errs.append(f"note {n.get('id')}: no source url")
     for f in d["findings"]:
+        if f["finding"] == "fda-more-data" and not f["numerator"] * 2 > f["denominator"]:
+            errs.append("fda-more-data title says 'Over half' but the share is not above 50%")
         if f["finding"] not in FINDING_TITLES:
             errs.append(f"finding {f['finding']}: no title in FINDING_TITLES")
     n_limits = sum(len(i["limits"]) for i in d["ingredients"])

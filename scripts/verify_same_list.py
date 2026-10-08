@@ -35,9 +35,11 @@ TAG = re.compile(r"<[^>]+>")
 
 
 def norm_item(s):
-    s = s.upper()
-    s = re.sub(r"\([^)]*\)", " ", s)
-    s = re.sub(r"[^A-Z0-9/\- ]", " ", s)
+    """Case, spacing and punctuation only. Text in parentheses is KEPT, so
+    'extract (calendula)' and 'extract (chamomile)' stay different."""
+    s = s.upper().replace("(", " ( ").replace(")", " ) ")
+    s = re.sub(r"[^A-Z0-9/()\- ]", " ", s)
+    s = re.sub(r"\s*([/\-])\s*", r"\1", s)
     return re.sub(r"\s+", " ", s).strip()
 
 
@@ -76,7 +78,7 @@ def main():
         else:
             sa, sb = set(ia), set(ib)
             same_actives = a["actives"] == b["actives"] and bool(a["actives"])
-            verdict = "match" if (sa == sb and same_actives) else "differs"
+            verdict = "match" if (ia == ib and same_actives) else "differs"
             diff = {"only_baby": sorted(sa - sb), "only_other": sorted(sb - sa),
                     "actives_baby": a["actives"], "actives_other": b["actives"],
                     "same_order": ia == ib}

@@ -26,13 +26,13 @@ class T(unittest.TestCase):
         b = rec({"strength": "5", "strength_unit": "G", "denominator": "50", "denominator_unit": "G"})
         self.assertNotEqual(formulation_fingerprint(a)[0], formulation_fingerprint(b)[0])
 
-    def test_active_order_ignored_inactive_order_kept(self):
+    def test_order_ignored_for_actives_and_inactives(self):
         x = {"strength": "1", "strength_unit": "G", "denominator": "100", "denominator_unit": "G", "percent_ww": 1}
         a = {"active_ingredients": [dict(x, unii="A", name="A"), dict(x, unii="B", name="B")], "inactive_ingredients": INACT}
         b = {"active_ingredients": [dict(x, unii="B", name="B"), dict(x, unii="A", name="A")], "inactive_ingredients": INACT}
         c = {"active_ingredients": a["active_ingredients"], "inactive_ingredients": INACT[::-1]}
         self.assertEqual(formulation_fingerprint(a)[0], formulation_fingerprint(b)[0])
-        self.assertNotEqual(formulation_fingerprint(a)[0], formulation_fingerprint(c)[0])
+        self.assertEqual(formulation_fingerprint(a)[0], formulation_fingerprint(c)[0])
 
 if __name__ == "__main__":
     unittest.main()
