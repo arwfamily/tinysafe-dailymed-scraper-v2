@@ -603,11 +603,7 @@ def process_setid(item):
             lf = label_fields(xml)
         except Exception as e:  # never lose a record over a parse problem
             lf = {"label_parse_error": str(e)[:200]}
-        corrected = lf.pop("label_corrected_actives", None)
-        rec.update(lf)
-        if corrected:
-            rec["structured_actives"] = rec["active_ingredients"]
-            rec["active_ingredients"] = corrected
+        rec.update(lf)  # label_actives_proposal is reviewed, never applied here
     return enrich(rec)
 
 

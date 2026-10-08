@@ -26,27 +26,27 @@ class LabelVsStructured(unittest.TestCase):
     def test_coppertone_kids_wrong_active_in_structured_table(self):
         lf = label_fields(fx("08147940"))
         self.assertIn("printed_active_missing_from_structured", types(lf))
-        self.assertEqual([(a["name"], a["percent_ww"]) for a in lf["label_corrected_actives"]], [("ZINC OXIDE", 24.08)])
+        self.assertEqual([(a["name"], a["percent_ww"]) for a in lf["label_actives_proposal"]], [("ZINC OXIDE", 24.08)])
 
     def test_wegmans_kids_homosalate_filed_as_inactive(self):
         lf = label_fields(fx("5205fcfb"))
-        names = {a["name"]: a["percent_ww"] for a in lf["label_corrected_actives"]}
+        names = {a["name"]: a["percent_ww"] for a in lf["label_actives_proposal"]}
         self.assertEqual(names.get("HOMOSALATE"), 15.0)
         self.assertEqual(len(names), 4)
 
     def test_peter_island_kids_octocrylene_vs_octisalate(self):
         lf = label_fields(fx("2db243d3"))
-        names = {a["name"] for a in lf["label_corrected_actives"]}
+        names = {a["name"] for a in lf["label_actives_proposal"]}
         self.assertEqual(names, {"AVOBENZONE", "OCTOCRYLENE", "OXYBENZONE"})
 
     def test_rounding_in_grams_is_not_a_mismatch(self):
         lf = label_fields(fx("a8ffc32b"))  # 0.09 g / 4.25 g printed as 2.0%
         self.assertNotIn("percent_mismatch", types(lf))
-        self.assertNotIn("label_corrected_actives", lf)
+        self.assertNotIn("label_actives_proposal", lf)
 
     def test_no_correction_without_printed_percentages(self):
         lf = label_fields(fx("ca9df950"))  # Kroger Kids stick prints names only
-        self.assertNotIn("label_corrected_actives", lf)
+        self.assertNotIn("label_actives_proposal", lf)
 
     def test_fragrance_printed_but_not_filed(self):
         self.assertIn("fragrance_printed_not_structured", types(label_fields(fx("f11650bb"))))
@@ -84,7 +84,7 @@ class Listing(unittest.TestCase):
             lf = label_fields(fx(pre))
             self.assertEqual(lf["product_count"], n)
             self.assertIn("multi_product", types(lf))
-            self.assertNotIn("label_corrected_actives", lf)
+            self.assertNotIn("label_actives_proposal", lf)
 
     def test_boilerplate_is_not_a_broad_spectrum_claim(self):
         self.assertFalse(label_fields(fx("369f449f"))["label_flags"]["broad_spectrum_claim"])

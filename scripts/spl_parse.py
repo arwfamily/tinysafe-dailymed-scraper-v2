@@ -148,8 +148,20 @@ ACTIVE_VOCAB = {
     "SULISOBENZONE": "SULISOBENZONE", "CINOXATE": "CINOXATE", "PADIMATE O": "PADIMATE O",
     "AMINOBENZOIC ACID": "AMINOBENZOIC ACID", "TROLAMINE SALICYLATE": "TROLAMINE SALICYLATE",
     "BEMOTRIZINOL": "BEMOTRIZINOL", "BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE": "BEMOTRIZINOL",
-    "ECAMSULE": "ECAMSULE", "DROMETRIZOLE TRISILOXANE": "DROMETRIZOLE TRISILOXANE",
+    "ECAMSULE": "ECAMSULE", "TEREPHTHALYLIDENE DICAMPHOR SULFONIC ACID": "ECAMSULE", "MEXORYL SX": "ECAMSULE",
+    "DROMETRIZOLE TRISILOXANE": "DROMETRIZOLE TRISILOXANE", "MEXORYL XL": "DROMETRIZOLE TRISILOXANE",
+    "ETHYLHEXYL TRIAZONE": "ETHYLHEXYL TRIAZONE", "OCTYL TRIAZONE": "ETHYLHEXYL TRIAZONE",
+    "BISOCTRIZOLE": "BISOCTRIZOLE", "METHYLENE BIS-BENZOTRIAZOLYL TETRAMETHYLBUTYLPHENOL": "BISOCTRIZOLE",
+    "DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE": "DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE",
+    "ENZACAMENE": "ENZACAMENE", "4-METHYLBENZYLIDENE CAMPHOR": "ENZACAMENE",
+    "AMILOXATE": "AMILOXATE", "ISOAMYL P-METHOXYCINNAMATE": "AMILOXATE",
+    "BENZOPHENONE": "BENZOPHENONE",
 }
+
+
+def canon_active(name):
+    n = norm(name)
+    return ACTIVE_VOCAB.get(n, SYN.get(n, n))
 
 
 def printed_actives(text, extra_names=()):
@@ -223,6 +235,7 @@ def parse_spl(xml):
     doc["printed"] = {
         "actives": printed_actives(" ".join(sections.get("active", [])),
                                    [a["name"] for p in products for a in p["actives"]]),
+        "actives_complete": None,
         "active_text": sections.get("active", []),
         "inactives": printed_inactives,
         "inactive_text": inactive_texts,
@@ -230,6 +243,10 @@ def parse_spl(xml):
         "directions": " ".join(sections.get("directions", [])),
         "other_info": " ".join(sections.get("other_info", [])),
     }
+    act_text = " ".join(sections.get("active", []))
+    n_pct = len(re.findall(r"\d+(?:\.\d+)?\s*%", act_text))
+    got = sum(1 for a in doc["printed"]["actives"] if a["percent"] is not None)
+    doc["printed"]["actives_complete"] = bool(act_text) and n_pct > 0 and got == n_pct
     doc["flags"] = {
         "under_6_months_ask_doctor": bool(re.search(r"(children|infants?)\s+under\s+6\s+months[^.]{0,40}?(ask|consult)\s+a\s+(doctor|physician)", all_text, re.I)),
         "water_resistant_minutes": int(wr.group(1)) if wr else None,
@@ -323,8 +340,13 @@ def check_label(doc, us_max=None):
         issues.append({"type": "multi_product", "detail": f"{len(prods)} products in one listing"})
         return issues
     p = prods[0]
-    pa = {norm(a["name"]): a["percent"] for a in doc["printed"]["actives"]}
-    sa = {norm(a["name"]): a for a in p["actives"]}
+    complete = doc["printed"].get("actives_complete")
+    pa = {canon_active(a["name"]): a["percent"] for a in doc["printed"]["actives"]}
+    sa = {canon_active(a["name"]): a for a in p["actives"]}
+    if not complete:
+        issues.append({"type": "printed_actives_not_fully_read",
+                       "detail": "not every printed % could be tied to a known active; active checks skipped"})
+        pa = {}
     for n, pct in pa.items():
         if n not in sa:
             where = "inactive table" if any(norm(i["name"]) == n for i in p["inactives"]) else "nowhere"
@@ -335,7 +357,7 @@ def check_label(doc, us_max=None):
             if pct is not None and sp is not None and abs(sp - pct) > max(0.2, 0.1 * pct):
                 issues.append({"type": "percent_mismatch", "name": n, "printed": pct, "structured": sp})
     for n, a in sa.items():
-        if pa and n not in pa:
+        if complete and pa and n not in pa:
             issues.append({"type": "structured_active_not_printed", "name": n, "structured": a.get("percent_structured")})
         if us_max and n in us_max:
             v = pa.get(n, a.get("percent_structured"))
@@ -405,9 +427,11 @@ def label_fields(xml):
     pa = doc["printed"]["actives"]
     disagree = any(i["type"] in ("printed_active_missing_from_structured", "structured_active_not_printed",
                                  "percent_mismatch") for i in issues)
-    if (len(doc["products"]) == 1 and pa and disagree
+    if (len(doc["products"]) == 1 and pa and disagree and doc["printed"].get("actives_complete")
             and all(a["percent"] is not None and a["name"] in ACTIVE_UNII for a in pa)):
-        out["label_corrected_actives"] = [
+        # NOT applied automatically (2026-10-08 smoke run: real labels spell
+        # actives too many ways). Confirmed proposals go to data/corrections/.
+        out["label_actives_proposal"] = [
             {"name": a["name"], "unii": ACTIVE_UNII[a["name"]], "percent_ww": a["percent"],
              "percent_basis": "drug_facts_panel", "percent_source": "printed_label_correction"} for a in pa]
     return out
