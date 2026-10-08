@@ -76,6 +76,38 @@ _US_MAX = {"AVOBENZONE": 3, "OXYBENZONE": 6, "OCTINOXATE": 7.5, "HOMOSALATE": 15
            "OCTOCRYLENE": 10, "ENSULIZOLE": 4, "ZINC OXIDE": 25, "TITANIUM DIOXIDE": 25}
 
 
+_TEXT = None
+_DIST = re.compile(r"(?:DISTRIBUTED BY|DISTRIBU[ÉE] PAR|IMPORTED BY|IMPORTADO Y DISTRIBUIDO POR|DISTRIBUIDO POR)\W{0,3}(.{0,140})", re.I)
+_ABROAD = [("Mexico", r"M[ÉE]XICO"), ("Canada", r"CANADA|\bON N\d|\bQC\b|ONTARIO|QU[ÉE]BEC"),
+           ("the UK", r"\bUK\b|UNITED KINGDOM|HIGH WYCOMBE"), ("Australia", r"AUSTRALIA")]
+_US = re.compile(r"\bU\.?S\.?A\b|UNITED STATES|,\s?[A-Z]{2}\.?\s?\d{5}\b", re.I)
+
+
+def other_market_text(setid):
+    """Country of a non-US distributor/importer named on the label, when the
+    label names no US distributor (label-text archive). 'Made in Canada' alone
+    is not another market, and 'Made in U.S.A.' after a foreign distributor
+    does not make the label a US one."""
+    global _TEXT
+    if _TEXT is None:
+        _TEXT = {}
+        if os.path.exists(LABEL_TEXT):
+            for line in open(LABEL_TEXT, encoding="utf-8"):
+                d = json.loads(line)
+                _TEXT[d["setid"]] = d.get("text") or ""
+    t = _TEXT.get(setid, "")
+    foreign, us = None, False
+    for m in _DIST.finditer(t):
+        clause = re.split(r"MADE IN|FABRIQU|MANUFACTURED BY|\|", m.group(1), flags=re.I)[0]
+        if _US.search(clause):  # 'ONTARIO, CA 91761' is California
+            us = True
+            continue
+        hit = next((c for c, pat in _ABROAD if re.search(pat, clause, re.I)), None)
+        if hit:
+            foreign = foreign or hit
+    return foreign if foreign and not us else None
+
+
 def population_exclusion(r):
     """Reason this record is not a US baby sunscreen label as listed, or None."""
     if (r.get("product_count") or 1) > 1:
@@ -84,6 +116,9 @@ def population_exclusion(r):
         return "not one sunscreen: " + MULTI_PRODUCT_SPL[r["setid"]]
     if r.get("non_uv_actives"):
         return "not one sunscreen: non-sunscreen drug actives " + ", ".join(r["non_uv_actives"])
+    om = other_market_text(r["setid"])
+    if om:
+        return f"label for another market (label names a distributor or importer in {om})"
     t = r["title"].upper()
     m = re.search(r"\b(LATAM|FPS|CANADA)\b|OMBRELLE", t)
     if m:
@@ -266,8 +301,12 @@ def same_list_pairs(forms, recs, include):
     return out
 
 
+def _co(name):
+    return re.sub(r"[^A-Z0-9]", "", re.sub(r"\b(INC|LLC|LTD|CO|CORP|CORPORATION|COMPANY)\b\.?", "", (name or "").upper()))
+
+
 def same_labeler(r, twins):
-    return any((x.get("labeler_from_title") or "") == (r.get("labeler_from_title") or "") for x in twins)
+    return any(_co(x.get("labeler_from_title")) == _co(r.get("labeler_from_title")) for x in twins)
 
 
 # Synthetic ingredients in mineral-only sunscreens that their manufacturer
@@ -277,10 +316,10 @@ def same_labeler(r, twins):
 # dimethoxydimethylindanone was dropped: Symrise sells it as a skin-care agent,
 # not a UV filter or booster).
 BOOSTERS = [
-    ("butyloctyl salicylate", r"\bBUT[YL]{2} ?OCTY[LI] ?SA[LI]{1,2}CYLATE\b",
+    ("butyloctyl salicylate", r"\bBUT[YL]{2} ?OC?T?Y[LI] ?SA[LI]{1,2}CYLATE\b",
      "Hallstar, a manufacturer, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
      "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)", "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/"),
-    ("ethylhexyl methoxycrylene", r"\bETHYLHEXYL METHOXYCRYLENE\b",
+    ("ethylhexyl methoxycrylene", r"\bETHYLHEXYL METHO?X?Y?CRYLENE\b",
      "Hallstar sells it as SolaStay S1, a photostabilizer, and says it \"photostabilizes and improves mineral filter efficacy\".",
      "SolaStay S1 brochure — Hallstar Beauty (manufacturer)", "https://www.hallstarbeauty.com/webfoo/wp-content/uploads/SolaStay-S1-Brochure.pdf"),
     ("polyester-8", r"\bPOLYESTER-8\b",
@@ -348,9 +387,9 @@ def printed_section(setid):
             for line in open(LABEL_TEXT, encoding="utf-8"):
                 d = json.loads(line)
                 secs = d.get("sections") or {}
-                txt = " ".join(v for k, v in secs.items() if re.search(r"INACTIVE|^INGREDIENTS", k.upper()))
+                txt = " ".join(v for k, v in secs.items() if re.search(r"INACTIVE|^INGREDIENTS|^OTHER INGREDIENTS", k.upper()))
                 if not txt:
-                    m = re.search(r"INACTIVE INGREDIENTS?[^|]{40,}", (d.get("text") or "").upper())
+                    m = re.search(r"(?:INACTIVE|OTHER) INGREDIENTS?[^|]{40,}", (d.get("text") or "").upper())
                     txt = m.group(0) if m else ""
                 _SECTION[d["setid"]] = txt.upper()
     return _SECTION.get(setid, "")
@@ -472,6 +511,15 @@ def main():
             for x in twins:
                 w.writerow([r["title"], r["dailymed_url"], x["title"], x["dailymed_url"],
                             "yes" if (x.get("labeler_from_title") or "") == (r.get("labeler_from_title") or "") else "no"])
+    # The published list: only pairs whose printed Drug Facts also match. The
+    # candidates file above is the input to scripts/verify_same_list.py.
+    with open(os.path.join(ROOT, "claims", "same_ingredient_list_pairs_published.csv"), "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["baby_kids_title", "baby_kids_dailymed", "same_list_title", "same_list_dailymed", "same_labeler"])
+        for r, twins in sorted(checked_pairs, key=lambda p: p[0]["title"]):
+            for x in twins:
+                w.writerow([r["title"], r["dailymed_url"], x["title"], x["dailymed_url"],
+                            "yes" if _co(x.get("labeler_from_title")) == _co(r.get("labeler_from_title")) else "no"])
     n_same_co = sum(1 for r, t in checked_pairs if same_labeler(r, t))
     claims.append({
         "id": "US-BABY-SAME-LIST", "status": "verified" if pairs_checked_all else "provisional_do_not_publish",
@@ -487,7 +535,7 @@ def main():
         "legal_framing": ("Not a violation: nothing requires a baby or kids sunscreen to have a different formula. "
                           "The finding compares what the label records state; it does not show how the products are made."),
         "numerator": len(checked_pairs), "denominator": N, "population": POP,
-        "detail": {"same_company": n_same_co, "pairs_csv": f"{REPO_URL}/claims/same_ingredient_list_pairs.csv",
+        "detail": {"same_company": n_same_co, "pairs_csv": f"{REPO_URL}/claims/same_ingredient_list_pairs_published.csv",
                    "pairs": [{"baby": [r["title"], r["dailymed_url"]],
                               "same_list": [[x["title"], x["dailymed_url"]] for x in t],
                               "same_company": same_labeler(r, t)} for r, t in sorted(checked_pairs, key=lambda p: p[0]["title"])]},
