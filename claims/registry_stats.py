@@ -139,9 +139,23 @@ def load():
             w.writerow([r["setid"], r["title"], why, r["dailymed_url"]])
     out = {r["setid"] for r, _ in excl}
     baby = [r for r in baby if r["setid"] not in out]
+    # The formulation hash is built from the FDA filing, and filings often omit
+    # fragrance (see the fragrance finding). A scented and an unscented product
+    # with the same filing are different formulas, so the printed label's
+    # fragrance splits them.
+    # A label whose printed list is only an image tells us nothing about
+    # fragrance, so it never starts a group of its own.
+    def scent(r):
+        if where_listed(r, FRAGRANCE.pattern):
+            return True
+        has_text = len(r.get("printed_inactives") or []) >= FULL_PRINTED_LIST or len(printed_section(r["setid"])) >= 60
+        return False if has_text else None
     uniq = {}
-    for r in sorted(baby, key=lambda r: r["setid"]):
-        uniq.setdefault(r["formulation_hash"], r)
+    for r in sorted(baby, key=lambda r: (scent(r) is None, r["setid"])):
+        k = scent(r)
+        if k is None:
+            k = next((kk for kk in uniq if kk[0] == r["formulation_hash"]), (r["formulation_hash"], None))
+        uniq.setdefault((r["formulation_hash"], k[1] if isinstance(k, tuple) else k), r)
     return review, snapshot, list(uniq.values()), recs, include
 
 
@@ -252,7 +266,9 @@ EU_BANNED = [
 ]
 EU_COSMETIC_SOURCE = {"title": "Regulation (EC) No 1223/2009 on cosmetic products, recital 7 (sunbathing products)",
                       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223"}
-FRAGRANCE = re.compile(r"\bFRAGRANCE\b|\bPARFUM\b|\bPERFUME\b")
+# No word boundaries: some labels print ingredients run together
+# ("DIMETHICONEFRAGRANCENEOPENTYL", "FRAGRANCEPRODUCT FORMULATED WITH").
+FRAGRANCE = re.compile(r"FRAGRANCE(?![- ]?FREE)|PARFUM|PERFUME")
 AAD_FRAGRANCE = {"title": "How can I find eczema friendly products? — American Academy of Dermatology",
                  "url": "https://www.aad.org/public/diseases/eczema/childhood/triggers/friendly-products",
                  "checked": "2026-10-08"}
@@ -308,7 +324,10 @@ def where_listed(r, pat):
     in_list = any(re.search(pat, x.upper()) for x in printed)
     sec = printed_section(r["setid"])
     in_sec = bool(sec) and (re.search(pat, sec) is not None)
-    loose = bool(sec) and in_filed and re.search(_loose(pat), re.sub(r"[^A-Z0-9]", "", sec)) is not None
+    # The squashed-text check cannot see word boundaries, so it is not used for
+    # names that differ only by a prefix (methyl/ethyl, butyl/isobutyl).
+    loose = (bool(sec) and in_filed and "(?" not in pat
+             and re.search(_loose(pat), re.sub(r"[^A-Z0-9]", "", sec)) is not None)
     if in_list or in_sec:
         return ["printed label", "FDA filing"] if in_filed else ["printed label"]
     if len(printed) >= FULL_PRINTED_LIST or len(sec) >= 60:
