@@ -99,7 +99,8 @@ jobs:
           python scripts/dailymed_scraper.py \
             --limit ${{ steps.mode.outputs.limit }} \
             --parallel "$PAR" \
-            --output-dir output
+            --output-dir output 2>&1 | tee output/scrape.log
+          test "${PIPESTATUS[0]}" -eq 0
 
       - name: Snapshot + formulation history
         run: |
@@ -200,6 +201,8 @@ jobs:
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # run log summary: kept even when the data did not change
+          grep -E "^\[A2\]|^\[B\]|^\[F\]|inactive|processed [0-9]+0{3}/" output/scrape.log > "data/reports/run_${{ github.run_id }}.log" || true
           git add data/ site/ claims/
           if git diff --cached --quiet; then
             echo "nothing to commit"

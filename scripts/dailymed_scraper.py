@@ -691,9 +691,13 @@ def main():
     # keep titles that name a UV filter, SPF or sunscreen wording; DailyMed
     # titles carry the active ingredients in brackets, so this is a reliable net.
     max_pages = 3 if args.limit else 0
-    for r in enumerate_all_spls(max_pages):
-        if r["setid"] and r["setid"] not in setid_map and SUN_TITLE.search(r["title"] or ""):
+    listed = enumerate_all_spls(max_pages)
+    titled = [r for r in listed if r["setid"] and SUN_TITLE.search(r["title"] or "")]
+    for r in titled:
+        if r["setid"] not in setid_map:
             setid_map[r["setid"]] = {**r, "found_by": "title_enumeration"}
+    print(f"[A2] listed {len(listed)} SPLs; {len(titled)} sunscreen-titled; "
+          f"{len(setid_map) - n_unii} not found by UNII search", flush=True)
     items = list(setid_map.values())
     print(f"[B] unique setids: {len(items)} ({n_unii} from UNII search, "
           f"{len(items) - n_unii} added by title enumeration)", flush=True)
@@ -746,7 +750,8 @@ def main():
         "products": records,
     }
     json.dump(master, open(master_path, "w"), ensure_ascii=False, indent=1)
-    print(f"[F] master → {master_path} ({len(records)})", flush=True)
+    print(f"[F] master → {master_path} ({len(records)}; "
+          f"{sum(1 for r in records if r.get('found_by') == 'title_enumeration')} from title enumeration)", flush=True)
 
     # mineral sunscreen filtered: sunscreen + ZnO present + no chemical filter
     mineral = [r for r in records
