@@ -10,6 +10,17 @@
    }
   ]
  },
+ "035f2500-7b38-4391-ad49-ded3eb8f2d56": {
+  "title": "",
+  "spl_version": null,
+  "images": [
+   {
+    "name": "label.jpg",
+    "file": "035f2500-7b38-4391-ad49-ded3eb8f2d56/label.jpg",
+    "sha1_original": "f0a86c4c0c8b4c97e78363354d7edfa3213e0998"
+   }
+  ]
+ },
  "05bbe530-df26-e598-e063-6394a90a0c59": {
   "title": "BANANA BOAT (ZINC OXIDE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
   "spl_version": "3",
@@ -1235,6 +1246,17 @@
    }
   ]
  },
+ "77040348-f3c6-4aa7-b70a-dafbc0447687": {
+  "title": "",
+  "spl_version": null,
+  "images": [
+   {
+    "name": "label.jpg",
+    "file": "77040348-f3c6-4aa7-b70a-dafbc0447687/label.jpg",
+    "sha1_original": "7b906c600a793650ce1b9a3f8ef8a18db4fd6655"
+   }
+  ]
+ },
  "7a306c7b-e142-735c-e053-2991aa0a4e21": {
   "title": "SUNSCREEN (ZINC OXIDE SUNSCREEN) OINTMENT [PRIVATE LABEL SELECT LTD CO]",
   "spl_version": "1",
@@ -2284,62 +2306,5 @@
     "sha1_original": "2954459b32265bdc07923edb07aeb15851a1a878"
    }
   ]
- },
- "d4085917-7090-45e2-8356-77698f78c195": {
-  "title": "",
-  "spl_version": null,
-  "images": [
-   {
-    "name": "Inner Package.jpg",
-    "file": "d4085917-7090-45e2-8356-77698f78c195/Inner_Package.jpg",
-    "sha1_original": "464540d184e188ade9acfcd2281be70d36c0d546"
-   },
-   {
-    "name": "Inner Package01.jpg",
-    "file": "d4085917-7090-45e2-8356-77698f78c195/Inner_Package01.jpg",
-    "sha1_original": "cc64ed0c3ff95f6201d20624cb3cf64d7b2ce3f7"
-   },
-   {
-    "name": "Outer Package.jpg",
-    "file": "d4085917-7090-45e2-8356-77698f78c195/Outer_Package.jpg",
-    "sha1_original": "6829d08833107f6dd01ecbe6e14a41507fb9341a"
-   },
-   {
-    "name": "Outer Package01.jpg",
-    "file": "d4085917-7090-45e2-8356-77698f78c195/Outer_Package01.jpg",
-    "sha1_original": "6829d08833107f6dd01ecbe6e14a41507fb9341a"
-   }
-  ]
- },
- "fdf17ffa-681b-2809-e053-6394a90a5b6e": {
-  "title": "",
-  "spl_version": null,
-  "images": [
-   {
-    "name": "X0007AD Coconut SPF20 Single Balm Cartons 2022 Revision.jpg",
-    "file": "fdf17ffa-681b-2809-e053-6394a90a5b6e/X0007AD_Coconut_SPF20_Single_Balm_Cartons_2022_Revision.jpg",
-    "sha1_original": "b20a9e29611b372c390fb96edb0c16556f137aa5"
-   }
-  ]
- },
- "49fcf429-332f-43b3-aab0-d2a5b95f4571": {
-  "title": "",
-  "spl_version": null,
-  "images": []
- },
- "6461d19a-16e7-43ac-943c-229fe2c6f76c": {
-  "title": "",
-  "spl_version": null,
-  "images": []
- },
- "808774b0-1b50-450b-8298-685568a161c7": {
-  "title": "",
-  "spl_version": null,
-  "images": []
- },
- "a230a4b6-3edb-4391-939c-89bddacd9f0a": {
-  "title": "",
-  "spl_version": null,
-  "images": []
  }
 }
