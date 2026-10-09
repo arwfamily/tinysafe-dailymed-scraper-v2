@@ -671,11 +671,11 @@
       "ingredient_slugs": [
         "zinc-oxide"
       ],
-      "claim": "210 of 388 baby/kids sunscreen formulations list zinc oxide as an active ingredient.",
-      "publishable_sentence": "210 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name zinc oxide as an active ingredient.",
-      "numerator": 210,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "claim": "233 of 412 baby/kids sunscreen formulations list zinc oxide as an active ingredient.",
+      "publishable_sentence": "233 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name zinc oxide as an active ingredient.",
+      "numerator": 233,
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -694,11 +694,11 @@
       "ingredient_slugs": [
         "titanium-dioxide"
       ],
-      "claim": "81 of 388 baby/kids sunscreen formulations list titanium dioxide as an active ingredient.",
-      "publishable_sentence": "81 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name titanium dioxide as an active ingredient.",
-      "numerator": 81,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "claim": "86 of 412 baby/kids sunscreen formulations list titanium dioxide as an active ingredient.",
+      "publishable_sentence": "86 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name titanium dioxide as an active ingredient.",
+      "numerator": 86,
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -717,11 +717,11 @@
       "ingredient_slugs": [
         "bemotrizinol"
       ],
-      "claim": "0 of 388 baby/kids sunscreen formulations list bemotrizinol as an active ingredient.",
-      "publishable_sentence": "None of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name bemotrizinol as an active ingredient.",
+      "claim": "0 of 412 baby/kids sunscreen formulations list bemotrizinol as an active ingredient.",
+      "publishable_sentence": "None of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name bemotrizinol as an active ingredient.",
       "numerator": 0,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -740,11 +740,11 @@
       "ingredient_slugs": [
         "avobenzone"
       ],
-      "claim": "159 of 388 baby/kids sunscreen formulations list avobenzone as an active ingredient.",
-      "publishable_sentence": "159 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name avobenzone as an active ingredient.",
+      "claim": "159 of 412 baby/kids sunscreen formulations list avobenzone as an active ingredient.",
+      "publishable_sentence": "159 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name avobenzone as an active ingredient.",
       "numerator": 159,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -763,11 +763,11 @@
       "ingredient_slugs": [
         "oxybenzone"
       ],
-      "claim": "59 of 388 baby/kids sunscreen formulations list oxybenzone as an active ingredient.",
-      "publishable_sentence": "59 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name oxybenzone as an active ingredient.",
+      "claim": "59 of 412 baby/kids sunscreen formulations list oxybenzone as an active ingredient.",
+      "publishable_sentence": "59 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name oxybenzone as an active ingredient.",
       "numerator": 59,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -786,11 +786,11 @@
       "ingredient_slugs": [
         "octinoxate"
       ],
-      "claim": "42 of 388 baby/kids sunscreen formulations list octinoxate as an active ingredient.",
-      "publishable_sentence": "42 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octinoxate as an active ingredient.",
-      "numerator": 42,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "claim": "43 of 412 baby/kids sunscreen formulations list octinoxate as an active ingredient.",
+      "publishable_sentence": "43 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octinoxate as an active ingredient.",
+      "numerator": 43,
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -809,11 +809,11 @@
       "ingredient_slugs": [
         "homosalate"
       ],
-      "claim": "148 of 388 baby/kids sunscreen formulations list homosalate as an active ingredient.",
-      "publishable_sentence": "148 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name homosalate as an active ingredient.",
+      "claim": "148 of 412 baby/kids sunscreen formulations list homosalate as an active ingredient.",
+      "publishable_sentence": "148 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name homosalate as an active ingredient.",
       "numerator": 148,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -832,11 +832,11 @@
       "ingredient_slugs": [
         "octisalate"
       ],
-      "claim": "169 of 388 baby/kids sunscreen formulations list octisalate as an active ingredient.",
-      "publishable_sentence": "169 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octisalate as an active ingredient.",
+      "claim": "169 of 412 baby/kids sunscreen formulations list octisalate as an active ingredient.",
+      "publishable_sentence": "169 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octisalate as an active ingredient.",
       "numerator": 169,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -855,11 +855,11 @@
       "ingredient_slugs": [
         "octocrylene"
       ],
-      "claim": "157 of 388 baby/kids sunscreen formulations list octocrylene as an active ingredient.",
-      "publishable_sentence": "157 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octocrylene as an active ingredient.",
+      "claim": "157 of 412 baby/kids sunscreen formulations list octocrylene as an active ingredient.",
+      "publishable_sentence": "157 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octocrylene as an active ingredient.",
       "numerator": 157,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -878,11 +878,11 @@
       "ingredient_slugs": [
         "ensulizole"
       ],
-      "claim": "1 of 388 baby/kids sunscreen formulations list ensulizole as an active ingredient.",
-      "publishable_sentence": "1 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ensulizole as an active ingredient.",
+      "claim": "1 of 412 baby/kids sunscreen formulations list ensulizole as an active ingredient.",
+      "publishable_sentence": "1 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ensulizole as an active ingredient.",
       "numerator": 1,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -901,11 +901,11 @@
       "ingredient_slugs": [
         "meradimate"
       ],
-      "claim": "0 of 388 baby/kids sunscreen formulations list meradimate as an active ingredient.",
-      "publishable_sentence": "None of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name meradimate as an active ingredient.",
+      "claim": "0 of 412 baby/kids sunscreen formulations list meradimate as an active ingredient.",
+      "publishable_sentence": "None of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name meradimate as an active ingredient.",
       "numerator": 0,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -924,11 +924,11 @@
       "ingredient_slugs": [
         "dioxybenzone"
       ],
-      "claim": "0 of 388 baby/kids sunscreen formulations list dioxybenzone as an active ingredient.",
-      "publishable_sentence": "None of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name dioxybenzone as an active ingredient.",
+      "claim": "0 of 412 baby/kids sunscreen formulations list dioxybenzone as an active ingredient.",
+      "publishable_sentence": "None of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name dioxybenzone as an active ingredient.",
       "numerator": 0,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -947,11 +947,11 @@
       "ingredient_slugs": [
         "sulisobenzone"
       ],
-      "claim": "0 of 388 baby/kids sunscreen formulations list sulisobenzone as an active ingredient.",
-      "publishable_sentence": "None of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name sulisobenzone as an active ingredient.",
+      "claim": "0 of 412 baby/kids sunscreen formulations list sulisobenzone as an active ingredient.",
+      "publishable_sentence": "None of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name sulisobenzone as an active ingredient.",
       "numerator": 0,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -970,11 +970,11 @@
       "ingredient_slugs": [
         "cinoxate"
       ],
-      "claim": "0 of 388 baby/kids sunscreen formulations list cinoxate as an active ingredient.",
-      "publishable_sentence": "None of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name cinoxate as an active ingredient.",
+      "claim": "0 of 412 baby/kids sunscreen formulations list cinoxate as an active ingredient.",
+      "publishable_sentence": "None of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name cinoxate as an active ingredient.",
       "numerator": 0,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -993,11 +993,11 @@
       "ingredient_slugs": [
         "padimate-o"
       ],
-      "claim": "0 of 388 baby/kids sunscreen formulations list padimate O as an active ingredient.",
-      "publishable_sentence": "None of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name padimate O as an active ingredient.",
+      "claim": "0 of 412 baby/kids sunscreen formulations list padimate O as an active ingredient.",
+      "publishable_sentence": "None of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name padimate O as an active ingredient.",
       "numerator": 0,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -1016,11 +1016,11 @@
       "ingredient_slugs": [
         "paba"
       ],
-      "claim": "0 of 388 baby/kids sunscreen formulations list PABA (aminobenzoic acid) as an active ingredient.",
-      "publishable_sentence": "None of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name PABA (aminobenzoic acid) as an active ingredient.",
+      "claim": "0 of 412 baby/kids sunscreen formulations list PABA (aminobenzoic acid) as an active ingredient.",
+      "publishable_sentence": "None of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name PABA (aminobenzoic acid) as an active ingredient.",
       "numerator": 0,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -1039,11 +1039,11 @@
       "ingredient_slugs": [
         "trolamine-salicylate"
       ],
-      "claim": "0 of 388 baby/kids sunscreen formulations list trolamine salicylate as an active ingredient.",
-      "publishable_sentence": "None of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name trolamine salicylate as an active ingredient.",
+      "claim": "0 of 412 baby/kids sunscreen formulations list trolamine salicylate as an active ingredient.",
+      "publishable_sentence": "None of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name trolamine salicylate as an active ingredient.",
       "numerator": 0,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -1062,11 +1062,11 @@
       "ingredient_slugs": [
         "ecamsule"
       ],
-      "claim": "0 of 388 baby/kids sunscreen formulations list ecamsule as an active ingredient.",
-      "publishable_sentence": "None of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ecamsule as an active ingredient.",
+      "claim": "0 of 412 baby/kids sunscreen formulations list ecamsule as an active ingredient.",
+      "publishable_sentence": "None of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ecamsule as an active ingredient.",
       "numerator": 0,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -1085,11 +1085,11 @@
       "ingredient_slugs": [
         "drometrizole-trisiloxane"
       ],
-      "claim": "0 of 388 baby/kids sunscreen formulations list drometrizole trisiloxane as an active ingredient.",
-      "publishable_sentence": "None of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name drometrizole trisiloxane as an active ingredient.",
+      "claim": "0 of 412 baby/kids sunscreen formulations list drometrizole trisiloxane as an active ingredient.",
+      "publishable_sentence": "None of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name drometrizole trisiloxane as an active ingredient.",
       "numerator": 0,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -1108,11 +1108,11 @@
       "ingredient_slugs": [
         "ethylhexyl-triazone"
       ],
-      "claim": "0 of 388 baby/kids sunscreen formulations list ethylhexyl triazone as an active ingredient.",
-      "publishable_sentence": "None of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ethylhexyl triazone as an active ingredient.",
+      "claim": "0 of 412 baby/kids sunscreen formulations list ethylhexyl triazone as an active ingredient.",
+      "publishable_sentence": "None of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ethylhexyl triazone as an active ingredient.",
       "numerator": 0,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -1130,17 +1130,17 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "fda-more-data",
-      "claim": "184 of 388 baby/kids sunscreen formulations contain at least one of the 12 actives the FDA has asked for more data on.",
-      "publishable_sentence": "184 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain at least one of the 12 active ingredients the FDA has proposed need more safety data. 141 of them contain four or more.",
+      "claim": "185 of 412 baby/kids sunscreen formulations contain at least one of the 12 actives the FDA has asked for more data on.",
+      "publishable_sentence": "185 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain at least one of the 12 active ingredients the FDA has proposed need more safety data. 141 of them contain four or more.",
       "ingredient_source": {
         "title": "FDA — Questions and Answers: FDA's regulatory actions on over-the-counter sunscreen",
         "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
         "checked": "2026-10-08"
       },
       "legal_framing": "Legal today: all 12 ingredients are permitted under the current US sunscreen monograph. The FDA has proposed that they need more data before they can be recognized as safe and effective. The finding is about what labels contain, not about any brand.",
-      "numerator": 184,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "numerator": 185,
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "detail": {
         "four_or_more": 141
       },
@@ -1163,8 +1163,8 @@
         "homosalate"
       ],
       "finding": "homosalate-eu-limit",
-      "claim": "140 of 388 baby/kids sunscreen formulations contain homosalate above 7.34%.",
-      "publishable_sentence": "140 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain homosalate above 7.34%, the highest level the EU allows. The EU allows it only in face products other than propellant sprays; the US allows up to 15% in any sunscreen.",
+      "claim": "140 of 412 baby/kids sunscreen formulations contain homosalate above 7.34%.",
+      "publishable_sentence": "140 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain homosalate above 7.34%, the highest level the EU allows. The EU allows it only in face products other than propellant sprays; the US allows up to 15% in any sunscreen.",
       "ingredient_source": {
         "title": "EU Cosmetics Regulation Annex VI entry 3 (homosalate), as amended by Regulation (EU) 2022/2195",
         "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
@@ -1172,8 +1172,8 @@
       },
       "legal_framing": "Legal in the US: the US monograph allows homosalate up to 15%. The EU and the US set different limits; this finding compares them. It does not say any product breaks a rule where it is sold.",
       "numerator": 140,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "detail": {
         "homosalate_formulas": 148,
         "excluded_unreliable_percent": 0,
@@ -1237,18 +1237,18 @@
     },
     {
       "id": "US-BABY-SAME-LIST",
-      "status": "verified",
-      "blocker": null,
-      "candidates_structured": 99,
+      "status": "provisional_do_not_publish",
+      "blocker": "printed Drug Facts comparison (scripts/verify_same_list.py) not run for every candidate pair",
+      "candidates_structured": 97,
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "same-ingredient-list",
-      "claim": "57 of 388 baby/kids formulations print the same ingredient list as a non-baby label.",
-      "publishable_sentence": "57 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 48 cases both labels name the same labeler.",
+      "claim": "57 of 412 baby/kids formulations print the same ingredient list as a non-baby label.",
+      "publishable_sentence": "57 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 48 cases both labels name the same labeler.",
       "legal_framing": "Not a violation: nothing requires a baby or kids sunscreen to have a different formula. The finding compares what the label records state; it does not show how the products are made.",
       "numerator": 57,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "detail": {
         "same_company": 48,
         "pairs_csv": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/same_ingredient_list_pairs_published.csv",
@@ -2234,11 +2234,11 @@
       "ingredient_slugs": [
         "zinc-oxide"
       ],
-      "claim": "195 of 204 mineral-only baby/kids sunscreen formulations contain zinc oxide.",
-      "publishable_sentence": "195 of the 204 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain zinc oxide.",
-      "numerator": 195,
-      "denominator": 204,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products); mineral-only actives (zinc oxide and/or titanium dioxide)",
+      "claim": "218 of 227 mineral-only baby/kids sunscreen formulations contain zinc oxide.",
+      "publishable_sentence": "218 of the 227 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain zinc oxide.",
+      "numerator": 218,
+      "denominator": 227,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products); mineral-only actives (zinc oxide and/or titanium dioxide)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -2257,12 +2257,12 @@
       "blocker": "The count is exact, but 'absorbs UV light' is not supported for the two largest ingredients: the butyloctyl salicylate manufacturer (Hallstar) describes SPF contribution and UV-filter stabilisation, not UV absorption; DrugBank DB11226 describes ethylhexyl methoxycrylene as a photostabilizer that works without absorbing sunlight. Each of the 7 ingredients needs its own sourced function before a combined sentence can be published.",
       "ingredient_slugs": [],
       "finding": "hidden-uv-absorbers",
-      "claim": "77 of 204 mineral-only baby/kids sunscreen formulations contain at least one UV-absorbing ingredient that is not listed as an active ingredient.",
-      "publishable_sentence": "77 of the 204 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database also contain an ingredient that absorbs UV light but is not listed as an active ingredient.",
+      "claim": "88 of 227 mineral-only baby/kids sunscreen formulations contain at least one UV-absorbing ingredient that is not listed as an active ingredient.",
+      "publishable_sentence": "88 of the 227 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database also contain an ingredient that absorbs UV light but is not listed as an active ingredient.",
       "legal_framing": "Not a violation: these ingredients are not FDA sunscreen actives, so listing them as actives would itself be non-compliant. The finding is about how labels work, not about any brand.",
-      "numerator": 77,
-      "denominator": 204,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products); mineral-only actives (zinc oxide and/or titanium dioxide)",
+      "numerator": 88,
+      "denominator": 227,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products); mineral-only actives (zinc oxide and/or titanium dioxide)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -2281,17 +2281,17 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "superseded_finding": "spf-boosters",
-      "claim": "66 of 204 mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
-      "publishable_sentence": "66 of the 204 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not an FDA sunscreen active ingredient. Hallstar, one of its manufacturers, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
+      "claim": "74 of 227 mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
+      "publishable_sentence": "74 of the 227 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not an FDA sunscreen active ingredient. Hallstar, one of its manufacturers, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
       "ingredient_source": {
         "title": "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)",
         "url": "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/",
         "checked": "2026-10-08"
       },
       "legal_framing": "Not a violation: butyloctyl salicylate is not an FDA sunscreen active, so it belongs with the inactive ingredients, as the rules require. The finding is about how labels work, not about any brand.",
-      "numerator": 66,
-      "denominator": 204,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products); mineral-only actives (zinc oxide and/or titanium dioxide)",
+      "numerator": 74,
+      "denominator": 227,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products); mineral-only actives (zinc oxide and/or titanium dioxide)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
@@ -2309,27 +2309,27 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "spf-boosters",
-      "claim": "143 of 388 baby/kids sunscreen formulations (79 of 204 mineral-only) list at least one of 6 synthetic SPF-boosting or UV-filter ingredients among their inactive ingredients.",
-      "publishable_sentence": "143 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain a synthetic ingredient that its manufacturer sells to boost SPF or stabilize UV filters, or that the EU regulates as a UV filter, listed under Inactive ingredients. That includes 79 of the 204 mineral formulas, whose only active ingredients are zinc oxide and/or titanium dioxide.",
+      "claim": "154 of 412 baby/kids sunscreen formulations (90 of 227 mineral-only) list at least one of 6 synthetic SPF-boosting or UV-filter ingredients among their inactive ingredients.",
+      "publishable_sentence": "154 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain a synthetic ingredient that its manufacturer sells to boost SPF or stabilize UV filters, or that the EU regulates as a UV filter, listed under Inactive ingredients. That includes 90 of the 227 mineral formulas, whose only active ingredients are zinc oxide and/or titanium dioxide.",
       "legal_framing": "Not a violation: none of these ingredients is an FDA sunscreen active, so they belong with the inactive ingredients, as the rules require. The finding is about how labels work, not about any brand.",
-      "numerator": 143,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "numerator": 154,
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "detail": {
         "mineral": [
-          79,
-          204
+          90,
+          227
         ],
         "other": [
           64,
-          184
+          185
         ],
-        "two_or_more": 36,
+        "two_or_more": 38,
         "ingredients": [
           {
             "name": "butyloctyl salicylate",
-            "count": 108,
-            "mineral": 68,
+            "count": 116,
+            "mineral": 76,
             "function": "Hallstar, a manufacturer, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
             "source": {
               "title": "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)",
@@ -2350,8 +2350,8 @@
           },
           {
             "name": "polyester-8",
-            "count": 23,
-            "mineral": 5,
+            "count": 24,
+            "mineral": 6,
             "function": "Hallstar sells it as Polycrylene, a sunscreen photostabilizer, and lists \"SPF Enhancement\" as a feature.",
             "source": {
               "title": "Polycrylene — Hallstar Beauty (manufacturer)",
@@ -2361,8 +2361,8 @@
           },
           {
             "name": "tridecyl salicylate",
-            "count": 10,
-            "mineral": 5,
+            "count": 11,
+            "mineral": 6,
             "function": "Vantage sells it as JEECHEM TDS, \"designed for use as a sunscreen booster\", and says it can be combined with titanium dioxide or zinc oxide.",
             "source": {
               "title": "JEECHEM TDS — Vantage Specialty Ingredients (manufacturer)",
@@ -2372,8 +2372,8 @@
           },
           {
             "name": "ethyl ferulate",
-            "count": 6,
-            "mineral": 5,
+            "count": 9,
+            "mineral": 8,
             "function": "Sold as CaribSun UV, which its supplier describes as having \"antioxidant, free radical scavenging and UV adsorption properties\".",
             "source": {
               "title": "CaribSun UV (Ethyl Ferulate) — UL Prospector",
@@ -2400,6 +2400,15 @@
             "boosters": [
               "butyloctyl salicylate",
               "ethylhexyl methoxycrylene"
+            ],
+            "mineral": true
+          },
+          {
+            "title": "BABO BOTANICALS DAILY SHEER FLUID MINERAL SUNSCREEN SPF 50 (ZINC OXIDE) LOTION [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d66c88a1-7684-1043-e053-2a95a90aa2aa",
+            "boosters": [
+              "butyloctyl salicylate",
+              "ethyl ferulate"
             ],
             "mineral": true
           },
@@ -2611,6 +2620,15 @@
             "mineral": true
           },
           {
+            "title": "MINERAL MIST SPF-50 (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [TUBBY TODD]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dca54a19-af25-ce47-e053-2a95a90a22db",
+            "boosters": [
+              "butyloctyl salicylate",
+              "polyester-8"
+            ],
+            "mineral": true
+          },
+          {
             "title": "RITE AID RENEWAL BABY SUNSCREEN SPF 60 (TITANIUM DIOXIDE ZINC OXIDE) LOTION [RITE AID CORPORATION]",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=416b804d-bebf-4c5c-9990-4e830dd37153",
             "boosters": [
@@ -2643,6 +2661,14 @@
             "boosters": [
               "butyloctyl salicylate",
               "ethylhexyl methoxycrylene"
+            ],
+            "mineral": true
+          },
+          {
+            "title": "(S)UNDERCOVER SPF 50 (ZINC OXIDE) LOTION [TUBBY TODD]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dca478a0-c319-68d8-e053-2a95a90a10fc",
+            "boosters": [
+              "tridecyl salicylate"
             ],
             "mineral": true
           },
@@ -2697,6 +2723,46 @@
           {
             "title": "BABO BOTANICALS SENSITIVE BABY MINERAL SUNSCREEN SPF50 (ZINC OXIDE) LOTION [BABO BOTANICALS, INC.]",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08a175ae-2307-ef8d-e063-6394a90ad234",
+            "boosters": [
+              "butyloctyl salicylate"
+            ],
+            "mineral": true
+          },
+          {
+            "title": "BABO BOTANICALS SHEER ZINC MINERAL SUNSCREEN SPF30 (ZINC OXIDE) LOTION [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08f0436b-85b6-5099-e063-6294a90a4c2e",
+            "boosters": [
+              "butyloctyl salicylate"
+            ],
+            "mineral": true
+          },
+          {
+            "title": "BABO BOTANICALS SHEER ZINC MINERAL SUNSCREEN SPF30 (ZINC OXIDE) SPRAY [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08f0f32e-4b19-7a62-e063-6394a90af1b1",
+            "boosters": [
+              "butyloctyl salicylate"
+            ],
+            "mineral": true
+          },
+          {
+            "title": "BABO BOTANICALS SUPER SHIELD MINERAL SUNSCREEN SPF50 (ZINC OXIDE, TITANIUM DIOXIDE) AEROSOL, SPRAY [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b441f976-4f2a-ba19-e053-2995a90ad79a",
+            "boosters": [
+              "butyloctyl salicylate"
+            ],
+            "mineral": true
+          },
+          {
+            "title": "BABO BOTANICALS SWIM AND SPORT MINERAL SUNSCREEN SPF 30 (ZINC OXIDE) SPRAY [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8b1ea3a-d62e-e00d-e053-6394a90a5689",
+            "boosters": [
+              "butyloctyl salicylate"
+            ],
+            "mineral": true
+          },
+          {
+            "title": "BABO SPF 30 CLEAR ZINC FRAGRANCE FREE (MINERAL SUNSCREEN) LOTION [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3e40cb0-dbfd-955c-e053-2995a90af848",
             "boosters": [
               "butyloctyl salicylate"
             ],
@@ -2987,6 +3053,30 @@
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c7f0257-fa12-40d6-9516-824b0e3a182c",
             "boosters": [
               "butyloctyl salicylate"
+            ],
+            "mineral": true
+          },
+          {
+            "title": "MINERAL SUNSCREEN (ZINC OXIDE SPF 50) CREAM [TUBBY TODD]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=29e487da-5312-8192-e063-6294a90ad809",
+            "boosters": [
+              "butyloctyl salicylate"
+            ],
+            "mineral": true
+          },
+          {
+            "title": "PIPETTE MINERAL SUNSCREEN BROAD SPECTRUM SPF 50 (ZINC OXIDE) LOTION [AMYRIS, INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b08f641b-49a2-5a90-e053-2a95a90aa860",
+            "boosters": [
+              "ethyl ferulate"
+            ],
+            "mineral": true
+          },
+          {
+            "title": "PIPETTE MINERAL SUNSCREEN BROAD SPECTRUM SPF50 (ZINC OXIDE) LOTION [AMYRIS, INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a93cd61a-ae83-4c45-8fca-f904b5cf706d",
+            "boosters": [
+              "ethyl ferulate"
             ],
             "mineral": true
           },
@@ -3595,12 +3685,12 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "eu-banned-preservatives",
-      "claim": "14 of 388 baby/kids sunscreen formulations list isobutylparaben (9) or methylisothiazolinone (5).",
-      "publishable_sentence": "14 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list a preservative that the EU no longer allows in products like them: isobutylparaben in 9, banned from all EU cosmetics, and methylisothiazolinone in 5, banned from EU leave-on cosmetics.",
+      "claim": "14 of 412 baby/kids sunscreen formulations list isobutylparaben (9) or methylisothiazolinone (5).",
+      "publishable_sentence": "14 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list a preservative that the EU no longer allows in products like them: isobutylparaben in 9, banned from all EU cosmetics, and methylisothiazolinone in 5, banned from EU leave-on cosmetics.",
       "legal_framing": "Not a violation in the US: neither preservative is banned in US sunscreens. In the EU a sunscreen is a cosmetic, so EU cosmetics law applies to it. The finding compares label records with EU law; it is not about any brand.",
       "numerator": 14,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "ingredient_source": {
         "title": "Commission Regulation (EU) No 358/2014",
         "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0358",
@@ -3825,12 +3915,12 @@
         "octinoxate"
       ],
       "finding": "hawaii-oxybenzone-octinoxate",
-      "claim": "84 of 388 baby/kids sunscreen formulations list oxybenzone (59) or octinoxate (42) as an active ingredient.",
-      "publishable_sentence": "84 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain oxybenzone or octinoxate. Since January 1, 2021, Hawaii law has made it unlawful to sell, offer for sale or distribute for sale in the state a sunscreen containing either one without a prescription.",
+      "claim": "85 of 412 baby/kids sunscreen formulations list oxybenzone (59) or octinoxate (43) as an active ingredient.",
+      "publishable_sentence": "85 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain oxybenzone or octinoxate. Since January 1, 2021, Hawaii law has made it unlawful to sell, offer for sale or distribute for sale in the state a sunscreen containing either one without a prescription.",
       "legal_framing": "Both ingredients are permitted under the FDA sunscreen monograph. Hawaii's law applies to sales in Hawaii only, and a DailyMed listing does not show where, or whether, a product is sold.",
-      "numerator": 84,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "numerator": 85,
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "ingredient_source": {
         "title": "Hawaii Revised Statutes §342D-21 (L 2018, c 104, §2)",
         "url": "https://law.justia.com/codes/hawaii/title-19/chapter-342d/section-342d-21/",
@@ -3844,7 +3934,7 @@
           ],
           [
             "octinoxate",
-            42
+            43
           ]
         ],
         "both": 17,
@@ -4213,6 +4303,14 @@
             "label_date": "2016-12-22"
           },
           {
+            "title": "ATONO2 BABY SUN CREAM (ETHYLHEXYL METHOXYCINNAMATE, TITANIUM DIOXIDE) CREAM [LAORGANIC CO., LTD.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3eb67c20-a1b6-3014-e054-00144ff8d46c",
+            "filters": [
+              "octinoxate"
+            ],
+            "label_date": "2016-10-12"
+          },
+          {
             "title": "WALGREENS KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [WALGREENS]",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d40f67e-78e9-4c4c-a8ca-464315c41af5",
             "filters": [
@@ -4562,12 +4660,12 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "parabens",
-      "claim": "41 of 388 baby/kids sunscreen formulations list at least one paraben.",
-      "publishable_sentence": "41 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list at least one paraben preservative: propylparaben in 40, methylparaben in 41, butylparaben in 16, ethylparaben in 16 and isobutylparaben in 9.",
+      "claim": "41 of 412 baby/kids sunscreen formulations list at least one paraben.",
+      "publishable_sentence": "41 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list at least one paraben preservative: propylparaben in 40, methylparaben in 41, butylparaben in 16, ethylparaben in 16 and isobutylparaben in 9.",
       "legal_framing": "Not a violation in the US: parabens are allowed in US sunscreens. In the EU, isobutylparaben is banned from all cosmetics, and propylparaben and butylparaben are limited to 0.14% combined and may not be used in leave-on products designed for the nappy area of children under three. Labels do not state paraben percentages, so the 0.14% limit cannot be checked from them.",
       "numerator": 41,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "ingredient_source": {
         "title": "Commission Regulation (EU) No 1004/2014 (propylparaben, butylparaben)",
         "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R1004",
@@ -4598,7 +4696,7 @@
         ],
         "mineral": [
           2,
-          204
+          227
         ],
         "formulas": [
           {
@@ -5029,12 +5127,12 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "fragrance",
-      "claim": "126 of 388 baby/kids sunscreen formulations list fragrance (or parfum) as an ingredient.",
-      "publishable_sentence": "126 of the 388 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list fragrance (or parfum) as an ingredient. For children with eczema, the American Academy of Dermatology advises a sunscreen that is fragrance-free.",
+      "claim": "126 of 412 baby/kids sunscreen formulations list fragrance (or parfum) as an ingredient.",
+      "publishable_sentence": "126 of the 412 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list fragrance (or parfum) as an ingredient. For children with eczema, the American Academy of Dermatology advises a sunscreen that is fragrance-free.",
       "legal_framing": "Not a violation: fragrance is allowed in US sunscreens. The finding counts what the ingredient lists say; it is not about any brand.",
       "numerator": 126,
-      "denominator": 388,
-      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "denominator": 412,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "ingredient_source": {
         "title": "How can I find eczema friendly products? — American Academy of Dermatology",
         "url": "https://www.aad.org/public/diseases/eczema/childhood/triggers/friendly-products",
@@ -5043,11 +5141,11 @@
       "detail": {
         "mineral": [
           28,
-          204
+          227
         ],
         "other": [
           98,
-          184
+          185
         ],
         "formulas": [
           {
@@ -6097,9 +6195,9 @@
     "Re-run every number in the published IG series and the 'Same Formula, Different Label' page against this ledger before reuse."
   ],
   "registry_population": {
-    "definition": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels for another market and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
-    "formulations": 388,
-    "mineral_only": 204,
+    "definition": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+    "formulations": 412,
+    "mineral_only": 227,
     "review_file": "baby_decisions.csv",
     "snapshot": "2026-10-08"
   }

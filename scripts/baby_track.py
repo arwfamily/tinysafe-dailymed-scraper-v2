@@ -37,6 +37,26 @@ REPORTS = os.path.join(ROOT, "data", "reports")
 RULE = "auto-rule v1: baby/kids word in product name, sunscreen, not a kit"
 KIT = re.compile(r"\b(KIT|GIFT|SET|BUNDLE|DUO|TRIO|COMBO|VALUE PACK|TRAVEL PACK)\b", re.I)
 FIELDS = ["setid", "decision", "stage", "reason", "decided_on", "title", "dailymed_url"]
+# Baby-care brands: the brand itself is for babies and kids, so its sunscreens
+# count even when the label does not repeat "baby" or "kids" (owner decision
+# 2026-10-08). Tinted or cosmetic products of these brands are not included.
+BABY_BRANDS = [
+    (r"TUBBY TODD", "Tubby Todd", "https://tubbytodd.com/pages/the-tubby-todd-promise"),
+    (r"\bPIPETTE\b", "Pipette", "https://www.nonwovens-industry.com/contents/view_breaking-news/2019-09-05/pipette-offers-clean-baby-care-produccts"),
+    (r"MUSTELA", "Mustela", "https://www.mustelausa.com/pages/our-story"),
+    (r"\bBABO\b", "Babo Botanicals", "https://cosmeticsbusiness.com/laboratoires-expanscience-taps-natural-baby-care-brand-babo-botanicals-148696"),
+    (r"BABYGANICS", "Babyganics", ""),
+    (r"CALIFORNIA BABY|ORGANIC & SUSTAINABLE BEAUTY", "California Baby", ""),
+    (r"THINK ?BABY", "Thinkbaby", ""),
+]
+
+
+def baby_brand(r):
+    t = (r.get("title") or "") + " [" + (r.get("labeler") or "") + "]"
+    for pat, name, src in BABY_BRANDS:
+        if re.search(pat, t, re.I):
+            return name, src
+    return None
 
 
 def load_ledger():
@@ -61,6 +81,9 @@ def rule(r):
         return "exclude", "auto", f"not a sunscreen (classifier product type: {pt})"
     if (r.get("product_count") or 1) > 1:
         return "queue", "pending", f"{r['product_count']} products in one listing"
+    bb = baby_brand(r)
+    if bb and pt == "sunscreen" and not r.get("is_tinted") and not KIT.search(title):
+        return "include", "auto", f"baby-care brand: {bb[0]}" + (f" ({bb[1]})" if bb[1] else "")
     if sig == "product_name" and pt == "sunscreen" and not KIT.search(title):
         return "include", "auto", RULE
     why = {"brand_name": "baby signal from brand only", "brand_list_review": "brand on the baby-brand list; check the product itself",
@@ -91,7 +114,7 @@ def main():
 
     new_decisions = []
     for sid, r in sorted(recs.items()):
-        if r.get("baby_signal", "none") == "none" or sid in ledger:
+        if sid in ledger or (r.get("baby_signal", "none") == "none" and not baby_brand(r)):
             continue
         d, stage, reason = rule(r)
         ledger[sid] = {"setid": sid, "decision": d, "stage": stage, "reason": reason, "decided_on": run_date,

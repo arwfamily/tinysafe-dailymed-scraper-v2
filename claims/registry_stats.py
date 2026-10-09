@@ -68,8 +68,10 @@ EXCLUSIONS = os.path.join(ROOT, "claims", "population_exclusions.csv")
 # Labels whose only artwork is for another market, seen in the label image
 # (data/corrections/printed_lists_from_images.jsonl notes).
 OTHER_MARKET_SPL = {
-    "13c9ab06-9903-728a-e054-00144ff88e88": "label artwork is Brazilian (Portuguese 'Ingredientes' list, no US Drug Facts)",
-    "3eb67c20-a1b6-3014-e054-00144ff8d46c": "label artwork is Korean only (no English Drug Facts)",
+    # Language alone does not make a label foreign (owner decision 2026-10-08:
+    # a Korean-only carton listed in DailyMed stays in); a named foreign
+    # importer does.
+    "13c9ab06-9903-728a-e054-00144ff88e88": "label names a Brazilian importer (Mappel); Portuguese artwork, no US Drug Facts",
 }
 MULTI_PRODUCT_SPL = {
     "c5d52f13-a649-9579-e053-2a95a90a062c": "kit: nasal spray, acne serum and sunscreen in one listing",
@@ -264,10 +266,12 @@ def source(review, snapshot):
 
 
 POP = ("unique formulations of sunscreen labels that say baby or kids in the product name or on the "
-       "front panel (FDA DailyMed; selected by rule from the label, with edge cases decided by hand "
+       "front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, "
+       "Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) "
+       "(FDA DailyMed; selected by rule from the label, with edge cases decided by hand "
        "and every decision recorded with its reason; a claim such as 'suitable for children' alone does "
-       "not count; labels for another market and labels that do not meet US sunscreen limits as listed "
-       "left out; a listing that bundles several products is split into its products)")
+       "not count; labels that name a foreign distributor or importer and labels that do not meet US "
+       "sunscreen limits as listed left out; a listing that bundles several products is split into its products)")
 POP_MIN = POP + "; mineral-only actives (zinc oxide and/or titanium dioxide)"
 CAVEAT = ("DailyMed lists drug labels submitted to the FDA, including labels for products "
           "made in US facilities for other markets. A listing is not proof that a product "
@@ -406,7 +410,10 @@ def printed_section(setid):
         if os.path.exists(tx):
             for line in open(tx, encoding="utf-8"):
                 t = json.loads(line)
-                if t.get("items") and len(_SECTION.get(t["setid"], "")) < 60:
+                # a list in another script (e.g. Korean) cannot be matched to
+                # English ingredient names; the filing decides for that label
+                english = t.get("items") and sum(ch.isascii() for ch in "".join(t["items"])) > 0.9 * len("".join(t["items"]))
+                if english and len(_SECTION.get(t["setid"], "")) < 60:
                     _SECTION[t["setid"]] = ("INACTIVE INGREDIENTS (TRANSCRIBED FROM LABEL IMAGE): " + ", ".join(t["items"])).upper()
     return _SECTION.get(setid, "")
 
