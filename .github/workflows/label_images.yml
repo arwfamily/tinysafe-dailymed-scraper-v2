@@ -1,0 +1,35 @@
+name: Fetch label images (for transcription)
+on:
+  workflow_dispatch:
+    inputs:
+      extra_setids:
+        description: 'extra setids, space-separated'
+        required: false
+        default: ''
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install pillow
+      - name: Download
+        env:
+          EXTRA: ${{ github.event.inputs.extra_setids }}
+        run: python scripts/fetch_label_images.py $EXTRA
+      - name: Push to the label-images branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mv label_images /tmp/label_images
+          git fetch origin label-images && git checkout label-images || git checkout --orphan label-images
+          git rm -rq --cached . 2>/dev/null || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r /tmp/label_images .
+          git add label_images
+          git commit -qm "label images $(date -u +%F)" || exit 0
+          git push origin label-images
