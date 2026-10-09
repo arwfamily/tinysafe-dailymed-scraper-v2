@@ -323,11 +323,15 @@ def _nk(x):
 def printed_items(r):
     """The label's printed inactive list as normalised items (label text,
     archived Drug Facts text or image transcription), or []."""
+    sys.path.insert(0, os.path.join(ROOT, "scripts"))
     from spl_parse import split_ingredient_list
     sec = printed_section(r["setid"]) if not str(r["setid"]).count("#") else ""
     items = split_ingredient_list(re.sub(r"^INACTIVE INGREDIENTS \(TRANSCRIBED FROM LABEL IMAGE\):\s*", "Inactive ingredients: ", sec)) if sec else []
     if len(items) < 5:
         items = list(r.get("printed_inactives") or [])
+    # a stray "s" or "(s)" left from a cut heading ("Ingredient(s) Beeswax") is not part
+    # of the first ingredient
+    items = [re.sub(r"^\s*\(?[sS]\)?\s+(?=\S)", "", x) if n == 0 else x for n, x in enumerate(items)]
     return [k for k in (_nk(i) for i in items) if k]
 
 
@@ -353,9 +357,11 @@ def same_list_printed(forms, recs, include):
     for x in recs:
         if x["setid"] in include or x.get("product_type") != "sunscreen":
             continue
-        if x.get("baby_signal", "none") not in ("none", "false_positive_phrase"):
+        # the other label must not say baby or kids in its name or on its front
+        # panel; a baby-brand label or a 'pediatrician tested' claim alone does not
+        if x.get("baby_signal") in ("product_name", "brand_name"):
             continue
-        if (x.get("label_flags") or {}).get("front_panel_baby_words"):
+        if set((x.get("label_flags") or {}).get("front_panel_baby_words") or []) - {"PEDIATRIC", "PAEDIATRIC", "CHILD", "CHILDREN"}:
             continue
         k = _actives_key(x)
         if k:
@@ -464,6 +470,7 @@ _SECTION = None
 
 
 _FULLTEXT = {}
+_FOOT = {}   # footnotes printed under a transcribed list ("*Fragrance (Parfum)")
 
 
 def _unheaded_list(text, items):
@@ -508,7 +515,12 @@ def printed_section(setid):
                 # a list in another script (e.g. Korean) cannot be matched to
                 # English ingredient names; the filing decides for that label
                 english = t.get("items") and sum(ch.isascii() for ch in "".join(t["items"])) > 0.9 * len("".join(t["items"]))
-                if english and len(_SECTION.get(t["setid"], "")) < 60:
+                if english and t.get("footnotes"):
+                    fn = t["footnotes"]
+                    _FOOT[t["setid"]] = (" ".join(fn) if isinstance(fn, list) else str(fn)).upper()
+                if english and t.get("overrides_text"):
+                    _SECTION[t["setid"]] = ("INACTIVE INGREDIENTS (TRANSCRIBED FROM LABEL IMAGE): " + ", ".join(t["items"])).upper()
+                elif english and len(_SECTION.get(t["setid"], "")) < 60:
                     # The SPL text may carry the list without a heading. If a
                     # text block holds most of the transcribed items, that text
                     # is the label's current list and decides (an image can be
@@ -540,7 +552,8 @@ def where_listed(r, pat):
     in_filed = any(re.search(pat, x.upper()) for x in filed)
     in_list = any(re.search(pat, x.upper()) for x in printed)
     sec = printed_section(r["setid"])
-    in_sec = bool(sec) and (re.search(pat, sec) is not None)
+    foot = _FOOT.get(r["setid"], "") if sec.startswith("INACTIVE INGREDIENTS (TRANSCRIBED") else ""
+    in_sec = bool(sec) and (re.search(pat, sec + " | " + foot) is not None)
     # The squashed-text check cannot see word boundaries, so it is not used for
     # names that differ only by a prefix (methyl/ethyl, butyl/isobutyl).
     loose = (bool(sec) and in_filed and "(?" not in pat

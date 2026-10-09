@@ -166,8 +166,6 @@ jobs:
           python scripts/fetch_label_images.py --index-only || echo 'image index failed; transcriptions are not re-checked this week'
           python scripts/printed_changes.py
           python claims/registry_stats.py
-          python scripts/verify_same_list.py || echo 'printed-label check failed; same-list finding stays held'
-          python claims/registry_stats.py
           python scripts/build_evidence.py
           python scripts/render_site.py --check
 

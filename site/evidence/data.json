@@ -1,7 +1,7 @@
 {
  "built_on": "2026-10-08",
- "generated_at": "2026-10-09T18:23:38Z",
- "commit": "1ce190e",
+ "generated_at": "2026-10-09T18:27:26Z",
+ "commit": "13104bb",
  "contract": "docs/SITE_DATA_CONTRACT.md",
  "jurisdictions": [
   "US",
@@ -3141,8 +3141,8 @@
    "finding": "same-ingredient-list",
    "id": "US-BABY-SAME-LIST",
    "status": "verified",
-   "sentence": "98 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 84 cases both labels name the same labeler.",
-   "numerator": 98,
+   "sentence": "101 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 85 cases both labels name the same labeler.",
+   "numerator": 101,
    "denominator": 446,
    "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
    "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
@@ -3155,7 +3155,7 @@
    },
    "legal_framing": "Not a violation: nothing requires a baby or kids sunscreen to have a different formula. The finding compares what the label records state; it does not show how the products are made.",
    "detail": {
-    "same_company": 84,
+    "same_company": 85,
     "pairs_csv": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/same_ingredient_list_pairs_published.csv",
     "pairs": [
      {
@@ -3339,23 +3339,6 @@
      },
      {
       "baby": [
-       "ATTITUDE SUNLY KIDS MINERAL SUNSCREEN STICK SPF 50 WATERMELON AND COCO (ZINC OXIDE) STICK [9055-7588 QU&EACUTE;BEC INC.DBA ATTITUDE]",
-       "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=449712ab-5c23-7d50-e063-6394a90ab7fe"
-      ],
-      "same_list": [
-       [
-        "ATTITUDE SUNLY MINERAL SUNSCREEN STICK SPF 50 UNSCENTED (ZINC OXIDE) STICK [9055-7588 QU&EACUTE;BEC INC.DBA ATTITUDE]",
-        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43f43c5a-2680-f549-e063-6394a90aade3"
-       ],
-       [
-        "ATTITUDE SUNLY MINERAL SUNSCREEN FACE STICK SPF 50 UNSCENTED (ZINC OXIDE) STICK [9055-7588 QU&EACUTE;BEC INC.DBA ATTITUDE]",
-        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44acf513-ffe6-888c-e063-6394a90a9c5c"
-       ]
-      ],
-      "same_company": true
-     },
-     {
-      "baby": [
        "ATTITUDE SUNLY KIDS MINERAL SUNSCREEN STICK UNSCENTED SPF 30 (ZINC OXIDE) STICK [9055-7588 QUEBEC INC. DBA ATTITUDE]",
        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d82121d-1dc2-cd99-e063-6394a90aa766"
       ],
@@ -3431,6 +3414,23 @@
        [
         "BANANA BOAT SIMPLY PROTECT SENSITIVE MINERAL ENRICHED SUNSCREEN UVA/UVB BROAD SPECTRUM SPF 50 (HOMOSALATE,OCTISALATE,OCTOCRYLENE,ZINC OXIDE) SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
         "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=92fdea59-c19d-627a-e053-2995a90aabdc"
+       ]
+      ],
+      "same_company": true
+     },
+     {
+      "baby": [
+       "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS LLC]",
+       "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c7b7571-7317-98bc-e063-6294a90aa29f"
+      ],
+      "same_list": [
+       [
+        "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) AEROSOL [EDGEWELL PERSONAL CARE BRANDS LLC]",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45117885-c674-b58a-e063-6394a90af5f4"
+       ],
+       [
+        "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS LLC]",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5192a269-96ae-b8e7-e063-6394a90a5ad9"
        ]
       ],
       "same_company": true
@@ -3617,6 +3617,19 @@
        ]
       ],
       "same_company": true
+     },
+     {
+      "baby": [
+       "BLUE LIZARD KIDS SPF 50 SUNSCREEN (TITANIUM DIOXIDE AND ZINC OXIDE) LOTION [CROWN LABORATORIES]",
+       "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f780daa-4c91-5a68-e063-6394a90afd41"
+      ],
+      "same_list": [
+       [
+        "HELLO BELLO MINERAL SUNSCREEN SPF 50 (ZINC OXIDE TITANIUM OXIDE) LOTION [HELLO BELLO]",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=34bb8560-8223-e810-e063-6394a90ad45d"
+       ]
+      ],
+      "same_company": false
      },
      {
       "baby": [
@@ -3884,6 +3897,19 @@
      },
      {
       "baby": [
+       "EVEREDEN KIDS COOLING MINERAL SUNSTICK SPF30 (ZINC OXIDE) STICK [EDEN BRANDS INC.]",
+       "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=521afa81-737f-81d4-e063-6394a90ad307"
+      ],
+      "same_list": [
+       [
+        "EVEREDEN COOLING MINERAL SUNSTICK SPF 30 (ZINC OXIDE) STICK [EDEN BRANDS INC.]",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4af9e668-0d88-74ad-e063-6394a90a5243"
+       ]
+      ],
+      "same_company": true
+     },
+     {
+      "baby": [
        "FRUIT OF THE EARTH SUN TOWN CITY BABY AND KIDS MINERAL SPF 50 SUNSCREEN (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [FRUIT OF THE EARTH, INC.]",
        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f42a0b1e-038d-4fab-e053-2995a90a5364"
       ],
@@ -3967,6 +3993,19 @@
        ]
       ],
       "same_company": true
+     },
+     {
+      "baby": [
+       "HEB SPF 55 BABIES AND KIDS SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [H.E.B.]",
+       "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5660a97-57c8-61c7-e053-2995a90a0164"
+      ],
+      "same_list": [
+       [
+        "WEGMANS SPORT SUNSCREEN STICK SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [WEGMANS FOOD MARKETS INC]",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5671251-e26b-045f-e053-2a95a90adc03"
+       ]
+      ],
+      "same_company": false
      },
      {
       "baby": [
@@ -7944,8 +7983,8 @@
    "finding": "fragrance",
    "id": "US-BABY-FRAGRANCE",
    "status": "verified",
-   "sentence": "138 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list fragrance (or parfum) as an ingredient. For children with eczema, the American Academy of Dermatology advises a sunscreen that is fragrance-free.",
-   "numerator": 138,
+   "sentence": "139 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list fragrance (or parfum) as an ingredient. For children with eczema, the American Academy of Dermatology advises a sunscreen that is fragrance-free.",
+   "numerator": 139,
    "denominator": 446,
    "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
    "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
@@ -7964,7 +8003,7 @@
    },
    "detail": {
     "mineral": [
-     31,
+     32,
      245
     ],
     "other": [
@@ -8033,6 +8072,14 @@
      {
       "title": "ATTITUDE SUNLY KIDS MINERAL SUNSCREEN SPRAYER SPF 50 WATERMELON AND COCO (ZINC OXIDE) SPRAY [9055-7588 QU&EACUTE;BEC INC.DBA ATTITUDE]",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44aa1349-e3f1-9b80-e063-6294a90a0fbd",
+      "mineral": true,
+      "listed_in": [
+       "printed label"
+      ]
+     },
+     {
+      "title": "ATTITUDE SUNLY KIDS MINERAL SUNSCREEN STICK SPF 50 WATERMELON AND COCO (ZINC OXIDE) STICK [9055-7588 QU&EACUTE;BEC INC.DBA ATTITUDE]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=449712ab-5c23-7d50-e063-6394a90ab7fe",
       "mineral": true,
       "listed_in": [
        "printed label"
@@ -9092,7 +9139,7 @@
       ]
      }
     ],
-    "printed_only": 123,
+    "printed_only": 124,
     "not_counted": "essential oils and other single scent ingredients; only fragrance, parfum or perfume"
    }
   }
