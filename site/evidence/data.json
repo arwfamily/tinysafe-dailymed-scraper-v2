@@ -1,7 +1,7 @@
 {
  "built_on": "2026-10-08",
- "generated_at": "2026-10-09T18:27:26Z",
- "commit": "13104bb",
+ "generated_at": "2026-10-09T18:29:01Z",
+ "commit": "8de80b7",
  "contract": "docs/SITE_DATA_CONTRACT.md",
  "jurisdictions": [
   "US",
@@ -3141,8 +3141,8 @@
    "finding": "same-ingredient-list",
    "id": "US-BABY-SAME-LIST",
    "status": "verified",
-   "sentence": "101 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 85 cases both labels name the same labeler.",
-   "numerator": 101,
+   "sentence": "102 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 86 cases both labels name the same labeler.",
+   "numerator": 102,
    "denominator": 446,
    "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
    "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
@@ -3155,7 +3155,7 @@
    },
    "legal_framing": "Not a violation: nothing requires a baby or kids sunscreen to have a different formula. The finding compares what the label records state; it does not show how the products are made.",
    "detail": {
-    "same_company": 85,
+    "same_company": 86,
     "pairs_csv": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/same_ingredient_list_pairs_published.csv",
     "pairs": [
      {
@@ -4806,6 +4806,19 @@
        [
         "HURLEY BROAD SPECTRUM SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [PRIME ENTERPRISES INC.]",
         "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ed3707a5-b753-5144-e053-2a95a90a6e27"
+       ]
+      ],
+      "same_company": true
+     },
+     {
+      "baby": [
+       "TRUE NATURAL BROAD SPECTRUM SPF 50 ALL NATURAL BABY AND SENSITIVE SKIN SUNSCREEN (ZINC OXIDE) LOTION [TRUE NATURE GROUP, INC.]",
+       "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=efdfe5b6-dfd6-475f-a696-1559488d58c9"
+      ],
+      "same_list": [
+       [
+        "TRUE NATURAL BROAD SPECTRUM SPF 50 ALL NATURAL VANILLA-COCONUT SUNSCREEN (ZINC OXIDE) LOTION [TRUE NATURE GROUP, INC.]",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27eaa47f-755a-4410-be4f-755d334360cf"
        ]
       ],
       "same_company": true

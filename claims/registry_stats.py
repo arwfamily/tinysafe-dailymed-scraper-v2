@@ -316,7 +316,7 @@ def same_list_pairs(forms, recs, include):
 def _nk(x):
     x = x.upper().replace("\u2010", "-").replace("\u2011", "-").replace("\u2013", "-").replace("\u2014", "-")
     x = re.sub(r"\(\s*1\s*\)|[\*\u2020\u2021\u00b0\u00b9\^]+", "", x)
-    x = re.sub(r"^(?:SECTION/)?(?:INACTIVE |OTHER )?INGREDIENTS?\s*:?\s*", "", x)
+    x = re.sub(r"^(?:SECTION\s*/?\s*)?(?:INACTIVE |OTHER )?INGREDIENTS?\s*:?\s*", "", x)
     return re.sub(r"[^A-Z0-9]", "", x)
 
 
