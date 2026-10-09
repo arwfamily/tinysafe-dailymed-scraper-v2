@@ -85,8 +85,8 @@ _US_MAX = {"AVOBENZONE": 3, "OXYBENZONE": 6, "OCTINOXATE": 7.5, "HOMOSALATE": 15
 
 
 _TEXT = None
-_DIST = re.compile(r"(?:DISTRIBUTED BY|DISTRIBU[ÉE] PAR|IMPORTED BY|IMPORTADO Y DISTRIBUIDO POR|DISTRIBUIDO POR)\W{0,3}(.{0,140})", re.I)
-_ABROAD = [("Mexico", r"M[ÉE]XICO"), ("Canada", r"CANADA|\bON N\d|\bQC\b|ONTARIO|QU[ÉE]BEC"),
+_DIST = re.compile(r"(?:DISTRIBUTED BY|DISTRIBU[ÉE] PAR|IMPORTED BY|IMPORT[ÉE] PAR|IMPORTADO Y DISTRIBUIDO POR|DISTRIBUIDO POR)\W{0,3}(.{0,140})", re.I)
+_ABROAD = [("Mexico", r"M[ÉE]XICO"), ("Canada", r"CANADA|\bON N\d|\bQC\b|ONTARIO|QU[ÉE]BEC|,\s*(?:ON|BC|AB|MB|SK|NS|NB)\b(?!\s*\d{5})"),
            ("the UK", r"\bUK\b|UNITED KINGDOM|HIGH WYCOMBE"), ("Australia", r"AUSTRALIA")]
 _US = re.compile(r"\bU\.?S\.?A\b|UNITED STATES|,\s?[A-Z]{2}\.?\s?\d{5}\b", re.I)
 
@@ -313,6 +313,80 @@ def same_list_pairs(forms, recs, include):
     return out
 
 
+def _nk(x):
+    x = x.upper().replace("\u2010", "-").replace("\u2011", "-").replace("\u2013", "-").replace("\u2014", "-")
+    x = re.sub(r"\(\s*1\s*\)|[\*\u2020\u2021\u00b0\u00b9\^]+", "", x)
+    x = re.sub(r"^(?:SECTION/)?(?:INACTIVE |OTHER )?INGREDIENTS?\s*:?\s*", "", x)
+    return re.sub(r"[^A-Z0-9]", "", x)
+
+
+def printed_items(r):
+    """The label's printed inactive list as normalised items (label text,
+    archived Drug Facts text or image transcription), or []."""
+    from spl_parse import split_ingredient_list
+    sec = printed_section(r["setid"]) if not str(r["setid"]).count("#") else ""
+    items = split_ingredient_list(re.sub(r"^INACTIVE INGREDIENTS \(TRANSCRIBED FROM LABEL IMAGE\):\s*", "Inactive ingredients: ", sec)) if sec else []
+    if len(items) < 5:
+        items = list(r.get("printed_inactives") or [])
+    return [k for k in (_nk(i) for i in items) if k]
+
+
+def _form(r):
+    f = (r.get("dosage_form") or "").upper()
+    return "SPRAY" if "SPRAY" in f or "AEROSOL" in f else f
+
+
+def _actives_key(r):
+    out = []
+    for a in r.get("active_ingredients") or []:
+        if not isinstance(a.get("percent_ww"), (int, float)):
+            return None
+        out.append(((a.get("unii") or a.get("name") or "").upper(), round(a["percent_ww"], 1)))
+    return tuple(sorted(out)) or None
+
+
+def same_list_printed(forms, recs, include):
+    """Baby/kids formulas whose printed inactive list (>= 5 items, in order),
+    actives at the same percentages and product form equal those of a sunscreen
+    label that does not say baby or kids anywhere we can read."""
+    by = {}
+    for x in recs:
+        if x["setid"] in include or x.get("product_type") != "sunscreen":
+            continue
+        if x.get("baby_signal", "none") not in ("none", "false_positive_phrase"):
+            continue
+        if (x.get("label_flags") or {}).get("front_panel_baby_words"):
+            continue
+        k = _actives_key(x)
+        if k:
+            by.setdefault((k, _form(x)), []).append(x)
+    # every baby/kids label of a formula, not only its representative: labels
+    # of one formula can print their list differently
+    members = {}
+    for x in recs:
+        if x["setid"] in include:
+            members.setdefault(x["formulation_hash"], []).append(x)
+    out = []
+    for r in forms:
+        k = _actives_key(r)
+        if not k:
+            continue
+        scent = bool(where_listed(r, FRAGRANCE.pattern))
+        group = [r] + [x for x in members.get(r["formulation_hash"], []) if x["setid"] != r["setid"]
+                       and _actives_key(x) == k and _form(x) == _form(r)
+                       and bool(where_listed(x, FRAGRANCE.pattern)) == scent]
+        # compared as one joined string: the same words in the same order,
+        # whatever the label's comma placement ('Caprylic/Capric' 'Triglyceride')
+        lists = {"".join(l) for l in (printed_items(x) for x in group) if len(l) >= 5}
+        if not lists:
+            continue
+        twins = [x for x in by.get((k, _form(r)), [])
+                 if len(printed_items(x)) >= 5 and "".join(printed_items(x)) in lists]
+        if twins:
+            out.append((r, sorted(twins, key=lambda x: x["setid"])))
+    return out
+
+
 def _co(name):
     return re.sub(r"[^A-Z0-9]", "", re.sub(r"\b(INC|LLC|LTD|CO|CORP|CORPORATION|COMPANY)\b\.?", "", (name or "").upper()))
 
@@ -389,6 +463,26 @@ LABEL_TEXT = os.path.join(ROOT, "data", "views", "baby_label_text.jsonl")
 _SECTION = None
 
 
+_FULLTEXT = {}
+
+
+def _unheaded_list(text, items):
+    """The ' | '-delimited block of label text that contains at least 60% of the
+    transcribed items, or ''."""
+    def key(x):
+        return re.sub(r"[^A-Z0-9]", "", re.sub(r"\(\s*1\s*\)|\*", "", x.upper()))
+    want = [key(i) for i in items if key(i)]
+    best, score = "", 0.0
+    for block in text.split(" | "):
+        b = re.sub(r"[^A-Z0-9]", "", block.upper())
+        if not want or len(b) < 40:
+            continue
+        sc = sum(1 for w in want if w and w in b) / len(want)
+        if sc > score:
+            best, score = block, sc
+    return best if score >= 0.6 else ""
+
+
 def printed_section(setid):
     """The Inactive ingredients text printed on the label (from the label-text
     archive, scripts/baby_label_text.py), or '' if the label has none in text."""
@@ -404,6 +498,7 @@ def printed_section(setid):
                     m = re.search(r"(?:INACTIVE|OTHER) INGREDIENTS?[^|]{40,}", (d.get("text") or "").upper())
                     txt = m.group(0) if m else ""
                 _SECTION[d["setid"]] = txt.upper()
+                _FULLTEXT[d["setid"]] = d.get("text") or ""
         # Image-only lists, transcribed from the label image twice and agreed
         # (data/corrections/printed_lists_from_images.jsonl).
         tx = os.path.join(ROOT, "data", "corrections", "printed_lists_from_images.jsonl")
@@ -414,7 +509,13 @@ def printed_section(setid):
                 # English ingredient names; the filing decides for that label
                 english = t.get("items") and sum(ch.isascii() for ch in "".join(t["items"])) > 0.9 * len("".join(t["items"]))
                 if english and len(_SECTION.get(t["setid"], "")) < 60:
-                    _SECTION[t["setid"]] = ("INACTIVE INGREDIENTS (TRANSCRIBED FROM LABEL IMAGE): " + ", ".join(t["items"])).upper()
+                    # The SPL text may carry the list without a heading. If a
+                    # text block holds most of the transcribed items, that text
+                    # is the label's current list and decides (an image can be
+                    # older artwork: Jason Kids, 2026-10-09 audit).
+                    block = _unheaded_list(_FULLTEXT.get(t["setid"], ""), t["items"])
+                    _SECTION[t["setid"]] = block.upper() if block else (
+                        "INACTIVE INGREDIENTS (TRANSCRIBED FROM LABEL IMAGE): " + ", ".join(t["items"])).upper()
     return _SECTION.get(setid, "")
 
 
@@ -516,38 +617,25 @@ def main():
                     "by_percent": by_percent},
          "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py", "verified_date": snapshot},
     ]
-    pairs = same_list_pairs(forms, recs, include)
-    # Structured SPL tables can omit printed items (e.g. fragrance), so a pair
-    # only counts once the printed Drug Facts lists were compared and matched.
-    check_path = os.path.join(ROOT, "claims", "same_list_label_check.json")
-    printed = {}
-    if os.path.exists(check_path):
-        for c in json.load(open(check_path, encoding="utf-8"))["pairs"]:
-            printed[(c["baby"], c["other"])] = c["verdict"]
-    checked_pairs = [(r, [x for x in t if printed.get((r["dailymed_url"], x["dailymed_url"])) == "match"]) for r, t in pairs]
-    checked_pairs = [(r, t) for r, t in checked_pairs if t]
-    pairs_checked_all = bool(printed) and all((r["dailymed_url"], x["dailymed_url"]) in printed for r, t in pairs for x in t)
-    with open(PAIRS_CSV, "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["baby_kids_title", "baby_kids_dailymed", "same_list_title", "same_list_dailymed", "same_company"])
-        for r, twins in sorted(pairs, key=lambda p: p[0]["title"]):
-            for x in twins:
-                w.writerow([r["title"], r["dailymed_url"], x["title"], x["dailymed_url"],
-                            "yes" if (x.get("labeler_from_title") or "") == (r.get("labeler_from_title") or "") else "no"])
-    # The published list: only pairs whose printed Drug Facts also match. The
-    # candidates file above is the input to scripts/verify_same_list.py.
+    # Same printed ingredient list: compared directly on the printed Drug
+    # Facts of both labels (label text, or the image transcription), across
+    # every sunscreen label in DailyMed, not only labels with the same filing.
+    checked_pairs = same_list_printed(forms, recs, include)
     with open(os.path.join(ROOT, "claims", "same_ingredient_list_pairs_published.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["baby_kids_title", "baby_kids_dailymed", "same_list_title", "same_list_dailymed", "same_labeler"])
+        w.writerow(["baby_kids_title", "baby_kids_dailymed", "same_list_title", "same_list_dailymed", "same_labeler",
+                    "printed_items"])
         for r, twins in sorted(checked_pairs, key=lambda p: p[0]["title"]):
             for x in twins:
                 w.writerow([r["title"], r["dailymed_url"], x["title"], x["dailymed_url"],
-                            "yes" if _co(x.get("labeler_from_title")) == _co(r.get("labeler_from_title")) else "no"])
+                            "yes" if _co(x.get("labeler_from_title")) == _co(r.get("labeler_from_title")) else "no",
+                            len(printed_items(r))])
+    pairs_checked_all = True
+    pairs = checked_pairs
     n_same_co = sum(1 for r, t in checked_pairs if same_labeler(r, t))
     claims.append({
         "id": "US-BABY-SAME-LIST", "status": "verified" if pairs_checked_all else "provisional_do_not_publish",
-        "blocker": None if pairs_checked_all else "printed Drug Facts comparison (scripts/verify_same_list.py) not run for every candidate pair",
-        "candidates_structured": len(pairs), "jurisdiction": "US",
+        "jurisdiction": "US",
         "ingredient_slugs": [], "finding": "same-ingredient-list",
         "claim": f"{len(checked_pairs)} of {N} baby/kids formulations print the same ingredient list as a non-baby label.",
         "publishable_sentence": (f"{len(checked_pairs)} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed "
@@ -562,7 +650,7 @@ def main():
                    "pairs": [{"baby": [r["title"], r["dailymed_url"]],
                               "same_list": [[x["title"], x["dailymed_url"]] for x in t],
                               "same_company": same_labeler(r, t)} for r, t in sorted(checked_pairs, key=lambda p: p[0]["title"])]},
-        "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py (same_list_pairs)",
+        "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py (same_list_printed)",
         "verified_date": snapshot})
     mineral = [r for r in forms if r.get("is_mineral_only_actives")]
     M = len(mineral)

@@ -11,7 +11,7 @@ import unittest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(HERE), "scripts"))
-from spl_parse import label_fields, parse_spl, split_ingredient_list, match_inactives, _front_baby_words  # noqa: E402
+from spl_parse import label_fields, parse_spl, split_ingredient_list, match_inactives, _front_baby_words, printed_actives  # noqa: E402
 
 
 def fx(prefix):
@@ -107,6 +107,12 @@ class Listing(unittest.TestCase):
         self.assertIn("KIDS", label_fields(fx("08147940"))["label_flags"]["front_panel_baby_words"])
         self.assertEqual(_front_baby_words("SPF 50 Sport. Keep out of reach of children. Children under 6 months: ask a doctor"), [])
         self.assertEqual(_front_baby_words("Gentle for babies and toddlers SPF 50"), ["BABIES", "TODDLERS"])
+
+    def test_percent_before_name(self):
+        got = {a["name"]: a["percent"] for a in printed_actives("Active Ingredients 3% Avobenzone 13% Homosalate 5% Octisalate 7% Octocrylene 4% Oxybenzone")}
+        self.assertEqual(got, {"AVOBENZONE": 3.0, "HOMOSALATE": 13.0, "OCTISALATE": 5.0, "OCTOCRYLENE": 7.0, "OXYBENZONE": 4.0})
+        got = {a["name"]: a["percent"] for a in printed_actives("Active ingredients Titanium Dioxide 5.95%, Zinc Oxide 9.70%")}
+        self.assertEqual(got, {"TITANIUM DIOXIDE": 5.95, "ZINC OXIDE": 9.7})
 
     def test_every_fixture_parses(self):
         for f in glob.glob(os.path.join(HERE, "fixtures", "spl", "*.xml")):

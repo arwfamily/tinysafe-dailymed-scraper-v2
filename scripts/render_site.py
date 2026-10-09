@@ -579,9 +579,10 @@ def finding_body(d, f):
         faq = [
             ("Is it wrong to sell the same formula under a baby label?", f["legal_framing"]),
             ("How was \"the same\" decided?",
-             "Both labels list the same active ingredients at the same percentages, and their Drug Facts, as filed with the "
-             "FDA, list the same inactive ingredients in the same order. Pairs whose SPF, product form or named actives "
-             "differ, or whose Drug Facts could not be read, were left out."),
+             "Both labels list the same active ingredients at the same percentages, have the same product form, and print "
+             "the same inactive ingredients in the same order in their Drug Facts (at least five). The other label does not "
+             "say baby or kids in its name or on its front panel. Labels whose printed list could not be read were left out. "
+             "The SPF number printed on the two labels can differ."),
             ("How were these products selected?", howto),
         ]
     elif key == "eu-banned-preservatives":

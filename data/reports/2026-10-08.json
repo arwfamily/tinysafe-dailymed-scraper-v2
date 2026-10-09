@@ -8,35 +8,7 @@
   "new": 38
  },
  "baby_population_live": 584,
- "new_baby_decisions": [
-  {
-   "setid": "035f2500-7b38-4391-ad49-ded3eb8f2d56",
-   "decision": "include",
-   "stage": "auto",
-   "reason": "baby-care brand: Putto (Agabang & Company)",
-   "decided_on": "2026-10-08",
-   "title": "PUTTO SECRET UV FACE (TITANIUM DIOXIDE) CREAM [AGABANG & COMPANY ]",
-   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=035f2500-7b38-4391-ad49-ded3eb8f2d56"
-  },
-  {
-   "setid": "77040348-f3c6-4aa7-b70a-dafbc0447687",
-   "decision": "include",
-   "stage": "auto",
-   "reason": "baby-care brand: Putto (Agabang & Company)",
-   "decided_on": "2026-10-08",
-   "title": "PUTTO SECRET UV FACE (TITANIUM DIOXIDE) CREAM [AGABANG & COMPANY ]",
-   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77040348-f3c6-4aa7-b70a-dafbc0447687"
-  },
-  {
-   "setid": "b5bf1c4c-7c48-423c-b4fc-52ae57f339fd",
-   "decision": "include",
-   "stage": "auto",
-   "reason": "baby-care brand: Sqween",
-   "decided_on": "2026-10-08",
-   "title": "SQWEEN 100% MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 WATER RESISTANT (ZINC OXIDE) LOTION [SQWEEN LLC]",
-   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5bf1c4c-7c48-423c-b4fc-52ae57f339fd"
-  }
- ],
+ "new_baby_decisions": [],
  "review_queue": 0,
  "changes": [
   {

@@ -194,13 +194,19 @@ def printed_actives(text, extra_names=()):
     for n in extra_names:
         vocab.setdefault(norm(n), norm(n))
     found = {}
+    # "3% Avobenzone 13% Homosalate": percentages printed before the names
+    pct_first = bool(re.match(r"^\W*(?:ACTIVE INGREDIENTS?\W*)?(?:\([^)]*\))?\W*\d+(?:\.\d+)?\s*%\s*[A-Za-z]", t, re.I))
     for name in sorted(vocab, key=len, reverse=True):
         pat = re.escape(name).replace("\\ ", r"[\s\-]*").replace("\\-", r"[\s\-]*")
         for m in re.finditer(r"(?<![A-Za-z])" + pat + r"(?![A-Za-z])", t, re.I):
             if any(a <= m.start() < b for a, b, _ in found.values()):
                 continue
-            tail = t[m.end():m.end() + 30]
-            pm = re.match(r"[^%A-Za-z]{0,12}?(\d+(?:\.\d+)?)\s*%", tail)
+            if pct_first:
+                head = t[max(0, m.start() - 14):m.start()]
+                pm = re.search(r"(\d+(?:\.\d+)?)\s*%[^%A-Za-z]{0,3}$", head)
+            else:
+                tail = t[m.end():m.end() + 30]
+                pm = re.match(r"[^%A-Za-z]{0,12}?(\d+(?:\.\d+)?)\s*%", tail)
             canon = vocab[name]
             if canon not in found:
                 found[canon] = (m.start(), m.end(), float(pm.group(1)) if pm else None)

@@ -671,10 +671,10 @@
       "ingredient_slugs": [
         "zinc-oxide"
       ],
-      "claim": "251 of 445 baby/kids sunscreen formulations list zinc oxide as an active ingredient.",
-      "publishable_sentence": "251 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name zinc oxide as an active ingredient.",
+      "claim": "251 of 446 baby/kids sunscreen formulations list zinc oxide as an active ingredient.",
+      "publishable_sentence": "251 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name zinc oxide as an active ingredient.",
       "numerator": 251,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -694,10 +694,10 @@
       "ingredient_slugs": [
         "titanium-dioxide"
       ],
-      "claim": "96 of 445 baby/kids sunscreen formulations list titanium dioxide as an active ingredient.",
-      "publishable_sentence": "96 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name titanium dioxide as an active ingredient.",
+      "claim": "96 of 446 baby/kids sunscreen formulations list titanium dioxide as an active ingredient.",
+      "publishable_sentence": "96 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name titanium dioxide as an active ingredient.",
       "numerator": 96,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -717,10 +717,10 @@
       "ingredient_slugs": [
         "bemotrizinol"
       ],
-      "claim": "0 of 445 baby/kids sunscreen formulations list bemotrizinol as an active ingredient.",
-      "publishable_sentence": "None of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name bemotrizinol as an active ingredient.",
+      "claim": "0 of 446 baby/kids sunscreen formulations list bemotrizinol as an active ingredient.",
+      "publishable_sentence": "None of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name bemotrizinol as an active ingredient.",
       "numerator": 0,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -740,10 +740,10 @@
       "ingredient_slugs": [
         "avobenzone"
       ],
-      "claim": "171 of 445 baby/kids sunscreen formulations list avobenzone as an active ingredient.",
-      "publishable_sentence": "171 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name avobenzone as an active ingredient.",
-      "numerator": 171,
-      "denominator": 445,
+      "claim": "172 of 446 baby/kids sunscreen formulations list avobenzone as an active ingredient.",
+      "publishable_sentence": "172 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name avobenzone as an active ingredient.",
+      "numerator": 172,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -763,10 +763,10 @@
       "ingredient_slugs": [
         "oxybenzone"
       ],
-      "claim": "59 of 445 baby/kids sunscreen formulations list oxybenzone as an active ingredient.",
-      "publishable_sentence": "59 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name oxybenzone as an active ingredient.",
-      "numerator": 59,
-      "denominator": 445,
+      "claim": "60 of 446 baby/kids sunscreen formulations list oxybenzone as an active ingredient.",
+      "publishable_sentence": "60 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name oxybenzone as an active ingredient.",
+      "numerator": 60,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -786,10 +786,10 @@
       "ingredient_slugs": [
         "octinoxate"
       ],
-      "claim": "44 of 445 baby/kids sunscreen formulations list octinoxate as an active ingredient.",
-      "publishable_sentence": "44 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octinoxate as an active ingredient.",
-      "numerator": 44,
-      "denominator": 445,
+      "claim": "45 of 446 baby/kids sunscreen formulations list octinoxate as an active ingredient.",
+      "publishable_sentence": "45 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octinoxate as an active ingredient.",
+      "numerator": 45,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -809,10 +809,10 @@
       "ingredient_slugs": [
         "homosalate"
       ],
-      "claim": "161 of 445 baby/kids sunscreen formulations list homosalate as an active ingredient.",
-      "publishable_sentence": "161 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name homosalate as an active ingredient.",
-      "numerator": 161,
-      "denominator": 445,
+      "claim": "162 of 446 baby/kids sunscreen formulations list homosalate as an active ingredient.",
+      "publishable_sentence": "162 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name homosalate as an active ingredient.",
+      "numerator": 162,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -832,10 +832,10 @@
       "ingredient_slugs": [
         "octisalate"
       ],
-      "claim": "181 of 445 baby/kids sunscreen formulations list octisalate as an active ingredient.",
-      "publishable_sentence": "181 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octisalate as an active ingredient.",
-      "numerator": 181,
-      "denominator": 445,
+      "claim": "182 of 446 baby/kids sunscreen formulations list octisalate as an active ingredient.",
+      "publishable_sentence": "182 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octisalate as an active ingredient.",
+      "numerator": 182,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -855,10 +855,10 @@
       "ingredient_slugs": [
         "octocrylene"
       ],
-      "claim": "170 of 445 baby/kids sunscreen formulations list octocrylene as an active ingredient.",
-      "publishable_sentence": "170 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octocrylene as an active ingredient.",
-      "numerator": 170,
-      "denominator": 445,
+      "claim": "172 of 446 baby/kids sunscreen formulations list octocrylene as an active ingredient.",
+      "publishable_sentence": "172 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name octocrylene as an active ingredient.",
+      "numerator": 172,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -878,10 +878,10 @@
       "ingredient_slugs": [
         "ensulizole"
       ],
-      "claim": "1 of 445 baby/kids sunscreen formulations list ensulizole as an active ingredient.",
-      "publishable_sentence": "1 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ensulizole as an active ingredient.",
+      "claim": "1 of 446 baby/kids sunscreen formulations list ensulizole as an active ingredient.",
+      "publishable_sentence": "1 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ensulizole as an active ingredient.",
       "numerator": 1,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -901,10 +901,10 @@
       "ingredient_slugs": [
         "meradimate"
       ],
-      "claim": "1 of 445 baby/kids sunscreen formulations list meradimate as an active ingredient.",
-      "publishable_sentence": "1 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name meradimate as an active ingredient.",
+      "claim": "1 of 446 baby/kids sunscreen formulations list meradimate as an active ingredient.",
+      "publishable_sentence": "1 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name meradimate as an active ingredient.",
       "numerator": 1,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -924,10 +924,10 @@
       "ingredient_slugs": [
         "dioxybenzone"
       ],
-      "claim": "0 of 445 baby/kids sunscreen formulations list dioxybenzone as an active ingredient.",
-      "publishable_sentence": "None of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name dioxybenzone as an active ingredient.",
+      "claim": "0 of 446 baby/kids sunscreen formulations list dioxybenzone as an active ingredient.",
+      "publishable_sentence": "None of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name dioxybenzone as an active ingredient.",
       "numerator": 0,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -947,10 +947,10 @@
       "ingredient_slugs": [
         "sulisobenzone"
       ],
-      "claim": "0 of 445 baby/kids sunscreen formulations list sulisobenzone as an active ingredient.",
-      "publishable_sentence": "None of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name sulisobenzone as an active ingredient.",
+      "claim": "0 of 446 baby/kids sunscreen formulations list sulisobenzone as an active ingredient.",
+      "publishable_sentence": "None of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name sulisobenzone as an active ingredient.",
       "numerator": 0,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -970,10 +970,10 @@
       "ingredient_slugs": [
         "cinoxate"
       ],
-      "claim": "0 of 445 baby/kids sunscreen formulations list cinoxate as an active ingredient.",
-      "publishable_sentence": "None of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name cinoxate as an active ingredient.",
+      "claim": "0 of 446 baby/kids sunscreen formulations list cinoxate as an active ingredient.",
+      "publishable_sentence": "None of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name cinoxate as an active ingredient.",
       "numerator": 0,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -993,10 +993,10 @@
       "ingredient_slugs": [
         "padimate-o"
       ],
-      "claim": "0 of 445 baby/kids sunscreen formulations list padimate O as an active ingredient.",
-      "publishable_sentence": "None of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name padimate O as an active ingredient.",
+      "claim": "0 of 446 baby/kids sunscreen formulations list padimate O as an active ingredient.",
+      "publishable_sentence": "None of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name padimate O as an active ingredient.",
       "numerator": 0,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -1016,10 +1016,10 @@
       "ingredient_slugs": [
         "paba"
       ],
-      "claim": "0 of 445 baby/kids sunscreen formulations list PABA (aminobenzoic acid) as an active ingredient.",
-      "publishable_sentence": "None of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name PABA (aminobenzoic acid) as an active ingredient.",
+      "claim": "0 of 446 baby/kids sunscreen formulations list PABA (aminobenzoic acid) as an active ingredient.",
+      "publishable_sentence": "None of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name PABA (aminobenzoic acid) as an active ingredient.",
       "numerator": 0,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -1039,10 +1039,10 @@
       "ingredient_slugs": [
         "trolamine-salicylate"
       ],
-      "claim": "0 of 445 baby/kids sunscreen formulations list trolamine salicylate as an active ingredient.",
-      "publishable_sentence": "None of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name trolamine salicylate as an active ingredient.",
+      "claim": "0 of 446 baby/kids sunscreen formulations list trolamine salicylate as an active ingredient.",
+      "publishable_sentence": "None of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name trolamine salicylate as an active ingredient.",
       "numerator": 0,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -1062,10 +1062,10 @@
       "ingredient_slugs": [
         "ecamsule"
       ],
-      "claim": "0 of 445 baby/kids sunscreen formulations list ecamsule as an active ingredient.",
-      "publishable_sentence": "None of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ecamsule as an active ingredient.",
+      "claim": "0 of 446 baby/kids sunscreen formulations list ecamsule as an active ingredient.",
+      "publishable_sentence": "None of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ecamsule as an active ingredient.",
       "numerator": 0,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -1085,10 +1085,10 @@
       "ingredient_slugs": [
         "drometrizole-trisiloxane"
       ],
-      "claim": "0 of 445 baby/kids sunscreen formulations list drometrizole trisiloxane as an active ingredient.",
-      "publishable_sentence": "None of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name drometrizole trisiloxane as an active ingredient.",
+      "claim": "0 of 446 baby/kids sunscreen formulations list drometrizole trisiloxane as an active ingredient.",
+      "publishable_sentence": "None of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name drometrizole trisiloxane as an active ingredient.",
       "numerator": 0,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -1108,10 +1108,10 @@
       "ingredient_slugs": [
         "ethylhexyl-triazone"
       ],
-      "claim": "0 of 445 baby/kids sunscreen formulations list ethylhexyl triazone as an active ingredient.",
-      "publishable_sentence": "None of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ethylhexyl triazone as an active ingredient.",
+      "claim": "0 of 446 baby/kids sunscreen formulations list ethylhexyl triazone as an active ingredient.",
+      "publishable_sentence": "None of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database name ethylhexyl triazone as an active ingredient.",
       "numerator": 0,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -1130,19 +1130,19 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "fda-more-data",
-      "claim": "199 of 445 baby/kids sunscreen formulations contain at least one of the 12 actives the FDA has asked for more data on.",
-      "publishable_sentence": "199 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain at least one of the 12 active ingredients the FDA has proposed need more safety data. 152 of them contain four or more.",
+      "claim": "201 of 446 baby/kids sunscreen formulations contain at least one of the 12 actives the FDA has asked for more data on.",
+      "publishable_sentence": "201 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain at least one of the 12 active ingredients the FDA has proposed need more safety data. 153 of them contain four or more.",
       "ingredient_source": {
         "title": "FDA — Questions and Answers: FDA's regulatory actions on over-the-counter sunscreen",
         "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
         "checked": "2026-10-08"
       },
       "legal_framing": "Legal today: all 12 ingredients are permitted under the current US sunscreen monograph. The FDA has proposed that they need more data before they can be recognized as safe and effective. The finding is about what labels contain, not about any brand.",
-      "numerator": 199,
-      "denominator": 445,
+      "numerator": 201,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "detail": {
-        "four_or_more": 152
+        "four_or_more": 153
       },
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -1163,19 +1163,19 @@
         "homosalate"
       ],
       "finding": "homosalate-eu-limit",
-      "claim": "152 of 445 baby/kids sunscreen formulations contain homosalate above 7.34%.",
-      "publishable_sentence": "152 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain homosalate above 7.34%, the highest level the EU allows. The EU allows it only in face products other than propellant sprays; the US allows up to 15% in any sunscreen.",
+      "claim": "153 of 446 baby/kids sunscreen formulations contain homosalate above 7.34%.",
+      "publishable_sentence": "153 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain homosalate above 7.34%, the highest level the EU allows. The EU allows it only in face products other than propellant sprays; the US allows up to 15% in any sunscreen.",
       "ingredient_source": {
         "title": "EU Cosmetics Regulation Annex VI entry 3 (homosalate), as amended by Regulation (EU) 2022/2195",
         "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
         "checked": "2026-10-08"
       },
       "legal_framing": "Legal in the US: the US monograph allows homosalate up to 15%. The EU and the US set different limits; this finding compares them. It does not say any product breaks a rule where it is sold.",
-      "numerator": 152,
-      "denominator": 445,
+      "numerator": 153,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "detail": {
-        "homosalate_formulas": 161,
+        "homosalate_formulas": 162,
         "excluded_unreliable_percent": 0,
         "by_percent": [
           [
@@ -1188,7 +1188,7 @@
           ],
           [
             "13",
-            13
+            14
           ],
           [
             "12",
@@ -1238,19 +1238,17 @@
     {
       "id": "US-BABY-SAME-LIST",
       "status": "verified",
-      "blocker": null,
-      "candidates_structured": 106,
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "same-ingredient-list",
-      "claim": "59 of 445 baby/kids formulations print the same ingredient list as a non-baby label.",
-      "publishable_sentence": "59 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 50 cases both labels name the same labeler.",
+      "claim": "98 of 446 baby/kids formulations print the same ingredient list as a non-baby label.",
+      "publishable_sentence": "98 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 84 cases both labels name the same labeler.",
       "legal_framing": "Not a violation: nothing requires a baby or kids sunscreen to have a different formula. The finding compares what the label records state; it does not show how the products are made.",
-      "numerator": 59,
-      "denominator": 445,
+      "numerator": 98,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "detail": {
-        "same_company": 50,
+        "same_company": 84,
         "pairs_csv": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/same_ingredient_list_pairs_published.csv",
         "pairs": [
           {
@@ -1276,6 +1274,10 @@
               "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10f60367-6681-a589-e063-6394a90a6bb8"
             ],
             "same_list": [
+              [
+                "ARIZONA SUN SUNSCREEN SPF 30 (SUNSCREEN) LOTION [ARIZONA SUN PRODUCTS]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10e276e4-81f1-9429-e063-6394a90a800d"
+              ],
               [
                 "ARIZONA SUN SUNSCREEN SPF 30 (SUNSCREEN) LOTION [ARIZONA SUN PRODUCTS]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10e336b3-0aee-cc2f-e063-6394a90a9f91"
@@ -1322,6 +1324,19 @@
           },
           {
             "baby": [
+              "ATTITUDE KIDS MINERAL SUNSCREEN UNSCENTED SPF 30 (ZINC OXIDE) CREAM [9055-7588 QU&EACUTE;BEC INC. DBA ATTITUDE]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c2461e22-1518-4f9e-ad8c-951784ef8b5f"
+            ],
+            "same_list": [
+              [
+                "BIO SPECTRA ATTITUDE (ZINC OXIDE) CREAM [9055-7588 QUEBEC INC. DBA ATTITUDE]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=954713fe-c84c-41b4-913d-3507ed91e55d"
+              ]
+            ],
+            "same_company": false
+          },
+          {
+            "baby": [
               "ATTITUDE KIDS OATMEAL SENSITIVE MINERAL SUNSCREEN UNSCENTED SPF 30 (ZINC OXIDE) CREAM [9055-7588 QUEBEC INC. DBA ATTITUDE]",
               "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=310e66a2-8714-4016-87f4-81c1fef19ec9"
             ],
@@ -1329,6 +1344,19 @@
               [
                 "ATTITUDE OATMEAL SENSITIVE MINERAL SUNSCREEN UNSCENTED SPF 30 (ZINC OXIDE) CREAM [9055-7588 QUEBEC INC. DBA ATTITUDE]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6b8733d-6431-4ed2-9350-c63bb901c804"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "ATTITUDE MINERAL SUNSCREEN LITTLE ONES - FRAGRANCE FREE (ZINC OXIDE) CREAM [BIO SPECTRA]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfd4e49b-b279-4646-b457-c6d359ad10aa"
+            ],
+            "same_list": [
+              [
+                "ATTITUDE MINERAL SUNSCREEN- FAMILY - FRAGRANCE FREE (ZINC OXIDE) CREAM [BIO SPECTRA]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db5c13be-26ce-4fce-a1f0-2cc63a50a1b0"
               ]
             ],
             "same_company": true
@@ -1404,6 +1432,23 @@
           },
           {
             "baby": [
+              "ATTITUDE SUNLY KIDS MINERAL SUNSCREEN STICK SPF 50 WATERMELON AND COCO (ZINC OXIDE) STICK [9055-7588 QU&EACUTE;BEC INC.DBA ATTITUDE]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=449712ab-5c23-7d50-e063-6394a90ab7fe"
+            ],
+            "same_list": [
+              [
+                "ATTITUDE SUNLY MINERAL SUNSCREEN STICK SPF 50 UNSCENTED (ZINC OXIDE) STICK [9055-7588 QU&EACUTE;BEC INC.DBA ATTITUDE]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43f43c5a-2680-f549-e063-6394a90aade3"
+              ],
+              [
+                "ATTITUDE SUNLY MINERAL SUNSCREEN FACE STICK SPF 50 UNSCENTED (ZINC OXIDE) STICK [9055-7588 QU&EACUTE;BEC INC.DBA ATTITUDE]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44acf513-ffe6-888c-e063-6394a90a9c5c"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
               "ATTITUDE SUNLY KIDS MINERAL SUNSCREEN STICK UNSCENTED SPF 30 (ZINC OXIDE) STICK [9055-7588 QUEBEC INC. DBA ATTITUDE]",
               "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d82121d-1dc2-cd99-e063-6394a90aa766"
             ],
@@ -1417,6 +1462,74 @@
           },
           {
             "baby": [
+              "BABIENCE KIDS SUNSCREEN PINKFONG BABY SHARK SPF 50 (ENSULIZOLE, OCTINOXATE, OCTISALATE, TITANIUM DIOXIDE, ZINC OXIDE) LOTION [LG H&H CO., LTD.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4364c8d-8b74-130e-e053-2995a90ad1c1"
+            ],
+            "same_list": [
+              [
+                "THEFACESHOP NATURAL SUN OIL-FREE SUNSCREEN BROAD SPECTRUM SPF 50 (ENSULIZOLE, OCTINOXATE, OCTISALATE, TITANIUM DIOXIDE, ZINC OXIDE) LOTION [LG H&H CO., LTD.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d30a9f96-f99b-4610-e053-2995a90a3f91"
+              ],
+              [
+                "THEFACESHOP NATURAL SUN OIL-FREE SUNSCREEN BROAD SPECTRUM SPF 50 (ENSULIZOLE, OCTINOXATE, OCTISALATE, TITANIUM DIOXIDE, ZINC OXIDE) LOTION [FMG CO.LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d30b156a-b9b1-499b-e053-2a95a90ada6a"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "BABY BUM MINERAL 50 SUNSCREEN ROLL-ON [SUN BUM, LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c470ff8-37d6-a729-e063-6294a90aa525"
+            ],
+            "same_list": [
+              [
+                "SUN BUM 50 MINERAL SUNSCREEN ROLL-ON (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [SUN BUM, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a392237-019d-2384-e063-6394a90a5b24"
+              ],
+              [
+                "SUN BUM MINERAL SUNSCREEN ROLL ON SPF 50 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [SUN BUM LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=81e06c01-26ee-425f-9b77-f189563f9127"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "BADGER BABY SUNSCREEN CREAM BROAD SPECTRUM SPF 40 (ZINC OXIDE) CREAM [W.S. BADGER COMPANY, INC.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ccd1b1fa-d44e-6b0e-e053-2995a90a157b"
+            ],
+            "same_list": [
+              [
+                "BADGER CLEAR ZINC SUNSCREEN CREAM BROAD SPECTRUM SPF 40 (ZINC OXIDE) CREAM [W.S. BADGER COMPANY, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ccd318b2-bbe4-4758-e053-2995a90a5ed3"
+              ],
+              [
+                "BADGER CLEAR ZINC SUNSCREEN CREAM BROAD SPECTRUM SPF 40 (ZINC OXIDE) CREAM [W.S. BADGER COMPANY, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd3d9bc3-d0f7-9c7e-e053-2a95a90aa90b"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "BANANA BABY (HOMOSALATE,OCTISALATE,OCTOCRYLENE,ZINC OXIDE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c01baa8-cee2-ee68-e063-6394a90ac29a"
+            ],
+            "same_list": [
+              [
+                "BANANA BOAT (HOMOSALATE,OCTISALATE,OCTOCRYLENE,ZINC OXIDE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=551cf172-5100-7c67-e063-6394a90a26e7"
+              ],
+              [
+                "BANANA BOAT SIMPLY PROTECT SENSITIVE MINERAL ENRICHED SUNSCREEN UVA/UVB BROAD SPECTRUM SPF 50 (HOMOSALATE,OCTISALATE,OCTOCRYLENE,ZINC OXIDE) SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=92fdea59-c19d-627a-e053-2995a90aabdc"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
               "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
               "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53d50644-b698-6474-e063-6394a90ac347"
             ],
@@ -1424,6 +1537,10 @@
               [
                 "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c167280-250c-c863-e063-6394a90ac883"
+              ],
+              [
+                "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=616d35a1-a139-1974-e053-2a91aa0a20b6"
               ]
             ],
             "same_company": true
@@ -1436,7 +1553,28 @@
             "same_list": [
               [
                 "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c167280-250c-c863-e063-6394a90ac883"
+              ],
+              [
+                "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=616d35a1-a139-1974-e053-2a91aa0a20b6"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "BANANA BOAT (HOMOSALATE,OCTISALATE,OCTOCRYLENE,ZINC OXIDE) SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0ad8187d-43a3-933b-e063-6294a90a20c4"
+            ],
+            "same_list": [
+              [
+                "BANANA BOAT (HOMOSALATE,OCTISALATE,OCTOCRYLENE,ZINC OXIDE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=551cf172-5100-7c67-e063-6394a90a26e7"
+              ],
+              [
+                "BANANA BOAT SIMPLY PROTECT SENSITIVE MINERAL ENRICHED SUNSCREEN UVA/UVB BROAD SPECTRUM SPF 50 (HOMOSALATE,OCTISALATE,OCTOCRYLENE,ZINC OXIDE) SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=92fdea59-c19d-627a-e053-2995a90aabdc"
               ]
             ],
             "same_company": true
@@ -1475,6 +1613,36 @@
               [
                 "BANANA BOAT SPORT MINERAL SPF 50 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [EDGEWELL PERSONAL CARE BRANDS LLC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc79790f-e2bc-5414-e053-2a95a90a9e7a"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "BANANA BOAT KIDS PROTECT AND PLAY SPF 50 (AVOBENZONE AND OCTOCRYLENE AND OXYBENZONE) SPRAY [ACCRA-PAC, INC.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=caf72244-e9ec-4a53-b7ff-232834a12a87"
+            ],
+            "same_list": [
+              [
+                "BANANA BOAT ULTRA DEFENSE SHEER PROTECT SPF 50 (AVOBENZONE AND OCTOCRYLENE AND OXYBENZONE) SPRAY [ACCRA-PAC, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a84fa20b-3e1d-45de-8f6d-858738319cb2"
+              ],
+              [
+                "BANANA BOAT SPORT SPF 50 (AVOBENZONE AND OCTOCRYLENE AND OXYBENZONE) SPRAY [ACCRA-PAC, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c35a164e-9e86-45a4-b156-0776f688c679"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "BANANA BOAT KIDS PROTECT AND PLAY SPF 85 (AVOBENZONE AND HOMOSALATE AND OCTOCRYLENE AND OXYBENZONE) SPRAY [ACCRA-PAC, INC.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a1bf0be-2a9f-409a-b91e-31ee02913430"
+            ],
+            "same_list": [
+              [
+                "BANANA BOAT SPORT PERFORMANCE SPF 85 (AVOBENZONE AND HOMOSALATE AND OCTOCRYLENE AND OXYBENZONE) SPRAY [ACCRA-PAC, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eec6247e-bf27-42f3-9f0f-c123f829ad26"
               ]
             ],
             "same_company": true
@@ -1545,6 +1713,19 @@
           },
           {
             "baby": [
+              "BOTAO - GROW NATURALLY MINERAL SUNSCREEN CLEAR FACIAL STICK FOR BABIES AND KIDS SPF 50 (ZINC OXIDE) STICK [PEER PHARM LTD.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=75763dc1-c762-42fc-a8fe-4d9d7bde0ce6"
+            ],
+            "same_list": [
+              [
+                "SUN AND SHINE - MINERAL SUNSCREEN CLEAR FACIAL STICK SPF 50 (ZINC OXIDE) STICK [PEER PHARM LTD.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20755fd4-ad05-4de2-84f5-fb29c0c5b104"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
               "BROAD SPECTRUM SPF50 WATER RESISTANT (80 MINUTES) MINERAL SUNSCREEN UVA UVB PROTECTION STICK FOR KIDS (ZINC OXIDE) STICK [ARUBA ALOE BALM NV]",
               "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=25f060eb-628c-4a11-b1d7-06922ee86b24"
             ],
@@ -1571,16 +1752,102 @@
           },
           {
             "baby": [
+              "COPPERTONE KIDS SPORT SUNSCREEN SPF 100 (AVOBENZONE 3%, HOMOSALATE 15%, OCTINOXATE 2% OCTISALATE 5%, OCTOCRYLENE 10%, OXYBENZONE 6%) SPRAY [BEIERSDORF INC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c068a6e7-260f-0766-e053-2995a90a422f"
+            ],
+            "same_list": [
+              [
+                "COPPERTONE SPORT SUNSCREEN SPF 100 (AVOBENZONE 3%, HOMOSALATE 15%, OCTINOXATE 2% OCTISALATE 5%, OCTOCRYLENE 10%, OXYBENZONE 6%) AEROSOL, SPRAY [BEIERSDORF INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e1a9a831-a0b9-17ba-e053-2a95a90a3fa7"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "COPPERTONE KIDS SPORT SUNSCREEN SPF 50 (AVOBENZONE 3%, HOMOSALATE 10%, OCTISALATE 5%, OCTOCRYLENE 5%) SPRAY [BEIERSDORF INC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0421c97-72bd-fcac-e053-2995a90aac28"
+            ],
+            "same_list": [
+              [
+                "COPPERTONE SPORT SPF 50 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 10%, OCTISALATE 5%, OCTOCRYLENE 5%) AEROSOL [BEIERSDORT INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cc46b3a3-48f5-4593-e053-2995a90a8782"
+              ]
+            ],
+            "same_company": false
+          },
+          {
+            "baby": [
+              "COPPERTONE KIDS SUNSCREEN SPF 50 ((TO DELIVER) AVOBENZONE 3%, HOMOSALATE 5%, OCTISALATE 10%, OCTOCRYLENE 5%) SPRAY [BEIERSDORF INC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a5a42a3-6fe4-2980-e063-6394a90a54fe"
+            ],
+            "same_list": [
+              [
+                "COPPERTONE SPORT SUNSCREEN SPF 50 ((TO DELIVER) AVOBENZONE 3%, HOMOSALATE 10%,OCTISALATE 5%, OCTOCRYLENE 5%) SPRAY [BEIERSDORF INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a5a40ff-a014-3995-e063-6394a90a11e6"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "COPPERTONE KIDS SUNSCREEN SPF 70 (AVOBENZONE 3%, HOMOSALATE 13%, OCTISALATE 5%, OCTOCRYLENE 10%, OXYBENZONE 6%) LOTION [BEIERSDORF INC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0552256-d8cb-5473-e053-2995a90ad0d5"
+            ],
+            "same_list": [
+              [
+                "COPPERTONE SPORT SUNSCREEN SPF 70 (AVOBENZONE 3%, HOMOSALATE 13%, OCTISALATE 5%, OCTOCRYLENE 10%, OXYBENZONE 6%) LOTION [BEIERSDORF INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e468d703-fa6c-095a-e053-2a95a90a5194"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "COPPERTONE PURE AND SIMPLE BABY SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) LOTION [BEIERSDORF INC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08134b95-1879-27e5-e063-6294a90a29af"
+            ],
+            "same_list": [
+              [
+                "COPPERTONE PURE AND SIMPLE SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) LOTION [BEIERSDORF INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=081484f8-58f5-f2a4-e063-6394a90a3379"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
               "COTZ KIDS MINERAL SUN STICK (TITANIUM DIOXIDE, ZINC OXIDE) STICK [FALLIEN COSMECEUTICALS, LTD]",
               "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f7225d0-ddfa-e19a-e063-6294a90a52a8"
             ],
             "same_list": [
               [
+                "PROCEUTICALS PRIVATE LABEL BY TIZO NON-TINTED MINERAL SUNSCREEN STICK (TITANIUM DIOXIDE, ZINC OXIDE) STICK [FALLIEN COSMECEUTICALS, LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20e86260-d641-c9ac-e063-6394a90ac07d"
+              ],
+              [
                 "GLOW STICK (TITANIUM DIOXIDE, ZINC OXIDE) STICK [SKIN APEEL, INC.]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c54b857-c017-a953-e063-6394a90a38df"
+              ],
+              [
+                "MINERAL SUNSCREEN STICK NON-TINTED (TITANIUM DIOXIDE, ZINC OXIDE) STICK [UNDRBUDR, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f83dd76-a8d8-916e-e063-6294a90ab6ed"
               ]
             ],
-            "same_company": false
+            "same_company": true
+          },
+          {
+            "baby": [
+              "CVS PHARMACY KIDS SPF 70 CLEAR (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY [CVS PHARMACY]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4eb824a6-66ac-01f8-e054-00144ff8d46c"
+            ],
+            "same_list": [
+              [
+                "CVS HEALTH SPF 70 CLEAR (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY [CVS PHARMACY]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4eb75945-9d65-55b4-e054-00144ff88e88"
+              ]
+            ],
+            "same_company": true
           },
           {
             "baby": [
@@ -1607,6 +1874,14 @@
               [
                 "DERMA SOLEIL NATURAL SUNBLOCK SPF 30 (OCTOCRYLENE, OCTYL METHOXYCINNAMATE, OCTYL SALICYLATE, OXYBENZONE) LOTION [DERMA SOLEIL]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5514545e-34e0-4500-e054-00144ff88e88"
+              ],
+              [
+                "DESERVING HEALTH NATURAL SUNBLOCK (OCTOCRYLENE,OCTYL METHOXYCINNAMATE,OCTYL SALICYLATE,OXYBENZONE) LOTION [DESERVING HEALTH INTERNATIONAL CORP.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f1f4ba0-6c9a-00c1-e053-2a95a90a4fac"
+              ],
+              [
+                "DERMA SOLEIL NATURAL AGE-FREE FACIAL SUNBLOCK SPF 30 (OCTOCRYLENE,OCTYL METHOXYCINNAMATE,OCTYL SALICYLATE,OXYBENZONE) LOTION [DESERVING HEALTH INTERNATIONAL CORP.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f1fb264-6542-7044-e053-2995a90a0ad9"
               ]
             ],
             "same_company": true
@@ -1624,6 +1899,14 @@
               [
                 "DERMA SOLEIL NATURAL SUNBLOCK SPF 45 (OCTOCRYLENE, OCTYL METHOXYCINNAMATE, OCTYL SALICYLATE, OXYBENZONE) LOTION [DERMA SOLEIL]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55140bff-58de-3ae2-e054-00144ff88e88"
+              ],
+              [
+                "DESERVING HEALTH NATURAL SUNBLOCK (OCTOCRYLENE,OCTYL METHOXYCINNAMATE,OCTYL SALICYLATE,OXYBENZONE) LOTION [BIOLOGICAL HEALTH GROUP]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f57171d-d8c1-7492-e053-2a95a90a5679"
+              ],
+              [
+                "DERMA SOLEIL NATURAL SUNBLOCK SPF 45 (OCTOCRYLENE,OCTYL METHOXYCINNAMATE,OCTYL SALICYLATE,OXYBENZONE) LOTION [BIOLOGICAL HEALTH GROUP]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f58bf95-f37e-d551-e053-2995a90a1477"
               ]
             ],
             "same_company": true
@@ -1643,20 +1926,33 @@
           },
           {
             "baby": [
-              "ECOZINC KIDS NATURAL MINERAL SUNSCREEN SPF50 (ZINC OXIDE SUNSCREEN) CREAM [VEGANIC SKN LIMITED]",
-              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44615ae4-8206-122d-e063-6294a90a0b2c"
+              "EEZY PRO SPF 50 (MERADIMATE, OCTINOXATE, OCTOCRYLENE, TITANIUM DIOXIDE, ZINC OXIDE) CREAM [BIO EARTH MANUFACTURING (PTY) LTD]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=97ad9087-6171-46c3-bf9f-5efb2b7a19d4"
             ],
             "same_list": [
               [
-                "LOTUS HARMONY - QUINN SHIELD SUNSCREEN SPF50 (ZINC OXIDE SUNSCREEN) CREAM [VEGANIC SKN LIMITED]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ae73d23-1118-716c-e063-6394a90a68c7"
+                "EEZY PRO SPF50 (MERADIMATE, OCTINOXATE, OCTOCRYLENE, TITANIUM DIOXIDE, ZINC OXIDE) CREAM [BIO EARTH MANUFACTURING (PTY) LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab874291-abb6-43a6-b74b-49926bdfe140"
               ],
               [
-                "LEKURA - ZINCDAILY NATURAL FACE SUNSCREEN SPF50 (ZINC OXIDE SUNSCREEN) CREAM [VEGANIC SKN LIMITED]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c2bed23-f77b-2c97-e063-6394a90a4ca5"
+                "EEZY PRO SPF50 (MERADIMATE, OCTINOXATE, OCTOCRYLENE, TITANIUM DIOXIDE, ZINC OXIDE) CREAM [BIO EARTH MANUFACTURING (PTY) LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b4c4a21e-e01c-4c5a-b5b0-210594298fb1"
               ]
             ],
             "same_company": true
+          },
+          {
+            "baby": [
+              "EQUATE SUNSCREEN BABY BROAD SPECTRUM SPF 50 (AVOBENZONE HOMOSALATE OCTOCRYLENE) LOTION [WAL-MART STORES INC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b2083cbd-ef19-4edc-9d7d-eca3452ee0ee"
+            ],
+            "same_list": [
+              [
+                "TENACIOUS ERGODYNE (SPF 50 SUNSCREEN LOTION) LOTION [TENACIOUS HOLDINGS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aaaa1f54-1136-4062-85ba-0926351580bb"
+              ]
+            ],
+            "same_company": false
           },
           {
             "baby": [
@@ -1665,24 +1961,40 @@
             ],
             "same_list": [
               [
+                "CVS HEALTH SPORT SPF 50 CLEAR (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE,) AEROSOL, SPRAY [CVS PHARMACY]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ec6384a-8faf-5712-e054-00144ff8d46c"
+              ],
+              [
                 "BIG LOTS SOUNDBODY SPF 50 SPORT SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [BIG LOTS STORES, INC.]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8c1c904-12f5-48e0-e053-2a95a90a9f75"
+              ],
+              [
+                "BULL FROG SPF 50 QUIK WITH WATER ARMOR TECH (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [BULLFROG BRANDS, LLC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f70816a3-cc04-b000-e053-6294a90a0fae"
               ]
             ],
             "same_company": false
           },
           {
             "baby": [
-              "EVEREDEN KIDS COOLING MINERAL SUNSTICK SPF30 (ZINC OXIDE) STICK [EDEN BRANDS INC.]",
-              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=521afa81-737f-81d4-e063-6394a90ad307"
+              "FRUIT OF THE EARTH SUN TOWN CITY BABY AND KIDS MINERAL SPF 50 SUNSCREEN (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [FRUIT OF THE EARTH, INC.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f42a0b1e-038d-4fab-e053-2995a90a5364"
             ],
             "same_list": [
               [
-                "EVEREDEN COOLING MINERAL SUNSTICK SPF 30 (ZINC OXIDE) STICK [EDEN BRANDS INC.]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4af9e668-0d88-74ad-e063-6394a90a5243"
+                "RITE AID MINERAL SUNSCREEN BROAD SPECTRUM SPF 50 (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [RITE AID]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a9c1b3f-656d-0d62-e063-6394a90a4731"
+              ],
+              [
+                "TARGET UP AND UP MINERAL SUNSCREEN BROAD SPECTRUM SPF 50 REEF-CONSCIOUS FORMULA (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [TARGET CORPORATION]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cfd735d2-df3a-5ed0-e053-2995a90a9f26"
+              ],
+              [
+                "TOPCARE EVERYDAY MINERAL SUNSCREEN CONTINUOUS BROAD SPECTRUM SPF 50 REEF-CONSCIOUS FORMULA (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [TOPCO ASSOCIATES LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f14f43e6-ee57-5495-e053-2a95a90a4011"
               ]
             ],
-            "same_company": true
+            "same_company": false
           },
           {
             "baby": [
@@ -1693,6 +2005,19 @@
               [
                 "H.E.B (SPF 50 SUNSCREEN) AEROSOL, SPRAY [H.E.B]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c9258ac-8cbe-4acf-9c02-bb993d69a3e5"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "HABANA BRISA SPF 50 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) LOTION [DERMA CARE RESEARCH LABS, LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db4a0668-8edd-b1c2-e053-2995a90a02ab"
+            ],
+            "same_list": [
+              [
+                "FRESH COAST SPF 50 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) LOTION [DERMA CARE RESEARCH LABS, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=043cadde-ba07-7c77-e063-6394a90abee6"
               ]
             ],
             "same_company": true
@@ -1712,6 +2037,19 @@
           },
           {
             "baby": [
+              "HABANA SPF 50 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) SPRAY [DERMA CARE RESEARCH LABS, LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db6193ee-c63c-a9aa-e053-2995a90a0ee7"
+            ],
+            "same_list": [
+              [
+                "SPF 50 SUNSCREEN UNFRAGRANCED (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) SPRAY [DERMA CARE RESEARCH LABS, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05e4706b-1955-aba8-e063-6294a90a29c7"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
               "HABANA SPF 70 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) SPRAY [DERMA CARE RESEARCH LABS, LLC]",
               "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db87d5b3-221d-7e9d-e053-2a95a90a26f2"
             ],
@@ -1719,23 +2057,6 @@
               [
                 "CARIBBEAN BREEZE SPF 70 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) SPRAY [DERMA CARE RESEARCH LABS, LLC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f873c125-86b8-3d1d-e053-6394a90a6bcf"
-              ]
-            ],
-            "same_company": true
-          },
-          {
-            "baby": [
-              "HELLO BELLO KIDS MINERAL SUNSCREEN (ZINC OXIDE TITANIUM OXIDE) LOTION [HELLO BELLO]",
-              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e7a3e8e-eacf-0a30-e063-6294a90ab7ec"
-            ],
-            "same_list": [
-              [
-                "ZINC OXIDE TITANIUM OXIDE LOTION [HELLO BELLO]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e66c234-a152-098e-e063-6394a90ab540"
-              ],
-              [
-                "ZINC OXIDE TITANIUM OXIDE LOTION [HELLO BELLO]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e89d30e-b6cd-fabe-e063-6294a90a30ff"
               ]
             ],
             "same_company": true
@@ -1772,6 +2093,19 @@
           },
           {
             "baby": [
+              "KIDS SPORT NATURAL MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [CROSSING CULTURES LLC DBA GODDESS GARDEN]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2e2db5b7-0752-42ad-a11b-792eb1f954ae"
+            ],
+            "same_list": [
+              [
+                "SPORT NATURAL MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [CROSSING CULTURES LLC DBA GODDESS GARDEN]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f138477e-222e-41c5-b66f-eee4ca63df55"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
               "KIDS SUNSCREEN SPF 50 (AVOBENZONE 3.0% HOMOSALATE 15.0% OCTISALATE 5.0% OCTOCRYLENE 10.0%) SPRAY [WEGMAN]",
               "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c596b1d-8c23-4598-8b6f-95e1679069b9"
             ],
@@ -1779,6 +2113,19 @@
               [
                 "SPORT SUNSCREEN SPF 50 (AVOBENZONE 3.0% HOMOSALATE 15.0% OCTISALATE 5.0% OCTOCRYLENE 10.0%) SPRAY [WEGMAN]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a3eb24e1-ecc7-40ab-98c0-a2dfb6aaece9"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "KIDS SUNSCREEN SPF 50 (AVOBENZONE 3.00% HOMOSALATE 15.00% OCTISALATE 5.00% OCTOCRYLENE 10.00%) LOTION [WEGMAN]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5205fcfb-069d-4745-8372-8fccb738cc58"
+            ],
+            "same_list": [
+              [
+                "SUNSCREEN SPF 50 WEGMAN (AVOBENZONE 3.0% HOMOSALATE 15.0% OCTISALATE 5.0% OCTOCRYLENE 10.0%) LOTION [WEGMAN]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a8a89b60-46a3-4535-9444-15a9776fca55"
               ]
             ],
             "same_company": true
@@ -1816,6 +2163,10 @@
             ],
             "same_list": [
               [
+                "KISS MY FACE BARE NAKED 30 MINERAL SUNSCREEN (TITANIUM DIOXIDE) SPRAY [WINDMILL HEALTH PRODUCTS, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42421715-6e2d-49a0-82d1-4eaba99ca55f"
+              ],
+              [
                 "KISS MY FACE COOL SPORT 30 MINERAL SUNSCREEN (TITANIUM DIOXIDE) SPRAY [WINDMILL HEALTH PRODUCTS, LLC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57989817-ddc9-4ccd-ba74-ea04d4e3dd7a"
               ]
@@ -1829,15 +2180,48 @@
             ],
             "same_list": [
               [
+                "EXCHANGE SELECT SUNSCREEN SPF 70 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [ARMY AND AIR FORCE EXCHANGE SERVICE]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=453e32d8-9e7a-4b5e-b874-d4a1b4e5cc6f"
+              ],
+              [
+                "PETER ISLAND SUNSCREEN SPF 70 (HOMOSALATE, OXYBENZONE, OCTISALATE, AVOBENZONE, OCTOCRYLENE) LOTION [ACCESS BUSINESS GROUP LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c7b240f-08d9-4aa8-9d0f-afb819f6f1bf"
+              ],
+              [
                 "SELECT BRAND SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [SELECT BRAND DISTRIBUTORS]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7c1e0998-74b8-45fe-a03a-17c431322d47"
               ],
               [
                 "RITE AID SUNSCREEN (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [RITE AID CORPORATION]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=812d3c39-91fe-45a5-960f-7ae3e98a2943"
+              ],
+              [
+                "WESTERN FAMILY BROAD SPECTRUM SUNSCREEN SPF 70 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [WESTERN FAMILY FOODS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a72e6720-2883-401f-84ab-77d898f87b66"
+              ],
+              [
+                "MEIJER SPF 70 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [MEIJER DISTRIBUTION INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c4df194f-110d-4247-8a21-66ab850214e2"
+              ],
+              [
+                "PETER ISLAND SUNSCREEN SPF 70 (HOMOSALATE, OXYBENZONE, OCTISALATE, AVOBENZONE, OCTOCRYLENE) LOTION [AMWAY CORP.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5fcd166-ca40-43e9-b4b6-e42f1567f70f"
               ]
             ],
             "same_company": false
+          },
+          {
+            "baby": [
+              "KROGER KIDS SPF 50 SUNSTICK (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) STICK [KROGER]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ca9df950-d581-4bad-9431-aff5f00bdc98"
+            ],
+            "same_list": [
+              [
+                "KROGER SPORT SPF 50 SUNSTICK (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) STICK [KROGER]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=307b1b1c-8277-4883-9ff3-d77d9f67b1f7"
+              ]
+            ],
+            "same_company": true
           },
           {
             "baby": [
@@ -1846,8 +2230,44 @@
             ],
             "same_list": [
               [
+                "OCEAN POTION SUNCARE 50 CONTINUOUS SUNSCREEN SCENT OF SUNSHINE (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [GNL BRANDS INTERNATIONAL, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e518d8a-f52b-4ae1-e063-6394a90aaa1e"
+              ],
+              [
+                "EQUATE SUNSCREEN SPF 50 SPORT BROADSPECTRUM (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) SPRAY [WALMART]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e5280b2-1437-4d97-bb4c-db1a1632fea7"
+              ],
+              [
+                "EQUATE SUNSCREEN SPF 50 SPORT BROAD SPECTRUM (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WALMART]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=509b6c7d-8a28-2d3a-e063-6394a90af068"
+              ],
+              [
+                "TENACIOUS ERGODYNE (KREWD CLEAR SPF 50 CONTINUOUS SPRAY) AEROSOL, SPRAY [TENACIOUS HOLDINGS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55d99d0a-dc7f-4915-b7c1-f999c8b36e0d"
+              ],
+              [
+                "WALMART EQUATE SUNSCREEN SPF 50 SPORT BROAD SPECTRUM (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WALMART, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58b5d0ce-9157-9dee-e063-6394a90ab543"
+              ],
+              [
+                "EQUATE SPF 50 ULTRA SUNSCREEN CONTINUOUS (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WAL-MART STORES INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8fda6c78-1b39-6aa6-e053-2995a90a16a2"
+              ],
+              [
+                "TARGET UP AND UP SPORT SPF 50 (AVOBENZONE, HOMOSALAT, OCTISALATE, OCTOCRYLENE) SPRAY [TARGET CORPORATION]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b81b2e7e-6d7f-fa1d-e053-2995a90a7d15"
+              ],
+              [
+                "EQUATE-SUNSCREEN BROAD SPECTRUM SPF 50 ULTRA (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE) SPRAY [WAL-MART STORES INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bbe06f23-0d0f-43ff-9d1b-37a99d9d6206"
+              ],
+              [
                 "SPF 50 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [DEMOULAS SUPER MARKETS, INC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee782436-9eff-49e4-8edc-fd9783454c07"
+              ],
+              [
+                "WALGREENS SPF 50 SPORT CONTINUOUS SUNSCREEN (AVOBENZONE, HOMOSALAT, OCTISALATE, OCTOCRYLENE) SPRAY [WALGREEN COMPANY]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f13ec3da-2dc2-04f7-e053-2995a90a198d"
               ],
               [
                 "CVS HEALTH SPORT SPF 50 CLEAR SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [CVS PHARMACY]",
@@ -1856,6 +2276,83 @@
               [
                 "EQUALINE SPORT CONTINUOUS SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [UNITED NATURAL FOODS, INC. DBA UNFI]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f13feba4-25d8-61d0-e053-2995a90aafa8"
+              ],
+              [
+                "MARKET BASKET CONTINUOUS SUNSCREEN SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE) SPRAY [DEMOULAS SUPER MARKETS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4238107-c76c-266a-e053-2a95a90a8978"
+              ],
+              [
+                "CVS HEALTH SPF 50 CLEAR (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE) SPRAY [CVS PHARMACY]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f42402ff-0d70-9231-e053-2995a90aa46d"
+              ],
+              [
+                "EXCHANGE SELECT SPORT SUNSCREEN CONTINUOUS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [ARMY & AIR FORCE EXCHANGE SERVICE]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f55828b4-f2a4-13ec-e053-2995a90a0f84"
+              ],
+              [
+                "ALDI LACURA SPORT SUNSCREEN 50 BROAD SPECTRUM SPF 50 CONTINUOUS (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [ALDI INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7b32aa8-2e56-3725-e053-6294a90a18d2"
+              ],
+              [
+                "BERKLEY JENSEN SPORT SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [BJWC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fbd65277-7aff-de19-e053-6394a90a9496"
+              ],
+              [
+                "FRUIT OF THE EARTH LUV THAT SUN SPORT SUNSCREEN CONTINUOUS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [FRUIT OF THE EARTH, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd67b009-accc-6c7b-e053-6294a90ad80e"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "MEIJER BABY SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [MEIJER DISTRIBUTION INC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d7d6d4e-29c6-4c36-9884-5432f6ceca0e"
+            ],
+            "same_list": [
+              [
+                "WESTERN FAMILY BROAD SPECTRUM SUNSCREENSPF 50 SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [WESTERN FAMILY FOODS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41fbb0bf-65ce-409f-9291-3095d28a28b1"
+              ],
+              [
+                "MEIJER (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [MEIJER DISTRIBUTION INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a72075c-0f65-4435-8988-b06369164bef"
+              ],
+              [
+                "MEIJER SPORT SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [MEIJER DISTRIBUTION INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58b40c68-75d9-442d-b347-88e8c8343535"
+              ],
+              [
+                "WALGREENS SUNSCREEN SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [WALGREEN CO.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65b1a431-bb64-430c-bb6b-4b6b3cb445bf"
+              ],
+              [
+                "PETER ISLAND SUNSCREENSPF 50 SPF 50 (HOMOSALATE, OXYBENZONE, OCTISALATE, AVOBENZONE, OCTOCRYLENE) LOTION [ACCESS BUSINESS GROUP LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f15432a-38ae-42ec-b9f9-e5b42298e3e4"
+              ],
+              [
+                "PUBLIX SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [PUBLIX SUPER MARKETS INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a0a1a55-7184-48f4-80bf-b94bdd8d6815"
+              ],
+              [
+                "ACADEMY SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [ACADEMY, LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6d0410f-fd98-4a50-a306-857d9bf5631c"
+              ],
+              [
+                "RITE AID SUNSCREEN SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [RITE AID CORPORATION]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bdff6591-acd2-4db7-8f76-885ed3f5c05d"
+              ],
+              [
+                "PETER ISLAND SUNSCREEN SPF 50 (HOMOSALATE, OXYBENZONE, OCTISALATE, AVOBENZONE, OCTOCRYLENE) LOTION [AMWAY CORP.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c9490f30-f329-4d7d-836d-2731c244ebc9"
+              ],
+              [
+                "KROGER SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [THE KROGER CO]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de6fe18d-ff80-4860-87a0-6693248b18b1"
+              ],
+              [
+                "SELECT BRAND SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [SELECT BRAND DISTRIBUTORS]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f789a746-9e4b-4c31-b04b-9c723a829b65"
               ]
             ],
             "same_company": true
@@ -1892,6 +2389,66 @@
           },
           {
             "baby": [
+              "MINERAL SUNSTICK (ZINC SPF STICK) STICK [TUBBY TODD]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=29e41fe8-4e17-dbaa-e063-6294a90a4a10"
+            ],
+            "same_list": [
+              [
+                "CLEAR SUNSCREEN FACE STICK SENSITIVE BROAD SPECTRUM SPF 30 (ZINC OXIDE) STICK [EAI-JR 286, INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d958685b-22a8-9b5b-e053-2a95a90a04ca"
+              ]
+            ],
+            "same_company": false
+          },
+          {
+            "baby": [
+              "NEUTROGENA BEACH DEFENSE KIDS SUNSCREEN SPF 70 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [KENVUE BRANDS LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eafc00ce-12e7-921f-e053-2995a90a241a"
+            ],
+            "same_list": [
+              [
+                "NEUTROGENA SPORT ACTIVE DEFENSE SPF 70 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [KENVUE BRANDS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0562bb8f-0eba-99b3-e063-6394a90a43c6"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "NEUTROGENA PURE AND FREE BABY SUNSCREEN BROAD SPECTRUM SPF 50 (ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d2c58e2-0d15-4383-adae-12fc17b8ea50"
+            ],
+            "same_list": [
+              [
+                "NEUTROGENA SHEER ZINC MINERAL SUNSCREEN BROAD SPECTRUM SPF 50 (ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=525f7bae-44b8-44e4-93ea-32995eca2566"
+              ],
+              [
+                "NEUTROGENA SHEER ZINC DRY-TOUCH SUNSCREEN BROAD SPECTRUM SPF50 (ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54a3b677-4510-4191-8386-ccdd10ccfcaa"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "NEUTROGENA SHEER ZINC KIDS MINERAL SUNSCREEN BROAD SPECTRUM SPF 50 PLUS (ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c914c4cd-99a2-4d9f-8f04-8af2ace3c345"
+            ],
+            "same_list": [
+              [
+                "NEUTROGENA SHEER ZINC MINERAL SUNSCREEN BROAD SPECTRUM SPF 50 (ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=525f7bae-44b8-44e4-93ea-32995eca2566"
+              ],
+              [
+                "NEUTROGENA SHEER ZINC DRY-TOUCH SUNSCREEN BROAD SPECTRUM SPF50 (ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54a3b677-4510-4191-8386-ccdd10ccfcaa"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
               "NO-AD KIDS 50 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE AND OXYBENZONE) LOTION [SOLSKYN PERSONAL CARE LLC]",
               "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83ca8297-bf11-4ee6-a918-d007fbc74b00"
             ],
@@ -1899,6 +2456,10 @@
               [
                 "NO-AD 45 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE AND OXYBENZONE) LOTION [SOLSKYN PERSONAL CARE LLC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9751f04c-8d1a-4bf3-80b0-372751a23839"
+              ],
+              [
+                "NO-AD SPORT 50 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE AND OXYBENZONE) LOTION [SOLSKYN PERSONAL CARE LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f52c6bad-8d06-493f-b3b3-f36d8ccb06bf"
               ]
             ],
             "same_company": true
@@ -1926,10 +2487,123 @@
           },
           {
             "baby": [
+              "OP PROTECT AND NOURISH KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [SOLSKYN PERSONAL CARE LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32794f16-2c4c-454d-aeae-aacf4ebd5792"
+            ],
+            "same_list": [
+              [
+                "OP PROTECT AND NOURISH SPF 30 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [SOLSKYN PERSONAL CARE LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=707c6ed3-221f-4406-b586-0f7cb3f931a1"
+              ],
+              [
+                "OP PROTECT AND NOURISH SPF 50 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTOCRYLENE, OCTYL SALICYLATE, OXYBENZONE) LOTION [SOLSKYN PERSONAL CARE LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bf67c2a-862b-4973-a8e0-b9ce643cda56"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "PETER ISLAND KIDS SUNSCREEN SPF 65 (HOMOSALATE, OXYBENZONE, OCTISALATE, AVOBENZONE, OCTOCRYLENE) LOTION [AMWAY CORP.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d8cbed4c-c461-4d16-8f21-5354de6e22cd"
+            ],
+            "same_list": [
+              [
+                "EXCHANGE SELECT SUNSCREEN SPF 70 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [ARMY AND AIR FORCE EXCHANGE SERVICE]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=453e32d8-9e7a-4b5e-b874-d4a1b4e5cc6f"
+              ],
+              [
+                "PETER ISLAND SUNSCREEN SPF 70 (HOMOSALATE, OXYBENZONE, OCTISALATE, AVOBENZONE, OCTOCRYLENE) LOTION [ACCESS BUSINESS GROUP LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c7b240f-08d9-4aa8-9d0f-afb819f6f1bf"
+              ],
+              [
+                "SELECT BRAND SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [SELECT BRAND DISTRIBUTORS]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7c1e0998-74b8-45fe-a03a-17c431322d47"
+              ],
+              [
+                "RITE AID SUNSCREEN (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [RITE AID CORPORATION]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=812d3c39-91fe-45a5-960f-7ae3e98a2943"
+              ],
+              [
+                "WESTERN FAMILY BROAD SPECTRUM SUNSCREEN SPF 70 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [WESTERN FAMILY FOODS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a72e6720-2883-401f-84ab-77d898f87b66"
+              ],
+              [
+                "MEIJER SPF 70 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [MEIJER DISTRIBUTION INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c4df194f-110d-4247-8a21-66ab850214e2"
+              ],
+              [
+                "PETER ISLAND SUNSCREEN SPF 70 (HOMOSALATE, OXYBENZONE, OCTISALATE, AVOBENZONE, OCTOCRYLENE) LOTION [AMWAY CORP.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5fcd166-ca40-43e9-b4b6-e42f1567f70f"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "REEF BABIES SPF 50 OXYBENZONE FREE (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) LOTION [TROPICAL SEAS, INC.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8cd68b09-2578-4519-b00e-e83e0e440815"
+            ],
+            "same_list": [
+              [
+                "EXPEDITION BACKCOUNTRY SPF 50 (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) LOTION [TROPICAL SEAS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06c1ac52-474c-db5c-e063-6294a90afb5f"
+              ],
+              [
+                "LAND SHARK SPF 50 (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) LOTION [TROPICAL SEAS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b4cc95f0-d684-5331-e053-2995a90a3295"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "REEF BABIES SPF 50 OXYBENZONE FREE (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) SPRAY [TROPICAL SEAS, INC.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5ed3488-aa32-4a63-9996-12c6532c3a4d"
+            ],
+            "same_list": [
+              [
+                "LAND SHARK SPF 50 (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) SPRAY [TROPICAL SEAS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5e24ca1-d041-355d-e053-2995a90a3d61"
+              ],
+              [
+                "LAND SHARK SPF 50 SPORT (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) SPRAY [TROPICAL SEAS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5e40a7c-b49d-cfc3-e053-2995a90ac27e"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "REEF KIDS SPF 30 OXYBENZONE FREE (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) SPRAY [TROPICAL SEAS, INC.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=005a9e7c-e392-4b9a-911f-d7586f7ae94e"
+            ],
+            "same_list": [
+              [
+                "LAND SHARK SPF 30 (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) SPRAY [TROPICAL SEAS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5e44be7-3a46-34e2-e053-2a95a90a9660"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
               "RITE AID BABY SUNSCREEN (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [RITE AID CORPORATION]",
               "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08e31964-612b-48fb-b3a8-77922aa1c7b8"
             ],
             "same_list": [
+              [
+                "WESTERN FAMILY BROAD SPECTRUM SUNSCREENSPF 50 SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [WESTERN FAMILY FOODS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41fbb0bf-65ce-409f-9291-3095d28a28b1"
+              ],
+              [
+                "MEIJER (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [MEIJER DISTRIBUTION INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a72075c-0f65-4435-8988-b06369164bef"
+              ],
+              [
+                "MEIJER SPORT SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [MEIJER DISTRIBUTION INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58b40c68-75d9-442d-b347-88e8c8343535"
+              ],
               [
                 "WALGREENS SUNSCREEN SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [WALGREEN CO.]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65b1a431-bb64-430c-bb6b-4b6b3cb445bf"
@@ -1943,15 +2617,27 @@
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a0a1a55-7184-48f4-80bf-b94bdd8d6815"
               ],
               [
+                "ACADEMY SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [ACADEMY, LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6d0410f-fd98-4a50-a306-857d9bf5631c"
+              ],
+              [
+                "RITE AID SUNSCREEN SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [RITE AID CORPORATION]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bdff6591-acd2-4db7-8f76-885ed3f5c05d"
+              ],
+              [
                 "PETER ISLAND SUNSCREEN SPF 50 (HOMOSALATE, OXYBENZONE, OCTISALATE, AVOBENZONE, OCTOCRYLENE) LOTION [AMWAY CORP.]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c9490f30-f329-4d7d-836d-2731c244ebc9"
+              ],
+              [
+                "KROGER SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [THE KROGER CO]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de6fe18d-ff80-4860-87a0-6693248b18b1"
               ],
               [
                 "SELECT BRAND SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [SELECT BRAND DISTRIBUTORS]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f789a746-9e4b-4c31-b04b-9c723a829b65"
               ]
             ],
-            "same_company": false
+            "same_company": true
           },
           {
             "baby": [
@@ -2000,7 +2686,32 @@
             "same_list": [
               [
                 "SAFE SEA SPF 50 (HOMOSALATE, OCTOCRYLENE, OCTISALATE, AVOBENZONE) LOTION [NIDARIA TECHNOLOGY LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46641a33-d658-4ef0-9b7a-062adc401dde"
+              ],
+              [
+                "SAFE SEA SPF 50 (HOMOSALATE, OCTOCRYLENE, OCTISALATE, AVOBENZONE) LOTION [NIDARIA TECHNOLOGY LTD]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53df3126-1136-490a-b339-5876ce89499e"
+              ],
+              [
+                "SAFE SEA SPF 50 (HOMOSALATE, OCTOCRYLENE, OCTISALATE, AVOBENZONE) LOTION [SASA COSMETICS]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=95afb5ee-5314-4653-80c1-e9ebf085f5f3"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "SAFE SEA SPF 50 KIDS (OCTINOXATE, OCTISALATE, ZINC OXIDE, TITANIUM DIOXIDE) LOTION [SASA COSMETICS]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b02ac130-d0ed-4850-8aa3-4660eca88150"
+            ],
+            "same_list": [
+              [
+                "SAFE SEA SPF 50 (OCTINOXATE, OCTISALATE, AVOBENZONE, TITANIUM DIOXIDE) LOTION [SASA COSMETICS]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ac7ee36b-a361-4240-b7a3-1b36e298cf7a"
+              ],
+              [
+                "SAFE SEA SPF 60 (OCTINOXATE, OCTISALATE, AVOBENZONE, TITANIUM DIOXIDE) LOTION [SASA COSMETICS]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb6f18fe-35ef-4145-908f-0e9b6cd27754"
               ]
             ],
             "same_company": true
@@ -2014,23 +2725,6 @@
               [
                 "SPF 70 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [DERMA CARE RESEARCH LABS, LLC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0aad5ced-f356-e294-e063-6394a90aa8d5"
-              ]
-            ],
-            "same_company": true
-          },
-          {
-            "baby": [
-              "SUN ZAPPER - BABY PURE ZINC SUNSCREEN SPF30 (ZINC OXIDE SUNSCREEN) CREAM [VEGANIC SKN LIMITED]",
-              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ee52faa-64a8-4bdf-e063-6294a90a65cf"
-            ],
-            "same_list": [
-              [
-                "SUN ZAPPER - FACE PURE ZINC SUNSCREEN SPF30 (ZINC OXIDE SUNSCREEN) CREAM [VEGANIC SKN LIMITED]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ee4feb3-6966-67f9-e063-6394a90a16d5"
-              ],
-              [
-                "SUN ZAPPER - ANTI-AGEING PURE ZINC SUNSCREEN SPF30 (ZINC OXIDE SUNSCREEN) CREAM [VEGANIC SKN LIMITED]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3f1dc3b2-c289-5996-e063-6394a90ac622"
               ]
             ],
             "same_company": true
@@ -2071,6 +2765,18 @@
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a0cab2d-3c73-4b0b-b0c4-f72b1a0de1cf"
               ],
               [
+                "AVEBONZONE, HOMOSALATE, OCTISALATE SPRAY [AMAZON.COM SERVICES LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ab6773f-00e1-897a-e063-6294a90ab0b8"
+              ],
+              [
+                "AVEBONZONE, HOMOSALATE, OCTISALATE SPRAY [TOPCO ASSOCIATES LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5864881c-c495-1f32-e063-6294a90a1304"
+              ],
+              [
+                "SPORT SUNSCREEN SPF 50 (AVEBONZONE, HOMOSALATE, OCTISALATE) SPRAY [CHAIN DRUG MARKETING ASSOCIATION]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9fccccd4-2d2e-4812-85b1-bbeb44ff04ea"
+              ],
+              [
                 "AVOBENZONE, HOMOSALATE, OCTISALATE SPRAY [NICE-PAK PRODUCTS, LLC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=af052521-bfa6-4142-a10b-ef51f474a077"
               ],
@@ -2094,6 +2800,40 @@
               [
                 "SOLMATE BROAD SPECTRUM SPF 50 SPORT SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE AND OXYBENZONE) LOTION [PRIME ENTERPRISES INC.]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c9fb0c3-d4fd-31fb-e054-00144ff88e88"
+              ],
+              [
+                "SOLMATE BROAD SPECTRUM SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [PRIME ENTERPRISES INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b1a1fa4a-9904-d552-e053-2995a90a63bb"
+              ],
+              [
+                "SOLMATE BROAD SPECTRUM SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, AND OXYBENZONE) LOTION [PRIME ENTERPRISES, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f57e42d2-0e23-4505-af9e-a1f9769ebc2b"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "TARGET UP AND UP SPF55 SUNSCREEN REEF-CONSCIOUS FORMULA (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [TARGET CORPORATION]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cfd6dd4c-21f6-7cef-e053-2a95a90a50e2"
+            ],
+            "same_list": [
+              [
+                "WALGREENS SPF55 SUNSCREEN REEF-CONSCIOUS FORMULA (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [WALGREEN COMPANY]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cfd7c1b0-cfc3-074f-e053-2995a90a5edb"
+              ]
+            ],
+            "same_company": false
+          },
+          {
+            "baby": [
+              "THINK KIDS MINERAL SPF 50 (ZINC OXIDE AND TITANIUM DIOXIDE) AEROSOL, SPRAY [THINKOPERATIONS,LLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=25c59820-a08d-4abe-87ae-a787ac8b2ac2"
+            ],
+            "same_list": [
+              [
+                "THINKSPORT MINERAL SPF 50 (ZINC OXIDE AND TITANIUM DIOXIDE) AEROSOL [THINKOPERATIONS,LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77b63c0b-353b-4f5f-95c7-6f7eeab81471"
               ]
             ],
             "same_company": true
@@ -2107,6 +2847,157 @@
               [
                 "THINKSPORT SUNSCREEN SPF 30 (ZINC OXIDE) STICK [THINKOPERATIONS,LLC]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a8591509-65f7-4e62-8642-4b8e63f1fef3"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "TROPIC SUN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [PRIME ENTERPRISES, INC.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ba98d6c9-89ca-4308-e053-2995a90a08e4"
+            ],
+            "same_list": [
+              [
+                "HURLEY BROAD SPECTRUM SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [PRIME ENTERPRISES INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ed3707a5-b753-5144-e053-2a95a90a6e27"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "ULTIMATE PHYSICAL SUNSCREEN (ZINC OXIDE) CREAM [HALEM DERMATOLOGY PLLC]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35be5dc0-861f-3738-e063-6394a90a23ca"
+            ],
+            "same_list": [
+              [
+                "PROCEUTICALS PRIVATE LABEL BY TIZO NON-TINTED MINERAL SUNSCREEN 20% ZINC OXIDE (ZINC OXIDE) CREAM [FALLIEN COSMECEUTICALS, LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1bbd14ec-4240-f0c2-e063-6394a90a2c07"
+              ],
+              [
+                "TIZO ULTRA ZINC NON-TINTED SPF 40 MINERAL SUNSCREEN FOR BODY AND FACE WITH ANTIOXIDANTS C AND E (ZINC OXIDE) CREAM [FALLIEN COSMECEUTICALS, LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1f417082-5fd1-c95e-e063-6394a90a16ab"
+              ],
+              [
+                "GLOW SHIELD SPF (ZINC OXIDE) CREAM [ACNE SOLUTIONS NYC INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f9d087c-b2b3-5654-e063-6294a90a94e5"
+              ],
+              [
+                "GLOW SHIELD SPF (ZINC OXIDE) CREAM [ACNE SOLUTIONS NYC INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2faf530d-5574-b702-e063-6294a90ad6fd"
+              ],
+              [
+                "ZINC OXIDE SPF 40 NON-TINTED (ZINC OXIDE) CREAM [SKIN RESTORATION AESTHETICS]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fc68041-acfe-8db6-e063-6294a90ad8ba"
+              ],
+              [
+                "SKIN TONE DEFENDER 20% ZINC OXIDE (ZINC OXIDE) CREAM [CALI SKIN CARE LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=308c711d-4c3e-1208-e063-6394a90a9cc2"
+              ],
+              [
+                "COVERED (ZINC OXIDE) CREAM [POTENCY NO. 710 LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3117faeb-1792-1b2e-e063-6294a90a92df"
+              ],
+              [
+                "COVERED (ZINC OXIDE) CREAM [POTENCY NO. 710 LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3118c3ed-f0f0-f997-e063-6294a90a53a9"
+              ],
+              [
+                "DAILY MINERAL SUNSCREEN 20% ZINC OXIDE (ZINC OXIDE) CREAM [INTEGRATIVE AESTHETICS BOSTON, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=314299b1-a78b-c1bd-e063-6294a90ab43b"
+              ],
+              [
+                "ULTIMATE MINERAL PROTECTION (ZINC OXIDE) CREAM [MARK SCHWARTZ CLINICAL SKINCARE, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b02bf69-b648-56e1-e063-6294a90aeef3"
+              ],
+              [
+                "SOLAR SHIELD FACE AND BODY SPF 40 (ZINC OXIDE) CREAM [BRIGHT SKINCARE, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b138432-19e5-e757-e063-6294a90a4cbe"
+              ],
+              [
+                "SOLAR SHIELD FACE AND BODY SPF 40 (ZINC OXIDE) CREAM [BRIGHT SKINCARE, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b14caa3-f58e-b9ab-e063-6394a90a9695"
+              ],
+              [
+                "STAY SHADY NON-TINTED MINERAL SUNSCREEN (ZINC OXIDE) CREAM [AMOIE ALAYVILLA]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b27225f-4589-d915-e063-6294a90a7225"
+              ],
+              [
+                "STAY SHADY NON-TINTED MINERAL SUNSCREEN (ZINC OXIDE) CREAM [AMOIE ALAYVILLA]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b277237-3a2e-1fb0-e063-6294a90adf20"
+              ],
+              [
+                "DAILY ANTIOXIDANT MINERAL SUNSCREEN (ZINC OXIDE) CREAM [MONIKA G KIRIPOLSKY MD INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b3d7ff2-1463-8d8e-e063-6394a90a5ac8"
+              ],
+              [
+                "PREMIER ZINC (ZINC OXIDE) CREAM [ENSO SKINCARE & WELLNESS LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb378c8-14b0-aa13-e063-6294a90a4db3"
+              ],
+              [
+                "MINERAL SUNSCREEN 20PERCENT ZINC OXIDE (ZINC OXIDE) CREAM [ESTHETICS BY MINDY LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ccea6c0-8c27-6b26-e063-6294a90a0931"
+              ],
+              [
+                "MINERAL SUNSCREEN 20PERCENT ZINC OXIDE (ZINC OXIDE) CREAM [ESTHETICS BY MINDY LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3d5ab3f6-10b9-2a21-e063-6294a90a3428"
+              ],
+              [
+                "MINERAL BASED FACIAL SUNSCREEN (ZINC OXIDE) CREAM [KATHLEEN P. HUTTON, M.D., INC. A PROFESSIONAL CORPORATION]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e8981ed-5847-7009-e063-6394a90a49a1"
+              ],
+              [
+                "BELLA BLU SKIN CARE NON TINTED SUNSCREEN (ZINC OXIDE) CREAM [BELLA BLU STUDIOS INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3f66d2ae-00e7-608c-e063-6294a90a49c6"
+              ],
+              [
+                "BELLA BLU SKIN CARE NON TINTED SUNSCREEN (ZINC OXIDE) CREAM [BELLA BLU STUDIOS INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3f67134c-88e8-8513-e063-6294a90aaf5a"
+              ],
+              [
+                "DAILY PROTECT MINERAL SUNSCREEN (ZINC OXIDE) CREAM [SARAH'S]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4617beb7-381e-8994-e063-6394a90a14b5"
+              ],
+              [
+                "SAFEGUARD SPF 40 (ZINC OXIDE) CREAM [SKINSALVATION SKINCARE, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4730721b-6148-4a80-a749-13c4febf2e38"
+              ],
+              [
+                "DAILY MINERAL SUNSCREEN 20% ZINC OXIDE (ZINC OXIDE) CREAM [INTEGRATIVE AESTHETICS BOSTON, LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52f818f4-8485-b228-e063-6294a90a9fe3"
+              ],
+              [
+                "CLOVE HILL ACNE SAFE MINERAL SUNSCREEN SPF 40 (ZINC OXIDE) CREAM [CLOVE HILL LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a06e6393-13c5-48b9-909a-3bdf7d58cad3"
+              ],
+              [
+                "TIZO ULTRA ZINC SPF 40 (NON-TINTED) (ZINC OXIDE) CREAM [FALLIEN COSMECEUTICALS, LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4a06973-21bb-4eda-9b74-fc23bee141ab"
+              ]
+            ],
+            "same_company": false
+          },
+          {
+            "baby": [
+              "ULTRASOL NATURE BABY SUNSCREEN (AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE) LOTION [FISCHER PHARMACEUTICALS LTD]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=15739f81-d01f-4d3e-be5f-bbf04fffb1f9"
+            ],
+            "same_list": [
+              [
+                "ULTRASOLSUNSCREEN SUNSCREEN LOTION SPF45 (AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE) LOTION [FISCHER PHARMACEUTICALS LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=035383ed-9ebb-4a75-9c3f-cde9ebe8fd4e"
+              ],
+              [
+                "ULTRASOL SPORT (AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE) LOTION [FISCHER PHARMACEUTICALS LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3059ffac-c12e-49c7-b0e6-2af35217f3e5"
+              ],
+              [
+                "ULTRASOL SPORT (AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE) LOTION [FISCHER PHARMACEUTICALS LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53080a26-b800-4dcd-9479-c07df3c9c307"
+              ],
+              [
+                "ULTRASOL SUNSCREEN LOTION SPF 45 (AVOBENZONE, OCTINOXATE, OCTISALATE, OXYYBENZONE) LOTION [FISCHER PHARMACEUTICALS LTD.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=624ca1a6-2b56-4511-a83e-08b20aa4045d"
               ]
             ],
             "same_company": true
@@ -2154,6 +3045,10 @@
               [
                 "ULTRASOLSUNSCREEN SPORT SUNSCREEN LOTION CONTINUOUS SPRAY SPF 45 (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY [FISCHER PHARMACEUTICALS LTD]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2e616006-222e-4169-8170-45294756248c"
+              ],
+              [
+                "ULTRASOLSUNSCREEN SUNSCREEN LOTION CONTINUOUS SPRAY SPF 45 (AVOBENZONE, HOMOSALATE, OCTINOXATE , OCTISALATE , OCTOCRYLENE , OXYBENZONE) AEROSOL, SPRAY [FISCHER PHARMACEUTICALS LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b15cf634-eda4-496d-8ea4-35c7159e13e8"
               ]
             ],
             "same_company": true
@@ -2167,6 +3062,23 @@
               [
                 "ULTRASOLSUNSCREEN SUNSCREEN LOTION SPF 34 (AVOBENZONE , OCTINOXATE, OCTISALATE, OXYBENZONE) LOTION [FISCHER PHARMACEUTICALS LTD]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=876d12b1-51b7-409e-b43f-89583bf60709"
+              ],
+              [
+                "ULTRASOLSUNSCREEN SUNSCREEN LOTION SPF 34 (AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE) LOTION [FISCHER PHARMACEUTICALS LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9321ad29-30c7-4134-8f7c-646990ee8cdf"
+              ]
+            ],
+            "same_company": true
+          },
+          {
+            "baby": [
+              "ULTRASOLSUNSCREEN NATURE BABY SUNSCREEN FACE CREAM SPF 45 (AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE) CREAM [FISCHER PHARMACEUTICALS LTD]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=70b65f42-f22c-42dc-94da-d174daf2016a"
+            ],
+            "same_list": [
+              [
+                "ULTRASOL OIL-FREE SUNSCREEN (AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE) CREAM [FISCHER PHARMACEUTICALS LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=422ef96a-c2c5-4d45-bc07-a14d8b2b1720"
               ]
             ],
             "same_company": true
@@ -2187,6 +3099,59 @@
               ]
             ],
             "same_company": false
+          },
+          {
+            "baby": [
+              "WESTERN FAMILY BABY BROAD SPECTRUM SUNSCREEN SPF 50 (AVOBENZONE,HOMOSALATE, OCTOCRYLENE, OCTISALATE, OXYBENZONE) LOTION [WESTERN FAMILY FOODS, INC.]",
+              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9af87cf6-367a-45a6-8080-944713bbd3d6"
+            ],
+            "same_list": [
+              [
+                "WESTERN FAMILY BROAD SPECTRUM SUNSCREENSPF 50 SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [WESTERN FAMILY FOODS, INC.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41fbb0bf-65ce-409f-9291-3095d28a28b1"
+              ],
+              [
+                "MEIJER (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [MEIJER DISTRIBUTION INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a72075c-0f65-4435-8988-b06369164bef"
+              ],
+              [
+                "MEIJER SPORT SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [MEIJER DISTRIBUTION INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58b40c68-75d9-442d-b347-88e8c8343535"
+              ],
+              [
+                "WALGREENS SUNSCREEN SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [WALGREEN CO.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65b1a431-bb64-430c-bb6b-4b6b3cb445bf"
+              ],
+              [
+                "PETER ISLAND SUNSCREENSPF 50 SPF 50 (HOMOSALATE, OXYBENZONE, OCTISALATE, AVOBENZONE, OCTOCRYLENE) LOTION [ACCESS BUSINESS GROUP LLC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f15432a-38ae-42ec-b9f9-e5b42298e3e4"
+              ],
+              [
+                "PUBLIX SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [PUBLIX SUPER MARKETS INC]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a0a1a55-7184-48f4-80bf-b94bdd8d6815"
+              ],
+              [
+                "ACADEMY SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [ACADEMY, LTD]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6d0410f-fd98-4a50-a306-857d9bf5631c"
+              ],
+              [
+                "RITE AID SUNSCREEN SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [RITE AID CORPORATION]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bdff6591-acd2-4db7-8f76-885ed3f5c05d"
+              ],
+              [
+                "PETER ISLAND SUNSCREEN SPF 50 (HOMOSALATE, OXYBENZONE, OCTISALATE, AVOBENZONE, OCTOCRYLENE) LOTION [AMWAY CORP.]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c9490f30-f329-4d7d-836d-2731c244ebc9"
+              ],
+              [
+                "KROGER SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [THE KROGER CO]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de6fe18d-ff80-4860-87a0-6693248b18b1"
+              ],
+              [
+                "SELECT BRAND SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [SELECT BRAND DISTRIBUTORS]",
+                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f789a746-9e4b-4c31-b04b-9c723a829b65"
+              ]
+            ],
+            "same_company": true
           }
         ]
       },
@@ -2198,7 +3163,7 @@
         "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
         "snapshot": "2026-10-08"
       },
-      "method": "claims/registry_stats.py (same_list_pairs)",
+      "method": "claims/registry_stats.py (same_list_printed)",
       "verified_date": "2026-10-08"
     },
     {
@@ -2208,10 +3173,10 @@
       "ingredient_slugs": [
         "zinc-oxide"
       ],
-      "claim": "234 of 246 mineral-only baby/kids sunscreen formulations contain zinc oxide.",
-      "publishable_sentence": "234 of the 246 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain zinc oxide.",
+      "claim": "234 of 245 mineral-only baby/kids sunscreen formulations contain zinc oxide.",
+      "publishable_sentence": "234 of the 245 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain zinc oxide.",
       "numerator": 234,
-      "denominator": 246,
+      "denominator": 245,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products); mineral-only actives (zinc oxide and/or titanium dioxide)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -2231,11 +3196,11 @@
       "blocker": "The count is exact, but 'absorbs UV light' is not supported for the two largest ingredients: the butyloctyl salicylate manufacturer (Hallstar) describes SPF contribution and UV-filter stabilisation, not UV absorption; DrugBank DB11226 describes ethylhexyl methoxycrylene as a photostabilizer that works without absorbing sunlight. Each of the 7 ingredients needs its own sourced function before a combined sentence can be published.",
       "ingredient_slugs": [],
       "finding": "hidden-uv-absorbers",
-      "claim": "92 of 246 mineral-only baby/kids sunscreen formulations contain at least one UV-absorbing ingredient that is not listed as an active ingredient.",
-      "publishable_sentence": "92 of the 246 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database also contain an ingredient that absorbs UV light but is not listed as an active ingredient.",
+      "claim": "91 of 245 mineral-only baby/kids sunscreen formulations contain at least one UV-absorbing ingredient that is not listed as an active ingredient.",
+      "publishable_sentence": "91 of the 245 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database also contain an ingredient that absorbs UV light but is not listed as an active ingredient.",
       "legal_framing": "Not a violation: these ingredients are not FDA sunscreen actives, so listing them as actives would itself be non-compliant. The finding is about how labels work, not about any brand.",
-      "numerator": 92,
-      "denominator": 246,
+      "numerator": 91,
+      "denominator": 245,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products); mineral-only actives (zinc oxide and/or titanium dioxide)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -2255,8 +3220,8 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "superseded_finding": "spf-boosters",
-      "claim": "76 of 246 mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
-      "publishable_sentence": "76 of the 246 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not an FDA sunscreen active ingredient. Hallstar, one of its manufacturers, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
+      "claim": "76 of 245 mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
+      "publishable_sentence": "76 of the 245 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not an FDA sunscreen active ingredient. Hallstar, one of its manufacturers, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
       "ingredient_source": {
         "title": "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)",
         "url": "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/",
@@ -2264,7 +3229,7 @@
       },
       "legal_framing": "Not a violation: butyloctyl salicylate is not an FDA sunscreen active, so it belongs with the inactive ingredients, as the rules require. The finding is about how labels work, not about any brand.",
       "numerator": 76,
-      "denominator": 246,
+      "denominator": 245,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products); mineral-only actives (zinc oxide and/or titanium dioxide)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
@@ -2283,20 +3248,20 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "spf-boosters",
-      "claim": "159 of 445 baby/kids sunscreen formulations (93 of 246 mineral-only) list at least one of 6 synthetic SPF-boosting or UV-filter ingredients among their inactive ingredients.",
-      "publishable_sentence": "159 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain a synthetic ingredient that its manufacturer sells to boost SPF or stabilize UV filters, or that the EU regulates as a UV filter, listed under Inactive ingredients. That includes 93 of the 246 mineral formulas, whose only active ingredients are zinc oxide and/or titanium dioxide.",
+      "claim": "159 of 446 baby/kids sunscreen formulations (93 of 245 mineral-only) list at least one of 6 synthetic SPF-boosting or UV-filter ingredients among their inactive ingredients.",
+      "publishable_sentence": "159 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain a synthetic ingredient that its manufacturer sells to boost SPF or stabilize UV filters, or that the EU regulates as a UV filter, listed under Inactive ingredients. That includes 93 of the 245 mineral formulas, whose only active ingredients are zinc oxide and/or titanium dioxide.",
       "legal_framing": "Not a violation: none of these ingredients is an FDA sunscreen active, so they belong with the inactive ingredients, as the rules require. The finding is about how labels work, not about any brand.",
       "numerator": 159,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "detail": {
         "mineral": [
           93,
-          246
+          245
         ],
         "other": [
           66,
-          199
+          201
         ],
         "two_or_more": 38,
         "ingredients": [
@@ -3699,11 +4664,11 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "eu-banned-preservatives",
-      "claim": "14 of 445 baby/kids sunscreen formulations list isobutylparaben (9) or methylisothiazolinone (5).",
-      "publishable_sentence": "14 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list a preservative that the EU no longer allows in products like them: isobutylparaben in 9, banned from all EU cosmetics, and methylisothiazolinone in 5, banned from EU leave-on cosmetics.",
+      "claim": "14 of 446 baby/kids sunscreen formulations list isobutylparaben (9) or methylisothiazolinone (5).",
+      "publishable_sentence": "14 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list a preservative that the EU no longer allows in products like them: isobutylparaben in 9, banned from all EU cosmetics, and methylisothiazolinone in 5, banned from EU leave-on cosmetics.",
       "legal_framing": "Not a violation in the US: neither preservative is banned in US sunscreens. In the EU a sunscreen is a cosmetic, so EU cosmetics law applies to it. The finding compares label records with EU law; it is not about any brand.",
       "numerator": 14,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "ingredient_source": {
         "title": "Commission Regulation (EU) No 358/2014",
@@ -3929,11 +4894,11 @@
         "octinoxate"
       ],
       "finding": "hawaii-oxybenzone-octinoxate",
-      "claim": "86 of 445 baby/kids sunscreen formulations list oxybenzone (59) or octinoxate (44) as an active ingredient.",
-      "publishable_sentence": "86 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain oxybenzone or octinoxate. Since January 1, 2021, Hawaii law has made it unlawful to sell, offer for sale or distribute for sale in the state a sunscreen containing either one without a prescription.",
+      "claim": "88 of 446 baby/kids sunscreen formulations list oxybenzone (60) or octinoxate (45) as an active ingredient.",
+      "publishable_sentence": "88 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain oxybenzone or octinoxate. Since January 1, 2021, Hawaii law has made it unlawful to sell, offer for sale or distribute for sale in the state a sunscreen containing either one without a prescription.",
       "legal_framing": "Both ingredients are permitted under the FDA sunscreen monograph. Hawaii's law applies to sales in Hawaii only, and a DailyMed listing does not show where, or whether, a product is sold.",
-      "numerator": 86,
-      "denominator": 445,
+      "numerator": 88,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "ingredient_source": {
         "title": "Hawaii Revised Statutes §342D-21 (L 2018, c 104, §2)",
@@ -3944,11 +4909,11 @@
         "per_filter": [
           [
             "oxybenzone",
-            59
+            60
           ],
           [
             "octinoxate",
-            44
+            45
           ]
         ],
         "both": 17,
@@ -4266,6 +5231,14 @@
             "label_date": "2018-05-25"
           },
           {
+            "title": "BROAD SPECTRUM SPF 50 DAYLOGIC (AVOBENZONE 3% HOMOSALATE 13% OCTISALATE 5% OCTOCRYLENE 7% OXYBENZONE 4%) LOTION [RITE AID]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cac6ded7-228d-4581-8b6c-0ab8d5c71e84",
+            "filters": [
+              "oxybenzone"
+            ],
+            "label_date": "2018-05-17"
+          },
+          {
             "title": "NO-AD SUNCARE LTN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE AND OXYBENZONE) LOTION [SOLSKYN PERSONAL CARE LLC]",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10f1c4fa-d319-40da-9758-36c8585b9fc0",
             "filters": [
@@ -4435,6 +5408,14 @@
               "oxybenzone"
             ],
             "label_date": "2013-07-15"
+          },
+          {
+            "title": "PUTTO SECRET SUN SCREEN (TITANIUM DIOXIDE) CREAM [AGABANG & COMPANY ]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b2c02c98-83f2-4a68-b008-be315b4846b1",
+            "filters": [
+              "octinoxate"
+            ],
+            "label_date": "2013-07-13"
           },
           {
             "title": "PETER ISLAND CONTINOUS SUNSCREEN KIDS SPF 50 (OXYBENZONE, AVOBENZONE, OCTOCRYLENE) SPRAY [ACCESS BUSINESS GROUP LLC]",
@@ -4682,11 +5663,11 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "parabens",
-      "claim": "42 of 445 baby/kids sunscreen formulations list at least one paraben.",
-      "publishable_sentence": "42 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list at least one paraben preservative: propylparaben in 41, methylparaben in 42, butylparaben in 16, ethylparaben in 16 and isobutylparaben in 9.",
+      "claim": "43 of 446 baby/kids sunscreen formulations list at least one paraben.",
+      "publishable_sentence": "43 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list at least one paraben preservative: propylparaben in 42, methylparaben in 43, butylparaben in 16, ethylparaben in 16 and isobutylparaben in 9.",
       "legal_framing": "Not a violation in the US: parabens are allowed in US sunscreens. In the EU, isobutylparaben is banned from all cosmetics, and propylparaben and butylparaben are limited to 0.14% combined and may not be used in leave-on products designed for the nappy area of children under three. Labels do not state paraben percentages, so the 0.14% limit cannot be checked from them.",
-      "numerator": 42,
-      "denominator": 445,
+      "numerator": 43,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "ingredient_source": {
         "title": "Commission Regulation (EU) No 1004/2014 (propylparaben, butylparaben)",
@@ -4697,11 +5678,11 @@
         "per_paraben": [
           [
             "propylparaben",
-            41
+            42
           ],
           [
             "methylparaben",
-            42
+            43
           ],
           [
             "butylparaben",
@@ -4718,7 +5699,7 @@
         ],
         "mineral": [
           2,
-          246
+          245
         ],
         "formulas": [
           {
@@ -4927,6 +5908,15 @@
           {
             "title": "BANANA BOAT (AVOBENZONE, OCTOCRYLENE, OXYBENZONE) LOTION [EDGEWELLPERSONAL CARE BRANDS LLC]",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=353353b9-54f8-4300-9632-7615de394076",
+            "parabens": [
+              "propylparaben",
+              "methylparaben"
+            ],
+            "mineral": false
+          },
+          {
+            "title": "BROAD SPECTRUM SPF 50 DAYLOGIC (AVOBENZONE 3% HOMOSALATE 13% OCTISALATE 5% OCTOCRYLENE 7% OXYBENZONE 4%) LOTION [RITE AID]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cac6ded7-228d-4581-8b6c-0ab8d5c71e84",
             "parabens": [
               "propylparaben",
               "methylparaben"
@@ -5158,11 +6148,11 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "fragrance",
-      "claim": "138 of 445 baby/kids sunscreen formulations list fragrance (or parfum) as an ingredient.",
-      "publishable_sentence": "138 of the 445 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list fragrance (or parfum) as an ingredient. For children with eczema, the American Academy of Dermatology advises a sunscreen that is fragrance-free.",
+      "claim": "138 of 446 baby/kids sunscreen formulations list fragrance (or parfum) as an ingredient.",
+      "publishable_sentence": "138 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list fragrance (or parfum) as an ingredient. For children with eczema, the American Academy of Dermatology advises a sunscreen that is fragrance-free.",
       "legal_framing": "Not a violation: fragrance is allowed in US sunscreens. The finding counts what the ingredient lists say; it is not about any brand.",
       "numerator": 138,
-      "denominator": 445,
+      "denominator": 446,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "ingredient_source": {
         "title": "How can I find eczema friendly products? — American Academy of Dermatology",
@@ -5171,12 +6161,12 @@
       },
       "detail": {
         "mineral": [
-          32,
-          246
+          31,
+          245
         ],
         "other": [
-          106,
-          199
+          107,
+          201
         ],
         "formulas": [
           {
@@ -5344,6 +6334,14 @@
           {
             "title": "BILBOA KIDS SUNSCREEN SPF 50 PLUS (HOMOSALATE, OCTISALATE, OXYBENZONE, ZINC OXIDE) LOTION [CADEY S.R.L.]",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=354ef99d-a94d-438d-b62f-c91b2107e266",
+            "mineral": false,
+            "listed_in": [
+              "printed label"
+            ]
+          },
+          {
+            "title": "BROAD SPECTRUM SPF 50 DAYLOGIC (AVOBENZONE 3% HOMOSALATE 13% OCTISALATE 5% OCTOCRYLENE 7% OXYBENZONE 4%) LOTION [RITE AID]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cac6ded7-228d-4581-8b6c-0ab8d5c71e84",
             "mineral": false,
             "listed_in": [
               "printed label"
@@ -5647,14 +6645,6 @@
             ]
           },
           {
-            "title": "JASON SUN KIDS SUNSCREEN BROAD SPECTRUM SPF45 (HOMOSALATE, OCTINOXATE, ETHYLHEXYL SALICYLATE, OCTOCRYLENE, BUTUL METHOXYDIBENZOYLMETHANE, TITANIUM DIOXIDE) LOTION [THE HAIN CELESTIAL GROUP, INC.]",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c2dc068-ad7d-6a28-e054-00144ff88e88",
-            "mineral": false,
-            "listed_in": [
-              "printed label"
-            ]
-          },
-          {
             "title": "KIDS DISAPPEARING COLOR SPF50 BROAD SPECTRUM SUNCREEN GREEN APPLE SCENTED (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [CVS PHARMACY]",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b177115-9f0c-48a4-9fea-1f547436a2c9",
             "mineral": false,
@@ -5897,7 +6887,7 @@
           {
             "title": "PUTTO SECRET SUN SCREEN (TITANIUM DIOXIDE) CREAM [AGABANG & COMPANY ]",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b2c02c98-83f2-4a68-b008-be315b4846b1",
-            "mineral": true,
+            "mineral": false,
             "listed_in": [
               "printed label"
             ]
@@ -6323,8 +7313,8 @@
   ],
   "registry_population": {
     "definition": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
-    "formulations": 445,
-    "mineral_only": 246,
+    "formulations": 446,
+    "mineral_only": 245,
     "review_file": "baby_decisions.csv",
     "snapshot": "2026-10-08"
   }

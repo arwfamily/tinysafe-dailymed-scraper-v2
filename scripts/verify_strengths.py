@@ -83,6 +83,21 @@ def fetch_xml(setid, tries=3):
     return None
 
 
+
+# "3% Avobenzone 13% Homosalate ..." — some labels print the percentage BEFORE
+# the name. Read that layout name-after-number, or every value shifts by one
+# (DayLogic Kids, 2026-10-09 audit).
+_PCT_FIRST_START = re.compile(r"^\W*(?:ACTIVE INGREDIENTS?\W*)?(?:\(IN EACH [^)]*\))?\W*\d+(?:\.\d+)?\s*%\s*[A-Za-z]", re.I)
+_PCT_NAME = re.compile(r"(\d+(?:\.\d+)?)\s*%\s*([A-Za-z][A-Za-z0-9 ,'\-/]{2,44}?)(?=\s*\d+(?:\.\d+)?\s*%|\s*\||\s*\bPURPOSES?\b|\s*SUNSCREEN|$)", re.I)
+
+
+def percent_first_pairs(text):
+    """[(name, percent)] when the panel prints percentages before names, else None."""
+    if not _PCT_FIRST_START.match(text or ""):
+        return None
+    return [(nm, pct) for pct, nm in _PCT_NAME.findall(text)]
+
+
 def panel_percents(xml):
     """{normalised ingredient name: percent} as printed in Drug Facts."""
     if not xml:
@@ -91,7 +106,8 @@ def panel_percents(xml):
     for m in ACTIVE_SECTION.finditer(xml):
         text = TAG.sub(" ", m.group(1))
         text = re.sub(r"\s+", " ", text)
-        for nm, pct in NAME_PCT.findall(text):
+        pairs = percent_first_pairs(text)
+        for nm, pct in (pairs if pairs else NAME_PCT.findall(text)):
             key = norm(nm)
             # strip leading label words the panel puts before the name
             key = re.sub(r"^(ACTIVE INGREDIENTS?|INGREDIENT|PURPOSE)\s+", "", key)

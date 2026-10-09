@@ -477,6 +477,21 @@ _NAME_PCT = re.compile(
     re.IGNORECASE)
 
 
+
+# "3% Avobenzone 13% Homosalate ..." — some labels print the percentage BEFORE
+# the name. Read that layout name-after-number, or every value shifts by one
+# (DayLogic Kids, 2026-10-09 audit).
+_PCT_FIRST_START = re.compile(r"^\W*(?:ACTIVE INGREDIENTS?\W*)?(?:\(IN EACH [^)]*\))?\W*\d+(?:\.\d+)?\s*%\s*[A-Za-z]", re.I)
+_PCT_NAME = re.compile(r"(\d+(?:\.\d+)?)\s*%\s*([A-Za-z][A-Za-z0-9 ,'\-/]{2,44}?)(?=\s*\d+(?:\.\d+)?\s*%|\s*\||\s*\bPURPOSES?\b|\s*SUNSCREEN|$)", re.I)
+
+
+def percent_first_pairs(text):
+    """[(name, percent)] when the panel prints percentages before names, else None."""
+    if not _PCT_FIRST_START.match(text or ""):
+        return None
+    return [(nm, pct) for pct, nm in _PCT_NAME.findall(text)]
+
+
 def parse_drug_facts_percents(xml):
     """{normalised ingredient name: percent} as printed on the Drug Facts panel."""
     if not xml:
@@ -484,7 +499,8 @@ def parse_drug_facts_percents(xml):
     out = {}
     for m in _ACTIVE_SECTION.finditer(xml):
         text = re.sub(r"\s+", " ", _STRIP_TAGS.sub(" ", m.group(1)))
-        for nm, pct in _NAME_PCT.findall(text):
+        pairs = percent_first_pairs(text)
+        for nm, pct in (pairs if pairs else _NAME_PCT.findall(text)):
             key = re.sub(r"[^A-Z0-9 ]", " ", nm.upper())
             key = re.sub(r"\s+", " ", key).strip()
             key = re.sub(r"^(ACTIVE INGREDIENTS?|INGREDIENT|PURPOSE)\s+", "", key)
