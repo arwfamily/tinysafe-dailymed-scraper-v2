@@ -62,6 +62,7 @@ jobs:
           python tests/test_matrix.py
           python tests/test_fingerprint.py
           python tests/test_spl_parse.py
+          python tests/test_printed_changes.py
 
       - name: Resolve run mode
         id: mode
@@ -162,6 +163,7 @@ jobs:
         run: |
           python scripts/baby_track.py
           python scripts/baby_label_text.py
+          python scripts/printed_changes.py
           python claims/registry_stats.py
           python scripts/verify_same_list.py || echo 'printed-label check failed; same-list finding stays held'
           python claims/registry_stats.py
