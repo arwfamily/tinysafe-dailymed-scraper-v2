@@ -53,6 +53,10 @@ FINDINGS = {  # display order = dict order
         "title": "Same ingredient list, different label",
         "eyebrow": "Finding · DailyMed labels",
         "caption": "Each door is one baby or kids formula. Filled: same ingredients as a label that does not say baby or kids."},
+    "mineral-wording": {
+        "title": "Baby sunscreens that say mineral on the front but also contain organic (chemical) filters",
+        "eyebrow": "Finding · DailyMed labels, front panel × Drug Facts",
+        "caption": "Each door is one baby or kids formula. Filled: says mineral on the front and also lists an organic (chemical) UV filter."},
     "spf-boosters": {
         "title": "SPF boosters in baby sunscreens, including mineral ones",
         "eyebrow": "Finding · DailyMed labels × manufacturer data",
@@ -679,6 +683,30 @@ def finding_body(d, f):
              "oxybenzone or octinoxate, or both, without a prescription issued by a licensed healthcare provider."),
             ("How were these products selected?", howto),
         ]
+    elif key == "mineral-wording":
+        det = f["detail"]
+        frows = "".join(
+            f'<tr><td><a href="{E(p["url"])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["title"]))}</span></a></td>'
+            f'<td>\u201c{E(p["phrase"])}\u201d</td><td>{E(", ".join(p["chemical_filters"]))}</td><td>{E(", ".join(p["mineral_filters"]))}</td></tr>'
+            for p in det["formulas"])
+        no = det["name_only"]
+        note = ""
+        if no:
+            many = len(no) > 1
+            note = (f" {len(no)} more label{'s' if many else ''} use{'' if many else 's'} \u201cMineral\u201d only in the "
+                    f"product name filed with the FDA, not on the label image, and {'are' if many else 'is'} not counted.")
+        mean = f"""
+<p>Only two sunscreen active ingredients are mineral filters: zinc oxide and titanium dioxide. The FDA has proposed that these two are safe and effective, and that most of the other active ingredients, including homosalate, octocrylene, octinoxate and octisalate, need more safety data. {src_chip("FDA", isrc["url"], isrc["title"])}</p>
+<p>The {f["numerator"]} formulas below say \u201cmineral\u201d on the front of the package and contain zinc oxide or titanium dioxide, but they also contain at least one organic UV filter, often called a chemical filter. {det["discloses"]} of them {"says" if det["discloses"] == 1 else "say"} on the front that {"it combines" if det["discloses"] == 1 else "they combine"} mineral and chemical filters. The Drug Facts box on the back lists every active ingredient; that is where to check.</p>"""
+        extra = f"""<section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} formulas</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Printed on the front</th><th>Organic (chemical) filters</th><th>Mineral filters</th></tr></thead><tbody>{frows}</tbody></table></div>
+<p class="fine">Each name links to its FDA DailyMed record. The front wording was read from the label text or the label image on DailyMed. {det["mixed_formulas"]} of the {f["denominator"]} formulas combine mineral and chemical filters; every label among them was checked, and the others do not say mineral on the front.{note}</p></section>"""
+        faq = [
+            ("Is it allowed to call these sunscreens mineral?", f["legal_framing"]),
+            ("How can I tell if a sunscreen is mineral only?",
+             "Read the Active ingredients in the Drug Facts box. A mineral-only sunscreen lists only zinc oxide, titanium dioxide, or both."),
+            ("How were these products selected?", howto),
+        ]
     elif key == "sprays":
         det = f["detail"]
         (mn, md), (on, od) = det["mineral"], det["other"]
@@ -783,7 +811,7 @@ def page_finding(d, f):
     title = meta["title"]
     mean, extra, faq, howto = finding_body(d, f)
     faqh = "".join(f"<details><summary>{E(q)}</summary><p>{E(a)}</p></details>" for q, a in faq)
-    src_label = {"fda-more-data": "FDA source", "sprays": "AAP guidance", "hawaii-oxybenzone-octinoxate": "Hawaii law", "fragrance": "AAD guidance", "parabens": "EU law", "eu-banned-preservatives": "EU law",
+    src_label = {"fda-more-data": "FDA source", "sprays": "AAP guidance", "mineral-wording": "FDA source", "hawaii-oxybenzone-octinoxate": "Hawaii law", "fragrance": "AAD guidance", "parabens": "EU law", "eu-banned-preservatives": "EU law",
                  "homosalate-eu-limit": "EU law", "eu-banned-preservatives": "EU law",
                  "fragrance": "AAD guidance"}.get(f["finding"], "Source")
     body = f"""

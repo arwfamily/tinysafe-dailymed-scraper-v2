@@ -856,6 +856,85 @@ def main():
                                 for r in sorted(sp, key=lambda r: r["title"])]},
         "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py (sprays)", "verified_date": snapshot})
 
+    # "Mineral" on the front, chemical UV filters in the actives. The wording is
+    # read from the printed front panel (text or label image) by a person and
+    # recorded with its evidence in data/corrections/front_mineral_wording.jsonl.
+    # Every baby/kids label that mixes mineral and chemical actives, or whose
+    # text says mineral, must have a reviewed entry; new ones are printed in
+    # the run log and listed as unreviewed, and count only once reviewed.
+    mw = {}
+    mwp = os.path.join(ROOT, "data", "corrections", "front_mineral_wording.jsonl")
+    if os.path.exists(mwp):
+        for line in open(mwp, encoding="utf-8"):
+            if line.strip():
+                x = json.loads(line)
+                mw[x["setid"]] = x
+    texts = {}
+    for line in open(LABEL_TEXT, encoding="utf-8"):
+        x = json.loads(line)
+        texts[x["setid"]] = x
+    _MIN_WORD = re.compile(r"\bMINERAL(?![- ]?OIL)(?!S? ?\(PARAFFINUM)", re.I)
+
+    def front_text(sid):
+        secs = (texts.get(sid) or {}).get("sections") or {}
+        return " ".join(v for k, v in secs.items()
+                        if not re.search(r"INACTIVE|INGREDIENT|DRUG FACTS|WARNING|DIRECTION|USES?$|PURPOSE|OTHER INFO", k.upper()))
+    pop_labels = [r for r in recs if r["setid"] in include] + [r for r in forms if r["setid"] not in include]
+    candidates, unreviewed = set(), []
+    for r in pop_labels:
+        if not orgs(r):
+            continue
+        name = (r.get("product_name") or "") + " " + r["title"]
+        if r.get("uv_filters_mineral") or _MIN_WORD.search(name) or _MIN_WORD.search(front_text(r["setid"])):
+            candidates.add(r["setid"])
+            if r["setid"] not in mw:
+                unreviewed.append({"setid": r["setid"], "title": r["title"]})
+    form_of = {r["formulation_hash"]: r for r in forms}
+    mrows = {}
+    for sid, x in mw.items():
+        if x["front_wording"] != "says_mineral":
+            continue
+        r = next((rr for rr in pop_labels if rr["setid"] == sid), None)
+        if r is None or not orgs(r):
+            continue
+        rep = form_of.get(r["formulation_hash"])
+        if rep is None:
+            continue
+        mrows.setdefault(rep["formulation_hash"], {
+            "title": r["title"], "url": r["dailymed_url"], "phrase": x["phrase"], "evidence": x["evidence"],
+            "chemical_filters": sorted(orgs(r)), "mineral_filters": sorted(r.get("uv_filters_mineral") or []),
+            "form": r.get("dosage_form"), "discloses_chemical": bool(re.search(r"chemical", x["phrase"], re.I))})
+    mrows = sorted(mrows.values(), key=lambda x: x["title"])
+    name_only = [{"title": next((rr["title"] for rr in pop_labels if rr["setid"] == s), s),
+                  "url": f"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={s}", "evidence": x["evidence"]}
+                 for s, x in mw.items() if x["front_wording"] == "name_only" and s in candidates]
+    combo_forms = sum(1 for r in forms if orgs(r) and r.get("uv_filters_mineral"))
+    if unreviewed:
+        print(f"[registry_stats] mineral wording: {len(unreviewed)} labels need a front-panel check: "
+              + "; ".join(u["title"][:60] for u in unreviewed))
+    claims.append({
+        "id": "US-BABY-MINERAL-WORDING", "status": "verified",
+        "jurisdiction": "US", "ingredient_slugs": [], "finding": "mineral-wording",
+        "claim": (f"{len(mrows)} of {N} baby/kids sunscreen formulations say 'mineral' on the front of the label "
+                  f"and also contain organic (chemical) UV filters."),
+        "publishable_sentence": (f"{len(mrows)} baby and kids sunscreen formulas listed in the FDA's DailyMed label "
+                                 f"database say “mineral” on the front of the package, such as “mineral-based” or "
+                                 f"“mineral enriched”, but their active ingredients also include organic UV filters, often called chemical filters, "
+                                 f"such as homosalate, octocrylene, octinoxate or octisalate. To know whether a sunscreen "
+                                 f"is mineral only, read the Active ingredients in the Drug Facts box: only zinc oxide "
+                                 f"and titanium dioxide are mineral filters."),
+        "legal_framing": ("Not a violation: no US rule defines “mineral” on a sunscreen label, and each of these "
+                          "products contains zinc oxide or titanium dioxide. Every active ingredient is listed in the "
+                          "Drug Facts box, as the law requires. The finding compares the front of the package with the "
+                          "Drug Facts; it is not about any brand."),
+        "numerator": len(mrows), "denominator": N, "population": POP,
+        "ingredient_source": FDA_QA,
+        "detail": {"formulas": mrows, "mixed_formulas": combo_forms, "name_only": name_only,
+                   "discloses": sum(1 for x in mrows if x["discloses_chemical"]),
+                   "reviewed_labels": len([s for s in mw if s in candidates]), "unreviewed": unreviewed},
+        "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py (mineral wording)",
+        "verified_date": snapshot})
+
     # Parabens
     PARABENS = [("propylparaben", r"(?<![A-Z])PROPYL ?PARABEN"), ("methylparaben", r"(?<![A-Z])METHYL ?PARABEN"),
                 ("butylparaben", r"(?<![A-Z])BUTYL ?PARABEN"), ("ethylparaben", r"(?<![A-Z])ETHYL ?PARABEN"),
