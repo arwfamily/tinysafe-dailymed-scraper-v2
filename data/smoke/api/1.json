@@ -1,1 +1,388 @@
-{"data": [{"spl_version": 1, "published_date": "Oct 06, 2026", "title": "CEFDINIR CAPSULE [ASCLEMED USA INC.]", "setid": "1805cb71-b33c-4b0b-8d01-45d7700ab9f4"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "METRONIDAZOLE VAGINAL GEL (METRONIDAZOLE) GEL [AUROBINDO PHARMA LIMITED]", "setid": "2ced2460-a003-4314-897b-f4ae0ff72edf"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "COLGATE OPTIC WHITE STAIN FIGHTER FRESH MINT (SODIUM FLUORIDE) GEL, DENTIFRICE [COLGATE-PALMOLIVE COMPANY]", "setid": "2d77357c-7681-4f08-a137-886d238f9b6f"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "BIOSHIELD (LACTOBACILLUS RHAMNOSUS) CAPSULE [KREWE PHARMA, LLC]", "setid": "3ea10aa7-f0c5-46ae-830b-eacb78390783"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "LIDOCAINE OINTMENT [ASCLEMED USA INC.]", "setid": "47eb3bc0-01d3-4051-85b6-dda707ee164c"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "GOODMEDS DAYTIME COLD AND FLU (ACETAMINOPHEN 325MG, DEXTROMETHORPHAN 10MG, PHENYLEPHRINE 5MG) CAPSULE, LIQUID FILLED [CABINET HEALTH P.B.C.]", "setid": "598fd23f-3334-b17d-e063-6394a90ab2af"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "GOODMEDS NIGHTTIME COLD AND FLU (ACETAMINOPHEN 325MG, DEXTROMETHORPHAN HBR 15MG, DOXYLAMINE SUCCINATE 6.25MG) CAPSULE, LIQUID FILLED [CABINET HEALTH P.B.C.]", "setid": "59919119-3cd2-50ad-e063-6394a90a58af"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "DE LA CRUZ ACNE CLEARING SCRUB (SALICYLIC ACID) CREAM [DLC LABORATORIES, INC.]", "setid": "5aac6768-206d-3a14-e063-6294a90ad94e"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "NAPROXEN TABLET [UNIT DOSE SOLUTIONS, INC.]", "setid": "5ca1d392-ee02-3ce3-e063-6394a90a7827"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "URIBEL TABS (METHENAMINE, BENZOIC ACID, PHENYL SALICYLATE, METHYLENE BLUE, HYOSCYAMINE SULFATE) TABLET [CINTEX SERVICES, LLC]", "setid": "5ccadff1-461a-335a-e063-6394a90ad5d7"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "FGPER FOLLICULITIS TREATMENT (BENZOYL PEROXIDE) CREAM [GUANGZHOU CHUANMA INTERNATIONAL TRADING CO.,LTD.]", "setid": "5cf05d6e-51e9-4bb5-e063-6394a90af35d"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "JONHOY WART REMOVER (SALICYLIC ACID 40%) LIQUID [GUANGZHOU HUIXUE BIOTECHNOLOGY CO., LTD.]", "setid": "5cff8436-3ee0-c084-e063-6394a90abc3a"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "CYCLOBENZAPRINE HYDROCHLORIDE TABLET, FILM COATED [CAROL WAY PHARMA LLC]", "setid": "5d0d6eec-28e8-6fca-e063-6294a90a59cd"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "FORMICA OXALIS LIQUID [URIEL PHARMACY, INC]", "setid": "5d1997e3-80f6-7c9c-e063-6294a90a6df0"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "GILTUSS TR (GUAIFENESIN,DEXTROMETHORPHAN HBR,PHENYLEPHRINE HCL) TABLET [GIL PHARMACEUTICAL CORP]", "setid": "74398f9f-f1a8-4bd5-8fea-c0afc6acc42f"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "HYOSCYAMINE SULFATE SL (HYOSCYAMINE SULFATE) TABLET [SPORTPHARM LLC]", "setid": "92b37c97-b6c2-4c44-a39c-22b22e6f427c"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "ROCURONIUM BROMIDE INJECTION, SOLUTION [BAXTER HEALTHCARE CORPORATION]", "setid": "a18fce42-0f3d-4354-845e-57c37ac3a147"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "METHOTREXATE TABLET [AMERICAN HEALTH PACKAGING]", "setid": "aafd97c1-3a0a-42b2-845a-a9db9bb7d876"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "NIGHTTIME SLEEP AID (DOXYLAMINE SUCCINATE) TABLET [BI-MART]", "setid": "ac67090c-b282-40c5-a87c-59a086db32b1"}, {"spl_version": 1, "published_date": "Oct 06, 2026", "title": "CEVIMELINE HYDROCHLORIDE CAPSULE [ASCLEMED USA INC.]", "setid": "ed55a184-97a0-44bd-9731-03076a000c85"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "COLGATE OPTIC WHITE STAIN FIGHTER CLEAN MINT (SODIUM FLUORIDE) PASTE, DENTIFRICE [COLGATE-PALMOLIVE COMPANY]", "setid": "095c4364-4e27-4bc4-96b0-8809b2e53572"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "MUCUS RELIEF (GUAIFENESIN) TABLET [HEALTHLIFE OF USA LLC]", "setid": "1be2a8b4-b010-4ad3-aa23-c8e4909681c8"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "EXTRA STRENGTH ASPIRIN 325 MG (ASPIRIN) TABLET, FILM COATED [HEALTHLIFE OF USA LLC]", "setid": "1d4fbc45-ef89-45ab-bc6d-41f30b468ac7"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "HEPAR MAGNESIUM 8X LIQUID [URIEL PHARMACY, INC]", "setid": "2c3e35f8-7038-adf3-e063-6294a90a91e3"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "ARTERY/CHOLESTEROL/BP (AURUM METALLICUM, AURUM MURIATICUM NATRONATUM, BARYTA CARBONICA, BARYTA MURIATICA, CALCAREA FLUORICA, CEANOTHUS AMERICANUS, CHOLESTERINUM, GLONOINUM, PLUMBUM IODATUM, STROPHANTHUS HISPIDUS) LIQUID [KING BIO INC.]", "setid": "2e96deb5-2472-4b75-926e-8b422dff7981"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "VICKS PAINQUIL PAIN RELIEVER (ACETAMINOPHEN) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "32841eaa-87ce-5f23-e063-6294a90a9118"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "VICKS PAINQUIL PM PAIN RELIEVER PLUS NIGHTTIME SLEEP-AID (ACETAMINOPHEN, DIPHENHYDRAMINE HCL) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "32bedbbc-b939-1bea-e063-6394a90a6934"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "VICKS NYQUIL COLD AND FLU (ACETAMINOPHEN, DEXTROMETHORPHAN HYDROBROMIDE, AND DOXYLAMINE SUCCINATE) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "330d42da-5041-3059-e063-6394a90a2d55"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "ARTHRITIS AND JOINT RELIEF (ACTAEA SPICATA, AESCULUS HIPPOCASTANUM, ARNICA MONTANA, BELLIS PERENNIS, BRYONIA, CALCAREA CARBONICA, CALCAREA FLUORICA, CAUSTICUM, CIMICIFUGA RACEMOSA, FORMICUM ACIDUM, HYPERICUM PERFORATUM, LEDUM PALUSTRE, LITHIUM CARBONICUM, MAGNESIA PHOSPHORICA, PHYTOLACCA DECANDRA, PULSATILLA, RHODODENDRON CHRYSANTHUM, RHUS TOXICODENDRON, RUTA GRAVEOLENS, SALICYLICUM ACIDUM, SEPIA, ZINCUM METALLICUM) LIQUID [KING BIO INC.]", "setid": "33f21bda-de0a-47f5-b152-a9eb071df3bb"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "VICKS VAPOCOOL SEVERE PLUS INTENSE PAIN RELIEF (BENZOCAINE AND MENTHOL) LOZENGE [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "38cd83db-47ca-e320-e063-6394a90aba41"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "PROCHLORPERAZINE MALEATE TABLET PROCHLORPERAZINE MALEATE TABLET [SPORTPHARM LLC]", "setid": "3d28dab2-0264-482e-b99d-f56a9314b8a5"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "VICKS VAPOCOOL (MENTHOL) LOZENGE [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "3de4268b-61a0-b92f-e063-6394a90a40b9"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "EVEXITHROID (LEVOTHYROXINE AND LIOTHYRONINE) TABLET [TRIFLUENT PHARMA, LLC]", "setid": "40fa228f-9bfc-fc71-e063-6394a90a9ab6"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "VICKS PAINQUIL AND VICKS PAINQUIL PM LIQUICAPS PAIN RELIEVER (ACETAMINOPHEN, DIPHENHYDRAMINE HCL) KIT [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "4b829c72-349a-e52c-e063-6394a90aca8d"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "VICKS VAPOFREEZE PAIN RELIEF (CAMPHOR, MENTHOL) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "526cdb40-aa65-4885-e063-6294a90afa0c"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "NICOTINE (NICOTINE POLACRILEX) LOZENGE [ATLANTIC BIOLOGICALS CORP.]", "setid": "5ccde7bb-c33d-f0c8-e063-6294a90af258"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "AQUAFLORA PHASE II (CANDIDA ALBICANS) LIQUID [KING BIO INC]", "setid": "5da0d84c-afed-4c64-a629-4a16dfba273e"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "ARTERY CHOLESTEROL AND BP (AURUM METALLICUM, AURUM MURIATICUM NATRONATUM, BARYTA CARBONICA, BARYTA MURIATICA, CALCAREA FLOURICA, CEANOTHUS AMERICANUS, CHOLESTERINUM, GLONOINUM, PLUMBUM IODATUM, STROPHANTHUS) LIQUID [KING BIO INC.]", "setid": "79cee1b2-54d4-4d62-9396-4d1e13b3dc25"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "NIGHTTIME SLEEP AID (DIPHENHYDRAMINE HCL) TABLET, COATED [HEALTHLIFE OF USA LLC]", "setid": "7e8196ec-6695-40b0-a212-e14e9bb606fa"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "CEVIMELINE HYDROCHLORIDE CAPSULE [HIKMA PHARMACEUTICALS USA INC.]", "setid": "8da082f8-a6a3-46b3-8405-fbc4c220e60b"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "NICARDIPINE HYDROCHLORIDE IN SODIUM CHLORIDE (NICARDIPINE HYDROCHLORIDE) INJECTION, SOLUTION [WG CRITICAL CARE, LLC]", "setid": "9ffe6b6f-b8bc-413f-9bec-7639e9d71d3d"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "ALLERGY RELIEF (DIPHENHYDRAMINE HCL) TABLET [HEALTHLIFE OF USA LLC]", "setid": "a73d20df-3df7-42f7-8c88-93fee7e9ccec"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "BLENREP (BELANTAMAB MAFODOTIN) INJECTION, POWDER, FOR SOLUTION [GLAXOSMITHKLINE LLC]", "setid": "aef7c34c-fef8-407c-99c0-a68aded53c60"}, {"spl_version": 2, "published_date": "Oct 06, 2026", "title": "ADULT LOW DOSE ASPIRIN 81 MG (ASPIRIN) TABLET, DELAYED RELEASE [HEALTHLIFE OF USA LLC]", "setid": "c36f849a-7c40-428d-9a14-1dbd61f114df"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "LIVER COMP. PELLET [URIEL PHARMACY INC.]", "setid": "0aac4edb-28c3-38b5-e063-6294a90a1ecb"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "ALLERGY RELIEF (DIPHENHYDRAMINE HCL) TABLET [BIONPHARMA INC.]", "setid": "23750ea1-18a4-bfa7-e063-6394a90afd09"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "VICKS FORMULA 44DM HONEY COUGH AND CHEST CONGESTION (DEXTROMETHORPHAN HBR, GUAIFENESIN) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "3258067b-8e32-2b4a-e063-6394a90a7433"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "NERVIVE PAIN RELIEVING (LIDOCAINE HCL AND MENTHOL) SPRAY [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "32f8d0f3-d18d-1a45-e063-6294a90a6ad3"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "VICKS PAINQUIL AND VICKS PAINQUIL PM PAIN RELIEVER (ACETAMINOPHEN, DIPHENHYDRAMINE HCL) KIT [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "334f3194-9737-8f85-e063-6394a90ad416"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "VICKS PAINQUIL PM LIQUICAPS PAIN RELIEVER PLUS NIGHTTIME SLEEP-AID (ACETAMINOPHEN, DIPHENHYDRAMINE HCL) CAPSULE, LIQUID FILLED [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "4b1ad683-9b5a-622f-e063-6294a90a475c"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "ALLER DETOX OUTDOOR POLLUTION CONTROL (BENZINUM, CALCAREA CARBONICA, CARBO VEGETABILIS, CARBONEUM OXYGENISATUM, CHLORINUM, CHLOROFORUM, CHROMIUM OXYDATUM, FORMALINUM, HEKLA LAVA, HYDRASTIS CANADENSIS, LYCOPODIUM CLAVATUM, MANGANUM ACETICUM, MANGANUM CARBONICUM, MERCURIUS VIVUS, NITRICUM ACIDUM, PHOSPHORICUM ACIDUM, PHYTOLACCA DECANDRA, PLUMBUM IODATUM, PLUMBUM METALLICUM, SULPHUR, TARAXACUM) LIQUID [KING BIO INC.]", "setid": "4c130208-8e8a-46aa-bd2a-6ddc6afbb8ac"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "ALLERGY RELIEF (DIPHENHYDRAMINE HCL) TABLET [AMERISOURCE BERGEN]", "setid": "51021c69-d92b-0504-e063-6294a90a94e7"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "CETIRIZINE HYDROCHLORIDE - HIVES (CETIRIZINE HYDROCHLORIDE) TABLET, COATED [GRANULES PHARMACEUTICALS INC.]", "setid": "562b5e6c-6103-df3d-e063-6394a90a897d"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "LIDOCAINE HYDROCHLORIDE AND EPINEPHRINE INJECTION, SOLUTION [HENRY SCHEIN, INC.]", "setid": "5692e28d-559c-4b6a-8421-fa85d7155818"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "BRIMONIDINE TARTRATE SOLUTION/ DROPS [UPSHER-SMITH LABORATORIES, LLC]", "setid": "5a634ed6-f00a-472e-93c9-8dcd496997a2"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "NASAL DECONGESTANT D (PSEUDOEPHEDRINE HYDROCHLORIDE) TABLET, FILM COATED, EXTENDED RELEASE [WALGREEN COMPANY]", "setid": "9572b6c9-172b-459e-82d1-7f92f0eaec8e"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "LIDOCAINE AND PRILOCAINE LIDOCAINE AND PRILOCAINE (LIDOCAINE AND PRILOCAINE) CREAM [ENCUBE ETHICALS, INC.]", "setid": "a65a29ca-9476-4290-9384-67df4caec655"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "APPETITE AND WEIGHT WITH P.H.A.T. (ADRENALINUM, ADRENOCORICOTROPHIN, AGRIMONIA EUPATORIA, FLOS, ANACARDIUM ORIENTALE, ANTIMONIUM CRUDUM, CALCAREA CARBONICA, CASTANEA SATIVA, FLOS, CORTISONE ACETICUM, FUCUS VESICULOSUS, HYPOTHALAMUS, KALI BICHROMICUM, OLEANDER, PITUITARUM POSTERIUM, SABADILLA, STAPHYSAGRIA, THYROIDINUM) LIQUID [KING BIO INC.]", "setid": "d61cb145-ffb1-4da5-94a5-a4b6d55ad29f"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "THYRO-TABS CANINE (LEVOTHYROXINE SODIUM) TABLET [BUTLER ANIMAL HEALTH SUPPLY, LLC.]", "setid": "d7defad6-dcb9-4d16-8129-7f0c196569d8"}, {"spl_version": 3, "published_date": "Oct 06, 2026", "title": "ISOPROPYL RUBBING ALCOHOL 50% WITH WINTERGREEN (ISOPROPYL ALCOHOL) LIQUID [JELL PHARMACEUTICALS PVT. LTD.]", "setid": "f15a16ce-85e0-473f-e053-2a95a90ae89c"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "VICKS DAYQUIL KIDS FREE OF ARTIFICIAL DYES AND SUGAR COLD AND COUGH PLUS MUCUS (DEXTROMETHORPHAN HBR, GUAIFENESIN) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "19b2422e-517c-8f94-e063-6394a90aba26"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "VICKS DAYQUIL KIDS AND VICKS NYQUIL KIDS FREE OF ARTIFICIAL DYES AND SUGAR COLD AND COUGH PLUS (DEXTROMETHORPHAN HBR, GUAIFENESIN, DIPHENHYDRAMINE HCL) KIT [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "1a143600-24b0-75dc-e063-6394a90afb53"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "VICKS NYQUIL ELDERBERRY COLD AND FLU (ACETAMINOPHEN, DEXTROMETHORPHAN HYDROBROMIDE, DOXYLAMINE SUCCINATE) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "1a51a532-0a91-c563-e063-6294a90a59d7"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "VICKS NYQUIL COLD AND FLU NIGHTTIME RELIEF (ACETAMINOPHEN, DEXTROMETHORPHAN HYDROBROMIDE, AND DOXYLAMINE SUCCINATE) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "1d5e9cd9-0d76-19e0-e063-6294a90a78fd"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "VICKS DAYQUIL COLD AND FLU MULTI-SYMPTOM RELIEF (ACETAMINOPHEN, DEXTROMETHORPHAN HYDROBROMIDE, AND PHENYLEPHRINE HYDROCHLORIDE) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "1d5fee81-6509-0b87-e063-6394a90a3469"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "ZZZQUIL NIGHTTIME SLEEP-AID (DIPHENHYDRAMINE HYDROCHLORIDE) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "1d608c94-1651-f318-e063-6294a90aa11e"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "VICKS DAYQUIL KIDS AND VICKS NYQUIL KIDS COLD AND COUGH PLUS FEVER (ACETAMINOPHEN, DEXTROMETHORPHAN HYDROBROMIDE, DOXYLAMINE SUCCINATE) KIT [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "2d430264-074d-fb22-e063-6294a90a57f6"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "VICKS NYQUIL KIDS ALLERGY (DOXYLAMINE SUCCINATE) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "2f9a6d65-f849-af0a-e063-6394a90ae435"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "VICKS NYQUIL INTENSE FLU (ACETAMINOPHEN, DEXTROMETHORPHAN HYDROBROMIDE, DOXYLAMINE SUCCINATE) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "326e3a20-7bcb-0e24-e063-6394a90af327"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "VICKS DAYQUIL INTENSE FLU (ACETAMINOPHEN, DEXTROMETHORPHAN HBR) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "326ed27d-cbfa-5513-e063-6394a90a41bf"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "VICKS DAYQUIL AND VICKS NYQUIL INTENSE FLU (ACETAMINOPHEN, DEXTROMETHORPHAN HBR) KIT [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "32bea3dc-9889-22dd-e063-6394a90afa1b"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "VICKS PAINQUIL LIQUICAPS PAIN RELIEVER (ACETAMINOPHEN) CAPSULE, LIQUID FILLED [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "4b1b0e2a-0f58-c3b1-e063-6294a90aa1fb"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "ALLERGY RELIEF (LEVOCETIRIZINE DIHYDROCHLORIDE) TABLET, FILM COATED [WALGREEN COMPANY]", "setid": "5033f8e3-c1c4-44e9-a774-703d9b04e82c"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "ABIRATERONE ACETATE (ABIRATERONE) TABLET ABIRATERONE ACETATE (ABIRATERONE) TABLET [AMNEAL PHARMACEUTICALS LLC]", "setid": "6fda6b92-59ed-4180-af68-94052a5e82cf"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "SUMMER FRIDAYS SHADEDROPS BROAD SPECTRUM SPF 30 MINERAL MILK SUNSCREEN (ZINC OXIDE) CREAM [SUMMER FRIDAYS LLC]", "setid": "7492cbfd-e1f1-4aed-8ba0-edb4adcc2065"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "AMCINONIDE OINTMENT [AYURAX, LLC]", "setid": "83da75e7-e182-4a6c-ac0f-50d99971ebde"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "METHAZOLAMIDE TABLET [AJANTA PHARMA USA INC.]", "setid": "879a3c78-24dd-41f9-8fce-5f3166b0e2f4"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "NASAL (OXYMETAZOLINE HYDROCHLORIDE) SPRAY [CVS PHARMACY]", "setid": "8913f6d1-3764-4f9c-8695-b788ef1bbe79"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "MEIJER CHILDREN COUGH AND CHEST CONGESTION DM GRAPE FLAVOR (DEXTROMETHORPHAN HBR AND GUAIFENESIN) LIQUID [MEIJER DISTRIBUTION INC]", "setid": "9121804a-e5eb-46a2-a4a7-cc625be846d1"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "FOLIC ACID SOLUTION [AYURAX, LLC]", "setid": "96618bf8-6c03-4df3-9896-b7ef27ca392a"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "QUIOFIC (FOLIC ACID) SOLUTION [SOLUBIOMIX, LLC]", "setid": "b868b314-591d-458b-be82-2bcd0b73cce1"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "EPTIFIBATIDE INJECTION, SOLUTION [AVENACY, LLC]", "setid": "c0781dae-3ef6-4cab-b084-01d2e45f3764"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "METHOCARBAMOL INJECTION, SOLUTION [HENRY SCHEIN, INC]", "setid": "d48d76af-b55a-4908-95ff-e7de615c0513"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "TZON (HYDROCORTISONE) CREAM [EQUUS MAGNIFICUS DBA ESSENTIAL EQUINE]", "setid": "dd1cd46c-7c0f-4e18-8e66-aa94008d0967"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "ACETAMINOPHEN SOLUTION [MAJOR PHARMACEUTICALS]", "setid": "e1a55e0d-bb86-4515-8436-51a74b403685"}, {"spl_version": 4, "published_date": "Oct 06, 2026", "title": "MEIJER ADULT MUCUS PLUS CHEST CONGESTION (GUAIFENESIN) SYRUP [MEIJER DISTRIBUTION, INC]", "setid": "f6a23be6-0313-4c23-afb7-576666b80e21"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "VICKS DAYQUIL KIDS COLD AND COUGH PLUS FEVER (ACETAMINOPHEN, DEXTROMETHORPHAN HBR) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "1a01b294-a5ee-ab35-e063-6394a90a4a1a"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "VICKS NYQUIL KIDS COLD AND COUGH PLUS FEVER (ACETAMINOPHEN, DEXTROMETHORPHAN HYDROBROMIDE, DOXYLAMINE SUCCINATE) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "1a01d4f7-37ed-bb92-e063-6294a90a208c"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "GLP DLAX (INULIN, SLIPPERY ELM, CAPE ALOE, CASCARA SAGRADA, CHOLECALCIFEROL, FOLIC ACID) TABLET [BASIEM, LLC]", "setid": "28316b4d-3a83-4b66-9483-dc5613733111"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "VICKS NYQUIL ALLERGY (DOXYLAMINE SUCCINATE) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "2f9b3bbb-4494-065d-e063-6294a90afcd2"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "VICKS VAPOFREEZE PAIN RELIEVING (CAMPHOR, MENTHOL) SPRAY [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "4038e50d-b53b-4f56-b54e-62157e286e08"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "FLUTICASONE PROPIONATE DISKUS (FLUTICASONE PROPIONATE) POWDER, METERED [PRASCO LABORATORIES]", "setid": "44d009ba-d4b8-410f-b2bc-71ab2d05ac9e"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "VICKS DAYQUIL ELDERBERRY COLD AND FLU (ACETAMINOPHEN, DEXTROMETHORPHAN HBR) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "4a16cf4a-49fe-453d-bff4-529469e77044"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "VICKS NYQUIL KIDS FREE OF ARTIFICIAL DYES AND SUGAR COLD AND COUGH PLUS RUNNY NOSE (DIPHENHYDRAMINE HYDROCHLORIDE) LIQUID [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "81ef58de-7e65-446f-98f0-fb88027124ce"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "VICKS VAPOFREEZE PAIN RELIEVING (CAMPHOR, MENTHOL) CREAM [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "a8a550d8-55d0-4a0b-b4c0-5d64f0227895"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "NAPROXEN SODIUM CAPSULE, LIQUID FILLED [BIONPHARMA INC.]", "setid": "ba4f927a-4bbe-0d87-e053-2995a90a8c20"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "91% ISOPROPYL RUBBING ALCOHOL (ISOPROPYL ALCOHOL) LIQUID [JELL PHARMACEUTICALS PVT LTD.]", "setid": "d0e6272d-939a-2895-e053-2995a90a1366"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "GUAIFENESIN 200MG (GUAIFENESIN) TABLET [HEALTHLIFE OF USA LLC]", "setid": "d6aa1493-bc22-a318-e053-2995a90a6381"}, {"spl_version": 5, "published_date": "Oct 06, 2026", "title": "POLYETHYLENE GLYCOL 3350 POWDER, FOR SOLUTION [CARDINAL HEALTH 107, LLC]", "setid": "e26457c4-03e8-430e-bfad-38ae105dbf6f"}, {"spl_version": 6, "published_date": "Oct 06, 2026", "title": "VICKS VAPOCOOL SEVERE WINTERFROST (MENTHOL) LOZENGE [THE PROCTER & GAMBLE MANUFACTURING COMPANY]", "setid": "06579fc7-7d91-2a7b-e063-6394a90ae516"}], "metadata": {"db_published_date": "Oct 06, 2026 07:48:40PM EST", "elements_per_page": 100, "current_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json?pagesize=100&page=1", "next_page_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json?pagesize=100&page=2", "total_elements": 159373, "total_pages": 1594, "current_page": 1, "previous_page": "null", "previous_page_url": "null", "next_page": 2}}
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 https://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="29e41fe8-4e18-dbaa-e063-6294a90a4a10"/>
+   <code code="34390-5" codeSystem="2.16.840.1.113883.6.1" displayName="HUMAN OTC DRUG LABEL"/>
+   <title>Mineral Sunstick SPF 30</title>
+   <effectiveTime value="20241222"/>
+   <setId root="29e41fe8-4e17-dbaa-e063-6294a90a4a10"/>
+   <versionNumber value="1"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id root="1.3.6.1.4.1.519.1" extension="052545299"/>
+            <name>Tubby Todd</name>
+            <assignedEntity>
+               <assignedOrganization/>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="29e46e8d-75a7-63da-e063-6294a90a6223"/>
+               <code code="48780-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL product data elements section"/>
+               <effectiveTime value="20241222"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="73088-108" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Mineral Sunstick</name>
+                        <formCode code="C42991" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="STICK"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Zinc SPF Stick</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="K49155WL9Y" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>BUTYROSPERMUM PARKII (SHEA) BUTTER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3W1JG795YI" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2ZA36H0S2V" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>BEESWAX</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="Q9L0O73W7L" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>COCOS NUCIFERA (COCONUT) OIL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="512OYT1CRR" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>THEOBROMA CACAO (COCOA) SEED BUTTER</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="R0ZB2556P8" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TOCOPHEROL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="g" value="20"/>
+                              <denominator unit="g" value="100"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="SOI2LOH54Z" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ZINC OXIDE</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="13S1S8SF37" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>ZINC CATION</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="D5340Y2I9G" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>RICINUS COMMUNIS (CASTOR) SEED OIL</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="ZY81Z83H0X" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ALOE BARBADENSIS LEAF JUICE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="WL0328HX19" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>EUPHORBIA CERIFERA (CANDELILLA) WAX</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="R12CBM0EIZ" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>COPERNICIA CERIFERA (CARNAUBA) WAX</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator value="14" unit="g"/>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="73088-108-01" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43189" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="CYLINDER"/>
+                           </containerPackagedProduct>
+                           <subjectOf>
+                              <characteristic>
+                                 <code code="SPLCMBPRDTP" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                                 <value code="C112160" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Type 0: Not a Combination Product" xsi:type="CV"/>
+                              </characteristic>
+                           </subjectOf>
+                           <subjectOf>
+                              <marketingAct>
+                                 <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                                 <statusCode code="active"/>
+                                 <effectiveTime>
+                                    <low value="20230301"/>
+                                 </effectiveTime>
+                              </marketingAct>
+                           </subjectOf>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="M020" root="2.16.840.1.113883.3.9421"/>
+                           <code code="C200263" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="OTC Monograph Drug"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20230301"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38304" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="TOPICAL"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_29e41d8f-faf3-060b-e063-6294a90a5227">
+               <id root="29e41d8f-faf2-060b-e063-6294a90a5227"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Drug Facts</content>
+                  </content>
+               </title>
+               <effectiveTime value="20241222"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_29e41fe8-4e1a-dbaa-e063-6294a90a4a10">
+               <id root="29e41fe8-4e19-dbaa-e063-6294a90a4a10"/>
+               <code code="55106-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - ACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Active ingredients</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>Zinc Oxide 20%</paragraph>
+               </text>
+               <effectiveTime value="20241222"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_29e41a02-5c81-776f-e063-6394a90a0906">
+               <id root="29e41a02-5c80-776f-e063-6394a90a0906"/>
+               <code code="55105-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - PURPOSE SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Purpose</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>Sunscreen</paragraph>
+               </text>
+               <effectiveTime value="20241222"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_29e41fe8-4e1c-dbaa-e063-6294a90a4a10">
+               <id root="29e41fe8-4e1b-dbaa-e063-6294a90a4a10"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Uses</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>• Helps prevent sunburn
+  <br/>
+• If used as directed with other sun protection measures (see 
+  <content styleCode="italics">
+                        <content styleCode="bold">Directions</content>
+                     </content>), decreases the risk of skin cancer and early skin aging caused by the sun.
+ </paragraph>
+               </text>
+               <effectiveTime value="20241222"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_29e44f04-4c4b-a5b7-e063-6394a90a627e">
+               <id root="29e44f04-4c4a-a5b7-e063-6394a90a627e"/>
+               <code code="34071-1" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Warnings</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">• For external use only.</content>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20241222"/>
+               <component>
+                  <section ID="id_link_29e44f04-4c4d-a5b7-e063-6394a90a627e">
+                     <id root="29e44f04-4c4c-a5b7-e063-6394a90a627e"/>
+                     <code code="50570-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - DO NOT USE SECTION"/>
+                     <title>
+                        <content styleCode="bold">• Do not use</content>
+                     </title>
+                     <text>
+                        <paragraph> on damage or broken skin.</paragraph>
+                     </text>
+                     <effectiveTime value="20241222"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_29e41fe8-4e1e-dbaa-e063-6294a90a4a10">
+                     <id root="29e41fe8-4e1d-dbaa-e063-6294a90a4a10"/>
+                     <code code="50567-7" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - WHEN USING SECTION"/>
+                     <title>
+                        <content styleCode="bold">• When using this product </content>
+                        <br/>
+                     </title>
+                     <text>
+                        <paragraph>keep out of eyes. Rinse with water to remove. </paragraph>
+                     </text>
+                     <effectiveTime value="20241222"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_29e454ae-b024-a4b0-e063-6394a90a5125">
+                     <id root="29e454ae-b023-a4b0-e063-6394a90a5125"/>
+                     <code code="50566-9" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - STOP USE SECTION"/>
+                     <title>
+                        <content styleCode="bold">• Stop use and ask a doctor</content>
+                        <br/>
+                     </title>
+                     <text>
+                        <paragraph> if skin rash occurs. </paragraph>
+                     </text>
+                     <effectiveTime value="20241222"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="id_link_29e44f04-4c4f-a5b7-e063-6394a90a627e">
+                     <id root="29e44f04-4c4e-a5b7-e063-6394a90a627e"/>
+                     <code code="50565-1" codeSystem="2.16.840.1.113883.6.1" displayName="OTC - KEEP OUT OF REACH OF CHILDREN SECTION"/>
+                     <title>
+                        <content styleCode="bold">• Keep out of reach of children. </content>
+                     </title>
+                     <text>
+                        <paragraph>If swallowed, get medical help or contact Poison Control Center right away.</paragraph>
+                     </text>
+                     <effectiveTime value="20241222"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_29e454ae-b026-a4b0-e063-6394a90a5125">
+               <id root="29e454ae-b025-a4b0-e063-6394a90a5125"/>
+               <code code="59845-8" codeSystem="2.16.840.1.113883.6.1" displayName="INSTRUCTIONS FOR USE SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Directions</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>• Apply liberally 15 minutes before sun exposure.
+  <br/>
+• Reapply
+  <br/>
+-after 80 minutes of swimming or sweating
+  <br/>
+-immediately after towel drying
+  <br/>
+-at least every 2 hours
+  <br/>
+• 
+  <content styleCode="bold">Sun Protection Measures:</content> Spending time in the sun increases your risk of skin cancer and early skin aging. To decrease the risk, regularly use a sunscreen with a broad spectrum SPF value of 15 or higher and other sun protection measures including:
+  <br/>
+-limit time in the sun, especially from10am - 2pm
+  <br/>
+-wear long-sleeve shirts, pants, hats and sunglasses
+  <br/>
+• Children under 6 months of age: ask a doctor.
+ </paragraph>
+               </text>
+               <effectiveTime value="20241222"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_29e41d62-ed4b-db15-e063-6294a90a839b">
+               <id root="29e41d62-ed4a-db15-e063-6294a90a839b"/>
+               <code code="51727-6" codeSystem="2.16.840.1.113883.6.1" displayName="INACTIVE INGREDIENT SECTION"/>
+               <title>
+                  <content styleCode="bold">
+                     <content styleCode="italics">Inactive ingredients</content>
+                  </content>
+               </title>
+               <text>
+                  <paragraph>Cocos Nucifera (Coconut) Oil*, Helianthus Annuus (Sunflower) Seed Oil*, Cera Alba (Beeswax)*, Euphorbia Cerifera Cera (Candelilla Wax), Copernicia Cerifera (Carnauba) Wax*, Butyrospermum Parkii (Shea) Butter*, Ricinus Communis (Castor) Seed Oil*, Tocopherol Theobroma Cacao (Cocoa) Seed Butter*, Aloe Barbadensis Leaf Juice (Aloe Vera)*
+  <br/>
+*Certified Organic Ingredient(s)
+ </paragraph>
+               </text>
+               <effectiveTime value="20241222"/>
+            </section>
+         </component>
+         <component>
+            <section ID="id_link_29e41d8f-faf5-060b-e063-6294a90a5227">
+               <id root="29e41d8f-faf4-060b-e063-6294a90a5227"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <text>
+                  <paragraph>
+                     <renderMultiMedia referencedObject="img_29e45f7d-79e1-aafc-e063-6294a90aa3b7"/>
+                     <renderMultiMedia referencedObject="img_29e41fe8-4e1f-dbaa-e063-6294a90a4a10"/>
+                  </paragraph>
+               </text>
+               <effectiveTime value="20241222"/>
+               <component>
+                  <observationMedia ID="img_29e45f7d-79e1-aafc-e063-6294a90aa3b7">
+                     <text>Mineral Sunstick Outer Carton</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Mineral Sunstick Outer Carton.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+               <component>
+                  <observationMedia ID="img_29e41fe8-4e1f-dbaa-e063-6294a90a4a10">
+                     <text>Mineral Sunstick Tube</text>
+                     <value mediaType="image/jpeg" xsi:type="ED">
+                        <reference value="Mineral Sunstick Tube.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>
