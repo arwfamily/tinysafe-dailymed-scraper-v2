@@ -65,6 +65,10 @@ FINDINGS = {  # display order = dict order
         "title": "Fragrance in baby and kids sunscreens",
         "eyebrow": "Finding · DailyMed labels × AAD guidance",
         "caption": "Each door is one baby or kids formula. Filled: lists fragrance or parfum."},
+    "hypoallergenic-fragrance": {
+        "title": "\u201cHypoallergenic\u201d baby sunscreens that list fragrance",
+        "eyebrow": "Finding · DailyMed labels × FDA and AAD",
+        "caption": "Each door is one baby or kids formula. Filled: says hypoallergenic and lists fragrance."},
     "sprays": {
         "title": "Spray sunscreens for babies and kids",
         "eyebrow": "Finding · DailyMed labels × AAP guidance",
@@ -275,6 +279,7 @@ table.matrix{width:100%;border-collapse:collapse;font-size:15px}
 .units .off{fill:none;stroke:var(--grey);stroke-width:1;opacity:.55}
 .sentence{font-family:var(--serif);font-size:clamp(22px,2.6vw,28px);line-height:1.3;margin:0}
 .fine{font-size:13px;color:var(--grey);margin:12px 0 0}
+ul.plain{margin:10px 0 0;padding-left:20px;font-size:14px;line-height:1.5}ul.plain a{color:inherit}
 .framing{font-size:15px;border-left:2px solid var(--ink);padding:2px 0 2px 14px;margin:18px 0 0}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
 .more{display:inline-block;margin-top:18px;font-size:15px}
@@ -604,6 +609,15 @@ def finding_body(d, f):
             f'<tr><td><a href="{E(p["url"])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["title"]))}</span></a></td>'
             f'<td>{E(", ".join(p["ingredients"]))}</td><td>{E(p["label_date"])}</td><td>{E(", ".join(p["listed_in"]))}</td></tr>'
             for p in det["formulas"])
+        fr = det.get("formaldehyde_releasers") or {}
+        fr_html = ""
+        if fr.get("formulas"):
+            names = sorted({n for p in fr["formulas"] for n in p["ingredients"]})
+            fl = "".join(f'<li><a href="{E(p["url"])}" rel="noopener" target="_blank">{E(html.unescape(p["title"]))}</a></li>' for p in fr["formulas"])
+            fr_html = f"""<section><p class="eyebrow">Not banned, but labeled in the EU</p><h2>Formaldehyde-releasing preservatives</h2>
+<p>{len(fr["formulas"])} of the {f["denominator"]} formulas list {E(" or ".join(names))}, a preservative that releases formaldehyde. {src_chip("SAG-CS", fr["releaser_source"]["url"], fr["releaser_source"]["title"])} It is not banned in the EU and is not counted above. Since Regulation (EU) 2022/1181, EU products that release more than 0.001% formaldehyde must carry the warning \u201creleases formaldehyde\u201d. {src_chip("EU 2022/1181", fr["eu_rule"]["url"], fr["eu_rule"]["title"])} US labels do not state how much formaldehyde is released, so the 0.001% level cannot be checked from them.</p>
+<ul class="plain">{fl}</ul>
+<p class="fine">Searched: {E(", ".join(fr["searched"]))}. Only the ingredients found are named above.</p></section>"""
         mean = f"""
 <p>In the EU, a sunscreen is a cosmetic, so EU cosmetics law decides which preservatives it may contain. {src_chip("EU law", ec["url"], ec["title"])}</p>
 <p>The EU has banned isobutylparaben from all cosmetics and methylisothiazolinone from leave-on cosmetics, which include sunscreens. US rules for sunscreen inactive ingredients have no such ban. This finding counts baby and kids labels in DailyMed that list either one.</p>"""
@@ -611,7 +625,7 @@ def finding_body(d, f):
 <div class="tablewrap"><table class="pairs"><thead><tr><th>Ingredient</th><th>Formulas</th><th>EU rule</th></tr></thead><tbody>{rows}</tbody></table></div></section>
 <section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} labels</h2>
 <div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Lists</th><th>Label version date</th><th>Where it is listed</th></tr></thead><tbody>{frows}</tbody></table></div>
-<p class="fine">Each name links to its FDA DailyMed record. The date is that of the label version currently in DailyMed; an old label date does not show whether the product is still sold.</p></section>"""
+<p class="fine">Each name links to its FDA DailyMed record. The date is that of the label version currently in DailyMed; an old label date does not show whether the product is still sold.</p></section>{fr_html}"""
         faq = [
             ("Are these products illegal?", f["legal_framing"]),
             ("What exactly did the EU ban?",
@@ -705,6 +719,38 @@ def finding_body(d, f):
             ("Is it allowed to call these sunscreens mineral?", f["legal_framing"]),
             ("How can I tell if a sunscreen is mineral only?",
              "Read the Active ingredients in the Drug Facts box. A mineral-only sunscreen lists only zinc oxide, titanium dioxide, or both."),
+            ("How were these products selected?", howto),
+        ]
+    elif key == "hypoallergenic-fragrance":
+        det = f["detail"]
+        aad = det["aad"]
+        frows = "".join(
+            f'<tr><td><a href="{E(p["url"])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["title"]))}</span></a></td>'
+            f'<td>\u201c{E(p["quote"])}\u201d</td><td>{E(", ".join(p["allergens"])) or "—"}</td></tr>'
+            for p in det["formulas"])
+        mean = f"""
+<p>The FDA says there are no federal standards or definitions that govern the use of the term \u201chypoallergenic\u201d. {src_chip("FDA", isrc["url"], isrc["title"])}</p>
+<p>For children with eczema, the American Academy of Dermatology advises a sunscreen that is fragrance-free. {src_chip("AAD", aad["url"], aad["title"])}</p>
+<p>The {f["numerator"]} formulas below print \u201chypoallergenic\u201d on the label, and the same label lists fragrance (or parfum) among its inactive ingredients. {det["with_allergens"]} of them also list individual fragrance ingredients by name, such as linalool or hexyl cinnamal. They come from {det["labelers"]} labelers; {det["mineral"]} are mineral-only.</p>"""
+        ff = det["fragrance_free_contradictions"]
+        ffh = ""
+        if ff:
+            li = "".join(f'<li><a href="{E(p["url"])}" rel="noopener" target="_blank">{E(html.unescape(p["title"]))}</a>: says \u201c{E(p["claim"])}\u201d, and its ingredient list includes fragrance.</li>' for p in ff)
+            ffh = f"""<section><p class="eyebrow">A related contradiction</p><h2>Labels that say fragrance-free or unscented and list fragrance</h2><ul class="plain">{li}</ul></section>"""
+        cf = det["conflicts"]
+        cfh = ""
+        if cf:
+            li = "".join(f'<li><a href="{E(p["url"])}" rel="noopener" target="_blank">{E(html.unescape(p["title"]))}</a></li>' for p in cf)
+            cfh = f"""<p class="fine">Not counted: {len(cf)} label{"s" if len(cf) > 1 else ""} that say hypoallergenic and fragrance-free, where the label image lists no fragrance but the Drug Facts text filed with the same label does. We cannot tell which is current.</p><ul class="plain">{li}</ul>"""
+        extra = f"""<section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} formulas</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Printed on the label</th><th>Named fragrance ingredients also listed</th></tr></thead><tbody>{frows}</tbody></table></div>
+<p class="fine">Each name links to its FDA DailyMed record. The wording was read from the label text, and from the label image wherever the front of the package is an image. {det["reviewed_labels"]} labels were checked this way. The last column shows named fragrance ingredients from this list when the label prints them: amyl cinnamal, hexyl cinnamal, alpha-isomethyl ionone, benzyl salicylate, butylphenyl methylpropional, citronellol, coumarin, geraniol, hydroxycitronellal, limonene, linalool, eugenol, benzyl benzoate, citral.</p>{cfh}</section>{ffh}"""
+        faq = [
+            ("Is it allowed to call a sunscreen with fragrance hypoallergenic?", f["legal_framing"]),
+            ("What does hypoallergenic mean on a label?",
+             "In the US it has no legal definition. The FDA says the term means whatever a particular company wants it to mean."),
+            ("How can I find a fragrance-free sunscreen?",
+             "Read the Inactive ingredients in the Drug Facts box. Fragrance may be listed as fragrance, parfum or perfume, and sometimes as natural fragrance."),
             ("How were these products selected?", howto),
         ]
     elif key == "sprays":
@@ -811,7 +857,7 @@ def page_finding(d, f):
     title = meta["title"]
     mean, extra, faq, howto = finding_body(d, f)
     faqh = "".join(f"<details><summary>{E(q)}</summary><p>{E(a)}</p></details>" for q, a in faq)
-    src_label = {"fda-more-data": "FDA source", "sprays": "AAP guidance", "mineral-wording": "FDA source", "hawaii-oxybenzone-octinoxate": "Hawaii law", "fragrance": "AAD guidance", "parabens": "EU law", "eu-banned-preservatives": "EU law",
+    src_label = {"fda-more-data": "FDA source", "sprays": "AAP guidance", "mineral-wording": "FDA source", "hypoallergenic-fragrance": "FDA source", "hawaii-oxybenzone-octinoxate": "Hawaii law", "fragrance": "AAD guidance", "parabens": "EU law", "eu-banned-preservatives": "EU law",
                  "homosalate-eu-limit": "EU law", "eu-banned-preservatives": "EU law",
                  "fragrance": "AAD guidance"}.get(f["finding"], "Source")
     body = f"""

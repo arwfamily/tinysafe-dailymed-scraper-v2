@@ -1,7 +1,7 @@
 {
  "built_on": "2026-10-08",
- "generated_at": "2026-10-09T19:13:03Z",
- "commit": "2ee7aba",
+ "generated_at": "2026-10-09T20:28:20Z",
+ "commit": "ee393ca",
  "contract": "docs/SITE_DATA_CONTRACT.md",
  "jurisdictions": [
   "US",
@@ -6745,7 +6745,78 @@
      }
     ],
     "oldest_label": "2010-03-18",
-    "newest_label": "2025-11-06"
+    "newest_label": "2025-11-06",
+    "formaldehyde_releasers": {
+     "formulas": [
+      {
+       "title": "COPPERTONE KIDS TEAR FREE MINERAL SUNSCREEN SPF 50 (OCTINOXATE 7.5%, OCTISALATE 5%, ZINC OXIDE 14.5%) LOTION [BEIERSDORF INC]",
+       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c054fd86-b0d9-24fc-e053-2a95a90aea2c",
+       "ingredients": [
+        "diazolidinyl urea"
+       ]
+      },
+      {
+       "title": "MEIJER KIDS BROAD SPECTRUM SPF 50 MINERAL BASED SUNSCREEN (OCTINOXATE, OCTISALATE, ZINC OXIDE) LOTION [MEIJER DISTRIBUTION INC]",
+       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a9f4fd45-3bbb-14a7-e053-2995a90ab28f",
+       "ingredients": [
+        "diazolidinyl urea"
+       ]
+      },
+      {
+       "title": "REEF BABIES SPF 50 OXYBENZONE FREE (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) LOTION [TROPICAL SEAS, INC.]",
+       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8cd68b09-2578-4519-b00e-e83e0e440815",
+       "ingredients": [
+        "diazolidinyl urea"
+       ]
+      },
+      {
+       "title": "REEF KIDS SPF 30 OXYBENZONE FREE (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) LOTION [TROPICAL SEAS, INC.]",
+       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e226b07a-9f44-4b17-8f26-c86dcfa5dcda",
+       "ingredients": [
+        "diazolidinyl urea"
+       ]
+      },
+      {
+       "title": "SAFE SEA FOR KIDS SUNSCREEN WITH JELLYFISH STING PROTECTIVE SPF 30 PLUS (OCTINOXATE, OCTISALATE, OXYBENZONE, TITANIUM DIOXIDE) LOTION [NIDARIA TECHNOLOGY LTD.]",
+       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a2ac325f-6760-41fa-a635-11852fd70209",
+       "ingredients": [
+        "diazolidinyl urea"
+       ]
+      },
+      {
+       "title": "ULTRASOL NATURE BABY SUNSCREEN (TITANIUM DIOXIDE, ZINC OXIDE) CREAM [FISCHER PHARMACEUTICALS LTD]",
+       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=723e8d14-f981-4aee-a3cf-62f0c97f5e12",
+       "ingredients": [
+        "diazolidinyl urea"
+       ]
+      },
+      {
+       "title": "ULTRASOL NATURE BABY SUNSCREEN (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [FISCHER PHARMACEUTICALS LTD]",
+       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bbe4eb9d-4672-46d1-b6e5-4b6d1d737ed9",
+       "ingredients": [
+        "diazolidinyl urea"
+       ]
+      }
+     ],
+     "searched": [
+      "diazolidinyl urea",
+      "imidazolidinyl urea",
+      "DMDM hydantoin",
+      "quaternium-15",
+      "bronopol",
+      "sodium hydroxymethylglycinate"
+     ],
+     "eu_rule": {
+      "title": "Commission Regulation (EU) 2022/1181 (formaldehyde releasers labelling, Annex V preamble)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R1181",
+      "checked": "2026-10-09"
+     },
+     "releaser_source": {
+      "title": "SAG-CS Final Opinion on Formaldehyde Releasing Substances (UK Office for Product Safety and Standards, July 2022)",
+      "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1130700/sag-cs-opinion-07-formaldehyde-releasing-substances.pdf",
+      "checked": "2026-10-09"
+     }
+    }
    }
   },
   {
@@ -8384,6 +8455,289 @@
     ],
     "discloses": 1,
     "reviewed_labels": 32,
+    "unreviewed": []
+   }
+  },
+  {
+   "finding": "hypoallergenic-fragrance",
+   "id": "US-BABY-HYPOALLERGENIC-FRAGRANCE",
+   "status": "verified",
+   "sentence": "29 baby and kids sunscreen formulas listed in the FDA's DailyMed label database say “hypoallergenic” on the label and also list fragrance as an ingredient. The FDA says there is no federal standard or definition for the term “hypoallergenic”, and for children with eczema the American Academy of Dermatology advises a fragrance-free sunscreen.",
+   "numerator": 29,
+   "denominator": 446,
+   "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+   "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+   "source": {
+    "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+    "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+    "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
+    "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+    "snapshot": "2026-10-08"
+   },
+   "legal_framing": "Not a violation: there is no federal standard or definition for “hypoallergenic”, and fragrance is allowed in US sunscreens. The finding compares the wording on the label with the label's own ingredient list; it is not about any brand.",
+   "ingredient_source": {
+    "title": "Hypoallergenic Cosmetics — U.S. Food and Drug Administration",
+    "url": "https://www.fda.gov/cosmetics/cosmetics-labeling-claims/hypoallergenic-cosmetics",
+    "checked": "2026-10-09"
+   },
+   "detail": {
+    "formulas": [
+     {
+      "title": "AUSTRALIAN GOLD KIDS SPF 50 SUNSCREEN (HOMOSALATE, OCTINOXATE, OCTISALATE AND TITANIUM DIOXIDE) LOTION [PRIME ENTERPRISES INC.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23915bcf-1ca5-71a8-e054-00144ff8d46c",
+      "quote": "Hypoallergenic Formula",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "AVEENO KIDS DAILY MOISTURE FACE MINERAL SUNSCREEN SPF 30 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b309bf0-4268-d9e4-e063-6294a90ad2d8",
+      "quote": "Hypoallergenic",
+      "mineral": true,
+      "allergens": []
+     },
+     {
+      "title": "AVOBENZONE, HOMOSALATE, OCTISALATE LOTION [TOPCO ASSOCIATES LLC]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=597b78df-83cb-1b21-e063-6294a90a56a8",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": [
+       "hexyl cinnamal",
+       "alpha-isomethyl ionone",
+       "geraniol"
+      ]
+     },
+     {
+      "title": "BANANA BOAT KIDS PROTECT AND PLAY SPF 50 (AVOBENZONE AND OCTOCRYLENE AND OXYBENZONE) SPRAY [ACCRA-PAC, INC.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=caf72244-e9ec-4a53-b7ff-232834a12a87",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "BANANA BOAT KIDS PROTECT AND PLAY SPF 85 (AVOBENZONE AND HOMOSALATE AND OCTOCRYLENE AND OXYBENZONE) SPRAY [ACCRA-PAC, INC.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a1bf0be-2a9f-409a-b91e-31ee02913430",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "COPPERTONE WATERBABIES SUNSCREEN SPF 50 (AVOBENZONE 3%, HOMOSALATE 9%, OCTISALATE 4.5%, OCTOCRYLENE 9%) AEROSOL, SPRAY [BEIERSDORF INC]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d53e1253-f6a4-4f3d-e053-2a95a90a79ed",
+      "quote": "HYPOALLERGENIC WITH ALOE AND NOURISHING VITAMIN E",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "EARTH BABY BROAD SPECTRUM SPF 30 (SUNSCREEN) CREAM [EARTH BABY, INC.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42556876-74ea-38e6-e054-00144ff8d46c",
+      "quote": "non-toxic, hypoallergenic",
+      "mineral": true,
+      "allergens": []
+     },
+     {
+      "title": "HEB SPF 50 KIDS BLUE MINERAL SUNSCREEN STICK BERRY SCENTED (ZINC OXIDE) STICK [H.E.B.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f58d328c-8b30-b4d4-e053-2a95a90adb59",
+      "quote": "Dermatologist Tested · Hypoallergenic · PABA Free",
+      "mineral": true,
+      "allergens": []
+     },
+     {
+      "title": "HEB SPF 50 KIDS PURPLE MINERAL SUNSCREEN STICK GRAPE SCENTED (ZINC OXIDE) STICK [H.E.B.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f58ed2f9-67c3-ce91-e053-2995a90a1229",
+      "quote": "Dermatologist Tested · Hypoallergenic · PABA Free",
+      "mineral": true,
+      "allergens": []
+     },
+     {
+      "title": "KIDS DISAPPEARING COLOR SPF50 BROAD SPECTRUM SUNCREEN GREEN APPLE SCENTED (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [CVS PHARMACY]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b177115-9f0c-48a4-9fea-1f547436a2c9",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "KIDS DISAPPEARING COLOR SPF50 BROAD SPECTRUM SUNCREEN PINK STRAWBERRY SCENTED (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [CVS PHARMACY]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d373e47-f918-444a-b3bb-bce99b42d502",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "KIDS SUNSCREEN (OCTINOXATE AND TITANIUM DIOXIDE) LOTION [KAREWAY PRODUCT, INC.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d99a7c2-7c49-410f-9c36-fe83213c8a76",
+      "quote": "Hypo-allergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "MEIJER BABY SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [MEIJER DISTRIBUTION INC]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d7d6d4e-29c6-4c36-9884-5432f6ceca0e",
+      "quote": "hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "MIAMI BEACH KIDS SUNSCREEN BROAD SPECTRUM SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [PRIME ENTERPRISES INC.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=678b9575-3271-9c42-e053-2a91aa0a5c91",
+      "quote": "Dye-Free, Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "MIAMI BEACH SPF 50 KIDS C/S SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, AND OCTOCRYLENE) SPRAY [PRIME PACKAGING INC.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2bd8159f-c381-36b3-e054-00144ff88e88",
+      "quote": "Hypoallergenic for Sensitive Skin",
+      "mineral": false,
+      "allergens": [
+       "hexyl cinnamal",
+       "alpha-isomethyl ionone",
+       "benzyl salicylate",
+       "butylphenyl methylpropional",
+       "geraniol",
+       "hydroxycitronellal",
+       "limonene",
+       "linalool"
+      ]
+     },
+     {
+      "title": "OCEAN POTION 50 INSTANT DRY KID SPOTSTICK (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LIQUID [SUN & SKIN CARE RESEARCH, LLC]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ac29da76-f638-4947-8d25-055f1f442dbe",
+      "quote": "Hypo-Allergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "PUBLIX BABY SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [PUBLIX SUPER MARKETS INC]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e72e328e-5ccb-4dd3-b20d-09e47df80e0e",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "SUNSCREEN FOR KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE) SPRAY [THE KROGER CO.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c7cd904-ffff-48aa-91bd-cc978946b36a",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": [
+       "amyl cinnamal",
+       "hydroxycitronellal",
+       "linalool"
+      ]
+     },
+     {
+      "title": "THINKBABY SPF 50 (ZINC OXIDE) LOTION [THINKOPERATIONS,LLC]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f2788a1a-daf6-4b7d-8333-585a380ebe57",
+      "quote": "Hypoallergenic",
+      "mineral": true,
+      "allergens": []
+     },
+     {
+      "title": "TROPIC SUN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [PRIME ENTERPRISES, INC.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ba98d6c9-89ca-4308-e053-2995a90a08e4",
+      "quote": "This gentle, hypoallergenic formula absorbs quickly.",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "ULTRASOL KIDS (AVOBENZONE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, FOAM [FISCHER PHARMACEUTICALS LTD.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7d10e92a-1f9c-4ba9-8c56-7716eb53999b",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "ULTRASOL KIDS SUNSCREEN (AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE) CREAM [FISCHER PHARMACEUTICALS LTD]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd5caf43-11ec-4bb4-9f01-bef7471ce358",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "ULTRASOL NATURE BABY SUNSCREEN (AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE) LOTION [FISCHER PHARMACEUTICALS LTD]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=15739f81-d01f-4d3e-be5f-bbf04fffb1f9",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "ULTRASOL NATURE BABY SUNSCREEN (TITANIUM DIOXIDE, ZINC OXIDE) CREAM [FISCHER PHARMACEUTICALS LTD]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=723e8d14-f981-4aee-a3cf-62f0c97f5e12",
+      "quote": "Hypoallergenic",
+      "mineral": true,
+      "allergens": []
+     },
+     {
+      "title": "ULTRASOL NATURE BABY SUNSCREEN (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [FISCHER PHARMACEUTICALS LTD]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bbe4eb9d-4672-46d1-b6e5-4b6d1d737ed9",
+      "quote": "Hypoallergenic",
+      "mineral": true,
+      "allergens": []
+     },
+     {
+      "title": "ULTRASOL SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY [FISCHER PHARMACEUTICALS LTD]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3515c77-a408-40d7-8254-fe3e6a3e4fac",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "ULTRASOLSUNSCREEN KIDS SUNSCREEN LOTION CONTINUOUS SPRAY SPF 45 (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE , OXYBENZONE) AEROSOL, SPRAY [FISCHER PHARMACEUTICALS LTD]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72cf5079-80f6-4c87-a0d8-bb17a518f8c4",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "ULTRASOLSUNSCREEN KIDS SUNSCREEN MOUSSE (AVOBENZONE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, FOAM [FISCHER PHARMACEUTICALS LTD.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a8a932e-c3dc-44ae-91e6-b9e3f5b21ee3",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     },
+     {
+      "title": "ULTRASOLSUNSCREEN KIDS SUNSCREEN SPRAY LOTION SPF 30 (AVOBENZONE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [FISCHER PHARMACEUTICALS LTD]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2986c76d-3346-487f-97c2-730a08ca8e3a",
+      "quote": "Hypoallergenic",
+      "mineral": false,
+      "allergens": []
+     }
+    ],
+    "labelers": 16,
+    "mineral": 7,
+    "with_allergens": 3,
+    "aad": {
+     "title": "How can I find eczema friendly products? — American Academy of Dermatology",
+     "url": "https://www.aad.org/public/diseases/eczema/childhood/triggers/friendly-products",
+     "checked": "2026-10-08"
+    },
+    "conflicts": [
+     {
+      "title": "BABY BUM MINERAL SPF50 SUNSCREEN (ZINC OXIDE) STICK [SUN BUM LLC]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=492c44e3-4369-4367-939b-def1fd87de01",
+      "note": "label image ingredient list has no fragrance; the SPL Drug Facts text lists fragrance"
+     },
+     {
+      "title": "COPPERTONE WATERBABIES SUNSCREEN SPF 50 (AVOBENZONE 3%, HOMOSALATE 9%, OCTISALATE 4.5%, OCTOCRYLENE 9%) LOTION [BEIERSDORF INC]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d915cb28-2813-5a38-e053-2a95a90a45c6",
+      "note": "label image ingredient list has no fragrance; the SPL Drug Facts text lists fragrance"
+     }
+    ],
+    "fragrance_free_contradictions": [
+     {
+      "title": "HAMPTON SUN SPF 50 BABY MINERAL (ZINC OXIDE 20%) LOTION [S&C HAMPTON SUN LLC]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42037d8c-4787-4e16-93fe-0d19b6b888fd",
+      "claim": "FRAGRANCE-FREE",
+      "note": "side band says FRAGRANCE-FREE; English list has Fragrance, French list Parfum (label image and text)"
+     },
+     {
+      "title": "TRUE NATURAL BROAD SPECTRUM SPF 50 ALL NATURAL BABY AND SENSITIVE SKIN SUNSCREEN (ZINC OXIDE) LOTION [TRUE NATURE GROUP, INC.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=efdfe5b6-dfd6-475f-a696-1559488d58c9",
+      "claim": "unscented",
+      "note": "label text: front says unscented, inactive list has Fragrance (natural)"
+     }
+    ],
+    "reviewed_labels": 95,
     "unreviewed": []
    }
   },

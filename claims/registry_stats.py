@@ -28,6 +28,11 @@ CORRECTIONS = os.path.join(ROOT, "data", "corrections", "spl_label_errors.jsonl"
 # (FDA Q&A, content current as of 2026-09-10). Classifier canonical names.
 FDA_MORE_DATA = ["avobenzone", "oxybenzone", "octinoxate", "homosalate", "octisalate", "octocrylene",
                  "ensulizole", "meradimate", "dioxybenzone", "sulisobenzone", "cinoxate", "padimate O"]
+# Annex V preservatives that release formaldehyde (SAG-CS 2022 opinion).
+FORMALDEHYDE_RELEASERS = [("diazolidinyl urea", r"DIAZOLIDINYL ?UREA"), ("imidazolidinyl urea", r"IMIDAZOLIDINYL ?UREA"),
+                          ("DMDM hydantoin", r"DMDM ?HYDANTOIN"), ("quaternium-15", r"QUATERNIUM[- ]?15(?!\d)"),
+                          ("bronopol", r"BRONOPOL|BROMO-?2-?NITROPROPANE"),
+                          ("sodium hydroxymethylglycinate", r"HYDROXYMETHYL ?GLYCINATE")]
 FDA_QA = {"title": "FDA — Questions and Answers: FDA's regulatory actions on over-the-counter sunscreen",
           "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
           "checked": "2026-10-08"}
@@ -783,7 +788,21 @@ def main():
                             for n, _, rule, t, u in EU_BANNED],
             "formulas": sorted(eu_rows, key=lambda x: (x["ingredients"], x["title"])),
             "oldest_label": min(x["label_date"] for x in eu_rows) if eu_rows else None,
-            "newest_label": max(x["label_date"] for x in eu_rows) if eu_rows else None},
+            "newest_label": max(x["label_date"] for x in eu_rows) if eu_rows else None,
+            # Not banned in the EU: Annex V preservatives that release
+            # formaldehyde need the warning "releases formaldehyde" above
+            # 0.001% released formaldehyde (Regulation (EU) 2022/1181).
+            "formaldehyde_releasers": {
+                "formulas": sorted(({"title": r["title"], "url": r["dailymed_url"],
+                                     "ingredients": [n for n, pat in FORMALDEHYDE_RELEASERS if where_listed(r, pat)]}
+                                    for r in forms if any(where_listed(r, pat) for _, pat in FORMALDEHYDE_RELEASERS)),
+                                   key=lambda x: x["title"]),
+                "searched": [n for n, _ in FORMALDEHYDE_RELEASERS],
+                "eu_rule": {"title": "Commission Regulation (EU) 2022/1181 (formaldehyde releasers labelling, Annex V preamble)",
+                            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R1181", "checked": "2026-10-09"},
+                "releaser_source": {"title": "SAG-CS Final Opinion on Formaldehyde Releasing Substances (UK Office for Product Safety and Standards, July 2022)",
+                                    "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1130700/sag-cs-opinion-07-formaldehyde-releasing-substances.pdf",
+                                    "checked": "2026-10-09"}}},
         "caveat": CAVEAT, "site_source": src,
         "method": "claims/registry_stats.py (EU_BANNED, where_listed)", "verified_date": snapshot})
 
@@ -933,6 +952,82 @@ def main():
                    "discloses": sum(1 for x in mrows if x["discloses_chemical"]),
                    "reviewed_labels": len([s for s in mw if s in candidates]), "unreviewed": unreviewed},
         "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py (mineral wording)",
+        "verified_date": snapshot})
+
+    # "Hypoallergenic" on the label, fragrance in the printed ingredient list.
+    # The claim wording is read from the label (text, and the label image where
+    # the front is an image) by a person; evidence in
+    # data/corrections/hypoallergenic_wording.jsonl. A label whose image and
+    # text disagree on fragrance is not counted and is listed separately.
+    hw = {}
+    hwp = os.path.join(ROOT, "data", "corrections", "hypoallergenic_wording.jsonl")
+    if os.path.exists(hwp):
+        for line in open(hwp, encoding="utf-8"):
+            if line.strip():
+                x = json.loads(line)
+                hw[x["setid"]] = x
+    _HYPO = re.compile(r"HYPO-? ?ALLERGENIC", re.I)
+    _ALLERGENS = ["amyl cinnamal", "hexyl cinnamal", "alpha-isomethyl ionone", "benzyl salicylate",
+                  "butylphenyl methylpropional", "citronellol", "coumarin", "geraniol", "hydroxycitronellal",
+                  "limonene", "linalool", "eugenol", "benzyl benzoate", "citral", "benzyl alcohol"]
+    _ALLERGENS = [a for a in _ALLERGENS if a != "benzyl alcohol"]   # also a preservative; not counted
+    scented = {r["formulation_hash"]: r for r in forms if where_listed(r, FRAGRANCE.pattern)}
+    hy_rows, hy_unreviewed = {}, []
+    for r in pop_labels:
+        sid = r["setid"]
+        if not where_listed(r, FRAGRANCE.pattern):
+            continue
+        x = hw.get(sid)
+        if x is None:
+            if _HYPO.search(front_text(sid)) or len(front_text(sid)) < 40:
+                hy_unreviewed.append({"setid": sid, "title": r["title"]})
+            continue
+        if x["hypoallergenic"] != "yes" or x["fragrance_on_label"] != "yes":
+            continue
+        rep = scented.get(r["formulation_hash"])
+        if rep is None:
+            continue
+        sec = printed_section(sid).lower()
+        hy_rows.setdefault(r["formulation_hash"], {
+            "title": r["title"], "url": r["dailymed_url"], "quote": x.get("quote") or "Hypoallergenic",
+            "mineral": bool(rep.get("is_mineral_only_actives")),
+            "allergens": [a for a in _ALLERGENS if re.search(r"(?<![a-z-])" + re.escape(a) + r"(?![a-z])", sec)]})
+    hy_rows = sorted(hy_rows.values(), key=lambda x: x["title"])
+    hy_conflict = [{"title": next((rr["title"] for rr in pop_labels if rr["setid"] == s), s),
+                    "url": f"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={s}", "note": x["note"]}
+                   for s, x in hw.items() if x["fragrance_on_label"] == "conflict" and s in include]
+    ff_contra = [{"title": next((rr["title"] for rr in pop_labels if rr["setid"] == s), s),
+                  "url": f"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={s}",
+                  "claim": x["fragrance_free_claim"], "note": x.get("note", "")}
+                 for s, x in hw.items() if x.get("fragrance_free_claim") and x["fragrance_on_label"] == "yes" and s in include]
+    if hy_unreviewed:
+        print(f"[registry_stats] hypoallergenic: {len(hy_unreviewed)} scented labels need a label check: "
+              + "; ".join(u["title"][:60] for u in hy_unreviewed[:20]))
+    hy_lab = {_co(next(rr for rr in pop_labels if rr["dailymed_url"] == x["url"]).get("labeler_from_title")
+                  or next(rr for rr in pop_labels if rr["dailymed_url"] == x["url"]).get("labeler")) for x in hy_rows}
+    claims.append({
+        "id": "US-BABY-HYPOALLERGENIC-FRAGRANCE", "status": "verified", "jurisdiction": "US",
+        "ingredient_slugs": [], "finding": "hypoallergenic-fragrance",
+        "claim": (f"{len(hy_rows)} of {N} baby/kids sunscreen formulations say hypoallergenic on the label and list "
+                  f"fragrance as an ingredient."),
+        "publishable_sentence": (f"{len(hy_rows)} baby and kids sunscreen formulas listed in the FDA's DailyMed label "
+                                 f"database say “hypoallergenic” on the label and also list fragrance as an "
+                                 f"ingredient. The FDA says there is no federal standard or definition for the term "
+                                 f"“hypoallergenic”, and for children with eczema the American Academy of "
+                                 f"Dermatology advises a fragrance-free sunscreen."),
+        "legal_framing": ("Not a violation: there is no federal standard or definition for “hypoallergenic”, "
+                          "and fragrance is allowed in US sunscreens. The finding compares the wording on the label "
+                          "with the label's own ingredient list; it is not about any brand."),
+        "numerator": len(hy_rows), "denominator": N, "population": POP,
+        "ingredient_source": {"title": "Hypoallergenic Cosmetics — U.S. Food and Drug Administration",
+                              "url": "https://www.fda.gov/cosmetics/cosmetics-labeling-claims/hypoallergenic-cosmetics",
+                              "checked": "2026-10-09"},
+        "detail": {"formulas": hy_rows, "labelers": len(hy_lab),
+                   "mineral": sum(1 for x in hy_rows if x["mineral"]),
+                   "with_allergens": sum(1 for x in hy_rows if x["allergens"]),
+                   "aad": AAD_FRAGRANCE, "conflicts": hy_conflict, "fragrance_free_contradictions": ff_contra,
+                   "reviewed_labels": len(hw), "unreviewed": hy_unreviewed},
+        "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py (hypoallergenic)",
         "verified_date": snapshot})
 
     # Parabens
