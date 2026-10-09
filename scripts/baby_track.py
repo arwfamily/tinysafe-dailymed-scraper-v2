@@ -48,6 +48,8 @@ BABY_BRANDS = [
     (r"BABYGANICS", "Babyganics", ""),
     (r"CALIFORNIA BABY|ORGANIC & SUSTAINABLE BEAUTY", "California Baby", ""),
     (r"THINK ?BABY", "Thinkbaby", ""),
+    (r"\bSQWEEN\b", "Sqween", ""),
+    (r"\bPUTTO\b|AGABANG", "Putto (Agabang & Company)", ""),
 ]
 
 

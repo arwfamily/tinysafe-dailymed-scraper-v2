@@ -267,7 +267,7 @@ def source(review, snapshot):
 
 POP = ("unique formulations of sunscreen labels that say baby or kids in the product name or on the "
        "front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, "
-       "Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) "
+       "Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) "
        "(FDA DailyMed; selected by rule from the label, with edge cases decided by hand "
        "and every decision recorded with its reason; a claim such as 'suitable for children' alone does "
        "not count; labels that name a foreign distributor or importer and labels that do not meet US "
