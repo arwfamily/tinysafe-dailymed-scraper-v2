@@ -5,9 +5,9 @@
   "delisted": 3
  },
  "baby_labels": {
-  "new": 29
+  "new": 32
  },
- "baby_population_live": 538,
+ "baby_population_live": 549,
  "new_baby_decisions": [],
  "review_queue": 0,
  "changes": [
@@ -181,7 +181,7 @@
    "change": "new",
    "product": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 PINK (ZINC OXIDE) CREAM",
    "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=192892b0-5632-40c5-a9b8-dcecdbcf2553",
-   "baby": false,
+   "baby": true,
    "label_date": "20260813",
    "found_by": "title_enumeration"
   },
@@ -190,7 +190,7 @@
    "change": "new",
    "product": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 ROSE GOLD (ZINC OXIDE) CREAM",
    "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1ad346a8-4468-4cc4-a1fe-045b11ae6659",
-   "baby": false,
+   "baby": true,
    "label_date": "20260813",
    "found_by": "title_enumeration"
   },
@@ -298,7 +298,7 @@
    "change": "new",
    "product": "STREAM2SEA ECOSTOCK SPF 40 SUNSCREEN (ZINC OXIDE) STICK",
    "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5866e026-a652-3300-e063-6394a90acff0",
-   "baby": false,
+   "baby": true,
    "label_date": "20260806",
    "found_by": "title_enumeration"
   },
