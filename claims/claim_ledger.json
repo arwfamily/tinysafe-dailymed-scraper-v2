@@ -1239,14 +1239,14 @@
       "id": "US-BABY-SAME-LIST",
       "status": "provisional_do_not_publish",
       "blocker": "printed Drug Facts comparison (scripts/verify_same_list.py) not run for every candidate pair",
-      "candidates_structured": 107,
+      "candidates_structured": 106,
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "same-ingredient-list",
-      "claim": "56 of 442 baby/kids formulations print the same ingredient list as a non-baby label.",
-      "publishable_sentence": "56 of the 442 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 48 cases both labels name the same labeler.",
+      "claim": "55 of 442 baby/kids formulations print the same ingredient list as a non-baby label.",
+      "publishable_sentence": "55 of the 442 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 48 cases both labels name the same labeler.",
       "legal_framing": "Not a violation: nothing requires a baby or kids sunscreen to have a different formula. The finding compares what the label records state; it does not show how the products are made.",
-      "numerator": 56,
+      "numerator": 55,
       "denominator": 442,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "detail": {
@@ -1543,87 +1543,6 @@
               ]
             ],
             "same_company": true
-          },
-          {
-            "baby": [
-              "COTZ KIDS (ZINC OXIDE) CREAM [FALLIEN COSMECEUTICALS, LTD.]",
-              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ca8742f-67cb-a25c-e063-6394a90a4638"
-            ],
-            "same_list": [
-              [
-                "GLOW SHIELD SPF (ZINC OXIDE) CREAM [ACNE SOLUTIONS NYC INC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f9d087c-b2b3-5654-e063-6294a90a94e5"
-              ],
-              [
-                "ZINC OXIDE SPF 40 NON-TINTED (ZINC OXIDE) CREAM [SKIN RESTORATION AESTHETICS]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fc68041-acfe-8db6-e063-6294a90ad8ba"
-              ],
-              [
-                "SKIN TONE DEFENDER 20% ZINC OXIDE (ZINC OXIDE) CREAM [CALI SKIN CARE LLC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=308c711d-4c3e-1208-e063-6394a90a9cc2"
-              ],
-              [
-                "COVERED (ZINC OXIDE) CREAM [POTENCY NO. 710 LLC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3117faeb-1792-1b2e-e063-6294a90a92df"
-              ],
-              [
-                "DAILY MINERAL SUNSCREEN 20% ZINC OXIDE (ZINC OXIDE) CREAM [INTEGRATIVE AESTHETICS BOSTON, LLC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=314299b1-a78b-c1bd-e063-6294a90ab43b"
-              ],
-              [
-                "ULTIMATE MINERAL PROTECTION (ZINC OXIDE) CREAM [MARK SCHWARTZ CLINICAL SKINCARE, INC.]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b02bf69-b648-56e1-e063-6294a90aeef3"
-              ],
-              [
-                "SOLAR SHIELD FACE AND BODY SPF 40 (ZINC OXIDE) CREAM [BRIGHT SKINCARE, LLC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b138432-19e5-e757-e063-6294a90a4cbe"
-              ],
-              [
-                "SOLAR SHIELD FACE AND BODY SPF 40 (ZINC OXIDE) CREAM [BRIGHT SKINCARE, LLC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b14caa3-f58e-b9ab-e063-6394a90a9695"
-              ],
-              [
-                "STAY SHADY NON-TINTED MINERAL SUNSCREEN (ZINC OXIDE) CREAM [AMOIE ALAYVILLA]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b27225f-4589-d915-e063-6294a90a7225"
-              ],
-              [
-                "STAY SHADY NON-TINTED MINERAL SUNSCREEN (ZINC OXIDE) CREAM [AMOIE ALAYVILLA]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b277237-3a2e-1fb0-e063-6294a90adf20"
-              ],
-              [
-                "DAILY ANTIOXIDANT MINERAL SUNSCREEN (ZINC OXIDE) CREAM [MONIKA G KIRIPOLSKY MD INC.]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b3d7ff2-1463-8d8e-e063-6394a90a5ac8"
-              ],
-              [
-                "PREMIER ZINC (ZINC OXIDE) CREAM [ENSO SKINCARE & WELLNESS LLC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb378c8-14b0-aa13-e063-6294a90a4db3"
-              ],
-              [
-                "MINERAL SUNSCREEN 20PERCENT ZINC OXIDE (ZINC OXIDE) CREAM [ESTHETICS BY MINDY LLC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ccea6c0-8c27-6b26-e063-6294a90a0931"
-              ],
-              [
-                "MINERAL SUNSCREEN 20PERCENT ZINC OXIDE (ZINC OXIDE) CREAM [ESTHETICS BY MINDY LLC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3d5ab3f6-10b9-2a21-e063-6294a90a3428"
-              ],
-              [
-                "MINERAL BASED FACIAL SUNSCREEN (ZINC OXIDE) CREAM [KATHLEEN P. HUTTON, M.D., INC. A PROFESSIONAL CORPORATION]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e8981ed-5847-7009-e063-6394a90a49a1"
-              ],
-              [
-                "BELLA BLU SKIN CARE NON TINTED SUNSCREEN (ZINC OXIDE) CREAM [BELLA BLU STUDIOS INC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3f66d2ae-00e7-608c-e063-6294a90a49c6"
-              ],
-              [
-                "BELLA BLU SKIN CARE NON TINTED SUNSCREEN (ZINC OXIDE) CREAM [BELLA BLU STUDIOS INC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3f67134c-88e8-8513-e063-6294a90aaf5a"
-              ],
-              [
-                "DAILY PROTECT MINERAL SUNSCREEN (ZINC OXIDE) CREAM [SARAH'S]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4617beb7-381e-8994-e063-6394a90a14b5"
-              ]
-            ],
-            "same_company": false
           },
           {
             "baby": [

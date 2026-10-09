@@ -5,9 +5,9 @@
   "delisted": 3
  },
  "baby_labels": {
-  "new": 36
+  "new": 37
  },
- "baby_population_live": 580,
+ "baby_population_live": 581,
  "new_baby_decisions": [],
  "review_queue": 0,
  "changes": [
@@ -208,7 +208,7 @@
    "change": "new",
    "product": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 BLUE (ZINC OXIDE) CREAM",
    "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4085917-7090-45e2-8356-77698f78c195",
-   "baby": false,
+   "baby": true,
    "label_date": "20260813",
    "found_by": "title_enumeration"
   },
