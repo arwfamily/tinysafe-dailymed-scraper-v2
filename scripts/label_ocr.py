@@ -98,9 +98,18 @@ def sections(root):
 
 
 def ocr(img_bytes):
+    """Tesseract on a grayscale, contrast-stretched copy scaled so the long side
+    is about 3000 px (small artwork is upscaled; large photos are reduced)."""
+    from PIL import Image, ImageOps
     with tempfile.TemporaryDirectory() as d:
-        p = os.path.join(d, "img")
-        open(p, "wb").write(img_bytes)
+        p = os.path.join(d, "img.png")
+        try:
+            im = Image.open(io.BytesIO(img_bytes)).convert("L")
+            s = 3000 / max(im.size)
+            im = im.resize((max(1, int(im.width * s)), max(1, int(im.height * s))), Image.LANCZOS)
+            ImageOps.autocontrast(im).save(p)
+        except Exception:
+            return ""
         try:
             r = subprocess.run(["tesseract", p, "stdout", "--psm", "3", "-l", "eng"],
                                capture_output=True, timeout=180)
@@ -172,7 +181,9 @@ def jobs():
         kinds = set()
         if r.get("is_sunscreen") and sid not in decided and not (r.get("label_flags") or {}).get("front_panel_baby_words"):
             kinds.add("front")
-        if sid in baby and printed_list(text.get(sid, {})) is None:
+        # Image-only inactive lists of baby labels are transcribed from the
+        # images (scripts/fetch_label_images.py); Tesseract drops small print.
+        if sid in baby and printed_list(text.get(sid, {})) is None and os.environ.get("OCR_INACTIVE"):
             kinds.add("inactive")
         if kinds:
             out[sid] = (sid, ver, kinds)
@@ -200,7 +211,7 @@ def main():
         mine = mine[:a.limit]
     fresh = [j for j in mine if (j[0], j[1], tuple(sorted(j[2]))) not in cache]
     print(f"[ocr] shard {a.shard}/{a.shards}: {len(mine)} labels, {len(fresh)} to read", flush=True)
-    with ThreadPoolExecutor(4) as ex:
+    with ThreadPoolExecutor(3) as ex:
         new = list(ex.map(read_label, fresh))
     keep = [cache[(j[0], j[1], tuple(sorted(j[2])))] for j in mine if (j[0], j[1], tuple(sorted(j[2]))) in cache]
     with open(path, "w", encoding="utf-8") as f:
