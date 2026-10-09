@@ -15,6 +15,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "8"
 },
 "0190eeaf-c5a0-3253-e063-6294a90a43c4": {
@@ -58,6 +59,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "0191b2e4-bcc5-541a-e063-6294a90a0e78": {
@@ -103,6 +105,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "01a50047-0d07-41c5-b35b-129aab5b4afd": {
@@ -132,6 +135,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "01cc4ea0-e3de-32f1-e063-6394a90a1375": {
@@ -151,6 +155,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "01cc554b-9241-d891-e063-6394a90a8450": {
@@ -185,7 +190,40 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
+},
+"0329bfae-3f38-4fcd-be77-f92c67657bb5": {
+"effective_date": "20100318",
+"items": [
+"WATER",
+"ISOHEXADECANE",
+"CETYL DIMETHICONE COPOLYOL",
+"CAPRYLIC/CAPRIC TRIGLYCERIDES",
+"STEARALKONIUM HECTORITE",
+"PROPYLENE CARBONATE",
+"PEG-8",
+"CAPRYLYL GLYCOL",
+"SODIUM CHLORIDE",
+"PHENOXYETHANOL",
+"METHYLPARABEN",
+"BUTYLPARABEN",
+"ETHYLPARABEN",
+"PROPYLPARABEN",
+"ISOBUTYLPARABEN",
+"GLYCERIN",
+"SODIUM CITRATE",
+"DISODIUM EDTA",
+"ALOE BARBADENSIS LEAF JUICE",
+"TOCOPHERYL ACETATE",
+"RETINYL PALMITATE",
+"SODIUM ASCORBYL PHOSPHATE",
+"C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "03fbbb81-bd8b-488a-b013-d06203bf5c7f": {
 "effective_date": "20100321",
@@ -219,6 +257,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "04d0a26b-5004-435c-81ba-87847c1dd2d9": {
@@ -243,7 +282,23 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
+},
+"05bbe530-df26-e598-e063-6394a90a0c59": {
+"effective_date": "20231003",
+"items": [
+"MINERAL OIL",
+"OZOKERITE",
+"BUTYLOCTYL SALICYLATE",
+"MICROCRYSTALLINE WAX",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"SILICA"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "05cb5a91-205f-b652-e063-6294a90a0664": {
 "effective_date": "20241113",
@@ -262,6 +317,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
 },
 "06862b00-c937-41af-ab5d-cea34160d035": {
@@ -285,6 +341,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "0806bdb9-961f-3146-e063-6294a90a4625": {
@@ -316,6 +373,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "08134b95-1879-27e5-e063-6294a90a29af": {
@@ -344,6 +402,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "08147940-0e8b-c894-e063-6394a90af8ac": {
@@ -372,6 +431,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "088b7152-d3d1-9e74-e063-6394a90a4152": {
@@ -403,6 +463,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "088b81e4-76c7-6680-e063-6294a90acb73": {
@@ -429,6 +490,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "08a175ae-2307-ef8d-e063-6394a90ad234": {
@@ -467,6 +529,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "08a36887-3997-8fff-e063-6394a90ae9d5": {
@@ -499,6 +562,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "08e31964-612b-48fb-b3a8-77922aa1c7b8": {
@@ -523,6 +587,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "08e8bc10-85d8-4215-8351-7ec12029416c": {
@@ -562,6 +627,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "09037f54-a121-4132-957f-1c01f3a70ebc": {
@@ -593,6 +659,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "09a97e3f-f6dc-eaa7-e063-6294a90ad274": {
@@ -624,6 +691,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "09f9d9bb-c08b-401c-bbf1-640f1c8ec678": {
@@ -655,6 +723,39 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "2"
+},
+"0a5a42a3-6fe4-2980-e063-6394a90a54fe": {
+"effective_date": "20251217",
+"items": [
+"SD ALCOHOL 40-B (42 8 V/V)",
+"ISOBUTANE",
+"NEOPENTYL GLYCOL DIHEPTANOATE",
+"POLYESTER-27",
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"DIMETHICONE",
+"FRAGRANCE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"0a5a4d0e-8ab2-3d79-e063-6394a90a7006": {
+"effective_date": "20251217",
+"items": [
+"SD ALCOHOL 40-B (42 9 V/V)",
+"ISOBUTANE",
+"NEOPENTYL GLYCOL DIHEPTANOATE",
+"POLYESTER-27",
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"DIMETHICONE",
+"FRAGRANCE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "2"
 },
 "0aadc378-dc34-9a37-e063-6294a90ad49e": {
@@ -671,6 +772,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "0aafab44-0481-2a22-e063-6294a90abef2": {
@@ -704,6 +806,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "0ad8187d-43a3-933b-e063-6294a90a20c4": {
@@ -723,7 +826,31 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
+},
+"0bdb7d15-dc52-4e23-9417-fe73f17f6110": {
+"effective_date": "20260120",
+"items": [
+"BUTYLOCTYL SALICYLATE",
+"BUTYROSPERMUM PARKII (SHEA) OIL",
+"ALKYL (C12-15) BENZOATE",
+"CAPRILIC/CAPRIC TRIGLYCERIDE",
+"DIBUTYL ETHYLHEXANOYL GLUTAMIDE",
+"DIBUTYL LAUROYL GLUTAMIDE",
+"ETHYLHEXYL METHOXYCRYLENE",
+"OCTYLDODECANOL",
+"SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+"STEVIA",
+"TOCOPHERYL ACETATE",
+"TRIETHOXYCAPRYLYLSILANE",
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"VP/HEXADECENE COPOLYMER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "0c238393-1035-19aa-e054-00144ff88e88": {
 "effective_date": "20231122",
@@ -742,7 +869,63 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
+},
+"0c285349-62e0-40a4-93c8-11abb65e6f4d": {
+"effective_date": "20120510",
+"items": [
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"CAPRILIC/CAPRIC TRIGLYCERIDES",
+"SILICA",
+"ZINC STEARATE",
+"MACADAMIA TERNIFOLIA SEED OIL",
+"CAMELLIA OLEIFERA LEAF EXTRACT (GREEN TEA)",
+"VITIS VINIFERA (GRAPE) SEED EXTRACT",
+"TOCOPHEROL",
+"IRON OXIDES"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"0c2dc068-ad7d-6a28-e054-00144ff88e88": {
+"effective_date": "20150108",
+"items": [
+"AQUA (WATER)",
+"GLYCERIN",
+"CETYL ALCOHOL",
+"GLYCERYL STEARATE SE",
+"DIMETHICONE",
+"VP/HEXADECENE COPOLYMER",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"ALOE BARBADENSIS LEAF JUICE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"CETEARYL ALCOHOL",
+"CETEARYL OLIVATE",
+"HYDROGENATED PALM KERNEL OIL",
+"LECITHIN",
+"POLYSORBATE 60",
+"SILICA",
+"SODIUM CHLORIDE",
+"SODIUM STEAROYL GLUTAMATE",
+"SORBITAN OLIVATE",
+"TOCOPHERYL ACETATE",
+"XANTHAN GUM",
+"ALCOHOL",
+"BENZYL ALCOHOL",
+"ETHYLHEXYLGLYCERIN",
+"PHENOXYETHANOL",
+"POTASSIUM SORBATE",
+"SODIUM BENZOATE",
+"FRAGRANCE (PARFUM)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "0c596b1d-8c23-4598-8b6f-95e1679069b9": {
 "effective_date": "20180705",
@@ -759,6 +942,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "0c6aeadb-f61d-29e3-e063-6294a90a7473": {
@@ -780,6 +964,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "0c7b7571-7317-98bc-e063-6294a90aa29f": {
@@ -801,7 +986,25 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"0cdfc3a1-4bfa-474d-a4eb-4bfa1e628c89": {
+"effective_date": "20241016",
+"items": [
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"OZOKERITE",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"TRIDECYL SALICYLATE",
+"LAURYL LAURATE",
+"BIS-PEG-12 DIMETHICONE BEESWAX",
+"ALKYL (C12-15) BENZOATE",
+"SYNTHETIC BEESWAX"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "4"
 },
 "0d40f67e-78e9-4c4c-a8ca-464315c41af5": {
 "effective_date": "20160308",
@@ -825,6 +1028,98 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "1"
+},
+"0d82121d-1dc2-cd99-e063-6394a90aa766": {
+"effective_date": "20241209",
+"items": [
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"COCOS NUCIFERA (COCONUT) OIL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"POLYHYDROXYSTEARIC ACID",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"BEHENYL BEHENATE",
+"RICINUS COMMUNIS (CASTOR) SEED OIL",
+"MICA",
+"COCO-CAPRYLATE/CAPRATE",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"GLYCERYL BEHENATE",
+"EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"CAPRYLOYL GLYCERIN/SEBACIC ACID COPOLYMER",
+"SILICA"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"0d833e3b-5330-3c5b-e063-6394a90a2ed2": {
+"effective_date": "20241209",
+"items": [
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"C10-18 TRIGLYCERIDES",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"JOJOBA ESTERS",
+"CAPRYLOYL GLYCERIN/SEBACIC ACID COPOLYMER",
+"POLYHYDROXYSTEARIC ACID",
+"BEHENYL BEHENATE",
+"HYDROXYAPATITE",
+"ACACIA DECURRENS FLOWER WAX",
+"POLYGLYCERIN-3",
+"EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"GLYCERYL BEHENATE",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"0d85b0a1-3705-2829-e063-6394a90a0ed7": {
+"effective_date": "20250113",
+"items": [
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"C10-18 TRIGLYCERIDES",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"JOJOBA ESTERS",
+"CAPRYLOYL GLYCERIN/SEBACIC ACID COPOLYMER",
+"POLYHYDROXYSTEARIC ACID",
+"BEHENYL BEHENATE",
+"HYDROXYAPATITE",
+"ACACIA DECURRENS FLOWER WAX",
+"POLYGLYCERIN-3",
+"EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"GLYCERYL BEHENATE",
+"(IRON OXIDES)",
+"OCTYLDODECANOL",
+"(IRON OXIDES)",
+"(IRON OXIDES)",
+"TRIHYDROXYSTEARIN",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"0ec21837-d4f1-0916-e063-6294a90a2199": {
+"effective_date": "20240112",
+"items": [
+"ALCOHOL(45 )",
+"NEOPENTYL GLYCOL DIHEPTANOATE",
+"C12-C15 ALKYL BENZOATE",
+"BUTYLENE GLYCOL DICAPRYLATE/DICAPRATE",
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"FRAGRANCE",
+"ASCORBYL PALMITATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "1"
 },
 "1030a55e-8159-4645-bda0-13e1d89f00e7": {
@@ -875,6 +1170,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "10631036-0fa6-b3ee-e063-6294a90af7aa": {
@@ -900,6 +1196,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "1082111f-bf04-4a98-b6a0-5da933652f1d": {
@@ -927,6 +1224,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "10f1c4fa-d319-40da-9758-36c8585b9fc0": {
@@ -953,6 +1251,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "10f60367-6681-a589-e063-6394a90a6bb8": {
@@ -994,6 +1293,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "10f832e7-c2b5-b847-e063-6294a90a20d5": {
@@ -1035,6 +1335,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "116e71c4-f443-0b6c-e063-6394a90a0cdd": {
@@ -1072,6 +1373,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "116ed17c-3b38-5e96-e063-6294a90a4246": {
@@ -1110,7 +1412,37 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"13c9ab06-9903-728a-e054-00144ff88e88": {
+"effective_date": "20200120",
+"items": [
+"ALCOHOL DENAT",
+"HOMOSALATE",
+"OXYBENZONE",
+"OCTISALATE",
+"OCTOCRYLENE",
+"AVOBENZONE",
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"STEAROXYTRIMETHYLSILANE",
+"GLYCERIN",
+"DIETHYLHEXYL SYRINGYLIDENEMALONATE",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"TOCOPHEROL",
+"FRAGRANCE",
+"HYDROXYCITRONELLAL",
+"LINALOOL",
+"AMYL CINNAMAL",
+"GERANIOL",
+"HEXYL CINNAMAL",
+"D-LIMONENE",
+"BENZYL BENZOATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "15739f81-d01f-4d3e-be5f-bbf04fffb1f9": {
 "effective_date": "20100418",
@@ -1143,7 +1475,33 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
+},
+"16cc5178-e4c7-38eb-e063-6294a90a66de": {
+"effective_date": "20251023",
+"items": [
+"ORGANIC HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"WATER",
+"ORGANIC EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"ORGANIC POLYGLYCERYL-3 POLYRICINOLEATE",
+"ORGANIC ISOSTEARIC ACID",
+"ORGANIC GLYCERIN",
+"ORGANIC GLYCERYL STEARATE CITRATE",
+"ORGANIC POLYHYDROXYSTEARIC ACID",
+"ORGANIC COCONUT ALKANES (AND) COCO-CAPRYLATE/CAPRATE",
+"SODIUM CHLORIDE",
+"ORGANIC XANTHAN GUM",
+"ORGANIC D-ALPHA TOCOPHERYL ACETATE (VITAMIN E)",
+"ORGANIC THUJA PLICATA (HINOKITIOL) EXTRACT",
+"RED IRON OXIDE",
+"YELLOW IRON OXIDE",
+"BLACK IRON OXIDE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "17a7492b-5243-48c4-b808-5e9899db7530": {
 "effective_date": "20240908",
@@ -1164,6 +1522,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "8"
 },
 "17cc12c7-5af8-413f-b205-31ac150583e2": {
@@ -1197,6 +1556,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "17e9bcaa-77b5-45da-ab77-5563070e0af2": {
@@ -1220,6 +1580,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "10"
 },
 "1a603f62-86ec-4e66-a73f-718c5d012676": {
@@ -1244,7 +1605,31 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"1aae0291-f16f-7840-e063-6394a90a3443": {
+"effective_date": "20240612",
+"items": [
+"BISABOLOL",
+"BORON NITRIDE",
+"CAPRYLHYDROXAMIC ACID",
+"ETHYL FERULATE",
+"GLYCERIN",
+"GLYCERYL CAPRYLATE",
+"IRON OXIDES",
+"JOJOBA SEED OIL",
+"LAUROYL LYSINE",
+"MICA",
+"RICE BRAN EXTRACT",
+"SILICA",
+"SQUALANE",
+"TRIETHOXYCAPRYLYLSILANE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "1b91aa24-1321-4584-a245-b362c927a8b1": {
 "effective_date": "20180122",
@@ -1272,6 +1657,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "1ba50f16-4b76-825f-e063-6294a90a2a4d": {
@@ -1291,6 +1677,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "1c7cd904-ffff-48aa-91bd-cc978946b36a": {
@@ -1310,6 +1697,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
 },
 "1cb7fbca-0874-ae53-e063-6294a90ab42a": {
@@ -1342,6 +1730,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
 },
 "1dc325bb-d520-4897-b8f8-3f0ecba2274c": {
@@ -1368,6 +1757,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
 },
 "1e86c2a9-a5c3-95cb-e063-6394a90a014d": {
@@ -1407,6 +1797,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "1eae935f-942b-4290-91de-8c608f70a7ed": {
@@ -1427,6 +1818,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "1f41f64b-d707-08e2-e063-6294a90aa924": {
@@ -1459,6 +1851,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "1f4341f7-b499-3b73-e063-6394a90a75b8": {
@@ -1481,6 +1874,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "1fc52f3b-3a62-3fa5-e054-00144ff8d46c": {
@@ -1503,7 +1897,43 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
+},
+"20d2e1fd-5882-0477-e054-00144ff88e88": {
+"effective_date": "20200117",
+"items": [
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"ALOE BARBADENSIS LEAF JUICE",
+"BETA-CAROTENE",
+"BUTYLPHTHALIMIDE",
+"ALKYL (C12-15) BENZOATE",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"CARBOMER",
+"CRAMBE MARITIMA EXTRACT",
+"DISODIUM EDTA",
+"ETHYLHEXYLGLYCERIN",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"HYDROXYPROPYL METHYLCELLULOSE",
+"ISOPROPYLPHTHALIMIDE",
+"PHENOXYETHANOL",
+"POLYETHYLENE",
+"POLYSORBATE 20",
+"PROPYLENE GLYCOL",
+"PRUNUS ARMENIACA (APRICOT) KERNEL OIL",
+"PSEUDOPTEROGORGIA ELISABETHAE PLANT EXTRACT",
+"SODIUM HYDROXIDE",
+"SOLANUM LYCOPERSICUM (TOMATO) FRUIT/LEAF/STEM EXTRACT",
+"SORBITAN OLEATE",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"TOCOPHERYL ACETATE",
+"WATER",
+"ZEA MAYS (CORN) OIL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "20ebe264-2f79-4eef-b83d-3f09a3ca2898": {
 "effective_date": "20241106",
@@ -1532,7 +1962,43 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"23915bcf-1ca5-71a8-e054-00144ff8d46c": {
+"effective_date": "20200117",
+"items": [
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"ALOE BARBADENSIS LEAF JUICE",
+"ALKYL (C12-15) BENZOATE",
+"CAMELLIA SINENSIS (GREEN TEA) LEAF EXTRACT",
+"CAPRYLHYDROXAMIC ACID",
+"CAPRYLYL GLYCOL",
+"CARBOMER",
+"DIMETHICONE",
+"DISODIUM EDTA",
+"FRAGRANCE",
+"GLYCERIN",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"HYDROXYPROPYL METHYLCELLULOSE",
+"MELALEUCA ALTERNIFOLIA (TEA TREE) LEAF OIL",
+"OLEA EUROPAEA (OLIVE) FRUIT OIL",
+"POLYETHYLENE",
+"POLYHYDROXYSTEARIC ACID",
+"POLYSORBATE 20",
+"PROPYLENE GLYCOL",
+"SODIUM HYDROXIDE",
+"SORBITAN OLEATE",
+"STYRENE/ACRYLATES COPOLYMER",
+"TERMINALIA FERDINANDIANA (KAKADU PLUM) FRUIT EXTRACT",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"TOCOPHERYL ACETATE",
+"WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "23fb7304-789d-1f94-e063-6394a90a7e62": {
 "effective_date": "20251231",
@@ -1548,6 +2014,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "240dd76a-8f39-caec-e063-6294a90abbbc": {
@@ -1579,6 +2046,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "2434de23-bcc9-4a83-9945-16fc3f2b8c61": {
@@ -1605,6 +2073,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "247aae3d-1845-4dd8-b774-b9e8214809a2": {
@@ -1640,7 +2109,37 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
+},
+"25155d5e-1b79-419a-a71b-1a243f43519e": {
+"effective_date": "20120514",
+"items": [
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"ACRYLATES COPOLYMER",
+"ALOE BARBADENSIS LEAF EXTRACT",
+"CAPRYLYL GLYCOL",
+"CARBOMER",
+"DIISOPROPYL ADIPATE",
+"DIMETHYL CAPRAMIDE",
+"DISODIUM EDTA",
+"HYDROXYPROPYL METHYLCELLULOSE",
+"ISOHEXADECANE",
+"OLEA EUROPAEA (OLIVE) FRUIT OIL",
+"PHENOXYETHANOL",
+"POLYESTER-8",
+"PROPANEDIOL",
+"RETINYL PALMITATE",
+"SACCHARIDE ISOMERATE",
+"SORBITAN OLEATE",
+"TOCOPHERYL ACETATE",
+"TRIETHANOLAMINE",
+"WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "25c59820-a08d-4abe-87ae-a787ac8b2ac2": {
 "effective_date": "20230530",
@@ -1674,6 +2173,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "25f060eb-628c-4a11-b1d7-06922ee86b24": {
@@ -1699,7 +2199,38 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"2669183c-7a5e-037e-e054-00144ff88e88": {
+"effective_date": "20210205",
+"items": [
+"ALCOHOL DENAT",
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"PERSEA GRATISSIMA (AVOCADO) OIL",
+"DIISOPROPYL ADIPATE",
+"CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL",
+"GLYCINE SOJA (SOYBEAN) OIL",
+"ALOE BARBADENSIS LEAF JUICE",
+"CALENDULA OFFICINALIS (CALENDULA) FLOWER EXTRACT",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"GINKGO BILOBA LEAF EXTRACT",
+"PANAX GINSENG ROOT EXTRACT",
+"A-TERPINYL ACETATE",
+"DIMETHYLHYDROXY FURANONE",
+"GLYCERIN",
+"NONANAL",
+"TOCOPHERYL ACETATE",
+"VANILLIN",
+"POTASSIUM SORBATE",
+"SODIUM BENZOATE",
+"LIMONENE",
+"LINALOOL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "269718e2-0a76-4b15-a0ab-b914bc809e41": {
 "effective_date": "20160308",
@@ -1730,6 +2261,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "28f08236-1f01-d759-e063-6294a90adcfa": {
@@ -1758,6 +2290,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "2986c76d-3346-487f-97c2-730a08ca8e3a": {
@@ -1787,6 +2320,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "298b2aa5-de4a-4507-a304-6e63dbb957f9": {
@@ -1804,6 +2338,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "29eea350-5159-206b-e054-00144ff88e88": {
@@ -1881,6 +2416,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "2a9d4264-c51b-40ce-880b-bb61470f8002": {
@@ -1915,7 +2451,69 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
+},
+"2b443e72-9011-4ea0-8834-a2c11552aec0": {
+"effective_date": "20120517",
+"items": [
+"ACRYLATES COPOLYMER",
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"ALOE BARBADENSIS LEAF JUICE",
+"BUTYLPARABEN",
+"ALKYL (C12-15) BENZOATE",
+"CARBOMER",
+"DISODIUM EDTA",
+"ETHYLPARABEN",
+"GLYCERIN",
+"HYDROXYPROPYL METHYLCELLULOSE",
+"ISOBUTYLPARABEN",
+"METHYLPARABEN",
+"OCTYL PALMITATE",
+"OLEA EUROPAEA (OLIVE) FRUIT OIL",
+"PHENOXYETHANOL",
+"PROPYLENE GLYCOL",
+"PROPYLPARABEN",
+"RETINOL PALMITATE (VITAMIN A)",
+"SORBITAN OLEATE",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"TOCOPHERYL (VITAMIN E) ACETATE",
+"TRIETHANOLAMINE",
+"WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"2b86fb9f-3eac-533b-e054-00144ff8d46c": {
+"effective_date": "20200117",
+"items": [
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"ALOE BARBADENSIS LEAF JUICE",
+"BUTYLPHTHALIMIDE",
+"ALKYL (C12-15) BENZOATE",
+"CARBOMER",
+"DISODIUM EDTA",
+"FRAGRANCE (PARFUM)",
+"HYDROXYPROPYL METHYLCELLULOSE",
+"ISOPROPYLPHTHALIMIDE",
+"METHYLISOTHIAZOLINONE",
+"METHYLPARABEN",
+"POLYETHYLENE",
+"POLYSORBATE 20",
+"PROPYLENE GLYCOL",
+"PROPYLPARABEN",
+"SORBITAN OLEATE",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"TOCOPHERYL ACETATE",
+"TRIETHANOLAMINE",
+"WATER (AQUA)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "2bc471f0-c93e-0c51-e063-6394a90a77f0": {
 "effective_date": "20250115",
@@ -1943,6 +2541,94 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "1"
+},
+"2bd66d7a-b542-03c3-e054-00144ff88e88": {
+"effective_date": "20200117",
+"items": [
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"ACRYLATES/C12-22 ALKYL METHACRYLATE COPOLYMER",
+"ALOE BARBADENSIS LEAF JUICE",
+"AMINOMETHYL PROPANOL",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"CRAMBE MARITIMA EXTRACT",
+"DIMETHICONE",
+"DISODIUM EDTA",
+"ETHYLHEXYLGLYCERIN",
+"PHENOXYETHANOL",
+"POTASSIUM CETYL PHOSPHATE",
+"PROPYLENE GLYCOL",
+"PSEUDOPTEROGORGIA ELISABETHAE PLANT EXTRACT",
+"SORBITOL",
+"STYRENE/ACRYLATES COPOLYMER",
+"TOCOPHERYL ACETATE",
+"WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"2bd8159f-c381-36b3-e054-00144ff88e88": {
+"effective_date": "20200117",
+"items": [
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"ACRYLATES/C12-22 ALKYL METHACRYLATE COPOLYMER",
+"ALOE BARBADENSIS LEAF JUICE",
+"AMINOMETHYL PROPANOL",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"CRAMBE MARITIMA EXTRACT",
+"DIMETHICONE",
+"DISODIUM EDTA",
+"ETHYLHEXYLGLYCERIN",
+"FRAGRANCE",
+"PHENOXYETHANOL",
+"POTASSIUM CETYL PHOSPHATE",
+"PROPYLENE GLYCOL",
+"PSEUDOPTEROGORGIA ELISABETHAE PLANT EXTRACT",
+"SORBITOL",
+"STYRENE/ACRYLATES COPOLYMER",
+"TOCOPHERYL ACETATE",
+"WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"2c13d6c9-7eb8-462c-9eb3-0d37ad1173af": {
+"effective_date": "20100709",
+"items": [
+"AQUA (WATER)",
+"GLYCERIN",
+"CETEARYL OLIVATE",
+"CETYL ALCOHOL",
+"GLYCERYL STEARATE SE",
+"SORBITAN OLIVATE",
+"DIMETHICONE",
+"VP/HEXADECENE COPOLYMER",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"ALOE BARBADENSIS LEAF JUICE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"GINKGO BILOBA LEAF EXTRACT",
+"PANAX GINSENG ROOT EXTRACT",
+"LAVANDULA ANGUSTIFOLIA (LAVENDER) FLOWER/LEAF/STEM EXTRACT",
+"SODIUM STEAROYL GLUTAMATE",
+"TOCOPHERYL ACETATE",
+"XANTHAN GUM",
+"BENZYL ALCOHOL",
+"ETHYLHEXYLGLYCERIN",
+"PHENOXYETHANOL",
+"POTASSIUM SORBATE",
+"SODIUM BENZOATE",
+"FRAGRANCE (PARFUM)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "1"
 },
 "2d2c58e2-0d15-4383-adae-12fc17b8ea50": {
@@ -1973,7 +2659,26 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "8"
+},
+"2d33112e-7c23-46a9-bb64-a5c3bd9bfb59": {
+"effective_date": "20120518",
+"items": [
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"ALOE BARBADENSIS LEAF EXTRACT",
+"DENATURED ALCOHOL",
+"GLYCERIN",
+"DIMETHYL CAPRAMIDE",
+"POLYESTER-8",
+"OLEA EUROPAEA (OLIVE) FRUIT OIL",
+"RETINYL PALMITATE (VITAMIN A)",
+"TOCOPHERYL ACETATE (VITAMIN E)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "2db243d3-3b59-4be9-967c-0d4aea4d0066": {
 "effective_date": "20130709",
@@ -1994,6 +2699,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "2deea723-32a0-da33-e063-6294a90accdd": {
@@ -2021,6 +2727,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "2e2db5b7-0752-42ad-a11b-792eb1f954ae": {
@@ -2045,6 +2752,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "2e394662-dd0a-4d0d-b4b0-568ecf7e2555": {
@@ -2087,7 +2795,42 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "10"
+},
+"2f17b5fe-44da-964b-e063-6394a90ae699": {
+"effective_date": "20250226",
+"items": [
+"ALLANTOIN",
+"ALOE BARBADENSIS LEAF JUICE",
+"BUTYLOCTYL SALICYLATE",
+"C13-16 ISOALKANE",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"CITRIC ACID",
+"CITRULLUS LANATUS (WATERMELON) FRUIT EXTRACT",
+"DECYL GLUCOSIDE",
+"DODECANE",
+"GLYCERIN",
+"GLYCERYL STEARATE CITRATE",
+"GLYCERYL STEARATE SE",
+"HEPTYL UNDECYLENATE",
+"LEUCONOSTOC/RADISH ROOT FERMENT FILTRATE",
+"NIACINAMIDE",
+"POLYHYDROXYSTEARIC ACID",
+"PROPANEDIOL",
+"SORBITAN STEARATE",
+"TOCOPHERYL ACETATE",
+"TRIDECYL SALICYLATE",
+"WATER (AQUA)",
+"XANTHAN GUM"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "2f7225d0-ddfa-e19a-e063-6294a90a52a8": {
 "effective_date": "20250303",
@@ -2118,6 +2861,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "2f780daa-4c91-5a68-e063-6394a90afd41": {
@@ -2157,6 +2901,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "2fe3c77a-8cbb-4b3a-8756-8dd7c73a3c8a": {
@@ -2186,7 +2931,40 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"302bccc6-7bf3-cc69-e063-6294a90a625c": {
+"effective_date": "20251009",
+"items": [
+"ALLANTOIN",
+"AVENA SATIVA (OAT) KERNEL EXTRACT",
+"BISABOLOL",
+"BUTYLOCTYL SALICYLATE",
+"ALKYL (C12-15) BENZOATE",
+"C13-15 ALKANE",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"CAPRYLYL GLYCOL",
+"COCO-CAPRYLATE",
+"DISTEARDIMONIUM HECTORITE",
+"GLYCERIN",
+"ISOAMYL LAURATE",
+"LECITHIN",
+"METHYLPROPANEDIOL",
+"PHENYLPROPANOL",
+"POLYGLYCERYL-2 DIPOLYHYDROXYSTEARATE",
+"POLYGLYCERYL-3 POLYRICINOLEATE",
+"PYRUS MALUS (APPLE) FRUIT EXTRACT",
+"SILICA",
+"SILICA SILYLATE",
+"SODIUM CHLORIDE",
+"WATER (AQUA)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "310e66a2-8714-4016-87f4-81c1fef19ec9": {
 "effective_date": "20241209",
@@ -2209,6 +2987,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "3275303d-a448-4fb4-bdce-6442823f8996": {
@@ -2247,6 +3026,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "32794f16-2c4c-454d-aeae-aacf4ebd5792": {
@@ -2272,6 +3052,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "329918f2-5d77-494b-975d-597bbaab43e3": {
@@ -2317,6 +3098,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "32d6e04a-fa30-ba48-e063-6394a90a1bbf": {
@@ -2356,6 +3138,84 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "3"
+},
+"33119ec6-2cd8-8978-e063-6394a90afd97": {
+"effective_date": "20250501",
+"items": [
+"CERA ALBA (BEESWAX)",
+"EXTRACTS OF CALENDULA OFFICINALIS (MARIGOLD) FLOWER MELISSA OFFICINALIS (LEMON BALM) LEAF AND PLANTAGO LANCEOLATA (PLANTAIN) LEAF IN HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"JOJOBA ESTERS",
+"MICA",
+"MIXED TOCOPHEROLS (VITAMIN E)",
+"POLYHYDROXYSTEARIC ACID",
+"PRUNUS AMYGDALUS DULCIS (SWEET ALMOND) OIL",
+"SILICA",
+"SORBITAN OLIVATE",
+"SQUALANE (PLANT-BASED)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"33b2b7a3-e9df-2815-e054-00144ff8d46c": {
+"effective_date": "20200117",
+"items": [
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"ALOE BARBADENSIS LEAF JUICE",
+"ALKYL (C12-15) BENZOATE",
+"CARBOMER",
+"DISODIUM EDTA",
+"FRAGRANCE (PARFUM)",
+"HYDROXYPROPYL METHYLCELLULOSE",
+"METHYLISOTHIAZOLINONE",
+"METHYLPARABEN",
+"POLYETHYLENE",
+"POLYHYDROXYSTEARIC ACID",
+"POLYSORBATE 20",
+"PROPYLENE GLYCOL",
+"PROPYLPARABEN",
+"SORBITAN OLEATE",
+"STYRENE/ACRYLATES COPOLYMER",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"TOCOPHERYL ACETATE",
+"TRIETHANOLAMINE",
+"WATER (AQUA)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"3467a39e-2e1d-0659-e063-6294a90a9ced": {
+"effective_date": "20250505",
+"items": [
+"CALENDULA OFFICINALIS (CALENDULA) FLOWER",
+"CERA ALBA (BEESWAX)",
+"CHAMOMILLA RECUTITA MATRICARIA (CHAMOMILE) FLOWER EXTRACT",
+"COCOS NUCIFERA (COCONUT) OIL",
+"SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+"NON-GMO TOCOPHEROL (VITAMIN E)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"34891204-3485-44ac-aaf1-80d57593128c": {
+"effective_date": "20260318",
+"items": [
+"BUTYLOCTYL SALICYLATE",
+"ETHYL ALCOHOL DENATURED",
+"POLYESTER-8",
+"ORYZA SATIVA (RICE BRAN) OIL",
+"VA/BUTYL MALEATE/ISOBORNYL ACRYLATE COPOLYMER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "3"
 },
 "353353b9-54f8-4300-9632-7615de394076": {
@@ -2391,6 +3251,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
 },
 "354ef99d-a94d-438d-b62f-c91b2107e266": {
@@ -2430,6 +3291,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "35cbb9d5-639c-207a-e054-00144ff88e88": {
@@ -2446,7 +3308,70 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
+},
+"35cd16b0-bd81-8f68-e063-6294a90a3d8c": {
+"effective_date": "20250618",
+"items": [
+"ALOE BARBADENSIS LEAF JUICE",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"CAPRYLYL GLYCOL",
+"CETYL DIGLYCERYL TRIS (TRIMETHYLSILOXY) SILYLETHYL DIMETHICONE",
+"DIMETHICONE",
+"DIMETHICONE/METHICONE COPOLYMER",
+"SODIUM PHYTATE",
+"ETHYLHEXYLGLYCERIN",
+"FRAGRANCE",
+"GLYCERIN",
+"HYDROGENATED POLYDECENE",
+"ISOPROPYL MYRISTATE",
+"JOJOBA ESTERS",
+"PENTYLENE GLYCOL",
+"POLYHYDROXYSTEARIC ACID",
+"PROPANEDIOL",
+"SILICA",
+"SODIUM CHLORIDE",
+"SORBITAN OLIVATE",
+"STEARIC ACID",
+"SYNTHETIC BEESWAX",
+"TETRAFLUOROPROPENE",
+"WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
+},
+"35cd5542-947d-a042-e063-6394a90a13f8": {
+"effective_date": "20250618",
+"items": [
+"ALOE BARBADENSIS LEAF EXTRACT",
+"BENZYL ALCOHOL",
+"BUTYLOCTYL SALICYLATE",
+"CITRIC ACID",
+"COCO-CAPRYLATE",
+"DEHYDROACETIC ACID",
+"ETHYLHEXYL METHOXYCRYLENE",
+"FRAGRANCE",
+"GLYCERIN",
+"GLYCERYL STEARATE",
+"NIACINAMIDE",
+"PANTHENOL",
+"POLYHYDROXYSTEARIC ACID",
+"SACCHARIDE ISOMERATE",
+"SODIUM PHYTATE",
+"SODIUM STEAROYL GLUTAMATE",
+"SUCROSE PALMITATE",
+"SUCROSE TRISTEARATE",
+"TOCOPHERYL ACETATE",
+"XANTHAN GUM",
+"WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "3636693a-ba81-5d49-e063-6394a90a3006": {
 "effective_date": "20260805",
@@ -2478,6 +3403,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "369f449f-fb9d-5529-e063-6394a90ac3b2": {
@@ -2511,6 +3437,39 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "2"
+},
+"36c7a1be-87e5-1f87-e063-6394a90ad876": {
+"effective_date": "20251023",
+"items": [
+"ORGANIC HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"WATER",
+"ORGANIC CANDELILLA WAX",
+"ORGANIC GLYCEROL",
+"ORGANIC JOJOBA SEED OIL",
+"ORGANIC POLYGLYCERYL-3 POLYRICINOLEATE",
+"ORGANIC THUJA PLICATA (HINOKITIOL) EXTRACT",
+"ORGANIC ISOSTEARIC ACID",
+"ORGANIC POLYHYDROXYSTEARIC ACID",
+"ORGANIC KAKADU PLUM EXTRACT",
+"ORGANIC ASCORBYL PALMITATE (VITAMIN C)",
+"ORGANIC SEA BUCKTHORN OIL",
+"ORGANIC XANTHAN GUM",
+"SODIUM CHLORIDE",
+"ORGANIC BISABOLOL",
+"ORGANIC GRAPEFRUIT EXTRACT",
+"ORGANIC CORIANDER EXTRACT",
+"ORGANIC HYALURONIC ACID",
+"ORGANIC CALENDULA EXTRACT",
+"ORGANIC MALTODEXTRIN",
+"ORGANIC TOCOPHEROLS CONCENTRATE (VITAMIN E)",
+"ORGANIC POTASSIUM CETYL PHOSPHATE",
+"IRON OXIDES"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "2"
 },
 "36df811b-35d2-261d-e063-6394a90aa91e": {
@@ -2530,6 +3489,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "372ae3fb-fec0-4c7b-853b-12835c830311": {
@@ -2553,7 +3513,24 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
+},
+"382247c7-77c0-488b-ad98-be15e153c85b": {
+"effective_date": "20120518",
+"items": [
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"CHOLECALCIFEROL (VITAMIN D3)",
+"DIMETHYL CAPRAMIDE",
+"GLYCERIN",
+"FRAGRANCE",
+"POLYESTER-8",
+"SD ALCOHOL 40"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "383de98b-65b5-4398-a876-87367dc01d0b": {
 "effective_date": "20250618",
@@ -2574,7 +3551,31 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "9"
+},
+"385f320c-9144-78b8-e063-6394a90a2e9d": {
+"effective_date": "20250625",
+"items": [
+"SUNFLOWER SEED OIL",
+"JOJOBA SEED OIL",
+"WATER",
+"GLYCERIN",
+"CANDELILLA WAX",
+"TOCOPHEROL",
+"ISOSTEARIC ACID",
+"POLYGLYCERYL-3 POLYRICINOLEATE",
+"POLYHYDROXYSTEARIC ACID",
+"POTASSIUM CETYL PHOSPHATE",
+"MALTODEXTRIN",
+"XANTHAN GUM",
+"SODIUM CHLORIDE",
+"IRON OXIDES"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "38e6c6fc-d8b9-4196-96c7-0f6d5d06da02": {
 "effective_date": "20260326",
@@ -2608,6 +3609,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "391a4ec3-b65b-4dbe-bc8f-cb67514c8ef1": {
@@ -2632,6 +3634,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
 },
 "39a5a3be-f9a7-4fa1-e054-00144ff88e88": {
@@ -2648,6 +3651,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
 },
 "39bf1379-3dee-4aa0-967a-36faccca4216": {
@@ -2666,6 +3670,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "3a147fe1-0dda-5433-e063-6394a90a1a59": {
@@ -2683,6 +3688,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "3a22f0b9-2d6d-6230-e063-6294a90adf31": {
@@ -2701,7 +3707,28 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"3a554118-b71d-a844-e063-6294a90a699f": {
+"effective_date": "20260620",
+"items": [
+"VINYL DIMETHICONE/METHICONE SILSESQUIOXANE CROSSPOLYMER",
+"ALUMINUM HYDROXIDE",
+"LAVANDULA ANGUSTIFOLIA (LAVENDER) OIL",
+"MICA",
+"LOPHATHERUM GRACILE LEAF POWER",
+"DIMETHICONE",
+"TRIETHOXYCAPRYLYLSILANE",
+"STEARIC ACID",
+"TOCOPHEROL(VITAMIN E)",
+"SODIUM BENZOATE",
+"POTASSIUM SORBATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "3a87d88e-3cb7-499c-9d04-d172f7f6bde7": {
 "effective_date": "20170105",
@@ -2720,6 +3747,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "3aa6550e-d1ed-4064-bf58-e694705669a8": {
@@ -2754,6 +3782,22 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "2"
+},
+"3b058b74-27d0-8f8a-e063-6294a90aa02c": {
+"effective_date": "20250818",
+"items": [
+"ALCOHOL DENAT (58 )",
+"BUTYLOCTYL SALICYLATE",
+"ALKYL (C12-15) BENZOATE",
+"TRIMETHYLPENTANEDIOL/ADIPIC ACID/GLYCERIN CROSSPOLYMER",
+"FRAGRANCE",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "2"
 },
 "3b162348-0222-490e-e063-6394a90ad494": {
@@ -2771,7 +3815,28 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"3b4eca91-965f-66c6-e063-6394a90a78ca": {
+"effective_date": "20250801",
+"items": [
+"WATER",
+"BEEF TALLOW",
+"BEESWAX",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"TOCOPHEROL",
+"SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+"OLEA EUROPAEA (OLIVE) FRUIT OIL",
+"LECITHIN",
+"RADISH ROOT FERMENT FILTRATE",
+"SAURURUS CHINENSIS LEAF/ROOT EXTRACT",
+"TARAXACUM OFFICINALE (DANDELION) LEAF EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "3be777bd-9132-4a69-98de-12b62525ad2f": {
 "effective_date": "20111004",
@@ -2806,7 +3871,23 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
+},
+"3c1f619e-dd4e-ab62-e063-6294a90a10d4": {
+"effective_date": "20250822",
+"items": [
+"ALCOHOL DENAT (58 )",
+"BUTYLOCTYL SALICYLATE",
+"ALKYL (C12-15) BENZOATE",
+"TRIMETHYLPENTANEDIOL/ADIPIC ACID/GLYCERIN CROSSPOLYMER",
+"FRAGRANCE",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "3c443347-0134-8c87-e063-6294a90a8046": {
 "effective_date": "20250813",
@@ -2824,6 +3905,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "3c470ff8-37d6-a729-e063-6294a90aa525": {
@@ -2858,6 +3940,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "3c49c623-47c6-4dc9-e063-6294a90a0096": {
@@ -2886,6 +3969,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "3c8ec6df-04b8-45a1-9f23-f36622305e06": {
@@ -2902,6 +3986,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "3ca50033-5bcb-4a6d-8aba-a797c5b8d0e9": {
@@ -2939,6 +4024,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "3ca8742f-67cb-a25c-e063-6394a90a4638": {
@@ -2972,6 +4058,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "3ca914e2-cd53-42bf-e063-6294a90a7082": {
@@ -3005,6 +4092,32 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "1"
+},
+"3d3a0d5c-a366-22fc-e063-6394a90a308b": {
+"effective_date": "20250825",
+"items": [
+"COCOS NUCIFERA (COCONUT) OIL",
+"PERSEA GRATISSIMA (AVOCADO) OIL",
+"LIMNANTHES ALBA (MEADOWFOAM) SEED OIL",
+"LINUM USITATISSIMUM (LINSEED) SEED OIL",
+"ORYZA SATIVA (RICE BRAN) WAX",
+"BUTYLOCTYL SALICYLATE",
+"OZOKERITE",
+"COPERNICIA CERIFERA (CARNAUBA) WAX",
+"BUTYROSPERMUM PARKII (SHEA BUTTER)",
+"ORYZANOL",
+"EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL",
+"JOJOBA ESTERS",
+"TOCOPHEROL",
+"BISABOLOL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "1"
 },
 "3e51da46-6a81-4b74-b16e-3fc298a4ba59": {
@@ -3036,6 +4149,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "8"
 },
 "3e64804b-6c14-49ab-b8f0-6b7f34a4ce3b": {
@@ -3062,7 +4176,58 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
+},
+"3e7a3e8e-eacf-0a30-e063-6294a90ab7ec": {
+"effective_date": "20251029",
+"items": [
+"BUTYLOCTYL SALICYLATE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"CAPRYLHYDROXAMIC ACID",
+"CETYL DIMETHICONE",
+"CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL",
+"CUCUMIS SATIVUS (CUCUMBER) FRUIT EXTRACT",
+"GLYCERIN",
+"GLYCERYL CAPRYLATE",
+"GLYCERYL HYDROGENATED ROSINATE",
+"HEXYL LAURATE",
+"HYDROGENATED CASTOR OIL",
+"MAGNESIUM SULFATE",
+"PERSEA GRATISSIMA (AVOCADO) OIL",
+"POLYGLYCERYL-4 ISOSTEARATE",
+"PRUNUS ARMENIACA (APRICOT) KERNEL OIL",
+"WATER",
+"SORBITAN SESQUIOLEATE",
+"TRIETHOXYCAPRYLYLSILANE",
+"TOCOPHEROL",
+"SODIUM HYALURONATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"3eb67c20-a1b6-3014-e054-00144ff8d46c": {
+"effective_date": "20161012",
+"items": [
+"P-",
+"-",
+"/",
+"--1",
+"-",
+"/",
+"60",
+"-11",
+"-10",
+"/",
+"-100"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "3ebe1aa3-9a14-46f7-941d-8b4ca1dbc052": {
 "effective_date": "20180615",
@@ -3086,7 +4251,93 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
+},
+"3ee4410b-46d8-1059-e063-6394a90a7f96": {
+"effective_date": "20260308",
+"items": [
+"ORGANIC CANDELILLA WAX",
+"ORGANIC COCO-OCTANOATE/DECANOATE",
+"ORGANIC D-ALPHA-TOCOPHERYL ACETATE",
+"ORGANIC GLYCEROL",
+"ORGANIC GLYCERYL STEARATE CITRATE",
+"IRON OXIDE BLACK",
+"IRON OXIDE RED",
+"IRON OXIDE YELLOW",
+"ORGANIC ISODODECANE",
+"ORGANIC ISOSTEARIC ACID",
+"ORGANIC POLYGLYCERYL-3 POLYRICINOLEATE",
+"ORGANIC POLYHYDROXYSTEARIC ACID",
+"WATER",
+"SODIUM CHLORIDE",
+"ORGANIC SUNFLOWER OIL",
+"ORGANIC THUJA PLICATA",
+"ORGANIC XANTHAN GUM"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"3ee52faa-64a8-4bdf-e063-6294a90a65cf": {
+"effective_date": "20260817",
+"items": [
+"ORGANIC APRICOT KERNEL OIL",
+"ORGANIC CANDELILLA WAX",
+"ORGANIC COCO-OCTANOATE/DECANOATE",
+"ORGANIC D-ALPHA-TOCOPHERYL ACETATE",
+"ORGANIC GLYCEROL",
+"ORGANIC GLYCERYL STEARATE CITRATE",
+"IRON OXIDE BLACK",
+"IRON OXIDE RED",
+"IRON OXIDE YELLOW",
+"ORGANIC ISODODECANE",
+"ORGANIC ISOSTEARIC ACID",
+"ORGANIC POLYGLYCERYL-3 POLYRICINOLEATE",
+"ORGANIC POLYGLYCERYL-4 OLEATE",
+"ORGANIC POLYHYDROXYSTEARIC ACID",
+"WATER",
+"ORGANIC SODIUM ASCORBATE",
+"SODIUM CHLORIDE",
+"ORGANIC SODIUM HYALURONATE",
+"ORGANIC THUJA PLICATA",
+"ORGANIC XANTHAN GUM"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
+},
+"3fa04557-2bc1-4eb4-aed8-eacc79189613": {
+"effective_date": "20251209",
+"items": [
+"BENZOIC ACID",
+"BENZYL ALCOHOL",
+"CALCIUM CHLORIDE",
+"CETYL DIMETHICONE",
+"CHLORPHENISIN",
+"DEHYDROACETIC ACID",
+"DIBUTYL ADIPATE",
+"FRAGRANCE",
+"GLYCOPROTEINS",
+"GLYCOSAMINOGLYCANS",
+"HYDROGENATED CASTOR OIL",
+"LANTHANUM CHLORIDE",
+"MAGNESIUM CHLORIDE",
+"MAGNESIUM STEARATE",
+"PANTHENOL",
+"PLANKTON EXTRACT",
+"POLYGLYCERYL-2 DIPOLYHYDROXYSTEARATE",
+"SORBIC ACID",
+"STEARYL DIMETHICONE",
+"TOCOPHERYL ACETATE",
+"WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "9"
 },
 "400c67aa-55a6-67ea-e063-6294a90a0213": {
 "effective_date": "20250930",
@@ -3124,6 +4375,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "4075f9dc-c25f-434f-a3fc-a7f896295c3d": {
@@ -3154,7 +4406,46 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
+},
+"40945805-6f2e-74a1-e063-6394a90a04a3": {
+"effective_date": "20251007",
+"items": [
+"WATER",
+"ALKYL (C12-15) BENZOATE",
+"GLYCERIN",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"POLYGLYCERYL-6 POLYRICINOLEATE",
+"COCONUT ALKANES",
+"C13-15 ALKANE",
+"ISODODECANE",
+"SILICA",
+"TRIHEPTANOIN",
+"POLYHYDROXYSTEARIC ACID",
+"COCO-CAPRYLATE/CAPRATE",
+"POLYGLYCERYL-10 DIOLEATE",
+"GLYCERYL CAPRYLATE",
+"SODIUM CHLORIDE",
+"SQUALANE",
+"FRAGRANCE",
+"HYDROGENATED PHOSPHATIDY LCHOLINE",
+"DISTEARDIMONIUM HECTORITE",
+"GENIPA AMERICANA FRUIT EXTRACT",
+"SACCHAROMYCES FERMENT",
+"PROPYLENE CARBONATE",
+"DILINOLEIC ACID/BUTANEDIOL COPOLYMER",
+"CAPRYLHYDROXAMIC ACID",
+"TOCOPHERYL ACETATE",
+"LAUROYL LYSINE",
+"TERMINALIA FERDINANDIANA FRUIT EXTRACT",
+"CASTOR OIL/IPDI COPOLYMER",
+"VACCINIUM MYRTILLUS FRUIT EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "4127e49a-eb27-e8e2-e063-6294a90a469e": {
 "effective_date": "20251016",
@@ -3173,6 +4464,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "41376da3-5274-b133-e063-6394a90afa13": {
@@ -3195,6 +4487,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "416b804d-bebf-4c5c-9990-4e830dd37153": {
@@ -3226,6 +4519,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "41ff1a98-69ff-4d7a-bc89-d986a803cee3": {
@@ -3247,7 +4541,56 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "9"
+},
+"42037d8c-4787-4e16-93fe-0d19b6b888fd": {
+"effective_date": "20260514",
+"items": [
+"ALOE BARBADENSIS LEAF JUICE",
+"ASCORBYL TETRAISOPALMITATE",
+"BUTYLENE GLYCOL",
+"BUTYLOCTYL SALICYLATE",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"CARBOMER",
+"CERAMIDE AP",
+"CERAMIDE EOP",
+"CERAMIDE NP",
+"CETEARYL OLIVATE",
+"CHOLESTEROL",
+"CITRIC ACID",
+"DICAPRYLYL CARBONATE",
+"DIMETHICONE",
+"ETHYLHEXYL METHOXYCRYLENE",
+"ETHYLHEXYLGLYCERIN",
+"FRAGRANCE",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"HYDROGENATED CASTOR OIL",
+"ISOPROPYL MYRISTATE",
+"MAGNESIUM SULFATE",
+"NIACINAMIDE",
+"PERSEA GRATISSIMA",
+"PHENOXYETHANOL",
+"PHYTOSPHINGOSINE",
+"POLYGLYCERYL-3 POLYRICINOLEATE",
+"POLYHYDROXYSTEARIC ACID",
+"POTASSIUM SORBATE",
+"PROPYLENE GLYCOL",
+"SODIUM BENZOATE",
+"SODIUM HYALURONATE",
+"SODIUM LAUROYL LACTYLATE",
+"SORBITAN OLEATE",
+"SORBITAN OLIVATE",
+"SYNTHETIC BEESWAX",
+"TOCOPHERYL ACETATE",
+"VP/HEXADECENE COPOLYMER",
+"WATER",
+"XANTHAN GUM"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "4244cd1c-2a90-4a24-a373-a681a21f52d4": {
 "effective_date": "20250213",
@@ -3268,7 +4611,46 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
+},
+"42556876-74ea-38e6-e054-00144ff8d46c": {
+"effective_date": "20260628",
+"items": [
+"ALOE BARBADENSIS LEAF JUICE",
+"OCTYLDODECYL NEOPENTANOATE",
+"CARTHAMUS TINCTORIUS (SAFFLOWER) OLEOSOMES",
+"AQUA/WATER",
+"GLYCERIN",
+"DICAPRYLYL CARBONATE",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"CHAMOMILLLA RECUTITA (MATRICARIA) FLOWER/LEAF/STEM EXTRACT",
+"CYCLOPENTASILOXANE",
+"POLYGLYCERYL-3-POLYMETHYLSILOXYETHYL DIMETHICONE",
+"ALUMINUM HYDROXIDE",
+"STEARIC ACID",
+"LONICERA JAPONICA (HONEYSUCKLE) FLOWER EXTRACT",
+"LONICERA CAPRIFOLIUM (HONEYSUCKLE) FLOWER EXTRACT",
+"MANGIFERA INDICA (MANGO) FRUIT EXTRACT",
+"SODIUM HYALURONATE",
+"CETEARYL OLIVATE",
+"SORBITAN OLIVATE",
+"C20-22 ALKYL PHOSPHATE",
+"C20-22 ALCOHOLS",
+"TRISODIUM ETHYLENEDIAMINE DISUCCINATE",
+"SCLEROTIUM GUM",
+"JOJOBA ALCOHOL",
+"POTASSIUM JOJOBATE",
+"BUTYLENE GLYCOL",
+"CITRIC ACID",
+"CAPRYLYL GLYCOL",
+"1 2-HEXANEDIOL",
+"PARFUM/NATURAL FRAGRANCE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "5"
 },
 "43a6b8e3-49f7-2ac7-e054-00144ff88e88": {
 "effective_date": "20161212",
@@ -3293,6 +4675,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "441a46f0-ecda-4448-e054-00144ff88e88": {
@@ -3322,6 +4705,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "9"
 },
 "441c6105-5c59-4022-85ae-f13d92fcc296": {
@@ -3351,6 +4735,348 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "1"
+},
+"444c1a61-41f0-2e9e-e054-00144ff88e88": {
+"effective_date": "20161222",
+"items": [
+"ALOE BARBADENSIS LEAF JUICE",
+"ALUMINA",
+"ARGANIA SPINOSA",
+"ASCORBIC ACID",
+"BIS-OCTYLDODECYL DIMER DILINOLEATE/PROPANEDIOL COPOLYMER",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"CETEARYL ALCOHOL",
+"CHOLECALCIFEROL",
+"DIMETHICONE",
+"ETHYLHEXYL PALMITATE",
+"ETHYLHEXYLGLYCERIN",
+"GLYCERIN",
+"OCTYLDODECANOL",
+"PEG-150 DISTEARATE",
+"PEG-16 MACADAMIA GLYCERIDES",
+"PHENOXYETHANOL",
+"POLYHYDROXYSTEARIC ACID",
+"POLYQUATERNIUM-37",
+"PROPYLENE GLYCOL",
+"PYRIDOXINE HCL",
+"RETINYL PALMITATE",
+"SILICA",
+"SODIUM PROPOXYHYDROXYPROPYL THIOSULFATE SILICIA",
+"STEARIC ACID",
+"TOCOPHERYL ACETATE",
+"WATER",
+"ZEA MAYS (CORN) OIL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"44853202-6873-0bc8-e063-6394a90a05f0": {
+"effective_date": "20251127",
+"items": [
+"COCOS NUCIFERA (COCONUT) OIL",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"COCO-CAPRYLATE/CAPRATE",
+"OCTYLDODECANOL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"CALCIUM ALUMINUM BOROSILICATE",
+"MALEATED SOYBEAN OIL GLYCERYL/OCTYLDODECANOL ESTERS (SOYBEAN/SOJA)",
+"GLYCERYL BEHENATE",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"4494bea6-ab1f-aae6-e063-6394a90a184d": {
+"effective_date": "20251127",
+"items": [
+"COCOS NUCIFERA (COCONUT) OIL",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"COCO-CAPRYLATE/CAPRATE",
+"OCTYLDODECANOL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"CALCIUM ALUMINUM BOROSILICATE",
+"MALEATED SOYBEAN OIL GLYCERYL/OCTYLDODECANOL ESTERS (SOYBEAN/SOJA)",
+"GLYCERYL BEHENATE",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"449712ab-5c23-7d50-e063-6394a90ab7fe": {
+"effective_date": "20251127",
+"items": [
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"COCOS NUCIFERA (COCONUT) OIL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"COCO-CAPRYLATE/CAPRATE",
+"OCTYLDODECANOL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"CALCIUM ALUMINUM BOROSILICATE",
+"MALEATED SOYBEAN OIL GLYCERYL/OCTYLDODECANOL ESTERS (SOYBEAN/SOJA)",
+"GLYCERYL BEHENATE",
+"TOCOPHEROL",
+"DIMETHYL HEPTENAL",
+"HEXYL ACETATE",
+"METHYLDIHYDROJASMONATE",
+"LINALYL ACETATE",
+"VANILLIN"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"44a94a24-e292-41e6-e063-6394a90abe47": {
+"effective_date": "20251128",
+"items": [
+"ETHYL OLEATE",
+"COCOGLYCERIDES",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"BUTYLENE GLYCOL DICAPRYLATE/DICAPRATE",
+"ISOCETYL STEAROYL STEARATE",
+"CALCIUM ALUMINUM BOROSILICATE",
+"CAPRYLOYL GLYCERIN/SEBACIC ACID COPOLYMER",
+"HYDROGENATED CASTOR OIL/SEBACIC ACID COPOLYMER",
+"POLYHYDROXYSTEARIC ACID",
+"CETEARYL OLIVATE",
+"SORBITAN OLIVATE",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"44a9838e-06a6-5a98-e063-6394a90aaba1": {
+"effective_date": "20251128",
+"items": [
+"ETHYL OLEATE",
+"COCOGLYCERIDES",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"BUTYLENE GLYCOL DICAPRYLATE/DICAPRATE",
+"ISOCETYL STEAROYL STEARATE",
+"CALCIUM ALUMINUM BOROSILICATE",
+"CAPRYLOYL GLYCERIN/SEBACIC ACID COPOLYMER",
+"HYDROGENATED CASTOR OIL/SEBACIC ACID COPOLYMER",
+"POLYHYDROXYSTEARIC ACID",
+"CETEARYL OLIVATE",
+"SORBITAN OLIVATE",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"44aa1349-e3f1-9b80-e063-6294a90a0fbd": {
+"effective_date": "20251128",
+"items": [
+"ETHYL OLEATE",
+"COCOGLYCERIDES",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"BUTYLENE GLYCOL DICAPRYLATE/DICAPRATE",
+"ISOCETYL STEAROYL STEARATE",
+"CALCIUM ALUMINUM BOROSILICATE",
+"CAPRYLOYL GLYCERIN/SEBACIC ACID COPOLYMER",
+"HYDROGENATED CASTOR OIL/SEBACIC ACID COPOLYMER",
+"POLYHYDROXYSTEARIC ACID",
+"CETEARYL OLIVATE",
+"SORBITAN OLIVATE",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"TOCOPHEROL",
+"DIMETHYL HEPTENAL",
+"HEXYL ACETATE",
+"METHYLDIHYDROJASMONATE",
+"LINALYL ACETATE",
+"VANILLIN"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"44aba591-04da-fe09-e063-6394a90a912a": {
+"effective_date": "20251128",
+"items": [
+"AQUA/WATER/EAU",
+"BUTYLENE GLYCOL DICAPRYLATE/DICAPRATE",
+"PROPANEDIOL DICAPRYLATE/CAPRATE",
+"DICAPRYLYL ETHER",
+"C13-15 ALKANE",
+"CALCIUM ALUMINUM BOROSILICATE",
+"PROPANEDIOL",
+"JOJOBA ESTERS",
+"MICA",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"POLYGLYCERYL-6 POLYHYDROXYSTEARATE",
+"COCO-CAPRYLATE/CAPRATE",
+"MAGNESIUM SULFATE",
+"MALEATED SOYBEAN OIL GLYCERYL/OCTYLDODECANOL ESTERS (SOYBEAN/SOJA)",
+"POLYGLYCERYL-6 POLYRICINOLEATE",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"HEPTYL UNDECYLENATE",
+"POLYHYDROXYSTEARIC ACID",
+"GLYCERYL BEHENATE",
+"POLYGLYCERIN-6",
+"ACACIA SENEGAL GUM",
+"ACACIA DECURRENS FLOWER WAX",
+"POLYGLYCERIN-3",
+"XANTHAN GUM",
+"SODIUM BENZOATE",
+"STEARALKONIUM HECTORITE",
+"PROPYLENE CARBONATE",
+"SILICA",
+"TOCOPHEROL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"ASCORBYL PALMITATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"44aba6d7-7989-0637-e063-6394a90a6c8f": {
+"effective_date": "20251128",
+"items": [
+"AQUA/WATER/EAU",
+"BUTYLENE GLYCOL DICAPRYLATE/DICAPRATE",
+"PROPANEDIOL DICAPRYLATE/CAPRATE",
+"DICAPRYLYL ETHER",
+"C13-15 ALKANE",
+"CALCIUM ALUMINUM BOROSILICATE",
+"PROPANEDIOL",
+"JOJOBA ESTERS",
+"MICA",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"POLYGLYCERYL-6 POLYHYDROXYSTEARATE",
+"COCO-CAPRYLATE/CAPRATE",
+"MAGNESIUM SULFATE",
+"MALEATED SOYBEAN OIL GLYCERYL/OCTYLDODECANOL ESTERS (SOYBEAN/SOJA)",
+"POLYGLYCERYL-6 POLYRICINOLEATE",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"HEPTYL UNDECYLENATE",
+"POLYHYDROXYSTEARIC ACID",
+"GLYCERYL BEHENATE",
+"POLYGLYCERIN-6",
+"ACACIA SENEGAL GUM",
+"ACACIA DECURRENS FLOWER WAX",
+"POLYGLYCERIN-3",
+"XANTHAN GUM",
+"SODIUM BENZOATE",
+"STEARALKONIUM HECTORITE",
+"PROPYLENE CARBONATE",
+"SILICA",
+"TOCOPHEROL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"ASCORBYL PALMITATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"44abdfe1-ea6b-a158-e063-6294a90a3eb8": {
+"effective_date": "20251128",
+"items": [
+"AQUA/WATER/EAU",
+"BUTYLENE GLYCOL DICAPRYLATE/DICAPRATE",
+"PROPANEDIOL DICAPRYLATE/CAPRATE",
+"DICAPRYLYL ETHER",
+"C13-15 ALKANE",
+"CALCIUM ALUMINUM BOROSILICATE",
+"PROPANEDIOL",
+"JOJOBA ESTERS",
+"MICA",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"POLYGLYCERYL-6 POLYHYDROXYSTEARATE",
+"MAGNESIUM SULFATE",
+"MALEATED SOYBEAN OIL GLYCERYL/OCTYLDODECANOL ESTERS (SOYBEAN/SOJA)",
+"POLYGLYCERYL-6 POLYRICINOLEATE",
+"COCO-CAPRYLATE/CAPRATE",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"HEPTYL UNDECYLENATE",
+"POLYHYDROXYSTEARIC ACID",
+"AVENA SATIVA (OAT) KERNEL OIL (GLUTEN)",
+"GLYCERYL BEHENATE",
+"POLYGLYCERIN-6",
+"ACACIA SENEGAL GUM",
+"ACACIA DECURRENS FLOWER WAX",
+"POLYGLYCERIN-3",
+"XANTHAN GUM",
+"SODIUM BENZOATE",
+"STEARALKONIUM HECTORITE",
+"PROPYLENE CARBONATE",
+"SILICA",
+"TOCOPHEROL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"ASCORBYL PALMITATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"44aca1d5-6e0a-def3-e063-6294a90aca26": {
+"effective_date": "20251128",
+"items": [
+"AQUA/WATER/EAU",
+"BUTYLENE GLYCOL DICAPRYLATE/DICAPRATE",
+"PROPANEDIOL DICAPRYLATE/CAPRATE",
+"DICAPRYLYL ETHER",
+"C13-15 ALKANE",
+"CALCIUM ALUMINUM BOROSILICATE",
+"PROPANEDIOL",
+"JOJOBA ESTERS",
+"MICA",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"POLYGLYCERYL-6 POLYHYDROXYSTEARATE",
+"COCO-CAPRYLATE/CAPRATE",
+"MAGNESIUM SULFATE",
+"MALEATED SOYBEAN OIL GLYCERYL/OCTYLDODECANOL ESTERS (SOYBEAN/SOJA)",
+"POLYGLYCERYL-6 POLYRICINOLEATE",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"HEPTYL UNDECYLENATE",
+"POLYHYDROXYSTEARIC ACID",
+"GLYCERYL BEHENATE",
+"POLYGLYCERIN-6",
+"ACACIA SENEGAL GUM",
+"ACACIA DECURRENS FLOWER WAX",
+"POLYGLYCERIN-3",
+"XANTHAN GUM",
+"SODIUM BENZOATE",
+"STEARALKONIUM HECTORITE",
+"PROPYLENE CARBONATE",
+"SILICA",
+"TOCOPHEROL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"ASCORBYL PALMITATE",
+"DIMETHYL HEPTENAL",
+"HEXYL ACETATE",
+"METHYLDIHYDROJASMONATE",
+"LINALYL ACETATE",
+"VANILLIN"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "1"
 },
 "44c469fb-c959-4390-9c52-c858be537fa2": {
@@ -3375,6 +5101,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "4504a10d-6130-4ec5-823a-ab970709e6d7": {
@@ -3396,7 +5123,50 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "10"
+},
+"450e52a9-5a6b-112f-e063-6394a90af7ca": {
+"effective_date": "20251203",
+"items": [
+"COCOS NUCIFERA (COCONUT) OIL",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"COCO-CAPRYLATE/CAPRATE",
+"OCTYLDODECANOL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"CALCIUM ALUMINUM BOROSILICATE",
+"MALEATED SOYBEAN OIL GLYCERYL/OCTYLDODECANOL ESTERS (SOYBEAN/SOJA)",
+"GLYCERYL BEHENATE",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"450e6eb7-f49e-296e-e063-6294a90a05a4": {
+"effective_date": "20251203",
+"items": [
+"COCOS NUCIFERA (COCONUT) OIL",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"COCO-CAPRYLATE/CAPRATE",
+"OCTYLDODECANOL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"CALCIUM ALUMINUM BOROSILICATE",
+"MALEATED SOYBEAN OIL GLYCERYL/OCTYLDODECANOL ESTERS (SOYBEAN/SOJA)",
+"GLYCERYL BEHENATE",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "4665c6dc-7519-4218-97b3-8148e58931fb": {
 "effective_date": "20200117",
@@ -3423,7 +5193,49 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
+},
+"468dd5f5-0cec-0c29-e054-00144ff88e88": {
+"effective_date": "20210412",
+"items": [
+"AQUA (WATER)",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"GLYCERIN",
+"ALOE BARBADENSIS LEAF JUICE",
+"VP/HEXADECENE COPOLYMER",
+"SODIUM STEAROYL GLUTAMATE",
+"DIMETHICONE",
+"CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL",
+"GLYCINE SOJA (SOYBEAN) OIL",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"GINKGO BILOBA LEAF EXTRACT",
+"OLEA EUROPAEA (OLIVE) LEAF EXTRACT",
+"PANAX GINSENG ROOT EXTRACT",
+"TOCOPHERYL ACETATE",
+"ALCOHOL",
+"A-TERPINYL ACETATE",
+"CETYL ALCOHOL",
+"CITRIC ACID",
+"DIMETHYLHYDROXY FURANONE",
+"GLYCERYL STEARATE SE",
+"NONANAL/NONENAL (UNCLEAR ON LABEL)",
+"POTASSIUM CETYL PHOSPHATE",
+"SODIUM CHLORIDE",
+"VANILLIN",
+"XANTHAN GUM",
+"BENZYL ALCOHOL",
+"PHENOXYETHANOL",
+"POTASSIUM SORBATE",
+"SODIUM BENZOATE",
+"LIMONENE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "5"
 },
 "4690d89b-ae61-2ed5-e063-6294a90a743f": {
 "effective_date": "20251222",
@@ -3445,6 +5257,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "46919f43-2dee-57b1-e063-6294a90a15eb": {
@@ -3467,6 +5280,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "46a03b24-5ce3-402c-a110-7553f73298aa": {
@@ -3491,6 +5305,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "492c44e3-4369-4367-939b-def1fd87de01": {
@@ -3516,6 +5331,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
 },
 "4ab66c16-5f4c-6987-e063-6294a90add86": {
@@ -3535,7 +5351,43 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"4c37855b-08c0-0aa7-e063-6394a90a8842": {
+"effective_date": "20260304",
+"items": [
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"ETHYLHEXYL OLIVATE",
+"BIS-OCTYLDODECYL DIMER DILINOLEATE/PROPANEDIOL COPOLYMER",
+"COCO-CAPRYLATE/CAPRATE",
+"COCOGLYCERIDES",
+"CANDELILLA (EUPHORBIA CERIFERA) WAX",
+"OZOKERITE",
+"RHUS VERNICIFLUA PEEL WAX",
+"JOJOBA ESTERS",
+"BUTYLOCTYL SALICYLATE",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED WAX",
+"LIMNANTHES ALBA (MEADOWFOAM) SEED OIL",
+"POTASSIUM OLIVOYL HYDROLYZED OAT PROTEIN",
+"SQUALANE",
+"CETEARYL ALCOHOL",
+"GLYCERYL STEARATE",
+"TOCOPHEROL",
+"STEARALKONIUM HECTORITE",
+"OLEA EUROPAEA (OLIVE) OIL UNSAPONIFIABLES",
+"STEARYL GLYCYRRHETINATE",
+"GLYCERYL OLEATE",
+"WATER",
+"PROPYLENE CARBONATE",
+"CAPRYLYL GLYCOL",
+"BISABOLOL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "4c7f0257-fa12-40d6-9516-824b0e3a182c": {
 "effective_date": "20250605",
@@ -3563,6 +5415,26 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "2"
+},
+"4de67653-ab31-c6b2-e063-6394a90a7e8c": {
+"effective_date": "20260212",
+"items": [
+"AQUA (WATER)",
+"TALLOW",
+"SIMMONDSIA CHINENSIS SEED OIL (JOJOBA OIL)",
+"JOJOBA ESTERS",
+"SUNFLOWER LECITHIN",
+"CERA ALBA (BEESWAX)",
+"LIMONIA ACIDISSIMA BARK EXTRACT (KAITH BARK EXTRACT)",
+"ATTALEA SPECIOSA STARCH (BABASSU STARCH)",
+"LEUCONOSTOC/RADISH ROOT FERMENT FILTRATE",
+"ASTAXANTHIN"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "2"
 },
 "4e0450ca-147a-91d7-e063-6394a90ae73b": {
@@ -3590,6 +5462,49 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "1"
+},
+"4eb824a6-66ac-01f8-e054-00144ff8d46c": {
+"effective_date": "20241022",
+"items": [
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"FRAGRANCE",
+"GLYCERIN",
+"SD ALCOHOL 40-B"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "4"
+},
+"4ee0c93a-7f50-2bda-e063-6294a90abff4": {
+"effective_date": "20260407",
+"items": [
+"COCO-CAPRYLATE/CAPRATE",
+"SUNFLOWER (HELIANTHUS ANNUUS) SEED OIL",
+"JOJOBA (SIMMONDSIA CHINENSIS) SEED OIL",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"DEXTRIN PALMITATE",
+"HYDROGENATED JOJOBA OIL",
+"SHEA (BUTYROSPERMUM PARKII) BUTTER",
+"POLYHYDROXYSTEARIC ACID",
+"OCTYLDODECYL OLEATE",
+"TOCOPHEROL",
+"POLYGLYCERYL-2 OLEATE",
+"HYDROGENATED CASTOR OIL/SEBACIC ACID COPOLYMER",
+"TURMERIC (CURCUMA LONGA) ROOT EXTRACT",
+"SEA BUCKTHORN (HIPPOPHAE RHAMNOIDES) FRUIT EXTRACT",
+"MARIGOLD (CALENDULA OFFICINALIS) FLOWER EXTRACT",
+"OCTYLDODECYL STEAROYL STEARATE",
+"FRAGRANCE (PARFUM)",
+"POLYGLYCERYL-2 STEARATE",
+"OCTYLDODECANOL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "1"
 },
 "4f0bf232-645a-4f69-b386-3a138a5c9964": {
@@ -3615,7 +5530,29 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"4f1da47d-8adb-00c0-e054-00144ff88e88": {
+"effective_date": "20170509",
+"items": [
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"COCOS NUCIFERA (COCONUT) OIL",
+"CERA ALBA (BEESWAX)",
+"EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"RICINUS COMMUNIS (CASTOR) OIL",
+"COPERNICIA CERIFERA (CARNAUBA) WAX",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"TOCOPHEROL",
+"ALOE BARBADENSIS (ALOE) LEAF JUICE",
+"CARICA PAPAYA (PAPAYA) EXTRACT",
+"LITCHI CHINENSIS PERICARP (LYCHEE) EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "4f5896a6-0639-5589-e063-6294a90a45a9": {
 "effective_date": "20260413",
@@ -3642,6 +5579,28 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "1"
+},
+"4fa7bffa-2585-5212-e054-00144ff88e88": {
+"effective_date": "20170516",
+"items": [
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"COCOS NUCIFERA (COCONUT) OIL",
+"CERA ALBA (BEESWAX)",
+"EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"RICINUS COMMUNIS (CASTOR) OIL",
+"COPERNICIA CERIFERA (CARNAUBA) WAX",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"TOCOPHEROL",
+"ALOE BARBADENSIS (ALOE) LEAF JUICE",
+"CARICA PAPAYA (PAPAYA) FRUIT EXTRACT",
+"LITCHI CHINENSIS PERICARP (LYCHEE) EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "1"
 },
 "4fe04c4b-2751-0561-e063-6394a90af768": {
@@ -3672,6 +5631,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "4fe1d3c6-7748-d966-e063-6394a90a97ff": {
@@ -3694,6 +5654,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "503a755c-5b86-37d3-e054-00144ff88e88": {
@@ -3730,6 +5691,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "50576262-1161-4f5b-9532-81bf1954256a": {
@@ -3764,6 +5726,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "506a9037-2bbe-40cc-ae0e-adb3c01b4730": {
@@ -3788,6 +5751,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "5205fcfb-069d-4745-8372-8fccb738cc58": {
@@ -3811,6 +5775,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "523a616a-77ed-477c-9a3d-b1ab11ca803c": {
@@ -3827,6 +5792,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "52582292-c1e2-1d61-e063-6294a90ad4d8": {
@@ -3848,6 +5814,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5258d9f9-a161-4695-e063-6394a90a47f8": {
@@ -3876,6 +5843,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "52d518ae-cc87-4702-bc87-8889c2276778": {
@@ -3901,6 +5869,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "537296b2-3782-4081-98b2-483e8aaf8b6e": {
@@ -3927,6 +5896,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "53d50644-b698-6474-e063-6394a90ac347": {
@@ -3948,6 +5918,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "53ee9b7d-9dff-7121-e063-6394a90ad38f": {
@@ -3964,6 +5935,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "547388c6-378b-488b-89d1-c77ebc5d2ed8": {
@@ -3994,6 +5966,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
 },
 "5512778c-1e08-4545-e054-00144ff8d46c": {
@@ -4022,6 +5995,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5512bc12-fe9d-1398-e054-00144ff88e88": {
@@ -4050,6 +6024,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "551baf59-39b8-e994-e063-6294a90a65e6": {
@@ -4069,6 +6044,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "551d4961-c15a-283e-e063-6294a90a334a": {
@@ -4088,6 +6064,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5520e284-9e98-3152-e063-6294a90ae83b": {
@@ -4116,6 +6093,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5864275d-a480-06f8-e063-6394a90aecab": {
@@ -4135,6 +6113,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "597b78df-83cb-1b21-e063-6294a90a56a8": {
@@ -4169,6 +6148,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "59e1a2b7-2ae2-f289-e063-6294a90aeb68": {
@@ -4197,6 +6177,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5a1bf0be-2a9f-409a-b91e-31ee02913430": {
@@ -4218,6 +6199,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5a4c71fc-aa6f-47f7-8d1d-2af2e726cf9b": {
@@ -4257,6 +6239,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "5af11bbe-0dec-416c-8f37-e93b14a940b6": {
@@ -4291,6 +6274,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5b177115-9f0c-48a4-9fea-1f547436a2c9": {
@@ -4326,6 +6310,42 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "1"
+},
+"5b19f2ae-c7e5-c44c-e063-6394a90a0e68": {
+"effective_date": "20260909",
+"items": [
+"WATER",
+"ALOE BARBADENSIS LEAF JUICE",
+"DICAPRYLYL CARBONATE",
+"BUTYLOCTYL SALICYLATE",
+"ISONONYL ISONONANOATE",
+"POLYHYDROXYSTEARIC ACID",
+"PROPANEDIOL",
+"METHYL DIHYDROABIETATE",
+"ISOCETYL STEAROYL STEARATE",
+"GLYCERIN",
+"CETEARYL ALCOHOL",
+"SODIUM GLUCONATE",
+"BISABOLOL",
+"C18-21 ALKANE",
+"BENTONITE",
+"TOCOPHEROL",
+"SODIUM STEAROYL GLUTAMATE",
+"CAPRYLYL GLYCOL",
+"COCO-GLUCOSIDE",
+"MICROCRYSTALLINE CELLULOSE",
+"CAPRYLHYDROXAMIC ACID",
+"CELLULOSE GUM",
+"ALUMINA",
+"POLYESTER-8",
+"SILICA",
+"CITRIC ACID"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "1"
 },
 "5b309bf0-4268-d9e4-e063-6294a90ad2d8": {
@@ -4358,6 +6378,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5b3109da-3019-73c4-e063-6394a90abb08": {
@@ -4389,6 +6410,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5b9a32ab-4ab7-475d-e063-6294a90a49ba": {
@@ -4416,6 +6438,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5bccb774-b3f7-47e0-956c-e6d37c6a7d92": {
@@ -4442,6 +6465,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "5c01baa8-cee2-ee68-e063-6394a90ac29a": {
@@ -4461,6 +6485,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5c2a5ca3-e9eb-48ba-8698-592d2c7aa241": {
@@ -4481,6 +6506,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "5c3ea09e-8bf0-7873-e063-6294a90a3fd3": {
@@ -4508,6 +6534,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5cfd7a7e-ce9d-40de-9424-6b0c653dc1b7": {
@@ -4532,6 +6559,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "5e017f81-9f3b-4feb-9b7a-52b3a2420b54": {
@@ -4556,6 +6584,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "5eddb97d-d65e-4203-8b14-d2b89511da50": {
@@ -4580,6 +6609,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "6053bc07-3060-4610-864d-d549df6dc926": {
@@ -4614,6 +6644,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "6055ba25-c346-4a18-bc72-ceac753f8a35": {
@@ -4641,6 +6672,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "606d2aea-26c1-44a1-8452-02663b3e51dd": {
@@ -4674,7 +6706,101 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
+},
+"60cda526-4b44-00a3-e053-2a91aa0abac0": {
+"effective_date": "20210205",
+"items": [
+"ALOE BARBADENSIS LEAF JUICE(O)",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"AQUA (WATER)",
+"COCONUT ALKANES",
+"MICA",
+"GLYCERIN",
+"POLYGLYCERYL-2 SESQUIOLEATE",
+"BRASSICA ALCOHOL",
+"POLYGLYCERYL-3 RICINOLEATE",
+"GLYCERYL ISOSTEARATE",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL",
+"JUNIPERUS VIRGINIANA OIL",
+"CAMELLIA SINENSIS LEAF EXTRACT(O)",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT(O)",
+"TOCOPHERYL ACETATE",
+"ALCOHOL(O)",
+"ANISALDEHYDE",
+"BENZYL ACETATE",
+"BIOSACCHARIDE GUM-1",
+"C10-18 TRIGLYCERIDES",
+"CETEARYL OLIVATE",
+"COCO-CAPRYLATE/CAPRATE",
+"COPERNICIA CERIFERA (CARNAUBA) WAX",
+"GLYCERYL CAPRYLATE",
+"POLYHYDROXYSTEARIC ACID",
+"POTASSIUM HYDROXIDE",
+"QUARTZ",
+"SODIUM ANISATE",
+"SODIUM CHLORIDE",
+"SODIUM LEVULINATE",
+"SORBITAN OLIVATE",
+"TRIETHYL CITRATE",
+"VANILLIN",
+"ETHYLHEXYLGLYCERIN",
+"PHENOXYETHANOL",
+"CITRONELLOL",
+"GERANIOL",
+"LIMONENE",
+"LINALOOL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
+},
+"60cdfbfa-9f3e-4ad0-9e96-6fd498748f06": {
+"effective_date": "20140325",
+"items": [
+"ACACIA FARNESIANA FLOWER EXTRACT",
+"ALOE BARBADENSIS LEAF JUICE",
+"BENZYL ALCOHOL",
+"C13-14 ISOPARAFFIN",
+"CAMELLIA OLEIFERA LEAF EXTRACT",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"CETYL ALCOHOL",
+"CETYL DIMETHICONE",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"CITRUS AURANTIUM DULCIS (ORANGE) FRUIT EXTRACT",
+"CITRUS MEDICA LIMONUM (LEMON) FRUIT EXTRACT",
+"CYCLOPENTASILOXANE",
+"DIMETHICONE/VINYL DIMETHICONE CROSSPOLYMER",
+"EDTA",
+"FRAGRANCE",
+"GLYCERYL STEARATE",
+"ISOPROPYL MYRISTATE",
+"LAURETH-7",
+"LAVANDULA ANGUSTIFOLIA (LAVENDER) EXTRACT",
+"METHYL GLUCETH-20",
+"METHYLPARABEN",
+"NYLON-12",
+"PHENOXYETHANOL",
+"POLYACRYLAMIDE",
+"POTASSIUM HYDROXIDE",
+"PROPYLENE GLYCOL",
+"PROPYLPARABEN",
+"PYRUS MALUS (APPLE) FRUIT EXTRACT",
+"ROSMARINUS OFFICINALIS (ROSEMARY) LEAF EXTRACT",
+"SACCHARUM OFFICINARUM (SUGAR CANE) EXTRACT",
+"STEARETH-2",
+"STEARETH-21",
+"TOCOPHERYL ACETATE",
+"VP/EICOSENE COPOLYMER",
+"WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "61273611-ab7a-4216-aebe-2c8d89660281": {
 "effective_date": "20241015",
@@ -4701,6 +6827,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "616d35f6-63d2-3d26-e053-2991aa0a5b44": {
@@ -4722,7 +6849,47 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
+},
+"61fc5ec4-094c-f4c9-e053-2a91aa0aab29": {
+"effective_date": "20231212",
+"items": [
+"WATER (AQUA)",
+"CETYL ALCOHOL",
+"GLYCERIN",
+"GLYCERYL STEARATE SE",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"DIMETHICONE",
+"VP/HEXADECENE COPOLYMER",
+"CANANGA ODORATA FLOWER OIL",
+"CITRUS AURANTIUM DULCIS (ORANGE) FLOWER OIL",
+"ALOE BARBADENSIS LEAF JUICE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"TOCOPHERYL ACETATE",
+"ALLYL CAPROATE",
+"CETEARYL ALCOHOL",
+"CETEARYL OLIVATE",
+"CITRIC ACID",
+"ETHYL ACETATE",
+"GAMMA-NONALACTONE",
+"ISOAMYL ACETATE",
+"POLYSORBATE 60",
+"SODIUM CHLORIDE",
+"SODIUM STEAROYL GLUTAMATE",
+"SORBITAN OLIVATE",
+"VANILLIN",
+"XANTHAN GUM",
+"ALCOHOL",
+"BENZYL ALCOHOL",
+"POTASSIUM SORBATE",
+"SODIUM BENZOATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "4"
 },
 "62016e94-b5d2-4ba2-ab9c-b0b2c1ead650": {
 "effective_date": "20260126",
@@ -4749,7 +6916,67 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
+},
+"639da78b-4191-926b-e053-2a91aa0ab8bd": {
+"effective_date": "20210111",
+"items": [
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"DICAPRYLYL CARBONATE",
+"BEESWAX",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"PONGAMIA GLABRA (KARANJA) SEED OIL",
+"ALUMINA",
+"RUBUS IDAEUS (RASBERRY) SEED OIL",
+"HYDROLYZED JOJOBA ESTERS",
+"POLYHYDROXYSTEARIC ACID",
+"JOJOBA ESTERS",
+"WATER",
+"TRIHYROXYSTEARIN",
+"D-ALPHA TOCOPHEROL",
+"BETA-SITOSTEROL",
+"ISOSTEARIC ACID",
+"SQUALENE",
+"POLYGLYCERYL-3 POLYRICINOLEATE",
+"LECITHIN"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "4"
+},
+"639fd681-3b6e-1a55-e053-2991aa0ae7d3": {
+"effective_date": "20210412",
+"items": [
+"WATER (AQUA)",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"DIMETHICONE",
+"ETHYLHEXYL PALMITATE",
+"SORBITAN SESQUIOLEATE",
+"GLYCERIN",
+"GLYCERYL ISOSTEARATE",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"POLYGLYCERYL-3 RICINEOLEATE",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"ALOE BARBADENSIS LEAF JUICE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"TOCOPHERYL ACETATE",
+"ALCOHOL",
+"MAGNESIUM SULFATE",
+"POLYHYDROXYSTEARIC ACID",
+"SILICA",
+"SODIUM CHLORIDE",
+"BENZYL ALCOHOL",
+"PHENOXYETHANOL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "5"
 },
 "641e891e-32c5-4977-991a-2e3a45f343b0": {
 "effective_date": "20260107",
@@ -4770,6 +6997,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "644ec129-15c9-4ac1-8362-5b4c2e58ab9a": {
@@ -4804,6 +7032,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "64580be7-868c-40fb-b7b8-840b417b25d3": {
@@ -4834,6 +7063,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "64766ed9-bd47-498d-bf59-fb30a7bf7e89": {
@@ -4868,7 +7098,65 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
+},
+"6587b9ff-b49e-42f0-a4c7-c492db61623b": {
+"effective_date": "20140113",
+"items": [
+"HELIANTHUS ANNUUS (SUNFLOWER) OIL",
+"CERA ALBA (BEESWAX)",
+"TOCOPHEROL (SUNFLOWER VITAMIN E)",
+"CO2 EXTRACTS OF HIPPOPHAE RHAMNOIDES (SEABUCKTHORN) AND CALENDULA OFFICINALIS (CALENDULA)",
+"ANTHEMIS NOBILIS (CHAMOMILE) ESSENTIAL OIL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"65c230e4-a0f2-7c2b-e053-2a91aa0a0d3e": {
+"effective_date": "20210412",
+"items": [
+"WATER (AQUA)",
+"CETYL ALCOHOL",
+"GLYCERIN",
+"GLYCERYL STEARATE SE",
+"DIMETHICONE",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"VP/HEXADECENE COPOLYMER",
+"CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL",
+"GLYCINE SOJA (SOYBEAN) OIL",
+"ALOE BARBADENSIS LEAF JUICE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"GINKGO BILOBA LEAF EXTRACT",
+"LAVANDULA ANGUSTIFOLIA (LAVENDER) FLOWER EXTRACT",
+"PANAX GINSENG ROOT EXTRACT",
+"TOCOPHERYL ACETATE",
+"ALCOHOL",
+"A-TERPINYL ACETATE",
+"CETEARYL ALCOHOL",
+"CETEARYL OLIVATE",
+"CITRIC ACID",
+"DIMETHYLHYDROXY FURANONE",
+"NONANAL",
+"POLYSORBATE 60",
+"SODIUM CHLORIDE",
+"SODIUM STEAROYL GLUTAMATE",
+"SORBITAN OLIVATE",
+"VANILLIN",
+"XANTHAN GUM",
+"BENZYL ALCOHOL",
+"POTASSIUM SORBATE",
+"SODIUM BENZOATE",
+"LIMONENE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "6"
 },
 "65c9c131-2545-4d88-aa9a-85197b654d74": {
 "effective_date": "20240619",
@@ -4908,6 +7196,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "678b9575-3271-9c42-e053-2a91aa0a5c91": {
@@ -4941,7 +7230,49 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"69cadbc9-36ef-42bf-a46a-1aca2df813d7": {
+"effective_date": "20120503",
+"items": [
+"AQUA (WATER)",
+"GLYCERIN",
+"VP/HEXADECENE COPOLYMER",
+"SODIUM STEAROYL GLUTAMATE",
+"DIMETHICONE",
+"ALOE BARBADENSIS LEAF JUICE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"OLEA EUROPAEA (OLIVE) LEAF EXTRACT",
+"GINKGO BILOBA LEAF EXTRACT",
+"PANAX GINSENG ROOT EXTRACT",
+"CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL",
+"GLYCINE SOJA (SOYBEAN) OIL",
+"CETYL ALCOHOL",
+"CITRIC ACID",
+"GLYCERYL STEARATE SE",
+"POTASSIUM CETYL PHOSPHATE",
+"SODIUM CHLORIDE",
+"TOCOPHERYL ACETATE",
+"XANTHAN GUM",
+"ALCOHOL",
+"BENZYL ALCOHOL",
+"PHENOXYETHANOL",
+"POTASSIUM SORBATE",
+"SODIUM BENZOATE",
+"A-TERPINYL ACETATE",
+"DIMETHYLHYDROXY FURANONE",
+"NONANAL",
+"VANILLIN",
+"LIMONENE",
+"LINALOOL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "6a0f2536-6498-1dc7-e053-2a91aa0a57ab": {
 "effective_date": "20180417",
@@ -4967,6 +7298,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "6a455f1a-4285-44c3-820a-85a50d1bbc5b": {
@@ -4986,6 +7318,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "6a98b4f6-098b-4f3a-b6b0-ba93203a33a8": {
@@ -5009,6 +7342,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "6d0a8efb-4da9-4cb5-b1d3-c9dad05fa9a6": {
@@ -5040,6 +7374,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "6d373e47-f918-444a-b3bb-bce99b42d502": {
@@ -5075,6 +7410,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "6d7d6d4e-29c6-4c36-9884-5432f6ceca0e": {
@@ -5099,6 +7435,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "6d99a7c2-7c49-410f-9c36-fe83213c8a76": {
@@ -5129,6 +7466,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
 },
 "6efd81cd-8061-4444-9fa2-296bfd7972e9": {
@@ -5149,7 +7487,23 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
+},
+"6fcec9f9-bee0-4884-8c72-be273426f916": {
+"effective_date": "20241021",
+"items": [
+"ALCOHOL DENAT (58 )",
+"BUTYLOCTYL SALICYLATE",
+"ALKYL (C12-15) BENZOATE",
+"TRIMETHYLPENTANEDIOL/ADIPIC ACID/GLYCERIN CROSSPOLYMER",
+"FRAGRANCE",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "4"
 },
 "70b65f42-f22c-42dc-94da-d174daf2016a": {
 "effective_date": "20100126",
@@ -5182,6 +7536,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "723a1829-4b12-475d-be07-272c72f78a97": {
@@ -5206,6 +7561,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "723e8d14-f981-4aee-a3cf-62f0c97f5e12": {
@@ -5243,6 +7599,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "7244cdf7-2763-48a0-80f4-8b6d8feb0f88": {
@@ -5267,6 +7624,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
 },
 "72ac88cf-9f20-44ea-b3a2-12c922eec2b3": {
@@ -5283,6 +7641,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "72cf5079-80f6-4c87-a0d8-bb17a518f8c4": {
@@ -5313,6 +7672,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "7415511e-1ecf-4646-b64b-267fbf7d116b": {
@@ -5339,6 +7699,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "74475fba-4cdd-4b27-8ea4-646f4016580c": {
@@ -5357,6 +7718,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
 },
 "75763dc1-c762-42fc-a8fe-4d9d7bde0ce6": {
@@ -5381,6 +7743,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "764401f3-4219-6e9b-e053-2991aa0a3ed2": {
@@ -5418,6 +7781,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "9"
 },
 "76613a3d-f4a8-4961-b36a-d84b4e10dea0": {
@@ -5455,6 +7819,67 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "2"
+},
+"7a306c7b-e142-735c-e053-2991aa0a4e21": {
+"effective_date": "20181108",
+"items": [
+"COCOS NUCIFERA (COCONUT) OIL",
+"CAPRYLIC/CAPRIC TRIGLYCERIDE (FRACTIONATED COCONUT)",
+"CERA ALBA (BEESWAX)",
+"OLEA EUROPAEA (OLIVE) FRUIT OIL",
+"RUBUS IDAEUS (RED RASPBERRY) SEED OIL",
+"PUNICA GRANATUM (POMEGRANATE) SEED OIL",
+"SIMMONDSIA CHINENSIS (JOJOBA) OIL",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"TOCOPHEROL",
+"CALENDULA OFFICINALIS FLOWER (CALENDULA) FLOWER EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"7a311b40-be73-bad0-e053-2991aa0aef96": {
+"effective_date": "20181108",
+"items": [
+"COCOS NUCIFERA (COCONUT) OIL",
+"CAPRYLIC/CAPRIC TRIGLYCERIDE (FRACTIONATED COCONUT)",
+"CERA ALBA (BEESWAX)",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"OLEA EUROPAEA (OLIVE) FRUIT OIL",
+"SIMMONDSIA CHINENSIS (JOJOBA) OIL",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"TOCOPHEROL",
+"VACCINIUM MACROCARPON (CRANBERRY) SEED OIL",
+"ALOE BARBADENSIS LEAF JUICE (ALOE VERA)",
+"CALENDULA OFFICINALIS (CALENDULA) FLOWER EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"7a42707a-9a8d-6f85-e053-2a91aa0ac8b9": {
+"effective_date": "20220104",
+"items": [
+"COCOS NUCIFERA (COCONUT) OIL",
+"COCOS NUCIFERA (FRACTIONATED COCONUT) OIL",
+"CERA ALBA (BEESWAX)",
+"OLEA EUROPAEA (OLIVE) FRUIT OIL",
+"RUBUS IDAEUS (RED RASPBERRY) SEED OIL",
+"SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"ORYZA SATIVA (RICE) BRAN OIL",
+"TOCOPHEROL",
+"AVENA SATIVA (OAT) KERNEL FLOUR",
+"ALOE BARBADENSIS (ALOE VERA) LEAF JUICE",
+"CALENDULA OFFICINALIS (CALENDULA) FLOWER EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "2"
 },
 "7c2cc232-61fb-431e-8aff-2369f6d92930": {
@@ -5472,7 +7897,26 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
+},
+"7c976082-3265-4c0b-9985-277d27988895": {
+"effective_date": "20260518",
+"items": [
+"ALCOHOL",
+"ALOE BARBADENSIS LEAF EXTRACT",
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"BUTYLOCTYL SALICYLATE",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"DIETHYLHEXYL SYRINGYLIDENEMALONATE",
+"GLYCERIN",
+"MINERAL OIL",
+"TOCOPHERYL ACETATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "7cd9c971-5556-42dc-af7b-3a88221b8c94": {
 "effective_date": "20240724",
@@ -5502,6 +7946,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "7d10e92a-1f9c-4ba9-8c56-7716eb53999b": {
@@ -5534,6 +7979,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "7ec4954f-7d60-405b-8bff-cb602fc44a4e": {
@@ -5723,6 +8169,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
 },
 "80a3671d-60e8-22fe-e053-2991aa0a094b": {
@@ -5739,7 +8186,29 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"81c929b7-f925-4498-889d-3b26ff2e05bf": {
+"effective_date": "20140324",
+"items": [
+"ACACIA FARNESIANA FLOWER EXTRACT",
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"ALCOHOL DENAT (72 45 W/W)",
+"CAMELLIA OLEIFERA LEAF EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"DIMETHYL CAPRAMIDE",
+"FRAGRANCE",
+"GLYCERIN",
+"ISOPROPYL MYRISTATE",
+"LAVANDULA ANGUSTIFOLIA (LAVENDER) EXTRACT",
+"ROSMARINUS OFFICINALIS (ROSEMARY) LEAF EXTRACT",
+"POLYESTER-8"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "81cb6b2e-1ca3-4a83-a8df-9bfee61e79af": {
 "effective_date": "20241016",
@@ -5766,6 +8235,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
 },
 "820317d2-1803-4949-bddf-09521a5d1750": {
@@ -5791,6 +8261,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
 },
 "82771f22-0197-40ba-97d2-2386152790ed": {
@@ -5817,6 +8288,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "83186695-f093-45d0-e053-2a91aa0a827d": {
@@ -5863,6 +8335,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "83ca8297-bf11-4ee6-a918-d007fbc74b00": {
@@ -5888,6 +8361,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "85524d39-732f-4123-adf5-83efb2bfd928": {
@@ -5922,7 +8396,46 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"857ef2e1-31da-7647-e053-2991aa0a94f5": {
+"effective_date": "20231214",
+"items": [
+"WATER (AQUA)",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"BUTYLOCTYL SALICYLATE",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"C9-12 ALKANE",
+"POLYHYDROXYSTEARIC ACID",
+"GLYCERIN",
+"CETEARYL ALCOHOL",
+"METHYL DIHYDROABIETATE",
+"HYDROLYZED JOJOBA ESTERS",
+"GLYCERYL STEARATE",
+"SORBITAN STEARATE",
+"GLYCERYL CAPRYLATE",
+"ETHYLHEXYLGLYCERIN",
+"COCO-CAPRYLATE/CAPRATE",
+"SILICA",
+"STEARIC ACID",
+"JOJOBA ESTERS",
+"HAEMATOCOCCUS PLUVIALIS EXTRACT",
+"MYRCIARIA DUBIA FRUIT EXTRACT",
+"CAESALPINIA SPINOSA GUM",
+"AVENA SATIVA (OAT) KERNEL FLOUR",
+"CAPRYLHYDROXAMIC ACID",
+"SORBITYL LAURATE",
+"SODIUM PHYTATE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"SEA WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "6"
 },
 "857f7b28-3161-f66b-e053-2991aa0a391b": {
 "effective_date": "20241216",
@@ -5947,6 +8460,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "859461ea-582e-8185-e053-2991aa0a954a": {
@@ -5977,6 +8491,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "86249f33-e635-4455-a039-3a25aa3478df": {
@@ -5996,7 +8511,35 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
+},
+"88706da6-b1d4-4256-9852-7d39349d56d7": {
+"effective_date": "20120321",
+"items": [
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"ACRYLATES COPOLYMER",
+"CAPRYLYL GLYCOL",
+"CARBOMER",
+"CHOLECALCIFEROL",
+"DIISOPROPYL ADIPATE",
+"DIMETHYL CAPRAMIDE",
+"DISODIUM EDTA",
+"FRAGRANCE",
+"HYDROXYPROPYL METHYLCELLULOSE",
+"MACROCYSTIS PYRIFERA EXTRACT",
+"PHENOXYETHANOL",
+"POLYESTER-8",
+"PROPYLENE GLYCOL",
+"SORBITAN OLEATE",
+"TOCOPHERYL ACETATE",
+"TRIETHANOLAMINE",
+"WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "89d05291-4ee5-48c6-be1d-7ac30f323bcb": {
 "effective_date": "20100325",
@@ -6026,6 +8569,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "8a143645-3b52-4797-9b26-dc9dd63be38f": {
@@ -6061,6 +8605,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "8a2fd46c-5767-4621-8e69-dd291f9fe5b1": {
@@ -6098,6 +8643,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
 },
 "8b5a147d-4126-4fc5-a73b-fd5a19ccfd3d": {
@@ -6123,6 +8669,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
 },
 "8cd68b09-2578-4519-b00e-e83e0e440815": {
@@ -6161,6 +8708,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "8"
 },
 "8e295d3d-2748-4f93-9425-de56b5d066d2": {
@@ -6193,6 +8741,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "8ef8c65a-902e-49eb-b81f-2b2dc0878d31": {
@@ -6226,6 +8775,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "90ae5bb0-d199-485e-9d36-c3db28289357": {
@@ -6243,6 +8793,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "94a11f26-2de6-446f-8122-d82b2d64f5ee": {
@@ -6267,6 +8818,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "9641b71a-81f2-4157-801b-162188392a91": {
@@ -6297,6 +8849,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "9948f5b8-43bd-1c99-e053-2a95a90a6121": {
@@ -6320,7 +8873,57 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "8"
+},
+"9974b40d-2596-2a0e-e053-2a95a90a9246": {
+"effective_date": "20210205",
+"items": [
+"ALOE BARBADENSIS LEAF JUICE",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"WATER (AQUA)",
+"COCONUT ALKANES",
+"MICA",
+"GLYCERIN",
+"POLYGLYCERYL-2 SESQUIOLEATE",
+"BRASSICA ALCOHOL",
+"POLYGLYCERYL-3 RICINOLEATE",
+"GLYCERYL ISOSTEARATE",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL",
+"COPERNICIA CERIFERA (CARNAUBA) WAX",
+"JUNIPERUS VIRGINIANA OIL",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"TOCOPHERYL ACETATE",
+"ANISALDEHYDE",
+"BENZYL ACETATE",
+"BIOSACCHARIDE GUM-1",
+"C10-18 TRIGLYCERIDES",
+"CETEARYL OLIVATE",
+"COCO-CAPRYLATE/CAPRATE",
+"GLYCERYL CAPRYLATE",
+"POLYHYDROXYSTEARIC ACID",
+"POTASSIUM HYDROXIDE",
+"QUARTZ",
+"SODIUM ANISATE",
+"SODIUM CHLORIDE",
+"SODIUM LEVULINATE",
+"SORBITAN OLIVATE",
+"TRIETHYL CITRATE",
+"VANILLIN",
+"ALCOHOL",
+"ETHYLHEXYLGLYCERIN",
+"PHENOXYETHANOL",
+"CITRONELLOL",
+"GERANIOL",
+"LIMONENE",
+"LINALOOL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "9983563c-1e63-0748-e053-2a95a90a971e": {
 "effective_date": "20260112",
@@ -6343,6 +8946,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
 },
 "9a81efaf-9765-4991-81a4-706d204545b3": {
@@ -6370,6 +8974,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "9a8a932e-c3dc-44ae-91e6-b9e3f5b21ee3": {
@@ -6402,6 +9007,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "9af87cf6-367a-45a6-8080-944713bbd3d6": {
@@ -6426,6 +9032,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "9b43c5d5-c279-4ae3-843e-1451f7324216": {
@@ -6453,6 +9060,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "9ba94ecc-17c2-9e21-e053-2a95a90a9fac": {
@@ -6469,6 +9077,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "9c3cf35b-4bde-46e3-8abd-5f4d1ad6e486": {
@@ -6502,6 +9111,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "9d237fb7-4f5f-521d-e053-2a95a90a9734": {
@@ -6538,7 +9148,66 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
+},
+"9dda43f4-9e36-3570-e053-2995a90a2c99": {
+"effective_date": "20210219",
+"items": [
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"ALCOHOL DENATURED",
+"ALOE BARBADENSIS LEAF JUICE",
+"ASCORBIC ACID",
+"BUTYLENE GLYCOL",
+"CHOLECALCIFEROL",
+"FRAGRANCE",
+"NEOPENTYL GLYCOL DIHEPTANOATE",
+"OCTYLDODECANOL",
+"PEG-16 MACADAMIA GLYCERIDES",
+"PROPYLENE GLYCOL",
+"PYRIDOXINE HCL",
+"RETINYL PALMITATE",
+"SILICA",
+"SIMMONDSIA CHINENSIS (JOJOBA) EXTRACT",
+"SODIUM PROPOXYHYDROXYPROPYL THIOSULFATE SILICA",
+"TOCOPHERYL ACETATE",
+"ZEA MAYS (CORN) OIL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"9e507750-0950-5c2a-e053-2995a90ac4a4": {
+"effective_date": "20210219",
+"items": [
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"ALCOHOL DENATURED",
+"ALOE BARBADENSIS LEAF JUICE",
+"BUTYLENE GLYCOL",
+"NEOPENTYL GLYCOL DIHEPTANOATE",
+"SIMMONDSIA CHINENSIS (JOJOBA) EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"9e524e0f-7005-d1a0-e053-2995a90ae34c": {
+"effective_date": "20210219",
+"items": [
+"ALOE BARBADENSIS LEAF EXTRACT",
+"COCOS NUCIFERA (COCONUT) OIL",
+"DIETHYLHEXYL 2 6-NAPHTHALATE",
+"MINERAL OIL (PARAFFINUM LIQUIDUM)",
+"POLYESTER-8",
+"SD ALCOHOL 40-B (ALCOHOL DENAT )",
+"VA/BUTYL MALEATE/ISOBORNYL ACRYLATE COPOLYMER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "9ec56c68-6fea-444b-aeed-0b5d60c42e75": {
 "effective_date": "20250605",
@@ -6564,6 +9233,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "9f08c40e-b5c6-4ca4-8c24-0a0f98787217": {
@@ -6597,7 +9267,156 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
+},
+"9f527715-dd39-4580-bbd2-a0397be36cd3": {
+"effective_date": "20140113",
+"items": [
+"HELIANTHUS ANNUUS (SUNFLOWER) OIL",
+"CERA ALBA (BEESWAX)",
+"ESSENTIAL OILS OF CITRUS AURANTIUM DULCIS (SWEET ORANGE) AND CITRUS TANGERINA (TANGERINE)",
+"TOCOPHEROL (SUNFLOWER VITAMIN E)",
+"CO2 EXTRACTS OF HIPPOPHAE RHAMNOIDES (SEABUCKTHORN) AND VANILLA PLANIFOLIA (VANILLA)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"9f5a3843-bcc4-b894-e053-2a95a90a54a4": {
+"effective_date": "20200224",
+"items": [
+"ALOE VERA GEL",
+"ALKYL (C12-15) BENZOATE",
+"AQUA AND GLYCERIN AND SODIUM LEVULINATE AND SODIUM ANISATE",
+"FRAGRANCE",
+"ACRYLATES/C10-30 ALKYL ACRYLATES CROSSPOLYMER",
+"AMINOMETHYL PROPANOL",
+"CARBOMER",
+"TITANIUM DIOXIDE",
+"HYDROXYPROPYL METHYLCELLULOSE",
+"TETRASODIUM EDTA",
+"EVENING PRIMROSE OIL",
+"AVOCADO OIL",
+"JOJOBA OIL",
+"GRAPE SEED OIL",
+"BLUE CHAMOMILE OIL",
+"CALENDULA OIL",
+"HYDROLYZED WHEAT PROTEIN",
+"RETINYL PALMITATE",
+"ASCORBIC ACID",
+"TOCOPHEROL ACETATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"9f5b2d24-3b96-8c3f-e053-2995a90ad723": {
+"effective_date": "20200224",
+"items": [
+"ALOE VERA GEL",
+"ALKYL (C12-15) BENZOATE",
+"AQUA AND GLYCERIN AND SODIUM LEVULINATE AND SODIUM ANISATE",
+"FRAGRANCE",
+"ACRYLATES/C10-30 ALKYL ACRYLATES CROSSPOLYMER",
+"AMINOMETHYL PROPANOL",
+"CARBOMER",
+"TITANIUM DIOXIDE",
+"HYDROXYPROPYL METHYLCELLULOSE",
+"TETRASODIUM EDTA",
+"EVENING PRIMROSE OIL",
+"AVOCADO OIL",
+"JOJOBA OIL",
+"GRAPE SEED OIL",
+"BLUE CHAMOMILE OIL",
+"CALENDULA OIL",
+"HYDROLYZED WHEAT PROTEIN",
+"RETINYL PALMITATE",
+"ASCORBIC ACID",
+"TOCOPHEROL ACETATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"a0212bed-a7d4-d1db-e053-2995a90a32e7": {
+"effective_date": "20210219",
+"items": [
+"ACRYLATES COPOLYMER",
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"ALOE BARBADENSIS LEAF JUICE",
+"ASCORBIC ACID",
+"BUTYLENE GLYCOL",
+"CARBOMER",
+"CHOLECALCIFEROL",
+"DIMETHICONE",
+"DISODIUM EDTA",
+"ETHYLHEXYL PALMITATE",
+"ETHYLHEXYLGLYCERIN",
+"GLYCERIN",
+"HYDROXYPROPYL METHYLCELLULOSE",
+"NEOPENTYL GLYCOL DIHEPTANOATE",
+"OCTYLDODECANOL",
+"PEG-16 MACADAMIA GLYCERIDES",
+"PHENOXYETHANOL",
+"PROPYLENE GLYCOL",
+"PYRIDOXINE HCL",
+"RETINYL PALMITATE",
+"SILICA",
+"SIMMONDSIA CHINENSIS (JOJOBA) EXTRACT",
+"SODIUM PROPOXYHYDROXYPROPYL THIOSULFATE SILICA",
+"SORBITAN MONOOLEATE",
+"STYRENE/ACRYLATES COPOLYMER",
+"TOCOPHERYL ACETATE",
+"TRIETHANOLAMINE",
+"WATER",
+"ZEA MAYS (CORN) OIL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
+},
+"a0220f60-e094-76de-e053-2a95a90ad09d": {
+"effective_date": "20210219",
+"items": [
+"ACRYLATES COPOLYMER",
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"ALOE BARBADENSIS LEAF JUICE",
+"ASCORBIC ACID",
+"BUTYLENE GLYCOL",
+"CARBOMER",
+"CHOLECALCIFEROL",
+"DIMETHICONE",
+"DISODIUM EDTA",
+"ETHYLHEXYL PALMITATE",
+"ETHYLHEXYLGLYCERIN",
+"GLYCERIN",
+"HYDROXYPROPYL METHYLCELLULOSE",
+"NEOPENTYL GLYCOL DIHEPTANOATE",
+"OCTYLDODECANOL",
+"PEG-16 MACADAMIA GLYCERIDES",
+"PHENOXYETHANOL",
+"PROPYLENE GLYCOL",
+"PYRIDOXINE HCL",
+"RETINYL PALMITATE",
+"SILICA",
+"SIMMONDSIA CHINENSIS (JOJOBA) EXTRACT",
+"SODIUM PROPOXYHYDROXYPROPYL THIOSULFATE SILICA",
+"SORBITAN MONOOLEATE",
+"STYRENE/ACRYLATES COPOLYMER",
+"TOCOPHERYL ACETATE",
+"TRIETHANOLAMINE",
+"WATER",
+"ZEA MAYS (CORN) OIL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "a1b1cdeb-e5fe-4ba1-8bb0-3c7a97dd93fe": {
 "effective_date": "20250112",
@@ -6613,6 +9432,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "a2ac325f-6760-41fa-a635-11852fd70209": {
@@ -6643,6 +9463,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "a4364c8d-8b74-130e-e053-2995a90ad1c1": {
@@ -6680,6 +9501,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "a4b9d7c0-dc09-4f0e-8b65-90ba180552bf": {
@@ -6714,6 +9536,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "a4d73025-9c5b-7455-e053-2995a90ab746": {
@@ -6742,6 +9565,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "a4e6936d-a76c-e8fd-e053-2995a90a965f": {
@@ -6761,7 +9585,43 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
+},
+"a5bed94b-2f62-476c-a4b1-aa7c7f093723": {
+"effective_date": "20120731",
+"items": [
+"AQUA (WATER)",
+"CETEARYL ALCOHOL",
+"GLYCERIN",
+"CETYL ALCOHOL",
+"DIMETHICONE",
+"VP/HEXADECENE COPOLYMER",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"GLYCERYL STEARATE SE",
+"HYDROGENATED PALM KERNEL OIL",
+"ALOE BARBADENSIS LEAF JUICE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"CETEARYL OLIVATE",
+"POLYSORBATE 60",
+"SILICA",
+"SODIUM STEAROYL GLUTAMATE",
+"SORBITAN OLIVATE",
+"TOCOPHERYL ACETATE",
+"XANTHAN GUM",
+"ALCOHOL",
+"BENZYL ALCOHOL",
+"ETHYLHEXYLGLYCERIN",
+"PHENOXYETHANOL",
+"POTASSIUM SORBATE",
+"SODIUM BENZOATE",
+"FRAGRANCE (PARFUM)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "a5f27b24-e9ac-43f5-ad66-3f9e42d8cf70": {
 "effective_date": "20121120",
@@ -6785,6 +9645,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "a6044f0f-eb86-684d-e053-2995a90a0921": {
@@ -6815,6 +9676,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "a6a381da-6e34-bffe-e053-2a95a90a46f2": {
@@ -6832,6 +9694,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "a6e5f808-65c7-4810-a15c-413111216dae": {
@@ -6849,6 +9712,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "a9f4fd45-3bbb-14a7-e053-2995a90ab28f": {
@@ -6871,6 +9735,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "aa977e07-83a9-3e6e-e053-2a95a90a25a9": {
@@ -6905,6 +9770,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "abcf9d29-c3eb-4326-b140-bcebbbad324e": {
@@ -6938,7 +9804,41 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
+},
+"abf207bc-ca6c-47c4-8e93-04d5be3e47d1": {
+"effective_date": "20140718",
+"items": [
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"ALCOHOL DENAT (46 98 W/W)",
+"BIS-HYDROXYETHOXYPROPYL DIMETHICONE",
+"CHOLECALCIFEROL (VITAMIN D3)",
+"DI-PPG2-MYRETH-10 ADIPATE",
+"DIMETHYL CAPRAMIDE",
+"GLYCERIN",
+"POLYESTER-8"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"ac29da76-f638-4947-8d25-055f1f442dbe": {
+"effective_date": "20120518",
+"items": [
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"CHOLECALCIFEROL",
+"DENATURED ALCOHOL",
+"DIMETHYL CAPRAMIDE",
+"FRAGRANCE",
+"GLYCERIN",
+"POLYESTER-8"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "ac66ad82-a01f-4e44-92a7-b5ab5bd30922": {
 "effective_date": "20231111",
@@ -6972,7 +9872,38 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"ac77cd6d-de01-44eb-8f5d-cf172ec1b53b": {
+"effective_date": "20100728",
+"items": [
+"AQUA (WATER)",
+"CETYL ALCOHOL",
+"GLYCERIN",
+"CETEARYL OLIVATE",
+"GLYCERYL STEARATE SE",
+"SORBITAN OLIVATE",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"DIMETHICONE",
+"VP/HEXADECENE COPOLYMER",
+"ALOE BARBADENSIS LEAF JUICE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"SODIUM STEAROYL GLUTAMATE",
+"TOCOPHERYL ACETATE",
+"XANTHAN GUM",
+"BENZYL ALCOHOL",
+"ETHYLHEXYLGLYCERIN",
+"PHENOXYETHANOL",
+"POTASSIUM SORBATE",
+"SODIUM BENZOATE",
+"FRAGRANCE (PARFUM)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "acb1e9cd-3c98-4ff8-9ea0-94b1288d0fd3": {
 "effective_date": "20200117",
@@ -6997,6 +9928,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "af6b7f9f-9ca5-4c59-be78-d68286451ac3": {
@@ -7013,6 +9945,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "af8cce4d-23a2-47e4-8b5a-8c49e458d01b": {
@@ -7036,6 +9969,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "b00bc346-ffcf-4a23-b46b-69c84988e004": {
@@ -7070,6 +10004,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "b02ac130-d0ed-4850-8aa3-4660eca88150": {
@@ -7104,6 +10039,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "b0a4ac6b-8f88-8a9a-e053-2995a90ab10e": {
@@ -7143,7 +10079,42 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
+},
+"b0a513a5-18d4-5fca-e053-2a95a90aef93": {
+"effective_date": "20241212",
+"items": [
+"BENTONITE",
+"BISABOLOL",
+"BUTYLOCTYL SALICYLATE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CAPRYLHYDROXAMIC ACID",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"CAPRYLYL GLYCOL",
+"CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL",
+"CELLULOSE GUM",
+"CETEARYL ALCOHOL",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"COCO-GLUCOSIDE",
+"GLYCERIN",
+"HELIANTHUS ANNUUS (SUNFLOWER) OIL",
+"JOJOBA ESTERS",
+"METHYL DIHYDROABIETATE",
+"MICROCRYSTALLINE CELLULOSE",
+"NASTURTIUM OFFICINALE FLOWER/LEAF EXTRACT",
+"POLYHYDROXYSTEARIC ACID",
+"PROPANEDIOL",
+"PUERARIA LOBATA ROOT EXTRACT",
+"SPIRAEA ULMARIA FLOWER EXTRACT",
+"TETRADECANE",
+"TOCOPHEROL",
+"WATER (AQUA)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "5"
 },
 "b131664d-1ad2-0a2f-e053-2995a90acbda": {
 "effective_date": "20241212",
@@ -7169,6 +10140,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
 },
 "b1ac6959-577a-44e2-97b2-af37c2073c53": {
@@ -7191,6 +10163,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "b2083cbd-ef19-4edc-9d7d-eca3452ee0ee": {
@@ -7222,7 +10195,43 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
+},
+"b292d1a9-7ff8-0faf-e053-2995a90ae342": {
+"effective_date": "20251114",
+"items": [
+"1 2-HEXANEDIOL",
+"ALLANTOIN",
+"BUTYLOCTYL SALICYLATE",
+"ALKYL (C12-15) BENZOATE",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CAPRYLYL GLYCOL",
+"DIMETHICONOL/PROPYLSILSESQUIOXANE/SILICATE CROSSPOLYMER",
+"GLYCERIN",
+"GLYCERYL BEHENATE",
+"GLYCERYL DIBEHENATE",
+"GLYCERYL STEARATE",
+"ISODECYL SALICYLATE",
+"ISOPROPYL ISOSTEARATE",
+"LECITHIN",
+"NEOPENTYL GLYCOL DIHEPTANOATE",
+"OLEA EUROPAEA (OLIVE) OIL",
+"PERSEA GRATISSIMA (AVOCADO) OIL",
+"POLYESTER-7",
+"POLYGLYCERYL-3 POLYRICINOLEATE",
+"PROPANEDIOL",
+"SILICA SILYLATE",
+"SODIUM CHLORIDE",
+"SQUALANE",
+"TRIBEHENIN",
+"TRIDECYL SALICYLATE",
+"WATER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "6"
 },
 "b3190e6c-5eee-4ac8-e053-2a95a90afa29": {
 "effective_date": "20220127",
@@ -7249,6 +10258,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
 },
 "b3199cf4-eb90-68c2-e053-2a95a90a8a29": {
@@ -7276,6 +10286,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
 },
 "b3515c77-a408-40d7-8254-fe3e6a3e4fac": {
@@ -7306,6 +10317,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "b3d2da09-d9c9-4c27-82fe-a434ece2f099": {
@@ -7325,7 +10337,40 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
+},
+"b6d957f8-46f4-40ac-ab19-04718a719057": {
+"effective_date": "20100701",
+"items": [
+"AQUA (WATER)",
+"ALOE BARBADENSIS LEAF JUICE",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"DIMETHICONE",
+"ETHYLHEXYL PALMITATE",
+"SORBITAN SESQUIOLEATE",
+"GLYCERIN",
+"GLYCERYL ISOSTEARATE",
+"BUTYROSPERMUM PARKII (SHEA BUTTER)",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+"POLYGLYCERYL-3 POLYRICINEOLATE",
+"VITIS VINIFERA (GRAPE) SEED OIL",
+"CALENDULA OFFICINALIS FLOWER EXTRACT",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"MAGNESIUM SULFATE",
+"SILICA",
+"SODIUM CHLORIDE",
+"TOCOPHERYL ACETATE",
+"BENZYL ALCOHOL",
+"PHENOXYETHANOL",
+"POLYHYDROXYSTEARIC ACID"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "b72caf9b-46df-f30c-e053-2995a90a9b6d": {
 "effective_date": "20241205",
@@ -7353,6 +10398,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "b82b6d0d-616d-f041-e053-2995a90ae6a3": {
@@ -7370,6 +10416,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
 },
 "ba4ae906-48c0-8384-e053-2995a90afb91": {
@@ -7411,6 +10458,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "8"
 },
 "ba98d6c9-89ca-4308-e053-2995a90a08e4": {
@@ -7435,6 +10483,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "bba219a4-de83-76fd-e053-2995a90a2d69": {
@@ -7460,6 +10509,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "bbd6710f-a665-437e-b86b-437f732984d1": {
@@ -7491,6 +10541,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "10"
 },
 "bbe4eb9d-4672-46d1-b6e5-4b6d1d737ed9": {
@@ -7528,6 +10579,44 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "2"
+},
+"bc6e8385-c843-a57a-e053-2995a90a6b21": {
+"effective_date": "20210412",
+"items": [
+"WATER (AQUA)",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"ISOAMYL LAURATE",
+"COCONUT ALKANES",
+"POLYGLYCERYL-2 SESQUIOLEATE",
+"GLYCERIN",
+"POLYGLYCERYL-3 RICINOLEATE",
+"ALOE BARBADENSIS LEAF JUICE",
+"CRAMBE ABYSSINICA SEED OIL",
+"POLYHYDROXYSTEARIC ACID",
+"ALUMINA",
+"STEARIC ACID",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"ECHINACEA PURPUREA EXTRACT",
+"GINKGO BILOBA LEAF EXTRACT",
+"POLYGONUM AVICULARE EXTRACT",
+"TOCOPHERYL ACETATE",
+"CITRIC ACID",
+"COCO-CAPRYLATE/CAPRATE",
+"MAGNESIUM SULFATE",
+"SODIUM CHLORIDE",
+"SORBITAN SESQUIOLEATE",
+"ALCOHOL",
+"BENZYL ALCOHOL",
+"PHENOXYETHANOL",
+"POTASSIUM SORBATE",
+"SODIUM BENZOATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "2"
 },
 "bcebfcd8-e4f0-482e-abb7-4e7ca3cfa0b9": {
@@ -7562,6 +10651,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "bfd4e49b-b279-4646-b457-c6d359ad10aa": {
@@ -7583,6 +10673,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
 },
 "bfefb36b-0858-6e4d-e053-2a95a90a01ce": {
@@ -7614,6 +10705,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "9"
 },
 "c03315df-e881-463e-b10f-e521607c1f4c": {
@@ -7654,7 +10746,24 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
+},
+"c05388dc-4282-ee79-e053-2a95a90a376a": {
+"effective_date": "20251231",
+"items": [
+"SD ALCOHOL 40-B (42 8 V/V)",
+"ISOBUTANE",
+"NEOPENTYL GLYCOL DIHEPTANOATE",
+"POLYESTER-27",
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"DIMETHICONE",
+"FRAGRANCE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "5"
 },
 "c054fd86-b0d9-24fc-e053-2a95a90aea2c": {
 "effective_date": "20251231",
@@ -7676,6 +10785,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
 },
 "c0552256-d8cb-5473-e053-2995a90ad0d5": {
@@ -7699,6 +10809,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
 },
 "c068a6e7-260f-0766-e053-2995a90a422f": {
@@ -7718,6 +10829,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "c17dec08-5749-424d-8139-1fc0a10515de": {
@@ -7741,6 +10853,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "c2461e22-1518-4f9e-ad8c-951784ef8b5f": {
@@ -7763,6 +10876,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "c3bacceb-63a8-098c-e053-2995a90acd64": {
@@ -7795,6 +10909,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
 },
 "c3e3db90-8244-4c26-a1da-5f52b867c2d8": {
@@ -7822,6 +10937,86 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "3"
+},
+"c599ba27-2cd7-4e93-b5bd-9ccfb6d157a2": {
+"effective_date": "20171222",
+"items": [
+"ALUMINUM HYDROXIDE",
+"BEESWAX",
+"BHT",
+"BUTYLOCTYL SALICYLATE",
+"ALKYL (C12-15) BENZOATE",
+"CETYL ALCOHOL",
+"DIMETHICONE",
+"EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"ISOSTEARIC ACID",
+"NEOPENTYL GLYCOL DIETHYLHEXANOATE",
+"OZOKERITE",
+"PARAFFIN",
+"POLYETHYLENE",
+"STEARIC ACID",
+"TRIETHOXYCAPRYLYLSILANE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
+},
+"c5d52f13-a649-9579-e053-2a95a90a062c": {
+"effective_date": "20260127",
+"items": [
+"WATER",
+"COCO-CAPRYLATE/CAPRATE",
+"DICAPRYLYL CARBONATE",
+"OLUS OIL",
+"GLYCERIN",
+"ALOE BARBADENSIS LEAF JUICE",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"PANTHENOL (VITAMIN B5)",
+"GLYCERYL CITRATE/LACTATE/LINOLEATE/OLEATE",
+"PROPOLIS EXTRACT",
+"TOCOPHERYL ACETATE (VITAMIN E)",
+"ARGANIA SPINOSA FRUIT EXTRACT",
+"SODIUM STEAROYL GLUTAMATE",
+"MAGNESIUM SULFATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "9"
+},
+"c70b480d-4475-4476-973e-38546dc1c755": {
+"effective_date": "20100319",
+"items": [
+"WATER",
+"ISOHEXADECANE",
+"CETYL DIMETHICONE COPOLYOL",
+"CAPRYLIC/CAPRIC TRIGLYCERIDES",
+"STEARALKONIUM HECTORITE",
+"PROPYLENE CARBONATE",
+"PEG-8",
+"CAPRYLYL GLYCOL",
+"SODIUM CHLORIDE",
+"PHENOXYETHANOL",
+"METHYLPARABEN",
+"BUTYLPARABEN",
+"ETHYLPARABEN",
+"PROPYLPARABEN",
+"ISOBUTYLPARABEN",
+"GLYCERIN",
+"SODIUM CITRATE",
+"DISODIUM EDTA",
+"ALOE BARBADENSIS LEAF JUICE",
+"TOCOPHERYL ACETATE",
+"RETINYL PALMITATE",
+"SODIUM ASCORBYL PHOSPHATE",
+"C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "3"
 },
 "c7563a84-f622-dad6-e053-2a95a90aa8d9": {
@@ -7841,6 +11036,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "c75f3010-d399-492b-910e-6552ba75bc1b": {
@@ -7874,6 +11070,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "c76746a5-e6d6-b146-e053-2995a90a1191": {
@@ -7893,7 +11090,21 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
+},
+"c77dc89f-e2f5-48c7-ae5a-f0c361d02854": {
+"effective_date": "20140304",
+"items": [
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"GLYCERIN",
+"FRAGRANCE",
+"SD ALCOHOL 40"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "c780d5cf-8388-42e0-e053-2a95a90a7c04": {
 "effective_date": "20251117",
@@ -7911,6 +11122,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "c7938795-685b-4b7c-84ce-0ea66b64576e": {
@@ -7935,6 +11147,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "c79472ea-a367-1328-e053-2a95a90a22d5": {
@@ -7957,6 +11170,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "c7ba72c2-ea23-0bb9-e053-2a95a90a1d90": {
@@ -7985,6 +11199,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "c7bdd7a3-2e88-d881-e053-2a95a90a2ef9": {
@@ -8004,6 +11219,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "c8c251e1-ab0b-edba-e053-2995a90abfd4": {
@@ -8030,6 +11246,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "c914c4cd-99a2-4d9f-8f04-8af2ace3c345": {
@@ -8060,6 +11277,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "8"
 },
 "ca29aefd-9662-4d2e-b9ac-fa4b67f7b463": {
@@ -8085,6 +11303,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "ca9df950-d581-4bad-9431-aff5f00bdc98": {
@@ -8104,6 +11323,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "caf72244-e9ec-4a53-b7ff-232834a12a87": {
@@ -8125,6 +11345,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "cb7ba9ca-6a02-471a-8093-442dc56d773b": {
@@ -8149,7 +11370,24 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
+},
+"cbf9a785-f218-76fb-e053-2995a90a8e03": {
+"effective_date": "20251231",
+"items": [
+"SD ALCOHOL 40-B (42 8 V/V)",
+"ISOBUTANE",
+"NEOPENTYL GLYCOL DIHEPTANOATE",
+"POLYESTER-27",
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"DIMETHICONE",
+"FRAGRANCE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "6"
 },
 "ccbbe9d1-bf67-4507-bd8e-d865ac592df7": {
 "effective_date": "20191205",
@@ -8178,7 +11416,24 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
+},
+"ccd1b1fa-d44e-6b0e-e053-2995a90a157b": {
+"effective_date": "20210925",
+"items": [
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"CERA ALBA (BEESWAX)",
+"SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+"TOCOPHEROL (SUNFLOWER VITAMIN E)",
+"CALENDULA OFFICINALIS (CALENDULA) FLOWER EXTRACT",
+"ANTHEMIS NOBILIS (ROMAN CHAMOMILE) FLOWER OIL",
+"HIPPOPHAE RHAMNOIDES (SEABUCKTHORN) FRUIT EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "2"
 },
 "cce03183-de08-4db3-a292-127726df8182": {
 "effective_date": "20100328",
@@ -8205,6 +11460,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "cd56a2d6-ec92-4670-975b-3da28037773c": {
@@ -8231,6 +11487,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "cdb19c82-9845-eabc-e053-2a95a90a31f7": {
@@ -8258,6 +11515,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "ce8adbfa-07af-4984-8e3b-7b5b93dc2886": {
@@ -8282,6 +11540,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "ce9a2139-c5c2-43e2-bd51-1f14ace594d9": {
@@ -8316,6 +11575,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "cfc3b202-6511-450a-b3c1-2d8e8ebc070d": {
@@ -8335,6 +11595,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "d1038442-ec86-07e3-e053-2995a90ad6ab": {
@@ -8351,6 +11612,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "d15e1807-74ed-4427-b5d1-a990a6d75615": {
@@ -8377,6 +11639,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "d2fadd51-6bd8-ae70-e053-2995a90a6213": {
@@ -8414,6 +11677,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "d3bdda65-bcb4-42d9-84af-d14c7f4421bd": {
@@ -8453,6 +11717,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "d3d0d005-4215-4133-ad8a-13833b86777a": {
@@ -8503,6 +11768,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "d3d471b8-7430-98b0-e053-2995a90aba4b": {
@@ -8525,6 +11791,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "d3e66496-bc3c-d189-e053-2a95a90a06b6": {
@@ -8547,6 +11814,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "d45f1915-a6ca-7ebf-e053-2a95a90a0765": {
@@ -8569,7 +11837,104 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "8"
+},
+"d46630e9-a85d-6eaa-e053-2a95a90a1023": {
+"effective_date": "20210101",
+"items": [
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"COCOS NUCIFERA (COCONUT) OIL",
+"CERA ALBA (BEESWAX)",
+"RICINUS COMMUNIS (CASTOR) SEED OIL",
+"RUBUS IDAEUS (RED RASPBERRY) SEED OIL",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"PRUNUS ARMENIACA (APRICOT) KERNEL OIL",
+"ARGANIA SPINOSA (ARGAN) KERNEL OIL",
+"ROSA CANINA (ROSEHIP) FRUIT OIL",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"d475423c-c0cb-4778-e053-2995a90a72ee": {
+"effective_date": "20211231",
+"items": [
+"COCOS NUCIFERA (COCONUT) OIL",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"CERA ALBA (BEESWAX)",
+"EUPHORBIA CERIFERA CERA (CANDELILLA) WAX",
+"COPERNICIA CERIFERA (CARNAUBA) WAX",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"TOCOPHEROL",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"ALOE BARBADENSIS (ALOE VERA) LEAF JUICE",
+"CALENDULA OFFICINALIS (CALENDULA) FLOWER EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"d4c7731e-c2bc-5a69-e053-2995a90ab23a": {
+"effective_date": "20220104",
+"items": [
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"COCOS NUCIFERA (COCONUT) OIL",
+"CERA ALBA (BEESWAX)",
+"EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"RICINUS COMMUNIS (CASTOR) OIL",
+"COPERNICIA CERIFERA (CARNAUBA) WAX",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"TOCOPHEROL",
+"ALOE BARBADENSIS (ALOE) LEAF JUICE",
+"CARICA PAPAYA (PAPAYA) EXTRACT",
+"LITCHI CHINENSIS PERICARP (LYCHEE) EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"d4c83a31-eabd-5178-e053-2995a90a7b55": {
+"effective_date": "20220104",
+"items": [
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"COCOS NUCIFERA (COCONUT) OIL",
+"CERA ALBA (BEESWAX)",
+"EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"RICINUS COMMUNIS (CASTOR) OIL",
+"COPERNICIA CERIFERA (CARNAUBA) WAX",
+"BUTYROSPERMUM PARKII (SHEA) BUTTER",
+"THEOBROMA CACAO (COCOA) SEED BUTTER",
+"TOCOPHEROL",
+"ALOE BARBADENSIS (ALOE) LEAF JUICE",
+"CARICA PAPAYA (PAPAYA) FRUIT EXTRACT",
+"LITCHI CHINENSIS PERICARP (LYCHEE) EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
+},
+"d4f30d95-4a3f-49ad-817e-faa86fca5018": {
+"effective_date": "20241107",
+"items": [
+"OLEYL ERUCATE",
+"EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"COPERNICIA CERIFERA (CARNAUBA) WAX",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"COCO-CAPRYLATE",
+"ROSMARINUS OFFICINALIS (ROSEMARY) LEAF EXTRACT",
+"CYMBOPOGON SCHOENANTHUS OIL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "d53e1253-f6a4-4f3d-e053-2a95a90a79ed": {
 "effective_date": "20251231",
@@ -8592,6 +11957,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "d53ff8f5-0b06-1e8b-e053-2a95a90ab924": {
@@ -8610,6 +11976,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "d5ed3488-aa32-4a63-9996-12c6532c3a4d": {
@@ -8628,6 +11995,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "8"
 },
 "d5ffe993-de8f-4623-a010-9cb8dd70de07": {
@@ -8667,6 +12035,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "d619d2b4-bae8-bc76-e053-2995a90a369b": {
@@ -8683,6 +12052,23 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "2"
+},
+"d61acaa0-73ef-eccf-e053-2995a90ad940": {
+"effective_date": "20241231",
+"items": [
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"CERA ALBA (BEESWAX)",
+"SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+"TOCOPHEROL (SUNFLOWER VITAMIN E)",
+"CALENDULA OFFICINALIS (CALENDULA) FLOWER EXTRACT",
+"ANTHEMIS NOBILIS (ROMAN CHAMOMILE) FLOWER OIL",
+"HIPPOPHAE RHAMNOIDES (SEABUCKTHORN) FRUIT EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "2"
 },
 "d6765958-7b61-4393-95e8-db8212bad93d": {
@@ -8714,6 +12100,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "d7215a32-00a9-4b70-8597-8ea91f546c1e": {
@@ -8733,6 +12120,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
 },
 "d79cf2d9-4923-452a-bb44-67e059ee37ee": {
@@ -8761,6 +12149,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
 },
 "d810b762-9020-4028-a04b-187533a07676": {
@@ -8782,6 +12171,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "d8cbed4c-c461-4d16-8f21-5354de6e22cd": {
@@ -8811,6 +12201,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "d915cb28-2813-5a38-e053-2a95a90a45c6": {
@@ -8834,6 +12225,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
 },
 "d954b873-decf-47cf-b600-4dadb4e2ba1d": {
@@ -8857,6 +12249,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "d95e1c1e-01c6-46f7-8068-b3b3a85127ee": {
@@ -8881,6 +12274,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "dbee42c8-9cae-7a81-e053-2a95a90a2329": {
@@ -8911,6 +12305,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "dbee6094-e105-6d14-e053-2995a90a1528": {
@@ -8941,6 +12336,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "dc7701b5-0c73-b4df-e053-2a95a90a0f1b": {
@@ -8966,6 +12362,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "dc7b0d17-d7c8-433f-e053-2995a90a477d": {
@@ -8988,6 +12385,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "dc8f21a7-3014-4e78-be64-ded63bea4ba4": {
@@ -9013,7 +12411,36 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"decfb4bd-c7aa-46eb-ac08-eee56ef4390f": {
+"effective_date": "20121003",
+"items": [
+"WATER",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"ISOHEXADECANE",
+"BUTYLOCTYL SALICYLATE",
+"OCTYLDODECYL CITRATE CROSSPOLYMER",
+"CETYL PEG/PPG-10/1 DIMETHICONE",
+"LAURYL PEG-8 DIMETHICONE",
+"C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+"SODIUM CHLORIDE",
+"ETHYLHEXYL METHOXYCRYLENE",
+"DIMETHICONE",
+"CAPRYLYL GLYCOL",
+"PEG-8",
+"ALUMINA",
+"GLYCERIN",
+"SODIUM CITRATE",
+"TOCOPHERYL ACETATE",
+"ALOE BARBADENSIS LEAF JUICE",
+"PHENOXYETHANOL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "e040e9cc-623d-4651-b4a6-52dec903c02a": {
 "effective_date": "20100128",
@@ -9042,6 +12469,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "e0983d07-efac-4738-acd7-2e86dffa552b": {
@@ -9068,6 +12496,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "e1564df9-90cb-0b1f-e053-2a95a90acb5e": {
@@ -9105,7 +12534,30 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
+},
+"e1f4208b-3f24-4e01-b53f-c1778ea5c1b3": {
+"effective_date": "20260107",
+"items": [
+"WATER",
+"DIMETHICONE",
+"ALCOHOL DENAT",
+"STYRENE/ACRYLATES COPOLYMER",
+"ACRYATES/DIMETHICONE COPOLYMER",
+"ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+"CAPRYLYL GLYCOL",
+"DISODIUM EDTA",
+"PEG-8 LAURATE",
+"PHENOXYETHANOL",
+"SODIUM DODECYLBENZENESULFONATE",
+"SODIUM POLYACRYLATE",
+"TOCOPHEROL"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "6"
 },
 "e226b07a-9f44-4b17-8f26-c86dcfa5dcda": {
 "effective_date": "20251104",
@@ -9143,6 +12595,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "8"
 },
 "e34f37d7-02a5-0b72-e053-2a95a90acf83": {
@@ -9159,6 +12612,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "e4581d0e-ce6d-7898-e053-2a95a90a02b5": {
@@ -9176,6 +12630,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "e467c306-a2ed-4976-e053-2995a90a56ed": {
@@ -9193,6 +12648,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "e46cb6e3-ea8d-3c2d-e053-2a95a90a0bf6": {
@@ -9210,6 +12666,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "e4b70fdb-7548-175c-e053-2995a90adfe6": {
@@ -9227,6 +12684,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "e6b965a9-8dab-485f-b8f1-8f7dcb453e6e": {
@@ -9259,6 +12717,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "e6d7512f-438b-4365-b585-eba805866a63": {
@@ -9278,6 +12737,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "e72e328e-5ccb-4dd3-b20d-09e47df80e0e": {
@@ -9302,7 +12762,44 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"e72f2ad6-f3cb-418d-9ff3-d857cfbe0c21": {
+"effective_date": "20100322",
+"items": [
+"WATER",
+"ISOHEXADECANE",
+"HOMOSALATE",
+"OCTINOXATE",
+"OCTISALATE",
+"OCTOCRYLENE",
+"CETYL PEG/PPG-10/1 DIMETHICONE",
+"AVOBENZONE",
+"BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE",
+"PEG-8",
+"C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+"CAPRYLYL GLYCOL",
+"GLUCOSE",
+"SODIUM CHLORIDE",
+"GLYCERIN",
+"SODIUM CITRATE",
+"DISODIUM EDTA",
+"CAPRYLIC/CAPRIC TRIGLYCERIDES",
+"STEARALKONIUM HECTORITE",
+"PROPYLENE CARBONATE",
+"LACTOPEROXIDASE",
+"GLUCOSE OXIDASE",
+"ALOE BARBADENSIS",
+"TOCOPHERYL ACETATE",
+"RETINYL PALMITATE",
+"TOCOPHEROL",
+"SODIUM ASCORBYL PHOSPHATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "eae9dcef-e6e1-4d3c-8c8c-53aea3b96344": {
 "effective_date": "20260107",
@@ -9323,6 +12820,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "eafc00ce-12e7-921f-e053-2995a90a241a": {
@@ -9341,6 +12839,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "7"
 },
 "eba17b7a-5e96-4462-9b71-44c2bc577dce": {
@@ -9435,7 +12934,22 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
+},
+"ec855600-e03e-424e-88b3-6faed6e51be8": {
+"effective_date": "20200117",
+"items": [
+"FRAGRANCE",
+"GLYCERIN",
+"SD ALCOHOL 40-B (ALCOHOL DENAT )",
+"TOCOPHERYL ACETATE",
+"VA/BUTYL MALEATE/ISOBORNYL ACRYLATE COPOLYMER"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 },
 "edc89031-7071-4820-a6d1-5b0da9e069c0": {
 "effective_date": "20241024",
@@ -9462,6 +12976,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "edced0dc-dd43-4ac9-b816-f4edb45fc87b": {
@@ -9496,6 +13011,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "ef238f0d-f889-4869-b24b-73f22c724a00": {
@@ -9520,6 +13036,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "efa5c501-273c-5e97-e053-2995a90a865b": {
@@ -9556,6 +13073,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "efdfe5b6-dfd6-475f-a696-1559488d58c9": {
@@ -9579,6 +13097,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "f01975b7-e2c9-452f-992c-2ad1ecd1febc": {
@@ -9605,6 +13124,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "f2788a1a-daf6-4b7d-8333-585a380ebe57": {
@@ -9636,6 +13156,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "f296e5ef-728a-4d57-8d65-7d88b1f90f88": {
@@ -9673,6 +13194,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "9"
 },
 "f2aa0e03-e8b6-42d0-8fa0-2e96ca486b5c": {
@@ -9707,6 +13229,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "f2f53cf9-3717-07ff-e053-2a95a90a03fb": {
@@ -9733,6 +13256,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "f2fd12cf-45c0-163f-e053-2a95a90ad459": {
@@ -9754,6 +13278,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "f3463f81-9a65-3796-e053-2995a90a4f80": {
@@ -9774,6 +13299,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "f3d3eee2-a5d9-113b-e053-2995a90a7057": {
@@ -9813,6 +13339,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "f3e1ea21-4a07-3e18-e053-2995a90a0fe7": {
@@ -9841,6 +13368,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "f424da9c-5218-1d8d-e053-2a95a90a29fb": {
@@ -9858,6 +13386,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "f42a0b1e-038d-4fab-e053-2995a90a5364": {
@@ -9891,6 +13420,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "f50eb422-33e1-48c1-8088-b7a8a6ea7068": {
@@ -9909,6 +13439,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
 },
 "f5660a97-57c8-61c7-e053-2995a90a0164": {
@@ -9930,6 +13461,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "f57775c3-5e6c-f47a-e053-2a95a90ab012": {
@@ -9952,6 +13484,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "f58d328c-8b30-b4d4-e053-2a95a90adb59": {
@@ -9974,6 +13507,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "f58ed2f9-67c3-ce91-e053-2995a90a1229": {
@@ -10001,6 +13535,32 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
+"spl_version": "2"
+},
+"f6941bab-1e97-1dc8-e053-2995a90a9317": {
+"effective_date": "20231116",
+"items": [
+"ALCOHOL DENAT",
+"BUTYLOCTYL SALICYLATE",
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"ALOE BARBADENSIS LEAF EXTRACT",
+"CAMELLIA SINENSIS LEAF EXTRACT",
+"CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL",
+"CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT",
+"DIISOPROPYL ADIPATE",
+"GINKGO BILOBA LEAF EXTRACT",
+"HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL",
+"PANAX QUINQUEFOLIUS ROOT EXTRACT",
+"PERSEA GRATISSIMA (AVOCADO) OIL",
+"TOCOPHERYL ACETATE",
+"FRAGRANCE (PARFUM)",
+"LINALOOL",
+"LIMONENE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
 "spl_version": "2"
 },
 "f717cd89-194b-42e3-a079-24b2903deb29": {
@@ -10032,6 +13592,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "4"
 },
 "f71c9060-3daf-e1be-e053-6294a90a4f91": {
@@ -10055,6 +13616,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "f7a3f518-20ef-4c5f-89a1-0ee7200386bb": {
@@ -10089,6 +13651,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "f823b236-5884-41d9-bff0-65b91664aaad": {
@@ -10109,6 +13672,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "f843ddfe-1a5f-4b9d-bf2f-378187c1f6ec": {
@@ -10138,6 +13702,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "f989b18a-1e0e-40fe-bb43-1e3805905656": {
@@ -10162,7 +13727,30 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
+},
+"fb2fe6d5-4876-4012-9ef9-bb9eb0503b0c": {
+"effective_date": "20180525",
+"items": [
+"ACRYLATES/DIMETHICONE COPOLYMER",
+"ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+"ALCOHOL DENAT",
+"ASCORBYL PALMITATE",
+"CYCLOPENTASILOXANE",
+"DIMETHICONE",
+"FRAGRANCE",
+"NEOPENTYL GLYCOL DIHEPTANOATE",
+"OCTYLDODECYL CITRATE CROSSPOLYMER",
+"POLYESTER-7",
+"POLYESTER-8",
+"RETINYL PALMITATE",
+"TOCOPHERYL ACETATE"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "1"
 },
 "fbfccb0c-e459-3282-e053-6394a90ad95d": {
 "effective_date": "20260701",
@@ -10204,6 +13792,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "3"
 },
 "fc64e2a9-d75e-4b54-a31a-785dcecac069": {
@@ -10221,6 +13810,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "1"
 },
 "fd5caf43-11ec-4bb4-9f01-bef7471ce358": {
@@ -10250,6 +13840,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "6"
 },
 "fd67fa5d-f997-c607-e053-6294a90aee2b": {
@@ -10273,6 +13864,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "fd786a06-88b7-fa35-e053-6394a90a84a5": {
@@ -10293,6 +13885,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "fda8fce8-a164-45b5-b6ca-b1efce474089": {
@@ -10309,6 +13902,7 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "2"
 },
 "fea50c84-0567-8547-e053-6394a90aafb7": {
@@ -10334,6 +13928,35 @@
 ],
 "parser": 1,
 "seen": "2026-10-08",
+"source": "label text",
 "spl_version": "5"
+},
+"feb94fd7-6727-6fb1-e053-6394a90a2af1": {
+"effective_date": "20250505",
+"items": [
+"COCOS NUCIFERA (COCONUT) OIL",
+"CERA ALBA (BEESWAX)",
+"SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL (AND) CALENDULA OFFICINALIS FLOWER (AND) CHAMOMILLA RECUTITA MATRICARIA (CHAMOMILE) FLOWER",
+"NON-GMO TOCOPHEROL (VITAMIN E)"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
+},
+"fef47045-1d3c-4f08-acec-e96abefbc261": {
+"effective_date": "20241108",
+"items": [
+"OLEYL ERUCATE",
+"EUPHORBIA CERIFERA (CANDELILLA) WAX",
+"COPERNICIA CERIFERA (CARNAUBA) WAX",
+"MEDIUM-CHAIN TRIGLYCERIDES",
+"COCO-CAPRYLATE",
+"ROSMARINUS OFFICINALIS (ROSEMARY) LEAF EXTRACT"
+],
+"parser": 1,
+"seen": "2026-10-08",
+"source": "image transcription",
+"spl_version": "3"
 }
 }

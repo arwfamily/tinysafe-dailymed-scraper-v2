@@ -163,6 +163,7 @@ jobs:
         run: |
           python scripts/baby_track.py
           python scripts/baby_label_text.py
+          python scripts/fetch_label_images.py --index-only || echo 'image index failed; transcriptions are not re-checked this week'
           python scripts/printed_changes.py
           python claims/registry_stats.py
           python scripts/verify_same_list.py || echo 'printed-label check failed; same-list finding stays held'

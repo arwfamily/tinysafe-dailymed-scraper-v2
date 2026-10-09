@@ -65,6 +65,12 @@ FILTERS = [  # slug, display name, classifier canonical name
 EXCLUSIONS = os.path.join(ROOT, "claims", "population_exclusions.csv")
 # SPLs that bundle several products but whose record holds one product's data
 # (independent audit 2026-10-08).
+# Labels whose only artwork is for another market, seen in the label image
+# (data/corrections/printed_lists_from_images.jsonl notes).
+OTHER_MARKET_SPL = {
+    "13c9ab06-9903-728a-e054-00144ff88e88": "label artwork is Brazilian (Portuguese 'Ingredientes' list, no US Drug Facts)",
+    "3eb67c20-a1b6-3014-e054-00144ff8d46c": "label artwork is Korean only (no English Drug Facts)",
+}
 MULTI_PRODUCT_SPL = {
     "c5d52f13-a649-9579-e053-2a95a90a062c": "kit: nasal spray, acne serum and sunscreen in one listing",
     "247aae3d-1845-4dd8-b774-b9e8214809a2": "two products in one listing; record holds one product's data",
@@ -116,6 +122,8 @@ def population_exclusion(r):
         return "not one sunscreen: " + MULTI_PRODUCT_SPL[r["setid"]]
     if r.get("non_uv_actives"):
         return "not one sunscreen: non-sunscreen drug actives " + ", ".join(r["non_uv_actives"])
+    if r["setid"] in OTHER_MARKET_SPL:
+        return "label for another market: " + OTHER_MARKET_SPL[r["setid"]]
     om = other_market_text(r["setid"])
     if om:
         return f"label for another market (label names a distributor or importer in {om})"
@@ -392,6 +400,14 @@ def printed_section(setid):
                     m = re.search(r"(?:INACTIVE|OTHER) INGREDIENTS?[^|]{40,}", (d.get("text") or "").upper())
                     txt = m.group(0) if m else ""
                 _SECTION[d["setid"]] = txt.upper()
+        # Image-only lists, transcribed from the label image twice and agreed
+        # (data/corrections/printed_lists_from_images.jsonl).
+        tx = os.path.join(ROOT, "data", "corrections", "printed_lists_from_images.jsonl")
+        if os.path.exists(tx):
+            for line in open(tx, encoding="utf-8"):
+                t = json.loads(line)
+                if t.get("items") and len(_SECTION.get(t["setid"], "")) < 60:
+                    _SECTION[t["setid"]] = ("INACTIVE INGREDIENTS (TRANSCRIBED FROM LABEL IMAGE): " + ", ".join(t["items"])).upper()
     return _SECTION.get(setid, "")
 
 

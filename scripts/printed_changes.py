@@ -76,6 +76,18 @@ def main():
             titles[r["setid"]] = r.get("title")
             run_date = max(run_date or "", r.get("last_seen") or "")
     state = json.load(open(STATE, encoding="utf-8")) if os.path.exists(STATE) else {}
+    # image-only lists: transcriptions (checked against this week's image hashes)
+    tx = {}
+    txp = os.path.join(ROOT, "data", "corrections", "printed_lists_from_images.jsonl")
+    if os.path.exists(txp):
+        for line in open(txp, encoding="utf-8"):
+            t = json.loads(line)
+            tx[t["setid"]] = t
+    imgidx = {}
+    ip = os.path.join(ROOT, "data", "views", "label_images_index.json")
+    if os.path.exists(ip):
+        imgidx = json.load(open(ip, encoding="utf-8"))
+    needs = []
     events, baselined = [], 0
     for line in open(TEXT, encoding="utf-8"):
         d = json.loads(line)
@@ -83,10 +95,24 @@ def main():
         if sid not in titles:
             continue  # queued or excluded labels are archived for review only
         items = printed_list(d)
+        source = "label text"
         if items is None:
-            continue
+            t = tx.get(sid)
+            current = {i.get("sha1_original") for i in (imgidx.get(sid) or {}).get("images", [])}
+            if not t:
+                if sid in imgidx:
+                    needs.append({"setid": sid, "title": titles.get(sid), "why": "image-only list not transcribed yet"})
+                continue
+            if current and t.get("image_sha1") and t["image_sha1"] not in current:
+                needs.append({"setid": sid, "title": titles.get(sid), "why": "label image changed since transcription"})
+                continue
+            if not t.get("items"):
+                continue
+            items = [norm(re.sub(r"\(\s*1\s*\)|[\*\^\u2020\u2021\u00b0\u00b9]+", "", x)) for x in t["items"]]
+            items = [x for x in items if x]
+            source = "image transcription"
         prev = state.get(sid)
-        state[sid] = {"items": items, "spl_version": d.get("spl_version"),
+        state[sid] = {"items": items, "source": source, "spl_version": d.get("spl_version"),
                       "effective_date": d.get("effective_date"), "parser": PARSER_VERSION, "seen": run_date}
         if not prev or prev.get("parser") != PARSER_VERSION:
             baselined += 1
@@ -94,6 +120,8 @@ def main():
         old, new = prev["items"], items
         if old == new:
             continue
+        if prev.get("source", "label text") != source:
+            continue  # the list moved between text and image; re-baselined, not a change
         removed = sorted(set(old) - set(new))
         added = sorted(set(new) - set(old))
         spelling = possible_spellings(removed, added)
@@ -122,6 +150,9 @@ def main():
                   f"removed: {', '.join(e['removed']) or '—'}"
                   + (f" (possible spelling fix: {'; '.join(a + ' → ' + b for a, b in e['possible_spelling'])})"
                      if e["possible_spelling"] else "") for e in real] or ["- none"]
+        if needs:
+            lines.append(f"- {len(needs)} image-only lists need (re)transcription: "
+                         + "; ".join(f"{n['title']} ({n['why']})" for n in needs))
         other = [e for e in events if e["change"] != "printed_list_changed"]
         if other:
             lines.append(f"- also {len(other)} labels re-ordered their list without adding or removing anything")
@@ -130,6 +161,7 @@ def main():
     if os.path.exists(js_path):
         rep = json.load(open(js_path, encoding="utf-8"))
         rep["printed_list_changes"] = events
+        rep["needs_transcription"] = needs
         json.dump(rep, open(js_path, "w"), indent=1, ensure_ascii=False)
     print(f"[printed_changes] {run_date}: {len(real)} printed-list changes, "
           f"{len(events) - len(real)} order-only, {baselined} labels baselined")

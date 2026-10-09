@@ -39,7 +39,11 @@ def get(url):
 
 
 def main():
-    from PIL import Image
+    index_only = "--index-only" in sys.argv
+    if index_only:
+        sys.argv.remove("--index-only")
+    if not index_only:
+        from PIL import Image
     text = {json.loads(l)["setid"]: json.loads(l) for l in open(os.path.join(ROOT, "data/views/baby_label_text.jsonl"), encoding="utf-8")}
     view = [json.loads(l) for l in open(os.path.join(ROOT, "data/views/baby_sunscreens.jsonl"), encoding="utf-8")]
     targets = [r for r in view if printed_list(text.get(r["setid"], {})) is None]
@@ -50,13 +54,17 @@ def main():
         m = get(f"https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/{sid}/media.json")
         media = (json.loads(m)["data"]["media"] if m else [])
         imgs = []
-        os.makedirs(os.path.join(OUT, sid), exist_ok=True)
+        if not index_only:
+            os.makedirs(os.path.join(OUT, sid), exist_ok=True)
         for x in media:
             if not re.search(r"image/", x.get("mime_type", "")):
                 continue
             b = get(x["url"])
             if not b:
                 imgs.append({"name": x["name"], "error": "fetch failed"})
+                continue
+            if index_only:
+                imgs.append({"name": x["name"], "sha1_original": hashlib.sha1(b).hexdigest()})
                 continue
             im = Image.open(io.BytesIO(b)).convert("RGB")
             s = 2400 / max(im.size)
@@ -67,7 +75,10 @@ def main():
             imgs.append({"name": x["name"], "file": f"{sid}/{fn}", "sha1_original": hashlib.sha1(b).hexdigest()})
         index[sid] = {"title": r.get("title"), "spl_version": r.get("spl_version"), "images": imgs}
         time.sleep(0.3)
-    json.dump(index, open(os.path.join(OUT, "index.json"), "w"), indent=1)
+    if index_only:
+        json.dump(index, open(os.path.join(ROOT, "data", "views", "label_images_index.json"), "w"), indent=1)
+    else:
+        json.dump(index, open(os.path.join(OUT, "index.json"), "w"), indent=1)
     print(f"[images] {len(index)} labels, {sum(len(v['images']) for v in index.values())} images")
 
 
