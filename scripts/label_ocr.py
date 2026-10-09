@@ -105,7 +105,7 @@ def ocr(img_bytes):
         p = os.path.join(d, "img.png")
         try:
             im = Image.open(io.BytesIO(img_bytes)).convert("L")
-            s = 3000 / max(im.size)
+            s = 2000 / max(im.size)
             im = im.resize((max(1, int(im.width * s)), max(1, int(im.height * s))), Image.LANCZOS)
             ImageOps.autocontrast(im).save(p)
         except Exception:
