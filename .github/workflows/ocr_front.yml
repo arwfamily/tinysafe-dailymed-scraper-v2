@@ -16,8 +16,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr && pip install pillow
-      - run: python scripts/label_ocr.py --shard ${{ matrix.shard }} --shards 6
+      - run: timeout 320m python scripts/label_ocr.py --shard ${{ matrix.shard }} --shards 6 || true
       - name: Commit
+        if: always()
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -211,12 +211,23 @@ def main():
         mine = mine[:a.limit]
     fresh = [j for j in mine if (j[0], j[1], tuple(sorted(j[2]))) not in cache]
     print(f"[ocr] shard {a.shard}/{a.shards}: {len(mine)} labels, {len(fresh)} to read", flush=True)
-    with ThreadPoolExecutor(3) as ex:
-        new = list(ex.map(read_label, fresh))
     keep = [cache[(j[0], j[1], tuple(sorted(j[2])))] for j in mine if (j[0], j[1], tuple(sorted(j[2]))) in cache]
-    with open(path, "w", encoding="utf-8") as f:
-        for d in sorted(keep + new, key=lambda d: d["setid"]):
-            f.write(json.dumps(d, ensure_ascii=False) + "\n")
+    new = []
+
+    def flush():
+        with open(path, "w", encoding="utf-8") as f:
+            for d in sorted(keep + new, key=lambda d: d["setid"]):
+                f.write(json.dumps(d, ensure_ascii=False) + "\n")
+
+    # results are written every 200 labels, so a run cut off by a time limit
+    # keeps what it read and the next run continues from the cache
+    with ThreadPoolExecutor(3) as ex:
+        for i, d in enumerate(ex.map(read_label, fresh), 1):
+            new.append(d)
+            if i % 200 == 0:
+                flush()
+                print(f"[ocr] {i}/{len(fresh)}", flush=True)
+    flush()
     errs = sum(1 for d in new if d.get("error"))
     hits = sum(1 for d in keep + new if d.get("front_ocr_baby_words") or d.get("front_alt_baby_words"))
     print(f"[ocr] wrote {path}: {len(keep) + len(new)} labels ({errs} errors), {hits} with baby/kids words on the front")
