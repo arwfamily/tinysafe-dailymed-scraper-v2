@@ -5,9 +5,9 @@
   "delisted": 3
  },
  "baby_labels": {
-  "new": 32
+  "new": 36
  },
- "baby_population_live": 549,
+ "baby_population_live": 580,
  "new_baby_decisions": [],
  "review_queue": 0,
  "changes": [
@@ -172,7 +172,7 @@
    "change": "new",
    "product": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 BLUE (ZINC OXIDE) CREAM",
    "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6af12cd5-246b-4b91-9748-e7b7a5daf298",
-   "baby": false,
+   "baby": true,
    "label_date": "20260904",
    "found_by": "title_enumeration"
   },
@@ -199,7 +199,7 @@
    "change": "new",
    "product": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 LIGHT GREEN (ZINC OXIDE) CREAM",
    "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b7c79f32-84cf-4059-9418-e142b5710014",
-   "baby": false,
+   "baby": true,
    "label_date": "20260813",
    "found_by": "title_enumeration"
   },
@@ -217,7 +217,7 @@
    "change": "new",
    "product": "SQWEEN MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 GOLD (ZINC OXIDE) CREAM",
    "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e8332aa8-d2c5-4b74-9b61-612c2328edfa",
-   "baby": false,
+   "baby": true,
    "label_date": "20260813",
    "found_by": "title_enumeration"
   },
@@ -7129,7 +7129,7 @@
    "change": "new",
    "product": "PUTTO ATO SECRET UV FACE SPF 6 (ZINC OXIDE) CREAM",
    "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eaf411f4-4332-4868-b10c-b084b555c3b8",
-   "baby": false,
+   "baby": true,
    "label_date": "20110217",
    "found_by": "title_enumeration"
   },
