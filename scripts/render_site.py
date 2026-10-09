@@ -726,7 +726,7 @@ def finding_body(d, f):
         aad = det["aad"]
         frows = "".join(
             f'<tr><td><a href="{E(p["url"])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["title"]))}</span></a></td>'
-            f'<td>\u201c{E(p["quote"])}\u201d</td><td>{E(", ".join(p["allergens"])) or "—"}</td></tr>'
+            f'<td>\u201c{E(p["quote"])}\u201d</td><td>{E(", ".join(p["allergens"])) or "Not named: listed only as fragrance"}</td></tr>'
             for p in det["formulas"])
         mean = f"""
 <p>The FDA says there are no federal standards or definitions that govern the use of the term \u201chypoallergenic\u201d. {src_chip("FDA", isrc["url"], isrc["title"])}</p>
@@ -744,7 +744,7 @@ def finding_body(d, f):
             cfh = f"""<p class="fine">Not counted: {len(cf)} label{"s" if len(cf) > 1 else ""} that say hypoallergenic and fragrance-free, where the label image lists no fragrance but the Drug Facts text filed with the same label does. We cannot tell which is current.</p><ul class="plain">{li}</ul>"""
         extra = f"""<section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} formulas</h2>
 <div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Printed on the label</th><th>Named fragrance ingredients also listed</th></tr></thead><tbody>{frows}</tbody></table></div>
-<p class="fine">Each name links to its FDA DailyMed record. The wording was read from the label text, and from the label image wherever the front of the package is an image. {det["reviewed_labels"]} labels were checked this way. The last column shows named fragrance ingredients from this list when the label prints them: amyl cinnamal, hexyl cinnamal, alpha-isomethyl ionone, benzyl salicylate, butylphenyl methylpropional, citronellol, coumarin, geraniol, hydroxycitronellal, limonene, linalool, eugenol, benzyl benzoate, citral.</p>{cfh}</section>{ffh}"""
+<p class="fine">Each name links to its FDA DailyMed record. The wording was read from the label text, and from the label image wherever the front of the package is an image. {det["reviewed_labels"]} labels were checked this way. Most labels list only the word \u201cfragrance\u201d, which can stand for many ingredients; under US rules, fragrance ingredients can be listed simply as \u201cfragrance\u201d. {src_chip("FDA", "https://www.fda.gov/cosmetics/cosmetic-ingredients/fragrances-cosmetics", "Fragrances in Cosmetics — FDA")} \u201cNot named\u201d therefore means the label does not say what the fragrance contains, not that it contains none of them. The last column shows named fragrance ingredients from this list when the label prints them: amyl cinnamal, hexyl cinnamal, alpha-isomethyl ionone, benzyl salicylate, butylphenyl methylpropional, citronellol, coumarin, geraniol, hydroxycitronellal, limonene, linalool, eugenol, benzyl benzoate, citral.</p>{cfh}</section>{ffh}"""
         faq = [
             ("Is it allowed to call a sunscreen with fragrance hypoallergenic?", f["legal_framing"]),
             ("What does hypoallergenic mean on a label?",
