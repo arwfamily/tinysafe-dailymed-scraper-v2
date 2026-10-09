@@ -820,6 +820,42 @@ def main():
         "caveat": CAVEAT, "site_source": src,
         "method": "claims/registry_stats.py (Hawaii)", "verified_date": snapshot})
 
+    # Sprays (AAP: lotions to avoid inhalation, or spray onto hands first)
+    def is_spray(r):
+        f = (r.get("dosage_form") or "").upper()
+        if "FOAM" in f:
+            return False
+        name = (r.get("product_name") or r["title"]).upper()
+        return "SPRAY" in f or re.search(r"\bSPRAY|\bMIST\b", name) is not None
+    sp = [r for r in forms if is_spray(r)]
+    sp_min = sum(1 for r in sp if r.get("is_mineral_only_actives"))
+    labelers = {_co(r.get("labeler_from_title") or r.get("labeler")) for r in sp}
+    claims.append({
+        "id": "US-BABY-SPRAYS", "status": "verified", "jurisdiction": "US",
+        "ingredient_slugs": [], "finding": "sprays",
+        "claim": f"{len(sp)} of {N} baby/kids sunscreen formulations are sprays ({sp_min} of {M} mineral-only).",
+        "publishable_sentence": (f"{len(sp)} of the {N} baby and kids sunscreen formulas listed in the FDA's DailyMed label "
+                                 f"database are sprays, from {len(labelers)} labelers. To avoid inhalation, the American "
+                                 f"Academy of Pediatrics suggests lotions, or, if a spray is used, spraying it onto the hands "
+                                 f"and then applying it to the child."),
+        "legal_framing": ("Not a violation: spray is a permitted sunscreen form in the US. The FDA has proposed that spray "
+                          "sunscreens remain generally recognized as safe and effective subject to testing and labeling "
+                          "requirements."),
+        "numerator": len(sp), "denominator": N, "population": POP,
+        "ingredient_source": {"title": "Chemical Exposure from Personal Care Products — American Academy of Pediatrics",
+                              "url": "https://www.aap.org/en/patient-care/environmental-health/promoting-healthy-environments-for-children/personal-care-products/",
+                              "checked": "2026-10-09"},
+        "detail": {"mineral": [sp_min, M], "other": [len(sp) - sp_min, N - M], "labelers": len(labelers),
+                   "healthychildren": {"title": "What's the best way to protect kids' skin from sunburn? — HealthyChildren.org (AAP)",
+                                       "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/whats-the-best-way-to-protect-kids-skin-from-sunburn.aspx",
+                                       "checked": "2026-10-09"},
+                   "fda": {"title": "Questions and Answers: FDA's regulatory actions on OTC sunscreen",
+                           "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen"},
+                   "formulas": [{"title": r["title"], "url": r["dailymed_url"], "form": r.get("dosage_form"),
+                                 "mineral": bool(r.get("is_mineral_only_actives"))}
+                                for r in sorted(sp, key=lambda r: r["title"])]},
+        "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py (sprays)", "verified_date": snapshot})
+
     # Parabens
     PARABENS = [("propylparaben", r"(?<![A-Z])PROPYL ?PARABEN"), ("methylparaben", r"(?<![A-Z])METHYL ?PARABEN"),
                 ("butylparaben", r"(?<![A-Z])BUTYL ?PARABEN"), ("ethylparaben", r"(?<![A-Z])ETHYL ?PARABEN"),

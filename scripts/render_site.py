@@ -61,6 +61,10 @@ FINDINGS = {  # display order = dict order
         "title": "Fragrance in baby and kids sunscreens",
         "eyebrow": "Finding · DailyMed labels × AAD guidance",
         "caption": "Each door is one baby or kids formula. Filled: lists fragrance or parfum."},
+    "sprays": {
+        "title": "Spray sunscreens for babies and kids",
+        "eyebrow": "Finding · DailyMed labels × AAP guidance",
+        "caption": "Each door is one baby or kids formula. Filled: a spray."},
     "parabens": {
         "title": "Parabens in baby and kids sunscreens",
         "eyebrow": "Finding · DailyMed labels × EU law",
@@ -675,6 +679,31 @@ def finding_body(d, f):
              "oxybenzone or octinoxate, or both, without a prescription issued by a licensed healthcare provider."),
             ("How were these products selected?", howto),
         ]
+    elif key == "sprays":
+        det = f["detail"]
+        (mn, md), (on, od) = det["mineral"], det["other"]
+        frows = "".join(
+            f'<tr><td><a href="{E(p["url"])}" rel="noopener" target="_blank"><span class="pname">{E(html.unescape(p["title"]))}</span></a></td>'
+            f'<td>{E((p["form"] or "").title())}</td><td>{"Mineral only" if p["mineral"] else "Other filters"}</td></tr>'
+            for p in det["formulas"])
+        hc = det["healthychildren"]
+        mean = f"""
+<p>The American Academy of Pediatrics advises: "To avoid inhalation, suggest the use of lotions, or, if using a spray, spray onto hands and then apply to child." {src_chip("AAP", isrc["url"], isrc["title"])}</p>
+<p>On the AAP's parent site, a pediatric dermatologist writes that sunscreen sprays contain propellant chemicals "which are irritating and should not be inhaled by babies and children." {src_chip("HealthyChildren.org", hc["url"], hc["title"])}</p>
+<p>Spray remains a permitted sunscreen form in the US; the FDA has proposed testing and labeling requirements for sprays. {src_chip("FDA", det["fda"]["url"], det["fda"]["title"])}</p>"""
+        extra = f"""<section><p class="eyebrow">Mineral and other filters</p><h2>Sprays by type of sunscreen</h2>
+<ul class="bars"><li><span>Mineral only</span><span class="bar"><i style="width:{100 * mn / md:.1f}%"></i></span><b>{mn} of {md}</b></li>
+<li><span>Other filters</span><span class="bar"><i style="width:{100 * on / od:.1f}%"></i></span><b>{on} of {od}</b></li></ul>
+<p class="fine">A formula counts as a spray when its filed dosage form is a spray or its product name says spray or mist. Foams are not counted. Filers code pump and aerosol sprays inconsistently, so the two are not separated.</p></section>
+<section><p class="eyebrow">Every formula</p><h2>The {f["numerator"]} sprays</h2>
+<div class="tablewrap"><table class="pairs"><thead><tr><th>Baby or kids label</th><th>Filed form</th><th>Type</th></tr></thead><tbody>{frows}</tbody></table></div>
+<p class="fine">Each name links to its FDA DailyMed record.</p></section>"""
+        faq = [
+            ("Are spray sunscreens allowed for kids?", f["legal_framing"]),
+            ("What does the American Academy of Pediatrics advise?",
+             "To avoid inhalation, use lotions, or, if using a spray, spray it onto your hands and then apply it to the child."),
+            ("How were these products selected?", howto),
+        ]
     elif key == "parabens":
         det = f["detail"]
         mx = max(v for _, v in det["per_paraben"])
@@ -754,7 +783,7 @@ def page_finding(d, f):
     title = meta["title"]
     mean, extra, faq, howto = finding_body(d, f)
     faqh = "".join(f"<details><summary>{E(q)}</summary><p>{E(a)}</p></details>" for q, a in faq)
-    src_label = {"fda-more-data": "FDA source", "hawaii-oxybenzone-octinoxate": "Hawaii law", "fragrance": "AAD guidance", "parabens": "EU law", "eu-banned-preservatives": "EU law",
+    src_label = {"fda-more-data": "FDA source", "sprays": "AAP guidance", "hawaii-oxybenzone-octinoxate": "Hawaii law", "fragrance": "AAD guidance", "parabens": "EU law", "eu-banned-preservatives": "EU law",
                  "homosalate-eu-limit": "EU law", "eu-banned-preservatives": "EU law",
                  "fragrance": "AAD guidance"}.get(f["finding"], "Source")
     body = f"""

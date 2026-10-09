@@ -5710,6 +5710,740 @@
       "verified_date": "2026-10-08"
     },
     {
+      "id": "US-BABY-SPRAYS",
+      "status": "verified",
+      "jurisdiction": "US",
+      "ingredient_slugs": [],
+      "finding": "sprays",
+      "claim": "114 of 446 baby/kids sunscreen formulations are sprays (29 of 245 mineral-only).",
+      "publishable_sentence": "114 of the 446 baby and kids sunscreen formulas listed in the FDA's DailyMed label database are sprays, from 52 labelers. To avoid inhalation, the American Academy of Pediatrics suggests lotions, or, if a spray is used, spraying it onto the hands and then applying it to the child.",
+      "legal_framing": "Not a violation: spray is a permitted sunscreen form in the US. The FDA has proposed that spray sunscreens remain generally recognized as safe and effective subject to testing and labeling requirements.",
+      "numerator": 114,
+      "denominator": 446,
+      "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
+      "ingredient_source": {
+        "title": "Chemical Exposure from Personal Care Products — American Academy of Pediatrics",
+        "url": "https://www.aap.org/en/patient-care/environmental-health/promoting-healthy-environments-for-children/personal-care-products/",
+        "checked": "2026-10-09"
+      },
+      "detail": {
+        "mineral": [
+          29,
+          245
+        ],
+        "other": [
+          85,
+          201
+        ],
+        "labelers": 52,
+        "healthychildren": {
+          "title": "What's the best way to protect kids' skin from sunburn? — HealthyChildren.org (AAP)",
+          "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/whats-the-best-way-to-protect-kids-skin-from-sunburn.aspx",
+          "checked": "2026-10-09"
+        },
+        "fda": {
+          "title": "Questions and Answers: FDA's regulatory actions on OTC sunscreen",
+          "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen"
+        },
+        "formulas": [
+          {
+            "title": "365 WHOLE FOODS MARKET KIDS CLEAR SUNSCREEN SPF 50 [WHOLE FOODS MARKET, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=82771f22-0197-40ba-97d2-2386152790ed",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "AL0038200 ALBA VE SUNSCREEN KIDS SPF50 (HOMOSALATE, OCTOCRYLENE, ETHYLHEXYL SALICYLATE, BUTYL METHOXYDIBENZOYLMETHANE) SPRAY [THE HAIN CELESTIAL GROUP, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2669183c-7a5e-037e-e054-00144ff88e88",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "AL0038502 ALBA TROPICAL FRUIT KIDS SUNSCREEN SPF40 (HOMOSALATE, OCTOCRYLENE, ETHYLHEXYL SALICYLATE, AVOBENZONE) SPRAY [THE HAIN CELESTIAL GROUP, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=468dd5f5-0cec-0c29-e054-00144ff88e88",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "ALBA BOTANICA KIDS SPF 50 TROPICAL FRUIT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [HAIN CELESTIAL GROUP, INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f6941bab-1e97-1dc8-e053-2995a90a9317",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "ALBA BOTANICA NATURAL VERY EMOLLIENT SUNSCREEN KIDS SPF40 (HOMOSALATE, ETHYLHEXYL METHOXYCINNAMATE, OCTOCRYLENE, ETHYLHEXYL SALICYLATE, BUTYL METHOXYDIBENZOYLMETHANE) SPRAY [THE HAIN CELESTIAL GROUP, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=69cadbc9-36ef-42bf-a46a-1aca2df813d7",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "ALDI LACURA KIDS SPF 50 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [ALDI INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e34f37d7-02a5-0b72-e053-2a95a90acf83",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "ALOE UP BROAD SPECTRUM SPF 30 (AVOBENZONE, HOMOSALATE, OCTISALATE AND OCTOCRYLENE) SPRAY [PRIME PACKAGING INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=205c42c1-682f-4e70-e054-00144ff88e88",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "ALOE UP KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [CROSS BRANDS CONTRACT FILLING]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e524e0f-7005-d1a0-e053-2995a90ae34c",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "ALOE UP SPF 50 KIDS MINERAL (ZINC OXIDE, TITANIUM DIOXIDE) SPRAY [ALOE CARE INTERNATIONAL, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35cd16b0-bd81-8f68-e063-6294a90a3d8c",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "ATTITUDE SUNLY BABY MINERAL SUNSCREEN SPRAYER SPF 50 UNSCENTED (ZINC OXIDE) SPRAY [9055-7588 QU&EACUTE;BEC INC.DBA ATTITUDE]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44a94a24-e292-41e6-e063-6394a90abe47",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "ATTITUDE SUNLY KIDS MINERAL SUNSCREEN SPRAYER SPF 50 WATERMELON AND COCO (ZINC OXIDE) SPRAY [9055-7588 QU&EACUTE;BEC INC.DBA ATTITUDE]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44aa1349-e3f1-9b80-e063-6294a90a0fbd",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "BABO BABY SKIN MINERAL SUNSCREEN FF (MINERAL SUNSCREEN) SPRAY [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0a513a5-18d4-5fca-e053-2a95a90aef93",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "BABO BOTANICALS SENSITIVE BABY MINERAL SUNSCREEN SPF30 (ZINC OXIDE) SPRAY [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08a36887-3997-8fff-e063-6394a90ae9d5",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "BABO BOTANICALS SHEER ZINC MINERAL SUNSCREEN SPF30 (ZINC OXIDE) SPRAY [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08f0f32e-4b19-7a62-e063-6394a90af1b1",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "BABO BOTANICALS SUPER SHIELD MINERAL SUNSCREEN SPF50 (ZINC OXIDE, TITANIUM DIOXIDE) AEROSOL, SPRAY [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b441f976-4f2a-ba19-e053-2995a90ad79a",
+            "form": "AEROSOL, SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "BABO BOTANICALS SWIM AND SPORT MINERAL SUNSCREEN SPF 30 (ZINC OXIDE) SPRAY [BABO BOTANICALS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8b1ea3a-d62e-e00d-e053-6394a90a5689",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "BABY BUM MINERAL 50 SUNSCREEN [SUN BUM, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c470ff8-37d6-a729-e063-6294a90aa525",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "BABYGANICS SPF 50 PLUS SUNSCREEN (ZINC OXIDE, OCTISALATE, AND OCTOCRYLENE) SPRAY [KAS DIRECT LLC DBA BABYGANICS]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4075f9dc-c25f-434f-a3fc-a7f896295c3d",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BABYGANICS SUNSCREEN 30 SPF (ZINC OXIDE, OCTINOXATE, AND OCTISALATE) SPRAY [KAS DIRECT LLC DBA BABYGANICS]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=391a4ec3-b65b-4dbe-bc8f-cb67514c8ef1",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BABY (HOMOSALATE,OCTISALATE,OCTOCRYLENE,ZINC OXIDE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c01baa8-cee2-ee68-e063-6394a90ac29a",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=39a5a3be-f9a7-4fa1-e054-00144ff88e88",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c7b7571-7317-98bc-e063-6294a90aa29f",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=764401f3-4219-6e9b-e053-2991aa0a3ed2",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) SPRAY [EDGEWELL PERSONAL CARE BRANDS LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05cb5a91-205f-b652-e063-6294a90a0664",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT (HOMOSALATE,OCTISALATE,OCTOCRYLENE,ZINC OXIDE) SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0ad8187d-43a3-933b-e063-6294a90a20c4",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT (ZINC OXIDE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1ba50f16-4b76-825f-e063-6294a90a2a4d",
+            "form": "AEROSOL, SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "BANANA BOAT KIDS FREE 50 SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c238393-1035-19aa-e054-00144ff88e88",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT KIDS PROTECT AND PLAY SPF 50 (AVOBENZONE AND OCTOCRYLENE AND OXYBENZONE) SPRAY [ACCRA-PAC, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=caf72244-e9ec-4a53-b7ff-232834a12a87",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT KIDS PROTECT AND PLAY SPF 85 (AVOBENZONE AND HOMOSALATE AND OCTOCRYLENE AND OXYBENZONE) SPRAY [ACCRA-PAC, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a1bf0be-2a9f-409a-b91e-31ee02913430",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT KIDS SPF 65 CLEAR SUNSCREEN (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) AEROSOL, SPRAY [EDGEWELL PERSONAL CARE BRANDS LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7b0d17-d7c8-433f-e053-2995a90a477d",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT KIDS TEAR FREE CONTINUOUS SPF 50 (AVOBENZONE AND HOMOSALATE AND OCTINOXATE AND OCTISALATE AND OCTOCRYLENE) SPRAY [ACCRA-PAC, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09037f54-a121-4132-957f-1c01f3a70ebc",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT KIDS ULTRAMIST TEAR FREE SPF 30 (AVOBENZONE AND HOMOSALATE AND OCTISALATE AND OCTOCRYLENE) SPRAY [ACCRA-PAC, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89d05291-4ee5-48c6-be1d-7ac30f323bcb",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BANANA BOAT ULTRAMIST BABY TEAR FREE CONTINUOUS SPF 50 (AVOBENZONE AND HOMOSALATE AND OCTINOXATE AND OCTISALATE AND OCTOCRYLENE) SPRAY [ACCRA-PAC, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d0a8efb-4da9-4cb5-b1d3-c9dad05fa9a6",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BLACK GIRL SUNSCREEN SPF 50 KIDS (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) SPRAY [DERMA CARE RESEARCH LABS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d53ff8f5-0b06-1e8b-e053-2a95a90ab924",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BLI HOLDING MIAMI BEACH KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE AND OXYBENZONE) AEROSOL, SPRAY [PRIME PACKAGING, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0983d07-efac-4738-acd7-2e86dffa552b",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "BLUE LIZARD KIDS SPF 50 (ZINC OXIDE) SPRAY [CROWN LABORATORIES]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfefb36b-0858-6e4d-e053-2a95a90a01ce",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "BRUSH ON BLOCK SPF 50 KIDS MINERAL (ZINC OXIDE) SPRAY [SPF VENTURES, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f17b5fe-44da-964b-e063-6394a90ae699",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "BULL FROG KIDS MIST 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OXYBENZONE, OCTOCRYLENE) SPRAY [SUN & SKIN CARE RESEARCH, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=81c929b7-f925-4498-889d-3b26ff2e05bf",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "COPPERTONE KIDS SPF 50 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 10%, OCTISALATE 5%, OCTOCRYLENE 5%) AEROSOL, SPRAY [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbf9a785-f218-76fb-e053-2995a90a8e03",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "COPPERTONE KIDS SPORT SPF 60 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) AEROSOL, SPRAY [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23fb7304-789d-1f94-e063-6394a90a7e62",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "COPPERTONE KIDS SPORT SUNSCREEN SPF 100 (AVOBENZONE 3%, HOMOSALATE 15%, OCTINOXATE 2% OCTISALATE 5%, OCTOCRYLENE 10%, OXYBENZONE 6%) SPRAY [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c068a6e7-260f-0766-e053-2995a90a422f",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "COPPERTONE KIDS SPORT SUNSCREEN SPF 50 (AVOBENZONE 3%, HOMOSALATE 10%, OCTISALATE 5%, OCTOCRYLENE 5%) SPRAY [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0421c97-72bd-fcac-e053-2995a90aac28",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "COPPERTONE KIDS SUNSCREEN SPF 50 ((TO DELIVER) AVOBENZONE 3%, HOMOSALATE 5%, OCTISALATE 10%, OCTOCRYLENE 5%) SPRAY [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a5a42a3-6fe4-2980-e063-6394a90a54fe",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "COPPERTONE PURE AND SIMPLE BABY SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) AEROSOL, SPRAY [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=088b7152-d3d1-9e74-e063-6394a90a4152",
+            "form": "AEROSOL, SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "COPPERTONE WATERBABIES PURE AND SIMPLE SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) SPRAY [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0806bdb9-961f-3146-e063-6294a90a4625",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "COPPERTONE WATERBABIES SUNSCREEN SPF 50 (AVOBENZONE 3%, HOMOSALATE 9%, OCTISALATE 4.5%, OCTOCRYLENE 9%) AEROSOL, SPRAY [BEIERSDORF INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d53e1253-f6a4-4f3d-e053-2a95a90a79ed",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "CVS PHARMACY KIDS SPF 70 CLEAR (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY [CVS PHARMACY]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4eb824a6-66ac-01f8-e054-00144ff8d46c",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "EQUATE SUNSCREEN KIDS SPF50 BROAD SPECTRUM (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [WAL-MART STORES INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17e9bcaa-77b5-45da-ab77-5563070e0af2",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "FRUIT OF THE EARTH SUN TOWN CITY BABY AND KIDS MINERAL SPF 50 SUNSCREEN (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [FRUIT OF THE EARTH, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f42a0b1e-038d-4fab-e053-2995a90a5364",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "GLOW BABY BRIGHTENING SETTING MIST SPF 45 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [PACIFICA BEAUTY, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f2f53cf9-3717-07ff-e053-2a95a90a03fb",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "GLOW BABY SUPER LIT SPF 30 (ZINC OXIDE) SPRAY [PACIFICA BEAUTY, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f3d3eee2-a5d9-113b-e053-2995a90a7057",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "GODDESS GARDEN ORGANICS KIDS NATURAL SUNSCREENSPF 30 [CROSSING CULTURES, LLC DBA GODDESS GARDEN]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=43a6b8e3-49f7-2ac7-e054-00144ff88e88",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "H.E.B (SPF 50 SUNSCREEN) AEROSOL, SPRAY [H.E.B]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=39bf1379-3dee-4aa0-967a-36faccca4216",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "H.E.B BABY (SPF 50 SUNSCREEN) AEROSOL, SPRAY [H.E.B]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=61273611-ab7a-4216-aebe-2c8d89660281",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "H.E.B SOLUTIONS SUNSCREEN (BABY SPF 50 LOTION SPRAY) AEROSOL, SPRAY [H.E.B]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1082111f-bf04-4a98-b6a0-5da933652f1d",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "H.E.B SOLUTIONS SUNSCREEN (WET PROTECTION KIDS SPF 70 CONTINUOUS SPRAY) AEROSOL, SPRAY [H.E.B]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f823b236-5884-41d9-bff0-65b91664aaad",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "HABANA SPF 30 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 8%) SPRAY [DERMA CARE RESEARCH LABS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db6085a7-8416-a4bb-e053-2995a90a35dc",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "HABANA SPF 50 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) SPRAY [DERMA CARE RESEARCH LABS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db6193ee-c63c-a9aa-e053-2995a90a0ee7",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "HABANA SPF 70 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) SPRAY [DERMA CARE RESEARCH LABS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db87d5b3-221d-7e9d-e053-2a95a90a26f2",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "HAMPTON SUN SPF 70 KIDS (AVOBENZONE, HUMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [S&C HAMPTON SUN LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7c976082-3265-4c0b-9985-277d27988895",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "HAWAIIAN TROPIC KIDS SPF 30 (AVOBENZONE AND OCTOCRYLENE AND OXYBENZONE) SPRAY [ACCRA-PAC, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cce03183-de08-4db3-a292-127726df8182",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "KIDS DISAPPEARING COLOR SPF50 BROAD SPECTRUM SUNCREEN GREEN APPLE SCENTED (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [CVS PHARMACY]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b177115-9f0c-48a4-9fea-1f547436a2c9",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "KIDS DISAPPEARING COLOR SPF50 BROAD SPECTRUM SUNCREEN PINK STRAWBERRY SCENTED (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [CVS PHARMACY]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d373e47-f918-444a-b3bb-bce99b42d502",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "KIDS MINERAL SUNSCREEN SPF 50 (ZINC OXIDE) SPRAY [HELLO BELLO]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b19f2ae-c7e5-c44c-e063-6394a90a0e68",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "KIDS MINERAL SUNSCREEN SPF50 (SUNSCREEN) SPRAY [HELLO BELLO]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01cc554b-9241-d891-e063-6394a90a8450",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "KIDS NATURAL MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [CROSSING CULTURES LLC DBA GODDESS GARDEN]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ca29aefd-9662-4d2e-b9ac-fa4b67f7b463",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "KIDS SPF 50 (AVOBENZONE 3% HOMOSALATE 10% OCTISALATE 5% OCTOCRYLENE 4% OXYBENZONE 5%) SPRAY [TOPCARE]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=298b2aa5-de4a-4507-a304-6e63dbb957f9",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "KIDS SPF50PLUS MINERAL SUNSCREEN ROLLERBALL TOTALLY TROPICAL (ZINC OXIDE AND TITANIUM DIOXIDE) SPRAY [KAS DIRECT LLC DBA BABYGANICS]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d3bdda65-bcb4-42d9-84af-d14c7f4421bd",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "KIDS SPORT NATURAL MINERAL SUNSCREEN BROAD SPECTRUM SPF 30 (TITANIUM DIOXIDE, ZINC OXIDE) AEROSOL, SPRAY [CROSSING CULTURES LLC DBA GODDESS GARDEN]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a98b4f6-098b-4f3a-b6b0-ba93203a33a8",
+            "form": "AEROSOL, SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "KIDS SUNSCREEN SPF 50 (AVOBENZONE 3% , HOMOSALATE 10%,OCTISALATE 5%) SPRAY [ROCKY MOUNTAIN]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=34891204-3485-44ac-aaf1-80d57593128c",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "KIDS SUNSCREEN SPF 50 (AVOBENZONE 3.0% HOMOSALATE 15.0% OCTISALATE 5.0% OCTOCRYLENE 10.0%) SPRAY [WEGMAN]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c596b1d-8c23-4598-8b6f-95e1679069b9",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "KIDS SUNSCREEN SPF 70 MEIJER (AVOBENZONE 3.00% HOMOSALATE 15.00% OCTISALATE 5.00% OCTOCRYLENE 10.00% OXYBENZONE 6.00%) SPRAY [MEIJER]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fb2fe6d5-4876-4012-9ef9-bb9eb0503b0c",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "KIDSPRAY BROAD SPECTRUM SUNSCREEN SPF 40 (AVOBENZONE, OCTISALATE, AND OCTOCRYLENE) SPRAY [MDSOLARSCIENCES]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=36df811b-35d2-261d-e063-6394a90aa91e",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "KINESYS BROAD SPECTRUM SPF 30 KIDS ALCOHOL-FREE SUNSCREEN (OCTINOXATE, OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) SPRAY [WILC HEALTHCARE INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9adea1a4-efa6-4fe1-85e8-ed69fa098a87",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "KISS MY FACE KIDS 30 MINERAL SUNSCREEN (TITANIUM DIOXIDE) SPRAY [WINDMILL HEALTH PRODUCTS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f843ddfe-1a5f-4b9d-bf2f-378187c1f6ec",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "KROGER KIDS TEAR FREE SPF50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [KROGER COMPANY]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85524d39-732f-4123-adf5-83efb2bfd928",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "KROGER KROGER KIDS SUNSCREEN SPF 50 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) SPRAY [THE KROGER CO]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=723a1829-4b12-475d-be07-272c72f78a97",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "LEADER KIDS SPORT SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [CARDINAL HEALTH 110, LLC. DBA LEADER]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3636693a-ba81-5d49-e063-6394a90a3006",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "MARKET BASKET KIDS SPF 50 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [DEMOULAS SUPER MARKETS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6a381da-6e34-bffe-e053-2a95a90a46f2",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "MEIJER BABY TEAR FREE SPF 50 CS (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [MEIJER DISTRIBUTION, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b00bc346-ffcf-4a23-b46b-69c84988e004",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "MIAMI BEACH SPF 50 KIDS C/S SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, AND OCTOCRYLENE) SPRAY [PRIME PACKAGING INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2bd66d7a-b542-03c3-e054-00144ff88e88",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "MIAMI BEACH SPF 50 KIDS C/S SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, AND OCTOCRYLENE) SPRAY [PRIME PACKAGING INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2bd8159f-c381-36b3-e054-00144ff88e88",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "MINERAL MIST SPF-50 (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [TUBBY TODD]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dca54a19-af25-ce47-e053-2a95a90a22db",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "NEUTROGENA BEACH DEFENSE KIDS SUNSCREEN SPF 70 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [KENVUE BRANDS LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eafc00ce-12e7-921f-e053-2995a90a241a",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "NO-AD KIDS SPF50 CONTINUOUS MIST SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OXYBENZONE, OCTOCRYLENE) SPRAY [SUN & SKIN CARE RESEARCH, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c77dc89f-e2f5-48c7-ae5a-f0c361d02854",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "OCEAN POTION INSTANT DRY 50 MIST KIDS SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [SUN & SKIN CARE RESEARCH, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=382247c7-77c0-488b-ad98-be15e153c85b",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "OCEAN POTION INTELL MIST 50 KIDS SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [SUN & SKIN CARE RESEARCH, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abf207bc-ca6c-47c4-8e93-04d5be3e47d1",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "OCEAN POTION SUNCARE MINERAL 50 ZINC OXIDE CONTINUOUS SUNSCREEN (ZINC OXIDE) SPRAY [GNL BRANDS INTERNATIONAL, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bba29ab-0e08-b751-e063-6294a90adb7b",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "PARROT HEAD PARAKEET KIDS 50 MIST SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [SUN & SKIN CARE RESEARCH, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d33112e-7c23-46a9-bb64-a5c3bd9bfb59",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "PETER ISLAND CONTINOUS SUNSCREEN KIDS SPF 50 (OXYBENZONE, AVOBENZONE, OCTOCRYLENE) SPRAY [ACCESS BUSINESS GROUP LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2db243d3-3b59-4be9-967c-0d4aea4d0066",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "PIPETTE MINERAL SUNSCREEN SPF 50 (ZINC OXIDE\t) AEROSOL, SPRAY [PIPETTE LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a10657a-bc16-181d-e063-6294a90a485b",
+            "form": "AEROSOL, SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "PUBLIX KIDS (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [PUBLIX SUPER MARKETS INC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cfd7a7e-ce9d-40de-9424-6b0c653dc1b7",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "REEF BABIES SPF 50 OXYBENZONE FREE (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) SPRAY [TROPICAL SEAS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5ed3488-aa32-4a63-9996-12c6532c3a4d",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "REEF KIDS SPF 30 OXYBENZONE FREE (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) SPRAY [TROPICAL SEAS, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=005a9e7c-e392-4b9a-911f-d7586f7ae94e",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SEA AND SKI KIDS SPF 70 C-SPRAY (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [CROSS BRANDS CONTRACT FILLING]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9dda43f4-9e36-3570-e053-2995a90a2c99",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SMART CARE SPIDER-MAN KIDS SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [ASHTEL STUDIOS INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4244cd1c-2a90-4a24-a373-a681a21f52d4",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SOLMATE BROAD SPECTRUM SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE AND OXYBENZONE) SPRAY [PRIME PACKAGING, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acb1e9cd-3c98-4ff8-9ea0-94b1288d0fd3",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SOLMATE BROAD SPECTRUM SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE AND OXYBENZONE) SPRAY [PRIME PACKAGING, INC.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ec855600-e03e-424e-88b3-6faed6e51be8",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SOLRX KIDS SPF 60 C-SPRAY (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [CROSS BRANDS CONTRACT FILLING]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e507750-0950-5c2a-e053-2995a90ac4a4",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SPF 50 KIDS SUNSCREEN (HOMOSALATE 10% OCTISALATE 5% AVOBENZONE 3%) SPRAY [COCONUT CALIENTE COSTA RICA LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9839570f-eeef-4140-a6ca-9fd2c9767a5b",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SPF 50 SUNSCREEN ROCKY MOUNTAIN (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) SPRAY [DERMA CARE RESEARCH LABS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a1c9066c-4801-5aee-e053-2995a90a75d2",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SPF 70 KIDS SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [DERMA CARE RESEARCH LABS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0aadc378-dc34-9a37-e063-6294a90ad49e",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SPF50 PLUS MINERAL SUNSCREEN (ZINC OXIDE AND TITANIUM DIOXIDE) SPRAY [KAS DIRECT LLC DBA BABYGANICS]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08e8bc10-85d8-4215-8351-7ec12029416c",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "SUN BUM KIDS 50 CLEAR SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [SUN BUM, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b058b74-27d0-8f8a-e063-6294a90aa02c",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SUN BUM KIDS SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [SUN BUM LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fcec9f9-bee0-4884-8c72-be273426f916",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SUN WAVE KIDS INSTA DRY SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [SUN LIFE BRANDS, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c2a5ca3-e9eb-48ba-8698-592d2c7aa241",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SUNNYSCREEN SPF 50 (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [SUPERGOOP, LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=859461ea-582e-8185-e053-2991aa0a954a",
+            "form": "SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "SUNSCREEN FOR KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE) SPRAY [THE KROGER CO.]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c7cd904-ffff-48aa-91bd-cc978946b36a",
+            "form": "SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "SUNSCREEN SPRAY150ML (ZINC OXIDE 15%, TITANIUM DIOXIDE 6%, HOMOSALATE 5%, OCTISALATE 4%) LIQUID [FOSHAN SUGAR MAX COSMETICS CO.,LTD]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=460ead6c-dd44-e320-e063-6294a90a2b64",
+            "form": "LIQUID",
+            "mineral": false
+          },
+          {
+            "title": "THINK KIDS MINERAL SPF 50 (ZINC OXIDE AND TITANIUM DIOXIDE) AEROSOL, SPRAY [THINKOPERATIONS,LLC]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=25c59820-a08d-4abe-87ae-a787ac8b2ac2",
+            "form": "AEROSOL, SPRAY",
+            "mineral": true
+          },
+          {
+            "title": "ULTRASOL SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY [FISCHER PHARMACEUTICALS LTD]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3515c77-a408-40d7-8254-fe3e6a3e4fac",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "ULTRASOLSUNSCREEN KIDS CLEAR CONTINUOUS SPRAY (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY [FISCHER PHARMACEUTICALS LTD]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c8ec6df-04b8-45a1-9f23-f36622305e06",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "ULTRASOLSUNSCREEN KIDS SUNSCREEN LOTION CONTINUOUS SPRAY SPF 45 (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE , OXYBENZONE) AEROSOL, SPRAY [FISCHER PHARMACEUTICALS LTD]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72cf5079-80f6-4c87-a0d8-bb17a518f8c4",
+            "form": "AEROSOL, SPRAY",
+            "mineral": false
+          },
+          {
+            "title": "ULTRASOLSUNSCREEN KIDS SUNSCREEN SPRAY LOTION SPF 30 (AVOBENZONE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [FISCHER PHARMACEUTICALS LTD]",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2986c76d-3346-487f-97c2-730a08ca8e3a",
+            "form": "SPRAY",
+            "mineral": false
+          }
+        ]
+      },
+      "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+      "site_source": {
+        "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "snapshot": "2026-10-08"
+      },
+      "method": "claims/registry_stats.py (sprays)",
+      "verified_date": "2026-10-08"
+    },
+    {
       "id": "US-BABY-PARABENS",
       "status": "verified",
       "jurisdiction": "US",
