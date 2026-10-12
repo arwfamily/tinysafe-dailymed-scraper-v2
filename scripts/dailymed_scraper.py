@@ -96,7 +96,7 @@ def _load_unii_seeds():
 
 
 UNII = _load_unii_seeds()
-UNII_CODESYSTEM = "2.16.840.1.113883.4.9"  # SPL에서 UNII를 나타내는 OID
+UNII_CODESYSTEM = "2.16.840.1.113883.4.9"  # OID that marks a UNII code in SPL
 
 CHEMICAL_FILTERS = [
     "AVOBENZONE", "OXYBENZONE", "OCTINOXATE", "OCTYL METHOXYCINNAMATE", "OCTISALATE",
@@ -237,9 +237,9 @@ def enumerate_all_spls(max_pages=0):
             for n in sorted(got) for x in got[n]["data"]]
 
 
-# ---------- Phase C: active ingredients (UNII 포함) ----------
+# ---------- Phase C: active ingredients (with UNII) ----------
 def fetch_active(setid):
-    """SPL XML 1차(UNII 확보) → packaging.json 보조. 반환 [{name,strength,unii}]."""
+    """SPL XML first (gives the UNII), packaging.json as fallback. Returns [{name,strength,unii}]."""
     xml = http_xml(f"{BASE}/spls/{setid}.xml")
     if xml:
         actives = _parse_ingredients_xml(xml, want_active=True)
@@ -268,7 +268,7 @@ def fetch_active(setid):
     return actives
 
 
-# ---------- inactive 텍스트 분해 헬퍼 (openFDA 보조용) ----------
+# ---------- inactive text splitting helper (openFDA fallback) ----------
 SECTION_STOP = re.compile(
     r"\b(Active|Sun\s+Protection|Warnings|Directions|Other\s+Information|Questions|"
     r"Stop\s+use|Keep\s+out|Storage|Manufactured|Distributed|Purpose|Uses)\b", re.IGNORECASE)
@@ -286,9 +286,9 @@ def _split_list(text):
     return out
 
 
-# ---------- SPL XML 성분 파서 (UNII 추출 핵심) ----------
+# ---------- SPL XML ingredient parser (UNII extraction) ----------
 def _parse_ingredients_xml(xml, want_active):
-    """<ingredient classCode> 블록에서 name + UNII 추출. 정규식 기반(기존 스타일 유지)."""
+    """Extract name + UNII from <ingredient classCode> blocks. Regex based."""
     classcodes = r"(?:ACTIB|ACTIM|ACTIR)" if want_active else r"IACT"
     pattern = r'<ingredient[^>]*classCode="' + classcodes + r'"[^>]*>(.*?)</ingredient>'
     blocks = re.findall(pattern, xml, re.DOTALL | re.IGNORECASE)
@@ -537,11 +537,11 @@ def apply_panel_percents(actives, panel):
     return actives
 
 
-# ---------- Phase D: inactive ingredients (XML 1차로 뒤집음, UNII 확보) ----------
+# ---------- Phase D: inactive ingredients (SPL XML first, with UNII) ----------
 def fetch_inactive_xml(setid):
     """
-    SPL XML에서 IACT 성분 + UNII + Drug Facts 패널 농도.
-    반환 (list[{name,unii}], source, panel_percents).
+    IACT ingredients + UNII + Drug Facts panel percentages from the SPL XML.
+    Returns (list[{name,unii}], source, panel_percents).
     One fetch, three things — the panel is in the same document.
     """
     xml = http_xml(f"{BASE}/spls/{setid}.xml")
@@ -553,7 +553,7 @@ def fetch_inactive_xml(setid):
 
 
 def fetch_inactive_openfda(setid):
-    """openFDA 보조(텍스트라 UNII 없음 → None). 반환 (list[{name,unii=None}], 'openfda') 또는 ([], None)."""
+    """openFDA fallback (text only, so UNII is None). Returns (list[{name,unii=None}], 'openfda') or ([], None)."""
     d = http_json(f"{OPENFDA}?search=set_id:{setid}&limit=1")
     if not d or not d.get("results"):
         return [], None
@@ -567,7 +567,7 @@ def fetch_inactive_openfda(setid):
 
 
 def fetch_inactive(setid):
-    """UNII 확보 우선: XML(1차) → openFDA(보조). 반환에 패널 농도 포함."""
+    """UNII first: SPL XML, then openFDA as fallback. The result includes panel percentages."""
     items, src, panel = fetch_inactive_xml(setid)
     if items:
         return items, src, panel

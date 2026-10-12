@@ -12,12 +12,6 @@
    "file": "au_permissible_ingredients.json",
    "coverage": "complete"
   },
-  "KR": {
-   "rows": 7,
-   "named": 7,
-   "file": "kr_uv_filters_partial.jsonl",
-   "coverage": "partial"
-  },
   "US": {
    "rows": 18,
    "named": 18,
@@ -31,10 +25,11 @@
  "jurisdictions_present": [
   "AU",
   "EU",
-  "KR",
   "US"
  ],
- "jurisdictions_missing": [],
+ "jurisdictions_missing": [
+  "KR"
+ ],
  "ingredient_count": 5257,
  "matrix": {
   "CAMPHOR BENZALKONIUM METHOSULFATE": {
@@ -308,15 +303,6 @@
      "warning_statement_required": true,
      "listed_as": "OCTOCRYLENE"
     },
-    "KR": {
-     "max_percent": 10.0,
-     "conditions": null,
-     "source": "「화장품 안전기준 등에 관한 규정」 별표 2 (사용상의 제한이 필요한 원료) — 자외선 차단성분",
-     "source_url": "https://www.law.go.kr/admRulByl...bylNo=0002 (별표2)",
-     "source_version": null,
-     "source_status": "UNVERIFIED_SECONDARY",
-     "listed_as": "OCTOCRYLENE"
-    },
     "US": {
      "max_percent": 10.0,
      "conditions": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
@@ -361,15 +347,6 @@
      "is_active": true,
      "warning_statement_required": true,
      "listed_as": "OCTYL METHOXYCINNAMATE"
-    },
-    "KR": {
-     "max_percent": 7.5,
-     "conditions": null,
-     "source": "「화장품 안전기준 등에 관한 규정」 별표 2 (사용상의 제한이 필요한 원료) — 자외선 차단성분",
-     "source_url": "https://www.law.go.kr/admRulByl...bylNo=0002 (별표2)",
-     "source_version": null,
-     "source_status": "UNVERIFIED_SECONDARY",
-     "listed_as": "ETHYLHEXYL METHOXYCINNAMATE"
     },
     "US": {
      "max_percent": 7.5,
@@ -443,15 +420,6 @@
      "is_active": true,
      "warning_statement_required": true,
      "listed_as": "ETHYLHEXYL TRIAZONE"
-    },
-    "KR": {
-     "max_percent": 5.0,
-     "conditions": null,
-     "source": "「화장품 안전기준 등에 관한 규정」 별표 2 (사용상의 제한이 필요한 원료) — 자외선 차단성분",
-     "source_url": "https://www.law.go.kr/admRulByl...bylNo=0002 (별표2)",
-     "source_version": null,
-     "source_status": "UNVERIFIED_SECONDARY",
-     "listed_as": "ETHYLHEXYL TRIAZONE"
     }
    },
    "also_known_as": [
@@ -515,15 +483,6 @@
      "is_active": true,
      "warning_statement_required": true,
      "listed_as": "OCTYL SALICYLATE"
-    },
-    "KR": {
-     "max_percent": 5.0,
-     "conditions": null,
-     "source": "「화장품 안전기준 등에 관한 규정」 별표 2 (사용상의 제한이 필요한 원료) — 자외선 차단성분",
-     "source_url": "https://www.law.go.kr/admRulByl...bylNo=0002 (별표2)",
-     "source_version": null,
-     "source_status": "UNVERIFIED_SECONDARY",
-     "listed_as": "ETHYLHEXYL SALICYLATE"
     },
     "US": {
      "max_percent": 5.0,
@@ -753,15 +712,6 @@
      "warning_statement_required": true,
      "listed_as": "TITANIUM DIOXIDE"
     },
-    "KR": {
-     "max_percent": 25.0,
-     "conditions": null,
-     "source": "「화장품 안전기준 등에 관한 규정」 별표 2 (사용상의 제한이 필요한 원료) — 자외선 차단성분",
-     "source_url": "https://www.law.go.kr/admRulByl...bylNo=0002 (별표2)",
-     "source_version": null,
-     "source_status": "UNVERIFIED_SECONDARY",
-     "listed_as": "TITANIUM DIOXIDE"
-    },
     "US": {
      "max_percent": 25.0,
      "conditions": "Finished product must provide SPF >= 2 (M020.80). Combination rules in M020.20 apply.",
@@ -807,15 +757,6 @@
      "is_active": true,
      "warning_statement_required": true,
      "listed_as": "DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE"
-    },
-    "KR": {
-     "max_percent": 10.0,
-     "conditions": null,
-     "source": "「화장품 안전기준 등에 관한 규정」 별표 2 (사용상의 제한이 필요한 원료) — 자외선 차단성분",
-     "source_url": "https://www.law.go.kr/admRulByl...bylNo=0002 (별표2)",
-     "source_version": null,
-     "source_status": "UNVERIFIED_SECONDARY",
-     "listed_as": "DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE"
     }
    },
    "also_known_as": []
@@ -852,15 +793,6 @@
      "is_active": true,
      "is_excipient": true,
      "warning_statement_required": true,
-     "listed_as": "ZINC OXIDE"
-    },
-    "KR": {
-     "max_percent": 25.0,
-     "conditions": null,
-     "source": "「화장품 안전기준 등에 관한 규정」 별표 2 (사용상의 제한이 필요한 원료) — 자외선 차단성분",
-     "source_url": "https://www.law.go.kr/admRulByl...bylNo=0002 (별표2)",
-     "source_version": null,
-     "source_status": "UNVERIFIED_SECONDARY",
      "listed_as": "ZINC OXIDE"
     },
     "US": {

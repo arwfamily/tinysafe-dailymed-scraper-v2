@@ -427,7 +427,7 @@ def load_regulatory():
       EU Annex VI   inci_name / max_concentration_pct     / product_type_condition
       AU TGA        name      / max_concentration_percent / requirements
                     (wrapped: {"ingredients": [...]})
-      KR 별표2       inci_name / max_concentration_pct    / source_status
+      KR Annex 2       inci_name / max_concentration_pct    / source_status
       US M020       inci_name / max_concentration_percent
     """
     wanted = {
@@ -443,7 +443,7 @@ def load_regulatory():
                "max": ["max_concentration_percent"],
                "cond": ["requirements", "conditions"]},
         "KR": {"files": ["kr_uv_filters_partial.jsonl", "kr_uv_filters.jsonl"],
-               "label": "MFDS 화장품 안전기준 별표2",
+               "label": "MFDS Cosmetic Safety Standards, Annex 2",
                # This extract is PARTIAL. Absence from it means "not collected",
                # never "not permitted" — a distinction that matters because a
                # published page saying Korea does not allow a filter Korea does
@@ -814,7 +814,7 @@ def check_legality(prods, matrix):
                                 "issue": f"no resolved percent "
                                          f"({a.get('percent_basis')})"})
                 continue
-            # Legal maxima in M020, Annex VI and 별표2 are all w/w percentages.
+            # Legal maxima in M020, Annex VI and MFDS Annex 2 are all w/w percentages.
             # A w/v figure is not comparable to them without the product's
             # density, and in this corpus w/v records are additionally
             # untrustworthy: the numerator is often the amount per container

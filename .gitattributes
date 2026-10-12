@@ -1,1 +1,15 @@
+# Left out of release archives (Zenodo). These are working files, not part of
+# the dataset: internal notes, test runs, logs, work queues, deploy config, and
+# derived views that are not verified to the standard of the published counts.
 content/notes_pending.md export-ignore
+docs/README_ko.md export-ignore
+docs/deploy/ export-ignore
+data/smoke/ export-ignore
+data/reports/run_*.log export-ignore
+claims/baby_queue.csv export-ignore
+data/views/recall_join.jsonl export-ignore
+data/views/claim_audit.jsonl export-ignore
+data/views/legality_check.jsonl export-ignore
+data/views/mineral_sunscreens.json export-ignore
+data/views/reclassify_report.json export-ignore
+site/vercel.json export-ignore

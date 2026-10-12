@@ -84,7 +84,7 @@
         "https://www.venable.com/insights/publications/2026/06/fda-clears-the-way-for-bemotrizinol-first-new-otc"
       ],
       "todo": "Order PDF read 2026-10-08 (dosage forms, combinations, exclusivity confirmed). Done.",
-      "credit": "Dosage-form restriction first flagged by Muse package (2026-10-08); verified against Venable analysis. Confirm in order PDF text."
+      "credit": "Dosage-form restriction first flagged in an internal review (2026-10-08); verified against Venable analysis. Confirm in order PDF text."
     },
     {
       "id": "REG-US-PABA-TROL-001",
@@ -97,7 +97,7 @@
         "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
         "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/Order/FinalAdministrativeOrderOTC000008-PABATrolamine.pdf"
       ],
-      "credit": "First flagged by Muse package (2026-10-08); verified on FDA Q&A page.",
+      "credit": "First flagged in an internal review (2026-10-08); verified on FDA Q&A page.",
       "todo": null
     },
     {
