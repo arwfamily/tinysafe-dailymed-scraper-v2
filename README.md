@@ -48,5 +48,7 @@ See `CITATION.cff`. Each release is archived on Zenodo with its own DOI.
 
 ## License
 
-Data and documentation: CC BY 4.0. Source FDA DailyMed content is public
-information from the U.S. National Library of Medicine.
+ARW House's compilation, analysis, code and documentation: CC BY 4.0.
+DailyMed data courtesy of the U.S. National Library of Medicine. Labels in
+DailyMed are submitted by their manufacturers; quoted label text remains the
+property of its owners and is included only as evidence for the counts.
