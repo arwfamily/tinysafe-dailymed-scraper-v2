@@ -9,17 +9,7 @@
   "new": 1
  },
  "baby_population_live": 585,
- "new_baby_decisions": [
-  {
-   "setid": "5d233008-96a5-44e6-e063-6294a90a9aaa",
-   "decision": "include",
-   "stage": "auto",
-   "reason": "auto-rule v1: baby/kids word in product name, sunscreen, not a kit",
-   "decided_on": "2026-10-12",
-   "title": "ORGANIC KIDS SUNSCREEN (ZINC OXIDE SUNSCREEN) CREAM [VEGANIC SKN LIMITED]",
-   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d233008-96a5-44e6-e063-6294a90a9aaa"
-  }
- ],
+ "new_baby_decisions": [],
  "review_queue": 0,
  "changes": [
   {
