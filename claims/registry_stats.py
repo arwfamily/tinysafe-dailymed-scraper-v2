@@ -77,6 +77,11 @@ OTHER_MARKET_SPL = {
     # a Korean-only carton listed in DailyMed stays in); a named foreign
     # importer does.
     "13c9ab06-9903-728a-e054-00144ff88e88": "label names a Brazilian importer (Mappel); Portuguese artwork, no US Drug Facts",
+    # reefsun Organic Kids Sunscreen (filed by Veganic SKN Limited, 2026-10-05):
+    # the label image is the Australian carton — ARTG name, AUST L 526347,
+    # "Made in Queensland, Australia", ReefSun Brisbane address, no US
+    # distributor; the inactive list is only a QR code.
+    "5d233008-96a5-44e6-e063-6294a90a9aaa": "Australian label (ARTG name, AUST L 526347, Brisbane address, no US distributor); inactive list only behind a QR code",
 }
 MULTI_PRODUCT_SPL = {
     "c5d52f13-a649-9579-e053-2a95a90a062c": "kit: nasal spray, acne serum and sunscreen in one listing",
