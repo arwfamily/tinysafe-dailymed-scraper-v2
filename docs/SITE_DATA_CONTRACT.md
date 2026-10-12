@@ -54,14 +54,14 @@ US registry and the claim ledger. Shape:
         {
           "id": "US-BABY-ZNO-SHARE",
           "status": "verified",
-          "sentence": "160 of 163 baby mineral sunscreen formulas registered with the FDA contain zinc oxide.",
+          "sentence": "160 of 163 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain zinc oxide.",
           "numerator": 160,
           "denominator": 163,
           "population": "unique formulations, baby-labeled, mineral-only actives, product_type=sunscreen",
           "source": {
             "title": "FDA DailyMed SPL registry, ARW House analysis",
             "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/<commit>/data/canonical/us_sunscreens.jsonl",
-            "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/<commit>/scripts/verify_ledger.py",
+            "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/<commit>/claims/registry_stats.py",
             "snapshot": "2026-10-05",
             "verified_date": "2026-10-08"
           }
@@ -96,7 +96,7 @@ see §3.)
 - `legal_framing`, when present, must appear next to the finding.
 - Population (owner decision 2026-10-08, strict): labels that say baby or
   kids, selected by rule from the label, edge cases decided by hand; every
-  decision and its reason is in `claims/baby_review_*.csv`. Never say the
+  decision and its reason is in `claims/baby_decisions.csv` (first full review: `claims/baby_review_2026-10-08.csv`). Never say the
   whole list was reviewed by hand.
 
 ### Allowed `status` values for a limit
@@ -147,7 +147,7 @@ row, the site shows "Not yet reviewed" and no badge.
 
 ---
 
-## 3. What is verified today (2026-10-08)
+## 3. What is verified today (2026-10-12, release v1.0.0)
 
 | Item | State | Blocker |
 |---|---|---|
@@ -157,8 +157,8 @@ row, the site shows "Not yet reviewed" and no badge.
 | Name merging across jurisdictions | fixed | |
 | Ecamsule US status | `approved_product_only` | source is secondary; replace with Drugs@FDA record |
 | Canada limits | not collected | Health Canada sunscreen monograph not in the matrix |
-| US registry shares (baby) | verified (strict definition) | 21 claims in evidence.json |
-| Hidden UV absorbers (BOS etc.) shares | verified | 2 findings in evidence.json; need their own page |
+| US registry shares (baby) | verified (strict definition); independently recounted 2026-10-12 | see `claims/claim_ledger.json` and `site/evidence.json` |
+| SPF boosters in inactives (BOS etc.) | verified as US-BABY-BOOSTERS and US-BABY-BOS; 'UV-absorbing' wording withdrawn (US-BABY-HIDDEN-UV superseded) | — |
 
 The data side fixes the matrix items first, then the baby review, then
 marks registry numbers `verified` in the claim ledger. `evidence.json` is

@@ -50,8 +50,8 @@ fingerprint version; `_state.json` is the last run's state.
 |---|---|
 | `claims/baby_review_2026-10-08.csv` | First full review of baby/kids candidates, with the rule applied |
 | `claims/baby_decisions.csv` | Every include/exclude decision since: `setid`, `decision`, `stage`, `reason`, `decided_on` |
-| `claims/population_exclusions.csv` | Included labels left out of the counts by rule (another market, outside US limits, multi-product), with reason |
-| `data/views/baby_sunscreens.jsonl` | Canonical records of the baby/kids candidates, with `baby_decision` |
+| `claims/population_exclusions.csv` | Included labels left out of the counts by rule (another market, outside US limits, multi-product listing), with reason. A multi-product listing is split: each of its products that is itself a baby/kids sunscreen re-enters the counts as its own formula (`setid#n`), from its own filing |
+| `data/views/baby_sunscreens.jsonl` | Canonical records of the baby/kids candidates, with `baby_decision`. Values are as filed; corrections where the printed label contradicts the filing are in `data/corrections/spl_label_errors.jsonl` and are applied in the counts |
 | `data/views/baby_label_text.jsonl` | Label text by section, as published on DailyMed (evidence for wording findings) |
 | `data/views/label_images_index.json` | The label images DailyMed lists for each label (names, hashes) |
 | `data/views/ocr/` | OCR of front-panel images (baby/kids wording) |

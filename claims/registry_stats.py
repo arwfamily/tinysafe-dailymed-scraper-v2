@@ -43,7 +43,9 @@ EU_HOMOSALATE = {"title": "EU Cosmetics Regulation Annex VI entry 3 (homosalate)
                  "checked": "2026-10-08"}
 US_MAX = {"avobenzone": 3, "oxybenzone": 6, "octinoxate": 7.5, "homosalate": 15, "octisalate": 5, "octocrylene": 10,
           "ensulizole": 4, "zinc oxide": 25, "titanium dioxide": 25}
-REPO_URL = "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main"
+# Links in the ledger point at RELEASE_REF (a release tag) when set, so an archived
+# release cites files as they were in that release.
+REPO_URL = "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/" + os.environ.get("RELEASE_REF", "main")
 
 FILTERS = [  # slug, display name, classifier canonical name
     ("zinc-oxide", "zinc oxide", "zinc oxide"),
@@ -420,8 +422,11 @@ def same_list_printed(forms, recs, include):
         if not k:
             continue
         scent = bool(where_listed(r, FRAGRANCE.pattern))
+        # a multi-product listing's printed list covers several products, so it
+        # cannot stand in for one product's list
         group = [r] + [x for x in members.get(r["formulation_hash"], []) if x["setid"] != r["setid"]
                        and _actives_key(x) == k and _form(x) == _form(r)
+                       and (x.get("product_count") or 1) <= 1 and "#" not in str(x["setid"])
                        and bool(where_listed(x, FRAGRANCE.pattern)) == scent]
         # compared as one joined string: the same words in the same order,
         # whatever the label's comma placement ('Caprylic/Capric' 'Triglyceride')
@@ -435,8 +440,15 @@ def same_list_printed(forms, recs, include):
     return out
 
 
+# Same company filed under different names ("THE KROGER CO" / "KROGER COMPANY",
+# "MEIJER" / "MEIJER DISTRIBUTION"). Keys are names after _co() normalisation.
+_CO_ALIASES = {"MEIJERDISTRIBUTION": "MEIJER"}
+
+
 def _co(name):
-    return re.sub(r"[^A-Z0-9]", "", re.sub(r"\b(INC|LLC|LTD|CO|CORP|CORPORATION|COMPANY)\b\.?", "", (name or "").upper()))
+    n = re.sub(r"\b(INC|LLC|LTD|CO|CORP|CORPORATION|COMPANY)\b\.?", "", (name or "").upper())
+    n = re.sub(r"[^A-Z0-9]", "", re.sub(r"^\s*THE\s+", "", n))
+    return _CO_ALIASES.get(n, n)
 
 
 def same_labeler(r, twins):
@@ -496,6 +508,15 @@ EU_COSMETIC_SOURCE = {"title": "Regulation (EC) No 1223/2009 on cosmetic product
 # No word boundaries: some labels print ingredients run together
 # ("DIMETHICONEFRAGRANCENEOPENTYL", "FRAGRANCEPRODUCT FORMULATED WITH").
 FRAGRANCE = re.compile(r"FRAGRANCE(?![- ]?FREE)|PARFUM|PERFUME")
+# Labels whose sources disagree about fragrance (found in the 2026-10-12 audit).
+# The count follows where_listed; the range shows what other readings would give.
+FRAGRANCE_CONFLICT_NOTE = (
+    " Three labels disagree with themselves about fragrance, so the count could be 139 to 142 "
+    "depending on how they are read: Baby Bum Mineral SPF 50 face stick (setid 492c44e3) and "
+    "Coppertone WaterBabies lotion (d915cb28) are counted because their Drug Facts text lists "
+    "fragrance, although their label images say \"Fragrance Free\" and print an ingredient list "
+    "without it; Jason Sun Kids (0c2dc068) is not counted, although the ingredient list "
+    "transcribed from its label image prints \"Fragrance (Parfum)\".")
 AAD_FRAGRANCE = {"title": "How can I find eczema friendly products? — American Academy of Dermatology",
                  "url": "https://www.aad.org/public/diseases/eczema/childhood/triggers/friendly-products",
                  "checked": "2026-10-08"}
@@ -670,7 +691,7 @@ def main():
          "numerator": homo_eu, "denominator": N, "population": POP,
          "detail": {"homosalate_formulas": len(homo), "excluded_unreliable_percent": len(homo) - len(homo_ok),
                     "by_percent": by_percent},
-         "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py", "verified_date": snapshot},
+         "caveat": CAVEAT + (" One Kroger kids sunstick is counted at its filed homosalate percentage, because its label image is too small to read (see data/corrections/printed_actives_review.jsonl)."), "site_source": src, "method": "claims/registry_stats.py", "verified_date": snapshot},
     ]
     # Same printed ingredient list: compared directly on the printed Drug
     # Facts of both labels (label text, or the image transcription), across
@@ -711,8 +732,9 @@ def main():
     M = len(mineral)
     zno = sum(1 for r in mineral if r.get("contains_zinc_oxide"))
     hidden = sum(1 for r in mineral if r.get("uv_absorbers_in_inactives"))
-    bos = sum(1 for r in mineral if any(a["canonical"] == "butyloctyl salicylate"
-                                        for a in r.get("uv_absorbers_in_inactives") or []))
+    # Printed label decides (where_listed), as for every other ingredient count;
+    # the filing-only classifier field misses labels that print it but did not file it.
+    bos = sum(1 for r in mineral if where_listed(r, BOOSTERS[0][1]))
     claims += [
         {"id": "US-BABY-MINERAL-ZNO", "status": "verified", "jurisdiction": "US",
          "ingredient_slugs": ["zinc-oxide"],
@@ -755,7 +777,7 @@ def main():
                            "belongs with the inactive ingredients, as the rules require. The finding is "
                            "about how labels work, not about any brand."),
          "numerator": bos, "denominator": M, "population": POP_MIN,
-         "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py", "verified_date": snapshot},
+         "caveat": CAVEAT, "site_source": src, "method": "claims/registry_stats.py (where_listed)", "verified_date": snapshot},
     ]
     for c in claims:
         if c["id"] == "US-BABY-HIDDEN-UV":
@@ -1122,7 +1144,7 @@ def main():
                                 for r in sorted(fr, key=lambda r: r["title"])],
                    "printed_only": sum(1 for r in fr if where_listed(r, FRAGRANCE.pattern) == ["printed label"]),
                    "not_counted": "essential oils and other single scent ingredients; only fragrance, parfum or perfume"},
-        "caveat": CAVEAT, "site_source": src,
+        "caveat": CAVEAT + FRAGRANCE_CONFLICT_NOTE, "site_source": src,
         "method": "claims/registry_stats.py (FRAGRANCE)", "verified_date": snapshot})
 
     with open(LEDGER, encoding="utf-8") as f:

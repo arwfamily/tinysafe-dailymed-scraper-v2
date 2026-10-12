@@ -1,7 +1,12 @@
-"""Reproduce every number in claim_ledger.json from the raw data files.
+"""Independent recount of the ledger claims that registry_stats.py does not
+produce: the superseded early counts US-HID-001/002 and US-CORPUS-001 (kept for
+the record, not published) and AU-BEMT-001 (Australian data).
+
+The published US-BABY-* claims are produced, and reproduced, by
+claims/registry_stats.py.
 
 Usage:
-  python3 verify_ledger.py us_sunscreens.jsonl au_ingredients.jsonl
+  python3 claims/verify_ledger.py data/canonical/us_sunscreens.jsonl [au_ingredients.jsonl]
 
 Sources:
   https://raw.githubusercontent.com/arwfamily/tinysafe-dailymed-scraper-v2/main/data/canonical/us_sunscreens.jsonl
@@ -58,5 +63,8 @@ def au(path):
 
 
 if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        sys.exit(__doc__)
     us(sys.argv[1])
-    au(sys.argv[2])
+    if len(sys.argv) > 2:
+        au(sys.argv[2])

@@ -1,7 +1,7 @@
 {
   "ledger": "ARW House baby sunscreen claim ledger",
-  "version": "0.4",
-  "verified_on": "2026-10-08",
+  "version": "1.0.0",
+  "verified_on": "2026-10-12",
   "rule": "Only claims with status=verified may be published. Every number must be reproducible by the script named in `method`. Wording in `publishable_sentence` is the maximum strength allowed.",
   "claims": [
     {
@@ -21,7 +21,7 @@
       },
       "population": "category=sunscreen AND baby_labeled=true; deduplicated by formulation_hash (391 registrations -> 332 unique formulations); actives contain ZnO and/or TiO2 and no FDA chemical filter",
       "source": "arwfamily/tinysafe-dailymed-scraper-v2 data/canonical/us_sunscreens.jsonl, snapshot last_seen 2026-10-05 (13,326 rows, of which 6,537 category=sunscreen)",
-      "method": "scripts/verify_ledger.py US-HID-001 (independent regex on inactive ingredient names; does NOT use the pipeline flag has_hidden_chemical_filter)",
+      "method": "claims/verify_ledger.py US-HID-001 (independent regex on inactive ingredient names; does NOT use the pipeline flag has_hidden_chemical_filter)",
       "supersedes": "45 of 144 (IG series, Aug 2026) — pipeline flag missed ethylhexyl methoxycrylene in 4 ZnO+TiO2 products (Johnson's Baby Mineral SPF30, Aveeno Baby/Kids Daily Moisture Face, one other)",
       "legal_framing": "Not a violation: these excipients are not FDA-recognised sunscreen actives, so listing them as actives would itself be non-compliant. The finding is about the labeling system, not about any brand.",
       "known_limits": [
@@ -41,7 +41,7 @@
       "denominator": 148,
       "population": "same as US-HID-001",
       "source": "same as US-HID-001",
-      "method": "scripts/verify_ledger.py US-HID-002",
+      "method": "claims/verify_ledger.py US-HID-002",
       "note": "Strongest single-ingredient version; use when the headline must avoid grouping different chemistries.",
       "blocker": "Repo audit 2026-10-08: (1) category classifier is title-substring based — baby sunscreens labeled TINTED/other are excluded from category=sunscreen; (2) baby_labeled matches labeler names and misses Mustela/Pipette/Babo/Attitude Little Ones; (3) hidden-absorber list here omits diethylhexyl syringylidenemalonate, polysilicone-15, benzylidene dimethoxydimethylindanone. Numerator and denominator will both move. Do NOT publish until recomputed on a hand-reviewed baby list.",
       "superseded_by": "US-BABY-BOS"
@@ -53,7 +53,7 @@
       "claim": "US corpus size",
       "publishable_sentence": "6,537 sunscreen registrations on DailyMed (5,223 unique formulations), of which 391 are labeled for babies or kids.",
       "supersedes": "'13,285 US sunscreens' used in chat on 2026-10-08 — 13,326 is the whole corpus including makeup (3,308), lip balm, diaper cream and other SPF products; only 6,537 are category=sunscreen",
-      "method": "scripts/verify_ledger.py US-CORPUS-001",
+      "method": "claims/verify_ledger.py US-CORPUS-001",
       "blocker": "6,537 is the pipeline's category=sunscreen count; audit found ~2,000+ real sunscreens classified as makeup (TINTED) or other. True sunscreen count unknown until reclassified on actives + Drug Facts 'Uses'."
     },
     {
@@ -61,13 +61,13 @@
       "status": "verified_with_scope_limit",
       "jurisdiction": "AU",
       "claim": "144 of 501 ARTG-listed sunscreens in the dataset list bemotrizinol as an active; 11 of them are baby/kids-named (Banana Boat Baby/Kids, Cancer Council Kids).",
-      "publishable_sentence": "In Australia, bemotrizinol is already an active ingredient in at least 144 listed sunscreens, including at least 11 sold for babies and kids.",
+      "publishable_sentence": "In Australia, bemotrizinol is an active ingredient in at least 144 sunscreens listed on the ARTG, including at least 11 whose names say baby or kids.",
       "numerator": 144,
       "denominator": 501,
       "supersedes": "'145' used in chat on 2026-10-08 (145 is the zinc oxide count)",
       "SCOPE_WARNING": "The 501 products come from an ARTG export of a keyword search for 'sunscreen' (export footer: SearchValues contains 'sunscreen', 2026-08-21) — not a census. Use 'at least N'; no market percentages.",
       "source": "arwfamily/global-sunscreen data/canonical/au_ingredients.jsonl (501 records)",
-      "method": "scripts/verify_ledger.py AU-BEMT-001",
+      "method": "claims/verify_ledger.py (needs au_ingredients.jsonl from arwfamily/global-sunscreen)",
       "note_bemt_name": "TGA's own approved name is BEMOTRIZINOL; no name-mapping issue."
     },
     {
@@ -84,14 +84,14 @@
         "https://www.venable.com/insights/publications/2026/06/fda-clears-the-way-for-bemotrizinol-first-new-otc"
       ],
       "todo": "Order PDF read 2026-10-08 (dosage forms, combinations, exclusivity confirmed). Done.",
-      "credit": "Dosage-form restriction first flagged in an internal review (2026-10-08); verified against Venable analysis. Confirm in order PDF text."
+      "credit": "Dosage-form restriction first flagged in an internal review (2026-10-08); confirmed in the order PDF text on 2026-10-08."
     },
     {
       "id": "REG-US-PABA-TROL-001",
       "status": "verified",
       "jurisdiction": "US",
       "claim": "FDA Final Administrative Order OTC000008-1 (signed 2026-09-08, issued 2026-09-11) amends M020 to remove aminobenzoic acid (PABA) and trolamine salicylate as sunscreen active ingredients, effective 2027-09-11 (or later if disputed).",
-      "publishable_sentence": "In September 2026 the FDA finalized the removal of PABA and trolamine salicylate from the list of permitted US sunscreen ingredients.",
+      "publishable_sentence": "In September 2026 the FDA finalized the removal of PABA and trolamine salicylate from the list of permitted US sunscreen active ingredients, effective September 11, 2027.",
       "precision_rule": "Until 2027-09-11 both remain listed M020 actives. Say 'removal finalized, effective 2027-09-11', never 'banned' or 'no longer permitted'. The FDA Q&A page lists 2026-09-10; the order PDF says issued 2026-09-11 — the order PDF governs.",
       "sources": [
         "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
@@ -679,9 +679,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -702,9 +702,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -725,9 +725,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -748,9 +748,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -771,9 +771,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -794,9 +794,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -817,9 +817,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -840,9 +840,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -863,9 +863,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -886,9 +886,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -909,9 +909,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -932,9 +932,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -955,9 +955,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -978,9 +978,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -1001,9 +1001,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -1024,9 +1024,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -1047,9 +1047,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -1070,9 +1070,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -1093,9 +1093,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -1116,9 +1116,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -1147,9 +1147,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -1224,12 +1224,12 @@
           ]
         ]
       },
-      "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+      "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today. One Kroger kids sunstick is counted at its filed homosalate percentage, because its label image is too small to read (see data/corrections/printed_actives_review.jsonl).",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -1241,15 +1241,15 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "finding": "same-ingredient-list",
-      "claim": "102 of 448 baby/kids formulations print the same ingredient list as a non-baby label.",
-      "publishable_sentence": "102 of the 448 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 86 cases both labels name the same labeler.",
+      "claim": "101 of 448 baby/kids formulations print the same ingredient list as a non-baby label.",
+      "publishable_sentence": "101 of the 448 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list the same ingredients in their Drug Facts as a sunscreen whose label does not say baby or kids: the same active ingredients at the same percentages and the same inactive ingredients in the same order. In at least 85 cases both labels name the same labeler.",
       "legal_framing": "Not a violation: nothing requires a baby or kids sunscreen to have a different formula. The finding compares what the label records state; it does not show how the products are made.",
-      "numerator": 102,
+      "numerator": 101,
       "denominator": 448,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
       "detail": {
-        "same_company": 86,
-        "pairs_csv": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/same_ingredient_list_pairs_published.csv",
+        "same_company": 85,
+        "pairs_csv": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/same_ingredient_list_pairs_published.csv",
         "pairs": [
           {
             "baby": [
@@ -1456,23 +1456,6 @@
               [
                 "THEFACESHOP NATURAL SUN OIL-FREE SUNSCREEN BROAD SPECTRUM SPF 50 (ENSULIZOLE, OCTINOXATE, OCTISALATE, TITANIUM DIOXIDE, ZINC OXIDE) LOTION [FMG CO.LTD]",
                 "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d30b156a-b9b1-499b-e053-2a95a90ada6a"
-              ]
-            ],
-            "same_company": true
-          },
-          {
-            "baby": [
-              "BABY BUM MINERAL 50 SUNSCREEN ROLL-ON [SUN BUM, LLC]",
-              "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c470ff8-37d6-a729-e063-6294a90aa525"
-            ],
-            "same_list": [
-              [
-                "SUN BUM 50 MINERAL SUNSCREEN ROLL-ON (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [SUN BUM, LLC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a392237-019d-2384-e063-6394a90a5b24"
-              ],
-              [
-                "SUN BUM MINERAL SUNSCREEN ROLL ON SPF 50 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [SUN BUM LLC]",
-                "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=81e06c01-26ee-425f-9b77-f189563f9127"
               ]
             ],
             "same_company": true
@@ -3210,9 +3193,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py (same_list_printed)",
@@ -3233,9 +3216,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py",
@@ -3257,9 +3240,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py + scripts/classify.py (two-tier absorber list)",
@@ -3272,26 +3255,26 @@
       "jurisdiction": "US",
       "ingredient_slugs": [],
       "superseded_finding": "spf-boosters",
-      "claim": "76 of 245 mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
-      "publishable_sentence": "76 of the 245 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not an FDA sunscreen active ingredient. Hallstar, one of its manufacturers, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
+      "claim": "78 of 245 mineral-only baby/kids sunscreen formulations contain butyloctyl salicylate.",
+      "publishable_sentence": "78 of the 245 mineral baby and kids sunscreen formulas listed in the FDA's DailyMed label database contain butyloctyl salicylate. It is not an FDA sunscreen active ingredient. Hallstar, one of its manufacturers, says that at 5% it is responsible for no more than 2 SPF units on its own, that a larger SPF boost can be seen with other filters, and that it can help prevent the breakdown of certain UV filters.",
       "ingredient_source": {
         "title": "Butyloctyl Salicylate Q&A — Hallstar Beauty (manufacturer)",
         "url": "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/",
         "checked": "2026-10-08"
       },
       "legal_framing": "Not a violation: butyloctyl salicylate is not an FDA sunscreen active, so it belongs with the inactive ingredients, as the rules require. The finding is about how labels work, not about any brand.",
-      "numerator": 76,
+      "numerator": 78,
       "denominator": 245,
       "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products); mineral-only actives (zinc oxide and/or titanium dioxide)",
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
-      "method": "claims/registry_stats.py",
+      "method": "claims/registry_stats.py (where_listed)",
       "verified_date": "2026-10-12"
     },
     {
@@ -4702,9 +4685,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py (BOOSTERS, full_ingredient_text)",
@@ -5000,9 +4983,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py (EU_BANNED, where_listed)",
@@ -5790,9 +5773,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py (Hawaii)",
@@ -5805,7 +5788,7 @@
       "ingredient_slugs": [],
       "finding": "sprays",
       "claim": "114 of 448 baby/kids sunscreen formulations are sprays (29 of 245 mineral-only).",
-      "publishable_sentence": "114 of the 448 baby and kids sunscreen formulas listed in the FDA's DailyMed label database are sprays, from 52 labelers. To avoid inhalation, the American Academy of Pediatrics suggests lotions, or, if a spray is used, spraying it onto the hands and then applying it to the child.",
+      "publishable_sentence": "114 of the 448 baby and kids sunscreen formulas listed in the FDA's DailyMed label database are sprays, from 49 labelers. To avoid inhalation, the American Academy of Pediatrics suggests lotions, or, if a spray is used, spraying it onto the hands and then applying it to the child.",
       "legal_framing": "Not a violation: spray is a permitted sunscreen form in the US. The FDA has proposed that spray sunscreens remain generally recognized as safe and effective subject to testing and labeling requirements.",
       "numerator": 114,
       "denominator": 448,
@@ -5824,7 +5807,7 @@
           85,
           203
         ],
-        "labelers": 52,
+        "labelers": 49,
         "healthychildren": {
           "title": "What's the best way to protect kids' skin from sunburn? — HealthyChildren.org (AAP)",
           "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/whats-the-best-way-to-protect-kids-skin-from-sunburn.aspx",
@@ -6524,9 +6507,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py (sprays)",
@@ -6675,9 +6658,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py (mineral wording)",
@@ -6970,9 +6953,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py (hypoallergenic)",
@@ -7477,9 +7460,9 @@
       "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py (PARABENS)",
@@ -8659,12 +8642,12 @@
         "printed_only": 126,
         "not_counted": "essential oils and other single scent ingredients; only fragrance, parfum or perfume"
       },
-      "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today.",
+      "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today. Three labels disagree with themselves about fragrance, so the count could be 139 to 142 depending on how they are read: Baby Bum Mineral SPF 50 face stick (setid 492c44e3) and Coppertone WaterBabies lotion (d915cb28) are counted because their Drug Facts text lists fragrance, although their label images say \"Fragrance Free\" and print an ingredient list without it; Jason Sun Kids (0c2dc068) is not counted, although the ingredient list transcribed from its label image prints \"Fragrance (Parfum)\".",
       "site_source": {
         "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
-        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
-        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/baby_decisions.csv",
-        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/claims/registry_stats.py",
+        "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/data/canonical/us_sunscreens.jsonl",
+        "list_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/baby_decisions.csv",
+        "method_url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/v1.0.0/claims/registry_stats.py",
         "snapshot": "2026-10-12"
       },
       "method": "claims/registry_stats.py (FRAGRANCE)",
@@ -8672,11 +8655,10 @@
     }
   ],
   "open_issues": [
-    "Both data repos graded D for publication on 2026-10-08 — see audit summary. No registry number is publishable until the CRITICAL fixes land.",
-    "Fix baby_labeled classifier: match product name and label text, not company name.",
-    "Fix has_hidden_chemical_filter: add ethylhexyl methoxycrylene for ZnO+TiO2 products (4 misses).",
-    "Confirm total number of ARTG-listed sunscreens to know what share of the market the 501 represent.",
-    "Re-run every number in the published IG series and the 'Same Formula, Different Label' page against this ledger before reuse."
+    "US-CORPUS-001 (total US sunscreen count) stays provisional: some tinted sunscreens are classified as makeup. No published finding uses it.",
+    "AU-BEMT-001 rests on an ARTG keyword-search export (501 products), not a census of Australian sunscreens; it is reproduced from arwfamily/global-sunscreen, not from this archive.",
+    "Five kits that include a sunscreen (Badger Essential Baby Set; three Babyganics outdoor sets; Attitude Oceanly Phyto-Sun Kit) are left out: their filings do not give each product's ingredients separately.",
+    "Spray and aerosol spray labels count as one product form when formulas are merged (the formula fingerprint in scripts/snapshot_and_history.py treats them as one dosage form); counting them separately would give a slightly larger population."
   ],
   "registry_population": {
     "definition": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
@@ -8684,5 +8666,8 @@
     "mineral_only": 245,
     "review_file": "baby_decisions.csv",
     "snapshot": "2026-10-12"
-  }
+  },
+  "resolved_issues": [
+    "2026-10-08 audit grade D (no registry number publishable): resolved 2026-10-12. The population now comes from recorded decisions (claims/baby_decisions.csv) instead of the company-name classifier, and ingredient counts follow the printed label (where_listed). An independent recount on 2026-10-12 reproduced every verified claim; two numbers it corrected (US-BABY-BOS 76 -> 78, US-BABY-SPRAYS labelers 52 -> 49) and one same-list member it removed (US-BABY-SAME-LIST 102 -> 101) are fixed in this version."
+  ]
 }

@@ -16,7 +16,7 @@ disagreement is recorded with its evidence.
 | | |
 |---|---|
 | US sunscreen labels collected | 14,168 |
-| Weekly snapshots | 9 (2026-08-26 to 2026-10-12) |
+| Snapshots | 9, from 2026-08-26 to 2026-10-12 (3 to 7 days apart) |
 | Baby and kids candidate labels reviewed | 865, each decision with its reason |
 | Baby and kids formulas counted | 448 (245 with mineral-only actives) |
 | Filed active ingredients contradicted by the printed label | 18 labels, corrected with evidence |
@@ -48,10 +48,14 @@ Publication rules are in [`docs/SITE_DATA_CONTRACT.md`](docs/SITE_DATA_CONTRACT.
 - **Population.** Sunscreen labels that say baby or kids in the product name or
   on the front panel, plus sunscreens of baby-care brands; tinted and lip
   products excluded. Front panels that exist only as images are read by OCR and
-  checked by eye. Labels for another market, labels outside US limits as listed,
-  and multi-product listings are left out, each with its reason.
+  checked by eye. Labels for another market and labels outside US limits as
+  listed are left out, each with its reason. A listing that bundles several
+  products is split, and each product that is itself a baby or kids sunscreen
+  counts as its own formula, from its own filing. Gift sets and kits whose
+  filing does not give each product's ingredients are left out.
 - **Unit of count.** A formula: the same actives at the same percentages, the
-  same inactive ingredients and the same form count once. Labels with the same
+  same inactive ingredients and the same form count once (spray and aerosol
+  spray count as one form). Labels with the same
   filing count separately when one prints fragrance and the other does not, or
   when their printed lists name different ingredients on review
   (`data/corrections/printed_list_formula_splits.jsonl`).
@@ -72,7 +76,18 @@ Publication rules are in [`docs/SITE_DATA_CONTRACT.md`](docs/SITE_DATA_CONTRACT.
   image that disagree, and the text is used. See
   `data/corrections/printed_actives_review.jsonl`.
 - Errors in a manufacturer's filing are reproduced unless the printed label
-  contradicts them.
+  contradicts them. `data/views/baby_sunscreens.jsonl` keeps each label's
+  filed values as submitted; where the printed label contradicts the filing,
+  the correction is in `data/corrections/spl_label_errors.jsonl`, and the
+  counts use the corrected value.
+- Three labels disagree with themselves about fragrance, so the fragrance
+  count (141) could be 139 to 142 depending on how they are read; the claim's
+  caveat in `claims/claim_ledger.json` names them.
+- Five kits that include a sunscreen (Badger Essential Baby Set, three
+  Babyganics outdoor sets, Attitude Oceanly Phyto-Sun Kit) are not counted:
+  their filings do not give each product's ingredients separately.
+- Australian figures (AU-BEMT-001) come from an ARTG keyword-search export, not
+  a census, and are reproduced from `arwfamily/global-sunscreen`.
 
 ## Reproduce
 
