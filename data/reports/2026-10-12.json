@@ -1,0 +1,129 @@
+{
+ "run_date": "2026-10-12",
+ "all_labels": {
+  "reformulated": 1,
+  "new": 5,
+  "delisted": 5
+ },
+ "baby_labels": {
+  "new": 1
+ },
+ "baby_population_live": 585,
+ "new_baby_decisions": [
+  {
+   "setid": "5d233008-96a5-44e6-e063-6294a90a9aaa",
+   "decision": "include",
+   "stage": "auto",
+   "reason": "auto-rule v1: baby/kids word in product name, sunscreen, not a kit",
+   "decided_on": "2026-10-12",
+   "title": "ORGANIC KIDS SUNSCREEN (ZINC OXIDE SUNSCREEN) CREAM [VEGANIC SKN LIMITED]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d233008-96a5-44e6-e063-6294a90a9aaa"
+  }
+ ],
+ "review_queue": 0,
+ "changes": [
+  {
+   "setid": "80c24e21-6aba-0c05-e053-2a91aa0a657f",
+   "change": "reformulated",
+   "product": "ZINC OXIDE 40% (DIAPER RASH SKIN PROTECTENT) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80c24e21-6aba-0c05-e053-2a91aa0a657f",
+   "baby": false,
+   "added": [
+    "TAPIOCA STARCH",
+    "POLYMETHYLSILSESQUIOXANE (4.5 MICRONS)"
+   ],
+   "removed": [
+    "TALC"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "0271772e-a030-43fc-abe1-91c77710278b",
+   "change": "new",
+   "product": "SCIENCE X SANCTUARY 12 DAYS OF RESULTS ADVENT CALENDAR (TITANIUM DIOXIDE, ZINC OXIDE) KIT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0271772e-a030-43fc-abe1-91c77710278b",
+   "baby": false,
+   "label_date": "20261001",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5d22c618-2eb5-ff4c-e063-6394a90ab1e9",
+   "change": "new",
+   "product": "ORGANIC CITRONELLA SUNSCREEN (ZINC OXIDE SUNSCREEN) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d22c618-2eb5-ff4c-e063-6394a90ab1e9",
+   "baby": false,
+   "label_date": "20261005",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5d233008-96a5-44e6-e063-6294a90a9aaa",
+   "change": "new",
+   "product": "ORGANIC KIDS SUNSCREEN (ZINC OXIDE SUNSCREEN) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d233008-96a5-44e6-e063-6294a90a9aaa",
+   "baby": true,
+   "label_date": "20261005",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5d23606f-efef-7ec1-e063-6294a90aeb71",
+   "change": "new",
+   "product": "ORGANIC SUNSCREEN (ZINC OXIDE SUNSCREEN) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d23606f-efef-7ec1-e063-6294a90aeb71",
+   "baby": false,
+   "label_date": "20261005",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5c53d20f-c293-915c-e063-6294a90a7d36",
+   "change": "new",
+   "product": "JERGENS NATURAL GLOW MEDIUM TO DEEP (AVOBENZONE, OCTISALATE, OCTOCRYLENE, HOMOSALATE) LOTION JERGENS NATURAL GLOW FAIR TO MEDIUM (AVOBENZONE, OCTISALATE, OCTOCRYLENE, HOMOSALATE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c53d20f-c293-915c-e063-6294a90a7d36",
+   "baby": false,
+   "label_date": "20260921",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "6461d19a-16e7-43ac-943c-229fe2c6f76c",
+   "change": "delisted",
+   "product": "UMBRA TINTE MINERAL CREAM SPF 30 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6461d19a-16e7-43ac-943c-229fe2c6f76c",
+   "baby": false
+  },
+  {
+   "setid": "808774b0-1b50-450b-8298-685568a161c7",
+   "change": "delisted",
+   "product": "UMBRA SHEER MINERAL CREAM SPF 30 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=808774b0-1b50-450b-8298-685568a161c7",
+   "baby": false
+  },
+  {
+   "setid": "a230a4b6-3edb-4391-939c-89bddacd9f0a",
+   "change": "delisted",
+   "product": "UMBRA COCOA MINERAL CREAM SPF 30 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a230a4b6-3edb-4391-939c-89bddacd9f0a",
+   "baby": false
+  },
+  {
+   "setid": "3ca1c26f-0a4a-42af-ab67-76f6840c11aa",
+   "change": "delisted",
+   "product": "ABSOLUE PREMIUM BX SUNSCREEN BROAD SPECTRUM SPF 15 ABSOLUTE REPLENISHING (AVOBENZONE, OCTISALATE, OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ca1c26f-0a4a-42af-ab67-76f6840c11aa",
+   "baby": false
+  },
+  {
+   "setid": "49fcf429-332f-43b3-aab0-d2a5b95f4571",
+   "change": "delisted",
+   "product": "SUN AND HONEY (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=49fcf429-332f-43b3-aab0-d2a5b95f4571",
+   "baby": false
+  }
+ ],
+ "printed_list_changes": [],
+ "needs_transcription": [
+  {
+   "setid": "5d233008-96a5-44e6-e063-6294a90a9aaa",
+   "title": "ORGANIC KIDS SUNSCREEN (ZINC OXIDE SUNSCREEN) CREAM [VEGANIC SKN LIMITED]",
+   "why": "image-only list not transcribed yet"
+  }
+ ]
+}
