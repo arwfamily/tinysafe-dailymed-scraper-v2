@@ -24,6 +24,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CANON = os.path.join(ROOT, "data", "canonical", "us_sunscreens.jsonl")
 LEDGER = os.path.join(ROOT, "claims", "claim_ledger.json")
 CORRECTIONS = os.path.join(ROOT, "data", "corrections", "spl_label_errors.jsonl")
+FORMULA_SPLITS = os.path.join(ROOT, "data", "corrections", "printed_list_formula_splits.jsonl")
 # The 12 actives the FDA has proposed are not GRASE because more data are needed
 # (FDA Q&A, content current as of 2026-09-10). Classifier canonical names.
 FDA_MORE_DATA = ["avobenzone", "oxybenzone", "octinoxate", "homosalate", "octisalate", "octocrylene",
@@ -216,6 +217,17 @@ def load():
             r["_corrected"] = True
             # identity must follow the corrected formula, not the erroneous filing
             r["formulation_hash"] = formulation_fingerprint(r)[0]
+    # Labels whose FDA filing is identical to another label's but whose printed
+    # ingredient list (complete, as text) names different ingredients. The
+    # printed list decides, so each is its own formula. Reviewed by hand; each
+    # entry carries the ingredients that differ. See data/corrections/.
+    if os.path.exists(FORMULA_SPLITS):
+        for l in open(FORMULA_SPLITS, encoding="utf-8"):
+            if l.strip():
+                c = json.loads(l)
+                for r in recs:
+                    if r["setid"] == c["setid"]:
+                        r["formulation_hash"] = r["formulation_hash"] + "-p" + c["setid"][:8]
     baby = [r for r in recs if r["setid"] in include]
     # Owner population is "labels that say baby or kids". Two kinds of record
     # are not a US baby sunscreen label and are left out, by rule, with reasons
