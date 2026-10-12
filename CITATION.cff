@@ -11,6 +11,8 @@ publisher:
 url: "https://arwhouse.com/evidence"
 repository-code: "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2"
 license: CC-BY-4.0
+version: "1.0.0"
+date-released: "2026-10-12"
 keywords:
   - sunscreen
   - baby sunscreen
