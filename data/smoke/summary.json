@@ -1,34 +1,37 @@
 {
- "records": 150,
+ "records": 156,
  "filled": {
-  "dosage_form": 150,
-  "labeler": 150,
-  "spl_version": 150,
-  "effective_date": 150,
-  "monograph_id": 115,
-  "printed_actives": 132,
-  "printed_inactives": 119,
-  "label_flags": 150,
+  "dosage_form": 156,
+  "labeler": 156,
+  "spl_version": 156,
+  "effective_date": 156,
+  "monograph_id": 121,
+  "printed_actives": 139,
+  "printed_inactives": 124,
+  "label_flags": 156,
   "label_parse_error": 0,
   "label_actives_proposal": 4
  },
  "checks": {
-  "printed_actives_not_fully_read": 62,
-  "percent_mismatch": 14,
-  "printed_inactives_unmatched": 111,
-  "fragrance_printed_not_structured": 44,
-  "printed_active_missing_from_structured": 6,
-  "structured_active_not_printed": 7,
-  "above_us_max": 5
+  "printed_inactives_unmatched": 119,
+  "printed_active_missing_from_structured": 8,
+  "above_us_max": 6,
+  "fragrance_printed_not_structured": 45,
+  "printed_actives_not_fully_read": 63,
+  "multi_product": 1,
+  "percent_mismatch": 13,
+  "structured_active_not_printed": 7
  },
  "flags_true": {
-  "broad_spectrum_claim": 34,
-  "spf_printed": 80,
-  "under_6_months_ask_doctor": 82,
-  "water_resistant_minutes": 18
+  "under_6_months_ask_doctor": 85,
+  "spf_printed": 82,
+  "broad_spectrum_claim": 30,
+  "front_panel_baby_words": 8,
+  "water_resistant_minutes": 12
  },
  "product_count": {
-  "1": 150
+  "1": 155,
+  "2": 1
  },
  "corrections": [
   {
