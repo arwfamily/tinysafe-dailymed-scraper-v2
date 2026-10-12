@@ -24,6 +24,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CANON = os.path.join(ROOT, "data", "canonical", "us_sunscreens.jsonl")
 LEDGER = os.path.join(ROOT, "claims", "claim_ledger.json")
 CORRECTIONS = os.path.join(ROOT, "data", "corrections", "spl_label_errors.jsonl")
+ACTIVES_REVIEW = os.path.join(ROOT, "data", "corrections", "printed_actives_review.jsonl")
 FORMULA_SPLITS = os.path.join(ROOT, "data", "corrections", "printed_list_formula_splits.jsonl")
 # The 12 actives the FDA has proposed are not GRASE because more data are needed
 # (FDA Q&A, content current as of 2026-09-10). Classifier canonical names.
@@ -259,6 +260,25 @@ def load():
             if sub.get("product_type") == "sunscreen" and not population_exclusion(sub):
                 parts_added.append(sub)
     baby += parts_added
+    # Active percentages must be confirmed on the printed label. A label whose
+    # Drug Facts text could not give every active % needs a reading of its
+    # label image; until then it is listed here for the weekly review.
+    reviewed = set()
+    if os.path.exists(ACTIVES_REVIEW):
+        reviewed = {json.loads(l)["setid"] for l in open(ACTIVES_REVIEW, encoding="utf-8") if l.strip()}
+    for r in baby:
+        checks = r.get("label_checks") or []
+        if isinstance(checks, str):
+            import ast
+            try:
+                checks = ast.literal_eval(checks)
+            except (ValueError, SyntaxError):
+                checks = []
+        unread = not (r.get("printed_actives") or []) or any(
+            c.get("type") == "printed_actives_not_fully_read" for c in checks if isinstance(c, dict))
+        if unread and r["setid"] not in reviewed and r["setid"] not in fixes:
+            print(f"[registry] active % not yet checked on the label image: {r['setid']} {r['title'][:60]}",
+                  file=sys.stderr)
     # The formulation hash is built from the FDA filing, and filings often omit
     # fragrance (see the fragrance finding). A scented and an unscented product
     # with the same filing are different formulas, so the printed label's
