@@ -100,16 +100,7 @@
  "0bdb7d15-dc52-4e23-9417-fe73f17f6110": {
   "title": "SPF 50 MINERAL SUNSCREEN KIDS (ZINC OXIDE 14.69%) STICK [S&C HAMPTON SUN LLC]",
   "spl_version": "2",
-  "images": [
-   {
-    "name": "Label Front.jpg",
-    "sha1_original": "9edc6a2e54d6a14953f9b371db908d3ba53e7d2c"
-   },
-   {
-    "name": "Label back.jpg",
-    "sha1_original": "a5f5664ceaca7cd9dfdae89d21659818d0bb0652"
-   }
-  ]
+  "images": []
  },
  "0c285349-62e0-40a4-93c8-11abb65e6f4d": {
   "title": "SUNSCREEN BABY SPF30 PLUS BROAD SPECTRUM (ZINC OXIDE ) LOTION [UV NATURAL INTERNATIONAL PTY LTD]",
@@ -855,7 +846,7 @@
  },
  "47dbf363-2892-4530-e063-6294a90abe1f": {
   "title": "BADABOOM SUNSCREEN (SUNSCREEN) CREAM [AOPLINE BIOTECHNOLOGY (GUANGZHOU) CO., LTD.]",
-  "spl_version": "1",
+  "spl_version": null,
   "images": [
    {
     "name": "87283-002-01.jpg",
@@ -1481,7 +1472,7 @@
  },
  "b292d1a9-7ff8-0faf-e053-2995a90ae342": {
   "title": "BABY BARE REPUBLIC MINERAL SUNSCREEN (ZINC OXIDE) LOTION [COOLA, LLC]",
-  "spl_version": "6",
+  "spl_version": null,
   "images": [
    {
     "name": "BABY BARE REPUBLIC LABEL.jpg",
@@ -1901,7 +1892,7 @@
  },
  "d61acaa0-73ef-eccf-e053-2995a90ad940": {
   "title": "BADGER BABY SUNSCREEN CREAM BROAD SPECTRUM SPF 40 (ZINC OXIDE) CREAM [W.S. BADGER COMPANY, INC.]",
-  "spl_version": "2",
+  "spl_version": null,
   "images": [
    {
     "name": "TU47128-LA SPF40 Baby Clear v2.jpg",

@@ -1,6 +1,6 @@
 {
- "built_on": "2026-10-12",
- "products_examined": 14168,
+ "built_on": "2026-10-19",
+ "products_examined": 14174,
  "seeded_uniis": 23,
  "how_to_promote": "add the NAME to UV_FILTERS in scripts/resolve_uniis.py; the next run resolves it from DailyMed. Never paste the UNII by hand — let the resolver confirm it.",
  "candidates": [
@@ -10,23 +10,23 @@
    "name_variants": [
     "HYDROQUINONE"
    ],
-   "product_count": 75,
+   "product_count": 70,
    "co_occurs_with_seeds": {
-    "V06SV4M95S": 12,
-    "4X49Y0596W": 12,
-    "SOI2LOH54Z": 34,
-    "15FIX9V2JP": 4,
-    "4Y5P7MUD51": 52,
+    "4Y5P7MUD51": 51,
+    "SOI2LOH54Z": 29,
     "95OOS7VE0Y": 3,
+    "V06SV4M95S": 10,
+    "4X49Y0596W": 10,
+    "15FIX9V2JP": 2,
     "G63QQF2NOX": 1,
     "Z11006CMUZ": 7
    },
    "example_setids": [
+    "c67b0629-5529-412d-99ee-186df4ecad5a",
+    "f439d77f-ec5b-4534-a005-08f2e7af8d0c",
     "ca931d1c-4df4-47ce-8d5c-cd8c3e38c02b",
     "16efa2db-8172-4026-a519-08f53d68b3c9",
-    "e19b824f-4438-48c8-af4c-29be197f9cdc",
-    "e63327db-fb96-411c-945a-abe801d38045",
-    "a9ceacb3-d6e4-4316-a4e9-f15e574cdda0"
+    "e19b824f-4438-48c8-af4c-29be197f9cdc"
    ]
   },
   {
@@ -54,8 +54,8 @@
     "9e46328d-1d10-350b-e053-2995a90ad27e",
     "9b571d4e-03c8-5a37-e053-2a95a90add36",
     "3bbcb812-feff-3b00-e054-00144ff88e88",
-    "6f666277-c4c0-45ce-a478-9db2f21461a6",
-    "7eee940a-96c6-4d37-9991-fa84b1b4f02b"
+    "7eee940a-96c6-4d37-9991-fa84b1b4f02b",
+    "6f666277-c4c0-45ce-a478-9db2f21461a6"
    ]
   },
   {
@@ -105,9 +105,9 @@
    },
    "example_setids": [
     "3bbcb812-feff-3b00-e054-00144ff88e88",
-    "6f666277-c4c0-45ce-a478-9db2f21461a6",
     "7eee940a-96c6-4d37-9991-fa84b1b4f02b",
-    "22a9f2ae-4035-4ede-b324-771da0551444",
+    "6f666277-c4c0-45ce-a478-9db2f21461a6",
+    "1d5d54b7-3549-432b-a47d-b967ce7b5174",
     "7711e9f8-dedd-420c-bc6a-b940005f9899"
    ]
   },
@@ -523,8 +523,8 @@
     "SOI2LOH54Z": 2
    },
    "example_setids": [
-    "9622b0a4-a4ae-403e-9645-16240faab3bd",
-    "4dbb36fe-9888-4806-8946-10cc0c81d270"
+    "4dbb36fe-9888-4806-8946-10cc0c81d270",
+    "9622b0a4-a4ae-403e-9645-16240faab3bd"
    ]
   },
   {
@@ -866,8 +866,8 @@
     "TL2TJE8QTX": 2
    },
    "example_setids": [
-    "a7382d84-1d5f-4d09-962f-b26f265af65e",
-    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6",
+    "a7382d84-1d5f-4d09-962f-b26f265af65e"
    ]
   },
   {
@@ -2482,6 +2482,62 @@
    ]
   },
   {
+   "unii": "789U1901C5",
+   "name": "COPPER",
+   "name_variants": [
+    "COPPER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+   ]
+  },
+  {
+   "unii": "9DLQ4CIU6V",
+   "name": "PROLINE",
+   "name_variants": [
+    "PROLINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+   ]
+  },
+  {
+   "unii": "9NEZ333N27",
+   "name": "SODIUM",
+   "name_variants": [
+    "SODIUM"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+   ]
+  },
+  {
+   "unii": "FB3DQM32F2",
+   "name": "COLLAGEN ALPHA-1(I) CHAIN BOVINE",
+   "name_variants": [
+    "COLLAGEN ALPHA-1(I) CHAIN BOVINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+   ]
+  },
+  {
    "unii": "7THJ3EG9SY",
    "name": "CHOLINE HYDROXIDE",
    "name_variants": [
@@ -2633,62 +2689,6 @@
    },
    "example_setids": [
     "a7382d84-1d5f-4d09-962f-b26f265af65e"
-   ]
-  },
-  {
-   "unii": "789U1901C5",
-   "name": "COPPER",
-   "name_variants": [
-    "COPPER"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "TL2TJE8QTX": 1
-   },
-   "example_setids": [
-    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
-   ]
-  },
-  {
-   "unii": "9DLQ4CIU6V",
-   "name": "PROLINE",
-   "name_variants": [
-    "PROLINE"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "TL2TJE8QTX": 1
-   },
-   "example_setids": [
-    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
-   ]
-  },
-  {
-   "unii": "9NEZ333N27",
-   "name": "SODIUM",
-   "name_variants": [
-    "SODIUM"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "TL2TJE8QTX": 1
-   },
-   "example_setids": [
-    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
-   ]
-  },
-  {
-   "unii": "FB3DQM32F2",
-   "name": "COLLAGEN ALPHA-1(I) CHAIN BOVINE",
-   "name_variants": [
-    "COLLAGEN ALPHA-1(I) CHAIN BOVINE"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "TL2TJE8QTX": 1
-   },
-   "example_setids": [
-    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
    ]
   },
   {
