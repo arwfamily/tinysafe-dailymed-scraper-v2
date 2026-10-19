@@ -1,0 +1,53 @@
+{
+ "setid": "9ae29339-2e52-af5a-e053-2a95a90a770b",
+ "images": [
+  {
+   "name": "Label Back.jpg",
+   "file": "img/9ae29339-2e52-af5a-e053-2a95a90a770b/Label_Back.jpg"
+  },
+  {
+   "name": "Label Front.jpg",
+   "file": "img/9ae29339-2e52-af5a-e053-2a95a90a770b/Label_Front.jpg"
+  },
+  {
+   "name": "Label Keep Out of Reach.jpg",
+   "file": "img/9ae29339-2e52-af5a-e053-2a95a90a770b/Label_Keep_Out_of_Reach.jpg"
+  },
+  {
+   "name": "Unit Carton Active Ingredients.jpg",
+   "file": "img/9ae29339-2e52-af5a-e053-2a95a90a770b/Unit_Carton_Active_Ingredients.jpg"
+  },
+  {
+   "name": "Unit Carton Dosage.jpg",
+   "file": "img/9ae29339-2e52-af5a-e053-2a95a90a770b/Unit_Carton_Dosage.jpg"
+  },
+  {
+   "name": "Unit Carton Inactive.jpg",
+   "file": "img/9ae29339-2e52-af5a-e053-2a95a90a770b/Unit_Carton_Inactive.jpg"
+  },
+  {
+   "name": "Unit Carton Indications and Usage.jpg",
+   "file": "img/9ae29339-2e52-af5a-e053-2a95a90a770b/Unit_Carton_Indications_and_Usage.jpg"
+  },
+  {
+   "name": "Unit Carton Purpose.jpg",
+   "file": "img/9ae29339-2e52-af5a-e053-2a95a90a770b/Unit_Carton_Purpose.jpg"
+  },
+  {
+   "name": "Unit Carton Warnings.jpg",
+   "file": "img/9ae29339-2e52-af5a-e053-2a95a90a770b/Unit_Carton_Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Think Operations, Think Sport for Kids SPF 30 Stick Canadian",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9ae29339-2e52-af5a-e053-2a95a90a770b",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

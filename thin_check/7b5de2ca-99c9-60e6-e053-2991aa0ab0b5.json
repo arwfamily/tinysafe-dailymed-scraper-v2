@@ -1,0 +1,25 @@
+{
+ "setid": "7b5de2ca-99c9-60e6-e053-2991aa0ab0b5",
+ "images": [
+  {
+   "name": "made of Sunscreen Lotion SPF30 TUBE.jpg",
+   "file": "img/7b5de2ca-99c9-60e6-e053-2991aa0ab0b5/made_of_Sunscreen_Lotion_SPF30_TUBE.jpg"
+  },
+  {
+   "name": "made of Sunscreen SPF30 BOX.jpg",
+   "file": "img/7b5de2ca-99c9-60e6-e053-2991aa0ab0b5/made_of_Sunscreen_SPF30_BOX.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "made of Sunscreen SPF30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7b5de2ca-99c9-60e6-e053-2991aa0ab0b5",
+  "name": "Sunscreen Ointment",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

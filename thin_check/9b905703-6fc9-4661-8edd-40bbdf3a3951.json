@@ -1,0 +1,33 @@
+{
+ "setid": "9b905703-6fc9-4661-8edd-40bbdf3a3951",
+ "images": [
+  {
+   "name": "Base Label.jpg",
+   "file": "img/9b905703-6fc9-4661-8edd-40bbdf3a3951/Base_Label.jpg"
+  },
+  {
+   "name": "Bottle_100.jpg",
+   "file": "img/9b905703-6fc9-4661-8edd-40bbdf3a3951/Bottle_100.jpg"
+  },
+  {
+   "name": "Top Label.jpg",
+   "file": "img/9b905703-6fc9-4661-8edd-40bbdf3a3951/Top_Label.jpg"
+  },
+  {
+   "name": "outer carton.jpg",
+   "file": "img/9b905703-6fc9-4661-8edd-40bbdf3a3951/outer_carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "water, cyclopentasiloxane, neopentyl, glycol diethylhexanoate, butylene glycol, hdi/trimethylol hexyllactone crosspolymer, mica, glycern, vinyl dimethicone/methicone silsesquioxane crosspolymer, peg-10 dimethicone, caprylic/capric triglyceride, disteardimonium hectorite, phenoxyethanol, methyl methacrylate crosspolymer, caprylyl glycol, aluminum dimyristate, triethoxycaprylylsilane, parfum/fragrance, retinyl palmitate, sodium hyaluronate, tocopheryl acetate, silica, disodium stearoyl glutamate, ascorbyl glucoside, sorbic acid, alaria esculenta extract, tocopherol, bht, may contain: iron oxides.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9b905703-6fc9-4661-8edd-40bbdf3a3951",
+  "name": "Ck One3-In-1Face Makeup With SPF8 Sunscreen Liquid",
+  "brand": "Coty Us LLC",
+  "n_inactive": 32,
+  "thin_reason": null
+ }
+}

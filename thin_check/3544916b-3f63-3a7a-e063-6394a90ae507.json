@@ -1,0 +1,21 @@
+{
+ "setid": "3544916b-3f63-3a7a-e063-6394a90ae507",
+ "images": [
+  {
+   "name": "Skin Therapy 204.jpg",
+   "file": "img/3544916b-3f63-3a7a-e063-6394a90ae507/Skin_Therapy_204.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3544916b-3f63-3a7a-e063-6394a90ae507",
+  "name": "Sun Therapy Sunscreen Cream",
+  "brand": "Skin Therapy Studio LLC",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

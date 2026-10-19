@@ -1,0 +1,41 @@
+{
+ "setid": "d464027c-d070-cc46-e053-2995a90a2b4c",
+ "images": [
+  {
+   "name": "Active Purpose.jpg",
+   "file": "img/d464027c-d070-cc46-e053-2995a90a2b4c/Active_Purpose.jpg"
+  },
+  {
+   "name": "Artwork.jpg",
+   "file": "img/d464027c-d070-cc46-e053-2995a90a2b4c/Artwork.jpg"
+  },
+  {
+   "name": "Directions.jpg",
+   "file": "img/d464027c-d070-cc46-e053-2995a90a2b4c/Directions.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/d464027c-d070-cc46-e053-2995a90a2b4c/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Uses.jpg",
+   "file": "img/d464027c-d070-cc46-e053-2995a90a2b4c/Uses.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/d464027c-d070-cc46-e053-2995a90a2b4c/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Suntegrity, Natural Mineral Sunscreen Sport, SPF 30 (Unscented)",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d464027c-d070-cc46-e053-2995a90a2b4c",
+  "name": "Natural Mineral Sunscreen Sport, SPF 30 (Unscented) (Sunscreen) Ointment",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "a067e968-e598-40ef-95f2-c338b5e413dd",
+ "images": [
+  {
+   "name": "Carton.jpg",
+   "file": "img/a067e968-e598-40ef-95f2-c338b5e413dd/Carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "PLSF-1831 Wrinkle Repair Moisturizer SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a067e968-e598-40ef-95f2-c338b5e413dd",
+  "name": "Wrinkle Repair Moisturizer SPF 30 Eqb Lotion",
+  "brand": "Walmart",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

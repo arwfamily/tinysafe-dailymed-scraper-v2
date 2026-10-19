@@ -1,0 +1,21 @@
+{
+ "setid": "352fe5e4-8b3f-248f-e063-6394a90ab42c",
+ "images": [
+  {
+   "name": "MINT 205.jpg",
+   "file": "img/352fe5e4-8b3f-248f-e063-6394a90ab42c/MINT_205.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "352fe5e4-8b3f-248f-e063-6394a90ab42c",
+  "name": "Gentle Defense Sunscreen Cream",
+  "brand": "Mint Skin Incroporated",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "6a116cfc-b253-ce51-e053-2a91aa0a75fa",
+ "images": [
+  {
+   "name": "LavenderMint_LipBalm_5.7.jpg",
+   "file": "img/6a116cfc-b253-ce51-e053-2a91aa0a75fa/LavenderMint_LipBalm_5.7.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Goddess Garden SPF30 Lavender Mint Lip Balm",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6a116cfc-b253-ce51-e053-2a91aa0a75fa",
+  "name": "Lavender Mint SPF30 Stick",
+  "brand": "Goddess Garden",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "8dbb8485-ffb5-43ac-83f1-a5673421b51c",
+ "images": [
+  {
+   "name": "sunscreen tube.jpg",
+   "file": "img/8dbb8485-ffb5-43ac-83f1-a5673421b51c/sunscreen_tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8dbb8485-ffb5-43ac-83f1-a5673421b51c",
+  "name": "Correway Sunscreen (Non-Waterproof) Cream",
+  "brand": "Ningbo Correway Cosmetics Co., Ltd.",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

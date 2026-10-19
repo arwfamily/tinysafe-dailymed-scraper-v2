@@ -1,0 +1,21 @@
+{
+ "setid": "197e8a7b-1179-d625-e063-6294a90ae12d",
+ "images": [
+  {
+   "name": "MyMedic Sunscreen.jpg",
+   "file": "img/197e8a7b-1179-d625-e063-6294a90ae12d/MyMedic_Sunscreen.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "197e8a7b-1179-d625-e063-6294a90ae12d",
+  "name": "Mymedic Sunscreen Patch",
+  "brand": "Bath Concept Cosmetics (Dongguan) Co., Ltd",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "32e6c080-6ce3-8d99-e063-6294a90ac1bc",
+ "images": [
+  {
+   "name": "Advanced Dermatology Inc 208 SF.jpg",
+   "file": "img/32e6c080-6ce3-8d99-e063-6294a90ac1bc/Advanced_Dermatology_Inc_208_SF.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "32e6c080-6ce3-8d99-e063-6294a90ac1bc",
+  "name": "Advanced Light Perfecting Sunscreen Cream",
+  "brand": "Advanced Dermatology",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

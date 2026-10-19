@@ -1,0 +1,21 @@
+{
+ "setid": "8886fa88-5913-4dd9-ac58-c4dd0f54b669",
+ "images": [
+  {
+   "name": "cartontube.jpg",
+   "file": "img/8886fa88-5913-4dd9-ac58-c4dd0f54b669/cartontube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8886fa88-5913-4dd9-ac58-c4dd0f54b669",
+  "name": "Sunblock Lotion",
+  "brand": "Vienna Health And Beauty Corporation",
+  "n_inactive": 18,
+  "thin_reason": null
+ }
+}

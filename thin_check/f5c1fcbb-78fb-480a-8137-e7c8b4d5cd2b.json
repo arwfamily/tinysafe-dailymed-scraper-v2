@@ -1,0 +1,21 @@
+{
+ "setid": "f5c1fcbb-78fb-480a-8137-e7c8b4d5cd2b",
+ "images": [
+  {
+   "name": "NADK4Label.jpg",
+   "file": "img/f5c1fcbb-78fb-480a-8137-e7c8b4d5cd2b/NADK4Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "DRUG FACTS",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f5c1fcbb-78fb-480a-8137-e7c8b4d5cd2b",
+  "name": "No-Ad Dark Tanning SPF 4 Lotion",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 21,
+  "thin_reason": null
+ }
+}

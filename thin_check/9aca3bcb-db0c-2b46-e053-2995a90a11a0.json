@@ -1,0 +1,53 @@
+{
+ "setid": "9aca3bcb-db0c-2b46-e053-2995a90a11a0",
+ "images": [
+  {
+   "name": "Active Ingredients.jpg",
+   "file": "img/9aca3bcb-db0c-2b46-e053-2995a90a11a0/Active_Ingredients.jpg"
+  },
+  {
+   "name": "Artwork.jpg",
+   "file": "img/9aca3bcb-db0c-2b46-e053-2995a90a11a0/Artwork.jpg"
+  },
+  {
+   "name": "Dosage.jpg",
+   "file": "img/9aca3bcb-db0c-2b46-e053-2995a90a11a0/Dosage.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/9aca3bcb-db0c-2b46-e053-2995a90a11a0/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Keep Out Of Reach of Children.jpg",
+   "file": "img/9aca3bcb-db0c-2b46-e053-2995a90a11a0/Keep_Out_Of_Reach_of_Children.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/9aca3bcb-db0c-2b46-e053-2995a90a11a0/Purpose.jpg"
+  },
+  {
+   "name": "Unit Carton.jpg",
+   "file": "img/9aca3bcb-db0c-2b46-e053-2995a90a11a0/Unit_Carton.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/9aca3bcb-db0c-2b46-e053-2995a90a11a0/Warnings.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/9aca3bcb-db0c-2b46-e053-2995a90a11a0/uses.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Tubby Todd Play Mineral Sunstick, SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9aca3bcb-db0c-2b46-e053-2995a90a11a0",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

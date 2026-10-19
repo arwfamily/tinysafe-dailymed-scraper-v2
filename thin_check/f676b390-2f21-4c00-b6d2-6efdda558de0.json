@@ -1,0 +1,21 @@
+{
+ "setid": "f676b390-2f21-4c00-b6d2-6efdda558de0",
+ "images": [
+  {
+   "name": "AA70Label.jpg",
+   "file": "img/f676b390-2f21-4c00-b6d2-6efdda558de0/AA70Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f676b390-2f21-4c00-b6d2-6efdda558de0",
+  "name": "Ocean Potion Quick Dry SPF 70 Sunscreen Lotion",
+  "brand": "Sun & Skin Care Research, Inc",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

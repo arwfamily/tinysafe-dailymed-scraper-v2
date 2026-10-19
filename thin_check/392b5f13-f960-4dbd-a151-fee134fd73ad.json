@@ -1,0 +1,21 @@
+{
+ "setid": "392b5f13-f960-4dbd-a151-fee134fd73ad",
+ "images": [
+  {
+   "name": "NA 00228.jpg",
+   "file": "img/392b5f13-f960-4dbd-a151-fee134fd73ad/NA_00228.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "392b5f13-f960-4dbd-a151-fee134fd73ad",
+  "name": "No-Ad 85 Sunscreen Lotion",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

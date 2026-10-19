@@ -1,0 +1,49 @@
+{
+ "setid": "9acd1f50-0149-6f8e-e053-2995a90af8ad",
+ "images": [
+  {
+   "name": "Active Ingredients.jpg",
+   "file": "img/9acd1f50-0149-6f8e-e053-2995a90af8ad/Active_Ingredients.jpg"
+  },
+  {
+   "name": "Artwork.jpg",
+   "file": "img/9acd1f50-0149-6f8e-e053-2995a90af8ad/Artwork.jpg"
+  },
+  {
+   "name": "Dosage and Administration.jpg",
+   "file": "img/9acd1f50-0149-6f8e-e053-2995a90af8ad/Dosage_and_Administration.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/9acd1f50-0149-6f8e-e053-2995a90af8ad/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Indications and Usage.jpg",
+   "file": "img/9acd1f50-0149-6f8e-e053-2995a90af8ad/Indications_and_Usage.jpg"
+  },
+  {
+   "name": "Keep out of Reach.jpg",
+   "file": "img/9acd1f50-0149-6f8e-e053-2995a90af8ad/Keep_out_of_Reach.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/9acd1f50-0149-6f8e-e053-2995a90af8ad/Purpose.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/9acd1f50-0149-6f8e-e053-2995a90af8ad/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Jumby Every Mother's Sun, Mineral Sunscreen SPF 30 Lotion",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9acd1f50-0149-6f8e-e053-2995a90af8ad",
+  "name": "Sunscreen Ointment",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

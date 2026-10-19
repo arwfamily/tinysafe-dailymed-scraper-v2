@@ -1,0 +1,53 @@
+{
+ "setid": "aa837ee6-7b25-d4d0-e053-2a95a90a6885",
+ "images": [
+  {
+   "name": "Back Label.jpg",
+   "file": "img/aa837ee6-7b25-d4d0-e053-2a95a90a6885/Back_Label.jpg"
+  },
+  {
+   "name": "Doasge and Administration.jpg",
+   "file": "img/aa837ee6-7b25-d4d0-e053-2a95a90a6885/Doasge_and_Administration.jpg"
+  },
+  {
+   "name": "Front Label.jpg",
+   "file": "img/aa837ee6-7b25-d4d0-e053-2a95a90a6885/Front_Label.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/aa837ee6-7b25-d4d0-e053-2a95a90a6885/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Indications and Usage.jpg",
+   "file": "img/aa837ee6-7b25-d4d0-e053-2a95a90a6885/Indications_and_Usage.jpg"
+  },
+  {
+   "name": "Keep out of reach of children.jpg",
+   "file": "img/aa837ee6-7b25-d4d0-e053-2a95a90a6885/Keep_out_of_reach_of_children.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/aa837ee6-7b25-d4d0-e053-2a95a90a6885/Warnings.jpg"
+  },
+  {
+   "name": "active ingredient section.jpg",
+   "file": "img/aa837ee6-7b25-d4d0-e053-2a95a90a6885/active_ingredient_section.jpg"
+  },
+  {
+   "name": "purpose section.jpg",
+   "file": "img/aa837ee6-7b25-d4d0-e053-2a95a90a6885/purpose_section.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Suntegrity, Mineral Sun Stick, SPF 30 - Tinted Medium",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "aa837ee6-7b25-d4d0-e053-2a95a90a6885",
+  "name": "Sunscreen Ointment",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

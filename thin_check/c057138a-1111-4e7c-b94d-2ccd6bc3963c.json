@@ -1,0 +1,33 @@
+{
+ "setid": "c057138a-1111-4e7c-b94d-2ccd6bc3963c",
+ "images": [
+  {
+   "name": "Inner Package3.jpg",
+   "file": "img/c057138a-1111-4e7c-b94d-2ccd6bc3963c/Inner_Package3.jpg"
+  },
+  {
+   "name": "Inner Package4.jpg",
+   "file": "img/c057138a-1111-4e7c-b94d-2ccd6bc3963c/Inner_Package4.jpg"
+  },
+  {
+   "name": "Outer Package3.jpg",
+   "file": "img/c057138a-1111-4e7c-b94d-2ccd6bc3963c/Outer_Package3.jpg"
+  },
+  {
+   "name": "Outer Package4.jpg",
+   "file": "img/c057138a-1111-4e7c-b94d-2ccd6bc3963c/Outer_Package4.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Vivier Sheer SPF 45",
+ "inactive_section": "Behenyl Alcohol, Butylparaben, Butyrospermum Parkii (Shea) Butter, C12-15 Alkyl Benzoate, Ceteareth-20, Cetearyl Alcohol, Cyclohexasiloxane, Cyclopentasiloxane, Ethylparaben, Methylparaben, Phenoxyethanol, Phenyl Trimethicone, Propylparaben, Silica, Tetrasodium EDTA, Tocopherol, Triethoxycaprylylsilane, Water.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c057138a-1111-4e7c-b94d-2ccd6bc3963c",
+  "name": "Vivier Sheer SPF 45 Lotion",
+  "brand": "Vivier Pharma, Inc.",
+  "n_inactive": 18,
+  "thin_reason": null
+ }
+}

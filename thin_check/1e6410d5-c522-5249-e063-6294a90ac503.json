@@ -1,0 +1,41 @@
+{
+ "setid": "1e6410d5-c522-5249-e063-6294a90ac503",
+ "images": [
+  {
+   "name": "Essential SPF50 dosage.jpg",
+   "file": "img/1e6410d5-c522-5249-e063-6294a90ac503/Essential_SPF50_dosage.jpg"
+  },
+  {
+   "name": "Essential SPF50 inactive.jpg",
+   "file": "img/1e6410d5-c522-5249-e063-6294a90ac503/Essential_SPF50_inactive.jpg"
+  },
+  {
+   "name": "Essential SPF50 principal.jpg",
+   "file": "img/1e6410d5-c522-5249-e063-6294a90ac503/Essential_SPF50_principal.jpg"
+  },
+  {
+   "name": "Essential SPF50 purpose.jpg",
+   "file": "img/1e6410d5-c522-5249-e063-6294a90ac503/Essential_SPF50_purpose.jpg"
+  },
+  {
+   "name": "Essential SPF50 use.jpg",
+   "file": "img/1e6410d5-c522-5249-e063-6294a90ac503/Essential_SPF50_use.jpg"
+  },
+  {
+   "name": "Essential SPF50 warnings.jpg",
+   "file": "img/1e6410d5-c522-5249-e063-6294a90ac503/Essential_SPF50_warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Essential Sunscreen SPF50",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1e6410d5-c522-5249-e063-6294a90ac503",
+  "name": "Essential Sunscreen SPF50 Lotion",
+  "brand": "Milbar Laboratories",
+  "n_inactive": 21,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "569b8010-d2bb-4eda-90de-9ef8950823e2",
+ "images": [
+  {
+   "name": "Label3.jpg",
+   "file": "img/569b8010-d2bb-4eda-90de-9ef8950823e2/Label3.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "SPF 30 SUNSCREEN LOTION",
+ "inactive_section": "Water, Cetearyl Alcohol, Xanthan Gum, C12-15 Alkyl Benzoate, Myristyl Propionate, Propylene Glycol, Glyceryl Stearate Citrate, Disodium EDTA, Iodopropynyl Butylcarbamate, DMDM Hydantoin, Fragrance.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "569b8010-d2bb-4eda-90de-9ef8950823e2",
+  "name": "SPF 30 Sunscreen Lotion",
+  "brand": "Tekweld Solutions, Inc.",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

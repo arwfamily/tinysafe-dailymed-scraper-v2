@@ -1,0 +1,53 @@
+{
+ "setid": "a2403cdf-838f-e496-e053-2a95a90ae60a",
+ "images": [
+  {
+   "name": "Display Carton.jpg",
+   "file": "img/a2403cdf-838f-e496-e053-2a95a90ae60a/Display_Carton.jpg"
+  },
+  {
+   "name": "Dosage.jpg",
+   "file": "img/a2403cdf-838f-e496-e053-2a95a90ae60a/Dosage.jpg"
+  },
+  {
+   "name": "Inactive.jpg",
+   "file": "img/a2403cdf-838f-e496-e053-2a95a90ae60a/Inactive.jpg"
+  },
+  {
+   "name": "Indications and Usage.jpg",
+   "file": "img/a2403cdf-838f-e496-e053-2a95a90ae60a/Indications_and_Usage.jpg"
+  },
+  {
+   "name": "Label.jpg",
+   "file": "img/a2403cdf-838f-e496-e053-2a95a90ae60a/Label.jpg"
+  },
+  {
+   "name": "OTC Active.jpg",
+   "file": "img/a2403cdf-838f-e496-e053-2a95a90ae60a/OTC_Active.jpg"
+  },
+  {
+   "name": "OTC KOR.jpg",
+   "file": "img/a2403cdf-838f-e496-e053-2a95a90ae60a/OTC_KOR.jpg"
+  },
+  {
+   "name": "OTC Purpose.jpg",
+   "file": "img/a2403cdf-838f-e496-e053-2a95a90ae60a/OTC_Purpose.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/a2403cdf-838f-e496-e053-2a95a90ae60a/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Vertra Lip Balm Moisturizing Sunscreen, SPF 15",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a2403cdf-838f-e496-e053-2a95a90ae60a",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

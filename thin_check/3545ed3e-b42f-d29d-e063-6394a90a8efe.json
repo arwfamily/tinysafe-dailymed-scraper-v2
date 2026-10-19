@@ -1,0 +1,21 @@
+{
+ "setid": "3545ed3e-b42f-d29d-e063-6394a90a8efe",
+ "images": [
+  {
+   "name": "JOHANNA 205.jpg",
+   "file": "img/3545ed3e-b42f-d29d-e063-6394a90a8efe/JOHANNA_205.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3545ed3e-b42f-d29d-e063-6394a90a8efe",
+  "name": "Zinc 20Percent SPF 40 Cream",
+  "brand": "Johanna'S Skin Care",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

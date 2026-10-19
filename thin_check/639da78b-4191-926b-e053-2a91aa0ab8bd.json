@@ -1,0 +1,49 @@
+{
+ "setid": "639da78b-4191-926b-e053-2a91aa0ab8bd",
+ "images": [
+  {
+   "name": "SPF 40 Kids US - final label-PDP.jpg",
+   "file": "img/639da78b-4191-926b-e053-2a91aa0ab8bd/SPF_40_Kids_US_-_final_label-PDP.jpg"
+  },
+  {
+   "name": "SPF 40 Kids US - final label-actives.jpg",
+   "file": "img/639da78b-4191-926b-e053-2a91aa0ab8bd/SPF_40_Kids_US_-_final_label-actives.jpg"
+  },
+  {
+   "name": "SPF 40 Kids US - final label-dose and administration.jpg",
+   "file": "img/639da78b-4191-926b-e053-2a91aa0ab8bd/SPF_40_Kids_US_-_final_label-dose_and_administration.jpg"
+  },
+  {
+   "name": "SPF 40 Kids US - final label-inactives.jpg",
+   "file": "img/639da78b-4191-926b-e053-2a91aa0ab8bd/SPF_40_Kids_US_-_final_label-inactives.jpg"
+  },
+  {
+   "name": "SPF 40 Kids US - final label-keep out of reach.jpg",
+   "file": "img/639da78b-4191-926b-e053-2a91aa0ab8bd/SPF_40_Kids_US_-_final_label-keep_out_of_reach.jpg"
+  },
+  {
+   "name": "SPF 40 Kids US - final label-purpose.jpg",
+   "file": "img/639da78b-4191-926b-e053-2a91aa0ab8bd/SPF_40_Kids_US_-_final_label-purpose.jpg"
+  },
+  {
+   "name": "SPF 40 Kids US - final label-uses.jpg",
+   "file": "img/639da78b-4191-926b-e053-2a91aa0ab8bd/SPF_40_Kids_US_-_final_label-uses.jpg"
+  },
+  {
+   "name": "SPF 40 Kids US - final label-warnings.jpg",
+   "file": "img/639da78b-4191-926b-e053-2a91aa0ab8bd/SPF_40_Kids_US_-_final_label-warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "The Green Beaver Kids Sunscreen SPF 40",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "639da78b-4191-926b-e053-2a91aa0ab8bd",
+  "name": "The Green Beaver Company SPF 40 Kids Sunscreen (Sunscreen Lotion) Lotion",
+  "brand": "The Green Beaver Company",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

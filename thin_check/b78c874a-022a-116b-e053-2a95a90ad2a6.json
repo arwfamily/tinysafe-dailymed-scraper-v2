@@ -1,0 +1,33 @@
+{
+ "setid": "b78c874a-022a-116b-e053-2a95a90ad2a6",
+ "images": [
+  {
+   "name": "Active Ingredient.jpg",
+   "file": "img/b78c874a-022a-116b-e053-2a95a90ad2a6/Active_Ingredient.jpg"
+  },
+  {
+   "name": "Artwork.jpg",
+   "file": "img/b78c874a-022a-116b-e053-2a95a90ad2a6/Artwork.jpg"
+  },
+  {
+   "name": "Keep Out of Reach.jpg",
+   "file": "img/b78c874a-022a-116b-e053-2a95a90ad2a6/Keep_Out_of_Reach.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/b78c874a-022a-116b-e053-2a95a90ad2a6/Purpose.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Beauty By Earth Facial Sunscreen Stick, SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b78c874a-022a-116b-e053-2a95a90ad2a6",
+  "name": "Facial Sunscreen Stick, SPF 30 Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

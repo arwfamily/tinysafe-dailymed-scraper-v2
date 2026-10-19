@@ -1,0 +1,21 @@
+{
+ "setid": "68092ec2-68ef-33be-e053-2991aa0af80c",
+ "images": [
+  {
+   "name": "klar.jpg",
+   "file": "img/68092ec2-68ef-33be-e053-2991aa0af80c/klar.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "68092ec2-68ef-33be-e053-2991aa0af80c",
+  "name": "Pure Zinc Oxide Sunscreen 30 Salve",
+  "brand": "Klar Medical",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

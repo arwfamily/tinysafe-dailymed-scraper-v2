@@ -1,0 +1,57 @@
+{
+ "setid": "a1b376f0-949f-1095-e053-2995a90a2b2d",
+ "images": [
+  {
+   "name": "Back Label.jpg",
+   "file": "img/a1b376f0-949f-1095-e053-2995a90a2b2d/Back_Label.jpg"
+  },
+  {
+   "name": "Dosage and Administration.jpg",
+   "file": "img/a1b376f0-949f-1095-e053-2995a90a2b2d/Dosage_and_Administration.jpg"
+  },
+  {
+   "name": "Front Label.jpg",
+   "file": "img/a1b376f0-949f-1095-e053-2995a90a2b2d/Front_Label.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/a1b376f0-949f-1095-e053-2995a90a2b2d/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Indications and Usage.jpg",
+   "file": "img/a1b376f0-949f-1095-e053-2995a90a2b2d/Indications_and_Usage.jpg"
+  },
+  {
+   "name": "Keep out of reach of children.jpg",
+   "file": "img/a1b376f0-949f-1095-e053-2995a90a2b2d/Keep_out_of_reach_of_children.jpg"
+  },
+  {
+   "name": "OTC Active Ingredients.jpg",
+   "file": "img/a1b376f0-949f-1095-e053-2995a90a2b2d/OTC_Active_Ingredients.jpg"
+  },
+  {
+   "name": "OTC Purpose.jpg",
+   "file": "img/a1b376f0-949f-1095-e053-2995a90a2b2d/OTC_Purpose.jpg"
+  },
+  {
+   "name": "Warnings part one.jpg",
+   "file": "img/a1b376f0-949f-1095-e053-2995a90a2b2d/Warnings_part_one.jpg"
+  },
+  {
+   "name": "Warnings part two.jpg",
+   "file": "img/a1b376f0-949f-1095-e053-2995a90a2b2d/Warnings_part_two.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Olita Mineral Sunscreen Light Tan Tint, SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a1b376f0-949f-1095-e053-2995a90a2b2d",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

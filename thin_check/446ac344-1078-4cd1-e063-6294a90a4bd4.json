@@ -1,0 +1,65 @@
+{
+ "setid": "446ac344-1078-4cd1-e063-6294a90a4bd4",
+ "images": [
+  {
+   "name": "Active ingredients.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/Active_ingredients.jpg"
+  },
+  {
+   "name": "Directions-continue.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/Directions-continue.jpg"
+  },
+  {
+   "name": "Directions.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/Directions.jpg"
+  },
+  {
+   "name": "Inactive Ingredients-continue.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/Inactive_Ingredients-continue.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "KDH GLOW FINISH STICK OTC.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/KDH_GLOW_FINISH_STICK_OTC.jpg"
+  },
+  {
+   "name": "OTC-purpose.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/OTC-purpose.jpg"
+  },
+  {
+   "name": "Other information.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/Other_information.jpg"
+  },
+  {
+   "name": "Questions.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/Questions.jpg"
+  },
+  {
+   "name": "Uses.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/Uses.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/Warnings.jpg"
+  },
+  {
+   "name": "package-sunscreen stick.jpg",
+   "file": "img/446ac344-1078-4cd1-e063-6294a90a4bd4/package-sunscreen_stick.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "ANUA INVISIBLE GLOW FINISH SUNSCREEN STICK SPF 50",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "446ac344-1078-4cd1-e063-6294a90a4bd4",
+  "name": "Anua Invisible Glow Finish Sunscreen Stick",
+  "brand": "The Founders Inc.",
+  "n_inactive": 19,
+  "thin_reason": null
+ }
+}

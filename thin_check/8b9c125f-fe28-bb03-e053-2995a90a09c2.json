@@ -1,0 +1,45 @@
+{
+ "setid": "8b9c125f-fe28-bb03-e053-2995a90a09c2",
+ "images": [
+  {
+   "name": "Dosage Admin Z24 OTC Sun Stick.jpg",
+   "file": "img/8b9c125f-fe28-bb03-e053-2995a90a09c2/Dosage_Admin_Z24_OTC_Sun_Stick.jpg"
+  },
+  {
+   "name": "Inactive Ingredients Z24 OTC Sun Stick.jpg",
+   "file": "img/8b9c125f-fe28-bb03-e053-2995a90a09c2/Inactive_Ingredients_Z24_OTC_Sun_Stick.jpg"
+  },
+  {
+   "name": "Indications Usage Z24 OTC Sun Stick.jpg",
+   "file": "img/8b9c125f-fe28-bb03-e053-2995a90a09c2/Indications_Usage_Z24_OTC_Sun_Stick.jpg"
+  },
+  {
+   "name": "OTC Active Ingredients Z24 OTC Sun Stick.jpg",
+   "file": "img/8b9c125f-fe28-bb03-e053-2995a90a09c2/OTC_Active_Ingredients_Z24_OTC_Sun_Stick.jpg"
+  },
+  {
+   "name": "OTC Purpose Z24 OTC Sun Stick.jpg",
+   "file": "img/8b9c125f-fe28-bb03-e053-2995a90a09c2/OTC_Purpose_Z24_OTC_Sun_Stick.jpg"
+  },
+  {
+   "name": "Warnings Z24 OTC Sun Stick.jpg",
+   "file": "img/8b9c125f-fe28-bb03-e053-2995a90a09c2/Warnings_Z24_OTC_Sun_Stick.jpg"
+  },
+  {
+   "name": "Z24 SPF 30 Sun Stick.jpg",
+   "file": "img/8b9c125f-fe28-bb03-e053-2995a90a09c2/Z24_SPF_30_Sun_Stick.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Z24 SPF 30 Sun Stick",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8b9c125f-fe28-bb03-e053-2995a90a09c2",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

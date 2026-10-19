@@ -1,0 +1,33 @@
+{
+ "setid": "b7c5f0b8-047c-5115-e053-2a95a90a1b4b",
+ "images": [
+  {
+   "name": "ARTWORK.jpg",
+   "file": "img/b7c5f0b8-047c-5115-e053-2a95a90a1b4b/ARTWORK.jpg"
+  },
+  {
+   "name": "Active.jpg",
+   "file": "img/b7c5f0b8-047c-5115-e053-2a95a90a1b4b/Active.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/b7c5f0b8-047c-5115-e053-2a95a90a1b4b/Purpose.jpg"
+  },
+  {
+   "name": "keep out of reach.jpg",
+   "file": "img/b7c5f0b8-047c-5115-e053-2a95a90a1b4b/keep_out_of_reach.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Suntegrity Natural Mineral Tinted Sunscreen Sport, Natural Tint",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b7c5f0b8-047c-5115-e053-2a95a90a1b4b",
+  "name": "Sunscreen Ointment",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

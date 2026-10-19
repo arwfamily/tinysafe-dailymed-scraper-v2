@@ -1,0 +1,49 @@
+{
+ "setid": "20b18cea-95e9-3527-e063-6294a90a4db4",
+ "images": [
+  {
+   "name": "Active FON 50.jpg",
+   "file": "img/20b18cea-95e9-3527-e063-6294a90a4db4/Active_FON_50.jpg"
+  },
+  {
+   "name": "Dosage FON 50.jpg",
+   "file": "img/20b18cea-95e9-3527-e063-6294a90a4db4/Dosage_FON_50.jpg"
+  },
+  {
+   "name": "Inactive FON 50.jpg",
+   "file": "img/20b18cea-95e9-3527-e063-6294a90a4db4/Inactive_FON_50.jpg"
+  },
+  {
+   "name": "Principal Display FON spf50.jpg",
+   "file": "img/20b18cea-95e9-3527-e063-6294a90a4db4/Principal_Display_FON_spf50.jpg"
+  },
+  {
+   "name": "Purpose FON 50.jpg",
+   "file": "img/20b18cea-95e9-3527-e063-6294a90a4db4/Purpose_FON_50.jpg"
+  },
+  {
+   "name": "Warnings FON 50.jpg",
+   "file": "img/20b18cea-95e9-3527-e063-6294a90a4db4/Warnings_FON_50.jpg"
+  },
+  {
+   "name": "usage FON 50.jpg",
+   "file": "img/20b18cea-95e9-3527-e063-6294a90a4db4/usage_FON_50.jpg"
+  },
+  {
+   "name": "warnings_Children FON 50.jpg",
+   "file": "img/20b18cea-95e9-3527-e063-6294a90a4db4/warnings_Children_FON_50.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Squared Circles / Freaks of Nature Peak Performance SPF 50 Lotion",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "20b18cea-95e9-3527-e063-6294a90a4db4",
+  "name": "Freaks Of Nature Peak Performance SPF50 Lotion",
+  "brand": "Milbar Laboratories",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

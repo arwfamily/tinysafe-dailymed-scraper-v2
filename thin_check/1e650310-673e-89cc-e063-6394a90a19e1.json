@@ -1,0 +1,41 @@
+{
+ "setid": "1e650310-673e-89cc-e063-6394a90a19e1",
+ "images": [
+  {
+   "name": "Wear SPF30 dosage.jpg",
+   "file": "img/1e650310-673e-89cc-e063-6394a90a19e1/Wear_SPF30_dosage.jpg"
+  },
+  {
+   "name": "Wear SPF30 inactive.jpg",
+   "file": "img/1e650310-673e-89cc-e063-6394a90a19e1/Wear_SPF30_inactive.jpg"
+  },
+  {
+   "name": "Wear SPF30 indications and usage.jpg",
+   "file": "img/1e650310-673e-89cc-e063-6394a90a19e1/Wear_SPF30_indications_and_usage.jpg"
+  },
+  {
+   "name": "Wear SPF30 principal display.jpg",
+   "file": "img/1e650310-673e-89cc-e063-6394a90a19e1/Wear_SPF30_principal_display.jpg"
+  },
+  {
+   "name": "Wear SPF30 purpose.jpg",
+   "file": "img/1e650310-673e-89cc-e063-6394a90a19e1/Wear_SPF30_purpose.jpg"
+  },
+  {
+   "name": "Wear SPF30 warnings.jpg",
+   "file": "img/1e650310-673e-89cc-e063-6394a90a19e1/Wear_SPF30_warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Antioxidant Mineral Sunscreen SPF30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1e650310-673e-89cc-e063-6394a90a19e1",
+  "name": "Antioxidant Mineral Sunscreen SPF30 Lotion",
+  "brand": "Milbar Laboratories",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

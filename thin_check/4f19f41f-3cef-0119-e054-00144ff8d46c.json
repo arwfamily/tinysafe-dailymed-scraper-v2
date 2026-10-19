@@ -1,0 +1,25 @@
+{
+ "setid": "4f19f41f-3cef-0119-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "Principalpanel labelcvs.jpg",
+   "file": "img/4f19f41f-3cef-0119-e054-00144ff8d46c/Principalpanel_labelcvs.jpg"
+  },
+  {
+   "name": "cvsblisterbc.jpg",
+   "file": "img/4f19f41f-3cef-0119-e054-00144ff8d46c/cvsblisterbc.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4f19f41f-3cef-0119-e054-00144ff8d46c",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

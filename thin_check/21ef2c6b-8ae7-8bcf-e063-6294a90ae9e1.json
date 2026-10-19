@@ -1,0 +1,41 @@
+{
+ "setid": "21ef2c6b-8ae7-8bcf-e063-6294a90ae9e1",
+ "images": [
+  {
+   "name": "PDP.jpg",
+   "file": "img/21ef2c6b-8ae7-8bcf-e063-6294a90ae9e1/PDP.jpg"
+  },
+  {
+   "name": "active ingredients.jpg",
+   "file": "img/21ef2c6b-8ae7-8bcf-e063-6294a90ae9e1/active_ingredients.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/21ef2c6b-8ae7-8bcf-e063-6294a90ae9e1/directions.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/21ef2c6b-8ae7-8bcf-e063-6294a90ae9e1/inactive_ingredients.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/21ef2c6b-8ae7-8bcf-e063-6294a90ae9e1/uses.jpg"
+  },
+  {
+   "name": "warnings.jpg",
+   "file": "img/21ef2c6b-8ae7-8bcf-e063-6294a90ae9e1/warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Blume Sunburst Sunscreen",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "21ef2c6b-8ae7-8bcf-e063-6294a90ae9e1",
+  "name": "Blume Sunburst Sunscreen Lotion",
+  "brand": "Blume",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

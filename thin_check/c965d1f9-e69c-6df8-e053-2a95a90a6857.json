@@ -1,0 +1,25 @@
+{
+ "setid": "c965d1f9-e69c-6df8-e053-2a95a90a6857",
+ "images": [
+  {
+   "name": "Recipe 100 back panel.jpg",
+   "file": "img/c965d1f9-e69c-6df8-e053-2a95a90a6857/Recipe_100_back_panel.jpg"
+  },
+  {
+   "name": "Recipe 100 front panel.jpg",
+   "file": "img/c965d1f9-e69c-6df8-e053-2a95a90a6857/Recipe_100_front_panel.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Recipe 100",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c965d1f9-e69c-6df8-e053-2a95a90a6857",
+  "name": "Zinxation SPF 47 Lotion",
+  "brand": "Antaria Pty Ltd",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

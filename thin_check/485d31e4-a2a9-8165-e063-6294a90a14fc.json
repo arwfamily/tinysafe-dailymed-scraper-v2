@@ -1,0 +1,25 @@
+{
+ "setid": "485d31e4-a2a9-8165-e063-6294a90a14fc",
+ "images": [
+  {
+   "name": "Les Coja Back.jpg",
+   "file": "img/485d31e4-a2a9-8165-e063-6294a90a14fc/Les_Coja_Back.jpg"
+  },
+  {
+   "name": "Les Coja Front.jpg",
+   "file": "img/485d31e4-a2a9-8165-e063-6294a90a14fc/Les_Coja_Front.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "485d31e4-a2a9-8165-e063-6294a90a14fc",
+  "name": "Les Coja Organic SPF 30 Lotion",
+  "brand": "Rna Pharma, LLC",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

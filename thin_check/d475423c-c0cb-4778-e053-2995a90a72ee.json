@@ -1,0 +1,45 @@
+{
+ "setid": "d475423c-c0cb-4778-e053-2995a90a72ee",
+ "images": [
+  {
+   "name": "Active Purpose.jpg",
+   "file": "img/d475423c-c0cb-4778-e053-2995a90a72ee/Active_Purpose.jpg"
+  },
+  {
+   "name": "Artwork.jpg",
+   "file": "img/d475423c-c0cb-4778-e053-2995a90a72ee/Artwork.jpg"
+  },
+  {
+   "name": "Directions.jpg",
+   "file": "img/d475423c-c0cb-4778-e053-2995a90a72ee/Directions.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/d475423c-c0cb-4778-e053-2995a90a72ee/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Inner Artwork.jpg",
+   "file": "img/d475423c-c0cb-4778-e053-2995a90a72ee/Inner_Artwork.jpg"
+  },
+  {
+   "name": "Uses.jpg",
+   "file": "img/d475423c-c0cb-4778-e053-2995a90a72ee/Uses.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/d475423c-c0cb-4778-e053-2995a90a72ee/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Earth Mama, Baby Face (Stick) Mineral Sunscreen, SPF 40",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d475423c-c0cb-4778-e053-2995a90a72ee",
+  "name": "Baby Face Stick Mineral Sunscreen SPF 40 (Sunscreen) Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

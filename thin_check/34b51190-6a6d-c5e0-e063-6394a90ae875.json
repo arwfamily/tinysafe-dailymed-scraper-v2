@@ -1,0 +1,21 @@
+{
+ "setid": "34b51190-6a6d-c5e0-e063-6394a90ae875",
+ "images": [
+  {
+   "name": "202 Maui Medical.jpg",
+   "file": "img/34b51190-6a6d-c5e0-e063-6394a90ae875/202_Maui_Medical.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "34b51190-6a6d-c5e0-e063-6394a90ae875",
+  "name": "Sheer Mineral Sunscreen Cream",
+  "brand": "The Maui Medical Group, Inc",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

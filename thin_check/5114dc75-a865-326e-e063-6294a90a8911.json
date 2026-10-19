@@ -1,0 +1,21 @@
+{
+ "setid": "5114dc75-a865-326e-e063-6294a90a8911",
+ "images": [
+  {
+   "name": "Knesko The Sunscreen.jpg",
+   "file": "img/5114dc75-a865-326e-e063-6294a90a8911/Knesko_The_Sunscreen.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Knesko Skin The Sunscreen",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5114dc75-a865-326e-e063-6294a90a8911",
+  "name": "Knesko Skin The Sunscreen Lotion",
+  "brand": "Knesko, LLC",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

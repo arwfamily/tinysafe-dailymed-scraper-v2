@@ -1,0 +1,57 @@
+{
+ "setid": "24279f0c-e81a-09c3-e063-6294a90a5819",
+ "images": [
+  {
+   "name": "NUL Sunscreen Label_1_Active Ingredients.jpg",
+   "file": "img/24279f0c-e81a-09c3-e063-6294a90a5819/NUL_Sunscreen_Label_1_Active_Ingredients.jpg"
+  },
+  {
+   "name": "NUL Sunscreen Label_1_Purposes.jpg",
+   "file": "img/24279f0c-e81a-09c3-e063-6294a90a5819/NUL_Sunscreen_Label_1_Purposes.jpg"
+  },
+  {
+   "name": "NUL Sunscreen Label_2_Uses.jpg",
+   "file": "img/24279f0c-e81a-09c3-e063-6294a90a5819/NUL_Sunscreen_Label_2_Uses.jpg"
+  },
+  {
+   "name": "NUL Sunscreen Label_3_Warnings - Keep Out of Reach of Children.jpg",
+   "file": "img/24279f0c-e81a-09c3-e063-6294a90a5819/NUL_Sunscreen_Label_3_Warnings_-_Keep_Out_of_Reach_of_Children.jpg"
+  },
+  {
+   "name": "NUL Sunscreen Label_3_Warnings.jpg",
+   "file": "img/24279f0c-e81a-09c3-e063-6294a90a5819/NUL_Sunscreen_Label_3_Warnings.jpg"
+  },
+  {
+   "name": "NUL Sunscreen Label_4_Directions.jpg",
+   "file": "img/24279f0c-e81a-09c3-e063-6294a90a5819/NUL_Sunscreen_Label_4_Directions.jpg"
+  },
+  {
+   "name": "NUL Sunscreen Label_5_Other Information.jpg",
+   "file": "img/24279f0c-e81a-09c3-e063-6294a90a5819/NUL_Sunscreen_Label_5_Other_Information.jpg"
+  },
+  {
+   "name": "NUL Sunscreen Label_6_Inactive Ingredients.jpg",
+   "file": "img/24279f0c-e81a-09c3-e063-6294a90a5819/NUL_Sunscreen_Label_6_Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "NUL Sunscreen Label_7_Questions or Comments.jpg",
+   "file": "img/24279f0c-e81a-09c3-e063-6294a90a5819/NUL_Sunscreen_Label_7_Questions_or_Comments.jpg"
+  },
+  {
+   "name": "NUL Sunscreen Label_PDP.jpg",
+   "file": "img/24279f0c-e81a-09c3-e063-6294a90a5819/NUL_Sunscreen_Label_PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "24279f0c-e81a-09c3-e063-6294a90a5819",
+  "name": "Untypical Sheild Invisible Sunscreen SPF 30 Lotion",
+  "brand": "New U Life Corporation",
+  "n_inactive": 35,
+  "thin_reason": null
+ }
+}

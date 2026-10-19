@@ -1,0 +1,25 @@
+{
+ "setid": "a276836b-876d-56fe-e053-2a95a90a939c",
+ "images": [
+  {
+   "name": "SPF 30 Baby Sunscreen.jpg",
+   "file": "img/a276836b-876d-56fe-e053-2a95a90a939c/SPF_30_Baby_Sunscreen.jpg"
+  },
+  {
+   "name": "SPF 30 Face Sunscreen .jpg",
+   "file": "img/a276836b-876d-56fe-e053-2a95a90a939c/SPF_30_Face_Sunscreen_.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a276836b-876d-56fe-e053-2a95a90a939c",
+  "name": "SPF 30 Pure Mineral Face Body Sunscreen Lotion",
+  "brand": "Mi Amore Skincare, LLC",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

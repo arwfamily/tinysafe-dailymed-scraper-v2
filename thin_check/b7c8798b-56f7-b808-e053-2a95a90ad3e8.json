@@ -1,0 +1,33 @@
+{
+ "setid": "b7c8798b-56f7-b808-e053-2a95a90ad3e8",
+ "images": [
+  {
+   "name": "Active.jpg",
+   "file": "img/b7c8798b-56f7-b808-e053-2a95a90ad3e8/Active.jpg"
+  },
+  {
+   "name": "Artwork.jpg",
+   "file": "img/b7c8798b-56f7-b808-e053-2a95a90ad3e8/Artwork.jpg"
+  },
+  {
+   "name": "Keep Out Of Reach.jpg",
+   "file": "img/b7c8798b-56f7-b808-e053-2a95a90ad3e8/Keep_Out_Of_Reach.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/b7c8798b-56f7-b808-e053-2a95a90ad3e8/Purpose.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Two Peas Mineral Sunscreen, SPF 50",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b7c8798b-56f7-b808-e053-2a95a90ad3e8",
+  "name": "Sunscreen Ointment",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

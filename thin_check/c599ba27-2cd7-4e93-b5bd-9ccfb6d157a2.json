@@ -1,0 +1,25 @@
+{
+ "setid": "c599ba27-2cd7-4e93-b5bd-9ccfb6d157a2",
+ "images": [
+  {
+   "name": "back.jpg",
+   "file": "img/c599ba27-2cd7-4e93-b5bd-9ccfb6d157a2/back.jpg"
+  },
+  {
+   "name": "front.jpg",
+   "file": "img/c599ba27-2cd7-4e93-b5bd-9ccfb6d157a2/front.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c599ba27-2cd7-4e93-b5bd-9ccfb6d157a2",
+  "name": "Baby Pure Gentle Sunstick SPF 60 Cvs Stick",
+  "brand": "Cvs",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

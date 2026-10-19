@@ -1,0 +1,53 @@
+{
+ "setid": "3b29976e-eee0-b978-e063-6294a90accd6",
+ "images": [
+  {
+   "name": "Dosage.jpg",
+   "file": "img/3b29976e-eee0-b978-e063-6294a90accd6/Dosage.jpg"
+  },
+  {
+   "name": "Front Label.jpg",
+   "file": "img/3b29976e-eee0-b978-e063-6294a90accd6/Front_Label.jpg"
+  },
+  {
+   "name": "Inactive ingredients section.jpg",
+   "file": "img/3b29976e-eee0-b978-e063-6294a90accd6/Inactive_ingredients_section.jpg"
+  },
+  {
+   "name": "Indication and Uses.jpg",
+   "file": "img/3b29976e-eee0-b978-e063-6294a90accd6/Indication_and_Uses.jpg"
+  },
+  {
+   "name": "Keep Out of Reach of Children Section.jpg",
+   "file": "img/3b29976e-eee0-b978-e063-6294a90accd6/Keep_Out_of_Reach_of_Children_Section.jpg"
+  },
+  {
+   "name": "OTC Active Ingredients Section.jpg",
+   "file": "img/3b29976e-eee0-b978-e063-6294a90accd6/OTC_Active_Ingredients_Section.jpg"
+  },
+  {
+   "name": "Other Safety Information.jpg",
+   "file": "img/3b29976e-eee0-b978-e063-6294a90accd6/Other_Safety_Information.jpg"
+  },
+  {
+   "name": "Purpose .jpg",
+   "file": "img/3b29976e-eee0-b978-e063-6294a90accd6/Purpose_.jpg"
+  },
+  {
+   "name": "Warnings Section.jpg",
+   "file": "img/3b29976e-eee0-b978-e063-6294a90accd6/Warnings_Section.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "X-treme Cream Propolis Sunscreen SPF45",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3b29976e-eee0-b978-e063-6294a90accd6",
+  "name": "X-Treme Cream Propolis Sunscreen SPF 45 (X-Treme Cream) Cream",
+  "brand": "Epicuren Discovery",
+  "n_inactive": 33,
+  "thin_reason": null
+ }
+}

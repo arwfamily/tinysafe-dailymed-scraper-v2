@@ -1,0 +1,25 @@
+{
+ "setid": "861dd490-aba5-eb84-e053-2a91aa0ac5ec",
+ "images": [
+  {
+   "name": "carton.jpg",
+   "file": "img/861dd490-aba5-eb84-e053-2a91aa0ac5ec/carton.jpg"
+  },
+  {
+   "name": "ingredients.jpg",
+   "file": "img/861dd490-aba5-eb84-e053-2a91aa0ac5ec/ingredients.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "supernatural poreless tint spf 15",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "861dd490-aba5-eb84-e053-2a91aa0ac5ec",
+  "name": "Supernatural Poreless Tint SPF 15 Cream",
+  "brand": "Philosophy Inc.",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

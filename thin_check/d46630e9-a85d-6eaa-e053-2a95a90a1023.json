@@ -1,0 +1,41 @@
+{
+ "setid": "d46630e9-a85d-6eaa-e053-2a95a90a1023",
+ "images": [
+  {
+   "name": "Active Purpose.jpg",
+   "file": "img/d46630e9-a85d-6eaa-e053-2a95a90a1023/Active_Purpose.jpg"
+  },
+  {
+   "name": "Artwork.jpg",
+   "file": "img/d46630e9-a85d-6eaa-e053-2a95a90a1023/Artwork.jpg"
+  },
+  {
+   "name": "Directions.jpg",
+   "file": "img/d46630e9-a85d-6eaa-e053-2a95a90a1023/Directions.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/d46630e9-a85d-6eaa-e053-2a95a90a1023/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Uses.jpg",
+   "file": "img/d46630e9-a85d-6eaa-e053-2a95a90a1023/Uses.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/d46630e9-a85d-6eaa-e053-2a95a90a1023/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Olita Inc., Baby Mineral Sunscreen, SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d46630e9-a85d-6eaa-e053-2a95a90a1023",
+  "name": "Baby Mineral Sunscreen, SPF 30 (Sunscreen) Ointment",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

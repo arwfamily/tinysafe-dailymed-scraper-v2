@@ -1,0 +1,21 @@
+{
+ "setid": "2d33112e-7c23-46a9-bb64-a5c3bd9bfb59",
+ "images": [
+  {
+   "name": "PHKIDSMISTLabel.jpg",
+   "file": "img/2d33112e-7c23-46a9-bb64-a5c3bd9bfb59/PHKIDSMISTLabel.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2d33112e-7c23-46a9-bb64-a5c3bd9bfb59",
+  "name": "Parrot Head Parakeet Kids 50 Mist Sunscreen Spray",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

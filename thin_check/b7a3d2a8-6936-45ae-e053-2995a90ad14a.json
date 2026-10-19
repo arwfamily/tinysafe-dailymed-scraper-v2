@@ -1,0 +1,37 @@
+{
+ "setid": "b7a3d2a8-6936-45ae-e053-2995a90ad14a",
+ "images": [
+  {
+   "name": "ARTWORK BACK.jpg",
+   "file": "img/b7a3d2a8-6936-45ae-e053-2995a90ad14a/ARTWORK_BACK.jpg"
+  },
+  {
+   "name": "ARTWORK.jpg",
+   "file": "img/b7a3d2a8-6936-45ae-e053-2995a90ad14a/ARTWORK.jpg"
+  },
+  {
+   "name": "Active.jpg",
+   "file": "img/b7a3d2a8-6936-45ae-e053-2995a90ad14a/Active.jpg"
+  },
+  {
+   "name": "Keep Out of Reach.jpg",
+   "file": "img/b7a3d2a8-6936-45ae-e053-2995a90ad14a/Keep_Out_of_Reach.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/b7a3d2a8-6936-45ae-e053-2995a90ad14a/Purpose.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Jumby Every Mother's Sun, Mineral Sunscreen SPF 30 (Stick)",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b7a3d2a8-6936-45ae-e053-2995a90ad14a",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "setid": "a0152886-9213-492f-91f6-48655c057572",
+ "images": [
+  {
+   "name": "2oz_ART_TOURIST.jpg",
+   "file": "img/a0152886-9213-492f-91f6-48655c057572/2oz_ART_TOURIST.jpg"
+  },
+  {
+   "name": "Suncare_FDA_Label.jpg",
+   "file": "img/a0152886-9213-492f-91f6-48655c057572/Suncare_FDA_Label.jpg"
+  },
+  {
+   "name": "TOURIST_8oz.jpg",
+   "file": "img/a0152886-9213-492f-91f6-48655c057572/TOURIST_8oz.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "tourist spf30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a0152886-9213-492f-91f6-48655c057572",
+  "name": "Tourist SPF30 Lotion",
+  "brand": "Island Company Lifestyle Products, LLC",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

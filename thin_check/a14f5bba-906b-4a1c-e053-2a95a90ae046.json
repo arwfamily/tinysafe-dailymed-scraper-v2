@@ -1,0 +1,57 @@
+{
+ "setid": "a14f5bba-906b-4a1c-e053-2a95a90ae046",
+ "images": [
+  {
+   "name": "Active Ingredients.jpg",
+   "file": "img/a14f5bba-906b-4a1c-e053-2a95a90ae046/Active_Ingredients.jpg"
+  },
+  {
+   "name": "Back Label.jpg",
+   "file": "img/a14f5bba-906b-4a1c-e053-2a95a90ae046/Back_Label.jpg"
+  },
+  {
+   "name": "Dosage and Administration.jpg",
+   "file": "img/a14f5bba-906b-4a1c-e053-2a95a90ae046/Dosage_and_Administration.jpg"
+  },
+  {
+   "name": "Front Label.jpg",
+   "file": "img/a14f5bba-906b-4a1c-e053-2a95a90ae046/Front_Label.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/a14f5bba-906b-4a1c-e053-2a95a90ae046/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Indications and Usage.jpg",
+   "file": "img/a14f5bba-906b-4a1c-e053-2a95a90ae046/Indications_and_Usage.jpg"
+  },
+  {
+   "name": "Keep out of reach.jpg",
+   "file": "img/a14f5bba-906b-4a1c-e053-2a95a90ae046/Keep_out_of_reach.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/a14f5bba-906b-4a1c-e053-2a95a90ae046/Purpose.jpg"
+  },
+  {
+   "name": "Warnings Part One.jpg",
+   "file": "img/a14f5bba-906b-4a1c-e053-2a95a90ae046/Warnings_Part_One.jpg"
+  },
+  {
+   "name": "Warnings Part Two.jpg",
+   "file": "img/a14f5bba-906b-4a1c-e053-2a95a90ae046/Warnings_Part_Two.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Olita Mineral Sunscreen Coco Bronze Tint, SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a14f5bba-906b-4a1c-e053-2a95a90ae046",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

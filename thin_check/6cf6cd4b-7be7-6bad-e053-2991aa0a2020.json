@@ -1,0 +1,21 @@
+{
+ "setid": "6cf6cd4b-7be7-6bad-e053-2991aa0a2020",
+ "images": [
+  {
+   "name": "sun block.jpg",
+   "file": "img/6cf6cd4b-7be7-6bad-e053-2991aa0a2020/sun_block.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Gold Cosmetics XXL Sun Block SPF 25",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6cf6cd4b-7be7-6bad-e053-2991aa0a2020",
+  "name": "Xxl Sun Block SPF 50 Cream",
+  "brand": "Peer Pharma Ltd.",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "7ad07326-df35-0ab6-e053-2991aa0a0907",
+ "images": [
+  {
+   "name": "50G Sunstick Artwork Solid Orange COVER SPF30.jpg",
+   "file": "img/7ad07326-df35-0ab6-e053-2991aa0a0907/50G_Sunstick_Artwork_Solid_Orange_COVER_SPF30.jpg"
+  },
+  {
+   "name": "50g SUNSTICK Sunstick Drug Label SPF30.jpg",
+   "file": "img/7ad07326-df35-0ab6-e053-2991aa0a0907/50g_SUNSTICK_Sunstick_Drug_Label_SPF30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "50g Suntegrity Sunstick SPF30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7ad07326-df35-0ab6-e053-2991aa0a0907",
+  "name": "Sunscreen Ointment",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

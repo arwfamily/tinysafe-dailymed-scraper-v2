@@ -1,0 +1,25 @@
+{
+ "setid": "26a0fc0d-a903-2ac1-e063-6394a90a13db",
+ "images": [
+  {
+   "name": "Artwork 50mL_UV_PREEN_SCREEN_US_CARTON_(2).jpg",
+   "file": "img/26a0fc0d-a903-2ac1-e063-6394a90a13db/Artwork_50mL_UV_PREEN_SCREEN_US_CARTON__2_.jpg"
+  },
+  {
+   "name": "artwork 30mL_UV_PREEN_SCREEN_US_MINI_CARTON__FA2.jpg",
+   "file": "img/26a0fc0d-a903-2ac1-e063-6394a90a13db/artwork_30mL_UV_PREEN_SCREEN_US_MINI_CARTON__FA2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "26a0fc0d-a903-2ac1-e063-6394a90a13db",
+  "name": "Ultra Violette Preen Screen Broad Spectrum SPF 50 Spray",
+  "brand": "Grace And Fire Usa Inc.",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

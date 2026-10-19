@@ -1,0 +1,21 @@
+{
+ "setid": "35be5dc0-861f-3738-e063-6394a90a23ca",
+ "images": [
+  {
+   "name": "HALEM 205 KIDS.jpg",
+   "file": "img/35be5dc0-861f-3738-e063-6394a90a23ca/HALEM_205_KIDS.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "35be5dc0-861f-3738-e063-6394a90a23ca",
+  "name": "Ultimate Physical Sunscreen Cream",
+  "brand": "Halem Dermatology Pllc",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

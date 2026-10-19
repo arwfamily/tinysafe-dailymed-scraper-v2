@@ -1,0 +1,21 @@
+{
+ "setid": "ef1b3f67-afe3-433f-93e8-50aab38ef7ab",
+ "images": [
+  {
+   "name": "NA60Label.jpg",
+   "file": "img/ef1b3f67-afe3-433f-93e8-50aab38ef7ab/NA60Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ef1b3f67-afe3-433f-93e8-50aab38ef7ab",
+  "name": "No-Ad 60 Sunscreen Lotion",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 21,
+  "thin_reason": null
+ }
+}

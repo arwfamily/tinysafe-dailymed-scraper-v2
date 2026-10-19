@@ -1,0 +1,57 @@
+{
+ "setid": "9aca7c21-7f60-c8db-e053-2995a90ad4ba",
+ "images": [
+  {
+   "name": "Active Ingredients.jpg",
+   "file": "img/9aca7c21-7f60-c8db-e053-2995a90ad4ba/Active_Ingredients.jpg"
+  },
+  {
+   "name": "Back Labels.jpg",
+   "file": "img/9aca7c21-7f60-c8db-e053-2995a90ad4ba/Back_Labels.jpg"
+  },
+  {
+   "name": "Dosage and Administration Part1.jpg",
+   "file": "img/9aca7c21-7f60-c8db-e053-2995a90ad4ba/Dosage_and_Administration_Part1.jpg"
+  },
+  {
+   "name": "Dosage and Administration Part2.jpg",
+   "file": "img/9aca7c21-7f60-c8db-e053-2995a90ad4ba/Dosage_and_Administration_Part2.jpg"
+  },
+  {
+   "name": "Front Label.jpg",
+   "file": "img/9aca7c21-7f60-c8db-e053-2995a90ad4ba/Front_Label.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/9aca7c21-7f60-c8db-e053-2995a90ad4ba/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Keep Out of Reach.jpg",
+   "file": "img/9aca7c21-7f60-c8db-e053-2995a90ad4ba/Keep_Out_of_Reach.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/9aca7c21-7f60-c8db-e053-2995a90ad4ba/Purpose.jpg"
+  },
+  {
+   "name": "Usage Section.jpg",
+   "file": "img/9aca7c21-7f60-c8db-e053-2995a90ad4ba/Usage_Section.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/9aca7c21-7f60-c8db-e053-2995a90ad4ba/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Lucky Bastard Sunscreen SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9aca7c21-7f60-c8db-e053-2995a90ad4ba",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

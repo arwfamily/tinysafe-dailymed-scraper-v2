@@ -1,0 +1,37 @@
+{
+ "setid": "9a5304a4-8001-4e0c-e053-2a95a90ac5d7",
+ "images": [
+  {
+   "name": "Norwex SPF 30 Active Ingredient (Canadian) .jpg",
+   "file": "img/9a5304a4-8001-4e0c-e053-2a95a90ac5d7/Norwex_SPF_30_Active_Ingredient__Canadian__.jpg"
+  },
+  {
+   "name": "Norwex SPF 30 Dosage and Admin (Canadian) .jpg",
+   "file": "img/9a5304a4-8001-4e0c-e053-2a95a90ac5d7/Norwex_SPF_30_Dosage_and_Admin__Canadian__.jpg"
+  },
+  {
+   "name": "Norwex SPF 30 Inactive Ingredients (Canadian) .jpg",
+   "file": "img/9a5304a4-8001-4e0c-e053-2a95a90ac5d7/Norwex_SPF_30_Inactive_Ingredients__Canadian__.jpg"
+  },
+  {
+   "name": "Norwex SPF 30 Natural Sunscreen (Canadian) .jpg",
+   "file": "img/9a5304a4-8001-4e0c-e053-2a95a90ac5d7/Norwex_SPF_30_Natural_Sunscreen__Canadian__.jpg"
+  },
+  {
+   "name": "Norwex SPF 30 Warnings (Canadian) .jpg",
+   "file": "img/9a5304a4-8001-4e0c-e053-2a95a90ac5d7/Norwex_SPF_30_Warnings__Canadian__.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Norwex SPF 30, Natural Sunscreen (Canadian)",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9a5304a4-8001-4e0c-e053-2a95a90ac5d7",
+  "name": "Sunscreen Ointment",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

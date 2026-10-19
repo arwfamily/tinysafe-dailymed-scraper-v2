@@ -1,0 +1,21 @@
+{
+ "setid": "c07aa167-6cea-4d91-99f6-3ae2a2bd8bc9",
+ "images": [
+  {
+   "name": "15label.jpg",
+   "file": "img/c07aa167-6cea-4d91-99f6-3ae2a2bd8bc9/15label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c07aa167-6cea-4d91-99f6-3ae2a2bd8bc9",
+  "name": "Ocean Potion Quick Dry 15 Sunscreen Lotion",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

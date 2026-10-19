@@ -1,0 +1,21 @@
+{
+ "setid": "f64f75d4-1a02-4463-bcc0-a923dadd1b19",
+ "images": [
+  {
+   "name": "OHUI Sun luminous Whitening Sun block.jpg",
+   "file": "img/f64f75d4-1a02-4463-bcc0-a923dadd1b19/OHUI_Sun_luminous_Whitening_Sun_block.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Fact",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f64f75d4-1a02-4463-bcc0-a923dadd1b19",
+  "name": "Ohui Sunscience Luminous Whitening Sunblock Cream",
+  "brand": "Lg Household And Healthcare, Inc.",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

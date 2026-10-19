@@ -1,0 +1,45 @@
+{
+ "setid": "41cca42f-3d2a-9a32-e063-6394a90a03e1",
+ "images": [
+  {
+   "name": "DOSAGE ADMINISTRATION SECTION.jpg",
+   "file": "img/41cca42f-3d2a-9a32-e063-6394a90a03e1/DOSAGE_ADMINISTRATION_SECTION.jpg"
+  },
+  {
+   "name": "INACTIVE INGREDIENT SECTION.jpg",
+   "file": "img/41cca42f-3d2a-9a32-e063-6394a90a03e1/INACTIVE_INGREDIENT_SECTION.jpg"
+  },
+  {
+   "name": "INDICATIONS USAGE SECTION.jpg",
+   "file": "img/41cca42f-3d2a-9a32-e063-6394a90a03e1/INDICATIONS_USAGE_SECTION.jpg"
+  },
+  {
+   "name": "KEEP OUT OF REACH OF CHILDREN SECTION.jpg",
+   "file": "img/41cca42f-3d2a-9a32-e063-6394a90a03e1/KEEP_OUT_OF_REACH_OF_CHILDREN_SECTION.jpg"
+  },
+  {
+   "name": "PRINCIPAL DISPLAY PANEL.jpg",
+   "file": "img/41cca42f-3d2a-9a32-e063-6394a90a03e1/PRINCIPAL_DISPLAY_PANEL.jpg"
+  },
+  {
+   "name": "PURPOSE SECTION.jpg",
+   "file": "img/41cca42f-3d2a-9a32-e063-6394a90a03e1/PURPOSE_SECTION.jpg"
+  },
+  {
+   "name": "WARNINGS SECTION.jpg",
+   "file": "img/41cca42f-3d2a-9a32-e063-6394a90a03e1/WARNINGS_SECTION.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "41cca42f-3d2a-9a32-e063-6394a90a03e1",
+  "name": "Sunscreen Stick Stick",
+  "brand": "Guangzhou Yueyou Biological Technology Co., Ltd.",
+  "n_inactive": 9,
+  "thin_reason": null
+ }
+}

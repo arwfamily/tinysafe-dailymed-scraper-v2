@@ -1,0 +1,45 @@
+{
+ "setid": "b7c56c15-c1ec-ab0d-e053-2995a90a7e5f",
+ "images": [
+  {
+   "name": "ARTWORK BACK 1.jpg",
+   "file": "img/b7c56c15-c1ec-ab0d-e053-2995a90a7e5f/ARTWORK_BACK_1.jpg"
+  },
+  {
+   "name": "ARTWORK BACK 2.jpg",
+   "file": "img/b7c56c15-c1ec-ab0d-e053-2995a90a7e5f/ARTWORK_BACK_2.jpg"
+  },
+  {
+   "name": "ARTWORK BACK 3.jpg",
+   "file": "img/b7c56c15-c1ec-ab0d-e053-2995a90a7e5f/ARTWORK_BACK_3.jpg"
+  },
+  {
+   "name": "ARTWORK FRONT.jpg",
+   "file": "img/b7c56c15-c1ec-ab0d-e053-2995a90a7e5f/ARTWORK_FRONT.jpg"
+  },
+  {
+   "name": "Active.jpg",
+   "file": "img/b7c56c15-c1ec-ab0d-e053-2995a90a7e5f/Active.jpg"
+  },
+  {
+   "name": "Keep Out of Reach.jpg",
+   "file": "img/b7c56c15-c1ec-ab0d-e053-2995a90a7e5f/Keep_Out_of_Reach.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/b7c56c15-c1ec-ab0d-e053-2995a90a7e5f/Purpose.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Rinse Bath & Body SPF 30 Unscented Sunstick",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b7c56c15-c1ec-ab0d-e053-2995a90a7e5f",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

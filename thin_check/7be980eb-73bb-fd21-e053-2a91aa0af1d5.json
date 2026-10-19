@@ -1,0 +1,21 @@
+{
+ "setid": "7be980eb-73bb-fd21-e053-2a91aa0af1d5",
+ "images": [
+  {
+   "name": "Z24 PPE Sunscreen SPF30.jpg",
+   "file": "img/7be980eb-73bb-fd21-e053-2a91aa0af1d5/Z24_PPE_Sunscreen_SPF30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Z24 PPE Sunscreen SPF30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7be980eb-73bb-fd21-e053-2a91aa0af1d5",
+  "name": "Sunscreen Ointment",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

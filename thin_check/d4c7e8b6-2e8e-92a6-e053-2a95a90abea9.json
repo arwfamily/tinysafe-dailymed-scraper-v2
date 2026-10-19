@@ -1,0 +1,53 @@
+{
+ "setid": "d4c7e8b6-2e8e-92a6-e053-2a95a90abea9",
+ "images": [
+  {
+   "name": "Active Purpose.jpg",
+   "file": "img/d4c7e8b6-2e8e-92a6-e053-2a95a90abea9/Active_Purpose.jpg"
+  },
+  {
+   "name": "Back Label.jpg",
+   "file": "img/d4c7e8b6-2e8e-92a6-e053-2a95a90abea9/Back_Label.jpg"
+  },
+  {
+   "name": "Directions.jpg",
+   "file": "img/d4c7e8b6-2e8e-92a6-e053-2a95a90abea9/Directions.jpg"
+  },
+  {
+   "name": "Front Label.jpg",
+   "file": "img/d4c7e8b6-2e8e-92a6-e053-2a95a90abea9/Front_Label.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/d4c7e8b6-2e8e-92a6-e053-2a95a90abea9/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Unit Carton 1of2.jpg",
+   "file": "img/d4c7e8b6-2e8e-92a6-e053-2a95a90abea9/Unit_Carton_1of2.jpg"
+  },
+  {
+   "name": "Unit Carton 2of2.jpg",
+   "file": "img/d4c7e8b6-2e8e-92a6-e053-2a95a90abea9/Unit_Carton_2of2.jpg"
+  },
+  {
+   "name": "Uses.jpg",
+   "file": "img/d4c7e8b6-2e8e-92a6-e053-2a95a90abea9/Uses.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/d4c7e8b6-2e8e-92a6-e053-2a95a90abea9/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Think Operations, Think Sport SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d4c7e8b6-2e8e-92a6-e053-2a95a90abea9",
+  "name": "Think Sport SPF 30 (Sunscreen) Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

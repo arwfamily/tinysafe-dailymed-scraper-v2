@@ -1,0 +1,25 @@
+{
+ "setid": "4fa7bffa-2585-5212-e054-00144ff88e88",
+ "images": [
+  {
+   "name": "Think kidsLabel.jpg",
+   "file": "img/4fa7bffa-2585-5212-e054-00144ff88e88/Think_kidsLabel.jpg"
+  },
+  {
+   "name": "Think kidscarton1.jpg",
+   "file": "img/4fa7bffa-2585-5212-e054-00144ff88e88/Think_kidscarton1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4fa7bffa-2585-5212-e054-00144ff88e88",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

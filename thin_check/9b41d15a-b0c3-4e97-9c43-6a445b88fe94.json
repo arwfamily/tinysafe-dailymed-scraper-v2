@@ -1,0 +1,21 @@
+{
+ "setid": "9b41d15a-b0c3-4e97-9c43-6a445b88fe94",
+ "images": [
+  {
+   "name": "label1.jpg",
+   "file": "img/9b41d15a-b0c3-4e97-9c43-6a445b88fe94/label1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "8",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9b41d15a-b0c3-4e97-9c43-6a445b88fe94",
+  "name": "Kinesys Earthkind SPF 30 Sunscreen Ointment",
+  "brand": "Kinesys Pharmaceutical Inc.",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

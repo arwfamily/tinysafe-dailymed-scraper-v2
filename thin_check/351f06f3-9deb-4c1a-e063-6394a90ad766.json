@@ -1,0 +1,21 @@
+{
+ "setid": "351f06f3-9deb-4c1a-e063-6394a90ad766",
+ "images": [
+  {
+   "name": "Charisma 205.jpg",
+   "file": "img/351f06f3-9deb-4c1a-e063-6394a90ad766/Charisma_205.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "351f06f3-9deb-4c1a-e063-6394a90ad766",
+  "name": "Advanced Mineral Sunscreen Cream",
+  "brand": "Charisma Skin",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

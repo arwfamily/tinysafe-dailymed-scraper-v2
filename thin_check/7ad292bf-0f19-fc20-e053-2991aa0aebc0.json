@@ -1,0 +1,21 @@
+{
+ "setid": "7ad292bf-0f19-fc20-e053-2991aa0aebc0",
+ "images": [
+  {
+   "name": "EMS Sunscreen Lotion SPF30.jpg",
+   "file": "img/7ad292bf-0f19-fc20-e053-2991aa0aebc0/EMS_Sunscreen_Lotion_SPF30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7ad292bf-0f19-fc20-e053-2991aa0aebc0",
+  "name": "Sunscreen Ointment",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

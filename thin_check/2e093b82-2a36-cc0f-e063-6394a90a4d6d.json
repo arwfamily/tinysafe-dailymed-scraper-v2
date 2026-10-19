@@ -1,0 +1,29 @@
+{
+ "setid": "2e093b82-2a36-cc0f-e063-6394a90a4d6d",
+ "images": [
+  {
+   "name": "DreamBeam Sunlit Inactive Ingredients.jpg",
+   "file": "img/2e093b82-2a36-cc0f-e063-6394a90a4d6d/DreamBeam_Sunlit_Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "DreamBeam Sunlit Primary.jpg",
+   "file": "img/2e093b82-2a36-cc0f-e063-6394a90a4d6d/DreamBeam_Sunlit_Primary.jpg"
+  },
+  {
+   "name": "DreamBeam Sunlit Secondary.jpg",
+   "file": "img/2e093b82-2a36-cc0f-e063-6394a90a4d6d/DreamBeam_Sunlit_Secondary.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2e093b82-2a36-cc0f-e063-6394a90a4d6d",
+  "name": "Dreambeam Sunscreen Sunlit Lotion",
+  "brand": "Kosas Cosmetics, LLC",
+  "n_inactive": 37,
+  "thin_reason": null
+ }
+}

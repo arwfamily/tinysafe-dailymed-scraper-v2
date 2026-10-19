@@ -1,0 +1,49 @@
+{
+ "setid": "9ae135fd-408a-098f-e053-2995a90a74ef",
+ "images": [
+  {
+   "name": "Active Ingredients.jpg",
+   "file": "img/9ae135fd-408a-098f-e053-2995a90a74ef/Active_Ingredients.jpg"
+  },
+  {
+   "name": "Dosage and Administration.jpg",
+   "file": "img/9ae135fd-408a-098f-e053-2995a90a74ef/Dosage_and_Administration.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/9ae135fd-408a-098f-e053-2995a90a74ef/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Indications and Usage.jpg",
+   "file": "img/9ae135fd-408a-098f-e053-2995a90a74ef/Indications_and_Usage.jpg"
+  },
+  {
+   "name": "Keep Out of Reach.jpg",
+   "file": "img/9ae135fd-408a-098f-e053-2995a90a74ef/Keep_Out_of_Reach.jpg"
+  },
+  {
+   "name": "Mocha Artwork.jpg",
+   "file": "img/9ae135fd-408a-098f-e053-2995a90a74ef/Mocha_Artwork.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/9ae135fd-408a-098f-e053-2995a90a74ef/Purpose.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/9ae135fd-408a-098f-e053-2995a90a74ef/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Evanhealy Mocha - Dark Sheer Cover Stick SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9ae135fd-408a-098f-e053-2995a90a74ef",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

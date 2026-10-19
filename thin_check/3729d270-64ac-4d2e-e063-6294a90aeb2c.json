@@ -1,0 +1,21 @@
+{
+ "setid": "3729d270-64ac-4d2e-e063-6294a90aeb2c",
+ "images": [
+  {
+   "name": "Lund 212.jpg",
+   "file": "img/3729d270-64ac-4d2e-e063-6294a90aeb2c/Lund_212.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3729d270-64ac-4d2e-e063-6294a90aeb2c",
+  "name": "Mineral Lip Sunscreen Stick",
+  "brand": "Lundquist Institute For Biomedical Innovation At Harbor-Ucla Medical Center",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

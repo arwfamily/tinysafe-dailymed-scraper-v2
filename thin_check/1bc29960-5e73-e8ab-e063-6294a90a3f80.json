@@ -1,0 +1,25 @@
+{
+ "setid": "1bc29960-5e73-e8ab-e063-6294a90a3f80",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/1bc29960-5e73-e8ab-e063-6294a90a3f80/label.jpg"
+  },
+  {
+   "name": "label1.jpg",
+   "file": "img/1bc29960-5e73-e8ab-e063-6294a90a3f80/label1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "83447-005",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1bc29960-5e73-e8ab-e063-6294a90a3f80",
+  "name": "Renewaluxe SPF 50 Sunscreen Cream",
+  "brand": "Guangzhou Fantesy Biotechnology Co.,Ltd",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

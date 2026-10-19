@@ -1,0 +1,53 @@
+{
+ "setid": "aa97bab0-5885-3e6c-e053-2a95a90a4330",
+ "images": [
+  {
+   "name": "Active Ingredients.jpg",
+   "file": "img/aa97bab0-5885-3e6c-e053-2a95a90a4330/Active_Ingredients.jpg"
+  },
+  {
+   "name": "Back Label.jpg",
+   "file": "img/aa97bab0-5885-3e6c-e053-2a95a90a4330/Back_Label.jpg"
+  },
+  {
+   "name": "Dosage and Administration.jpg",
+   "file": "img/aa97bab0-5885-3e6c-e053-2a95a90a4330/Dosage_and_Administration.jpg"
+  },
+  {
+   "name": "Front Label.jpg",
+   "file": "img/aa97bab0-5885-3e6c-e053-2a95a90a4330/Front_Label.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/aa97bab0-5885-3e6c-e053-2a95a90a4330/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "OTC Keep out of reach.jpg",
+   "file": "img/aa97bab0-5885-3e6c-e053-2a95a90a4330/OTC_Keep_out_of_reach.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/aa97bab0-5885-3e6c-e053-2a95a90a4330/Purpose.jpg"
+  },
+  {
+   "name": "indications and usage.jpg",
+   "file": "img/aa97bab0-5885-3e6c-e053-2a95a90a4330/indications_and_usage.jpg"
+  },
+  {
+   "name": "warnings.jpg",
+   "file": "img/aa97bab0-5885-3e6c-e053-2a95a90a4330/warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Suntegrity, Mineral Sun Stick, SPF 30 - Tinted Light",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "aa97bab0-5885-3e6c-e053-2a95a90a4330",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

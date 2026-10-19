@@ -1,0 +1,21 @@
+{
+ "setid": "342b69d5-f0e1-99cd-e063-6294a90abb6e",
+ "images": [
+  {
+   "name": "LUNA DERM 220.jpg",
+   "file": "img/342b69d5-f0e1-99cd-e063-6294a90abb6e/LUNA_DERM_220.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "342b69d5-f0e1-99cd-e063-6294a90abb6e",
+  "name": "Sheer Mineral Sunscreen Bar Stick",
+  "brand": "Bb Medical & Dermatology Inc",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

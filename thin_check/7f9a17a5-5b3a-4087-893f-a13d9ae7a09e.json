@@ -1,0 +1,25 @@
+{
+ "setid": "7f9a17a5-5b3a-4087-893f-a13d9ae7a09e",
+ "images": [
+  {
+   "name": "mscream15back.jpg",
+   "file": "img/7f9a17a5-5b3a-4087-893f-a13d9ae7a09e/mscream15back.jpg"
+  },
+  {
+   "name": "mscream15front.jpg",
+   "file": "img/7f9a17a5-5b3a-4087-893f-a13d9ae7a09e/mscream15front.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7f9a17a5-5b3a-4087-893f-a13d9ae7a09e",
+  "name": "Maya Solar Natural Sunscreen 15 SPF (Sunscreen) Cream",
+  "brand": "Batab Health Care S.A. De C.V.",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "89a13eb8-f6c0-42ad-b5cb-151eb450b96b",
+ "images": [
+  {
+   "name": "NAOIL4Label.jpg",
+   "file": "img/89a13eb8-f6c0-42ad-b5cb-151eb450b96b/NAOIL4Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "DRUG FACTS",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "89a13eb8-f6c0-42ad-b5cb-151eb450b96b",
+  "name": "No-Ad SPF4 Dark Tanning Oil Spray",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

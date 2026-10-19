@@ -1,0 +1,37 @@
+{
+ "setid": "b7c7cb59-6083-3fd7-e053-2a95a90af558",
+ "images": [
+  {
+   "name": "Active.jpg",
+   "file": "img/b7c7cb59-6083-3fd7-e053-2a95a90af558/Active.jpg"
+  },
+  {
+   "name": "Artwork.jpg",
+   "file": "img/b7c7cb59-6083-3fd7-e053-2a95a90af558/Artwork.jpg"
+  },
+  {
+   "name": "Keep Out of Reach.jpg",
+   "file": "img/b7c7cb59-6083-3fd7-e053-2a95a90af558/Keep_Out_of_Reach.jpg"
+  },
+  {
+   "name": "Play Mineral Sunstick (Maisonette) UC.jpg",
+   "file": "img/b7c7cb59-6083-3fd7-e053-2a95a90af558/Play_Mineral_Sunstick__Maisonette__UC.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/b7c7cb59-6083-3fd7-e053-2a95a90af558/Purpose.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Tubby Todd Play Mineral Sunstick, SPF 30 (Maisonette)",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b7c7cb59-6083-3fd7-e053-2a95a90af558",
+  "name": "Sunscreen Stick",
+  "brand": "Private Label Select Ltd Co",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

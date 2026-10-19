@@ -1,0 +1,65 @@
+{
+ "setid": "4bab742b-cc69-c582-e063-6394a90a4d54",
+ "images": [
+  {
+   "name": "Do Not Use.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/Do_Not_Use.jpg"
+  },
+  {
+   "name": "When using this product.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/When_using_this_product.jpg"
+  },
+  {
+   "name": "active ingredients with purpose.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/active_ingredients_with_purpose.jpg"
+  },
+  {
+   "name": "active ingredients.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/active_ingredients.jpg"
+  },
+  {
+   "name": "back pcp with drug facts.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/back_pcp_with_drug_facts.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/directions.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/inactive_ingredients.jpg"
+  },
+  {
+   "name": "indications and usage.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/indications_and_usage.jpg"
+  },
+  {
+   "name": "keep out of reach of children.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/keep_out_of_reach_of_children.jpg"
+  },
+  {
+   "name": "principal display panel.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/principal_display_panel.jpg"
+  },
+  {
+   "name": "statement of identity.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/statement_of_identity.jpg"
+  },
+  {
+   "name": "stop use and ask doctor.jpg",
+   "file": "img/4bab742b-cc69-c582-e063-6394a90a4d54/stop_use_and_ask_doctor.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "OMIC MINERAL SUNSCREEN",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4bab742b-cc69-c582-e063-6394a90a4d54",
+  "name": "Omic Mineral Sunscreen Lotion",
+  "brand": "Mitchell Cosmetics, Inc",
+  "n_inactive": 76,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "setid": "c68fa38a-8d89-67c4-e053-2995a90a769f",
+ "images": [
+  {
+   "name": "Active Ing.jpg",
+   "file": "img/c68fa38a-8d89-67c4-e053-2995a90a769f/Active_Ing.jpg"
+  },
+  {
+   "name": "Directions.jpg",
+   "file": "img/c68fa38a-8d89-67c4-e053-2995a90a769f/Directions.jpg"
+  },
+  {
+   "name": "Front Display.jpg",
+   "file": "img/c68fa38a-8d89-67c4-e053-2995a90a769f/Front_Display.jpg"
+  },
+  {
+   "name": "Inactive ing.jpg",
+   "file": "img/c68fa38a-8d89-67c4-e053-2995a90a769f/Inactive_ing.jpg"
+  },
+  {
+   "name": "Other information.jpg",
+   "file": "img/c68fa38a-8d89-67c4-e053-2995a90a769f/Other_information.jpg"
+  },
+  {
+   "name": "Outer box.jpg",
+   "file": "img/c68fa38a-8d89-67c4-e053-2995a90a769f/Outer_box.jpg"
+  },
+  {
+   "name": "Questions.jpg",
+   "file": "img/c68fa38a-8d89-67c4-e053-2995a90a769f/Questions.jpg"
+  },
+  {
+   "name": "Sun Protection Measures.jpg",
+   "file": "img/c68fa38a-8d89-67c4-e053-2995a90a769f/Sun_Protection_Measures.jpg"
+  },
+  {
+   "name": "Uses.jpg",
+   "file": "img/c68fa38a-8d89-67c4-e053-2995a90a769f/Uses.jpg"
+  },
+  {
+   "name": "Warning page.jpg",
+   "file": "img/c68fa38a-8d89-67c4-e053-2995a90a769f/Warning_page.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "A24 Naturalism Sensitive Skin Sunscreen SPF 50 PA++++",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c68fa38a-8d89-67c4-e053-2995a90a769f",
+  "name": "A24 Naturalism Sensitive Skin Sunscreen SPF 50 Cream",
+  "brand": "Orange Lab",
+  "n_inactive": 43,
+  "thin_reason": null
+ }
+}
