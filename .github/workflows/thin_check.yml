@@ -1,0 +1,28 @@
+name: Thin-label check (fetch SPL text + label images)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install pillow
+      - name: Fetch
+        run: python scripts/thin_check_fetch.py
+      - name: Push to the thin-check branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mv thin_check /tmp/thin_check
+          git checkout --orphan thin-check-tmp
+          git rm -rq --cached . 2>/dev/null || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r /tmp/thin_check .
+          git add thin_check
+          git commit -qm "thin check $(date -u +%F)"
+          git push -f origin thin-check-tmp:thin-check
