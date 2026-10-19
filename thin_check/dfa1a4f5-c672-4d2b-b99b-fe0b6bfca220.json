@@ -1,0 +1,16 @@
+{
+ "setid": "dfa1a4f5-c672-4d2b-b99b-fe0b6bfca220",
+ "images": [],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Sorbitol, Stearic Acid, Triethanolamine, Aluminum Starch Octenylsuccinate, Benzyl Alcohol, Sorbitan Isostearate, VP/Eicosene Copolymer, Dimethicone, Polyglyceryl-3 Distearate, Carbomer, Tocopherol, Disodium EDTA, Methylparaben, Propylparaben.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "dfa1a4f5-c672-4d2b-b99b-fe0b6bfca220",
+  "name": "Cvs Pharmacy Oil Free SPF 30 Lotion",
+  "brand": "Cvs Pharmacy",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

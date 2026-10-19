@@ -1,0 +1,16 @@
+{
+ "setid": "3312d786-1a83-4bba-8b57-077df75293fd",
+ "images": [],
+ "error": null,
+ "spl_version": "1",
+ "title": "SUNSCREEN",
+ "inactive_section": "Inactive ingredients: *Aloe barbadensis leaf juice, *anthemis nobilis (chamomile) flower oil, caprylic/capric triglycerides, *helianthus annuus (sunflower) seed oil, hydrogenated methyl abietate, *lavandula angustifolia (lavender) flower oil, magnesium sulfate, *olea europaea (olive) fruit oil, polyaminopropyl biguanide, polyglycerol-10 laurate, ricinus communis (castor) seed oil, *simmondsia chinensis (jojoba) seed oil, sorbitan stearate, tocopherol, water.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3312d786-1a83-4bba-8b57-077df75293fd",
+  "name": "Sunscreen SPF 30 Lotion",
+  "brand": "Erbaviva Inc.",
+  "n_inactive": 19,
+  "thin_reason": null
+ }
+}

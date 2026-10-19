@@ -1,0 +1,16 @@
+{
+ "setid": "2b16a380-9b92-463d-a204-a048e1b0d9c8",
+ "images": [],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients Aloe Barbadensis Leaf ExtractAscorbic AcidC12-15 Alkyl BenzoateCamellia Sinensis Leaf ExtractCopernicia Cerifera (Carnauba) WaxDimethiconeHelianthus Annuus (Sunflower) Seed OilHydrogenated Microcrystalline WaxHydrogenated PolyisobuteneOctyldodecanolParaffinPEG-8 DimethiconePolyethyleneRetinyl PalmitateSilicaSodium Propoxyhydroxypropyl Thiosulfate SilicaSynthetic WaxTocopheryl AcetateTriethoxycaprylylsilane",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2b16a380-9b92-463d-a204-a048e1b0d9c8",
+  "name": "Creal Zink Sunscreen SPF 50 Well At Walgreens Stick",
+  "brand": "Walgreens",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

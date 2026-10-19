@@ -1,0 +1,16 @@
+{
+ "setid": "1eae935f-942b-4290-91de-8c608f70a7ed",
+ "images": [],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients Aloe Barbadensis Leaf Extract, Alumina,Butyloctyl Salicylate, Caprylic/ Capric Triglyceride Caprylyl Glycol CetylPEG/PPG-10/1 Dimethicone, Dimethicone Ethylhexyl Methoxycrylene,Glycerin, Isohexadecane, Lauryl PEG-8 Dimethicone OctyldodecylCitrate Crosspolymer PEG-8, PhenoxyethanolSodium Chloride, Sodium Citrate, TocopherylAcetate, Triethoxycaprylylsilane, VP/EicoseneCopolymer Water.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1eae935f-942b-4290-91de-8c608f70a7ed",
+  "name": "Baby Sunscreen SPF 50 Lotion",
+  "brand": "Meijer",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

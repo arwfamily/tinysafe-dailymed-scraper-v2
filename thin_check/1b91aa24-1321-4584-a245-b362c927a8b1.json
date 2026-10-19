@@ -1,0 +1,16 @@
+{
+ "setid": "1b91aa24-1321-4584-a245-b362c927a8b1",
+ "images": [],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "1,2-Hexanediol, Aloe Barbadensis Leaf Extract, C12-15 AlkylBenzoate, Caprylyl Glycol, Ceresin, Chamomilla Recutita(Matricaria) Flower Extract, Copernicia Cerifera (Carnauba)Wax, Dimethicone, Ethyl Macadamiate, Ethylhexyl Palmitate,Helianthus Annuus (Sunflower) Seed Oil, HydrogenatedPolyisobutene, Hydrogenated Vegetable Oil, LavandulaAngustifolia (Lavender) Extract, Octyldodecanol, Polyethylene,Prunus Amygdalus Dulcis (Sweet Almond) Oil, SorbitanSesquioleate, Tocopheryl Acetate, Triethoxycaprylylsilane",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1b91aa24-1321-4584-a245-b362c927a8b1",
+  "name": "Kids Sunscreen SPF 50 Wegmans Stick",
+  "brand": "Wegman",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

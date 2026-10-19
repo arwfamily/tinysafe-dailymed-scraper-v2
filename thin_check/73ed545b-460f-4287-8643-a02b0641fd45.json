@@ -1,0 +1,16 @@
+{
+ "setid": "73ed545b-460f-4287-8643-a02b0641fd45",
+ "images": [],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "Allantoin, Aluminum Starch Octenylsuccinate, Caprylyl Glycol, Carbomer, Ceramide NP, Diisopropyl Sebacate, Dimethicone, Dimethiconol, Disodium EDTA, Glycerin, Glycyrrhetinic Acid, Isopropyl Lauroyl Sarcosinate, Panthenol, Pentylene Glycol, Phenoxyethanol, Polymethyl Methacrylate, Polysorbate 61, Potassium Sorbate, Silica, Sodium Hydroxide, Sodium Stearoyl Glutamate, Sucrose Tristearate, Tocopheryl Acetate, Water, Xanthan Gum, Zinc Gluconate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "73ed545b-460f-4287-8643-a02b0641fd45",
+  "name": "Cetaphil Oil Absorbing SPF 30 Lotion",
+  "brand": "Galderma Laboratories, L.P.",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

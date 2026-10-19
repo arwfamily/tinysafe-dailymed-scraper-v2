@@ -1,0 +1,16 @@
+{
+ "setid": "ff337e3d-5720-45dd-941f-f5757a458edb",
+ "images": [],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients Water, Mineral Oil, Polyethylene, Stearic Acid, Glyceryl Stearate SE,Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Aloe BarbadensisLeaf Juice, Ammonium Hydroxide, Ascorbyl Palmitate, Cetyl Alcohol,Diazolidinyl Urea, Disodium EDTA, Glycerin, Magnesium AluminumSilicate, Methylparaben, PEG-40 Castor Oil, Phospholipids,Propylparaben, Retinyl Palmitate, Sorbitol, Theobroma Cacao (Cocoa)Seed Butter, Tocopheryl Acetate, Triethanolamine, Fragrance.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ff337e3d-5720-45dd-941f-f5757a458edb",
+  "name": "Tanning Sunscreen SPF 4 Daylogic Lotion",
+  "brand": "Rite Aid",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

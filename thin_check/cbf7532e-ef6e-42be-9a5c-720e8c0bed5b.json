@@ -1,0 +1,16 @@
+{
+ "setid": "cbf7532e-ef6e-42be-9a5c-720e8c0bed5b",
+ "images": [],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients Acrylates/C10-30 Alkyl AcrylateCrosspolymer, Aloe Barbadensis Leaf Extract, Butyrospermum Parkii(Shea) Butter, Carica Papaya (Papaya) Fruit Extract, Cetearyl Alcohol,Ceteth-10 Phosphate, Coco-Glucoside, Colocasia Antiquorum RootExtract, Dicetyl Phosphate, Diisopropyl Adipate, Dimethicone, DisodiumEDTA, Ethylhexyl Benzoate, Fragrance, Glycerin, Jojoba Alcohol,Mangifera Indica (Mango) Fruit Extract, Mangifera Indica (Mango) SeedButter, Methylparaben, Mica, Neopentyl Glycol Diheptanoate, Panthenol,Paraffin, Passiflora Incarnata Fruit Extract, Phenoxyethanol, PlumeriaAcutifolia Flower Extract,Polymethylsilsesquioxane, Potassium Jojobate,Propanediol, Propylene Glycol Dibenzoate,Propylparaben, Psidium Guajava Fruit Extract,Simmondsia Chinensis (Jojoba) Butter, SodiumAscorbyl Phosphate, Sodium Hydroxide,Titanium Dioxide, Tocopheryl Acetate,VP/Eicosene Copolymer, Water, Xanthan Gum",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "cbf7532e-ef6e-42be-9a5c-720e8c0bed5b",
+  "name": "Sunscreen SPF 30 Meijer Lotion",
+  "brand": "Meijer",
+  "n_inactive": 46,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "setid": "7d4f820d-e154-428e-89c2-2e26e088ceef",
+ "images": [],
+ "error": null,
+ "spl_version": "4",
+ "title": "Sunscreen",
+ "inactive_section": "cetyl alcohol, ganex P-904, germaben II, polyoxyl 40 stearate, polysorbate 60, petrolatum, purified water, sorbitan monostearate, tetrasodium EDTA, titanium dioxide, xanthan gum, zenicone XX",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7d4f820d-e154-428e-89c2-2e26e088ceef",
+  "name": "Sunscreen Lotion",
+  "brand": "Total Resources International",
+  "n_inactive": 19,
+  "thin_reason": null
+ }
+}

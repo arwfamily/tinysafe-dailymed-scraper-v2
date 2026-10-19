@@ -1,0 +1,16 @@
+{
+ "setid": "c02b4223-a533-4fd9-b16b-4590cf325204",
+ "images": [],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Ascorbyl PalmitateBeeswaxBHTCetyl AlcoholEthylhexyl PalmitateEuphorbia Cerifera (Candelilla) WaxFragranceOzokeriteParaffinPolyester-8PolyethylenePropylparabenRetinyl PalmitateTocopheryl Acetate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c02b4223-a533-4fd9-b16b-4590cf325204",
+  "name": "SPF 30 Sheer Sunscreen Face Ulta Stick",
+  "brand": "Ulta",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}
