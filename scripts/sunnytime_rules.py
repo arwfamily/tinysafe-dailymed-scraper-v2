@@ -20,14 +20,14 @@ import re
 # ---- patterns for names v3.1 never saw -------------------------------------
 # Applied to the upper-cased name. Order inside a flag does not matter.
 P = {
-    "hidden_uv_booster": r"METHOXYCRYLENE|SYRINGYLIDENEMALONATE|POLYESTER-8\b|BUTYL ?OCTYL SALICYLATE|TRIDECYL SALICYLATE|"
+    "hidden_uv_booster": r"METHOXYCRYLENE|SYRINGYLIDENEMALONATE|POLYESTER-8\b|\bBUT[YL]{2} ?OC?T?Y[LI] ?SA[LI]{1,2}CYLATE|BUTLOCTYL|BUTLY ?OCTYL|TRIDECYL SALICYLATE|"
                          r"BEMOTRIZINOL|BIS-?ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE|DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE|"
                          r"ETHYL FERULATE|ETHYLHEXYL TRIAZONE|METHYLENE BIS-?BENZOTRIAZOLYL|BISOCTRIZOLE|ISCOTRIZINOL|"
                          r"DIETHYLHEXYL BUTAMIDO TRIAZONE|TRIS-BIPHENYL TRIAZINE|DROMETRIZOLE TRISILOXANE|POLYSILICONE-15|"
                          r"TEREPHTHALYLIDENE DICAMPHOR",
     "chemical_filter_in_inactives": r"\bOCTISALATE\b|\bOCTOCRYLENE\b|\bOCTINOXATE\b|\bENSULIZOLE\b|\bAVOBENZONE\b|"
                                     r"ETHYLHEXYL METHOXYCINNAMATE|\bBENZOPHENONE(-3)?\b|\bHOMOSALATE\b|ETHYLHEXYL SALICYLATE|"
-                                    r"\bOXYBENZONE\b|BUTYL METHOXYDIBENZOYLMETHANE|OCTYL METHOXYCINNAMATE|(?<!BUTYL)OCTYL SALICYLATE",
+                                    r"\bOXYBENZONE\b|BUTYL METHOXYDIBENZOYLMETHANE|OCTYL METHOXYCINNAMATE|(?<![A-Z])(?<!BUT\w{2} )(?<!BUT\w{3} )OCTYL SALICYLATE",
     "mi_mci": r"METHYL ?ISOTHIAZOLINONE|METHYLCHLORO ?ISOTHIAZOLINONE",
     "formaldehyde_releaser": r"DMDM HYDANTOIN|DIAZOLIDINYL UREA|IMIDAZOLIDINYL UREA|QUATERNIUM-15|SODIUM HYDROXYMETHYLGLYCINATE|"
                              r"BRONOPOL|2-BROMO-2-NITROPROPANE|METHENAMINE",
@@ -37,20 +37,20 @@ P = {
     "d4": r"CYCLOTETRASILOXANE|CYCLOMETHICONE 4\b",
     "triclosan": r"TRICLOSAN|TRICLOCARBAN",
     "formaldehyde": r"^FORMALDEHYDE$|^FORMALIN$",
-    "phthalate": r"(?<!TERE)(?<!NA)PHTHALATE\b(?!.*POLY)",
-    "fragrance": r"FRAGRANCE(?![- ]?FREE)|\bPARFUM|\bPERFUME",
+    "phthalate": r"(?<!TERE)(?<!NA)(?<!PROTEIN )PHTHALATE\b(?!.*POLY)",
+    "fragrance": r"(?:FRAGRANCE|FRAGANCE|TRAGRANCE|FRAGRENCE)(?![- ]?FREE)|\bPARFUM|\bPERFUME",
     "eu_fragrance_allergen": r"BENZYL ALCOHOL|FARNESOL|HYDROXYCITRONELLAL|BENZYL SALICYLATE|BENZYL BENZOATE|BENZYL CINNAMATE|"
                              r"\bLIMONENE|\bLINALOOL|\bLINALYL ACETATE|GERANIOL|CITRONELLOL|\bCITRAL\b|\bEUGENOL|ISOEUGENOL|COUMARIN|"
                              r"CINNAMAL|CINNAMYL ALCOHOL|AMYLCINNAM|HEXYL ?CINNAMAL|ANISE ALCOHOL|ANISYL ALCOHOL|"
                              r"BUTYLPHENYL METHYLPROPIONAL|ALPHA-ISOMETHYL IONONE|ISOMETHYL IONONE|HYDROXYISOHEXYL 3-CYCLOHEXENE|"
-                             r"OAKMOSS|EVERNIA|TREEMOSS|METHYL 2-OCTYNOATE|ROSA .*FLOWER OIL|ROSE (FLOWER )?OIL|"
+                             r"OAKMOSS|EVERNIA|TREEMOSS|METHYL 2-OCTYNOATE|ROSA .*FLOWER OIL|(?<!PRIM)\bROSE (FLOWER )?OIL|"
                              r"PELARGONIUM GRAVEOLENS|LAVANDULA ANGUSTIFOLIA",
     "essential_oil": None,  # see is_essential_oil()
     "asteraceae": r"CALENDULA|CHAMOMIL|MATRICARIA|ANTHEMIS|ECHINACEA|ARNICA|FEVERFEW|TANACETUM|TARAXACUM|DANDELION|"
                   r"ACHILLEA|YARROW|ARCTIUM|BURDOCK|HELICHRYSUM|IMMORTELLE|CENTAUREA|CORNFLOWER|SILYBUM|MILK THISTLE|"
                   r"ARTEMISIA|MUGWORT|WORMWOOD|BIDENS|SPILANTHES|ACMELLA|STEVIA|CYNARA|ARTICHOKE|CHICORY|CICHORIUM|"
                   r"BELLIS|DAISY|SANTOLINA|TAGETES|MARIGOLD|INULA|SAUSSUREA|ATRACTYLODES|SIEGESBECKIA|ECLIPTA|"
-                  r"CARTHAMUS|SAFFLOWER|HELIANTHUS|SUNFLOWER|LACTUCA|CHRYSANTHEMUM|DENDRANTHEMA|SOLIDAGO|EUPATORIUM|"
+                  r"LACTUCA|CHRYSANTHEMUM|DENDRANTHEMA|SOLIDAGO|EUPATORIUM|"
                   r"GRINDELIA|CARDUUS|ASTER\b",
     "oat": r"\bAVENA|\bOAT\b|OATMEAL|\bOATS\b",
     "peanut": r"PEANUT|ARACHIS",
@@ -63,7 +63,7 @@ P = {
     "sesame": r"SESAM",
     "fish_shellfish": r"FISH|CHITOSAN|SHELLFISH|OYSTER|SHRIMP|CRAB|LOBSTER|SQUALENE \(SHARK|SHARK",
     "lanolin": r"LANOLIN|ADEPS LANAE|WOOL WAX|WOOL FAT",
-    "propolis_beeswax": r"HONEY|\bMEL\b|BEESWAX|CERA ALBA|CERA FLAVA|PROPOLIS|ROYAL JELLY|BEE VENOM|APIS MELLIFERA",
+    "propolis_beeswax": r"\bHONEY\b|\bMEL\b|BEESWAX|CERA ALBA|CERA FLAVA|PROPOLIS|ROYAL JELLY|BEE VENOM|APIS MELLIFERA",
     "capb": r"COCAMIDOPROPYL BETAINE",
     "propylene_glycol": r"(?<![A-Z])PROPYLENE GLYCOL",
     "drying_alcohol": r"^ALCOHOL$|^ALCOHOL DENAT|^SD ALCOHOL|\bALCOHOL DENAT|\bSD ALCOHOL|^ETHANOL$|^ETHYL ALCOHOL$|"
@@ -222,6 +222,8 @@ class PlantIndex:
     def __init__(self, name_flags):
         self.genus, self.binom, self.oil = {}, {}, {}
         for n, fs in name_flags.items():
+            if " OR " in n.upper() or "/" in n:      # "SUNFLOWER OIL OR SOYBEAN OIL": two plants
+                continue
             w = _words(n)
             if not w:
                 continue
@@ -248,3 +250,8 @@ class PlantIndex:
         if _is_oil(name):
             out |= self.oil.get(b, set())
         return out
+
+
+# Flags where v3.1's name decisions are incomplete (evidence was capped at 4 names
+# per flag, so an unflagged name is not a decision): the patterns add to v3.1.
+ADDITIVE = {"essential_oil", "ethoxylated", "hidden_uv_booster", "microplastic_polymer", "fragrance"}

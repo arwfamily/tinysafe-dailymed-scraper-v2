@@ -21,6 +21,7 @@ detail dropped, punctuation removed, Aqua/Eau -> Water), so
 
 Usage: python3 scripts/inactive_union.py [canonical.jsonl] [out.jsonl]
 """
+import difflib
 import json
 import os
 import re
@@ -62,14 +63,19 @@ _SYN = {
     "HYPROMELLOSES": "HYDROXYPROPYLMETHYLCELLULOSE", "HYPROMELLOSE": "HYDROXYPROPYLMETHYLCELLULOSE",
     "GLYCERYLMONOCAPRYLATE": "GLYCERYLCAPRYLATE", "POLYSORBATE80": "POLYSORBATE80",
     "PENTAERYTHRITOLTETRAKIS335DITERTBUTYL4HYDROXYPHENYLPROPIONATE": "PENTAERYTHRITYLTETRADITBUTYLHYDROXYHYDROCINNAMATE",
+    "PENTAERYTHRITOLTETRAKIS": "PENTAERYTHRITYLTETRADITBUTYLHYDROXYHYDROCINNAMATE",
 }
 _WATERWORDS = {"WATER", "AQUA", "EAU", "PURIFIED", "DEIONIZED", "DISTILLED", "USP", "DEMINERALIZED"}
-_JUNK_ITEM = re.compile(r"^\s*(?:inactive(?:\s+ingredients?)?|ingredients?|other\s+ingredients?)\s*[:.]?\s*$", re.I)
+_JUNK_ITEM = re.compile(r"^\s*(?:inactive(?:\s+ingredients?)?|ingredients?|other\s+ingredients?|organic(?:\s+ingredients?)?|"
+                        r"certified organic(?: ingredients?)?)\s*[:.]?\s*$|\b(?:contains|distributed by|manufactured (?:for|by)|"
+                        r"made in|www\.|\.com\b|questions\?|call\s+\d)", re.I)
 
 
 def key(name):
     n = (name or "").upper()
-    n = re.sub(r"\(.*?\)|\[.*?\]", "", n)          # bracketed detail / synonyms
+    prev = None
+    while prev != n:                               # bracketed detail / synonyms, nested too
+        prev, n = n, re.sub(r"\([^()]*\)|\[[^\[\]]*\]", "", n)
     words = set(re.sub(r"[^A-Z0-9]+", " ", n).split())
     if words and words <= _WATERWORDS:
         return "WATER"
@@ -107,8 +113,22 @@ def same(a, b):
     words all appear in the other ("SUNFLOWER OIL" ~ "Helianthus Annuus (Sunflower) Seed Oil")."""
     if key(a) == key(b):
         return True
+    ka, kb = key(a), key(b)
+    if min(len(ka), len(kb)) >= 8 and difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.92:
+        return True                                # spelling variants ("methylparaen")
+    # "SUNFLOWER OIL" ~ "Helianthus Annuus (Sunflower) Seed Oil": the shorter name's
+    # words must all be the longer name's bracketed common name (or its genus+species);
+    # "DIMETHICONE" is NOT "PEG-10 DIMETHICONE", "ALCOHOL" is NOT "CETOSTEARYL ALCOHOL".
     ta, tb = tokens(a), tokens(b)
-    return bool(ta) and bool(tb) and (ta <= tb or tb <= ta)
+    if not ta or not tb or ta == tb:
+        return bool(ta) and ta == tb
+    small, big = (a, b) if len(ta) < len(tb) else (b, a)
+    ts = tokens(small)
+    paren = set()
+    for m in re.findall(r"\(([^()]*)\)", big.upper()):
+        paren |= tokens(m)
+    latin = set(re.findall(r"[A-Z]+", re.sub(r"\(.*?\)", " ", big.upper()))[:2])
+    return ts <= paren or (ts <= latin and len(ts) >= 2)
 
 
 _MAY = re.compile(r"[.\s]*[\[(]?\s*(?:\+/-|\(\+/-\))?\s*\bmay\s+contai?n\w*\b\s*(?:/\s*peut\s+cont\w+)?\s*(?:\(?\+/-\)?|/\+/-)?\s*[:/]?\s*", re.I)
@@ -118,7 +138,9 @@ _LEAD = re.compile(r"^\s*(?:\u200b)?(?:section\s+)?(?:inactive|inctive)\s+ingred
 
 
 def _clean(x):
-    x = _LEAD.sub("", x.replace("\u200b", ""))
+    x = re.sub(r"<[^>]*>", " ", x.replace("\u200b", ""))          # <iln...> label codes
+    x = re.sub(r"^\s*(?:=|\*+|\(s\)|\u2020|\u2021)\s*", "", x)          # footnote markers
+    x = _LEAD.sub("", x)
     x = re.sub(r"\s*\[?\+/-\]?\s*$", "", x).strip().strip("[]").strip().rstrip(".:").strip()
     return x
 
@@ -133,7 +155,11 @@ def resplit(items):
         for part in _MAY.split(x):
             if not part.strip():
                 continue
-            out.extend(split_ingredient_list(part) if "," in part else [part])
+            # "Polysorbate 20. Fragrance" -> two items; split_ingredient_list also
+            # handles commas, semicolons and bullets
+            for piece in re.split(r"\.\s+(?=[A-Z])", part):
+                got = split_ingredient_list(piece)
+                out.extend(got if got else [piece])
     out = [_clean(x) for x in out]
     return [x for x in out if x and not _JUNK_ITEM.match(x)]
 
@@ -176,12 +202,45 @@ def is_active(name, akeys):
     return bool(parts) and all(p in akeys for p in parts)
 
 
+_VOCAB = None
+
+
+def _unreadable(items):
+    """A printed list read from a poor scan: 30%+ of its items carry a word (5+
+    letters) that no other label in the corpus uses ("BU'IYL METHOXYDIBENZOYLMETHANE")."""
+    if _VOCAB is None or len(items) < 5:
+        return False
+    odd = 0
+    for x in items:
+        ws = [w for w in re.findall(r"[A-Z']+", x.upper()) if len(w) >= 5]
+        if any(_VOCAB.get(w, 0) <= 1 for w in ws) or "'" in x and re.search(r"[A-Z]'[A-Z]", x.upper()):
+            odd += 1
+    return odd / len(items) >= 0.3
+
+
+def build_vocab(rows):
+    global _VOCAB
+    c = {}
+    for r in rows:
+        seen = set()
+        for x in (r.get("printed_inactives") or []) + [(i.get("name") if isinstance(i, dict) else str(i)) or ""
+                                                      for i in r.get("inactive_ingredients") or []]:
+            seen |= {w for w in re.findall(r"[A-Z']+", x.upper()) if len(w) >= 5}
+        for w in seen:
+            c[w] = c.get(w, 0) + 1
+    _VOCAB = c
+
+
 def union_row(r):
     struct = [(i.get("name") if isinstance(i, dict) else str(i)) or "" for i in r.get("inactive_ingredients") or []]
     struct = [x for x in struct if x.strip()]
     akeys = active_keys(r)
+    struct = [x for x in struct if not is_active(x, akeys)]
     text_all = resplit(r.get("printed_inactives"))
     text = [x for x in text_all if not is_active(x, akeys)]
+    unreadable = _unreadable(text)
+    if unreadable:                       # scanned text too garbled to trust: use the filing
+        text = []
     out = []
     for name in text:                       # the printed list, in label order
         if not any(key(name) == key(o) for o in out):
@@ -194,16 +253,18 @@ def union_row(r):
     return {"setid": r["setid"], "i_union": out, "i_src": src,
             "i_struct_n": len(struct), "i_text_n": len(text), "i_union_n": len(out),
             "struct_only": struct_only, "struct": struct,
-            "printed_actives_dropped": len(text_all) - len(text), "thin": len(out) <= THIN_MAX}
+            "printed_actives_dropped": len(text_all) - len(text) if not unreadable else 0,
+            "text_unreadable": unreadable, "thin": len(out) <= THIN_MAX}
 
 
 def main():
     src = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data/canonical/us_sunscreens.jsonl")
     dst = sys.argv[2] if len(sys.argv) > 2 else os.path.join(ROOT, "data/views/inactive_union.jsonl")
     n = thin = 0
+    rows = [json.loads(line) for line in open(src, encoding="utf-8")]
+    build_vocab(rows)
     with open(dst, "w", encoding="utf-8") as f:
-        for line in open(src, encoding="utf-8"):
-            r = json.loads(line)
+        for r in rows:
             # every label, whatever its category: downstream products (the
             # Sunnytime db) hold labels later reclassified as makeup or lip balm
             row = union_row(r)

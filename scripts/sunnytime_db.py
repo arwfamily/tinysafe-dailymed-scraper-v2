@@ -61,7 +61,7 @@ class Engine:
         self.known = set(self.names)
         freq = collections.Counter(self.names[i] for p in db["p"] for i in p["i"])
         self.by_strong = {}
-        for n in sorted(self.known, key=lambda n: -freq[n]):
+        for n in sorted(self.known, key=lambda n: (not self.v31.get(n), -freq[n])):
             self.by_strong.setdefault(strong_key(n), n)
         self.genera = set()
         for n, fs in self.v31.items():
@@ -82,10 +82,12 @@ class Engine:
             return self._cache[name]
         if name in self.known:
             fs, how = self.v31_flags(name), "v3.1 name"
+            fs |= R.pattern_flags(name, self.genera) & R.ADDITIVE
         else:
             twin = self.by_strong.get(strong_key(name))
             if twin is not None:
                 fs, how = self.v31_flags(twin), "same name as v3.1 '" + twin + "'"
+                fs |= R.pattern_flags(name, self.genera) & R.ADDITIVE
             else:
                 fs = R.pattern_flags(name, self.genera) | self.plants.flags(name)
                 how = "pattern"
@@ -134,6 +136,15 @@ def tally(products, flagkey="v3"):
     return c
 
 
+def _akeys(p, u):
+    """Keys of the product's declared actives (db z list, plus the union row's)."""
+    from inactive_union import _ACTIVE_SYN
+    ks = set()
+    for z in p.get("z") or []:
+        k = key(z[0]); ks.add(k); ks |= _ACTIVE_SYN.get(k, set())
+    return ks
+
+
 def build(db, union):
     eng = Engine(db)
     names = list(db["names"])
@@ -167,7 +178,10 @@ def build(db, union):
 
         s1.append({"id": p["id"], "v3": flags_for(old_names)})
         u = union.get(p["id"])
-        new_names = u["i_union"] if u else old_names
+        from inactive_union import is_active
+        ak = _akeys(p, u)
+        new_names = [n for n in (u["i_union"] if u else old_names) if not is_active(n, ak)]
+        struct_names = [n for n in (u["struct"] if u else []) if not is_active(n, ak)]
         for n in new_names:
             if n not in idx:
                 idx[n] = len(names)
@@ -176,7 +190,7 @@ def build(db, union):
         q["i"] = [idx[n] for n in new_names]
         # flags read every structured name too: the filing's name can be more
         # specific than the printed one ("LECITHIN, SOYBEAN" vs "Lecithin")
-        q["v3"] = flags_for(list(dict.fromkeys(new_names + (u["struct"] if u else []))))
+        q["v3"] = flags_for(list(dict.fromkeys(new_names + struct_names)))
         if u:
             q.update({"i_src": u["i_src"], "i_struct_n": u["i_struct_n"], "i_text_n": u["i_text_n"]})
         else:
@@ -185,6 +199,11 @@ def build(db, union):
         q["thin"] = n_i <= THIN_MAX
         if q["thin"]:
             q["thin_reason"] = thin_reason(u) if u else "no_printed_list"
+            if q["thin_reason"] != "short_list":
+                # too little on the label to say a preservative is missing
+                q["v3"] = [f for f in q["v3"] if f[0] != "no_preservative_water_base"]
+        if u and u.get("text_unreadable"):
+            q["text_unreadable"] = True
         out.append(q)
     new = dict(db)
     new["names"] = names
