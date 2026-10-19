@@ -129,14 +129,17 @@ def split_ingredient_list(text):
     text = _TRAILER.sub("", text).strip().rstrip(".")
     if re.match(r"^\s*see\s+(?:ingredients|label|carton|package)", text, re.I):
         return []
-    text = re.sub(r",(?=\d)", "\u2063", text)  # 1,2-hexanediol stays one item
+    # 1,2-hexanediol / 1, 2-hexanediol stay one item (digit, comma, digit)
+    text = re.sub(r"(?<=\d),\s?(?=\d)", "\u2063", text)
     out, depth, cur = [], 0, []
     for ch in text:
         if ch in "([":
             depth += 1
         elif ch in ")]":
             depth = max(0, depth - 1)
-        sep = ch in ";•●▪■·" or (ch == "," and not (cur and cur[-1].isdigit()))
+        # a comma after a digit still separates ("Beheneth-25, Triethoxycaprylylsilane");
+        # digit,digit locants were protected above
+        sep = ch in ";•●▪■·" or ch == ","
         if sep and depth == 0:
             out.append("".join(cur)); cur = []
         else:
