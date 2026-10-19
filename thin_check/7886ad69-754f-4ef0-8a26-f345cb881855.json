@@ -1,0 +1,27 @@
+{
+ "setid": "7886ad69-754f-4ef0-8a26-f345cb881855",
+ "images": [
+  {
+   "name": "6KF5 carton.jpg",
+   "file": "img/7886ad69-754f-4ef0-8a26-f345cb881855/6KF5_carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: ZINC OXIDE 7.3%, TITANIUM DIOXIDE 6.9%"
+  }
+ ],
+ "db": {
+  "setid": "7886ad69-754f-4ef0-8a26-f345cb881855",
+  "name": "City Block Sheer SPF 25 Oil Free Daily Face Protector Lotion",
+  "brand": "Clinique Laboratories Inc.",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

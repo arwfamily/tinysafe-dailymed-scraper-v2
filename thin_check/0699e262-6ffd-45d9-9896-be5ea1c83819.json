@@ -1,0 +1,22 @@
+{
+ "setid": "0699e262-6ffd-45d9-9896-be5ea1c83819",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/0699e262-6ffd-45d9-9896-be5ea1c83819/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients Acrylates/Octylacrylamide Copolymer,Alcohol Denat., Caprylic/Capric Triglyceride, DiethylhexylSyringylidenemalonate, Fragrance, Glycerin.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0699e262-6ffd-45d9-9896-be5ea1c83819",
+  "name": "Sunscreen SPF 70 Spray",
+  "brand": "Care One",
+  "n_inactive": 7,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

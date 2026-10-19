@@ -1,0 +1,26 @@
+{
+ "setid": "c83008e5-3792-4867-e053-2995a90a975e",
+ "images": [
+  {
+   "name": "SPF15.jpg",
+   "file": "img/c83008e5-3792-4867-e053-2995a90a975e/SPF15.jpg"
+  },
+  {
+   "name": "SPF8.jpg",
+   "file": "img/c83008e5-3792-4867-e053-2995a90a975e/SPF8.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Florida Squeezed SPF 15",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c83008e5-3792-4867-e053-2995a90a975e",
+  "name": "Florida Squeeze SPF 15 Spray Florida Squeeze SPF 8 Spray",
+  "brand": "Cross Brands Contract Filling",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

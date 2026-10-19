@@ -1,0 +1,22 @@
+{
+ "setid": "11ab4e74-b451-43ac-a74e-98d4496e305e",
+ "images": [
+  {
+   "name": "Sunbrellas Sport Sunblock SPF 45.jpg",
+   "file": "img/11ab4e74-b451-43ac-a74e-98d4496e305e/Sunbrellas_Sport_Sunblock_SPF_45.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "11ab4e74-b451-43ac-a74e-98d4496e305e",
+  "name": "Sunbrellas Sport Sunblock SPF 45 Cream",
+  "brand": "The Hain Celestial Group",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

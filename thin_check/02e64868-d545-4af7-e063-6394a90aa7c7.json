@@ -1,0 +1,26 @@
+{
+ "setid": "02e64868-d545-4af7-e063-6394a90aa7c7",
+ "images": [
+  {
+   "name": "Isaknox Anew Solaire Everyday Face SPF50 IC.jpg",
+   "file": "img/02e64868-d545-4af7-e063-6394a90aa7c7/Isaknox_Anew_Solaire_Everyday_Face_SPF50_IC.jpg"
+  },
+  {
+   "name": "Isaknox Anew Solaire Everyday Face SPF50 OC.jpg",
+   "file": "img/02e64868-d545-4af7-e063-6394a90aa7c7/Isaknox_Anew_Solaire_Everyday_Face_SPF50_OC.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "72330-503-01 Isa Knox Anew Solaire Everyday Face Protection Lotion Broad Spectrum SPF 50 Sunscreen",
+ "inactive_section": "WATER",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "02e64868-d545-4af7-e063-6394a90aa7c7",
+  "name": "Isa Knox Anew Solaire Everyday Face Protection Broad Spectrum SPF 50 Sunscreen Lotion",
+  "brand": "Fmg Co.Ltd",
+  "n_inactive": 1,
+  "thin_reason": "label_prints_too_little",
+  "text_unreadable": false
+ }
+}

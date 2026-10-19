@@ -1,0 +1,54 @@
+{
+ "setid": "20ab5698-cd9f-0821-e063-6394a90a60d7",
+ "images": [
+  {
+   "name": "Actv.jpg",
+   "file": "img/20ab5698-cd9f-0821-e063-6394a90a60d7/Actv.jpg"
+  },
+  {
+   "name": "Dosage and Administration .jpg",
+   "file": "img/20ab5698-cd9f-0821-e063-6394a90a60d7/Dosage_and_Administration_.jpg"
+  },
+  {
+   "name": "UV mild main display.jpg",
+   "file": "img/20ab5698-cd9f-0821-e063-6394a90a60d7/UV_mild_main_display.jpg"
+  },
+  {
+   "name": "Warning precaution.jpg",
+   "file": "img/20ab5698-cd9f-0821-e063-6394a90a60d7/Warning_precaution.jpg"
+  },
+  {
+   "name": "inactive .jpg",
+   "file": "img/20ab5698-cd9f-0821-e063-6394a90a60d7/inactive_.jpg"
+  },
+  {
+   "name": "indictn.jpg",
+   "file": "img/20ab5698-cd9f-0821-e063-6394a90a60d7/indictn.jpg"
+  },
+  {
+   "name": "keep reach out of children.jpg",
+   "file": "img/20ab5698-cd9f-0821-e063-6394a90a60d7/keep_reach_out_of_children.jpg"
+  },
+  {
+   "name": "purpose.jpg",
+   "file": "img/20ab5698-cd9f-0821-e063-6394a90a60d7/purpose.jpg"
+  },
+  {
+   "name": "warns.jpg",
+   "file": "img/20ab5698-cd9f-0821-e063-6394a90a60d7/warns.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "d'Alba Vegan Mild Sunscreen",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "20ab5698-cd9f-0821-e063-6394a90a60d7",
+  "name": "Dalba Vegan Mild Sunscreen Cream",
+  "brand": "Admtmax LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

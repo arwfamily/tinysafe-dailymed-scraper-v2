@@ -1,0 +1,27 @@
+{
+ "setid": "540d68ad-42fe-4015-b568-7bee3412addd",
+ "images": [
+  {
+   "name": "The Prestige BB Cream SPF25 PA 2Plus (40g).jpg",
+   "file": "img/540d68ad-42fe-4015-b568-7bee3412addd/The_Prestige_BB_Cream_SPF25_PA_2Plus__40g_.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Inactive Ingredients: Butylparaben, Disodium EDTA, Methylparaben, Propylparaben",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " Ingredients: Titanium Dioxide 6.24%, Zinc Oxide 3.84%, Arbutin 2%, Adenosine 0.04%"
+  }
+ ],
+ "db": {
+  "setid": "540d68ad-42fe-4015-b568-7bee3412addd",
+  "name": "The Prestige Bb SPF25 Pa 2Plus Cream",
+  "brand": "Wizcoz Corporation Ltd",
+  "n_inactive": 4,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

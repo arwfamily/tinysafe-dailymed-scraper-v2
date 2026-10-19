@@ -1,0 +1,22 @@
+{
+ "setid": "b0d7f07c-0713-46ec-ba89-25ccfcbd7684",
+ "images": [
+  {
+   "name": "NA 21501.jpg",
+   "file": "img/b0d7f07c-0713-46ec-ba89-25ccfcbd7684/NA_21501.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b0d7f07c-0713-46ec-ba89-25ccfcbd7684",
+  "name": "No-Ad SPF45 Continuous Mist Sunscreen Spray",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 2,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

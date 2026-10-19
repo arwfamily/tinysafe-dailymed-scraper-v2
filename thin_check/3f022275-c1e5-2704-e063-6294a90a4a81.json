@@ -1,0 +1,22 @@
+{
+ "setid": "3f022275-c1e5-2704-e063-6294a90a4a81",
+ "images": [
+  {
+   "name": "DMK.jpg",
+   "file": "img/3f022275-c1e5-2704-e063-6294a90a4a81/DMK.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "DMK Ultrascreen Mineral Sunscreen",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3f022275-c1e5-2704-e063-6294a90a4a81",
+  "name": "Dmk Ultrascreen Mineral Sunscreen Lotion",
+  "brand": "Danne Montague King",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

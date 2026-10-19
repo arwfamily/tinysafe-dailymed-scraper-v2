@@ -1,0 +1,58 @@
+{
+ "setid": "051735b9-d24c-595d-e054-00144ff88e88",
+ "images": [
+  {
+   "name": "Inactive Ingredients Section.jpg",
+   "file": "img/051735b9-d24c-595d-e054-00144ff88e88/Inactive_Ingredients_Section.jpg"
+  },
+  {
+   "name": "OTC - Purpose section.jpg",
+   "file": "img/051735b9-d24c-595d-e054-00144ff88e88/OTC_-_Purpose_section.jpg"
+  },
+  {
+   "name": "OTC Active Ingredients Section.jpg",
+   "file": "img/051735b9-d24c-595d-e054-00144ff88e88/OTC_Active_Ingredients_Section.jpg"
+  },
+  {
+   "name": "OTC-Keep out of Reach of Children section.jpg",
+   "file": "img/051735b9-d24c-595d-e054-00144ff88e88/OTC-Keep_out_of_Reach_of_Children_section.jpg"
+  },
+  {
+   "name": "Package Label.jpg",
+   "file": "img/051735b9-d24c-595d-e054-00144ff88e88/Package_Label.jpg"
+  },
+  {
+   "name": "Silagen Bottle Pump 69291-6215-2.jpg",
+   "file": "img/051735b9-d24c-595d-e054-00144ff88e88/Silagen_Bottle_Pump_69291-6215-2.jpg"
+  },
+  {
+   "name": "Silagen Bottle Pump 69291-6230-2.jpg",
+   "file": "img/051735b9-d24c-595d-e054-00144ff88e88/Silagen_Bottle_Pump_69291-6230-2.jpg"
+  },
+  {
+   "name": "Silagen Carton 69291-6215-1.jpg",
+   "file": "img/051735b9-d24c-595d-e054-00144ff88e88/Silagen_Carton_69291-6215-1.jpg"
+  },
+  {
+   "name": "Silagen Carton 69291-6230-1.jpg",
+   "file": "img/051735b9-d24c-595d-e054-00144ff88e88/Silagen_Carton_69291-6230-1.jpg"
+  },
+  {
+   "name": "Warnings Section.jpg",
+   "file": "img/051735b9-d24c-595d-e054-00144ff88e88/Warnings_Section.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "051735b9-d24c-595d-e054-00144ff88e88",
+  "name": "Newgel Plus SPF Gel",
+  "brand": "Newmedical Technology, Inc.",
+  "n_inactive": 3,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

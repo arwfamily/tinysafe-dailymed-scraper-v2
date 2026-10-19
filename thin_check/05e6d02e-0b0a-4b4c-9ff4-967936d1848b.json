@@ -1,0 +1,27 @@
+{
+ "setid": "05e6d02e-0b0a-4b4c-9ff4-967936d1848b",
+ "images": [
+  {
+   "name": "WJRJcarton.jpg",
+   "file": "img/05e6d02e-0b0a-4b4c-9ff4-967936d1848b/WJRJcarton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: OCTINOXATE 7.50% [] OCTISALATE 4.00% [] ZINC OXIDE 3.50% [] OXYBENZONE 2.50% [] TITANIUM DIOXIDE 1.10%"
+  }
+ ],
+ "db": {
+  "setid": "05e6d02e-0b0a-4b4c-9ff4-967936d1848b",
+  "name": "Cyberwhite Ex Extra Intensive Bb Creme Multi Action Formula SPF35 Cream",
+  "brand": "Estee Lauder Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

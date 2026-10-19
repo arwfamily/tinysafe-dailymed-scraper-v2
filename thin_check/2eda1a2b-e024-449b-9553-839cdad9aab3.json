@@ -1,0 +1,27 @@
+{
+ "setid": "2eda1a2b-e024-449b-9553-839cdad9aab3",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/2eda1a2b-e024-449b-9553-839cdad9aab3/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " Ingredients: Ethylhexyl Methoxycinnamate, Zinc Oxide, 4-Methylbenzylidene camphor, Butyl Mehoxydibenzoylmethane"
+  }
+ ],
+ "db": {
+  "setid": "2eda1a2b-e024-449b-9553-839cdad9aab3",
+  "name": "Medispa Sunblock Sunblock Cream",
+  "brand": "Universal Cosmetic Co., Ltd",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

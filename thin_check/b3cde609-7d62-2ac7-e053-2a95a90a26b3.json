@@ -1,0 +1,22 @@
+{
+ "setid": "b3cde609-7d62-2ac7-e053-2a95a90a26b3",
+ "images": [
+  {
+   "name": "80ml label.jpg",
+   "file": "img/b3cde609-7d62-2ac7-e053-2a95a90a26b3/80ml_label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b3cde609-7d62-2ac7-e053-2a95a90a26b3",
+  "name": "SPF50 Sunscreen (Sunscreen) Cream",
+  "brand": "Kingkey Mbc Life Technology Group Co., Ltd",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

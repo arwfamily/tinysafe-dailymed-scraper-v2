@@ -1,0 +1,22 @@
+{
+ "setid": "173a050f-1792-0468-e063-6294a90a264c",
+ "images": [
+  {
+   "name": "440daf5b722bf408ab7cda707b7e7fe.jpg",
+   "file": "img/173a050f-1792-0468-e063-6294a90a264c/440daf5b722bf408ab7cda707b7e7fe.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "WATER",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "173a050f-1792-0468-e063-6294a90a264c",
+  "name": "Sunscreen Cream",
+  "brand": "Guangzhou Yanxi Biotechnology Co., Ltd",
+  "n_inactive": 1,
+  "thin_reason": "label_prints_too_little",
+  "text_unreadable": false
+ }
+}

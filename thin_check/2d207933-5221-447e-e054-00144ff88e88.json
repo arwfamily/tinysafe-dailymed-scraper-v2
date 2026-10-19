@@ -1,0 +1,22 @@
+{
+ "setid": "2d207933-5221-447e-e054-00144ff88e88",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/2d207933-5221-447e-e054-00144ff88e88/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "butylene glycol, water, etc",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2d207933-5221-447e-e054-00144ff88e88",
+  "name": "Beaute De Cell Perfect Sun-Shield SPF 50 Pa Cream",
+  "brand": "Dracell Cosmetics Co., Ltd",
+  "n_inactive": 2,
+  "thin_reason": "label_prints_too_little",
+  "text_unreadable": false
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "setid": "3380f1ac-0320-35f2-e063-6394a90a97eb",
+ "images": [
+  {
+   "name": "label2.jpg",
+   "file": "img/3380f1ac-0320-35f2-e063-6394a90a97eb/label2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "BEEF TALLOW SUNSCREEN",
+ "inactive_section": "Beef Tallow Olea Europaea (Olive)Fruit Oil Cera Alba Butyrospermum Parkii (Shea) Butter Jojoba Oil/Macadamia Seed Oil Esters Propolis Wax",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3380f1ac-0320-35f2-e063-6394a90a97eb",
+  "name": "Beef Tallow Sunscreen Cream",
+  "brand": "Yunqi Cosmetics (Shenzhen) Co., Ltd",
+  "n_inactive": 6,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

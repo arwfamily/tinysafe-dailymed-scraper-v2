@@ -1,0 +1,26 @@
+{
+ "setid": "9e4f5a1d-79c3-1fab-e053-2a95a90a1ca0",
+ "images": [
+  {
+   "name": "9e4fa859-cefb-509c-e053-2995a90aac72.jpg",
+   "file": "img/9e4f5a1d-79c3-1fab-e053-2a95a90a1ca0/9e4fa859-cefb-509c-e053-2995a90aac72.jpg"
+  },
+  {
+   "name": "Sleeve Sol Rx SPF 30 Sport Spray (2020).jpg",
+   "file": "img/9e4f5a1d-79c3-1fab-e053-2a95a90a1ca0/Sleeve_Sol_Rx_SPF_30_Sport_Spray__2020_.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sol RX Sport SPF 30 C-Spray",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9e4f5a1d-79c3-1fab-e053-2a95a90a1ca0",
+  "name": "Solrx Sport SPF 30 C-Spray Aerosol, Spray",
+  "brand": "Cross Brands Contract Filling",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

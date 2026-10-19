@@ -1,0 +1,50 @@
+{
+ "setid": "2efc7087-f4ad-2f2e-e063-6394a90a1302",
+ "images": [
+  {
+   "name": "Equate Daytime AM Face Lotion SPF30 Back Label.jpg",
+   "file": "img/2efc7087-f4ad-2f2e-e063-6394a90a1302/Equate_Daytime_AM_Face_Lotion_SPF30_Back_Label.jpg"
+  },
+  {
+   "name": "Equate Daytime AM Face Lotion SPF30 Dosage Instructions.jpg",
+   "file": "img/2efc7087-f4ad-2f2e-e063-6394a90a1302/Equate_Daytime_AM_Face_Lotion_SPF30_Dosage_Instructions.jpg"
+  },
+  {
+   "name": "Equate Daytime AM Face Lotion SPF30 Front Label.jpg",
+   "file": "img/2efc7087-f4ad-2f2e-e063-6394a90a1302/Equate_Daytime_AM_Face_Lotion_SPF30_Front_Label.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/2efc7087-f4ad-2f2e-e063-6394a90a1302/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Keep Out of Reach of Children.jpg",
+   "file": "img/2efc7087-f4ad-2f2e-e063-6394a90a1302/Keep_Out_of_Reach_of_Children.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/2efc7087-f4ad-2f2e-e063-6394a90a1302/Purpose.jpg"
+  },
+  {
+   "name": "Uses.jpg",
+   "file": "img/2efc7087-f4ad-2f2e-e063-6394a90a1302/Uses.jpg"
+  },
+  {
+   "name": "Warning Statements.jpg",
+   "file": "img/2efc7087-f4ad-2f2e-e063-6394a90a1302/Warning_Statements.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Equate Daytime AM Face Lotion with Sunscreen SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2efc7087-f4ad-2f2e-e063-6394a90a1302",
+  "name": "Equatedaytimefacelotion (Equate Daytime Face Lotion With Sunscreen, SPF 30, 3 Oz) Lotion",
+  "brand": "Walmart Inc.",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "setid": "734b1a67-ee62-1f8a-e053-2a91aa0a994c",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/734b1a67-ee62-1f8a-e053-2a91aa0a994c/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "water, glycerin, dipropylene glycol, etc.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "734b1a67-ee62-1f8a-e053-2a91aa0a994c",
+  "name": "Dr Nikko Sheer Sunscreen Cream",
+  "brand": "Cit Co., Ltd.",
+  "n_inactive": 3,
+  "thin_reason": "label_prints_too_little",
+  "text_unreadable": false
+ }
+}

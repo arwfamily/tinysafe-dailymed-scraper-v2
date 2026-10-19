@@ -1,0 +1,27 @@
+{
+ "setid": "390daee0-d16b-466a-81df-c30d130f833d",
+ "images": [
+  {
+   "name": "MGWT CARTON.jpg",
+   "file": "img/390daee0-d16b-466a-81df-c30d130f833d/MGWT_CARTON.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: OCTINOXATE 7.40% [] OCTISALATE 4.00% [] OXYBENZONE 2.50% [] TITANIUM DIOXIDE 1.10% [] ZINC OXIDE 3.50%"
+  }
+ ],
+ "db": {
+  "setid": "390daee0-d16b-466a-81df-c30d130f833d",
+  "name": "Prep (Plus) Prime Beauty Balm SPF 35 Cream",
+  "brand": "Make-Up Art Cosmetics",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

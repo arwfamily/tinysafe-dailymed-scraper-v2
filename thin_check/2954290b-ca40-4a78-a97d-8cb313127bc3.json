@@ -1,0 +1,27 @@
+{
+ "setid": "2954290b-ca40-4a78-a97d-8cb313127bc3",
+ "images": [
+  {
+   "name": "Sun Protect Beblesh Pact SPF30 PA 2Plus (15g).jpg",
+   "file": "img/2954290b-ca40-4a78-a97d-8cb313127bc3/Sun_Protect_Beblesh_Pact_SPF30_PA_2Plus__15g_.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Inactive Ingredients: Iron Oxide, Methylparaben, Propylparaben",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " Ingredients: Titanium Dioxide 7.50%, Zinc Oxide 5.00%"
+  }
+ ],
+ "db": {
+  "setid": "2954290b-ca40-4a78-a97d-8cb313127bc3",
+  "name": "Sun Protect Beblesh Pact SPF30 Pa 2Plus Cream",
+  "brand": "Wizcoz Corporation Ltd",
+  "n_inactive": 4,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

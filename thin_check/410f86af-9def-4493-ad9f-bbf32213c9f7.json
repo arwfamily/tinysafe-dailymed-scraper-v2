@@ -1,0 +1,27 @@
+{
+ "setid": "410f86af-9def-4493-ad9f-bbf32213c9f7",
+ "images": [
+  {
+   "name": "38GR.jpg",
+   "file": "img/410f86af-9def-4493-ad9f-bbf32213c9f7/38GR.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENT: TITANIUM DIOXIDE 4.7%"
+  }
+ ],
+ "db": {
+  "setid": "410f86af-9def-4493-ad9f-bbf32213c9f7",
+  "name": "Prescriptives All Skins Mineral Makeup 16 Hr. SPF 10 Liquid",
+  "brand": "Prescriptives Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

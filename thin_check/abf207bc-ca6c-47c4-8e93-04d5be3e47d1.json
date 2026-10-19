@@ -1,0 +1,22 @@
+{
+ "setid": "abf207bc-ca6c-47c4-8e93-04d5be3e47d1",
+ "images": [
+  {
+   "name": "11301.jpg",
+   "file": "img/abf207bc-ca6c-47c4-8e93-04d5be3e47d1/11301.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "abf207bc-ca6c-47c4-8e93-04d5be3e47d1",
+  "name": "Ocean Potion Intell Mist 50 Kids Sunscreen Spray",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 7,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

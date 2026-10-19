@@ -1,0 +1,34 @@
+{
+ "setid": "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+ "images": [
+  {
+   "name": "20220928_130415.jpg",
+   "file": "img/e99d92c4-8768-9c0a-e053-2a95a90a609e/20220928_130415.jpg"
+  },
+  {
+   "name": "AnubisMed Spf indications and usage.jpg",
+   "file": "img/e99d92c4-8768-9c0a-e053-2a95a90a609e/AnubisMed_Spf_indications_and_usage.jpg"
+  },
+  {
+   "name": "AnubisMed Spf ingredients labell.jpg",
+   "file": "img/e99d92c4-8768-9c0a-e053-2a95a90a609e/AnubisMed_Spf_ingredients_labell.jpg"
+  },
+  {
+   "name": "AnubisMed spf display label.jpg",
+   "file": "img/e99d92c4-8768-9c0a-e053-2a95a90a609e/AnubisMed_spf_display_label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e99d92c4-8768-9c0a-e053-2a95a90a609e",
+  "name": "Anubismed (SPF 50 Broad Spectrum Protection Fluid Emulsion) Cream",
+  "brand": "Anubis Cosmetics Sl",
+  "n_inactive": 3,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

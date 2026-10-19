@@ -1,0 +1,22 @@
+{
+ "setid": "258d2bb6-778d-4070-844d-b28208a90609",
+ "images": [
+  {
+   "name": "60144.jpg",
+   "file": "img/258d2bb6-778d-4070-844d-b28208a90609/60144.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "258d2bb6-778d-4070-844d-b28208a90609",
+  "name": "Ocean Potion Instant Dry 70 Mist Sunscreen Spray",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 5,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

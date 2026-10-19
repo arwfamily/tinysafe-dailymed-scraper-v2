@@ -1,0 +1,27 @@
+{
+ "setid": "6353580c-5e22-486e-9edd-3cd59de0c55f",
+ "images": [
+  {
+   "name": "1CFAcarton_Page_1.jpg",
+   "file": "img/6353580c-5e22-486e-9edd-3cd59de0c55f/1CFAcarton_Page_1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENT: TITANIUM DIOXIDE 19.90%"
+  }
+ ],
+ "db": {
+  "setid": "6353580c-5e22-486e-9edd-3cd59de0c55f",
+  "name": "Maximum Cover Camouflage Makeup For Face And Body SPF 15 Cream",
+  "brand": "Estee Lauder Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

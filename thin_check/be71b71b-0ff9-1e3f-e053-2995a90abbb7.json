@@ -1,0 +1,26 @@
+{
+ "setid": "be71b71b-0ff9-1e3f-e053-2995a90abbb7",
+ "images": [
+  {
+   "name": "SnSDiamondBayBack.jpg",
+   "file": "img/be71b71b-0ff9-1e3f-e053-2995a90abbb7/SnSDiamondBayBack.jpg"
+  },
+  {
+   "name": "SnSDiamondBayFront.jpg",
+   "file": "img/be71b71b-0ff9-1e3f-e053-2995a90abbb7/SnSDiamondBayFront.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sea & Ski Tanning Oil SPF 4",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "be71b71b-0ff9-1e3f-e053-2995a90abbb7",
+  "name": "Sea And Ski Tanning Oil SPF 4 Oil",
+  "brand": "Cross Brands Contract Filling",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

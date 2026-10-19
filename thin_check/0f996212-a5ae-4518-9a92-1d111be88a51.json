@@ -1,0 +1,22 @@
+{
+ "setid": "0f996212-a5ae-4518-9a92-1d111be88a51",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/0f996212-a5ae-4518-9a92-1d111be88a51/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients Acrylates/Octylacrylamide Copolymer, Alcohol Denat., Fragrance, Glycerin",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0f996212-a5ae-4518-9a92-1d111be88a51",
+  "name": "Sport SPF 15 Spray",
+  "brand": "Topcare",
+  "n_inactive": 5,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

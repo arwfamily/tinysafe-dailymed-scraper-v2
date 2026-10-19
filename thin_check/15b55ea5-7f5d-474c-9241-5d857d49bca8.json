@@ -1,0 +1,22 @@
+{
+ "setid": "15b55ea5-7f5d-474c-9241-5d857d49bca8",
+ "images": [
+  {
+   "name": "Scalp and hair mist.jpg",
+   "file": "img/15b55ea5-7f5d-474c-9241-5d857d49bca8/Scalp_and_hair_mist.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "SPF 30 Scalp and Hair Mist",
+ "inactive_section": "water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "15b55ea5-7f5d-474c-9241-5d857d49bca8",
+  "name": "SPF 30 Scalp And Hair Mist Spray",
+  "brand": "Sun Bum LLC",
+  "n_inactive": 1,
+  "thin_reason": "label_prints_too_little",
+  "text_unreadable": false
+ }
+}

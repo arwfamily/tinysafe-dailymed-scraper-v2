@@ -1,0 +1,27 @@
+{
+ "setid": "7711e9f8-dedd-420c-bc6a-b940005f9899",
+ "images": [
+  {
+   "name": "SuperPlus Beblesh Balm Gold SPF25 PA 2Plus (25g).jpg",
+   "file": "img/7711e9f8-dedd-420c-bc6a-b940005f9899/SuperPlus_Beblesh_Balm_Gold_SPF25_PA_2Plus__25g_.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Inactive Ingredients:Chlorphenesin, Disodium EDTA, Methylparaben, Propylparaben",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " Ingredients: Titanium Dioxide 6.24%, Zinc Oxide 3.84%, Arbutin 2.00%, Adenosine 0.04%"
+  }
+ ],
+ "db": {
+  "setid": "7711e9f8-dedd-420c-bc6a-b940005f9899",
+  "name": "Superplus Beblesh Balm Gold SPF25 Pa 2Plus Cream",
+  "brand": "Wizcoz Corporation Ltd",
+  "n_inactive": 4,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

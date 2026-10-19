@@ -1,0 +1,26 @@
+{
+ "setid": "be74d517-7f74-a74c-e053-2a95a90a3819",
+ "images": [
+  {
+   "name": "F-CCI30VL.jpg",
+   "file": "img/be74d517-7f74-a74c-e053-2a95a90a3819/F-CCI30VL.jpg"
+  },
+  {
+   "name": "SawyerLabeltwo.jpg",
+   "file": "img/be74d517-7f74-a74c-e053-2a95a90a3819/SawyerLabeltwo.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sawyer SPF 30 Sunscreen",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "be74d517-7f74-a74c-e053-2a95a90a3819",
+  "name": "Sawyer SPF 30 Lotion",
+  "brand": "Cross Brands Contract Filling",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

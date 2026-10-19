@@ -1,0 +1,22 @@
+{
+ "setid": "3bbcb812-fee9-3b00-e054-00144ff88e88",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/3bbcb812-fee9-3b00-e054-00144ff88e88/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Butylene Glycol, Allantoin, Etc.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3bbcb812-fee9-3b00-e054-00144ff88e88",
+  "name": "D-One By Tamdoan Sunscreen 50 Cream",
+  "brand": "Dran Co.,Ltd",
+  "n_inactive": 3,
+  "thin_reason": "label_prints_too_little",
+  "text_unreadable": false
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "setid": "ff334e9c-dd12-92bc-e053-6394a90aa24b",
+ "images": [
+  {
+   "name": "X0007CF All Good mineral sport sunscreen butter SPF 50 tin top label artwork (92203)-Rev_1.jpg",
+   "file": "img/ff334e9c-dd12-92bc-e053-6394a90aa24b/X0007CF_All_Good_mineral_sport_sunscreen_butter_SPF_50_tin_top_label_artwork__92203_-Rev_1.jpg"
+  },
+  {
+   "name": "X0007CG Elemental Herbs Non-Tinted Sun Butter SPF 50 Bottom Label Booklet Artwork-Rev_2.jpg",
+   "file": "img/ff334e9c-dd12-92bc-e053-6394a90aa24b/X0007CG_Elemental_Herbs_Non-Tinted_Sun_Butter_SPF_50_Bottom_Label_Booklet_Artwork-Rev_2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "92203 All Good Mineral Sport Sunscreen Butter SPF 50 Tin",
+ "inactive_section": "Inactive Ingredients Organic Cocos Nucifera (Coconut) Oil, Organic Cera Alba (Beeswax), Organic Calendula Officinalis Flower infused in Organic Simmondsia Chinensis (Jojoba) Seed Oil, Non-GMO Tocopherol (Vitamin E).",
+ "ingredient_passages": [
+  {
+   "section": "42229-5",
+   "text": " Ingredient: Zinc Oxide 25% lift for Drug Facts ►"
+  }
+ ],
+ "db": {
+  "setid": "ff334e9c-dd12-92bc-e053-6394a90aa24b",
+  "name": "All Good Mineral Sport Sunscreen Butter Ointment",
+  "brand": "Elemental Herbs, Inc.",
+  "n_inactive": 7,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

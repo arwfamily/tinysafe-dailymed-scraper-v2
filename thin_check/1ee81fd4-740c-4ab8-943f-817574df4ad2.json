@@ -1,0 +1,27 @@
+{
+ "setid": "1ee81fd4-740c-4ab8-943f-817574df4ad2",
+ "images": [
+  {
+   "name": "Super Plus Beblesh Balm Triple Functions SPF25 PA 2Plus (25g).jpg",
+   "file": "img/1ee81fd4-740c-4ab8-943f-817574df4ad2/Super_Plus_Beblesh_Balm_Triple_Functions_SPF25_PA_2Plus__25g_.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Inactive Ingredients: Trimethylsiloxysilicate, Iron Oxide, Methylparaben, Propylparaben",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " Ingredients: Titanium Dioxide 7.50%, Zinc Oxide 5.00%"
+  }
+ ],
+ "db": {
+  "setid": "1ee81fd4-740c-4ab8-943f-817574df4ad2",
+  "name": "Super Plus Beblesh Balm Triple Functions SPF25 Pa 2Plus Cream",
+  "brand": "Wizcoz Corporation Ltd",
+  "n_inactive": 5,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

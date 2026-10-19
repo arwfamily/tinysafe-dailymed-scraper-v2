@@ -1,0 +1,27 @@
+{
+ "setid": "832e87cc-e2cd-4e2a-a0df-788ab2075644",
+ "images": [
+  {
+   "name": "6WRE.jpg",
+   "file": "img/832e87cc-e2cd-4e2a-a0df-788ab2075644/6WRE.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: octisalate 5.00% [] avobenzone 3.00% [] octocrylene 2.70%"
+  }
+ ],
+ "db": {
+  "setid": "832e87cc-e2cd-4e2a-a0df-788ab2075644",
+  "name": "Even Better Skin Tone Correcting Mosturizer SPF 20 Cream",
+  "brand": "Clinique Laboratories, Inc.",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

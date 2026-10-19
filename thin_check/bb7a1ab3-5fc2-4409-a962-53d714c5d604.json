@@ -1,0 +1,22 @@
+{
+ "setid": "bb7a1ab3-5fc2-4409-a962-53d714c5d604",
+ "images": [
+  {
+   "name": "OPINT30MISTLabel.jpg",
+   "file": "img/bb7a1ab3-5fc2-4409-a962-53d714c5d604/OPINT30MISTLabel.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bb7a1ab3-5fc2-4409-a962-53d714c5d604",
+  "name": "Ocean Potion Instant Dry 30 Mist Water Sport Sunscreen Spray",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 7,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

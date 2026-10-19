@@ -1,0 +1,50 @@
+{
+ "setid": "20adebef-2841-a5c2-e063-6394a90ab063",
+ "images": [
+  {
+   "name": "Purpose 3.jpg",
+   "file": "img/20adebef-2841-a5c2-e063-6394a90ab063/Purpose_3.jpg"
+  },
+  {
+   "name": "active 2.jpg",
+   "file": "img/20adebef-2841-a5c2-e063-6394a90ab063/active_2.jpg"
+  },
+  {
+   "name": "dosage and admins.jpg",
+   "file": "img/20adebef-2841-a5c2-e063-6394a90ab063/dosage_and_admins.jpg"
+  },
+  {
+   "name": "inactive ingredients 3.jpg",
+   "file": "img/20adebef-2841-a5c2-e063-6394a90ab063/inactive_ingredients_3.jpg"
+  },
+  {
+   "name": "indications 3.jpg",
+   "file": "img/20adebef-2841-a5c2-e063-6394a90ab063/indications_3.jpg"
+  },
+  {
+   "name": "keep out of children 3.jpg",
+   "file": "img/20adebef-2841-a5c2-e063-6394a90ab063/keep_out_of_children_3.jpg"
+  },
+  {
+   "name": "tone up main display.jpg",
+   "file": "img/20adebef-2841-a5c2-e063-6394a90ab063/tone_up_main_display.jpg"
+  },
+  {
+   "name": "warnings3.jpg",
+   "file": "img/20adebef-2841-a5c2-e063-6394a90ab063/warnings3.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "20adebef-2841-a5c2-e063-6394a90ab063",
+  "name": "Dalba Vegan Tone-Up Sunscreen Cream",
+  "brand": "Admtmax LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "setid": "d928a1a5-d32a-405d-bac4-20ed54bd8a59",
+ "images": [
+  {
+   "name": "SunScreenLotionSPF30.jpg",
+   "file": "img/d928a1a5-d32a-405d-bac4-20ed54bd8a59/SunScreenLotionSPF30.jpg"
+  },
+  {
+   "name": "SunScreenLotionSPF30_Outerpackage.jpg",
+   "file": "img/d928a1a5-d32a-405d-bac4-20ed54bd8a59/SunScreenLotionSPF30_Outerpackage.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "SunScreen Lotion SPF30",
+ "inactive_section": "Inactive ingredients: Acrylates/Octylacrylamide copolymer,Alcohol Denat, Dimethicone, Fragrance.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d928a1a5-d32a-405d-bac4-20ed54bd8a59",
+  "name": "Sunscreen SPF30 Lotion",
+  "brand": "Shanghai Kejing Cleaning Products Co., Ltd.",
+  "n_inactive": 4,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "setid": "2d2ff441-161b-02de-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/2d2ff441-161b-02de-e054-00144ff8d46c/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "titanium dioxide, water, etc",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2d2ff441-161b-02de-e054-00144ff8d46c",
+  "name": "Beaute De Cell Homme Perfect Sun-Shield SPF 50 Pa Cream",
+  "brand": "Dracell Cosmetics Co., Ltd",
+  "n_inactive": 2,
+  "thin_reason": "label_prints_too_little",
+  "text_unreadable": false
+ }
+}

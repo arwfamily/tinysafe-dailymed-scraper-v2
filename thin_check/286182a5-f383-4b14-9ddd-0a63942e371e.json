@@ -1,0 +1,27 @@
+{
+ "setid": "286182a5-f383-4b14-9ddd-0a63942e371e",
+ "images": [
+  {
+   "name": "Hydra Intensive Blemish Balm SPF30 PA Picture.jpg",
+   "file": "img/286182a5-f383-4b14-9ddd-0a63942e371e/Hydra_Intensive_Blemish_Balm_SPF30_PA_Picture.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: Titanium Dioxide, Ethylhexyl Methoxycinnamate, Zinc Oxide, Rosmarinus Officinalis (Rosemary) Leaf Oil, Portulaca Oleracea Extract, Citrus Grandis (Grapefruit) Peel Extract, Camellia Sinensis Leaf Extract"
+  }
+ ],
+ "db": {
+  "setid": "286182a5-f383-4b14-9ddd-0a63942e371e",
+  "name": "Hydra Intensive Blemish Balm SPF30 Pa Cream",
+  "brand": "The Doctor'S Cosmetic Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

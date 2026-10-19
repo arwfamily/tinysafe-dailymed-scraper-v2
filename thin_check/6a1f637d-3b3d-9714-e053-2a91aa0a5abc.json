@@ -1,0 +1,50 @@
+{
+ "setid": "6a1f637d-3b3d-9714-e053-2a91aa0a5abc",
+ "images": [
+  {
+   "name": "Selfie SPF 30 - Directions.jpg",
+   "file": "img/6a1f637d-3b3d-9714-e053-2a91aa0a5abc/Selfie_SPF_30_-_Directions.jpg"
+  },
+  {
+   "name": "Selfie SPF 30 - Drug Facts.jpg",
+   "file": "img/6a1f637d-3b3d-9714-e053-2a91aa0a5abc/Selfie_SPF_30_-_Drug_Facts.jpg"
+  },
+  {
+   "name": "Selfie SPF 30 - Front.jpg",
+   "file": "img/6a1f637d-3b3d-9714-e053-2a91aa0a5abc/Selfie_SPF_30_-_Front.jpg"
+  },
+  {
+   "name": "Selfie SPF 30 - Inactive Ingredients.jpg",
+   "file": "img/6a1f637d-3b3d-9714-e053-2a91aa0a5abc/Selfie_SPF_30_-_Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Selfie SPF 30 - Other Info.jpg",
+   "file": "img/6a1f637d-3b3d-9714-e053-2a91aa0a5abc/Selfie_SPF_30_-_Other_Info.jpg"
+  },
+  {
+   "name": "Selfie SPF 30 - Questions.jpg",
+   "file": "img/6a1f637d-3b3d-9714-e053-2a91aa0a5abc/Selfie_SPF_30_-_Questions.jpg"
+  },
+  {
+   "name": "Selfie SPF 30 - Uses.jpg",
+   "file": "img/6a1f637d-3b3d-9714-e053-2a91aa0a5abc/Selfie_SPF_30_-_Uses.jpg"
+  },
+  {
+   "name": "Selfie SPF 30 - Warnings.jpg",
+   "file": "img/6a1f637d-3b3d-9714-e053-2a91aa0a5abc/Selfie_SPF_30_-_Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "SPF 30 SELFIE",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6a1f637d-3b3d-9714-e053-2a91aa0a5abc",
+  "name": "Sunscreen (Selfie SPF30 Spray Lotion) Spray",
+  "brand": "O.L. Products, Inc,",
+  "n_inactive": 2,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

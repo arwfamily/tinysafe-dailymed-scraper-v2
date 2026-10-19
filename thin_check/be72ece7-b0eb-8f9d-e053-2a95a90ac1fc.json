@@ -1,0 +1,26 @@
+{
+ "setid": "be72ece7-b0eb-8f9d-e053-2a95a90ac1fc",
+ "images": [
+  {
+   "name": "SnSGoldenPearlBack.jpg",
+   "file": "img/be72ece7-b0eb-8f9d-e053-2a95a90ac1fc/SnSGoldenPearlBack.jpg"
+  },
+  {
+   "name": "SnSGoldenPearlFront.jpg",
+   "file": "img/be72ece7-b0eb-8f9d-e053-2a95a90ac1fc/SnSGoldenPearlFront.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sea & Ski Tanning Lotion SPF 4",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "be72ece7-b0eb-8f9d-e053-2a95a90ac1fc",
+  "name": "Sea And Ski Tanning Lotionspf 4 Lotion",
+  "brand": "Cross Brands Contract Filling",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

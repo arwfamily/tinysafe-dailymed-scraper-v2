@@ -1,0 +1,22 @@
+{
+ "setid": "0a5a35be-9e24-18dd-e063-6394a90a097f",
+ "images": [
+  {
+   "name": "Tanning Spray 15.jpg",
+   "file": "img/0a5a35be-9e24-18dd-e063-6394a90a097f/Tanning_Spray_15.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Coppertone Tanning Spray SPF 15",
+ "inactive_section": "SD alcohol 40-B (49.3% v/v), isobutane, neopentyl glycol diheptanoate, polyester-27, fragrance",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0a5a35be-9e24-18dd-e063-6394a90a097f",
+  "name": "Coppertone Tanning Sunscreen SPF 15 ((To Deliver) Avobenzone 2%, Octisalate 4.5%, Octocrylene 7%) Aerosol",
+  "brand": "Beiersdorf Inc",
+  "n_inactive": 6,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

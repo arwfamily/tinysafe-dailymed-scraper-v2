@@ -1,0 +1,22 @@
+{
+ "setid": "82faf991-3dbf-63f2-e053-2991aa0afbdf",
+ "images": [
+  {
+   "name": "ZSUNPL10-01.jpg",
+   "file": "img/82faf991-3dbf-63f2-e053-2991aa0afbdf/ZSUNPL10-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "SPF 50 Broad Spectrum Sunscreen Lotion",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "82faf991-3dbf-63f2-e053-2991aa0afbdf",
+  "name": "Snugz SPF 50 Broad Spectrum Sunscreen (SPF 50 Broad Spectrum Sunscreen) Lotion",
+  "brand": "Snugz/Usa, LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

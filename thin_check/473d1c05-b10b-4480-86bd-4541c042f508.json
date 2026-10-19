@@ -1,0 +1,27 @@
+{
+ "setid": "473d1c05-b10b-4480-86bd-4541c042f508",
+ "images": [
+  {
+   "name": "Medi UV Block Suncream SPF50 PA Picture.jpg",
+   "file": "img/473d1c05-b10b-4480-86bd-4541c042f508/Medi_UV_Block_Suncream_SPF50_PA_Picture.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: Ethylhexyl Methoxycinnamate, Sodium Hyaluronate, Octocrylene, Beta-Glucan, Camellia Sinensis Leaf Extract, Scutellaria Baicalensis Root Extract"
+  }
+ ],
+ "db": {
+  "setid": "473d1c05-b10b-4480-86bd-4541c042f508",
+  "name": "Medi Uv Block Suncream SPF50 Pa Cream",
+  "brand": "The Doctor'S Cosmetic Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

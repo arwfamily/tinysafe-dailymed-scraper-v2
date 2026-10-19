@@ -1,0 +1,27 @@
+{
+ "setid": "0b24eb0e-21f5-4359-8a38-f02846106d99",
+ "images": [
+  {
+   "name": "L0LA CARTON.jpg",
+   "file": "img/0b24eb0e-21f5-4359-8a38-f02846106d99/L0LA_CARTON.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: OCTINOXATE 7.5% [] OCTISALATE 3.5%"
+  }
+ ],
+ "db": {
+  "setid": "0b24eb0e-21f5-4359-8a38-f02846106d99",
+  "name": "Vitamin E Lip Conditioner SPF 15 Cream",
+  "brand": "Jo Malone Ltd, Distr.",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

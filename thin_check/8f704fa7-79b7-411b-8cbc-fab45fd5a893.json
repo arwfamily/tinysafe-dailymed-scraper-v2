@@ -1,0 +1,27 @@
+{
+ "setid": "8f704fa7-79b7-411b-8cbc-fab45fd5a893",
+ "images": [
+  {
+   "name": "E5YPcarton.jpg",
+   "file": "img/8f704fa7-79b7-411b-8cbc-fab45fd5a893/E5YPcarton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: HOMOSALATE 5.00% [] OCTISALATE 5.00% [] AVOBENZONE 3.00% [] OXYBENZONE 3.00%"
+  }
+ ],
+ "db": {
+  "setid": "8f704fa7-79b7-411b-8cbc-fab45fd5a893",
+  "name": "Bobbi Brown Brightening Protective Face Base Uv SPF 50 Cream",
+  "brand": "Bobbi Brown Professional Cosmetics Inc.",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "setid": "bf79178c-b87c-400d-87c1-9f184f00e12b",
+ "images": [
+  {
+   "name": "2LWP.jpg",
+   "file": "img/bf79178c-b87c-400d-87c1-9f184f00e12b/2LWP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: OCTISALATE 5.00% [] HOMOSALATE 5.00% [] AVOBENZONE 3.00% [] OXYBENZONE 3.00%"
+  }
+ ],
+ "db": {
+  "setid": "bf79178c-b87c-400d-87c1-9f184f00e12b",
+  "name": "Aramis Lab Series Power Protector SPF 50 Lotion",
+  "brand": "Aramis Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

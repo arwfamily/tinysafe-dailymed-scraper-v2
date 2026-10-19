@@ -1,0 +1,27 @@
+{
+ "setid": "8b830344-05b5-4d3f-84c5-843dd5dd3c8a",
+ "images": [
+  {
+   "name": "617Jcarton.jpg",
+   "file": "img/8b830344-05b5-4d3f-84c5-843dd5dd3c8a/617Jcarton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENT: TITANIUM DIOXIDE 7.6%"
+  }
+ ],
+ "db": {
+  "setid": "8b830344-05b5-4d3f-84c5-843dd5dd3c8a",
+  "name": "Almost Makeup SPF 15 Liquid",
+  "brand": "Clinique Laboratories Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

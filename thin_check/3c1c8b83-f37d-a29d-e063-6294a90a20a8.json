@@ -1,0 +1,26 @@
+{
+ "setid": "3c1c8b83-f37d-a29d-e063-6294a90a20a8",
+ "images": [
+  {
+   "name": "SB_OG_Face_Mist_Mini_Extended_Label_R1V3_444100.jpg",
+   "file": "img/3c1c8b83-f37d-a29d-e063-6294a90a20a8/SB_OG_Face_Mist_Mini_Extended_Label_R1V3_444100.jpg"
+  },
+  {
+   "name": "SB_OG_Suncreen Mist_R1V4_444105.jpg",
+   "file": "img/3c1c8b83-f37d-a29d-e063-6294a90a20a8/SB_OG_Suncreen_Mist_R1V4_444105.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sun Bum Mist 45 Refreshing Sunscreen",
+ "inactive_section": "alcohol denat. (67%), isoamyl cocoate, fragrance, hamamelis virginiana (witch hazel) water, tocopherol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3c1c8b83-f37d-a29d-e063-6294a90a20a8",
+  "name": "Sun Bum Mist 45 Refreshing Sunscreen 1.35 Oz Spray Sun Bum Mist 45 Refreshing Sunscreen 3.4 Oz Spray",
+  "brand": "Sun Bum, LLC",
+  "n_inactive": 6,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

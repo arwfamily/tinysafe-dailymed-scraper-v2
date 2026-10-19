@@ -1,0 +1,30 @@
+{
+ "setid": "652b6f1c-c4d9-4c01-9b68-9c0403d01c3c",
+ "images": [
+  {
+   "name": "cvs1.jpg",
+   "file": "img/652b6f1c-c4d9-4c01-9b68-9c0403d01c3c/cvs1.jpg"
+  },
+  {
+   "name": "cvs2.5.jpg",
+   "file": "img/652b6f1c-c4d9-4c01-9b68-9c0403d01c3c/cvs2.5.jpg"
+  },
+  {
+   "name": "cvs2.jpg",
+   "file": "img/652b6f1c-c4d9-4c01-9b68-9c0403d01c3c/cvs2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "DRUG FACTS BOX",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "652b6f1c-c4d9-4c01-9b68-9c0403d01c3c",
+  "name": "Illuminating Daily Moisturizer SPF 30 Lotion",
+  "brand": "Cvs Pharmacy Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

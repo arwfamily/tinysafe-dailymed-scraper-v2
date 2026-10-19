@@ -1,0 +1,22 @@
+{
+ "setid": "c77dc89f-e2f5-48c7-ae5a-f0c361d02854",
+ "images": [
+  {
+   "name": "NAKidsSPY50Label.jpg",
+   "file": "img/c77dc89f-e2f5-48c7-ae5a-f0c361d02854/NAKidsSPY50Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c77dc89f-e2f5-48c7-ae5a-f0c361d02854",
+  "name": "No-Ad Kids SPF50 Continuous Mist Sunscreen Spray",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 2,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

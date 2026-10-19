@@ -1,0 +1,22 @@
+{
+ "setid": "ef1a1e03-94d4-4fc7-b25b-26347bc2c343",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/ef1a1e03-94d4-4fc7-b25b-26347bc2c343/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "water, butylene glycol, sodium hyaluronate, dimethicone, porphyra tenera ext, ethylhexyl methoxycinnamate, sorbitan sesquioleate, etc",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ef1a1e03-94d4-4fc7-b25b-26347bc2c343",
+  "name": "M-Rose Seaweed Sun Bb SPF 50 Pa Cream",
+  "brand": "Beauty Line Co., Ltd.",
+  "n_inactive": 7,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

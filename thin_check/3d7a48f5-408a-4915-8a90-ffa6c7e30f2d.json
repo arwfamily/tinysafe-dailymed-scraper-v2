@@ -1,0 +1,22 @@
+{
+ "setid": "3d7a48f5-408a-4915-8a90-ffa6c7e30f2d",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/3d7a48f5-408a-4915-8a90-ffa6c7e30f2d/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Glycerin, Butylene Glycol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3d7a48f5-408a-4915-8a90-ffa6c7e30f2d",
+  "name": "Camellia Cooling Cc 21 SPF50 Pa Cream",
+  "brand": "Tov Co., Ltd",
+  "n_inactive": 2,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "setid": "62cc7bdd-e453-4edf-b6bc-d9acd1c07f53",
+ "images": [
+  {
+   "name": "E109 CARTON.jpg",
+   "file": "img/62cc7bdd-e453-4edf-b6bc-d9acd1c07f53/E109_CARTON.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: HOMOSALATE 10.00% [] OCTINOXATE 7.50% [] OXYBENZONE 5.00% [] AVOBENZONE 2.00%"
+  }
+ ],
+ "db": {
+  "setid": "62cc7bdd-e453-4edf-b6bc-d9acd1c07f53",
+  "name": "Bobbi Brown Extra SPF 25 Moisturizing Balm Cream",
+  "brand": "Bobbi Brown Professional Cosmetics Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

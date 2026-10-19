@@ -1,0 +1,22 @@
+{
+ "setid": "912170ae-124c-5eb9-e053-2995a90a0ba3",
+ "images": [
+  {
+   "name": "Svens Sunscreen label.jpg",
+   "file": "img/912170ae-124c-5eb9-e053-2995a90a0ba3/Svens_Sunscreen_label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Svens Everyday Mineral Sunscreen",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "912170ae-124c-5eb9-e053-2995a90a0ba3",
+  "name": "Svens Everyday Mineral Sunscreen Lotion",
+  "brand": "Svens, Inc",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

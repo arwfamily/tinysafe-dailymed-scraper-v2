@@ -1,0 +1,27 @@
+{
+ "setid": "67edba12-628b-46e5-8f5c-d5b3eae6c81d",
+ "images": [
+  {
+   "name": "CL63H9.jpg",
+   "file": "img/67edba12-628b-46e5-8f5c-d5b3eae6c81d/CL63H9.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENT: TITANIUM DIOXIDE, 4%"
+  }
+ ],
+ "db": {
+  "setid": "67edba12-628b-46e5-8f5c-d5b3eae6c81d",
+  "name": "City Stick SPF 15 Stick",
+  "brand": "Clinique Laboratories Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

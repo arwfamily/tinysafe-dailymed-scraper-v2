@@ -1,0 +1,22 @@
+{
+ "setid": "444a04b9-c142-2c14-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "Lotion GP SPF 30 FR.pdf.jpg",
+   "file": "img/444a04b9-c142-2c14-e054-00144ff8d46c/Lotion_GP_SPF_30_FR.pdf.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sea & Ski GP Sunscreen Lotion",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "444a04b9-c142-2c14-e054-00144ff8d46c",
+  "name": "Gp Sunscreen Lotion",
+  "brand": "Cross-Brands Manufacturing, LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

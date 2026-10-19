@@ -1,0 +1,26 @@
+{
+ "setid": "98044384-2a3e-4609-85cf-b959e4c3baa3",
+ "images": [
+  {
+   "name": "OmbrelleClearSprayBack30.jpg",
+   "file": "img/98044384-2a3e-4609-85cf-b959e4c3baa3/OmbrelleClearSprayBack30.jpg"
+  },
+  {
+   "name": "OmbrelleClearSprayFront30.jpg",
+   "file": "img/98044384-2a3e-4609-85cf-b959e4c3baa3/OmbrelleClearSprayFront30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "alcohol, denat., c12-15 alkyl benzoate, ethylenediamine/stearyl dimer dilinoleate copolymer",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "98044384-2a3e-4609-85cf-b959e4c3baa3",
+  "name": "Garnier Ombrelle Sport Vaporisateur Broad Spectrum SPF 30 Sweat Resistant 80 Minutes Spray",
+  "brand": "L'Oreal Usa Products Inc",
+  "n_inactive": 5,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "setid": "70ac6e5f-2fca-733a-e053-2a91aa0aaf5b",
+ "images": [
+  {
+   "name": "Sunscreen Spray SPF 30.jpg",
+   "file": "img/70ac6e5f-2fca-733a-e053-2a91aa0aaf5b/Sunscreen_Spray_SPF_30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "SPF30 BROAD SPECTRUM SPRAY FORMULA #SS-TMPFL",
+ "inactive_section": "Inactive Ingredients: Alcohol Denatured, Sorbeth-2 Hexaoleate, Acrylates/, Octylacrylamide Copolymer",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "70ac6e5f-2fca-733a-e053-2a91aa0aaf5b",
+  "name": "Ss-Tmpfl (Bs SPF30 Spray - Dl) Spray",
+  "brand": "Tropical Enterprises International, Inc.",
+  "n_inactive": 6,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

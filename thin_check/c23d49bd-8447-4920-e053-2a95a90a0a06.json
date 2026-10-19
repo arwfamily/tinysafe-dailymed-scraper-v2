@@ -1,0 +1,27 @@
+{
+ "setid": "c23d49bd-8447-4920-e053-2a95a90a0a06",
+ "images": [
+  {
+   "name": "C10738 C10738B-01.jpg",
+   "file": "img/c23d49bd-8447-4920-e053-2a95a90a0a06/C10738_C10738B-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Broad Spectrum SPF 30 Mineral Sunscreen 1.5 fl oz",
+ "inactive_section": "Sunflower Oil*, Beeswax*, Jojoba Oil*, Coconut Oil*, Tocopherol (Non-GMO). *Organic",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " Ingredients: Zinc Oxide (18.75%) Non-nanoparticle"
+  }
+ ],
+ "db": {
+  "setid": "c23d49bd-8447-4920-e053-2a95a90a0a06",
+  "name": "Broad Spectrum SPF 30 Sunscreen Lotion",
+  "brand": "Raining Rose",
+  "n_inactive": 6,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

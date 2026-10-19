@@ -1,0 +1,22 @@
+{
+ "setid": "b5f57f8e-7d51-3c0c-e053-2a95a90aa9ca",
+ "images": [
+  {
+   "name": "Box2.jpg",
+   "file": "img/b5f57f8e-7d51-3c0c-e053-2a95a90aa9ca/Box2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sun Bum Face Mist SPF 45",
+ "inactive_section": "alcohol. denat. (67%), isoamyl cocoate, fragrance, hamamelis virginiana (witch hazel) bark/leaf extract, tocopherol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b5f57f8e-7d51-3c0c-e053-2a95a90aa9ca",
+  "name": "Sun Bum Face Mist SPF 45 Liquid",
+  "brand": "Sun Bum LLC",
+  "n_inactive": 6,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

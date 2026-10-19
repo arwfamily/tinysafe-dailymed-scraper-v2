@@ -1,0 +1,54 @@
+{
+ "setid": "676335de-4a14-f8d7-e053-2a91aa0ab97c",
+ "images": [
+  {
+   "name": "Flammable Label 2 OUTLINES.jpg",
+   "file": "img/676335de-4a14-f8d7-e053-2a91aa0ab97c/Flammable_Label_2_OUTLINES.jpg"
+  },
+  {
+   "name": "Selfie SPF 15 - Directions.jpg",
+   "file": "img/676335de-4a14-f8d7-e053-2a91aa0ab97c/Selfie_SPF_15_-_Directions.jpg"
+  },
+  {
+   "name": "Selfie SPF 15 - Drug Facts.jpg",
+   "file": "img/676335de-4a14-f8d7-e053-2a91aa0ab97c/Selfie_SPF_15_-_Drug_Facts.jpg"
+  },
+  {
+   "name": "Selfie SPF 15 - Front.jpg",
+   "file": "img/676335de-4a14-f8d7-e053-2a91aa0ab97c/Selfie_SPF_15_-_Front.jpg"
+  },
+  {
+   "name": "Selfie SPF 15 - Inactive Ingredients.jpg",
+   "file": "img/676335de-4a14-f8d7-e053-2a91aa0ab97c/Selfie_SPF_15_-_Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Selfie SPF 15 - Other Info.jpg",
+   "file": "img/676335de-4a14-f8d7-e053-2a91aa0ab97c/Selfie_SPF_15_-_Other_Info.jpg"
+  },
+  {
+   "name": "Selfie SPF 15 - Questions.jpg",
+   "file": "img/676335de-4a14-f8d7-e053-2a91aa0ab97c/Selfie_SPF_15_-_Questions.jpg"
+  },
+  {
+   "name": "Selfie SPF 15 - Uses.jpg",
+   "file": "img/676335de-4a14-f8d7-e053-2a91aa0ab97c/Selfie_SPF_15_-_Uses.jpg"
+  },
+  {
+   "name": "Selfie SPF 15 - Warnings.jpg",
+   "file": "img/676335de-4a14-f8d7-e053-2a91aa0ab97c/Selfie_SPF_15_-_Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "SPF 15 SELFIE BOV Continuous Spray",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "676335de-4a14-f8d7-e053-2a91aa0ab97c",
+  "name": "Sunscreen Aerosol, Spray",
+  "brand": "Ol Products, Inc.",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "setid": "c8331f4e-1540-24b9-e053-2a95a90a2426",
+ "images": [
+  {
+   "name": "SPF30.jpg",
+   "file": "img/c8331f4e-1540-24b9-e053-2a95a90a2426/SPF30.jpg"
+  },
+  {
+   "name": "SPF50.jpg",
+   "file": "img/c8331f4e-1540-24b9-e053-2a95a90a2426/SPF50.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Florida Squeeze Spray SPF 50 and SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c8331f4e-1540-24b9-e053-2a95a90a2426",
+  "name": "Florida Squeeze SPF 50 Spray Florida Squeeze SPF 30 Spray",
+  "brand": "Cross Brands Contract Filling",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

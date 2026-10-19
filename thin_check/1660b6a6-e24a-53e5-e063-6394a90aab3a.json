@@ -1,0 +1,26 @@
+{
+ "setid": "1660b6a6-e24a-53e5-e063-6394a90aab3a",
+ "images": [
+  {
+   "name": "Cell Fusion C Laser Sunscreen SPF50 10mL.jpg",
+   "file": "img/1660b6a6-e24a-53e5-e063-6394a90aab3a/Cell_Fusion_C_Laser_Sunscreen_SPF50_10mL.jpg"
+  },
+  {
+   "name": "Cell Fusion C Laser Sunscreen SPF50 50mL.jpg",
+   "file": "img/1660b6a6-e24a-53e5-e063-6394a90aab3a/Cell_Fusion_C_Laser_Sunscreen_SPF50_50mL.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Cell Fusion C Laser Sunscreen Broad Spectrum SPF 50",
+ "inactive_section": "WATER",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1660b6a6-e24a-53e5-e063-6394a90aab3a",
+  "name": "Cell Fusion C Laser Sunscreen Broad Spectrum SPF 50 Cream",
+  "brand": "Cms Lab Inc.",
+  "n_inactive": 1,
+  "thin_reason": "label_prints_too_little",
+  "text_unreadable": false
+ }
+}

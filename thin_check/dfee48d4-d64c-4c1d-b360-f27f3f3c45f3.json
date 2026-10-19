@@ -1,0 +1,27 @@
+{
+ "setid": "dfee48d4-d64c-4c1d-b360-f27f3f3c45f3",
+ "images": [
+  {
+   "name": "6MNYcarton.jpg",
+   "file": "img/dfee48d4-d64c-4c1d-b360-f27f3f3c45f3/6MNYcarton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: OCTINOXATE 6.00% [] ZINC OXIDE 3.50% [] TITANIUM DIOXIDE 2.90%"
+  }
+ ],
+ "db": {
+  "setid": "dfee48d4-d64c-4c1d-b360-f27f3f3c45f3",
+  "name": "Even Better Makeup SPF 15 Evens And Corrects Liquid",
+  "brand": "Clinique Laboratories Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

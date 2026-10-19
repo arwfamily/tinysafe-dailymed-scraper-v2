@@ -1,0 +1,27 @@
+{
+ "setid": "d5915e8d-69ee-486a-9fc9-e35562bf967f",
+ "images": [
+  {
+   "name": "2p Brightening UV Sun Block SPF50 PA Picture.jpg",
+   "file": "img/d5915e8d-69ee-486a-9fc9-e35562bf967f/2p_Brightening_UV_Sun_Block_SPF50_PA_Picture.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: Hyaluronic Acid, Scutellaria Baicalensis Root Extract, Beta-Glucan, Phytosterols, Arbutin, Octinoxate"
+  }
+ ],
+ "db": {
+  "setid": "d5915e8d-69ee-486a-9fc9-e35562bf967f",
+  "name": "Dr Young 2P Brightening Uv Sun Block SPF50 Pa (Arbutin, Ethylhexyl Methoxycinnamate) Cream",
+  "brand": "The Doctor'S Cosmetic Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

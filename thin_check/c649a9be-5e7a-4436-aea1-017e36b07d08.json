@@ -1,0 +1,22 @@
+{
+ "setid": "c649a9be-5e7a-4436-aea1-017e36b07d08",
+ "images": [
+  {
+   "name": "9120182900.jpg",
+   "file": "img/c649a9be-5e7a-4436-aea1-017e36b07d08/9120182900.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c649a9be-5e7a-4436-aea1-017e36b07d08",
+  "name": "Sunscreen Wipe Kgp Cloth",
+  "brand": "Premier)",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

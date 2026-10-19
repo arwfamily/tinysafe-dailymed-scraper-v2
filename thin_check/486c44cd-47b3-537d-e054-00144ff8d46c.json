@@ -1,0 +1,58 @@
+{
+ "setid": "486c44cd-47b3-537d-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "Inactive Ingredients Section.jpg",
+   "file": "img/486c44cd-47b3-537d-e054-00144ff8d46c/Inactive_Ingredients_Section.jpg"
+  },
+  {
+   "name": "OTC - Purpose section.jpg",
+   "file": "img/486c44cd-47b3-537d-e054-00144ff8d46c/OTC_-_Purpose_section.jpg"
+  },
+  {
+   "name": "OTC Active Ingredients Section.jpg",
+   "file": "img/486c44cd-47b3-537d-e054-00144ff8d46c/OTC_Active_Ingredients_Section.jpg"
+  },
+  {
+   "name": "OTC-Keep out of Reach of Children section.jpg",
+   "file": "img/486c44cd-47b3-537d-e054-00144ff8d46c/OTC-Keep_out_of_Reach_of_Children_section.jpg"
+  },
+  {
+   "name": "Package Label.jpg",
+   "file": "img/486c44cd-47b3-537d-e054-00144ff8d46c/Package_Label.jpg"
+  },
+  {
+   "name": "Silagen Bottle Pump 69291-6215-2.jpg",
+   "file": "img/486c44cd-47b3-537d-e054-00144ff8d46c/Silagen_Bottle_Pump_69291-6215-2.jpg"
+  },
+  {
+   "name": "Silagen Bottle Pump 69291-6230-2.jpg",
+   "file": "img/486c44cd-47b3-537d-e054-00144ff8d46c/Silagen_Bottle_Pump_69291-6230-2.jpg"
+  },
+  {
+   "name": "Silagen Carton 69291-6215-1.jpg",
+   "file": "img/486c44cd-47b3-537d-e054-00144ff8d46c/Silagen_Carton_69291-6215-1.jpg"
+  },
+  {
+   "name": "Silagen Carton 69291-6230-1.jpg",
+   "file": "img/486c44cd-47b3-537d-e054-00144ff8d46c/Silagen_Carton_69291-6230-1.jpg"
+  },
+  {
+   "name": "Warnings Section.jpg",
+   "file": "img/486c44cd-47b3-537d-e054-00144ff8d46c/Warnings_Section.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "9",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "486c44cd-47b3-537d-e054-00144ff8d46c",
+  "name": "Silagen Gel",
+  "brand": "Newmedical Technology Inc.",
+  "n_inactive": 3,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

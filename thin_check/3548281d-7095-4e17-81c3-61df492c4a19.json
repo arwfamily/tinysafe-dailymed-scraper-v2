@@ -1,0 +1,26 @@
+{
+ "setid": "3548281d-7095-4e17-81c3-61df492c4a19",
+ "images": [
+  {
+   "name": "box.jpg",
+   "file": "img/3548281d-7095-4e17-81c3-61df492c4a19/box.jpg"
+  },
+  {
+   "name": "jar.jpg",
+   "file": "img/3548281d-7095-4e17-81c3-61df492c4a19/jar.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Package.Label Principle Display Panel",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3548281d-7095-4e17-81c3-61df492c4a19",
+  "name": "La Prairie Switzerland Anti-Aging Day Cream SPF 30 Cream",
+  "brand": "Juvena Produits De Beaute Gmbh",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

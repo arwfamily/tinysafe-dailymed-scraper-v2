@@ -1,0 +1,22 @@
+{
+ "setid": "51b42037-a0b2-5646-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "SPF_15_SPRAY.jpg",
+   "file": "img/51b42037-a0b2-5646-e054-00144ff8d46c/SPF_15_SPRAY.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sea & Ski SPF 15 Spray",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "51b42037-a0b2-5646-e054-00144ff8d46c",
+  "name": "SPF 15 Aerosol, Spray",
+  "brand": "Cross-Brands Manufacturing, LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

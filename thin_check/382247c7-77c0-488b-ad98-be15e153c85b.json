@@ -1,0 +1,22 @@
+{
+ "setid": "382247c7-77c0-488b-ad98-be15e153c85b",
+ "images": [
+  {
+   "name": "OPKIDS50MISTLabel.jpg",
+   "file": "img/382247c7-77c0-488b-ad98-be15e153c85b/OPKIDS50MISTLabel.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "382247c7-77c0-488b-ad98-be15e153c85b",
+  "name": "Ocean Potion Instant Dry 50 Mist Kids Sunscreen Spray",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 5,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

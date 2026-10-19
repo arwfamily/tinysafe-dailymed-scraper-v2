@@ -1,0 +1,22 @@
+{
+ "setid": "2f266c8f-7b7f-4ba5-e054-00144ff88e88",
+ "images": [
+  {
+   "name": "white girl sunscreen active ingredients and drug facts .jpg",
+   "file": "img/2f266c8f-7b7f-4ba5-e054-00144ff88e88/white_girl_sunscreen_active_ingredients_and_drug_facts_.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "White Girl Sunscreen",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2f266c8f-7b7f-4ba5-e054-00144ff88e88",
+  "name": "White Girl Sunscreen Lotion",
+  "brand": "White Girl, LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

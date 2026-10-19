@@ -1,0 +1,27 @@
+{
+ "setid": "5625e12e-3e3b-4268-a21a-c2800753f7e8",
+ "images": [
+  {
+   "name": "Homme Aqua Sun Block Cream SPF50 Plus PA 2Plus (43.5g).jpg",
+   "file": "img/5625e12e-3e3b-4268-a21a-c2800753f7e8/Homme_Aqua_Sun_Block_Cream_SPF50_Plus_PA_2Plus__43.5g_.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Inactive Ingredients: Chlorphenesin, Edetate Disodium, Methylparaben, Propylparaben",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " Ingredients: Octinoxate 7.50%, Octisalate 5.00%, Ensulizole 4.00%, Bemotrizinol 3.00%, Avobenzone 3.00%"
+  }
+ ],
+ "db": {
+  "setid": "5625e12e-3e3b-4268-a21a-c2800753f7e8",
+  "name": "Homme Aqua Sun Block SPF50 Plus Pa 2Plus Cream",
+  "brand": "Wizcoz Corporation Ltd",
+  "n_inactive": 4,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "setid": "19402859-2553-b06e-e063-6294a90ae4a0",
+ "images": [
+  {
+   "name": "19404723-ca86-2fab-e063-6394a90a6247.jpg",
+   "file": "img/19402859-2553-b06e-e063-6294a90ae4a0/19404723-ca86-2fab-e063-6394a90a6247.jpg"
+  },
+  {
+   "name": "6456e2288333536c6749799a47f0a7f.jpg",
+   "file": "img/19402859-2553-b06e-e063-6294a90ae4a0/6456e2288333536c6749799a47f0a7f.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "AQUA",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "19402859-2553-b06e-e063-6294a90ae4a0",
+  "name": "Sunscreen Moisturizer Cream",
+  "brand": "Guangzhou Yanxi Biotechnology Co., Ltd",
+  "n_inactive": 1,
+  "thin_reason": "label_prints_too_little",
+  "text_unreadable": false
+ }
+}

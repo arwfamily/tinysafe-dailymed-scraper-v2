@@ -1,0 +1,27 @@
+{
+ "setid": "ebc0e329-88fc-4786-ac64-361c9fcf6e5e",
+ "images": [
+  {
+   "name": "6g8xcarton.jpg",
+   "file": "img/ebc0e329-88fc-4786-ac64-361c9fcf6e5e/6g8xcarton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: TITANIUM DIOXIDE 12.6%, ZINC OXIDE 2.0%"
+  }
+ ],
+ "db": {
+  "setid": "ebc0e329-88fc-4786-ac64-361c9fcf6e5e",
+  "name": "Repairwear Anti -Aging Makeup SPF 15 Cream",
+  "brand": "Clinique Laboratories Inc.",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

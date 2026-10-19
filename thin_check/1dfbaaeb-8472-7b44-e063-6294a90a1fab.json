@@ -1,0 +1,26 @@
+{
+ "setid": "1dfbaaeb-8472-7b44-e063-6294a90a1fab",
+ "images": [
+  {
+   "name": "1dfbe2ed-c9c9-155c-e063-6294a90a7faf.jpg",
+   "file": "img/1dfbaaeb-8472-7b44-e063-6294a90a1fab/1dfbe2ed-c9c9-155c-e063-6294a90a7faf.jpg"
+  },
+  {
+   "name": "spf2.jpg",
+   "file": "img/1dfbaaeb-8472-7b44-e063-6294a90a1fab/spf2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Aqua",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1dfbaaeb-8472-7b44-e063-6294a90a1fab",
+  "name": "Sunscreen Lotion",
+  "brand": "Guangzhou Yanxi Biotechnology Co.. Ltd",
+  "n_inactive": 1,
+  "thin_reason": "label_prints_too_little",
+  "text_unreadable": false
+ }
+}

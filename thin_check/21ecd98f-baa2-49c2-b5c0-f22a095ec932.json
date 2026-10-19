@@ -1,0 +1,22 @@
+{
+ "setid": "21ecd98f-baa2-49c2-b5c0-f22a095ec932",
+ "images": [
+  {
+   "name": "R04852.jpg",
+   "file": "img/21ecd98f-baa2-49c2-b5c0-f22a095ec932/R04852.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "21ecd98f-baa2-49c2-b5c0-f22a095ec932",
+  "name": "Badger SPF30 Unscented Sunscreen Unscented Ointment",
+  "brand": "Autumn Harp, Inc.",
+  "n_inactive": 7,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

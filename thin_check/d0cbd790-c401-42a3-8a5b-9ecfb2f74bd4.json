@@ -1,0 +1,27 @@
+{
+ "setid": "d0cbd790-c401-42a3-8a5b-9ecfb2f74bd4",
+ "images": [
+  {
+   "name": "H286revised.jpg",
+   "file": "img/d0cbd790-c401-42a3-8a5b-9ecfb2f74bd4/H286revised.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: OCTINOXATE 7.50% [] OCTISALATE 5.00% [] AVOBENZONE 3.00%"
+  }
+ ],
+ "db": {
+  "setid": "d0cbd790-c401-42a3-8a5b-9ecfb2f74bd4",
+  "name": "Exten-10 Instant Youth Boosting Moisturizer SPF 15 Cream",
+  "brand": "Good Skin Dermacare",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

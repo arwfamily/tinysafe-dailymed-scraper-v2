@@ -1,0 +1,22 @@
+{
+ "setid": "692f2b63-1f1a-4d67-a19b-0ab55cdeaf5a",
+ "images": [
+  {
+   "name": "TotalSuncare_SunScreen_SPF50.jpg",
+   "file": "img/692f2b63-1f1a-4d67-a19b-0ab55cdeaf5a/TotalSuncare_SunScreen_SPF50.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sunscreen SPF 50",
+ "inactive_section": "Acrylates / Octylacrylamide Copolymer, Alcohol Denat, Alkyl Benzoate, Aloe Barbadensis Leaf extract, Fragrance, Mineral oil",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "692f2b63-1f1a-4d67-a19b-0ab55cdeaf5a",
+  "name": "Total Suncare Sunscreen SPF 50 Spray",
+  "brand": "Total Suncare LLC",
+  "n_inactive": 7,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

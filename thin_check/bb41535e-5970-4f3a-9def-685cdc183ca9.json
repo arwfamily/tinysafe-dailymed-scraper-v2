@@ -1,0 +1,27 @@
+{
+ "setid": "bb41535e-5970-4f3a-9def-685cdc183ca9",
+ "images": [
+  {
+   "name": "carton1.jpg",
+   "file": "img/bb41535e-5970-4f3a-9def-685cdc183ca9/carton1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " Ingredients: Purpose Titanium Dioxide 8% SunscreenOctyl Methoxycinnamate 6% SunscreenBenzophenone 3% Sunscreen Other Ingredients: Purified Water (Acqua), Capryic/Capic Triglyceride, C12-15 Alkyl Benzoate, Glycerin, Cetyl Alcohol, Stearyl Alcohol, Isopropyl Myristate, Propylene Glycol, Ceteareth-6,Ceteareth-25, Dimethocone, Glyceryl Stearate, Stearic Acid, Tocopherol Acetate9Vitamin E), Alpha Bisabolol, Triethanolamine, Diazolidinyl Urea, Methylparaben, Propylparaben, Allantoin, BHT."
+  }
+ ],
+ "db": {
+  "setid": "bb41535e-5970-4f3a-9def-685cdc183ca9",
+  "name": "Moisturizing Sunblock Lotion",
+  "brand": "Vienna Health And Beauty Corporation",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

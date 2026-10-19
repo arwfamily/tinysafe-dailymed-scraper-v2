@@ -1,0 +1,22 @@
+{
+ "setid": "63f9d542-bc13-4298-848a-d494f28f6363",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/63f9d542-bc13-4298-848a-d494f28f6363/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Acrylates/Octylacrylamide CopolymerAlcohol Denat.Caprylic/Capric TriglycerideDiethylhexyl SyringylidenemalonateFragranceGlycerin",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "63f9d542-bc13-4298-848a-d494f28f6363",
+  "name": "Sunscreen SPF 70 Daylodic Spray",
+  "brand": "Rite Aid",
+  "n_inactive": 4,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

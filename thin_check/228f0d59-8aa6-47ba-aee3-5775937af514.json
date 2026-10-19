@@ -1,0 +1,27 @@
+{
+ "setid": "228f0d59-8aa6-47ba-aee3-5775937af514",
+ "images": [
+  {
+   "name": "69N3carton_Page_1_Page_1.jpg",
+   "file": "img/228f0d59-8aa6-47ba-aee3-5775937af514/69N3carton_Page_1_Page_1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: octinoxate 7.50% [] octisalate 5.00% [] avobenzone 2.00%"
+  }
+ ],
+ "db": {
+  "setid": "228f0d59-8aa6-47ba-aee3-5775937af514",
+  "name": "Clinique Skin Supplies For Men Age Defense Hydrator SPF 15 Lotion",
+  "brand": "Clinique Laboratories Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

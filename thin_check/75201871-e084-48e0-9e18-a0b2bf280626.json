@@ -1,0 +1,27 @@
+{
+ "setid": "75201871-e084-48e0-9e18-a0b2bf280626",
+ "images": [
+  {
+   "name": "CL 6F15_Page_1.jpg",
+   "file": "img/75201871-e084-48e0-9e18-a0b2bf280626/CL_6F15_Page_1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "inactive ingredients: water (aqua purificata) purified [] butylene glycol [] c12-15 alkyl benzoate [] dimethicone [] jojoba esters [] caprylic/capric triglyceride [] cetearyl alcohol [] silica [] micrococcus lysate [] gentiana lutea (gentian) root extract [] coffea robusta seed extract [] helianthus annuus (sunflower) seedcake [] cucumis sativus (cucumber) fruit extract [] sea whip extract [] cholesterol [] astrocaryum murumuru butter [] hordeum vulgare (barley) extract [] linoleic acid [] butyrospermum parkii (shea butter) [] caffeine [] salvia sclarea (clary) extract [] sodium rna [] sodium hyaluronate [] phytosphingosine [] tocopheryl acetate [] sodium dna [] cetearyl glucoside [] zeolite [] stearic acid [] chamomilla recutita (matricaria) [] sucrose [] peg-100 stearate [] lecithin [] trehalose [] hydrogenated lecithin [] hexylene glycol [] propylene glycol dicaprate [] tricaprylin [] polyhydroxystearic acid [] polyethylene [] methyl gluceth-20 [] ethylhexyl stearate [] carbomer [] behenyl alcohol [] alumina [] ethylhexyl palmitate [] caprylyl glycol [] cetyl alcohol [] triethoxycaprylylsilane [] xanthan gum [] aluminum stearate [] disodium edta [] bht [] phenoxyethanol [] mica [] titanium dioxide (ci 77891) [] iron oxides (ci 77491, ci 77492, ci 77499)",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " ingredients: octinoxate 7.50% [] octisalate 5.00% [] zinc oxide 4.60% [] titanium dioxide 1.70%"
+  }
+ ],
+ "db": {
+  "setid": "75201871-e084-48e0-9e18-a0b2bf280626",
+  "name": "Clinique Cx Protective Base SPF 40 Cream",
+  "brand": "Clinique Laboratories Inc",
+  "n_inactive": 2,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

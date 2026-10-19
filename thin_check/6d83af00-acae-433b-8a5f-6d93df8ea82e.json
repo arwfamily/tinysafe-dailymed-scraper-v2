@@ -1,0 +1,22 @@
+{
+ "setid": "6d83af00-acae-433b-8a5f-6d93df8ea82e",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/6d83af00-acae-433b-8a5f-6d93df8ea82e/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "titanium dioxide, water, etc",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6d83af00-acae-433b-8a5f-6d93df8ea82e",
+  "name": "Beaute De Cell Lifting-Up Multi Cream SPF 30 Pa Cream",
+  "brand": "Dracell Cosmetics Co., Ltd",
+  "n_inactive": 2,
+  "thin_reason": "label_prints_too_little",
+  "text_unreadable": false
+ }
+}

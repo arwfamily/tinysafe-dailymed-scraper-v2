@@ -1,0 +1,27 @@
+{
+ "setid": "fd8bfd97-2628-4c4e-82fb-a88c2b22f6ff",
+ "images": [
+  {
+   "name": "6LH0 CARTON.jpg",
+   "file": "img/fd8bfd97-2628-4c4e-82fb-a88c2b22f6ff/6LH0_CARTON.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " ingredients: octinoxate 7.50% [] octisalate 4.00%"
+  }
+ ],
+ "db": {
+  "setid": "fd8bfd97-2628-4c4e-82fb-a88c2b22f6ff",
+  "name": "Long Last Glosswear SPF 15 Liquid",
+  "brand": "Clinique Laboratories Inc",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}

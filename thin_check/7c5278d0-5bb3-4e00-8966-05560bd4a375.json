@@ -1,0 +1,31 @@
+{
+ "setid": "7c5278d0-5bb3-4e00-8966-05560bd4a375",
+ "images": [
+  {
+   "name": "PDP.jpg",
+   "file": "img/7c5278d0-5bb3-4e00-8966-05560bd4a375/PDP.jpg"
+  },
+  {
+   "name": "label.jpg",
+   "file": "img/7c5278d0-5bb3-4e00-8966-05560bd4a375/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "SSS BG+ Expedition SPF 30 Pump Spray",
+ "inactive_section": "OTHER INGREDIENTS: SD Alcohol 40-B, Water, Hexylene glycol, Polyurethane-1, Fragrance, Aloe barbadensis extract, Tocopheryl acetate (Vitamin E)",
+ "ingredient_passages": [
+  {
+   "section": "55106-9",
+   "text": " INGREDIENTS: Octocrylene 10%, Octinoxate 7.5%, Oxybenzone 6%, Octisalate 5%"
+  }
+ ],
+ "db": {
+  "setid": "7c5278d0-5bb3-4e00-8966-05560bd4a375",
+  "name": "Skin So Soft Bug Guard Plus Ir3535 Expedition Insect Repellent Sunscreen Spray",
+  "brand": "New Avon LLC",
+  "n_inactive": 7,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

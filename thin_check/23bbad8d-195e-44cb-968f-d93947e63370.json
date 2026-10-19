@@ -1,0 +1,22 @@
+{
+ "setid": "23bbad8d-195e-44cb-968f-d93947e63370",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/23bbad8d-195e-44cb-968f-d93947e63370/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients Acrylates/Octylacrylamide Copolymer, Alcohol Denat., Fragrance, Glycerin",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "23bbad8d-195e-44cb-968f-d93947e63370",
+  "name": "Sport SPF 15 Daylogic Spray",
+  "brand": "Rite Aid",
+  "n_inactive": 5,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

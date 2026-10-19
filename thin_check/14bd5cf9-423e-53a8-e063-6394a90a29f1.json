@@ -1,0 +1,22 @@
+{
+ "setid": "14bd5cf9-423e-53a8-e063-6394a90a29f1",
+ "images": [
+  {
+   "name": "Rubber Ducky_50.jpg",
+   "file": "img/14bd5cf9-423e-53a8-e063-6394a90a29f1/Rubber_Ducky_50.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "SPF 50 Sunscreen CS",
+ "inactive_section": "Alcohol Denat., Acrylates/Octylacrylamide Copolymer, Tocopherol, Glycerin, Caprylic/Capric Triglyceride, Diethylhexyl Syringylidenemalonate.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "14bd5cf9-423e-53a8-e063-6394a90a29f1",
+  "name": "Rubber Ducky SPF 50 Sunscreen Spray",
+  "brand": "Carefree Skincare Ventures, LLC",
+  "n_inactive": 7,
+  "thin_reason": "short_list",
+  "text_unreadable": false
+ }
+}

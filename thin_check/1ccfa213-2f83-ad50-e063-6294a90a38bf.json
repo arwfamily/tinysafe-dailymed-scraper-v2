@@ -1,0 +1,58 @@
+{
+ "setid": "1ccfa213-2f83-ad50-e063-6294a90a38bf",
+ "images": [
+  {
+   "name": "Active ingredients img.jpg",
+   "file": "img/1ccfa213-2f83-ad50-e063-6294a90a38bf/Active_ingredients_img.jpg"
+  },
+  {
+   "name": "General Precautions image.jpg",
+   "file": "img/1ccfa213-2f83-ad50-e063-6294a90a38bf/General_Precautions_image.jpg"
+  },
+  {
+   "name": "Uses purpose img.jpg",
+   "file": "img/1ccfa213-2f83-ad50-e063-6294a90a38bf/Uses_purpose_img.jpg"
+  },
+  {
+   "name": "dosage.jpg",
+   "file": "img/1ccfa213-2f83-ad50-e063-6294a90a38bf/dosage.jpg"
+  },
+  {
+   "name": "inactive ingredients img.jpg",
+   "file": "img/1ccfa213-2f83-ad50-e063-6294a90a38bf/inactive_ingredients_img.jpg"
+  },
+  {
+   "name": "indication and usage.jpg",
+   "file": "img/1ccfa213-2f83-ad50-e063-6294a90a38bf/indication_and_usage.jpg"
+  },
+  {
+   "name": "out of reach children.jpg",
+   "file": "img/1ccfa213-2f83-ad50-e063-6294a90a38bf/out_of_reach_children.jpg"
+  },
+  {
+   "name": "warning img.jpg",
+   "file": "img/1ccfa213-2f83-ad50-e063-6294a90a38bf/warning_img.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/1ccfa213-2f83-ad50-e063-6294a90a38bf/warning.jpg"
+  },
+  {
+   "name": "waterful display mainn.jpg",
+   "file": "img/1ccfa213-2f83-ad50-e063-6294a90a38bf/waterful_display_mainn.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "d'Alba Vegan Essence Sunscreen",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1ccfa213-2f83-ad50-e063-6294a90a38bf",
+  "name": "Dalba Vegan Essence Sunscreen Cream",
+  "brand": "Admtmax LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list",
+  "text_unreadable": false
+ }
+}
