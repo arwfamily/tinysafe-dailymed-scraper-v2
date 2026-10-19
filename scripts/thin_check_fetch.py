@@ -31,6 +31,7 @@ OUT = os.path.join(ROOT, "thin_check")
 UA = {"User-Agent": "TinySafe-research/1.0 (contact: support@tinysafe.app)"}
 NS = {"v3": "urn:hl7-org:v3"}
 API = "https://dailymed.nlm.nih.gov/dailymed/services/v2"
+NO_IMAGES = False
 PASSAGE = re.compile(r"((?:inactive|other|non-?medicinal)?\s*ingredients?\s*[:：][^\n]{20,3000})", re.I)
 
 
@@ -76,10 +77,15 @@ def one(setid):
             if s["code"] == "51727-6":
                 continue
             for m in PASSAGE.finditer(s["text"]):
+                before = s["text"][max(0, m.start() - 10):m.start()].lower()
+                if re.search(r"(?<!in)active\s*$", before):      # "Active ingredients:" is not the inactive list
+                    continue
                 passages.append({"section": s["title"] or s["code"], "text": m.group(1)})
         rec["ingredient_passages"] = passages[:6]
     except Exception as e:  # noqa: BLE001
         rec["error"] = f"spl: {e}"[:300]
+    if NO_IMAGES:
+        return rec
     try:
         media = json.loads(get(f"{API}/spls/{setid}/media.json"))
         from PIL import Image
@@ -102,18 +108,31 @@ def one(setid):
 
 
 def main():
-    targets = json.load(open(os.path.join(ROOT, "data/views/thin_check_targets.json"), encoding="utf-8"))
+    import argparse
+    from concurrent.futures import ThreadPoolExecutor
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--targets", default="data/views/thin_check_targets.json")
+    ap.add_argument("--no-images", action="store_true")
+    ap.add_argument("--threads", type=int, default=1)
+    a = ap.parse_args()
+    global NO_IMAGES
+    NO_IMAGES = a.no_images
+    targets = json.load(open(os.path.join(ROOT, a.targets), encoding="utf-8"))
     os.makedirs(OUT, exist_ok=True)
-    done = 0
-    for t in targets:
+
+    def work(t):
         rec = one(t["setid"])
         rec["db"] = t
         with open(os.path.join(OUT, t["setid"] + ".json"), "w", encoding="utf-8") as f:
             json.dump(rec, f, ensure_ascii=False, indent=1)
-        done += 1
-        if done % 25 == 0:
-            print(f"{done}/{len(targets)}", flush=True)
-        time.sleep(0.3)
+        time.sleep(0.2)
+        return 1
+    done = 0
+    with ThreadPoolExecutor(max_workers=a.threads) as ex:
+        for _ in ex.map(work, targets):
+            done += 1
+            if done % 200 == 0:
+                print(f"{done}/{len(targets)}", flush=True)
     print(f"done {done}")
 
 

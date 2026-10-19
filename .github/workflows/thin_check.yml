@@ -1,19 +1,33 @@
 name: Thin-label check (fetch SPL text + label images)
 on:
   workflow_dispatch:
+    inputs:
+      targets:
+        description: 'targets json'
+        default: 'data/views/thin_check_targets.json'
+      no_images:
+        description: 'skip images (true/false)'
+        default: 'false'
+      branch:
+        description: 'output branch'
+        default: 'thin-check'
+      threads:
+        default: '1'
 permissions:
   contents: write
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       - run: pip install pillow
       - name: Fetch
-        run: python scripts/thin_check_fetch.py
+        run: |
+          FLAG=""; [ "${{ inputs.no_images }}" = "true" ] && FLAG="--no-images"
+          python scripts/thin_check_fetch.py --targets "${{ inputs.targets }}" --threads "${{ inputs.threads }}" $FLAG
       - name: Push to the thin-check branch
         run: |
           git config user.name  "github-actions[bot]"
@@ -25,4 +39,4 @@ jobs:
           cp -r /tmp/thin_check .
           git add thin_check
           git commit -qm "thin check $(date -u +%F)"
-          git push -f origin thin-check-tmp:thin-check
+          git push -f origin thin-check-tmp:${{ inputs.branch }}
