@@ -139,6 +139,8 @@ _LEAD = re.compile(r"^\s*(?:\u200b)?(?:section\s+)?(?:inactive|inctive)\s+ingred
 
 def _clean(x):
     x = re.sub(r"<[^>]*>", " ", x.replace("\u200b", ""))          # <iln...> label codes
+    if re.fullmatch(r"\s*(?:\S{1,2}\s+){4,}\S{1,2}\s*", x):              # "Tr i e t h o x y" letter-spaced text
+        x = re.sub(r"\s+", "", x)
     x = re.sub(r"^\s*(?:=|\*+|\(s\)|\u2020|\u2021)\s*", "", x)          # footnote markers
     x = _LEAD.sub("", x)
     x = re.sub(r"\s*\[?\+/-\]?\s*$", "", x).strip().strip("[]").strip().rstrip(".:").strip()
@@ -152,6 +154,9 @@ def resplit(items):
     CONTAIN (+/-): Mica" -> "Phenoxyethanol", "Mica"); stray headings are dropped."""
     out = []
     for x in items or []:
+        # "[+/-: CI 77891, CI 77491]" / "+/- titanium dioxide • iron oxides": open the colorant list
+        x = re.sub(r"\[\s*\+/-\s*:?\s*", ", ", x).replace("]", " ") if "+/-" in x else x
+        x = re.sub(r"^\s*\+/-\s*:?\s*", "", x)
         for part in _MAY.split(x):
             if not part.strip():
                 continue
@@ -169,6 +174,8 @@ def resplit(items):
 # active among the inactives.
 _ACTIVE_SYN = {
     "OCTINOXATE": {"ETHYLHEXYLMETHOXYCINNAMATE", "OCTYLMETHOXYCINNAMATE"},
+    # labels that declare octinoxate under a misspelling
+    "ETHYLMETHOXYCINNAMATE": {"ETHYLHEXYLMETHOXYCINNAMATE", "OCTINOXATE"},
     "OCTISALATE": {"ETHYLHEXYLSALICYLATE", "OCTYLSALICYLATE"},
     "OXYBENZONE": {"BENZOPHENONE3"},
     "AVOBENZONE": {"BUTYLMETHOXYDIBENZOYLMETHANE"},
@@ -246,6 +253,8 @@ def union_row(r):
         if not any(key(name) == key(o) for o in out):
             out.append(name)
     struct_only = [x for x in struct if not any(same(x, t) for t in text)]
+    if text:   # a filed "ingredient" that is a whole list run together is not shown
+        struct_only = [x for x in struct_only if len(x.split()) <= 12]
     for name in struct_only:                # filed but not found on the printed list
         if not any(same(name, o) for o in out):
             out.append(name)

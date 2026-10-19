@@ -35,10 +35,13 @@ import sunnytime_rules as R  # noqa: E402
 from inactive_union import key  # noqa: E402
 
 UNION = os.path.join(ROOT, "data/views/inactive_union.jsonl")
+# Labels re-checked on DailyMed (SPL text and label images read twice independently)
+THIN_CHECK = os.path.join(ROOT, "data/corrections/thin_check_2026-10-19.jsonl")
 PRODUCT_LEVEL = {"spray_powder", "water_resistant", "talc_inhalable", "no_preservative_water_base"}
 THIN_MAX = 7
 EVIDENCE_CAP = 4                       # v3.1 kept at most 4 names per flag
 RULES_VERSION = "v3.2 · 2026-10-19"
+THIN = {}
 _EXTRA_WORDS = re.compile(r"\b(EXTRACT|FILTRATE|FERMENT FILTRATE|POWDER)\b")
 
 
@@ -178,6 +181,13 @@ def build(db, union):
 
         s1.append({"id": p["id"], "v3": flags_for(old_names)})
         u = union.get(p["id"])
+        chk = THIN.get(p["id"])
+        if u and chk and chk.get("inactives") and chk["status"] in ("confirmed", "partial"):
+            from inactive_union import same as _same
+            printed = list(chk["inactives"])
+            extra = [x for x in u["struct"] if not any(_same(x, t) for t in printed) and len(x.split()) <= 12]
+            u = dict(u, i_union=printed + extra, i_text_n=len(printed),
+                     i_src="image" if "image" in chk["source"] else "both")
         from inactive_union import is_active
         ak = _akeys(p, u)
         new_names = [n for n in (u["i_union"] if u else old_names) if not is_active(n, ak)]
@@ -199,9 +209,16 @@ def build(db, union):
         q["thin"] = n_i <= THIN_MAX
         if q["thin"]:
             q["thin_reason"] = thin_reason(u) if u else "no_printed_list"
+            st = (chk or {}).get("status")
+            if st == "no_list_on_label_images":
+                q["thin_reason"] = "no_printed_list"          # checked: no list in the text or the images
+            elif st == "image_unreadable":
+                q["thin_reason"] = "label_image_unreadable"
             if q["thin_reason"] != "short_list":
                 # too little on the label to say a preservative is missing
                 q["v3"] = [f for f in q["v3"] if f[0] != "no_preservative_water_base"]
+        if chk:
+            q["label_check"] = chk["status"]
         if u and u.get("text_unreadable"):
             q["text_unreadable"] = True
         out.append(q)
@@ -212,7 +229,8 @@ def build(db, union):
     new["inactives_as_of"] = "2026-10-19"
     new["inactives_note"] = ("Inactive ingredients = the label's structured SPL table plus the printed Drug Facts "
                              "'Inactive ingredients' list (union). thin = 7 or fewer inactives; thin_reason: "
-                             "no_printed_list | label_prints_too_little | short_list.")
+                             "no_printed_list | label_prints_too_little | label_image_unreadable | short_list. "
+                             "label_check: result of reading the label on DailyMed (text and images, twice).")
     return new, s1, eng
 
 
@@ -298,6 +316,12 @@ def main():
     for line in open(UNION, encoding="utf-8"):
         r = json.loads(line)
         union[r["setid"]] = r
+    global THIN
+    THIN = {}
+    if os.path.exists(THIN_CHECK):
+        for line in open(THIN_CHECK, encoding="utf-8"):
+            r = json.loads(line)
+            THIN[r["setid"]] = r
     new, s1, eng = build(old, union)
     with open(new_path, "w", encoding="utf-8") as f:
         json.dump(new, f, ensure_ascii=False, separators=(",", ":"))
