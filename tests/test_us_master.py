@@ -29,10 +29,13 @@ def test_filter_type():
 def test_baby_kids():
     yes = ["BABY SUNSCREEN SPF 50", "Babyganics Mineral", "KIDS SPORT SPF 50", "Children's Sunscreen",
            "Thinkbaby", "Little Ones SPF 30", "Bebe Soleil"]
-    no = ["BABYLON BEACH? no", "Sport SPF 50", "Kidney bean oil sunscreen"]
+    yes += ["Thinkkids SPF 50", "Kidstick", "Safe4Kidz"]
     for s in yes:
         assert M.BABY_KIDS.search(s), s
-    assert not M.BABY_KIDS.search(no[1]) and not M.BABY_KIDS.search(no[2])
+    for s in ["Sport SPF 50", "Kidney bean oil sunscreen"]:
+        assert not M.BABY_KIDS.search(s), s
+    assert M.baby_kids({"product_name": "Banana Boat Lotion", "label_flags": {"front_panel_baby_words": ["KIDS"]}}) == (True, "front_panel")
+    assert M.baby_kids({"product_name": "Banana Boat Lotion", "label_flags": {"front_panel_baby_words": ["PEDIATRIC"]}}) == (False, None)
 
 
 def test_spray():

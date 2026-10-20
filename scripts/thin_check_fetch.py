@@ -36,13 +36,14 @@ PASSAGE = re.compile(r"((?:inactive|other|non-?medicinal)?\s*ingredients?\s*[:ï¼
 
 
 def get(url):
-    for i in range(4):
+    for i in range(6):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
                 return r.read()
         except Exception as e:  # noqa: BLE001
             last = e
-            time.sleep(3 * (i + 1))
+            # DailyMed answers 429 when pushed: back off much longer than for a network blip
+            time.sleep((20 if "429" in str(e) else 3) * (i + 1))
     raise last
 
 

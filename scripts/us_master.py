@@ -20,8 +20,9 @@ Decisions this encodes (Angela, 2026-10-19):
                  filter_type says which: mineral_only | hybrid_mineral_primary |
                  hybrid_chemical_primary | hybrid_equal | hybrid_pct_unknown (main filter = larger
                  summed w/w % on the Drug Facts panel) | chemical_only | no_uv_filter
-  * baby_kids    the product name says baby / infant / toddler / kids / children / junior ...;
-                 any filter type
+  * baby_kids    the product name says baby / infant / toddler / kids / children / junior ...
+                 (glued brand words too: Thinkkids, Kidstick), or the label's front panel does
+                 (the DailyMed name is often cut: "Banana Boat Lotion" for Banana Boat Kids); any filter type
   * recalls      matched on setid or NDC = "matched"; on brand + product words only = "needs_review"
 
 Usage: python3 scripts/us_master.py [--run-date YYYY-MM-DD]
@@ -56,8 +57,21 @@ EVIDENCE_CAP = 4
 MINERAL = ("ZINC OXIDE", "TITANIUM DIOXIDE")
 EXCLUDED_REASON = {"makeup": "spf_makeup", "lip_balm": "spf_lip_balm", "diaper_cream": "diaper_cream",
                    "calamine": "calamine", "other": "not_a_sunscreen"}
-BABY_KIDS = re.compile(r"(BAB(?:Y|IES)|\bINFANTS?\b|NEWBORN|TODDLER|\bB[EÉ]B[EÉ]S?\b|\bKIDS?\b|\bKID'?S\b|"
-                       r"\bCHILD(?:REN)?(?:'S)?\b|\bJUNIOR\b|LITTLE ONES|\bNI[ÑN]OS\b|\bENFANTS?\b)", re.I)
+# glued brand words count too: Thinkkids, Kawakids, Kidstick, Safe4Kidz, Thinkbaby
+BABY_KIDS = re.compile(r"(BAB(?:Y|IES)|\bINFANTS?\b|NEWBORN|TODDLER|\bB[EÉ]B[EÉ]S?\b|KID(?!NEY)|"
+                       r"\bCHILD(?:REN)?(?:'S)?\b|\bJUNIOR\b|LITTLE ONES|\bNI[ÑN]OS\b|\bENFANTS?\b|\bTOTS?\b)", re.I)
+# words the collector read on the label's front panel; "pediatrician tested" alone is not a kids product
+FRONT_PANEL_BABY = {"BABY", "BABIES", "INFANT", "INFANTS", "NEWBORN", "TODDLER", "TODDLERS", "KID", "KIDS", "KIDZ",
+                    "CHILD", "CHILDREN", "JUNIOR", "TOTS"}
+
+
+def baby_kids(c):
+    if BABY_KIDS.search(" ".join([c.get("product_name") or "", c.get("title") or ""])):
+        return True, "name"
+    fp = {w.upper() for w in ((c.get("label_flags") or {}).get("front_panel_baby_words") or [])}
+    if fp & FRONT_PANEL_BABY:
+        return True, "front_panel"
+    return False, None
 SPRAY = re.compile(r"SPRAY|AEROSOL|\bPOWDER\b|\bMIST\b", re.I)     # "Spray150Ml" counts; the brand "Mistine" does not
 WATER_RES = re.compile(r"\b(WATER|SWEAT)[ -]?RESISTANT\b", re.I)
 _PCT_NAME = re.compile(r"\s*\((?:[^()]*\b(?:OXIDE|DIOXIDE|AVOBENZONE|HOMOSALATE|OCTISALATE|OCTOCRYLENE|OCTINOXATE|"
@@ -328,7 +342,7 @@ def build(run_date):
             "actives": acts, "mineral_type": mineral_type(acts), "filter_type": ft,
             "mineral_pct": mp, "chemical_pct": cp,
             "is_mineral": ft not in ("chemical_only", "no_uv_filter"),
-            "is_baby_kids": bool(BABY_KIDS.search(" ".join([c.get("product_name") or "", c.get("title") or ""]))),
+            "is_baby_kids": baby_kids(c)[0], "baby_kids_basis": baby_kids(c)[1],
             "inactives": shown, "inactive_source": (u2 or {}).get("i_src", "structured"),
             "inactives_filed_n": (u2 or {}).get("i_struct_n", 0), "inactives_printed_n": (u2 or {}).get("i_text_n", 0),
             "label_check": (chk or {}).get("status"), "label_check_date": (chk or {}).get("checked"),

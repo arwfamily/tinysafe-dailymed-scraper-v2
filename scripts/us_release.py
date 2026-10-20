@@ -38,8 +38,9 @@ DEFINITIONS = {
               "calamine are out of scope). Labels that left DailyMed stay, with status 'discontinued'.",
     "us_mineral": "Labels whose declared actives include zinc oxide or titanium dioxide, adult and baby, "
                   "hybrids included. filter_type gives the main filter by summed w/w % on the Drug Facts panel.",
-    "us_baby_kids": "Labels whose product name says baby, babies, infant, newborn, toddler, bebe, kids, children, "
-                    "junior or little ones. Any filter type.",
+    "us_baby_kids": "Labels whose product name (or, where DailyMed cuts the name, the label's front panel) says "
+                    "baby, babies, infant, newborn, toddler, bebe, kids, children, junior or little ones. Any filter "
+                    "type. baby_kids_basis says which.",
 }
 
 

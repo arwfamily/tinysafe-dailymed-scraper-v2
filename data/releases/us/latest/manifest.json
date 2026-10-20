@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-19",
  "git_tag": "us-data-2026-10-19",
- "released": "2026-10-20T02:18:41+00:00",
+ "released": "2026-10-20T02:51:49+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.2 · 2026-10-19",
  "source": {
@@ -13,7 +13,7 @@
  "definitions": {
   "us_all": "Every label FDA DailyMed lists as a sunscreen drug (SPF makeup, SPF lip balm, diaper cream and calamine are out of scope). Labels that left DailyMed stay, with status 'discontinued'.",
   "us_mineral": "Labels whose declared actives include zinc oxide or titanium dioxide, adult and baby, hybrids included. filter_type gives the main filter by summed w/w % on the Drug Facts panel.",
-  "us_baby_kids": "Labels whose product name says baby, babies, infant, newborn, toddler, bebe, kids, children, junior or little ones. Any filter type."
+  "us_baby_kids": "Labels whose product name (or, where DailyMed cuts the name, the label's front panel) says baby, babies, infant, newborn, toddler, bebe, kids, children, junior or little ones. Any filter type. baby_kids_basis says which."
  },
  "counts": {
   "us_all": {
@@ -31,18 +31,17 @@
     "hybrid_equal": 36
    },
    "label_check": {
-    "not_checked_yet": 4030,
-    "confirmed": 808,
-    "text_confirms_current": 5213,
-    "no_list_on_label_images": 70,
-    "image_unreadable": 8,
-    "label_image_mismatch": 7,
+    "text_confirms_current": 8103,
+    "confirmed": 1769,
+    "no_list_on_label_images": 209,
+    "image_unreadable": 31,
+    "partial": 10,
+    "label_image_mismatch": 17,
     "non_english_label": 4,
-    "partial": 4,
-    "needs_review": 1
+    "needs_review": 2
    },
-   "label_verified_share": 0.5939,
-   "inactives_7_or_fewer": 370,
+   "label_verified_share": 0.9741,
+   "inactives_7_or_fewer": 314,
    "recalls": {
     "labels_matched": 5,
     "labels_needs_review": 34
@@ -62,43 +61,43 @@
     "hybrid_equal": 36
    },
    "label_check": {
-    "not_checked_yet": 2929,
-    "confirmed": 479,
-    "text_confirms_current": 2138,
-    "no_list_on_label_images": 67,
-    "image_unreadable": 5,
-    "label_image_mismatch": 6,
+    "text_confirms_current": 4119,
+    "confirmed": 1257,
+    "no_list_on_label_images": 201,
+    "image_unreadable": 27,
+    "partial": 7,
+    "label_image_mismatch": 13,
     "non_english_label": 4,
-    "partial": 1
+    "needs_review": 1
    },
-   "label_verified_share": 0.4651,
-   "inactives_7_or_fewer": 173,
+   "label_verified_share": 0.9563,
+   "inactives_7_or_fewer": 144,
    "recalls": {
     "labels_matched": 5,
     "labels_needs_review": 21
    }
   },
   "us_baby_kids": {
-   "labels": 446,
+   "labels": 544,
    "status": {
-    "active": 446
+    "active": 544
    },
    "filter_type": {
-    "chemical_only": 200,
-    "mineral_only": 217,
-    "hybrid_chemical_primary": 15,
+    "chemical_only": 239,
+    "mineral_only": 272,
+    "hybrid_chemical_primary": 19,
     "hybrid_equal": 1,
     "hybrid_mineral_primary": 13
    },
    "label_check": {
-    "text_confirms_current": 320,
-    "not_checked_yet": 70,
-    "confirmed": 49,
-    "no_list_on_label_images": 6,
-    "label_image_mismatch": 1
+    "text_confirms_current": 456,
+    "confirmed": 77,
+    "no_list_on_label_images": 8,
+    "label_image_mismatch": 2,
+    "partial": 1
    },
-   "label_verified_share": 0.8274,
-   "inactives_7_or_fewer": 14,
+   "label_verified_share": 0.9816,
+   "inactives_7_or_fewer": 18,
    "recalls": {
     "labels_matched": 0,
     "labels_needs_review": 11
@@ -115,15 +114,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 10164,
-   "sha256": "af1e36d6fc513062f69725330f01a73f828310a1c36decbf3373a9940f7062f4"
+   "sha256": "a3b8423a566d9e0c704cd73f1d11976942210b6a873c432e1ebb8bf565f4f642"
   },
   "us_mineral.jsonl": {
    "rows": 5637,
-   "sha256": "3782dbf2b4e3d40c5cc88a51993e307f56779ed4cecf73352f37296a05d9c655"
+   "sha256": "fa25ed72c5c0cbec2afd8d2dbcbe735d8f51cf04aed72ad41b2252d3bbd6c5cb"
   },
   "us_baby_kids.jsonl": {
-   "rows": 446,
-   "sha256": "03f5d6989d2b9204def08b55278e924f315f08c314d76c0e580631c872e4df5a"
+   "rows": 544,
+   "sha256": "0e75f1ccaaf91934754c2eb07f3e9f3d1253e1c7ab6ed84fe43d07d3231751c8"
   }
  }
 }
