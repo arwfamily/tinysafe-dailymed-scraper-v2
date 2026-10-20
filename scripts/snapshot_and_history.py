@@ -35,6 +35,54 @@ RAW_DIR = "data/raw/dailymed"
 CANONICAL = "data/canonical/us_sunscreens.jsonl"
 HISTORY = "data/history/us_formulation_history.jsonl"
 STATE = "data/history/_state.json"
+FETCH_LOG = "data/history/fetch_degraded.jsonl"
+# A label whose SPL could not be read keeps its last fully read record for at
+# most this long; after that the new (fallback) data is taken as the truth.
+CARRY_MAX_DAYS = 35
+
+
+def degraded(rec, prev):
+    """True when this run read the label worse than the last good run did:
+    the SPL document was not fetched, or the actives / UNII-coded inactive
+    table came back missing while the previous record had them. That is a
+    fetch failure, not a reformulation."""
+    if not prev:
+        return False
+    if rec.get("spl_fetched") is False:
+        return True
+    if prev.get("inactive_source") == "spl_xml" and rec.get("inactive_source") != "spl_xml":
+        return True
+    if prev.get("active_ingredients") and not rec.get("active_ingredients"):
+        return True
+    return False
+
+
+def carry_forward(prods, old, run_date):
+    """Replace degraded reads with the last good record. Returns (prods, log)."""
+    out, log = [], []
+    for rec in prods:
+        prev = old.get(rec.get("setid"))
+        if degraded(rec, prev):
+            since = prev.get("carried_since") or run_date
+            age = (datetime.fromisoformat(run_date) - datetime.fromisoformat(since)).days
+            entry = {"observed_on": run_date, "setid": rec["setid"], "product_name": rec.get("product_name"),
+                     "this_run": {"spl_fetched": rec.get("spl_fetched"), "inactive_source": rec.get("inactive_source"),
+                                  "n_actives": len(rec.get("active_ingredients") or [])},
+                     "kept_record_from": prev.get("last_seen")}
+            if age <= CARRY_MAX_DAYS:
+                keep = dict(prev)
+                keep.update({"fetch_status": "carried_forward", "carried_since": since,
+                             "carried_from": prev.get("carried_from") or prev.get("last_seen")})
+                out.append(keep)
+                log.append(dict(entry, action="kept_last_good"))
+                continue
+            log.append(dict(entry, action=f"accepted_new_after_{age}_days"))
+        rec = dict(rec)
+        rec.pop("carried_since", None)
+        rec.pop("carried_from", None)
+        rec["fetch_status"] = "read" if rec.get("spl_fetched", True) else "spl_not_fetched"
+        out.append(rec)
+    return out, log
 
 # Fields that describe the FORMULA. Changes here = reformulated.
 # Fields outside this set = metadata.
@@ -259,6 +307,18 @@ def main():
         print("\n[partial] limited run — canonical and history untouched.", flush=True)
         return 0
 
+    # ---- 1b. a label read badly this run keeps its last good record ------
+    old = {}
+    if os.path.exists(CANONICAL):
+        for line in open(CANONICAL, encoding="utf-8"):
+            if line.strip():
+                r = json.loads(line)
+                old[r["setid"]] = r
+    prods, fetch_log = carry_forward(prods, old, args.run_date)
+    kept = sum(1 for e in fetch_log if e["action"] == "kept_last_good")
+    print(f"[fetch] {kept} labels not fully read this run kept their last good record"
+          f" ({len(fetch_log) - kept} accepted as new after {CARRY_MAX_DAYS} days)", flush=True)
+
     # ---- 2. compare against last known state ---------------------------
     os.makedirs(os.path.dirname(CANONICAL), exist_ok=True)
     os.makedirs(os.path.dirname(HISTORY), exist_ok=True)
@@ -372,6 +432,11 @@ def main():
     with open(HISTORY, "a", encoding="utf-8") as f:
         for e in events:
             f.write(json.dumps(e, ensure_ascii=False) + "\n")
+
+    if fetch_log:
+        with open(FETCH_LOG, "a", encoding="utf-8") as f:
+            for e in fetch_log:
+                f.write(json.dumps(e, ensure_ascii=False) + "\n")
 
     with open(CANONICAL, "w", encoding="utf-8") as f:
         for rec in sorted(prods, key=lambda r: r.get("setid") or ""):

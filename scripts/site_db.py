@@ -63,6 +63,25 @@ def build(release_dir):
             "names": names, "p": out}
 
 
+def explained(release_dir):
+    """Reviewed reasons a label may leave the site or change its list this week
+    (see quality_gate.check)."""
+    from us_master import MASTER
+    out = {}
+    for line in open(MASTER, encoding="utf-8"):
+        r = json.loads(line)
+        if not r.get("in_scope") and r.get("excluded_reason") and (r.get("scope_override") or r["excluded_reason"] in (
+                "spf_makeup", "spf_lip_balm", "diaper_cream", "not_a_sunscreen", "zinc_only_no_sun_claim")):
+            out[r["setid"]] = "scope:" + r["excluded_reason"]
+        elif r.get("actives_corrected"):
+            out[r["setid"]] = "actives_corrected"
+        elif r.get("fetch_status") == "carried_forward":
+            out[r["setid"]] = "last_good_read_kept"
+        elif r.get("inactives_added_from_label_text"):
+            out[r["setid"]] = "label_text_addition"
+    return out
+
+
 def headline(db):
     act = [p for p in db["p"] if p.get("st") == "active"]
     has = lambda p, f: any(x[0] == f for x in p["v3"])  # noqa: E731
@@ -105,7 +124,7 @@ def main():
     h = headline(db)
     old = json.load(open(old_p, encoding="utf-8")) if old_p and os.path.exists(old_p) else None
     import quality_gate as G
-    problems, report = G.check(old, db)
+    problems, report = G.check(old, db, explained(a.release))
     print(json.dumps({"headline": h, "gate": report}, ensure_ascii=False, indent=1))
     if problems:
         print("QUALITY GATE FAILED:\n  " + "\n  ".join(problems))

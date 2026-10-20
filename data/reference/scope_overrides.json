@@ -1,0 +1,11 @@
+{
+ "note": "Reviewed scope decisions for labels the classifier gets wrong. in_scope false needs a reason (spf_lip_balm, spf_makeup, diaper_cream, not_a_sunscreen); why says what the label is.",
+ "labels": {
+  "297837d4-f9d1-6943-e063-6294a90ad756": {
+   "in_scope": false,
+   "reason": "not_a_sunscreen",
+   "why": "acne spot treatment (sulfur, resorcinol); titanium dioxide is there as tint, no SPF or sunscreen claim in the name",
+   "reviewed": "2026-10-19"
+  }
+ }
+}

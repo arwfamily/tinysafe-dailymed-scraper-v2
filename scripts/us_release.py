@@ -34,13 +34,20 @@ VIEWS = {
     "us_baby_kids": lambda r: r.get("is_baby_kids"),
 }
 DEFINITIONS = {
-    "us_all": "Every label FDA DailyMed lists as a sunscreen drug (SPF makeup, SPF lip balm, diaper cream and "
-              "calamine are out of scope). Labels that left DailyMed stay, with status 'discontinued'.",
+    "us_all": "Every label FDA DailyMed lists as a sunscreen drug. Out of scope, with the reason recorded in the "
+              "master: SPF makeup (BB/CC creams, foundations, cushions, concealers, makeup powders, and primers or "
+              "setting products not named as sunscreens; scripts/scope_rules.py), SPF lip products, diaper creams, "
+              "calamine, and zinc-oxide products with no sun claim. Tinted sunscreens and tinted moisturizers are "
+              "sunscreens. Labels that left DailyMed stay, with status 'discontinued'. A label DailyMed failed to "
+              "serve this week keeps its last fully read record (fetch_status 'carried_forward').",
     "us_mineral": "Labels whose declared actives include zinc oxide or titanium dioxide, adult and baby, "
-                  "hybrids included. filter_type gives the main filter by summed w/w % on the Drug Facts panel.",
-    "us_baby_kids": "Labels whose product name (or, where DailyMed cuts the name, the label's front panel) says "
-                    "baby, babies, infant, newborn, toddler, bebe, kids, children, junior or little ones. Any filter "
-                    "type. baby_kids_basis says which.",
+                  "hybrids included. filter_type gives the main filter by summed w/w % on the Drug Facts panel. "
+                  "Actives follow the printed Drug Facts where the FDA filing contradicts it "
+                  "(data/corrections/spl_label_errors.jsonl).",
+    "us_baby_kids": "Baby and kids sunscreens: the reviewed decisions in claims/baby_decisions.csv (the population "
+                    "the arwhouse.com/evidence pages count), then, for labels not yet reviewed, the rule: the product "
+                    "name (not the labeler) or the label's front panel says baby, infant, toddler, kids, children, "
+                    "junior or little ones. Any filter type. baby_kids_basis says which.",
 }
 
 

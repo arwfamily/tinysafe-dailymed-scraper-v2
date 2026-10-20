@@ -140,6 +140,10 @@ def http_xml(url, tries=4, backoff=2.0):
         if url in _XML_CACHE:
             return _XML_CACHE[url]
     x = _http_xml(url, tries, backoff)
+    if x is None:
+        # a failed fetch (rate limit, timeout) is never cached: the next reader
+        # tries again instead of inheriting the failure
+        return None
     with _XML_LOCK:
         if len(_XML_CACHE) > 64:
             _XML_CACHE.clear()
@@ -157,7 +161,8 @@ def _http_xml(url, tries=4, backoff=2.0):
             if e.code == 404:
                 return None
             if i < tries - 1:
-                time.sleep(backoff * (i + 1)); continue
+                # DailyMed answers bursts with 429; back off much longer then
+                time.sleep((backoff * 10 if e.code == 429 else backoff) * (i + 1)); continue
             return None
         except Exception:
             if i < tries - 1:
@@ -663,6 +668,11 @@ def process_setid(item):
     # structured-vs-printed check. A clear printed-label disagreement corrects
     # the actives; the filed table is kept beside it.
     xml = http_xml(f"{BASE}/spls/{setid}.xml")
+    # Whether the SPL document itself was read. When it was not (rate limit,
+    # timeout), actives and inactives came from fallbacks or are missing; the
+    # snapshot step then keeps the last fully read record instead of logging
+    # a fake reformulation or dropping the label from scope.
+    rec["spl_fetched"] = bool(xml)
     if xml:
         try:
             lf = label_fields(xml)
@@ -740,6 +750,27 @@ def main():
             if done % 50 == 0:
                 print(f"    processed {done}/{len(items)}", flush=True)
 
+    # Phase E2: labels whose SPL could not be read in the parallel pass are
+    # read again, one at a time, with pauses. A burst of 429s must not turn
+    # into missing actives.
+    for rnd in (1, 2):
+        failed = [i for i, r in enumerate(records) if not r.get("spl_fetched")]
+        if not failed:
+            break
+        print(f"[E2] round {rnd}: re-reading {len(failed)} labels whose SPL was not fetched", flush=True)
+        time.sleep(30 * rnd)
+        fixed = 0
+        for i in failed:
+            item = next((it for it in items if it["setid"] == records[i]["setid"]), None)
+            if not item:
+                continue
+            time.sleep(1.0 * rnd)
+            r = process_setid(item)
+            if r and r.get("spl_fetched"):
+                records[i] = r
+                fixed += 1
+        print(f"     fixed {fixed}; still unread {len(failed) - fixed}", flush=True)
+
     # Phase F: outputs
     master_path = os.path.join(args.output_dir, "tinysafe_dailymed_v2_master.json")
     src_counts = {}
@@ -758,6 +789,7 @@ def main():
                            "'unii_searched'."),
             "total_products": len(records),
             "inactive_source_breakdown": src_counts,
+            "spl_not_fetched": sum(1 for r in records if not r.get("spl_fetched")),
             "mineral_type_breakdown": _count(records, "mineral_type"),
             "with_spf": sum(1 for r in records if r.get("spf")),
             "chemical_filter": sum(1 for r in records if r.get("contains_chemical_filter")),

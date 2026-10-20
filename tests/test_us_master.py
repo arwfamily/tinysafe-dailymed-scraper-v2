@@ -6,6 +6,7 @@ import tempfile
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "scripts"))
 import ledger as L  # noqa: E402
+import scope_rules as S  # noqa: E402
 import us_master as M  # noqa: E402
 
 
@@ -36,6 +37,8 @@ def test_baby_kids():
         assert not M.BABY_KIDS.search(s), s
     assert M.baby_kids({"product_name": "Banana Boat Lotion", "label_flags": {"front_panel_baby_words": ["KIDS"]}}) == (True, "front_panel")
     assert M.baby_kids({"product_name": "Banana Boat Lotion", "label_flags": {"front_panel_baby_words": ["PEDIATRIC"]}}) == (False, None)
+    assert M.baby_kids({"product_name": "HYDRATING GLOW MIST SPF 50 SPRAY",
+                        "title": "HYDRATING GLOW MIST SPF 50 SPRAY [WILD CHILD LABORATORIES PTY LTD]"}) == (False, None)
 
 
 def test_spray():
@@ -67,6 +70,34 @@ def test_recall_match():
     assert m[0]["hazards"] == ["benzene", "contamination"]
     m2 = idx.match({"setid": "s9", "labeler": "Other Co"}, "Acme Glow Shield Velvet Mineral Sunscreen Lotion")
     assert m2 == []
+
+
+def test_scope_rules():
+    out = {
+        "KISS MY FACE SPF 30 LIP BALM (AVOBENZONE) STICK [KISS MY FACE]": "spf_lip_balm",
+        "MINERAL LIP SUNSCREEN STICK (ZINC OXIDE) STICK [X]": "spf_lip_balm",
+        "PIPETTE DIAPER RASH (ZINC OXIDE) CREAM [PIPETTE LLC]": "diaper_cream",
+        "HYDRO SPLASH BB SPF20 PA (TITANIUM DIOXIDE) CREAM [THEFACESHOP CO., LTD.]": "spf_makeup",
+        "DAYDREAM CUSHION GENTLE LIGHT (AVOBENZONE) CREAM [EM COSMETICS LLC]": "spf_makeup",
+        "NATURAL FINISH PRESSED FOUNDATION SPF 20 SUNSCREEN (TITANIUM DIOXIDE) POWDER [X]": "spf_makeup",
+        "NARS RADIANCE PRIMER BROAD SPECTRUM SPF 35 SUNSCREEN (OCTISALATE) LOTION [NARS]": "spf_makeup",
+    }
+    keep = ["SUN BUM ROAD TRIPPER MINERAL SUNSCREEN FACE STICK (ZINC OXIDE) STICK [SUN BUM]",
+            "JUST A TINT 3-IN-1 TINTED SKIN CONDITIONER (OCTINOXATE) CREAM [THE LIP BAR]",
+            "GOONGBE MOISTURE SUN CUSHION MILD SPF 50 (ZINC OXIDE) LOTION [X]",
+            "HELLO SUNDAY THE INVISIBLE ONE SUNSCREEN PLUS PRIMER SPF 50 (AVOBENZONE) EMULSION [X]",
+            "ETHICAL ZINC DAILY WEAR TINTED FACIAL SUNSCREEN SPF-50 (ZINC OXIDE) LOTION [X]",
+            "SUNSCREEN SETTING SPRITZ, SPF 45 (AVOBENZONE) LIQUID [X]"]
+    for t, why in out.items():
+        assert S.scope_reason(t) == why, t
+    for t in keep:
+        assert S.scope_reason(t) is None, t
+    assert S.named_sunscreen("SUNSCREEN SETTING SPRITZ, SPF 45 (AVOBENZONE) LIQUID [X]")
+
+
+def test_title_actives():
+    got = M.title_actives({"title": "YOUNIQUE ROYALTY DAY CREAM SPF 20 (AVOBENZONE, HOMOSALATE AND OCTISALATE) CREAM [Y]"})
+    assert [a["name"] for a in got] == ["AVOBENZONE", "HOMOSALATE", "OCTISALATE"]
 
 
 if __name__ == "__main__":

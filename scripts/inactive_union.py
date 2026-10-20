@@ -70,7 +70,7 @@ _WATERWORDS = {"WATER", "AQUA", "EAU", "PURIFIED", "DEIONIZED", "DISTILLED", "US
 _JUNK_ITEM = re.compile(r"^\s*(?:inactive(?:\s+ingredients?)?|ingredients?|other\s+ingredients?|organic(?:\s+ingredients?)?|"
                         r"certified organic(?: ingredients?)?)\s*[:.]?\s*$|\b(?:contains|distributed by|manufactured (?:for|by)|"
                         r"made in|www\.|\.com\b|questions\?|call\s+\d|\bdenotes\b|trademark|save (?:this )?carton|unless otherwise|"
-                        r"plant-derived scent|^\W*=\s*organic|^\W*organic ingredients?\W*$)", re.I)
+                        r"plant-derived scent|not label(?:l)?ed as organic|^\W*=\s*organic|^\W*organic ingredients?\W*$)", re.I)
 
 
 @functools.lru_cache(maxsize=None)

@@ -214,9 +214,14 @@ def load():
                 fixes[c["setid"]] = c
     sys.path.insert(0, os.path.join(ROOT, "scripts"))
     from snapshot_and_history import formulation_fingerprint
+    from classify import classify
     for r in recs:
         if r["setid"] in fixes:
             r.update(fixes[r["setid"]]["use"])
+            # every derived field (mineral-only, filters, category) follows the
+            # corrected actives; a correction that set only some of them left
+            # e.g. a label with octinoxate counted as mineral-only (2026-10-19 audit)
+            r.update(classify(r))
             r["_corrected"] = True
             # identity must follow the corrected formula, not the erroneous filing
             r["formulation_hash"] = formulation_fingerprint(r)[0]

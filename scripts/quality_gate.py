@@ -12,6 +12,12 @@ A failed gate stops the publish; last week's data stays on the site.
 
 Checks 2-3 need the label version on both sides; the first build after the
 switch (old db without versions) reports them without failing.
+
+Reviewed changes are not failures: a label taken out of scope by a recorded rule
+or override (scope_rules.py, scope_overrides.json) does not count toward the drop,
+and a label whose actives were corrected or whose last good read was kept after a
+failed fetch may change its list. The caller passes these as `explained`
+{setid: reason}; the report lists how many of each were used.
 """
 import json
 import os
@@ -27,7 +33,8 @@ MAX_DROP = 0.02
 REQUIRED = {"id": str, "n": str, "i": list, "v3": list, "z": list, "r": list, "thin": bool, "st": str}
 
 
-def check(old, new):
+def check(old, new, explained=None):
+    explained = explained or {}
     problems, report = [], {}
     act_new = [p for p in new["p"] if p.get("st", "active") == "active"]
     report["active_labels"] = len(act_new)
@@ -47,8 +54,14 @@ def check(old, new):
     if old:
         act_old = [p for p in old["p"] if p.get("st", "active") == "active"]
         report["active_labels_before"] = len(act_old)
-        if act_old and len(act_new) < len(act_old) * (1 - MAX_DROP):
-            problems.append(f"active labels fell {len(act_old)} -> {len(act_new)} (> {MAX_DROP:.0%})")
+        new_ids = {p["id"] for p in act_new}
+        gone_ids = [p["id"] for p in act_old if p["id"] not in new_ids]
+        expl = [i for i in gone_ids if str(explained.get(i, "")).startswith("scope:")]
+        report["left_by_reviewed_scope_rule"] = len(expl)
+        base = len(act_old) - len(expl)
+        if act_old and len(act_new) < base * (1 - MAX_DROP):
+            problems.append(f"active labels fell {base} -> {len(act_new)} (> {MAX_DROP:.0%}; "
+                            f"{len(expl)} more left by reviewed scope rules)")
         versioned = all("v" in p for p in old["p"])
         o_by = {p["id"]: p for p in old["p"]}
         lost_i = lost_f = 0
@@ -57,6 +70,8 @@ def check(old, new):
             q = o_by.get(p["id"])
             if not q or (versioned and str(q.get("v")) != str(p.get("v"))):
                 continue
+            if p["id"] in explained and not str(explained[p["id"]]).startswith("scope:"):
+                continue                                   # reviewed correction / kept last good read
             on = [old["names"][i] for i in q["i"]]
             nn = [new["names"][i] for i in p["i"]]
             nset = set(nn)

@@ -39,6 +39,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import ledger as L  # noqa: E402
+import scope_rules as S  # noqa: E402
 import sunnytime_rules as R  # noqa: E402
 from inactive_union import _ACTIVE_SYN, is_active, key, same_display  # noqa: E402
 from sunnytime_db import Engine, inactive_flags, no_preservative  # noqa: E402
@@ -49,6 +50,8 @@ RECALLS = os.path.join(ROOT, "data/recalls/us_drug_recalls.jsonl")
 REF_FLAGS = os.path.join(ROOT, "data/reference/flags_v31.json")
 REF_PRODUCTS = os.path.join(ROOT, "data/reference/sunnytime_v31_products.json")
 MASTER = os.path.join(ROOT, "data/master/us_master.jsonl")
+CORRECTIONS = os.path.join(ROOT, "data/corrections/spl_label_errors.jsonl")
+SCOPE_OVERRIDES = os.path.join(ROOT, "data/reference/scope_overrides.json")
 
 SCHEMA_VERSION = "1.0.0"
 RULES_VERSION = "v3.2 · 2026-10-19"
@@ -66,7 +69,9 @@ FRONT_PANEL_BABY = {"BABY", "BABIES", "INFANT", "INFANTS", "NEWBORN", "TODDLER",
 
 
 def baby_kids(c):
-    if BABY_KIDS.search(" ".join([c.get("product_name") or "", c.get("title") or ""])):
+    # the product part only: the [LABELER] bracket names companies (Wild Child Laboratories,
+    # BabyFace LLC), not the product
+    if BABY_KIDS.search(c.get("product_name") or S.product_part(c.get("title") or "")):
         return True, "name"
     fp = {w.upper() for w in ((c.get("label_flags") or {}).get("front_panel_baby_words") or [])}
     if fp & FRONT_PANEL_BABY:
@@ -309,8 +314,87 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
 
 
 # ---------------------------------------------------------------- build
+BABY_DECISIONS = os.path.join(ROOT, "claims/baby_decisions.csv")
+
+
+def baby_decisions():
+    """The reviewed baby/kids decisions (claims/baby_decisions.csv, kept by
+    scripts/baby_track.py and the hand reviews). The evidence pages count this
+    population, so the site's baby/kids list and the evidence use the same one."""
+    import csv
+    if not os.path.exists(BABY_DECISIONS):
+        return {}
+    return {r["setid"]: r for r in csv.DictReader(open(BABY_DECISIONS, encoding="utf-8"))}
+
+
+def baby_kids_final(c, dec):
+    """Reviewed decision first; the rule only for labels nobody has decided yet."""
+    d = dec.get(c["setid"])
+    if d and d["decision"] in ("include", "exclude"):
+        return d["decision"] == "include", f"reviewed: {d['reason']}"[:200]
+    yes, basis = baby_kids(c)
+    return yes, (f"rule_unreviewed: {basis}" if yes else None)
+
+
+def corrections():
+    """Reviewed corrections: labels whose SPL active table contradicts their own
+    printed Drug Facts (each entry carries its evidence). Same file the evidence
+    pages use, so the site and the evidence count the same actives."""
+    return {c["setid"]: c for c in jl(CORRECTIONS)} if os.path.exists(CORRECTIONS) else {}
+
+
+def scope_overrides():
+    """Reviewed scope decisions for labels the classifier gets wrong
+    (data/reference/scope_overrides.json: setid -> {in_scope, reason, why})."""
+    if not os.path.exists(SCOPE_OVERRIDES):
+        return {}
+    return json.load(open(SCOPE_OVERRIDES, encoding="utf-8"))["labels"]
+
+
+_TITLE_ACTS = re.compile(r"\(([^()]*(?:OXIDE|BENZONE|SALATE|OCTINOXATE|CRYLENE|ENSULIZOLE|MERADIMATE)[^()]*)\)", re.I)
+
+
+def title_actives(c):
+    """Last resort when no read of the label ever gave its actives: DailyMed titles
+    name them in brackets ('... SPF 20 (AVOBENZONE, HOMOSALATE, OCTISALATE) CREAM').
+    Names only, no percentages."""
+    m = _TITLE_ACTS.search(c.get("title") or "")
+    if not m:
+        return []
+    parts = re.split(r",|\bAND\b", m.group(1), flags=re.I)
+    return [{"name": p.strip().upper(), "unii": None, "percent_ww": None, "percent_basis": "title"}
+            for p in parts if p.strip()]
+
+
+_LT = None
+
+
+def label_text_fragrance(sid, shown):
+    """Fragrance the label prints that the parsed list lost: glued to the next
+    sentence ('CITRIC ACID, FRAGRANCEPRODUCT FORMULATED ...') or in a footnote
+    under an image-transcribed list ('*Fragrance (Parfum)'). Uses the evidence
+    pages' label-text reader, so both read the label the same way."""
+    global _LT
+    if _LT is None:
+        sys.path.insert(0, os.path.join(ROOT, "claims"))
+        import registry_stats as RS
+        _LT = RS
+    if any(_LT.FRAGRANCE.search(x.upper()) for x in shown):
+        return None
+    sec = _LT.printed_section(sid)
+    text = sec + " | " + _LT._FOOT.get(sid, "")
+    m = _LT.FRAGRANCE.search(text)
+    if not m:
+        return None
+    return "Fragrance (Parfum)" if "PARFUM" in text else "Fragrance"
+
+
 def build(run_date):
     canon = jl(CANON)
+    fixes = corrections()
+    bdec = baby_decisions()
+    overrides = scope_overrides()
+    from classify import classify
     union = {r["setid"]: r for r in jl(UNION)}
     led = L.load()
     recalls = RecallIndex(jl(RECALLS))
@@ -320,21 +404,53 @@ def build(run_date):
     out = {}
     for c in canon:
         sid = c["setid"]
+        if sid in fixes:
+            c = dict(c)
+            c.update(fixes[sid]["use"])
+            c.update(classify(c))                 # category, filters, mineral follow the corrected actives
+            c["_actives_corrected"] = fixes[sid].get("error", "")[:300]
+        elif not c.get("active_ingredients"):
+            # no read of this label gave its actives: the v3.1 db's, else the title's names
+            z = (legacy.get(sid) or {}).get("z")
+            got = ([{"name": a[0].upper(), "unii": None, "percent_ww": a[1], "percent_basis": "v3.1_db"} for a in z]
+                   if z else title_actives(c))
+            if got:
+                c = dict(c, active_ingredients=got)
+                c.update(classify(c))
         ver = c.get("spl_version")
         chk = L.current(led, sid, ver) if ver is not None else (
             max((led.get(sid) or {}).values(), key=lambda r: r.get("checked", ""), default=None))
         acts = actives(c, legacy.get(sid))
         ft, mp, cp, organic = filter_split(c, acts)
-        in_scope = c.get("category") == "sunscreen"
+        # scope: the classifier says sunscreen drug, then scripts/scope_rules.py takes out
+        # SPF makeup / lip / diaper products the classifier let through, and lets back in
+        # makeup-format products whose name calls them a sunscreen ("Sunscreen Setting Spritz")
+        why = S.scope_reason(c.get("title") or c.get("product_name"))
+        back_in = c.get("category") == "makeup" and why is None and S.named_sunscreen(c.get("title"))
+        in_scope = (c.get("category") == "sunscreen" or back_in) and why is None
+        if in_scope:
+            excluded = None
+        elif why:
+            excluded = why
+        elif c.get("product_type") == "unresolved_zinc":
+            excluded = "zinc_only_no_sun_claim"     # zinc oxide alone, no SPF or sunscreen wording
+        else:
+            excluded = EXCLUDED_REASON.get(c.get("category"), c.get("category"))
+        ov = overrides.get(sid)
+        if ov:
+            in_scope, excluded = ov["in_scope"], (None if ov["in_scope"] else ov["reason"])
         name = (legacy.get(sid) or {}).get("n") or display_name(c)
         u = union.get(sid)
         shown, struct, u2 = inactives(c, u, chk, acts)
+        fr = label_text_fragrance(sid, shown)
+        if fr:
+            shown = shown + [fr]
         thin = len(shown) <= THIN_MAX
         treason = thin_reason(u2, chk) if thin else None
         rec = {
             "setid": sid, "spl_version": ver, "status": "active", "first_seen": c.get("first_seen"),
             "last_seen": c.get("last_seen"), "in_scope": in_scope,
-            "excluded_reason": None if in_scope else EXCLUDED_REASON.get(c.get("category"), c.get("category")),
+            "excluded_reason": excluded,
             "category": c.get("category"), "name": name, "title": c.get("title"),
             "brand": (legacy.get(sid) or {}).get("b") or c.get("labeler"), "labeler": c.get("labeler"),
             "spf": c.get("spf"), "dosage_form": c.get("dosage_form"), "ndc_product": c.get("ndc_product"),
@@ -342,7 +458,7 @@ def build(run_date):
             "actives": acts, "mineral_type": mineral_type(acts), "filter_type": ft,
             "mineral_pct": mp, "chemical_pct": cp,
             "is_mineral": ft not in ("chemical_only", "no_uv_filter"),
-            "is_baby_kids": baby_kids(c)[0], "baby_kids_basis": baby_kids(c)[1],
+            "is_baby_kids": baby_kids_final(c, bdec)[0], "baby_kids_basis": baby_kids_final(c, bdec)[1],
             "inactives": shown, "inactive_source": (u2 or {}).get("i_src", "structured"),
             "inactives_filed_n": (u2 or {}).get("i_struct_n", 0), "inactives_printed_n": (u2 or {}).get("i_text_n", 0),
             "label_check": (chk or {}).get("status"), "label_check_date": (chk or {}).get("checked"),
@@ -352,7 +468,14 @@ def build(run_date):
             "recalls": recalls.match(c, c.get("product_name") or name) if recalls.all else [],
             "recall_checked": bool(recalls.all),
             "formulation_hash": c.get("formulation_hash"),
+            "fetch_status": c.get("fetch_status"),
         }
+        if c.get("_actives_corrected"):
+            rec["actives_corrected"] = c["_actives_corrected"]
+        if ov:
+            rec["scope_override"] = ov["why"]
+        if fr:
+            rec["inactives_added_from_label_text"] = [fr]
         if not recalls.all and (legacy.get(sid) or {}).get("r"):
             rec["recalls"] = [{"recall_number": None, "status": "matched", "matched_on": "v3.1_db",
                                "hazards": legacy[sid]["r"]}]

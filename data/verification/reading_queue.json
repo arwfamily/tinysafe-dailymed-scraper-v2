@@ -1,6 +1,44 @@
 {
 "generated": "2026-10-19",
-"count": 0,
-"by_reason": {},
-"labels": []
+"count": 5,
+"by_reason": {
+"label_changed": 5
+},
+"labels": [
+{
+"setid": "02a4e8f6-f257-4d30-8782-64b4d1622d46",
+"spl_version": "16",
+"name": "Sheer Defense Tinted Moisturizer SPF 15 Ml 40 Merle Norman Liquid",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "0ad4ec84-7c82-4ab3-9070-a0764af12306",
+"spl_version": "12",
+"name": "Sheer Defense Tinted Moisturizer SPF 15 Ml 30 Merle Norman Liquid",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "45ec77c5-5ea1-0e51-e054-00144ff8d46c",
+"spl_version": "5",
+"name": "Solar Defense Non Tinted Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "45ec77c5-5ec4-0e51-e054-00144ff8d46c",
+"spl_version": "5",
+"name": "Solar Defense Tinted Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "82d2af99-7c42-4ce5-94e0-b2ac60b8db1b",
+"spl_version": "1",
+"name": "Good Instincts Proper Sunscreen SPF 50 Cream",
+"reason": "label_changed",
+"had_older_check": true
+}
+]
 }
