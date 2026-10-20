@@ -1,0 +1,33 @@
+name: Re-read labels DailyMed failed to serve
+on:
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: 'targets json ([{setid}])'
+        default: 'data/views/refetch_targets.json'
+      branch:
+        description: 'output branch'
+        default: 'refetch'
+permissions:
+  contents: write
+jobs:
+  refetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: python scripts/refetch_labels.py --targets "${{ inputs.targets }}"
+      - name: Push to the output branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mv refetch /tmp/refetch
+          git checkout --orphan out-tmp
+          git rm -rq --cached . 2>/dev/null || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r /tmp/refetch .
+          git add refetch
+          git commit -qm "refetch $(date -u +%F)"
+          git push -f origin out-tmp:${{ inputs.branch }}
