@@ -1,0 +1,29 @@
+{
+ "setid": "44615ae4-8206-122d-e063-6294a90a0b2c",
+ "images": [
+  {
+   "name": "EcoZinc Kids - 100 g.jpg",
+   "file": "img/44615ae4-8206-122d-e063-6294a90a0b2c/EcoZinc_Kids_-_100_g.jpg"
+  },
+  {
+   "name": "EcoZinc Kids - 1kg.jpg",
+   "file": "img/44615ae4-8206-122d-e063-6294a90a0b2c/EcoZinc_Kids_-_1kg.jpg"
+  },
+  {
+   "name": "EcoZinc Kids - 2kg.jpg",
+   "file": "img/44615ae4-8206-122d-e063-6294a90a0b2c/EcoZinc_Kids_-_2kg.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "EcoZinc Kids Natural Mineral Sunscreen SPF50",
+ "inactive_section": "See ingredients on label",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "44615ae4-8206-122d-e063-6294a90a0b2c",
+  "name": "Ecozinc Kids Natural Mineral Sunscreen SPF50 Cream",
+  "brand": "Veganic Skn Limited",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

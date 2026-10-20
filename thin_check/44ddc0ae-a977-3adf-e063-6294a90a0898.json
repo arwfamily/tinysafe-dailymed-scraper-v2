@@ -1,0 +1,29 @@
+{
+ "setid": "44ddc0ae-a977-3adf-e063-6294a90a0898",
+ "images": [
+  {
+   "name": "s4k Nat 100g.jpg",
+   "file": "img/44ddc0ae-a977-3adf-e063-6294a90a0898/s4k_Nat_100g.jpg"
+  },
+  {
+   "name": "s4k Nat 1kg.jpg",
+   "file": "img/44ddc0ae-a977-3adf-e063-6294a90a0898/s4k_Nat_1kg.jpg"
+  },
+  {
+   "name": "s4k Nat 2kg.jpg",
+   "file": "img/44ddc0ae-a977-3adf-e063-6294a90a0898/s4k_Nat_2kg.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Safe4Kidz Natural Mineral Sunscreen SPF50",
+ "inactive_section": "See ingredients on label",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "44ddc0ae-a977-3adf-e063-6294a90a0898",
+  "name": "Safe4Kidz Natural Mineral Sunscreen SPF50 Cream",
+  "brand": "Veganic Skn Limited",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

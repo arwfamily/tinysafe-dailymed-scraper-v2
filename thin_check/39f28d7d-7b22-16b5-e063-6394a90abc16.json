@@ -1,0 +1,49 @@
+{
+ "setid": "39f28d7d-7b22-16b5-e063-6394a90abc16",
+ "images": [
+  {
+   "name": "39f30339-5fde-3e74-e063-6394a90a05ac.jpg",
+   "file": "img/39f28d7d-7b22-16b5-e063-6394a90abc16/39f30339-5fde-3e74-e063-6394a90a05ac.jpg"
+  },
+  {
+   "name": "Centella Sunscreen SPF 50 warning.jpg",
+   "file": "img/39f28d7d-7b22-16b5-e063-6394a90abc16/Centella_Sunscreen_SPF_50_warning.jpg"
+  },
+  {
+   "name": "Centella Sunscreen SPF 50-1.jpg",
+   "file": "img/39f28d7d-7b22-16b5-e063-6394a90abc16/Centella_Sunscreen_SPF_50-1.jpg"
+  },
+  {
+   "name": "Centella Sunscreen SPF 50.jpg",
+   "file": "img/39f28d7d-7b22-16b5-e063-6394a90abc16/Centella_Sunscreen_SPF_50.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/39f28d7d-7b22-16b5-e063-6394a90abc16/inactive_ingredients.jpg"
+  },
+  {
+   "name": "purpose.jpg",
+   "file": "img/39f28d7d-7b22-16b5-e063-6394a90abc16/purpose.jpg"
+  },
+  {
+   "name": "usage.jpg",
+   "file": "img/39f28d7d-7b22-16b5-e063-6394a90abc16/usage.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/39f28d7d-7b22-16b5-e063-6394a90abc16/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENT",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "39f28d7d-7b22-16b5-e063-6394a90abc16",
+  "name": "Centella Sunscreen SPF 50 Cream",
+  "brand": "Guangzhou Yueyou Biological Technology Co., Ltd.",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

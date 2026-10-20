@@ -1,0 +1,29 @@
+{
+ "setid": "38603298-e8da-e4c7-e063-6394a90aca3b",
+ "images": [
+  {
+   "name": "rs fb 100g.jpg",
+   "file": "img/38603298-e8da-e4c7-e063-6394a90aca3b/rs_fb_100g.jpg"
+  },
+  {
+   "name": "rs fb 1kg.jpg",
+   "file": "img/38603298-e8da-e4c7-e063-6394a90aca3b/rs_fb_1kg.jpg"
+  },
+  {
+   "name": "rs fb 2kg.jpg",
+   "file": "img/38603298-e8da-e4c7-e063-6394a90aca3b/rs_fb_2kg.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Reef safe - Face and Body sunscreen SPF50",
+ "inactive_section": "See ingredients on label",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "38603298-e8da-e4c7-e063-6394a90aca3b",
+  "name": "Reef Safe - Face And Body Sunscreen SPF50 Cream",
+  "brand": "Veganic Skn Limited",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

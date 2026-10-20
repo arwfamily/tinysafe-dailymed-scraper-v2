@@ -1,0 +1,25 @@
+{
+ "setid": "47b1aae6-0b86-7d48-e063-6294a90a9ece",
+ "images": [
+  {
+   "name": "Oze - 1kg.jpg",
+   "file": "img/47b1aae6-0b86-7d48-e063-6294a90a9ece/Oze_-_1kg.jpg"
+  },
+  {
+   "name": "Oze - 2kg.jpg",
+   "file": "img/47b1aae6-0b86-7d48-e063-6294a90a9ece/Oze_-_2kg.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "OZE SUN BONDI",
+ "inactive_section": "See ingredients on label",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "47b1aae6-0b86-7d48-e063-6294a90a9ece",
+  "name": "Oze Sun Bondi Cream",
+  "brand": "Veganic Skn Limited",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

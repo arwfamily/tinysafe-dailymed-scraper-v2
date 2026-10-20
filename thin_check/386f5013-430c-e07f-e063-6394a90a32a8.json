@@ -1,0 +1,33 @@
+{
+ "setid": "386f5013-430c-e07f-e063-6394a90a32a8",
+ "images": [
+  {
+   "name": "Binda F B 110g.jpg",
+   "file": "img/386f5013-430c-e07f-e063-6394a90a32a8/Binda_F_B_110g.jpg"
+  },
+  {
+   "name": "Binda fb 100g.jpg",
+   "file": "img/386f5013-430c-e07f-e063-6394a90a32a8/Binda_fb_100g.jpg"
+  },
+  {
+   "name": "Binda fb 1kg.jpg",
+   "file": "img/386f5013-430c-e07f-e063-6394a90a32a8/Binda_fb_1kg.jpg"
+  },
+  {
+   "name": "Binda fb 2kg.jpg",
+   "file": "img/386f5013-430c-e07f-e063-6394a90a32a8/Binda_fb_2kg.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "BINDA Face and Body Sunscreen SPF50",
+ "inactive_section": "See ingredients on label",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "386f5013-430c-e07f-e063-6394a90a32a8",
+  "name": "Binda Face And Body Sunscreen SPF50 Cream",
+  "brand": "Veganic Skn Limited",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "setid": "386e23ec-7618-f42c-e063-6394a90a595d",
+ "images": [
+  {
+   "name": "Eco Zinc NM CL 100g.jpg",
+   "file": "img/386e23ec-7618-f42c-e063-6394a90a595d/Eco_Zinc_NM_CL_100g.jpg"
+  },
+  {
+   "name": "Eco Zinc NM CL 1Kg.jpg",
+   "file": "img/386e23ec-7618-f42c-e063-6394a90a595d/Eco_Zinc_NM_CL_1Kg.jpg"
+  },
+  {
+   "name": "Eco Zinc NM CL 2Kg.jpg",
+   "file": "img/386e23ec-7618-f42c-e063-6394a90a595d/Eco_Zinc_NM_CL_2Kg.jpg"
+  },
+  {
+   "name": "Eco Zinc NM RO 100g.jpg",
+   "file": "img/386e23ec-7618-f42c-e063-6394a90a595d/Eco_Zinc_NM_RO_100g.jpg"
+  },
+  {
+   "name": "Eco Zinc NM ro 1Kg.jpg",
+   "file": "img/386e23ec-7618-f42c-e063-6394a90a595d/Eco_Zinc_NM_ro_1Kg.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "EcoZinc Natural Mineral Sunscreen SPF50",
+ "inactive_section": "See ingredients on label",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "386e23ec-7618-f42c-e063-6394a90a595d",
+  "name": "Ecozinc Natural Mineral Sunscreen SPF50 Cream",
+  "brand": "Veganic Skn Limited",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

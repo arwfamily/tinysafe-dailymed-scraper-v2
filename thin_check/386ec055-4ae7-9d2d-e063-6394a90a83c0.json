@@ -1,0 +1,25 @@
+{
+ "setid": "386ec055-4ae7-9d2d-e063-6394a90a83c0",
+ "images": [
+  {
+   "name": "ReefSun SPF50 tube.jpg",
+   "file": "img/386ec055-4ae7-9d2d-e063-6394a90a83c0/ReefSun_SPF50_tube.jpg"
+  },
+  {
+   "name": "ReefSun SPF50.jpg",
+   "file": "img/386ec055-4ae7-9d2d-e063-6394a90a83c0/ReefSun_SPF50.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Reefsun sunscreen SPF50",
+ "inactive_section": "See ingredients on label",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "386ec055-4ae7-9d2d-e063-6394a90a83c0",
+  "name": "Reefsun Sunscreen SPF50 Cream",
+  "brand": "Veganic Skn Limited",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

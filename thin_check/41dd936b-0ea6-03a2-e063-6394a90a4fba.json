@@ -1,0 +1,25 @@
+{
+ "setid": "41dd936b-0ea6-03a2-e063-6394a90a4fba",
+ "images": [
+  {
+   "name": "OZE SUN 100g.jpg",
+   "file": "img/41dd936b-0ea6-03a2-e063-6394a90a4fba/OZE_SUN_100g.jpg"
+  },
+  {
+   "name": "OZE SUN 4.6g.jpg",
+   "file": "img/41dd936b-0ea6-03a2-e063-6394a90a4fba/OZE_SUN_4.6g.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Oze Sun reef safe Sunscreen SPF50",
+ "inactive_section": "See ingredients on label",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "41dd936b-0ea6-03a2-e063-6394a90a4fba",
+  "name": "Oze Sun Reef Safe Sunscreen SPF50 Cream",
+  "brand": "Veganic Skn Limited",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}
