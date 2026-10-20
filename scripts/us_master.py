@@ -400,6 +400,101 @@ def apply_recall_reviews(sid, recs, reviews):
     return out
 
 
+_STEREO = re.compile(r"^\((?:\+/-|\+|-|R|S|Z|E|RS|\d)\)-?$")
+_CODE = re.compile(r"^[A-Z]\d{3,}[A-Z]?$")
+_CJK = re.compile(r"[\u3131-\uD7A3\u4E00-\u9FFF\u3040-\u30FF]")
+
+
+def tidy_inactives(items):
+    """Repair list-splitting leftovers in a printed list (2026-10-20 audit, 41 labels):
+    a lone ',' or '(' ; a stereo qualifier split off its ingredient ('(+/-)-');
+    a formula code ('S014'); a footnote marker ('(2)'); 'C12-15' + 'Alkyl Benzoate';
+    'Panthenol (Vit' + 'B5)' (a parenthesis split open); OCR 'C1 77491' for CI.
+    Returns (list, changed)."""
+    out, i, changed = [], 0, False
+    items = list(items or [])
+    while i < len(items):
+        x = items[i].strip()
+        nxt = items[i + 1].strip() if i + 1 < len(items) else ""
+        if not re.sub(r"[^\w]", "", x) or _STEREO.match(x) or _CODE.match(x):
+            changed = True
+            i += 1
+            continue
+        if x.startswith(")"):
+            x, changed = x.lstrip(") ").strip(), True
+        if re.fullmatch(r"[Cc]\d{1,2}(?:-\d{1,2})?", x) and nxt and nxt[0].isalpha():
+            x, i, changed = f"{x.upper()} {nxt}", i + 1, True
+        elif re.fullmatch(r"[Cc]\d{1,2}", x) and re.match(r"\d{1,2}\s+\w", nxt):
+            x, i, changed = f"{x.upper()}-{nxt}", i + 1, True
+        if x.count("(") > x.count(")"):
+            # rejoin only when the next 1-3 short pieces close the parenthesis; a label
+            # that simply forgot its ')' is left exactly as printed
+            y, j = x, i
+            while y.count("(") > y.count(")") and j + 1 < len(items) and j - i < 3 and len(items[j + 1]) <= 12:
+                frag = items[j + 1].strip()
+                y = y + (" " if re.search(r"\bVit\.?$", y, re.I) else ", ") + frag
+                j += 1
+            if y.count("(") == y.count(")") and j > i:
+                x, i, changed = y, j, True
+        if x.count("(") > x.count(")") and ", " in x:
+            # a label that forgot its ')' glued the next ingredients on: close it after the
+            # CI numbers and give the rest back as their own items
+            parts = x.split(", ")
+            head, k = parts[0], 1
+            while k < len(parts) and re.match(r"(?:CI|ci|C\.I\.)\s?\d{5}", parts[k]):
+                head, k = head + ", " + parts[k], k + 1
+            head += ")" * (head.count("(") - head.count(")"))
+            rest = [q for q in parts[k:] if q and not re.fullmatch(r"[A-Z]{2}\d+[A-Z]+\d+", q)]
+            out.append(head)
+            out.extend(rest)
+            changed = True
+            i += 1
+            continue
+        if x == "I" and nxt.lower().startswith("hexanedio"):
+            changed = True
+            i += 1
+            continue
+        if re.fullmatch(r"(?:1,2-)?HexanedioI", x):
+            x, changed = "1,2-Hexanediol", True
+        if re.match(r"^C1 \d{5}", x):
+            x, changed = "CI " + x[3:], True
+        out.append(x)
+        i += 1
+    return out, changed
+
+
+SYNONYMS = os.path.join(ROOT, "data/reference/inactive_synonyms.json")
+
+
+def synonym_map():
+    if not os.path.exists(SYNONYMS):
+        return {}
+    out = collections.defaultdict(set)
+    for k in json.load(open(SYNONYMS, encoding="utf-8"))["pairs"]:
+        pk, u = k.rsplit("|", 1)
+        out[pk].add(u)
+    return out
+
+
+def drop_filed_synonyms(shown, printed_n, c, syn):
+    """A filed-only item whose UNII is a known other name of a printed item on the
+    same label is the same ingredient: it is not shown twice (scripts/synonyms.py)."""
+    if not printed_n or not syn:
+        return shown, 0
+    import synonyms as Y
+    printed, extras = shown[:printed_n], shown[printed_n:]
+    uni = {(i.get("name") or "").upper(): i.get("unii") for i in c.get("inactive_ingredients") or []
+           if isinstance(i, dict)}
+    keep, dropped = [], 0
+    for e in extras:
+        u = uni.get(e.upper())
+        if u and any(u in syn.get(key(p), ()) and Y.related(p, e) for p in printed):
+            dropped += 1
+            continue
+        keep.append(e)
+    return printed + keep, dropped
+
+
 def corrections():
     """Reviewed corrections: labels whose SPL active table contradicts their own
     printed Drug Facts (each entry carries its evidence). Same file the evidence
@@ -456,6 +551,7 @@ def label_text_fragrance(sid, shown):
 def build(run_date):
     canon = jl(CANON)
     fixes = corrections()
+    syn = synonym_map()
     rreviews = recall_reviews()
     bdec = baby_decisions()
     overrides = scope_overrides()
@@ -513,6 +609,12 @@ def build(run_date):
             filed = [(i.get("name") if isinstance(i, dict) else str(i)) for i in c.get("inactive_ingredients") or []]
             u = {"i_union": filed, "struct": filed, "i_src": "structured", "i_struct_n": len(filed), "i_text_n": 0}
         shown, struct, u2 = inactives(c, u, chk, acts)
+        tidied = False
+        if shown and sum(bool(_CJK.search(x)) for x in shown) > 0.3 * len(shown):
+            shown, tidied = list(struct), True       # a Korean-only reading: the English filed list is shown
+        shown, ch = tidy_inactives(shown)
+        tidied = tidied or ch
+        shown, n_syn = drop_filed_synonyms(shown, (u2 or {}).get("i_text_n") or 0, c, syn)
         fr = label_text_fragrance(sid, shown)
         if fr:
             shown = shown + [fr]
@@ -547,6 +649,10 @@ def build(run_date):
             rec["scope_override"] = ov["why"]
         if fr:
             rec["inactives_added_from_label_text"] = [fr]
+        if tidied:
+            rec["inactives_tidied"] = True
+        if n_syn:
+            rec["filed_synonyms_dropped"] = n_syn
         if not recalls.all and (legacy.get(sid) or {}).get("r"):
             rec["recalls"] = [{"recall_number": None, "status": "matched", "matched_on": "v3.1_db",
                                "hazards": legacy[sid]["r"]}]

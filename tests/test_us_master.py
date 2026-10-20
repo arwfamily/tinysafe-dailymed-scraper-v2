@@ -105,6 +105,20 @@ def test_title_actives():
     assert [a["name"] for a in got] == ["AVOBENZONE", "HOMOSALATE", "OCTISALATE"]
 
 
+def test_tidy_inactives():
+    got, ch = M.tidy_inactives(["Water", "C12-15", "Alkyl Benzoate", "Panthenol (Vit", "B5)", ",", "Fragrance",
+                                "ALPHA.-BISABOLOL", "(+/-)-", "S014", "(", ") CI 77891 (Titanium dioxide)",
+                                "potassium cetyl phosphate", "c12", "15 alkyl benzoate", "C1 77492"])
+    assert ch
+    assert got == ["Water", "C12-15 Alkyl Benzoate", "Panthenol (Vit B5)", "Fragrance", "ALPHA.-BISABOLOL",
+                   "CI 77891 (Titanium dioxide)", "potassium cetyl phosphate", "C12-15 alkyl benzoate", "CI 77492"], got
+    assert M.tidy_inactives(["Water", "Glycerin"]) == (["Water", "Glycerin"], False)
+    got, _ = M.tidy_inactives(["Iron oxides (CI 77491, CI 77492, CI 77499, OX100FP000371", "Silica"])
+    assert got == ["Iron oxides (CI 77491, CI 77492, CI 77499)", "Silica"], got
+    got, _ = M.tidy_inactives(["Rosmarinus Officinalis Leaf Oil (Natural Rosemary, Theobroma Cacao Seed Butter, Tocopherol"])
+    assert got == ["Rosmarinus Officinalis Leaf Oil (Natural Rosemary)", "Theobroma Cacao Seed Butter", "Tocopherol"], got
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

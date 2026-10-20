@@ -1,0 +1,835 @@
+{
+ "note": "Same ingredient, two names: the printed label's INCI name and the FDA filing's",
+ "pairs": {
+  "100GRASSFEDBEEFTALLOW|98HPY76U4W": {
+   "filed": "BEEF TALLOW",
+   "labels": 5,
+   "printed": "100% Grass-Fed Beef Tallow"
+  },
+  "ACRYLATESC1030ALKYLACRYLATECROSSPOLYMER|59TL3WG5CO": {
+   "filed": "CARBOMER INTERPOLYMER TYPE A (55000 CPS)",
+   "labels": 18,
+   "printed": "Acrylates/C10-30 Alkyl Acrylate Crosspolymer"
+  },
+  "ACRYLATESC1222ALKYLMETHACRYLATECOPOLYMER|7K68DGG29P": {
+   "filed": "BUTYL ACRYLATE/C16-C20 ALKYL METHACRYLATE/METHACRYLIC ACID/METHYL METHACRYLATE COPOLYMER",
+   "labels": 3,
+   "printed": "ACRYLATES/C12-22 ALKYL METHACRYLATE COPOLYMER"
+  },
+  "ACRYLATESC1222ALKYLMETHACRYLATECOPOLYMER|G2IG50653Z": {
+   "filed": "ALLYL METHACRYLATE",
+   "labels": 2,
+   "printed": "acrylates/C12-22 alkyl methacrylate copolymer"
+  },
+  "ACRYLATESCOPOLYMER|JZ1374NL9E": {
+   "filed": "BUTYL ACRYLATE/METHYL METHACRYLATE/METHACRYLIC ACID COPOLYMER (18000 MW)",
+   "labels": 12,
+   "printed": "Acrylates Copolymer"
+  },
+  "ACRYLATESDIMETHICONECOPOLYMER|S7ZA3CCJ4M": {
+   "filed": "2-ETHYLHEXYL ACRYLATE, METHACRYLATE, METHYL METHACRYLATE, OR BUTYL METHACRYLATE/HYDROXYPROPYL DIMETHICONE COPOLYMER (30000-300000 MW)",
+   "labels": 9,
+   "printed": "Acrylates/Dimethicone Copolymer"
+  },
+  "ACRYLATESETHYLHEXYLACRYLATEDIMETHICONEMETHACRYLATECOPOLYMER|S7ZA3CCJ4M": {
+   "filed": "2-ETHYLHEXYL ACRYLATE, METHACRYLATE, METHYL METHACRYLATE, OR BUTYL METHACRYLATE/HYDROXYPROPYL DIMETHICONE COPOLYMER (30000-300000 MW)",
+   "labels": 2,
+   "printed": "Acrylates/ Ethylhexyl Acrylate/Dimethicone Methacrylate Copolymer"
+  },
+  "ACRYLATESOCTYLACRYLAMIDECOPOLYMER|4GXD0Q3OS3": {
+   "filed": "ACRYLATES CROSSPOLYMER-6",
+   "labels": 4,
+   "printed": "acrylates/octylacrylamide copolymer"
+  },
+  "ACRYLATESOCTYLACRYLAMIDECOPOLYMER|7LL6SY9YFV": {
+   "filed": "ACRYLATE/ISOBUTYL METHACRYLATE/N-TERT-OCTYLACRYLAMIDE COPOLYMER (40000 MW)",
+   "labels": 3,
+   "printed": "Acrylates/Octylacrylamide Copolymer"
+  },
+  "ACRYLATESOCTYLACRYLAMIDECOPOLYMER|JU3XHR8VWK": {
+   "filed": "ACRYLATE/ISOBUTYL METHACRYLATE/N-TERT-OCTYLACRYLAMIDE COPOLYMER (75000 MW)",
+   "labels": 18,
+   "printed": "Acrylates/Octylacrylamide Copolymer"
+  },
+  "ALOEBARBANDENSISLEAFEXTRACT|ZY81Z83H0X": {
+   "filed": "ALOE VERA LEAF",
+   "labels": 2,
+   "printed": "Aloe Barbandensis Leaf Extract"
+  },
+  "ALOELEAFJUICE|ZY81Z83H0X": {
+   "filed": "ALOE VERA LEAF",
+   "labels": 2,
+   "printed": "ALOE LEAF JUICE"
+  },
+  "ALUMINA|5QB0T2IUN0": {
+   "filed": "ALUMINUM HYDROXIDE",
+   "labels": 14,
+   "printed": "Alumina"
+  },
+  "AMMONIUMHYDROXIDE|5138Q19F1X": {
+   "filed": "AMMONIA",
+   "labels": 2,
+   "printed": "Ammonium Hydroxide"
+  },
+  "AMYLOPECTIN|4XO4QFV777": {
+   "filed": "AMYLOPECTIN, UNSPECIFIED SOURCE",
+   "labels": 2,
+   "printed": "Amylopectin (Babassu Starch)"
+  },
+  "ANTHEMISNOBILISFLOWEREXTRACT|O2T154T6OG": {
+   "filed": "CHAMAEMELUM NOBILE FLOWER",
+   "labels": 8,
+   "printed": "ANTHEMIS NOBILIS FLOWER EXTRACT"
+  },
+  "ANTHEMISNOBILISFLOWEROIL|UB27587839": {
+   "filed": "CHAMAEMELUM NOBILE FLOWER OIL",
+   "labels": 4,
+   "printed": "anthemis nobilis (chamomile) flower oil"
+  },
+  "ASCORBYLTETRAISOPALMITATE|QN83US2B0N": {
+   "filed": "ASCORBYL PALMITATE",
+   "labels": 3,
+   "printed": "ascorbyl tetraisopalmitate"
+  },
+  "AVENASATIVAKERNELFLOUR|8PI54V663Y": {
+   "filed": "OATMEAL",
+   "labels": 6,
+   "printed": "Avena Sativa (Oat) Kernel Flour"
+  },
+  "BEESWAXCERAALBACIREDABEILLE|2ZA36H0S2V": {
+   "filed": "YELLOW WAX",
+   "labels": 11,
+   "printed": "Beeswax/Cera Alba/Cire d'abeille"
+  },
+  "BEESWAX|08MNR5YE2R": {
+   "filed": "SYNTHETIC BEESWAX",
+   "labels": 18,
+   "printed": "beeswax"
+  },
+  "BIOFLAVONOIDS|BD70459I50": {
+   "filed": "CITRUS BIOFLAVONOIDS",
+   "labels": 3,
+   "printed": "Bioflavonoids"
+  },
+  "BISABOLOL|105S6I733Z": {
+   "filed": ".ALPHA.-BISABOLOL, (+)-",
+   "labels": 11,
+   "printed": "Bisabolol"
+  },
+  "BISABOLOL|36HQN158VC": {
+   "filed": ".ALPHA.-BISABOLOL, (+/-)-",
+   "labels": 5,
+   "printed": "Bisabolol"
+  },
+  "BISABOLOL|LP618AV2EA": {
+   "filed": ".BETA.-BISABOLOL",
+   "labels": 11,
+   "printed": "Bisabolol"
+  },
+  "BRASSICACAMPESTRISSEEDOIL|N4G8379626": {
+   "filed": "BRASSICA RAPA SUBSP. OLEIFERA OIL",
+   "labels": 2,
+   "printed": "Brassica Campestris (Rapeseed) Seed Oil"
+  },
+  "C1314ISOALKANE|E4F12ROE70": {
+   "filed": "C13-14 ISOPARAFFIN",
+   "labels": 3,
+   "printed": "C13-14 Isoalkane"
+  },
+  "C3038OLEFINISOPROPYLMALEATEMACOPOLYMERCETEARYLOLIVATE|58B69Q84JO": {
+   "filed": "CETEARYL OLIVATE",
+   "labels": 2,
+   "printed": "C30-38 olefin/isopropyl maleate/MA copolymer cetearyl olivate"
+  },
+  "CAPRICCAPRYLICTRIGLYCERIDENATURALORNATURALLYDERIVEDINGREDIENTS|C9H2L21V7U": {
+   "filed": "MEDIUM-CHAIN TRIGLYCERIDES",
+   "labels": 2,
+   "printed": "Capric/Caprylic TriglycerideNatural or Naturally-derived ingredients"
+  },
+  "CAPRICCAPRYLICTRIGLYCERIDE|C9H2L21V7U": {
+   "filed": "MEDIUM-CHAIN TRIGLYCERIDES",
+   "labels": 15,
+   "printed": "Capric/Caprylic Triglyceride"
+  },
+  "CARBOMER|0A5MM307FC": {
+   "filed": "CARBOMER HOMOPOLYMER, UNSPECIFIED TYPE",
+   "labels": 37,
+   "printed": "carbomer"
+  },
+  "CARBOMER|71DD5V995L": {
+   "filed": "CARBOMER COPOLYMER TYPE A (ALLYL PENTAERYTHRITOL CROSSLINKED)",
+   "labels": 5,
+   "printed": "carbomer"
+  },
+  "CASSIAALATALEAFEXTRACT|4BXR6YZN92": {
+   "filed": "SENNA ALATA LEAF",
+   "labels": 7,
+   "printed": "cassia alata leaf extract"
+  },
+  "CELLULOSEGUM|K679OBS311": {
+   "filed": "CARBOXYMETHYLCELLULOSE SODIUM, UNSPECIFIED FORM",
+   "labels": 26,
+   "printed": "Cellulose Gum"
+  },
+  "CELLULOSE|SMD1X3XO9M": {
+   "filed": "POWDERED CELLULOSE",
+   "labels": 6,
+   "printed": "cellulose"
+  },
+  "CHAMOMILLARECUITITAFLOWEREXTRACT|FGL3685T2X": {
+   "filed": "CHAMOMILE",
+   "labels": 3,
+   "printed": "Chamomilla Recuitita (Matricaria) Flower Extract (1)"
+  },
+  "CHAMOMILLARECUTITAFLOWEREXTRACT|3VNC7T6Z02": {
+   "filed": "MATRICARIA CHAMOMILLA FLOWERING TOP",
+   "labels": 9,
+   "printed": "Chamomilla Recutita (Matricaria) Flower Extract (1)"
+  },
+  "CHAMOMILLARECUTITAFLOWEREXTRACT|6I9LN466F0": {
+   "filed": "MATRICARIA RECUTITA LEAF",
+   "labels": 2,
+   "printed": "Chamomilla Recutita Flower Extract"
+  },
+  "CHAMOMILLARECUTITAFLOWEREXTRACT|FGL3685T2X": {
+   "filed": "CHAMOMILE",
+   "labels": 73,
+   "printed": "Chamomilla Recutita (Matricaria) Flower Extract"
+  },
+  "CHROMIUMOXIDEGREENS|X5Z09SU859": {
+   "filed": "CHROMIC OXIDE",
+   "labels": 3,
+   "printed": "Chromium Oxide Greens (CI 77288)"
+  },
+  "CI77499|1N032N7MFO": {
+   "filed": "BROWN IRON OXIDE",
+   "labels": 13,
+   "printed": "CI 77499 (Iron Oxides)"
+  },
+  "CINNAMOMUMCASSIABARKEXTRACT|WS4CQ062KM": {
+   "filed": "CHINESE CINNAMON",
+   "labels": 2,
+   "printed": "CINNAMOMUM CASSIA BARK EXTRACT"
+  },
+  "CITRICACID|XF417D3PSL": {
+   "filed": "ANHYDROUS CITRIC ACID",
+   "labels": 17,
+   "printed": "Citric Acid"
+  },
+  "CITRUSAURANTIUMDULCISPEELOIL|AKN3KSD11B": {
+   "filed": "ORANGE OIL, COLD PRESSED",
+   "labels": 3,
+   "printed": "citrus aurantium dulcis (orange) peel oil"
+  },
+  "CITRUSLIMONPEELOIL|I9GRO824LL": {
+   "filed": "LEMON OIL, COLD PRESSED",
+   "labels": 2,
+   "printed": "Citrus Limon (Lemon) Peel Oil"
+  },
+  "CITRUSSINENSISESSENTIALOIL|AKN3KSD11B": {
+   "filed": "ORANGE OIL, COLD PRESSED",
+   "labels": 2,
+   "printed": "Citrus Sinensis (Sweet Orange) Essential Oil"
+  },
+  "CLADONIASTELLARISEXTRACT|O21ZF987XQ": {
+   "filed": "CLADONIA RANGIFERINA WHOLE",
+   "labels": 2,
+   "printed": "Cladonia Stellaris Extract"
+  },
+  "COCOCAPRYLATECAPRATE|8D9H4QU99H": {
+   "filed": "COCOYL CAPRYLOCAPRATE",
+   "labels": 6,
+   "printed": "coco-caprylate/caprate"
+  },
+  "COLLOIDALOATMEAL|8PI54V663Y": {
+   "filed": "OATMEAL",
+   "labels": 2,
+   "printed": "Colloidal Oatmeal"
+  },
+  "CORNDERIVEDPROPANEDIOL|5965N8W85T": {
+   "filed": "PROPANEDIOL",
+   "labels": 12,
+   "printed": "Corn-Derived Propanediol"
+  },
+  "CRAMBEABYSSINICASEEDOIL|0QW9S92J3K": {
+   "filed": "CRAMBE HISPANICA SUBSP. ABYSSINICA SEED OIL",
+   "labels": 4,
+   "printed": "Crambe abyssinica (abyssinian) seed oil"
+  },
+  "DEACETYLPHOSPHATE|4UG0316V9S": {
+   "filed": "DIETHANOLAMINE CETYL PHOSPHATE",
+   "labels": 3,
+   "printed": "DEA Cetyl Phosphate"
+  },
+  "DECOLORIZEDALOEBARBADENSISLEAFEXTRACT|ZY81Z83H0X": {
+   "filed": "ALOE VERA LEAF",
+   "labels": 2,
+   "printed": "decolorized Aloe Barbadensis Leaf Extract"
+  },
+  "DISODIUM|7FLD91C86K": {
+   "filed": "EDETATE DISODIUM",
+   "labels": 9,
+   "printed": "DISODIUM"
+  },
+  "ECTOIN|7GXZ3858RY": {
+   "filed": "ECTOINE",
+   "labels": 6,
+   "printed": "Ectoin"
+  },
+  "EDTA|NDT563S5VZ": {
+   "filed": "MAGNESIUM DISODIUM EDTA",
+   "labels": 2,
+   "printed": "disodium EDTA"
+  },
+  "ETHANOL|3K9958V90M": {
+   "filed": "ALCOHOL",
+   "labels": 3,
+   "printed": "Ethanol"
+  },
+  "EUPHORBIACERIFERAWAX|WL0328HX19": {
+   "filed": "CANDELILLA WAX",
+   "labels": 2,
+   "printed": "Euphorbia Cerifera (Candelila) Wax"
+  },
+  "FOENICULUMVULGARESEEDEXTRACT|G3QC02NIE6": {
+   "filed": "FENNEL SEED",
+   "labels": 2,
+   "printed": "Foeniculum vulgare seed extract"
+  },
+  "FRAGRANCE|329LCV5BTF": {
+   "filed": "FRAGRANCE CLEAN ORC0600327",
+   "labels": 4,
+   "printed": "Fragrance"
+  },
+  "FRAGRANCE|A2Q2LHC6MA": {
+   "filed": "PARFUMIDINE",
+   "labels": 2,
+   "printed": "Parfum (Fragrance)"
+  },
+  "FRAGRANCE|OU4GI2R2WB": {
+   "filed": "FRAGRANCE FRESH CITRUS FLORAL ORC1501495",
+   "labels": 7,
+   "printed": "fragrance"
+  },
+  "FRAGRANCE|QH92QT9LWR": {
+   "filed": "FRAGRANCE ESC 10-740",
+   "labels": 4,
+   "printed": "Fragrance"
+  },
+  "FRAGRANCE|R66Z4YW3X0": {
+   "filed": "FRAGRANCE FLORAL ORC0902236",
+   "labels": 21,
+   "printed": "fragrance"
+  },
+  "FRAGRANCE|SXS9CO2TZK": {
+   "filed": "FRAGRANCE LAVENDER &AMP; CHIA F-153480",
+   "labels": 4,
+   "printed": "Fragrance (Parfum)"
+  },
+  "FUSANUSSPICATUSWOODOIL|H9LVS6REV4": {
+   "filed": "SANTALUM SPICATUM OIL",
+   "labels": 3,
+   "printed": "Fusanus Spicatus Wood Oil"
+  },
+  "GARDENIAFLORIDAFRUITEXTRACT|7CTH8MD549": {
+   "filed": "GARDENIA JASMINOIDES FRUIT",
+   "labels": 3,
+   "printed": "Gardenia Florida Fruit Extract"
+  },
+  "GLUCONOLATONEPOTASSIUMSORBATE|1VPU26JZZ4": {
+   "filed": "POTASSIUM SORBATE",
+   "labels": 2,
+   "printed": "Gluconolatone Potassium Sorbate"
+  },
+  "GLUCONOLATONEPOTASSIUMSORBATE|WQ29KQ9POT": {
+   "filed": "GLUCONOLACTONE",
+   "labels": 2,
+   "printed": "Gluconolatone Potassium Sorbate"
+  },
+  "GLYCERYLBEHENATE|JRY34LRD7B": {
+   "filed": "ETHYLHEXYLGLYCERYL BEHENATE",
+   "labels": 2,
+   "printed": "glyceryl behenate"
+  },
+  "GLYCERYLOLEATECITRATE|NLE5KIG74K": {
+   "filed": "GLYCERYL MONOOLEATE CITRATE",
+   "labels": 3,
+   "printed": "Glyceryl Oleate Citrate"
+  },
+  "GLYCERYLSTARCH|4DGK8B7I3S": {
+   "filed": "STARCH, RICE",
+   "labels": 3,
+   "printed": "glyceryl starch"
+  },
+  "GRASSFEDBEEFTALLOW|98HPY76U4W": {
+   "filed": "BEEF TALLOW",
+   "labels": 2,
+   "printed": "% grass-fed beef tallow"
+  },
+  "HIBISCUSESCULENTUSFRUITEXTRACT|51ME2L7STL": {
+   "filed": "OKRA",
+   "labels": 6,
+   "printed": "Hibiscus Esculentus Fruit Extract"
+  },
+  "HYDROGENATEDGLYCERYLABIETATE|2F22LY70Q1": {
+   "filed": "GLYCERYL ABIETATE",
+   "labels": 2,
+   "printed": "Hydrogenated Glyceryl Abietate"
+  },
+  "HYDROGENATEDGLYCERYLABIETATE|A23O709X8O": {
+   "filed": "HYDROGENATED METHYL ABIETATE",
+   "labels": 2,
+   "printed": "Hydrogenated Glyceryl Abietate"
+  },
+  "HYDROGENATEDMETHYLABIETATE|2F22LY70Q1": {
+   "filed": "GLYCERYL ABIETATE",
+   "labels": 2,
+   "printed": "hydrogenated methyl abietate"
+  },
+  "HYDROGENATEDOLIVEOILOLIVEOILUNSAPONIFIABLES|6UYK2W1W1E": {
+   "filed": "OLIVE OIL",
+   "labels": 2,
+   "printed": "Hydrogenated Olive Oil/Olive Oil Unsaponifiables"
+  },
+  "HYDROGENATEDPHOSPHATIDYLCHOLINE|QHQ97HF0PY": {
+   "filed": "HYDROGENATED SOYBEAN PHOSPHATIDYLCHOLINE",
+   "labels": 5,
+   "printed": "Hydrogenated Phosphatidylcholine"
+  },
+  "HYDROGENATEDPLANTDERIVEDLECITHIN|H1109Z9J4N": {
+   "filed": "HYDROGENATED SOYBEAN LECITHIN",
+   "labels": 12,
+   "printed": "Hydrogenated Plant-Derived Lecithin"
+  },
+  "HYDROLYZEDADANSONIADIGITATASEEDEXTRACT|2936P60TPX": {
+   "filed": "ADANSONIA DIGITATA SEED",
+   "labels": 2,
+   "printed": "HYDROLYZED ADANSONIA DIGITATA SEED EXTRACT"
+  },
+  "HYDROXYAPATITE|91D9GV0Z28": {
+   "filed": "TRIBASIC CALCIUM PHOSPHATE",
+   "labels": 4,
+   "printed": "Hydroxyapatite"
+  },
+  "IRONOXIDES|1N032N7MFO": {
+   "filed": "BROWN IRON OXIDE",
+   "labels": 21,
+   "printed": "Iron Oxide (CI77491)"
+  },
+  "JASMINUMSAMBACLEAFCELLEXTRACT|6OG06384ID": {
+   "filed": "JASMINUM OFFICINALE LEAF",
+   "labels": 2,
+   "printed": "Jasminum Sambac(Jasmine) Leaf Cell Extract"
+  },
+  "JOJOBAESTERS|AS2SZ9757N": {
+   "filed": "HYDROGENATED JOJOBA OIL/JOJOBA OIL, RANDOMIZED (IODINE VALUE 40-44)",
+   "labels": 4,
+   "printed": "JOJOBA ESTERS"
+  },
+  "JOJOBAESTERS|Q47ST02F58": {
+   "filed": "HYDROGENATED JOJOBA OIL, RANDOMIZED",
+   "labels": 19,
+   "printed": "Jojoba Esters"
+  },
+  "JOJOBAESTERS|UDR641JW8W": {
+   "filed": "HYDROLYZED JOJOBA ESTERS",
+   "labels": 7,
+   "printed": "Jojoba Esters"
+  },
+  "JOJOBAOILMACADAMIASEEDOILESTERS|7F0EV20QYL": {
+   "filed": "JOJOBA OIL, RANDOMIZED",
+   "labels": 3,
+   "printed": "Jojoba Oil/Macadamia Seed Oil Esters"
+  },
+  "JUNIPERUSMEXICANA|4739QA5686": {
+   "filed": "JUNIPERUS DEPPEANA WOOD OIL",
+   "labels": 2,
+   "printed": "Juniperus Mexicana"
+  },
+  "LACTOBACILLUSFERMENT|2C1F12C6AP": {
+   "filed": "LIMOSILACTOBACILLUS FERMENTUM",
+   "labels": 2,
+   "printed": "Lactobacillus Ferment"
+  },
+  "LAVANDULAHYBRIDAOIL|9RES347CKG": {
+   "filed": "LAVANDIN OIL",
+   "labels": 3,
+   "printed": "Lavandula Hybrida Oil"
+  },
+  "LEONTOPODIUMALPINUMFLOWERLEAFEXTRACT|QQC1AK06RK": {
+   "filed": "LEONTOPODIUM NIVALE SUBSP. ALPINUM FLOWERING TOP",
+   "labels": 2,
+   "printed": "Leontopodium Alpinum Flower/Leaf Extract"
+  },
+  "LEPIDIUMSATIVUMSPROUTEXTRACT|PWQ18YNR62": {
+   "filed": "GARDEN CRESS SPROUT",
+   "labels": 2,
+   "printed": "Lepidium Sativum (Cress) Sprout Extract"
+  },
+  "LINUMUSITATISSIMUMSEEDEXTRACT|4110YT348C": {
+   "filed": "FLAX SEED",
+   "labels": 28,
+   "printed": "LINUM USITATISSIMUM (LINSEED) SEED EXTRACT"
+  },
+  "LYSOLECITHIN|CQD833204Z": {
+   "filed": "LYSOPHOSPHATIDYLCHOLINE, SOYBEAN",
+   "labels": 6,
+   "printed": "Lysolecithin"
+  },
+  "MELANIN|O0CV1RMR44": {
+   "filed": "MELANIN SYNTHETIC (TYROSINE, PEROXIDE)",
+   "labels": 3,
+   "printed": "Melanin"
+  },
+  "MIXEDTOCOPHEROLS|H4N855PNZ1": {
+   "filed": "ALPHA-TOCOPHEROL",
+   "labels": 4,
+   "printed": "Mixed Tocopherols"
+  },
+  "MIXEDTOCOPHEROLS|R0ZB2556P8": {
+   "filed": "TOCOPHEROL",
+   "labels": 9,
+   "printed": "Mixed Tocopherols (Vitamin E)"
+  },
+  "NONGMOTOCOPHEROL|R0ZB2556P8": {
+   "filed": "TOCOPHEROL",
+   "labels": 2,
+   "printed": "Non-GMO Tocopherol (Vitamin E.)"
+  },
+  "OCTYLPALMITATE|2865993309": {
+   "filed": "ETHYLHEXYL PALMITATE",
+   "labels": 7,
+   "printed": "Octyl Palmitate"
+  },
+  "ORGANICPOLYGLYCERYL3POLYRICINOLEATE|MZQ63P0N0W": {
+   "filed": "POLYGLYCERYL-3 RICINOLEATE",
+   "labels": 2,
+   "printed": "Organic Polyglyceryl-3 Polyricinoleate"
+  },
+  "ORGANICTHUJAPLICATAEXTRACT|5MPS47D679": {
+   "filed": "SODIUM HINOKITIOL",
+   "labels": 2,
+   "printed": "Organic Thuja plicata (Hinokitiol) Extract"
+  },
+  "ORYZASALIVALEESEXTRACT|7N2B70SFEZ": {
+   "filed": "RICE GERM",
+   "labels": 2,
+   "printed": "Oryza Saliva (Rice) Lees Extract"
+  },
+  "ORYZASATIVABRANEXTRACT|R60QEP13IC": {
+   "filed": "RICE BRAN",
+   "labels": 10,
+   "printed": "Oryza Sativa (Rice)Bran Extract"
+  },
+  "ORYZASATIVABRANOIL|LZO6K1506A": {
+   "filed": "RICE BRAN OIL",
+   "labels": 3,
+   "printed": "Oryza Sativa (Rice) Bran Oil"
+  },
+  "ORYZASATIVABRANWATER|H6597RO5A2": {
+   "filed": "RICE BRAN, DEFATTED",
+   "labels": 3,
+   "printed": "oryza sativa (rice) bran water"
+  },
+  "ORYZASATIVABRANWAX|R60QEP13IC": {
+   "filed": "RICE BRAN",
+   "labels": 3,
+   "printed": "Oryza Sativa (Rice) Bran Wax"
+  },
+  "OZOKERITE|Q1LS2UJO3A": {
+   "filed": "CERESIN",
+   "labels": 32,
+   "printed": "Ozokerite"
+  },
+  "PEG400|B697894SGQ": {
+   "filed": "POLYETHYLENE GLYCOL 400",
+   "labels": 3,
+   "printed": "PEG-400"
+  },
+  "PEG8|B697894SGQ": {
+   "filed": "POLYETHYLENE GLYCOL 400",
+   "labels": 6,
+   "printed": "PEG-8"
+  },
+  "PHOSPHOLIPIDS|1DI56QDM62": {
+   "filed": "LECITHIN, SOYBEAN",
+   "labels": 8,
+   "printed": "Phospholipids"
+  },
+  "PHOSPHOLIPIDS|EA3D6UW549": {
+   "filed": "BOVINE LUNG PHOSPHOLIPIDS ADULT",
+   "labels": 3,
+   "printed": "Phospholipids"
+  },
+  "PHOSPHOLIPIDS|QHQ97HF0PY": {
+   "filed": "HYDROGENATED SOYBEAN PHOSPHATIDYLCHOLINE",
+   "labels": 4,
+   "printed": "PHOSPHOLIPIDS"
+  },
+  "PHYTICACID|7IGF0S7R8I": {
+   "filed": "FYTIC ACID",
+   "labels": 5,
+   "printed": "Phytic Acid"
+  },
+  "POLYC1030ALKYLACRYLATE|D64PM5UT4U": {
+   "filed": "BEHENYL ACRYLATE POLYMER",
+   "labels": 9,
+   "printed": "Poly C10-30 Alkyl Acrylate"
+  },
+  "POLYC1030ALKYLACRYLATE|N85XDY2F7W": {
+   "filed": "STEARYL ACRYLATE POLYMER (110000 MW)",
+   "labels": 2,
+   "printed": "poly C10-30 alkyl acrylate"
+  },
+  "POLYETHYLENE|UG00KM4WR7": {
+   "filed": "HIGH DENSITY POLYETHYLENE",
+   "labels": 25,
+   "printed": "Polyethylene"
+  },
+  "POLYGLYCERYL10MONODIOLEATE|598RES7AXX": {
+   "filed": "POLYGLYCERYL-10 DIOLEATE",
+   "labels": 2,
+   "printed": "Polyglyceryl-10 Mono/Dioleate"
+  },
+  "POLYGLYCERYL3POLYRICINOLEATE|7Q0OK5DOT4": {
+   "filed": "POLYGLYCERYL-3 PENTARICINOLEATE",
+   "labels": 47,
+   "printed": "polyglyceryl-3polyricinoleate"
+  },
+  "POLYGLYCERYL6PENTAOLEATE|062SZD3F3X": {
+   "filed": "POLYGLYCERYL-6 DIOLEATE",
+   "labels": 2,
+   "printed": "Polyglyceryl-6 Pentaoleate"
+  },
+  "POLYGONUMTINCTORIUMLEAFEXTRACT|FU6582QMPV": {
+   "filed": "PERSICARIA TINCTORIA LEAF",
+   "labels": 4,
+   "printed": "Polygonum Tinctorium Leaf Extract"
+  },
+  "POLYMETHYLMETHACRYLATE|Z47NNT4J11": {
+   "filed": "POLY(METHYL METHACRYLATE; 450000 MW)",
+   "labels": 9,
+   "printed": "Polymethyl Methacrylate"
+  },
+  "PUNICAGRANATUMFRUITJUICE|99S671U9KB": {
+   "filed": "POMEGRANATE JUICE",
+   "labels": 2,
+   "printed": "punica granatum fruit juice"
+  },
+  "PVPEICOSENECOPOLYMER|XQQ9MKE2BJ": {
+   "filed": "EICOSYL POVIDONE (2 EICOSYL BRANCHES/REPEAT)",
+   "labels": 3,
+   "printed": "PVP/Eicosene Copolymer"
+  },
+  "SACCHAROMYCESSELENIUMFERMENT|978D8U419H": {
+   "filed": "SACCHAROMYCES CEREVISIAE",
+   "labels": 2,
+   "printed": "Saccharomyces/Selenium Ferment"
+  },
+  "SCLEROTIUMGUM|2X51AD1X3T": {
+   "filed": "BETASIZOFIRAN",
+   "labels": 6,
+   "printed": "Sclerotium Gum"
+  },
+  "SILICASILYLATE|EU2PSP0G0W": {
+   "filed": "SILICA DIMETHYL SILYLATE",
+   "labels": 7,
+   "printed": "Silica Silylate"
+  },
+  "SILICA|S4255P4G5M": {
+   "filed": "CALCIUM SILICATE",
+   "labels": 2,
+   "printed": "Silica"
+  },
+  "SILICA|VU10KU4B9S": {
+   "filed": "SILICA, TRIMETHYLSILYL CAPPED",
+   "labels": 3,
+   "printed": "Silica"
+  },
+  "SILICONE|Z4152N8IUI": {
+   "filed": "SILICON",
+   "labels": 3,
+   "printed": "Silicone"
+  },
+  "SODIUMHYALURONATE|B7SG5YV2SI": {
+   "filed": "HYALURONIC ACID (NON-ANIMAL STABILIZED)",
+   "labels": 33,
+   "printed": "Sodium Hyaluronate"
+  },
+  "SODIUMHYALURONATE|S270N0TRQY": {
+   "filed": "HYALURONIC ACID",
+   "labels": 2,
+   "printed": "sodium hyaluronate"
+  },
+  "SODIUMPHYTATE|ZBX50UG81V": {
+   "filed": "HEXASODIUM PHYTATE",
+   "labels": 2,
+   "printed": "Sodium Phytate"
+  },
+  "SPIRAEAULMARIAFLOWEREXTRACT|06L18L32G6": {
+   "filed": "FILIPENDULA ULMARIA FLOWER",
+   "labels": 9,
+   "printed": "Spiraea Ulmaria (Meadowsweet) Flower Extract"
+  },
+  "SPIRULINAMAXIMAEXTRACT|9K7IG15M0Q": {
+   "filed": "ARTHROSPIRA MAXIMA",
+   "labels": 5,
+   "printed": "Spirulina Maxima Extract"
+  },
+  "STEARYLCITRATE|YWW937R1QR": {
+   "filed": "MONOSTEARYL CITRATE",
+   "labels": 2,
+   "printed": "Stearyl Citrate"
+  },
+  "STYRENEACRYLATESCOPOLYMER|5Z4DPO246A": {
+   "filed": "STYRENE/ACRYLAMIDE COPOLYMER (MW 500000)",
+   "labels": 35,
+   "printed": "styrene/acrylates copolymer"
+  },
+  "STYRENEACRYLATESCOPOLYMER|PA4J9TF5U2": {
+   "filed": "STYRENE/AMMONIUM ACRYLATE COPOLYMER (300000 MW)",
+   "labels": 3,
+   "printed": "STYRENE/ACRYLATES COPOLYMER"
+  },
+  "STYRENEACRYLATESCOPOLYMER|V5RS026Q0H": {
+   "filed": "BUTYL METHACRYLATE/METHYL METHACRYLATE/METHACRYLIC ACID/STYRENE CROSSPOLYMER",
+   "labels": 3,
+   "printed": "Styrene/Acrylates Copolymer"
+  },
+  "SULFATEEDETATE|7FLD91C86K": {
+   "filed": "EDETATE DISODIUM",
+   "labels": 9,
+   "printed": "SULFATE EDETATE"
+  },
+  "SUNFLOWERSEEDOIL|3W1JG795YI": {
+   "filed": "SUNFLOWER OIL",
+   "labels": 2,
+   "printed": "Sunflower(Helianthus Annuus) Seed Oil"
+  },
+  "SWEETALMONDOIL|66YXD4DKO9": {
+   "filed": "ALMOND OIL",
+   "labels": 3,
+   "printed": "Sweet almond oil"
+  },
+  "SYNTHETICFLUORPHLOGOPITE|YK3DC63Y5M": {
+   "filed": "MAGNESIUM POTASSIUM ALUMINOSILICATE FLUORIDE",
+   "labels": 6,
+   "printed": "Synthetic Fluorphlogopite [?"
+  },
+  "TALLOW|98HPY76U4W": {
+   "filed": "BEEF TALLOW",
+   "labels": 5,
+   "printed": "Tallow (Adeps Bovis)"
+  },
+  "TBUTYLALCOHOL|MD83SFE959": {
+   "filed": "TERT-BUTYL ALCOHOL",
+   "labels": 2,
+   "printed": "t-butyl alcohol"
+  },
+  "TERMINALIAFERDINANDIANAFRUITEXTRACT|0ZQ1D2FDLI": {
+   "filed": "KAKADU PLUM",
+   "labels": 5,
+   "printed": "Terminalia Ferdinandiana Fruit Extract"
+  },
+  "TETRAFLUOROPROPENE|TNA118I5TG": {
+   "filed": "2,3,5,6-TETRAFLUOROPHENOL",
+   "labels": 3,
+   "printed": "Tetrafluoropropene"
+  },
+  "THEOBROMACACAOCOCOASEEDBUTTER|512OYT1CRR": {
+   "filed": "COCOA BUTTER",
+   "labels": 2,
+   "printed": "Theobroma Cacao Cocoa) Seed Butter"
+  },
+  "TOCOPHEROLACETATE|WR1WPI7EW8": {
+   "filed": ".ALPHA.-TOCOPHEROL ACETATE, DL-",
+   "labels": 2,
+   "printed": "Tocopherol Acetate"
+  },
+  "TOCOPHEROL|7QWA1RIO01": {
+   "filed": ".ALPHA.-TOCOPHEROL, DL-",
+   "labels": 18,
+   "printed": "TOCOPHEROL"
+  },
+  "TOCOPHEROL|9E8X80D2L0": {
+   "filed": ".ALPHA.-TOCOPHEROL ACETATE",
+   "labels": 2,
+   "printed": "TOCOPHEROL (VITAMIN E)"
+  },
+  "TOCOPHEROL|9U6A490501": {
+   "filed": ".BETA.-TOCOPHEROL",
+   "labels": 3,
+   "printed": "Tocopherol"
+  },
+  "TOCOPHEROL|N9PR3490H9": {
+   "filed": ".ALPHA.-TOCOPHEROL, D-",
+   "labels": 5,
+   "printed": "Tocopherol"
+  },
+  "TOCOPHERYLACETATE|A7E6112E4N": {
+   "filed": ".ALPHA.-TOCOPHEROL ACETATE, D-",
+   "labels": 16,
+   "printed": "tocopheryl acetate"
+  },
+  "TOCOPHERYLACETATE|H4N855PNZ1": {
+   "filed": ".ALPHA.-TOCOPHEROL",
+   "labels": 3,
+   "printed": "tocopheryl acetate (Vitamin E)"
+  },
+  "TOCOPHERYLACETATE|WR1WPI7EW8": {
+   "filed": ".ALPHA.-TOCOPHEROL ACETATE, DL-",
+   "labels": 18,
+   "printed": "Tocopheryl Acetate"
+  },
+  "TRANS2HEXENAL|69JX3AIR1I": {
+   "filed": "2-HEXENAL, (2E)-",
+   "labels": 2,
+   "printed": "Trans-2-hexenal"
+  },
+  "TRIACONTANYLPVP|N0SS3Q238D": {
+   "filed": "TRICONTANYL POVIDONE",
+   "labels": 5,
+   "printed": "Triacontanyl PVP"
+  },
+  "UBIQUINONE|EJ27X76M46": {
+   "filed": "UBIDECARENONE",
+   "labels": 8,
+   "printed": "Ubiquinone (CoQ10)"
+  },
+  "ULTRAMARINES|I39WR998BI": {
+   "filed": "ULTRAMARINE BLUE",
+   "labels": 29,
+   "printed": "ultramarines"
+  },
+  "VANILLAPLANIFOLIAFRUITEXTRACT|Q74T35078H": {
+   "filed": "VANILLA BEAN",
+   "labels": 4,
+   "printed": "Vanilla Planifolia Fruit Extract"
+  },
+  "VPEICOSENECOPOLYMER|XQQ9MKE2BJ": {
+   "filed": "EICOSYL POVIDONE",
+   "labels": 16,
+   "printed": "VP/Eicosene Copolymer"
+  },
+  "VPHEXADECENECOPOLYMER|AG75W62QYU": {
+   "filed": "HEXADECYL POVIDONE (4 HEXADECYL BRANCHES/REPEAT)",
+   "labels": 11,
+   "printed": "VP Hexadecene Copolymer"
+  },
+  "WITH1ORLESSCONCENTRATIONMAGNESIUMSULFATE|DE08037SAB": {
+   "filed": "MAGNESIUM SULFATE, UNSPECIFIED FORM",
+   "labels": 3,
+   "printed": "with 1% or less concentration: Magnesium Sulfate"
+  },
+  "YELLOWIRONOXIDES|EX438O2MRT": {
+   "filed": "FERRIC OXIDE YELLOW",
+   "labels": 2,
+   "printed": "Yellow Iron Oxides"
+  },
+  "ZEMEAPROPANEDIOL|5965N8W85T": {
+   "filed": "PROPANEDIOL",
+   "labels": 3,
+   "printed": "Zemea (Corn) Propanediol"
+  }
+ }
+}

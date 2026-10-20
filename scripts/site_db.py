@@ -77,6 +77,8 @@ def explained(release_dir):
             out[r["setid"]] = "actives_corrected"
         elif r.get("fetch_status") == "carried_forward":
             out[r["setid"]] = "last_good_read_kept"
+        elif r.get("inactives_tidied") or r.get("filed_synonyms_dropped"):
+            out[r["setid"]] = "list_split_repaired"
         elif r.get("inactives_added_from_label_text"):
             out[r["setid"]] = "label_text_addition"
     return out
