@@ -1,0 +1,17 @@
+{
+ "setid": "96b3109c-0f1b-48c6-9f97-4e7c621a9060",
+ "images": [
+  {
+   "name": "T0RY_Page_1.jpg",
+   "file": "img/96b3109c-0f1b-48c6-9f97-4e7c621a9060/T0RY_Page_1.jpg"
+  }
+ ],
+ "error": "spl: HTTP Error 429: Too Many Requests",
+ "db": {
+  "setid": "96b3109c-0f1b-48c6-9f97-4e7c621a9060",
+  "name": "Illuminating Protective Primer SPF 12 Cream",
+  "brand": "TOM FORD BEAUTY DIST",
+  "n_inactive": 43,
+  "thin_reason": null
+ }
+}

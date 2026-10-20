@@ -1,0 +1,25 @@
+{
+ "setid": "3b85004a-8832-4eac-bd70-1e607ae7af4b",
+ "images": [
+  {
+   "name": "mm01.jpg",
+   "file": "img/3b85004a-8832-4eac-bd70-1e607ae7af4b/mm01.jpg"
+  },
+  {
+   "name": "mm02.jpg",
+   "file": "img/3b85004a-8832-4eac-bd70-1e607ae7af4b/mm02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Meijer D40.000/D40AA Sport Sunscreen Lotion SPF 50",
+ "inactive_section": "water, diethylhexyl 2,6-naphthalate, butyloctyl salicylate, styrene/acrylates copolymer, aluminum starch octenylsuccinate, glycerin, polyester-7, silica, chlorphenesin, benzyl alcohol, arachidyl alcohol, acrylates/C10-30 alkyl acrylate crosspolymer, neopentyl glycol diheptanoate, behenyl alcohol, tocopherol, beeswax, arachidyl glucoside, potassium hydroxide, glyceryl stearate, PEG-100 stearate, disodium EDTA, sodium ascorbyl phosphate, fragrance, amyl cinnamal",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3b85004a-8832-4eac-bd70-1e607ae7af4b",
+  "name": "Avobenzone, Homosalate, Octisalate Lotion",
+  "brand": "Meijer, Inc.",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

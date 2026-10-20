@@ -1,0 +1,21 @@
+{
+ "setid": "2ea84d12-a5da-41a3-986b-8897f287f00f",
+ "images": [
+  {
+   "name": "5977991116.jpg",
+   "file": "img/2ea84d12-a5da-41a3-986b-8897f287f00f/5977991116.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Ethylhexyl Benzoate, Cetearyl Alcohol, VP/Eicosene Copolymer, Diisopropyl Adipate,Neopentyl Glycol Diheptanoate, Mica, Dimethicone, Glycerin, Polymethylsilsesquioxane, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Coco-Glucoside, Propylene Glycol Dibenzoate, Ceteth-10 Phosphate, Dicetyl Phosphate, Disodium EDTA, Paraffin, Xanthan Gum, Butyrospermum, Parkii (Shea) Butter, Jojoba Alcohol, Potassium Jojobate, Simmondsia Chinensis (Jojoba) Butter, Mangifera Indica (Mango) Seed Butter, Propanediol, Tocopheryl Acetate, Carica Papaya (Papaya) Fruit Extract, Colocasia Antiquorum Root Extract, Mangifera Indica (Mango) Fruit Extract, Passiflora Incarnata Fruit Extract, Plumeria Acutifolia Flower Extract, Psidium Guajava Fruit Extract, Panthenol, Aloe Barbadensis Leaf Juice, Sodium Ascorbyl Phosphate, Phenoxyethanol, Methylparaben, Propylparaben, Fragrance, Titanium Dioxide.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2ea84d12-a5da-41a3-986b-8897f287f00f",
+  "name": "Cvs Sheer Sfp 30 Lotion",
+  "brand": "CVS Pharmacy",
+  "n_inactive": 44,
+  "thin_reason": null
+ }
+}

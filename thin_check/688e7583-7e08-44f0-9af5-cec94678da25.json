@@ -1,0 +1,25 @@
+{
+ "setid": "688e7583-7e08-44f0-9af5-cec94678da25",
+ "images": [
+  {
+   "name": "back.jpg",
+   "file": "img/688e7583-7e08-44f0-9af5-cec94678da25/back.jpg"
+  },
+  {
+   "name": "front.jpg",
+   "file": "img/688e7583-7e08-44f0-9af5-cec94678da25/front.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sun Protection Emulsion Face SPF 30",
+ "inactive_section": "Water (Aqua), Caprylyl Methicone, Hexyldecanol, Dimethicone, Polyglyceryl-3 Methylglucose Distearate, Undercrylene Dimethicone, Aluminum Starch Octenylsuccinate, Steareth-21, Octyldodecyl Olivate, Cetyl Alcohol, Silica, Glycerin, Glycoproteins, Panax Ginseng Root Extract*, Equisetum Arvense (Horsetail) Extract*, Sodium Hyaluronate, Corallina Officinalis Extract, Sea Water ( Maris Aqua), Algae Extract, Aloe Barbadensis Leaf Juice, Steareth-2, Ethylhexyl Glycerin, Disodium EDTA, Benzylidene Dimethoxydimethylindanone, sodium hydroxide, porphyra Umbilicalis Extract, Squalane, Carbomer, Potassium Sorbate, Hydroxyethyl acrylate/ Sodium Acryloyldimethyl Taurate Copolymer, Palmaria Pakmata Extract, Tocopheryl Acetate, Diethylhexyl Syringyldenemalonate, Pelvetia Canaliculata Extract, Polysorbate 60, Lecithin, Caprylic/ Capric Triglyceride, Sodium Lactate, Caprylyl Glycol, Alcohol, Benzyl Alcohol, Fragrance ( parfum), Phenoxyethanol, Chlorphenesin, Sodium Benzoate, Methylparaben, Ethylparaben, Propyparaben",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "688e7583-7e08-44f0-9af5-cec94678da25",
+  "name": "Sun Protection Emulsion Face Cream",
+  "brand": "Juvena GMBH",
+  "n_inactive": 48,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "setid": "9aa667d8-3c67-4641-b9f8-31c82fa21891",
+ "images": [
+  {
+   "name": "DFB1.jpg",
+   "file": "img/9aa667d8-3c67-4641-b9f8-31c82fa21891/DFB1.jpg"
+  },
+  {
+   "name": "DFB2.jpg",
+   "file": "img/9aa667d8-3c67-4641-b9f8-31c82fa21891/DFB2.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/9aa667d8-3c67-4641-b9f8-31c82fa21891/PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "Inactive ingredients: water/eau, butylene glycol, glycerin, dimethicone, PEG-8, trisiloxane, ethylhexyl isononanoate, HDI/trimethylol hexyllactone crosspolymer, cetyl alcohol, caprylyl glycol, behenyl alcohol, carbomer, dilauryl thiodipropionate, galactoarabinan, parfum/fragrance, phytol, thiodipropionicacid, sodium hydroxide, glyceryl stearate, phenoxyethanol, trimethylsiloxysilicate, hydrogenated lecithin, acrylates/C10-30 alkyl acrylate crosspolymer, disodium EDTA, polyglyceryl-3 diisostearate, choleth-24, hexylene glycol, tocopherol, ceteth-24, panthenol, silica, tocopherylacetate, sesbania grandiflora flower extract, amethyst extract, phospholipids, pueraria lobata symbiosome extract, saccharomyces/calcium ferment, zea mays (corn) kernel extract, sphingolipids, saccharomyces/copper ferment, saccharomyces/potassium ferment, saccharomyces/magnesium ferment, saccharomyces/zinc ferment, saccharomyces/manganese ferment, saccharomyces/iron ferment, saccharomyces/silicon ferment.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9aa667d8-3c67-4641-b9f8-31c82fa21891",
+  "name": "Avon Elements Youth Restoring Multi-purpose Lotion",
+  "brand": "New Avon LLC",
+  "n_inactive": 46,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "setid": "5dd3afe6-e597-c94b-e063-6394a90a9700",
+ "images": [
+  {
+   "name": "480d2289-5bf6-913b-e063-6294a90a2057.jpg",
+   "file": "img/5dd3afe6-e597-c94b-e063-6394a90a9700/480d2289-5bf6-913b-e063-6294a90a2057.jpg"
+  },
+  {
+   "name": "TINTED-SUNSCREEN.jpg",
+   "file": "img/5dd3afe6-e597-c94b-e063-6394a90a9700/TINTED-SUNSCREEN.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "37",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENTS: Water Ethylhexyl Palmitate Cetyl Ethylhexanoate Tinosorb S (Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine) Butyloctyl Salicylate Pentaerythrityl Tetraethylhexanoate Potassium Cetyl Phosphate Cetearyl Alcohol Hemisqualane Silica Glyceryl Stearate Sodium PCA Panthenol Niacinamide Ascorbyl Glucoside Sodium Hyaluronate Acetylated Sodium Hyaluronate Cross-linked Sodium Hyaluronate Hydrolyzed Sodium Hyaluronate Polypodium Leucotomos Extract Green Tea Extract Fullerene Collagen Peptide Pro-Xylane Tri(Cetearyl-4) Phosphate Aluminum Hydroxide Stearic Acid Tocopheryl Acetate Natural Bisabolol",
+ "ingredient_passages": [
+  {
+   "section": "51945-4",
+   "text": "INACTIVE INGREDIENTS: Water, Ethylhexyl Palmitate, Cetyl Ethylhexanoate, Tinosorb S (Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine), Butyloctyl Salicylate, Pentaerythrityl Tetraethylhexanoate, Potassium Cetyl Phosphate, Cetearyl Alcohol, Hemisqualane, Silica, Glyceryl Stearate, Sodium PCA, Panthenol, Niacinamide, Ascorbyl Glucoside, Sodium Hyaluronate, Acetylated Sodium Hyaluronate, Cross-linked Sodium Hyaluronate, Hydrolyzed Sodium Hyaluronate, Polypodium Leucotomos Extract, Green Tea Extract, Fullerene, Collagen Peptide, Pro-Xylane, Tri(Cetearyl-4) Phosphate, Aluminum Hydroxide, Stearic Acid, Tocopheryl Acetate, Natural Bisabolol"
+  }
+ ],
+ "db": {
+  "setid": "5dd3afe6-e597-c94b-e063-6394a90a9700",
+  "name": "Fermaglow Sunscreen SPF 50 Cream",
+  "brand": "Guangzhou Meijiao Medical Biotechnology Co., Ltd.",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

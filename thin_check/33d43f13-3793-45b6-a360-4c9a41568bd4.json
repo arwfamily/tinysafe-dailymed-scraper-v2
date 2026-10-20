@@ -1,0 +1,21 @@
+{
+ "setid": "33d43f13-3793-45b6-a360-4c9a41568bd4",
+ "images": [
+  {
+   "name": "Ageless BB Cream Set.jpg",
+   "file": "img/33d43f13-3793-45b6-a360-4c9a41568bd4/Ageless_BB_Cream_Set.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Fact",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "33d43f13-3793-45b6-a360-4c9a41568bd4",
+  "name": "Isaknox Ageless Serum Blemish Balm Cream",
+  "brand": "LG Household and Healthcare, Inc.",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

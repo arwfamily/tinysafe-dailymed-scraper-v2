@@ -1,0 +1,29 @@
+{
+ "setid": "066d0e4a-bb78-43a9-944f-70a343c39448",
+ "images": [
+  {
+   "name": "Ablaze.jpg",
+   "file": "img/066d0e4a-bb78-43a9-944f-70a343c39448/Ablaze.jpg"
+  },
+  {
+   "name": "Inner Package4.jpg",
+   "file": "img/066d0e4a-bb78-43a9-944f-70a343c39448/Inner_Package4.jpg"
+  },
+  {
+   "name": "Outer Package.jpg",
+   "file": "img/066d0e4a-bb78-43a9-944f-70a343c39448/Outer_Package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Be Sweet SPF 15 Tinted Lip Balm Ablaze",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "066d0e4a-bb78-43a9-944f-70a343c39448",
+  "name": "Be Sweet SPF 15 Tinted Ablaze Gel",
+  "brand": "Bona Fide Beauty Lab PS LLC",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

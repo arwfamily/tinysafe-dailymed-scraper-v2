@@ -1,0 +1,21 @@
+{
+ "setid": "2db4bdd8-1049-450a-8642-0e1dbbe5abb3",
+ "images": [
+  {
+   "name": "x26-thumb.jpg",
+   "file": "img/2db4bdd8-1049-450a-8642-0e1dbbe5abb3/x26-thumb.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "X26",
+ "inactive_section": "20% ethanol, purified water.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2db4bdd8-1049-450a-8642-0e1dbbe5abb3",
+  "name": "Lawn And Garden Detox 6026 (lawn And Garden Detox) Liquid",
+  "brand": "Professional Complementary Health Formulas",
+  "n_inactive": 3,
+  "thin_reason": "label_prints_too_little"
+ }
+}

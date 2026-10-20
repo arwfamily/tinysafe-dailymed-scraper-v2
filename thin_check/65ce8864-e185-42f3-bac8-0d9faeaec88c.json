@@ -1,0 +1,25 @@
+{
+ "setid": "65ce8864-e185-42f3-bac8-0d9faeaec88c",
+ "images": [
+  {
+   "name": "Inner Package2.jpg",
+   "file": "img/65ce8864-e185-42f3-bac8-0d9faeaec88c/Inner_Package2.jpg"
+  },
+  {
+   "name": "Outer Package2.jpg",
+   "file": "img/65ce8864-e185-42f3-bac8-0d9faeaec88c/Outer_Package2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Signature SPF 50 Tinted Face Stick",
+ "inactive_section": "aluminum hydroxide, butyloctyl salicylate, C12-15 alkyl benzoate, caprylyl methicone, copernicia cerifera (carnauba) wax, dimethicone, hydrogenated polydecane, iron oxides (CI 77491 CI 77492, CI 77499), isostearic acid, kaolin, methyl methacrylate crosspolymer, microcrystalline wax, phytosteryl/behynyl/octyldodecyl lauroyl glutamate, polyethylene, tocopheryl acetate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "65ce8864-e185-42f3-bac8-0d9faeaec88c",
+  "name": "Signature SPF 50 Tinted Face Stick",
+  "brand": "Sun Bum LLC",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

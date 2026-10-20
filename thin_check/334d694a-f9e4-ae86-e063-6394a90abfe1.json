@@ -1,0 +1,21 @@
+{
+ "setid": "334d694a-f9e4-ae86-e063-6394a90abfe1",
+ "images": [
+  {
+   "name": "Acne Lab SF 208.jpg",
+   "file": "img/334d694a-f9e4-ae86-e063-6394a90abfe1/Acne_Lab_SF_208.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "334d694a-f9e4-ae86-e063-6394a90abfe1",
+  "name": "SPF 101 Lightly Tinted Cream",
+  "brand": "The Acne Lab LLC",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

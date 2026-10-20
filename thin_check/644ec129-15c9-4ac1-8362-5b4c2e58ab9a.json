@@ -1,0 +1,21 @@
+{
+ "setid": "644ec129-15c9-4ac1-8362-5b4c2e58ab9a",
+ "images": [
+  {
+   "name": "mm01.jpg",
+   "file": "img/644ec129-15c9-4ac1-8362-5b4c2e58ab9a/mm01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Kroger D47.001/D47AA Sunscreen Lotion for Babies SPF 50",
+ "inactive_section": "water, diethylhexyl 2,6-naphthalate, butyloctyl salicylate, styrene/acrylates copolymer, aluminum starch octenylsuccinate, Aloe barbadensis leaf juice, glycerin, polyester-7, silica, chlorphenesin, benzyl alcohol, arachidyl alcohol, acrylates/C10-30 alkyl acrylate crosspolymer, neopentyl glycol diheptanoate, behenyl alcohol, tocopherol, beeswax, arachidyl glucoside, potassium hydroxide, glyceryl stearate, PEG-100 stearate, disodium EDTA, sodium ascorbyl phosphate, fragrance, hexyl cinnamal, alpha-isomethyl ionone, geraniol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "644ec129-15c9-4ac1-8362-5b4c2e58ab9a",
+  "name": "Avobenzone, Homosalate, Octisalate Lotion",
+  "brand": "The Kroger Co.",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

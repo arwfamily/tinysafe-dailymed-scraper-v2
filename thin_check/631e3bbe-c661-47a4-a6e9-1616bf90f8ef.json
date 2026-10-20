@@ -1,0 +1,29 @@
+{
+ "setid": "631e3bbe-c661-47a4-a6e9-1616bf90f8ef",
+ "images": [
+  {
+   "name": "OMBSportSpray30Back1.jpg",
+   "file": "img/631e3bbe-c661-47a4-a6e9-1616bf90f8ef/OMBSportSpray30Back1.jpg"
+  },
+  {
+   "name": "OMBSportSpray30Back2.jpg",
+   "file": "img/631e3bbe-c661-47a4-a6e9-1616bf90f8ef/OMBSportSpray30Back2.jpg"
+  },
+  {
+   "name": "OMBSportSpray30Front.jpg",
+   "file": "img/631e3bbe-c661-47a4-a6e9-1616bf90f8ef/OMBSportSpray30Front.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "6",
+ "title": "Drug Facts",
+ "inactive_section": "alcohol denat., c12-15 alkyl benzoate, ethylenediamine/stearyl dimier dilinoleate copolymer",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "631e3bbe-c661-47a4-a6e9-1616bf90f8ef",
+  "name": "Garnier Ombrelle Sport 30 Spray",
+  "brand": "L'OREAL USA PRODUCTS INC",
+  "n_inactive": 3,
+  "thin_reason": "short_list"
+ }
+}

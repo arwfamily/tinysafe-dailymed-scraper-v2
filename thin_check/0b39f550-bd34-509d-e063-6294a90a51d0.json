@@ -1,0 +1,41 @@
+{
+ "setid": "0b39f550-bd34-509d-e063-6294a90a51d0",
+ "images": [
+  {
+   "name": "PDP.jpg",
+   "file": "img/0b39f550-bd34-509d-e063-6294a90a51d0/PDP.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/0b39f550-bd34-509d-e063-6294a90a51d0/directions.jpg"
+  },
+  {
+   "name": "drug facts.jpg",
+   "file": "img/0b39f550-bd34-509d-e063-6294a90a51d0/drug_facts.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/0b39f550-bd34-509d-e063-6294a90a51d0/inactive_ingredients.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/0b39f550-bd34-509d-e063-6294a90a51d0/uses.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/0b39f550-bd34-509d-e063-6294a90a51d0/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Organys Derma Made Sheer",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0b39f550-bd34-509d-e063-6294a90a51d0",
+  "name": "Organys Derma Made Sheer Lotion",
+  "brand": "Organys Beauty",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

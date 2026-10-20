@@ -1,0 +1,25 @@
+{
+ "setid": "0beed72e-51df-d15a-e063-6394a90af559",
+ "images": [
+  {
+   "name": "back label.jpg",
+   "file": "img/0beed72e-51df-d15a-e063-6394a90af559/back_label.jpg"
+  },
+  {
+   "name": "stick.jpg",
+   "file": "img/0beed72e-51df-d15a-e063-6394a90af559/stick.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Mineral Sheer Stick SPF 30",
+ "inactive_section": "Inactive Ingredients : C12-15 Alkyl Benzoate, C13-15 Alkane, Helianthus Annuus (Sunflower) Seed Wax,Caprylic/Capric Triglyceride, Butyloctyl Salicylate, Tribehenin, Diisostearyl Malate, Silica,Octyldodecanol, Propanediol Dicaprylate/Caprate, Carthamus Tinctorius (Safflower)SeedOil, Polyhydroxystearic Acid, Stearalkonium Bentonite, Glycine Soja(Soybean) Oil, CalciumAluminum Borosilicate, Polyglyceryl-3 Polyricinoleate, Triethoxycaprylylsilane,Hesperethusa Crenulata Bark Extract, Lecithin, Caprylyl Glycol, Propylene Carbonate,Polyglyceryl-3 Diisostearate, Oryza Sativa (Rice) Germ Extract, Oryza Sativa (Rice) Extract,Benincasa Cerifera Seed Extract, Isostearic Acid, Malic Acid, Tocopherol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0beed72e-51df-d15a-e063-6394a90af559",
+  "name": "Mineral Sheer Stick Stick",
+  "brand": "Supergoop, LLC",
+  "n_inactive": 33,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "a1685b2a-8e0f-462f-b6e1-0a650165a730",
+ "images": [
+  {
+   "name": "Soft and Sheer Tinted Moisturiser carton.jpg",
+   "file": "img/a1685b2a-8e0f-462f-b6e1-0a650165a730/Soft_and_Sheer_Tinted_Moisturiser_carton.jpg"
+  },
+  {
+   "name": "Soft and Sheer Tinted Moisturiser tube.jpg",
+   "file": "img/a1685b2a-8e0f-462f-b6e1-0a650165a730/Soft_and_Sheer_Tinted_Moisturiser_tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Carton and tube labelling",
+ "inactive_section": "Inactive ingredients Aqua (Water), Glycerin, Butylene glycol, C12-15 alkyl benzoate, Cyclopentasiloxane, Glyceryl stearate, Cetyl alcohol, Dimethicone, Petrolatum, Paraffinum liquidum (Mineral oil), Mica, PEG-100 stearate, Cyclohexasiloxane, C18-36 acid glycol ester, Phenoxyethanol, Methylparaben, Sodium stearoyl lactylate, Polyacrylamide, Alumina, C13-14 isoparaffin, Tetrasodium EDTA, Laureth-7, BHT [+/- (May contain) CI 77891 (Titanium dioxide), CI 77492 (Iron oxides), CI 77491 (Iron oxides), CI 77499 (Iron oxides).",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a1685b2a-8e0f-462f-b6e1-0a650165a730",
+  "name": "No7 Soft And Sheer Tinted Moisturiser Fair Emulsion",
+  "brand": "Boots Retail USA Inc",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

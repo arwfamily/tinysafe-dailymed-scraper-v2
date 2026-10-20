@@ -1,0 +1,21 @@
+{
+ "setid": "89b59bd7-9a91-4b99-84e7-996a8b1d499e",
+ "images": [
+  {
+   "name": "LRPAnthPriTINT.jpg",
+   "file": "img/89b59bd7-9a91-4b99-84e7-996a8b1d499e/LRPAnthPriTINT.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "dimethicone, C12-15 alkyl benzoate, dicaprylyl ether, dimethicone/vinyl dimethicone crosspolymer, talc, triethylhexanoin, isohexadecane, styrene/acrylates copolymer, hydrogenated jojoba oil, aluminum hydroxide, stearic acid, aluminum stearate, iron oxides, silica silylate, alumina, polyhydroxystearic acid, PEG-8 lasurate, tocopherol, water, diethylhexyl syringylidenemalonate, laureth-4, disodium stearoyl glutamate, cassia alata leaf extract, maltodextrin, caprylic/capric triglyceride",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "89b59bd7-9a91-4b99-84e7-996a8b1d499e",
+  "name": "La Roche Posay Laboratoire Dermatologique Anthelios 50 Mineral Daily Tone Correcting Primer Broad Spectrum SPF 50 Sunscreen Lotion",
+  "brand": "L'Oreal USA Products Inc",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

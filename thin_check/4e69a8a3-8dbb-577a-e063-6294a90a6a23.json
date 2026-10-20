@@ -1,0 +1,21 @@
+{
+ "setid": "4e69a8a3-8dbb-577a-e063-6294a90a6a23",
+ "images": [
+  {
+   "name": "tinted sunscreen.jpg",
+   "file": "img/4e69a8a3-8dbb-577a-e063-6294a90a6a23/tinted_sunscreen.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Inactive Ingredients: Water, Cyclopentasiloxane, Ethylhexyl Methoxycinnamate, Titanium Dioxide, Ethylhexyl Salicylate, Zinc Oxide, Butyloctyl Salicylate, Caprylic/Capric Triglyceride, Octocrylene, Cetyl PEG/PPG-10/1 Dimethicone, Glycerin, Methylpropanediol, Niacinamide, 1,2- Hexanediol, Dimethicone, Disteardimonium Hectorite, Sorbitan Olivate, Sorbitan Sesquioleate, Microcrystalline Wax, Lauroyl Lysine, Magnesium Sulfate, PEG-30 Dipolyhydroxystearate, Quaternium-18 Bentonite, CI 77492, Silica, Triethoxycaprylylsilane, CI 77491, Crataegus Cuneata Fruit Extract, Prunus Persica (Peach) Fruit Extract, Pyrus Communis (Pear) Fruit Extract, Ethylhexylglycerin, CI 77499, Adenosine, Hedera Helix (Ivy) Extract, Vanilla Planifolia Fruit Extract, Musa Sapientum (Banana) Fruit Extract, Disodium EDTA, BHT, Pentaerythrityl Tetra-di-t-butyl Hydroxyhydrocinnamate.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4e69a8a3-8dbb-577a-e063-6294a90a6a23",
+  "name": "Clinical Skin Filter Tinted Sunscreen Cream",
+  "brand": "BY KIN AESTHETICS LLC",
+  "n_inactive": 40,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "c07068f0-6c0c-445f-869c-97809131cb80",
+ "images": [
+  {
+   "name": "N5LX  BOX.jpg",
+   "file": "img/c07068f0-6c0c-445f-869c-97809131cb80/N5LX__BOX.jpg"
+  },
+  {
+   "name": "N5LX  Label.jpg",
+   "file": "img/c07068f0-6c0c-445f-869c-97809131cb80/N5LX__Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c07068f0-6c0c-445f-869c-97809131cb80",
+  "name": "Noevir N5 Powder",
+  "brand": "NOEVIR USA INC",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list"
+ }
+}

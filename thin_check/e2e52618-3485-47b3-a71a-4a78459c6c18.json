@@ -1,0 +1,21 @@
+{
+ "setid": "e2e52618-3485-47b3-a71a-4a78459c6c18",
+ "images": [
+  {
+   "name": "c.jpg",
+   "file": "img/e2e52618-3485-47b3-a71a-4a78459c6c18/c.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "drug facts",
+ "inactive_section": "Inactive Ingredients Water, Disodium EDTA, Xanthan Gum, Glycerin, Butylene Glycol, Triethanolamine,C12-15 Alkyl Benzoate, Cetyl Alcohol, Polyglyceryl-10 Pentastearate, Behenyl Alcohol,Sodium Stearoyl Lactylate, Titanium Dioxide, Alumina, Simethicone, Tocopherol Acetate,Retinyl Palmitate, Cetearyl Alcohol, Dimethicone, Cetearyl Glucoside, BHT, Potassium Cetyl Phosphate, Panthenol, Chamomilla Recutita (Matricaria) Flower Extract, Fragrance, Propylene Glycol, Diazolidinyl Urea, Methylparaben, Propylparaben",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e2e52618-3485-47b3-a71a-4a78459c6c18",
+  "name": "Cvs Revitalift Complete With Spf-15 Lotion",
+  "brand": "CVS Pharmacy",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

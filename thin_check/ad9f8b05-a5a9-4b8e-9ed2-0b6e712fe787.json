@@ -1,0 +1,29 @@
+{
+ "setid": "ad9f8b05-a5a9-4b8e-9ed2-0b6e712fe787",
+ "images": [
+  {
+   "name": "airlight pp_drug facts.jpg",
+   "file": "img/ad9f8b05-a5a9-4b8e-9ed2-0b6e712fe787/airlight_pp_drug_facts.jpg"
+  },
+  {
+   "name": "airlight_product.jpg",
+   "file": "img/ad9f8b05-a5a9-4b8e-9ed2-0b6e712fe787/airlight_product.jpg"
+  },
+  {
+   "name": "baselabel_caramel.jpg",
+   "file": "img/ad9f8b05-a5a9-4b8e-9ed2-0b6e712fe787/baselabel_caramel.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Active Ingredients",
+ "inactive_section": "Talc, Dimethicone, Polymethylsilsequioxane, Dimethicone/Vinyl Dimethicone Crosspolymer, Zinc Stearate, Silica, Phenyl Trimthicone, Synthetic Fluorphlogopite, Caprylyl Methicone, Caprylyl Glycol, Methicone, Zea Mays (Corn) sTarch, Phenoxyethanol, Hyxylene Glycol, [May contain: Iron Oxides, Mica]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ad9f8b05-a5a9-4b8e-9ed2-0b6e712fe787",
+  "name": "Ck One Airlight Pressed Powder SPF 15 Caramel 700 Powder",
+  "brand": "Coty US LLC",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

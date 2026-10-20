@@ -1,0 +1,21 @@
+{
+ "setid": "36fec1f1-5e8b-5764-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "SunBlocz.jpg",
+   "file": "img/36fec1f1-5e8b-5764-e054-00144ff8d46c/SunBlocz.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "6",
+ "title": "Sunblocz",
+ "inactive_section": "Inactive ingredients Grape Seed Oil, Safflower Oil, Beeswax, Candelilla wax, Rice Bran Wax, Green Tea, Iron Oxide, Lavender Essential Oil, Rosemary Essential Oil.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "36fec1f1-5e8b-5764-e054-00144ff8d46c",
+  "name": "Sunblocz Cream",
+  "brand": "Olen Skin Care Corporation",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

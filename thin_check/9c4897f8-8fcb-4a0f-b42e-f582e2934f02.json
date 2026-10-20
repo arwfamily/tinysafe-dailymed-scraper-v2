@@ -1,0 +1,25 @@
+{
+ "setid": "9c4897f8-8fcb-4a0f-b42e-f582e2934f02",
+ "images": [
+  {
+   "name": "Inner Package.jpg",
+   "file": "img/9c4897f8-8fcb-4a0f-b42e-f582e2934f02/Inner_Package.jpg"
+  },
+  {
+   "name": "Outer Package.jpg",
+   "file": "img/9c4897f8-8fcb-4a0f-b42e-f582e2934f02/Outer_Package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "ACTIVE ARGAN 365 SOLUTION SPF 30 BROAD SPECTRUM OIL ACTIVATED ARGAN COMPLEX",
+ "inactive_section": "Inactive ingredients dicaprylyl carbonate, isononyl isononanoate, coco-caprylate, C12-15 alkyl benzoate, ethylhexyl palmitate, hydrogenated dimer dilinoleyl/dimethylcarbonate copolymer, magnesium stearate, argania spinosa kernel oil, tocopherol, caesalpinia spinosa fruit pod extract, helianthus annuus (sunflower) sprout extract, sodium hyaluronate, tocopheryl acetate, maltodextrin, phenethyl alcohol, polyhydroxystearic acid, trinydroxystearin, mica, aqua (water), ethylhexylglycerin, sodium benzoate, iron oxides (CI 77499), titanium dioxide (Cl 77891)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9c4897f8-8fcb-4a0f-b42e-f582e2934f02",
+  "name": "Active Argan 365 SPF 30 Broad Spectrum Activated Argan Complex Oil",
+  "brand": "SIBORG LLC",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "ac29da76-f638-4947-8d25-055f1f442dbe",
+ "images": [
+  {
+   "name": "DabonKidsCard.jpg",
+   "file": "img/ac29da76-f638-4947-8d25-055f1f442dbe/DabonKidsCard.jpg"
+  },
+  {
+   "name": "DabonKidslabel.jpg",
+   "file": "img/ac29da76-f638-4947-8d25-055f1f442dbe/DabonKidslabel.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ac29da76-f638-4947-8d25-055f1f442dbe",
+  "name": "Ocean Potion 50 Instant Dry Kid Spotstick Liquid",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 5,
+  "thin_reason": "no_printed_list"
+ }
+}

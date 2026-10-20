@@ -1,0 +1,21 @@
+{
+ "setid": "fc8a4efe-7d5e-5f44-e053-6394a90a80aa",
+ "images": [
+  {
+   "name": "Alpha H.jpg",
+   "file": "img/fc8a4efe-7d5e-5f44-e053-6394a90a80aa/Alpha_H.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Alpha-H Total Eclipse",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fc8a4efe-7d5e-5f44-e053-6394a90a80aa",
+  "name": "Alpha-h Total Eclipse Lotion",
+  "brand": "Alpha-H",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

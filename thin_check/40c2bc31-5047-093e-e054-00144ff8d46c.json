@@ -1,0 +1,17 @@
+{
+ "setid": "40c2bc31-5047-093e-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/40c2bc31-5047-093e-e054-00144ff8d46c/label.jpg"
+  }
+ ],
+ "error": "spl: HTTP Error 429: Too Many Requests",
+ "db": {
+  "setid": "40c2bc31-5047-093e-e054-00144ff8d46c",
+  "name": "Camellia Air Cushion 22 SPF50 PA Cream",
+  "brand": "TOV Co., ltd",
+  "n_inactive": 2,
+  "thin_reason": "short_list"
+ }
+}

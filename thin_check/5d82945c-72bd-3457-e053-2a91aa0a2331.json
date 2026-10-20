@@ -1,0 +1,21 @@
+{
+ "setid": "5d82945c-72bd-3457-e053-2a91aa0a2331",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/5d82945c-72bd-3457-e053-2a91aa0a2331/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Glycerin, etc",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5d82945c-72bd-3457-e053-2a91aa0a2331",
+  "name": "Emmune Flobe Effect Cushion Cream",
+  "brand": "EROM CO., Ltd.",
+  "n_inactive": 4,
+  "thin_reason": "short_list"
+ }
+}

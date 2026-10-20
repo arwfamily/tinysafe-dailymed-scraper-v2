@@ -1,0 +1,21 @@
+{
+ "setid": "72ac1954-f94e-494c-99cd-3c70a321e45f",
+ "images": [
+  {
+   "name": "Protector.jpg",
+   "file": "img/72ac1954-f94e-494c-99cd-3c70a321e45f/Protector.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "72ac1954-f94e-494c-99cd-3c70a321e45f",
+  "name": "Protector R Plus Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

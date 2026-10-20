@@ -1,0 +1,25 @@
+{
+ "setid": "a5af36be-4748-b37a-e053-2995a90a9716",
+ "images": [
+  {
+   "name": "box.jpg",
+   "file": "img/a5af36be-4748-b37a-e053-2995a90a9716/box.jpg"
+  },
+  {
+   "name": "carton.jpg",
+   "file": "img/a5af36be-4748-b37a-e053-2995a90a9716/carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "OZNATURALS POWDER SUNSCREEN",
+ "inactive_section": "• Mica • Triethoxycaprylylsilane • Yellow Iron Oxides •Red Iron Oxides • Black Iron Oxides",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a5af36be-4748-b37a-e053-2995a90a9716",
+  "name": "Oznaturals Sunscreen Powder",
+  "brand": "OZ Naturals LLC",
+  "n_inactive": 6,
+  "thin_reason": "short_list"
+ }
+}

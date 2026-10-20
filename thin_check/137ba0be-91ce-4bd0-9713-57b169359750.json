@@ -1,0 +1,25 @@
+{
+ "setid": "137ba0be-91ce-4bd0-9713-57b169359750",
+ "images": [
+  {
+   "name": "Inner Label.jpg",
+   "file": "img/137ba0be-91ce-4bd0-9713-57b169359750/Inner_Label.jpg"
+  },
+  {
+   "name": "Outer Package.jpg",
+   "file": "img/137ba0be-91ce-4bd0-9713-57b169359750/Outer_Package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Girlyish Skincare Mineral Sunscreen SPF 30",
+ "inactive_section": "Adansonia Digitata Oil, Arginine Cocoate, Butyrospermum Parkii (Shea) Butter, C12-15 Alkyl Benzoate, C13-16 Isoalkane, Caramel, Cetearyl Olivate, Cetyl Alcohol, Citric Acid, Cirtullus Lanatus (Watermelon) Fruit Extract, Decyl Glucoside, Dodecane, Ethylhexylglycerin, Glycerin, Hellianthus Annuuss (Sunflower) Seed Oil, Heptyl Undecylenate, Hippophae Rhamnoides Fruit Oil, Iron Oxides, Jojoba Esters, Methyl Dihydroabietate, Mica, Phenoxyethanol, Polyglyceryl-3 Beeswax, Polyglyceryl-6 Distearate, Polyhydroxystearic Acid, Potassium Cetyl Phosphate, Sodium Stearoyl Glutamate, Sorbitan Olivate, Sorbitan Sesquioleate, Theobroma Cacao (Cocoa) Seed Butter, Titanium Dioxide (CI 77891), Tocopherol, Water (Aqua), Xanthan Gum",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "137ba0be-91ce-4bd0-9713-57b169359750",
+  "name": "Girlyish Skincare Mineral Sunscreen SPF 30 Lotion",
+  "brand": "Rise Skincare LLC",
+  "n_inactive": 35,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "47f562cc-48cc-97f9-e063-6294a90a7216",
+ "images": [
+  {
+   "name": "Skin Metal Green Stealth.jpg",
+   "file": "img/47f562cc-48cc-97f9-e063-6294a90a7216/Skin_Metal_Green_Stealth.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Skin Metal Green Stealth",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "47f562cc-48cc-97f9-e063-6294a90a7216",
+  "name": "Skin Metal Green Stealth Lotion",
+  "brand": "Skin Metal",
+  "n_inactive": 32,
+  "thin_reason": null
+ }
+}

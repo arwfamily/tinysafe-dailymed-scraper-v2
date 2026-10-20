@@ -1,0 +1,25 @@
+{
+ "setid": "b318e85f-cec9-85d5-e053-2a95a90a6e3c",
+ "images": [
+  {
+   "name": "01b LBL_Zinc Five-0_Sunscreen_SPF-50_Page_1.jpg",
+   "file": "img/b318e85f-cec9-85d5-e053-2a95a90a6e3c/01b_LBL_Zinc_Five-0_Sunscreen_SPF-50_Page_1.jpg"
+  },
+  {
+   "name": "01b LBL_Zinc Five-0_Sunscreen_SPF-50_Page_2.jpg",
+   "file": "img/b318e85f-cec9-85d5-e053-2a95a90a6e3c/01b_LBL_Zinc_Five-0_Sunscreen_SPF-50_Page_2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "13",
+ "title": "ZINC FIVE-O SPF-50",
+ "inactive_section": "Coco-caprylate/caprate, glycerine, coconut alkane, simmondsia chinensis (jojoba) seed oil, polyglyceryl-3-polyricinoleate, cera alba (beeswax), isostearic acid, polyhydroxy stearic acid, maltodextrin, phenylpropanol, propanediol, caprylyl glycol, tocopherol, ethylhexylglycerin, cetyl phosphate, sodium chloride, disodium EDTA",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b318e85f-cec9-85d5-e053-2a95a90a6e3c",
+  "name": "Zinc Five-o Spf-50 Lotion",
+  "brand": "ASTIVITA LIMITED",
+  "n_inactive": 18,
+  "thin_reason": null
+ }
+}

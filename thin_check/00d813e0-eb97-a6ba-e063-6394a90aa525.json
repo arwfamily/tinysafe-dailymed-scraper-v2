@@ -1,0 +1,21 @@
+{
+ "setid": "00d813e0-eb97-a6ba-e063-6394a90aa525",
+ "images": [
+  {
+   "name": "Balmere.jpg",
+   "file": "img/00d813e0-eb97-a6ba-e063-6394a90aa525/Balmere.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Balmere Mineral Sunscreen Moisturizer + Primer",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "00d813e0-eb97-a6ba-e063-6394a90aa525",
+  "name": "Balmere Mineral Sunscreen Moisturizer Primer Lotion",
+  "brand": "Balmere",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

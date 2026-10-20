@@ -1,0 +1,21 @@
+{
+ "setid": "35814d5d-fd34-05b3-e063-6294a90aadd1",
+ "images": [
+  {
+   "name": "DERMA ART 203.jpg",
+   "file": "img/35814d5d-fd34-05b3-e063-6294a90aadd1/DERMA_ART_203.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "35814d5d-fd34-05b3-e063-6294a90aadd1",
+  "name": "Tinted Mineral Sunscreen SPF 40 Cream",
+  "brand": "DERMATOLOGY ARTS",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

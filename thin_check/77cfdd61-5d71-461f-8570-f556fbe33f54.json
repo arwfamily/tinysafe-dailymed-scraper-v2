@@ -1,0 +1,12 @@
+{
+ "setid": "77cfdd61-5d71-461f-8570-f556fbe33f54",
+ "images": [],
+ "error": "spl: HTTP Error 429: Too Many Requests media: HTTP Error 429: Too Many Requests",
+ "db": {
+  "setid": "77cfdd61-5d71-461f-8570-f556fbe33f54",
+  "name": "Pretty By Flormar Bb 002 Light Medium Cream",
+  "brand": "Kosan Kozmetik Sanayi ve Ticaret A.S.",
+  "n_inactive": 35,
+  "thin_reason": null
+ }
+}

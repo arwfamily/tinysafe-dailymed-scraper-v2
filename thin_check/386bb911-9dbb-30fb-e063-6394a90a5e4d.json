@@ -1,0 +1,21 @@
+{
+ "setid": "386bb911-9dbb-30fb-e063-6394a90a5e4d",
+ "images": [
+  {
+   "name": "La Jolla 203.jpg",
+   "file": "img/386bb911-9dbb-30fb-e063-6394a90a5e4d/La_Jolla_203.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "386bb911-9dbb-30fb-e063-6394a90a5e4d",
+  "name": "Pure Tinted Mineral Sunscreen Cream",
+  "brand": "LA JOLLA WELLNESS & AESTHETICS",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "b9acfee5-5956-41c1-8ef8-45f04890b28d",
+ "images": [
+  {
+   "name": "shelter2ozbox.jpg",
+   "file": "img/b9acfee5-5956-41c1-8ef8-45f04890b28d/shelter2ozbox.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Active Ingredients",
+ "inactive_section": "water (aqua), c12-15 alkyl benzoate, cyclopentasiloxane, glycerin, steareth-21, dimethicone, methyl methacrylate/glycol dimethacrylate crosspolymer, behenyl alcohol, hydroxyethyl acrylate/sodium acryloyldimethyl taurate copolymer, dimethicone crosspolymer, steareth-2, retinyl palmitate, phytosterols, tocotrienols, tocopherol, squalene, oryza sative (rice) bran wax, palmitoyl oligopeptide, palmitoyl tetrapeptide-7, rubus fruticosus (blackberry) leaf extract, melanin, lavandula angustifolia (lavender) oil, aloe barbadensis leaf juice, maltodextrin, carbomer, butylene glycol, polysorbate 20, simethicone, alumina, sorbitan laurate, quercetin, diethylhexyl syringylidene malonate, capric caprylic triglycerides, disodium edta, chlorphenesin, phenoxyethanol.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b9acfee5-5956-41c1-8ef8-45f04890b28d",
+  "name": "Shelter Cream",
+  "brand": "Philosophy, Inc.",
+  "n_inactive": 36,
+  "thin_reason": null
+ }
+}

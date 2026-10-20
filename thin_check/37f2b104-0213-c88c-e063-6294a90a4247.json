@@ -1,0 +1,21 @@
+{
+ "setid": "37f2b104-0213-c88c-e063-6294a90a4247",
+ "images": [
+  {
+   "name": "moore sf 226.jpg",
+   "file": "img/37f2b104-0213-c88c-e063-6294a90a4247/moore_sf_226.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "37f2b104-0213-c88c-e063-6294a90a4247",
+  "name": "Radiance Cream",
+  "brand": "L.S. MOORE LLC",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

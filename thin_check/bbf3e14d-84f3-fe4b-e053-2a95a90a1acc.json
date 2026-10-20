@@ -1,0 +1,33 @@
+{
+ "setid": "bbf3e14d-84f3-fe4b-e053-2a95a90a1acc",
+ "images": [
+  {
+   "name": "ART_PP03921_Page_1.jpg",
+   "file": "img/bbf3e14d-84f3-fe4b-e053-2a95a90a1acc/ART_PP03921_Page_1.jpg"
+  },
+  {
+   "name": "ART_PP03921_Page_2.jpg",
+   "file": "img/bbf3e14d-84f3-fe4b-e053-2a95a90a1acc/ART_PP03921_Page_2.jpg"
+  },
+  {
+   "name": "ART_PP03921_Page_3.jpg",
+   "file": "img/bbf3e14d-84f3-fe4b-e053-2a95a90a1acc/ART_PP03921_Page_3.jpg"
+  },
+  {
+   "name": "ART_SP11095.jpg",
+   "file": "img/bbf3e14d-84f3-fe4b-e053-2a95a90a1acc/ART_SP11095.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Tarteguard Mineral Powder sunscreen Broad Spectrum SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bbf3e14d-84f3-fe4b-e053-2a95a90a1acc",
+  "name": "Powder Powder",
+  "brand": "Oxygen development",
+  "n_inactive": 3,
+  "thin_reason": "no_printed_list"
+ }
+}

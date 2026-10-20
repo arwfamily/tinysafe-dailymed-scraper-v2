@@ -1,0 +1,25 @@
+{
+ "setid": "c504463a-28bf-4161-875f-ef73520931c5",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/c504463a-28bf-4161-875f-ef73520931c5/image-01.jpg"
+  },
+  {
+   "name": "image-02.jpg",
+   "file": "img/c504463a-28bf-4161-875f-ef73520931c5/image-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "8",
+ "title": "Drug Facts - Softlips Oasis Pineapple Coconut",
+ "inactive_section": "ozokerite, petrolatum, mineral oil, octyldodecanol, ethylhexyl palmitate, polyglyceryl-6 octastearate, cetearyl alcohol, flavor, polyglyceryl-6 polyricinoleate, sea water, VP/eicosene copolymer, ammonium glycyrrhizate, ananas sativus (pineapple) fruit extract, butylene glycol, carthamus tinctorius (safflower) seed oil, cetearyl glucoside, cocos nucifera (coconut) extract, ethylhexylglycerin, hyaluronic acid, limnanthes alba (meadowfoam) seed oil, menthol, nannochloropsis oculata extract, pentylene glycol, phenoxyethanol, phytosteryl/octyldodecyl lauroyl glutamate, porphyra umbilicalis extract, silanetriol, silybum marianum seed oil, tetrahexyldecyl ascorbate [vitamin C], tocopheryl acetate [vitamin E]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c504463a-28bf-4161-875f-ef73520931c5",
+  "name": "Softlips Oasis Pineapple Coconut Stick",
+  "brand": "The Mentholatum Company",
+  "n_inactive": 36,
+  "thin_reason": null
+ }
+}

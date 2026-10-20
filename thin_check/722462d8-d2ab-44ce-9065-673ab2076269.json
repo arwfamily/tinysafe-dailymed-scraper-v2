@@ -1,0 +1,25 @@
+{
+ "setid": "722462d8-d2ab-44ce-9065-673ab2076269",
+ "images": [
+  {
+   "name": "Inner Package.jpg",
+   "file": "img/722462d8-d2ab-44ce-9065-673ab2076269/Inner_Package.jpg"
+  },
+  {
+   "name": "Outer Package.jpg",
+   "file": "img/722462d8-d2ab-44ce-9065-673ab2076269/Outer_Package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "HolyCow Mineral Tallow Sunscreen Face and Body SPF 50",
+ "inactive_section": "Beeswax, Jojoba Esters, Lecithin, Simmondsia chinensis (Jojoba) Seed Oil, Tallow",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "722462d8-d2ab-44ce-9065-673ab2076269",
+  "name": "Holycow Mineral Tallow Sunscreen Face And Body SPF 50 Cream",
+  "brand": "CALM ENTERPRISE LLC",
+  "n_inactive": 6,
+  "thin_reason": "short_list"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "9ddfd0ae-4ed6-48c0-80ef-a8e7b0e8b4ab",
+ "images": [
+  {
+   "name": "cande-01.jpg",
+   "file": "img/9ddfd0ae-4ed6-48c0-80ef-a8e7b0e8b4ab/cande-01.jpg"
+  },
+  {
+   "name": "cande-02.jpg",
+   "file": "img/9ddfd0ae-4ed6-48c0-80ef-a8e7b0e8b4ab/cande-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Obagi® Condition & Enhance Clear (Hydroquinone USP, 4%) Skin Bleaching Cream Obagi® Condition & Enhance Blender® (Hydroquinone USP, 4%) Skin Bleaching Cream",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9ddfd0ae-4ed6-48c0-80ef-a8e7b0e8b4ab",
+  "name": "Condition And Enhance System Full-size Non-surgical Kit",
+  "brand": "OMP, INC.",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

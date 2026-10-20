@@ -1,0 +1,21 @@
+{
+ "setid": "557a9023-7c48-416b-8d6b-afa9f2369eac",
+ "images": [
+  {
+   "name": "carton.jpg",
+   "file": "img/557a9023-7c48-416b-8d6b-afa9f2369eac/carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3167",
+ "title": "Eaudeleman Cosmetic",
+ "inactive_section": "Titanium Dioxide 5.0% | WATER, SILK FIBROIN, SQUALANE, CAPRYLIC/CAPRIC TRIGLYCERIDE, SILK, BASE HYDROLYZED (1000 MW), GLYCERIN, BUTYLENE GLYCOL, ALUMINUM OXIDE, STEARIC ACID, CHLORAMPHENICOL PALMITATE, SILICON DIOXIDE, SHEANUT OIL, TOCOPHEROL, DOCOSANOL, SIMMONDSIA CHINENSIS SEED, RICE BRAN OIL, COCOA BUTTER, CANDELILLA WAX, HYDROGENATED CASTOR OIL, COCONUT OIL, HONEY, RICINUS COMMUNIS SEED, OLIVE OIL, XANTHAN GUM, CARRAGEENAN, SUCROSE, JUGLANS REGIA SHELL, RIBOFLAVIN, D&C RED NO.7, METHYLPARABEN, PROPYLPARABEN",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "557a9023-7c48-416b-8d6b-afa9f2369eac",
+  "name": "Eaudeleman Cosmetic Uv Liquid Lotion",
+  "brand": "Eaudeleman Cosmetic Co Ltd",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

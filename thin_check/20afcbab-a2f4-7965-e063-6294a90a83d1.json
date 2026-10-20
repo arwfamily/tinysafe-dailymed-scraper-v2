@@ -1,0 +1,49 @@
+{
+ "setid": "20afcbab-a2f4-7965-e063-6294a90a83d1",
+ "images": [
+  {
+   "name": "active 5.jpg",
+   "file": "img/20afcbab-a2f4-7965-e063-6294a90a83d1/active_5.jpg"
+  },
+  {
+   "name": "children out 5.jpg",
+   "file": "img/20afcbab-a2f4-7965-e063-6294a90a83d1/children_out_5.jpg"
+  },
+  {
+   "name": "cushion main display.jpg",
+   "file": "img/20afcbab-a2f4-7965-e063-6294a90a83d1/cushion_main_display.jpg"
+  },
+  {
+   "name": "dosage 5.jpg",
+   "file": "img/20afcbab-a2f4-7965-e063-6294a90a83d1/dosage_5.jpg"
+  },
+  {
+   "name": "inactive 5.jpg",
+   "file": "img/20afcbab-a2f4-7965-e063-6294a90a83d1/inactive_5.jpg"
+  },
+  {
+   "name": "indication use.jpg",
+   "file": "img/20afcbab-a2f4-7965-e063-6294a90a83d1/indication_use.jpg"
+  },
+  {
+   "name": "purpose 5.jpg",
+   "file": "img/20afcbab-a2f4-7965-e063-6294a90a83d1/purpose_5.jpg"
+  },
+  {
+   "name": "warning 5.jpg",
+   "file": "img/20afcbab-a2f4-7965-e063-6294a90a83d1/warning_5.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "d'Alba Vegan Fresh Sun Cushion",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "20afcbab-a2f4-7965-e063-6294a90a83d1",
+  "name": "Dalba Vegan Fresh Sun Cushion Sponge",
+  "brand": "ADMTMAX LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

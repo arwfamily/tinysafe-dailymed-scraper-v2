@@ -1,0 +1,21 @@
+{
+ "setid": "2611e0cb-d56d-6ea1-e063-6294a90a745b",
+ "images": [
+  {
+   "name": "EucRTLotion.jpg",
+   "file": "img/2611e0cb-d56d-6ea1-e063-6294a90a745b/EucRTLotion.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Eucerin Radiant Tone Lotion",
+ "inactive_section": "Inactive ingredients Water, Glycerin, Alcohol Denat., Glyceryl Stearate, Silica, Butylene Glycol Dicaprylate/Dicaprate, C12-15 Alkyl Benzoate, Cetearyl Alcohol, Dibutyl Adipate, Silica Dimethyl Silylate, Tocopherol, Isobutylamido Thiazolyl Resorcinol, Glycyrrhiza Inflata Root Extract, Sodium Stearoyl Glutamate, Glyceryl Behenate, Polyglyceryl-6 Octastearate, Xanthan Gum, Phenoxyethanol, Ethylhexylglycerin, Disodium EDTA, Sodium Chloride, Fragrance.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2611e0cb-d56d-6ea1-e063-6294a90a745b",
+  "name": "Eucerin Radiant Tone Lotion",
+  "brand": "Beiersdorf Inc",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

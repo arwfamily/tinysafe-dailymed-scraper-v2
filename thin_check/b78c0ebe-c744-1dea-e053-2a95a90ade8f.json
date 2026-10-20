@@ -1,0 +1,33 @@
+{
+ "setid": "b78c0ebe-c744-1dea-e053-2a95a90ade8f",
+ "images": [
+  {
+   "name": "Artwork.jpg",
+   "file": "img/b78c0ebe-c744-1dea-e053-2a95a90ade8f/Artwork.jpg"
+  },
+  {
+   "name": "OTC Active.jpg",
+   "file": "img/b78c0ebe-c744-1dea-e053-2a95a90ade8f/OTC_Active.jpg"
+  },
+  {
+   "name": "OTC Keep Out of Reach.jpg",
+   "file": "img/b78c0ebe-c744-1dea-e053-2a95a90ade8f/OTC_Keep_Out_of_Reach.jpg"
+  },
+  {
+   "name": "OTC Purpose.jpg",
+   "file": "img/b78c0ebe-c744-1dea-e053-2a95a90ade8f/OTC_Purpose.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Beauty By Earth Tinted Mineral Face Sunscreen Stick - Latte",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b78c0ebe-c744-1dea-e053-2a95a90ade8f",
+  "name": "Tinted Mineral Face Sunscreen Stick - Latte Stick",
+  "brand": "Private Label Select Ltd CO",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

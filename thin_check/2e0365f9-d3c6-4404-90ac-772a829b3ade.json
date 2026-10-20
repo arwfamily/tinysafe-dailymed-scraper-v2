@@ -1,0 +1,12 @@
+{
+ "setid": "2e0365f9-d3c6-4404-90ac-772a829b3ade",
+ "images": [],
+ "error": "spl: HTTP Error 429: Too Many Requests media: HTTP Error 429: Too Many Requests",
+ "db": {
+  "setid": "2e0365f9-d3c6-4404-90ac-772a829b3ade",
+  "name": "Cle Ccc Cool Medium Deep Cream",
+  "brand": "KW ABSC, INC.",
+  "n_inactive": 64,
+  "thin_reason": null
+ }
+}

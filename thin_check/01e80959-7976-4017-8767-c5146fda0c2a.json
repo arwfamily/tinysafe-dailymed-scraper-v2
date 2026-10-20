@@ -1,0 +1,21 @@
+{
+ "setid": "01e80959-7976-4017-8767-c5146fda0c2a",
+ "images": [
+  {
+   "name": "label.jpg",
+   "error": "image file is truncated (49 bytes not processed)"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Mica,Silica ,Triethoxycaprylylsilane,Iron Oxides,Dimethicone,Aluminum Hydroxide,Glycerine,Iron Oxides,Methicone,Bismuth Oxychloride,Iron Oxides,Hydrolyzed Algin,Laminaria Digitata Extract,Phormidium Persicinum Extract,Undaria Pinnatifida Extract ,Plankton extract,Phenethyl Alcohol ,Chlorella vulgaris extract,Pancratium maritimum extract,Crithmum Maritimum Extract,Helichrysum italicum extract, Ulex europaeus leaf/root/stem extract",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "01e80959-7976-4017-8767-c5146fda0c2a",
+  "name": "Eco 10 Mineral Sun Pro Automatic Brush Type Powder",
+  "brand": "MIZON CO., LTD.",
+  "n_inactive": 21,
+  "thin_reason": null
+ }
+}

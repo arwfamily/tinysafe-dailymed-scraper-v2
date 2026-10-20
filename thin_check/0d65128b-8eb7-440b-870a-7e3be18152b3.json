@@ -1,0 +1,21 @@
+{
+ "setid": "0d65128b-8eb7-440b-870a-7e3be18152b3",
+ "images": [
+  {
+   "name": "EquineAid16.jpg",
+   "file": "img/0d65128b-8eb7-440b-870a-7e3be18152b3/EquineAid16.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0d65128b-8eb7-440b-870a-7e3be18152b3",
+  "name": "Equineaid (arginine Aminobenzoate) Cream",
+  "brand": "EpiCare Limited",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

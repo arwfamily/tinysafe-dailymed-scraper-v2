@@ -1,0 +1,21 @@
+{
+ "setid": "bc1bac0d-b13f-4611-9eb3-ad47eea02ac5",
+ "images": [
+  {
+   "name": "ombCLEARSPORT50+SPRAY.jpg",
+   "file": "img/bc1bac0d-b13f-4611-9eb3-ad47eea02ac5/ombCLEARSPORT50_SPRAY.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "alcohol denat., c12-15 alkyl benzoate, ethylenediamine/stearyl dimer dilinoleate copolymer, acrylates/octylacrylamide copolymer, tocopherol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bc1bac0d-b13f-4611-9eb3-ad47eea02ac5",
+  "name": "Garnier Ombrelle Clear Sport 50 Plus Water Resistant 40 Minutes Spray",
+  "brand": "L'OREAL USA PRODUCTS INC",
+  "n_inactive": 6,
+  "thin_reason": "short_list"
+ }
+}

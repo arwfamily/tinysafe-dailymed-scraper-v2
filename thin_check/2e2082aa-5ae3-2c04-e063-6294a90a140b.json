@@ -1,0 +1,17 @@
+{
+ "setid": "2e2082aa-5ae3-2c04-e063-6294a90a140b",
+ "images": [
+  {
+   "name": "SDM Sheer Pro Jar Label.jpg",
+   "file": "img/2e2082aa-5ae3-2c04-e063-6294a90a140b/SDM_Sheer_Pro_Jar_Label.jpg"
+  }
+ ],
+ "error": "spl: HTTP Error 429: Too Many Requests",
+ "db": {
+  "setid": "2e2082aa-5ae3-2c04-e063-6294a90a140b",
+  "name": "Sun Defense Minerals (sheer) Powder",
+  "brand": "Eminence Organic Skin Care",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

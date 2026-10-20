@@ -1,0 +1,21 @@
+{
+ "setid": "c4e8649c-2058-467c-8bdc-2532d6334086",
+ "images": [
+  {
+   "name": "BodySPF25.jpg",
+   "file": "img/c4e8649c-2058-467c-8bdc-2532d6334086/BodySPF25.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c4e8649c-2058-467c-8bdc-2532d6334086",
+  "name": "Sun Care For Body Emulsion",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

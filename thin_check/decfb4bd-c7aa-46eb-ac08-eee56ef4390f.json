@@ -1,0 +1,25 @@
+{
+ "setid": "decfb4bd-c7aa-46eb-ac08-eee56ef4390f",
+ "images": [
+  {
+   "name": "6335405026.jpg",
+   "file": "img/decfb4bd-c7aa-46eb-ac08-eee56ef4390f/6335405026.jpg"
+  },
+  {
+   "name": "6335405027.jpg",
+   "file": "img/decfb4bd-c7aa-46eb-ac08-eee56ef4390f/6335405027.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "decfb4bd-c7aa-46eb-ac08-eee56ef4390f",
+  "name": "Banana Boat Lotion",
+  "brand": "Energizer Personal Care LLC",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

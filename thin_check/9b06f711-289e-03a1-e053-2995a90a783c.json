@@ -1,0 +1,53 @@
+{
+ "setid": "9b06f711-289e-03a1-e053-2995a90a783c",
+ "images": [
+  {
+   "name": "Active Ingrediants.jpg",
+   "file": "img/9b06f711-289e-03a1-e053-2995a90a783c/Active_Ingrediants.jpg"
+  },
+  {
+   "name": "Dosage and Administration.jpg",
+   "file": "img/9b06f711-289e-03a1-e053-2995a90a783c/Dosage_and_Administration.jpg"
+  },
+  {
+   "name": "Inactive Ingrediants.jpg",
+   "file": "img/9b06f711-289e-03a1-e053-2995a90a783c/Inactive_Ingrediants.jpg"
+  },
+  {
+   "name": "Indications and Usage.jpg",
+   "file": "img/9b06f711-289e-03a1-e053-2995a90a783c/Indications_and_Usage.jpg"
+  },
+  {
+   "name": "Keep Out of Reach.jpg",
+   "file": "img/9b06f711-289e-03a1-e053-2995a90a783c/Keep_Out_of_Reach.jpg"
+  },
+  {
+   "name": "Label.jpg",
+   "file": "img/9b06f711-289e-03a1-e053-2995a90a783c/Label.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/9b06f711-289e-03a1-e053-2995a90a783c/Purpose.jpg"
+  },
+  {
+   "name": "Unit Carton.jpg",
+   "file": "img/9b06f711-289e-03a1-e053-2995a90a783c/Unit_Carton.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/9b06f711-289e-03a1-e053-2995a90a783c/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Earth Mama Lady Face Mineral Sunscreen, SPF 40 - Light/Medium",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9b06f711-289e-03a1-e053-2995a90a783c",
+  "name": "Tinted Sunscreen Stick",
+  "brand": "Private Label Select Ltd CO",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

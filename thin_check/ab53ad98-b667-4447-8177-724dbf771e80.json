@@ -1,0 +1,21 @@
+{
+ "setid": "ab53ad98-b667-4447-8177-724dbf771e80",
+ "images": [
+  {
+   "name": "emm01-0001-01.jpg",
+   "file": "img/ab53ad98-b667-4447-8177-724dbf771e80/emm01-0001-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts:",
+ "inactive_section": "Alumina, Cyclohexasiloxane, Cyclopentasiloxane, Dimethicone, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethiconol, Iron Oxide (Cl 77491), Lauryl PEG/PPG-18/18 Methicone, Hydrogen Dimethicone, PEG-10 Dimethicone, Tetrahexyldecyl Ascorbate, Tocopheryl Acetate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ab53ad98-b667-4447-8177-724dbf771e80",
+  "name": "Emme Diane Tinted Mineral Sunscreen Cream",
+  "brand": "Emme Diane, Inc",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

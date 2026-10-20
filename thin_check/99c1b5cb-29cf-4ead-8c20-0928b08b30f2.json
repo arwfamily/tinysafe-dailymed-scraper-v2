@@ -1,0 +1,21 @@
+{
+ "setid": "99c1b5cb-29cf-4ead-8c20-0928b08b30f2",
+ "images": [
+  {
+   "name": "sensitive-skin-10-oz-01.jpg",
+   "file": "img/99c1b5cb-29cf-4ead-8c20-0928b08b30f2/sensitive-skin-10-oz-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sensitive Skin 10 oz",
+ "inactive_section": "Deionized Water, Ethylhexyl Stearate, Disopropyl Adipate, Cetyl Dimethicone, Polyglycery-4 Isosteate, Cetyl PEG/PPG-10/1 Dimethicone, Hexyl Laurate, Isohexadecane, Beeswax, Aloe Barbadensis Leaf Juice, Dimethicone, Hydrogenated Castor Oil, Silica, Triethoxycaprylylsilane, Caprylyl Glycol, Tocopherol Acetate, Phenoxyethanol, Disodium EDTA, Sodium Chloride",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "99c1b5cb-29cf-4ead-8c20-0928b08b30f2",
+  "name": "Sensitive Skin 10 Oz Lotion",
+  "brand": "Walgreen Company",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

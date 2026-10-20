@@ -1,0 +1,21 @@
+{
+ "setid": "37507b14-fc01-5e27-e063-6294a90afd50",
+ "images": [
+  {
+   "name": "WECARE 208.jpg",
+   "file": "img/37507b14-fc01-5e27-e063-6294a90afd50/WECARE_208.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "37507b14-fc01-5e27-e063-6294a90afd50",
+  "name": "Tinted Mineral Sunscreen Cream",
+  "brand": "WECARE FRISCO PLLC",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

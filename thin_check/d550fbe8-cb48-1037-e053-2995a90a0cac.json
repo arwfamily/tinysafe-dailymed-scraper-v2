@@ -1,0 +1,25 @@
+{
+ "setid": "d550fbe8-cb48-1037-e053-2995a90a0cac",
+ "images": [
+  {
+   "name": "ART_PP04911.jpg",
+   "file": "img/d550fbe8-cb48-1037-e053-2995a90a0cac/ART_PP04911.jpg"
+  },
+  {
+   "name": "ART_SP11095.jpg",
+   "file": "img/d550fbe8-cb48-1037-e053-2995a90a0cac/ART_SP11095.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d550fbe8-cb48-1037-e053-2995a90a0cac",
+  "name": "Powder Powder",
+  "brand": "Oxygen Development LLC",
+  "n_inactive": 3,
+  "thin_reason": "no_printed_list"
+ }
+}

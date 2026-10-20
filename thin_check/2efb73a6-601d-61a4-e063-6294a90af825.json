@@ -1,0 +1,21 @@
+{
+ "setid": "2efb73a6-601d-61a4-e063-6294a90af825",
+ "images": [
+  {
+   "name": "SDM Tan box.jpg",
+   "file": "img/2efb73a6-601d-61a4-e063-6294a90af825/SDM_Tan_box.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sun Defense Minerals (Tan) Retail",
+ "inactive_section": "Inactive ingredients Silica, Mica, Iron Oxides, Butyloctyl Salicylate, Octyldodecanol, Tridecyl Salicylate, Mauritia Flexuosa (Buriti) Fruit Oil, Camellia Sinensis (Green Tea) Leaf Extract, Helianthus Annuus (Sunflower) Seed Oil, Tocopherol (Vitamin E), Phenylpropanol, Corn-Derived Propanediol, Aluminum Hydroxide, Caprylyl Glycol, Hydrogenated Plant-Derived Lecithin.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2efb73a6-601d-61a4-e063-6294a90af825",
+  "name": "Sun Defense Minerals (tan) Powder",
+  "brand": "Eminence Organic Skin Care",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

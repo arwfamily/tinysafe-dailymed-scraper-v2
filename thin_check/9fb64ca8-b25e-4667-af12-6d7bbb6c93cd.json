@@ -1,0 +1,25 @@
+{
+ "setid": "9fb64ca8-b25e-4667-af12-6d7bbb6c93cd",
+ "images": [
+  {
+   "name": "DFB.jpg",
+   "file": "img/9fb64ca8-b25e-4667-af12-6d7bbb6c93cd/DFB.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/9fb64ca8-b25e-4667-af12-6d7bbb6c93cd/PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Anew Platinum Day Cream",
+ "inactive_section": "Inactive ingredients: WATER, GLYCERIN, SILICA, DIMETHICONE, STEARIC ACID, STEARYL ALCOHOL, NONENOL, SAPINDUS RARAK FRUIT EXTRACT, POUZOLZIA PENTANDRA EXTRACT, METHOXYBENZOYL METHYLSULFONYL OXOPIPERIDINYL PIPERAZINECARBOXAMIDE, THIAZOLYLALANINE, SACCHAROMYCES/PLATINUM FERMENT, TRISILOXANE, DIMETHICONOL, MYRISTYL MYRISTATE, MALTODEXTRIN, PEG-100 STEARATE, CAPRYLYL GLYCOL,GLYCERYL STEARATE, SODIUM POLYACRYLATE, POLYURETHANE-40, POTASSIUM HYDROXIDE, ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER, DISODIUM EDTA, 1,2-HEXANEDIOL, PARFUM.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9fb64ca8-b25e-4667-af12-6d7bbb6c93cd",
+  "name": "Anew Platinum Day Cream",
+  "brand": "New Avon LLC",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "38d02c8d-cdc8-b8d6-e063-6294a90ad9e4",
+ "images": [
+  {
+   "name": "spf 30 spray tahiti isle fs.jpg",
+   "file": "img/38d02c8d-cdc8-b8d6-e063-6294a90ad9e4/spf_30_spray_tahiti_isle_fs.jpg"
+  },
+  {
+   "name": "spf 30 spray tahiti isle mini.jpg",
+   "file": "img/38d02c8d-cdc8-b8d6-e063-6294a90ad9e4/spf_30_spray_tahiti_isle_mini.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "SPF Spray Tahiti Isle",
+ "inactive_section": "Alcohol Denat., Acrylates/Octylacrylamide Copolymer, Diethylhexyl 2,6-Naphthalate, Butyloctyl Salicylate, Dimethicone, Fragrance (Parfum), Tocopheryl Acetate, Benzyl Salicylate, Hexyl Cinnamal, Hydroxycitronellal.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "38d02c8d-cdc8-b8d6-e063-6294a90ad9e4",
+  "name": "Bath And Body Works SPF Tahiti Isle Spray",
+  "brand": "Bath & Body Works, Inc.",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

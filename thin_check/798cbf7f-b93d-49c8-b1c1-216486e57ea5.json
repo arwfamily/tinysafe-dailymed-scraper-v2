@@ -1,0 +1,25 @@
+{
+ "setid": "798cbf7f-b93d-49c8-b1c1-216486e57ea5",
+ "images": [
+  {
+   "name": "eucdailyhydrationcream.jpg",
+   "file": "img/798cbf7f-b93d-49c8-b1c1-216486e57ea5/eucdailyhydrationcream.jpg"
+  },
+  {
+   "name": "eucdhcream.jpg",
+   "file": "img/798cbf7f-b93d-49c8-b1c1-216486e57ea5/eucdhcream.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "8",
+ "title": "Eucerin Daily Hydration Cream",
+ "inactive_section": "Inactive Ingredients Water, Glycerin, Tapioca Starch, Butylene Glycol, Cetyl Alcohol, Hydrogenated Cocoglycerides, Myristyl Myristate, Stearyl Alcohol, Palmitic Acid, Glyceryl Stearate, Stearic Acid, Glycyrrhiza Inflata Root Extract, Dimethicone, 1,2-Hexanediol, Phenoxyethanol, Silica Dimethyl Silylate, Decylene Glycol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Benzyl Alcohol, Xanthan Gum, Sodium Hydroxide, Trisodium EDTA.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "798cbf7f-b93d-49c8-b1c1-216486e57ea5",
+  "name": "Eucerin Daily Hydration Cream",
+  "brand": "Beiersdorf Inc",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "104e5e32-7b73-41e6-b40a-41fe5556c036",
+ "images": [
+  {
+   "name": "gmc-01.jpg",
+   "file": "img/104e5e32-7b73-41e6-b40a-41fe5556c036/gmc-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "GMC Medical®",
+ "inactive_section": "WATER/EAU, CYCLOMETHICONE, DIMETHICONE, PHENYL TRIMETHICONE, POLYETHYLENE, PPG-3 MYRISTYL ETHER, PPG-3 MYRISTYL ETHER NEOHEPTANOATE, CETYL PEG/PPG-10/1 DIMETHICONE, MICA, SILICA, POLYGLYCERYL-10 DECAOLEATE, GLYCERIN, ISODODECANE, DISTEARDIMONIUM, HECTORITE, PROPYLENE CARBONATE, POLYGONUM AVICULARE EXTRACT, CASSIA ALATA (CANDLE TREE) LEAF EXTRACT, PANTHENOL, TOCOPHERYL ACETATE, TRIETHOXYCAPRYLYLSILANE, PHENOXYETHANOL, ETHYLHEXYLGLYCERIN",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "104e5e32-7b73-41e6-b40a-41fe5556c036",
+  "name": "Gmc Medical Kit",
+  "brand": "Laboratoires dermo Cosmetik Inc",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

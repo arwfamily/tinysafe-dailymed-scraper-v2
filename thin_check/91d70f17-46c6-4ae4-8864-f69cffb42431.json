@@ -1,0 +1,29 @@
+{
+ "setid": "91d70f17-46c6-4ae4-8864-f69cffb42431",
+ "images": [
+  {
+   "name": "magix DFB1.jpg",
+   "file": "img/91d70f17-46c6-4ae4-8864-f69cffb42431/magix_DFB1.jpg"
+  },
+  {
+   "name": "magix DFB2.jpg",
+   "file": "img/91d70f17-46c6-4ae4-8864-f69cffb42431/magix_DFB2.jpg"
+  },
+  {
+   "name": "magix PDP.jpg",
+   "file": "img/91d70f17-46c6-4ae4-8864-f69cffb42431/magix_PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Magix Face Protector",
+ "inactive_section": "Inactive ingredients: Dimethicone, Cyclopentasiloxane, Calcium Sodium Borosilicate, Cellulose, Cetearyl Dimethicone Crosspolymer, Alumina, Acrylates/Dimethicone Copolymer, Silica, Nylon-12, HDI/Trimethylol Hexyllactone Crosspolymer, C30-45 Alkyl Methicone, C30-45 Olefin, PEG/PPG-20/23 Dimethicone, Lauryl PEG-9 Polydimethylsiloxyethyl Dimethicone, Caprylyl Glycol, Dimethicone Crosspolymer, Polyethylene, Parfum/Fragrance, Boron Nitride, Hydrated Silica, Water/Eau, Tocopherol, Polygonum Multiflorum Root Extract, Rosa Centifolia Flower Extract.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "91d70f17-46c6-4ae4-8864-f69cffb42431",
+  "name": "Magix Face Perfector Lotion",
+  "brand": "New Avon LLC",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

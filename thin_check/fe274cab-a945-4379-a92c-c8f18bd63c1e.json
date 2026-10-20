@@ -1,0 +1,21 @@
+{
+ "setid": "fe274cab-a945-4379-a92c-c8f18bd63c1e",
+ "images": [
+  {
+   "name": "swineaid16.jpg",
+   "file": "img/fe274cab-a945-4379-a92c-c8f18bd63c1e/swineaid16.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fe274cab-a945-4379-a92c-c8f18bd63c1e",
+  "name": "Swineaid (arginine Aminobenzoate) Cream",
+  "brand": "EpiCare Limited",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

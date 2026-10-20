@@ -1,0 +1,21 @@
+{
+ "setid": "3766b00f-ceda-a6f9-e063-6294a90aff5d",
+ "images": [
+  {
+   "name": "204 Ageless Skincare.jpg",
+   "file": "img/3766b00f-ceda-a6f9-e063-6294a90aff5d/204_Ageless_Skincare.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3766b00f-ceda-a6f9-e063-6294a90aff5d",
+  "name": "20 Zinc Oxide Tinted Mineral Sunscreen Cream",
+  "brand": "AGELESS SKINCARE INC",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "3b410ed7-c629-e39c-e063-6294a90a12f6",
+ "images": [
+  {
+   "name": "tallow sunscreen SPF30.jpg",
+   "file": "img/3b410ed7-c629-e39c-e063-6294a90a12f6/tallow_sunscreen_SPF30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Initial Drug Listing - Vigority Tallow Sunscreen SPF30",
+ "inactive_section": "Water, Beef Tallow, Beeswax, Butyrospermum Parkii (Shea) Butter, Vitamin E, Simmondsia Chinensis (Jojoba) seed oil, Olea Europaea (Olive) Fruit Oil, Lecithin, C12-15 Alkyl Benzoate, Silica, Squalane, Xanthan Gum, Dimethicone, Glyceryl Stearate, Cetearyl Alcohol, Isononyl Isononanoate, Radish Root Ferment Filtrate, Saururus Chinensis Leaf/root Extract, Taraxacum Officinale (Dandelion) Leaf Extract",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3b410ed7-c629-e39c-e063-6294a90a12f6",
+  "name": "Tallow Sunscreen SPF 30 Cream",
+  "brand": "FOUNDATION COMMERCE INC",
+  "n_inactive": 19,
+  "thin_reason": null
+ }
+}

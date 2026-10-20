@@ -1,0 +1,29 @@
+{
+ "setid": "05cb5a91-205f-b652-e063-6294a90a0664",
+ "images": [
+  {
+   "name": "63354-166-14 - Refill.jpg",
+   "file": "img/05cb5a91-205f-b652-e063-6294a90a0664/63354-166-14_-_Refill.jpg"
+  },
+  {
+   "name": "63354-166-14 - Sprayer.jpg",
+   "file": "img/05cb5a91-205f-b652-e063-6294a90a0664/63354-166-14_-_Sprayer.jpg"
+  },
+  {
+   "name": "63354-166-17 - TP Label.jpg",
+   "file": "img/05cb5a91-205f-b652-e063-6294a90a0664/63354-166-17_-_TP_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "7",
+ "title": "",
+ "inactive_section": "Alcohol Denat., Caprylic/Capric Triglyceride, Isododecane, VA/Butyl Maleate/Isobornyl Acrylate Copolymer, Caprylyl Glycol, Dimethicone, Tocopheryl Acetate, Mineral Oil, Panthenol, Water, Aloe Barbadensis Leaf Extract",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "05cb5a91-205f-b652-e063-6294a90a0664",
+  "name": "Banana Boat Spray",
+  "brand": "Edgewell Personal Care Brands LLC",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

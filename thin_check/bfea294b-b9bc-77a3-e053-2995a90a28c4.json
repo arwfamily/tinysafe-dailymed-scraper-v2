@@ -1,0 +1,21 @@
+{
+ "setid": "bfea294b-b9bc-77a3-e053-2995a90a28c4",
+ "images": [
+  {
+   "name": "label-ore.jpg",
+   "file": "img/bfea294b-b9bc-77a3-e053-2995a90a28c4/label-ore.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Orange oil,Rice bran oil,Foeniculum vulgare seed extract,Indican,Maltitol,Sorbitol,Water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bfea294b-b9bc-77a3-e053-2995a90a28c4",
+  "name": "Vitaplus Ore Liquid",
+  "brand": "MY Corp.,Ltd",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

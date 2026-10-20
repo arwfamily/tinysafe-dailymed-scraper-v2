@@ -1,0 +1,41 @@
+{
+ "setid": "15bda8d5-8c3c-6ba5-e063-6394a90a82d9",
+ "images": [
+  {
+   "name": "Inactive ingredients.jpg",
+   "file": "img/15bda8d5-8c3c-6ba5-e063-6394a90a82d9/Inactive_ingredients.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/15bda8d5-8c3c-6ba5-e063-6394a90a82d9/PDP.jpg"
+  },
+  {
+   "name": "active ingredients.jpg",
+   "file": "img/15bda8d5-8c3c-6ba5-e063-6394a90a82d9/active_ingredients.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/15bda8d5-8c3c-6ba5-e063-6394a90a82d9/directions.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/15bda8d5-8c3c-6ba5-e063-6394a90a82d9/uses.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/15bda8d5-8c3c-6ba5-e063-6394a90a82d9/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "DRMTLGY Radiance Powder",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "15bda8d5-8c3c-6ba5-e063-6394a90a82d9",
+  "name": "Drmtlgy Radiance Powder Powder",
+  "brand": "DRMTLGY",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "2e21c9f9-acf8-997b-e063-6394a90ada3f",
+ "images": [
+  {
+   "name": "SDM Fair Pro Jar Label.jpg",
+   "file": "img/2e21c9f9-acf8-997b-e063-6394a90ada3f/SDM_Fair_Pro_Jar_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sun Defense Minerals (Fair) Pro",
+ "inactive_section": "Inactive ingredients Silica, Mica, Butyloctyl Salicylate, Octyldodecanol, Tridecyl Salicylate, Iron Oxides, Mauritia Flexuosa (Buriti) Fruit Oil, Camellia Sinensis (Green Tea) Leaf Extract, Helianthus Annuus (Sunflower) Seed Oil, Tocopherol (Vitamin E), Phenylpropanol, Corn-Derived Propanediol, Aluminum Hydroxide, Caprylyl Glycol, Hydrogenated Plant-Derived Lecithin.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2e21c9f9-acf8-997b-e063-6394a90ada3f",
+  "name": "Sun Defense Minerals (fair) Powder",
+  "brand": "Eminence Organic Skin Care",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

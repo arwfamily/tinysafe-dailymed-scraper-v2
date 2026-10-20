@@ -1,0 +1,21 @@
+{
+ "setid": "5cfd7a7e-ce9d-40de-9424-6b0c653dc1b7",
+ "images": [
+  {
+   "name": "ZPU013A0.jpg",
+   "file": "img/5cfd7a7e-ce9d-40de-9424-6b0c653dc1b7/ZPU013A0.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Styrene/Acrylates Copolymer, Sorbitol, Benzyl Alcohol, Triethanolamine, Dimethicone, Polyglyceryl-3 Distearate, Sorbitan Isostearate, Stearic Acid, VP/Eicosene Copolymer, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tocopherol, Disodium EDTA, Methylparaben, Propylparaben, Fragrance.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5cfd7a7e-ce9d-40de-9424-6b0c653dc1b7",
+  "name": "Publix Kids Spray",
+  "brand": "Publix Super Markets Inc",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

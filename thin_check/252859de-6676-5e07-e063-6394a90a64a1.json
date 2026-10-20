@@ -1,0 +1,41 @@
+{
+ "setid": "252859de-6676-5e07-e063-6394a90a64a1",
+ "images": [
+  {
+   "name": "carton.jpg",
+   "file": "img/252859de-6676-5e07-e063-6394a90a64a1/carton.jpg"
+  },
+  {
+   "name": "clearshield1.jpg",
+   "file": "img/252859de-6676-5e07-e063-6394a90a64a1/clearshield1.jpg"
+  },
+  {
+   "name": "insert.jpg",
+   "file": "img/252859de-6676-5e07-e063-6394a90a64a1/insert.jpg"
+  },
+  {
+   "name": "inside.jpg",
+   "file": "img/252859de-6676-5e07-e063-6394a90a64a1/inside.jpg"
+  },
+  {
+   "name": "rescuebalm1.jpg",
+   "file": "img/252859de-6676-5e07-e063-6394a90a64a1/rescuebalm1.jpg"
+  },
+  {
+   "name": "sensicalm1.jpg",
+   "file": "img/252859de-6676-5e07-e063-6394a90a64a1/sensicalm1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Alumier MD Post Procedure Kit",
+ "inactive_section": "Water/Aqua/Eau, C12-15 Alkyl Benzoate, Caprylic/Capric Triglyceride, Niacinamide, Propanediol, Dimethicone, Butyloctyl Salicylate, Glycerin, Caprylyl Methicone, Cetearyl Alcohol, Aluminium Stearate, Glyceryl Stearate, PEG-100 Stearate, Vitis Vinifera Seed Extract, Sodium Hyaluronate, Resveratrol, Lecithin, Magnesium Ascorbyl Phosphate, Tocopheryl Acetate, Glutathione, Acacia Senegal Gum, Cellulose Gum, Microcrystalline Cellulose, Polysilicone-11, Triethoxycaprylylsilane, Ceteareth-20, Polyhydroxystearic Acid, Xanthan Gum, Disodium EDTA, Alumina, Tocopherol, Alteromonas Ferment Extract, Butylene Glycol, Physalis Angulata Extract, Polygonum Aviculare Extract, Xylitol, Caprylic Acid, Caprylyl Glycol, Polymethyl Methacrylate, Tricaprylin, Sodium Benzoate, Potassium Sorbate, Pentylene Glycol, Ethylhexylglycerin.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "252859de-6676-5e07-e063-6394a90a64a1",
+  "name": "Alumier Md Post Procedure Kit Kit",
+  "brand": "Alumier Labs",
+  "n_inactive": 48,
+  "thin_reason": null
+ }
+}

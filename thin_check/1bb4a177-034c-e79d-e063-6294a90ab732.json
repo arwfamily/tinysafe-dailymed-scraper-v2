@@ -1,0 +1,21 @@
+{
+ "setid": "1bb4a177-034c-e79d-e063-6294a90ab732",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/1bb4a177-034c-e79d-e063-6294a90ab732/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Propanediol, Butyloctyl Salicylate, Benzotriazolyl Dodecyl P-Cresol, Glycerin, Pentylene Glycol, 1,2-Hexanediol, Silica, Dimethicone/Vinyl Dimethicone Crosspolymer, Inulin Lauryl Carbamate, Vp/Eicosene Copolymer, Ammonium Acryloyldimethyltaurate/Vp Copolymer, Xanthan Gum, Ethylhexylglycerin,Iron Oxides(CI 77491), Iron Oxides(CI 77492), Bht, Tocophero",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1bb4a177-034c-e79d-e063-6294a90ab732",
+  "name": "Nubes Sun Block Cream",
+  "brand": "UNIQUEMI",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

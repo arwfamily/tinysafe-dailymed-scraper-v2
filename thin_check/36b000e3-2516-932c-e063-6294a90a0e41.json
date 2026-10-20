@@ -1,0 +1,21 @@
+{
+ "setid": "36b000e3-2516-932c-e063-6294a90a0e41",
+ "images": [
+  {
+   "name": "Lotus 202.jpg",
+   "file": "img/36b000e3-2516-932c-e063-6294a90a0e41/Lotus_202.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "36b000e3-2516-932c-e063-6294a90a0e41",
+  "name": "Mineral Sunscreen Non-tinted Cream",
+  "brand": "LOTUS SKINCARE AND MAKE-UP STUDIO",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

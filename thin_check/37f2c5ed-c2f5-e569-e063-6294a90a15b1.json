@@ -1,0 +1,21 @@
+{
+ "setid": "37f2c5ed-c2f5-e569-e063-6294a90a15b1",
+ "images": [
+  {
+   "name": "SF 203 Esthetics.jpg",
+   "file": "img/37f2c5ed-c2f5-e569-e063-6294a90a15b1/SF_203_Esthetics.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "37f2c5ed-c2f5-e569-e063-6294a90a15b1",
+  "name": "Tinted Mineral Sunscreen Cream",
+  "brand": "ESTHETICS BY RIKI LLC",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

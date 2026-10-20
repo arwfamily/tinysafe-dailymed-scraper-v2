@@ -1,0 +1,21 @@
+{
+ "setid": "514f7d70-7b8b-0992-e063-6394a90a1e98",
+ "images": [
+  {
+   "name": "cool glow.jpg",
+   "file": "img/514f7d70-7b8b-0992-e063-6394a90a1e98/cool_glow.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Iris and Romeo Weekend Skin Cool Glow",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "514f7d70-7b8b-0992-e063-6394a90a1e98",
+  "name": "Iris And Romeo Weekend Skin Cool Glow Lotion",
+  "brand": "Iris and Romeo",
+  "n_inactive": 32,
+  "thin_reason": null
+ }
+}

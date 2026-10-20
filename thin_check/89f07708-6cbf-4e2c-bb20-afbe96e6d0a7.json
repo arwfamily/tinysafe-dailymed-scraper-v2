@@ -1,0 +1,21 @@
+{
+ "setid": "89f07708-6cbf-4e2c-bb20-afbe96e6d0a7",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/89f07708-6cbf-4e2c-bb20-afbe96e6d0a7/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "inactive ingredient: water, cyclopentasiloxane, dipropylene glycol, glycerin, dimethicone, hexyl laurate, sorbitan olivate, sorbitan sesquioleate, magnesium sulfate, stearic acid, hectorite, aluminum hydroxide, phenoxyethanol, propylparaben, methylparaben, disodium EDTA, fragrance",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "89f07708-6cbf-4e2c-bb20-afbe96e6d0a7",
+  "name": "Conju Princess Uv Sun Block (ethylhexyl Methoxycinnamate) Cream",
+  "brand": "Conju Inc",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

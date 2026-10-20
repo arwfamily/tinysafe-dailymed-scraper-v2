@@ -1,0 +1,29 @@
+{
+ "setid": "4a72075c-0f65-4435-8988-b06369164bef",
+ "images": [
+  {
+   "name": "4125000619.jpg",
+   "file": "img/4a72075c-0f65-4435-8988-b06369164bef/4125000619.jpg"
+  },
+  {
+   "name": "4125000622.jpg",
+   "file": "img/4a72075c-0f65-4435-8988-b06369164bef/4125000622.jpg"
+  },
+  {
+   "name": "4125000657.jpg",
+   "file": "img/4a72075c-0f65-4435-8988-b06369164bef/4125000657.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Sorbitol, Stearic Acid, Triethanolamine, Aluminum Starch Octenylsuccinate, Benzyl Alcohol, Sorbitan Isostearate, VP/Eicosene Copolymer, Dimethicone, Polyglyceryl-3 Distearate, Carbomer, Tocopherol, Disodium EDTA, Methylparaben, Propylparaben, Fragrance.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4a72075c-0f65-4435-8988-b06369164bef",
+  "name": "Meijer Lotion",
+  "brand": "Meijer Distribution Inc",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

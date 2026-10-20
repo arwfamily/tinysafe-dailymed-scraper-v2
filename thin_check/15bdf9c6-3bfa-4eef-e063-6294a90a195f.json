@@ -1,0 +1,41 @@
+{
+ "setid": "15bdf9c6-3bfa-4eef-e063-6294a90a195f",
+ "images": [
+  {
+   "name": "Active Ingredients.jpg",
+   "file": "img/15bdf9c6-3bfa-4eef-e063-6294a90a195f/Active_Ingredients.jpg"
+  },
+  {
+   "name": "Inactive ingredients.jpg",
+   "file": "img/15bdf9c6-3bfa-4eef-e063-6294a90a195f/Inactive_ingredients.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/15bdf9c6-3bfa-4eef-e063-6294a90a195f/PDP.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/15bdf9c6-3bfa-4eef-e063-6294a90a195f/directions.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/15bdf9c6-3bfa-4eef-e063-6294a90a195f/uses.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/15bdf9c6-3bfa-4eef-e063-6294a90a195f/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Huey Daily Mineral",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "15bdf9c6-3bfa-4eef-e063-6294a90a195f",
+  "name": "Huey Daily Mineral Lotion",
+  "brand": "Huey",
+  "n_inactive": 34,
+  "thin_reason": null
+ }
+}

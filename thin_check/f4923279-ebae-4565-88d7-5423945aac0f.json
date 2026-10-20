@@ -1,0 +1,25 @@
+{
+ "setid": "f4923279-ebae-4565-88d7-5423945aac0f",
+ "images": [
+  {
+   "name": "primary.jpg",
+   "file": "img/f4923279-ebae-4565-88d7-5423945aac0f/primary.jpg"
+  },
+  {
+   "name": "secondary.jpg",
+   "file": "img/f4923279-ebae-4565-88d7-5423945aac0f/secondary.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Mineral SPF30 Primer",
+ "inactive_section": "Inactive Ingredients: Aqua (water-purified), Cyclomethicone, Caprylic/Capric Triglyceride, Glyceryl Distearate, Ceteareth-20 (Cetomacrogol 1000), PEG-30 Dipolyhydroxystearate, Phenoxyethanol, Methylparaben (Methyl Hydroxybenzoate), Tocopheryl acetate (D-Alpha-Tocopheryl Acetate), Parfum (Fragrance), Carbomer (Carbomer 940), Camellia Sinensis Extract (Camellia Sinensis Leaf Extract, Oenothera Biennis Oil (Evening Primrose Oil), Sodium Hyaluronate, Propylparaben (Propyl Hydroxybenzoate), Ubiquinone 10 (Ubidecarenone).",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f4923279-ebae-4565-88d7-5423945aac0f",
+  "name": "Becca Mineral SPF Primer Cream",
+  "brand": "Becca, Inc.",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

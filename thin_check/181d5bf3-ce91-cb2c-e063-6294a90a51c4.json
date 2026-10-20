@@ -1,0 +1,29 @@
+{
+ "setid": "181d5bf3-ce91-cb2c-e063-6294a90a51c4",
+ "images": [
+  {
+   "name": "66738-502-01_Carton.jpg",
+   "file": "img/181d5bf3-ce91-cb2c-e063-6294a90a51c4/66738-502-01_Carton.jpg"
+  },
+  {
+   "name": "66738-502-21_Packet.jpg",
+   "file": "img/181d5bf3-ce91-cb2c-e063-6294a90a51c4/66738-502-21_Packet.jpg"
+  },
+  {
+   "name": "66738-502-22_Tube.jpg",
+   "file": "img/181d5bf3-ce91-cb2c-e063-6294a90a51c4/66738-502-22_Tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Water, Caprylic/Capric Triglyceride, Glycerin, Butyloctyl Salicylate, Propanediol, Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Silica, Azelaic Acid, Allantoin, Sodium Hyaluronate, Camellia Sinensis Leaf Extract*, Vaccinium Macrocarpon (Cranberry) Fruit Extract*, Rosmarinus Officinalis (Rosemary) Leaf Extract*, Niacinamide, Oryza Sativa (Rice) Extract, Alumina, Isohexadecane, Hydrogenated Lecithin, Polyhydroxystearic Acid, Xylitol, Stearic Acid, Polysorbate 60, Triethoxycaprylylsilane, Xanthan Gum, Aminomethyl Propanol, Sorbitan Isostearate, Hydrogenated Phosphatidylcholine, Citric Acid, Phenoxyethanol. 24012 *Certified Organic",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "181d5bf3-ce91-cb2c-e063-6294a90a51c4",
+  "name": "Jack Black Lotion",
+  "brand": "Jack Black L.L.C",
+  "n_inactive": 35,
+  "thin_reason": null
+ }
+}

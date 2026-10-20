@@ -1,0 +1,25 @@
+{
+ "setid": "e12e3bcb-4c3d-41be-8e2b-12a817c8b367",
+ "images": [
+  {
+   "name": "Inner Package2.jpg",
+   "file": "img/e12e3bcb-4c3d-41be-8e2b-12a817c8b367/Inner_Package2.jpg"
+  },
+  {
+   "name": "label 1.jpg",
+   "file": "img/e12e3bcb-4c3d-41be-8e2b-12a817c8b367/label_1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Vivier Sheer SPF 30 Mineral Tinted",
+ "inactive_section": "Alumina, Ammonium Acryloyldimethyltaurate/VP Copolymer, Bis-PEG/PPG-16/16 PEG/PPG-16/16 Dimethicone, Butylparaben, C12-15 Alkyl Benzoate, Caprylic/Capric Triglyceride, Ceteareth-20, Cetearyl Alcohol, Cetyl Dimethicone, Citrus Aurantium Dulcis (Orange) Peel Extract, Citrus Limon (Lemon) Peel Extract, Cyclohexasiloxane, Cyclopentasiloxane, Dimethicone, Dipropylene Glycol Dibenzoate, DL-alpha Tocopheryl Acetate, Ethylparaben, Glycerin, Glyceryl Stearate, Green Tea Extract, Iron Oxides CI 77491, Iron Oxides CI 77492, Iron Oxides CI 77499, Isopropyl Titanium Triisostearate, Methylparaben, Phenoxyethanol, Phytic Acid, Polyhydroxystearic Acid, Polysorbate 20, PPG-15 Stearyl Ether Benzoate, Propylene Glycol, Propylparaben, Pyrus Malus (Apple) Fruit Extract, Saccharum Officinarum (Sugarcane) Extract, Sodium Ascorbyl Phosphate, Sodium Hydroxide, t-Butyl Alcohol, Triethoxycaprylylsilane, VP/Eicosene Copolymer, Water/Eau, Xanthan Gum.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e12e3bcb-4c3d-41be-8e2b-12a817c8b367",
+  "name": "Vivier Sheer SPF 30 Mineral Tinted Lotion",
+  "brand": "Vivier Pharma, Inc.",
+  "n_inactive": 43,
+  "thin_reason": null
+ }
+}

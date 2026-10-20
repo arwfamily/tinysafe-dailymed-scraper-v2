@@ -1,0 +1,41 @@
+{
+ "setid": "21ff7f78-b543-0bea-e063-6294a90aed70",
+ "images": [
+  {
+   "name": "PDP.jpg",
+   "file": "img/21ff7f78-b543-0bea-e063-6294a90aed70/PDP.jpg"
+  },
+  {
+   "name": "active ingredients.jpg",
+   "file": "img/21ff7f78-b543-0bea-e063-6294a90aed70/active_ingredients.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/21ff7f78-b543-0bea-e063-6294a90aed70/directions.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/21ff7f78-b543-0bea-e063-6294a90aed70/inactive_ingredients.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/21ff7f78-b543-0bea-e063-6294a90aed70/uses.jpg"
+  },
+  {
+   "name": "warnings.jpg",
+   "file": "img/21ff7f78-b543-0bea-e063-6294a90aed70/warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Ciele Sculpt and Protect",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "21ff7f78-b543-0bea-e063-6294a90aed70",
+  "name": "Ciele Sculpt And Protect Stick",
+  "brand": "Ciele LLC",
+  "n_inactive": 19,
+  "thin_reason": null
+ }
+}

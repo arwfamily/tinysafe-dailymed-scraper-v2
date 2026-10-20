@@ -1,0 +1,21 @@
+{
+ "setid": "36d3ebc0-1de6-1998-e063-6294a90a02e6",
+ "images": [
+  {
+   "name": "Hello 201.jpg",
+   "file": "img/36d3ebc0-1de6-1998-e063-6294a90a02e6/Hello_201.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "36d3ebc0-1de6-1998-e063-6294a90a02e6",
+  "name": "Advanced Sun Protection Cream",
+  "brand": "HELLO BEAUTIFUL SKIN & ACNE",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

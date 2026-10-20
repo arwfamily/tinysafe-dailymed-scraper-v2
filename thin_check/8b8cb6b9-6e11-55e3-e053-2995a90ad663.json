@@ -1,0 +1,21 @@
+{
+ "setid": "8b8cb6b9-6e11-55e3-e053-2995a90ad663",
+ "images": [
+  {
+   "name": "PF10938_TheHealthyPowder_BaseLabel_BL_v01.jpg",
+   "file": "img/8b8cb6b9-6e11-55e3-e053-2995a90ad663/PF10938_TheHealthyPowder_BaseLabel_BL_v01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8b8cb6b9-6e11-55e3-e053-2995a90ad663",
+  "name": "The Healthy Powder SPF16 Powder",
+  "brand": "Physicians Formula, Inc",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

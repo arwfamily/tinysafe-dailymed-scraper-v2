@@ -1,0 +1,21 @@
+{
+ "setid": "3984c4b7-94ee-2a8e-e063-6294a90ac24f",
+ "images": [
+  {
+   "name": "char sf 203.jpg",
+   "file": "img/3984c4b7-94ee-2a8e-e063-6294a90ac24f/char_sf_203.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3984c4b7-94ee-2a8e-e063-6294a90ac24f",
+  "name": "Advanced Formula Tinted Cream",
+  "brand": "CR KEEFE ENTERPRISES, INC.",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

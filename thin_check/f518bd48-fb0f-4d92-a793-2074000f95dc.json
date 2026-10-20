@@ -1,0 +1,21 @@
+{
+ "setid": "f518bd48-fb0f-4d92-a793-2074000f95dc",
+ "images": [
+  {
+   "name": "CALCIUMREPAIR.jpg",
+   "file": "img/f518bd48-fb0f-4d92-a793-2074000f95dc/CALCIUMREPAIR.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f518bd48-fb0f-4d92-a793-2074000f95dc",
+  "name": "Calcium Repair Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "setid": "f6db0332-58ed-4c82-a9dc-7fac621f1ac1",
+ "images": [
+  {
+   "name": "REVERSE IT_TEMP_Back-1.jpg",
+   "file": "img/f6db0332-58ed-4c82-a9dc-7fac621f1ac1/REVERSE_IT_TEMP_Back-1.jpg"
+  },
+  {
+   "name": "REVERSE IT_TEMP_Front.jpg",
+   "file": "img/f6db0332-58ed-4c82-a9dc-7fac621f1ac1/REVERSE_IT_TEMP_Front.jpg"
+  },
+  {
+   "name": "REVERSE IT_TEMP_Page_2.jpg",
+   "file": "img/f6db0332-58ed-4c82-a9dc-7fac621f1ac1/REVERSE_IT_TEMP_Page_2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENTS: CYCLOPENTASILOXANE, CYCLOMETHICONE, DIMETHICONE CROSSPOLYMER, DIMETHICONE/VINYL DIMETHICONE CROSSPOLYMER, METHYL METHACRYLATE/GLYCOL DIMETHACRYLATE CROSSPOLYMER, SORBITAN ISOSTEARATE, TRIBEHENIN, CALCIUM BEHENATE, MELANIN, DIMETHICONOL, ALUMINA, PEG-10 DIMETHICONE, METHICONE, IRON OXIDES, CHOLECALCIFEROL, LYCOPENE, GLYCERIN, SUCROSE PALMITATE, LECITHIN.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f6db0332-58ed-4c82-a9dc-7fac621f1ac1",
+  "name": "Reverse It Kit Kit",
+  "brand": "mybody",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

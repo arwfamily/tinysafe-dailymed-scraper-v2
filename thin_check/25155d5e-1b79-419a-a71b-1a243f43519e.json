@@ -1,0 +1,21 @@
+{
+ "setid": "25155d5e-1b79-419a-a71b-1a243f43519e",
+ "images": [
+  {
+   "name": "PHKids50.jpg",
+   "file": "img/25155d5e-1b79-419a-a71b-1a243f43519e/PHKids50.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "25155d5e-1b79-419a-a71b-1a243f43519e",
+  "name": "Parrot Head Parakeet Kids 50 Lotion",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

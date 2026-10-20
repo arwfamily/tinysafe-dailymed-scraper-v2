@@ -1,0 +1,25 @@
+{
+ "setid": "1f471cce-64ea-4000-90e6-8d734013f279",
+ "images": [
+  {
+   "name": "cc-cream-01.jpg",
+   "file": "img/1f471cce-64ea-4000-90e6-8d734013f279/cc-cream-01.jpg"
+  },
+  {
+   "name": "cc-cream-02.jpg",
+   "file": "img/1f471cce-64ea-4000-90e6-8d734013f279/cc-cream-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "No7 CC Cream",
+ "inactive_section": "Aqua (Water), Cetearyl alcohol, Glyceryl stearate, PEG-40 castor oil, Glycerin, Silica, Dicaprylyl carbonate, Dimethicone, Sodium potassium aluminum silicate, Butylene glycol, Phenoxyethanol, Montmorillonite, Caprylyl glycol, Tocopheryl acetate, Xanthan gum, Disodium EDTA, Tetrahexyldecyl ascorbate, Ginkgo biloba leaf extract, Panax ginseng root extract, Litchi chinensis pericarp extract, [+/- (May contain) CI 77891 (Titanium dioxide), CI 77492 (Iron oxides), CI 77499 (Iron oxides), CI 77491 (Iron oxides).",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1f471cce-64ea-4000-90e6-8d734013f279",
+  "name": "No7 Cc Light Emulsion No7 Cc Medium Emulsion",
+  "brand": "Cosmetica Laboratories Inc.",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

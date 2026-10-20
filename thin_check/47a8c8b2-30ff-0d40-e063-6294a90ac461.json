@@ -1,0 +1,21 @@
+{
+ "setid": "47a8c8b2-30ff-0d40-e063-6294a90ac461",
+ "images": [
+  {
+   "name": "YonKa.jpg",
+   "file": "img/47a8c8b2-30ff-0d40-e063-6294a90ac461/YonKa.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Yon-Ka 50 Mineral Fluid",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "47a8c8b2-30ff-0d40-e063-6294a90ac461",
+  "name": "Yon-ka 50 Mineral Fluid Lotion",
+  "brand": "Laboratoire MULTALER Yon-Ka",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

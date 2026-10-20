@@ -1,0 +1,25 @@
+{
+ "setid": "641465a1-0daf-1bb9-e053-2a91aa0ab25d",
+ "images": [
+  {
+   "name": "Drug Facts Panel v2 label.jpg",
+   "file": "img/641465a1-0daf-1bb9-e053-2a91aa0ab25d/Drug_Facts_Panel_v2_label.jpg"
+  },
+  {
+   "name": "Version 2 Whole Label.jpg",
+   "file": "img/641465a1-0daf-1bb9-e053-2a91aa0ab25d/Version_2_Whole_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "6",
+ "title": "Baby Diaper Rash Cream",
+ "inactive_section": "Inactive ingredients: Caprylic/Capric Triglyceride, Simmondsia chinensis (Jojoba) Seed Oil, Beeswax (Cera Alba), Butyrospermum parkii (Shea) Butter, Carthamus tinctorius (Safflower) Oleosomes, Water (Aqua), Caprylyl Glycol, Lavandula angustifolia (Lavender) Oil, Daucus carota sativa (Carrot) Seed Oil, Melaleuca alternifolia (Tea Tree) Leaf Oil",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "641465a1-0daf-1bb9-e053-2a91aa0ab25d",
+  "name": "Baby Diaper Rash Cream Cream",
+  "brand": "doTERRA International, LLC",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

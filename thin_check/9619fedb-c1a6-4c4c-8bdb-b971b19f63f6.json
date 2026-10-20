@@ -1,0 +1,25 @@
+{
+ "setid": "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6",
+ "images": [
+  {
+   "name": "glow.jpg",
+   "file": "img/9619fedb-c1a6-4c4c-8bdb-b971b19f63f6/glow.jpg"
+  },
+  {
+   "name": "glowfacts.jpg",
+   "file": "img/9619fedb-c1a6-4c4c-8bdb-b971b19f63f6/glowfacts.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "24hr Health Glow",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6",
+  "name": "24HR Health Glow (vitamin) Spray",
+  "brand": "USA Health",
+  "n_inactive": 4,
+  "thin_reason": "no_printed_list"
+ }
+}

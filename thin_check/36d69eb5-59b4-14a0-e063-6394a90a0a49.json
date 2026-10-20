@@ -1,0 +1,21 @@
+{
+ "setid": "36d69eb5-59b4-14a0-e063-6394a90a0a49",
+ "images": [
+  {
+   "name": "baby 203.jpg",
+   "file": "img/36d69eb5-59b4-14a0-e063-6394a90a0a49/baby_203.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "36d69eb5-59b4-14a0-e063-6394a90a0a49",
+  "name": "Tinted Mineral Sunscreen Cream",
+  "brand": "BABYFACE LLC",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

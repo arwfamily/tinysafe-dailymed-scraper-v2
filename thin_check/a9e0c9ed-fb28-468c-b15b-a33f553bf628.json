@@ -1,0 +1,33 @@
+{
+ "setid": "a9e0c9ed-fb28-468c-b15b-a33f553bf628",
+ "images": [
+  {
+   "name": "urban-decay-01.jpg",
+   "file": "img/a9e0c9ed-fb28-468c-b15b-a33f553bf628/urban-decay-01.jpg"
+  },
+  {
+   "name": "urban-decay-02.jpg",
+   "file": "img/a9e0c9ed-fb28-468c-b15b-a33f553bf628/urban-decay-02.jpg"
+  },
+  {
+   "name": "urban-decay-03.jpg",
+   "file": "img/a9e0c9ed-fb28-468c-b15b-a33f553bf628/urban-decay-03.jpg"
+  },
+  {
+   "name": "urban-decay-04.jpg",
+   "file": "img/a9e0c9ed-fb28-468c-b15b-a33f553bf628/urban-decay-04.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "ud URBAN DECAY URBAN DEFENSE",
+ "inactive_section": "Aqua, Cetearyl Alcohol, Glyceryl Stearate, PEG-40 Castor Oil, Glycerin, Silica, Dimethicone, Dicaprylyl Carbonate, Ginkgo Biloba Leaf Extract, Chamomilla Recutita Flower Extract, Panax Ginseng Root Extract, Litchi Chinensis Pericarp Extract, Tocopheryl Acetate, Tetrahexyldecyl Ascorbate, Montmorillonite, Butylene Glycol, Xanthan Gum, Disodium EDTA, Caprylyl Glycol, Phenoxyethanol. All shades may contain (Toutes les couleurs peuvent contenir): CI77891, CI77491 / 77492 /77499 (Iron Oxides).",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a9e0c9ed-fb28-468c-b15b-a33f553bf628",
+  "name": "Urban Defense Emulsion",
+  "brand": "Urban Decay Cosmetics, LLC",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

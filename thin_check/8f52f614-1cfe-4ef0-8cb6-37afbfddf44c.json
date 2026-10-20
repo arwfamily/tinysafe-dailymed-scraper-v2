@@ -1,0 +1,25 @@
+{
+ "setid": "8f52f614-1cfe-4ef0-8cb6-37afbfddf44c",
+ "images": [
+  {
+   "name": "Inner Package.jpg",
+   "file": "img/8f52f614-1cfe-4ef0-8cb6-37afbfddf44c/Inner_Package.jpg"
+  },
+  {
+   "name": "Outer Package.jpg",
+   "file": "img/8f52f614-1cfe-4ef0-8cb6-37afbfddf44c/Outer_Package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "MILANI MAKE IT LAST SUNSCREEN SETTING SPRAY SPF 30",
+ "inactive_section": "Alcohol Denat., Isododecane, Butyloctyl Salicylate, PVP, Water, C24-28 Alkyldimethylsiloxy Trimethylsiloxysilicate, Tropaeolum Majus Flower/Leaf/Stem Extract, Ethylhexylglycerin, Phenoxyethanol, Fragrance",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8f52f614-1cfe-4ef0-8cb6-37afbfddf44c",
+  "name": "Milani Make It Last Sunscreen Setting SPF 30 Liquid",
+  "brand": "New Milani Group, LLC",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

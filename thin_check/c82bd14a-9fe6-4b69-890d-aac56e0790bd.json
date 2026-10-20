@@ -1,0 +1,21 @@
+{
+ "setid": "c82bd14a-9fe6-4b69-890d-aac56e0790bd",
+ "images": [
+  {
+   "name": "HYDROMARINECREAM.jpg",
+   "file": "img/c82bd14a-9fe6-4b69-890d-aac56e0790bd/HYDROMARINECREAM.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "7",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c82bd14a-9fe6-4b69-890d-aac56e0790bd",
+  "name": "Hydromarine Extreme Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

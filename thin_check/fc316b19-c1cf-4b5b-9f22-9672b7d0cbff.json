@@ -1,0 +1,21 @@
+{
+ "setid": "fc316b19-c1cf-4b5b-9f22-9672b7d0cbff",
+ "images": [
+  {
+   "name": "Pyratine XR.jpg.jpg",
+   "file": "img/fc316b19-c1cf-4b5b-9f22-9672b7d0cbff/Pyratine_XR.jpg.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive Ingredients: Water (Aqua), Cyclopentasiloxane, Butylene glycol, glycerin, Propylene Glycol, Caprylic/Capric triglyceride, Glycerin Stearate, PEG-100 Stearate, Polyglyceryl-3 Polymethylsiloxyeethyl Dimethicon, Cyclohexasiloxane, Sorbitan Stearate, Dimethicone, Polyacrylamide, C13-14 Isoparaffin, Laureth-7,phenoxyethanol, Caprylyl Glycol, Ethylhexyglycerin, Hexylene glycol, Imperata Cylindrica Root Extract, PEG-8, Carbomer, triethoxysilylethyl Polydimethylsiloxyethyl Hexyl Dimethicone, Cetyl Alcohol, Lecithin, Tocopherol, Ascorbyl Palmitate, Ascorbic Acid, Citric Acid, Xanthan gum, Furfuryl Tetrahydropyranyladinine, tocopherol Linoleate/Oleate, Teprenone, Phoenix Dactylifera (Date) Fruit Extract, Sodium Lactate, Disodium EDTA, Dipotassium Glycyrrhizate, Arabidopsis Thaliana Extract, Plankton Extract and Micrococcus Lysate.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fc316b19-c1cf-4b5b-9f22-9672b7d0cbff",
+  "name": "Pyratine Xr Creme With Sunscreen Broad Spectrum SPF30 Cream",
+  "brand": "Allure Labs Inc",
+  "n_inactive": 47,
+  "thin_reason": null
+ }
+}

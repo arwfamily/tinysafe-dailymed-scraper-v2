@@ -1,0 +1,21 @@
+{
+ "setid": "3bc7d94e-e312-a9ca-e063-6394a90a4338",
+ "images": [
+  {
+   "name": "Riversol Tinted.jpg",
+   "file": "img/3bc7d94e-e312-a9ca-e063-6394a90a4338/Riversol_Tinted.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Riversol Daily Glow Mineral Tinted",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3bc7d94e-e312-a9ca-e063-6394a90a4338",
+  "name": "Riversol Daily Glow Mineral Tinted Lotion",
+  "brand": "Riversol Skincare",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

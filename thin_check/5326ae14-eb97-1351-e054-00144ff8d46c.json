@@ -1,0 +1,21 @@
+{
+ "setid": "5326ae14-eb97-1351-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/5326ae14-eb97-1351-e054-00144ff8d46c/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Water, Butylene Glycol, etc",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5326ae14-eb97-1351-e054-00144ff8d46c",
+  "name": "Waterful Sun Gel",
+  "brand": "ARI&J Inc",
+  "n_inactive": 2,
+  "thin_reason": "label_prints_too_little"
+ }
+}

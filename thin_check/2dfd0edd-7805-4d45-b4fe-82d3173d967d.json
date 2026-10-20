@@ -1,0 +1,12 @@
+{
+ "setid": "2dfd0edd-7805-4d45-b4fe-82d3173d967d",
+ "images": [],
+ "error": "spl: HTTP Error 429: Too Many Requests media: HTTP Error 429: Too Many Requests",
+ "db": {
+  "setid": "2dfd0edd-7805-4d45-b4fe-82d3173d967d",
+  "name": "Nest Fragrances Bamboo And Jasmine Stick Nest Fragrances Ginger And Neroli Stick Nest Fragrances Grapefruit And Verbena Stick Nest Fragrances Ocean Mist And Coconut Water Stick",
+  "brand": "Nest Fragrances LLC",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

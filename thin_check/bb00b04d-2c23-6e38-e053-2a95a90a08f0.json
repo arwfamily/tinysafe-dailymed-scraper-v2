@@ -1,0 +1,25 @@
+{
+ "setid": "bb00b04d-2c23-6e38-e053-2a95a90a08f0",
+ "images": [
+  {
+   "name": "Inner label.jpg",
+   "file": "img/bb00b04d-2c23-6e38-e053-2a95a90a08f0/Inner_label.jpg"
+  },
+  {
+   "name": "Outer Label.jpg",
+   "file": "img/bb00b04d-2c23-6e38-e053-2a95a90a08f0/Outer_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Medik8 Physical Sunscreen SPF 50",
+ "inactive_section": "Water, C12-15 Alkyl Benzoate, Coco-Caprylate, Propanediol, Butyloctyl Salicylate, Simmondsia Chinesis(Jojoba) Seed Oil, Glyceryl Behenate, Isopropyl Isostearate, Polyester-7, Squalane, Glyceryl Stearate, Neo-pentyl Glycol, Diheptanoate, Silica Silylate, Polyglyceryl-3 Ricinoleate, Isodecyl Salicylate, Dimethiconol/Propylsilesesquioxane/Silicate Crosspolymer, Trilaureth-4 Phosphate, Sodium Chloride, Allantoin, Bisabolol, Camellia Sinensis Leaf Extract, Glycerin, Sodium Hyaluronate, Vitis Vinifera (Grape) Seed Extract, Tocopherol Phenylpropanol, Caprylyl Glycol.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bb00b04d-2c23-6e38-e053-2a95a90a08f0",
+  "name": "Medik8 Physical Sunscreen SPF 50 Cream",
+  "brand": "Medik8 Limited",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

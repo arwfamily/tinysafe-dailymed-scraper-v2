@@ -1,0 +1,37 @@
+{
+ "setid": "b7b70868-e412-2f88-e053-2a95a90ac729",
+ "images": [
+  {
+   "name": "ARTWORK BACK.jpg",
+   "file": "img/b7b70868-e412-2f88-e053-2a95a90ac729/ARTWORK_BACK.jpg"
+  },
+  {
+   "name": "ARTWORK.jpg",
+   "file": "img/b7b70868-e412-2f88-e053-2a95a90ac729/ARTWORK.jpg"
+  },
+  {
+   "name": "Active.jpg",
+   "file": "img/b7b70868-e412-2f88-e053-2a95a90ac729/Active.jpg"
+  },
+  {
+   "name": "Keep out of reach.jpg",
+   "file": "img/b7b70868-e412-2f88-e053-2a95a90ac729/Keep_out_of_reach.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/b7b70868-e412-2f88-e053-2a95a90ac729/Purpose.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Protekt Tinted SPF 30 Mineral Sunscreen",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b7b70868-e412-2f88-e053-2a95a90ac729",
+  "name": "Tinted Sunscreen Stick",
+  "brand": "Private Label Select Ltd CO",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "setid": "480d6e65-f6dc-d2a5-e063-6294a90a24a1",
+ "images": [
+  {
+   "name": "480d2289-5bf6-913b-e063-6294a90a2057.jpg",
+   "file": "img/480d6e65-f6dc-d2a5-e063-6294a90a24a1/480d2289-5bf6-913b-e063-6294a90a2057.jpg"
+  },
+  {
+   "name": "TINTED-SUNSCREEN.jpg",
+   "file": "img/480d6e65-f6dc-d2a5-e063-6294a90a24a1/TINTED-SUNSCREEN.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "35",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENTS: Water Ethylhexyl Palmitate Cetyl Ethylhexanoate Tinosorb S (Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine) Butyloctyl Salicylate Pentaerythrityl Tetraethylhexanoate Potassium Cetyl Phosphate Cetearyl Alcohol Hemisqualane Silica Glyceryl Stearate Sodium PCA Panthenol Niacinamide Ascorbyl Glucoside Sodium Hyaluronate Acetylated Sodium Hyaluronate Cross-linked Sodium Hyaluronate Hydrolyzed Sodium Hyaluronate Polypodium Leucotomos Extract Green Tea Extract Fullerene Collagen Peptide Pro-Xylane Tri(Cetearyl-4) Phosphate Aluminum Hydroxide Stearic Acid Tocopheryl Acetate Natural Bisabolol",
+ "ingredient_passages": [
+  {
+   "section": "51945-4",
+   "text": "INACTIVE INGREDIENTS: Water, Ethylhexyl Palmitate, Cetyl Ethylhexanoate, Tinosorb S (Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine), Butyloctyl Salicylate, Pentaerythrityl Tetraethylhexanoate, Potassium Cetyl Phosphate, Cetearyl Alcohol, Hemisqualane, Silica, Glyceryl Stearate, Sodium PCA, Panthenol, Niacinamide, Ascorbyl Glucoside, Sodium Hyaluronate, Acetylated Sodium Hyaluronate, Cross-linked Sodium Hyaluronate, Hydrolyzed Sodium Hyaluronate, Polypodium Leucotomos Extract, Green Tea Extract, Fullerene, Collagen Peptide, Pro-Xylane, Tri(Cetearyl-4) Phosphate, Aluminum Hydroxide, Stearic Acid, Tocopheryl Acetate, Natural Bisabolol"
+  }
+ ],
+ "db": {
+  "setid": "480d6e65-f6dc-d2a5-e063-6294a90a24a1",
+  "name": "Odlumivie Tinted Mineral Sunscreen Cream",
+  "brand": "Guangzhou Meijiao Medical Biotechnology Co., Ltd.",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

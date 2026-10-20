@@ -1,0 +1,21 @@
+{
+ "setid": "44c469fb-c959-4390-9c52-c858be537fa2",
+ "images": [
+  {
+   "name": "MVO001_V1_image.jpg",
+   "file": "img/44c469fb-c959-4390-9c52-c858be537fa2/MVO001_V1_image.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "INACTIVE INGREDIENTS: green and white tea, fractioned coconut oil, avocado oil, arabinogalactin, vitamin E, mango butter, potassium sorbate, vegetable glycerin, xanthan gum, allantoin, Cosmocil CQ, glycine (soya) lecithin, rosemary oleoresin, ylang ylang essential oil, iron oxides green and white tea for anti-oxidant support Cosmocil CQ, a paraben-free anti-microbial agent",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "44c469fb-c959-4390-9c52-c858be537fa2",
+  "name": "Kid Safe Screen Cream",
+  "brand": "Allure Labs, Inc.",
+  "n_inactive": 18,
+  "thin_reason": null
+ }
+}

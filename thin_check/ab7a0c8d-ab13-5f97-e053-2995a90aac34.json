@@ -1,0 +1,21 @@
+{
+ "setid": "ab7a0c8d-ab13-5f97-e053-2995a90aac34",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/ab7a0c8d-ab13-5f97-e053-2995a90aac34/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "MY Corp - JIKIMI GERM KILLER",
+ "inactive_section": "Coumarin, Linalool, Quercetin, Water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ab7a0c8d-ab13-5f97-e053-2995a90aac34",
+  "name": "Jikimi Germ Killer-spray Liquid",
+  "brand": "MY Corp.,Ltd",
+  "n_inactive": 4,
+  "thin_reason": "short_list"
+ }
+}

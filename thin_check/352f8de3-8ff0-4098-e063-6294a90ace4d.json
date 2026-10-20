@@ -1,0 +1,21 @@
+{
+ "setid": "352f8de3-8ff0-4098-e063-6294a90ace4d",
+ "images": [
+  {
+   "name": "MINT 203.jpg",
+   "file": "img/352f8de3-8ff0-4098-e063-6294a90ace4d/MINT_203.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "352f8de3-8ff0-4098-e063-6294a90ace4d",
+  "name": "Tinted Matte Defense Sunscreen Primer Cream",
+  "brand": "Mint Skin Incorporated",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "fb6556ae-dffd-42ff-90a8-6aff7a12544a",
+ "images": [
+  {
+   "name": "Walmart_age.jpg",
+   "file": "img/fb6556ae-dffd-42ff-90a8-6aff7a12544a/Walmart_age.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients water, cyclopentasiloxane, glycerin, mineral oil, titanium dioxide, alumina, simethicone, glyceryl stearate, PEG-100 stearate, myristyl myristate, triethanolamine, cetearyl alcohol, stearic acid, palmitic acid, PEG-20 stearate, phenoxyehtanol, ethylhexylglycerin, mannitol, cyclodextrin, yeast extract, disodium succinate, panthenol (pro-vitamin B-5), polyacrylamide, C13-14 isoparaffin, laureth-7, honey extract, soluble collagen, hydrolyzed elastin, sodium PCA, serine, glycogen, butylene glycol, carbomer, polysorbate 20, palmitoyl tripeptide-1, palmitoyl tripeptide-7, tocopherol acetate (vitamin E), polyacrylate-13, polyisobutene, fragrance, allantoin, rosa canina fruit oil, salicylic acid, jasminum officinale (jasmine) flower extract, glycine soja (soybean) protein, yellow 5",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fb6556ae-dffd-42ff-90a8-6aff7a12544a",
+  "name": "Equate Beauty Day Cream Cream",
+  "brand": "Wal-Mart Stores, Inc.",
+  "n_inactive": 54,
+  "thin_reason": null
+ }
+}

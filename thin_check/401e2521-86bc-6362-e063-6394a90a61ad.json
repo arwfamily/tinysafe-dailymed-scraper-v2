@@ -1,0 +1,25 @@
+{
+ "setid": "401e2521-86bc-6362-e063-6394a90a61ad",
+ "images": [
+  {
+   "name": "DC Winter Survival Kit.jpg",
+   "file": "img/401e2521-86bc-6362-e063-6394a90a61ad/DC_Winter_Survival_Kit.jpg"
+  },
+  {
+   "name": "DCTube.jpg",
+   "file": "img/401e2521-86bc-6362-e063-6394a90a61ad/DCTube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Winter Rescue Kit",
+ "inactive_section": "organic sunflower oil, organic beeswax, organic coconut oil, organic shea butter, peppermint oil, natural flavor, organic tamanu oil, organic matcha tea, tocopherol, organic calendula extract, organic stevia",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "401e2521-86bc-6362-e063-6394a90a61ad",
+  "name": "Winter Rescue Kit Kit",
+  "brand": "Duke Cannon Supply Co.",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

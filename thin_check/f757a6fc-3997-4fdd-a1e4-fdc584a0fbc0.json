@@ -1,0 +1,33 @@
+{
+ "setid": "f757a6fc-3997-4fdd-a1e4-fdc584a0fbc0",
+ "images": [
+  {
+   "name": "DFB1.jpg",
+   "file": "img/f757a6fc-3997-4fdd-a1e4-fdc584a0fbc0/DFB1.jpg"
+  },
+  {
+   "name": "DFB2.jpg",
+   "file": "img/f757a6fc-3997-4fdd-a1e4-fdc584a0fbc0/DFB2.jpg"
+  },
+  {
+   "name": "DFB3.jpg",
+   "file": "img/f757a6fc-3997-4fdd-a1e4-fdc584a0fbc0/DFB3.jpg"
+  },
+  {
+   "name": "pdp.jpg",
+   "file": "img/f757a6fc-3997-4fdd-a1e4-fdc584a0fbc0/pdp.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "Inactive ingredients water/eau, propanediol, butyloctyl salicylate, dimethicone, dilauryl thiodipropionate, polymethylsilsesquioxane, silica, ceteareth-20,cocos nucifera (coconut) seed butter, glycerin, PEG-8, polysilicone-11, phenoxyethanol, stearoxytrimethylsilane, cetearyl alcohol, ceteth-2, hydrogenated lecithin, stearyl alcohol, caprylyl glycol, hydrolyzed wheat protein, hydroxyethyl acrylate/sodium acryloyldimethyl tauratecopolymer, isohexadecane, tromethamine, carbomer, disodium edta, oryzanol, phyllanthus emblica fruit extract, phytol, hydrolyzed wheatstarch, polysorbate 60, laureth-12, camellia sinensis leaf extract, caprylic/capric triglyceride, cinnamido benzylpiperidinyl ethoxypropylbenzamide, retinol/saccharomyces polypeptide, phaeodactylum tricornutum extract, tocopherol.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f757a6fc-3997-4fdd-a1e4-fdc584a0fbc0",
+  "name": "Anew Men Daily Moisturizer Lotion",
+  "brand": "New Avon LLC",
+  "n_inactive": 37,
+  "thin_reason": null
+ }
+}

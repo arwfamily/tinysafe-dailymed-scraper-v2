@@ -1,0 +1,21 @@
+{
+ "setid": "6b65d6d9-7ff3-4c84-986e-ef180161eadb",
+ "images": [
+  {
+   "name": "LRPAnth50Primer.jpg",
+   "file": "img/6b65d6d9-7ff3-4c84-986e-ef180161eadb/LRPAnth50Primer.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "8",
+ "title": "Drug Facts",
+ "inactive_section": "dimethicone, C12-15 alkyl benzoate, talc, diisopropyl sebacate, silica, silica silylate, glycerin, trimethylsiloxysilicate, dimethicone crosspolymer, water, diethylhexyl syringylidenemalonate, cassia alata leaf extract, maltodextrin",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6b65d6d9-7ff3-4c84-986e-ef180161eadb",
+  "name": "La Roche Posay Laboratoire Dermatologique Anthelios 50 Daily Antiaging Primer With Sunscreen Lotion",
+  "brand": "L'Oreal USA Products Inc",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

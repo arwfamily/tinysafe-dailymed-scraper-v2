@@ -1,0 +1,21 @@
+{
+ "setid": "35be50b7-a9af-29ee-e063-6394a90a45ba",
+ "images": [
+  {
+   "name": "KRIS 202.jpg",
+   "file": "img/35be50b7-a9af-29ee-e063-6394a90a45ba/KRIS_202.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "35be50b7-a9af-29ee-e063-6394a90a45ba",
+  "name": "Untinted Sheer Defense Cream",
+  "brand": "Kristina Lerner",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

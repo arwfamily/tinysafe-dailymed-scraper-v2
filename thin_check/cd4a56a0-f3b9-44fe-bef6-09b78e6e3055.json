@@ -1,0 +1,21 @@
+{
+ "setid": "cd4a56a0-f3b9-44fe-bef6-09b78e6e3055",
+ "images": [
+  {
+   "name": "warm-deep-01.jpg",
+   "file": "img/cd4a56a0-f3b9-44fe-bef6-09b78e6e3055/warm-deep-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Warm Deep Original",
+ "inactive_section": "Bismuth oxychloride, mica, iron oxides.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "cd4a56a0-f3b9-44fe-bef6-09b78e6e3055",
+  "name": "Warm Deep Original Powder",
+  "brand": "Bare Escentuals Beauty Inc.",
+  "n_inactive": 3,
+  "thin_reason": "short_list"
+ }
+}

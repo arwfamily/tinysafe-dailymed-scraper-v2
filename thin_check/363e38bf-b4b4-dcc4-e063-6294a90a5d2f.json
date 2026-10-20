@@ -1,0 +1,21 @@
+{
+ "setid": "363e38bf-b4b4-dcc4-e063-6294a90a5d2f",
+ "images": [
+  {
+   "name": "sunscreen.jpg",
+   "file": "img/363e38bf-b4b4-dcc4-e063-6294a90a5d2f/sunscreen.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Initial Drug Listing - TALLOW SUNSCREEN",
+ "inactive_section": "Water, Beef Tallow, Beeswax, Butyrospermum Parkii {Shea)Butter, Vitamin E, Simmondsia Chinensis (Jojoba) seed oll, OleaEuropaea (Olive) Fruit Oil, Lecithin,C12-15 Alkyl Benzoate, Silica,Squalane, Xanthan Gum, Dimethicone, Glyceryl Stearate,Cetearyl Alcohol, lsononyi lsononanoate, Disodium EDTA, RadishRoot Ferment Filtrate, Saururus Chinensis Leaf/root Extract,Taraxacum Offcinale (Dandelion) Leaf Extract",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "363e38bf-b4b4-dcc4-e063-6294a90a5d2f",
+  "name": "Tallow Sunscreen Cream",
+  "brand": "FOUNDATION COMMERCE INC",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

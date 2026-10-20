@@ -1,0 +1,25 @@
+{
+ "setid": "905c25b8-f3e1-492b-8b38-a8f8e3516c74",
+ "images": [
+  {
+   "name": "carton1.jpg",
+   "file": "img/905c25b8-f3e1-492b-8b38-a8f8e3516c74/carton1.jpg"
+  },
+  {
+   "name": "carton2.jpg",
+   "file": "img/905c25b8-f3e1-492b-8b38-a8f8e3516c74/carton2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "Inactive ingredients: water/eau, dimethicone, butylene glycol, glycerin, DI-C12-15 alkyl fumarate, pyridoxine HCL, zinc PCA, camellia sinensis leaf extract,dilauryl thiodipropionate, sodium hyaluronate, caprylic/capric triglyceride, dimethicone crosspolymer, silica, sorbitan isostearate, isohexadecane,hydroxyethyl acrylate/sodium acryloyldimethyl taurate copolymer, acrylates/C10-30 alkyl acrylate crosspolymer, polysorbate 60, DNA, carbomer, sodium hydroxide, disodium EDTA, phenoxyethanol, methylparaben, propylparaben, caprylyl glycol, hexylene glycol, parfum/fragrance.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "905c25b8-f3e1-492b-8b38-a8f8e3516c74",
+  "name": "Avon Elements Moisture Boost Daily Moisture Cream",
+  "brand": "New Avon LLC",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

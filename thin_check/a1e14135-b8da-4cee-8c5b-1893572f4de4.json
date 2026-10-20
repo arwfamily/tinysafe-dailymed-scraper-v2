@@ -1,0 +1,21 @@
+{
+ "setid": "a1e14135-b8da-4cee-8c5b-1893572f4de4",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/a1e14135-b8da-4cee-8c5b-1893572f4de4/image-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "water, octyldodecyl neopentanoate, glycerin, emulsifying wax NF, glyceryl stearate, PEG-100 stearate, dimethicone, triethanolamine, diazolidinyl urea, carbomer, methylparaben, ethylparaben, propylparaben, bisabolol, farnesol, citric acid",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a1e14135-b8da-4cee-8c5b-1893572f4de4",
+  "name": "Purpose Lotion",
+  "brand": "Bausch & Lomb Incorporated",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

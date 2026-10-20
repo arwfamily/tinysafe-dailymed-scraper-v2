@@ -1,0 +1,21 @@
+{
+ "setid": "2a931d9f-4ba8-e3a5-e063-6294a90af780",
+ "images": [
+  {
+   "name": "PDP.jpg",
+   "file": "img/2a931d9f-4ba8-e3a5-e063-6294a90af780/PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Daily Essential Eye Cream",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2a931d9f-4ba8-e3a5-e063-6294a90af780",
+  "name": "Daily Essential Eye Cream Lotion",
+  "brand": "Solarium Brands LLC",
+  "n_inactive": 39,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "024de8f0-1d3a-4761-8674-5d1a8ac9133c",
+ "images": [
+  {
+   "name": "lbel-paris-01.jpg",
+   "file": "img/024de8f0-1d3a-4761-8674-5d1a8ac9133c/lbel-paris-01.jpg"
+  },
+  {
+   "name": "lbel-paris-02.jpg",
+   "file": "img/024de8f0-1d3a-4761-8674-5d1a8ac9133c/lbel-paris-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "L'BEL PARIS REGRESSION JOUR",
+ "inactive_section": "Aqua (water), glycine soja (soybean) protein, propylene glycol, cyclopentasiloxane, cetyl alcohol, c12-15 alkyl benzoate, pisum sativum (pea) extract, cyclohexasiloxane, triethanolamine, glyceryl stearate, mannitol, corn starch modified, polyacrylamide, phenoxyethanol, stearic acid, hydrolyzed adansonia digitata extract, peg-75 stearate, methylparaben, c13- 14 isoparaffin, propylparaben, xanthan gum, parfum (fragance), ceteth-20, steareth-20, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, acrylates/c10-30 alkyl acrylate crosspolymer, disodium edta, laureth-7, cyclodextrin, dimethicone crosspolymer, faex extract (yeast extract), dimethicone, hydrolyzed algin, butylparaben, ethylparaben, chlorella vulgaris extract, maris aqua (sea water), isobutylparaben, laureth-23, laureth-4, disodium succinate, ci42090 (blue 1).",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "024de8f0-1d3a-4761-8674-5d1a8ac9133c",
+  "name": "Lbel Paris Cream",
+  "brand": "Ventura International LTD",
+  "n_inactive": 44,
+  "thin_reason": null
+ }
+}

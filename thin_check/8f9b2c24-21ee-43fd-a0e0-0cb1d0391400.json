@@ -1,0 +1,21 @@
+{
+ "setid": "8f9b2c24-21ee-43fd-a0e0-0cb1d0391400",
+ "images": [
+  {
+   "name": "red orange sun carton.jpg",
+   "file": "img/8f9b2c24-21ee-43fd-a0e0-0cb1d0391400/red_orange_sun_carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients:Talc, Mica (CI 77019), Silica, Aluminum Starch Octenylsuccinate, Dimethicone, Ethylhexyl Methoxycinnamate, Methicone, Iron Oxides (CI 77492), Triethoxycaprylylsilane, Citrus Aurantium Dulcis (Orange) Peel Oil, Iron Oxides (CI 77491), Aluminum Hydroxide, Methylparaben, Iron Oxides (CI 77499), Propylparaben",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8f9b2c24-21ee-43fd-a0e0-0cb1d0391400",
+  "name": "Red Orange Sun SPF 45 PA Plus Plus Plus Powder",
+  "brand": null,
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

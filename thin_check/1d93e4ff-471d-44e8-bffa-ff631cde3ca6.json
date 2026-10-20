@@ -1,0 +1,21 @@
+{
+ "setid": "1d93e4ff-471d-44e8-bffa-ff631cde3ca6",
+ "images": [
+  {
+   "name": "REGEMARINE.jpg",
+   "file": "img/1d93e4ff-471d-44e8-bffa-ff631cde3ca6/REGEMARINE.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1d93e4ff-471d-44e8-bffa-ff631cde3ca6",
+  "name": "Regemarine Extreme Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

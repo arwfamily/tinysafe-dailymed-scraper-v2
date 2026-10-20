@@ -1,0 +1,21 @@
+{
+ "setid": "35d42661-e511-1dfc-e063-6294a90a9ed7",
+ "images": [
+  {
+   "name": "BARE 203.jpg",
+   "file": "img/35d42661-e511-1dfc-e063-6294a90a9ed7/BARE_203.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "35d42661-e511-1dfc-e063-6294a90a9ed7",
+  "name": "Tinted Mineral Sunscreen Cream",
+  "brand": "Skin & Bare It LLC",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

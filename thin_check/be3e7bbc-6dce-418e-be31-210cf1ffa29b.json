@@ -1,0 +1,21 @@
+{
+ "setid": "be3e7bbc-6dce-418e-be31-210cf1ffa29b",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/be3e7bbc-6dce-418e-be31-210cf1ffa29b/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Glycerin, Butylene Glycol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "be3e7bbc-6dce-418e-be31-210cf1ffa29b",
+  "name": "Camellia Air Cushion 21 SPF50 PA Cream",
+  "brand": "TOV Co., ltd",
+  "n_inactive": 2,
+  "thin_reason": "short_list"
+ }
+}

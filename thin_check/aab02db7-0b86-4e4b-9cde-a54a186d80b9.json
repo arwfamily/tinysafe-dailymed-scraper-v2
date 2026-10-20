@@ -1,0 +1,25 @@
+{
+ "setid": "aab02db7-0b86-4e4b-9cde-a54a186d80b9",
+ "images": [
+  {
+   "name": "Soft and Sheer Tinted Moisturiser carton.jpg",
+   "file": "img/aab02db7-0b86-4e4b-9cde-a54a186d80b9/Soft_and_Sheer_Tinted_Moisturiser_carton.jpg"
+  },
+  {
+   "name": "Soft and Sheer Tinted Moisturiser tube.jpg",
+   "file": "img/aab02db7-0b86-4e4b-9cde-a54a186d80b9/Soft_and_Sheer_Tinted_Moisturiser_tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Carton and tube labelling",
+ "inactive_section": "Inactive ingredients Aqua (Water), Glycerin, Butylene glycol, C12-15 alkyl benzoate, Cyclopentasiloxane, Glyceryl stearate, Cetyl alcohol, Dimethicone, Petrolatum, Paraffinum liquidum (Mineral oil), Mica, PEG-100 stearate, Cyclohexasiloxane, C18-36 acid glycol ester, Phenoxyethanol, Methylparaben, Sodium stearoyl lactylate, Polyacrylamide, Alumina, C13-14 isoparaffin, Tetrasodium EDTA, Laureth-7, BHT [+/- (May contain) CI 77891 (Titanium dioxide), CI 77492 (Iron oxides), CI 77491 (Iron oxides), CI 77499 (Iron oxides).",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "aab02db7-0b86-4e4b-9cde-a54a186d80b9",
+  "name": "No7 Soft And Sheer Tinted Moisturiser Dark Emulsion",
+  "brand": "BCM Cosmetique SAS",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

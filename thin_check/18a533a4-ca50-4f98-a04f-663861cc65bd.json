@@ -1,0 +1,21 @@
+{
+ "setid": "18a533a4-ca50-4f98-a04f-663861cc65bd",
+ "images": [
+  {
+   "name": "carton.jpg",
+   "file": "img/18a533a4-ca50-4f98-a04f-663861cc65bd/carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "EGF UV Shield",
+ "inactive_section": "Water, Propylene Glycol, Cyclopentasiloxane, Cyclohexasiloxane, Hydrogenated Poly(C6-14 Olefin), Cetyl PEG/PPG-10/1 Dimethicone, PEG-10 Dimethicone, Betaine, Disteardimonium Hectorite, Magnesium Sulfate, Sorbitan Sesquioleate, Aluminum Hydroxide, Stearic Acid, Dimethicone/Vinyl Dimethicone Crosspolymer, Silica, Methyl Methacrylate Crosspolymer, Triethoxycaprylylsilane, Portulaca Oleracea Extract, Poncirus Trifoliata Fruit Extract, Tocopheryl Acetate, Sorbitan Isostearate, Squalane, Simmondsia Chinensis(Jojoba) Seed Oil, Macadamia Ternifolia Seed Oil, Diospyros Kaki Leaf Extract, Cinnamomum Cassia Bark Extract, Artemisia Princeps Leaf Extract, Chrysanthellum Indicum Extract, Chaenomeles Sinensis Fruit Extract, Camellia Sinensis Leaf Extract, Aloe Barbadensis Leaf Juice, Chamomilla Recutita(Matricaria) Flower Extract, Lecithin, Sorbitol, Xanthan Gum, Glyceryl Linoleate, Glyceryl Linolenate, rh-Oligopeptide-1, Acetyl Hexapeptide-8, Sodium Ascorbate, Retinyl Palmitate, Phenoxyethanol, Methylparaben, Propylparaben, Butylparaben, Fragrance",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "18a533a4-ca50-4f98-a04f-663861cc65bd",
+  "name": "Egf Uv Shield Cream",
+  "brand": "Dermaesthetics Inc.",
+  "n_inactive": 50,
+  "thin_reason": null
+ }
+}

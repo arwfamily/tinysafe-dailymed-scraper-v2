@@ -1,0 +1,21 @@
+{
+ "setid": "a500a64b-319f-476f-ac38-1648b587acf5",
+ "images": [
+  {
+   "name": "lipidol.jpg",
+   "file": "img/a500a64b-319f-476f-ac38-1648b587acf5/lipidol.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "﻿Inactive Ingredients mineral oil (paraffinum liquidum), isopropyl palmitate, cetearyl ethylhexanoate, C12-15 alkyl benzoate, oryxanol, bisabolol, tocopheryl acetate, pyridoxine dipalmitate, octyldodecyl PCA, phytosterols, carthamus tinctorius (safflower) seed oil, borago officinalis (borage) seed oil, linoleic acid, linolenic acid, butylene glycol, BHT, cupressus simpervirens oil, ocimum basilicum (basil) oil, melia azadirachta leaf extract, melia azadirachta flower extract, aspartic acid, arginine, glycine, glutamic acid, histidine, coccinia indica fruit extract, solanum melongena (eggplant) fruit extract, aloe barbadensis flower extract, lawsonia inermis (henna) flower/fruit/leaf extract, ocimum sanctum leaf extract, ocimum basilicum (basil) flower/leaf extract, curcuma longa (turmeric) root extract, corallina officinalis extract, simmondsia chinensis (jojoba) seed oil, farnesol, limonene",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a500a64b-319f-476f-ac38-1648b587acf5",
+  "name": "Lipidol Oil",
+  "brand": "UNION-SWISS (PTY) LTD",
+  "n_inactive": 42,
+  "thin_reason": null
+ }
+}

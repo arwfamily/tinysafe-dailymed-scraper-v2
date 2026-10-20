@@ -1,0 +1,45 @@
+{
+ "setid": "3b31c5c1-0fae-d622-e063-6394a90a3931",
+ "images": [
+  {
+   "name": "dosage.jpg",
+   "file": "img/3b31c5c1-0fae-d622-e063-6394a90a3931/dosage.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/3b31c5c1-0fae-d622-e063-6394a90a3931/inactive_ingredients.jpg"
+  },
+  {
+   "name": "keep out reach.jpg",
+   "file": "img/3b31c5c1-0fae-d622-e063-6394a90a3931/keep_out_reach.jpg"
+  },
+  {
+   "name": "purpose.jpg",
+   "file": "img/3b31c5c1-0fae-d622-e063-6394a90a3931/purpose.jpg"
+  },
+  {
+   "name": "sunscreen powder.jpg",
+   "file": "img/3b31c5c1-0fae-d622-e063-6394a90a3931/sunscreen_powder.jpg"
+  },
+  {
+   "name": "usage.jpg",
+   "file": "img/3b31c5c1-0fae-d622-e063-6394a90a3931/usage.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/3b31c5c1-0fae-d622-e063-6394a90a3931/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3b31c5c1-0fae-d622-e063-6394a90a3931",
+  "name": "Latin Beauty Llc. Powder Sunscreen SPF 50 Kiss The Sun Powder",
+  "brand": "Guangzhou Yueyou Biological Technology Co., Ltd.",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

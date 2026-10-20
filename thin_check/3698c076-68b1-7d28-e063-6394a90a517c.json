@@ -1,0 +1,21 @@
+{
+ "setid": "3698c076-68b1-7d28-e063-6394a90a517c",
+ "images": [
+  {
+   "name": "Beauty Shop 211.jpg",
+   "file": "img/3698c076-68b1-7d28-e063-6394a90a517c/Beauty_Shop_211.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3698c076-68b1-7d28-e063-6394a90a517c",
+  "name": "Non-tinted Foaming Mineral Sunscreen Aerosol, Foam",
+  "brand": "THE AESTHETICS ACADEMY, LLC",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

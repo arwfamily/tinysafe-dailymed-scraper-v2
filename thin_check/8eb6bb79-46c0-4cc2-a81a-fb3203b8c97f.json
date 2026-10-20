@@ -1,0 +1,21 @@
+{
+ "setid": "8eb6bb79-46c0-4cc2-a81a-fb3203b8c97f",
+ "images": [
+  {
+   "name": "myoflex-01.jpg",
+   "file": "img/8eb6bb79-46c0-4cc2-a81a-fb3203b8c97f/myoflex-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Myoflex®",
+ "inactive_section": "aloe vera gel, cetyl alcohol, glycerin, DMDM hydantoin, methylparaben, propylparaben, mineral oil, stearic acid, triethanolamine, purified water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8eb6bb79-46c0-4cc2-a81a-fb3203b8c97f",
+  "name": "Myoflex (trolamine Salicylate) Cream",
+  "brand": "Dr. Reddy's Laboratories Inc.",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "f733747a-ad1a-4222-baf1-69dcd90a3350",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/f733747a-ad1a-4222-baf1-69dcd90a3350/image-01.jpg"
+  },
+  {
+   "name": "image-02.jpg",
+   "file": "img/f733747a-ad1a-4222-baf1-69dcd90a3350/image-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts - Softlips Vanilla Watermelon",
+ "inactive_section": "ozokerite, squalane, ethylhexyl palmitate, petrolatum, myristyl myristate, myristyl lactate, flavor, cetyl alcohol, myristyl laurate, myristyl alcohol, BHT, menthol, tocopheryl acetate [vitamin E]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f733747a-ad1a-4222-baf1-69dcd90a3350",
+  "name": "Softlips Vanilla Watermelon Stick",
+  "brand": "The Mentholatum Company",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

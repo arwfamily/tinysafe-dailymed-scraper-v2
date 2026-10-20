@@ -1,0 +1,53 @@
+{
+ "setid": "41367f05-59d8-6736-e063-6394a90a5f17",
+ "images": [
+  {
+   "name": "Active Ingredients .jpg",
+   "file": "img/41367f05-59d8-6736-e063-6394a90a5f17/Active_Ingredients_.jpg"
+  },
+  {
+   "name": "Dosage and Admin.jpg",
+   "file": "img/41367f05-59d8-6736-e063-6394a90a5f17/Dosage_and_Admin.jpg"
+  },
+  {
+   "name": "Front Label .jpg",
+   "file": "img/41367f05-59d8-6736-e063-6394a90a5f17/Front_Label_.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/41367f05-59d8-6736-e063-6394a90a5f17/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Indication and Uses.jpg",
+   "file": "img/41367f05-59d8-6736-e063-6394a90a5f17/Indication_and_Uses.jpg"
+  },
+  {
+   "name": "Keep Out of Reach of Children .jpg",
+   "file": "img/41367f05-59d8-6736-e063-6394a90a5f17/Keep_Out_of_Reach_of_Children_.jpg"
+  },
+  {
+   "name": "Other Information .jpg",
+   "file": "img/41367f05-59d8-6736-e063-6394a90a5f17/Other_Information_.jpg"
+  },
+  {
+   "name": "Purpose.jpg",
+   "file": "img/41367f05-59d8-6736-e063-6394a90a5f17/Purpose.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/41367f05-59d8-6736-e063-6394a90a5f17/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "41367f05-59d8-6736-e063-6394a90a5f17",
+  "name": "Defend And Balance Tinted Mineral Sunscreen SPF 50 Cream",
+  "brand": "Epicuren Discovery",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

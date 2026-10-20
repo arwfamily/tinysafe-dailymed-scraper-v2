@@ -1,0 +1,21 @@
+{
+ "setid": "424470b1-eaf5-4b67-bf23-3c07b151c32e",
+ "images": [
+  {
+   "name": "cizar cream carton.jpg",
+   "file": "img/424470b1-eaf5-4b67-bf23-3c07b151c32e/cizar_cream_carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "Inactive ingredients: Water, Butylene Glycol, Butyloctyl Salicylate, Dipropylene Glycol, Glycerin, Alcohol Denat., Dimethicone/Vinyl Dimethicone Crosspolymer, Caprylyl Methicone, Dimethicone, Cetearyl Alcohol, Triceteareth-4 Phosphate, Glyceryl Stearate, PEG-100 Stearate, Glycol Stearate, Methyl Methacrylate Crosspolymer, PEG-2 Stearate, Potassium Cetyl Phosphate, Hydrolyzed Wheat Protein/PVP Crosspolymer, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Triethanolamine, Phenoxyethanol, Caprylyl Glycol, Glyceryl Caprylate, Lavandula Angustifolia (Lavender) Oil, Rosmarinus Officinalis (Rosemary) Leaf Oil, Disodium EDTA, Xanthan Gum, Isoceteth-10, Isoceteth-25, Potassium Sorbate, Arginine, Citric Acid, Ethylhexylglycerin, Moringa Oleifera Seed Oil, Calophyllum Inophyllum Seed Oil, Zinc Oxide (CI 77947), Tocopherol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "424470b1-eaf5-4b67-bf23-3c07b151c32e",
+  "name": "Cizar Aqua Sun Cream",
+  "brand": "Tissuegene,inc",
+  "n_inactive": 37,
+  "thin_reason": null
+ }
+}

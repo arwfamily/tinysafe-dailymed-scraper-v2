@@ -1,0 +1,25 @@
+{
+ "setid": "4c3ed60b-e515-8ff0-e063-6294a90a86df",
+ "images": [
+  {
+   "name": "4c402241-9526-293c-e063-6394a90a34c7.jpg",
+   "file": "img/4c3ed60b-e515-8ff0-e063-6294a90a86df/4c402241-9526-293c-e063-6394a90a34c7.jpg"
+  },
+  {
+   "name": "Drug fact label.jpg",
+   "file": "img/4c3ed60b-e515-8ff0-e063-6294a90a86df/Drug_fact_label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "Inactive ingredients Water, Propanediol, Butyloctyl Salicylate, Dibutyl Adipate, Phenethyl Benzoate, Glycerin, Alcohol Denat., Polymethylsilsesquioxane, Polyglyceryl-3 Distearate, 1,2-Hexanediol, Ectoin, Polyglyceryl-3 Methylglucose Distearate, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Caprylyl Glycol, Poly C10-30 Alkyl Acrylate, Tromethamine, Ethylhexylglycerin, Fragrance, Glyceryl Stearate Citrate, Sodium Polyacryloyldimethyl Taurate, Dimethicone, Xanthan Gum, Butylene Glycol, Dimethicone/Vinyl Dimethicone Crosspolymer, Polyglyceryl-10 Myristate, Avena Sativa (Oat) Kernel Extract, Centella Asiatica Extract, Citrus Unshiu Fruit Extract, Houttuynia Cordata Extract, Oryza Sativa (Rice) Bran Extract, Punica Granatum Fruit Extract, Rosa Damascena Flower Extract, Schisandra Chinensis Fruit Extract, Tremella Fuciformis (Mushroom) Extract, Tocopherol, Arginine, Carbomer",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4c3ed60b-e515-8ff0-e063-6294a90a86df",
+  "name": "Overlaps Ectoin Moist Sun Lotion",
+  "brand": "Overlaps Corp.",
+  "n_inactive": 40,
+  "thin_reason": null
+ }
+}

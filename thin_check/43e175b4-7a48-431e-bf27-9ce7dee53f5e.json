@@ -1,0 +1,25 @@
+{
+ "setid": "43e175b4-7a48-431e-bf27-9ce7dee53f5e",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/43e175b4-7a48-431e-bf27-9ce7dee53f5e/image-01.jpg"
+  },
+  {
+   "name": "image-02.jpg",
+   "file": "img/43e175b4-7a48-431e-bf27-9ce7dee53f5e/image-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts - Softlips Pearl",
+ "inactive_section": "lanolin oil, hydrogenated polyisobutene, ozokerite, limnanthes alba (meadowfoam) seed oil, VP/hexadecene copolymer, mineral oil, bis-diglyceryl polyacyladipate-2, oleyl alcohol, copernicia cerifera (carnauba) wax, ricinus communis (castor) seed oil, cetyl lactate, polyethylene, paraffin, ammonium glycyrrhizate, BHT, flavor, magnesium stearate, menthol, tocopheryl acetate [vitamin E], bismuth oxychloride, carmine, mica, titanium dioxide",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "43e175b4-7a48-431e-bf27-9ce7dee53f5e",
+  "name": "Softlips Pearl Stick",
+  "brand": "The Mentholatum Company",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "setid": "5db2d840-672b-2dba-e063-6394a90aaef5",
+ "images": [
+  {
+   "name": "DOSAGE ADMINISTRATION SECTION.jpg",
+   "file": "img/5db2d840-672b-2dba-e063-6394a90aaef5/DOSAGE_ADMINISTRATION_SECTION.jpg"
+  },
+  {
+   "name": "Fountain of Youth Mineral SPF 30 Single-Use Travel Packets.jpg",
+   "file": "img/5db2d840-672b-2dba-e063-6394a90aaef5/Fountain_of_Youth_Mineral_SPF_30_Single-Use_Travel_Packets.jpg"
+  },
+  {
+   "name": "INACTIVE INGREDIENT SECTION.jpg",
+   "file": "img/5db2d840-672b-2dba-e063-6394a90aaef5/INACTIVE_INGREDIENT_SECTION.jpg"
+  },
+  {
+   "name": "INDICATIONS USAGE SECTION.jpg",
+   "file": "img/5db2d840-672b-2dba-e063-6394a90aaef5/INDICATIONS_USAGE_SECTION.jpg"
+  },
+  {
+   "name": "KEEP OUT OF REACH OF CHILDREN SECTION.jpg",
+   "file": "img/5db2d840-672b-2dba-e063-6394a90aaef5/KEEP_OUT_OF_REACH_OF_CHILDREN_SECTION.jpg"
+  },
+  {
+   "name": "PURPOSE SECTION.jpg",
+   "file": "img/5db2d840-672b-2dba-e063-6394a90aaef5/PURPOSE_SECTION.jpg"
+  },
+  {
+   "name": "WARNINGS SECTION.jpg",
+   "file": "img/5db2d840-672b-2dba-e063-6394a90aaef5/WARNINGS_SECTION.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENT SECTION",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5db2d840-672b-2dba-e063-6394a90aaef5",
+  "name": "Fountain Of Youth Mineral SPF 30 Single Use Travel Packets Lotion",
+  "brand": "Lance (Guangzhou) Biological Technology Co., Ltd.",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

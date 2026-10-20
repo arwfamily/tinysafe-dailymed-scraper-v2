@@ -1,0 +1,21 @@
+{
+ "setid": "01548858-8b0e-494a-e063-6294a90a8e99",
+ "images": [
+  {
+   "name": "Beauty Pie.jpg",
+   "file": "img/01548858-8b0e-494a-e063-6294a90a8e99/Beauty_Pie.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "SOL Science The Fifty",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "01548858-8b0e-494a-e063-6294a90a8e99",
+  "name": "Sol Science The Fifty Lotion",
+  "brand": "Beauty Pie",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

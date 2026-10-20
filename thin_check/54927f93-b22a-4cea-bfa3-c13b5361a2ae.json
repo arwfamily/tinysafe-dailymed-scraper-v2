@@ -1,0 +1,21 @@
+{
+ "setid": "54927f93-b22a-4cea-bfa3-c13b5361a2ae",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/54927f93-b22a-4cea-bfa3-c13b5361a2ae/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredient: water, titanium dioxide,cyclopentasiloxzne, ethylhexyl methoxycinnamate,propylene glycol, cyclohexasiloxane, butylene glycol dicaprylate/dicaprate, cetyl/peg/ppe-10/1 dimethicone, dimethicone,hexyl laurate, arbutin, tale, PEG-10 dimethicone, panax ginseng root extract, sorbitan, olivate, magnesium sulfate, sorbitan sesquioleate, disteardimonium hectorite,quaternium-19bentonite, chamomilla recutita (matricaria) flower extract, silica, triethyl citrate, allantoin, tocopheryl acetate, dipotassium clycyrrhizate, iron oxide (CI 77492), iron oxide (CI 77491), iron oxide (CI 77499), ultramarines (CI 77007), triethoxycaprylylsilane, propylparaben, methylparaben, phenoxyethanol, adenosine, mica, sodim hyaluronate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "54927f93-b22a-4cea-bfa3-c13b5361a2ae",
+  "name": "Conju Princess Bb (arbutin) Cream",
+  "brand": "Conju Inc",
+  "n_inactive": 42,
+  "thin_reason": null
+ }
+}

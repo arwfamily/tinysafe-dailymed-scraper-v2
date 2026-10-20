@@ -1,0 +1,25 @@
+{
+ "setid": "b19eed59-2d48-4de7-856a-be32051617dc",
+ "images": [
+  {
+   "name": "bb0906-figure-1-Pure_Finish_Moisture_Carton.jpg",
+   "file": "img/b19eed59-2d48-4de7-856a-be32051617dc/bb0906-figure-1-Pure_Finish_Moisture_Carton.jpg"
+  },
+  {
+   "name": "bb0906-figure-2-Pure_Finish_Moisture_Tube.jpg",
+   "file": "img/b19eed59-2d48-4de7-856a-be32051617dc/bb0906-figure-2-Pure_Finish_Moisture_Tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "BB0906",
+ "inactive_section": "Other Ingredients: Water/Aqua/Eau, Dimethicone, Mica, Cetearyl Alcohol, Polyglyceryl-4 Isostearate, Cetyl Dimethicon, Hexyl Laurate, Cetyl PEG/PPG-10/1 Dimethicon, Sodium Stearoyl Lactylate, Squalane, Hydrogenated Polyisobutene, Silene Uniflora Extract, Sodium Hyaluronate, Retinyl Palmitate, Tetrahexyldecyl Ascrobate, Tocopherol, Tocopheryl Acetate, Jojoba Esters, Glycerin, Triethoxycaprylylsilane, Carbomer, Magnesium Aluminum Silicate, Triethanolamine, Trisodium EDTA, Methyparaben, Phenoxyethanol, Propylparaben, Iron Oxides (CI 77491, CI 77492, CI 77499), Titanium Dioxide (CI77891).",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b19eed59-2d48-4de7-856a-be32051617dc",
+  "name": "Pure Finish Mineral Tinted Moisturizer SPF 15 Fair Lotion",
+  "brand": "Elizabeth Arden, Inc",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

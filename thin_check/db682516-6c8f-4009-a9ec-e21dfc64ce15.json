@@ -1,0 +1,25 @@
+{
+ "setid": "db682516-6c8f-4009-a9ec-e21dfc64ce15",
+ "images": [
+  {
+   "name": "cot0i-0002-01.jpg",
+   "file": "img/db682516-6c8f-4009-a9ec-e21dfc64ce15/cot0i-0002-01.jpg"
+  },
+  {
+   "name": "cot0i-0002-02.jpg",
+   "file": "img/db682516-6c8f-4009-a9ec-e21dfc64ce15/cot0i-0002-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "Capric/Caprylic Triglyceride, Ceramide 3, Cyclohexasiloxane, Cyclopentasiloxane, Dimethicone, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethiconol, Iron Oxide, Methicone, PEG-10 Dimethicone, Polyhydroxystearic Acid, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "db682516-6c8f-4009-a9ec-e21dfc64ce15",
+  "name": "Cotz Face Moisture Cream",
+  "brand": "Fallien Cosmeceuticals, LTD",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

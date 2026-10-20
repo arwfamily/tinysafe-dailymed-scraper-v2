@@ -1,0 +1,21 @@
+{
+ "setid": "34f51ff4-541d-2b2e-e063-6394a90a39da",
+ "images": [
+  {
+   "name": "OS-01 Face SPF BS SPF30 tinted deep.jpg",
+   "file": "img/34f51ff4-541d-2b2e-e063-6394a90a39da/OS-01_Face_SPF_BS_SPF30_tinted_deep.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive Ingredients Water (Aqua),Caprylic/Capric Triglyceride, Glycerin, Methyl Dihydroabietate, Cetearyl Alcohol, Cetyl Palmitate, Coco-Glucoside, Caprylyl/Capryl Glucoside, Sorbitan Palmitate, Sorbitan Olivate, Butyrospermum Parkii (Shea) Nut Extract, Ethyl Ferulate, Bisabolol, Allantoin, Hydrolyzed Jojoba Esters, Acacia Senegal Gum, Polyhydroxystearic acid, Polyglyceryl-3 Polyricinoleate, Isostearic acid, Lecithin, Tocopheryl Acetate, Tetrahexyldecyl Ascorbate, Decapeptide-52*,Oryza Sativa (Rice) Starch, Camellia Sinensis Leaf Extract, Euterpe Oleracea Fruit Extract, Caesalpinia Spinosa Fruit Pod Extract, Helianthus Annuus (Sunflower) Sprout Extract, Caprylyl Glycol, Ethylhexylglycerin, Hexylene Glycol, Xanthan Gum, Sodium Phytate, Propylene Glycol, Phenoxyethanol, Sodium Benzoate, Potassium Sorbate, Triethoxycaprylylsilane, Alumina, Magnesium Oxide, Iron Oxides (CI 77491, CI 77492, CI 77499)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "34f51ff4-541d-2b2e-e063-6394a90a39da",
+  "name": "Os-01 Face SPF Bs SPF 30 Tinted Deep Cream",
+  "brand": "Allure Labs",
+  "n_inactive": 44,
+  "thin_reason": null
+ }
+}

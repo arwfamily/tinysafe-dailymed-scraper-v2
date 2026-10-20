@@ -1,0 +1,25 @@
+{
+ "setid": "258ab6f2-f1a7-2d0d-e063-6294a90af34a",
+ "images": [
+  {
+   "name": "PDP.jpg",
+   "file": "img/258ab6f2-f1a7-2d0d-e063-6294a90af34a/PDP.jpg"
+  },
+  {
+   "name": "sarah creal.jpg",
+   "file": "img/258ab6f2-f1a7-2d0d-e063-6294a90af34a/sarah_creal.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Sarah Creal Brilliant Repair Shield",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "258ab6f2-f1a7-2d0d-e063-6294a90af34a",
+  "name": "Sarah Creal Brilliant Repair Shield Lotion",
+  "brand": "Sarah Creal LLC",
+  "n_inactive": 33,
+  "thin_reason": null
+ }
+}

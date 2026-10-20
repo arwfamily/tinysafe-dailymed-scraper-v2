@@ -1,0 +1,21 @@
+{
+ "setid": "36c00301-ee41-333c-e063-6294a90a61d5",
+ "images": [
+  {
+   "name": "roth 202.jpg",
+   "file": "img/36c00301-ee41-333c-e063-6294a90a61d5/roth_202.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "36c00301-ee41-333c-e063-6294a90a61d5",
+  "name": "Non Tinted Mineral Sunscreen Cream",
+  "brand": "JEFFREY J. ROTH, M.D., A PROFESSIONAL CORPORATION",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

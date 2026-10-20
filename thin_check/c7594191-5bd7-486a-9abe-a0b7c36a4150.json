@@ -1,0 +1,21 @@
+{
+ "setid": "c7594191-5bd7-486a-9abe-a0b7c36a4150",
+ "images": [
+  {
+   "name": "sh180002.jpg",
+   "file": "img/c7594191-5bd7-486a-9abe-a0b7c36a4150/sh180002.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c7594191-5bd7-486a-9abe-a0b7c36a4150",
+  "name": "Sh18 Skin Lightening (hydroquinone) Lotion",
+  "brand": "International Beauty Exchange",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

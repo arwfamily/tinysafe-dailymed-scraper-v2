@@ -1,0 +1,29 @@
+{
+ "setid": "5af57e56-15db-425c-a5cf-2e513307d816",
+ "images": [
+  {
+   "name": "Label.jpg",
+   "file": "img/5af57e56-15db-425c-a5cf-2e513307d816/Label.jpg"
+  },
+  {
+   "name": "Label2.jpg",
+   "file": "img/5af57e56-15db-425c-a5cf-2e513307d816/Label2.jpg"
+  },
+  {
+   "name": "label 3.jpg",
+   "file": "img/5af57e56-15db-425c-a5cf-2e513307d816/label_3.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Wander PACK UP & GLOW",
+ "inactive_section": "Water/Aqua/Eau, Butyloctyl Salicylate, Octyldodecyl Neopentanoate, Ethylhexyl Isononanoate, Glycerin, Polyester-7, Polymethylsilsesquioxane, Neopentyl Glycol Diheptanoate, Cetyl Alcohol, Glyceryl Stearate, Squalane, Cholecalciferol (Vitamin D3), PEG-75 Stearate, Phenoxyethanol, Hydrolyzed Sodium Hyaluronate, Pyrus Malus (Apple) Fruit Extract, Bisabolol, C12-15 Alkyl Benzoate, Dimethiconol/ Caprylylsilsesquioxane /Silicate Crosspolymer, Caprylyl Glycol, Allantoin, Titanium Dioxide (CI 77891), Iron Oxides (CI 77492), Triceteareth-4 Phosphate, Lysolecithin, Sclerotium Gum, Ceteth-20, Steareth-20, Synthetic Fluorphlogopite, Iron Oxides (CI 77491), Sodium Hyaluronate, Trilaureth-4 Phosphate, Ethylhexylglycerin, Hexylene Glycol, Disodium EDTA, Dimethiconol/Propylsilsesquioxane/Silicate Crosspolymer, Xanthan Gum, Pullulan, Mica, Avena Sativa (Oat) Kernel Extract, Silica, Sodium Starch Octenylsuccinate, Maltodextrin, Sodium Citrate, Tin Oxide, Potassium Sorbate, Camellia Sinensis Leaf Extract, Lecithin, Zea Mays (Corn) Oil, Sucrose, Dicrateria Rotunda Oil, Ruttnera Lamellosa Oil, Sodium Ascorbate, Tocopherol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5af57e56-15db-425c-a5cf-2e513307d816",
+  "name": "Wander Pack Up And Glow Lotion",
+  "brand": "Wander Beauty Inc.",
+  "n_inactive": 55,
+  "thin_reason": null
+ }
+}

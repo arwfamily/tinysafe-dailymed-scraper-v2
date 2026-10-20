@@ -1,0 +1,21 @@
+{
+ "setid": "02f9c859-8d7d-5146-e063-6394a90a57b5",
+ "images": [
+  {
+   "name": "SPF30untinted.jpg",
+   "file": "img/02f9c859-8d7d-5146-e063-6394a90a57b5/SPF30untinted.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients: Water(aqua), Caprylic/Capric Triglyceride, Glycerin, Methyl Dihydroabietate, Cetearyl Alcohol, Cetyl Palmitate, Coco-Glucoside, Caprylyl/Capryl Glucoside, Sorbitan Palmitate, Sorbitan Olivate, Butyrospermum Parkii (Shea) Nut Extract, Ethyl Ferulate, Bisabolol, Allantoin, Hydrolyzed Jojoba Esters, Acacia Senegal Gum, Polyhydroxystearic Acid, Polyglyceryl-3 Polyricinoleate, Isostearic Acid, Lecithin, Tocopheryl Acetate, Tetrahexyldecyl Ascorbate, Decapeptide-52*, Oryza Sativa (rice) Starch,Camellia Sinensis Leaf Extract, Euterpe Oleracea Fruit Extract, Caesalpinia Spinosa Fruit Pod Extract, Helianthus Annuus (Sunflower) Sprout Extract, Caprylyl Glycol, Ethylhexylglycerin, Hexylene Glycol, Xanthan Gum, Sodium Phytate, Propylene Glycol, Phenoxyethanol, sodium Benzoate, Potassium Sorbate.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "02f9c859-8d7d-5146-e063-6394a90a57b5",
+  "name": "Oneskin Os-01 Shield Broad Spectrum SPF 30 Mineral Sunscreen Untinted Cream",
+  "brand": "Allure Labs",
+  "n_inactive": 42,
+  "thin_reason": null
+ }
+}

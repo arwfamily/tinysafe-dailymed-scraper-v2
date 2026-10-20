@@ -1,0 +1,41 @@
+{
+ "setid": "d4763e91-5daf-4a3c-e053-2a95a90af471",
+ "images": [
+  {
+   "name": "Active Purpose.jpg",
+   "file": "img/d4763e91-5daf-4a3c-e053-2a95a90af471/Active_Purpose.jpg"
+  },
+  {
+   "name": "Artwork.jpg",
+   "file": "img/d4763e91-5daf-4a3c-e053-2a95a90af471/Artwork.jpg"
+  },
+  {
+   "name": "Directions.jpg",
+   "file": "img/d4763e91-5daf-4a3c-e053-2a95a90af471/Directions.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/d4763e91-5daf-4a3c-e053-2a95a90af471/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Uses.jpg",
+   "file": "img/d4763e91-5daf-4a3c-e053-2a95a90af471/Uses.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/d4763e91-5daf-4a3c-e053-2a95a90af471/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Olita Inc., Tinted Mineral Sunscreen, SPF 30 (Medium Tint)",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d4763e91-5daf-4a3c-e053-2a95a90af471",
+  "name": "Tinted Mineral Sunscreen, SPF 30 Medium Tint Ointment",
+  "brand": "Private Label Select Ltd CO",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

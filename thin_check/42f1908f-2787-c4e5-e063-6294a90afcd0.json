@@ -1,0 +1,21 @@
+{
+ "setid": "42f1908f-2787-c4e5-e063-6294a90afcd0",
+ "images": [
+  {
+   "name": "green envee.jpg",
+   "file": "img/42f1908f-2787-c4e5-e063-6294a90afcd0/green_envee.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Green Envee Radiance Sheer",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "42f1908f-2787-c4e5-e063-6294a90afcd0",
+  "name": "Green Envee Radiance Sheer Lotion",
+  "brand": "Green Envee",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

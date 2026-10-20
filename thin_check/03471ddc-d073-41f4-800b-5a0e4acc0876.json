@@ -1,0 +1,21 @@
+{
+ "setid": "03471ddc-d073-41f4-800b-5a0e4acc0876",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/03471ddc-d073-41f4-800b-5a0e4acc0876/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "water, butylene glycol, glycerin, niacinamide, dipropylene glycol, iron oxides, silica, etc",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "03471ddc-d073-41f4-800b-5a0e4acc0876",
+  "name": "Donginbi Red Ginseng Radiance Cushion Bb 21 Powder",
+  "brand": "KGC Life&Gin Co., Ltd.",
+  "n_inactive": 7,
+  "thin_reason": "short_list"
+ }
+}

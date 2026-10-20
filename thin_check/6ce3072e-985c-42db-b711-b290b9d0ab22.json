@@ -1,0 +1,21 @@
+{
+ "setid": "6ce3072e-985c-42db-b711-b290b9d0ab22",
+ "images": [
+  {
+   "name": "PDPSpray30.jpg",
+   "file": "img/6ce3072e-985c-42db-b711-b290b9d0ab22/PDPSpray30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Natural mineral Sunscreen SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6ce3072e-985c-42db-b711-b290b9d0ab22",
+  "name": "Lovea Cream",
+  "brand": "Laboratoires Biocos",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "setid": "1a633c24-b9d9-4732-e063-6294a90af4c0",
+ "images": [
+  {
+   "name": "Volition PDP.jpg",
+   "file": "img/1a633c24-b9d9-4732-e063-6294a90af4c0/Volition_PDP.jpg"
+  },
+  {
+   "name": "actives.jpg",
+   "file": "img/1a633c24-b9d9-4732-e063-6294a90af4c0/actives.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/1a633c24-b9d9-4732-e063-6294a90af4c0/directions.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/1a633c24-b9d9-4732-e063-6294a90af4c0/inactive_ingredients.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/1a633c24-b9d9-4732-e063-6294a90af4c0/uses.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/1a633c24-b9d9-4732-e063-6294a90af4c0/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Volition Prismatic Luminizing Shield",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1a633c24-b9d9-4732-e063-6294a90af4c0",
+  "name": "Volition Prismatic Luminizing Shield Lotion",
+  "brand": "Volition",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

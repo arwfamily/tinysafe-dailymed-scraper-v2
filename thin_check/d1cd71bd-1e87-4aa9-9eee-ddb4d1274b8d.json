@@ -1,0 +1,21 @@
+{
+ "setid": "d1cd71bd-1e87-4aa9-9eee-ddb4d1274b8d",
+ "images": [
+  {
+   "name": "gentle-01.jpg",
+   "file": "img/d1cd71bd-1e87-4aa9-9eee-ddb4d1274b8d/gentle-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "GENTLE REJUVENATION SYSTEM",
+ "inactive_section": "ascorbic acid, citrus grandis (grapefruit) peel extract, dimethicone, dimethicone crosspolymer, fragrance, octoxynol-10",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d1cd71bd-1e87-4aa9-9eee-ddb4d1274b8d",
+  "name": "Gentle Rejuvenation System Kit",
+  "brand": "Obagi Medical Products, Inc., a division of Valeant Pharmaceutcals North America LLC.",
+  "n_inactive": 7,
+  "thin_reason": "short_list"
+ }
+}

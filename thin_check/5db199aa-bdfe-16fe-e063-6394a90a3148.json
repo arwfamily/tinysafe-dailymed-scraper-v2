@@ -1,0 +1,45 @@
+{
+ "setid": "5db199aa-bdfe-16fe-e063-6394a90a3148",
+ "images": [
+  {
+   "name": "DOSAGE ADMINISTRATION SECTION.jpg",
+   "file": "img/5db199aa-bdfe-16fe-e063-6394a90a3148/DOSAGE_ADMINISTRATION_SECTION.jpg"
+  },
+  {
+   "name": "Ecomist Sheer Spray Mineral SPF 50 Face + Body Continuous Mist.jpg",
+   "file": "img/5db199aa-bdfe-16fe-e063-6394a90a3148/Ecomist_Sheer_Spray_Mineral_SPF_50_Face___Body_Continuous_Mist.jpg"
+  },
+  {
+   "name": "INACTIVE INGREDIENT SECTION.jpg",
+   "file": "img/5db199aa-bdfe-16fe-e063-6394a90a3148/INACTIVE_INGREDIENT_SECTION.jpg"
+  },
+  {
+   "name": "INDICATIONS USAGE SECTION.jpg",
+   "file": "img/5db199aa-bdfe-16fe-e063-6394a90a3148/INDICATIONS_USAGE_SECTION.jpg"
+  },
+  {
+   "name": "KEEP OUT OF REACH OF CHILDREN SECTION.jpg",
+   "file": "img/5db199aa-bdfe-16fe-e063-6394a90a3148/KEEP_OUT_OF_REACH_OF_CHILDREN_SECTION.jpg"
+  },
+  {
+   "name": "PURPOSE SECTION.jpg",
+   "file": "img/5db199aa-bdfe-16fe-e063-6394a90a3148/PURPOSE_SECTION.jpg"
+  },
+  {
+   "name": "WARNINGS SECTION.jpg",
+   "file": "img/5db199aa-bdfe-16fe-e063-6394a90a3148/WARNINGS_SECTION.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENT SECTION",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5db199aa-bdfe-16fe-e063-6394a90a3148",
+  "name": "Ecomist Sheer Mineral SPF 50 Face And Body Continuous Aerosol, Spray",
+  "brand": "Lance (Guangzhou) Biological Technology Co., Ltd.",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

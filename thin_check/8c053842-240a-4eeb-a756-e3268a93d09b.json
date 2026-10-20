@@ -1,0 +1,21 @@
+{
+ "setid": "8c053842-240a-4eeb-a756-e3268a93d09b",
+ "images": [
+  {
+   "name": "OMBmin50+.jpg",
+   "file": "img/8c053842-240a-4eeb-a756-e3268a93d09b/OMBmin50_.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "water, glycerin, c12-15 alkyl benzoate, dimethicone, isododecane, styrene/acrylates copolymer, glyceryl stearate, butyloctyl salicylate, dicaprylyl carbonate, propanediol, stearic acid, aluminum hydroxide, PEG-100 stearate, sorbitan stearate, niacinamide, cetearyl alcohol, phenoxyethanol, panthenol, hydroxyethyl acrylate/sodium acryloyldimethyl taurate copolymer, PEG-8 laurate, palmitic acid, caprylyl glycol, polyhydroxystearic acid, ceteareth-20, sodium citrate, chlorphenesin, citric acid, xanthan gum, triethoxycaprylylsilane, dimethiconol, sodium dodecylbenzenesulfonate, myristic acid, sorbitan isostearate, polysorbate 60, sodium hyaluronate, tocopherol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8c053842-240a-4eeb-a756-e3268a93d09b",
+  "name": "Garnier Ombrelle Face Mineral 50 Lotion",
+  "brand": null,
+  "n_inactive": 36,
+  "thin_reason": null
+ }
+}

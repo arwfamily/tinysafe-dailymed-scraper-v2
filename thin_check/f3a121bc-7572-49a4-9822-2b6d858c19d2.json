@@ -1,0 +1,21 @@
+{
+ "setid": "f3a121bc-7572-49a4-9822-2b6d858c19d2",
+ "images": [
+  {
+   "name": "walgreens-pain-relieving-plus-turmeric-analgesic-1.jpg",
+   "file": "img/f3a121bc-7572-49a4-9822-2b6d858c19d2/walgreens-pain-relieving-plus-turmeric-analgesic-1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Walgreens Pain Relieving Cream + Turmeric Topical Analgesic",
+ "inactive_section": "acrylates/C10-30 alkyl acrylate crosspolymer, arnica montana flower extract, boswellia carterii oil, butyrospermum parkii (shea) butter, calophyllum inophyllum seed oil, caprylic/capric triglyceride, cetyl alcohol, curcuma longa (turmeric) root extract, ethylhexylglycerin, fragrance, glycerin, glyceryl stearate, harpagophytum procumbens root extract, isopropyl palmitate, macadamia ternifolia seed oil, menthol, olea europaea (olive) fruit oil, PEG-100 stearate, phenoxyethanol, propylene glycol, salix alba (willow) bark extract, sodium hyaluronate, sodium hydroxide, sodium PCA, stearic acid, theobroma cacao (cocoa) seed butter, water.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f3a121bc-7572-49a4-9822-2b6d858c19d2",
+  "name": "Walgreens Pain Relieving Plus Turmeric Analgesic (trolamine Salicylate) Cream",
+  "brand": "Walgreen Company",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

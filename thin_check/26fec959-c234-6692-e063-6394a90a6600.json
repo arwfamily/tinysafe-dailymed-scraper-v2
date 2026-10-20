@@ -1,0 +1,21 @@
+{
+ "setid": "26fec959-c234-6692-e063-6394a90a6600",
+ "images": [
+  {
+   "name": "SPF 30 Lotion artwork 1.6.25.jpg",
+   "file": "img/26fec959-c234-6692-e063-6394a90a6600/SPF_30_Lotion_artwork_1.6.25.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "DBC SPF 30 Lotion",
+ "inactive_section": "Inactive Ingredients Aloe Barbadensis Leaf, Arachidyl Alcohol, Arachidyl Glucoside, Behenyl Alcohol, Bisabolol, Butyloctyl Salicylate, Butyrospermum Parkii (Shea) Butter, Caprylhydroxamic Acid, Capryloyl Glycerin/Sebacic Acid Copolymer, Caprylyl Glycol, Cellulose Gum, Cetearyl Alcohol, Cetyl Alcohol, Citric Acid, Coco-Glucoside, Cocos Nucifera (Coconut) OiI, Diheptyl Succinate, Glycerin, Microcrystalline Cellulose, Polyhydroxystearic Acid, Sodium Gluconate, Sodium Hyaluronate, Sodium Stearoyl Glutamate, Theobroma Cacao (Cocoa) Seed Butter*, Tocopherol, Water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "26fec959-c234-6692-e063-6394a90a6600",
+  "name": "New Kid On The Block Lotion",
+  "brand": "Dimples Bath Co. LLC",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

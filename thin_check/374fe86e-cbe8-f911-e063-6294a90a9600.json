@@ -1,0 +1,21 @@
+{
+ "setid": "374fe86e-cbe8-f911-e063-6294a90a9600",
+ "images": [
+  {
+   "name": "WECARE 205.jpg",
+   "file": "img/374fe86e-cbe8-f911-e063-6294a90a9600/WECARE_205.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "374fe86e-cbe8-f911-e063-6294a90a9600",
+  "name": "Non-tinted Mineral Sunscreen Broad Spectrum SPF 40 Cream",
+  "brand": "WECARE FRISCO PLLC",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

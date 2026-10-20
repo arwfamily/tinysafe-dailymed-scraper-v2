@@ -1,0 +1,33 @@
+{
+ "setid": "b78e5086-b766-7167-e053-2a95a90a56e7",
+ "images": [
+  {
+   "name": "Artwork.jpg",
+   "file": "img/b78e5086-b766-7167-e053-2a95a90a56e7/Artwork.jpg"
+  },
+  {
+   "name": "OTC Active.jpg",
+   "file": "img/b78e5086-b766-7167-e053-2a95a90a56e7/OTC_Active.jpg"
+  },
+  {
+   "name": "OTC Keep out of reach.jpg",
+   "file": "img/b78e5086-b766-7167-e053-2a95a90a56e7/OTC_Keep_out_of_reach.jpg"
+  },
+  {
+   "name": "OTC Purpose.jpg",
+   "file": "img/b78e5086-b766-7167-e053-2a95a90a56e7/OTC_Purpose.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Beauty By Earth Tinted Mineral Face Sunscreen Stick - Chestnut",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b78e5086-b766-7167-e053-2a95a90a56e7",
+  "name": "Tinted Mineral Face Sunscreen Stick - Chestnut Stick",
+  "brand": "Private Label Select Ltd CO",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

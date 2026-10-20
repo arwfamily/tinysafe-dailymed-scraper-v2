@@ -1,0 +1,25 @@
+{
+ "setid": "e1213808-4dad-4fd0-871a-04bba094a3cc",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/e1213808-4dad-4fd0-871a-04bba094a3cc/image-01.jpg"
+  },
+  {
+   "name": "image-02.jpg",
+   "file": "img/e1213808-4dad-4fd0-871a-04bba094a3cc/image-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts - Softlips Oasis Watermelon Blackberry",
+ "inactive_section": "ozokerite, petrolatum, mineral oil, octyldodecanol, ethylhexyl palmitate, flavor, polyglyceryl-6 octastearate, cetearyl alcohol, polyglyceryl-6 polyricinoleate, ammonium glycyrrhizate, butylene glycol, carthamus tinctorius (safflower) seed oil, cetearyl glucoside, citrullus lanatus (watermelon) fruit extract, ethylhexylglycerin, hyaluronic acid, limnanthes alba (meadowfoam) seed oil, menthol, nannochloropsis oculata extract, pentylene glycol, phenoxyethanol, phytosteryl/octyldodecyl lauroyl glutamate, porphyra umbilicalis extract, rubus fruticosus (blackberry) fruit extract, sea water, silanetriol, silybum marianum seed oil, tetrahexyldecyl ascorbate, tocopheryl acetate, VP/eicosene copolymer",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e1213808-4dad-4fd0-871a-04bba094a3cc",
+  "name": "Softlips Oasis Watermelon Blackberry Stick",
+  "brand": "The Mentholatum Company",
+  "n_inactive": 35,
+  "thin_reason": null
+ }
+}

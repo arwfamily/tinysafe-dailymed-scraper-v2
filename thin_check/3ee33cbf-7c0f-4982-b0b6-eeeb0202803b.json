@@ -1,0 +1,25 @@
+{
+ "setid": "3ee33cbf-7c0f-4982-b0b6-eeeb0202803b",
+ "images": [
+  {
+   "name": "jointiva-1.jpg",
+   "file": "img/3ee33cbf-7c0f-4982-b0b6-eeeb0202803b/jointiva-1.jpg"
+  },
+  {
+   "name": "jointiva-2.jpg",
+   "file": "img/3ee33cbf-7c0f-4982-b0b6-eeeb0202803b/jointiva-2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Jointiva Trolamine Salicylate Pain Relieving Cream",
+ "inactive_section": "Cetyl alcohol, disodium edetate, glycerin, light mineral oil, methyl paraben, monobasic potassium phosphate, propyl paraben, stearic acid, triethanolamine, water.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3ee33cbf-7c0f-4982-b0b6-eeeb0202803b",
+  "name": "Jointiva (trolamine Salicylate 10%) Cream",
+  "brand": "Rising Pharma Holdings, Inc.",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

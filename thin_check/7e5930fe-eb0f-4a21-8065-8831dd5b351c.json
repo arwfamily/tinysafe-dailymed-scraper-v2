@@ -1,0 +1,21 @@
+{
+ "setid": "7e5930fe-eb0f-4a21-8065-8831dd5b351c",
+ "images": [
+  {
+   "name": "ES SPF 30.jpg",
+   "file": "img/7e5930fe-eb0f-4a21-8065-8831dd5b351c/ES_SPF_30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "-403 Chem Free SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7e5930fe-eb0f-4a21-8065-8831dd5b351c",
+  "name": "Chem Free SPF 30 Cream",
+  "brand": "Owen Biosciences, Inc.",
+  "n_inactive": 5,
+  "thin_reason": "no_printed_list"
+ }
+}

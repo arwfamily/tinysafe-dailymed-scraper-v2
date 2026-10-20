@@ -1,0 +1,21 @@
+{
+ "setid": "95adf725-b16a-4617-bbe3-105b82de3961",
+ "images": [
+  {
+   "name": "sunscreen.jpg",
+   "file": "img/95adf725-b16a-4617-bbe3-105b82de3961/sunscreen.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Outback 2 in 1 Protection",
+ "inactive_section": "TEA TREE OIL EUCALYPTUS POLYBRACTEA LEAF OIL CITRONELLA OIL LEPTOSPERMUM PETERSONII LEAF OIL VANILLA ACTILASTIN 1000",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "95adf725-b16a-4617-bbe3-105b82de3961",
+  "name": "Outback 2 In 1 Protection Cream",
+  "brand": "Ultra Mix (Aust) Pty Ltd",
+  "n_inactive": 4,
+  "thin_reason": "no_printed_list"
+ }
+}

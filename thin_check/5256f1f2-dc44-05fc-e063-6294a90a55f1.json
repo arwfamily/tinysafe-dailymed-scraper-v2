@@ -1,0 +1,33 @@
+{
+ "setid": "5256f1f2-dc44-05fc-e063-6294a90a55f1",
+ "images": [
+  {
+   "name": "63354-142-10_Label.jpg",
+   "file": "img/5256f1f2-dc44-05fc-e063-6294a90a55f1/63354-142-10_Label.jpg"
+  },
+  {
+   "name": "63354-142-18_Back Label.jpg",
+   "file": "img/5256f1f2-dc44-05fc-e063-6294a90a55f1/63354-142-18_Back_Label.jpg"
+  },
+  {
+   "name": "63354-142-18_Front Label.jpg",
+   "file": "img/5256f1f2-dc44-05fc-e063-6294a90a55f1/63354-142-18_Front_Label.jpg"
+  },
+  {
+   "name": "63354-142-56_Label.jpg",
+   "file": "img/5256f1f2-dc44-05fc-e063-6294a90a55f1/63354-142-56_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Water, Glycerin, Silica, Dimethicone, Phenoxyethanol, Caprylyl Glycol, Acrylates/C12-22 Alkyl Methacrylate Copolymer, Cetearyl Alcohol, Sodium Polyacrylate, Chlorphenesin, PEG-100 Stearate, Glyceryl Stearate, Xanthan Gum, Fragrance, Disodium EDTA, Tocopheryl Acetate, Aloe Barbadensis Leaf Juice.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5256f1f2-dc44-05fc-e063-6294a90a55f1",
+  "name": "Banana Boat Lotion",
+  "brand": "Edgewell Personal Care Brands LLC",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "b8e4c11a-4b4f-4e36-a75e-0a73913113d5",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/b8e4c11a-4b4f-4e36-a75e-0a73913113d5/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Skinfuse Shield 60g",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b8e4c11a-4b4f-4e36-a75e-0a73913113d5",
+  "name": "Skinfuse Shield SPF 30 Cream",
+  "brand": "Owen Biosciences, Inc.",
+  "n_inactive": 6,
+  "thin_reason": "no_printed_list"
+ }
+}

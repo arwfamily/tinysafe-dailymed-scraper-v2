@@ -1,0 +1,41 @@
+{
+ "setid": "1d48cdee-be67-14c0-e063-6294a90a7422",
+ "images": [
+  {
+   "name": "Inactive.jpg",
+   "file": "img/1d48cdee-be67-14c0-e063-6294a90a7422/Inactive.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/1d48cdee-be67-14c0-e063-6294a90a7422/PDP.jpg"
+  },
+  {
+   "name": "actives.jpg",
+   "file": "img/1d48cdee-be67-14c0-e063-6294a90a7422/actives.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/1d48cdee-be67-14c0-e063-6294a90a7422/directions.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/1d48cdee-be67-14c0-e063-6294a90a7422/uses.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/1d48cdee-be67-14c0-e063-6294a90a7422/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Depology Essential Mineral UV Care",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1d48cdee-be67-14c0-e063-6294a90a7422",
+  "name": "Depology Essential Mineral Uv Care Lotion",
+  "brand": "Depology Holdings LLC",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

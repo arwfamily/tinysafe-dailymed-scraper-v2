@@ -1,0 +1,21 @@
+{
+ "setid": "fc9282f3-3960-45b5-9d3d-39c5f3bb9a04",
+ "images": [
+  {
+   "name": "Lotion_lab.jpg",
+   "file": "img/fc9282f3-3960-45b5-9d3d-39c5f3bb9a04/Lotion_lab.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Inactive ingredients Water, Cetearyl Alcohol, Xanthan Gum, C12-15 Alkyl Benzoate, Myristyl Propionate, Propylene Glycol, Glyceryl Stearate Citrate, Disodium EDTA, Iodopropynyl Butylcarbamate, DMDM Hydantoin, Fragrance",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fc9282f3-3960-45b5-9d3d-39c5f3bb9a04",
+  "name": "Lotion",
+  "brand": "Shanghai Kejing Cleaning Products Co., Ltd.",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

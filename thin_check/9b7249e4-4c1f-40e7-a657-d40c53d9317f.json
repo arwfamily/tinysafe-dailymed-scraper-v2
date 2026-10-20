@@ -1,0 +1,21 @@
+{
+ "setid": "9b7249e4-4c1f-40e7-a657-d40c53d9317f",
+ "images": [
+  {
+   "name": "mm01.jpg",
+   "file": "img/9b7249e4-4c1f-40e7-a657-d40c53d9317f/mm01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Studio Select D49.000/D49AA Sunscreen Spray SPF 50",
+ "inactive_section": "alcohol denat., diethylhexyl 2,6-naphthalate, diisopropyl adipate, acrylates/octylacrylamide copolymer, butyloctyl salicylate, neopentyl glycol diheptanoate, fragrance, tocopheryl acetate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9b7249e4-4c1f-40e7-a657-d40c53d9317f",
+  "name": "Avobenzone, Homosalate, Octisalate Spray",
+  "brand": "Old East Main Co.",
+  "n_inactive": 9,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "09293268-c61e-4094-bb72-a81be5f98da2",
+ "images": [
+  {
+   "name": "SEBORRHEIC.jpg",
+   "file": "img/09293268-c61e-4094-bb72-a81be5f98da2/SEBORRHEIC.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "09293268-c61e-4094-bb72-a81be5f98da2",
+  "name": "Seborrheic Purifying Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

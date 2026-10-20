@@ -1,0 +1,21 @@
+{
+ "setid": "b4cef09a-f0e4-4054-a200-667df7d150bf",
+ "images": [
+  {
+   "name": "LRPA40Med.jpg",
+   "file": "img/b4cef09a-f0e4-4054-a200-667df7d150bf/LRPA40Med.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "isohexadecane, water, dimethicone, triethylhexanoin, c15-19 alkane, silica, c12-15 alkyl benzoate, caprylyl methicone, butyloctyl salicylate, iron oxides, aluminum stearate, dicaprylyl carbonate, dicaprylyl ether, talc, dimethicone/PEG-10/15 crosspolymer, alumina, polyhydroxystearic acid, PEG-9 polydimethylsiloxyethyl dimethicone, pentylene glycol, acrylates/dimethicone copolymer, aluminum hydroxide, stearic acid, niacinamide, phenoxyethanol, magnesium sulfate, caprylyl glycol, triethoxycaprylylsilane, disteardimonium hectorite, diethylhexyl syringylidenemalonate, tocopherol, disodium stearoyl glutamate, propylene carbonate, cassia alata leaf extract, maltodextrin, dipropylene glycol, sodium citrate, caprylic/capric triglyceride",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b4cef09a-f0e4-4054-a200-667df7d150bf",
+  "name": "La Roche Posay Laboratoire Dermatologique Anthelios Tinted Mineral Light Fluid Sunscreen Broad Spectrum SPF 40 Medium Lotion",
+  "brand": "Cosmetique Active Production",
+  "n_inactive": 39,
+  "thin_reason": null
+ }
+}

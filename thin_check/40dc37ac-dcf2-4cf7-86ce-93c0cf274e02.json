@@ -1,0 +1,21 @@
+{
+ "setid": "40dc37ac-dcf2-4cf7-86ce-93c0cf274e02",
+ "images": [
+  {
+   "name": "spf45.jpg",
+   "file": "img/40dc37ac-dcf2-4cf7-86ce-93c0cf274e02/spf45.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Fact",
+ "inactive_section": "Inactive Ingredient: Mica, Silica, Talc, Bismuth Oxychloride, Boron Nitride, Aluminum Hydroxide, Sodium Dehydroacetate, Vitis Vinifera (Grape) Seed Extract, Aloe Barbadensis Leaf Extract, Retinyl Palmitate (VA), Tocopheryl Acetate (VE) May contain: Iron Oxides (CI 77491, CI 77492, CI 77499), Manganese Violet (CI 77742)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "40dc37ac-dcf2-4cf7-86ce-93c0cf274e02",
+  "name": "Elf SPF 45 Sunscreen Uva/uvb Protection Powder",
+  "brand": "Hangzhou Facecare Cosmetics Co., Ltd.",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

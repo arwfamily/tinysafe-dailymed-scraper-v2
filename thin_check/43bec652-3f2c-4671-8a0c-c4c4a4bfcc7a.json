@@ -1,0 +1,25 @@
+{
+ "setid": "43bec652-3f2c-4671-8a0c-c4c4a4bfcc7a",
+ "images": [
+  {
+   "name": "tiz02-0003-01.jpg",
+   "file": "img/43bec652-3f2c-4671-8a0c-c4c4a4bfcc7a/tiz02-0003-01.jpg"
+  },
+  {
+   "name": "tiz02-0003-02.jpg",
+   "file": "img/43bec652-3f2c-4671-8a0c-c4c4a4bfcc7a/tiz02-0003-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "DRUG FACTS",
+ "inactive_section": "Alumina, Cyclohexasiloxane, Cyclopentasiloxane, Dimethicone, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethiconol, Lauryl PEG/ PPG-18/18 Methicone, Hydrogen Dimethicone, PEG-10 Dimethicone, Tetrahexyldecyl Ascorbate, Tocopheryl Acetate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "43bec652-3f2c-4671-8a0c-c4c4a4bfcc7a",
+  "name": "Tizo2 Cream",
+  "brand": "Fallien Cosmeceuticals, LTD",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

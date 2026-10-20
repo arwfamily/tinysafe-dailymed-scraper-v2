@@ -1,0 +1,33 @@
+{
+ "setid": "08671d39-3be2-d666-e063-6294a90a6207",
+ "images": [
+  {
+   "name": "10 mL Primary.jpg",
+   "file": "img/08671d39-3be2-d666-e063-6294a90a6207/10_mL_Primary.jpg"
+  },
+  {
+   "name": "15 mL Primary.jpg",
+   "file": "img/08671d39-3be2-d666-e063-6294a90a6207/15_mL_Primary.jpg"
+  },
+  {
+   "name": "45 mL Primary.jpg",
+   "file": "img/08671d39-3be2-d666-e063-6294a90a6207/45_mL_Primary.jpg"
+  },
+  {
+   "name": "45 mL Secondary.jpg",
+   "file": "img/08671d39-3be2-d666-e063-6294a90a6207/45_mL_Secondary.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Mineral Mattescreen SPF 40 - Untinted",
+ "inactive_section": "Inactive Ingredients: DIMETHICONE, DIMETHICONE CROSSPOLLYMER, CAPRYLIC/CAPRIC TRIGLYCERIDE, METHYL DIHYDROABIETATE, POLYHYDROXYSTEARIC ACID, C9-12 ALKANE, GLYCERIN, ETHYLHEXYLGLYCERIN, WATER (AQUA), COCO-CAPRYLATE/CAPRATE, SILICA, STEARIC ACID, HEDYCHIUM CORONARIUM ROOT EXTRACT, PROPANEDIOL, SCHIZANDRA CHINENSIS FRUIT EXTRACT, TOCOPHEROL",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "08671d39-3be2-d666-e063-6294a90a6207",
+  "name": "Mineral Mattescreen SPF 40 - Untinted Lotion",
+  "brand": "Supergoop, LLC",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

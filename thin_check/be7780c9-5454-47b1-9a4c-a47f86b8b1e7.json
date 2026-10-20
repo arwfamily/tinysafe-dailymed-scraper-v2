@@ -1,0 +1,21 @@
+{
+ "setid": "be7780c9-5454-47b1-9a4c-a47f86b8b1e7",
+ "images": [
+  {
+   "name": "mov001.jpg",
+   "file": "img/be7780c9-5454-47b1-9a4c-a47f86b8b1e7/mov001.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "be7780c9-5454-47b1-9a4c-a47f86b8b1e7",
+  "name": "Movate Skin Lightening (hydroquinone) Cream",
+  "brand": "International Beauty Exchange",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

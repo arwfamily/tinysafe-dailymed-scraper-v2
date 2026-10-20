@@ -1,0 +1,25 @@
+{
+ "setid": "90574d55-4655-4902-b811-7523ace216d8",
+ "images": [
+  {
+   "name": "Inner Package.jpg",
+   "file": "img/90574d55-4655-4902-b811-7523ace216d8/Inner_Package.jpg"
+  },
+  {
+   "name": "outer package.jpg",
+   "file": "img/90574d55-4655-4902-b811-7523ace216d8/outer_package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sun Bum Skin Care Essentials Kit",
+ "inactive_section": "water, polyglyceryl-6 stearate, dimethicone, cetearyl alcohol, capryloyl glycerin/sebacic acid copolymer, hydrated silica, hibiscus sabdariffa fruit extract, niacinamide, cocos nucifera (coconut) fruit extract, helianthus annuus (sunflower) extract, lactobacillus, lactobacillus ferment, musa sapientum (banana) flower extract, musa sapientum (banana) fruit extract, musa sapientum (banana) leaf extract, musa sapientum (banana) peel extract, musa sapientum (banana) pulp extract, lysolecithin, erythritol, glucose, glycerin, arachidyl alcohol, arachidyl glucoside, behenyl alcohol, cetearyl glucoside, fragrance, polyglyceryl-6 behenate, pullulan, sclerotium gum, tocopherol, xanthan gum, phenoxyethanol, ethylhexylglycerin",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "90574d55-4655-4902-b811-7523ace216d8",
+  "name": "Sun Bum Skin Care Essentials Kit Kit",
+  "brand": "Sun Bum LLC",
+  "n_inactive": 37,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "setid": "1c30a422-b22a-ca79-e063-6294a90a19a9",
+ "images": [
+  {
+   "name": "BBW SPF50 Pink Pineapple Sunrise.jpg",
+   "file": "img/1c30a422-b22a-ca79-e063-6294a90a19a9/BBW_SPF50_Pink_Pineapple_Sunrise.jpg"
+  },
+  {
+   "name": "SPF 50 Lotion PPS.jpg",
+   "file": "img/1c30a422-b22a-ca79-e063-6294a90a19a9/SPF_50_Lotion_PPS.jpg"
+  },
+  {
+   "name": "Sunscreen Lotion Costa Rica Pink Pineapple Sunrise.jpg",
+   "file": "img/1c30a422-b22a-ca79-e063-6294a90a19a9/Sunscreen_Lotion_Costa_Rica_Pink_Pineapple_Sunrise.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "SPF Lotion Pink Pineapple Sunrise",
+ "inactive_section": "Water (Aqua, Eau), Butyloctyl Salicylate, Glycerin, Styrene/Acrylates Copolymer, Glyceryl Stearate, PEG-100 Stearate, Butylene Glycol, VP/Hexadecene Copolymer, Fragrance (Parfum), Phenoxyethanol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Hydroxyacetophenone, Diethylhexyl 2,6-Naphthalate, PEG-8 Laurate, Chlorphenesin, Xanthan Gum, Oryza Sativa (Rice) Bran Extract, Tocopheryl Acetate, Sodium Hydroxide, Tetrasodium Glutamate Diacetate, Ethylhexylglycerin, Helianthus Annuus (Sunflower) Extract, Tocopherol, Rosmarinus Officinalis (Rosemary) Leaf Extract, Hexamethylindanopyran, Limonene, Vanillin, Tetramethyl Acetyloctahydronaphthalenes, Hexyl Cinnamal, Citrus Aurantium Peel Oil, Citrus Limon Peel Oil.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1c30a422-b22a-ca79-e063-6294a90a19a9",
+  "name": "Bath And Body Works SPF Pink Pineapple Sunrise Lotion",
+  "brand": "Bath & Body Works, Inc.",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

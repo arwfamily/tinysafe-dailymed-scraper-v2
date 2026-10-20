@@ -1,0 +1,33 @@
+{
+ "setid": "e441895a-83b6-1cd5-e053-2995a90aab4b",
+ "images": [
+  {
+   "name": "Inner Package2.jpg",
+   "file": "img/e441895a-83b6-1cd5-e053-2995a90aab4b/Inner_Package2.jpg"
+  },
+  {
+   "name": "Inner Package3.jpg",
+   "file": "img/e441895a-83b6-1cd5-e053-2995a90aab4b/Inner_Package3.jpg"
+  },
+  {
+   "name": "Outer Package2.jpg",
+   "file": "img/e441895a-83b6-1cd5-e053-2995a90aab4b/Outer_Package2.jpg"
+  },
+  {
+   "name": "Outer Package3.jpg",
+   "file": "img/e441895a-83b6-1cd5-e053-2995a90aab4b/Outer_Package3.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Curology the sunscreen broad spectrum SPF 30",
+ "inactive_section": "Water, Dimethicone, Propylene Glycol, C12-15 Alkyl Benzoate, Sorbitan Oleate Decylglucoside Crosspolymer, Cetearyl Alcohol, Argania Spinosa Kernel Oil, Ammonium Acryloyldimethyltaurate/VP Copolymer, Tocopheryl Acetate, Glycerin, Squalane, Butyrospermum Parkii (Shea Butter) Extract, Polyster-5, Caprylyl/Capryl Glucoside, Coco-Glucosdie, C14-22 Alcohols, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Triethoxycaprylylsilane, Ethyl Ferulate, C12-20 Alkyl Glucoside, Bisabolol, Sodium Chloride, Phospholipids, Gluconolactone, Benzyl Alcohol, Sodium Benzoate, Chlorophensin, Sorbic Acid, Urea, Phenoxyethanol, Ethylhexylglycerin",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e441895a-83b6-1cd5-e053-2995a90aab4b",
+  "name": "Curology The Sunscreen Broad Spectrum SPF 30 Cream",
+  "brand": "Curology Inc.",
+  "n_inactive": 32,
+  "thin_reason": null
+ }
+}

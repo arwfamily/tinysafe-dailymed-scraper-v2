@@ -1,0 +1,21 @@
+{
+ "setid": "3235a696-92aa-788c-e063-6394a90a0149",
+ "images": [
+  {
+   "name": "Lily Lee Sunscreen Plus Tinted 208 SF.jpg",
+   "file": "img/3235a696-92aa-788c-e063-6394a90a0149/Lily_Lee_Sunscreen_Plus_Tinted_208_SF.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3235a696-92aa-788c-e063-6394a90a0149",
+  "name": "Sunscreen Plus Tinted Cream",
+  "brand": "Lily Lee, MD",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "setid": "0a8e1c7f-f7cc-43e7-956e-48524777012e",
+ "images": [
+  {
+   "name": "30 bottle.jpg",
+   "file": "img/0a8e1c7f-f7cc-43e7-956e-48524777012e/30_bottle.jpg"
+  },
+  {
+   "name": "450 bottle.jpg",
+   "file": "img/0a8e1c7f-f7cc-43e7-956e-48524777012e/450_bottle.jpg"
+  },
+  {
+   "name": "60 bottle.jpg",
+   "file": "img/0a8e1c7f-f7cc-43e7-956e-48524777012e/60_bottle.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Water, Sorbitan",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0a8e1c7f-f7cc-43e7-956e-48524777012e",
+  "name": "G Sol Spray",
+  "brand": "Egtech co., Ltd.",
+  "n_inactive": 2,
+  "thin_reason": "label_prints_too_little"
+ }
+}

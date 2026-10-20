@@ -1,0 +1,21 @@
+{
+ "setid": "364cf1f7-1f87-51f7-e063-6294a90a789c",
+ "images": [
+  {
+   "name": "Beauty Shop 208.jpg",
+   "file": "img/364cf1f7-1f87-51f7-e063-6294a90a789c/Beauty_Shop_208.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "364cf1f7-1f87-51f7-e063-6294a90a789c",
+  "name": "Tinted Replenishing Daily Protection Cream",
+  "brand": "THE AESTHETICS ACADEMY, LLC",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

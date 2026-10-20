@@ -1,0 +1,29 @@
+{
+ "setid": "06e7ab52-dae7-4098-bf60-41351fef4c89",
+ "images": [
+  {
+   "name": "airlight pp_drug facts.jpg",
+   "file": "img/06e7ab52-dae7-4098-bf60-41351fef4c89/airlight_pp_drug_facts.jpg"
+  },
+  {
+   "name": "airlight_product.jpg",
+   "file": "img/06e7ab52-dae7-4098-bf60-41351fef4c89/airlight_product.jpg"
+  },
+  {
+   "name": "baselabel_bisque.jpg",
+   "file": "img/06e7ab52-dae7-4098-bf60-41351fef4c89/baselabel_bisque.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Active Ingredients",
+ "inactive_section": "Talc, Dimethicone, Polymethylsilsequioxane, Dimethicone/Vinyl Dimethicone Crosspolymer, Zinc Stearate, Silica, Phenyl Trimthicone, Synthetic Fluorphlogopite, Caprylyl Methicone, Caprylyl Glycol, Methicone, Zea Mays (Corn) sTarch, Phenoxyethanol, Hyxylene Glycol, [May contain: Iron Oxides, Mica]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "06e7ab52-dae7-4098-bf60-41351fef4c89",
+  "name": "Ck One Airlight Pressed Powder SPF 15 Bisque 400 Powder",
+  "brand": "Coty US LLC",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

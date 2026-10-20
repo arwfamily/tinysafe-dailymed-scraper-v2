@@ -1,0 +1,25 @@
+{
+ "setid": "87ee593d-668c-f592-e053-2a95a90a17b1",
+ "images": [
+  {
+   "name": "SUN GUARD_100ml.jpg.jpg",
+   "file": "img/87ee593d-668c-f592-e053-2a95a90a17b1/SUN_GUARD_100ml.jpg.jpg"
+  },
+  {
+   "name": "SUN GUARD_180ml.jpg.jpg",
+   "file": "img/87ee593d-668c-f592-e053-2a95a90a17b1/SUN_GUARD_180ml.jpg.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Sun Guard",
+ "inactive_section": "Anthemis nobilis flower oil, beeswax (white), calendula officinalis flower, chamomilla recutita (matricaria) flower extract, daucus carota sativa (carrot) seed oil, hippophae rhamnoides fruit extract, olive oil, pelargonium graveolens oil, rosmarinus officinalis (rosemary) leaf extract , santalum album (sandalwood) oil, soybean oil, sunflower oil, vitamin e.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "87ee593d-668c-f592-e053-2a95a90a17b1",
+  "name": "Sun Guard Lotion",
+  "brand": "Saje Natural Business Inc",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

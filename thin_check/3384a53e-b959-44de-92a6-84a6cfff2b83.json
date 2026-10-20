@@ -1,0 +1,21 @@
+{
+ "setid": "3384a53e-b959-44de-92a6-84a6cfff2b83",
+ "images": [
+  {
+   "name": "berry-balm-01.jpg",
+   "file": "img/3384a53e-b959-44de-92a6-84a6cfff2b83/berry-balm-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Blistex® Medicated Berry Balm",
+ "inactive_section": "beeswax, camphor, cetyl alcohol, cetyl palmitate, euphorbia cerifera (candelilla) wax, flavor, isopropyl myristate, isopropyl palmitate, isopropyl stearate, lanolin, lanolin oil, menthol, methylparaben, mineral oil, ozokerite, paraffin, petrolatum, polybutene, propylparaben, red 6 lake, theobroma cacao (cocoa) seed butter, titanium dioxide",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3384a53e-b959-44de-92a6-84a6cfff2b83",
+  "name": "Blistex Medicated Berry Balm Stick",
+  "brand": "Blistex Inc",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

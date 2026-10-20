@@ -1,0 +1,25 @@
+{
+ "setid": "03502b61-634f-430f-8e99-00dc2788fe39",
+ "images": [
+  {
+   "name": "ImagePDT30.jpg",
+   "file": "img/03502b61-634f-430f-8e99-00dc2788fe39/ImagePDT30.jpg"
+  },
+  {
+   "name": "ImagePDT306.jpg",
+   "file": "img/03502b61-634f-430f-8e99-00dc2788fe39/ImagePDT306.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "DRUG FACTS",
+ "inactive_section": "Aqua, Cyclopentasiloxane, Plankton Extract, Hexyl Triethoxysilylethyl, Polydimethylsiloxyethyl Dimethicone, Cyclohexasiloxane, Dimethicone/PEG-10/15 Crosspolymer, Arabidopsis Extract, Dimethicone/Polyglycerin -3 Crosspolymer, Aluminum Hydroxide Stearic Acid, Polyglyceryl-4 Isostearate, Cetyl PEG/PPG-10/1 Dimethicone, Hexyl Laurate, Sodium Chloride, Cetearyl Olivate, Tetrahexyldecyl Ascorbate, Micrococcus Lysate, Lecithin, Tocopheryl Acetate, Caprylyl Glycol, Phenoxyethanol, Ethylhexylglycerin, Hexylene Glycol, Iron Oxide (CI77491, CI77492, CI77499)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "03502b61-634f-430f-8e99-00dc2788fe39",
+  "name": "Prevention Daily Tinted Mositurizer Oil-free Tinted 30 Cream",
+  "brand": "Allure Labs, Inc",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

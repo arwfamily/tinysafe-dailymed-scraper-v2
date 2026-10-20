@@ -1,0 +1,21 @@
+{
+ "setid": "f6cff3d1-cca5-4b3e-a481-0c4def90684c",
+ "images": [
+  {
+   "name": "nmensensitvebox12.jpg",
+   "file": "img/f6cff3d1-cca5-4b3e-a481-0c4def90684c/nmensensitvebox12.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "11",
+ "title": "Nivea Men Sensitive Face",
+ "inactive_section": "Inactive ingredients Water, Isopropyl Palmitate,Glycerin, Tapioca Starch, Cetearyl Alcohol, Glyceryl Stearate Citrate, Tocopheryl Acetate, Panthenol, Chamomilla Recutita (Matricaria) Flower Extract, 1,2-Hexanediol, Carbomer, Ethylhexylglycerin, Maltodextrin, Acrylates/Cl0-30 Alkyl Acrylate Crosspolymer, Sodium Hydroxide, Trisodium EDTA, Phenoxyethanol, Piroctone OIamine, Fragrance.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f6cff3d1-cca5-4b3e-a481-0c4def90684c",
+  "name": "Nivea Men Sensitive Protective Lotion",
+  "brand": "Beiersdorf Inc",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

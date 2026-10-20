@@ -1,0 +1,21 @@
+{
+ "setid": "fae8ecaf-7a9c-902b-e053-6394a90a5f31",
+ "images": [
+  {
+   "name": "83447-001-01.jpg",
+   "file": "img/fae8ecaf-7a9c-902b-e053-6394a90a5f31/83447-001-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "83447-001",
+ "inactive_section": "Sericite, Mica, and Silica.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fae8ecaf-7a9c-902b-e053-6394a90a5f31",
+  "name": "Sunscreen Powder Powder",
+  "brand": "Guangzhou Fantesy Biotechnology Co.,Ltd",
+  "n_inactive": 4,
+  "thin_reason": "short_list"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "8b530719-0124-4eca-a6ae-16c0cd300d2a",
+ "images": [
+  {
+   "name": "SPF15crlslbl.jpg",
+   "file": "img/8b530719-0124-4eca-a6ae-16c0cd300d2a/SPF15crlslbl.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Caprylic/Capric Triglyceride, Cetearyl Alcohol, Cylcomethicone, Disodium EDTA, Fragrance, Glycerin, Imidazolidinyl Urea, Isopropyl Myristate, Methylparaben, Potassium Cetyl Phosphate, Propylparaben, Tocopheryl Acetate, Water (Aqua), Xanthan Gum",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8b530719-0124-4eca-a6ae-16c0cd300d2a",
+  "name": "Suntan Lotion Lotion",
+  "brand": "Tri-Coastal Design Company Inc.",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

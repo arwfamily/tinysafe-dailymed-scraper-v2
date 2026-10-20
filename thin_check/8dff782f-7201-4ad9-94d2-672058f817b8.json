@@ -1,0 +1,21 @@
+{
+ "setid": "8dff782f-7201-4ad9-94d2-672058f817b8",
+ "images": [
+  {
+   "name": "Softlips Vanilla SPF 20.jpg",
+   "file": "img/8dff782f-7201-4ad9-94d2-672058f817b8/Softlips_Vanilla_SPF_20.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "8",
+ "title": "Drug Facts - Softlips Vanilla SPF 20",
+ "inactive_section": "ozokerite, squalane, ethylhexyl palmitate, petrolatum, myristyl myristate, myristyl lactate, cetyl alcohol, myristyl laurate, myristyl alcohol, BHT, flavor, menthol, tocopheryl acetatate [vitamin E]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8dff782f-7201-4ad9-94d2-672058f817b8",
+  "name": "Softlips Vanilla Ointment",
+  "brand": "The Mentholatum Company",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

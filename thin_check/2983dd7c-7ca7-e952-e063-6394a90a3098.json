@@ -1,0 +1,25 @@
+{
+ "setid": "2983dd7c-7ca7-e952-e063-6394a90a3098",
+ "images": [
+  {
+   "name": "Inner Package.jpg",
+   "file": "img/2983dd7c-7ca7-e952-e063-6394a90a3098/Inner_Package.jpg"
+  },
+  {
+   "name": "Outer Package.jpg",
+   "file": "img/2983dd7c-7ca7-e952-e063-6394a90a3098/Outer_Package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Cover FX Invisible Primer SPF30",
+ "inactive_section": "ISODODECANE, DIMETHICONE/ BIS-ISOBUTYL PPG-20 CROSSPOLYMER, C12-15 ALKYL BENZOATE, BUTYLOCTYL SALICYLATE, CAPRYLYL METHICONE, CAPRYLIC/CAPRIC TRIGLYCERIDE, DIMETHICONE/VINYL DIMETHICONE CROSSPOLYMER, SOLANUM LYCOPERSICUM (TOMATO) FRUIT EXTRACT, SESAMUM INDICUM (SESAME) SEED EXTRACT, TOCOPHERYL ACETATE, SQUALANE, TOCOPHEROL, SILICA, DIMETHYL ISOSORBIDE.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2983dd7c-7ca7-e952-e063-6394a90a3098",
+  "name": "Cover Fx Invisible Primer SPF30 Lotion",
+  "brand": "Cosmax Usa, Corporation",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "7fdfc310-76eb-4fd9-8611-2eb606efba4d",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/7fdfc310-76eb-4fd9-8611-2eb606efba4d/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7fdfc310-76eb-4fd9-8611-2eb606efba4d",
+  "name": "Derma Blemish Balm Blemish Balm (adenosine) Cream",
+  "brand": "Universal Cosmetic Co., Ltd",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list"
+ }
+}

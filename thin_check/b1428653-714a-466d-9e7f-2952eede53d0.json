@@ -1,0 +1,21 @@
+{
+ "setid": "b1428653-714a-466d-9e7f-2952eede53d0",
+ "images": [
+  {
+   "name": "PHFace50.jpg",
+   "file": "img/b1428653-714a-466d-9e7f-2952eede53d0/PHFace50.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b1428653-714a-466d-9e7f-2952eede53d0",
+  "name": "Parrot Head Floridays Face 50 Lotion",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

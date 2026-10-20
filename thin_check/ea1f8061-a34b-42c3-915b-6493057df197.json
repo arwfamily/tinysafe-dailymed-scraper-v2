@@ -1,0 +1,21 @@
+{
+ "setid": "ea1f8061-a34b-42c3-915b-6493057df197",
+ "images": [
+  {
+   "name": "FDA Laiett Creme.jpg",
+   "file": "img/ea1f8061-a34b-42c3-915b-6493057df197/FDA_Laiett_Creme.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ea1f8061-a34b-42c3-915b-6493057df197",
+  "name": "La Creme Plus Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

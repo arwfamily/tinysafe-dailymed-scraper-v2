@@ -1,0 +1,21 @@
+{
+ "setid": "d9b61959-9fd4-92cf-e053-2a95a90aa80a",
+ "images": [
+  {
+   "name": "220120_KINLO_GOLDEN RAYS SUNSCREEN_DEEP_RETAIL_CARTON_SC_v08_OL.jpg",
+   "file": "img/d9b61959-9fd4-92cf-e053-2a95a90aa80a/220120_KINLO_GOLDEN_RAYS_SUNSCREEN_DEEP_RETAIL_CARTON_SC_v08_OL.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Golden Ray Sunscreen (Deep Tinted)",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d9b61959-9fd4-92cf-e053-2a95a90aa80a",
+  "name": "Golden Ray Sunscreen (deep Tinted) Lotion",
+  "brand": "A-Frame SunCo Inc",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

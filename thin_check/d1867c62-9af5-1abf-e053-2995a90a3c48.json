@@ -1,0 +1,25 @@
+{
+ "setid": "d1867c62-9af5-1abf-e053-2995a90a3c48",
+ "images": [
+  {
+   "name": "Primary Package.jpg",
+   "file": "img/d1867c62-9af5-1abf-e053-2995a90a3c48/Primary_Package.jpg"
+  },
+  {
+   "name": "Secondary Package.jpg",
+   "file": "img/d1867c62-9af5-1abf-e053-2995a90a3c48/Secondary_Package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "221",
+ "title": "Photoblock",
+ "inactive_section": "Aqua, Glycerin, Cetearyl Alcohol, Ceteareth-22, lsopropyl Myristate, Glyceryl Stearate, Disodium Phosphate, Citric Acid, Methylparaben, Propylparaben and BHA.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d1867c62-9af5-1abf-e053-2995a90a3c48",
+  "name": "Photoblock Cream",
+  "brand": "Pella Pharmaceuticals Co. Ltd",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "dd95db29-0be7-4b46-8631-62b58bd267c2",
+ "images": [
+  {
+   "name": "back.jpg",
+   "file": "img/dd95db29-0be7-4b46-8631-62b58bd267c2/back.jpg"
+  },
+  {
+   "name": "front.jpg",
+   "file": "img/dd95db29-0be7-4b46-8631-62b58bd267c2/front.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Aloe Barbadensis Leaf Juice, Cetyl Alcohol, Glycerin, Methylparaben, Mineral Oil, Potassium Phosphate, Propylparaben, Stearic Acid, Triethanolamine, Water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "dd95db29-0be7-4b46-8631-62b58bd267c2",
+  "name": "Pain Relieving Topical Analgesic (trolamine Salicylate 10%) Cream",
+  "brand": "Top Care",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

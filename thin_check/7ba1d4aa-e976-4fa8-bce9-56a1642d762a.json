@@ -1,0 +1,33 @@
+{
+ "setid": "7ba1d4aa-e976-4fa8-bce9-56a1642d762a",
+ "images": [
+  {
+   "name": "DFB1.jpg",
+   "file": "img/7ba1d4aa-e976-4fa8-bce9-56a1642d762a/DFB1.jpg"
+  },
+  {
+   "name": "DFB2.jpg",
+   "file": "img/7ba1d4aa-e976-4fa8-bce9-56a1642d762a/DFB2.jpg"
+  },
+  {
+   "name": "DFB3.jpg",
+   "file": "img/7ba1d4aa-e976-4fa8-bce9-56a1642d762a/DFB3.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/7ba1d4aa-e976-4fa8-bce9-56a1642d762a/PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Anew Vitale Day Lotion Broad Spectrum SPF 25",
+ "inactive_section": "Inactive ingredients: water/eau, butylene glycol, dimethicone, PEG-8, trisiloxane, glycerin, ethylhexyl isononanoate, HDI/trimethylol hexyllactone crosspolymer, cetyl alcohol, caprylyl glycol, behenyl alcohol, dilauryl thiodipropionate, thiodipropionic acid, carbomer, glyceryl stearate, parfum/fragrance, sodium hydroxide, phenoxyethanol, trimethylsiloxysilicate, hydrogenated lecithin, acrylates/C10-30 alkyl acrylate crosspolymer, disodium EDTA, polyglyceryl-3 diisostearate, choleth-24, hexylene glycol, ceteth-24, panthenol, silica, mesyloxybenzyl methoxyethyl chlorobenzamide, pichia ferment lysate filtrate, saccharomyces ferment lysate filtrate, palmitoyl tetrapeptide-10.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7ba1d4aa-e976-4fa8-bce9-56a1642d762a",
+  "name": "Anew Vitale Day Lotion",
+  "brand": "New Avon LLC",
+  "n_inactive": 32,
+  "thin_reason": null
+ }
+}

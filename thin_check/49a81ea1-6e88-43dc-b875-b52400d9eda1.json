@@ -1,0 +1,21 @@
+{
+ "setid": "49a81ea1-6e88-43dc-b875-b52400d9eda1",
+ "images": [
+  {
+   "name": "lacremep.jpg",
+   "file": "img/49a81ea1-6e88-43dc-b875-b52400d9eda1/lacremep.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "49a81ea1-6e88-43dc-b875-b52400d9eda1",
+  "name": "La Creme P Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 41,
+  "thin_reason": null
+ }
+}

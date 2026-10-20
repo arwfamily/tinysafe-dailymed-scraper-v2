@@ -1,0 +1,21 @@
+{
+ "setid": "2205ec0e-ac3f-299f-e063-6294a90a2174",
+ "images": [
+  {
+   "name": "OS-01 Face SPF untinted.jpg",
+   "file": "img/2205ec0e-ac3f-299f-e063-6294a90a2174/OS-01_Face_SPF_untinted.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients: Water(aqua), Caprylic/Capric Triglyceride, Glycerin, Methyl Dihydroabietate, Cetearyl Alcohol, Cetyl Palmitate, Coco-Glucoside, Caprylyl/Capryl Glucoside, Sorbitan Palmitate, Sorbitan Olivate, Butyrospermum Parkii (Shea) Nut Extract, Ethyl Ferulate, Bisabolol, Allantoin, Hydrolyzed Jojoba Esters, Acacia Senegal Gum, Polyhydroxystearic Acid, Polyglyceryl-3 Polyricinoleate, Isostearic Acid, Lecithin, Tocopheryl Acetate, Tetrahexyldecyl Ascorbate, Decapeptide-52*, Oryza Sativa (rice) Starch,Camellia Sinensis Leaf Extract, Euterpe Oleracea Fruit Extract, Caesalpinia Spinosa Fruit Pod Extract, Helianthus Annuus (Sunflower) Sprout Extract, Caprylyl Glycol, Ethylhexylglycerin, Hexylene Glycol, Xanthan Gum, Sodium Phytate, Propylene Glycol, Phenoxyethanol, sodium Benzoate, Potassium Sorbate.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2205ec0e-ac3f-299f-e063-6294a90a2174",
+  "name": "Os-01 Face SPF Bs SPF30 Untinted Cream",
+  "brand": "ONESKIN INC.",
+  "n_inactive": 42,
+  "thin_reason": null
+ }
+}

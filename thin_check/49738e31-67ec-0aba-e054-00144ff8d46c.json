@@ -1,0 +1,21 @@
+{
+ "setid": "49738e31-67ec-0aba-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "Cross Tube SPF 50.jpg",
+   "file": "img/49738e31-67ec-0aba-e054-00144ff8d46c/Cross_Tube_SPF_50.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sea & Ski SPF 50 Tube",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "49738e31-67ec-0aba-e054-00144ff8d46c",
+  "name": "General Protection Lotion",
+  "brand": "Cross-Brands Manufacturing LLC",
+  "n_inactive": 2,
+  "thin_reason": "no_printed_list"
+ }
+}

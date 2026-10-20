@@ -1,0 +1,21 @@
+{
+ "setid": "36d9a8f3-7760-57f3-e063-6394a90a1a1e",
+ "images": [
+  {
+   "name": "SF202 holistic skincare.jpg",
+   "file": "img/36d9a8f3-7760-57f3-e063-6394a90a1a1e/SF202_holistic_skincare.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "36d9a8f3-7760-57f3-e063-6394a90a1a1e",
+  "name": "Non-tinted Mineral Sunscreen Cream",
+  "brand": "HSC MIAMI, INC",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "de7eaa27-f8e3-4238-a3a3-2b31d65916e6",
+ "images": [
+  {
+   "name": "Inner Label.jpg",
+   "file": "img/de7eaa27-f8e3-4238-a3a3-2b31d65916e6/Inner_Label.jpg"
+  },
+  {
+   "name": "Outer Label.jpg",
+   "file": "img/de7eaa27-f8e3-4238-a3a3-2b31d65916e6/Outer_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Face Cream 50",
+ "inactive_section": "water, C12-15 alkyl benzoate, ethylhexyl palmitate, ethylhexyl stearate, cetyl peg/ppg-10/1 dimethicone, glycerin, hydrogenated castor oil, isoamyl cocoate, hydrogenated ethylhexyl olivate, hydrated silica, polyethylene, tocopheryl acetate, theobroma cacao seed butter, aloe barbadensis leaf juice, beeswax, hydrogenated olive oil unsaponifiables, fragrance, sodium chloride, triethoxycaprylysilane, phenoxyethanol, ethylhexylglycerin",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "de7eaa27-f8e3-4238-a3a3-2b31d65916e6",
+  "name": "Face Cream 50 Cream",
+  "brand": "Sun Bum LLC",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

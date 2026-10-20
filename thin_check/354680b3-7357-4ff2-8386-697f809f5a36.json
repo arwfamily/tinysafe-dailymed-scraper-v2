@@ -1,0 +1,21 @@
+{
+ "setid": "354680b3-7357-4ff2-8386-697f809f5a36",
+ "images": [
+  {
+   "name": "OPGEL8Label.jpg",
+   "file": "img/354680b3-7357-4ff2-8386-697f809f5a36/OPGEL8Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "DRUG FACTS",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "354680b3-7357-4ff2-8386-697f809f5a36",
+  "name": "Op Protective Spray Gel 8 Spray",
+  "brand": "Sun & Skin Care Research, Inc",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

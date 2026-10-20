@@ -1,0 +1,21 @@
+{
+ "setid": "35a8e92e-ced2-fdcd-e063-6294a90acedc",
+ "images": [
+  {
+   "name": "SKIN BOSS 208.jpg",
+   "file": "img/35a8e92e-ced2-fdcd-e063-6294a90acedc/SKIN_BOSS_208.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "35a8e92e-ced2-fdcd-e063-6294a90acedc",
+  "name": "Restore Tinted Moisturizing Cream",
+  "brand": "SKIN BOSS L.L.C.",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

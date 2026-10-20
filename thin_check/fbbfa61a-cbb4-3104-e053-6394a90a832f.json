@@ -1,0 +1,25 @@
+{
+ "setid": "fbbfa61a-cbb4-3104-e053-6394a90a832f",
+ "images": [
+  {
+   "name": "Inner Package00.jpg",
+   "file": "img/fbbfa61a-cbb4-3104-e053-6394a90a832f/Inner_Package00.jpg"
+  },
+  {
+   "name": "Outer Package0.jpg",
+   "file": "img/fbbfa61a-cbb4-3104-e053-6394a90a832f/Outer_Package0.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "6",
+ "title": "Ulta Beauty Tinted Moisturizer Cream Spf 24 Fair",
+ "inactive_section": "water, glycerin, butylene glycol, triisostearyl citrate, titanium dioxide, pentylene glycol, polyglycerin-4, cetearyl olivate, candelilla/jojoba/rice bran polyglyceryl-3 esters, glyceryl stearate, phenoxyethanol, sorbitan olivate, potassium cetyl phosphate, cetearyl alcohol, sodium stearoyl latylate, oleyl alcohol, carbomer, olea europaea (olive) fruit oil, tromethamine, iron oxides, acacia senegal gum, ethylhexylglycerin, galactoarabinan, xanthan gum, betaine, citric acid, disodium edta, potassium sorbate, tremella fuciformis sporocarp extract",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fbbfa61a-cbb4-3104-e053-6394a90a832f",
+  "name": "Ulta Beauty Tinted Moisturizer Cream SPF 24 Fair Cream",
+  "brand": "Cosmax Usa, Corporation",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

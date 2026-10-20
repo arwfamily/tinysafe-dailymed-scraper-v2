@@ -1,0 +1,21 @@
+{
+ "setid": "37dd5228-5fe4-5e7b-e063-6294a90adffb",
+ "images": [
+  {
+   "name": "miami 203.jpg",
+   "file": "img/37dd5228-5fe4-5e7b-e063-6294a90adffb/miami_203.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "37dd5228-5fe4-5e7b-e063-6294a90adffb",
+  "name": "Daily Shield Facial Primer Cream",
+  "brand": "Skintique",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

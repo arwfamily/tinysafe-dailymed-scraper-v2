@@ -1,0 +1,21 @@
+{
+ "setid": "fe2b9d16-9215-e21e-e053-6394a90a5156",
+ "images": [
+  {
+   "name": "Ware.jpg",
+   "file": "img/fe2b9d16-9215-e21e-e053-6394a90a5156/Ware.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Ware Sonny Universal",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fe2b9d16-9215-e21e-e053-6394a90a5156",
+  "name": "Ware Sonny Universal Lotion",
+  "brand": "Ware Cosmetics",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "setid": "1030a55e-8159-4645-bda0-13e1d89f00e7",
+ "images": [],
+ "error": "spl: HTTP Error 429: Too Many Requests media: HTTP Error 429: Too Many Requests",
+ "db": {
+  "setid": "1030a55e-8159-4645-bda0-13e1d89f00e7",
+  "name": "Atobos Centella Baby Sun Cream",
+  "brand": "1004LABORATORY",
+  "n_inactive": 42,
+  "thin_reason": null
+ }
+}

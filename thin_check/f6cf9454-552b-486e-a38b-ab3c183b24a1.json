@@ -1,0 +1,21 @@
+{
+ "setid": "f6cf9454-552b-486e-a38b-ab3c183b24a1",
+ "images": [
+  {
+   "name": "Image_1.jpg",
+   "file": "img/f6cf9454-552b-486e-a38b-ab3c183b24a1/Image_1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "Benzoic acid, Benzyl alcohol, Bis-Octyldodecyl, Dimer Dilinoleate/ Propanediol copolymer, Butyloctyl Salicylate, C12 -15 Alkyl benzoate, Calcium chloride, Caprylic / Capric triglyceride, Chlorphenesin, Dehydroacetic acid, Dibutyl Adipate, Hydrogenated Caster oil, Isopropyl Myristate, Lanthanum chloride, Magnesium Chloride, Magnesium stearate, Panthenol, Polyglycerly-2Dipolyhydroxystearate, Sorbic acid, Tocopheryl Acetate, Triethoxycaprylylsilane, water.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f6cf9454-552b-486e-a38b-ab3c183b24a1",
+  "name": "Safe Sea SPF 50 Mineral Lotion",
+  "brand": "Nidaria Technology Ltd.",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

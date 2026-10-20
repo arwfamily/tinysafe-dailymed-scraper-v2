@@ -1,0 +1,25 @@
+{
+ "setid": "1a0062f1-fcfc-4d6a-8274-2ebbc5fbdb27",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/1a0062f1-fcfc-4d6a-8274-2ebbc5fbdb27/image-01.jpg"
+  },
+  {
+   "name": "image-02.jpg",
+   "file": "img/1a0062f1-fcfc-4d6a-8274-2ebbc5fbdb27/image-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts - Softlips Peppermint",
+ "inactive_section": "ozokerite, squalane, ethylhexyl palmitate, petrolatum, myristyl myristate, myristyl lactate, flavor, cetyl alcohol, myristyl laurate, myristyl alcohol, BHT, menthol, tocopheryl acetate [vitamin E]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1a0062f1-fcfc-4d6a-8274-2ebbc5fbdb27",
+  "name": "Softlips Peppermint Stick",
+  "brand": "The Mentholatum Company",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

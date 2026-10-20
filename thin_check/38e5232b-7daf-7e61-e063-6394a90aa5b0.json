@@ -1,0 +1,21 @@
+{
+ "setid": "38e5232b-7daf-7e61-e063-6394a90aa5b0",
+ "images": [
+  {
+   "name": "Indie Lee.jpg",
+   "file": "img/38e5232b-7daf-7e61-e063-6394a90aa5b0/Indie_Lee.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Indie Lee Daily Primer",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "38e5232b-7daf-7e61-e063-6394a90aa5b0",
+  "name": "Indie Lee Daily Primer Lotion",
+  "brand": "America Exchange",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

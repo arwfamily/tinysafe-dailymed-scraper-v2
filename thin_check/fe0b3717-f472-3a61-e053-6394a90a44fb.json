@@ -1,0 +1,21 @@
+{
+ "setid": "fe0b3717-f472-3a61-e053-6394a90a44fb",
+ "images": [
+  {
+   "name": "eucimmhydrface.jpg",
+   "file": "img/fe0b3717-f472-3a61-e053-6394a90a44fb/eucimmhydrface.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Eucerin Face Immersive Hydration Daily Lotion",
+ "inactive_section": "Inactive ingredients Water, Alcohol Denat., Glycerin, Neopentyl Glycol Diheptanoate, Dicaprylyl Carbonate, Hydroxypropyl Starch Phosphate, 1,2-Hexanediol, Behenyl Alcohol, Cetearyl Alcohol, Copernicia Cerifera (Carnauba) Wax, Glyceryl Stearate, Propylheptyl Caprylate, Tapioca Starch, Glycine Soja (Soybean) Germ Extract, Glycyrrhetinic Acid, Sodium Hyaluronate, Tocopherol, Sodium Stearoyl Glutamate, Phenoxyethanol, Silica Dimethyl Silylate, Disodium EDTA, Ethylhexylglycerin, Xanthan Gum.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fe0b3717-f472-3a61-e053-6394a90a44fb",
+  "name": "Eucerin Face Immersive Hydration Lotion",
+  "brand": "Beiersdorf Inc",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

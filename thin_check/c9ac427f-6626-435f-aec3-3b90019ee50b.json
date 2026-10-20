@@ -1,0 +1,21 @@
+{
+ "setid": "c9ac427f-6626-435f-aec3-3b90019ee50b",
+ "images": [
+  {
+   "name": "78L5 carton.jpg",
+   "file": "img/c9ac427f-6626-435f-aec3-3b90019ee50b/78L5_carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "inactive ingredients: water\\aqua\\eau [] methyl trimethicone [] butylene glycol [] glycerin [] trimethylsiloxysilicate [] peg-10 dimethicone [] octyldodecyl neopentanoate [] lauryl peg-9 polydimethylsiloxyethyl dimethicone [] betula alba (birch) bark extract [] saccharomyces lysate extract [] aloe barbadensis leaf water [] ethylhexylglycerin [] dimethicone [] trehalose [] sorbitol [] sodium hyaluronate [] menthol [] trihydroxystearin [] hydroxyapatite [] tocopheryl acetate [] lecithin [] triethoxycaprylylsilane [] laureth-7 [] magnesium aluminum silicate [] cetrimonium chloride [] pvp [] dimethicone/peg-10/15 crosspolymer [] stearic acid [] aluminum hydroxide [] silica [] sodium chloride [] xanthan gum [] dipropylene glycol [] disodium edta [] sodium citrate [] sodium dehydroacetate [] chlorphenesin [] phenoxyethanol [] [+/- mica [] titanium dioxide (ci 77891) [] zinc oxide (ci 77947) [] iron oxides (ci 77491, ci 77492, ci 77499)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c9ac427f-6626-435f-aec3-3b90019ee50b",
+  "name": "Moisture Surge Tinted Moisturizer SPF 15 Lotion",
+  "brand": "CLINIQUE LABORATORIES INC",
+  "n_inactive": 3,
+  "thin_reason": "no_printed_list"
+ }
+}

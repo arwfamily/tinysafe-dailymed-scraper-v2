@@ -1,0 +1,25 @@
+{
+ "setid": "cc37a6e8-3ce3-5eb4-e053-2995a90a217a",
+ "images": [
+  {
+   "name": "0-LBL (PDP)_Mineral Sunscreen.jpg",
+   "file": "img/cc37a6e8-3ce3-5eb4-e053-2995a90a217a/0-LBL__PDP__Mineral_Sunscreen.jpg"
+  },
+  {
+   "name": "0-LBL (back)_Mineral Sunscreen.jpg",
+   "file": "img/cc37a6e8-3ce3-5eb4-e053-2995a90a217a/0-LBL__back__Mineral_Sunscreen.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "INDIE LEE - MINERAL SUNSCREEN SPF 30 (81545-101)",
+ "inactive_section": "Water (aqua), Helianthus Annuus (Sunflower) Seed Oil, Caprylic/Capric Triglyceride, Squalane, Dicapryl Carbonate, Cetearyl Olivate, Sorbitan Olivate, Glycerin, Shea Butter Cetyl Esters, Sorbitan Sesquioleate, Polyhydroxystearic Acid, Diglycerin, Pinus Pinaster (Cluster Pine) Bark Extract, Punica Granatum (Pomegranate) Seed Oil, Phenethyl Alcohol, Pentylene Glycol, Propanediol, Aloe Barbadensis (Aloe Vera) Leaf Juice Powder, Panthenol, Xanthan Gum, Lauroyl Lysine",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "cc37a6e8-3ce3-5eb4-e053-2995a90a217a",
+  "name": "Mineral Sunscreen SPF 30 Lotion",
+  "brand": "Lee Indie & Co Inc",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

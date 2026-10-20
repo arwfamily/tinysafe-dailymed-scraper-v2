@@ -1,0 +1,21 @@
+{
+ "setid": "bd64eb4d-4318-9d87-e053-2a95a90a7503",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/bd64eb4d-4318-9d87-e053-2a95a90a7503/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "water, dpropylene glycol, butylene glycol, etc",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bd64eb4d-4318-9d87-e053-2a95a90a7503",
+  "name": "Tcs Weightless Blend Everyday Primer Cream",
+  "brand": "Beyond Cosmetics co. , Ltd",
+  "n_inactive": 3,
+  "thin_reason": "label_prints_too_little"
+ }
+}

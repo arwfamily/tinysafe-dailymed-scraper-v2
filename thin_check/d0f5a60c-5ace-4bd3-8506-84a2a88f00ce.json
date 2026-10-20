@@ -1,0 +1,21 @@
+{
+ "setid": "d0f5a60c-5ace-4bd3-8506-84a2a88f00ce",
+ "images": [
+  {
+   "name": "carton.jpg",
+   "file": "img/d0f5a60c-5ace-4bd3-8506-84a2a88f00ce/carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "The Cellin EOP B.B Cream",
+ "inactive_section": "Water, Cyclopentasiloxane, Glycerin, Cyclomethicone, Dipropylene Glycol, Peg-10 Dimethicone, Talc, Arbutin, Hexyldecyl Myristoyl Methylaminopropionate, Isopropyl Isostearate, Dipentaerythrityl Hexahydroxystearate/Hexastearate/Hexarosinate, Disteardimonium Hectorite, Magnesium Sulfate, Iron Oxides(CI 77492), Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, C12-14 Pareth-3, Portulaca Oleracea Extract, Silica, Dimethicone/Vinyl Dimethicone crosspolymer, Phenoxyethanol, Methicone, Iron Oxides(CI 77499), Palmitic Acid, Iron Oxides(CI 77491), Aluminum Hydroxide, Dimethicone, Aluminum Stearate, Ethylhexylglycerin, Fragrance, Tocopheryl Acetate, Sodium Hyaluronate, Human Adipocyte Conditioned Media Extract, Adenosine, Madecassoside, Niacinamide",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d0f5a60c-5ace-4bd3-8506-84a2a88f00ce",
+  "name": "The Cellin Eop B.b Cream Emulsion",
+  "brand": "Cellinbio Co Ltd",
+  "n_inactive": 35,
+  "thin_reason": null
+ }
+}

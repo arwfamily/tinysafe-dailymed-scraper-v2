@@ -1,0 +1,21 @@
+{
+ "setid": "f4bdf20c-b6bc-55f1-e053-2995a90ac308",
+ "images": [
+  {
+   "name": "Melan RX Label.jpg",
+   "file": "img/f4bdf20c-b6bc-55f1-e053-2995a90ac308/Melan_RX_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Melan RX",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f4bdf20c-b6bc-55f1-e053-2995a90ac308",
+  "name": "Melan Rx Lotion",
+  "brand": "Melan RX",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

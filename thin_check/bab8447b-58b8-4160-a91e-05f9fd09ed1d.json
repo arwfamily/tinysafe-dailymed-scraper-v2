@@ -1,0 +1,25 @@
+{
+ "setid": "bab8447b-58b8-4160-a91e-05f9fd09ed1d",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/bab8447b-58b8-4160-a91e-05f9fd09ed1d/image-01.jpg"
+  },
+  {
+   "name": "image-02.jpg",
+   "file": "img/bab8447b-58b8-4160-a91e-05f9fd09ed1d/image-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "ozokerite, squalane, ethylhexyl palmitate, petrolatum, myristyl myristate, myristyl lactate, flavor, cetyl alcohol, myristyl laurate, myristyl alcohol, BHT, menthol, tocopheryl acetate [vitamin E]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bab8447b-58b8-4160-a91e-05f9fd09ed1d",
+  "name": "Softlips Cherry Cordial, Maple Butter, Frosted Berry Stick",
+  "brand": "The Mentholatum Company",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

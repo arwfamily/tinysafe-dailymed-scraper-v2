@@ -1,0 +1,25 @@
+{
+ "setid": "64b163dd-8a86-483f-8dab-80fa8740b12f",
+ "images": [
+  {
+   "name": "Inner Label.jpg",
+   "file": "img/64b163dd-8a86-483f-8dab-80fa8740b12f/Inner_Label.jpg"
+  },
+  {
+   "name": "Outer Label.jpg",
+   "file": "img/64b163dd-8a86-483f-8dab-80fa8740b12f/Outer_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "bareMinerals Original Mineral Veil Protecting Loose Setting Powder SPF 25",
+ "inactive_section": "Silica, Zea Mays (Corn) Starch, Corn Starch Modified, Zinc Stearate, Magnesium Stearate May Contain: Iron Oxides.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "64b163dd-8a86-483f-8dab-80fa8740b12f",
+  "name": "Bareminerals Mineral Veil Powder Bareminerals Tinted Mineral Veil Powder",
+  "brand": "Orveon Global US LLC",
+  "n_inactive": 6,
+  "thin_reason": "short_list"
+ }
+}

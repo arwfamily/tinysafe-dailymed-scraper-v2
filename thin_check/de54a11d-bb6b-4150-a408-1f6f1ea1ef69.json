@@ -1,0 +1,25 @@
+{
+ "setid": "de54a11d-bb6b-4150-a408-1f6f1ea1ef69",
+ "images": [
+  {
+   "name": "Label-1.jpg",
+   "file": "img/de54a11d-bb6b-4150-a408-1f6f1ea1ef69/Label-1.jpg"
+  },
+  {
+   "name": "Label-2.jpg",
+   "file": "img/de54a11d-bb6b-4150-a408-1f6f1ea1ef69/Label-2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "RAIN OR SHINE",
+ "inactive_section": "Water, Pentylene Glycol, Methylpropanediol, Caprylyl Methicone, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Isononyl Isononanoate, Ethylhexyl Triazone, Lauryl Methacrylate/Glycol Dimethacrylate Crosspolymer, Cyclopentasiloxane, Phenoxyethanol, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Isohexadecane, Aluminium Hydroxide, Stearic Acid, Dimethicone/Vinyl Dimethicone Crosspolymer, Tocopheryl Acetate (Vitamin E), Sorbitan Isostearate, Ammoniumacryloyldimethyl Taurate/VP Copolymer, Allantoin, Polysorbate 80, Butylene Glycol, Sorbitan Oleate, BHT Xanthan Gum, Biosaccharide Gum-4, Sodium Hyaluronate, Moringa Seed Oil, Ethylhexylglycerin, Green Tea Extract, Licorice Root Extract, Panax Ginseng Root Extract, Fragrance",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "de54a11d-bb6b-4150-a408-1f6f1ea1ef69",
+  "name": "Rain Or Shine Cream",
+  "brand": "Jaxon Lane, Inc.",
+  "n_inactive": 36,
+  "thin_reason": null
+ }
+}

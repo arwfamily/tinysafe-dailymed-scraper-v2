@@ -1,0 +1,29 @@
+{
+ "setid": "66e434c8-fb6f-4087-815d-dd6fae0b1bdc",
+ "images": [
+  {
+   "name": "airlight pp_drug facts.jpg",
+   "file": "img/66e434c8-fb6f-4087-815d-dd6fae0b1bdc/airlight_pp_drug_facts.jpg"
+  },
+  {
+   "name": "airlight_product.jpg",
+   "file": "img/66e434c8-fb6f-4087-815d-dd6fae0b1bdc/airlight_product.jpg"
+  },
+  {
+   "name": "baselabel_sand.jpg",
+   "file": "img/66e434c8-fb6f-4087-815d-dd6fae0b1bdc/baselabel_sand.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Active Ingredients",
+ "inactive_section": "Talc, Dimethicone, Polymethylsilsequioxane, Dimethicone/Vinyl Dimethicone Crosspolymer, Zinc Stearate, Silica, Phenyl Trimthicone, Synthetic Fluorphlogopite, Caprylyl Methicone, Caprylyl Glycol, Methicone, Zea Mays (Corn) sTarch, Phenoxyethanol, Hyxylene Glycol, [May contain: Iron Oxides, Mica]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "66e434c8-fb6f-4087-815d-dd6fae0b1bdc",
+  "name": "Ck One Airlight Pressed Powder SPF 15 Sand 300 Powder",
+  "brand": "Coty US LLC",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "2984a014-a56f-753b-e063-6294a90a13f5",
+ "images": [
+  {
+   "name": "Inner Package5.jpg",
+   "file": "img/2984a014-a56f-753b-e063-6294a90a13f5/Inner_Package5.jpg"
+  },
+  {
+   "name": "Outer Package5.jpg",
+   "file": "img/2984a014-a56f-753b-e063-6294a90a13f5/Outer_Package5.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Ulta Beauty Tinted Moisturizer Cream Spf 24 Tan",
+ "inactive_section": "water, glycerin, butylene glycol, triisostearyl citrate, titanium dioxide, pentylene glycol, polyglycerin-4, cetearyl olivate, candelilla/jojoba/rice bran polyglyceryl-3 esters, glyceryl stearate, phenoxyethanol, sorbitan olivate, potassium cetyl phosphate, cetearyl alcohol, sodium stearoyl latylate, oleyl alcohol, carbomer, olea europaea (olive) fruit oil, tromethamine, iron oxides, acacia senegal gum, ethylhexylglycerin, galactoarabinan, xanthan gum, betaine, citric acid, disodium edta, potassium sorbate, tremella fuciformis sporocarp extract",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2984a014-a56f-753b-e063-6294a90a13f5",
+  "name": "Ulta Beauty Tinted Moisturizer Cream SPF 24 Tan Cream",
+  "brand": "Cosmax Usa, Corporation",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "dd2fa6a2-2ba8-4333-e053-2a95a90a9790",
+ "images": [
+  {
+   "name": "Sunscreen Face and Body Lotion Carton v2.jpg",
+   "file": "img/dd2fa6a2-2ba8-4333-e053-2a95a90a9790/Sunscreen_Face_and_Body_Lotion_Carton_v2.jpg"
+  },
+  {
+   "name": "Sunscreen Face and Body Lotion Tube v2.jpg",
+   "file": "img/dd2fa6a2-2ba8-4333-e053-2a95a90a9790/Sunscreen_Face_and_Body_Lotion_Tube_v2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "doTERRA Sun Face and Body Mineral Sunscreen Lotion Broad Spectrum SPF 30",
+ "inactive_section": "Inactive ingredients Water (Aqua), Isoamyl Laurate, Persea gratissima (Avocado) Oil, Calcium Sodium Borosilicate, Butyloctyl Salicylate, Polyglyceryl-6 Polyricinoleate, Lauryl Laurate, C18-21 Alkane, Methyl Dihydroabietate, Propanediol, Polyglyceryl-2 Isostearate, Cetyl Alcohol, Sodium Chloride, Silica Silylate, Daucus carota sativa (Carrot) Seed Oil, Boswellia carterii (Frankincense) Oil, Helichrysum italicum Flower/Leaf/Stem Oil, Disteardimonium Hectorite, Astrocaryum tucuma Seed Butter, Rubus idaeus (Raspberry) Seed Oil, Xanthan Gum, Helianthus annuus (Sunflower) Seed Oil, Cocos nucifera (Coconut) Fruit Extract, Polyhydroxystearic Acid, Sodium Gluconate, Caprylhydroxamic Acid, Tocopherol, Phytosterols, Michelia alba (Magnolia) Leaf Oil, Squalene, Cymbopogon flexuosus (Lemongrass) Oil, Cananga odorata (Ylang Ylang) Flower Oil, Aloe barbadensis Leaf Juice, Michelia alba (Magnolia) Flower Oil, Citrus nobilis (Mandarin Orange) Peel Oil",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "dd2fa6a2-2ba8-4333-e053-2a95a90a9790",
+  "name": "Doterra Sun Lotion",
+  "brand": "doTERRA International, LLC",
+  "n_inactive": 40,
+  "thin_reason": null
+ }
+}

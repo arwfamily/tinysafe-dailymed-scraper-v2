@@ -1,0 +1,21 @@
+{
+ "setid": "4d5d1e79-7b3e-41b5-ae6b-a3b0265702ca",
+ "images": [
+  {
+   "name": "LRPAnthTM50.jpg",
+   "file": "img/4d5d1e79-7b3e-41b5-ae6b-a3b0265702ca/LRPAnthTM50.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "water, isododecane, C12-15 alkyl benzoate, dimethicone, undecane, triethylhexanoin, isohexadecane, styrene/acrylates copolymer, nylon-12, caprylyl methicone, butyloctyl salicylate, phenethyl benzoate, silica, tridecane, dicaprylyl carbonate, dicaprylyl ether, talc, dimethicone/PEG-10/15 crosspolymer, aluminum stearate, pentylene glycol, PEG-9 polydimethylsiloxyethyl dimethcone, iron oxides, alumina, polyhydroxystearic acid, phenoxyethanol, magnesium sulfate, propylene glycol, caprylyl glycol, aluminum hydroxide, PEG-8 laurate, stearic acid, disteardimonium hectorite, diethylhexyl syringlidenemalonate, tocopherol, propylene carbonate, cassia alata leaf extract, maltodextrin, benzoic acid, disodium stearoyl glutamate, PEG-9",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4d5d1e79-7b3e-41b5-ae6b-a3b0265702ca",
+  "name": "La Roche Posay Laboratoire Dermatologique Anthelios 50 Tinted Mineral Face Broad Spectrum SPF 50 Sunscreen Lotion",
+  "brand": "Cosmetique Active Production",
+  "n_inactive": 42,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "eb68c3ab-7835-1a1c-e053-2995a90a0d66",
+ "images": [
+  {
+   "name": "re_200ml_tub_serum hydro-equilibrant.jpg",
+   "file": "img/eb68c3ab-7835-1a1c-e053-2995a90a0d66/re_200ml_tub_serum_hydro-equilibrant.jpg"
+  },
+  {
+   "name": "tub 200 hydro equilibrant back.jpg",
+   "file": "img/eb68c3ab-7835-1a1c-e053-2995a90a0d66/tub_200_hydro_equilibrant_back.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "eb68c3ab-7835-1a1c-e053-2995a90a0d66",
+  "name": "Anubis Barcelona Regul Oil (cetearyl Ethylhexanoate, Propylene Glycol, Glyceryl Stearate Se) Cream",
+  "brand": "ANUBIS COSMETICS SL",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

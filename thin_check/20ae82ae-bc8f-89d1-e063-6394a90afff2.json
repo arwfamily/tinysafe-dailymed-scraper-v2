@@ -1,0 +1,49 @@
+{
+ "setid": "20ae82ae-bc8f-89d1-e063-6394a90afff2",
+ "images": [
+  {
+   "name": "active in 4.jpg",
+   "file": "img/20ae82ae-bc8f-89d1-e063-6394a90afff2/active_in_4.jpg"
+  },
+  {
+   "name": "dosage 4.jpg",
+   "file": "img/20ae82ae-bc8f-89d1-e063-6394a90afff2/dosage_4.jpg"
+  },
+  {
+   "name": "inactive 4.jpg",
+   "file": "img/20ae82ae-bc8f-89d1-e063-6394a90afff2/inactive_4.jpg"
+  },
+  {
+   "name": "indication 4.jpg",
+   "file": "img/20ae82ae-bc8f-89d1-e063-6394a90afff2/indication_4.jpg"
+  },
+  {
+   "name": "keep out of childrean reach 4.jpg",
+   "file": "img/20ae82ae-bc8f-89d1-e063-6394a90afff2/keep_out_of_childrean_reach_4.jpg"
+  },
+  {
+   "name": "purpose 4.jpg",
+   "file": "img/20ae82ae-bc8f-89d1-e063-6394a90afff2/purpose_4.jpg"
+  },
+  {
+   "name": "sun stick main display.jpg",
+   "file": "img/20ae82ae-bc8f-89d1-e063-6394a90afff2/sun_stick_main_display.jpg"
+  },
+  {
+   "name": "warning 4.jpg",
+   "file": "img/20ae82ae-bc8f-89d1-e063-6394a90afff2/warning_4.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "d'Alba Vegan Fresh Sun Stick",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "20ae82ae-bc8f-89d1-e063-6394a90afff2",
+  "name": "Dalba Vegan Fresh Sun Stick Cream",
+  "brand": "ADMTMAX LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

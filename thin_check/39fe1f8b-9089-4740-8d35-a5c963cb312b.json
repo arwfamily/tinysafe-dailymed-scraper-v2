@@ -1,0 +1,21 @@
+{
+ "setid": "39fe1f8b-9089-4740-8d35-a5c963cb312b",
+ "images": [
+  {
+   "name": "BUST.jpg",
+   "file": "img/39fe1f8b-9089-4740-8d35-a5c963cb312b/BUST.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "39fe1f8b-9089-4740-8d35-a5c963cb312b",
+  "name": "Perfect Bust Body Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

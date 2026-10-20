@@ -1,0 +1,41 @@
+{
+ "setid": "0b3ab551-cb66-cf86-e063-6394a90a7ab4",
+ "images": [
+  {
+   "name": "Directions.jpg",
+   "file": "img/0b3ab551-cb66-cf86-e063-6394a90a7ab4/Directions.jpg"
+  },
+  {
+   "name": "Drug Facts.jpg",
+   "file": "img/0b3ab551-cb66-cf86-e063-6394a90a7ab4/Drug_Facts.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/0b3ab551-cb66-cf86-e063-6394a90a7ab4/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/0b3ab551-cb66-cf86-e063-6394a90a7ab4/PDP.jpg"
+  },
+  {
+   "name": "Uses.jpg",
+   "file": "img/0b3ab551-cb66-cf86-e063-6394a90a7ab4/Uses.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/0b3ab551-cb66-cf86-e063-6394a90a7ab4/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Organys Open Formula Sheer",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0b3ab551-cb66-cf86-e063-6394a90a7ab4",
+  "name": "Organys Open Formula Sheer Lotion",
+  "brand": "Organys Beauty",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

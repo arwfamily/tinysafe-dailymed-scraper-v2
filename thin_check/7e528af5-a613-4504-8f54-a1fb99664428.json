@@ -1,0 +1,21 @@
+{
+ "setid": "7e528af5-a613-4504-8f54-a1fb99664428",
+ "images": [
+  {
+   "name": "VITAK.jpg",
+   "file": "img/7e528af5-a613-4504-8f54-a1fb99664428/VITAK.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7e528af5-a613-4504-8f54-a1fb99664428",
+  "name": "Vita K Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

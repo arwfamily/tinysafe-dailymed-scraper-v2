@@ -1,0 +1,21 @@
+{
+ "setid": "9f0661f9-b4e0-0f1f-e053-2995a90abf2d",
+ "images": [
+  {
+   "name": "Label2.jpg",
+   "file": "img/9f0661f9-b4e0-0f1f-e053-2995a90abf2d/Label2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Riptide Sunscreen Tinted",
+ "inactive_section": "*Cera Alba (Beeswax), *Cocos Nucifera (Coconut) Oil, *Daucus Carota (Carrot) Seed Oil, *Theobroma Cacao (Cacao) Powder, *Vitis Vinifera (Grape) Seed Oil, *Rubus Idaeus (Red Raspberry) Seed Oil, Tocopherol (Vitamin E), *Vitellaria Paradoxa (Shea) Butter. * = Organic",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9f0661f9-b4e0-0f1f-e053-2995a90abf2d",
+  "name": "Riptide Sunscreen Tinted Paste",
+  "brand": "Pacific Beach Organics Co.",
+  "n_inactive": 9,
+  "thin_reason": null
+ }
+}

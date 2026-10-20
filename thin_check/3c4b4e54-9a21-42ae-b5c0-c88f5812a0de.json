@@ -1,0 +1,21 @@
+{
+ "setid": "3c4b4e54-9a21-42ae-b5c0-c88f5812a0de",
+ "images": [
+  {
+   "name": "9W07 CARTON_Page_1.jpg",
+   "file": "img/3c4b4e54-9a21-42ae-b5c0-c88f5812a0de/9W07_CARTON_Page_1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3c4b4e54-9a21-42ae-b5c0-c88f5812a0de",
+  "name": "Double Wear Light Liquid",
+  "brand": "ESTEE LAUDER INC.",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "aa998a26-e776-326c-e053-2995a90ab55a",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/aa998a26-e776-326c-e053-2995a90ab55a/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "MY Corp - Beklyn Absolute Purifying Hand Sanitizing Wipes",
+ "inactive_section": "Foeniculum Vulgare Fruit Extract, Fragrance - Lemon, Laminaria Japonica Extract, Maltitol, PEG 60, Pinus Densiflora Extract, Polygonum Tinctoric Leaf Extract, Sorbitol, Water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "aa998a26-e776-326c-e053-2995a90ab55a",
+  "name": "Beklyn Absolute Purifying Hand Sanitizing Wipes Cloth",
+  "brand": "MY Corp.,Ltd",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "d189a85e-9537-5d8b-e053-2a95a90ac409",
+ "images": [
+  {
+   "name": "Primary Package..jpg",
+   "file": "img/d189a85e-9537-5d8b-e053-2a95a90ac409/Primary_Package..jpg"
+  },
+  {
+   "name": "Secondary Package..jpg",
+   "file": "img/d189a85e-9537-5d8b-e053-2a95a90ac409/Secondary_Package..jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "276",
+ "title": "Photoblock Plus",
+ "inactive_section": "Aqua, Glycerin, Isopropyl Myristate, Cetearyl Alcohol, Ceteareth-22, Glyceryl Stearate, Disodium Phosphate, Citric Acid, Methylparaben, Propylparaben and BHA.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d189a85e-9537-5d8b-e053-2a95a90ac409",
+  "name": "Photoblock Plus Cream",
+  "brand": "Pella Pharmaceuticals Co. Ltd",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "607fd485-f1c5-469c-a15b-9c0896114b1d",
+ "images": [
+  {
+   "name": "Tinted_Moisturizer.jpg",
+   "file": "img/607fd485-f1c5-469c-a15b-9c0896114b1d/Tinted_Moisturizer.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Tinted Moisturizer SPF 20 CONSUMER LABELING",
+ "inactive_section": "Inactive ingredients: Aqua/Water/Eau, Caprylic/Capric Triglyceride, Oleyl Oleate, Polyglyceryl-2 Dipolyhydroxystearate, Pentaerythrityl Tetraisostearate, Butylene Glycol, Cyclopentasiloxane, PEG/PPG-20/15 Dimethicone, Triethoxycaprylylsilane, Sodium Lauryl Glucose Carboxylate, Lauryl Glucoside, Glycerin, Xanthan gum, Magnesium Aluminum Silicate, Acai Fruit Oil, Citric Acid, Isononyl Isononanoate, Isopropyl Titanium Triisostearate, Synthetic Wax, Caprylyl Glycol, Phenoxyethanol, Sorbic Acid, Iron oxides (CI 77491, 77492).",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "607fd485-f1c5-469c-a15b-9c0896114b1d",
+  "name": "Tinted Moisturizer SPF 20 Cream",
+  "brand": "Kamins Dermatologics Inc.",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

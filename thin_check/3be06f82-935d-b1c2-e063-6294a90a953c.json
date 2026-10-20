@@ -1,0 +1,29 @@
+{
+ "setid": "3be06f82-935d-b1c2-e063-6294a90a953c",
+ "images": [
+  {
+   "name": "ProSil SPF 17g.jpg",
+   "file": "img/3be06f82-935d-b1c2-e063-6294a90a953c/ProSil_SPF_17g.jpg"
+  },
+  {
+   "name": "ProSil SPF 1g Sample.jpg",
+   "file": "img/3be06f82-935d-b1c2-e063-6294a90a953c/ProSil_SPF_1g_Sample.jpg"
+  },
+  {
+   "name": "ProSil SPF 4.25g.jpg",
+   "file": "img/3be06f82-935d-b1c2-e063-6294a90a953c/ProSil_SPF_4.25g.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "ProSil SPF",
+ "inactive_section": "Silicone",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3be06f82-935d-b1c2-e063-6294a90a953c",
+  "name": "Pro-sil SPF (silicone Stick With Spf) Stick",
+  "brand": "Biodermis, LLC",
+  "n_inactive": 2,
+  "thin_reason": "short_list"
+ }
+}

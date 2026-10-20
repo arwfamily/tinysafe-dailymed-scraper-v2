@@ -1,0 +1,21 @@
+{
+ "setid": "ad8aafdf-f3bc-497f-9792-20c2911c12d0",
+ "images": [
+  {
+   "name": "UV Daily Tinted UC 02269B.jpg",
+   "file": "img/ad8aafdf-f3bc-497f-9792-20c2911c12d0/UV_Daily_Tinted_UC_02269B.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "UV Daily Tinted (B06806)",
+ "inactive_section": "water, petrolatum, isopropyl palmitate, dimethicone, cetearyl alcohol, oleth-3 phosphate, phenoxyethanol, hydroxyethyl acrylate/sodium acryloyldimethyl taurate copolymer, polyisobutene, cetearyl glucoside, polyether-1, butylene glycol, PEG-7 trimethylolpropane coconut ether, sodium hyaluronate, iodopropynyl butylcarbamate, citric acid, tocopheryl acetate, triethoxycaprylylsilane, iron oxides",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ad8aafdf-f3bc-497f-9792-20c2911c12d0",
+  "name": "Eltamd Uv Daily Tinted Lotion",
+  "brand": "CP Skin Health Group, Inc",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

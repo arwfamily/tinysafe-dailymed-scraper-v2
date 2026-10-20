@@ -1,0 +1,21 @@
+{
+ "setid": "fb833158-d0d8-de7f-e053-6294a90adc5a",
+ "images": [
+  {
+   "name": "YAY Unit Carton Label.jpg",
+   "file": "img/fb833158-d0d8-de7f-e053-6294a90adc5a/YAY_Unit_Carton_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "YAY NOVELTY ALL-IN-ONE",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fb833158-d0d8-de7f-e053-6294a90adc5a",
+  "name": "Yay Novelty All-in-one Lotion",
+  "brand": "YAY Novelty",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

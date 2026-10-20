@@ -1,0 +1,21 @@
+{
+ "setid": "0948a053-5059-4205-a649-6215b2051f05",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/0948a053-5059-4205-a649-6215b2051f05/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Butylene Glycol, Etc",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0948a053-5059-4205-a649-6215b2051f05",
+  "name": "Solco Platino Plus Uv Sun Cream",
+  "brand": "SOLCO BIOMEDICAL CO., LTD.",
+  "n_inactive": 2,
+  "thin_reason": "label_prints_too_little"
+ }
+}

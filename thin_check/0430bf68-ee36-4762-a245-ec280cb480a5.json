@@ -1,0 +1,29 @@
+{
+ "setid": "0430bf68-ee36-4762-a245-ec280cb480a5",
+ "images": [
+  {
+   "name": "CALM IT down_ART_Box_BK.jpg",
+   "file": "img/0430bf68-ee36-4762-a245-ec280cb480a5/CALM_IT_down_ART_Box_BK.jpg"
+  },
+  {
+   "name": "CALM IT down_ART_Box_FR.jpg",
+   "file": "img/0430bf68-ee36-4762-a245-ec280cb480a5/CALM_IT_down_ART_Box_FR.jpg"
+  },
+  {
+   "name": "CALM IT down_ART_Box_Sleeve.jpg",
+   "file": "img/0430bf68-ee36-4762-a245-ec280cb480a5/CALM_IT_down_ART_Box_Sleeve.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENTS: CYCLOPENTASILOXANE, CYCLOMETHICONE, DIMETHICONE CROSSPOLYMER, DIMETHICONE/VINYL DIMETHICONE CROSSPOLYMER, METHYL METHACRYLATE/GLYCOL DIMETHACRYLATE CROSSPOLYMER, SORBITAN ISOSTEARATE, TRIBEHENIN, CALCIUM BEHENATE, MELANIN, DIMETHICONOL, ALUMINA, PEG-10 DIMETHICONE, METHICONE, IRON OXIDES, CHOLECALCIFEROL, LYCOPENE, GLYCERIN, SUCROSE PALMITATE, LECITHIN.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0430bf68-ee36-4762-a245-ec280cb480a5",
+  "name": "Calm It Down Kit Kit",
+  "brand": "mybody",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

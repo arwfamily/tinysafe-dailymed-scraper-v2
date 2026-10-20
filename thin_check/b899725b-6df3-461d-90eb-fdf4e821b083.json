@@ -1,0 +1,29 @@
+{
+ "setid": "b899725b-6df3-461d-90eb-fdf4e821b083",
+ "images": [
+  {
+   "name": "magix DFB1.jpg",
+   "file": "img/b899725b-6df3-461d-90eb-fdf4e821b083/magix_DFB1.jpg"
+  },
+  {
+   "name": "magix DFB2.jpg",
+   "file": "img/b899725b-6df3-461d-90eb-fdf4e821b083/magix_DFB2.jpg"
+  },
+  {
+   "name": "magix PDP.jpg",
+   "file": "img/b899725b-6df3-461d-90eb-fdf4e821b083/magix_PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "Inactive ingredients: Dimethicone, Cyclopentasiloxane, Calcium Sodium Borosilicate, Cellulose, Cetearyl Dimethicone Crosspolymer, Alumina, Acrylates/Dimethicone Copolymer, Silica, Nylon-12, HDI/Trimethylol Hexyllactone Crosspolymer, C30-45 Alkyl Methicone, C30-45 Olefin, PEG/PPG-20/23 Dimethicone, Lauryl PEG-9 Polydimethylsiloxyethyl Dimethicone, Caprylyl Glycol, Dimethicone Crosspolymer, Polyethylene, Parfum/Fragrance, Boron Nitride.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b899725b-6df3-461d-90eb-fdf4e821b083",
+  "name": "Magix Face Perfector Lotion",
+  "brand": "Avon Products, Inc",
+  "n_inactive": 19,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "setid": "d9d280be-5101-4265-b4fc-346b196fa07a",
+ "images": [
+  {
+   "name": "DFB1.jpg",
+   "file": "img/d9d280be-5101-4265-b4fc-346b196fa07a/DFB1.jpg"
+  },
+  {
+   "name": "DFB2.jpg",
+   "file": "img/d9d280be-5101-4265-b4fc-346b196fa07a/DFB2.jpg"
+  },
+  {
+   "name": "DFB3.jpg",
+   "file": "img/d9d280be-5101-4265-b4fc-346b196fa07a/DFB3.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/d9d280be-5101-4265-b4fc-346b196fa07a/PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "Inactive ingredients Water/Eau, Glycerin, Cyclopentasiloxane, Butylene Glycol, Caprylic/Capric Triglyceride, Thiodipropionic Acid, Simmondsia Chinensis (Jojoba) Seed Oil, Punica Granatum Fruit Juice, Olea Europaea (Olive) Leaf Extract, Saccharomyces Lysate Extract, Amaranthus Caudatus Seed Extract, Glycine Soja (Soybean) Oil, Tocopheryl Acetate, Cetyl Alcohol, PEG-40 Stearate, Steareth-2, Dimethicone Crosspolymer, Lecithin, Dimethicone, Hydrogenated Polydecene, Trimethylsiloxysilicate, Ethoxydiglycol, Xanthan Gum, Silica, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Stearyl Alcohol, Cetearyl Alcohol, Carbomer, Parfum/Fragrance, Ethylene/Methacrylate Copolymer, Isopropyl Titanium Triisostearate, Phosphoric Acid, Sodium Hydroxide, Disodium EDTA, Phenoxyethanol, Caprylyl Glycol, Red 33/CI 17200, Blue 1/CI 42090.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d9d280be-5101-4265-b4fc-346b196fa07a",
+  "name": "Solutions Neck And Chest Perfector Cream",
+  "brand": "Avon Products, Inc.",
+  "n_inactive": 38,
+  "thin_reason": null
+ }
+}

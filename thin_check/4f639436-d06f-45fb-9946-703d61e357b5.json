@@ -1,0 +1,25 @@
+{
+ "setid": "4f639436-d06f-45fb-9946-703d61e357b5",
+ "images": [
+  {
+   "name": "Faceneck2ml.jpg",
+   "file": "img/4f639436-d06f-45fb-9946-703d61e357b5/Faceneck2ml.jpg"
+  },
+  {
+   "name": "Faceneck50ml.jpg",
+   "file": "img/4f639436-d06f-45fb-9946-703d61e357b5/Faceneck50ml.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "DRUG FACTS",
+ "inactive_section": "Water (Aqua), Cyclopentasiloxane, Butylene Glycol, Glycerin, Glyceryl Stearate, PEG-100 Stearate, Cyclohexasiloxane, Polyglyceryl-3 Polydimethylsiloxyethyl Dimethicone, Sorbitan Stearate, Dimethicone, Cetyl Alcohol, Caprylic/Capric Triglyceride, Organic Butyrospermum Parkii (Shea) Butter, Polyacrylamide, C13-14 Isoparaffin, Triethoxysilylethyl Polydimethylsiloxyethyl Hexyl Dimethicone, Sodium Hyaluronate, Dipotassium Glycyrrhizate, Tocopheryl Linoleate/Oleate, Physalis Angulata Extract, Teprenone, Leontopodium Alpinum Meristem Cell Culture, Polygonum Aviculare Extract, Imperata Cylindrica Root Extract, Arabidopsis Thaliana Extract, Plankton Extract, Micrococcus Lysate, Organic Camellia Sinensis Leaf Extract, Phoenix Dactylifera (Date) Fruit Extract, Sidium Lactete, Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7, Organic Aloe Barbadensis Leaf Juice, Lecithin, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Polysorbate-20, Phenoxyethanol, Caprylyl Glycol, Ethylhexylglycerin, Hexylene Glycol, Laureth-7, Xanthan Gum, Carbomer, PEG-8, Tocopherol, Ascorbyl Palmitate, Ascorbic Acid, Citric Acid, Disodium EDTA.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4f639436-d06f-45fb-9946-703d61e357b5",
+  "name": "SPF 30 Mineral Sunscreen Face Neck Cream",
+  "brand": "Allure Labs Inc",
+  "n_inactive": 53,
+  "thin_reason": null
+ }
+}

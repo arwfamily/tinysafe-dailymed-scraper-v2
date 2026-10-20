@@ -1,0 +1,29 @@
+{
+ "setid": "52e28bdf-8f46-299e-e063-6394a90adff8",
+ "images": [
+  {
+   "name": "63354-456-34_Label.jpg",
+   "file": "img/52e28bdf-8f46-299e-e063-6394a90adff8/63354-456-34_Label.jpg"
+  },
+  {
+   "name": "63354-456-37_Label.jpg",
+   "file": "img/52e28bdf-8f46-299e-e063-6394a90adff8/63354-456-37_Label.jpg"
+  },
+  {
+   "name": "63354-456-38_Label.jpg",
+   "file": "img/52e28bdf-8f46-299e-e063-6394a90adff8/63354-456-38_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Alcohol Denat., Isobutane, Caprylic/Capric Triglyceride, Isododecane, VA/Butyl Maleate/Isobornyl Acrylate Copolymer, Caprylyl Glycol, Dimethicone, Fragrance, Tocopheryl Acetate, Mineral Oil, Water, Panthenol, Aloe Barbadensis Leaf Extract.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "52e28bdf-8f46-299e-e063-6394a90adff8",
+  "name": "Banana Boat Aerosol, Spray",
+  "brand": "Edgewell Personal Care Brands LLC",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

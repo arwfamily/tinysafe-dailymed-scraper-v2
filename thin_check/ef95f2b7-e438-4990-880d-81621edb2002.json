@@ -1,0 +1,21 @@
+{
+ "setid": "ef95f2b7-e438-4990-880d-81621edb2002",
+ "images": [
+  {
+   "name": "biocorneum-01.jpg",
+   "file": "img/ef95f2b7-e438-4990-880d-81621edb2002/biocorneum-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Biocorneum®",
+ "inactive_section": "Cyclopentasiloxane, Dimethicone, Dimethicone Crosspolymer, Silicon Dioxide",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ef95f2b7-e438-4990-880d-81621edb2002",
+  "name": "Biocorneum Gel",
+  "brand": "Biodermis LLC",
+  "n_inactive": 4,
+  "thin_reason": "short_list"
+ }
+}

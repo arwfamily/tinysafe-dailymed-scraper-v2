@@ -1,0 +1,25 @@
+{
+ "setid": "042817f9-675e-056a-e063-6394a90a2d97",
+ "images": [
+  {
+   "name": "Inner Label.jpg",
+   "file": "img/042817f9-675e-056a-e063-6394a90a2d97/Inner_Label.jpg"
+  },
+  {
+   "name": "Outer Label.jpg",
+   "file": "img/042817f9-675e-056a-e063-6394a90a2d97/Outer_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Farmasi BB Cream",
+ "inactive_section": "Water/Aqua, C 12-15 Alkyl Benzoate, Peg-100 Stearate, Glyceryl Stearate, Cetearyl Alcohol, Glycerin, Silica, Cyclopentasiloxane, Ceteareth-20, Dicaprylyl Carbonate, Ethylhexyl Palmitate, Phenoxyethanol, Dimethicone, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ethylhexylglycerin, Tocopheryl Acetate, Trehalose, Urea, Serine, Pentylene Glycol, Xanthan Gum, Algin, Caprylyl Glycol, Sodium Hyaluronate, Pullulan, Disodium EDTA, Triethanolamine.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "042817f9-675e-056a-e063-6394a90a2d97",
+  "name": "Farmasi Bb Cream",
+  "brand": "TAN ALIZE KOZMETIK VE TEMIZLIK URUNLERI SANAYI VE TICARET ANONIM SIRKETI",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

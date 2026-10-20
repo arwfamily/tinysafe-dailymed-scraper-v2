@@ -1,0 +1,21 @@
+{
+ "setid": "75fcef12-bc33-44a7-acda-77d5d7bca2bc",
+ "images": [
+  {
+   "name": "Label.jpg",
+   "file": "img/75fcef12-bc33-44a7-acda-77d5d7bca2bc/Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "MELAN SPF-30 Broad Spectrum Lotion",
+ "inactive_section": "Aloe Barbadensis Leaf (Aloe Vera Gel) Juice, Ammonium Acryloyldimethyltaurate/VP Copolymer, Aqua (Deionized Water), Behenyl Alcohol Butyloctyl Salicylate, Caprylyl Glycol, Cetearyl Olivate, Cetyl Alcohol, Citrullus Lanatus (Watermelon) Extract, Citrus Aurantium Dulcis (Orange) Oil, Citrus Grandis (Grapefruit) Oil, Cocos Nucifera (Coconut) Oil, Diisopropyl Adipate, Dodecane, Ethylhexylglycerin, Eucalyptus Globulus Oil, Glycerin, Glyceryl Laurate, Glyceryl Undecylenate, Helianthus Annuus (Sunflower) Oil, 1-2 Hexanediol, Lauryl Lactate, Mentha Piperita (Peppermint) Oil, Ocimum Basilicum (Basil) Extract, Oryza Sativa (Rice) Bran Oil, dl-Panthenol, Pentylene Glycol, Phenoxyethanol, Polycrylene, Polysorbate-20, Potassium Cetyl Phosphate, Rosmarinus Officinalis (Rosemary) Extract, Sodium Hydroxide, Sorbitan Olivate, Tocopherol (Vitamin E), Xanthan Gum.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "75fcef12-bc33-44a7-acda-77d5d7bca2bc",
+  "name": "Melan Spf-30 Broad Spectrum Lotion",
+  "brand": "MELAN INC.",
+  "n_inactive": 40,
+  "thin_reason": null
+ }
+}

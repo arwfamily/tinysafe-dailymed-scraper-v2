@@ -1,0 +1,25 @@
+{
+ "setid": "76403f03-aee9-4c0b-b331-f79b6953118c",
+ "images": [
+  {
+   "name": "eucgback.jpg",
+   "file": "img/76403f03-aee9-4c0b-b331-f79b6953118c/eucgback.jpg"
+  },
+  {
+   "name": "eucgfacefront.jpg",
+   "file": "img/76403f03-aee9-4c0b-b331-f79b6953118c/eucgfacefront.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "10",
+ "title": "Eucerin Daily Protection Face",
+ "inactive_section": "Inactive Ingredients Water, Glycerin, C12-15 Alkyl Benzoate, Dimethicone, Cyclomethicone, Methylpropanediol, Cetearyl Alcohol, Cetyl Alcohol, Ceteareth-20, Phenoxyethanol, Glyceryl Stearate SE, Sodium Lactate, Lactic Acid, 1,2-Hexanediol, Hydrogenated Coco-Glycerides, VP/Hexadecene Copolymer, Xanthan Gum, PEG-40 Castor Oil, Sodium Hydroxide, Trisodium EDTA, Alumina, Sodium Cetearyl Sulfate, Triethoxycaprylylsilane, Simethicone",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "76403f03-aee9-4c0b-b331-f79b6953118c",
+  "name": "Eucerin Daily Protection Face Lotion",
+  "brand": "Beiersdorf Inc",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

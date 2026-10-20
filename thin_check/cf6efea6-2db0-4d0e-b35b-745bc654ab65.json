@@ -1,0 +1,21 @@
+{
+ "setid": "cf6efea6-2db0-4d0e-b35b-745bc654ab65",
+ "images": [
+  {
+   "name": "blistex-01.jpg",
+   "file": "img/cf6efea6-2db0-4d0e-b35b-745bc654ab65/blistex-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Blistex® Deep Renewal International",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "cf6efea6-2db0-4d0e-b35b-745bc654ab65",
+  "name": "Blistex Deep Renewal International Stick",
+  "brand": "Blistex Inc.",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

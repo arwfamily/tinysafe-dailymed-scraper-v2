@@ -1,0 +1,21 @@
+{
+ "setid": "4a586784-c0b4-4a3c-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "translate_LABEL.jpg",
+   "file": "img/4a586784-c0b4-4a3c-e054-00144ff8d46c/translate_LABEL.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Glycerin, Butylene Glycol, Etc",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4a586784-c0b4-4a3c-e054-00144ff8d46c",
+  "name": "Abalone Crystaldouble Ex Cc Cream",
+  "brand": "C&BCOSMETIC Co.,Ltd.",
+  "n_inactive": 3,
+  "thin_reason": "label_prints_too_little"
+ }
+}

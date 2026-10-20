@@ -1,0 +1,21 @@
+{
+ "setid": "8795b9a7-1938-4dd9-92ad-3c044feae1da",
+ "images": [
+  {
+   "name": "mm01.jpg",
+   "file": "img/8795b9a7-1938-4dd9-92ad-3c044feae1da/mm01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Meijer D49.000/D49AA Sunscreen Spray SPF 50",
+ "inactive_section": "alcohol denat., diethylhexyl 2,6-naphthalate, diisopropyl adipate, acrylates/octylacrylamide copolymer, butyloctyl salicylate, neopentyl glycol diheptanoate, fragrance, tocopheryl acetate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8795b9a7-1938-4dd9-92ad-3c044feae1da",
+  "name": "Avobenzone, Homosalate, Octisalate Spray",
+  "brand": "Meijer, Inc.",
+  "n_inactive": 9,
+  "thin_reason": null
+ }
+}

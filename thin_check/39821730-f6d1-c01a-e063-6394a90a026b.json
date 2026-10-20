@@ -1,0 +1,21 @@
+{
+ "setid": "39821730-f6d1-c01a-e063-6394a90a026b",
+ "images": [
+  {
+   "name": "char sf 202.jpg",
+   "file": "img/39821730-f6d1-c01a-e063-6394a90a026b/char_sf_202.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "39821730-f6d1-c01a-e063-6394a90a026b",
+  "name": "Advanced Formula Non-tinted Cream",
+  "brand": "CR KEEFE ENTERPRISES, INC.",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

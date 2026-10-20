@@ -1,0 +1,21 @@
+{
+ "setid": "bcbce2d2-765a-4aa2-8bc4-e09a6161b1ab",
+ "images": [
+  {
+   "name": "Antiaging200.jpg",
+   "file": "img/bcbce2d2-765a-4aa2-8bc4-e09a6161b1ab/Antiaging200.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bcbce2d2-765a-4aa2-8bc4-e09a6161b1ab",
+  "name": "Anti Aging Star Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

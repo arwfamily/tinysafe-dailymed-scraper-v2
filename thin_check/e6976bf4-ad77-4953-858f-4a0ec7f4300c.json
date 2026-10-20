@@ -1,0 +1,25 @@
+{
+ "setid": "e6976bf4-ad77-4953-858f-4a0ec7f4300c",
+ "images": [
+  {
+   "name": "mm01.jpg",
+   "file": "img/e6976bf4-ad77-4953-858f-4a0ec7f4300c/mm01.jpg"
+  },
+  {
+   "name": "mm02.jpg",
+   "file": "img/e6976bf4-ad77-4953-858f-4a0ec7f4300c/mm02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Studio Selection D40.000/D40AA Sport Sunscreen Lotion SPF 50",
+ "inactive_section": "water, diethylhexyl 2,6-naphthalate, butyloctyl salicylate, styrene/acrylates copolymer, aluminum starch octenylsuccinate, glycerin, polyester-7, silica, chlorphenesin, benzyl alcohol, arachidyl alcohol, acrylates/C10-30 alkyl acrylate crosspolymer, neopentyl glycol diheptanoate, behenyl alcohol, tocopherol, beeswax, arachidyl glucoside, potassium hydroxide, glyceryl stearate, PEG-100 stearate, disodium EDTA, sodium ascorbyl phosphate, fragrance, amyl cinnamal",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e6976bf4-ad77-4953-858f-4a0ec7f4300c",
+  "name": "Avobenzone, Homosalate, Octisalate Lotion",
+  "brand": "Old East Main Co.",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

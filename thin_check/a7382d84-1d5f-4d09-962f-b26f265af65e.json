@@ -1,0 +1,21 @@
+{
+ "setid": "a7382d84-1d5f-4d09-962f-b26f265af65e",
+ "images": [
+  {
+   "name": "NSPC0130 B Complex Liquescence.jpg",
+   "file": "img/a7382d84-1d5f-4d09-962f-b26f265af65e/NSPC0130_B_Complex_Liquescence.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "DRUG FACTS:",
+ "inactive_section": "Alcohol USP 20%, Purified Water USP.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a7382d84-1d5f-4d09-962f-b26f265af65e",
+  "name": "B Complex Liquescence (cholinum (choline), Inositol (vitamin B8), Folic Acid (vitamin B9), Pantothenic Acid (calcium Pantothenate, Vitamin B5), Thiaminum Hydrochloricum (vitamin B1), Heart (bovine), Hepar (bovine), Methylcobalamin (vitamin B12), Nicotinamidum (vitamin B3), Paba (para Aminobenzoic Acid Vitamin B10), Pyridoxinum Hydrochloricum (vitamin B6), Biotin (vitamin B7), Hordeum Vulgare, Riboflavinum (vitamin B2), Torula Cerevisiae) Liquid",
+  "brand": "Nutritional Specialties, Inc.",
+  "n_inactive": 2,
+  "thin_reason": "label_prints_too_little"
+ }
+}

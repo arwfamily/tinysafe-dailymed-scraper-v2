@@ -1,0 +1,21 @@
+{
+ "setid": "23d7eb2f-8e2d-4b27-83ba-8d5d60ac9200",
+ "images": [
+  {
+   "name": "Label2.jpg",
+   "file": "img/23d7eb2f-8e2d-4b27-83ba-8d5d60ac9200/Label2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sun Bum Tinted Sunscreen Face Lotion UVA/UVB Broad Spectrum SPF 30",
+ "inactive_section": "cyclopentasiloxane, isopropyl myristate, polyamide-5, stearalkonium hectorite, dimethicone crosspolymer, polysilicone-11, oryza sativa (rice) bran extract, rosemarinus officinalis (rosemary) leaf extract, helianthus annus (sunflower) extract, tocopherol, mica, iron oxides, propylene carbonate, synthetic wax, hydrogen dimethicone, isopropyl titanium triisostearate, aluminum hydroxide, silica silylate, octyldodecyl oleate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "23d7eb2f-8e2d-4b27-83ba-8d5d60ac9200",
+  "name": "Sun Bum Tinted Sunscreen Face Uva/uvb Broad Spectrum SPF 30 Lotion",
+  "brand": "Sun Bum LLC",
+  "n_inactive": 21,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "setid": "5c912acf-be18-c7f9-e063-6394a90a800b",
+ "images": [
+  {
+   "name": "Mineral Light Tone Bottle.jpg",
+   "file": "img/5c912acf-be18-c7f9-e063-6394a90a800b/Mineral_Light_Tone_Bottle.jpg"
+  },
+  {
+   "name": "Mineral Light Tone Carton.jpg",
+   "file": "img/5c912acf-be18-c7f9-e063-6394a90a800b/Mineral_Light_Tone_Carton.jpg"
+  },
+  {
+   "name": "Mineral Light Tone Directions.jpg",
+   "file": "img/5c912acf-be18-c7f9-e063-6394a90a800b/Mineral_Light_Tone_Directions.jpg"
+  },
+  {
+   "name": "Mineral Light Tone Inactives.jpg",
+   "file": "img/5c912acf-be18-c7f9-e063-6394a90a800b/Mineral_Light_Tone_Inactives.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Mineral SPF 30 Light Tone",
+ "inactive_section": "Inactives",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5c912acf-be18-c7f9-e063-6394a90a800b",
+  "name": "Biocorneum Silishield Mineral SPF 30 Light Tone Gel",
+  "brand": "Biodermis LLC",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

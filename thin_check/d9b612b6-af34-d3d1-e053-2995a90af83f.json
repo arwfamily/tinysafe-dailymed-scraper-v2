@@ -1,0 +1,21 @@
+{
+ "setid": "d9b612b6-af34-d3d1-e053-2995a90af83f",
+ "images": [
+  {
+   "name": "220120_KINLO_GOLDEN RAYS SUNSCREEN_LIGHT_RETAIL_CARTON_SC_v08_OL.jpg",
+   "file": "img/d9b612b6-af34-d3d1-e053-2995a90af83f/220120_KINLO_GOLDEN_RAYS_SUNSCREEN_LIGHT_RETAIL_CARTON_SC_v08_OL.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Golden Rays Sunscreen (Light Tinted)",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d9b612b6-af34-d3d1-e053-2995a90af83f",
+  "name": "Golden Rays Sunscreen (light Tinted) Lotion",
+  "brand": "A-Frame SunCo Inc",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

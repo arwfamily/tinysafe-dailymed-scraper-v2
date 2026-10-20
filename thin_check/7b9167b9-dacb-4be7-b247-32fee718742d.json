@@ -1,0 +1,21 @@
+{
+ "setid": "7b9167b9-dacb-4be7-b247-32fee718742d",
+ "images": [
+  {
+   "name": "afr0001.jpg",
+   "file": "img/7b9167b9-dacb-4be7-b247-32fee718742d/afr0001.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7b9167b9-dacb-4be7-b247-32fee718742d",
+  "name": "African Formula Skin Lightening (hydroquinone) Cream",
+  "brand": "International Beauty Exchange",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

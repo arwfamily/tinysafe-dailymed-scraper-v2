@@ -1,0 +1,21 @@
+{
+ "setid": "d9b57ab5-32c0-6f57-e053-2a95a90a206e",
+ "images": [
+  {
+   "name": "220120_KINLO_GOLDEN RAYS SUNSCREEN_MEDIUM_RETAIL_CARTON_SC_v08_OL.jpg",
+   "file": "img/d9b57ab5-32c0-6f57-e053-2a95a90a206e/220120_KINLO_GOLDEN_RAYS_SUNSCREEN_MEDIUM_RETAIL_CARTON_SC_v08_OL.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "KINLO Golden Rays Sunscreen (Medium Tinted)",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d9b57ab5-32c0-6f57-e053-2a95a90a206e",
+  "name": "Kinlo Golden Rays Sunscreen (medium Tinted) Lotion",
+  "brand": "A-Frame SunCo Inc",
+  "n_inactive": 19,
+  "thin_reason": null
+ }
+}

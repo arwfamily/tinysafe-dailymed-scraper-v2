@@ -1,0 +1,21 @@
+{
+ "setid": "7f146441-fef5-427a-9ca9-3456abd0606c",
+ "images": [
+  {
+   "name": "E1E8CARTON.jpg",
+   "file": "img/7f146441-fef5-427a-9ca9-3456abd0606c/E1E8CARTON.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7f146441-fef5-427a-9ca9-3456abd0606c",
+  "name": "Bobbi Brown Protective Face Lotion",
+  "brand": "Bobbi Brown Professional Cosmetics Inc.",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list"
+ }
+}

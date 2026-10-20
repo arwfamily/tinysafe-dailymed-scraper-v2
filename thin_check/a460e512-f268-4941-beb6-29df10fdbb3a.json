@@ -1,0 +1,21 @@
+{
+ "setid": "a460e512-f268-4941-beb6-29df10fdbb3a",
+ "images": [
+  {
+   "name": "mm01.jpg",
+   "file": "img/a460e512-f268-4941-beb6-29df10fdbb3a/mm01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "23",
+ "title": "Studio Selection 085.001/085AB Sport Sunscreen Spray",
+ "inactive_section": "alcohol denat., acrylates/octylacrylamide copolymer, stearoxytrimethylsilane, glycerin, triethanolamine, tocopherol, butyloctyl salicylate, fragrance",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a460e512-f268-4941-beb6-29df10fdbb3a",
+  "name": "Sport Spray",
+  "brand": "Old East Main Co.",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "b4174ada-bad6-4a9b-8e4a-2b51aab26e78",
+ "images": [
+  {
+   "name": "sample.jpg",
+   "file": "img/b4174ada-bad6-4a9b-8e4a-2b51aab26e78/sample.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sun Total Protector 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b4174ada-bad6-4a9b-8e4a-2b51aab26e78",
+  "name": "Total Protector 30 Cream",
+  "brand": "MD Formulation",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "b18dc7a1-a9e7-4f35-a557-d7062613c1e4",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/b18dc7a1-a9e7-4f35-a557-d7062613c1e4/label.jpg"
+  },
+  {
+   "name": "ucarton.jpg",
+   "file": "img/b18dc7a1-a9e7-4f35-a557-d7062613c1e4/ucarton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "SUN Total Protector Color 30 Medium Tint",
+ "inactive_section": "Inactive ingredients Purified Waler (Aqua), C 12-15 Alkyl Benzoate, Glyceryl Stearate, Glycerin,Steareth-2, Steareth-100, TricontanylPVP, PEG-100 Stearate, Tocopheryl Acetate, Allantoin, Dimethicone, Xanthan Gum, Cetyl Hydroxyethylcellulose, Disodium EDTA, Diazolidinyl Urea, Iodopropynl Butylcarbamate, Phenoxyethanol, Methylparaben, Propylparaben, Mica(CI 77019), Bismuth Oxychloride (CI 77163), Iron Oxides (CI 77489)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b18dc7a1-a9e7-4f35-a557-d7062613c1e4",
+  "name": "Total Protector Color 30 Medium Tint Cream",
+  "brand": "MD Formulation",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

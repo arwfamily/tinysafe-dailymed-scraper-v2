@@ -1,0 +1,25 @@
+{
+ "setid": "54ae05c8-a62c-4503-b49e-53d85d79b9ee",
+ "images": [
+  {
+   "name": "unb03-0000-01.jpg",
+   "file": "img/54ae05c8-a62c-4503-b49e-53d85d79b9ee/unb03-0000-01.jpg"
+  },
+  {
+   "name": "unb03-0000-02.jpg",
+   "file": "img/54ae05c8-a62c-4503-b49e-53d85d79b9ee/unb03-0000-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Water,Cyclopentasiloxane,Dimethicone, Butyloctyl Salicylate, PEG-10 Dimethicone, Pentylene Glycol, Cetearyl Alcohol, Styrene/Acrylates Copolymer, Butylene Glycol, Hexyl Laurate, Polysilicone-11, Tocopheryl Acetate, Boerhavia Diffusa Root Extract, Sodium PCA, Tetrahexyldecyl Ascorbate, PEG-60 Almond Glycerides, Nordihydroguaiaretic Acid, Cholesterol, Glycerin, Sorbitan Stearate, Oleanolic Acid, Polyglyceryl-4 lsostearate, Sorbitan lsostearate, Squalane, Stearic Acid, Fragrance, Alumina, Carbomer, Ceteth-10 Phosphate, Dicetyl Phosphate, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethiconol, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Hydroxypropyl Methylcellulose Stearoxy Ether, Ammonium Polyacryloyldimethyl Taurate, Polysorbate 10, Polysorbate 60, Polysorbate 80, lsohexadecane, Xanthan Gum, Disodium EDTA, Sodium Hydroxide, Sodium Metabisulfite, Caprylyl Glycol, 1,2-Hexanediol, Chlorphenesin, Phenoxyethanol, Limonene, Linalool, Citronellol, Geraniol.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "54ae05c8-a62c-4503-b49e-53d85d79b9ee",
+  "name": "Unblemish Shine Free Lotion",
+  "brand": "Rodan & Fields",
+  "n_inactive": 56,
+  "thin_reason": null
+ }
+}

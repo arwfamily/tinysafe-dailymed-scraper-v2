@@ -1,0 +1,29 @@
+{
+ "setid": "6f04e9e1-f592-997d-e053-2a91aa0a81eb",
+ "images": [
+  {
+   "name": "Box.jpg",
+   "file": "img/6f04e9e1-f592-997d-e053-2a91aa0a81eb/Box.jpg"
+  },
+  {
+   "name": "Label.jpg",
+   "file": "img/6f04e9e1-f592-997d-e053-2a91aa0a81eb/Label.jpg"
+  },
+  {
+   "name": "Tube.jpg",
+   "file": "img/6f04e9e1-f592-997d-e053-2a91aa0a81eb/Tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Clean Tinted Lotion",
+ "inactive_section": "Alcohol, Aloe Barbadensis Leaf Juice Powder, Ascorbyl Palmitate, Bisabolol, Butyloctyl Salicylate, C12-15 Alkyl Benzoate, C16 Alpha Olefin, Capryl Glycol, Caprylyl Methicone, Cetyl PEG/PPG-10/1 Dimethicone, Chamomilla Recutita (Matricaria) Flower Extract*, Citrus Aurantium Dulcis (Orange) Fruit Extract*, Citrus Aurantium Dulcis (Orange) Peel Extract*, Dimethiconol/Propylsilsesquioxane/Silicate Crosspolymer, Ethylhexylglycerin, Fucus Vesiculosus Extract, Simmondsia Chinensis (Jojoba) Seed Oil*, Glycerin*,Hexylene Glycol, Iron Oxides, Isododecane, Oenothera Biennis (Evening Primrose) Oil*, Palmaria Palmata Extract, Phenoxyethanol, Propanediol, Rosa Canina Fruit Oil*, Sodium Chloride, Tetrasodium Glutamate Diacetate, Tocopherol, Triethoxycaprylylsilane, Trilaureth-4 Phosphate, VP/ Eicosene Copolymer, Water, Zostera Marina Extract *=Organic",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6f04e9e1-f592-997d-e053-2a91aa0a81eb",
+  "name": "Clean Tinted Lotion",
+  "brand": "Clean, Know What's On Your Skin LLC",
+  "n_inactive": 36,
+  "thin_reason": null
+ }
+}

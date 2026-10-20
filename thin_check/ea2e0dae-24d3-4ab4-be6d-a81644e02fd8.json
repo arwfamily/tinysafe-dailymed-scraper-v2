@@ -1,0 +1,21 @@
+{
+ "setid": "ea2e0dae-24d3-4ab4-be6d-a81644e02fd8",
+ "images": [
+  {
+   "name": "topi002.jpg",
+   "file": "img/ea2e0dae-24d3-4ab4-be6d-a81644e02fd8/topi002.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ea2e0dae-24d3-4ab4-be6d-a81644e02fd8",
+  "name": "Topiclear (hydroquinone) Lotion",
+  "brand": "International Beauty Exchange",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

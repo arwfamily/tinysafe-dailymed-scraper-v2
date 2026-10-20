@@ -1,0 +1,25 @@
+{
+ "setid": "cd5beee7-d8f5-4e1c-b990-98db641a20a2",
+ "images": [
+  {
+   "name": "back.jpg",
+   "file": "img/cd5beee7-d8f5-4e1c-b990-98db641a20a2/back.jpg"
+  },
+  {
+   "name": "front.jpg",
+   "file": "img/cd5beee7-d8f5-4e1c-b990-98db641a20a2/front.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Cellular Radiance Emulsion",
+ "inactive_section": "Inactive Ingredients: Water (Aqua), C12-15 Alkyl Ethylhexanoate, Cetyl Alcohol, Glycerin, Helianthus Annuus (Sunflower) Seed Oil, Sea Water (Maris Aqua), Dimethicone, Behenyl Alcohol, Stearyl Alcohol, Butylene Glycol, Propylene Glycol, Caprylic/Capric Triglyceride, Cyclopentasiloxane, Batyl Alcohol, Glycoproteins, Panax Ginseng Root Extract, Equisetum Arvense (Horsetail) Extract, Phytosterols, Silicornia Herbacea Extract, Niacinamide, Hydrolyzed Oat Protein, Alpinia Galang Leaf Extract, Quartz, Disodium Adenosine Triphosphate, Tocopherol, Carica Papaya (Papaya) Fruit Extract, Cholesteryl Nonanoate, Cimicifuga Racemosa Root Extract, Copper Gluconate, PEG-20 Phytosterol, Actinidia Polygama Fruit Extract, Acetyl Heptapeptide-Gold, Cholesteryl Oleate, Dimethylmethoxy Chromanyl Palmitate, Corallina Officinalis Extract, Carbomer, Cholsteryl Stearate, Acrylates Copolymer, Boswellia Serrata Extract, Ammonium Acryloyldimethltaurate/Beheneth-25 Methacrylate Crosspolymer, Phormidium Persicinum Extract, Caprylyl Glycol, Dextran, Magnesium Asparate Glyceryl Stearate, Disodium EDTA, Xanthan Gum, BHT, Fragrance (Parfum), Linalool, Hexyl Cinnamal, Hydroxycitronellal, Alpha-Isomethyl Ionone, Geraniol, Citronellol, Benzyl Benzoate, Butylphenyl Methylpropional, Evernia Furfuracea (Treemoss) Extract, Eugenol, Benzyl Salicylate, Limonene, Phenoxyethanol, Sorbia Acid, Methylparaben, Mica, Titanium Dioxide (CI 77891), Red (CI 14700), Yellow 5 (CI 19140), Gold",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "cd5beee7-d8f5-4e1c-b990-98db641a20a2",
+  "name": "La Prairie Switzerland Cellular Radiance Emulsion Cream",
+  "brand": "Temmentec Ag",
+  "n_inactive": 68,
+  "thin_reason": null
+ }
+}

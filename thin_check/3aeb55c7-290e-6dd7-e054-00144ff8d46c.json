@@ -1,0 +1,21 @@
+{
+ "setid": "3aeb55c7-290e-6dd7-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "SSL1 Screen Shot1.jpg",
+   "file": "img/3aeb55c7-290e-6dd7-e054-00144ff8d46c/SSL1_Screen_Shot1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "1oz SPF 30 Sunscreen Lotion",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3aeb55c7-290e-6dd7-e054-00144ff8d46c",
+  "name": "Sun Screen Lotion",
+  "brand": "Webb Business Promotions",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

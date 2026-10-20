@@ -1,0 +1,21 @@
+{
+ "setid": "45ec77c5-5eb3-0e51-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "Label2.jpg",
+   "file": "img/45ec77c5-5eb3-0e51-e054-00144ff8d46c/Label2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Solar Defense Body",
+ "inactive_section": "Alcohol Denat., Aloe Barbadensis Leaf Juice, Ananas Sativus (Pineapple) Fruit Extract, Beta Carotene, Butter Extract, Butylene Glycol, Camellia Sinensis Leaf Extract, Caprylic/Capric Triglyceride, Citral, Citrus Aurantium Dulcis (Orange) Peel Extract, Citrus Aurantium Dulcis (Orange) Peel Oil, Citrus Limon (Lemon) Peel Oil, Citrus Paradisi (Grapefruit) Fruit Extract, Cocos Nucifera (Coconut) Fruit Extract, Coffea Arabiaca (Coffee) Leaf/ Seed Extract, Cucumis Sativus (Cucumber) Fruit Extract, Glycerin, Hydrolyzed Yeast Protein, Limonene, Linalool, Methyl Dihydroabietate, Pentylene Glycol, Pichia/Resveratrol Ferment Extract, Prunus Armeniaca (Apricot) Fruit Extract, Pyrus Communis (Pear) Fruit Extract, Pyrus Malus (Apple) Fruit Extract, Rosa Canina Fruit Extract, Rubus Idaeus (Raspberry) Fruit Extract, Thermus Thermophilus Ferment, Tocopherol, Vanilla Planifolia Fruit Extract, Zea Mays (Corn) Oil",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "45ec77c5-5eb3-0e51-e054-00144ff8d46c",
+  "name": "Solar Defense Body Aerosol, Spray",
+  "brand": "HydroPeptide LLC",
+  "n_inactive": 33,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "68f75cbd-4114-4880-9b56-ef3c73bfb6d9",
+ "images": [
+  {
+   "name": "Drymarine.jpg",
+   "file": "img/68f75cbd-4114-4880-9b56-ef3c73bfb6d9/Drymarine.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "68f75cbd-4114-4880-9b56-ef3c73bfb6d9",
+  "name": "Drymarine Age Control Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 44,
+  "thin_reason": null
+ }
+}

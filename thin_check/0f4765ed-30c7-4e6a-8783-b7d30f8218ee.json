@@ -1,0 +1,21 @@
+{
+ "setid": "0f4765ed-30c7-4e6a-8783-b7d30f8218ee",
+ "images": [
+  {
+   "name": "topi001cb.jpg",
+   "file": "img/0f4765ed-30c7-4e6a-8783-b7d30f8218ee/topi001cb.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0f4765ed-30c7-4e6a-8783-b7d30f8218ee",
+  "name": "Topiclear Cocoa Butter (hydroquinone) Cream",
+  "brand": "International Beauty Exchange",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

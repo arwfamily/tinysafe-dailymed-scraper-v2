@@ -1,0 +1,21 @@
+{
+ "setid": "8ac36501-d442-491d-b13b-87935188af25",
+ "images": [
+  {
+   "name": "Image PDT30.jpg",
+   "file": "img/8ac36501-d442-491d-b13b-87935188af25/Image_PDT30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "DRUG FACTS",
+ "inactive_section": "Inactive Ingredients: Aqua/Water/EAU, Caprylyc/Capric Triglyceride, Cyclopentasiloxane, Glycerin, Butyloctyl Salicylate, Dimethicone, Glyceryl Stearate, PEG-100 Stearate, Butyrospermum Parkii Nut Extract, Styrene/Acrylates Copolymer, Cl 77891, Lecithin, Isostearic Acid, Polyglyceryl-3 Polyricinoleate, Polyhydroxystearic Acid, Cyclohexasiloxane, Helianthus Annus (Sunflower) seed oil, Polysilicone-31, Sorbitan Stearate, Cl 77492, Cetyl Alcohol, Phenoxyethanol, HEA/Sodium Acryolydimethyltaurate/Steareth-20 Methacrylate Copolymer, Citrus Aurantium Dulcis (Orange) peel oil, Hydrolyzed jojoba esters, Limonene, Caprylyl Glycol, Allantoin, C13-14 Isoparaffin, Laminaria Digitata Extract, Artemisia Vulgaris Extract, Ethylhexylglycerin, Hexylene Glycol, Cl 77491, Citrus Nobilis (Mandarin Orange) Peel Oil, Xanthan gum, Bisabolol, Polysorbate 80, Tocopheryl Acetate, Triethoxycaprylylsilane, Cl 77499, Camellia Sinensis Leaf Extract, Decyl Glucoside, Erythritol, Sodium Hyaluronate, Biosaccharide Gum-1, Vanilla Planifolia Fruit Extract, Glucose, Hydrolyzed Pea Protein, Pyruvic Acid, Sodium Chloride, Barosma Betulina Leaf Oil, Tetrahexyldecyl ascorbate, Alumina, Magnesium Oxide, Potassium Sorbate, Sodium Benzoate, Homarine HCL, Sodium Succinate, Arabidopsis Thaliana Extract, Micrococcus Lysate, Plankton Extract, Ergothioneine.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8ac36501-d442-491d-b13b-87935188af25",
+  "name": "Prevention Plus Daily Tinted Moisturizer SPF 30 Cream",
+  "brand": "Allure Labs Inc",
+  "n_inactive": 75,
+  "thin_reason": null
+ }
+}

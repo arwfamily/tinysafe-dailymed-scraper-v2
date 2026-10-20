@@ -1,0 +1,21 @@
+{
+ "setid": "ae98d652-b2c8-4c81-a126-e054d6b8eb88",
+ "images": [
+  {
+   "name": "Baby_kids.jpg",
+   "file": "img/ae98d652-b2c8-4c81-a126-e054d6b8eb88/Baby_kids.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients water, caprylic/capric triglyceride, sesamum indicum (sesame) seed oil, helianthus annuus (sunflower) seed oil, glycerin, cetearyl alcohol, cetearyl glucoside, simmondsia chinensis (jojaba) seed oil, glyceryl stearate, butyrosperum parkii (shea) butter, potassium cetyl phosphate, phenoxyethanol, ethylhexylglycerin, xanthan gum, PEG-40 stearate, trimethoxycaprylsilane, allantoin, tocopherol acetate (vitamin E), panthenol (pro-vitamin B5), bisabolol, hippophae rhamnoides oil, avena sativa (oat) kernel extract, echinacea purpurea root extract, chamomilla recutita (matricaria) flower extract, tilia vulgaris flower extract, melissa officinalis leaf extract, aspalathus linearis leaf extract",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ae98d652-b2c8-4c81-a126-e054d6b8eb88",
+  "name": "Safe Harbor Natural Suncare Broad Spectrum Lotion",
+  "brand": "Emilia Personal Care Inc",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

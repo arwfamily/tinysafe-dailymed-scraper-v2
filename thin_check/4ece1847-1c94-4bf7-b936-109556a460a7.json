@@ -1,0 +1,25 @@
+{
+ "setid": "4ece1847-1c94-4bf7-b936-109556a460a7",
+ "images": [
+  {
+   "name": "alg00-0005-01.jpg",
+   "file": "img/4ece1847-1c94-4bf7-b936-109556a460a7/alg00-0005-01.jpg"
+  },
+  {
+   "name": "alg00-0005-02.jpg",
+   "file": "img/4ece1847-1c94-4bf7-b936-109556a460a7/alg00-0005-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "Cyclopentasiloxane, Water (Aqua, Eau), Alcohol Denat., Glycerin, Polyglyceryl-3 Polydimethylsiloxyethyl Dimethicone, Methyl Methacrylate Crosspolymer, PEG/PPG-18/18 Dimethicone, PEG-9 Polydimethylsiloxyethyl Dimethicone, Parachlorella Beijerinckii Exopolysaccharides, Echinacea Purpurea Extract, Tocopheryl Acetate, Camellia Oleifera Leaf Extract, Arctostaphylos Uva Ursi Leaf Extract, Glycyrrhiza Glabra (Licorice) Root Extract, Stearic Acid, Triethoxysilylethyl Polydimethylsiloxyethyl Hexyl Dimethicone, BHT, Ethylhexylglycerin, Caprylyl Glycol, Aluminum Hydroxide, Phenoxyethanol, Hexylene Glycol, Fragrance (Parfum), Hexyl Cinnamal, Linalool.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4ece1847-1c94-4bf7-b936-109556a460a7",
+  "name": "Algenist Cream",
+  "brand": "Solazyme, Inc.",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "ac466e8a-2626-4680-811a-f172cf66063d",
+ "images": [
+  {
+   "name": "ido001.jpg",
+   "file": "img/ac466e8a-2626-4680-811a-f172cf66063d/ido001.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "WATER,GLYCERYL STEARATE CITRATE, CETOSTEARYL ALCOHOL, GLYCERIN, ISOPROPYL MYRISTATE, ALLANTOIN, ASCORBIC ACID, TOCOPHERYL ACETATE, SODIUM METABISULFITE, SODIUM LAURYL, SULFATE EDETATE, DISODIUM, METHYLPARABEN, PROPYLPARABEN, CHLOROCRESOL",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ac466e8a-2626-4680-811a-f172cf66063d",
+  "name": "Idole Skin Lightening (hydroquinone) Cream",
+  "brand": "International Beauty Exchange",
+  "n_inactive": 18,
+  "thin_reason": null
+ }
+}

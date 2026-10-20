@@ -1,0 +1,21 @@
+{
+ "setid": "4833e5fb-d6f3-653c-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "Solar_Goo_Large_Hanger.jpg",
+   "file": "img/4833e5fb-d6f3-653c-e054-00144ff8d46c/Solar_Goo_Large_Hanger.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Solar Goo",
+ "inactive_section": "Beeswax (cera alba), Organic Cocos nucifera (Coconut) Oil, Organic Helianthus annus (Sunflower) Oil, Non-GMO (100% Sunflower) Mixed Tocopherols (Vitamin E), Butyrospermum parkii (Shea Butter).",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4833e5fb-d6f3-653c-e054-00144ff8d46c",
+  "name": "Solar Goo Salve",
+  "brand": "Spry Life LLC",
+  "n_inactive": 6,
+  "thin_reason": "short_list"
+ }
+}

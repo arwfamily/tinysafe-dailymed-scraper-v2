@@ -1,0 +1,29 @@
+{
+ "setid": "3f7c84e3-0e4f-b7e9-e063-6294a90a1295",
+ "images": [
+  {
+   "name": "10 mL Primary.jpg",
+   "file": "img/3f7c84e3-0e4f-b7e9-e063-6294a90a1295/10_mL_Primary.jpg"
+  },
+  {
+   "name": "50 mL Primary.jpg",
+   "file": "img/3f7c84e3-0e4f-b7e9-e063-6294a90a1295/50_mL_Primary.jpg"
+  },
+  {
+   "name": "50 mL Secondary.jpg",
+   "file": "img/3f7c84e3-0e4f-b7e9-e063-6294a90a1295/50_mL_Secondary.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Dewscreen Daily Hydrator + Primer SPF 50",
+ "inactive_section": "Inactive Ingredients: Water, Acrylates/Steareth-20 Methacrylate Copolymer, Pentylene Glycol, Glycerin, Isododecane, Palmitoyl Tripeptide-5, Tremella Fuciformis Sporocarp Extract, Hydrolyzed Hyaluronic Acid, Carthamus Tinctorius (Safflower) Oleosomes, Bisabolol, Dimethicone Crosspolymer-3, Trisodium Ethylenediamine Disuccinate, Betaine, Polyglutamic Acid, Sodium Benzoate, Sodium Hydroxide, Potassium Sorbate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3f7c84e3-0e4f-b7e9-e063-6294a90a1295",
+  "name": "Dewscreen Daily Hydrator And Primer SPF 50 Lotion",
+  "brand": "Supergoop LLC",
+  "n_inactive": 19,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "setid": "96bc5c4c-3bba-477e-b5f3-0342cebd4ca3",
+ "images": [
+  {
+   "name": "soon-01.jpg",
+   "file": "img/96bc5c4c-3bba-477e-b5f3-0342cebd4ca3/soon-01.jpg"
+  }
+ ],
+ "error": "spl: HTTP Error 429: Too Many Requests",
+ "db": {
+  "setid": "96bc5c4c-3bba-477e-b5f3-0342cebd4ca3",
+  "name": "Clear Day Soon Sun Gel",
+  "brand": "Soon Skin Care, Inc.",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

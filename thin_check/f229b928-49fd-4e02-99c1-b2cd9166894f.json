@@ -1,0 +1,25 @@
+{
+ "setid": "f229b928-49fd-4e02-99c1-b2cd9166894f",
+ "images": [
+  {
+   "name": "Label0.jpg",
+   "file": "img/f229b928-49fd-4e02-99c1-b2cd9166894f/Label0.jpg"
+  },
+  {
+   "name": "Label02.jpg",
+   "file": "img/f229b928-49fd-4e02-99c1-b2cd9166894f/Label02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Radiant Shield Tinted Mineral Sunscreen SPF 40",
+ "inactive_section": "Water (Aqua), Isododecane, Propanediol, Caprylic /Capric Triglyceride, Polyglyceryl-6 Polyricinoleate, C12-15 Alkyl Benzoate, Dimethicone, Polymethylsilsesquioxane/Trimethylsiloxysilicate, Coco-Caprylate/Caprate, Ethylhexyl Palmitate, Polymethylsilsesquioxane, Disteardimonium Hectorite, Polyglyceryl-10 Dioleate, Polyhydroxystearic Acid, Lecithin, Ectoin, Dimethylmethoxy Chromanol, Betula Alba (Birch) Bark Extract, Boswellia Serrata (Indian Frankincense) Extract, Polygonum Cuspidatum (Japanese Knotweed) Root Extract, Centella Asiatica (Gotu Kola) Extract, Butyrospermum Parkii (Shea) Butter, Glycerin, Tapioca Starch Polymethylsilsesquioxane, Propylene Carbonate, Polysilicone-11, Tromethamine, Polyglyceryl-10 Laurate, Octyldodecanol, Jojoba Esters, Trihydroxystearin, Alumina, Silica, Phenoxyethanol, Ethylhexylglycerin, Titanium Dioxide (CI 77891), Iron Oxide (CI 77491, CI 77492), Lavandula Angustifolia (Lavender) Oil, Pelargonium Graveolens (Rose Geranium) Flower Oil.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f229b928-49fd-4e02-99c1-b2cd9166894f",
+  "name": "Radiant Shield Tinted Mineral Sunscreen SPF 40 Cream",
+  "brand": "CosMedical Technologies, LLC",
+  "n_inactive": 43,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "444b2f9d-8634-1111-e054-00144ff88e88",
+ "images": [
+  {
+   "name": "Lotion GP SPF 70 FR.pdf.jpg",
+   "file": "img/444b2f9d-8634-1111-e054-00144ff88e88/Lotion_GP_SPF_70_FR.pdf.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sea & Ski Sunscreen Lotion SPF 70",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "444b2f9d-8634-1111-e054-00144ff88e88",
+  "name": "General Protection Lotion",
+  "brand": "Cross-Brand Manufacturing, LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

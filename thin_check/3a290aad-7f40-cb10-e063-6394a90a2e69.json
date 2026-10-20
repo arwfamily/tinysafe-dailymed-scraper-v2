@@ -1,0 +1,25 @@
+{
+ "setid": "3a290aad-7f40-cb10-e063-6394a90a2e69",
+ "images": [
+  {
+   "name": "SB_Mineral_1_7Oz_SPF30Lotion_R1V1_444106.jpg",
+   "file": "img/3a290aad-7f40-cb10-e063-6394a90a2e69/SB_Mineral_1_7Oz_SPF30Lotion_R1V1_444106.jpg"
+  },
+  {
+   "name": "SB_Mineral_6Oz_SPF50Spray_CCL_R1V5_444106.jpg",
+   "file": "img/3a290aad-7f40-cb10-e063-6394a90a2e69/SB_Mineral_6Oz_SPF50Spray_CCL_R1V5_444106.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Sun Bum 30 Mineral Tinted Sunscreen Face",
+ "inactive_section": "cyclopentasiloxane, isopropyl myristate, polyamide-5, dimethicone crosspolymer, stearalkonium hectorite, polysilicone-11, oryza sativa (rice) bran extract, rosmarinus officinalis (rosemary) leaf extract, helianthus annuus (sunflower) extract, tocopherol, mica, iron oxides, propylene carbonate, synthetic wax, hydrogen dimethicone, isopropyl titanium triisostearate, aluminum hydroxide, silica silylate, octyldodecyl oleate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3a290aad-7f40-cb10-e063-6394a90a2e69",
+  "name": "Sun Bum 30 Mineral Tinted Sunscreen Face Lotion",
+  "brand": "Sun Bum, LLC",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

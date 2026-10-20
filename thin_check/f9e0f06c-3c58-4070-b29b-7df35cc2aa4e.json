@@ -1,0 +1,21 @@
+{
+ "setid": "f9e0f06c-3c58-4070-b29b-7df35cc2aa4e",
+ "images": [
+  {
+   "name": "sunscreen.jpg",
+   "file": "img/f9e0f06c-3c58-4070-b29b-7df35cc2aa4e/sunscreen.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sunblock DRUG FACT",
+ "inactive_section": "Water,CetearylAlcohol,Glycerinmonostearate, Gctt,Propylparaben,Methylparaben, glycerol,EDTA-2NA,Vinylchloride-methylacrylate, copolymer,Methylisothiazolinone",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f9e0f06c-3c58-4070-b29b-7df35cc2aa4e",
+  "name": "Sun Block Cream",
+  "brand": "Yuyao Jessie Promotional Products Co., Ltd.",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "1723085b-e3a0-419b-9b7a-fd5ac5600fe0",
+ "images": [
+  {
+   "name": "ido002.jpg",
+   "file": "img/1723085b-e3a0-419b-9b7a-fd5ac5600fe0/ido002.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1723085b-e3a0-419b-9b7a-fd5ac5600fe0",
+  "name": "Idole Beauty (hydroquinone) Lotion",
+  "brand": "International Beauty Exchange",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

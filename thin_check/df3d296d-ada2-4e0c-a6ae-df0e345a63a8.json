@@ -1,0 +1,21 @@
+{
+ "setid": "df3d296d-ada2-4e0c-a6ae-df0e345a63a8",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/df3d296d-ada2-4e0c-a6ae-df0e345a63a8/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Mica,Silica ,Triethoxycaprylylsilane,Iron Oxides,Dimethicone,Aluminum Hydroxide,Glycerine,Iron Oxides,Methicone,Bismuth Oxychloride,Iron Oxides,Hydrolyzed Algin,Laminaria Digitata Extract,Phormidium Persicinum Extract,Undaria Pinnatifida Extract ,Plankton extract,Phenethyl Alcohol ,Chlorella vulgaris extract,Pancratium maritimum extract,Crithmum Maritimum Extract,Helichrysum italicum extract, Ulex europaeus leaf/root/stem extract",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "df3d296d-ada2-4e0c-a6ae-df0e345a63a8",
+  "name": "Eco 10 Mineral Sun Pro Puff Type Powder",
+  "brand": "MIZON CO., LTD.",
+  "n_inactive": 21,
+  "thin_reason": null
+ }
+}

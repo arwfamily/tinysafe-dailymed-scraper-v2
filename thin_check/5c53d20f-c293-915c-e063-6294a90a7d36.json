@@ -1,0 +1,25 @@
+{
+ "setid": "5c53d20f-c293-915c-e063-6294a90a7d36",
+ "images": [
+  {
+   "name": "719 label.jpg",
+   "file": "img/5c53d20f-c293-915c-e063-6294a90a7d36/719_label.jpg"
+  },
+  {
+   "name": "720 label.jpg",
+   "file": "img/5c53d20f-c293-915c-e063-6294a90a7d36/720_label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Jergens Natural Glow Fair to Medium",
+ "inactive_section": "Inactive ingredient Water, Dihydroxyacetone, Diethylhexyl 2, 6-Naphthalate, Glycerin, Aluminum Starch Octenylsuccinate, Dicaprylyl Ether, Glyceryl Stearate, Polyacrylamide, Behenyl Alcohol, C12-15 Alkyl Benzoate, Dimethicone, Phenyl Trimethicone, PEG-100 Stearate, C13-14 Isoparaffin, Cetyl Alcohol, Steareth-2, 1,2-Hexanediol, Fragrance, Xanthan Gum, Laureth-7, Tocopheryl Acetate, Zea Mays (Corn) Starch, Aloe Barbadensis Leaf Extract, Hyaluronic Acid, Benzoic Acid, Alpha-Isomethyl Ionone, Citronellol, Hexamethylindanopyran, Linalool, Caramel",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5c53d20f-c293-915c-e063-6294a90a7d36",
+  "name": "Jergens Natural Glow Medium To Deep Lotion Jergens Natural Glow Fair To Medium Lotion",
+  "brand": "Kao USA Inc.",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

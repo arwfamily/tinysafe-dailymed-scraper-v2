@@ -1,0 +1,21 @@
+{
+ "setid": "fbd0216f-6885-493e-b829-fe745d1c04d8",
+ "images": [
+  {
+   "name": "OP15MISTLabel.jpg",
+   "file": "img/fbd0216f-6885-493e-b829-fe745d1c04d8/OP15MISTLabel.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "DRUG FACTS",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fbd0216f-6885-493e-b829-fe745d1c04d8",
+  "name": "Op Protective Mist 15 Oil Free Spray",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 2,
+  "thin_reason": "no_printed_list"
+ }
+}

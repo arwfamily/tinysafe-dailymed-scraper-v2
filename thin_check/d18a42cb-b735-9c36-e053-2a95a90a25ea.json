@@ -1,0 +1,25 @@
+{
+ "setid": "d18a42cb-b735-9c36-e053-2a95a90a25ea",
+ "images": [
+  {
+   "name": "Primary Package.jpg",
+   "file": "img/d18a42cb-b735-9c36-e053-2a95a90a25ea/Primary_Package.jpg"
+  },
+  {
+   "name": "Secondary Package.jpg",
+   "file": "img/d18a42cb-b735-9c36-e053-2a95a90a25ea/Secondary_Package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "344",
+ "title": "Photo Gel",
+ "inactive_section": "Aqua, Alcohol, Glycerin, Isopropyl Myristate, Ceteareth-25, Carbomer, Methylparaben, Triethanolamine, Propylparaben and Disodium EDT A.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d18a42cb-b735-9c36-e053-2a95a90a25ea",
+  "name": "Photoblock Gel",
+  "brand": "Pella Pharmaceuticals Co. Ltd",
+  "n_inactive": 9,
+  "thin_reason": null
+ }
+}

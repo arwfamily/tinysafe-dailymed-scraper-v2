@@ -1,0 +1,21 @@
+{
+ "setid": "906fa925-a9cc-4c5a-a915-06584daf3426",
+ "images": [
+  {
+   "name": "ohui sun powder.jpg",
+   "file": "img/906fa925-a9cc-4c5a-a915-06584daf3426/ohui_sun_powder.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "906fa925-a9cc-4c5a-a915-06584daf3426",
+  "name": "Ohui Sun Science Powder Sun Block Natural Skin Powder",
+  "brand": "LG Household and Healthcare, Inc.",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

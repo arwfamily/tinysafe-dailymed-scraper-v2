@@ -1,0 +1,21 @@
+{
+ "setid": "4b6e4e6d-b172-438d-93d7-4d6025ee1e3e",
+ "images": [
+  {
+   "name": "well-rested-01.jpg",
+   "file": "img/4b6e4e6d-b172-438d-93d7-4d6025ee1e3e/well-rested-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Well-Rested",
+ "inactive_section": "Mica, Bismuth Oxychloride, Titanium Dioxide, Iron Oxides.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4b6e4e6d-b172-438d-93d7-4d6025ee1e3e",
+  "name": "Bareminerals Well-rested Powder",
+  "brand": "Bare Escentuals Beauty Inc.",
+  "n_inactive": 3,
+  "thin_reason": "short_list"
+ }
+}

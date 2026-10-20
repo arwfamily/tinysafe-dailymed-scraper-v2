@@ -1,0 +1,33 @@
+{
+ "setid": "94264f8c-0643-4ae5-a0f4-457f18b721a0",
+ "images": [
+  {
+   "name": "Magix Face Perfector DFB1.jpg",
+   "file": "img/94264f8c-0643-4ae5-a0f4-457f18b721a0/Magix_Face_Perfector_DFB1.jpg"
+  },
+  {
+   "name": "Magix Face Perfector DFB2.jpg",
+   "file": "img/94264f8c-0643-4ae5-a0f4-457f18b721a0/Magix_Face_Perfector_DFB2.jpg"
+  },
+  {
+   "name": "Magix Face Perfector DFB3.jpg",
+   "file": "img/94264f8c-0643-4ae5-a0f4-457f18b721a0/Magix_Face_Perfector_DFB3.jpg"
+  },
+  {
+   "name": "Magix Face Perfector PDP.jpg",
+   "file": "img/94264f8c-0643-4ae5-a0f4-457f18b721a0/Magix_Face_Perfector_PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients: Water/Eau, Dimethicone, Glycerin, Isododecane, HDI/Trimethylol Hexyllactone Crosspolymer, C12-15 Alkyl Benzoate, Polymethyl Methacrylate, Butylene Glycol, PEG-8, Dimethicone Crosspolymer, Trimethylsiloxysilicate, Silica, Cetyl Alcohol, Imidazolidinyl Urea, Methylparaben, Hydrogenated Lecithin,Carbomer, Disodium EDTA, Sodium Hydroxide, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Aluminum Hydroxide, Alumina, Cellulose, Cetearyl Dimethicone Crosspolymer, PEG/PPG-20/23 Dimethicone, Mica/CI 77019.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "94264f8c-0643-4ae5-a0f4-457f18b721a0",
+  "name": "Magix Illuminating Face Perfector Cream",
+  "brand": "Avon Products, Inc.",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

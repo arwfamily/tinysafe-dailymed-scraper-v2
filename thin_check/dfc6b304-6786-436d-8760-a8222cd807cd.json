@@ -1,0 +1,21 @@
+{
+ "setid": "dfc6b304-6786-436d-8760-a8222cd807cd",
+ "images": [
+  {
+   "name": "sys_label_01.jpg",
+   "file": "img/dfc6b304-6786-436d-8760-a8222cd807cd/sys_label_01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "SYS Drug Facts",
+ "inactive_section": "water, cyclopentasiloxane, glycerin, cetyl ethylhexanoate, tribehenin PEG-20 esters, caprylyl methicone, dimethicone, stearic acid, polyglyceryl-3 polydimethylsiloxyethyl dimethicone, polysorbate 80, aluminum hydroxide, squalane, isohexadecane, sodium acrylate/sodium acryloyldimehtyl taurate/acrylamide copolymer, hydroxyacetophenone, dimethicone/PEG-10/15 corosspolymer, cetyl alcohol, nylon-12, linoleic acid, palmitoyl tripeptide-5, 1,2-hexanediol, caprylyl glycol, dextrin, hydrolyzed hibiscus esculentus extract, sodium hyaluronate, xanthan gum, tocopherol, disodium EDTA, sodium hydroxide, vitis vinifera (grape) seed extract, glycine soja (Soybean) oil, fragrance, algae extract, glycine soja (soybean) seed extract, ergocalciferol, linolenic acid, camellia sinensis leaf extract, aloe barbadensis leaf extract, potassium sorbate, sodium benzoate, ascorbic acid",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "dfc6b304-6786-436d-8760-a8222cd807cd",
+  "name": "Sys Lotion",
+  "brand": "AdvoCare International L.P.",
+  "n_inactive": 42,
+  "thin_reason": null
+ }
+}

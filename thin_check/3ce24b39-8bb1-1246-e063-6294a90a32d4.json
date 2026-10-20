@@ -1,0 +1,21 @@
+{
+ "setid": "3ce24b39-8bb1-1246-e063-6294a90a32d4",
+ "images": [
+  {
+   "name": "Duette Sheer.jpg",
+   "file": "img/3ce24b39-8bb1-1246-e063-6294a90a32d4/Duette_Sheer.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Duette Untinted",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3ce24b39-8bb1-1246-e063-6294a90a32d4",
+  "name": "Duette Untinted Lotion",
+  "brand": "Skin Theory Studios",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "adf5621b-7cf0-53b3-e053-2a95a90a8058",
+ "images": [
+  {
+   "name": "carton.jpg",
+   "file": "img/adf5621b-7cf0-53b3-e053-2a95a90a8058/carton.jpg"
+  },
+  {
+   "name": "tube.jpg",
+   "file": "img/adf5621b-7cf0-53b3-e053-2a95a90a8058/tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Dr. C. Tuna Lumi Radiance Brightening Cream",
+ "inactive_section": "Water/Aqua, Cetearyl Alcohol, Stearic Acid, Mineral Oil / Paraffinum Liquidum, Isopropyl Myristate, Glycerin, Titanium Dioxide, Ceteareth-20, Ceteareth-12, Cetearyl Alcohol, Cetyl Pamitate, Glyceryl Stearate, Butylene Glycol, Silica, Ammonium Polyacrylate, Hydrolyzed Algae Extract, Pancratium Maritimum Extract, Dimethicone, Phenoxyethanol, Fragrance / Parfum, Niacinamide, Triethanolamine, Ethylhexylglycerin, Tocopheryl Acetate.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "adf5621b-7cf0-53b3-e053-2a95a90a8058",
+  "name": "Dr. C. Tuna Lumi Radiance Brightening Cream",
+  "brand": "Farmasi US LLC",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

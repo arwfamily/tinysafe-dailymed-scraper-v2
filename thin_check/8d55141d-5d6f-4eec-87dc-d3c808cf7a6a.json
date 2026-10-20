@@ -1,0 +1,25 @@
+{
+ "setid": "8d55141d-5d6f-4eec-87dc-d3c808cf7a6a",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/8d55141d-5d6f-4eec-87dc-d3c808cf7a6a/image-01.jpg"
+  },
+  {
+   "name": "image-02.jpg",
+   "file": "img/8d55141d-5d6f-4eec-87dc-d3c808cf7a6a/image-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Drug Facts - Softlips Marshmallow Ghost",
+ "inactive_section": "ozokerite, squalane, ethylhexyl palmitate, petrolatum, myristyl myristate, myristyl lactate, flavor, cetyl alcohol, myristyl laurate, myristyl alcohol, BHT, menthol, tocopheryl acetate [vitamin E]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8d55141d-5d6f-4eec-87dc-d3c808cf7a6a",
+  "name": "Softlips Marshmallow Ghost Stick",
+  "brand": "The Mentholatum Company",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

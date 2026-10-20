@@ -1,0 +1,21 @@
+{
+ "setid": "9b571d4e-03c8-5a37-e053-2a95a90add36",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/9b571d4e-03c8-5a37-e053-2a95a90add36/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "water, butylene glycol, etc.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9b571d4e-03c8-5a37-e053-2a95a90add36",
+  "name": "Protecting Natural Shine Tone Up Sun Cushion Powder",
+  "brand": "In This Morning",
+  "n_inactive": 2,
+  "thin_reason": "label_prints_too_little"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "334e32a4-c3a5-e37d-e063-6294a90ad6cf",
+ "images": [
+  {
+   "name": "Acne Lab SF 226.jpg",
+   "file": "img/334e32a4-c3a5-e37d-e063-6294a90ad6cf/Acne_Lab_SF_226.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "334e32a4-c3a5-e37d-e063-6294a90ad6cf",
+  "name": "SPF 101 Non-tinted Cream",
+  "brand": "The Acne Lab LLC",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

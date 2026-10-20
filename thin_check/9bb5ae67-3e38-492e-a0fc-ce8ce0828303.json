@@ -1,0 +1,25 @@
+{
+ "setid": "9bb5ae67-3e38-492e-a0fc-ce8ce0828303",
+ "images": [
+  {
+   "name": "back.jpg",
+   "file": "img/9bb5ae67-3e38-492e-a0fc-ce8ce0828303/back.jpg"
+  },
+  {
+   "name": "front.jpg",
+   "file": "img/9bb5ae67-3e38-492e-a0fc-ce8ce0828303/front.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Aloe Barbadensis Leaf Juice, Cetyl Alcohol, Glycerin, Methylparaben, Mineral Oil, Potassium Phosphate, Propylparaben, Stearic Acid, Triethanolamine, Water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9bb5ae67-3e38-492e-a0fc-ce8ce0828303",
+  "name": "Arthritis Relief (trolamine Salicylate 10%) Cream",
+  "brand": "Good Sense",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

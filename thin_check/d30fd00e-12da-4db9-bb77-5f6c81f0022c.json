@@ -1,0 +1,21 @@
+{
+ "setid": "d30fd00e-12da-4db9-bb77-5f6c81f0022c",
+ "images": [
+  {
+   "name": "1182218204.jpg",
+   "file": "img/d30fd00e-12da-4db9-bb77-5f6c81f0022c/1182218204.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "Alcohol Denat., Isobutane, Isododecane, Diisopropyl Adipate, Lauryl PEG-8 Dimethicone, Phenylisopropyl Dimethicone, Polyglyceryl-3 Stearate/Isostearate/Dimer Dilinoleate Crosspolymer, Caprylyl Glycol, Methyl Dihydroabietate, Fragrance, Ascorbyl Palmitate, Tocopheryl Acetate, Mineral Oil, Panthenol, Water, Aloe Barbadensis Leaf Extract.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d30fd00e-12da-4db9-bb77-5f6c81f0022c",
+  "name": "Rite Aid Sport Spray",
+  "brand": "Rite Aid",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

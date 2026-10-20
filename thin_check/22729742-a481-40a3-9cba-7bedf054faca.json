@@ -1,0 +1,21 @@
+{
+ "setid": "22729742-a481-40a3-9cba-7bedf054faca",
+ "images": [
+  {
+   "name": "Whitening.jpg",
+   "file": "img/22729742-a481-40a3-9cba-7bedf054faca/Whitening.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "22729742-a481-40a3-9cba-7bedf054faca",
+  "name": "Whitening Glycobest Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 32,
+  "thin_reason": null
+ }
+}

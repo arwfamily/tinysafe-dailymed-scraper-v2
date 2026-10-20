@@ -1,0 +1,21 @@
+{
+ "setid": "577aea49-6092-3ede-e053-2991aa0a0283",
+ "images": [
+  {
+   "name": "07 label.jpg",
+   "file": "img/577aea49-6092-3ede-e053-2991aa0a0283/07_label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Water, Butylene Glycol, etc.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "577aea49-6092-3ede-e053-2991aa0a0283",
+  "name": "Dpc Pink Aura Cushion No.23 Liquid",
+  "brand": "MSCO",
+  "n_inactive": 2,
+  "thin_reason": "label_prints_too_little"
+ }
+}

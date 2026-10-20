@@ -1,0 +1,25 @@
+{
+ "setid": "20c48752-3ad9-5993-e063-6294a90ae1b0",
+ "images": [
+  {
+   "name": "SB_Daily_SPF30_Glow_Lotion_IFC_R1V8_444100_Page_1.jpg",
+   "file": "img/20c48752-3ad9-5993-e063-6294a90ae1b0/SB_Daily_SPF30_Glow_Lotion_IFC_R1V8_444100_Page_1.jpg"
+  },
+  {
+   "name": "SB_USA_SUN_Daily_Glow Lotion_1.7 oz_Front_2000x2400_PDP_444100.jpg",
+   "file": "img/20c48752-3ad9-5993-e063-6294a90ae1b0/SB_USA_SUN_Daily_Glow_Lotion_1.7_oz_Front_2000x2400_PDP_444100.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Sun Bum Daily Glow Tinted Sunscreen Moisturizer Broad Spectrum SPF 30",
+ "inactive_section": "Inactive ingredients water, bismuth oxychloride, propanediol, butyloctyl salicylate, glycerin, mica, C12-15 alkyl benzoate, polyglyceryl-6 stearate, isododecane, terminalia ferdinandiana (kakadu plum) fruit extract, tocopherol, pullulan, lysolecithin, tetrasodium glutamate diacetate, sclerotium gum, xanthan gum, hydrated silica, titanium dioxide, polyglyceryl-6 behenate, phenoxyethanol, ethylhexylglycerin, citric acid, iron oxides",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "20c48752-3ad9-5993-e063-6294a90ae1b0",
+  "name": "Sun Bum Daily Glow Tinted Sunscreen Moisturizer Broad Spectrum SPF 30 Lotion",
+  "brand": "Sun Bum, LLC",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

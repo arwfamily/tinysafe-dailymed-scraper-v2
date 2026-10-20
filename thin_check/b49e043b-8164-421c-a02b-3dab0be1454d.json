@@ -1,0 +1,25 @@
+{
+ "setid": "b49e043b-8164-421c-a02b-3dab0be1454d",
+ "images": [
+  {
+   "name": "Label Box.jpg",
+   "file": "img/b49e043b-8164-421c-a02b-3dab0be1454d/Label_Box.jpg"
+  },
+  {
+   "name": "Label Tube.jpg",
+   "file": "img/b49e043b-8164-421c-a02b-3dab0be1454d/Label_Tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sephora Daily Sunscreen Cream Broad Spectrum SPF 30",
+ "inactive_section": "Water (Aqua), C12-15 Alkyl Benzoate, Caprylic/Capric Triglyceride, Butyloctyl Salicylate, Dimethicone, Glycerin, Ethylhexyl Palmitate, Propanediol, Shea Butter (Butyrospermum Parkii), Safflower (Carthamus Tinctorius) Oleosomes, Glyceryl Stearate Se, Polyhydroxystearic Acid, Sorbitan Isostearate, Cetyl Alcohol, Pentaerythrityl Tetraisostearate, Phenyl Trimethicone, Silica, Inulin Lauryl Carbamate, Ethylhexylglycerin, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Phenoxyethanol, Hydroxyacetophenone, Polysilicone-11, Xanthan Gum, Gluconolactone, Trisodium Ethylenediamine Disuccinate, Sodium Citrate, Sodium Benzoate, Tocopherol, Citric Acid.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b49e043b-8164-421c-a02b-3dab0be1454d",
+  "name": "Sephora Daily Sunscreen Cream Broad Spectrum SPF 30 Cream",
+  "brand": "S+",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

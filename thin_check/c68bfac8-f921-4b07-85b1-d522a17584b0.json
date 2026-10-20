@@ -1,0 +1,25 @@
+{
+ "setid": "c68bfac8-f921-4b07-85b1-d522a17584b0",
+ "images": [
+  {
+   "name": "carton1.jpg",
+   "file": "img/c68bfac8-f921-4b07-85b1-d522a17584b0/carton1.jpg"
+  },
+  {
+   "name": "carton2.jpg",
+   "file": "img/c68bfac8-f921-4b07-85b1-d522a17584b0/carton2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "Inactive ingredients: ​water/eau, butylene glycol, cetearyl alcohol, isononyl isononanoate, dimethicone, silica, dilauryl thiodipropionate, saccharomyces/calciumferment, amethyst extract, glycine soja (soybean) seed extract, daucus carota sativa (carrot) root extract, saccharomyces/copper ferment,saccharomyces ferment lysate filtrate, saccharomyces/magnesium ferment, saccharomyces/potassium ferment, saccharomyces/zincferment, saccharomyces/manganese ferment, palmitoyl oligopeptide, palmitoyl tetrapeptide-7, saccharomyces/iron ferment, saccharomyces/​silicon ferment, kaempferia galanga root extract, parfum/fragrance, polymethylsilsesquioxane, trisiloxane, cetearyl glucoside, phenoxyethanol, choleth-24, glycerin, ceteth-24, ceteareth-20, caprylyl glycol, xanthan gum, carbomer, disodium EDTA, acrylates/C10-30 alkyl acrylate crosspolymer, sodium hydroxide, mica/CI 77019, titanium dioxide/CI 77891.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c68bfac8-f921-4b07-85b1-d522a17584b0",
+  "name": "Avon Elements Youth-restoring Anti-wrinkle Moisture Cream",
+  "brand": "New Avon LLC",
+  "n_inactive": 39,
+  "thin_reason": null
+ }
+}

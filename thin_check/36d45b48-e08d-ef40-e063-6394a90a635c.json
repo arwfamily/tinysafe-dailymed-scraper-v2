@@ -1,0 +1,21 @@
+{
+ "setid": "36d45b48-e08d-ef40-e063-6394a90a635c",
+ "images": [
+  {
+   "name": "hello sf 203.jpg",
+   "file": "img/36d45b48-e08d-ef40-e063-6394a90a635c/hello_sf_203.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "36d45b48-e08d-ef40-e063-6394a90a635c",
+  "name": "Advanced Sun Protection Cream",
+  "brand": "HELLO BEAUTIFUL SKIN STUDIO",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

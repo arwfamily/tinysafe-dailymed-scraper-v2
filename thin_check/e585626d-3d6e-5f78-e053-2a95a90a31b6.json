@@ -1,0 +1,21 @@
+{
+ "setid": "e585626d-3d6e-5f78-e053-2a95a90a31b6",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/e585626d-3d6e-5f78-e053-2a95a90a31b6/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "24/7 Life 7-Eleven Sunscreen Spray SPF 30",
+ "inactive_section": "Fragrance, SD Alcohol 40-B, Tocopheryl Acetate, VA/Butyl Maleate/Isobromyl Acrylate Copolymer",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e585626d-3d6e-5f78-e053-2a95a90a31b6",
+  "name": "7-eleven Broad Spectrum SPF Spray",
+  "brand": "Prime Packaging, Inc.",
+  "n_inactive": 4,
+  "thin_reason": "short_list"
+ }
+}

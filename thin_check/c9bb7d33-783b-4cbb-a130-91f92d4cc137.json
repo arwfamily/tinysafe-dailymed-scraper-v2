@@ -1,0 +1,33 @@
+{
+ "setid": "c9bb7d33-783b-4cbb-a130-91f92d4cc137",
+ "images": [
+  {
+   "name": "edhbodybop.jpg",
+   "file": "img/c9bb7d33-783b-4cbb-a130-91f92d4cc137/edhbodybop.jpg"
+  },
+  {
+   "name": "eucdailyhydrationlotionpdp.jpg",
+   "file": "img/c9bb7d33-783b-4cbb-a130-91f92d4cc137/eucdailyhydrationlotionpdp.jpg"
+  },
+  {
+   "name": "eucdailyhydrationv5bop.jpg",
+   "file": "img/c9bb7d33-783b-4cbb-a130-91f92d4cc137/eucdailyhydrationv5bop.jpg"
+  },
+  {
+   "name": "eucdailyhydrationv5fop.jpg",
+   "file": "img/c9bb7d33-783b-4cbb-a130-91f92d4cc137/eucdailyhydrationv5fop.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "8",
+ "title": "Eucerin Daily Hydration Lotion",
+ "inactive_section": "Inactive Ingredients Water, Glycerin, Dimethicone, C12-15 Alkyl Benzoate, Cetearyl Alcohol, Glyceryl Stearate, PEG-40 Stearate, Phenoxyethanol, Pentylene Glycol, Benzyl Alcohol, Caprylyl Glycol, Carbomer, Sodium Hydroxide, Sodium Citrate, Citric Acid.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c9bb7d33-783b-4cbb-a130-91f92d4cc137",
+  "name": "Eucerin Daily Hydration Lotion",
+  "brand": "Beiersdorf Inc",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "e2bd982e-3e5b-4857-9af0-087abe92de9f",
+ "images": [
+  {
+   "name": "sandybox.jpg",
+   "file": "img/e2bd982e-3e5b-4857-9af0-087abe92de9f/sandybox.jpg"
+  },
+  {
+   "name": "sandytube.jpg",
+   "file": "img/e2bd982e-3e5b-4857-9af0-087abe92de9f/sandytube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "Inactive ingredients water/aqua/eau, dimethicone, coco-caprylate, caprylic/capric tryglyceride, talc, dimethicone/vinyl dimethicone crosspolymer, cetyl peg/ppg 10/1 dimethicone, propanediol, iron oxide (CI 77491, CI 77492, CI 77499), titanium dioxide (CI 77891), sorbitan olivate, glyceryl tribehenate/isostearate/eicosandioate, phenoxyethanol, stearalkonium hectorite, mica, alumina, sodium chloride, triethoxycaprylylsilane, sodium dehydroacetate, propylene carbonate, hydrogen dimethicone, aloe barbadensis leaf extract, spilanthes acmella flower extract, tin oxide, olea europaea (olive) leaf extract, fragrance/parfum, trisodium ethylenediamine disuccinate, alcohol, maltodextrin, tropolone, aluminum hydroxide, olea europaea (olive) fruit extract.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e2bd982e-3e5b-4857-9af0-087abe92de9f",
+  "name": "Flawless By Sonya Aloe Bb Creme Sandy Cream",
+  "brand": "Aloe Vera of America, Inc.",
+  "n_inactive": 34,
+  "thin_reason": null
+ }
+}

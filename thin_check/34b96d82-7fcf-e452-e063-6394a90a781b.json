@@ -1,0 +1,21 @@
+{
+ "setid": "34b96d82-7fcf-e452-e063-6394a90a781b",
+ "images": [
+  {
+   "name": "208 maui medical.jpg",
+   "file": "img/34b96d82-7fcf-e452-e063-6394a90a781b/208_maui_medical.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "34b96d82-7fcf-e452-e063-6394a90a781b",
+  "name": "Replenishing Daily Protection Cream",
+  "brand": "The Maui Medical Group, Inc",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

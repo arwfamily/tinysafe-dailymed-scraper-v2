@@ -1,0 +1,33 @@
+{
+ "setid": "6af12cd5-246b-4b91-9748-e7b7a5daf298",
+ "images": [
+  {
+   "name": "Inner Package.jpg",
+   "file": "img/6af12cd5-246b-4b91-9748-e7b7a5daf298/Inner_Package.jpg"
+  },
+  {
+   "name": "Inner Package2.jpg",
+   "file": "img/6af12cd5-246b-4b91-9748-e7b7a5daf298/Inner_Package2.jpg"
+  },
+  {
+   "name": "Outer Package.jpg",
+   "file": "img/6af12cd5-246b-4b91-9748-e7b7a5daf298/Outer_Package.jpg"
+  },
+  {
+   "name": "Outer Package2.jpg",
+   "file": "img/6af12cd5-246b-4b91-9748-e7b7a5daf298/Outer_Package2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sqween Mineral Sunscreen Broad Spectrum SPF 30, Blue",
+ "inactive_section": "Water, C15-19 Alkane, Isocetyl Stearoyl Stearate, Undecane, Tribehenin, Silica, Tocopheryl Acetate, Helianthus Annuus (Sunflower) Seed Oil, Capryloyl Glycerin/Sebacic Acid Copolymer, Glyceryl Stearate, Simmondsia Chinensis (Jojoba) Seed Oil, Tridecane, Leuconostoc/Radish Root Ferment Filtrate, Lactobacillus, Aloe Barbadensis Leaf, Hyaluronic Acid, Acacia Senegal Gum, Xanthan Gum, Cocos Nucifera (Coconut) Fruit Extract. May Contain: Indigofera Tinctoria Leaf Extract, Caesalpinia Sappan Bark Extract, Synthetic Fluorphlogopite, Titanium Dioxide, Tin Oxide, Iron Oxide, Ferric Ferrocyanide.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6af12cd5-246b-4b91-9748-e7b7a5daf298",
+  "name": "Sqween Mineral Sunscreen Broad Spectrum SPF 30 Blue Cream",
+  "brand": "Atlantis Laboratories, Inc.",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

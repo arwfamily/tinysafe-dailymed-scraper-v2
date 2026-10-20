@@ -1,0 +1,29 @@
+{
+ "setid": "cd61d6f9-5cf8-4147-b78e-502916340508",
+ "images": [
+  {
+   "name": "airlight_carton.jpg",
+   "file": "img/cd61d6f9-5cf8-4147-b78e-502916340508/airlight_carton.jpg"
+  },
+  {
+   "name": "airlight_product.jpg",
+   "file": "img/cd61d6f9-5cf8-4147-b78e-502916340508/airlight_product.jpg"
+  },
+  {
+   "name": "baselabel_cappuccino.jpg",
+   "file": "img/cd61d6f9-5cf8-4147-b78e-502916340508/baselabel_cappuccino.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Active Ingredients",
+ "inactive_section": "Talc, Dimethicone, Polymethylsilsequioxane, Dimethicone/Vinyl Dimethicone Crosspolymer, Zinc Stearate, Silica, Phenyl Trimthicone, Synthetic Fluorphlogopite, Caprylyl Methicone, Caprylyl Glycol, Methicone, Zea Mays (Corn) sTarch, Phenoxyethanol, Hyxylene Glycol, [May contain: Iron Oxides, Mica]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "cd61d6f9-5cf8-4147-b78e-502916340508",
+  "name": "Ck One Airlight Pressed Powder SPF 15 Cappuccino 700 Powder",
+  "brand": "Coty US LLC",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

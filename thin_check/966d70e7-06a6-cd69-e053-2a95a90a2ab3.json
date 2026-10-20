@@ -1,0 +1,16 @@
+{
+ "setid": "966d70e7-06a6-cd69-e053-2a95a90a2ab3",
+ "images": [],
+ "error": " media: HTTP Error 429: Too Many Requests",
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "water, butylene glycol, cyclopentasiloxane, etc.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "966d70e7-06a6-cd69-e053-2a95a90a2ab3",
+  "name": "Dr.nuell Multi Sun Block Cream",
+  "brand": "Apharm Co., Ltd.",
+  "n_inactive": 3,
+  "thin_reason": "label_prints_too_little"
+ }
+}

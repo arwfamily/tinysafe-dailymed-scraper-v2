@@ -1,0 +1,21 @@
+{
+ "setid": "9f065c21-64e3-27fd-e053-2995a90a8d82",
+ "images": [
+  {
+   "name": "Label.jpg",
+   "file": "img/9f065c21-64e3-27fd-e053-2995a90a8d82/Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Riptide Sunscreen White",
+ "inactive_section": "*Cera Alba (Beeswax), *Cocos Nucifera (Coconut) Oil, *Daucus Carota (Carrot) Seed Oil, *Vitis Vinifera (Grape) Seed Oil, *Rubus Idaeus (Red Raspberry) Seed Oil, Tocopherol (Vitamin E), *Vitellaria Paradoxa (Shea) Butter. * = Organic",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9f065c21-64e3-27fd-e053-2995a90a8d82",
+  "name": "Riptide Sunscreen White Paste",
+  "brand": "Pacific Beach Organics Co.",
+  "n_inactive": 7,
+  "thin_reason": "short_list"
+ }
+}

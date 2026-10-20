@@ -1,0 +1,49 @@
+{
+ "setid": "b78b3e97-e3b6-59e4-e053-2995a90a580c",
+ "images": [
+  {
+   "name": "Active Ingredients.jpg",
+   "file": "img/b78b3e97-e3b6-59e4-e053-2995a90a580c/Active_Ingredients.jpg"
+  },
+  {
+   "name": "Artwork.jpg",
+   "file": "img/b78b3e97-e3b6-59e4-e053-2995a90a580c/Artwork.jpg"
+  },
+  {
+   "name": "Dosage and Administration.jpg",
+   "file": "img/b78b3e97-e3b6-59e4-e053-2995a90a580c/Dosage_and_Administration.jpg"
+  },
+  {
+   "name": "Inactive ingredients.jpg",
+   "file": "img/b78b3e97-e3b6-59e4-e053-2995a90a580c/Inactive_ingredients.jpg"
+  },
+  {
+   "name": "Indications and usage.jpg",
+   "file": "img/b78b3e97-e3b6-59e4-e053-2995a90a580c/Indications_and_usage.jpg"
+  },
+  {
+   "name": "Keep out of reach.jpg",
+   "file": "img/b78b3e97-e3b6-59e4-e053-2995a90a580c/Keep_out_of_reach.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/b78b3e97-e3b6-59e4-e053-2995a90a580c/Warnings.jpg"
+  },
+  {
+   "name": "purpose.jpg",
+   "file": "img/b78b3e97-e3b6-59e4-e053-2995a90a580c/purpose.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Beauty By Earth Tinted Mineral Face Sunscreen Stick - Creme",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b78b3e97-e3b6-59e4-e053-2995a90a580c",
+  "name": "Tinted Mineral Face Sunscreen Stick - Creme Stick",
+  "brand": "Private Label Select Ltd CO",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

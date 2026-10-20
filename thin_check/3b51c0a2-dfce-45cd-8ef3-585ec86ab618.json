@@ -1,0 +1,25 @@
+{
+ "setid": "3b51c0a2-dfce-45cd-8ef3-585ec86ab618",
+ "images": [
+  {
+   "name": "carton1.jpg",
+   "file": "img/3b51c0a2-dfce-45cd-8ef3-585ec86ab618/carton1.jpg"
+  },
+  {
+   "name": "carton2.jpg",
+   "file": "img/3b51c0a2-dfce-45cd-8ef3-585ec86ab618/carton2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "Inactive ingredients: water/eau, propanediol, glycerin, DI-C12-15 alkyl fumarate, dilauryl thiodipropionate, PEG-8, steareth-2, silica, ethylhexyl isononanoate, steareth-21, aronia melanocarpa fruit juice, zizyphus jujuba fruit extract, petasites hybridus leaf extract, saccharomyces/platinum ferment, stearyl alcohol, acrylates/C10-30 alkyl acrylate crosspolymer, silica dimethyl silylate, polyester-1, PEG-200, polyurethane-40, carbomer, tromethamine, disodium EDTA, 1,2-hexanediol, caprylyl glycol, parfum/fragrance, iron oxides, mica/CI 77019, titanium dioxide/CI 77891.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3b51c0a2-dfce-45cd-8ef3-585ec86ab618",
+  "name": "Avon Elements Skin Revitalize Instant Radiance Lotion",
+  "brand": "New Avon LLC",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

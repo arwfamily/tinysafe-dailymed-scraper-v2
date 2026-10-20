@@ -1,0 +1,41 @@
+{
+ "setid": "043734b8-9aee-cdf1-e063-6294a90aec60",
+ "images": [
+  {
+   "name": "Agent Natuer_Page_1.jpg",
+   "file": "img/043734b8-9aee-cdf1-e063-6294a90aec60/Agent_Natuer_Page_1.jpg"
+  },
+  {
+   "name": "actives.jpg",
+   "file": "img/043734b8-9aee-cdf1-e063-6294a90aec60/actives.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/043734b8-9aee-cdf1-e063-6294a90aec60/directions.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/043734b8-9aee-cdf1-e063-6294a90aec60/inactive_ingredients.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/043734b8-9aee-cdf1-e063-6294a90aec60/uses.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/043734b8-9aee-cdf1-e063-6294a90aec60/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Agent Natuer holi (sun) dewy tinted skin drops",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "043734b8-9aee-cdf1-e063-6294a90aec60",
+  "name": "Agent Natuer Holi (sun) Dewy Tinted Skin Drops Lotion",
+  "brand": "Agent Natuer",
+  "n_inactive": 35,
+  "thin_reason": null
+ }
+}

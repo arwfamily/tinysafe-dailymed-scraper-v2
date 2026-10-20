@@ -1,0 +1,25 @@
+{
+ "setid": "1eacdde1-f990-4962-92f1-3f41a8a3b193",
+ "images": [
+  {
+   "name": "image_1.jpg",
+   "file": "img/1eacdde1-f990-4962-92f1-3f41a8a3b193/image_1.jpg"
+  },
+  {
+   "name": "image_2.jpg",
+   "file": "img/1eacdde1-f990-4962-92f1-3f41a8a3b193/image_2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "water, C13-15 alkane, butyloctyl salicylate, ethylhexyl olivate, glycerin, zea mays (corn) starch, argania spinosa kernel oil, propanediol, tocopheryl acetate, polyhydroxystearic acid, inulin lauryl carbamate, pentylene glycol, 1,2-hexanediol, betaine, biosaccharide gum-4, bisabolol, cellulose, ethylhexylglycerin, eugenia caryophyllus (clove) bud extract, hydroxyethyl acrylate/sodium acryloyldimethyl taurate copolymer, lauroyl lysine, niacinamide, panthenol, phenoxyethanol, polyglyceryl-2 dipolyhydroxystearate, polyglyceryl-3 diisostearate, silica, sodium acrylates crosspolymer-2, sodium hyaluronate, solidago virgaurea (goldenrod) extract, sorbitan isostearate, squalane, tocopherol, trisodium ethylenediamine disuccinate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1eacdde1-f990-4962-92f1-3f41a8a3b193",
+  "name": "Active Skin Repair Hydrating Daily Sunscreen Lotion",
+  "brand": "Innovacyn, Inc.",
+  "n_inactive": 35,
+  "thin_reason": null
+ }
+}

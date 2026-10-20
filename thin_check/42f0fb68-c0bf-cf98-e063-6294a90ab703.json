@@ -1,0 +1,21 @@
+{
+ "setid": "42f0fb68-c0bf-cf98-e063-6294a90ab703",
+ "images": [
+  {
+   "name": "Peachy tinted.jpg",
+   "file": "img/42f0fb68-c0bf-cf98-e063-6294a90ab703/Peachy_tinted.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Peachy Tinted Facial Sunscreen",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "42f0fb68-c0bf-cf98-e063-6294a90ab703",
+  "name": "Peachy Tinted Facial Sunscreen Lotion",
+  "brand": "Peachy Corp",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

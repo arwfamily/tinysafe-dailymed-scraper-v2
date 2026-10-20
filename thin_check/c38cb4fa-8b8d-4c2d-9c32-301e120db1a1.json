@@ -1,0 +1,21 @@
+{
+ "setid": "c38cb4fa-8b8d-4c2d-9c32-301e120db1a1",
+ "images": [
+  {
+   "name": "Label.jpg",
+   "file": "img/c38cb4fa-8b8d-4c2d-9c32-301e120db1a1/Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Simple Mineral Sunscreen SPF 50",
+ "inactive_section": "Beeswax, Butyrospermum Parkii (Shea) Butter, Caprylic/Capric Triglyceride, Euphorbia Cerifera (Candelilla) Wax, Jojoba Esters, Maranta Arundinacea (Arrowroot) Powder, Olea Europaea (Olive) Fruit Oil, Propolis Extract, Tallow (Adeps Bovis)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c38cb4fa-8b8d-4c2d-9c32-301e120db1a1",
+  "name": "Simple Mineral Sunscreen SPF 50 Cream",
+  "brand": "Simple Sunscreen LLC",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

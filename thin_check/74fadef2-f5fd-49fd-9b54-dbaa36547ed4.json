@@ -1,0 +1,29 @@
+{
+ "setid": "74fadef2-f5fd-49fd-9b54-dbaa36547ed4",
+ "images": [
+  {
+   "name": "DFB1.jpg",
+   "file": "img/74fadef2-f5fd-49fd-9b54-dbaa36547ed4/DFB1.jpg"
+  },
+  {
+   "name": "DFB2.jpg",
+   "file": "img/74fadef2-f5fd-49fd-9b54-dbaa36547ed4/DFB2.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/74fadef2-f5fd-49fd-9b54-dbaa36547ed4/PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "Inactive ingredients: WATER/EAU, GLYCERIN, BUTYLENE GLYCOL, GLYCERYL STEARATE, PEG-8, SILICA, CETYL ALCOHOL, IMIDAZOLIDINYL UREA, METHYLPARABEN, CARBOMER, DIMETHICONE, ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER, DISODIUM EDTA, HYDROGENATED LECITHIN, PARFUM/FRAGRANCE, SODIUM HYDROXIDE, POLYGLYCERYL-3 DIISOSTEARATE, ORYZA SATIVA (RICE) BRAN OIL, DIMETHICONOL, HYDROGENATED POLYISOBUTENE, ASCORBYL PALMITATE, PANTHENOL, SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL, TOCOPHERYL ACETATE,RETINYL PALMITATE, GLYCINE SOJA (SOYBEAN) STEROLS, LECITHIN, GLYCINE SOJA (SOYBEAN) OIL, TOCOPHEROL.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "74fadef2-f5fd-49fd-9b54-dbaa36547ed4",
+  "name": "Moisture Therapy Daily Skin Defense Body Lotion",
+  "brand": "Avon Products, Inc",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

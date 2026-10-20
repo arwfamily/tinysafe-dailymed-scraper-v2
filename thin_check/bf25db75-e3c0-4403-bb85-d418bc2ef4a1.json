@@ -1,0 +1,21 @@
+{
+ "setid": "bf25db75-e3c0-4403-bb85-d418bc2ef4a1",
+ "images": [
+  {
+   "name": "bodylotionlabel.jpg",
+   "file": "img/bf25db75-e3c0-4403-bb85-d418bc2ef4a1/bodylotionlabel.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Glytone Retexturize Body",
+ "inactive_section": "Inactive Ingredients Water (aqua), Glycolic Acid, C12-15 Alkyl Benzoate, Cyclomethicone, Glyceryl Stearate, Glycerin, Ammonium Hydroxide, PEG-150 Stearate, Polyacrylamide, Cetyl Alcohol, Cetearyl Alcohol, Butyrospermum Parkii (Shea Butter), Cholesterol, Phenozyethanol, Dimethiconol, C13-14 Isoparafin, Methylparaben, Xanthan gum, cetearyl glucoside, disodium EDTA, tocopheryl acetate, laureth-7",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bf25db75-e3c0-4403-bb85-d418bc2ef4a1",
+  "name": "Glytone Retexturize Body Lotion",
+  "brand": "Glytone",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

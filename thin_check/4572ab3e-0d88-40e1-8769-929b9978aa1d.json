@@ -1,0 +1,21 @@
+{
+ "setid": "4572ab3e-0d88-40e1-8769-929b9978aa1d",
+ "images": [
+  {
+   "name": "fruit-01.jpg",
+   "file": "img/4572ab3e-0d88-40e1-8769-929b9978aa1d/fruit-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Fruit Smoothies®",
+ "inactive_section": "alumina, beeswax, blue 1 lakeMay contain one or more of these ingredients., diethylhexyl adipate, ethylhexyl palmitate, ethylhexyl stearate, flavors, glyceryl stearate, hydrogenated coconut oil, isopropyl myristate, isopropyl palmitate, isopropyl stearate, jojoba esters, microcrystalline wax, myristyl myristate, phenoxyethanol, phenyl trimethicone, polyethylene, polyhydroxystearic acid, red 30 lake, saccharin, silica, tetrahexyldecyl ascorbate, titanium dioxide, tocopheryl acetate, yellow 10",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4572ab3e-0d88-40e1-8769-929b9978aa1d",
+  "name": "Fruit Smoothies Kit",
+  "brand": "Blistex Inc.",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

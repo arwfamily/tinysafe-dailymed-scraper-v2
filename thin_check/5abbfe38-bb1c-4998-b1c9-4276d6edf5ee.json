@@ -1,0 +1,21 @@
+{
+ "setid": "5abbfe38-bb1c-4998-b1c9-4276d6edf5ee",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/5abbfe38-bb1c-4998-b1c9-4276d6edf5ee/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "- Water - Caprylic/Capric Triglyceride - Butylene Glycol - PEG-10 Dimethicone - Silica - Portulaca Oleracea Extract - Bacopa Monniera Extract - Dimethicone - Talc - Dihexyldecyl Lauroyl Glutamate - Sodium PCA - Hexyl Laurate - Polyglyceryl-2 Diisostearate- Polyglutamic Acid - Sodium Hyaluronate - Citrus Grandis (Grapefruit) Peel Extract - Camellia Sinensis Leaf Extract - Butyrospermum Parkii (Shea) Butter - Hydrogenated Lecithin - Lactobacillus/Bean Seed Extract/Sodium Glutamate Ferment Filtrate - Ceramide 3- Lactic Acid – Phytosphingosine - Nasturtium Officinale Flower/Leaf Extract - Niacinamide - Chlorella Vulgaris/Lupinus Albus Protein Ferment - Zinc PCA - Hydrolyzed Opuntia Ficus-Indica Flower",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5abbfe38-bb1c-4998-b1c9-4276d6edf5ee",
+  "name": "Jnh Dr. Intensive Plus Uv Protector Cream",
+  "brand": "Daeduck Lab Co., Ltd",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

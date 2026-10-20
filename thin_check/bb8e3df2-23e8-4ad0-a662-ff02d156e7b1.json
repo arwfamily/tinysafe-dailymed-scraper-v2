@@ -1,0 +1,21 @@
+{
+ "setid": "bb8e3df2-23e8-4ad0-a662-ff02d156e7b1",
+ "images": [
+  {
+   "name": "derma-01.jpg",
+   "file": "img/bb8e3df2-23e8-4ad0-a662-ff02d156e7b1/derma-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "DERMA E Sun Protection Mineral SPF 30",
+ "inactive_section": "Silica, Mica, Aluminum Starch Octenyl Succinate, Triethoxyoctylsilane, Magnesium Stearate, Stearic Acid, CI 77491, Phenoxyethanol, CI 77492, Bisabolol, Tocopherol, Ethylhexylglycerin, Isostearyl Alcohol, Ceramide NP.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bb8e3df2-23e8-4ad0-a662-ff02d156e7b1",
+  "name": "Derma E Sun Protection Mineral SPF 30 Powder",
+  "brand": "derma e",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

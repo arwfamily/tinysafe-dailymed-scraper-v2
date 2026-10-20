@@ -1,0 +1,21 @@
+{
+ "setid": "0a6ce431-7370-44ff-839c-6e42d3a5bc10",
+ "images": [
+  {
+   "name": "ImageZCTint30.jpg",
+   "file": "img/0a6ce431-7370-44ff-839c-6e42d3a5bc10/ImageZCTint30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive Ingredients: Water (Aqua), Cyclopentasiloxane, Butylene Glycol, Glycerin, Caprylic/Capric Triglyceride, Glyceryl Stearate, PEG-100 Stearate, Polyglyceryl-3 Polydimethylsiloxytethyl Dimethicone, Cyclohexasiloxane, Sorbitan Stearate, Dimethicone, Polyacrylamide, C13-14 Isoparaffin, Laureth-7, Phenoxyethanol, Caprylyl, Glycol, Ethylhexylglycerin, Hexylene Glycol, Imperata Cylindrica Root Extract, PEG-8, Carbomer, Triethoxysilylethyl Polydimethylsiloxyethyl Hexyl Dimethicone, Cetyl Alcohol, Lecithin, Tocopherol, Ascorbyl Palmitate, Ascorbic Acid, Citric Acid, Xanthan Gum, Polyester-7, Neopentyl Glycol Diheptanoate, Tocopheryl Linoleate/Oleate, Teprenone, Phoenix Dactylifera (Date) Fruit Extract, Polygonum Aviculare Extract, Sodium Lactate, Disodium EDTA, Dipotassium Glycrrihizate, Arabidopsis THaliana Extract, Plankton Extract, Micrococcus Lysate, Triethoxycaprylysilane, Iron Oxides (CI77491, CI77492, CI77499)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0a6ce431-7370-44ff-839c-6e42d3a5bc10",
+  "name": "Zinclear SPF 30 Tinted Cream",
+  "brand": "Allure Labs Inc.",
+  "n_inactive": 46,
+  "thin_reason": null
+ }
+}

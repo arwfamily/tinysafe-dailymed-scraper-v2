@@ -1,0 +1,25 @@
+{
+ "setid": "dd308fef-e312-4ced-e053-2995a90a76fd",
+ "images": [
+  {
+   "name": "Sun and Face Body Stick Carton v2.jpg",
+   "file": "img/dd308fef-e312-4ced-e053-2995a90a76fd/Sun_and_Face_Body_Stick_Carton_v2.jpg"
+  },
+  {
+   "name": "Sun and Face Body Tube Stick v2.jpg",
+   "file": "img/dd308fef-e312-4ced-e053-2995a90a76fd/Sun_and_Face_Body_Tube_Stick_v2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "doTERRA Sun Face and Body Mineral Sunscreen Stick",
+ "inactive_section": "Inactive ingredients Heptyl Undecylenate, Simmondsia chinensis (Jojoba) Seed Oil, Euphorbia cerifera (Candelilla) Wax, Carthamus tinctorius (Safflower) Seed Oil, Theobroma cacao (Cocoa) Seed Butter, Jojoba Esters, Ethyl Macadamiate, Butyloctyl Salicylate, Oryzanol, Butyrospermum parkii (Shea) Butter, Daucus carota sativa (Carrot) Seed Oil, Boswellia carterii (Frankincense) Oil, Helichrysum italicum Flower/Leaf/Stem Oil, Cocos nucifera (Coconut) Fruit Extract, Helianthus annuus (Sunflower) Seed Oil, Bisabolol, Tocopherol, Phytosterols, Michelia alba (Magnolia) Leaf Oil, Cymbopogon flexuosus (Lemongrass) Oil, Squalene, Cananga odorata (Ylang Ylang) Flower Oil, Michelia alba (Magnolia) Flower Oil, Citrus nobilis (Mandarin Orange) Peel Oil",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "dd308fef-e312-4ced-e053-2995a90a76fd",
+  "name": "Doterra Sun Stick",
+  "brand": "doTERRA International, LLC",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

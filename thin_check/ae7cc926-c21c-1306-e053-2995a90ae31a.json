@@ -1,0 +1,21 @@
+{
+ "setid": "ae7cc926-c21c-1306-e053-2995a90ae31a",
+ "images": [
+  {
+   "name": "ONTREE LIFE Label.jpg",
+   "file": "img/ae7cc926-c21c-1306-e053-2995a90ae31a/ONTREE_LIFE_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "90105-202",
+ "inactive_section": "water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ae7cc926-c21c-1306-e053-2995a90ae31a",
+  "name": "Ontree Life Liquid",
+  "brand": "O2",
+  "n_inactive": 1,
+  "thin_reason": "label_prints_too_little"
+ }
+}

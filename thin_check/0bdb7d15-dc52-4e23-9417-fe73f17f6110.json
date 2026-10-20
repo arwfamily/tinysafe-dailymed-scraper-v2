@@ -1,0 +1,25 @@
+{
+ "setid": "0bdb7d15-dc52-4e23-9417-fe73f17f6110",
+ "images": [
+  {
+   "name": "Label Front.jpg",
+   "file": "img/0bdb7d15-dc52-4e23-9417-fe73f17f6110/Label_Front.jpg"
+  },
+  {
+   "name": "Label back.jpg",
+   "file": "img/0bdb7d15-dc52-4e23-9417-fe73f17f6110/Label_back.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Hampton Sun SPF50 Kids Face Stick",
+ "inactive_section": "Butyloctyl Salicylate Butyrospermum Parkii (Shea) Oil C12-15 Alkyl Benzoate Caprylic/Capric Triglyceride Dibutyl Ethylhexanoyl Glutamide Dibutyl Lauroyl Glutamide Ethylhexyl Methoxycrylene Fragrance Octyldodecanol Rebaudioside A Simmondsia Chinensis (Jojoba) Seed Oil Sodium Hyaluronate Tocopheryl Acetate Triethoxycaprylylsilane Vitis Vinifera (Grape) Seed Oil VP/Hexadecene Copolymer",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0bdb7d15-dc52-4e23-9417-fe73f17f6110",
+  "name": "SPF 50 Mineral Sunscreen Kids Stick",
+  "brand": "S&C Hampton Sun LLC",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

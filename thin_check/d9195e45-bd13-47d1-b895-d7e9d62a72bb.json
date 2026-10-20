@@ -1,0 +1,25 @@
+{
+ "setid": "d9195e45-bd13-47d1-b895-d7e9d62a72bb",
+ "images": [
+  {
+   "name": "40 mL carton.jpg",
+   "file": "img/d9195e45-bd13-47d1-b895-d7e9d62a72bb/40_mL_carton.jpg"
+  },
+  {
+   "name": "40 mL label.jpg",
+   "file": "img/d9195e45-bd13-47d1-b895-d7e9d62a72bb/40_mL_label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Aqua, Glycerin, C15-19 alkane, Propanediol, C12-22 alkyl acrylate/hydroxyethylacrylate copolymer, Tocopherol, Sodium stearoyl glutamate, Cetearyl alcohol, Sclerotium gum, Hydroxyacetophenone, Caprylyl glycol, Sodium starch octenylsuccinate, Glyceryl stearate, Jojoba esters, Helianthus annuus (sunflower) seed wax, Hydroxypropyl starch phosphate, Trisodium ethylenediamine Disuccinate, Ascorbyl glucoside, Ascorbyl palmitate, Sodium hydroxide, Polyglycerin-3, Citrus sinensis (orange) fruit extract, Citric acid, Sodium benzoate, Potassium sorbate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d9195e45-bd13-47d1-b895-d7e9d62a72bb",
+  "name": "Garnier Vitamine C Brightening Daily Uv Fluid Invisible 50 Plus SPF UVB Plus UVA Lotion",
+  "brand": "L'Oreal USA Products Inc",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

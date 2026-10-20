@@ -1,0 +1,29 @@
+{
+ "setid": "21b2dc1a-13da-47a6-99d9-40dfed4d3598",
+ "images": [
+  {
+   "name": "Full Hearts.jpg",
+   "file": "img/21b2dc1a-13da-47a6-99d9-40dfed4d3598/Full_Hearts.jpg"
+  },
+  {
+   "name": "Inner Package7.jpg",
+   "file": "img/21b2dc1a-13da-47a6-99d9-40dfed4d3598/Inner_Package7.jpg"
+  },
+  {
+   "name": "Outer Package.jpg",
+   "file": "img/21b2dc1a-13da-47a6-99d9-40dfed4d3598/Outer_Package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Be Sweet SPF 15 Tinted Lip Balm Full Hearts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "21b2dc1a-13da-47a6-99d9-40dfed4d3598",
+  "name": "Be Sweet SPF 15 Tinted Full Hearts Gel",
+  "brand": "Bona Fide Beauty Lab PS LLC",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

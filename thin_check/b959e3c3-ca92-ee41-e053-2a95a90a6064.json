@@ -1,0 +1,21 @@
+{
+ "setid": "b959e3c3-ca92-ee41-e053-2a95a90a6064",
+ "images": [
+  {
+   "name": "Shade 0.5 ILIA1.jpg",
+   "file": "img/b959e3c3-ca92-ee41-e053-2a95a90a6064/Shade_0.5_ILIA1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "7",
+ "title": "ILIA SUPER SERUM SKIN TINT (ST0.5 SKYE)",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b959e3c3-ca92-ee41-e053-2a95a90a6064",
+  "name": "Ilia Super Serum Skin Tint (st0.5 Skye) Lotion",
+  "brand": "Ilia, Inc.",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

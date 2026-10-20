@@ -1,0 +1,25 @@
+{
+ "setid": "631c77b0-9e09-4250-b81b-1cdce161cb29",
+ "images": [
+  {
+   "name": "snowskin_lipbalm_box.jpg",
+   "file": "img/631c77b0-9e09-4250-b81b-1cdce161cb29/snowskin_lipbalm_box.jpg"
+  },
+  {
+   "name": "snowskin_lipbalm_tube.jpg",
+   "file": "img/631c77b0-9e09-4250-b81b-1cdce161cb29/snowskin_lipbalm_tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Snow Skin Sunscreen Lip Balm",
+ "inactive_section": "Inactive Ingredients Aloe vera, Beeswax, Capryllic/Capric Triglyceride, Castor Oil, Jojoba Oil, Lanolin, Tocopheryl Acetate, Vanilla lip",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "631c77b0-9e09-4250-b81b-1cdce161cb29",
+  "name": "Snow Skin Sunscreen Lip Balm Stick",
+  "brand": "Skin Alive, Ltd.",
+  "n_inactive": 9,
+  "thin_reason": null
+ }
+}

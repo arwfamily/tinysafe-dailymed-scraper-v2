@@ -1,0 +1,21 @@
+{
+ "setid": "437d13e0-ee1b-44a2-977b-d5deba3d55cf",
+ "images": [
+  {
+   "name": "Tinted Moisture.jpg",
+   "file": "img/437d13e0-ee1b-44a2-977b-d5deba3d55cf/Tinted_Moisture.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "437d13e0-ee1b-44a2-977b-d5deba3d55cf",
+  "name": "Mineral Tinted Moisturizer Lotion",
+  "brand": "Aveda Corporation",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list"
+ }
+}

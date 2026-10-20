@@ -1,0 +1,21 @@
+{
+ "setid": "35a8ae26-82eb-e4ca-e063-6394a90a0022",
+ "images": [
+  {
+   "name": "SKIN BOSS 204.jpg",
+   "file": "img/35a8ae26-82eb-e4ca-e063-6394a90a0022/SKIN_BOSS_204.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "35a8ae26-82eb-e4ca-e063-6394a90a0022",
+  "name": "Luminous Tinted Moisturizing Cream",
+  "brand": "SKIN BOSS L.L.C.",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

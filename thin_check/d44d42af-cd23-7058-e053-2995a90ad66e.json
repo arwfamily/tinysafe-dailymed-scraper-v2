@@ -1,0 +1,53 @@
+{
+ "setid": "d44d42af-cd23-7058-e053-2995a90ad66e",
+ "images": [
+  {
+   "name": "Enfanti Derma Series Directions.jpg",
+   "file": "img/d44d42af-cd23-7058-e053-2995a90ad66e/Enfanti_Derma_Series_Directions.jpg"
+  },
+  {
+   "name": "Enfanti Derma Series USES.jpg",
+   "file": "img/d44d42af-cd23-7058-e053-2995a90ad66e/Enfanti_Derma_Series_USES.jpg"
+  },
+  {
+   "name": "Enfanti Derma Series Warning.jpg",
+   "file": "img/d44d42af-cd23-7058-e053-2995a90ad66e/Enfanti_Derma_Series_Warning.jpg"
+  },
+  {
+   "name": "Enfanti Derma Series active ingredient.jpg",
+   "file": "img/d44d42af-cd23-7058-e053-2995a90ad66e/Enfanti_Derma_Series_active_ingredient.jpg"
+  },
+  {
+   "name": "Front of label.jpg",
+   "file": "img/d44d42af-cd23-7058-e053-2995a90ad66e/Front_of_label.jpg"
+  },
+  {
+   "name": "Inactive ingredients.jpg",
+   "file": "img/d44d42af-cd23-7058-e053-2995a90ad66e/Inactive_ingredients.jpg"
+  },
+  {
+   "name": "Other info.jpg",
+   "file": "img/d44d42af-cd23-7058-e053-2995a90ad66e/Other_info.jpg"
+  },
+  {
+   "name": "Package outer box.jpg",
+   "file": "img/d44d42af-cd23-7058-e053-2995a90ad66e/Package_outer_box.jpg"
+  },
+  {
+   "name": "Sun Protection Measures.jpg",
+   "file": "img/d44d42af-cd23-7058-e053-2995a90ad66e/Sun_Protection_Measures.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Enfanti Derma Series SPF 50 PA++++ 1.8 fl oz.",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d44d42af-cd23-7058-e053-2995a90ad66e",
+  "name": "Enfanti Derma Series 100% Mineral Sun Shield Cream",
+  "brand": "Orange Lab",
+  "n_inactive": 43,
+  "thin_reason": null
+ }
+}

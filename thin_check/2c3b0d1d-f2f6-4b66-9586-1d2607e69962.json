@@ -1,0 +1,21 @@
+{
+ "setid": "2c3b0d1d-f2f6-4b66-9586-1d2607e69962",
+ "images": [
+  {
+   "name": "cosmetic-01.jpg",
+   "file": "img/2c3b0d1d-f2f6-4b66-9586-1d2607e69962/cosmetic-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Daily Face Moisturizer",
+ "inactive_section": "Water, Hydrogenated Polybutene, Octyl Stearate, Polyglyceryl-4-Isostearate, Aloe Barbadensis Leaf Extract, Isopropyl Palmitate, Cyclomethicone, Sunflower Oil, Hydrogenated Microcrystalline Wax, Cetyl Dimethicone Copolyol, Cetyl Dimethicone, Hydrogenated Castor Oil, Sodium Chloride, Polyglyceryl-3-Oleate, Silica, Hexyl Laurate, Triethoxycaprylylsilane, Capryly Glycol, Methylisothiazolinone.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2c3b0d1d-f2f6-4b66-9586-1d2607e69962",
+  "name": "Daily Face Moisturizer Cream",
+  "brand": "Cosmetic Solutions LLC",
+  "n_inactive": 41,
+  "thin_reason": null
+ }
+}

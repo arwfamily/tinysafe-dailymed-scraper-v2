@@ -1,0 +1,12 @@
+{
+ "setid": "4f5896a6-0639-5589-e063-6294a90a45a9",
+ "images": [],
+ "error": "spl: HTTP Error 429: Too Many Requests media: HTTP Error 429: Too Many Requests",
+ "db": {
+  "setid": "4f5896a6-0639-5589-e063-6294a90a45a9",
+  "name": "Banana Boat Lotion",
+  "brand": "Edgewell Personal Care Brands LLC",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

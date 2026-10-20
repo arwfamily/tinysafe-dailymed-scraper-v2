@@ -1,0 +1,21 @@
+{
+ "setid": "35d57d3f-376c-2307-e063-6294a90adf51",
+ "images": [
+  {
+   "name": "OS-01 Face SPF BS SPF 30 Tinted Medium.jpg",
+   "file": "img/35d57d3f-376c-2307-e063-6294a90adf51/OS-01_Face_SPF_BS_SPF_30_Tinted_Medium.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive Ingredients Water (Aqua),Caprylic/Capric Triglyceride, Glycerin, Methyl Dihydroabietate, Cetearyl Alcohol, Cetyl Palmitate, Coco-Glucoside, Caprylyl/Capryl Glucoside, Sorbitan Palmitate, Sorbitan Olivate, Butyrospermum Parkii (Shea) Nut Extract, Ethyl Ferulate, Bisabolol, Allantoin, Hydrolyzed Jojoba Esters, Acacia Senegal Gum, Polyhydroxystearic acid, Polyglyceryl-3 Polyricinoleate, Isostearic acid, Lecithin, Tocopheryl Acetate, Tetrahexyldecyl Ascorbate, Decapeptide-52*,Oryza Sativa (Rice) Starch, Camellia Sinensis Leaf Extract, Euterpe Oleracea Fruit Extract, Caesalpinia Spinosa Fruit Pod Extract, Helianthus Annuus (Sunflower) Sprout Extract, Caprylyl Glycol, Ethylhexylglycerin, Hexylene Glycol, Xanthan Gum, Sodium Phytate, Propylene Glycol, Phenoxyethanol, Sodium Benzoate, Potassium Sorbate, Triethoxycaprylylsilane, Alumina, Magnesium Oxide, Iron Oxides (CI 77491, CI 77492, CI 77499)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "35d57d3f-376c-2307-e063-6294a90adf51",
+  "name": "Os-01 Face SPF Bd SPF 30 Tinted Medium/deep Cream",
+  "brand": "ONESKIN INC.",
+  "n_inactive": 44,
+  "thin_reason": null
+ }
+}

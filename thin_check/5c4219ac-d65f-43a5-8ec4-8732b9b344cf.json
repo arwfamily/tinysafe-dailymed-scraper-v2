@@ -1,0 +1,21 @@
+{
+ "setid": "5c4219ac-d65f-43a5-8ec4-8732b9b344cf",
+ "images": [
+  {
+   "name": "pri08-0001-01.jpg",
+   "file": "img/5c4219ac-d65f-43a5-8ec4-8732b9b344cf/pri08-0001-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "DRUG FACTS",
+ "inactive_section": "Alumina, Cyclohexasiloxane, Cyclopentasiloxane, Dimethicone, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethiconol, Iron Oxide (CI77491), Lauryl PEG/PPG-18/18 Methicone, Hydrogen Dimethicone, PEG-10 Dimethicone, Tetrahexyldecyl Ascorbate, Tocopheryl Acetate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5c4219ac-d65f-43a5-8ec4-8732b9b344cf",
+  "name": "Priia Tinted Mineral Sunscreen And Primer Cream",
+  "brand": "Priia Cosmetics Inc",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

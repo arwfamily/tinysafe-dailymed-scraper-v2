@@ -1,0 +1,21 @@
+{
+ "setid": "3eb67c20-a1b6-3014-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "l.jpg",
+   "file": "img/3eb67c20-a1b6-3014-e054-00144ff8d46c/l.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "Glycerin, Cyclomethicone, Cyclopentasiloxane, Isoamyl p-methoxycinnamate, Cyclohexasiloxane, Butylene Glycol, Cetyl Alcohol, Potassium Cetyl Phosphate, Glyceryl Stearate, Hydrogenated Polyisobutene, Bis-Ethylhexyloxyphenol Methoxyphenyl, Triazine, PEG-10 Dimethicone, Dimethicone, PEG-100 Stearate, etc.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3eb67c20-a1b6-3014-e054-00144ff8d46c",
+  "name": "Atono2 Baby Sun Cream Cream",
+  "brand": "LAORGANIC Co., Ltd.",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

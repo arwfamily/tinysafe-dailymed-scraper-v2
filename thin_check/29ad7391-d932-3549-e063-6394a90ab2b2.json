@@ -1,0 +1,21 @@
+{
+ "setid": "29ad7391-d932-3549-e063-6394a90ab2b2",
+ "images": [
+  {
+   "name": "NARS_SP1.jpg",
+   "file": "img/29ad7391-d932-3549-e063-6394a90ab2b2/NARS_SP1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "NARS Radiance Primer Broad Spectrum SPF 35 Sunscreen",
+ "inactive_section": "Inactive ingredients: Water ∙ Caprylyl Methicone ∙ Dipropylene Glycol ∙ Propanediol ∙ Dimethicone ∙ Butyloctyl Salicylate ∙ Lactobacillus Ferment ∙ Isododecane ∙ Ammonium Acryloyldimethyltaurate/VP Copolymer ∙ Trisiloxane ∙ Polysorbate 60 ∙ Trimethylsiloxysilicate ∙ Dextrin Palmitate ∙ Phenoxyethanol ∙ C14-22 Alcohols ∙ Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer ∙ Hydrolyzed Wheat Protein/PVP Crosspolymer ∙ Panthenol ∙ Fragrance ∙ Evodia Rutaecarpa Fruit Extract ∙ Dibutyl Ethylhexanoyl Glutamide ∙ Dibutyl Lauroyl Glutamide ∙ Disodium EDTA ∙ C12-20 Alkyl Glucoside ∙ Dipotassium Glycyrrhizate ∙ Tocopheryl Acetate ∙ Sodium Hyaluronate ∙ Butylene Glycol ∙ Pentylene Glycol ∙ Tin Oxide ∙ Potassium Sorbate ∙ Hydroxyphenyl Propamidobenzoic Acid ∙ Ethylhexylglycerin ∙ Ascorbyl Palmitate ∙ Mica ∙ Titanium Dioxide ∙ Red 4 ∙ Yellow 5 ∙",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "29ad7391-d932-3549-e063-6394a90ab2b2",
+  "name": "Nars Radiance Primer Broad Spectrum SPF 35 Sunscreen Lotion",
+  "brand": "COSMAX USA, CORPORATION",
+  "n_inactive": 35,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "bfe9c7fd-1e43-627d-e053-2a95a90ae03c",
+ "images": [
+  {
+   "name": "label-fore.jpg",
+   "file": "img/bfe9c7fd-1e43-627d-e053-2a95a90ae03c/label-fore.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "Pinus densiflora callus extract ,Foeniculum vulgare seed extract,Indican,Maltitol,Sorbitol,Water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bfe9c7fd-1e43-627d-e053-2a95a90ae03c",
+  "name": "Vitaplus Fore Liquid",
+  "brand": "MY Corp.,Ltd",
+  "n_inactive": 7,
+  "thin_reason": "short_list"
+ }
+}

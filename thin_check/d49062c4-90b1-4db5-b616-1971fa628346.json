@@ -1,0 +1,25 @@
+{
+ "setid": "d49062c4-90b1-4db5-b616-1971fa628346",
+ "images": [
+  {
+   "name": "surferskin_box.jpg",
+   "file": "img/d49062c4-90b1-4db5-b616-1971fa628346/surferskin_box.jpg"
+  },
+  {
+   "name": "surferskin_tube.jpg",
+   "file": "img/d49062c4-90b1-4db5-b616-1971fa628346/surferskin_tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Surfers Skin Sunscreen Lip Balm",
+ "inactive_section": "Inactive Ingredients Aloe vera, Beeswax, Capryllic/Capric Triglyceride, Castor Oil, Jojoba Oil, Lanolin, Tocopheryl Acetate, Vanilla lip",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d49062c4-90b1-4db5-b616-1971fa628346",
+  "name": "Surfers Skin Sunscreen Lip Balm Stick",
+  "brand": "Skin Alive, Ltd.",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

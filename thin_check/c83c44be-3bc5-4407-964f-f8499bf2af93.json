@@ -1,0 +1,21 @@
+{
+ "setid": "c83c44be-3bc5-4407-964f-f8499bf2af93",
+ "images": [
+  {
+   "name": "SolarguardMD.jpg",
+   "file": "img/c83c44be-3bc5-4407-964f-f8499bf2af93/SolarguardMD.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "water, adipic acid/diethylene glycol/glycerin crosspolymer, polysorbate 60, glyceryl stearate, beeswax, diethylhexyl 2,6-naphthalate, trimethylsiloxysilicate,glycerin, dipotassium glycyrrhizate, dimethicone, butyoctyl salicylate, triethanolamine, phenoxyethanol ethylhexylgylcerin, carbomer, styrene/acrylates copolymer, sorbitan oleate, fragrance, xanthan gum, disodium EDTA",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c83c44be-3bc5-4407-964f-f8499bf2af93",
+  "name": "Solarguard Md Spray",
+  "brand": "Scarguard Labs, LLC",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

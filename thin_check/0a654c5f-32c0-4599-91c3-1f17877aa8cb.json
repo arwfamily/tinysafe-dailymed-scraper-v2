@@ -1,0 +1,25 @@
+{
+ "setid": "0a654c5f-32c0-4599-91c3-1f17877aa8cb",
+ "images": [
+  {
+   "name": "30_SPF Lotion_Label_2012-03-15.jpg",
+   "file": "img/0a654c5f-32c0-4599-91c3-1f17877aa8cb/30_SPF_Lotion_Label_2012-03-15.jpg"
+  },
+  {
+   "name": "30_SPF Lotion_Label_2012-05-23.jpg",
+   "file": "img/0a654c5f-32c0-4599-91c3-1f17877aa8cb/30_SPF_Lotion_Label_2012-05-23.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "9",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENTS: ALKYL BENZOATE, ACRYLATES/C10-30 ALKYL ACRYLATES CROSSPOLYMER, C12-15 GLYCERYL STEARATE, CETEARYL PHOSPHATE, ETHYLHEXYLGLYCERIN, MAGNESIUM ALUMINUM SILICATE, PHENOXYETHANOL, PROPYLENE GLYCOL, SODIUM HYDROXIDE, STEARETH-20, STEARYL ALCOHOL, TETRAHEXYLDECYL ASCORBATE, TOCOPHERYL ACETATE, WATER (AQUA).",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0a654c5f-32c0-4599-91c3-1f17877aa8cb",
+  "name": "I-max Excellence Lotion",
+  "brand": "MAXLIFE USA, INC.",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

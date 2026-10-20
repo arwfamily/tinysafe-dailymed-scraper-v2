@@ -1,0 +1,21 @@
+{
+ "setid": "297d98d1-68d3-444c-aefc-dda749268bdb",
+ "images": [
+  {
+   "name": "6NFCcarton_Page_1.jpg",
+   "file": "img/297d98d1-68d3-444c-aefc-dda749268bdb/6NFCcarton_Page_1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "297d98d1-68d3-444c-aefc-dda749268bdb",
+  "name": "Youth Surge Cream",
+  "brand": "CLINIQUE LABORATORIES INC",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list"
+ }
+}

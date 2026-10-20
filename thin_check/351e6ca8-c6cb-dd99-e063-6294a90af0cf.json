@@ -1,0 +1,21 @@
+{
+ "setid": "351e6ca8-c6cb-dd99-e063-6294a90af0cf",
+ "images": [
+  {
+   "name": "Atlanta 208.jpg",
+   "file": "img/351e6ca8-c6cb-dd99-e063-6294a90af0cf/Atlanta_208.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "351e6ca8-c6cb-dd99-e063-6294a90af0cf",
+  "name": "Everyday Mineral Tinted Sunscreen Cream",
+  "brand": "Atlanta Acne Specialists, LLC",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

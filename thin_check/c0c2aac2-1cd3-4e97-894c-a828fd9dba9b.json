@@ -1,0 +1,29 @@
+{
+ "setid": "c0c2aac2-1cd3-4e97-894c-a828fd9dba9b",
+ "images": [
+  {
+   "name": "MayFITPrimerBack1.jpg",
+   "file": "img/c0c2aac2-1cd3-4e97-894c-a828fd9dba9b/MayFITPrimerBack1.jpg"
+  },
+  {
+   "name": "MayFitPrimerBack2.jpg",
+   "file": "img/c0c2aac2-1cd3-4e97-894c-a828fd9dba9b/MayFitPrimerBack2.jpg"
+  },
+  {
+   "name": "MayFitPrimerFront.jpg",
+   "file": "img/c0c2aac2-1cd3-4e97-894c-a828fd9dba9b/MayFitPrimerFront.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "water, isododecane, isononyl isononanoate, silica, copernicia cerifera (carnauba) wax, silica silylate, glycerin, octyldodecanol, PEG-30 dipolyhydroxystearate, triethanolamine, polyamide-8, phenoxyethanol, hydroxyethyl acrylate/sodium acryloyldimethyl taurate, copolymer, octyldodecyl xyloside, caprylyl glycol, kaolin, disodium EDTA, sorbitan isostearate, polysorbate 60, linalool, benzyl salicylate, limonene, benzyl alcohol, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, fragrance",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c0c2aac2-1cd3-4e97-894c-a828fd9dba9b",
+  "name": "Maybelline New York Fit Me Matte Plus Poreless Mattifying Poreless Primer Broad Spectrum SPF 20 Sunscreen Liquid",
+  "brand": "L'Oreal USA Products Inc",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

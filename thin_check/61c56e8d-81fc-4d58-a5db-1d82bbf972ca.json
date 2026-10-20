@@ -1,0 +1,21 @@
+{
+ "setid": "61c56e8d-81fc-4d58-a5db-1d82bbf972ca",
+ "images": [
+  {
+   "name": "untitled.jpg",
+   "file": "img/61c56e8d-81fc-4d58-a5db-1d82bbf972ca/untitled.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Cetearyl Alcohol, Stearyl Alcohol, Glycerin, Phenoxyethanol, Acrylates/C12-22 Alkyl Methacrylate Copolymer, Caprylyl Glycol, Cetyl Alcohol, Carbomer, Ceteth-10 Phosphate, Dicetyl Phosphate, Coco-Glucoside, Methylparaben, Xanthan Gum, Propylparaben, Sodium Hydroxide, Disodium EDTA, Hydrogenated Methyl Abietate, Lauryl PEG-8 Dimethicone, Phenylisopropyl Dimethicone, Polyglyceryl-3 Stearate/Isostearate/Dimer Dilinoleate Copolymer, Sodium Ascorbyl Phosphate, Tocopheryl Acetate, Aloe Barbadensis Leaf Juice.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "61c56e8d-81fc-4d58-a5db-1d82bbf972ca",
+  "name": "Cvs Sport Lotion",
+  "brand": "CVS Pharmacy",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

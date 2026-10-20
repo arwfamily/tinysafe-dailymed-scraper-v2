@@ -1,0 +1,21 @@
+{
+ "setid": "419d4ada-fe9b-b774-e063-6394a90a3d09",
+ "images": [
+  {
+   "name": "SunDay Serum.jpg",
+   "file": "img/419d4ada-fe9b-b774-e063-6394a90a3d09/SunDay_Serum.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sonni SunDay Serum",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "419d4ada-fe9b-b774-e063-6394a90a3d09",
+  "name": "Sonni Sunday Serum Lotion",
+  "brand": "Sonni",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

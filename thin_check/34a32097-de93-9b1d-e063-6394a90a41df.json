@@ -1,0 +1,21 @@
+{
+ "setid": "34a32097-de93-9b1d-e063-6394a90a41df",
+ "images": [
+  {
+   "name": "226 faces by fern.jpg",
+   "file": "img/34a32097-de93-9b1d-e063-6394a90a41df/226_faces_by_fern.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "34a32097-de93-9b1d-e063-6394a90a41df",
+  "name": "Nourish Non-tinted Mineral Sunscreen Cream",
+  "brand": "Fern Burg",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

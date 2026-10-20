@@ -1,0 +1,33 @@
+{
+ "setid": "3d4e1383-369c-4da5-a65b-d170efb6e6fc",
+ "images": [
+  {
+   "name": "6 gram brush box.jpg",
+   "file": "img/3d4e1383-369c-4da5-a65b-d170efb6e6fc/6_gram_brush_box.jpg"
+  },
+  {
+   "name": "6 gram refill box.jpg",
+   "file": "img/3d4e1383-369c-4da5-a65b-d170efb6e6fc/6_gram_refill_box.jpg"
+  },
+  {
+   "name": "larkly brush label.jpg",
+   "file": "img/3d4e1383-369c-4da5-a65b-d170efb6e6fc/larkly_brush_label.jpg"
+  },
+  {
+   "name": "larkly refill bottle label.jpg",
+   "file": "img/3d4e1383-369c-4da5-a65b-d170efb6e6fc/larkly_refill_bottle_label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "Alpha-Tocopherol, Caprylic/Capric Triglyceride, Capryloyl Glycerin, Ceramide I, Ceramide II, Ceramide III, Ethylhexylglycerin, Fumed Silica, Glycyrrhiza Glabra, Green Tea Leaf, Iron Oxide Black, Iron Oxide Red, Iron Oxide Yellow, Kaolin, Magnesium Hydroxide, Maranta Arundinacea Root, Mica, Glyceryl Caprylate, Glycerin, Caprylhydroxamic Acid, Resveratol, Sebacic Acid Copolymer, Tapioca Starch",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3d4e1383-369c-4da5-a65b-d170efb6e6fc",
+  "name": "Larkly SPF30 Mineral Powder Face Sunscreen Powder",
+  "brand": "LARKLY, LLC",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

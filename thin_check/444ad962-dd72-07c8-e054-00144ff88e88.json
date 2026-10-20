@@ -1,0 +1,21 @@
+{
+ "setid": "444ad962-dd72-07c8-e054-00144ff88e88",
+ "images": [
+  {
+   "name": "Lotion Sport SPF 50 FR.pdf.jpg",
+   "file": "img/444ad962-dd72-07c8-e054-00144ff88e88/Lotion_Sport_SPF_50_FR.pdf.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sea & Ski Sport Lotion SPF 50",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "444ad962-dd72-07c8-e054-00144ff88e88",
+  "name": "General Protection Lotion",
+  "brand": "Cross-Brands Manufacturing, LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

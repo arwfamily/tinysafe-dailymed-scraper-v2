@@ -1,0 +1,21 @@
+{
+ "setid": "01529c59-8806-6423-e063-6294a90a49e3",
+ "images": [
+  {
+   "name": "Inde Wild.jpg",
+   "file": "img/01529c59-8806-6423-e063-6294a90a49e3/Inde_Wild.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Inde Wild",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "01529c59-8806-6423-e063-6294a90a49e3",
+  "name": "Inde Wild Lotion",
+  "brand": "Inde Wild",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "913116de-1abf-4844-8611-1db1b093ad00",
+ "images": [
+  {
+   "name": "LOSkin ParadiseBack Label.jpg",
+   "file": "img/913116de-1abf-4844-8611-1db1b093ad00/LOSkin_ParadiseBack_Label.jpg"
+  },
+  {
+   "name": "LOSkin ParadiseFront Label.jpg",
+   "file": "img/913116de-1abf-4844-8611-1db1b093ad00/LOSkin_ParadiseFront_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "6",
+ "title": "Drug Facts",
+ "inactive_section": "water, glycerin, caprylyl methicone, propanediol, dimethicone, pentylene glycol, dimethicone/PEG-10/15 crosspolymer, sodium hydroxide, sodium chloride, phenoxyethanol, triethoxysilylethyl polydimethylsiloxyethyl dimethicone, isopropyl titanium triisostearate, chlorphenesin, disodium EDTA, aloe barbadensis leaf juice powder, hamamelis virginiana (witch hazel) water, alumina, butylene glycol, fragrance,stearic acid, aluminum hydroxide, dipropylene glycol, alcohol, sodium hyaluronate, sodium citrate, limonene, citronellol, tocopherol, zingiber officinale (ginger) root extractsanguisorba officinalis root extract, cinnamomum cassia bark extract, citric acid; may contain: titanium dioxide, iron oxides",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "913116de-1abf-4844-8611-1db1b093ad00",
+  "name": "Loreal Paris Skin Paradise Water Infused Tinted Moisturizer Broad Spectrum SPF 19 Sunscreen Liquid",
+  "brand": "L'Oreal USA Products Inc",
+  "n_inactive": 36,
+  "thin_reason": null
+ }
+}

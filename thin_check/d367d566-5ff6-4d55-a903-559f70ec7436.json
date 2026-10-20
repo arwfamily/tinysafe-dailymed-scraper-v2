@@ -1,0 +1,33 @@
+{
+ "setid": "d367d566-5ff6-4d55-a903-559f70ec7436",
+ "images": [
+  {
+   "name": "get a tint DFB1.jpg",
+   "file": "img/d367d566-5ff6-4d55-a903-559f70ec7436/get_a_tint_DFB1.jpg"
+  },
+  {
+   "name": "get a tint DFB2.jpg",
+   "file": "img/d367d566-5ff6-4d55-a903-559f70ec7436/get_a_tint_DFB2.jpg"
+  },
+  {
+   "name": "get a tint DFB3.jpg",
+   "file": "img/d367d566-5ff6-4d55-a903-559f70ec7436/get_a_tint_DFB3.jpg"
+  },
+  {
+   "name": "get a tint PDP.jpg",
+   "file": "img/d367d566-5ff6-4d55-a903-559f70ec7436/get_a_tint_PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients: WATER/EAU BUTYLENE GLYCOL CYCLOPENTASILOXANE PROPYLENE GLYCOL DICAPRYLATE/DICAPRATE POLYSORBATE 60 OCTYLDODECYL NEOPENTANOATE GLYCOL STEARATE PPG-2 MYRISTYL ETHER PROPIONATE CYCLOHEXASILOXANE SORBITAN STEARATE GLYCERIN NYLON-12 SILICA ALUMINUM HYDROXIDE STEARIC ACID MAGNESIUM ALUMINUM SILICATE XANTHAN GUM SODIUM HEXAMETAPHOSPHATE DIMETHICONE ETHYLENE/ACRYLIC ACID COPOLYMER SODIUM HYALURONATE TOCOPHERYL ACETATE TETRASODIUM EDTA PHENOXYETHANOL METHYLPARABEN MAY CONTAIN: TITANIUM DIOXIDE/CI 77891 IRON OXIDES MICA/CI 77019",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d367d566-5ff6-4d55-a903-559f70ec7436",
+  "name": "Mark. Get A Tint Tinted Moisturizer Lotion",
+  "brand": "Avon Products, Inc.",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

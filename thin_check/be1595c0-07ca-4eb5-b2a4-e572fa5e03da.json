@@ -1,0 +1,21 @@
+{
+ "setid": "be1595c0-07ca-4eb5-b2a4-e572fa5e03da",
+ "images": [
+  {
+   "name": "tinted.jpg",
+   "file": "img/be1595c0-07ca-4eb5-b2a4-e572fa5e03da/tinted.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Fact",
+ "inactive_section": "Inactive Ingredient: Water, Caprylic/Capric Triglyceride, Kaolin, Titanium Dioxide, Talc, Mica, Octyl Palmitate, Glyceryl Stearate, Synthetic Beeswax, Stearic Acid, Stearyl Alcohol, DEA-Cetyl Phosphate, Propylene Glycol, Magnesium Aluminum Silicate, Phenoxyehtanol, Triethanolamine, Xanthan Gum, Fragrance, Methylparaben, Propylparaben, Ethylparaben, Disodium EDTA. May contain: Iron Oxides (CI 77491, CI 77492, CI 77499)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "be1595c0-07ca-4eb5-b2a4-e572fa5e03da",
+  "name": "Elf Tinted Moisturizer SPF 15 Cream",
+  "brand": "Hangzhou Facecare Cosmetics Co., Ltd.",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "f6c1e09e-4c61-4c2a-87d7-b052ed36fcac",
+ "images": [
+  {
+   "name": "meijer-analgesic-with-aloe-topical-analgesic-1.jpg",
+   "file": "img/f6c1e09e-4c61-4c2a-87d7-b052ed36fcac/meijer-analgesic-with-aloe-topical-analgesic-1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Meijer® Analgesic Cream with Aloe Topical Analgesic",
+ "inactive_section": "Aloe Barbadensis Leaf Extract, Cetyl Alcohol, Glycerin, Methylparaben, Mineral Oil, Potassium Phosphate, Propylparaben, Sodium Hydroxide, Stearic Acid, Water.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f6c1e09e-4c61-4c2a-87d7-b052ed36fcac",
+  "name": "Meijer Analgesic With Aloe Topical Analgesic (trolamine Salicylate) Cream",
+  "brand": "Meijer Distribution, Inc",
+  "n_inactive": 10,
+  "thin_reason": null
+ }
+}

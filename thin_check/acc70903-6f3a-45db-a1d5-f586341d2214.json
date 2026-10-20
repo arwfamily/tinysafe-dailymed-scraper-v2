@@ -1,0 +1,25 @@
+{
+ "setid": "acc70903-6f3a-45db-a1d5-f586341d2214",
+ "images": [
+  {
+   "name": "Spray_1.jpg",
+   "file": "img/acc70903-6f3a-45db-a1d5-f586341d2214/Spray_1.jpg"
+  },
+  {
+   "name": "Spray_2.jpg",
+   "file": "img/acc70903-6f3a-45db-a1d5-f586341d2214/Spray_2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Inactive ingredients Water, Cetearyl Alcohol, Xanthan Gum, C12-15 Alkyl Benzoate, Myristyl Propionate, Propylene Glycol, Glyceryl Stearate Citrate, Disodium EDTA, Iodopropynyl Butylcarbamate, DMDM Hydantoin, Fragrance",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "acc70903-6f3a-45db-a1d5-f586341d2214",
+  "name": "Spray",
+  "brand": "Shanghai Kejing Cleaning Products Co., Ltd.",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

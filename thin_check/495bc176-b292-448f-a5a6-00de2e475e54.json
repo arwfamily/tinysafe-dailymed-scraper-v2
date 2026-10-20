@@ -1,0 +1,25 @@
+{
+ "setid": "495bc176-b292-448f-a5a6-00de2e475e54",
+ "images": [
+  {
+   "name": "obagi-01.jpg",
+   "file": "img/495bc176-b292-448f-a5a6-00de2e475e54/obagi-01.jpg"
+  },
+  {
+   "name": "obagi-02.jpg",
+   "file": "img/495bc176-b292-448f-a5a6-00de2e475e54/obagi-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Obagi ® Skintrinsiq™ Antioxidant Protocol Kit 15%",
+ "inactive_section": "ascorbic acid, citrus grandis (grapefruit) peel extract, dimethicone, dimethicone crosspolymer, fragrance, octoxynol-9",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "495bc176-b292-448f-a5a6-00de2e475e54",
+  "name": "Obagi Skintrinsiq Antioxidant Protocol Kit",
+  "brand": "Obagi Cosmeceuticals LLC",
+  "n_inactive": 7,
+  "thin_reason": "short_list"
+ }
+}

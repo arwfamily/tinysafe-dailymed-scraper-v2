@@ -1,0 +1,21 @@
+{
+ "setid": "fbf07c1d-de8a-411e-9a39-c7611ab5af4b",
+ "images": [
+  {
+   "name": "SASA_15.jpg",
+   "file": "img/fbf07c1d-de8a-411e-9a39-c7611ab5af4b/SASA_15.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive Ingredients: Aqua, Cyclopentasiloxane, Mineral Oil, Lauryl PEG/PEG - 18/18 Methicone, Cetyl Dimethicone, Stearyl Dimethicone, Ceresin, Hydrogenated Castor Oil, Propylene Glycol, Lanthanum Chloride, Magnesium Chloride, Calcium Chloride, Plankton Extract, Glycoproteins, Glycosaminoglycans, Benzyl Alcohol, Fragrance, Chlorphenesin, Benzoic Acid, Sorbic Acid, Dehydroacetic Acid, Tetrasodium EDTA, Sodium Citrate, Triethoxycaprylylsilane",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fbf07c1d-de8a-411e-9a39-c7611ab5af4b",
+  "name": "Safe Sea Lotion",
+  "brand": "SASA Cosmetics",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

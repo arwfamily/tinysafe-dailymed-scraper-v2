@@ -1,0 +1,26 @@
+{
+ "setid": "f7c4869b-d68d-423c-94cf-221ffa5e7f4d",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/f7c4869b-d68d-423c-94cf-221ffa5e7f4d/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [
+  {
+   "section": "Medicinal Ingredients",
+   "text": " INGREDIENTS: OCTINOXATE (7.5%), HOMOSALATE (5%), OXYBENZONE (4%), AVOBENZONE (2%)"
+  }
+ ],
+ "db": {
+  "setid": "f7c4869b-d68d-423c-94cf-221ffa5e7f4d",
+  "name": "Presidents Choice Lotion",
+  "brand": "Fruit of the Earth, Inc.",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list"
+ }
+}

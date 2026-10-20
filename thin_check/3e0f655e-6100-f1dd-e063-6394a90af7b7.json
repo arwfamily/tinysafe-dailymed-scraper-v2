@@ -1,0 +1,21 @@
+{
+ "setid": "3e0f655e-6100-f1dd-e063-6394a90af7b7",
+ "images": [
+  {
+   "name": "carton.jpg",
+   "file": "img/3e0f655e-6100-f1dd-e063-6394a90af7b7/carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "spiced citrus",
+ "inactive_section": "Beeswax, Ozokerite, Polyglyceryl-3 Beeswax, Butyloctyl Salicylate, Polypinene, Ethylhexyl Methoxycrylene, Hydrogenated Soybean Oil, Hydrogenated Coconut Oil, Fragrance, Theobroma Cacao (Cocoa) Seed Butter, Synthetic Beeswax, Cetyl Alcohol, Euphorbia Cerifera (Candelilla) Wax, Tocopheryl Acetate, Persea Gratissima (Avocado) Oil, Butyrospermum Parkii (Shea) Butter, Eugenol, Lecithin, Citrus Aurantium Peel Oil, Limonene, Helianthus Annuus (Sunflower) Seed Oil, Linalool, Microcrystalline Wax, Methyl Salicylate, Pogostemon Cablin Oil, Vanillin, beta-Caryophyllene, Citronellol, Rose Ketones, Citral, Camellia Sinensis Leaf Extract, Terpineol, Pinene, Carvone",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3e0f655e-6100-f1dd-e063-6394a90af7b7",
+  "name": "Jack Black Ointment",
+  "brand": "Jack Black L.L.C.",
+  "n_inactive": 35,
+  "thin_reason": null
+ }
+}

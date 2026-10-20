@@ -1,0 +1,41 @@
+{
+ "setid": "205d4823-1939-72cb-e063-6394a90a5102",
+ "images": [
+  {
+   "name": "PDP.jpg",
+   "file": "img/205d4823-1939-72cb-e063-6394a90a5102/PDP.jpg"
+  },
+  {
+   "name": "actives.jpg",
+   "file": "img/205d4823-1939-72cb-e063-6394a90a5102/actives.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/205d4823-1939-72cb-e063-6394a90a5102/directions.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/205d4823-1939-72cb-e063-6394a90a5102/inactive_ingredients.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/205d4823-1939-72cb-e063-6394a90a5102/uses.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/205d4823-1939-72cb-e063-6394a90a5102/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Solar Dew Mineral Serum",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "205d4823-1939-72cb-e063-6394a90a5102",
+  "name": "Solar Dew Mineral Serum Lotion",
+  "brand": "Tru Fragrance & Beauty LLC",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

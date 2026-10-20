@@ -1,0 +1,25 @@
+{
+ "setid": "2235d029-157e-4a30-be90-605e6bc143fd",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/2235d029-157e-4a30-be90-605e6bc143fd/image-01.jpg"
+  },
+  {
+   "name": "image-02.jpg",
+   "file": "img/2235d029-157e-4a30-be90-605e6bc143fd/image-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "ozokerite, squalane, ethylhexyl palmitate, petrolatum, myristyl myristate, myristyl lactate, flavor, cetyl alcohol, myristyl laurate, myristyl alcohol, BHT, menthol, tocopheryl acetatate [vitamin E]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2235d029-157e-4a30-be90-605e6bc143fd",
+  "name": "Softlips Vanilla, Watermelon, Cherry Ointment",
+  "brand": "The Mentholatum Company",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

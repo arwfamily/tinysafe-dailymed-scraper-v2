@@ -1,0 +1,45 @@
+{
+ "setid": "5db352ea-ae9f-a895-e063-6394a90a821f",
+ "images": [
+  {
+   "name": "DOSAGE ADMINISTRATION SECTION.jpg",
+   "file": "img/5db352ea-ae9f-a895-e063-6394a90a821f/DOSAGE_ADMINISTRATION_SECTION.jpg"
+  },
+  {
+   "name": "INACTIVE INGREDIENT SECTION.jpg",
+   "file": "img/5db352ea-ae9f-a895-e063-6394a90a821f/INACTIVE_INGREDIENT_SECTION.jpg"
+  },
+  {
+   "name": "INDICATIONS USAGE SECTION.jpg",
+   "file": "img/5db352ea-ae9f-a895-e063-6394a90a821f/INDICATIONS_USAGE_SECTION.jpg"
+  },
+  {
+   "name": "KEEP OUT OF REACH OF CHILDREN SECTION.jpg",
+   "file": "img/5db352ea-ae9f-a895-e063-6394a90a821f/KEEP_OUT_OF_REACH_OF_CHILDREN_SECTION.jpg"
+  },
+  {
+   "name": "LumiBronze Mineral SPF 30 Bronzing Face Serum.jpg",
+   "file": "img/5db352ea-ae9f-a895-e063-6394a90a821f/LumiBronze_Mineral_SPF_30_Bronzing_Face_Serum.jpg"
+  },
+  {
+   "name": "PURPOSE SECTION.jpg",
+   "file": "img/5db352ea-ae9f-a895-e063-6394a90a821f/PURPOSE_SECTION.jpg"
+  },
+  {
+   "name": "WARNINGS SECTION.jpg",
+   "file": "img/5db352ea-ae9f-a895-e063-6394a90a821f/WARNINGS_SECTION.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENT SECTION",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5db352ea-ae9f-a895-e063-6394a90a821f",
+  "name": "Lumibronze Mineral SPF 30 Bronzing Face Serum Liquid",
+  "brand": "Lance (Guangzhou) Biological Technology Co., Ltd.",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "3b33257d-1e24-460c-ae1b-43b7ff9fc666",
+ "images": [
+  {
+   "name": "365 Sun Cream.jpg",
+   "file": "img/3b33257d-1e24-460c-ae1b-43b7ff9fc666/365_Sun_Cream.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3b33257d-1e24-460c-ae1b-43b7ff9fc666",
+  "name": "Isa Knox 365 Sun Cream",
+  "brand": "LG Household and Healthcare, Inc.",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

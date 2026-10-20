@@ -1,0 +1,21 @@
+{
+ "setid": "41adca2e-cf69-ccd9-e063-6294a90a0dc0",
+ "images": [
+  {
+   "name": "SunDay Body Balm.jpg",
+   "file": "img/41adca2e-cf69-ccd9-e063-6294a90a0dc0/SunDay_Body_Balm.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sonni SunDay Body Balm",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "41adca2e-cf69-ccd9-e063-6294a90a0dc0",
+  "name": "Sonni Sunday Body Balm Lotion",
+  "brand": "Sonni",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "45502b91-65a7-7261-e054-00144ff88e88",
+ "images": [
+  {
+   "name": "SPF502007.jpg",
+   "file": "img/45502b91-65a7-7261-e054-00144ff88e88/SPF502007.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sea & Ski Cspray 50",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "45502b91-65a7-7261-e054-00144ff88e88",
+  "name": "General Protection Aerosol, Spray",
+  "brand": "Cross-Brands Manufacturing LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

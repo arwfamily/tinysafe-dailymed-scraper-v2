@@ -1,0 +1,21 @@
+{
+ "setid": "3001028b-bb36-04ec-e063-6294a90a1e49",
+ "images": [
+  {
+   "name": "Face 5 LLC Non-Tinted Mineral Sunscreen.jpg",
+   "file": "img/3001028b-bb36-04ec-e063-6294a90a1e49/Face_5_LLC_Non-Tinted_Mineral_Sunscreen.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "Alumina, Cyclohexasiloxane, Cyclopentasiloxane, Dimethicone, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethiconol, Lauryl PEG/PPG-18/18 Methicone, Hydrogen Dimethicone, PEG-10 Dimethicone, Tetrahexyldecyl Ascorbate, Tocopheryl Acetate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3001028b-bb36-04ec-e063-6294a90a1e49",
+  "name": "Non-tinted Mineral Sunscreen Cream",
+  "brand": "Face 5, LLC",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

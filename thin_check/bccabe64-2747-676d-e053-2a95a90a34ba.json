@@ -1,0 +1,25 @@
+{
+ "setid": "bccabe64-2747-676d-e053-2a95a90a34ba",
+ "images": [
+  {
+   "name": "Bottle.jpg",
+   "file": "img/bccabe64-2747-676d-e053-2a95a90a34ba/Bottle.jpg"
+  },
+  {
+   "name": "Label.jpg",
+   "file": "img/bccabe64-2747-676d-e053-2a95a90a34ba/Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sun Bum Mineral Sunscreen Face Stick SPF 50",
+ "inactive_section": "cocos nucifera (coconut) oil, limnathes alba (meadowfoam) seed oil, persea gratiima (avocado) oil, linum usitatissimum (linseed) seed oil, oryza sativa (rice bran) wax, butyloctyl salicylate, ozokerite, butyrospermum parkii (shea) butter, copernicia cerifera (carn-auba) wax, euphorbia cerifera (candelilla) wax, oryzanol, theobroma cacoa (cocoa) seed butter, carthamus tinctorius (sufflower) seed oil, jojoba esters, tocopherol, bisabolol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bccabe64-2747-676d-e053-2a95a90a34ba",
+  "name": "Sun Bum Mineral Sunscreen Face Stick SPF 50 Stick",
+  "brand": "Sun Bum LLC",
+  "n_inactive": 19,
+  "thin_reason": null
+ }
+}

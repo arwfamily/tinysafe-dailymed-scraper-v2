@@ -1,0 +1,25 @@
+{
+ "setid": "c732ff03-8777-4431-989d-141ba2eca349",
+ "images": [
+  {
+   "name": "back.jpg",
+   "file": "img/c732ff03-8777-4431-989d-141ba2eca349/back.jpg"
+  },
+  {
+   "name": "front.jpg",
+   "file": "img/c732ff03-8777-4431-989d-141ba2eca349/front.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Essentials UVA/UVB SPF 15",
+ "inactive_section": "water (aqua purificata) purified, diisopropyl adipate, cyclopentasiloxane, methylpropanediol, lauryl methacrylate/glycol dimethacrylate crosspolymer, glyceryl stearate, peg-100 stearate, cetearyl alcohol, polyacrylamide, glyceryl dilaurate, ascorbyl palmitate, aluminum starch octenylsuccinate, ceteareth-20, laureth-7, sodium salicylate, c13-14 isoparaffin, fragrance (parfum), phenoxyethanol, methylparaben, propylparaben",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c732ff03-8777-4431-989d-141ba2eca349",
+  "name": "Rodan And Fields Essentials Uva/uvb Cream",
+  "brand": "Cosmetic Enterprises Ltd.",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

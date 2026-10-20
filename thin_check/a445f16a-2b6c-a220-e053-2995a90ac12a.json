@@ -1,0 +1,21 @@
+{
+ "setid": "a445f16a-2b6c-a220-e053-2995a90ac12a",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/a445f16a-2b6c-a220-e053-2995a90ac12a/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "deionized water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a445f16a-2b6c-a220-e053-2995a90ac12a",
+  "name": "Quantum Bacteriostatic Purification Catalyst Liquid",
+  "brand": "Chengdu Taiyang Environmental Protection Technology Co., Ltd.",
+  "n_inactive": 1,
+  "thin_reason": "label_prints_too_little"
+ }
+}

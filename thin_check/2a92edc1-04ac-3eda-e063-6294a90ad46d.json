@@ -1,0 +1,29 @@
+{
+ "setid": "2a92edc1-04ac-3eda-e063-6294a90ad46d",
+ "images": [
+  {
+   "name": "PDP.jpg",
+   "file": "img/2a92edc1-04ac-3eda-e063-6294a90ad46d/PDP.jpg"
+  },
+  {
+   "name": "active-uses-warning.jpg",
+   "file": "img/2a92edc1-04ac-3eda-e063-6294a90ad46d/active-uses-warning.jpg"
+  },
+  {
+   "name": "directions - inactive.jpg",
+   "file": "img/2a92edc1-04ac-3eda-e063-6294a90ad46d/directions_-_inactive.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Daily Essential Face Moisturizer",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2a92edc1-04ac-3eda-e063-6294a90ad46d",
+  "name": "Daily Essential Face Moisturizer Lotion",
+  "brand": "Solarium Brands LLC",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

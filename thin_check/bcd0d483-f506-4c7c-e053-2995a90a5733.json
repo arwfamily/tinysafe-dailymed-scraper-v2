@@ -1,0 +1,25 @@
+{
+ "setid": "bcd0d483-f506-4c7c-e053-2995a90a5733",
+ "images": [
+  {
+   "name": "Label4.jpg",
+   "file": "img/bcd0d483-f506-4c7c-e053-2995a90a5733/Label4.jpg"
+  },
+  {
+   "name": "Tube.jpg",
+   "file": "img/bcd0d483-f506-4c7c-e053-2995a90a5733/Tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Sun Bum Mineral Sunscreen Lotion Broad Spectrum SPF 50",
+ "inactive_section": "water, cocos nucifera (coconut) oil, butyloctyl salicylate, diheptyl succinate, methyl dihydroabietate, butyrospermum parkii (shea butter), capryloyl glycerin/sebacic acid copolymer, sodium stearoyl glutamate, cetearyl alcohol, arachidyl alcohol, coco glucoside, tocopherol, theobroma cacao (cocoa) seed butter, cetyl alcohol, behenyl alcohol, bisabolol, arachidyl glucoside, microcrystalline cellulose, cellulose gum, sodium hyaluronate, sodium gluconate, phenoxyethanol, citric acid, ethylhexylglycerin, polyhydroxystearic acid",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bcd0d483-f506-4c7c-e053-2995a90a5733",
+  "name": "Sun Bum Mineral Sunscreen Broad Spectrum SPF 50 Lotion",
+  "brand": "Sun Bum LLC",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

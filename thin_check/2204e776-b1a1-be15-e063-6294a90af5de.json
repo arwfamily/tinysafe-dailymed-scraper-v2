@@ -1,0 +1,21 @@
+{
+ "setid": "2204e776-b1a1-be15-e063-6294a90af5de",
+ "images": [
+  {
+   "name": "OS-01 face spf tinted.jpg",
+   "file": "img/2204e776-b1a1-be15-e063-6294a90af5de/OS-01_face_spf_tinted.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive ingredients: Water(aqua), Caprylic/Capric Triglyceride, Glycerin, Methyl Dihydroabietate, Cetearyl Alcohol, Cetyl Palmitate, Coco-Glucoside, Caprylyl/Capryl Glucoside, Sorbitan Palmitate, Sorbitan Olivate, Butyrospermum Parkii (Shea) Nut Extract, Ethyl Ferulate, Bisabolol, Allantoin, Hydrolyzed Jojoba Esters, Acacia Senegal Gum, Polyhydroxystearic Acid, Polyglyceryl-3 Polyricinoleate, Isostearic Acid, Lecithin, Tocopheryl Acetate, Tetrahexyldecyl Ascorbate, Decapeptide-52*, Oryza Sativa (rice) Starch,Camellia Sinensis Leaf Extract, Euterpe Oleracea Fruit Extract, Caesalpinia Spinosa Fruit Pod Extract, Helianthus Annuus (Sunflower) Sprout Extract, Caprylyl Glycol, Ethylhexylglycerin, Hexylene Glycol, Xanthan Gum, Sodium Phytate, Propylene Glycol, Phenoxyethanol, sodium Benzoate, Potassium Sorbate, Triethoxycaprylylsilane, Alumina, Magnesium Oxide, Iron Oxides (CI 77491, CI 77492, CI77499)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2204e776-b1a1-be15-e063-6294a90af5de",
+  "name": "Os-01 Face SPF Bs SPF30 Tinted Cream",
+  "brand": "ONESKIN INC.",
+  "n_inactive": 46,
+  "thin_reason": null
+ }
+}

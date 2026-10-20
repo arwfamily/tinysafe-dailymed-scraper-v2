@@ -1,0 +1,25 @@
+{
+ "setid": "14b8a3cf-031c-4c52-ba81-e683e69d0f37",
+ "images": [
+  {
+   "name": "vacation-01.jpg",
+   "file": "img/14b8a3cf-031c-4c52-ba81-e683e69d0f37/vacation-01.jpg"
+  },
+  {
+   "name": "vacation-02.jpg",
+   "file": "img/14b8a3cf-031c-4c52-ba81-e683e69d0f37/vacation-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Vacation® Face Lotion",
+ "inactive_section": "Water, Polymethylsilsesquioxane, Cetearyl Alcohol, Argania Spinosa (Argan) Kernel Oil, Tocopheryl Acetate (Vitamin E), Aloe Barbadensis (Aloe Vera) Leaf Juice, Niacinamide (Vitamin B3), Trimethylpentanediol/Adipic Acid/Glycerin Crosspolymer, Butyrospermum Parkii (Shea) Butter, Musa Sapientum (Banana) Fruit Extract, Cocos Nucifera (Coconut) Fruit Extract, Hyaluronic Acid, Glycerin, Bisabolol, Sodium Stearoyl Glutamate, Sodium Polyacrylate, Silica, Phenoxyethanol, Ethylhexylglycerin, Tetrasodium Glutamate Diacetate, Fragrance",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "14b8a3cf-031c-4c52-ba81-e683e69d0f37",
+  "name": "Vacation Face Lotion",
+  "brand": "Vacation INC.",
+  "n_inactive": 22,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "52bc7f23-3594-3173-e063-6294a90a81ea",
+ "images": [
+  {
+   "name": "bronze.jpg",
+   "file": "img/52bc7f23-3594-3173-e063-6294a90a81ea/bronze.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Bloomeffects Tulip Dew Bronze",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "52bc7f23-3594-3173-e063-6294a90a81ea",
+  "name": "Bloomeffects Tulip Dew Bronze Lotion",
+  "brand": "Bloomeffects",
+  "n_inactive": 42,
+  "thin_reason": null
+ }
+}

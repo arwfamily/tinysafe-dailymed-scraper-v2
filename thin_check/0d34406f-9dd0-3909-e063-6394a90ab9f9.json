@@ -1,0 +1,25 @@
+{
+ "setid": "0d34406f-9dd0-3909-e063-6394a90ab9f9",
+ "images": [
+  {
+   "name": "MorpheSPF30_PP.jpg",
+   "file": "img/0d34406f-9dd0-3909-e063-6394a90ab9f9/MorpheSPF30_PP.jpg"
+  },
+  {
+   "name": "MorpheSPF30_SP.jpg",
+   "file": "img/0d34406f-9dd0-3909-e063-6394a90ab9f9/MorpheSPF30_SP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Morphe SPF30 Broad Spectrum Sunsetter Setting Spray",
+ "inactive_section": "Inactive ingredients: Alcohol Denat., Isododecane, Butyloctyl Salicylate, PVP, Fragrance, Benzyl Benzoate, Ethylcellulose, Sodium Acetate, Glycine Soja (Soybean) Oil, Polyglyceryl-3 Diisostearate, Oryza Sativa (Rice) Extract, Oryza Sativa (Rice) Germ Extract, Water, Glycerin, Cereus Grandiflorus (Cactus) Flower Extract, Potassium Sorbate, Phenoxyethanol, Citric Acid, Sodium Benzoate, Tropaeolum Majus Flower/Leaf/Steam Extract, Ethylhexylglycerin.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0d34406f-9dd0-3909-e063-6394a90ab9f9",
+  "name": "Morphe SPF 30 Broad Spectrum Sunsetter Setting Spray",
+  "brand": "COSMAX USA, CORPORATION",
+  "n_inactive": 25,
+  "thin_reason": null
+ }
+}

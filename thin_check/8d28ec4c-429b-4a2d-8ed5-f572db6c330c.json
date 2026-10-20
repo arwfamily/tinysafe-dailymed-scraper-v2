@@ -1,0 +1,29 @@
+{
+ "setid": "8d28ec4c-429b-4a2d-8ed5-f572db6c330c",
+ "images": [
+  {
+   "name": "ERASE IT_ART_Box_BK.jpg",
+   "file": "img/8d28ec4c-429b-4a2d-8ed5-f572db6c330c/ERASE_IT_ART_Box_BK.jpg"
+  },
+  {
+   "name": "ERASE IT_ART_Box_FR.jpg",
+   "file": "img/8d28ec4c-429b-4a2d-8ed5-f572db6c330c/ERASE_IT_ART_Box_FR.jpg"
+  },
+  {
+   "name": "ERASE IT_ART_Box_Sleeve.jpg",
+   "file": "img/8d28ec4c-429b-4a2d-8ed5-f572db6c330c/ERASE_IT_ART_Box_Sleeve.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENTS: WATER, DISODIUM LAURETH SULFOSUCCINATE, SODIUM COCOYL ISETHIONATE, SODIUM LAUROAMPHOACETATE, GLYCERIN, SODIUM METHYL COCOYL TAURATE, METHYLISOTHIAZOLINONE, COCAMIDOPROPYL BETAINE, BISABOLOL, ZINGIBER OFFICINALE (GINGER) ROOT EXTRACT, OAT (AVENA SATIVA) KERNEL EXTRACT, DISODIUM EDTA, BETA GLUCAN, EUCALYPTUS GLOBULUS OIL, XANTHAN GUM, MENTHOL, MYRISTOYL TETRAPEPTIDE-13, ACETYL CARBOXYMETHYL COCOYL GLYCINE, PHENOXYETHANOL, CAPRYLYL GLYCOL.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8d28ec4c-429b-4a2d-8ed5-f572db6c330c",
+  "name": "Erase It Kit Kit",
+  "brand": "mybody",
+  "n_inactive": 46,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "6bc8d64e-ee11-4068-b006-c3e1afb355b5",
+ "images": [
+  {
+   "name": "bbcream back.jpg",
+   "file": "img/6bc8d64e-ee11-4068-b006-c3e1afb355b5/bbcream_back.jpg"
+  },
+  {
+   "name": "bbcream meddark.jpg",
+   "file": "img/6bc8d64e-ee11-4068-b006-c3e1afb355b5/bbcream_meddark.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Aqua/Water/Eau, Dicaprylyl Carbonate, Mica, Cyclopentasiloxane, Glycerin, Behenyl Alcohol, Alcohol, Isodecyl Neopentanoate, Butyrospermum Parkii (Shea) Butter, Methyl Methacrylate Crosspolymer, Beheneth-25, Glyceryl Stearate, Acrylates/C12-22 Alkyl Methacrylate Copolymer, Aluminum Dimyristate, Ascorbyl Glucoside, BHT, Citric Acid, Disodium Stearoyl Glutamate, Clycyrrhiza Glabra (Licorice) Root Extract, Pentylene Glycol, Tetrasodium EDTA, Tocopherol, Triethoxycarpylylsilane, Xanthan Gum, Phenoxyethanol, Parfum/Fragrance, Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, CI 77492, CI 77499)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6bc8d64e-ee11-4068-b006-c3e1afb355b5",
+  "name": "Rimmel Bb Beauty Balm Medium Dark Liquid",
+  "brand": "Rimmel Inc.",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

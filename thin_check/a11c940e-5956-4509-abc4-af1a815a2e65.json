@@ -1,0 +1,21 @@
+{
+ "setid": "a11c940e-5956-4509-abc4-af1a815a2e65",
+ "images": [
+  {
+   "name": "Sun-SPF---Sunscreen-30-SPF-neon-mocks.jpg",
+   "file": "img/a11c940e-5956-4509-abc4-af1a815a2e65/Sun-SPF---Sunscreen-30-SPF-neon-mocks.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Sun Natural Sunscreen",
+ "inactive_section": "Caprylic/Capric Triglyceride, Grape (Vitis vinifera) Seed Oil, Silica, Shea (Butyrospermum parkii) Butter, Candelilla (Euphorbia cerifera) Wax, Beeswax, Fragrance (Parfum), Jojoba (Simmondsia chinensis) Seed Oil, Tocopherol, Safflower (Carthamus tinctorius) Seed Oil, Cucumber (Cucumis sativus) Fruit Extract, Glycerin, Water (Aqua), Tea (Camellia sinensis) Leaf Extract, Rosehip (Rosa canina) Fruit Oil",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a11c940e-5956-4509-abc4-af1a815a2e65",
+  "name": "Sun Natural Sunscreen Cream",
+  "brand": "Sun Naturals Inc",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}

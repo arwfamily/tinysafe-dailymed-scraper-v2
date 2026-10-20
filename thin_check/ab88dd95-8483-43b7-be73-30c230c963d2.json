@@ -1,0 +1,29 @@
+{
+ "setid": "ab88dd95-8483-43b7-be73-30c230c963d2",
+ "images": [
+  {
+   "name": "Daydream.jpg",
+   "file": "img/ab88dd95-8483-43b7-be73-30c230c963d2/Daydream.jpg"
+  },
+  {
+   "name": "Inner Package6.jpg",
+   "file": "img/ab88dd95-8483-43b7-be73-30c230c963d2/Inner_Package6.jpg"
+  },
+  {
+   "name": "Outer Package.jpg",
+   "file": "img/ab88dd95-8483-43b7-be73-30c230c963d2/Outer_Package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Be Sweet SPF 15 Tinted Lip Balm Daydream",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ab88dd95-8483-43b7-be73-30c230c963d2",
+  "name": "Be Sweet SPF 15 Tinted Daydream Gel",
+  "brand": "Bona Fide Beauty Lab PS LLC",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

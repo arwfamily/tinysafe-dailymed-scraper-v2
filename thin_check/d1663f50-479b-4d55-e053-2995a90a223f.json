@@ -1,0 +1,25 @@
+{
+ "setid": "d1663f50-479b-4d55-e053-2995a90a223f",
+ "images": [
+  {
+   "name": "213140 Arthritis Cream 3 oz carton proof no dieline.jpg",
+   "file": "img/d1663f50-479b-4d55-e053-2995a90a223f/213140_Arthritis_Cream_3_oz_carton_proof_no_dieline.jpg"
+  },
+  {
+   "name": "213140 Arthritis Cream 3 oz tube proof no dieline.jpg",
+   "file": "img/d1663f50-479b-4d55-e053-2995a90a223f/213140_Arthritis_Cream_3_oz_tube_proof_no_dieline.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "CVS Arthritis Cream",
+ "inactive_section": "Aloe barbadensis leaf juice, cetyl alcohol, glycerin, mineral oil, phenoxyethanol, stearic acid, triethanolamine, water, xanthan gum",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d1663f50-479b-4d55-e053-2995a90a223f",
+  "name": "Arthritis Cream (trolamine Salicylate 10%) Cream",
+  "brand": "CVS",
+  "n_inactive": 9,
+  "thin_reason": null
+ }
+}

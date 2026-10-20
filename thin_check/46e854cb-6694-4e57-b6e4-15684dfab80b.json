@@ -1,0 +1,25 @@
+{
+ "setid": "46e854cb-6694-4e57-b6e4-15684dfab80b",
+ "images": [
+  {
+   "name": "breathable balm 1.jpg",
+   "file": "img/46e854cb-6694-4e57-b6e4-15684dfab80b/breathable_balm_1.jpg"
+  },
+  {
+   "name": "breathable balm.jpg",
+   "file": "img/46e854cb-6694-4e57-b6e4-15684dfab80b/breathable_balm.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Water (Aqua) C12-15 Alkyl Benzoate Octinoxate Oxybenzone Octisalate Butylene Glycol Octyldodecyl Neopentanoate Caprylic/Capric Triglyceride Avobenzone Octocrylene Glycerin Sodium Hyaluronate Camellia Sinensis Leaf Extract Teprenone Cyclopentasiloxane Cyclohexasiloxane Actinidia Chinensis (Kiwi) Fruit Extract Algae Extract Artemisia Vulgaris Extract Saccharomyces Lysate Extract Centella Asiatica Extract Echinacea Purpurea Extract Yeast Polysaccharides Carbomer Acrylates/C10-30 Alkyl Acrylate Crosspolymer PEG-8 Triethanolamine Phenoxyethanol Caprylyl Glycol Ethylhexylglycerin Hexylene Glycol Tocopherol Ascorbyl Palmitate Citric Acid Zinc PCA Mannitol Lonicera Japonica (Honeysuckle) Flower Extract Sodium Citrate Xanthium Sibiricum Fruit Extract Aloe Barbadensis Leaf Extract Cyperus Rotundus Root Extract Acetyl Tetrapeptide-15 Sodium Benzoate Sorbitan Oleate Polysorbate 20 Palmitoyl Pentapeptide-4 Arctostaphylos Uva Ursi Leaf Extract Plankton Extract Mitracarpus Scaber Extract Olea Europaea (Olive) Leaf Extract Darutoside Xanthan Gum Micrococcus Lysate Arabidopsis Thaliana Extract Ubiquinone Hydroxydecyl Ubiquinone Disodium EDTA Phospholipids Retinyl Palmitate Beta-Carotene Ascorbic Acid Malus Domestica Fruit Cell Culture Extract Lecithin",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "46e854cb-6694-4e57-b6e4-15684dfab80b",
+  "name": "Lycogel Breathable Balm Cream",
+  "brand": "Quura Medical B.V",
+  "n_inactive": 52,
+  "thin_reason": null
+ }
+}

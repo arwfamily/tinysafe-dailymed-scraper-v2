@@ -1,0 +1,29 @@
+{
+ "setid": "3cd7c919-d983-a94b-e063-6394a90ac2af",
+ "images": [
+  {
+   "name": "Pure 100g AP.jpg",
+   "file": "img/3cd7c919-d983-a94b-e063-6394a90ac2af/Pure_100g_AP.jpg"
+  },
+  {
+   "name": "Pure 100g.jpg",
+   "file": "img/3cd7c919-d983-a94b-e063-6394a90ac2af/Pure_100g.jpg"
+  },
+  {
+   "name": "Pure 240g.jpg",
+   "file": "img/3cd7c919-d983-a94b-e063-6394a90ac2af/Pure_240g.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Sun Zapper - Pure Zinc Sunscreen SPF50",
+ "inactive_section": "Please kindly refer to label",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3cd7c919-d983-a94b-e063-6394a90ac2af",
+  "name": "Sun Zapper - Pure Zinc Sunscreen SPF50 Cream",
+  "brand": "Veganic SKN Limited",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "17e854ca-6165-4953-a5bc-e862d9cd33ab",
+ "images": [
+  {
+   "name": "ZRA016A0.jpg",
+   "file": "img/17e854ca-6165-4953-a5bc-e862d9cd33ab/ZRA016A0.jpg"
+  },
+  {
+   "name": "ZRA029A0.jpg",
+   "file": "img/17e854ca-6165-4953-a5bc-e862d9cd33ab/ZRA029A0.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Ethylhexyl Benzoate, Cetearyl Alcohol, Butyloctyl Salicylate, Diisopropyl Adipate, Neopentyl Glycol Diheptanoate, Phenethyl Benzoate, VP/Eicosene Copolymer, Polymethylsilsesquioxane, Caprylyl Glycol, Dimethicone, Glycerin, Triethanolamine, Coco-Glucoside, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Polymethyl Methacrylate, Ceteth-10 Phosphate, Dicetyl Phosphate, Disodium EDTA, Paraffin, Tocopherol, Sodium Ascorbyl Phosphate, Aloe Barbadensis Leaf Juice, Phenoxyethanol.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "17e854ca-6165-4953-a5bc-e862d9cd33ab",
+  "name": "Rite Aid Renewal Oil Free Faces Lotion",
+  "brand": "RITE AID CORPORATION",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

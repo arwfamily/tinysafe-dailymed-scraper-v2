@@ -1,0 +1,29 @@
+{
+ "setid": "c13846a9-3af3-41aa-9185-c5e0bfbc2fe8",
+ "images": [
+  {
+   "name": "carton1.jpg",
+   "file": "img/c13846a9-3af3-41aa-9185-c5e0bfbc2fe8/carton1.jpg"
+  },
+  {
+   "name": "carton2.jpg",
+   "file": "img/c13846a9-3af3-41aa-9185-c5e0bfbc2fe8/carton2.jpg"
+  },
+  {
+   "name": "carton3.jpg",
+   "file": "img/c13846a9-3af3-41aa-9185-c5e0bfbc2fe8/carton3.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "​Inactive Ingredients:​ ​ Water/Eau, Butylene Glycol, Glycerin, PEG-8, Dimethicone, Nylon-12, Citrus Medica Limonum (Lemon) Fruit Extract, Pyrus Malus (Apple) Fruit Extract, Fumaria Officinalis Flower/Leaf/Stem Extract, Epilobium Angustifolium Flower/Leaf/Stem Extract, Vanilla Planifolia Fruit Extract, Theobroma Cacao (Cocoa) Extract, Vaccinium Angustifolium (Blueberry) Fruit Extract, Rubus Idaeus (Raspberry) Fruit Extract, Rubus Fruticosus (Blackberry) Fruit Extract, Vitis Vinifera (Grape) Fruit Extract, Tromethamine, Silica, Trimethylsiloxysilicate, Glyceryl Stearate, Hydrogenated Lecithin, Carbomer, Polyglyceryl-3 Diisostearate, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Squalane, Dimethicone/Vinyl Dimethicone Crosspolymer, Caprylic/Capric Triglyceride, Fumaric Acid, Citric Acid, Disodium EDTA, Benzyl Alcohol, Cetyl Alcohol, Polysorbate 60, Methylparaben, Propylparaben",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c13846a9-3af3-41aa-9185-c5e0bfbc2fe8",
+  "name": "Mark. For Gooness Face Antioxidant Skin Moisturizing Lotion",
+  "brand": "Avon Products, Inc.",
+  "n_inactive": 36,
+  "thin_reason": null
+ }
+}

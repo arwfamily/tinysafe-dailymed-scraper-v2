@@ -1,0 +1,29 @@
+{
+ "setid": "c13ef641-ea20-4854-b8cb-a0e259a3aee9",
+ "images": [
+  {
+   "name": "Clear Skies.jpg",
+   "file": "img/c13ef641-ea20-4854-b8cb-a0e259a3aee9/Clear_Skies.jpg"
+  },
+  {
+   "name": "Inner Package3.jpg",
+   "file": "img/c13ef641-ea20-4854-b8cb-a0e259a3aee9/Inner_Package3.jpg"
+  },
+  {
+   "name": "Outer Package.jpg",
+   "file": "img/c13ef641-ea20-4854-b8cb-a0e259a3aee9/Outer_Package.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Be Sweet SPF 15 Tinted Lip Balm Clear Skies",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c13ef641-ea20-4854-b8cb-a0e259a3aee9",
+  "name": "Be Sweet SPF 15 Tinted Clear Skies Gel",
+  "brand": "Bona Fide Beauty Lab PS LLC",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

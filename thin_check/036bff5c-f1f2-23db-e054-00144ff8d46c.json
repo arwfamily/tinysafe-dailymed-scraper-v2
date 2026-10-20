@@ -1,0 +1,25 @@
+{
+ "setid": "036bff5c-f1f2-23db-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "Mobisyl35.jpg",
+   "file": "img/036bff5c-f1f2-23db-e054-00144ff8d46c/Mobisyl35.jpg"
+  },
+  {
+   "name": "Mobisyl8.jpg",
+   "file": "img/036bff5c-f1f2-23db-e054-00144ff8d46c/Mobisyl8.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "6",
+ "title": "Mobisyl",
+ "inactive_section": "Inactive ingredients: allantoin, aloe vera gel, carbomer, cetyl alcohol, citric acid, diazolidinyl urea, glycerin, glyceryl stearate, iodopropynyl butylcarbamate, isopropyl palmitate, lecithin, mineral oil, potassium sorbate, propylene glycol, sodium benzoate, sodium dehydroacetate, sodium hydroxide, sodium sulfite, stearic acid, sweet almond oil, tetrasodium EDTA, and water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "036bff5c-f1f2-23db-e054-00144ff8d46c",
+  "name": "Mobisyl (trolamine Salicylate) Cream",
+  "brand": "BF ASCHER AND CO INC",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

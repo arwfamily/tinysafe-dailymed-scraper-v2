@@ -1,0 +1,21 @@
+{
+ "setid": "b79fae23-5c70-4956-bfdb-af8da50c30bb",
+ "images": [
+  {
+   "name": "Label.jpg",
+   "file": "img/b79fae23-5c70-4956-bfdb-af8da50c30bb/Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "TRADER JOE’S MINERAL SUNSCREEN STICK",
+ "inactive_section": "Argania Spinosa Kernel Oil, Beeswax, Bisabolol, Butyrospermum Parkii (Shea) Butter, Cocos Nucifera (Coconut) Oil, Copernicia Cerifera (Carnauba) Wax, Euphorbia Cerifera (Candelilla) Wax, Octyldodecanol, Persea Gratissima (Avocado) Oil, Theobroma Cacao (Cocoa) Seed Butter, Tocopheryl Acetate.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b79fae23-5c70-4956-bfdb-af8da50c30bb",
+  "name": "Trader Joe S Mineral Sunscreen Stick",
+  "brand": "Trader Joe's Company",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

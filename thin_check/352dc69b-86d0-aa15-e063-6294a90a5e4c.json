@@ -1,0 +1,21 @@
+{
+ "setid": "352dc69b-86d0-aa15-e063-6294a90a5e4c",
+ "images": [
+  {
+   "name": "Charisma 226 SF.jpg",
+   "file": "img/352dc69b-86d0-aa15-e063-6294a90a5e4c/Charisma_226_SF.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "352dc69b-86d0-aa15-e063-6294a90a5e4c",
+  "name": "Daily Mineral Protection Cream",
+  "brand": "Charisma Skin",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

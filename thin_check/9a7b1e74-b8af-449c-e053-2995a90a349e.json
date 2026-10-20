@@ -1,0 +1,21 @@
+{
+ "setid": "9a7b1e74-b8af-449c-e053-2995a90a349e",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/9a7b1e74-b8af-449c-e053-2995a90a349e/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "Calcium(Cao)0.12% Kalium(K2O)0.03%, Silicon(SiO2)0.8% Magnesium(MgO)0.2%, Iron(FeO2)0.2% Zinc(Mno)0.1% Calcium Cardonate(Ma2CO3)0.2%, Purified Water(H2O)98%(Dekkerabruxellensisetc with Aqueous solution) Other 0.2%",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9a7b1e74-b8af-449c-e053-2995a90a349e",
+  "name": "Hm-b (edible Vinegar) Liquid",
+  "brand": "DEMAND SERVICE, CO., LTD.",
+  "n_inactive": 5,
+  "thin_reason": "short_list"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "cff1d197-23f0-457d-aa14-c84a57f07861",
+ "images": [
+  {
+   "name": "screen1.jpg",
+   "file": "img/cff1d197-23f0-457d-aa14-c84a57f07861/screen1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "ScarScreen",
+ "inactive_section": "C12-C15 alkyl benzoic acid, Cetearyl alcohol and ceteareth-20, Citric acid, Corn starch, Dimethicone, Ethylhexyl glycerin, Glyceryl stearate, Isostearic acid, Methyl gluceth-10, Methylcellulose, PEG-40 stearate, Polyhydroxystearic acid, Phenoxyethanol, Propylene glycol, SDA 40B alcohol, Xanthan gum, Water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "cff1d197-23f0-457d-aa14-c84a57f07861",
+  "name": "Scarscreen Lotion",
+  "brand": "Natural Crest Laboratories Inc.",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

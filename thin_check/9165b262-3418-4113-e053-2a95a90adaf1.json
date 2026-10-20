@@ -1,0 +1,21 @@
+{
+ "setid": "9165b262-3418-4113-e053-2a95a90adaf1",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/9165b262-3418-4113-e053-2a95a90adaf1/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Dimethicone Polyethylene Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer Ozokerite Acrylates Copolymer Silica Neopentyl Glycol Diheptanoate Butyloctyl Salicylate Cetyl Ethylhexanoate HDI/Trimethylol Hexyllactone Crosspolymer Polymethyl Methacrylate Cetyl Alcohol Tocopheryl Acetate Caprylic/Capric Triglyceride Citrus Aurantium Dulcis (Orange) Peel Oil Geranium Maculatum Oil Lavandula Angustifolia (Lavender) Oil Citrus Aurantium Bergamia (Bergamot) Fruit Oil Cymbopogon Martini Oil Anthemis Nobilis Flower Oil",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9165b262-3418-4113-e053-2a95a90adaf1",
+  "name": "Plushmallow Sunstick Stick",
+  "brand": "COSNINE Inc",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

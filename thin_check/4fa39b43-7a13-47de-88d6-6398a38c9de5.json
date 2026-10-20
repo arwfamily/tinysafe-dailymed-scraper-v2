@@ -1,0 +1,21 @@
+{
+ "setid": "4fa39b43-7a13-47de-88d6-6398a38c9de5",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/4fa39b43-7a13-47de-88d6-6398a38c9de5/image-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "OBAGI 360™",
+ "inactive_section": "water (aqua), caprylic/capric triglyceride, glyceryl stearate, cyclopentasiloxane, butylene glycol, stearic acid, butyrospermum parkii (shea) butter, polysorbate 60, stearyl alcohol, glycerin, retinol, polysorbate 20, dimethicone, carthamus tinctorius (safflower) seed oil, calendula officinalis flower extract, camellia oleifera leaf extract, camellia sinensis leaf extract, chamomilla recutita (matricaria) flower extract, tocopheryl acetate, ascorbic acid, sodium hyaluronate, cyclohexasiloxane, sorbitol, BHT, bisabolol, allyl methacrylates crosspolymer, dimethicone/vinyl dimethicone crosspolymer, dipotassium glycyrrhizate, disodium EDTA, triethanolamine, carbomer, glyceryl acrylate/acrylic acid copolymer, caprylyl glycol, ethylhexylglycerin, hexylene, glycol, phenoxyethanol | acrylates/C10-30 alkyl acrylate crosspolymer, butyloctyl salicylate, C12-15 alkyl benzoate, caesalpinia spinosa gum, caprylyl glycol, carbomer, dextrin, disodium EDTA, eperua falcata bark extract, ethylhexylglycerin, glycerin, hexylene glycol, hydrolyzed caesalpinia spinosa gum, phenoxyethanol, pichia/resveratrol ferment extract, polysorbate 20, sodium hyaluronate, sodium hydroxide, sorbitan oleate, tocopheryl acetate, ubiquinone, water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4fa39b43-7a13-47de-88d6-6398a38c9de5",
+  "name": "Obagi 360 Kit",
+  "brand": "OMP, Inc.",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

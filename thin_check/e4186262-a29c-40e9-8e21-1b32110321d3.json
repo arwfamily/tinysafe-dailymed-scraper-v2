@@ -1,0 +1,25 @@
+{
+ "setid": "e4186262-a29c-40e9-8e21-1b32110321d3",
+ "images": [
+  {
+   "name": "Protect-Serve_SPF-30_ART_Drug-Facts-Box2.jpg",
+   "file": "img/e4186262-a29c-40e9-8e21-1b32110321d3/Protect-Serve_SPF-30_ART_Drug-Facts-Box2.jpg"
+  },
+  {
+   "name": "Protect-Serve_SPF-30_ART_Tube.jpg",
+   "file": "img/e4186262-a29c-40e9-8e21-1b32110321d3/Protect-Serve_SPF-30_ART_Tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "10",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENTS: CYCLOPENTASILOXANE, CYCLOMETHICONE, DIMETHICONE CROSSPOLYMER, DIMETHICONE/VINYL DIMETHICONE CROSSPOLYMER, METHYL METHACRYLATE/GLYCOL DIMETHACRYLATE CROSSPOLYMER, SORBITAN ISOSTEARATE, TRIBEHENIN, CALCIUM BEHENATE, MELANIN, DIMETHICONOL, ALUMINA, PEG-10 DIMETHICONE, METHICONE, IRON OXIDES, CHOLECALCIFEROL, LYCOPENE, GLYCERIN, SUCROSE PALMITATE, LECITHIN.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e4186262-a29c-40e9-8e21-1b32110321d3",
+  "name": "Protect And Serve Tinted Sun Shield SPF 30 Lotion",
+  "brand": "mybody",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

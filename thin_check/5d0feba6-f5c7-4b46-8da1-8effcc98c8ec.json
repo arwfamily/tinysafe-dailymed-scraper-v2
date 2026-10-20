@@ -1,0 +1,21 @@
+{
+ "setid": "5d0feba6-f5c7-4b46-8da1-8effcc98c8ec",
+ "images": [
+  {
+   "name": "CanineAid4.jpg",
+   "file": "img/5d0feba6-f5c7-4b46-8da1-8effcc98c8ec/CanineAid4.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5d0feba6-f5c7-4b46-8da1-8effcc98c8ec",
+  "name": "Canineaid (arginine Aminobenzoate) Cream",
+  "brand": "EpiCare Limited",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

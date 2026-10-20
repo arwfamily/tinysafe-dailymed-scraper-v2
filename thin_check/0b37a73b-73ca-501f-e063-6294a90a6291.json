@@ -1,0 +1,41 @@
+{
+ "setid": "0b37a73b-73ca-501f-e063-6294a90a6291",
+ "images": [
+  {
+   "name": "Directions.jpg",
+   "file": "img/0b37a73b-73ca-501f-e063-6294a90a6291/Directions.jpg"
+  },
+  {
+   "name": "Drug facts.jpg",
+   "file": "img/0b37a73b-73ca-501f-e063-6294a90a6291/Drug_facts.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/0b37a73b-73ca-501f-e063-6294a90a6291/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/0b37a73b-73ca-501f-e063-6294a90a6291/PDP.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/0b37a73b-73ca-501f-e063-6294a90a6291/uses.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/0b37a73b-73ca-501f-e063-6294a90a6291/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Organys Derma Made",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0b37a73b-73ca-501f-e063-6294a90a6291",
+  "name": "Organys Derma Made Lotion",
+  "brand": "Organys Beauty",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

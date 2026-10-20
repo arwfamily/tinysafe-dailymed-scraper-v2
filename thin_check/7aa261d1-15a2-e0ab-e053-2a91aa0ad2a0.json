@@ -1,0 +1,21 @@
+{
+ "setid": "7aa261d1-15a2-e0ab-e053-2a91aa0ad2a0",
+ "images": [
+  {
+   "name": "Box - Front.jpg",
+   "file": "img/7aa261d1-15a2-e0ab-e053-2a91aa0ad2a0/Box_-_Front.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "CannEssentia Pain Relief Cream",
+ "inactive_section": "coconut oil, cod liver oil (contains vitamin A & vitamin D), fragrances, hemp seed oil, lanolin, light mineral oil, medium-chain triglycerides, microcrystalline wax, paraffin, petrolatum, sodium chloride, terpene essential oil, yellow wax",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7aa261d1-15a2-e0ab-e053-2a91aa0ad2a0",
+  "name": "Cannessentia Pain Relief Cream (trolamine Salicylate) Cream",
+  "brand": "CannEssentia LLC",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

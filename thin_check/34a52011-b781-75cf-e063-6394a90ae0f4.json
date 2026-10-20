@@ -1,0 +1,21 @@
+{
+ "setid": "34a52011-b781-75cf-e063-6394a90ae0f4",
+ "images": [
+  {
+   "name": "203 scottsdale.jpg",
+   "file": "img/34a52011-b781-75cf-e063-6394a90ae0f4/203_scottsdale.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "34a52011-b781-75cf-e063-6394a90ae0f4",
+  "name": "Tinted Sunscreen Cream",
+  "brand": "Scottsdale Skin Boutique and Dermatology Pllc",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

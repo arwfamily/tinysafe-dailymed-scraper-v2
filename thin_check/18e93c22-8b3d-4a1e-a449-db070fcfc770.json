@@ -1,0 +1,21 @@
+{
+ "setid": "18e93c22-8b3d-4a1e-a449-db070fcfc770",
+ "images": [
+  {
+   "name": "be-warm-dark-01.jpg",
+   "file": "img/18e93c22-8b3d-4a1e-a449-db070fcfc770/be-warm-dark-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Warm Dark Original",
+ "inactive_section": "Bismuth oxychloride, mica, iron oxides.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "18e93c22-8b3d-4a1e-a449-db070fcfc770",
+  "name": "Warm Dark Original Powder",
+  "brand": "Bare Escentuals Beauty Inc.",
+  "n_inactive": 3,
+  "thin_reason": "short_list"
+ }
+}

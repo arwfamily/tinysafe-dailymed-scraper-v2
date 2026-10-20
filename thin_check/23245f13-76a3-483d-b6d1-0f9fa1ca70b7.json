@@ -1,0 +1,33 @@
+{
+ "setid": "23245f13-76a3-483d-b6d1-0f9fa1ca70b7",
+ "images": [
+  {
+   "name": "DFB1.jpg",
+   "file": "img/23245f13-76a3-483d-b6d1-0f9fa1ca70b7/DFB1.jpg"
+  },
+  {
+   "name": "DFB2.jpg",
+   "file": "img/23245f13-76a3-483d-b6d1-0f9fa1ca70b7/DFB2.jpg"
+  },
+  {
+   "name": "DFB3.jpg",
+   "file": "img/23245f13-76a3-483d-b6d1-0f9fa1ca70b7/DFB3.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/23245f13-76a3-483d-b6d1-0f9fa1ca70b7/PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "Inactive ingredients WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERIN, GLYCERYL STEARATE, PROPYLENE GLYCOL, BUTYLENE GLYCOL, RETINYL PALMITATE, ASCORBYL PALMITATE, TOCOPHERYL ACETATE, HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL, TOCOPHEROL, CETYL LACTATE, PEG-40 STEARATE, HYDROGENATED POLYISOBUTENE, STEARETH-2, CARBOMER, XANTHAN GUM, PARFUM/FRAGRANCE, POTASSIUM HYDROXIDE, DISODIUM EDTA, TETRASODIUM EDTA, PHOSPHORIC ACID, IMIDAZOLIDINYL UREA, METHYLPARABEN.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "23245f13-76a3-483d-b6d1-0f9fa1ca70b7",
+  "name": "Avon Care Moisture Replenish Daily Hydrating Cream",
+  "brand": "Avon Products, Inc.",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

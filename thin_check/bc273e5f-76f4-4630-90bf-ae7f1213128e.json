@@ -1,0 +1,21 @@
+{
+ "setid": "bc273e5f-76f4-4630-90bf-ae7f1213128e",
+ "images": [
+  {
+   "name": "69013.jpg",
+   "file": "img/bc273e5f-76f4-4630-90bf-ae7f1213128e/69013.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Caprylyl Methicone, Glyceryl Stearate, PEG-100 Stearate, Cetyl Alcohol, Propylene Glycol, Silica, Benzyl Alcohol, Caprylyl Glycol, Diethylhexyl 2,6-Naphthalate, Phenoxyethanol, Sodium Polyacrylate, Acrylates/C12-22 Alkyl Methacrylate Copolymer, Chlorphenesin, Cetyl Dimethicone, Dimethicone, Xanthan Gum, Fragrance, Behenyl Alcohol, Ethylhexyl Stearate, Trideceth-6, Disodium EDTA, Ethylhexylglycerin, BHT.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bc273e5f-76f4-4630-90bf-ae7f1213128e",
+  "name": "Kroger Sheer Dry-touch Sfp 30 Lotion",
+  "brand": "Krogers",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

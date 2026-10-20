@@ -1,0 +1,25 @@
+{
+ "setid": "9c04b76e-ae65-4183-b475-3b8e8764db59",
+ "images": [
+  {
+   "name": "cot0h-0004-01.jpg",
+   "file": "img/9c04b76e-ae65-4183-b475-3b8e8764db59/cot0h-0004-01.jpg"
+  },
+  {
+   "name": "cot0h-0004-02.jpg",
+   "file": "img/9c04b76e-ae65-4183-b475-3b8e8764db59/cot0h-0004-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "Butyloctyl Salicylate, C12-15 Alkyl Benzoate, Caprylhydroxamic Acid, Caprylyl Glycol, Cellulose Gum, Ceteareth-20, Cetearyl Alcohol, Citric Acid, Disodium EDTA, Glycereth-26, Glycerin, Glyceryl Stearate, Isododecane, Isohexadecane, Methyl Methacrylate Crosspolymer, Microcrystalline Cellulose, Octyldodecyl Ecruate, Octyldodecyl Neopentanoate, Poly C10-30 Alkyl Acrylate, Polyhydroxystearic Acid, Polysorbate 80, Trans-1,3,3,3-Tetrafluoropropene, Triacontanyl PVP, Triethoxycaprylylsilane, Water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "9c04b76e-ae65-4183-b475-3b8e8764db59",
+  "name": "Cotz Silky Foam Non-tinted Aerosol, Foam",
+  "brand": "Fallien Cosmeceuticals, LTD",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "05d3d7cb-00fa-4da3-ad06-f5ba318f9fe3",
+ "images": [
+  {
+   "name": "IMG050_image.jpg",
+   "file": "img/05d3d7cb-00fa-4da3-ad06-f5ba318f9fe3/IMG050_image.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Inactive Ingredients: Water (Aqua), Butylene Glycol, Glycerin, Caprylic/Capric Triglyceride, Glyceryl Stearate, PEG 100 Stearate, Sorbitan Stearate, Imperata Cylindrica Root Extract, Phenoxyethanol, Tocophery Linoleate, Ascorbyl Palmitate (Vitamin C), Lecithin, Tocopherol (Vitamin E), Xanthan Gum, Citric Acid, C13-14 Isoparaffin, PEG 8, Ethylhexylglycerin, Sodium Lactate, Micrococcus Lysate, Arabidopsis Extract, Plankton Extract, Teprenone, Phoenix dactylifera (date) Extract, Laureth-7, Disodium EDTA, Dipotassium Glycyrrizate, Caprylyl Glycol, Ascorbic Acid (Viamin C), Carbomer, Iron Oxides (CL 72124, Cl 7212 and Cl72123)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "05d3d7cb-00fa-4da3-ad06-f5ba318f9fe3",
+  "name": "Sun Tinted Solar Defense Organic SPF 30 Cream",
+  "brand": "Allure Labs, Inc.",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

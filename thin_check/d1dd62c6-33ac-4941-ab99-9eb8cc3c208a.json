@@ -1,0 +1,25 @@
+{
+ "setid": "d1dd62c6-33ac-4941-ab99-9eb8cc3c208a",
+ "images": [
+  {
+   "name": "red02-0004-01.jpg",
+   "file": "img/d1dd62c6-33ac-4941-ab99-9eb8cc3c208a/red02-0004-01.jpg"
+  },
+  {
+   "name": "red02-0004-02.jpg",
+   "file": "img/d1dd62c6-33ac-4941-ab99-9eb8cc3c208a/red02-0004-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "1,2-hexanediol, alcohol denat., aluminum starch octenylsuccinate, water, benzoic acid, beta vulgaris (beet) root extract, biosaccharide gum-4, butylene glycol, butyloctyl salicylate, calcium gluconate, carnosine, cetearyl alcohol, cetyl ethylhexanoate, chlorphenesin, cynara scolymus (artichoke) leaf extract, dehydroacetic acid, diglycerin, dimethicone, dimethicone crosspolymer, disodium EDTA, disodium lauriminodipropionate tocopheryl phosphates, fragrance/parfum, fructooligosaccharides, gluconolactone, glycerin, HDI/trimethylol hexyllactone crosspolymer, hydrogenated polyisobutene, lactic acid, methyl carboxymethylphenyl aminocarboxypropylphosphonate, methyl methacrylate crosspolymer, niacinamide, pentylene glycol, phenoxyethanol, phragmites karka extract, polyacrylate-13, polyisobutene, polysorbate 20, poria cocos extract, potassium lactate, propanediol, red 33 (Cl 17200), silica, sodium acetylated hyaluronate, sodium benzoate, sodium chloride, sodium polyacryloyldimethyl taurate, sodium stearoyl glutamate, sorbitan isostearate, tocopherol, vitis vinifera (grape) juice extract, VP/eicosene copolymer, yellow 5 (Cl 19140)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d1dd62c6-33ac-4941-ab99-9eb8cc3c208a",
+  "name": "Redefine Triple Defense Cream",
+  "brand": "Rodan & Fields",
+  "n_inactive": 56,
+  "thin_reason": null
+ }
+}

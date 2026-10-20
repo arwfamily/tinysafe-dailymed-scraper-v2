@@ -1,0 +1,25 @@
+{
+ "setid": "6c2e6fbf-f3ae-42c3-bd73-a0c95527df5e",
+ "images": [
+  {
+   "name": "carton1.jpg",
+   "file": "img/6c2e6fbf-f3ae-42c3-bd73-a0c95527df5e/carton1.jpg"
+  },
+  {
+   "name": "carton2.jpg",
+   "file": "img/6c2e6fbf-f3ae-42c3-bd73-a0c95527df5e/carton2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "Inactive ingredients: water/eau, glycerin, propanediol, cyclopentasiloxane, hydrogenated polyisobutene, hydroxyethyl urea, dimethicone, saccharomyces/ zinc ferment, cereus grandiflorus (cactus) flower extract, pelvetia canaliculata extract, butyrospermum parkii (shea) butter, sodium hyaluronate, tocopheryl acetate, sodium PCA, urea, phytol, lauryl lactate, silica, PEG-100 stearate, pentylene glycol, phenoxyethanol, acrylates/C10-30 alkyl acrylate crosspolymer, hydroxyethyl acrylate/ sodium acryloyldimethyl taurate copolymer, carbomer, chlorphenesin, disodium EDTA, isohexadecane, sodium hydroxide, ethylene/propylene/styrene copolymer, cetyl alcohol, cholesterol, dimethicone crosspolymer, dilauryl thiodipropionate, xanthan gum, sodium dehydroacetate, polysorbate 60, boron nitride, butylene/ethylene/styrene copolymer, parfum/fragrance.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6c2e6fbf-f3ae-42c3-bd73-a0c95527df5e",
+  "name": "Avon Elements Moisture Boost Daily Moisture Lotion",
+  "brand": "New Avon LLC",
+  "n_inactive": 39,
+  "thin_reason": null
+ }
+}

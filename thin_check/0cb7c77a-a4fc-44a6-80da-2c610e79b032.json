@@ -1,0 +1,21 @@
+{
+ "setid": "0cb7c77a-a4fc-44a6-80da-2c610e79b032",
+ "images": [
+  {
+   "name": "silky30.jpg",
+   "file": "img/0cb7c77a-a4fc-44a6-80da-2c610e79b032/silky30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0cb7c77a-a4fc-44a6-80da-2c610e79b032",
+  "name": "Silky Finish Fluid Lotion",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 7,
+  "thin_reason": "no_printed_list"
+ }
+}

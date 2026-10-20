@@ -1,0 +1,21 @@
+{
+ "setid": "36c043e0-fd6c-5f7a-e063-6294a90a8899",
+ "images": [
+  {
+   "name": "The Esthetic B 202.jpg",
+   "file": "img/36c043e0-fd6c-5f7a-e063-6294a90a8899/The_Esthetic_B_202.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "36c043e0-fd6c-5f7a-e063-6294a90a8899",
+  "name": "Non-tinted Mineral Sunscreen Cream",
+  "brand": "ESTHETIC ACADEMY LLC",
+  "n_inactive": 11,
+  "thin_reason": null
+ }
+}

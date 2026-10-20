@@ -1,0 +1,21 @@
+{
+ "setid": "d8d24ed4-7676-43ea-8c94-e2e2be678cff",
+ "images": [
+  {
+   "name": "ClearChoice Sunscreen Label.jpg",
+   "file": "img/d8d24ed4-7676-43ea-8c94-e2e2be678cff/ClearChoice_Sunscreen_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "ClearChoice Sport Shield",
+ "inactive_section": "Organic Aloe Vera, Thioctic Acid, Magnesium Ascorbyl Phosphate, Panthenol, Dexpanthenol, Tocopheryl Acetate, Ergocalciferol, Grape Seed Extract, Evening Primrose Oil, Sunflower Seed Oil, Safflower Seed Oil, Slippery Elm Extract, Borage Seed Oil, Alpha Bisabolol, Plantain, Allantoin, Hyaluronic Acid, Olive Squalane.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d8d24ed4-7676-43ea-8c94-e2e2be678cff",
+  "name": "Clearchoice Sport Shield Lotion",
+  "brand": "Dermastart Inc.",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

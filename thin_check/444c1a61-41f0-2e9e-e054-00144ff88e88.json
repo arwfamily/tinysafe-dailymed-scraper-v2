@@ -1,0 +1,21 @@
+{
+ "setid": "444c1a61-41f0-2e9e-e054-00144ff88e88",
+ "images": [
+  {
+   "name": "Label Baby Back.jpg",
+   "file": "img/444c1a61-41f0-2e9e-e054-00144ff88e88/Label_Baby_Back.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sea & Ski Baby SPF 50 Lotion",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "444c1a61-41f0-2e9e-e054-00144ff88e88",
+  "name": "General Protection Lotion",
+  "brand": "Cross-Brand Manufacturing, LLC",
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

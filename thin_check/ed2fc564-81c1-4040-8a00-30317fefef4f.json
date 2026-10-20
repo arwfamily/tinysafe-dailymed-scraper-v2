@@ -1,0 +1,25 @@
+{
+ "setid": "ed2fc564-81c1-4040-8a00-30317fefef4f",
+ "images": [
+  {
+   "name": "bb0908-figure-1-Pure_Finish_Moisture_Carton.jpg",
+   "file": "img/ed2fc564-81c1-4040-8a00-30317fefef4f/bb0908-figure-1-Pure_Finish_Moisture_Carton.jpg"
+  },
+  {
+   "name": "bb0908-figure-2-Pure_Finish_Moisture_Tube.jpg",
+   "file": "img/ed2fc564-81c1-4040-8a00-30317fefef4f/bb0908-figure-2-Pure_Finish_Moisture_Tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "BB0908",
+ "inactive_section": "Other Ingredients: Water/Aqua/Eau, Dimethicone, Mica, Cetearyl Alcohol, Polyglyceryl-4 Isostearate, Cetyl Dimethicone, Hexyl Laurate, Cetyl PEG/PPG-10/1 Dimethicone, Sodium Stearoyl Lactylate, Squalane, Hydrogenated Polyisobutene, Silene Uniflora Extract, Sodium Hyaluronate, Retinyl Palmitate, Tetrahexyldecyl Ascorbate, Tocopherol, Tocopheryl Acetate, Jojoba Esters, Glycerin, Triethoxycaprylylsilane, Carbomer, Magnesium Aluminum Silicate, Triethanolamine, Trisodium EDTA, Methylparaben, Phenoxyethanol, Propylparaben, Iron Oxides (CI 77491, CI 77492, CI 77499), Titanium Dioxide (CI 77891).",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "ed2fc564-81c1-4040-8a00-30317fefef4f",
+  "name": "Pure Finish Mineral Tinted Moisturizer SPF 15 Medium Lotion",
+  "brand": "Elizabeth Arden, Inc",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "2e5315bf-39f4-401c-8207-18ef6a97e024",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/2e5315bf-39f4-401c-8207-18ef6a97e024/image-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Bluevado Sunfix Sunscreen",
+ "inactive_section": "Argania Spinosa (Argan) Kernel Oil, Ascorbyl Palmitate, Bisabolol Butyrospermum Parkii (Shea) Butter, C13-15 Alkane, Caprylic/Capric Triglyceride, Capryloyl Glycerin/Sebacic Acid Copolymer, Cetearyl Alcohol, Cetyl Alcohol, Citrus Aurantium Bergamia (Bergamot) Peel Oil, Citrus Grandis (Grapefruit) Peel Oil, Cocos Nucifera (Coconut) Oil, Glycerin, Glyceryl Stearate, Heptyl Undecylenate, Jojoba Esters, Lavandula Angustifolia (Lavender) Oil, Methylene Blue, Oryza Sativa (Rice) Bran Oil, PEG-100 Stearate, Pelargonium Graveolens (Geranium) Leaf Oil, Phenoxyethanol, Polyhydroxystearic Acid, Polysorbate 60, Sorbitan Laurate, Tocopheryl Acetate, Water (Aqua), Xanthan Gum.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2e5315bf-39f4-401c-8207-18ef6a97e024",
+  "name": "Bluevado Sunfix Lotion",
+  "brand": "Magic Blue, LLC",
+  "n_inactive": 32,
+  "thin_reason": null
+ }
+}

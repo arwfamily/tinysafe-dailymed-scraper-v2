@@ -1,0 +1,21 @@
+{
+ "setid": "5b4275d0-845f-4662-92a3-431447616062",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/5b4275d0-845f-4662-92a3-431447616062/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "water, butylene glycol, glycerin, dimethicone, zinc oxide, stearic acid, ginsenosides, honey ext, butylparaben, etc",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5b4275d0-845f-4662-92a3-431447616062",
+  "name": "Donginbi Red Ginseng Perfect Sun Cream",
+  "brand": "KGC Life&Gin Co., Ltd.",
+  "n_inactive": 9,
+  "thin_reason": null
+ }
+}

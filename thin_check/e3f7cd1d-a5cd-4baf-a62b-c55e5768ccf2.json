@@ -1,0 +1,21 @@
+{
+ "setid": "e3f7cd1d-a5cd-4baf-a62b-c55e5768ccf2",
+ "images": [
+  {
+   "name": "FelineAid4.jpg",
+   "file": "img/e3f7cd1d-a5cd-4baf-a62b-c55e5768ccf2/FelineAid4.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e3f7cd1d-a5cd-4baf-a62b-c55e5768ccf2",
+  "name": "Felineaid (arginine Aminobenzoate) Cream",
+  "brand": "EpiCare Limited",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

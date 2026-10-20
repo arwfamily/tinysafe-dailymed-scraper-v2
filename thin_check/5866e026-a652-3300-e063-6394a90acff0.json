@@ -1,0 +1,29 @@
+{
+ "setid": "5866e026-a652-3300-e063-6394a90acff0",
+ "images": [
+  {
+   "name": "EcoStick SPF 40 SPORT.jpg",
+   "file": "img/5866e026-a652-3300-e063-6394a90acff0/EcoStick_SPF_40_SPORT.jpg"
+  },
+  {
+   "name": "EcoStick_Labels SPF 40 TINT.jpg",
+   "file": "img/5866e026-a652-3300-e063-6394a90acff0/EcoStick_Labels_SPF_40_TINT.jpg"
+  },
+  {
+   "name": "EcoStick_SPF 40 KIDS.jpg",
+   "file": "img/5866e026-a652-3300-e063-6394a90acff0/EcoStick_SPF_40_KIDS.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Stream2Sea Ecostick SPF 40",
+ "inactive_section": "STREAM2SEA ECOSTICK MINERAL SUNSCREEN SPF 40 AND SPF 40 KIDS Beeswax, Carnauba Wax, Extracts of Green Tea Leaf *, Tulsi Leaf *, Wakame Seaweed *, and Olea Europaea (Olive) Leaf * in Sunflower Seed Oil, Jojoba Esters, Microcrystalline Cellulose, Mixed Tocopherols (Vitamin E), Polyhydroxystearic Acid, Sweet Almond Oil, Sorbitan Olivate, Squalane (Plant-Based). *CERTIFIED ORGANIC INGREDIENTS. STREAM2SEA ECOSTICK MINERAL SUNSCREEN SPF 40 TINT Also contains Iron Oxide (CI 77491, CI 77492, and CI 77499)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5866e026-a652-3300-e063-6394a90acff0",
+  "name": "Stream2sea Ecostock SPF 40 Sunscreen Stick",
+  "brand": "Stream2Sea, LLC",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "setid": "c7a1f2a7-d299-2116-e053-2995a90ad8c5",
+ "images": [
+  {
+   "name": "Front Label.jpg",
+   "file": "img/c7a1f2a7-d299-2116-e053-2995a90ad8c5/Front_Label.jpg"
+  },
+  {
+   "name": "Label.jpg",
+   "file": "img/c7a1f2a7-d299-2116-e053-2995a90ad8c5/Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Milani SPF BFF 30 Primer",
+ "inactive_section": "Water, Glycerin, Isohexadecane, Sodium Acrylate/ Sodium Acryloyldimethyl Taurate Copolymer, PEG-8, Polysorbate 80, Xanthan Gum, Tocopherol, Glycine Soja (Soybean) Oil, Retinyl Palmitate, Ethylhexylglycerin, Citric Acid, Disodium EDTA, Phenoxyethanol, Yellow 5, Red 40.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c7a1f2a7-d299-2116-e053-2995a90ad8c5",
+  "name": "Milani SPF Bff 30 Primer Cream",
+  "brand": "New Milani Group, LLC",
+  "n_inactive": 19,
+  "thin_reason": null
+ }
+}

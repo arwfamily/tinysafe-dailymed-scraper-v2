@@ -1,0 +1,29 @@
+{
+ "setid": "b16c17f7-719f-4086-9f76-d5422c37ca12",
+ "images": [
+  {
+   "name": "DFB1.jpg",
+   "file": "img/b16c17f7-719f-4086-9f76-d5422c37ca12/DFB1.jpg"
+  },
+  {
+   "name": "DFB2.jpg",
+   "file": "img/b16c17f7-719f-4086-9f76-d5422c37ca12/DFB2.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/b16c17f7-719f-4086-9f76-d5422c37ca12/PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "Inactive ingredients: WATER/EAU, GLYCERIN, BUTYLENE GLYCOL, GLYCERYL STEARATE, PEG-8, SILICA, ORYZA SATIVA (RICE) BRAN OIL, SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL, HYDROGENATED POLYISOBUTENE, LECITHIN, HYDROGENATED LECITHIN, GLYCINE SOJA (SOYBEAN) STEROLS, GLYCINE SOJA (SOYBEAN) OIL, CETYL ALCOHOL, DIMETHICONE, CARBOMER, ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER, POLYGLYCERYL-3 DIISOSTEARATE, DISODIUM EDTA, IMIDAZOLIDINYL UREA, DIMETHICONOL, METHYLPARABEN, SODIUM HYDROXIDE, PARFUM/FRAGRANCE.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b16c17f7-719f-4086-9f76-d5422c37ca12",
+  "name": "Moisture Therapy Intensive Healing And Repair Body Lotion",
+  "brand": "Avon Products, Inc.",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

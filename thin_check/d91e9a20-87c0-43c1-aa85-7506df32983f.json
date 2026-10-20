@@ -1,0 +1,25 @@
+{
+ "setid": "d91e9a20-87c0-43c1-aa85-7506df32983f",
+ "images": [
+  {
+   "name": "Daboncard.jpg",
+   "file": "img/d91e9a20-87c0-43c1-aa85-7506df32983f/Daboncard.jpg"
+  },
+  {
+   "name": "Dabonlabel.jpg",
+   "file": "img/d91e9a20-87c0-43c1-aa85-7506df32983f/Dabonlabel.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d91e9a20-87c0-43c1-aa85-7506df32983f",
+  "name": "Ocean Potion Instant Dry 50 Dab-on Spotstick Liquid",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 5,
+  "thin_reason": "no_printed_list"
+ }
+}

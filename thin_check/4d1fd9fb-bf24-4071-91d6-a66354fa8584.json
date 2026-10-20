@@ -1,0 +1,21 @@
+{
+ "setid": "4d1fd9fb-bf24-4071-91d6-a66354fa8584",
+ "images": [
+  {
+   "name": "PHFlo30.jpg",
+   "file": "img/4d1fd9fb-bf24-4071-91d6-a66354fa8584/PHFlo30.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4d1fd9fb-bf24-4071-91d6-a66354fa8584",
+  "name": "Parrot Head Floridays 30 Lotion",
+  "brand": "Sun & Skin Care Research, LLC",
+  "n_inactive": 21,
+  "thin_reason": null
+ }
+}

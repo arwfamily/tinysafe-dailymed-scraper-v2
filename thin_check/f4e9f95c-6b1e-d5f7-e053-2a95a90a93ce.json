@@ -1,0 +1,41 @@
+{
+ "setid": "f4e9f95c-6b1e-d5f7-e053-2a95a90a93ce",
+ "images": [
+  {
+   "name": "BAI Dynamic Age Defense SPF (2).jpg",
+   "file": "img/f4e9f95c-6b1e-d5f7-e053-2a95a90a93ce/BAI_Dynamic_Age_Defense_SPF__2_.jpg"
+  },
+  {
+   "name": "active ingredients.jpg",
+   "file": "img/f4e9f95c-6b1e-d5f7-e053-2a95a90a93ce/active_ingredients.jpg"
+  },
+  {
+   "name": "direction.jpg",
+   "file": "img/f4e9f95c-6b1e-d5f7-e053-2a95a90a93ce/direction.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/f4e9f95c-6b1e-d5f7-e053-2a95a90a93ce/inactive_ingredients.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/f4e9f95c-6b1e-d5f7-e053-2a95a90a93ce/uses.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/f4e9f95c-6b1e-d5f7-e053-2a95a90a93ce/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "6",
+ "title": "pavise Dynamic Age Defense",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f4e9f95c-6b1e-d5f7-e053-2a95a90a93ce",
+  "name": "Pavise Dynamic Age Defense Lotion",
+  "brand": "B.A.I BIOSCIENCES, INC",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

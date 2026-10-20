@@ -1,0 +1,21 @@
+{
+ "setid": "aa75c00a-13c5-0e3e-e053-2a95a90ad321",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/aa75c00a-13c5-0e3e-e053-2a95a90ad321/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "MY Corp - bekly spray 60ml",
+ "inactive_section": "Foeniculum Vulgare Fruit Extract, Maltitol, Polygonum Tinctorium Leaf Extract, Sorbitol, Water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "aa75c00a-13c5-0e3e-e053-2a95a90ad321",
+  "name": "Beklyn Absolute Purifying-spray Liquid",
+  "brand": "MY Corp.,Ltd",
+  "n_inactive": 6,
+  "thin_reason": "short_list"
+ }
+}

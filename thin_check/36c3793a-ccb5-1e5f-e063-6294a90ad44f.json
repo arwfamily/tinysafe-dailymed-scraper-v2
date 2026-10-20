@@ -1,0 +1,21 @@
+{
+ "setid": "36c3793a-ccb5-1e5f-e063-6294a90ad44f",
+ "images": [
+  {
+   "name": "Science 203.jpg",
+   "file": "img/36c3793a-ccb5-1e5f-e063-6294a90ad44f/Science_203.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "36c3793a-ccb5-1e5f-e063-6294a90ad44f",
+  "name": "Silk Screen Tinted Cream",
+  "brand": "Skin Science Institute Inc",
+  "n_inactive": 12,
+  "thin_reason": null
+ }
+}

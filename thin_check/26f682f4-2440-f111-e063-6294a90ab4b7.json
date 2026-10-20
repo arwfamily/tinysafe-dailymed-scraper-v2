@@ -1,0 +1,25 @@
+{
+ "setid": "26f682f4-2440-f111-e063-6294a90ab4b7",
+ "images": [
+  {
+   "name": "Mineral Stick unit carton.jpg",
+   "file": "img/26f682f4-2440-f111-e063-6294a90ab4b7/Mineral_Stick_unit_carton.jpg"
+  },
+  {
+   "name": "SPF 50 Stick artwork 1.6.25.jpg",
+   "file": "img/26f682f4-2440-f111-e063-6294a90ab4b7/SPF_50_Stick_artwork_1.6.25.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "DBC Mineral Stick",
+ "inactive_section": "Bisabolol, Butyloctyl Salicylate, Butyrospermum Parkii (Shea) Butter, Cocos Nucifera (Coconut) OiI, Copernicia Cerifera (Carnauba) Wax, Euphorbia Cerifera (Candelilla) Wax, Helianthus Annuus (Sunflower) Seed Oil, Olea Europaea (Olive) Fruit Oil, Oryzanol, Theobroma Cacao (Cocoa) Seed Butter, Tocopherol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "26f682f4-2440-f111-e063-6294a90ab4b7",
+  "name": "Dimples Bath Co - Sunstick New Kid On The Block Stick",
+  "brand": "Dimples Bath Co. LLC",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

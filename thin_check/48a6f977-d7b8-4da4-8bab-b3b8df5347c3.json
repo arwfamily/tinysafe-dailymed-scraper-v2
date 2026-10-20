@@ -1,0 +1,29 @@
+{
+ "setid": "48a6f977-d7b8-4da4-8bab-b3b8df5347c3",
+ "images": [
+  {
+   "name": "nuderm-01.jpg",
+   "file": "img/48a6f977-d7b8-4da4-8bab-b3b8df5347c3/nuderm-01.jpg"
+  },
+  {
+   "name": "nuderm-02.jpg",
+   "file": "img/48a6f977-d7b8-4da4-8bab-b3b8df5347c3/nuderm-02.jpg"
+  },
+  {
+   "name": "nuderm-03.jpg",
+   "file": "img/48a6f977-d7b8-4da4-8bab-b3b8df5347c3/nuderm-03.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "OBAGI NU-DERM® SYSTEM",
+ "inactive_section": "Water (Aqua), C15-19 Alkane, Octyldodecyl Neopentanoate, Polymethylsilsesquioxane, Sorbitan Olivate, Silica, Polyglyceryl-6 Polyrininoleate, Sodium Chloride, Xanthan Gum, Glycerin, Hydroxyacetophenone, Disodium EDTA, 1,2-Hexanediol, Caprylyl Glycol, Sodium Hydroxide, Triethoxycaprylsilane, Polyhydroxystearic Acid, Disteardimonium Hectorite, Polyglyceryl-2 Isostearate, Euphorbia Cerifera (candelilla) Wax, Beeswax, Dimethicone",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "48a6f977-d7b8-4da4-8bab-b3b8df5347c3",
+  "name": "Nu-derm System Normal-oily Skin Transformation Trial Kit",
+  "brand": "OBAGI COSMECEUTICAL LLC",
+  "n_inactive": 36,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "3bbcb812-feff-3b00-e054-00144ff88e88",
+ "images": [
+  {
+   "name": "l.jpg",
+   "file": "img/3bbcb812-feff-3b00-e054-00144ff88e88/l.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Butylene Glycol, Allantoin, Etc.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3bbcb812-feff-3b00-e054-00144ff88e88",
+  "name": "D-one By Tamdoan Bb Medium Cream",
+  "brand": "DRAN CO.,LTD",
+  "n_inactive": 3,
+  "thin_reason": "label_prints_too_little"
+ }
+}

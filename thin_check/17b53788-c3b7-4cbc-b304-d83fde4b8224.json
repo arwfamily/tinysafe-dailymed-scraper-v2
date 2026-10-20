@@ -1,0 +1,21 @@
+{
+ "setid": "17b53788-c3b7-4cbc-b304-d83fde4b8224",
+ "images": [
+  {
+   "name": "solvaderm-01.jpg",
+   "file": "img/17b53788-c3b7-4cbc-b304-d83fde4b8224/solvaderm-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Solvaderm™ - Dermaxsol",
+ "inactive_section": "Water (Aqua), Stearyl Alcohol, Glycerin, Glyceryl Stearate, PEG-100 Stearate, Glyceryl Dilaurate, Cetearyl Alcohol, Beeswax, Dimethicone, Cyclomethicone , Diisopropyl Adipate, Hexylene Glycol, PEG-40 Stearate, C12-15 Alkyl Benzoate, Aluminum Starch Octenylsuccinate, PEG-20, Carnauba Wax, Dimethicone Copolyol, VP/Eicosene Copolymer, Sorbitan Tristearate, Stearoxytrimethylsilane, Steareth-100, Laureth-7, C13-14 Isoparaffin, Phenoxyethanol, Ethyhexylglycerin, Polyacrylamide.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "17b53788-c3b7-4cbc-b304-d83fde4b8224",
+  "name": "Solvaderm - Dermaxsol Cream",
+  "brand": "Cosmetic Solutions LLC",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

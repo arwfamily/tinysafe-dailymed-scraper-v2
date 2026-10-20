@@ -1,0 +1,21 @@
+{
+ "setid": "be702a3b-1652-4468-803d-295100d3e3e2",
+ "images": [
+  {
+   "name": "mm01.jpg",
+   "file": "img/be702a3b-1652-4468-803d-295100d3e3e2/mm01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Kroger D32.000/D32AA Sheer Touch Sunscreen SPF 30",
+ "inactive_section": "water, diethylhexyl 2, 6-naphthalate, silica, butyloctyl salicylate, caprylyl methicone, dimethicone, potassium cetyl phosphate, benzyl alcohol, beeswax, glyceryl stearate, PEG-100 stearate, cetyl dimethicone, glycerin, behenyl alcohol, sodium polyacrylate, acrylates/C12-22 alkyl methacrylate copolymer, xanthan gum, chlorphenesin, dimethicone/PEG-10/15 crosspolymer, ethylhexyl stearate, fragrance, disodium EDTA, tocopheryl acetate, BHT, trideceth-6, pentylene glycol, benzyl benzoate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "be702a3b-1652-4468-803d-295100d3e3e2",
+  "name": "Avobenzone, Homosalate, Octisalate Lotion",
+  "brand": "The Kroger Co.",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

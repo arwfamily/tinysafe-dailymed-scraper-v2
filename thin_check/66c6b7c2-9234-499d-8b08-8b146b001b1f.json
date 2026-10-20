@@ -1,0 +1,29 @@
+{
+ "setid": "66c6b7c2-9234-499d-8b08-8b146b001b1f",
+ "images": [
+  {
+   "name": "Inner Package5.jpg",
+   "file": "img/66c6b7c2-9234-499d-8b08-8b146b001b1f/Inner_Package5.jpg"
+  },
+  {
+   "name": "Outer Package.jpg",
+   "file": "img/66c6b7c2-9234-499d-8b08-8b146b001b1f/Outer_Package.jpg"
+  },
+  {
+   "name": "Pucker Up.jpg",
+   "file": "img/66c6b7c2-9234-499d-8b08-8b146b001b1f/Pucker_Up.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Be Sweet SPF 15 Tinted Lip Balm Pucker Up",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "66c6b7c2-9234-499d-8b08-8b146b001b1f",
+  "name": "Be Sweet SPF 15 Tinted Pucker Up Gel",
+  "brand": "Bona Fide Beauty Lab PS LLC",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

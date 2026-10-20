@@ -1,0 +1,21 @@
+{
+ "setid": "002a4766-0c7e-4ec7-e063-6294a90a78d8",
+ "images": [
+  {
+   "name": "RadiantSPFRetailBox.jpg",
+   "file": "img/002a4766-0c7e-4ec7-e063-6294a90a78d8/RadiantSPFRetailBox.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Radiant Protection SPF Fluid",
+ "inactive_section": "Caprylic/Capric Triglyceride*, Butyloctyl Salicylate, Oryza Sativa (Rice) Wax*, Copernicia Cerifera (Carnauba) Wax*, Triheptanoin, Pentaerythrityl Stearate/Caprate/Caprylate/Adipate, Polyhydroxystearic Acid, Lauroyl Lysine, Methyl Glucose Dioleate, Hydrogenated Poly(C6-20 Olefin),HDI/Trimethylol Hexyllactone Crosspolymer, Niacinamide (Vitamin B3), C13-16 Isoalkane, Bakuchiol, Natural Fragrance, Biocomplex2™ [Daucus Carota Sativa (Carrot) Seed Oil*, Euterpe Oleracea (Acai) Fruit Extract*, Citrus Limon (Lemon) Juice*, Malpighia Glabra (Barbados Cherry) Fruit Extract*, Emblica Officinalis (Indian Gooseberry) Fruit Extract*, Adansonia Digitata (Baobab) Fruit Extract*, Myrciaria Dubia (Camu Camu) Fruit Extract*, Daucus Carota Sativa (Carrot) Root Extract*, Cocos Nucifera (Coconut) Water*, Lycium Barbarum (Goji) Fruit Extract*, Helianthus Annuus (Sunflower) Seed Oil*, Plant-Derived Maltodextrin* and Vegetable Glycerin*].",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "002a4766-0c7e-4ec7-e063-6294a90a78d8",
+  "name": "Eminence Radiant Protection SPF Fluid Liquid",
+  "brand": "Eminence Organic Skin Care",
+  "n_inactive": 31,
+  "thin_reason": null
+ }
+}

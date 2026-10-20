@@ -1,0 +1,21 @@
+{
+ "setid": "3360a208-5f17-a74b-e063-6294a90a13e1",
+ "images": [
+  {
+   "name": "cutis wellness 226.jpg",
+   "file": "img/3360a208-5f17-a74b-e063-6294a90a13e1/cutis_wellness_226.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3360a208-5f17-a74b-e063-6294a90a13e1",
+  "name": "Mineral Sunscreen Moisturizing Non-tinted Cream",
+  "brand": "Cutis Wellness Dermatology And Dermatopathology PLLC",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

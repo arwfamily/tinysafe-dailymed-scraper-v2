@@ -1,0 +1,21 @@
+{
+ "setid": "15da0cb1-e695-cec3-e063-6394a90a1afa",
+ "images": [
+  {
+   "name": "Daily Body.jpg",
+   "file": "img/15da0cb1-e695-cec3-e063-6394a90a1afa/Daily_Body.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Sun Bum Daily Body",
+ "inactive_section": "water, butyloctyl salicylate, polymethyl-silsesquioxane, fragrance, acrylates/C10-30 alkyl acrylate cross-polymer, acrylates/polytrimethylsiloxymethacrylate copolymer, aminomethyl propanol, ethylhexylglycerin, glycerin, isododecane, lysolecithin, phenoxyethanol, polyglyceryl-6 behenate, polyglyceryl-6 stearate, pongamia pinnata seed extract, propanediol, pullulan, sclerotium gum, silica, sodium polyacrylate, tetrahexyldecyl ascorbate, tocopherol, trisodium ethylenediamine disuccinate, xanthan gum",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "15da0cb1-e695-cec3-e063-6394a90a1afa",
+  "name": "Sun Bum Daily Body Lotion",
+  "brand": "Sun Bum, LLC",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

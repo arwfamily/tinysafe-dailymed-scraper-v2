@@ -1,0 +1,21 @@
+{
+ "setid": "83d2c651-6b93-4e08-85f5-726a6d6d5477",
+ "images": [
+  {
+   "name": "OMBsptend60.jpg",
+   "file": "img/83d2c651-6b93-4e08-85f5-726a6d6d5477/OMBsptend60.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "water, dimethicone, alcohol denat., styrene/acrylates copolymer, acrylates/dimethicone copolymer, tocopherol, sodium polyacrylate, phenoxyethanol, PEG-8 laurate, silica, menthyl lactate, caprylyl glycol, acrylates/c10-30 alkyl acrylate crosspolymer, disodium EDTA",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "83d2c651-6b93-4e08-85f5-726a6d6d5477",
+  "name": "Garnier Ombrelle Sport Endurance 60 Lotion",
+  "brand": "L'OREAL USA PRODUCTS INC",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

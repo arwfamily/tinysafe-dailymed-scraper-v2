@@ -1,0 +1,41 @@
+{
+ "setid": "19c1a934-b0f5-1068-e063-6294a90a3b1f",
+ "images": [
+  {
+   "name": "Actives.jpg",
+   "file": "img/19c1a934-b0f5-1068-e063-6294a90a3b1f/Actives.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/19c1a934-b0f5-1068-e063-6294a90a3b1f/PDP.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/19c1a934-b0f5-1068-e063-6294a90a3b1f/directions.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/19c1a934-b0f5-1068-e063-6294a90a3b1f/inactive_ingredients.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/19c1a934-b0f5-1068-e063-6294a90a3b1f/uses.jpg"
+  },
+  {
+   "name": "warning.jpg",
+   "file": "img/19c1a934-b0f5-1068-e063-6294a90a3b1f/warning.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Daybird 4-in-1 Skin Tint Serum",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "19c1a934-b0f5-1068-e063-6294a90a3b1f",
+  "name": "Daybird 4-in-1 Skin Tint Serum Lotion",
+  "brand": "Resette, Inc.",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

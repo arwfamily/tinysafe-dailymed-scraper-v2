@@ -1,0 +1,21 @@
+{
+ "setid": "29c0a297-7574-44e4-ba8a-bbb8056efade",
+ "images": [
+  {
+   "name": "cru001.jpg",
+   "file": "img/29c0a297-7574-44e4-ba8a-bbb8056efade/cru001.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "WATER,GLYCERYL STEARATE CITRATE, CETOSTEARYL ALCOHOL, GLYCERIN, ISOPROPYL MYRISTATE, ALLANTOIN, ASCORBIC ACID, SODIUM METABISULFITE, SODIUM LAURYL, SULFATE EDETATE, DISODIUM, METHYLPARABEN, PROPYLPARABEN, CHLOROCRESOL",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "29c0a297-7574-44e4-ba8a-bbb8056efade",
+  "name": "Crusader Skin Lightening (hydroquinone) Cream",
+  "brand": "International Beauty Exchange",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

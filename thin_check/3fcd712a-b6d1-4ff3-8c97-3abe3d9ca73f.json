@@ -1,0 +1,25 @@
+{
+ "setid": "3fcd712a-b6d1-4ff3-8c97-3abe3d9ca73f",
+ "images": [
+  {
+   "name": "DFB.jpg",
+   "file": "img/3fcd712a-b6d1-4ff3-8c97-3abe3d9ca73f/DFB.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/3fcd712a-b6d1-4ff3-8c97-3abe3d9ca73f/PDP.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Inactive ingredients Water, Butylene Glycol, Glycerin, Cyclopentasiloxane, Hydrogenated Polyisobutene, Hydroxyethyl Urea, Dimethicone, Lauryl Lactate, Dilauryl Thiodipropionate, Calcium PCA, Lactoferrin, Palmitoyl Oligopeptide, Saccharomyces Ferment Filtrate, Saccharomyces Lysate Extract, Phospholipids, Phytol, Tocopheryl Acetate, Aframomum Melegueta Seed Extract, Butyrospermum Parkii (Shea Butter), Ceramide 2, Cholesterol, DNA, Foeniculum Vulgare (Fennel) Seed Extract, Viola Tricolor Extract, Yeast Extract, PEG-10 Rapeseed Sterol, Urea, Caprylic/Capric Triglyceride, C12-15 Alkyl Benzoate, PEG-100 Stearate, Pentylene Glycol, Hexylene Glycol, Caprylyl Glycol, Boron Nitride, Silica, Isohexadecane, Cetyl Alcohol, Dimethiconol, Tribehenin, Polysorbate 60, Sorbitan Isostearate, Xanthan Gum, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Butylene/Ethylene/Styrene Copolymer, Ethylene/Propylene/Styrene Copolymer, Dimethicone Crosspolymer, Fragrance, Carbomer, Sodium Dehydroacetate, Chlorphenesin, Disodium EDTA, Phenoxyethanol, Sodium Hydroxide.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3fcd712a-b6d1-4ff3-8c97-3abe3d9ca73f",
+  "name": "Solutions A.m. Total Radiance Lotion",
+  "brand": "Avon Products, Inc",
+  "n_inactive": 54,
+  "thin_reason": null
+ }
+}

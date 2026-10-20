@@ -1,0 +1,21 @@
+{
+ "setid": "3029a690-dbb0-ff15-e063-6394a90abdbe",
+ "images": [
+  {
+   "name": "Refy.jpg",
+   "file": "img/3029a690-dbb0-ff15-e063-6394a90abdbe/Refy.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Refy Skin Trio",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3029a690-dbb0-ff15-e063-6394a90abdbe",
+  "name": "Refy Skin Trio Lotion",
+  "brand": "Refy",
+  "n_inactive": 32,
+  "thin_reason": null
+ }
+}

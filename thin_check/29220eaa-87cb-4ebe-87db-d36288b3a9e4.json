@@ -1,0 +1,25 @@
+{
+ "setid": "29220eaa-87cb-4ebe-87db-d36288b3a9e4",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/29220eaa-87cb-4ebe-87db-d36288b3a9e4/image-01.jpg"
+  },
+  {
+   "name": "image-02.jpg",
+   "file": "img/29220eaa-87cb-4ebe-87db-d36288b3a9e4/image-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "13",
+ "title": "Drug Facts - Mentholatum Natural Ice",
+ "inactive_section": "mineral oil, ozokerite, petrolatum, lanolin, fragrance, menthol",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "29220eaa-87cb-4ebe-87db-d36288b3a9e4",
+  "name": "Mentholatum Natural Ice Original Ointment",
+  "brand": "The Mentholatum Company",
+  "n_inactive": 8,
+  "thin_reason": null
+ }
+}

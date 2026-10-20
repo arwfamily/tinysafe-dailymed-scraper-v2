@@ -1,0 +1,21 @@
+{
+ "setid": "4903b4f0-1e39-66ae-e054-00144ff88e88",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/4903b4f0-1e39-66ae-e054-00144ff88e88/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Dicaprylyl Carbonate, Polyglyceryl-3 Diisostearate, Glycerin, Polyglyceryl-2 Dipolyhydroxystearate, Stearic Acid, Aluminum Hydroxide, Helianthus Annuus (Sunflower) Seed Oil, Centella Asiatica Extract, Mangifera Indica (Mango) Seed Butter, Cocos Nucifera (Coconut) Oil, Hippophae Rhamnoides Seed Oil, Rosa Canina Fruit Extract, Zanthoxylum Piperitum Fruit Extract, Pulsatilla Koreana Extract, Usnea Barbata (Lichen) Extract, Lactobacillus/Hibiscus Sabdariffa FlowerFerment Filtrate, Voacanga Africana Seed Extract, Distarch Phosphate, Sodium Chloride, Glyceryl Caprylate, Silica, 1,2-Hexanediol, Ethyl Ferulate, Hydrolyzed Jojoba Esters, Geranium Maculatum Oil",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4903b4f0-1e39-66ae-e054-00144ff88e88",
+  "name": "Biggreen Everyday Sun Cream",
+  "brand": "BIGGREEN INC.",
+  "n_inactive": 26,
+  "thin_reason": null
+ }
+}

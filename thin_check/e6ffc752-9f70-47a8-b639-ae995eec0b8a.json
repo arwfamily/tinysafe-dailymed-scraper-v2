@@ -1,0 +1,25 @@
+{
+ "setid": "e6ffc752-9f70-47a8-b639-ae995eec0b8a",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/e6ffc752-9f70-47a8-b639-ae995eec0b8a/label.jpg"
+  },
+  {
+   "name": "ucarton.jpg",
+   "file": "img/e6ffc752-9f70-47a8-b639-ae995eec0b8a/ucarton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Total Protector Color 30 dark tint",
+ "inactive_section": "Inactive ingredients: Purified Water (Aqua), C12-15 Alkyl Benzoate, Glyceryl Stearate, Glycerin, Stearelh·2, Stearelh-100, Trlcontanyl PVP, PEG-100 stearate, Tocopheryl Acetate, Allontoln, Dlmethlcone, Xanthun Gum, Cetyl Hydroxyethylcellulose, Disodium EDTA, Dlazolldlnyl Urea, lodopropynl Butylcarbamate, Methyldlbromo Glutaronllrlle, Phenoxyethcnol, Methylparaben, Propylparaben, MIca (CI 77019), Blsmulh OxychlorIde (CI 77163), Iron Oxides (CI77489)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e6ffc752-9f70-47a8-b639-ae995eec0b8a",
+  "name": "Sun Total Protector Color 30 Dark Tint Cream",
+  "brand": "MD Formulations",
+  "n_inactive": 23,
+  "thin_reason": null
+ }
+}

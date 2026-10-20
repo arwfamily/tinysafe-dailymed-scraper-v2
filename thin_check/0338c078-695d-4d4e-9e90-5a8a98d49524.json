@@ -1,0 +1,25 @@
+{
+ "setid": "0338c078-695d-4d4e-9e90-5a8a98d49524",
+ "images": [
+  {
+   "name": "image-01.jpg",
+   "file": "img/0338c078-695d-4d4e-9e90-5a8a98d49524/image-01.jpg"
+  },
+  {
+   "name": "image-02.jpg",
+   "file": "img/0338c078-695d-4d4e-9e90-5a8a98d49524/image-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Facts",
+ "inactive_section": "ozokerite, squalane, ethylhexyl palmitate, petrolatum, myristyl myristate, myristyl lactate, flavor, cetyl alcohol, myristyl laurate, myristyl alcohol, BHT, menthol, tocopheryl acetatate [vitamin E]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "0338c078-695d-4d4e-9e90-5a8a98d49524",
+  "name": "Softlips Peppermint Mocha, Apple Chai Cider, Orange Cranberry Stick",
+  "brand": "The Mentholatum Company",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

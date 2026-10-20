@@ -1,0 +1,33 @@
+{
+ "setid": "1bcc491a-730f-471a-9b23-86e6eab022dc",
+ "images": [
+  {
+   "name": "dfb1.jpg",
+   "file": "img/1bcc491a-730f-471a-9b23-86e6eab022dc/dfb1.jpg"
+  },
+  {
+   "name": "dfb2.jpg",
+   "file": "img/1bcc491a-730f-471a-9b23-86e6eab022dc/dfb2.jpg"
+  },
+  {
+   "name": "dfb3.jpg",
+   "file": "img/1bcc491a-730f-471a-9b23-86e6eab022dc/dfb3.jpg"
+  },
+  {
+   "name": "pdp.jpg",
+   "file": "img/1bcc491a-730f-471a-9b23-86e6eab022dc/pdp.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "Inactive ingredients: WATER/EAU, CYCLOPENTASILOXANE, GLYCERIN, BUTYLENE GLYCOL, C12-15 ALKYL BENZOATE, COFFEA ARABICA(COFFEE) SEED OIL, HELIANTHUS ANNUUS (SUNFLOWER) SEED EXTRACT, TETRAHYDRODEMETHOXYDIFERULOYLMETHANE, HYDROLYZED MILKPROTEIN, GLYCINE SOJA (SOYBEAN) SEED EXTRACT, LAGERSTROEMIA INDICA EXTRACT, ASCORBYL PALMITATE, RETINYL PALMITATE, DNA, PALMITOYL OLIGOPEPTIDE,ORYZANOL, PHYTOL, PANTHENOL, TOCOPHERYL ACETATE, CERAMIDE 2, PEG-10 RAPESEED STEROL, TOCOPHEROL, DIMETHICONOL, DIMETHICONE, TRIMETHYLSILOXYSILICATE, TRIBEHENIN, PEG-100 STEARATE, CAPRYLIC/CAPRIC TRIGLYCERIDE PEG-4 ESTERS, LAURETH-4, SODIUM HYDROXIDE,DISODIUM EDTA, SILICA, CARBOMER, PHOSPHORIC ACID, TETRAHYDROBISDEMETHOXYDIFERULOYLMETHANE, HEXYLENE GLYCOL, PHENOXYETHANOL, CAPRYLYL GLYCOL, PARFUM/FRAGRANCE.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "1bcc491a-730f-471a-9b23-86e6eab022dc",
+  "name": "Solutions Ageless Results Day Cream",
+  "brand": "Avon Products, Inc",
+  "n_inactive": 39,
+  "thin_reason": null
+ }
+}

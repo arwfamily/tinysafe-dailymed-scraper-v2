@@ -1,0 +1,21 @@
+{
+ "setid": "fcd20951-8eed-46a5-a6a3-f70f27254fa9",
+ "images": [
+  {
+   "name": "sar08-0000-01.jpg",
+   "file": "img/fcd20951-8eed-46a5-a6a3-f70f27254fa9/sar08-0000-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "DRUG FACTS",
+ "inactive_section": "Alumina, Cyclohexasiloxane, Cyclopentasiloxane, Dimethicone, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethiconol, Iron Oxide (CI77491), Lauryl PEG/PPG-18/18-Hydrogen Dimethicone, Hydrogen Dimethicone, PEG-10 Dimethicone, Tetrahexyldecyl Ascorbate, Tocopheryl Acetate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fcd20951-8eed-46a5-a6a3-f70f27254fa9",
+  "name": "Sara Elizabeth Sheer Tinted Sunscreen SPF40 Cream",
+  "brand": "Sara Elizabeth Skincare",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

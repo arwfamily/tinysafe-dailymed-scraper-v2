@@ -1,0 +1,21 @@
+{
+ "setid": "37dd83db-aa43-7f66-e063-6294a90a893b",
+ "images": [
+  {
+   "name": "miami 208.jpg",
+   "file": "img/37dd83db-aa43-7f66-e063-6294a90a893b/miami_208.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "37dd83db-aa43-7f66-e063-6294a90a893b",
+  "name": "Daily Repair Moisturizing Tinted Cream",
+  "brand": "Skintique",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

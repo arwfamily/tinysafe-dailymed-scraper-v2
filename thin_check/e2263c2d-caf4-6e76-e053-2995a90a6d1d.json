@@ -1,0 +1,21 @@
+{
+ "setid": "e2263c2d-caf4-6e76-e053-2995a90a6d1d",
+ "images": [
+  {
+   "name": "Daily Uniform Carton Artwork.jpg",
+   "file": "img/e2263c2d-caf4-6e76-e053-2995a90a6d1d/Daily_Uniform_Carton_Artwork.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Daily Uniform",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e2263c2d-caf4-6e76-e053-2995a90a6d1d",
+  "name": "Daily Uniform Lotion",
+  "brand": "Daily Uniform, LLC",
+  "n_inactive": 21,
+  "thin_reason": null
+ }
+}

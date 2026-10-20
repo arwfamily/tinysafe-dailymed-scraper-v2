@@ -1,0 +1,21 @@
+{
+ "setid": "aa76b0cd-617a-03ec-e053-2a95a90ad8d1",
+ "images": [
+  {
+   "name": "label.jpg",
+   "file": "img/aa76b0cd-617a-03ec-e053-2a95a90ad8d1/label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "MY Corp - CLEN GERM KILLER-Spray",
+ "inactive_section": "Coumarin, Linalool, Quercetin, Water",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "aa76b0cd-617a-03ec-e053-2a95a90ad8d1",
+  "name": "Clen Germ Killer-spray Liquid",
+  "brand": "MY Corp.,Ltd",
+  "n_inactive": 4,
+  "thin_reason": "short_list"
+ }
+}

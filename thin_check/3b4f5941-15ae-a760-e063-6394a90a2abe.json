@@ -1,0 +1,21 @@
+{
+ "setid": "3b4f5941-15ae-a760-e063-6394a90a2abe",
+ "images": [
+  {
+   "name": "tallow sunscreen jar.jpg",
+   "file": "img/3b4f5941-15ae-a760-e063-6394a90a2abe/tallow_sunscreen_jar.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Initial Drug Listing - Tallow Sunscreen SPF30 Jar",
+ "inactive_section": "Beef Tallow, Beeswax, Butyrospermum Parkii (Shea) Butter, Simmondsia Chinensis (Jojoba) seed oil, Cocos Nucifera (Coconut) Oil, Rubus Idaeus (Red Raspberry) Seed Oil, Daucus Carota Sativa (Carrot) Seed Oil",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3b4f5941-15ae-a760-e063-6394a90a2abe",
+  "name": "Vigority Tallow Sunscreen SPF30 Cream",
+  "brand": "FOUNDATION COMMERCE INC",
+  "n_inactive": 7,
+  "thin_reason": "short_list"
+ }
+}

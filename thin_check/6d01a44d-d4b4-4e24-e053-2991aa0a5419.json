@@ -1,0 +1,21 @@
+{
+ "setid": "6d01a44d-d4b4-4e24-e053-2991aa0a5419",
+ "images": [
+  {
+   "name": "LABEL 12.jpg",
+   "file": "img/6d01a44d-d4b4-4e24-e053-2991aa0a5419/LABEL_12.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "Water, Glycerin, ETC",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6d01a44d-d4b4-4e24-e053-2991aa0a5419",
+  "name": "Labo De Dermafirm Sun Defense Fluid Liquid",
+  "brand": "Dermafirm INC.",
+  "n_inactive": 2,
+  "thin_reason": "label_prints_too_little"
+ }
+}

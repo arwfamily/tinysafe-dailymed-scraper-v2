@@ -1,0 +1,21 @@
+{
+ "setid": "387c9167-638c-1e30-e063-6394a90a9374",
+ "images": [
+  {
+   "name": "panda sf 208.jpg",
+   "file": "img/387c9167-638c-1e30-e063-6394a90a9374/panda_sf_208.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "387c9167-638c-1e30-e063-6394a90a9374",
+  "name": "Serum Lightly Tinted Cream",
+  "brand": "PANDA PAMPERING LLC",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}

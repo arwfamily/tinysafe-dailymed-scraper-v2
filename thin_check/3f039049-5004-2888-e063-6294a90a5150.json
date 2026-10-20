@@ -1,0 +1,21 @@
+{
+ "setid": "3f039049-5004-2888-e063-6294a90a5150",
+ "images": [
+  {
+   "name": "Guise.jpg",
+   "file": "img/3f039049-5004-2888-e063-6294a90a5150/Guise.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Guise Tinted Drops",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3f039049-5004-2888-e063-6294a90a5150",
+  "name": "Guise Tinted Drops Lotion",
+  "brand": "Donis Men LLC",
+  "n_inactive": 20,
+  "thin_reason": null
+ }
+}

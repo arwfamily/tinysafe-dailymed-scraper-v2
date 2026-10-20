@@ -1,0 +1,45 @@
+{
+ "setid": "5d786f6a-f11a-04de-e063-6394a90ac584",
+ "images": [
+  {
+   "name": "DOSAGE ADMINISTRATION SECTION.jpg",
+   "file": "img/5d786f6a-f11a-04de-e063-6394a90ac584/DOSAGE_ADMINISTRATION_SECTION.jpg"
+  },
+  {
+   "name": "INACTIVE INGREDIENT SECTION.jpg",
+   "file": "img/5d786f6a-f11a-04de-e063-6394a90ac584/INACTIVE_INGREDIENT_SECTION.jpg"
+  },
+  {
+   "name": "INDICATIONS USAGE SECTION.jpg",
+   "file": "img/5d786f6a-f11a-04de-e063-6394a90ac584/INDICATIONS_USAGE_SECTION.jpg"
+  },
+  {
+   "name": "KEEP OUT OF REACH OF CHILDREN SECTION.jpg",
+   "file": "img/5d786f6a-f11a-04de-e063-6394a90ac584/KEEP_OUT_OF_REACH_OF_CHILDREN_SECTION.jpg"
+  },
+  {
+   "name": "PACKAGE LABEL.PRINCIPAL DISPLAY PANEL.jpg",
+   "file": "img/5d786f6a-f11a-04de-e063-6394a90ac584/PACKAGE_LABEL.PRINCIPAL_DISPLAY_PANEL.jpg"
+  },
+  {
+   "name": "PURPOSE SECTION.jpg",
+   "file": "img/5d786f6a-f11a-04de-e063-6394a90ac584/PURPOSE_SECTION.jpg"
+  },
+  {
+   "name": "WARNINGS SECTION.jpg",
+   "file": "img/5d786f6a-f11a-04de-e063-6394a90ac584/WARNINGS_SECTION.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENT SECTION",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5d786f6a-f11a-04de-e063-6394a90ac584",
+  "name": "Fountain Of Youth Mineral SPF 30 Sunscreen Lotion",
+  "brand": "Lance (Guangzhou) Biological Technology Co., Ltd.",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "8d662604-9d95-4806-a249-cf7dc6d38347",
+ "images": [
+  {
+   "name": "ido002i.jpg",
+   "file": "img/8d662604-9d95-4806-a249-cf7dc6d38347/ido002i.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "8d662604-9d95-4806-a249-cf7dc6d38347",
+  "name": "Idole Intense (hydroquinone) Lotion",
+  "brand": "International Beauty Exchange",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

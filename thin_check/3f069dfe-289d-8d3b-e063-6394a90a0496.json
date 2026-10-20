@@ -1,0 +1,21 @@
+{
+ "setid": "3f069dfe-289d-8d3b-e063-6394a90a0496",
+ "images": [
+  {
+   "name": "PUR.jpg",
+   "file": "img/3f069dfe-289d-8d3b-e063-6394a90a0496/PUR.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "PUR 4-in-1 Skin Tint LN2",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3f069dfe-289d-8d3b-e063-6394a90a0496",
+  "name": "Pur 4-in-1 Skin Tint Ln2 Lotion",
+  "brand": "PUR Minerals",
+  "n_inactive": 35,
+  "thin_reason": null
+ }
+}

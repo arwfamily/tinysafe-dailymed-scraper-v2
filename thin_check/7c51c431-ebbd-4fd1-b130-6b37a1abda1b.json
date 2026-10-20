@@ -1,0 +1,33 @@
+{
+ "setid": "7c51c431-ebbd-4fd1-b130-6b37a1abda1b",
+ "images": [
+  {
+   "name": "sunscreen-01.jpg",
+   "file": "img/7c51c431-ebbd-4fd1-b130-6b37a1abda1b/sunscreen-01.jpg"
+  },
+  {
+   "name": "sunscreen-02.jpg",
+   "file": "img/7c51c431-ebbd-4fd1-b130-6b37a1abda1b/sunscreen-02.jpg"
+  },
+  {
+   "name": "sunscreen-03.jpg",
+   "file": "img/7c51c431-ebbd-4fd1-b130-6b37a1abda1b/sunscreen-03.jpg"
+  },
+  {
+   "name": "sunscreen-04.jpg",
+   "file": "img/7c51c431-ebbd-4fd1-b130-6b37a1abda1b/sunscreen-04.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Glowell® SPF 30 Tinted Mineral Sunscreen",
+ "inactive_section": "Deionized Water, Isododecane, C12-15 Alkyl Benzoate, Iron Oxide, Butylene Glycol, Polyglyceryl-3 Diisostearate, Mica, Cocos Nucifera (Coconut) Oil, Quaternium-90 Bentonite, VP/Eicosene Copolymer, Butyrospermum Parkii (Shea) Butter, Polyhydroxystearic Acid, Gluconolactone (and) Sodium Benzoate, Fragrance, Propylene Carbonate, Bismuth Oxychloride, Triethoxycaprylylsilane, Tocopherol, Titanium Dioxide (CI77891), Ethyl Ferulate.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7c51c431-ebbd-4fd1-b130-6b37a1abda1b",
+  "name": "Glowell SPF 30 Tinted Mineral Sunscreen Light Cream Glowell SPF 30 Tinted Mineral Sunscreen Medium Cream Glowell SPF 30 Tinted Mineral Sunscreen Tan Cream Glowell SPF 30 Tinted Mineral Sunscreen Deep Cream",
+  "brand": "GLOWELL, LLC.",
+  "n_inactive": 19,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "a8ae551f-43fc-42cc-a1ea-deab422bd9d4",
+ "images": [
+  {
+   "name": "met001.jpg",
+   "file": "img/a8ae551f-43fc-42cc-a1ea-deab422bd9d4/met001.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "a8ae551f-43fc-42cc-a1ea-deab422bd9d4",
+  "name": "Metasol Skin Lightening (hydroquinone) Cream",
+  "brand": "International Beauty Exchange",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

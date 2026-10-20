@@ -1,0 +1,21 @@
+{
+ "setid": "bc023f1e-c58b-4cd2-8c82-cbdbabdeb713",
+ "images": [
+  {
+   "name": "RetinC200.jpg",
+   "file": "img/bc023f1e-c58b-4cd2-8c82-cbdbabdeb713/RetinC200.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "4",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "bc023f1e-c58b-4cd2-8c82-cbdbabdeb713",
+  "name": "Retin C Cream",
+  "brand": "Zenith Medicosm SL",
+  "n_inactive": 24,
+  "thin_reason": null
+ }
+}

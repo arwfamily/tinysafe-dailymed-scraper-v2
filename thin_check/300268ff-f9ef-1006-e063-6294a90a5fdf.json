@@ -1,0 +1,21 @@
+{
+ "setid": "300268ff-f9ef-1006-e063-6294a90a5fdf",
+ "images": [
+  {
+   "name": "Face 5 LLC Tinted Mineral Sunscreen SF.jpg",
+   "file": "img/300268ff-f9ef-1006-e063-6294a90a5fdf/Face_5_LLC_Tinted_Mineral_Sunscreen_SF.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "Alumina, Cyclohexasiloxane, Cyclopentasiloxane, Dimethicone, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Dimethiconol, Iron Oxide (CI 77491), Lauryl PEG/PPG-18/18 Methicone, Hydrogen Dimethicone, PEG-10 Dimethicone, Tetrahexyldecyl Ascorbate, Tocopheryl Acetate",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "300268ff-f9ef-1006-e063-6294a90a5fdf",
+  "name": "Tinted Mineral Sunscreen Cream",
+  "brand": "Face 5, LLC",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

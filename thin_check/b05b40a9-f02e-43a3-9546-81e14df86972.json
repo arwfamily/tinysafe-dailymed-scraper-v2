@@ -1,0 +1,25 @@
+{
+ "setid": "b05b40a9-f02e-43a3-9546-81e14df86972",
+ "images": [
+  {
+   "name": "Inner Label.jpg",
+   "file": "img/b05b40a9-f02e-43a3-9546-81e14df86972/Inner_Label.jpg"
+  },
+  {
+   "name": "Outer Label.jpg",
+   "file": "img/b05b40a9-f02e-43a3-9546-81e14df86972/Outer_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Daily Face Lotion - Broad Spectrum SPF 15",
+ "inactive_section": "water/Aqua/Eau, Caprylic/Capric Triglyceride, Butylene Glycol, Dimethicone, Shea Butter Ethyl Esters, Cetearyl Alcohol, Glyceryl Stearate, PEG-100 Stearate, Glycerin, Mentha Piperita (Peppermint) Oil , Eucalyptus Globulus Leaf Oil, Salix Alba (Willow) Bark Extract, Glycyrrhiza Glabra (Licorice) Root Extract, Tocopheryl Acetate, Caffeine, Polyacrylamide, Streareth-100, C13-14 Isoparaffin, Xanthan Gum, Caprylyl Glycol, Polysorbate 20, Citric Acid, Potassium Sorbate, Laureth-7, Sodium Polyacrylate, Hexylene Glycol, Phenoxyethanol, Chlorphenesin",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b05b40a9-f02e-43a3-9546-81e14df86972",
+  "name": "Daily Face Broad Spectrum Lotion",
+  "brand": "Harry's, Inc.",
+  "n_inactive": 28,
+  "thin_reason": null
+ }
+}

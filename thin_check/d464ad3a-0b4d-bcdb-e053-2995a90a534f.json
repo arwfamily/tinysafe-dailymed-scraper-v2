@@ -1,0 +1,45 @@
+{
+ "setid": "d464ad3a-0b4d-bcdb-e053-2995a90a534f",
+ "images": [
+  {
+   "name": "Active Purpose.jpg",
+   "file": "img/d464ad3a-0b4d-bcdb-e053-2995a90a534f/Active_Purpose.jpg"
+  },
+  {
+   "name": "Directions.jpg",
+   "file": "img/d464ad3a-0b4d-bcdb-e053-2995a90a534f/Directions.jpg"
+  },
+  {
+   "name": "Inactive.jpg",
+   "file": "img/d464ad3a-0b4d-bcdb-e053-2995a90a534f/Inactive.jpg"
+  },
+  {
+   "name": "Inner Artwork.jpg",
+   "file": "img/d464ad3a-0b4d-bcdb-e053-2995a90a534f/Inner_Artwork.jpg"
+  },
+  {
+   "name": "Outer Packaging.jpg",
+   "file": "img/d464ad3a-0b4d-bcdb-e053-2995a90a534f/Outer_Packaging.jpg"
+  },
+  {
+   "name": "Uses.jpg",
+   "file": "img/d464ad3a-0b4d-bcdb-e053-2995a90a534f/Uses.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/d464ad3a-0b4d-bcdb-e053-2995a90a534f/Warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Earth Mama Lady Face Mineral Sunscreen, SPF 40 - Medium/Dark",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "d464ad3a-0b4d-bcdb-e053-2995a90a534f",
+  "name": "Lady Face Mineral Sunscreen, SPF 40 - Medium/dark Stick",
+  "brand": "Private Label Select Ltd CO",
+  "n_inactive": 15,
+  "thin_reason": null
+ }
+}

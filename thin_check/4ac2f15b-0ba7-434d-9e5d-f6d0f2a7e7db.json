@@ -1,0 +1,21 @@
+{
+ "setid": "4ac2f15b-0ba7-434d-9e5d-f6d0f2a7e7db",
+ "images": [
+  {
+   "name": "Image_1.jpg",
+   "file": "img/4ac2f15b-0ba7-434d-9e5d-f6d0f2a7e7db/Image_1.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "",
+ "inactive_section": "Olive oil, beeswax, jojoba seed oil, cocoa seed butter, rosemary leaf extract, shea butter",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4ac2f15b-0ba7-434d-9e5d-f6d0f2a7e7db",
+  "name": "Sun Goo Mineral Sun Stick Stick",
+  "brand": "Sun Goo Inc",
+  "n_inactive": 7,
+  "thin_reason": "short_list"
+ }
+}

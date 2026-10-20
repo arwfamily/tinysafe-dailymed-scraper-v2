@@ -1,0 +1,21 @@
+{
+ "setid": "47511c2b-f83f-43bf-963d-0b1ab6a9c673",
+ "images": [
+  {
+   "name": "Essence BB.jpg",
+   "file": "img/47511c2b-f83f-43bf-963d-0b1ab6a9c673/Essence_BB.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Drug Fact",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "47511c2b-f83f-43bf-963d-0b1ab6a9c673",
+  "name": "Cathycat Essence Sun Bb Liquid",
+  "brand": "LG Household and Healthcare, Inc.",
+  "n_inactive": 30,
+  "thin_reason": null
+ }
+}

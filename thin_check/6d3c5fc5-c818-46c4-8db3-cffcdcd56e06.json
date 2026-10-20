@@ -1,0 +1,21 @@
+{
+ "setid": "6d3c5fc5-c818-46c4-8db3-cffcdcd56e06",
+ "images": [
+  {
+   "name": "LRPAnth50MTFace.jpg",
+   "file": "img/6d3c5fc5-c818-46c4-8db3-cffcdcd56e06/LRPAnth50MTFace.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "21",
+ "title": "Drug Facts",
+ "inactive_section": "water, isododecane, C12-15 alkyl benzoate, dimethicone, undecane, triethylhexanoin, isohexadecane, styrene/acrylates copolymer, nylon-12, caprylyl methicone, butyloctyl salicylate, phenethyl benzoate, silica, tridecane, dicaprylyl carbonate, dicaprylyl ether, talc, dimethicone/PEG-10/15 crosspolymer, aluminum stearate, pentylene glycol, C9-15 fluoroalcohol phosphate, tocopherol, phenoxyethanol, stearic acid, diethylhexyl syringylidenemalonate, PEG-9 polydimethylsiloxyethyl dimethcone, magnesium sulfate, PEG-8 laurate, PEG-9, polyhydroxystearic acid, maltodextrin, benzoic acid, iron oxides, propylene glycol, propylene carbonate, caprylyl glycol, disteardimonim hectorite, cassia alata leaf extract, alumina, aluminum hydroxide",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "6d3c5fc5-c818-46c4-8db3-cffcdcd56e06",
+  "name": "La Roche Posay Laboratoire Dermatologique Anthelios 50 Tinted Mineral Sunscreen Lotion",
+  "brand": "L'Oreal USA Products Inc",
+  "n_inactive": 41,
+  "thin_reason": null
+ }
+}

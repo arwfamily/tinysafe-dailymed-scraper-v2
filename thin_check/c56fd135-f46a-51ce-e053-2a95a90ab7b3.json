@@ -1,0 +1,37 @@
+{
+ "setid": "c56fd135-f46a-51ce-e053-2a95a90ab7b3",
+ "images": [
+  {
+   "name": "deep umber.jpg",
+   "file": "img/c56fd135-f46a-51ce-e053-2a95a90ab7b3/deep_umber.jpg"
+  },
+  {
+   "name": "laspa bronze.jpg",
+   "file": "img/c56fd135-f46a-51ce-e053-2a95a90ab7b3/laspa_bronze.jpg"
+  },
+  {
+   "name": "laspa golden.jpg",
+   "file": "img/c56fd135-f46a-51ce-e053-2a95a90ab7b3/laspa_golden.jpg"
+  },
+  {
+   "name": "laspa light.jpg",
+   "file": "img/c56fd135-f46a-51ce-e053-2a95a90ab7b3/laspa_light.jpg"
+  },
+  {
+   "name": "rich brown.jpg",
+   "file": "img/c56fd135-f46a-51ce-e053-2a95a90ab7b3/rich_brown.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "LASPA TINTED MATTE SUNSCREEN SPF 20",
+ "inactive_section": "Water, Helianthus Annuus (Sunflower) Seed Oil*, Glycerin, Glyceryl Stearate, Vitis Vinifera (Grape) Seed OIl, Cetearyl Alcohol, Sorbitan Sesquioleate, Crambe Abyssinica Seed Oil, Glyceryl Caprylate, Butyrospermum Parkii (Shea) Butter, Tocopherol, Xanthan Gum, Glyceryl Undecylenate, Iron Oxides *Certified Organic",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "c56fd135-f46a-51ce-e053-2a95a90ab7b3",
+  "name": "Laspa Tinted Matte Sunscreen SPF 20 Golden Lotion Laspa Tinted Matte Sunscreen SPF 20 Light Lotion Laspa Tinted Matte Sunscreen SPF 20 Bronze Lotion Laspa Tinted Matte Sunscreen SPF 20 Rich Brown Lotion Laspa Tinted Matte Sunscreen SPF 20 Deep Umber Lotion",
+  "brand": "The Green Cricket Inc",
+  "n_inactive": 16,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "setid": "7475ddf3-b575-489f-8226-fe26291153c1",
+ "images": [
+  {
+   "name": "bb-cream-01.jpg",
+   "file": "img/7475ddf3-b575-489f-8226-fe26291153c1/bb-cream-01.jpg"
+  },
+  {
+   "name": "bb-cream-02.jpg",
+   "file": "img/7475ddf3-b575-489f-8226-fe26291153c1/bb-cream-02.jpg"
+  },
+  {
+   "name": "bb-cream-03.jpg",
+   "file": "img/7475ddf3-b575-489f-8226-fe26291153c1/bb-cream-03.jpg"
+  },
+  {
+   "name": "bb-cream-04.jpg",
+   "file": "img/7475ddf3-b575-489f-8226-fe26291153c1/bb-cream-04.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "BB Cream",
+ "inactive_section": "Water, Diethylhexyl Carbonate, Ricinus Communis (Castor) Seed Oil, Glycerin,Ethyl Macadamiate, Cetyl PEG/PPG-10/1 Dimethicone, Silica, Hydrogenated Castor Oil, Isododecane, Microcrystalline Wax, Neopentyl Glycol Diheptanoate, Hibiscus Abelmoschus Extract, Squalane, Palmitoyl Tripeptide-38, Tocopheryl Acetate, Magnesium Sulfate, Hexyl Laurate, Polyglyceryl-4 Isostearate, Glyceryl Dibehenate, Tribehenin, Sodium Chloride, Hydroxypropyl Cyclodextrin, Helianthus Annuus (Sunflower) Seed Oil, Glyceryl Behenate, Phenylethyl Resorcinol, Sodium Benzoate, Potassium Sorbate, Phenoxyethanol, Ethylhexylglycerin. May Contain (+/-): Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, CI 77492, CI 77499) <21101>",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "7475ddf3-b575-489f-8226-fe26291153c1",
+  "name": "Bb Fair Cream, Augmented Bb Light Cream, Augmented Bb Medium Cream, Augmented Bb Dark Cream, Augmented",
+  "brand": "SAYB International",
+  "n_inactive": 33,
+  "thin_reason": null
+ }
+}
