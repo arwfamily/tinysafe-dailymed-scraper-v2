@@ -376,6 +376,30 @@ def delisted_records(live):
     return out
 
 
+RECALL_REVIEWS = os.path.join(ROOT, "data/reference/recall_reviews.json")
+
+
+def recall_reviews():
+    if not os.path.exists(RECALL_REVIEWS):
+        return {}
+    return json.load(open(RECALL_REVIEWS, encoding="utf-8"))["labels"]
+
+
+def apply_recall_reviews(sid, recs, reviews):
+    """A brand+name match (needs_review) that a person checked against the recall's
+    product description becomes `matched` (same product) or is dropped (another product)."""
+    rv = reviews.get(sid) or {}
+    out = []
+    for x in recs:
+        v = rv.get(x.get("recall_number"))
+        if x.get("status") == "needs_review" and v:
+            if v["verdict"] != "same_product":
+                continue
+            x = dict(x, status="matched", matched_on="reviewed: " + v["why"][:200])
+        out.append(x)
+    return out
+
+
 def corrections():
     """Reviewed corrections: labels whose SPL active table contradicts their own
     printed Drug Facts (each entry carries its evidence). Same file the evidence
@@ -432,6 +456,7 @@ def label_text_fragrance(sid, shown):
 def build(run_date):
     canon = jl(CANON)
     fixes = corrections()
+    rreviews = recall_reviews()
     bdec = baby_decisions()
     overrides = scope_overrides()
     from classify import classify
@@ -525,6 +550,7 @@ def build(run_date):
         if not recalls.all and (legacy.get(sid) or {}).get("r"):
             rec["recalls"] = [{"recall_number": None, "status": "matched", "matched_on": "v3.1_db",
                                "hazards": legacy[sid]["r"]}]
+        rec["recalls"] = apply_recall_reviews(sid, rec["recalls"], rreviews)
         if sid in gone:
             rec.update(status="discontinued", discontinued_on=c["_delisted_on"], last_seen=c.get("last_seen"),
                        note="no longer on FDA DailyMed; last full read kept")

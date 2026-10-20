@@ -1,0 +1,496 @@
+{
+ "note": "Recall matches made on brand + product words only (needs_review), reviewed against the recall's product description: name, dosage form, SPF, active ingredients and strengths, UPC vs NDC product code. same_product -> shown as a recall on record; not_this_product -> not shown.",
+ "reviewed": "2026-10-20",
+ "labels": {
+  "0806bdb9-961f-3146-e063-6294a90a4625": {
+   "D-0010-2022": {
+    "verdict": "same_product",
+    "why": "recall UPC 0 72140 02880 carries this label's NDC product code 66800-2880; spray, SPF 50, zinc oxide 24.08%"
+   },
+   "D-0015-2022": {
+    "verdict": "same_product",
+    "why": "recall UPC 0 72140 02880 carries this label's NDC product code 66800-2880; spray, SPF 50, zinc oxide 24.08%"
+   },
+   "D-0011-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   },
+   "D-0012-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   },
+   "D-0016-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   },
+   "D-0017-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   }
+  },
+  "09a97e3f-f6dc-eaa7-e063-6294a90ad274": {
+   "D-0011-2022": {
+    "verdict": "same_product",
+    "why": "recall UPC 0 72140 02882 carries this label's NDC product code 66800-2882; spray, SPF 50, zinc oxide 24.08%"
+   },
+   "D-0016-2022": {
+    "verdict": "same_product",
+    "why": "recall UPC 0 72140 02882 carries this label's NDC product code 66800-2882; spray, SPF 50, zinc oxide 24.08%"
+   },
+   "D-0010-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   },
+   "D-0012-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   },
+   "D-0015-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   },
+   "D-0017-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   }
+  },
+  "088b7152-d3d1-9e74-e063-6394a90a4152": {
+   "D-0012-2022": {
+    "verdict": "same_product",
+    "why": "recall UPC 0 72140 02881 carries this label's NDC product code 66800-2881; spray, SPF 50, zinc oxide 24.08%"
+   },
+   "D-0017-2022": {
+    "verdict": "same_product",
+    "why": "recall UPC 0 72140 02881 carries this label's NDC product code 66800-2881; spray, SPF 50, zinc oxide 24.08%"
+   },
+   "D-0010-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   },
+   "D-0011-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   },
+   "D-0015-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   },
+   "D-0016-2022": {
+    "verdict": "not_this_product",
+    "why": "another Pure & Simple spray (different UPC / NDC product code)"
+   }
+  },
+  "08134b95-1879-27e5-e063-6294a90a29af": {
+   "D-0010-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0011-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0012-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0015-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0016-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0017-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   }
+  },
+  "08147940-0e8b-c894-e063-6394a90af8ac": {
+   "D-0010-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0011-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0012-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0015-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0016-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0017-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   }
+  },
+  "081484f8-58f5-f2a4-e063-6394a90a3379": {
+   "D-0010-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0011-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0012-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0015-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0016-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0017-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   }
+  },
+  "59e1a2b7-2ae2-f289-e063-6294a90aeb68": {
+   "D-0010-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0011-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0012-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0015-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0016-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0017-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   }
+  },
+  "d8d80a15-8282-a18e-e053-2a95a90a2c6c": {
+   "D-0010-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0011-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0012-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0015-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0016-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   },
+   "D-0017-2022": {
+    "verdict": "not_this_product",
+    "why": "recalls cover the Pure & Simple SPRAYS (UPC 0 72140 02880/1/2); this label is a lotion"
+   }
+  },
+  "b6492438-5dd2-030e-e053-2a95a90a2f9f": {
+   "D-0010-2022": {
+    "verdict": "not_this_product",
+    "why": "a Pure & Simple spray with another NDC product code (66800-4744); the recalled cans are 66800-2880/2881/2882"
+   },
+   "D-0011-2022": {
+    "verdict": "not_this_product",
+    "why": "a Pure & Simple spray with another NDC product code (66800-4744); the recalled cans are 66800-2880/2881/2882"
+   },
+   "D-0012-2022": {
+    "verdict": "not_this_product",
+    "why": "a Pure & Simple spray with another NDC product code (66800-4744); the recalled cans are 66800-2880/2881/2882"
+   },
+   "D-0015-2022": {
+    "verdict": "not_this_product",
+    "why": "a Pure & Simple spray with another NDC product code (66800-4744); the recalled cans are 66800-2880/2881/2882"
+   },
+   "D-0016-2022": {
+    "verdict": "not_this_product",
+    "why": "a Pure & Simple spray with another NDC product code (66800-4744); the recalled cans are 66800-2880/2881/2882"
+   },
+   "D-0017-2022": {
+    "verdict": "not_this_product",
+    "why": "a Pure & Simple spray with another NDC product code (66800-4744); the recalled cans are 66800-2880/2881/2882"
+   }
+  },
+  "d3d471b8-7430-98b0-e053-2995a90aba4b": {
+   "D-0010-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0011-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0012-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0015-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0016-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0017-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   }
+  },
+  "d3e66496-bc3c-d189-e053-2a95a90a06b6": {
+   "D-0010-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0011-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0012-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0015-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0016-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0017-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   }
+  },
+  "d45f1915-a6ca-7ebf-e053-2a95a90a0765": {
+   "D-0010-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0011-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0012-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0015-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0016-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   },
+   "D-0017-2022": {
+    "verdict": "not_this_product",
+    "why": "this lotion has avobenzone/homosalate/octisalate/octocrylene; the recalled sprays are zinc oxide 24.08%"
+   }
+  },
+  "0a6f8eef-48e9-44f5-9811-629bc0dc07d0": {
+   "D-0215-2018": {
+    "verdict": "not_this_product",
+    "why": "recalled Universal Defense listed octinoxate 4.9%, octocrylene 3.0%, oxybenzone 1.0%, zinc oxide 15.4%; this label has octisalate, octocrylene and zinc oxide at other strengths"
+   }
+  },
+  "6d2f82d5-b3af-44af-b6b0-de96a4cd95fc": {
+   "D-0215-2018": {
+    "verdict": "not_this_product",
+    "why": "recalled Universal Defense listed octinoxate 4.9%, octocrylene 3.0%, oxybenzone 1.0%, zinc oxide 15.4%; this label has octisalate, octocrylene and zinc oxide at other strengths"
+   }
+  },
+  "0cf9361f-f292-6429-e063-6294a90add0e": {
+   "D-1078-2018": {
+    "verdict": "not_this_product",
+    "why": "recall is Sensitive Sheer SHIELD (chemical filters); this label is Sheer MINERAL (zinc oxide)"
+   }
+  },
+  "0cf9c4b9-8e85-980c-e063-6394a90a9e7e": {
+   "D-1078-2018": {
+    "verdict": "not_this_product",
+    "why": "recall is Sensitive Sheer SHIELD (chemical filters); this label is Sheer MINERAL (zinc oxide)"
+   }
+  },
+  "f4a02196-288e-1958-e053-2a95a90a5305": {
+   "D-1078-2018": {
+    "verdict": "not_this_product",
+    "why": "recall is Sensitive Sheer SHIELD (chemical filters); this label is Sheer MINERAL (zinc oxide)"
+   }
+  },
+  "f542298a-e9de-7ed0-e053-2995a90a0391": {
+   "D-1078-2018": {
+    "verdict": "not_this_product",
+    "why": "recall is Sensitive Sheer SHIELD (chemical filters); this label is Sheer MINERAL (zinc oxide)"
+   }
+  },
+  "fe07d84c-08c4-5868-e053-6294a90a0d05": {
+   "D-1078-2018": {
+    "verdict": "not_this_product",
+    "why": "recall is Sensitive Sheer Shield lotion tube; this label is a Sheer Mineral aerosol"
+   }
+  },
+  "60f34ee1-2723-742d-e053-2a91aa0a9ab5": {
+   "D-1078-2018": {
+    "verdict": "same_product",
+    "why": "Sensitive Sheer Shield Fragrance Free SPF 50+, 3 oz tube; recall UPC 7 24742 00438 matches this label's NDC 61995-3438 and name"
+   }
+  },
+  "629e2051-2b2b-748e-e053-2a91aa0ae19d": {
+   "D-0920-2018": {
+    "verdict": "same_product",
+    "why": "Alba Botanica sport mineral SPF 45, titanium dioxide 7.0% + zinc oxide 9.0%: name, SPF and both strengths match"
+   }
+  },
+  "62d61240-444d-4ba4-e053-2991aa0aace7": {
+   "D-0920-2018": {
+    "verdict": "same_product",
+    "why": "Alba Botanica sport mineral SPF 45, titanium dioxide 7.0% + zinc oxide 9.0%: name, SPF and both strengths match"
+   }
+  },
+  "fd78fb8e-99b0-91b0-e053-6394a90a9271": {
+   "D-0920-2018": {
+    "verdict": "not_this_product",
+    "why": "recall is the mineral SPF 45 cream; this label is the chemical SPF 50 spray"
+   }
+  },
+  "2767ba3e-7434-d474-e063-6294a90aa4ff": {
+   "D-0640-2025": {
+    "verdict": "same_product",
+    "why": "Velvet Screen SPF 50, zinc oxide 22.75% (D-0641: the same sunscreen inside the Mini SPF Mates kit)"
+   },
+   "D-0641-2025": {
+    "verdict": "same_product",
+    "why": "Velvet Screen SPF 50, zinc oxide 22.75% (D-0641: the same sunscreen inside the Mini SPF Mates kit)"
+   }
+  },
+  "52d4b1c1-7431-4f8c-e063-6294a90ad482": {
+   "D-0640-2025": {
+    "verdict": "not_this_product",
+    "why": "recalled Velvet Screen is SPF 50, zinc oxide 22.75%; this label is SPF 40, zinc oxide 25%"
+   },
+   "D-0641-2025": {
+    "verdict": "not_this_product",
+    "why": "recalled Velvet Screen is SPF 50, zinc oxide 22.75%; this label is SPF 40, zinc oxide 25%"
+   }
+  },
+  "24389324-19db-7eb5-e063-6394a90ad7fb": {
+   "D-0641-2025": {
+    "verdict": "not_this_product",
+    "why": "Supreme Screen came in the recalled kit, but the defect was the Velvet Screen's SPF; Supreme Screen itself was not recalled"
+   }
+  },
+  "36e1c61c-33ab-4a5d-853d-119c29632b08": {
+   "D-0823-2026": {
+    "verdict": "same_product",
+    "why": "The One SPF 50 Invisible Sunscreen Gel; avobenzone 3%, homosalate 7%, octocrylene 10%, octisalate 5% match exactly (four pack sizes)"
+   },
+   "D-0824-2026": {
+    "verdict": "same_product",
+    "why": "The One SPF 50 Invisible Sunscreen Gel; avobenzone 3%, homosalate 7%, octocrylene 10%, octisalate 5% match exactly (four pack sizes)"
+   },
+   "D-0825-2026": {
+    "verdict": "same_product",
+    "why": "The One SPF 50 Invisible Sunscreen Gel; avobenzone 3%, homosalate 7%, octocrylene 10%, octisalate 5% match exactly (four pack sizes)"
+   },
+   "D-0826-2026": {
+    "verdict": "same_product",
+    "why": "The One SPF 50 Invisible Sunscreen Gel; avobenzone 3%, homosalate 7%, octocrylene 10%, octisalate 5% match exactly (four pack sizes)"
+   }
+  },
+  "ab7102ba-1020-3f51-e053-2995a90ae24d": {
+   "D-0212-2024": {
+    "verdict": "not_this_product",
+    "why": "recall is Banana Boat Hair & Scalp Defense Clear spray SPF 30 (avobenzone 2%, homosalate 6%, octocrylene 6%, no octisalate); this label is another product"
+   }
+  },
+  "ab84b94b-8e04-605f-e053-2a95a90a8e34": {
+   "D-0212-2024": {
+    "verdict": "not_this_product",
+    "why": "recall is Banana Boat Hair & Scalp Defense Clear spray SPF 30 (avobenzone 2%, homosalate 6%, octocrylene 6%, no octisalate); this label is another product"
+   }
+  },
+  "b00148c0-7545-104a-e053-2995a90a0bde": {
+   "D-0212-2024": {
+    "verdict": "not_this_product",
+    "why": "recall is Banana Boat Hair & Scalp Defense Clear spray SPF 30 (avobenzone 2%, homosalate 6%, octocrylene 6%, no octisalate); this label is another product"
+   }
+  },
+  "dc7b0d17-d7c8-433f-e053-2995a90a477d": {
+   "D-0212-2024": {
+    "verdict": "not_this_product",
+    "why": "recall is Banana Boat Hair & Scalp Defense Clear spray SPF 30 (avobenzone 2%, homosalate 6%, octocrylene 6%, no octisalate); this label is another product"
+   }
+  },
+  "cd235a0d-072b-a407-e053-2995a90a7b16": {
+   "D-0212-2024": {
+    "verdict": "not_this_product",
+    "why": "recall is Banana Boat Hair & Scalp Defense Clear spray SPF 30 (avobenzone 2%, homosalate 6%, octocrylene 6%, no octisalate); this label is another product"
+   }
+  },
+  "bc1b1a10-f1f0-4eeb-9c7d-a75047939285": {
+   "D-1365-2022": {
+    "verdict": "not_this_product",
+    "why": "Family Dollar storage recall lists Banana Boat / Coppertone / Hawaiian Tropic / Suntone / Neutrogena SKUs; this Dollar General label is not among them"
+   }
+  },
+  "c9ac427f-6626-435f-aec3-3b90019ee50b": {
+   "D-1473-2016": {
+    "verdict": "same_product",
+    "why": "Clinique Moisture Surge Tinted Moisturizer SPF 15, 1 fl oz, shades 01-06; recall: octinoxate and octisalate below specification (all lots, 2016, terminated)"
+   },
+   "D-1474-2016": {
+    "verdict": "same_product",
+    "why": "Clinique Moisture Surge Tinted Moisturizer SPF 15, 1 fl oz, shades 01-06; recall: octinoxate and octisalate below specification (all lots, 2016, terminated)"
+   },
+   "D-1475-2016": {
+    "verdict": "same_product",
+    "why": "Clinique Moisture Surge Tinted Moisturizer SPF 15, 1 fl oz, shades 01-06; recall: octinoxate and octisalate below specification (all lots, 2016, terminated)"
+   },
+   "D-1476-2016": {
+    "verdict": "same_product",
+    "why": "Clinique Moisture Surge Tinted Moisturizer SPF 15, 1 fl oz, shades 01-06; recall: octinoxate and octisalate below specification (all lots, 2016, terminated)"
+   },
+   "D-1477-2016": {
+    "verdict": "same_product",
+    "why": "Clinique Moisture Surge Tinted Moisturizer SPF 15, 1 fl oz, shades 01-06; recall: octinoxate and octisalate below specification (all lots, 2016, terminated)"
+   },
+   "D-1478-2016": {
+    "verdict": "same_product",
+    "why": "Clinique Moisture Surge Tinted Moisturizer SPF 15, 1 fl oz, shades 01-06; recall: octinoxate and octisalate below specification (all lots, 2016, terminated)"
+   }
+  },
+  "d10290b4-3c8a-e0bb-e053-2995a90a9b6b": {
+   "D-0209-2025": {
+    "verdict": "same_product",
+    "why": "Badger Adventure Sport mineral sunscreen with clear zinc, SPF 50, 25% zinc oxide (2.4 oz tin); recall: some tins shipped without the Drug Facts label"
+   }
+  }
+ }
+}

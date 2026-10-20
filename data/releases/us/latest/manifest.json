@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-19",
  "git_tag": "us-data-2026-10-19",
- "released": "2026-10-20T14:29:50+00:00",
+ "released": "2026-10-20T14:45:17+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.2 · 2026-10-19",
  "source": {
@@ -43,8 +43,8 @@
    "label_verified_share": 0.9736,
    "inactives_7_or_fewer": 299,
    "recalls": {
-    "labels_matched": 5,
-    "labels_needs_review": 35
+    "labels_matched": 15,
+    "labels_needs_review": 0
    }
   },
   "us_mineral": {
@@ -72,8 +72,8 @@
    "label_verified_share": 0.9543,
    "inactives_7_or_fewer": 127,
    "recalls": {
-    "labels_matched": 5,
-    "labels_needs_review": 22
+    "labels_matched": 13,
+    "labels_needs_review": 0
    }
   },
   "us_baby_kids": {
@@ -97,8 +97,8 @@
    "label_verified_share": 0.9828,
    "inactives_7_or_fewer": 20,
    "recalls": {
-    "labels_matched": 0,
-    "labels_needs_review": 10
+    "labels_matched": 3,
+    "labels_needs_review": 0
    }
   }
  },
@@ -113,15 +113,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9586,
-   "sha256": "491bf7902219a33292d8f915a45811bb554c1f61e5a2b53ace2c8d96f91cd624"
+   "sha256": "d6521f52e8f3319dd1667a055c687f11293582b8662575c816ad71393941361e"
   },
   "us_mineral.jsonl": {
    "rows": 5182,
-   "sha256": "3e402f8b2fe5f9a076ced3d78df31a1fa6d6aff4e10da0d5b77e3fbeebf9a197"
+   "sha256": "03a9e4723f061a7359fe82c1d826aa2b1f8741760e67c1f5b62580a64f816519"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "f034d36d35213f0020a608ef28c643b89bcf142240960f3a14735949b61983b4"
+   "sha256": "734d866ec4ebafa039c62d1c915bdd7592cf7551c25b9d3679cc361579dba1fc"
   },
   "us_out_of_scope.jsonl": {
    "rows": 4702,
