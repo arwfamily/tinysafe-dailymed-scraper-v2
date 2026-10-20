@@ -1,0 +1,107 @@
+{
+ "_about": "Labels whose inactive count was checked by hand against the printed label (2026-10-19). While the label version is unchanged, a build must give the same count.",
+ "anchors": [
+  {
+   "setid": "0166d193-fc4d-51f7-e063-6294a90aaf32",
+   "name": "Isa Knox Anew Solaire Everyday Mineral Face Protection Broad Spectrum SPF 50 Sunscreen Cream",
+   "spl_version": "2",
+   "inactives_n": 23
+  },
+  {
+   "setid": "016798a8-4275-47d0-e063-6294a90a5aca",
+   "name": "Isa Knox Anew Solaire Everyday Face Protection Broad Spectrum SPF 50 Sunscreen Lotion",
+   "spl_version": "2",
+   "inactives_n": 27
+  },
+  {
+   "setid": "02e61a43-3021-edc1-e063-6294a90ad4b6",
+   "name": "Isa Knox Anew Solaire Everyday Mineral Face Protection Broad Spectrum SPF 50 Sunscreen Cream",
+   "spl_version": "2",
+   "inactives_n": 23
+  },
+  {
+   "setid": "02e64868-d545-4af7-e063-6394a90aa7c7",
+   "name": "Isa Knox Anew Solaire Everyday Face Protection Broad Spectrum SPF 50 Sunscreen Lotion",
+   "spl_version": "2",
+   "inactives_n": 27
+  },
+  {
+   "setid": "1e86c2a9-a5c3-95cb-e063-6394a90a014d",
+   "name": "Goongbe Baby Easy Wash Sunlotion SPF 30 Lotion",
+   "spl_version": "3",
+   "inactives_n": 33
+  },
+  {
+   "setid": "1e86edfd-d089-ba41-e063-6294a90a6709",
+   "name": "Goongbe Waterful Sunlotion Mild SPF 40 Lotion",
+   "spl_version": "3",
+   "inactives_n": 37
+  },
+  {
+   "setid": "1e8720b4-5e8b-dc8b-e063-6394a90aad34",
+   "name": "Goongbe Moisture Sun Cushion Mild SPF 50 Lotion",
+   "spl_version": "3",
+   "inactives_n": 37
+  },
+  {
+   "setid": "1e8727a4-0dc0-19dc-e063-6394a90a82b6",
+   "name": "Goongbe Fresh Sun Stick Mild SPF 50 Stick",
+   "spl_version": "3",
+   "inactives_n": 38
+  },
+  {
+   "setid": "80a3671d-60e8-22fe-e053-2991aa0a094b",
+   "name": "Badger Kids Broad Spectrum SPF 40 Natural Mineral Sunscreen Cream Cream",
+   "spl_version": "2",
+   "inactives_n": 8
+  },
+  {
+   "setid": "9ba94ecc-17c2-9e21-e053-2a95a90a9fac",
+   "name": "Badger Clear Sport SPF 35 Kids All Season Face Stick Stick",
+   "spl_version": "2",
+   "inactives_n": 8
+  },
+  {
+   "setid": "9f527715-dd39-4580-bbd2-a0397be36cd3",
+   "name": "Badger Kids SPF 30 Sunscreen Cream",
+   "spl_version": "1",
+   "inactives_n": 7
+  },
+  {
+   "setid": "d1038442-ec86-07e3-e053-2995a90ad6ab",
+   "name": "Badger SPF 35 Kids Clear Face Stick Stick",
+   "spl_version": "2",
+   "inactives_n": 8
+  },
+  {
+   "setid": "d619d2b4-bae8-bc76-e053-2995a90a369b",
+   "name": "Badger Kids Mineral Sunscreen Cream Broad Spectrum SPF 40 Cream",
+   "spl_version": "2",
+   "inactives_n": 8
+  },
+  {
+   "setid": "d6e82b4e-ce83-0ca2-e053-2a95a90a88de",
+   "name": "Isa Knox Anew Solaire Everyday Face Protection Broad Spectrum SPF 50 Sunscreen Lotion",
+   "spl_version": "2",
+   "inactives_n": 30
+  },
+  {
+   "setid": "d6e831a1-c82f-3e1f-e053-2a95a90ae1f6",
+   "name": "Isa Knox Anew Solaire Active Face And Body Protection Broad Spectrum SPF 50 Sunscreen Lotion",
+   "spl_version": "2",
+   "inactives_n": 21
+  },
+  {
+   "setid": "f114e45c-6c31-2382-e053-2995a90ac754",
+   "name": "Isa Knox Anew Solaire Everyday Mineral Face Protection Broad Spectrum SPF 50 Sunscreen Cream",
+   "spl_version": "2",
+   "inactives_n": 32
+  },
+  {
+   "setid": "f1166cb4-b471-7043-e053-2a95a90a7fa7",
+   "name": "Isa Knox Anew Solaire Everyday Mineral Face Protection Broad Spectrum SPF 50 Sunscreen Cream",
+   "spl_version": "2",
+   "inactives_n": 32
+  }
+ ]
+}

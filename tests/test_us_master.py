@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+"""Regression tests for the v4 master rules (scope, filter type, baby/kids, ledger versions, recalls)."""
+import os
+import sys
+import tempfile
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "scripts"))
+import ledger as L  # noqa: E402
+import us_master as M  # noqa: E402
+
+
+def acts(*pairs):
+    return [{"name": n, "percent": p} for n, p in pairs]
+
+
+def test_filter_type():
+    c = {"uv_filters_organic": []}
+    assert M.filter_split(c, acts(("ZINC OXIDE", 20.0)))[0] == "mineral_only"
+    assert M.filter_split(c, acts(("AVOBENZONE", 3.0), ("HOMOSALATE", 10.0)))[0] == "chemical_only"
+    assert M.filter_split(c, acts(("ZINC OXIDE", 12.0), ("OCTISALATE", 5.0)))[0] == "hybrid_mineral_primary"
+    assert M.filter_split(c, acts(("TITANIUM DIOXIDE", 2.0), ("OCTINOXATE", 7.5)))[0] == "hybrid_chemical_primary"
+    assert M.filter_split(c, acts(("ZINC OXIDE", 5.0), ("OCTISALATE", 5.0)))[0] == "hybrid_equal"
+    assert M.filter_split(c, acts(("ZINC OXIDE", None), ("OCTISALATE", 5.0)))[0] == "hybrid_pct_unknown"
+    # INCI names count as chemical filters; a skin protectant does not
+    assert M.filter_split(c, acts(("ZINC OXIDE", 10.0), ("ETHYLHEXYL SALICYLATE", 5.0)))[0] == "hybrid_mineral_primary"
+    assert M.filter_split(c, acts(("ZINC OXIDE", 10.0), ("DIMETHICONE", 1.0)))[0] == "mineral_only"
+
+
+def test_baby_kids():
+    yes = ["BABY SUNSCREEN SPF 50", "Babyganics Mineral", "KIDS SPORT SPF 50", "Children's Sunscreen",
+           "Thinkbaby", "Little Ones SPF 30", "Bebe Soleil"]
+    no = ["BABYLON BEACH? no", "Sport SPF 50", "Kidney bean oil sunscreen"]
+    for s in yes:
+        assert M.BABY_KIDS.search(s), s
+    assert not M.BABY_KIDS.search(no[1]) and not M.BABY_KIDS.search(no[2])
+
+
+def test_spray():
+    assert M.SPRAY.search("SPRAY") and M.SPRAY.search("Sunscreen Spray150Ml") and M.SPRAY.search("AEROSOL")
+    assert not M.SPRAY.search("Mistine UV Defense Cream")
+
+
+def test_ledger_version_rule():
+    with tempfile.TemporaryDirectory() as d:
+        p = os.path.join(d, "l.jsonl")
+        L.append([{"setid": "a", "spl_version": "3", "status": "text_confirms_current"},
+                  {"setid": "a", "spl_version": "3", "status": "confirmed", "inactives": ["WATER"]},
+                  {"setid": "b", "spl_version": "1", "status": "confirmed", "inactives": ["X"]}], p)
+        led = L.load(p)
+        assert L.current(led, "a", "3")["status"] == "confirmed"        # last row wins
+        assert L.current(led, "b", "2") is None                          # label changed: old check not applied
+        assert L.stale(led, "b", "2")
+
+
+def test_recall_match():
+    rec = [{"recall_number": "D-1", "spl_set_id": ["s1"], "product_ndc": [], "product_description": "x",
+            "recalling_firm": "Acme Inc", "reason_for_recall": "Benzene contamination"},
+           {"recall_number": "D-2", "spl_set_id": [], "product_ndc": [],
+            "product_description": "Acme Glow Shield Velvet Mineral Sunscreen Spray", "recalling_firm": "Acme Inc",
+            "reason_for_recall": "cGMP"}]
+    idx = M.RecallIndex(rec)
+    m = idx.match({"setid": "s1", "labeler": "Acme Inc"}, "Acme Glow Shield Velvet Mineral Sunscreen Lotion")
+    assert {x["recall_number"]: x["status"] for x in m} == {"D-1": "matched", "D-2": "needs_review"}
+    assert m[0]["hazards"] == ["benzene", "contamination"]
+    m2 = idx.match({"setid": "s9", "labeler": "Other Co"}, "Acme Glow Shield Velvet Mineral Sunscreen Lotion")
+    assert m2 == []
+
+
+if __name__ == "__main__":
+    for name, fn in list(globals().items()):
+        if name.startswith("test_"):
+            fn()
+            print("ok", name)

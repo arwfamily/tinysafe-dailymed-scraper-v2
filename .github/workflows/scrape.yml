@@ -169,6 +169,28 @@ jobs:
           python scripts/build_evidence.py
           python scripts/render_site.py --check
 
+      # v4: one master record per label -> three releases -> site data, behind a quality gate.
+      # docs: "Sunnytime 데이터 파이프라인 v4 설계" (2026-10-19)
+      - name: US master, releases and site data
+        if: steps.mode.outputs.limit == '0'
+        run: |
+          python tests/test_us_master.py
+          python scripts/inactive_union.py
+          python scripts/recalls_fetch.py || echo "recall fetch failed; last week's recall file is used"
+          python scripts/us_master.py --run-date ${{ steps.mode.outputs.run_date }}
+          python scripts/us_release.py --run-date ${{ steps.mode.outputs.run_date }}
+          python scripts/reading_queue.py
+          rm -f data/site/GATE_FAILED
+          python scripts/site_db.py --old data/site/sunnytime_db.json --out data/site/sunnytime_db.json \
+            --headline-json data/site/headline.json > data/site/gate_report.txt 2>&1 \
+            || { echo "${{ steps.mode.outputs.run_date }}" > data/site/GATE_FAILED; }
+          {
+            echo "## US release us-${{ steps.mode.outputs.run_date }}"
+            python -c "import json;m=json.load(open('data/releases/us/latest/manifest.json'));print('\n'.join(f'- {k}: {v[\"labels\"]} labels, label-verified {v[\"label_verified_share\"]:.1%}' for k,v in m['counts'].items()))"
+            python -c "import json;q=json.load(open('data/verification/reading_queue.json'));print(f'- reading queue: {q[\"count\"]} labels {q[\"by_reason\"]}')"
+            if [ -f data/site/GATE_FAILED ]; then echo "- **site quality gate FAILED** — site data not updated; see data/site/gate_report.txt"; else echo "- site quality gate passed"; fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Keep the data of a failed full run on its own branch
         if: failure() && steps.mode.outputs.limit == '0'
         run: |
@@ -216,6 +238,9 @@ jobs:
             echo "rebase attempt $i failed, retrying"; sleep 5
           done
           git push origin HEAD:"${GITHUB_REF#refs/heads/}"
+          # every weekly release gets a tag: older releases are recovered from it
+          TAG="us-data-${{ steps.mode.outputs.run_date }}"
+          git tag -f "$TAG" && git push -f origin "refs/tags/$TAG"
 
       # Artifacts kept as a convenience download. They expire; the commit does not.
       - name: Upload RAW master

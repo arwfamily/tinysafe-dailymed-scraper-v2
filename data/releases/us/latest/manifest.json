@@ -1,0 +1,129 @@
+{
+ "release_id": "us-2026-10-19",
+ "git_tag": "us-data-2026-10-19",
+ "released": "2026-10-20T02:18:41+00:00",
+ "schema_version": "1.0.0",
+ "rules_version": "v3.2 · 2026-10-19",
+ "source": {
+  "register": "FDA DailyMed (SPL)",
+  "collected": "2026-10-19",
+  "scraper_commit": null,
+  "run_id": null
+ },
+ "definitions": {
+  "us_all": "Every label FDA DailyMed lists as a sunscreen drug (SPF makeup, SPF lip balm, diaper cream and calamine are out of scope). Labels that left DailyMed stay, with status 'discontinued'.",
+  "us_mineral": "Labels whose declared actives include zinc oxide or titanium dioxide, adult and baby, hybrids included. filter_type gives the main filter by summed w/w % on the Drug Facts panel.",
+  "us_baby_kids": "Labels whose product name says baby, babies, infant, newborn, toddler, bebe, kids, children, junior or little ones. Any filter type."
+ },
+ "counts": {
+  "us_all": {
+   "labels": 10164,
+   "status": {
+    "active": 10145,
+    "discontinued": 19
+   },
+   "filter_type": {
+    "hybrid_chemical_primary": 899,
+    "mineral_only": 4143,
+    "chemical_only": 4516,
+    "hybrid_mineral_primary": 533,
+    "hybrid_pct_unknown": 18,
+    "hybrid_equal": 36
+   },
+   "label_check": {
+    "not_checked_yet": 4030,
+    "confirmed": 808,
+    "text_confirms_current": 5213,
+    "no_list_on_label_images": 70,
+    "image_unreadable": 8,
+    "label_image_mismatch": 7,
+    "non_english_label": 4,
+    "partial": 4,
+    "needs_review": 1
+   },
+   "label_verified_share": 0.5939,
+   "inactives_7_or_fewer": 370,
+   "recalls": {
+    "labels_matched": 5,
+    "labels_needs_review": 34
+   }
+  },
+  "us_mineral": {
+   "labels": 5637,
+   "status": {
+    "active": 5629,
+    "discontinued": 8
+   },
+   "filter_type": {
+    "hybrid_chemical_primary": 899,
+    "mineral_only": 4143,
+    "hybrid_mineral_primary": 533,
+    "hybrid_pct_unknown": 18,
+    "hybrid_equal": 36
+   },
+   "label_check": {
+    "not_checked_yet": 2929,
+    "confirmed": 479,
+    "text_confirms_current": 2138,
+    "no_list_on_label_images": 67,
+    "image_unreadable": 5,
+    "label_image_mismatch": 6,
+    "non_english_label": 4,
+    "partial": 1
+   },
+   "label_verified_share": 0.4651,
+   "inactives_7_or_fewer": 173,
+   "recalls": {
+    "labels_matched": 5,
+    "labels_needs_review": 21
+   }
+  },
+  "us_baby_kids": {
+   "labels": 446,
+   "status": {
+    "active": 446
+   },
+   "filter_type": {
+    "chemical_only": 200,
+    "mineral_only": 217,
+    "hybrid_chemical_primary": 15,
+    "hybrid_equal": 1,
+    "hybrid_mineral_primary": 13
+   },
+   "label_check": {
+    "text_confirms_current": 320,
+    "not_checked_yet": 70,
+    "confirmed": 49,
+    "no_list_on_label_images": 6,
+    "label_image_mismatch": 1
+   },
+   "label_verified_share": 0.8274,
+   "inactives_7_or_fewer": 14,
+   "recalls": {
+    "labels_matched": 0,
+    "labels_needs_review": 11
+   }
+  }
+ },
+ "out_of_scope": {
+  "spf_makeup": 2360,
+  "diaper_cream": 212,
+  "spf_lip_balm": 674,
+  "not_a_sunscreen": 715,
+  "calamine": 68
+ },
+ "files": {
+  "us_all.jsonl": {
+   "rows": 10164,
+   "sha256": "af1e36d6fc513062f69725330f01a73f828310a1c36decbf3373a9940f7062f4"
+  },
+  "us_mineral.jsonl": {
+   "rows": 5637,
+   "sha256": "3782dbf2b4e3d40c5cc88a51993e307f56779ed4cecf73352f37296a05d9c655"
+  },
+  "us_baby_kids.jsonl": {
+   "rows": 446,
+   "sha256": "03f5d6989d2b9204def08b55278e924f315f08c314d76c0e580631c872e4df5a"
+  }
+ }
+}
