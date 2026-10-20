@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-19",
  "git_tag": "us-data-2026-10-19",
- "released": "2026-10-20T13:50:46+00:00",
+ "released": "2026-10-20T14:29:50+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.2 · 2026-10-19",
  "source": {
@@ -17,10 +17,10 @@
  },
  "counts": {
   "us_all": {
-   "labels": 9563,
+   "labels": 9586,
    "status": {
     "active": 9544,
-    "discontinued": 19
+    "discontinued": 42
    },
    "filter_type": {
     "mineral_only": 3915,
@@ -44,14 +44,14 @@
    "inactives_7_or_fewer": 299,
    "recalls": {
     "labels_matched": 5,
-    "labels_needs_review": 34
+    "labels_needs_review": 35
    }
   },
   "us_mineral": {
-   "labels": 5168,
+   "labels": 5182,
    "status": {
     "active": 5160,
-    "discontinued": 8
+    "discontinued": 22
    },
    "filter_type": {
     "mineral_only": 3915,
@@ -103,29 +103,29 @@
   }
  },
  "out_of_scope": {
-  "spf_makeup": 2625,
-  "diaper_cream": 223,
-  "spf_lip_balm": 1191,
-  "not_a_sunscreen": 455,
+  "spf_makeup": 2670,
+  "diaper_cream": 226,
+  "spf_lip_balm": 1209,
+  "not_a_sunscreen": 460,
   "zinc_only_no_sun_claim": 70,
-  "calamine": 66
+  "calamine": 67
  },
  "files": {
   "us_all.jsonl": {
-   "rows": 9563,
-   "sha256": "12ff0055c98f94a390eebe9c8a37c100a56ad969d973a8b9150f8e8b351167ac"
+   "rows": 9586,
+   "sha256": "491bf7902219a33292d8f915a45811bb554c1f61e5a2b53ace2c8d96f91cd624"
   },
   "us_mineral.jsonl": {
-   "rows": 5168,
-   "sha256": "1422781ed87994da7f07d60eba4b439700a4bb23bac75489aa53466c82aeb27b"
+   "rows": 5182,
+   "sha256": "3e402f8b2fe5f9a076ced3d78df31a1fa6d6aff4e10da0d5b77e3fbeebf9a197"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
    "sha256": "f034d36d35213f0020a608ef28c643b89bcf142240960f3a14735949b61983b4"
   },
   "us_out_of_scope.jsonl": {
-   "rows": 4630,
-   "sha256": "68da942e4319d9322915346ebab08328de61b7e3a7a23391e8026e07d8774418"
+   "rows": 4702,
+   "sha256": "2b4384cb4eb8fea884a2b7227b431b179a4e7f418952fe9407120865c37cf3dc"
   }
  }
 }

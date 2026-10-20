@@ -336,6 +336,46 @@ def baby_kids_final(c, dec):
     return yes, (f"rule_unreviewed: {basis}" if yes else None)
 
 
+HISTORY = os.path.join(ROOT, "data/history/us_formulation_history.jsonl")
+STATE = os.path.join(ROOT, "data/history/_state.json")
+
+
+def delisted_records(live):
+    """Canonical-shaped records for labels the snapshot logged as delisted and that
+    are not back on DailyMed: label fields from the snapshot state, formula from the
+    last history entry that carried one."""
+    from classify import classify
+    if not (os.path.exists(HISTORY) and os.path.exists(STATE)):
+        return {}
+    state = json.load(open(STATE, encoding="utf-8"))["setids"]
+    last, when = {}, {}
+    for line in open(HISTORY, encoding="utf-8"):
+        h = json.loads(line)
+        if h["setid"] in live:
+            continue
+        if h["change"] == "delisted":
+            when[h["setid"]] = h["observed_on"]
+        elif h.get("active_ingredients"):
+            last[h["setid"]] = h
+    out = {}
+    for sid, d in when.items():
+        st, h = state.get(sid) or {}, last.get(sid)
+        if not h:
+            continue
+        meta = st.get("meta") or {}
+        c = {"setid": sid, "title": meta.get("title") or h.get("product_name"),
+             "product_name": meta.get("product_name") or h.get("product_name"),
+             "dosage_form": meta.get("dosage_form") or h.get("dosage_form"),
+             "labeler": meta.get("labeler") or (re.search(r"\[([^\]]*)\]\s*$", meta.get("title") or "") or [None, None])[1],
+             "spf": h.get("spf"), "active_ingredients": h["active_ingredients"],
+             "inactive_ingredients": h.get("inactive_ingredients") or [], "first_seen": st.get("first_seen"),
+             "last_seen": st.get("last_seen"), "formulation_hash": st.get("formulation_hash"),
+             "dailymed_url": f"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid={sid}", "_delisted_on": d}
+        c.update(classify(c))
+        out[sid] = c
+    return out
+
+
 def corrections():
     """Reviewed corrections: labels whose SPL active table contradicts their own
     printed Drug Facts (each entry carries its evidence). Same file the evidence
@@ -402,7 +442,10 @@ def build(run_date):
     prev = {r["setid"]: r for r in jl(MASTER)}
     eng, meta = engine_from_reference()
     out = {}
-    for c in canon:
+    # labels that left DailyMed since tracking began (history `delisted`): rebuilt from
+    # their last full read so they keep actives, inactives, flags and filter type
+    gone = delisted_records({c["setid"] for c in canon})
+    for c in canon + list(gone.values()):
         sid = c["setid"]
         if sid in fixes:
             c = dict(c)
@@ -441,6 +484,9 @@ def build(run_date):
             in_scope, excluded = ov["in_scope"], (None if ov["in_scope"] else ov["reason"])
         name = (legacy.get(sid) or {}).get("n") or display_name(c)
         u = union.get(sid)
+        if u is None and c.get("_delisted_on"):
+            filed = [(i.get("name") if isinstance(i, dict) else str(i)) for i in c.get("inactive_ingredients") or []]
+            u = {"i_union": filed, "struct": filed, "i_src": "structured", "i_struct_n": len(filed), "i_text_n": 0}
         shown, struct, u2 = inactives(c, u, chk, acts)
         fr = label_text_fragrance(sid, shown)
         if fr:
@@ -479,6 +525,9 @@ def build(run_date):
         if not recalls.all and (legacy.get(sid) or {}).get("r"):
             rec["recalls"] = [{"recall_number": None, "status": "matched", "matched_on": "v3.1_db",
                                "hazards": legacy[sid]["r"]}]
+        if sid in gone:
+            rec.update(status="discontinued", discontinued_on=c["_delisted_on"], last_seen=c.get("last_seen"),
+                       note="no longer on FDA DailyMed; last full read kept")
         out[sid] = rec
     # labels that left DailyMed: keep them, marked discontinued
     for sid, r in prev.items():
