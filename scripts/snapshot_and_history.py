@@ -54,6 +54,13 @@ def degraded(rec, prev):
         return True
     if prev.get("active_ingredients") and not rec.get("active_ingredients"):
         return True
+    # actives came back from a fallback: UNII codes or the w/w % lost where the last read had them
+    pa, ra = prev.get("active_ingredients") or [], rec.get("active_ingredients") or []
+    if pa and ra:
+        if any(a.get("unii") for a in pa) and not any(a.get("unii") for a in ra):
+            return True
+        if sum(a.get("percent_ww") is not None for a in ra) < sum(a.get("percent_ww") is not None for a in pa):
+            return True
     return False
 
 

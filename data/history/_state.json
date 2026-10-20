@@ -171503,14 +171503,14 @@
    "first_seen": "2026-08-26"
   },
   "b31837f7-721f-484e-89d5-4ad84ad0f400": {
-   "formulation_hash": "55fac18cd445e0ca",
+   "formulation_hash": "3a329510a0d0f420",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:HOMOSALATE@P10",
-     "N:HYDROQUINONE@R40MGIN1G/",
-     "N:OCTISALATE@P5",
-     "N:ZINC OXIDE@P16.5"
+     "U:4X49Y0596W@P5",
+     "U:SOI2LOH54Z@P16.5",
+     "U:V06SV4M95S@P10",
+     "U:XV74C1N1AE@P4"
     ],
     "inactives": [
      "U:00YIU5438U",
@@ -171591,11 +171591,11 @@
    "first_seen": "2026-08-26"
   },
   "f3bb0b9d-baaf-4770-e053-2995a90a9571": {
-   "formulation_hash": "6bb8dd71e05a3816",
+   "formulation_hash": "dcc71cf36a1cfeeb",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:ZINC OXIDE@P24"
+     "U:SOI2LOH54Z@P24"
     ],
     "inactives": [
      "U:059QF0KO0R",
@@ -171628,12 +171628,12 @@
    "first_seen": "2026-08-26"
   },
   "b9d80f01-620a-4b00-8b00-746f2f7c467b": {
-   "formulation_hash": "6a41b2e671c857fa",
+   "formulation_hash": "31485bca52ab6617",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:TITANIUM DIOXIDE@P5",
-     "N:ZINC OXIDE@P5"
+     "U:15FIX9V2JP@P5",
+     "U:SOI2LOH54Z@P5"
     ],
     "inactives": [
      "U:00YIU5438U",
@@ -172424,12 +172424,12 @@
    "first_seen": "2026-08-26"
   },
   "a084ea10-f4f1-676b-e053-2a95a90af857": {
-   "formulation_hash": "a9e4a3706bef4c8c",
+   "formulation_hash": "1ab972c6e6139819",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:TITANIUM DIOXIDE@R5GIN100G/",
-     "N:ZINC OXIDE@R5GIN100G/"
+     "U:15FIX9V2JP@P5",
+     "U:SOI2LOH54Z@P5"
     ],
     "inactives": [
      "U:00YIU5438U",
@@ -231433,12 +231433,12 @@
    "first_seen": "2026-08-26"
   },
   "4a08acf3-41e9-4021-9f4b-99a1fd86b2ec": {
-   "formulation_hash": "56483df76d85f32d",
+   "formulation_hash": "2fc79a714fe1be3e",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:OCTINOXATE@P7.5",
-     "N:TITANIUM DIOXIDE@P5"
+     "U:15FIX9V2JP@P5",
+     "U:4Y5P7MUD51@P7.5"
     ],
     "inactives": [
      "U:059QF0KO0R",
@@ -231494,12 +231494,12 @@
    "first_seen": "2026-08-26"
   },
   "3a30b330-7f5f-4a8e-b8bc-1cfaad72f985": {
-   "formulation_hash": "2a3c6af0848a126b",
+   "formulation_hash": "0d9f4d6ccee7ffc3",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:OCTINOXATE@P7.5",
-     "N:TITANIUM DIOXIDE@P4.2"
+     "U:15FIX9V2JP@P4.2",
+     "U:4Y5P7MUD51@P7.5"
     ],
     "inactives": [
      "U:059QF0KO0R",
@@ -231556,12 +231556,12 @@
    "first_seen": "2026-08-26"
   },
   "3c4b7789-cd73-418e-94cb-834a06cb9408": {
-   "formulation_hash": "b4a37c77807e004f",
+   "formulation_hash": "337753db0b329796",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:OCTINOXATE@P7.5",
-     "N:TITANIUM DIOXIDE@P7.1"
+     "U:15FIX9V2JP@P7.1",
+     "U:4Y5P7MUD51@P7.5"
     ],
     "inactives": [
      "U:00YIU5438U",
@@ -231737,12 +231737,12 @@
    "first_seen": "2026-08-26"
   },
   "6a6b8780-a11a-4602-aab4-1925d64f786e": {
-   "formulation_hash": "b4a37c77807e004f",
+   "formulation_hash": "337753db0b329796",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:OCTINOXATE@P7.5",
-     "N:TITANIUM DIOXIDE@P7.1"
+     "U:15FIX9V2JP@P7.1",
+     "U:4Y5P7MUD51@P7.5"
     ],
     "inactives": [
      "U:00YIU5438U",
@@ -334144,21 +334144,21 @@
    "first_seen": "2026-08-26"
   },
   "f59aae9b-b239-400c-899a-9ace0ae21f19": {
-   "formulation_hash": "bcb307ff92c1a271",
+   "formulation_hash": "7bbd5ed95e313491",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:TITANIUM DIOXIDE@R1.0GIN100G/",
-     "N:ZINC OXIDE@R8.0GIN100G/"
+     "U:15FIX9V2JP@P1",
+     "U:SOI2LOH54Z@P8"
     ],
     "inactives": [],
-    "dosage": ""
+    "dosage": "CREAM"
    },
    "meta": {
     "title": "ALBA SUNBLOCK FACIAL SPF 20 (ZINC OXIDE, TITANIUM DIOXIDE) CREAM [THE HAIN CELESTIAL GROUP, INC.]",
     "product_name": "ALBA SUNBLOCK FACIAL SPF 20 (ZINC OXIDE, TITANIUM DIOXIDE) CREAM",
-    "dosage_form": null,
-    "labeler": null,
+    "dosage_form": "CREAM",
+    "labeler": "The Hain Celestial Group, Inc.",
     "brand": null
    },
    "last_seen": "2026-10-19",
@@ -533803,13 +533803,13 @@
    "first_seen": "2026-08-26"
   },
   "7e539ea5-26e1-41eb-89d9-87c9639a9908": {
-   "formulation_hash": "34d695d0183afcc7",
+   "formulation_hash": "ef8721bb5562babc",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:AVOBENZONE@R0.01MLIN1ML/",
-     "N:OCTOCRYLENE@R0.077MLIN1ML/",
-     "N:OXYBENZONE@R0.03MLIN1ML/"
+     "U:5A68WGF6WM@P7.7",
+     "U:95OOS7VE0Y@P3",
+     "U:G63QQF2NOX@P1"
     ],
     "inactives": [
      "U:00YIU5438U",
@@ -534196,13 +534196,13 @@
    "first_seen": "2026-08-26"
   },
   "831bfaf7-8e07-44c0-a8c6-9df21e0d46f3": {
-   "formulation_hash": "642e15bd67d33e38",
+   "formulation_hash": "88639c26980063fd",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:AVOBENZONE@P3",
-     "N:OCTINOXATE@P7.5",
-     "N:OCTISALATE@P2"
+     "U:4X49Y0596W@P2",
+     "U:4Y5P7MUD51@P7.5",
+     "U:G63QQF2NOX@P3"
     ],
     "inactives": [],
     "dosage": "LOTION"
@@ -534218,13 +534218,13 @@
    "first_seen": "2026-08-26"
   },
   "832e87cc-e2cd-4e2a-a0df-788ab2075644": {
-   "formulation_hash": "c9b7e7e0aacef51b",
+   "formulation_hash": "61481bf7d8ac2ebd",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:AVOBENZONE@P3",
-     "N:OCTISALATE@P5",
-     "N:OCTOCRYLENE@P2.7"
+     "U:4X49Y0596W@P5",
+     "U:5A68WGF6WM@P2.7",
+     "U:G63QQF2NOX@P3"
     ],
     "inactives": [],
     "dosage": "CREAM"
@@ -566542,11 +566542,11 @@
    "first_seen": "2026-08-26"
   },
   "043b1d97-458f-4a2a-b14d-753988ce9e68": {
-   "formulation_hash": "1ba34fe650b32c0d",
+   "formulation_hash": "2bb2414f6ab14aa4",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:OCTINOXATE@P5"
+     "U:4Y5P7MUD51@P5"
     ],
     "inactives": [
      "U:00YIU5438U",
@@ -603461,21 +603461,21 @@
    "first_seen": "2026-10-08"
   },
   "9f895a3c-4aa1-4cbd-a22b-28ce95e15aa0": {
-   "formulation_hash": "2f6a4b43a4ce4442",
+   "formulation_hash": "2b09170e70fc629b",
    "fingerprint_version": 4,
    "payload": {
     "actives": [
-     "N:PRAZIQUANTEL@R18.2MG/",
-     "N:PYRANTEL PAMOATE@R72.6MG/"
+     "U:6490C9U457@R18.2MG/1.01",
+     "U:81BK194Z5M@R72.6MG/1.01"
     ],
     "inactives": [],
-    "dosage": ""
+    "dosage": "TABLET"
    },
    "meta": {
     "title": "LFHYM BROAD SPECTRUM CAT DEWORMER (PRAZIQUANTEL, PYRANTEL PAMOATE) TABLET [PUTIAN LICHENG YONGAO E-COMMERCE CO., LTD.]",
     "product_name": "LFHYM BROAD SPECTRUM CAT DEWORMER (PRAZIQUANTEL, PYRANTEL PAMOATE) TABLET",
-    "dosage_form": null,
-    "labeler": null,
+    "dosage_form": "TABLET",
+    "labeler": "Putian Licheng Yongao E-commerce Co., Ltd.",
     "brand": null
    },
    "last_seen": "2026-10-19",

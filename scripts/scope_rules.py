@@ -28,7 +28,7 @@ _ACTS = re.compile(r"\((?:[^()]|\([^()]*\))*\)")
 # the FDA statement of identity every sunscreen label prints
 _IDENTITY = re.compile(r"\bBROAD[- ]?SPECTRUM\b(?:\s*SPF\s*\d+\s*\+?(?:\s*PLUS)?)?(?:\s*SUN\s?SCREEN)?|"
                        r"\bSPF\s*\d+\s*\+?\s*SUN\s?SCREEN\b|\bSUN\s?SCREEN\s+SPF\s*\d+\b", re.I)
-SUN_FIRST = re.compile(r"\bSUN\s?SCREENS?\b|\bSUNCREEN\b|\bSUN\s?BLOCKS?\b|\bSUN\s?(?:CUSHION|STICK|POWDER|"
+SUN_FIRST = re.compile(r"\bBRUSH[- ]?ON (?:BLOCK|SUN\w*)\b|\bSUN\s?SCREENS?\b|\bSUNCREEN\b|\bSUN\s?BLOCKS?\b|\bSUN\s?(?:CUSHION|STICK|POWDER|"
                        r"DEFEN[CS]E|PROTECT\w*|SHIELD|CARE|MILK|SERUM|FLUID|GEL|ESSENCE|SPRAY|MIST|PACT|COMPACT)\b|\bUV\s?"
                        r"(?:SHIELD|DEFEN[CS]E|PROTECT\w*|BLOCK|SCREEN|EXPERT|AQUA|CUSHION|POWDER)\b", re.I)
 # coverage makeup: a sunscreen word on the label does not change what it is
@@ -36,7 +36,13 @@ MAKEUP_STRONG = re.compile(r"\b(?:FOUNDATIONS?|FOND DE TEINT|BB|CC|B\.B\.|C\.C\.
                            r"CONCEAL\w*|TWO[- ]WAY CAKE|BLUSH(?:ER)?|BRONZ(?:ER|ING POWDER)|"
                            r"HIGHLIGHT(?:ER|ING)|EYE\s?SHADOWS?|MASCARA|LIPSTICKS?|LIP\s?COLOU?RS?|LIP\s?TINTS?|"
                            r"LIP\s?STAIN|MAKE[- ]?UP|MAQUILLAJE|PRESSED POWDER|FACE POWDER|LOOSE POWDER|"
-                           r"POWDER FOUNDATION|DUAL POWDER)\b", re.I)
+                           r"POWDER FOUNDATION|DUAL POWDER|(?:TRIPLE |EYE ?)SHADOWS?|FACE MAKER|COVER CAKE|POLVO|"
+                           r"COMPACTO|PRESSED MINERAL|MATCH PERFECTION|FAUX TAN)\b", re.I)
+# a powder sold in skin shades is a makeup powder ("SPF 15 FAIR POWDER")
+SHADE_POWDER = re.compile(r"\b(?:FAIR|LIGHT|MEDIUM|TAN|DEEP|DARK|IVORY|BEIGE|NUDE|SAND|PORCELAIN|HONEY|"
+                          r"CARAMEL|ESPRESSO|BISQUE|BUFF)\b.*\bPOWDER\b", re.I)
+# a name that calls itself a tinted moisturizer / tinted sunscreen is a sunscreen, BB or not
+TINTED_SELF = re.compile(r"\bTINTED\s+(?:MOISTURI[SZ]\w*|SUN\s?SCREEN|MINERAL SUN\s?SCREEN)", re.I)
 # formats that are makeup unless the product noun is a sunscreen one ("Sun Cushion", "Sunscreen Compact")
 MAKEUP_FORMAT = re.compile(r"\b(?:CUSHIONS?|COMPACTS?|PACTS?)\b", re.I)
 # ...unless the product noun itself is a sunscreen one ("Sun Cushion", "Sunscreen Compact")
@@ -67,7 +73,11 @@ def scope_reason(title):
         return "diaper_cream"
     if LIP.search(q) and not NOT_ONLY_LIP.search(q):
         return "spf_lip_balm"
+    if TINTED_SELF.search(q):
+        return None
     if MAKEUP_STRONG.search(q):
+        return "spf_makeup"
+    if SHADE_POWDER.search(q) and not SUN_FIRST.search(_IDENTITY.sub(" ", q)):
         return "spf_makeup"
     if MAKEUP_FORMAT.search(q) and not SUN_NOUN.search(q):
         return "spf_makeup"

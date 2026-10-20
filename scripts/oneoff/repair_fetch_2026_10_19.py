@@ -71,6 +71,10 @@ def main():
     # formula events of this run that came from the bad read
     keep_h, moved = [], 0
     for h in hist:
+        if (h["observed_on"] == RUN and h["change"] == "reformulated" and not h.get("keys_added")
+                and not h.get("keys_removed")):
+            moved += 1                   # nothing changed in the formula: an event with no keys is a no-op
+            continue
         if h["observed_on"] == RUN and h["setid"] in fixed and h["change"] in ("reformulated", "metadata"):
             new_hash = state["setids"][h["setid"]]["formulation_hash"]
             if h["change"] == "metadata" or h.get("previous_hash") == new_hash:

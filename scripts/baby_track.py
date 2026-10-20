@@ -138,10 +138,24 @@ def main():
     # baby subset of the full dataset (live labels only)
     os.makedirs(os.path.dirname(VIEW), exist_ok=True)
     baby_ids = {k for k, v in ledger.items() if v["decision"] == "include"}
+    # labels whose FDA filing contradicts their printed Drug Facts carry the
+    # corrected actives here too (same correction file as the master and the evidence)
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from classify import classify
+    fixes = {}
+    corr = os.path.join(ROOT, "data", "corrections", "spl_label_errors.jsonl")
+    if os.path.exists(corr):
+        fixes = {json.loads(l)["setid"]: json.loads(l) for l in open(corr, encoding="utf-8") if l.strip()}
     with open(VIEW, "w", encoding="utf-8") as f:
         for sid in sorted(baby_ids):
             if sid in recs:
-                f.write(json.dumps({**recs[sid], "baby_decision": ledger[sid]}, ensure_ascii=False) + "\n")
+                r = dict(recs[sid])
+                if sid in fixes:
+                    r.update(fixes[sid]["use"])
+                    r.update(classify(r))
+                    r["actives_corrected"] = fixes[sid].get("error", "")[:300]
+                f.write(json.dumps({**r, "baby_decision": ledger[sid]}, ensure_ascii=False) + "\n")
 
     # weekly change report
     events = [json.loads(l) for l in open(HISTORY, encoding="utf-8") if l.strip()]
