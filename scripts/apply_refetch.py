@@ -17,7 +17,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 os.chdir(ROOT)
-from snapshot_and_history import (CANONICAL, FETCH_LOG, HISTORY, STATE, formulation_fingerprint,  # noqa: E402
+from snapshot_and_history import (CANONICAL, FETCH_LOG, HISTORY, STATE, degraded, formulation_fingerprint,  # noqa: E402
                                   key_delta, meta_view)
 
 
@@ -37,7 +37,9 @@ def main():
     out = []
     for c in can:
         r = new.get(c["setid"])
-        if not r or c.get("fetch_status") != "carried_forward":
+        # only labels we are holding on last week's record; and only a read that is at
+        # least as complete as that record (never a second bad read over a good one)
+        if not r or c.get("fetch_status") != "carried_forward" or degraded(r, c):
             out.append(c)
             continue
         rec = dict(r, first_seen=c.get("first_seen"), last_seen=c.get("last_seen"), fetch_status="read",
