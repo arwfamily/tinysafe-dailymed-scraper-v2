@@ -2,17 +2,18 @@
  "products": 6544,
  "inactives_7_or_fewer": {
   "before": 724,
-  "after": 191,
+  "after": 239,
   "thin_reason": {
-   "short_list": 170,
-   "no_printed_list": 13,
-   "label_image_unreadable": 8
+   "short_list": 219,
+   "label_prints_too_little": 3,
+   "label_image_unreadable": 7,
+   "no_printed_list": 10
   }
  },
  "i_src": {
-  "structured": 715,
-  "both": 5641,
-  "image": 188
+  "image": 485,
+  "both": 5890,
+  "structured": 169
  },
  "flags": {
   "chemical_filter_active": {
@@ -23,132 +24,132 @@
   "botanical_count": {
    "S0_v31": 3656,
    "S1_v32_structured": 3656,
-   "S2_v32_union": 4314
+   "S2_v32_union": 4385
   },
   "silicone": {
    "S0_v31": 3323,
    "S1_v32_structured": 3323,
-   "S2_v32_union": 3742
+   "S2_v32_union": 3755
   },
   "ethoxylated": {
    "S0_v31": 3170,
    "S1_v32_structured": 3260,
-   "S2_v32_union": 3606
+   "S2_v32_union": 3647
   },
   "phenoxyethanol": {
    "S0_v31": 2967,
    "S1_v32_structured": 2966,
-   "S2_v32_union": 3125
+   "S2_v32_union": 3136
   },
   "fragrance": {
    "S0_v31": 212,
    "S1_v32_structured": 213,
-   "S2_v32_union": 2633
+   "S2_v32_union": 2798
   },
   "hidden_uv_booster": {
    "S0_v31": 2124,
    "S1_v32_structured": 2163,
-   "S2_v32_union": 2272
+   "S2_v32_union": 2287
   },
   "eu_fragrance_allergen": {
    "S0_v31": 1375,
    "S1_v32_structured": 1374,
-   "S2_v32_union": 1697
-  },
-  "d5_d6": {
-   "S0_v31": 1270,
-   "S1_v32_structured": 1270,
-   "S2_v32_union": 1430
-  },
-  "microplastic_polymer": {
-   "S0_v31": 687,
-   "S1_v32_structured": 616,
-   "S2_v32_union": 1408
+   "S2_v32_union": 1722
   },
   "iron_oxide_tint": {
    "S0_v31": 1050,
    "S1_v32_structured": 1050,
-   "S2_v32_union": 1403
+   "S2_v32_union": 1445
+  },
+  "microplastic_polymer": {
+   "S0_v31": 687,
+   "S1_v32_structured": 616,
+   "S2_v32_union": 1441
+  },
+  "d5_d6": {
+   "S0_v31": 1270,
+   "S1_v32_structured": 1270,
+   "S2_v32_union": 1432
   },
   "coconut": {
    "S0_v31": 1082,
    "S1_v32_structured": 1082,
-   "S2_v32_union": 1328
+   "S2_v32_union": 1344
   },
   "drying_alcohol": {
    "S0_v31": 1172,
    "S1_v32_structured": 1104,
-   "S2_v32_union": 1256
+   "S2_v32_union": 1257
   },
   "propylene_glycol": {
    "S0_v31": 900,
    "S1_v32_structured": 900,
-   "S2_v32_union": 981
+   "S2_v32_union": 989
   },
   "soy": {
    "S0_v31": 869,
    "S1_v32_structured": 869,
-   "S2_v32_union": 956
+   "S2_v32_union": 961
   },
   "sodium_benzoate": {
    "S0_v31": 880,
    "S1_v32_structured": 864,
-   "S2_v32_union": 912
+   "S2_v32_union": 919
   },
   "shea": {
    "S0_v31": 845,
    "S1_v32_structured": 845,
-   "S2_v32_union": 902
+   "S2_v32_union": 905
   },
   "spray_powder": {
    "S0_v31": 894,
    "S1_v32_structured": 894,
    "S2_v32_union": 894
   },
-  "essential_oil": {
-   "S0_v31": 276,
-   "S1_v32_structured": 777,
-   "S2_v32_union": 850
-  },
   "ethanolamines": {
    "S0_v31": 136,
    "S1_v32_structured": 136,
-   "S2_v32_union": 821
+   "S2_v32_union": 866
+  },
+  "essential_oil": {
+   "S0_v31": 276,
+   "S1_v32_structured": 777,
+   "S2_v32_union": 856
   },
   "asteraceae": {
    "S0_v31": 583,
    "S1_v32_structured": 583,
-   "S2_v32_union": 787
+   "S2_v32_union": 800
   },
   "methyl_ethyl_paraben": {
    "S0_v31": 731,
    "S1_v32_structured": 731,
-   "S2_v32_union": 770
-  },
-  "retinoid": {
-   "S0_v31": 617,
-   "S1_v32_structured": 617,
-   "S2_v32_union": 676
+   "S2_v32_union": 771
   },
   "propolis_beeswax": {
    "S0_v31": 217,
    "S1_v32_structured": 217,
-   "S2_v32_union": 647
+   "S2_v32_union": 734
+  },
+  "retinoid": {
+   "S0_v31": 617,
+   "S1_v32_structured": 617,
+   "S2_v32_union": 680
   },
   "propyl_butyl_paraben": {
    "S0_v31": 608,
    "S1_v32_structured": 608,
-   "S2_v32_union": 639
+   "S2_v32_union": 640
   },
   "bht_bha": {
    "S0_v31": 482,
    "S1_v32_structured": 482,
-   "S2_v32_union": 493
+   "S2_v32_union": 494
   },
   "tree_nut": {
    "S0_v31": 344,
    "S1_v32_structured": 344,
-   "S2_v32_union": 465
+   "S2_v32_union": 474
   },
   "petrolatum_mineral_oil": {
    "S0_v31": 275,
@@ -158,21 +159,26 @@
   "synthetic_dye": {
    "S0_v31": 59,
    "S1_v32_structured": 59,
-   "S2_v32_union": 248
-  },
-  "formaldehyde_releaser": {
-   "S0_v31": 178,
-   "S1_v32_structured": 178,
-   "S2_v32_union": 206
+   "S2_v32_union": 269
   },
   "wheat": {
    "S0_v31": 112,
    "S1_v32_structured": 110,
-   "S2_v32_union": 201
+   "S2_v32_union": 216
+  },
+  "formaldehyde_releaser": {
+   "S0_v31": 178,
+   "S1_v32_structured": 178,
+   "S2_v32_union": 209
   },
   "adult_active": {
    "S0_v31": 178,
    "S1_v32_structured": 178,
+   "S2_v32_union": 202
+  },
+  "animal_derived": {
+   "S0_v31": 84,
+   "S1_v32_structured": 84,
    "S2_v32_union": 199
   },
   "mi_mci": {
@@ -180,54 +186,49 @@
    "S1_v32_structured": 169,
    "S2_v32_union": 195
   },
-  "animal_derived": {
-   "S0_v31": 84,
-   "S1_v32_structured": 84,
-   "S2_v32_union": 191
-  },
   "talc": {
    "S0_v31": 174,
    "S1_v32_structured": 174,
-   "S2_v32_union": 187
+   "S2_v32_union": 188
   },
   "ipbc": {
    "S0_v31": 143,
    "S1_v32_structured": 143,
-   "S2_v32_union": 170
+   "S2_v32_union": 171
   },
   "chemical_filter_in_inactives": {
    "S0_v31": 119,
    "S1_v32_structured": 119,
-   "S2_v32_union": 136
+   "S2_v32_union": 138
   },
   "oat": {
    "S0_v31": 49,
    "S1_v32_structured": 49,
-   "S2_v32_union": 127
-  },
-  "no_preservative_water_base": {
-   "S0_v31": 315,
-   "S1_v32_structured": 268,
-   "S2_v32_union": 82
+   "S2_v32_union": 132
   },
   "citrus_photosensitizer": {
    "S0_v31": 57,
    "S1_v32_structured": 57,
    "S2_v32_union": 78
   },
+  "no_preservative_water_base": {
+   "S0_v31": 315,
+   "S1_v32_structured": 268,
+   "S2_v32_union": 73
+  },
   "egg": {
    "S0_v31": 56,
    "S1_v32_structured": 56,
    "S2_v32_union": 56
   },
-  "water_resistant": {
-   "S0_v31": 52,
-   "S1_v32_structured": 52,
-   "S2_v32_union": 52
-  },
   "lanolin": {
    "S0_v31": 40,
    "S1_v32_structured": 40,
+   "S2_v32_union": 52
+  },
+  "water_resistant": {
+   "S0_v31": 52,
+   "S1_v32_structured": 52,
    "S2_v32_union": 52
   },
   "sesame": {
@@ -238,12 +239,12 @@
   "d4": {
    "S0_v31": 6,
    "S1_v32_structured": 6,
-   "S2_v32_union": 31
+   "S2_v32_union": 35
   },
   "milk": {
    "S0_v31": 20,
    "S1_v32_structured": 20,
-   "S2_v32_union": 30
+   "S2_v32_union": 32
   },
   "sls_sles": {
    "S0_v31": 14,
@@ -253,7 +254,7 @@
   "fish_shellfish": {
    "S0_v31": 4,
    "S1_v32_structured": 4,
-   "S2_v32_union": 12
+   "S2_v32_union": 14
   },
   "capb": {
    "S0_v31": 7,
@@ -278,7 +279,7 @@
  },
  "hidden_uv_booster_mineral_only": {
   "S0": 582,
-  "S2": 605,
+  "S2": 608,
   "mineral_only_products": 2001
  },
  "baby_by_name": {
@@ -286,12 +287,12 @@
   "all_three_barrier_lipids_before": 0,
   "all_three_barrier_lipids_after": [],
   "fragrance_before": 14,
-  "fragrance_after": 144,
-  "thin_after": 8
+  "fragrance_after": 149,
+  "thin_after": 13
  },
  "same_formula_different_brand": {
   "groups_before": 279,
-  "groups_after": 296
+  "groups_after": 310
  },
  "v32_corrections_applied": [
   {
@@ -372,7 +373,7 @@
  ],
  "name_resolution": {
   "v3.1 name": 4384,
-  "same name as v3.1": 5805,
-  "pattern": 6560
+  "same name as v3.1": 6111,
+  "pattern": 6894
  }
 }

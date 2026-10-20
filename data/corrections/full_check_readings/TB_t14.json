@@ -1,0 +1,4 @@
+[
+ {"setid": "ff3ef5f7-4846-48c6-aebc-26723f7f2320", "found": false, "inactives": [], "note": "label_text is marketing text only; no ingredient list"},
+ {"setid": "ff9eae5b-4963-429d-bb73-8e3b5402f084", "found": true, "inactives": ["Petrolatum", "Lanolin", "Euphorbia Cerifera (Candelilla) Wax", "Ozokerite", "Beeswax", "Cetyl Esters", "Paraffin", "Theobroma Cacao (Cocoa) Seed Butter", "Flavor", "Isopropyl Palmitate", "Limnanthes Alba (Meadowfoam) Seed Oil", "Stevia Rebaudiana Extract"], "note": "Assorted kit with two lists (Wintergreen; Fresh Cherry/Strawberry); same ingredients, Wintergreen order used. Cherry/Strawberry list places Flavor after Ozokerite."}
+]

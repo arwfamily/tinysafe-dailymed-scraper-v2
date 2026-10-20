@@ -37,6 +37,11 @@ from inactive_union import key  # noqa: E402
 UNION = os.path.join(ROOT, "data/views/inactive_union.jsonl")
 # Labels re-checked on DailyMed (SPL text and label images read twice independently)
 THIN_CHECK = os.path.join(ROOT, "data/corrections/thin_check_2026-10-19.jsonl")
+# every label re-read on DailyMed (current SPL text; label images where the SPL has no text)
+FULL_CHECK = os.path.join(ROOT, "data/corrections/full_check_2026-10-19.jsonl")
+FULL = {}
+FULL_USE = {"confirmed", "partial", "text_confirms_current", "no_list_on_label_images", "image_unreadable",
+            "label_image_mismatch", "spl_not_on_dailymed", "non_english_label"}
 PRODUCT_LEVEL = {"spray_powder", "water_resistant", "talc_inhalable", "no_preservative_water_base"}
 THIN_MAX = 7
 EVIDENCE_CAP = 4                       # v3.1 kept at most 4 names per flag
@@ -182,10 +187,16 @@ def build(db, union):
         s1.append({"id": p["id"], "v3": flags_for(old_names)})
         u = union.get(p["id"])
         chk = THIN.get(p["id"])
+        full = FULL.get(p["id"])
+        if full and full["status"] in FULL_USE and (not chk or chk["status"] not in ("confirmed", "partial")
+                                                    or full["status"] in ("confirmed", "partial") and "two_reads" in full.get("source", "")
+                                                    and chk.get("source") == "label_text"):
+            chk = FULL[p["id"]]
         if u and chk and chk.get("inactives") and chk["status"] in ("confirmed", "partial"):
             from inactive_union import same as _same
             printed = list(chk["inactives"])
-            extra = [x for x in u["struct"] if not any(_same(x, t) for t in printed) and len(x.split()) <= 12]
+            from inactive_union import same_display as _sd
+            extra = [x for x in u["struct"] if not any(_sd(x, t) for t in printed) and len(x.split()) <= 12]
             u = dict(u, i_union=printed + extra, i_text_n=len(printed),
                      i_src="image" if "image" in chk["source"] else "both")
         from inactive_union import is_active
@@ -322,6 +333,10 @@ def main():
         for line in open(THIN_CHECK, encoding="utf-8"):
             r = json.loads(line)
             THIN[r["setid"]] = r
+    if os.path.exists(FULL_CHECK):
+        for line in open(FULL_CHECK, encoding="utf-8"):
+            r = json.loads(line)
+            FULL[r["setid"]] = r
     new, s1, eng = build(old, union)
     with open(new_path, "w", encoding="utf-8") as f:
         json.dump(new, f, ensure_ascii=False, separators=(",", ":"))

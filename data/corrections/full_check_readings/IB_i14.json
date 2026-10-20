@@ -1,0 +1,110 @@
+[
+ {
+  "setid": "9acc82a1-bb21-28b6-e053-2995a90aabd8",
+  "found": true,
+  "inactives": [
+   "Sunflower (Helianthus annuus) Seed Oil*",
+   "Coconut (Cocos nucifera) Oil*",
+   "Candelilla (Euphorbia cerifera) Wax*",
+   "Beeswax* (Cera alba)",
+   "Argan (Argania spinosa) Kernel Oil*",
+   "Jojoba (Simmondsia chinensis) Seed Oil*",
+   "Red Raspberry (Rubus idaeus) Seed Oil*",
+   "Carnauba (Copernicia cerifera) Wax*",
+   "Orange (Citrus aurantium dulcis) Peel Oil*",
+   "Vanilla (Vanilla planifolia) Flavor*",
+   "Cocoa (Theobroma cacao) Seed Butter*",
+   "Shea (Butyrospermum parkii) Butter*",
+   "Tocopherol (Vitamin E)",
+   "Iron Oxides (CI 77491, CI 77492, CI 77499)",
+   "Titanium dioxide (CI 77861)"
+  ],
+  "legibility": "clear",
+  "mismatch": false,
+  "note": "evanhealy Sheer Cover Stick SPF 30 (Sandstone - Light). Iron Oxides and Titanium dioxide listed under 'May Contain [+/-]' (shade colorants). *Organic. Vanilla Flavor present on label, not in db_list."
+ },
+ {
+  "setid": "9acd1f50-0149-6f8e-e053-2995a90af8ad",
+  "found": true,
+  "inactives": [
+   "Helianthus Annuus (Sunflower) Seed Oil*",
+   "Beeswax*",
+   "Ricinus Communis (Castor) Seed Oil*",
+   "Cocos Nucifera (Coconut) Oil*",
+   "Olea Europaea (Olive) Fruit Oil*",
+   "Simmondsia Chinensis (Jojoba) Seed Oil*",
+   "Butyrospermum Parkii (Shea) Butter*",
+   "Tocopherol"
+  ],
+  "legibility": "clear",
+  "mismatch": false,
+  "note": "Jumby Every Mother's Sun Mineral Sunscreen SPF 30. *Certified organic ingredient(s)."
+ },
+ {
+  "setid": "9ae0da69-98ba-0a6e-e053-2995a90a9574",
+  "found": true,
+  "inactives": [
+   "Sunflower (Helianthus annuus) Seed Oil*",
+   "Coconut (Cocos nucifera) Oil*",
+   "Candelilla (Euphorbia cerifera) Wax*",
+   "Beeswax* (Cera alba)",
+   "Argan (Argania spinosa) Kernel Oil*",
+   "Jojoba (Simmondsia chinensis) Seed Oil*",
+   "Red Raspberry (Rubus idaeus) Seed Oil*",
+   "Carnauba (Copernicia cerifera) Wax*",
+   "Orange (Citrus aurantium dulcis) Peel Oil*",
+   "Vanilla (Vanilla planifolia) Flavor*",
+   "Cocoa (Theobroma cacao) Seed Butter*",
+   "Shea (Butyrospermum parkii) Butter*",
+   "Tocopherol (Vitamin E)",
+   "Iron Oxides (CI 77491, CI 77492, CI 77499)",
+   "Titanium dioxide (CI 77861)"
+  ],
+  "legibility": "clear",
+  "mismatch": false,
+  "note": "evanhealy Sheer Cover Stick SPF 30 (Almond - Medium). Iron Oxides and Titanium dioxide listed under 'May Contain [+/-]' (shade colorants). *Organic. Vanilla Flavor present on label, not in db_list."
+ },
+ {
+  "setid": "9ae1044b-22d9-34e5-e053-2a95a90a8dbe",
+  "found": true,
+  "inactives": [
+   "helianthus annuus (sunflower) seed oil (1)",
+   "cocos nucifera (coconut) oil (1)",
+   "cera alba (beeswax) (1)",
+   "euphorbia cerifera (candelilla) wax (1)",
+   "ricinus communis (castor) oil (1)",
+   "copernica cerifera (carnauba) wax (1)",
+   "butyrospermum parkii (shea) butter (1)",
+   "theobrama cacao (cocao) seed butter (1)",
+   "tocopherol (1)",
+   "aloe barbadensis (aloe) leaf juice (1)"
+  ],
+  "legibility": "clear",
+  "mismatch": false,
+  "note": "thinksport Face & Body Stick SPF 30+ (Canadian NPN 80083619 label). Heading is 'Ingredients | Ingredients'; spellings 'copernica', 'theobrama', 'cocao' as printed. Same list on carton and stick back label. '(1)' footnote marker not defined on label."
+ },
+ {
+  "setid": "9ae135fd-408a-098f-e053-2995a90a74ef",
+  "found": true,
+  "inactives": [
+   "Sunflower (Helianthus annuus) Seed Oil*",
+   "Coconut (Cocos nucifera) Oil*",
+   "Candelilla (Euphorbia cerifera) Wax*",
+   "Beeswax* (Cera alba)",
+   "Argan (Argania spinosa) Kernel Oil*",
+   "Jojoba (Simmondsia chinensis) Seed Oil*",
+   "Red Raspberry (Rubus idaeus) Seed Oil*",
+   "Carnauba (Copernicia cerifera) Wax*",
+   "Orange (Citrus aurantium dulcis) Peel Oil*",
+   "Vanilla (Vanilla planifolia) Flavor*",
+   "Cocoa (Theobroma cacao) Seed Butter*",
+   "Shea (Butyrospermum parkii) Butter*",
+   "Tocopherol (Vitamin E)",
+   "Iron Oxides (CI 77491, CI 77492, CI 77499)",
+   "Titanium dioxide (CI 77861)"
+  ],
+  "legibility": "clear",
+  "mismatch": false,
+  "note": "evanhealy Sheer Cover Stick SPF 30 (Mocha - Dark). Iron Oxides and Titanium dioxide listed under 'May Contain [+/-]' (shade colorants). *Organic. Vanilla Flavor present on label, not in db_list."
+ }
+]

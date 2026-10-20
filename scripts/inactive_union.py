@@ -22,6 +22,7 @@ detail dropped, punctuation removed, Aqua/Eau -> Water), so
 Usage: python3 scripts/inactive_union.py [canonical.jsonl] [out.jsonl]
 """
 import difflib
+import functools
 import json
 import os
 import re
@@ -65,14 +66,18 @@ _SYN = {
     "PENTAERYTHRITOLTETRAKIS335DITERTBUTYL4HYDROXYPHENYLPROPIONATE": "PENTAERYTHRITYLTETRADITBUTYLHYDROXYHYDROCINNAMATE",
     "PENTAERYTHRITOLTETRAKIS": "PENTAERYTHRITYLTETRADITBUTYLHYDROXYHYDROCINNAMATE",
 }
-_WATERWORDS = {"WATER", "AQUA", "EAU", "PURIFIED", "DEIONIZED", "DISTILLED", "USP", "DEMINERALIZED"}
+_WATERWORDS = {"WATER", "AQUA", "EAU", "PURIFIED", "DEIONIZED", "DISTILLED", "USP", "DEMINERALIZED", "SPRING", "FILTERED"}
 _JUNK_ITEM = re.compile(r"^\s*(?:inactive(?:\s+ingredients?)?|ingredients?|other\s+ingredients?|organic(?:\s+ingredients?)?|"
                         r"certified organic(?: ingredients?)?)\s*[:.]?\s*$|\b(?:contains|distributed by|manufactured (?:for|by)|"
-                        r"made in|www\.|\.com\b|questions\?|call\s+\d)", re.I)
+                        r"made in|www\.|\.com\b|questions\?|call\s+\d|\bdenotes\b|trademark|save (?:this )?carton|unless otherwise|"
+                        r"plant-derived scent|^\W*=\s*organic|^\W*organic ingredients?\W*$)", re.I)
 
 
+@functools.lru_cache(maxsize=None)
 def key(name):
     n = (name or "").upper()
+    n = re.sub(r"\b(?:FD\s*&\s*C|D\s*&\s*C|EXT\.?\s*D\s*&\s*C)\s+", "", n)     # "FD&C BLUE NO. 1" -> "BLUE 1"
+    n = re.sub(r"\bNO\.?\s*(?=\d)", "", n)
     prev = None
     while prev != n:                               # bracketed detail / synonyms, nested too
         prev, n = n, re.sub(r"\([^()]*\)|\[[^\[\]]*\]", "", n)
@@ -108,7 +113,47 @@ def tokens(name):
     return out
 
 
+# colour-index numbers printed in place of (or beside) the name
+_CI = {"77891": "TITANIUMDIOXIDE", "77491": "IRONOXIDES", "77492": "IRONOXIDES", "77499": "IRONOXIDES",
+       "77019": "MICA", "77007": "ULTRAMARINES", "77120": "BARIUMSULFATE", "77288": "CHROMIUMOXIDEGREENS",
+       "77289": "CHROMIUMHYDROXIDEGREEN", "77742": "MANGANESEVIOLET", "77510": "FERRICFERROCYANIDE",
+       "77947": "ZINCOXIDE", "42090": "BLUE1", "15985": "YELLOW6", "19140": "YELLOW5", "17200": "RED33",
+       "45410": "RED28", "15850": "RED7", "73360": "RED30", "14700": "RED4", "16035": "RED40", "77163": "BISMUTHOXYCHLORIDE"}
+
+
+_CIRE = re.compile(r"\bC\.?I\.?\s*\d{5}", re.I)
+
+
+@functools.lru_cache(maxsize=None)
+def alias_keys(name):
+    """Every key a name can stand for: "CI 77891/TITANIUM DIOXIDE", "PARFUM/FRAGRANCE",
+    "WATER\\AQUA\\EAU", "Candelilla Cera/Euphorbia Cerifera (Candelilla) Wax" each give
+    the key of each slash part; a bare colour-index number gives its pigment."""
+    out = {key(name)}
+    n = re.sub(r"\([^()]*\)", " ", name or "")
+    parts = [x for x in re.split(r"\s*[/\\\\]\s*", n) if x.strip()]
+    if len(parts) > 1:
+        for x in parts:
+            k = key(x)
+            if len(k) >= 8 or k in ("WATER", "FRAGRANCE", "MICA", "SILICA", "TALC", "ALCOHOL"):
+                out.add(k)
+    for m in re.findall(r"\bC\.?I\.?\s*(\d{5})", (name or "").upper()):
+        if m in _CI and re.sub(r"[^A-Z]", "", re.sub(r"C\.?I\.?\s*\d{5}", "", (name or "").upper())) in ("", "IRONOXIDES", "IRONOXIDE"):
+            out.add(_CI[m])
+    return out
+
+
 def same(a, b):
+    if _same_core(a, b):
+        return True
+    ab = (a or "") + " " + (b or "")
+    if "/" in ab or "\\" in ab or _CIRE.search(ab):
+        ka, kb = alias_keys(a), alias_keys(b)
+        return bool(ka & kb)
+    return False
+
+
+def _same_core(a, b):
     """Two names for one ingredient: equal loose keys, or one name's distinctive
     words all appear in the other ("SUNFLOWER OIL" ~ "Helianthus Annuus (Sunflower) Seed Oil")."""
     if key(a) == key(b):
@@ -139,6 +184,8 @@ _LEAD = re.compile(r"^\s*(?:\u200b)?(?:section\s+)?(?:inactive|inctive)\s+ingred
 
 def _clean(x):
     x = re.sub(r"<[^>]*>", " ", x.replace("\u200b", ""))          # <iln...> label codes
+    x = re.sub(r"\s*\[\s*iln\s*\d+\s*\]?", " ", x, flags=re.I)      # "[iln40504" label codes
+    x = re.sub(r"\.?\s*\[\s*[A-Z]?\d{3,}[A-Z]?\s*\]?\s*$", "", x)        # trailing "[S2703A" formula codes
     if re.fullmatch(r"\s*(?:\S{1,2}\s+){4,}\S{1,2}\s*", x):              # "Tr i e t h o x y" letter-spaced text
         x = re.sub(r"\s+", "", x)
     x = re.sub(r"^\s*(?:=|\*+|\(s\)|\u2020|\u2021)\s*", "", x)          # footnote markers
@@ -252,7 +299,7 @@ def union_row(r):
     for name in text:                       # the printed list, in label order
         if not any(key(name) == key(o) for o in out):
             out.append(name)
-    struct_only = [x for x in struct if not any(same(x, t) for t in text)]
+    struct_only = [x for x in struct if not any(same_display(x, t) for t in text)]
     if text:   # a filed "ingredient" that is a whole list run together is not shown
         struct_only = [x for x in struct_only if len(x.split()) <= 12]
     for name in struct_only:                # filed but not found on the printed list
@@ -283,6 +330,75 @@ def main():
                 thin += row["thin"]
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
     print(f"wrote {dst}: {n} sunscreen labels, {thin} still thin (<= {THIN_MAX} inactives)")
+
+
+
+# ---------------------------------------------------------------------------
+# Display de-duplication. A filed (structured) name that is only another name
+# for an ingredient already on the printed list is not shown twice. This is
+# used ONLY to decide what is displayed; flags still read every filed name.
+_DUP_SYN = {
+    "VITAMINAPALMITATE": "RETINYLPALMITATE", "SACCHARINALATISSIMA": "LAMINARIASACCHARINA",
+    "SAXIFRAGASTOLONIFERA": "SAXIFRAGASARMENTOSA", "JOJOBAOILRANDOMIZED": "JOJOBAESTERS",
+    "HYDROGENATEDSOYBEANLECITHIN": "HYDROGENATEDLECITHIN", "LECITHINSOYBEAN": "LECITHIN",
+    "SOYBEANLECITHIN": "LECITHIN", "SUNFLOWERLECITHIN": "LECITHIN", "LECITHINSUNFLOWER": "LECITHIN",
+    "ALCOHOL": "ALCOHOLDENAT", "SDALCOHOL40B": "ALCOHOLDENAT", "DEHYDRATEDALCOHOL": "ALCOHOLDENAT",
+    "ALCOHOLDENATURED": "ALCOHOLDENAT", "SPRINGWATER": "WATER", "SEAWATER": "MARISAQUA",
+    "PETROLATUM": "PETROLATUM", "REDPETROLATUM": "PETROLATUM", "WHITEPETROLATUM": "PETROLATUM",
+    "MINERALOIL": "PARAFFINUMLIQUIDUM", "LIGHTMINERALOIL": "PARAFFINUMLIQUIDUM",
+    "YELLOWWAX": "BEESWAX", "WHITEWAX": "BEESWAX", "CERAALBA": "BEESWAX",
+    "SHEABUTTER": "BUTYROSPERMUMPARKIIBUTTER", "COCONUTOIL": "COCOSNUCIFERAOIL",
+}
+_PARTS = {"OIL", "SEED", "LEAF", "EXTRACT", "FRUIT", "PEEL", "ROOT", "FLOWER", "BARK", "KERNEL", "BUTTER",
+          "JUICE", "POWDER", "STEM", "HERB", "WHOLE", "WAX", "BEAN", "GUM", "RESIN", "WATER", "NUT", "SHELL",
+          "RHIZOME", "TWIG", "CALLUS", "SPROUT", "BUD", "HULL", "STALK", "THALLUS", "TUBER"}
+_GENERIC_PARTS = {"OIL", "EXTRACT", "WAX", "GUM", "RESIN", "BUTTER", "POWDER", "JUICE", "WATER", "WHOLE"}
+_QUAL = re.compile(r",\s*(?:SOYBEAN|SUNFLOWER|RANDOMIZED|UNSPECIFIED(?: FORM)?|NATURAL|SYNTHETIC|DL-|D-|L-)\b|"
+                   r"\s\(?MW\s*[\d,\s-]+\)?|\s\d{2,6}(?=\s*$)|\bSUBSP\.?\s+\w+|\bVAR\.?\s+\w+|\bHCL\b|\bHYDROCHLORIDE\b",
+                   re.I)
+
+
+def _dkey(name):
+    k0 = key((name or "").upper().replace("&AMP;", "&"))
+    if k0 in _DUP_SYN:
+        return _DUP_SYN[k0]
+    n = (name or "").upper().replace("&AMP;", "&")
+    n = _QUAL.sub(" ", n)
+    k = key(n)
+    return _DUP_SYN.get(k, k)
+
+
+def _latin(name):
+    n = re.sub(r"\(.*?\)", " ", (name or "").upper())
+    w = re.sub(r"[^A-Z ]+", " ", n).split()
+    parts = {x for x in w if x in _PARTS} - _GENERIC_PARTS
+    latin = [x for x in w if x not in _PARTS and len(x) >= 3]
+    return latin, parts
+
+
+def same_display(filed, printed):
+    """True when `filed` (a structured SPL name) is another name for `printed`."""
+    if same(filed, printed):
+        return True
+    for p in re.split(r"\s+\(and\)\s+|\s+&\s+|\s+and\s+(?=[A-Z])", printed or "", flags=re.I):
+        if same(filed, p) or _dkey(filed) == _dkey(p):
+            return True
+    kf, kp = _dkey(filed), _dkey(printed)
+    if kf == kp:
+        return True
+    lf, pf = _latin(filed)
+    lp, pp = _latin(printed)
+    if not lf or not lp:
+        return False
+    # same genus + species ("DAUCUS CAROTA SUBSP. SATIVUS SEED" ~ "Daucus Carota Sativa (Carrot) Seed Extract");
+    # if both name a plant part, the parts must overlap
+    if len(lf) >= 2 and len(lp) >= 2 and lf[0] == lp[0] and (
+            lf[1] == lp[1] or difflib.SequenceMatcher(None, lf[1], lp[1]).ratio() >= 0.8) and (not pf or not pp or pf & pp):
+        return True
+    # "<GENUS> OIL" / "<GENUS>" filed name for a printed binomial ("CANANGA OIL" ~ "Cananga Odorata Flower Oil")
+    if len(lf) == 1 and lf[0] == lp[0] and len(lp) >= 2 and (not pf or not pp or pf & pp):
+        return True
+    return False
 
 
 if __name__ == "__main__":
