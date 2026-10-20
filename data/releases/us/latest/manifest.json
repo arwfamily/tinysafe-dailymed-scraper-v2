@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-19",
  "git_tag": "us-data-2026-10-19",
- "released": "2026-10-20T03:32:44+00:00",
+ "released": "2026-10-20T03:34:22+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.2 · 2026-10-19",
  "source": {
@@ -125,6 +125,10 @@
   "us_baby_kids.jsonl": {
    "rows": 583,
    "sha256": "a2a5813fe0568cf794e10fe6f1cca78960fffbea6da3d48eeeab447eba16d5ac"
+  },
+  "us_out_of_scope.jsonl": {
+   "rows": 4596,
+   "sha256": "3e3541cb0b86ac19eb4e29e0d600b70d21fb8d39a871290f7cd78841eae8eb16"
   }
  }
 }

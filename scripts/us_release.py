@@ -92,6 +92,16 @@ def main():
                 f.write(json.dumps(r, ensure_ascii=False, separators=(",", ":")) + "\n")
         files[name + ".jsonl"] = {"rows": len(rows), "sha256": sha256(path)}
         counts[name] = stats(rows)
+    # what the master leaves out, and why: downstream collectors (global-sunscreen)
+    # use it so every copy of the US data has the same scope
+    out_path = os.path.join(OUT, "us_out_of_scope.jsonl")
+    with open(out_path, "w", encoding="utf-8") as f:
+        for r in master:
+            if not r.get("in_scope"):
+                f.write(json.dumps({"setid": r["setid"], "name": r.get("name"), "title": r.get("title"),
+                                    "excluded_reason": r.get("excluded_reason"),
+                                    "scope_override": r.get("scope_override")}, ensure_ascii=False) + "\n")
+    files["us_out_of_scope.jsonl"] = {"rows": sum(1 for r in master if not r.get("in_scope")), "sha256": sha256(out_path)}
     manifest = {
         "release_id": f"us-{a.run_date}",
         "git_tag": f"us-data-{a.run_date}",
