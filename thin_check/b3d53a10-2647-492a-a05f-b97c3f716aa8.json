@@ -1,0 +1,25 @@
+{
+ "setid": "b3d53a10-2647-492a-a05f-b97c3f716aa8",
+ "images": [
+  {
+   "name": "Inner.jpg",
+   "file": "img/b3d53a10-2647-492a-a05f-b97c3f716aa8/Inner.jpg"
+  },
+  {
+   "name": "Outer.jpg",
+   "file": "img/b3d53a10-2647-492a-a05f-b97c3f716aa8/Outer.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "6",
+ "title": "Tinted Sunscreen Cream SPF 30 1-Natural",
+ "inactive_section": "water, C9-12 alkane, caprylyl methicone, glycerin, polyglyceryl-3 diisostearate, silica, butyrospermum parkii (shea) butter, polyglyceryl-4 isostearate, cetyl peg/ppg-10/1 dimethicone, hexyl laurate, camellia oleifera seed oil, sodium chloride, tocopheryl acetate, leontopodium alpinum extract, mangifera indica (mango) fruit extract, thymus mastichina flower oil, salvia officinalis (sage) oil, alumina, synthetic fluorphlogopite, hydrogenated lecithin, dimethicone, disodium edta, glyceryl caprylate, ethylhexylglycerin, triethoxycaprylylsilane, citric acid, sodium citrate, benzoic acid, sodium benzoate, potassium sorbate, iron oxides, linalool, limonene.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "b3d53a10-2647-492a-a05f-b97c3f716aa8",
+  "name": "Tinted Sunscreen SPF 30 1-natural Cream",
+  "brand": "C.F.E.B. - Sisley",
+  "n_inactive": 33,
+  "thin_reason": null
+ }
+}

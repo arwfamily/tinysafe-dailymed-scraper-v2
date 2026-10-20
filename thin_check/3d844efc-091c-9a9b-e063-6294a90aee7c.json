@@ -1,0 +1,21 @@
+{
+ "setid": "3d844efc-091c-9a9b-e063-6294a90aee7c",
+ "images": [
+  {
+   "name": "wander beauty.jpg",
+   "file": "img/3d844efc-091c-9a9b-e063-6294a90aee7c/wander_beauty.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Wander Beauty Pack Up and Glow Priming",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "3d844efc-091c-9a9b-e063-6294a90aee7c",
+  "name": "Wander Beauty Pack Up And Glow Priming Lotion",
+  "brand": "Wander Beauty",
+  "n_inactive": 32,
+  "thin_reason": null
+ }
+}

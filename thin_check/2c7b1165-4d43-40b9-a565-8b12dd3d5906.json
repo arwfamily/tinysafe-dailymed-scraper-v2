@@ -1,0 +1,25 @@
+{
+ "setid": "2c7b1165-4d43-40b9-a565-8b12dd3d5906",
+ "images": [
+  {
+   "name": "obagi-01.jpg",
+   "file": "img/2c7b1165-4d43-40b9-a565-8b12dd3d5906/obagi-01.jpg"
+  },
+  {
+   "name": "obagi-02.jpg",
+   "file": "img/2c7b1165-4d43-40b9-a565-8b12dd3d5906/obagi-02.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "OBAGI-C® RX SYSTEM",
+ "inactive_section": "Water (Aqua), C15-19 Alkane, Octyldodecyl Neopentanoate, Polymethylsilsesquioxane, Sorbitan Olivate, Silica, Polyglyceryl-6 Polyrininoleate, Sodium Chloride, Xanthan Gum, Glycerin, Hydroxyacetophenone, Disodium EDTA, 1,2-Hexanediol, Caprylyl Glycol, Sodium Hydroxide, Triethoxycaprylsilane, Polyhydroxystearic Acid, Disteardimonium Hectorite, Polyglyceryl-2 Isostearate, Euphorbia Cerifera (candelilla) Wax, Beeswax, Dimethicone",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2c7b1165-4d43-40b9-a565-8b12dd3d5906",
+  "name": "Obagi-c Rx System Normal-dry Skin Intervention Kit",
+  "brand": "Obagi Cosmeceuticals LLC",
+  "n_inactive": 36,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "setid": "e1af1f74-ee85-4375-a7aa-f5f9af5dc918",
+ "images": [
+  {
+   "name": "dermae-01.jpg",
+   "file": "img/e1af1f74-ee85-4375-a7aa-f5f9af5dc918/dermae-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Derma E Mineral Sunscreen Mineral",
+ "inactive_section": "Camellia Sinensis Leaf Extract, Caprylic/Capric Triglyceride, Capryloyl Glycine, Chamomilla Recutita (Matricaria) Flower Extract, Mica, Potassium Sorbate, Silica, Sodium Benzoate, Tocopherol, Undecylenoyl Glycine. May contain Iron Oxides (CI 77492, CI 77489)",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e1af1f74-ee85-4375-a7aa-f5f9af5dc918",
+  "name": "Derma E Mineral Sunscreen Mineral Powder",
+  "brand": "derma e",
+  "n_inactive": 13,
+  "thin_reason": null
+ }
+}

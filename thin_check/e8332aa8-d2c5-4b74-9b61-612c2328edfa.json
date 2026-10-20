@@ -1,0 +1,33 @@
+{
+ "setid": "e8332aa8-d2c5-4b74-9b61-612c2328edfa",
+ "images": [
+  {
+   "name": "Inner Package02.jpg",
+   "file": "img/e8332aa8-d2c5-4b74-9b61-612c2328edfa/Inner_Package02.jpg"
+  },
+  {
+   "name": "Inner Package2.jpg",
+   "file": "img/e8332aa8-d2c5-4b74-9b61-612c2328edfa/Inner_Package2.jpg"
+  },
+  {
+   "name": "Outer Package02.jpg",
+   "file": "img/e8332aa8-d2c5-4b74-9b61-612c2328edfa/Outer_Package02.jpg"
+  },
+  {
+   "name": "Outer Package2.jpg",
+   "file": "img/e8332aa8-d2c5-4b74-9b61-612c2328edfa/Outer_Package2.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Sqween 100% Mineral Sunscreen Broad Spectrum SPF 30, Gold",
+ "inactive_section": "Water, C15-19 Alkane, Isocetyl Stearoyl Stearate, Undecane, Tribehenin, Silica, Tocopheryl Acetate, Helianthus Annuus (Sunflower) Seed Oil, Capryloyl Glycerin/Sebacic Acid Copolymer, Glyceryl Stearate, Simmondsia Chinensis (Jojoba) Seed Oil, Tridecane, Leuconostoc/Radish Root Ferment Filtrate, Lactobacillus, Aloe Barbadensis Leaf, Hyaluronic Acid, Acacia Senegal Gum, Xanthan Gum, Cocos Nucifera (Coconut) Fruit Extract. May Contain: Indigofera Tinctoria Leaf Extract, Caesalpinia Sappan Bark Extract, Synthetic Fluorphlogopite, Titanium Dioxide, Tin Oxide, Iron Oxide, Ferric Ferrocyanide.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "e8332aa8-d2c5-4b74-9b61-612c2328edfa",
+  "name": "Sqween Mineral Sunscreen Broad Spectrum SPF 30 Gold Cream",
+  "brand": "Sqween LLC",
+  "n_inactive": 27,
+  "thin_reason": null
+ }
+}

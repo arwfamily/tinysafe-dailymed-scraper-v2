@@ -1,0 +1,57 @@
+{
+ "setid": "4443398b-4073-448e-e054-00144ff8d46c",
+ "images": [
+  {
+   "name": "Actives.jpg",
+   "file": "img/4443398b-4073-448e-e054-00144ff8d46c/Actives.jpg"
+  },
+  {
+   "name": "C_Users_Lorelei Chavez_Documents_FDA Reg_Carton_HydratingDayCream.jpg",
+   "file": "img/4443398b-4073-448e-e054-00144ff8d46c/C_Users_Lorelei_Chavez_Documents_FDA_Reg_Carton_HydratingDayCream.jpg"
+  },
+  {
+   "name": "C_Users_Lorelei Chavez_Documents_FDA Reg_Pages from Carton_RenewingDayCream_OL (1).jpg",
+   "file": "img/4443398b-4073-448e-e054-00144ff8d46c/C_Users_Lorelei_Chavez_Documents_FDA_Reg_Pages_from_Carton_RenewingDayCream_OL__1_.jpg"
+  },
+  {
+   "name": "C_Users_Lorelei Chavez_Documents_FDA Reg_Tubes Renewing Day Cream.jpg",
+   "file": "img/4443398b-4073-448e-e054-00144ff8d46c/C_Users_Lorelei_Chavez_Documents_FDA_Reg_Tubes_Renewing_Day_Cream.jpg"
+  },
+  {
+   "name": "Uses.jpg",
+   "file": "img/4443398b-4073-448e-e054-00144ff8d46c/Uses.jpg"
+  },
+  {
+   "name": "Warnings.jpg",
+   "file": "img/4443398b-4073-448e-e054-00144ff8d46c/Warnings.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/4443398b-4073-448e-e054-00144ff8d46c/directions.jpg"
+  },
+  {
+   "name": "inactives renewing.jpg",
+   "file": "img/4443398b-4073-448e-e054-00144ff8d46c/inactives_renewing.jpg"
+  },
+  {
+   "name": "inactives.jpg",
+   "file": "img/4443398b-4073-448e-e054-00144ff8d46c/inactives.jpg"
+  },
+  {
+   "name": "tube.jpg",
+   "file": "img/4443398b-4073-448e-e054-00144ff8d46c/tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "4443398b-4073-448e-e054-00144ff8d46c",
+  "name": "Younique Royalty Hydrating Day Cream SPF 20 Lotion Younique Royalty Renewing Day Cream SPF 20 Lotion",
+  "brand": null,
+  "n_inactive": 1,
+  "thin_reason": "no_printed_list"
+ }
+}

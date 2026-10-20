@@ -1,0 +1,25 @@
+{
+ "setid": "fa81a56c-25be-4832-8807-cc9fc4654a4f",
+ "images": [
+  {
+   "name": "primary.jpg",
+   "file": "img/fa81a56c-25be-4832-8807-cc9fc4654a4f/primary.jpg"
+  },
+  {
+   "name": "secondary.jpg",
+   "file": "img/fa81a56c-25be-4832-8807-cc9fc4654a4f/secondary.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "2",
+ "title": "Nourishing Daily Defense Lotion SPF15",
+ "inactive_section": "Inactive Ingredients: Water (Aqua), Ethylhexyl Methoxycinnamate, Pentylene Glycol, Ethylhexyl Isononanoate, Octyldodecyl Neopentanoate, Sucrose Cocoate, Cetearyl Alcohol, Glycerin, Zinc Oxide, Caprylic/Capric Triglyceride, Zea mays (corn) oil, glycine soja (soybean) seed extract, glycine soja (soybean) lipids, polyglyceryl-3 distearate, steareth-20, phenoxyethanol, chloraphenesin, glycerin, methylparaben, benzoic acid, squalane, algae extracts, artemisia princeps leaf extract, behenyl alcohol, phytosteryl isostearate, magnesium aluminum silicate, potassium cetyl phosphate, Theobroma cacao (Cocoa) seed butter, xanthan gum, dimethicone copolyol, tocopheryl acetate (vitamin E), prunus amygdalus (sweet almond) oil, prunus armensca (apricot) kernel oil, lecithin, plankton extract, fragrance (essential oils), disodium EDTA, tetrahexyldecyl ascorbate (vitamin C), panthenyl triacetate (vitamin B), panax ginseng root extract, chamomilla recutita (marticaria) flower extract, ulva lactuca (sea lettucs) extract, ginkgo biloba leaf extract, sodium PCA, retinyl palmitate (vitamin A), ergothioneine, aloe barbadensis, vitis vinifera (grape) seed extract, camellia oleifera (green tea) leaf extract, dimethicone, citric acid.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "fa81a56c-25be-4832-8807-cc9fc4654a4f",
+  "name": "Natria Nourishing Daily Defense Cream",
+  "brand": "Wasatch Product Development",
+  "n_inactive": 48,
+  "thin_reason": null
+ }
+}

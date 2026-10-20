@@ -1,0 +1,25 @@
+{
+ "setid": "f63dd9ef-a65a-4d0a-abb9-981f5fd4979c",
+ "images": [
+  {
+   "name": "box.jpg",
+   "file": "img/f63dd9ef-a65a-4d0a-abb9-981f5fd4979c/box.jpg"
+  },
+  {
+   "name": "tube.jpg",
+   "file": "img/f63dd9ef-a65a-4d0a-abb9-981f5fd4979c/tube.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "Drug Facts",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f63dd9ef-a65a-4d0a-abb9-981f5fd4979c",
+  "name": "Noevir Raysela Cream",
+  "brand": "NOEVIR USA INC",
+  "n_inactive": 0,
+  "thin_reason": "no_printed_list"
+ }
+}

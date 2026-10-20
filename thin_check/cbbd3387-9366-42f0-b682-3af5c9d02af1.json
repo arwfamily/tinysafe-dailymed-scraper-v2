@@ -1,0 +1,21 @@
+{
+ "setid": "cbbd3387-9366-42f0-b682-3af5c9d02af1",
+ "images": [
+  {
+   "name": "E6MW.jpg",
+   "file": "img/cbbd3387-9366-42f0-b682-3af5c9d02af1/E6MW.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "",
+ "inactive_section": "INACTIVE INGREDIENTS: TALC [] SILICA [] ZINC STEARATE [] OCTYLDODECYL STEAROYL STEARATE [] HYDROGENATED COCO-GLYCERIDES [] NELUMBIUM SPECIOSUM FLOWER EXTRACT [] TRIETHOXYCAPRYLYLSILANE [] PROPYLENE GLYCOL DICAPRYLATE/DICAPRATE [] DIMETHICONE [] CAPRYLYL GLYCOL [] HEXYLENE GLYCOL [] PENTAERYTHRITYL TETRA-DI-T-BUTYL HYDROXYHYDROCINNAMATE [] DEHYDROACETIC ACID [] [+/- BISMUTH OXYCHLORIDE (CI 77163) [] IRON OXIDES (CI 77491, CI 77492, CI 77499) [] YELLOW 5 LAKE (CI 19140) [] YELLOW 6 LAKE (CI 15985) [] TITANIUM DIOXIDE (CI 77891) [] MICA [] RED 30 LAKE (CI 73360)]",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "cbbd3387-9366-42f0-b682-3af5c9d02af1",
+  "name": "Illuminating Finish Powder",
+  "brand": "Bobbi Brown Professional Cosmetics Inc.",
+  "n_inactive": 3,
+  "thin_reason": "no_printed_list"
+ }
+}

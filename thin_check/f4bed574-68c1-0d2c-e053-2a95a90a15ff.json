@@ -1,0 +1,21 @@
+{
+ "setid": "f4bed574-68c1-0d2c-e053-2a95a90a15ff",
+ "images": [
+  {
+   "name": "New Glo Skin Beauty Label.jpg",
+   "file": "img/f4bed574-68c1-0d2c-e053-2a95a90a15ff/New_Glo_Skin_Beauty_Label.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "5",
+ "title": "Glo Skin",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "f4bed574-68c1-0d2c-e053-2a95a90a15ff",
+  "name": "Glo Skin Lotion",
+  "brand": "Glo Skin Beauty",
+  "n_inactive": 34,
+  "thin_reason": null
+ }
+}
