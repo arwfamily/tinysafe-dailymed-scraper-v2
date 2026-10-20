@@ -1,0 +1,33 @@
+{
+ "setid": "56d401d1-7e7a-96bf-e063-6394a90a5471",
+ "images": [
+  {
+   "name": "Bottle Label.jpg",
+   "file": "img/56d401d1-7e7a-96bf-e063-6394a90a5471/Bottle_Label.jpg"
+  },
+  {
+   "name": "Directions.jpg",
+   "file": "img/56d401d1-7e7a-96bf-e063-6394a90a5471/Directions.jpg"
+  },
+  {
+   "name": "Inactive Ingredients.jpg",
+   "file": "img/56d401d1-7e7a-96bf-e063-6394a90a5471/Inactive_Ingredients.jpg"
+  },
+  {
+   "name": "Outer carton.jpg",
+   "file": "img/56d401d1-7e7a-96bf-e063-6394a90a5471/Outer_carton.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Mineral SPF 30",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "56d401d1-7e7a-96bf-e063-6394a90a5471",
+  "name": "Biocorneum Silishield Mineral SPF 30 (Mineral Sunscreen SPF 30) Gel",
+  "brand": "Biodermis LLC",
+  "n_inactive": 17,
+  "thin_reason": null
+ }
+}
