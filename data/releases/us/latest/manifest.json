@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-19",
  "git_tag": "us-data-2026-10-19",
- "released": "2026-10-20T03:51:13+00:00",
+ "released": "2026-10-20T13:50:46+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.2 · 2026-10-19",
  "source": {
@@ -32,8 +32,7 @@
    },
    "label_check": {
     "confirmed": 1737,
-    "text_confirms_current": 7537,
-    "not_checked_yet": 8,
+    "text_confirms_current": 7545,
     "no_list_on_label_images": 207,
     "image_unreadable": 24,
     "partial": 10,
@@ -41,7 +40,7 @@
     "non_english_label": 4,
     "needs_review": 1
    },
-   "label_verified_share": 0.9728,
+   "label_verified_share": 0.9736,
    "inactives_7_or_fewer": 299,
    "recalls": {
     "labels_matched": 5,
@@ -63,15 +62,14 @@
    },
    "label_check": {
     "confirmed": 1224,
-    "text_confirms_current": 3685,
-    "not_checked_yet": 8,
+    "text_confirms_current": 3693,
     "no_list_on_label_images": 199,
     "image_unreadable": 20,
     "partial": 7,
     "label_image_mismatch": 13,
     "non_english_label": 4
    },
-   "label_verified_share": 0.9527,
+   "label_verified_share": 0.9543,
    "inactives_7_or_fewer": 127,
    "recalls": {
     "labels_matched": 5,
@@ -115,15 +113,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9563,
-   "sha256": "27e7486be41becf9fb72c7cea8b8997f00e228c63bcf8a2cd0efebb4db3d46f6"
+   "sha256": "12ff0055c98f94a390eebe9c8a37c100a56ad969d973a8b9150f8e8b351167ac"
   },
   "us_mineral.jsonl": {
    "rows": 5168,
-   "sha256": "8432b7f5f08325a3360c96127a300d1dad5b471e46c9456869d962df37a8818d"
+   "sha256": "1422781ed87994da7f07d60eba4b439700a4bb23bac75489aa53466c82aeb27b"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "a2a5813fe0568cf794e10fe6f1cca78960fffbea6da3d48eeeab447eba16d5ac"
+   "sha256": "f034d36d35213f0020a608ef28c643b89bcf142240960f3a14735949b61983b4"
   },
   "us_out_of_scope.jsonl": {
    "rows": 4630,
