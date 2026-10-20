@@ -1,0 +1,21 @@
+{
+ "setid": "5fc75cef-5b76-44ab-891a-7b90c04a0681",
+ "images": [
+  {
+   "name": "skin-01.jpg",
+   "file": "img/5fc75cef-5b76-44ab-891a-7b90c04a0681/skin-01.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "SkinPerfect Primer SPF 30",
+ "inactive_section": "Cyclopentasiloxane, Caprylic/Capric Triglyceride, Dimethicone Crosspolymer, Diisopropyl Adipate, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Silica, Lauryl Peg-9 Polydimethylsiloxyethyl Dimethicone, Polyglyceryl-3 Polydimethylsiloxyethyl, Dimethicone, Water/Aqua/Eau, Arginine/Lysine Polypeptide, Camellia Sinensis Leaf Extract, Palmitoyl Dipeptide-5, Diaminobutyroyl Hydroxythreonine, Palmitoyl Dipeptide-5 Diaminohydroxybutyrate, Sodium Hyaluronate, Hydrolyzed Soy Protein, Silanetriol, Hydrolyzed Pearl, Lavendula Spica (Lavender) Flower Oil, Lavandula Hybrida Oil, Eucalyptus Globulus Leaf Oil, Sodium PCA, Polyhydroxystearic Acid, Triethoxycaprylylsilane, Stearic Acid, Aluminum Hydroxide, PEG/PPG-18/18 Dimethicone, PEG/PPG-20/15 Dimethicone, Glycerin, Phenoxyethanol, Ethylhexylglycerin, Tin Oxide, Iron Oxides CI77491, CI77492, CI77499.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "5fc75cef-5b76-44ab-891a-7b90c04a0681",
+  "name": "Skinperfect Primer SPF 30 Lotion",
+  "brand": "Dermalogica, Inc.",
+  "n_inactive": 39,
+  "thin_reason": null
+ }
+}

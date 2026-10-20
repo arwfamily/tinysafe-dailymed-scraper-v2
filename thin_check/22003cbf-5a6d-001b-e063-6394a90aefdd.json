@@ -1,0 +1,41 @@
+{
+ "setid": "22003cbf-5a6d-001b-e063-6394a90aefdd",
+ "images": [
+  {
+   "name": "Active Ingredients.jpg",
+   "file": "img/22003cbf-5a6d-001b-e063-6394a90aefdd/Active_Ingredients.jpg"
+  },
+  {
+   "name": "PDP.jpg",
+   "file": "img/22003cbf-5a6d-001b-e063-6394a90aefdd/PDP.jpg"
+  },
+  {
+   "name": "directions.jpg",
+   "file": "img/22003cbf-5a6d-001b-e063-6394a90aefdd/directions.jpg"
+  },
+  {
+   "name": "inactive ingredients.jpg",
+   "file": "img/22003cbf-5a6d-001b-e063-6394a90aefdd/inactive_ingredients.jpg"
+  },
+  {
+   "name": "uses.jpg",
+   "file": "img/22003cbf-5a6d-001b-e063-6394a90aefdd/uses.jpg"
+  },
+  {
+   "name": "warnings.jpg",
+   "file": "img/22003cbf-5a6d-001b-e063-6394a90aefdd/warnings.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "3",
+ "title": "Ciele Bronze and Protect",
+ "inactive_section": "",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "22003cbf-5a6d-001b-e063-6394a90aefdd",
+  "name": "Ciele Bronze And Protect Lotion",
+  "brand": "Ciele LLC",
+  "n_inactive": 29,
+  "thin_reason": null
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "setid": "2dfd0edd-7805-4d45-b4fe-82d3173d967d",
+ "images": [
+  {
+   "name": "nest-01.jpg",
+   "file": "img/2dfd0edd-7805-4d45-b4fe-82d3173d967d/nest-01.jpg"
+  },
+  {
+   "name": "nest-02.jpg",
+   "file": "img/2dfd0edd-7805-4d45-b4fe-82d3173d967d/nest-02.jpg"
+  },
+  {
+   "name": "nest-03.jpg",
+   "file": "img/2dfd0edd-7805-4d45-b4fe-82d3173d967d/nest-03.jpg"
+  },
+  {
+   "name": "nest-04.jpg",
+   "file": "img/2dfd0edd-7805-4d45-b4fe-82d3173d967d/nest-04.jpg"
+  }
+ ],
+ "error": null,
+ "spl_version": "1",
+ "title": "NEST Fragrances",
+ "inactive_section": "Beeswax (Cera Alba), Macadamia Ternifolia Seed Oil, Cocos Nucifera (Coconut) Oil, Vitis Vinifera (Grape) Seed Oil, Simmond- sia Chinensis (Jojoba) Seed Oil, Copernicia Cerifera (Carnauba) Wax, Prunus Armeniaca (Apricot) Kernel Oil, Shea Butter Ethyl Esters, Fragrance (Parfum), Erythritol, Flavor (Aroma), Tocopheryl Acetate, Rosma- rinus Officinalis (Rose- mary) Leaf Extract, Helianthus Annuus (Sunflower) Seed Oil.",
+ "ingredient_passages": [],
+ "db": {
+  "setid": "2dfd0edd-7805-4d45-b4fe-82d3173d967d",
+  "name": "Nest Fragrances Bamboo And Jasmine Stick Nest Fragrances Ginger And Neroli Stick Nest Fragrances Grapefruit And Verbena Stick Nest Fragrances Ocean Mist And Coconut Water Stick",
+  "brand": "Nest Fragrances LLC",
+  "n_inactive": 14,
+  "thin_reason": null
+ }
+}
