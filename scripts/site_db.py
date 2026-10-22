@@ -60,7 +60,19 @@ def build(release_dir):
         out.append(p)
     chp = os.path.join(ROOT, "data/reference/rules_changelog.json")
     changelog = json.load(open(chp, encoding="utf-8"))["changes"] if os.path.exists(chp) else []
+    # the ingredient dictionary (scripts/cosing/dictionary.py): per name, its main job in a
+    # sunscreen and how we know (r reviewed by two reads, c CosIng functions, p plant material,
+    # x two reads of a name CosIng lacks); null where nothing is verified
+    sys.path.insert(0, os.path.join(HERE, "cosing"))
+    import dictionary as DICT
+    dic = DICT.build(names)
+    SRC = {"reviewed": "r", "cosing": "c", "plant": "p", "read": "x"}
+    nj = [dic[n]["job"] if dic[n]["src"] in SRC else None for n in names]
+    njs = [SRC.get(dic[n]["src"]) for n in names]
     return {"count": len(out), "as_of": as_of, "release_id": manifest["release_id"], "meta": meta,
+            "nj": nj, "njs": njs, "dictionary": {"source": "EU CosIng register (functions), main job reviewed by two "
+                                                 "independent reads for the most-used ingredients",
+                                                 "cosing_fetched": json.load(open(os.path.join(ROOT, "data/reference/cosing/manifest.json")))["fetched"]},
             "rules_changelog": changelog,
             "rules_version": RULES_VERSION, "flags": [], "inactives_as_of": as_of, "inactives_note": NOTE,
             "names": names, "p": out}
