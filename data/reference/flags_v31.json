@@ -12186,13 +12186,13 @@
    "s": "Contact Dermatitis literature on essential-oil allergy; SCCS opinions on lavender, tea tree."
   },
   "asteraceae": {
-   "t": "T2",
+   "t": "T3",
    "l": "Contains a plant from the ragweed (Asteraceae) family",
    "w": "Chamomile, calendula and arnica are among the most frequently reported plant sensitizers.",
    "s": "Contact Dermatitis reviews of Compositae/Asteraceae allergy; AAD."
   },
   "oat": {
-   "t": "T2",
+   "t": "T3",
    "l": "Contains oat",
    "w": "Oat sensitization is documented in children with eczema; also a food allergen.",
    "s": "Boussault et al., Allergy 2007 (oat sensitization in atopic children)."
@@ -12252,7 +12252,7 @@
    "s": "ACDS Allergen of the Year 2023 (lanolin)."
   },
   "propolis_beeswax": {
-   "t": "T2",
+   "t": "T3",
    "l": "Contains bee-derived ingredients",
    "w": "Propolis is a documented contact allergen.",
    "s": "Contact Dermatitis literature on propolis."
@@ -12269,17 +12269,35 @@
    "w": "Irritant and allergen in some children.",
    "s": "ACDS Allergen of the Year 2018."
   },
-  "drying_alcohol": {
+  "alkyl_glucoside": {
    "t": "T2",
+   "l": "Contains an alkyl glucoside (such as decyl glucoside)",
+   "w": "A plant-derived emulsifier. The American Contact Dermatitis Society named alkyl glucosides Allergen of the Year in 2017.",
+   "s": "ACDS Allergen of the Year 2017."
+  },
+  "sulfite": {
+   "t": "T2",
+   "l": "Contains a sulfite",
+   "w": "Used to keep ingredients from oxidizing. The American Contact Dermatitis Society named sulfites Allergen of the Year in 2024.",
+   "s": "ACDS Allergen of the Year 2024."
+  },
+  "isobornyl_acrylate": {
+   "t": "T2",
+   "l": "Contains isobornyl acrylate",
+   "w": "An acrylate the American Contact Dermatitis Society named Allergen of the Year in 2020.",
+   "s": "ACDS Allergen of the Year 2020."
+  },
+  "drying_alcohol": {
+   "t": "T3",
    "l": "Contains drying alcohol",
    "w": "Stings and dries; fatty alcohols (cetyl, stearyl) are not counted.",
    "s": "AAD; NEA."
   },
   "propyl_butyl_paraben": {
-   "t": "T2",
+   "t": "T1",
    "l": "Contains propyl- or butylparaben",
    "w": "The EU bans these in leave-on products for the diaper area of children under three.",
-   "s": "EU Regulation 1004/2014."
+   "s": "EU Regulation 1004/2014 (Cosmetics Regulation Annex V)."
   },
   "latex": {
    "t": "T2",
@@ -12288,10 +12306,10 @@
    "s": "FDA latex labelling guidance."
   },
   "citrus_photosensitizer": {
-   "t": "T2",
+   "t": "T1",
    "l": "Contains a phototoxic citrus derivative",
-   "w": "Can cause reactions in sunlight.",
-   "s": "SCCS; dermatology literature on furocoumarins."
+   "w": "In sunlight these can cause skin reactions. The EU caps them in sunscreens at 1 mg/kg; the label does not say whether this oil is furocoumarin-free.",
+   "s": "EU Cosmetics Regulation Annex II entry 358; SCCS."
   },
   "phenoxyethanol": {
    "t": "T3",

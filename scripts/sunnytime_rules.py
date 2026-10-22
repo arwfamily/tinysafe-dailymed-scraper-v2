@@ -66,6 +66,10 @@ P = {
     "propolis_beeswax": r"\bHONEY\b|\bMEL\b|BEESWAX|CERA ALBA|CERA FLAVA|PROPOLIS|ROYAL JELLY|BEE VENOM|APIS MELLIFERA",
     "capb": r"COCAMIDOPROPYL BETAINE",
     "propylene_glycol": r"(?<![A-Z])PROPYLENE GLYCOL",
+    # ACDS Allergen of the Year 2017 / 2024 / 2020 (rules v3.4)
+    "alkyl_glucoside": r"\b(DECYL|LAURYL|COCO|CAPRYLYL/CAPRYL|CAPRYLYL|CAPRYL|CETEARYL|ARACHIDYL|C12-20 ALKYL|MYRISTYL|BEHENYL|UNDECYL|OCTYL|C8-16 ALKYL)[- ]GLUCOSIDE\b|\bLAURYL POLYGLUCOSE\b",
+    "sulfite": r"\b(SODIUM|POTASSIUM|AMMONIUM|CALCIUM)? ?(META)?BI?SULFITE\b|\bSULPHITE\b|\bSODIUM SULFITE\b",
+    "isobornyl_acrylate": r"\bISOBORNYL ACRYLATE\b",
     "drying_alcohol": r"^ALCOHOL$|^ALCOHOL DENAT|^SD ALCOHOL|\bALCOHOL DENAT|\bSD ALCOHOL|^ETHANOL$|^ETHYL ALCOHOL$|"
                       r"^DENATURED ALCOHOL|^ISOPROPYL ALCOHOL$|^ALCOHOL \(",
     "propyl_butyl_paraben": r"PROPYL ?PARABEN|BUTYL ?PARABEN|ISOBUTYL ?PARABEN|ISOPROPYL ?PARABEN",
@@ -258,4 +262,5 @@ class PlantIndex:
 
 # Flags where v3.1's name decisions are incomplete (evidence was capped at 4 names
 # per flag, so an unflagged name is not a decision): the patterns add to v3.1.
-ADDITIVE = {"essential_oil", "ethoxylated", "hidden_uv_booster", "microplastic_polymer", "fragrance"}
+ADDITIVE = {"essential_oil", "ethoxylated", "hidden_uv_booster", "microplastic_polymer", "fragrance",
+            "alkyl_glucoside", "sulfite", "isobornyl_acrylate"}   # new in v3.4: v3.1 never had them

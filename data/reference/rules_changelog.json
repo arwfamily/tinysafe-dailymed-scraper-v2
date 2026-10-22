@@ -1,6 +1,12 @@
 {
  "changes": [
   {
+   "version": "v3.4",
+   "date": "2026-10-22",
+   "change": "Each group now has one written test. 'Check if your child reacts' is limited to three named lists (ACDS Allergen of the Year, EU labelled fragrance allergens, US major food allergens), so alkyl glucosides, sulfites and isobornyl acrylate are added; ragweed-family plants, bee-derived ingredients, oat and drying alcohol move to 'Also in it'. Propyl/butylparaben and phototoxic citrus move to 'Act on it' (EU restrictions). Synthetic beeswax no longer counts as bee-derived; an essential oil must be an oil. Ingredient jobs now come from the EU CosIng register, reviewed twice.",
+   "why": "So that what we show first follows a test anyone can check, the same for every brand."
+  },
+  {
    "version": "v3.3",
    "date": "2026-10-22",
    "change": "'Contains synthetic polymer microparticles' is now 'Contains a synthetic polymer powder (for texture)'.",
