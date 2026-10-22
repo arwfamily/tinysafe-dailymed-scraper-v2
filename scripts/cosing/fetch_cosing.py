@@ -32,22 +32,48 @@ def page(p, n=200):
     raise SystemExit(f"page {p} failed")
 
 
+def q_range(lo, hi):
+    return json.dumps({"bool": {"must": [{"terms": {"itemType": ["ingredient"]}},
+                                         {"range": {"substanceId": {"gte": lo, "lt": hi}}}]}})
+
+
+def total(lo, hi):
+    global QUERY
+    QUERY = q_range(lo, hi)
+    return page(1, 1)["totalResults"]
+
+
+def ranges(lo, hi):
+    """substanceId ranges each under the API's 10,000-result window."""
+    n = total(lo, hi)
+    if n == 0:
+        return []
+    if n < 9500 or hi - lo <= 1:
+        return [(lo, hi, n)]
+    mid = (lo + hi) // 2
+    return ranges(lo, mid) + ranges(mid, hi)
+
+
 def main():
+    global QUERY
     os.makedirs("cosing", exist_ok=True)
-    first = page(1)
-    total = first["totalResults"]
-    pages = -(-total // 200)
+    grand = page(1, 1)["totalResults"]
+    parts = ranges(0, 2_000_000)
+    print("parts", parts, file=sys.stderr)
     seen, rows = set(), []
-    for p in range(1, pages + 1):
-        d = first if p == 1 else page(p)
-        for r in d["results"]:
-            m = r["metadata"]
-            sid = (m.get("substanceId") or [None])[0] or r.get("reference")
-            if sid in seen:
-                continue
-            seen.add(sid)
-            rows.append({k: (m.get(k) or []) for k in KEEP})
-        time.sleep(0.5)
+    for lo, hi, n in parts:
+        QUERY = q_range(lo, hi)
+        for p in range(1, -(-n // 200) + 1):
+            d = page(p)
+            for r in d["results"]:
+                m = r["metadata"]
+                sid = (m.get("substanceId") or [None])[0] or r.get("reference")
+                if sid in seen:
+                    continue
+                seen.add(sid)
+                rows.append({k: (m.get(k) or []) for k in KEEP})
+            time.sleep(0.3)
+    total = grand
     with open("cosing/cosing_ingredients.jsonl", "w") as f:
         for r in rows:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
