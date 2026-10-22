@@ -1,0 +1,38 @@
+{
+ "note": "Main-job corrections from the independent audit (2026-10-22). Each one says why.",
+ "jobs": {
+  "MENADIONE": [
+   "other",
+   "vitamin K3, not a scent; CosIng's fragrance listing does not fit a sunscreen"
+  ],
+  "DIDECYLDIMONIUM CHLORIDE": [
+   "preservative",
+   "quaternary ammonium antimicrobial"
+  ],
+  "ISOAMYL ACETATE": [
+   "fragrance",
+   "fruity aroma ester; in a sunscreen it is there for scent"
+  ],
+  "ACETYL CEDRENE": [
+   "fragrance",
+   "woody aroma chemical"
+  ],
+  "CITRUS AURANTIUM AMARA FLOWER OIL": [
+   "fragrance",
+   "neroli essential oil"
+  ],
+  "CHAMOMILLA RECUTITA FLOWER OIL": [
+   "fragrance",
+   "essential oil"
+  ],
+  "CHAMOMILLA RECUTITA OIL": [
+   "fragrance",
+   "chamomile essential oil"
+  ]
+ },
+ "not_ingredients": [
+  "DRY PLACE",
+  "STORE IN A COOL DRY PLACE",
+  "HYDROLYSATE"
+ ]
+}

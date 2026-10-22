@@ -66,6 +66,10 @@ def job(functions, name, inci=None, booster=False, eu_allergen=False):
     strong = sorted((f for f in fs if f in RANK), key=RANK.get)
     # UV filter/absorber from CosIng only counts as the job for a declared active; for an
     # inactive the site's booster rule decides, so skip it here
+    u0 = (inci or name or "").upper()
+    if "FRAGRANCE" in fs and (not BINOMIAL.match(u0) and not FIXED_OIL.search(u0) and not re.search(r"\bEXTRACT\b", u0)
+                              or ESSENTIAL_OIL.search(u0)):
+        return "fragrance", "FRAGRANCE"
     if "UV FILTER" in fs:                       # an EU-listed UV filter (Annex VI), e.g. TEA-salicylate
         return "uv_filter", "UV FILTER"
     strong = [f for f in strong if JOB[f] != "uv_filter"]
@@ -84,6 +88,7 @@ def job(functions, name, inci=None, booster=False, eu_allergen=False):
     return None, None
 
 
+ESSENTIAL_OIL = re.compile(r"\b(FLOWER|LEAF|PEEL|HERB|BARK|WOOD|ROOT|RHIZOME|NEEDLE|TWIG|RESIN|GUM)\b.*\bOIL\b")
 FIXED_OIL = re.compile(r"\b(SEED|KERNEL|NUT|FRUIT|GERM|BRAN)\b.*\bOIL\b|\bBUTTER\b|\bCERA\b")
 
 

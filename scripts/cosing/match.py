@@ -76,15 +76,18 @@ def candidates(name):
     u = re.sub(r"\s+", " ", u).strip(" .,;:")
     out = [u]
     out.append(re.sub(r"\([^()]*\)|\[[^\[\]]*\]", " ", u))                      # "OLEA EUROPAEA (OLIVE) FRUIT OIL"
+    out.append(re.sub(r"[()]", " ", u))                                         # "(SHEA) BUTTER" -> SHEA BUTTER
     for m in re.findall(r"\(([^()]*)\)", u):                                      # "WATER (AQUA)" -> AQUA
         out.append(m)
     for part in re.split(r"\s*/\s*|\s*\\\s*", u):                                 # "WATER/AQUA/EAU"
         out.append(part)
     out.append(re.sub(r"^(FD&C|D&C|EXT\.? D&C)\s+", "", u).replace("NO. ", "").replace("NO.", ""))
     res = []
+    GENERIC1 = {"BUTTER", "OIL", "EXTRACT", "WATER", "WAX", "POWDER", "JUICE", "SEED", "LEAF", "FLOWER", "ROOT",
+                "FRUIT", "COLOR", "COLOUR", "STARCH", "PROTEIN", "FLOUR", "MILK", "GUM", "RESIN", "ACID", "ALCOHOL"}
     for c in out:
         c = re.sub(r"\s+", " ", c).strip(" .,;:-")
-        if not c:
+        if not c or (c != u and c in GENERIC1 and c not in ("WATER",)):
             continue
         res.append(c)
         if c in US_EU:

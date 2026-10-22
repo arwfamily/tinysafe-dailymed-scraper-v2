@@ -74,9 +74,49 @@ def entry(name, jobs, reads, by):
     return {"job": None, "src": "none"}
 
 
+ALLOWED = {"base", "emollient", "occlusive", "humectant", "emulsifier", "emulsion_stabiliser", "thickener",
+           "film_former", "preservative", "preservative_booster", "chelating", "antioxidant", "ph", "colorant",
+           "opacifier", "absorbent", "slip", "dispersing", "mineral_coating", "solvent", "fragrance", "soothing",
+           "skin_conditioning", "skin_protecting", "uv_filter", "uv_booster", "photostabiliser",
+           "propellant", "denaturant", "astringent", "exfoliant", "other"}
+# CosIng-rule keys outside the reviewed vocabulary -> the nearest allowed job
+FOLD = {"tonic": "skin_conditioning", "antistatic": "skin_conditioning", "refreshing": "skin_conditioning",
+        "bulking": "absorbent", "anticaking": "absorbent", "binder": "thickener", "plasticiser": "film_former",
+        "light_stabiliser": "photostabiliser", "antifoaming": "other", "deodorant": "other", "abrasive": "exfoliant",
+        "solubiliser": "emulsifier", "surfactant": "emulsifier", "antimicrobial": "preservative_booster",
+        "flavour": "other", "uv_filter": "uv_filter",
+        "cleansing": "emulsifier"}   # a surfactant left on the skin works as an emulsifier
+# a plant extract is described by what it is used as, never by a promised benefit or a drug-like claim
+EXTRACT_CLAIMS = {"emollient", "astringent", "skin_protecting", "soothing", "antioxidant", "humectant"}
+EXTRACT_OK = ("ROSMARINUS",)        # rosemary extract: a working antioxidant for the oil phase
+
+
+def finish(e, ov):
+    k = e.get("inci") or ""
+    if k in ov["jobs"]:
+        e = dict(e, job=ov["jobs"][k][0], src="reviewed", why=ov["jobs"][k][1])
+    j = e.get("job")
+    if j and j not in ALLOWED:
+        e = dict(e, job=FOLD.get(j, "other"))
+    if (e.get("origin") == "plant" and re.search(r"\bEXTRACT\b|\bFERMENT\b|\bFILTRATE\b", k)
+            and e.get("job") in EXTRACT_CLAIMS and not k.startswith(EXTRACT_OK)):
+        e = dict(e, job="skin_conditioning")
+    if e.get("job") == "skin_protecting" and e.get("origin") == "plant":
+        e = dict(e, job="skin_conditioning")
+    return e
+
+
 def build(names):
     jobs, reads, by = load()
-    return {n: entry(n, jobs, reads, by) for n in names}
+    ov = json.load(open(os.path.join(REF, "job_overrides.json")))
+    junk = {M.k(x) for x in ov["not_ingredients"]}
+    out = {}
+    for n in names:
+        if M.k(n) in junk:
+            out[n] = {"job": None, "src": "not_ingredient"}
+            continue
+        out[n] = finish(entry(n, jobs, reads, by), ov)
+    return out
 
 
 def main():
