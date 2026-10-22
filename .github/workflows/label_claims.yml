@@ -1,6 +1,8 @@
 name: Read label claims (broad spectrum, aging alert)
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 14 * * 2'   # weekly, the day after the scrape
 permissions:
   contents: write
 jobs:
@@ -13,16 +15,12 @@ jobs:
         with: { python-version: '3.11' }
       - run: pip install -q -r requirements.txt 2>/dev/null || true
       - run: python scripts/label_claims.py
-      - name: Push to the output branch
-        if: always()
+      - name: Commit the claims to main
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          mv label_claims /tmp/label_claims
-          git checkout --orphan out-tmp
-          git rm -rq --cached . 2>/dev/null || true
-          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-          cp -r /tmp/label_claims .
-          git add label_claims
-          git commit -qm "label claims $(date -u +%F)"
-          git push -f origin out-tmp:label-claims
+          cp label_claims/claims.jsonl data/views/label_claims.jsonl
+          git add data/views/label_claims.jsonl
+          git diff --cached --quiet && exit 0
+          git commit -m "data: label claims (broad spectrum, aging alert)"
+          for i in 1 2 3; do git pull --rebase --autostash origin main && git push origin HEAD:main && break; sleep 10; done
