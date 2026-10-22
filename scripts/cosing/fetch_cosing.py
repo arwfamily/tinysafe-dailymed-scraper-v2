@@ -58,11 +58,18 @@ def main():
     global QUERY
     os.makedirs("cosing", exist_ok=True)
     grand = page(1, 1)["totalResults"]
-    parts = ranges(0, 2_000_000)
+    # substanceId is a keyword compared as text, and the API accepts only digit bounds:
+    # these eight text ranges cover every record (checked: their totals sum to the grand total)
+    parts = []
+    for lo, hi in [("0", "2"), ("2", "4"), ("4", "5"), ("5", "6"), ("6", "7"), ("7", "8"), ("8", "9"), ("9", "99999999")]:
+        QUERY = json.dumps({"bool": {"must": [{"terms": {"itemType": ["ingredient"]}},
+                                              {"range": {"substanceId": {"gte": lo, "lte" if hi == "99999999" else "lt": hi}}}]}})
+        parts.append((QUERY, page(1, 1)["totalResults"]))
+    assert sum(n for _, n in parts) == grand, (parts, grand)
+    assert all(n < 10000 for _, n in parts), parts
     print("parts", parts, file=sys.stderr)
     seen, rows = set(), []
-    for lo, hi, n in parts:
-        QUERY = q_range(lo, hi)
+    for QUERY, n in parts:
         for p in range(1, -(-n // 200) + 1):
             d = page(p)
             for r in d["results"]:
