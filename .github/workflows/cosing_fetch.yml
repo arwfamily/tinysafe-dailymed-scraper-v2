@@ -1,0 +1,39 @@
+name: Fetch the EU CosIng ingredient register
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Download (CSV export, then the public search API, then the open-data portal)
+        run: |
+          mkdir -p cosing && cd cosing
+          UA="Mozilla/5.0 (research; arwhouse.com sunscreen ingredient check)"
+          for u in \
+            "https://ec.europa.eu/growth/tools-databases/cosing/pdf/COSING_Ingredients-Fragrance%20Inventory_v2.csv" \
+            "https://ec.europa.eu/growth/tools-databases/cosing/pdf/COSING_Ingredients-Fragrance Inventory_v2.csv"; do
+            curl -sSL -A "$UA" -m 300 -o inventory.csv "$u" -w "%{http_code} $u\n" || true
+            if [ -s inventory.csv ] && head -c 2000 inventory.csv | grep -qi "INCI"; then echo OK_CSV; break; fi
+            rm -f inventory.csv
+          done
+          curl -sSL -A "$UA" -m 60 "https://data.europa.eu/api/hub/search/search?q=cosing&filter=dataset&limit=10" -o portal_search.json || true
+          curl -sSL -A "$UA" -m 60 "https://data.europa.eu/api/hub/repo/datasets/cosmetic-ingredient-database-ingredients-and-fragrance-inventory.jsonld" -o portal_dataset.jsonld || true
+          # every CSV/XLSX distribution the portal lists
+          grep -oE 'https?://[^" <>]+\.(csv|xlsx|zip)' portal_search.json portal_dataset.jsonld 2>/dev/null | sed 's/^[^:]*://' | sort -u > dist_urls.txt || true
+          i=0; while read -r d; do i=$((i+1)); curl -sSL -A "$UA" -m 300 -o "dist_$i.${d##*.}" "$d" -w "%{http_code} $d\n" || true; done < dist_urls.txt
+          ls -la
+      - name: Push to the output branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mv cosing /tmp/cosing
+          git checkout --orphan out-tmp
+          git rm -rq --cached . 2>/dev/null || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r /tmp/cosing .
+          git add cosing
+          git commit -qm "cosing $(date -u +%F)"
+          git push -f origin out-tmp:cosing-raw
