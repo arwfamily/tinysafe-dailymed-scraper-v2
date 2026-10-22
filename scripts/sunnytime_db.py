@@ -102,8 +102,9 @@ class Engine:
         for f in list(fs):
             if (name, f) in R.V32_NOT or (how.startswith("same") and (twin, f) in R.V32_NOT):
                 fs.discard(f)
-        # an extract does not inherit "essential oil" from a v3.1 decision on the plant
-        if how != "v3.1 name" and "essential_oil" in fs and not re.search(r"\bOIL\b", name.upper()):
+        # an essential oil is an oil: an extract, a flower water (hydrosol) or a resin is not one,
+        # whatever v3.1 decided for the name (rules v3.3)
+        if "essential_oil" in fs and not re.search(r"\bOIL\b|\bOLEUM\b", name.upper()):
             fs.discard("essential_oil")
         fs.discard("chemical_filter_active")             # actives only
         # "Synthetic Beeswax", "Synthetic Wax": made in a lab, not from bees or animals

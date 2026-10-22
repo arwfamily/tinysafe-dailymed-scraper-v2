@@ -39,6 +39,7 @@ REQUIRED = {"id": str, "n": str, "i": list, "v3": list, "z": list, "r": list, "t
 SYNTHETIC = re.compile(r"\bSYNTHETIC\b", re.I)
 RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026-10-22)
     "propolis_beeswax": SYNTHETIC, "animal_derived": SYNTHETIC, "lanolin": SYNTHETIC,
+    "essential_oil": re.compile(r"^(?!.*\b(OIL|OLEUM)\b)", re.I),   # names with no "oil": extracts, flower waters
 }
 
 
