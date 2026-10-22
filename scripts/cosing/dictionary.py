@@ -33,8 +33,12 @@ CAT = {"emollient": "emollient", "emulsifier": "emulsifier", "humectant": "humec
 
 
 def load():
-    jobs = json.load(open(os.path.join(REF, "jobs_reviewed.json")))
-    reads = json.load(open(os.path.join(REF, "name_reads_merged.json")))["accepted"]
+    jobs = {}
+    for f in ("jobs_reviewed_round2.json", "jobs_reviewed.json"):          # round 1 wins where both exist
+        jobs.update(json.load(open(os.path.join(REF, f))))
+    reads = {}
+    for f in ("name_reads_round2.json", "name_reads_merged.json"):
+        reads.update(json.load(open(os.path.join(REF, f)))["accepted"])
     by = M.index()
     return jobs, reads, by
 
