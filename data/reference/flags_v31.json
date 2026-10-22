@@ -12167,6 +12167,24 @@
    "w": "Endocrine-active plasticizers; restricted in the EU.",
    "s": "EU Cosmetics Regulation Annex II."
   },
+  "insect_repellent": {
+   "t": "T1",
+   "l": "Combined with an insect repellent",
+   "w": "The American Academy of Pediatrics does not recommend products that combine sunscreen with an insect repellent such as DEET: sunscreen needs reapplying every two hours, repellent does not.",
+   "s": "AAP, insect and sun safety guidance."
+  },
+  "under3_restricted": {
+   "t": "T1",
+   "l": "Contains an ingredient the EU restricts for children under 3",
+   "w": "The EU does not allow salicylic acid (except in shampoo), or boric acid and borates, in products for children under three.",
+   "s": "EU Cosmetics Regulation Annex III (salicylic acid; boric acid and borates)."
+  },
+  "pfas": {
+   "t": "T1",
+   "l": "Contains a PFAS ingredient (fully fluorinated)",
+   "w": "Since 2025 several US states ban intentionally added PFAS in cosmetics. Whether those laws reach sunscreens, which the FDA regulates as drugs, differs by state.",
+   "s": "California AB 2771; Colorado, Maryland, Minnesota and Washington laws (2025); Maine and Vermont (2026)."
+  },
   "fragrance": {
    "t": "T2",
    "l": "Contains fragrance",

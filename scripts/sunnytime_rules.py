@@ -70,6 +70,10 @@ P = {
     "alkyl_glucoside": r"\b(DECYL|LAURYL|COCO|CAPRYLYL/CAPRYL|CAPRYLYL|CAPRYL|CETEARYL|ARACHIDYL|C12-20 ALKYL|MYRISTYL|BEHENYL|UNDECYL|OCTYL|C8-16 ALKYL)[- ]GLUCOSIDE\b|\bLAURYL POLYGLUCOSE\b",
     "sulfite": r"\b(SODIUM|POTASSIUM|AMMONIUM|CALCIUM)? ?(META)?BI?SULFITE\b|\bSULPHITE\b|\bSODIUM SULFITE\b",
     "isobornyl_acrylate": r"\bISOBORNYL ACRYLATE\b",
+    # rules v3.5: label-detectable gaps found in the 2026-10-22 coverage review
+    "insect_repellent": r"\bDEET\b|DIETHYL-?M-?TOLUAMIDE|\bIR ?3535\b|ETHYL BUTYLACETYLAMINOPROPIONATE|PICARIDIN|ICARIDIN|HYDROXYETHYL ISOBUTYL PIPERIDINE CARBOXYLATE",
+    "under3_restricted": r"^SALICYLIC ACID$|\bBORIC ACID\b|\bSODIUM BORATE\b|\bBORAX\b|SODIUM TETRABORATE",
+    "pfas": r"\bPTFE\b|POLYTETRAFLUOROETHYLENE|PERFLUORO|POLYPERFLUORO|FLUOROALCOHOL|TRIFLUOROPROPYL|PERFLUOROBUTYL|PERFLUOROHEXYL|FLUORINATED",
     "drying_alcohol": r"^ALCOHOL$|^ALCOHOL DENAT|^SD ALCOHOL|\bALCOHOL DENAT|\bSD ALCOHOL|^ETHANOL$|^ETHYL ALCOHOL$|"
                       r"^DENATURED ALCOHOL|^ISOPROPYL ALCOHOL$|^ALCOHOL \(",
     "propyl_butyl_paraben": r"PROPYL ?PARABEN|BUTYL ?PARABEN|ISOBUTYL ?PARABEN|ISOPROPYL ?PARABEN",
@@ -263,4 +267,4 @@ class PlantIndex:
 # Flags where v3.1's name decisions are incomplete (evidence was capped at 4 names
 # per flag, so an unflagged name is not a decision): the patterns add to v3.1.
 ADDITIVE = {"essential_oil", "ethoxylated", "hidden_uv_booster", "microplastic_polymer", "fragrance",
-            "alkyl_glucoside", "sulfite", "isobornyl_acrylate"}   # new in v3.4: v3.1 never had them
+            "alkyl_glucoside", "sulfite", "isobornyl_acrylate", "insect_repellent", "under3_restricted", "pfas"}   # new in v3.4: v3.1 never had them

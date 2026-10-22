@@ -113,6 +113,16 @@ a{{color:var(--sage)}}
 <p>Next to every ingredient we give its main job in a sunscreen. The source is the European Commission's CosIng ingredient register, which lists the functions each cosmetic ingredient is registered for. CosIng lists every function an ingredient may serve in any product, so for the most-used ingredients two people chose the main job separately and we kept it only when they agreed. For plant extracts we name what they are used as, not a benefit they promise.</p>
 <p>Some labels print several ingredients run together; we split those and give each its job. When a name on the label can't be identified, a cut-off word or a typo we can't resolve, we say <i>not yet checked</i> instead of guessing.</p>
 
+<h2>What a label can't tell you</h2>
+<p class="sub">This check reads labels, so it can only report what a label says. Some things that matter for a child's sunscreen never appear on one:</p>
+<ul>
+<li><b>Contamination.</b> Benzene in some aerosol sprays, bacteria or mold in a bad batch. We show it when the FDA records a recall; we cannot test products ourselves.</li>
+<li><b>Particle size.</b> US labels don't have to say whether zinc oxide or titanium dioxide is nano-sized.</li>
+<li><b>Heavy metals.</b> Mineral filters are mined; their purity is a manufacturing spec, not a label line.</li>
+<li><b>Whether the SPF holds up.</b> The SPF on the label is the brand's own test result. We report it as printed.</li>
+<li><b>Amounts of inactive ingredients.</b> Labels list them roughly from most to least, without amounts, and many brands list them alphabetically.</li>
+</ul>
+
 <h2>Changes to these rules</h2>
 <ul>{log}</ul>
 

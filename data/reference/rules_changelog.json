@@ -1,6 +1,12 @@
 {
  "changes": [
   {
+   "version": "v3.5",
+   "date": "2026-10-22",
+   "change": "Three label checks added to 'Act on it': a sunscreen combined with an insect repellent (AAP), ingredients the EU restricts for children under 3 (salicylic acid, boric acid and borates), and fully fluorinated PFAS ingredients (state cosmetic bans since 2025).",
+   "why": "A review of what a baby-sunscreen check should catch found these on real labels and not yet covered."
+  },
+  {
    "version": "v3.4",
    "date": "2026-10-22",
    "change": "Each group now has one written test. 'Check if your child reacts' is limited to three named lists (ACDS Allergen of the Year, EU labelled fragrance allergens, US major food allergens), so alkyl glucosides, sulfites and isobornyl acrylate are added; ragweed-family plants, bee-derived ingredients, oat and drying alcohol move to 'Also in it'. Propyl/butylparaben and phototoxic citrus move to 'Act on it' (EU restrictions). Synthetic beeswax no longer counts as bee-derived; an essential oil must be an oil. Ingredient jobs now come from the EU CosIng register, reviewed twice.",
