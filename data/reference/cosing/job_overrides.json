@@ -28,11 +28,39 @@
   "CHAMOMILLA RECUTITA OIL": [
    "fragrance",
    "chamomile essential oil"
+  ],
+  "CORIANDRUM SATIVUM SEED OIL": [
+   "fragrance",
+   "coriander essential oil"
+  ],
+  "CAMELLIA OLEIFERA SEED OIL": [
+   "emollient",
+   "fixed seed oil"
+  ],
+  "HYDROXYMETHOXYPHENYL DECANONE": [
+   "antioxidant",
+   "6-paradol, an antioxidant"
   ]
  },
  "not_ingredients": [
   "DRY PLACE",
   "STORE IN A COOL DRY PLACE",
   "HYDROLYSATE"
- ]
+ ],
+ "names": {
+  "1-(4-HYDROXY-3-METHOXYPHENYL)-DECAN-3-ONE": "HYDROXYMETHOXYPHENYL DECANONE",
+  "CAPRYL/CAPRYLYL GLUCOSIDE": "CAPRYLYL/CAPRYL GLUCOSIDE",
+  "GOSSYPLUM HERBACEUM (COTTON) SEED OIL": "GOSSYPIUM HERBACEUM SEED OIL",
+  "CAMELLIA OIL": "CAMELLIA OLEIFERA SEED OIL"
+ },
+ "read_jobs": {
+  "METHYL IONONE": [
+   "fragrance",
+   "aroma chemical"
+  ],
+  "POLYGLYCERIN-3 CROSSPOLYMER": [
+   "thickener",
+   "polyglycerin crosspolymer"
+  ]
+ }
 }

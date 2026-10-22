@@ -66,11 +66,14 @@ def build(release_dir):
     sys.path.insert(0, os.path.join(HERE, "cosing"))
     import dictionary as DICT
     dic = DICT.build(names)
-    SRC = {"reviewed": "r", "cosing": "c", "plant": "p", "read": "x"}
+    SRC = {"reviewed": "r", "cosing": "c", "plant": "p", "read": "x", "combined": "m"}
     nj = [dic[n]["job"] if dic[n]["src"] in SRC else None for n in names]
     njs = [SRC.get(dic[n]["src"]) for n in names]
+    # several ingredients printed as one name: each part and its job, keyed by name index
+    njp = {str(i): [[p["name"], p["job"]] for p in dic[n]["parts"]] for i, n in enumerate(names)
+           if dic[n]["src"] == "combined"}
     return {"count": len(out), "as_of": as_of, "release_id": manifest["release_id"], "meta": meta,
-            "nj": nj, "njs": njs, "dictionary": {"source": "EU CosIng register (functions), main job reviewed by two "
+            "nj": nj, "njs": njs, "njp": njp, "dictionary": {"source": "EU CosIng register (functions), main job reviewed by two "
                                                  "independent reads for the most-used ingredients",
                                                  "cosing_fetched": json.load(open(os.path.join(ROOT, "data/reference/cosing/manifest.json")))["fetched"]},
             "rules_changelog": changelog,

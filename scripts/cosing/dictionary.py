@@ -110,16 +110,66 @@ def finish(e, ov):
     return e
 
 
+SEP = re.compile(r"\s*\((?:and|&)\)\s*|\s+\(and\b|\s+&(?:amp;)?\s+|\s+and\s+|\s*[，､､･・;+]\s*|(?<=[a-z])\.(?=[A-Z])", re.I)
+
+
+def split_parts(name, by):
+    """A label name that is several ingredients run together ("Cetearyl Olivate (and)
+    Sorbitan Olivate", "sodium hyaluronate retinyl palmitate"): its parts, each a CosIng
+    ingredient, or None. Words that are not part of any ingredient (a phone number, a
+    header) are dropped only when at least one ingredient is found."""
+    pieces = [x for x in SEP.split(name or "") if x and x.strip(" .,()")]
+    out = []
+    for piece in pieces:
+        r, _ = M.lookup(piece)
+        if r:
+            out.append((piece.strip(), r))
+            continue
+        w = re.sub(r"[()]", " ", piece).split()
+        i = 0
+        while i < len(w):                       # greedy: longest run of words that is an ingredient
+            for j in range(len(w), i, -1):
+                r, _ = M.lookup(" ".join(w[i:j]))
+                if r and (j - i > 1 or len(w[i]) > 4):
+                    out.append((" ".join(w[i:j]), r))
+                    i = j
+                    break
+            else:
+                i += 1
+    if len(out) >= 2 or (out and len(pieces) >= 2):
+        return out
+    # one ingredient followed by label text ("Fragrance Call 1-800-SAFESUN"): kept when it
+    # opens the name and is not just a stray word
+    if len(out) == 1 and re.sub(r"[^A-Z0-9]", "", name.upper()).startswith(M.k(out[0][0])) \
+            and (len(out[0][0].split()) >= 2 or out[0][1]["inci"] in ("PARFUM", "AROMA")):
+        return out
+    return None
+
+
 def build(names):
     jobs, reads, by = load()
     ov = json.load(open(os.path.join(REF, "job_overrides.json")))
     junk = {M.k(x) for x in ov["not_ingredients"]}
+    rename = {M.k(a): b for a, b in ov.get("names", {}).items()}
+    read_jobs = {M.k(a): v for a, v in ov.get("read_jobs", {}).items()}
     out = {}
     for n in names:
-        if M.k(n) in junk:
+        kn = M.k(n)
+        if kn in junk:
             out[n] = {"job": None, "src": "not_ingredient"}
             continue
-        out[n] = finish(entry(n, jobs, reads, by), ov)
+        if kn in read_jobs:
+            out[n] = {"job": read_jobs[kn][0], "src": "reviewed", "why": read_jobs[kn][1]}
+            continue
+        e = finish(entry(rename.get(kn, n), jobs, reads, by), ov)
+        if e["src"] in ("not_ingredient", "none"):
+            parts = split_parts(n, by)
+            if parts:
+                ps = [finish(entry(p, jobs, reads, by), ov) for p, _ in parts]
+                if all(x.get("job") for x in ps):
+                    e = {"job": "combined", "src": "combined",
+                         "parts": [{"name": p, "inci": x.get("inci"), "job": x["job"]} for (p, _), x in zip(parts, ps)]}
+        out[n] = e
     return out
 
 
