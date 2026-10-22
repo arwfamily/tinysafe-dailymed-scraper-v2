@@ -1,6 +1,9 @@
 name: Fetch the EU CosIng ingredient register
 on:
   workflow_dispatch:
+    inputs:
+      script:
+        default: fetch_cosing.py
 permissions:
   contents: write
 jobs:
@@ -12,7 +15,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       - name: Download every CosIng ingredient record
-        run: python scripts/cosing/fetch_cosing.py
+        run: python scripts/cosing/${{ inputs.script }}
       - name: Push to the output branch
         run: |
           git config user.name  "github-actions[bot]"
