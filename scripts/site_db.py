@@ -58,7 +58,10 @@ def build(release_dir):
         if any(x["status"] == "needs_review" for x in recs):
             p["rr"] = 1                                    # a recall matched on brand + name only: under review
         out.append(p)
+    chp = os.path.join(ROOT, "data/reference/rules_changelog.json")
+    changelog = json.load(open(chp, encoding="utf-8"))["changes"] if os.path.exists(chp) else []
     return {"count": len(out), "as_of": as_of, "release_id": manifest["release_id"], "meta": meta,
+            "rules_changelog": changelog,
             "rules_version": RULES_VERSION, "flags": [], "inactives_as_of": as_of, "inactives_note": NOTE,
             "names": names, "p": out}
 

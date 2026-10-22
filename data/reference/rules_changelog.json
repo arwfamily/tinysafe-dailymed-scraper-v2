@@ -1,0 +1,10 @@
+{
+ "changes": [
+  {
+   "version": "v3.3",
+   "date": "2026-10-22",
+   "change": "'Contains synthetic polymer microparticles' is now 'Contains a synthetic polymer powder (for texture)'.",
+   "why": "'Microparticles' is a term defined in the EU microplastics restriction (Regulation (EU) 2023/2055). Whether that restriction applies is a product-by-product legal judgement a label cannot settle, so the check now states the ingredient fact only. Same rule for every product; the same ingredients are matched as before."
+  }
+ ]
+}
