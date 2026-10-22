@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
+      - uses: actions/checkout@v4
       - name: Download (CSV export, then the public search API, then the open-data portal)
         run: |
           mkdir -p cosing && cd cosing
@@ -24,7 +25,7 @@ jobs:
           # every CSV/XLSX distribution the portal lists
           grep -oE 'https?://[^" <>]+\.(csv|xlsx|zip)' portal_search.json portal_dataset.jsonld 2>/dev/null | sed 's/^[^:]*://' | sort -u > dist_urls.txt || true
           i=0; while read -r d; do i=$((i+1)); curl -sSL -A "$UA" -m 300 -o "dist_$i.${d##*.}" "$d" -w "%{http_code} $d\n" || true; done < dist_urls.txt
-          ls -la
+          ls -la | tee listing.txt
       - name: Push to the output branch
         run: |
           git config user.name  "github-actions[bot]"
