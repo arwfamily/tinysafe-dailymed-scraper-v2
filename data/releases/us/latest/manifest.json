@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-19",
  "git_tag": "us-data-2026-10-19",
- "released": "2026-10-22T23:21:23+00:00",
+ "released": "2026-10-22T23:57:30+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.5 · 2026-10-22",
  "source": {
@@ -113,15 +113,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9586,
-   "sha256": "a91aeaebeed56cf3c648b5c49b556ac442d176b9161bdedd5a8015c1688d05a6"
+   "sha256": "92d738541c68ca5efc9e82c7895eb2b7c02f8ed3f54a95bf7b7df2ff81459fec"
   },
   "us_mineral.jsonl": {
    "rows": 5182,
-   "sha256": "fd4018d2c3b4db70b9d7aaad90df0f8eaed4408298caf477937e2fde08b1ec71"
+   "sha256": "c7792eb5592cd98bece013ec479e136841f9dc7f80278fa5acd9024c3e245756"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "aace33eb07048d832ddbfb4b00ac17f5478a6950c87fe834ce5b51388d22884c"
+   "sha256": "16953b3c71c62a9c56ab8919e832c43798f1e43cb499399340f1090d56110237"
   },
   "us_out_of_scope.jsonl": {
    "rows": 4702,

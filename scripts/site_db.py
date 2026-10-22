@@ -50,7 +50,8 @@ def build(release_dir):
              "i": ii, "v3": r.get("flags") or [],
              "i_src": r.get("inactive_source"), "i_struct_n": r.get("inactives_filed_n"),
              "i_text_n": r.get("inactives_printed_n"), "thin": r.get("thin"), "ft": r.get("filter_type"),
-             "bk": 1 if r.get("is_baby_kids") else 0, "st": r.get("status")}
+             "bk": 1 if r.get("is_baby_kids") else 0, "st": r.get("status"),
+             "bs": {True: 1, False: 0}.get(r.get("broad_spectrum"))}
         if r.get("thin_reason"):
             p["thin_reason"] = r["thin_reason"]
         if r.get("label_check"):

@@ -280,6 +280,11 @@ def thin_reason(u, chk):
     return "short_list"
 
 
+LABEL_CLAIMS_PATH = os.path.join(ROOT, "data/views/label_claims.jsonl")
+LABEL_CLAIMS = ({json.loads(x)["setid"]: json.loads(x) for x in open(LABEL_CLAIMS_PATH, encoding="utf-8") if x.strip()}
+                if os.path.exists(LABEL_CLAIMS_PATH) else {})
+
+
 def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
     fl = collections.OrderedDict()
 
@@ -320,6 +325,11 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
         add("spray_powder", [])
         if "talc" in fl:
             add("talc_inhalable", fl["talc"])
+    lc = LABEL_CLAIMS.get(c.get("setid"))
+    if lc and lc.get("aging_alert") and not lc.get("broad_spectrum"):
+        # the FDA Skin Cancer/Skin Aging Alert is printed only by sunscreens that are not
+        # broad spectrum (or are SPF 2-14): 21 CFR 201.327(d)
+        add("not_broad_spectrum", [])
     wr = (c.get("label_flags") or {}).get("water_resistant_minutes")
     if wr or WATER_RES.search(form):
         add("water_resistant", [])
@@ -660,6 +670,11 @@ def build(run_date):
             "category": c.get("category"), "name": name, "title": c.get("title"),
             "brand": (legacy.get(sid) or {}).get("b") or c.get("labeler"), "labeler": c.get("labeler"),
             "spf": c.get("spf"), "dosage_form": c.get("dosage_form"), "ndc_product": c.get("ndc_product"),
+            "broad_spectrum": (None if sid not in LABEL_CLAIMS else
+                               # both on one label (a kit, or a label error): unknown
+                               None if LABEL_CLAIMS[sid].get("aging_alert") and LABEL_CLAIMS[sid].get("broad_spectrum") else
+                               False if LABEL_CLAIMS[sid].get("aging_alert") else
+                               True if LABEL_CLAIMS[sid].get("broad_spectrum") else None),
             "dailymed_url": c.get("dailymed_url"), "effective_date": c.get("effective_date"),
             "actives": acts, "mineral_type": mineral_type(acts), "filter_type": ft,
             "mineral_pct": mp, "chemical_pct": cp,

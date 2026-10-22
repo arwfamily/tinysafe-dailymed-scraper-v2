@@ -12083,6 +12083,12 @@
   "ZINGIBER OFFICINALE WHOLE": 4
  },
  "meta": {
+  "not_broad_spectrum": {
+   "t": "T1",
+   "l": "Not broad spectrum, or below SPF 15",
+   "w": "The label carries the FDA Skin Cancer/Skin Aging Alert. The FDA requires it on sunscreens that are not broad spectrum or are below SPF 15: they have not been shown to reduce the risk of skin cancer or early skin aging.",
+   "s": "FDA, 21 CFR 201.327."
+  },
   "hidden_uv_booster": {
    "t": "T1",
    "l": "UV booster not listed as a sunscreen active",
