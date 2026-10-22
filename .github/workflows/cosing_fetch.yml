@@ -20,11 +20,17 @@ jobs:
             if [ -s inventory.csv ] && head -c 2000 inventory.csv | grep -qi "INCI"; then echo OK_CSV; break; fi
             rm -f inventory.csv
           done
-          curl -sSL -A "$UA" -m 60 "https://data.europa.eu/api/hub/search/search?q=cosing&filter=dataset&limit=10" -o portal_search.json || true
-          curl -sSL -A "$UA" -m 60 "https://data.europa.eu/api/hub/repo/datasets/cosmetic-ingredient-database-ingredients-and-fragrance-inventory.jsonld" -o portal_dataset.jsonld || true
-          # every CSV/XLSX distribution the portal lists
-          grep -oE 'https?://[^" <>]+\.(csv|xlsx|zip)' portal_search.json portal_dataset.jsonld 2>/dev/null | sed 's/^[^:]*://' | sort -u > dist_urls.txt || true
-          i=0; while read -r d; do i=$((i+1)); curl -sSL -A "$UA" -m 300 -o "dist_$i.${d##*.}" "$d" -w "%{http_code} $d\n" || true; done < dist_urls.txt
+          ID=cosmetic-ingredient-database-ingredients-and-fragrance-inventory
+          curl -sSL -A "$UA" -m 60 "https://data.europa.eu/api/hub/search/datasets/$ID" -o portal_dataset.json -w "%{http_code} portal\n" || true
+          curl -sSL -A "$UA" -m 60 "http://data.europa.eu/88u/dataset/$ID" -o portal_88u.html -w "%{http_code} 88u\n" || true
+          grep -oE 'https?://[^" <>\\]+' portal_dataset.json 2>/dev/null | grep -iE 'csv|xls|zip|download|cosing' | sort -u > dist_urls.txt || true
+          i=0; while read -r d; do i=$((i+1)); curl -sSL -A "$UA" -m 300 -o "dist_$i.bin" "$d" -w "%{http_code} $d\n" >> dist_log.txt || true; done < dist_urls.txt
+          # the CosIng site's own search API (public key embedded in the CosIng web page)
+          K=285a77fd-1257-4271-8507-f0c6b2961203
+          for pg in 1 2; do
+            curl -sS -A "$UA" -m 120 -X POST "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=$K&text=*&pageSize=200&pageNumber=$pg" \
+              -F 'query={"bool":{"must":[{"terms":{"itemType":["ingredient"]}}]}};type=application/json' -o api_p$pg.json -w "%{http_code} api $pg\n" >> dist_log.txt || true
+          done
           ls -la | tee listing.txt
       - name: Push to the output branch
         run: |
