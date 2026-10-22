@@ -106,6 +106,9 @@ class Engine:
         if how != "v3.1 name" and "essential_oil" in fs and not re.search(r"\bOIL\b", name.upper()):
             fs.discard("essential_oil")
         fs.discard("chemical_filter_active")             # actives only
+        # "Synthetic Beeswax", "Synthetic Wax": made in a lab, not from bees or animals
+        if R.SYNTHETIC.search(name.upper()):
+            fs -= R.SOURCE_FLAGS
         self._cache[name] = (fs, how)
         return fs, how
 

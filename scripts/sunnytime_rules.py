@@ -155,6 +155,10 @@ def is_botanical(name, botanical_genera):
 
 
 # v3.1 decisions that are plainly wrong; removed in v3.2 and reported.
+# Source flags (bee, animal, wool) never apply to a synthetic version of the substance
+SYNTHETIC = re.compile(r"\bSYNTHETIC\b")
+SOURCE_FLAGS = {"propolis_beeswax", "animal_derived", "lanolin"}
+
 V32_NOT = {
     ("2,4-DIAMINOPHENOXYETHANOL HCL", "phenoxyethanol"): "a hair-dye intermediate, not the preservative phenoxyethanol",
     ("N-LACTOYL ETHANOLAMINE", "drying_alcohol"): "an amide humectant, not a drying alcohol",

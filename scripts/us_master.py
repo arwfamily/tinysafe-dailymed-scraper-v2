@@ -283,10 +283,24 @@ def thin_reason(u, chk):
 def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
     fl = collections.OrderedDict()
 
+    def cite(n):
+        """The evidence names the ingredient as the printed label does, once: a filed
+        name for a printed ingredient ("PROPYLENE GLYCOL" / "Propylene Glycol",
+        "ALOE VERA LEAF" / "Aloe Barbadensis Leaf Extract") is cited by its printed name."""
+        if n in shown:
+            return n
+        return next((x for x in shown if same_display(n, x)), n)
+
     def add(f, ev):
         if f not in fl:
             fl[f] = []
-        fl[f] = list(dict.fromkeys(fl[f] + ev))[:EVIDENCE_CAP]
+        out, seen = [], set()
+        for n in fl[f] + [cite(x) for x in ev]:
+            k = key(n) or n.upper()
+            if k not in seen:
+                seen.add(k)
+                out.append(n)
+        fl[f] = out[:EVIDENCE_CAP]
     for f, ev in inactive_flags(eng, list(dict.fromkeys(shown + struct))).items():
         add(f, ev)
     # non-UV actives (skin protectants such as dimethicone) read like inactives
@@ -528,6 +542,21 @@ def title_actives(c):
 _LT = None
 
 
+def drop_repeated_extras(shown, printed_n):
+    """A filed extra already named earlier in the list ("TOCOPHEROL" after printed
+    "Tocopherol", the same filed substance listed for two parts of a kit) is shown once.
+    The printed list itself is never changed: a label may print a name twice."""
+    out, seen, n = list(shown[:printed_n]), {key(x) or x.upper() for x in shown[:printed_n]}, 0
+    for x in shown[printed_n:]:
+        k = key(x) or x.upper()
+        if k in seen:
+            n += 1
+            continue
+        seen.add(k)
+        out.append(x)
+    return out, n
+
+
 def label_text_fragrance(sid, shown):
     """Fragrance the label prints that the parsed list lost: glued to the next
     sentence ('CITRIC ACID, FRAGRANCEPRODUCT FORMULATED ...') or in a footnote
@@ -615,6 +644,8 @@ def build(run_date):
         shown, ch = tidy_inactives(shown)
         tidied = tidied or ch
         shown, n_syn = drop_filed_synonyms(shown, (u2 or {}).get("i_text_n") or 0, c, syn)
+        shown, n_rep = drop_repeated_extras(shown, (u2 or {}).get("i_text_n") or 0)
+        n_syn += n_rep
         fr = label_text_fragrance(sid, shown)
         if fr:
             shown = shown + [fr]

@@ -19,6 +19,7 @@ and a label whose actives were corrected or whose last good read was kept after 
 failed fetch may change its list. The caller passes these as `explained`
 {setid: reason}; the report lists how many of each were used.
 """
+import re
 import json
 import os
 import sys
@@ -31,6 +32,20 @@ from inactive_union import same_display  # noqa: E402
 ANCHORS = os.path.join(ROOT, "data/reference/gate_anchors.json")
 MAX_DROP = 0.02
 REQUIRED = {"id": str, "n": str, "i": list, "v3": list, "z": list, "r": list, "thin": bool, "st": str}
+
+
+# Reviewed rule changes that remove a flag on purpose. A lost flag is explained
+# only when every name the old flag cited is one the new rule no longer counts.
+SYNTHETIC = re.compile(r"\bSYNTHETIC\b", re.I)
+RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026-10-22)
+    "propolis_beeswax": SYNTHETIC, "animal_derived": SYNTHETIC, "lanolin": SYNTHETIC,
+}
+
+
+def rule_retired(flag, old_flags):
+    rx = RETIRED.get(flag)
+    ev = next((f[1] for f in old_flags if f[0] == flag), None)
+    return bool(rx and ev and all(rx.search(n) for n in ev))
 
 
 def check(old, new, explained=None):
@@ -78,6 +93,7 @@ def check(old, new, explained=None):
             gone = [x for x in on if x not in nset
                     and not any(same_display(x, y) or same_display(y, x) for y in nn)]
             fl = {f[0] for f in q["v3"]} - {f[0] for f in p["v3"]}
+            fl = {f for f in fl if not rule_retired(f, q["v3"])}
             if gone:
                 lost_i += 1
                 if len(examples) < 10:
