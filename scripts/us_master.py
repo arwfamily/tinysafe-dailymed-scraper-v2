@@ -283,19 +283,21 @@ def thin_reason(u, chk):
 def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
     fl = collections.OrderedDict()
 
-    def cite(n):
+    def cite(n, f):
         """The evidence names the ingredient as the printed label does, once: a filed
         name for a printed ingredient ("PROPYLENE GLYCOL" / "Propylene Glycol",
-        "ALOE VERA LEAF" / "Aloe Barbadensis Leaf Extract") is cited by its printed name."""
+        "ALOE VERA LEAF" / "Aloe Barbadensis Leaf Extract") is cited by its printed name,
+        but only by a printed name that itself gives the flag (a filed rose OIL is never
+        cited as the printed rose flower WATER)."""
         if n in shown:
             return n
-        return next((x for x in shown if same_display(n, x)), n)
+        return next((x for x in shown if same_display(n, x) and f in eng.flags(x)[0]), n)
 
     def add(f, ev):
         if f not in fl:
             fl[f] = []
         out, seen = [], set()
-        for n in fl[f] + [cite(x) for x in ev]:
+        for n in fl[f] + [cite(x, f) for x in ev]:
             k = key(n) or n.upper()
             if k not in seen:
                 seen.add(k)
