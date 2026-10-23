@@ -89,7 +89,7 @@ P = {
     "propyl_butyl_paraben": r"PROPYL ?PARABEN|BUTYL ?PARABEN|ISOBUTYL ?PARABEN|ISOPROPYL ?PARABEN",
     "latex": r"LATEX|HEVEA BRASILIENSIS",
     "citrus_photosensitizer": r"BERGAMOT|BERGAMIA.*OIL",
-    "phenoxyethanol": r"(?<!DIAMINO)PHENOXYETHANOL",
+    "phenoxyethanol": r"(?<!DIAMINO)P(?:HE|EH)N[OI]X[YI]{1,2}ETH[AY]NOL|PHENOXYETANOL|PHENOXETHANOL",
     "methyl_ethyl_paraben": r"(?<![A-Z])METHYL ?PARABEN|(?<![A-Z])ETHYL ?PARABEN",
     "ethoxylated": r"\bPEG[- ]|\bPEG\d|POLYSORBATE|-ETH-|ETH-\d|\bPPG[- ]|\bPOLYETHYLENE GLYCOL|POLYOXYL|LAURETH|STEARETH|"
                    r"CETEARETH|CETETH|OLETH|CETEARETH|TRIDECETH|PARETH|BEHENETH|CEteth|SORBETH|ISOSTEARETH|STEARETH|"

@@ -398,6 +398,9 @@ def strict_twin(f, p):
     of the same form (a rose OIL is not a rose flower WATER)."""
     if not (same_display(f, p) or same_display(p, f)):
         return False
+    # and the same numbers: Polysilicone-11 is not Polysilicone-15, PEG-8 is not PEG-100
+    if set(re.findall(r"\d+", f)) != set(re.findall(r"\d+", p)):
+        return False
     return set(_FORMW.findall(f.upper())) == set(_FORMW.findall(p.upper()))
 
 
@@ -462,7 +465,9 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
         add("spray_powder", [])
         if "talc" in fl:
             add("talc_inhalable", fl["talc"])
-    if lc and lc.get("fragrance_free_claim") and any(f in fl for f in ("fragrance", "essential_oil")):
+    # a fragrance-free claim on one product of a multi-product filing says nothing of the others
+    if lc and lc.get("fragrance_free_claim") and any(f in fl for f in ("fragrance", "essential_oil")) and not (
+            int(c.get("product_count") or 1) > 1 or len([x for x in lc.get("spfs") or [] if x > 15]) >= 2):
         add("fragrance_free_conflict", list(fl.get("fragrance") or fl.get("essential_oil") or []))
     _spf = c.get("spf") or (lc or {}).get("spf")
     if _spf and _spf < 15:
@@ -801,11 +806,18 @@ def build(run_date):
         _spf = c.get("spf") or (LABEL_CLAIMS.get(sid) or {}).get("spf") or title_spf(c.get("title"), c.get("product_name"))
         _pct = [a.get("percent") for a in acts]
         pct_withheld = bool(acts and _spf and _spf >= 15 and None not in _pct and sum(_pct) < 5) or any(
+            # no sunscreen active works below 0.5% (9.5 mg filed per 19 g for a printed 9.5%)
+            a.get("percent") is not None and 0 < a["percent"] < 0.5 and a["name"] in US_MAX for a in acts) or any(
             a.get("percent") is not None and a["percent"] > US_MAX.get(a["name"], 100) * 1.01 for a in acts)
         # one filing for several products (a kit, a set of scents, a brand's whole line): the
         # filed strengths are of one product or a mix, and a non-sunscreen active (a nasal
         # spray's, an acne serum's) is not this sunscreen's (2026-10-22 label audit)
         n_products = int(c.get("product_count") or 1)
+        # one filing whose label text prints two or more different SPFs (not the boilerplate 15)
+        # is several products under one listing (Stream2Sea's line, a stick + lip balm set)
+        _spfs = [x for x in (LABEL_CLAIMS.get(sid) or {}).get("spfs") or [] if x > 15]
+        if n_products == 1 and len(_spfs) >= 2:
+            n_products = len(_spfs)
         multi = n_products > 1 or "KIT" in (c.get("dosage_form") or "").upper()
         acts_all = acts      # a kit's other products (an acne gel's salicylic acid) still give their flags
         if multi:
@@ -877,7 +889,8 @@ def build(run_date):
             for f in struct:
                 if f in shown or f in flag_struct:
                     continue
-                x = next((x for x in shown if same_display(f, x) or same_display(x, f)), None)
+                x = next((x for x in shown if (same_display(f, x) or same_display(x, f))
+                          and set(re.findall(r"\d+", f)) == set(re.findall(r"\d+", x))), None)
                 if x is not None:
                     twins = twins + [(x, f)]
         fr = label_text_fragrance(sid, shown)
