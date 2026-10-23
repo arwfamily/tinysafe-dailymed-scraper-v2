@@ -371,6 +371,8 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
         add("spray_powder", [])
         if "talc" in fl:
             add("talc_inhalable", fl["talc"])
+    if lc and lc.get("fragrance_free_claim") and any(f in fl for f in ("fragrance", "essential_oil")):
+        add("fragrance_free_conflict", list(fl.get("fragrance") or fl.get("essential_oil") or []))
     if lc and lc.get("aging_alert") and not lc.get("broad_spectrum"):
         # the FDA Skin Cancer/Skin Aging Alert is printed only by sunscreens that are not
         # broad spectrum (or are SPF 2-14): 21 CFR 201.327(d)

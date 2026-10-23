@@ -12095,6 +12095,12 @@
    "w": "Absorbs UV and can raise SPF while the label still reads 'mineral'.",
    "s": "FDA OTC sunscreen monograph (only listed actives may claim SPF); TinySafe label analysis. Bemotrizinol became an FDA-approved active in June 2026 — if it appears among inactives, it is still a hidden filter."
   },
+  "fragrance_free_conflict": {
+   "t": "T1",
+   "l": "Says fragrance-free, but lists a fragrance ingredient",
+   "w": "The label calls the product fragrance-free (or unscented) while its ingredient list includes a fragrance or an essential oil. The two statements on the same label disagree, so check the tube.",
+   "s": "The label itself (FDA DailyMed)."
+  },
   "chemical_filter_in_inactives": {
    "t": "T1",
    "l": "Chemical UV filter listed among inactive ingredients",

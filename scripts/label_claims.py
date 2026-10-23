@@ -32,7 +32,8 @@ POWDER = re.compile(r"\b(?:loose\s+powder|mineral\s+powder|powder\s+sunscreen|br
 FREE = re.compile(r"\b(?:fragrance[\s-]*free|free\s+of\s+(?:added\s+)?fragrances?|no\s+(?:added\s+)?fragrances?|unscented|without\s+fragrance|0%\s+fragrance)\b", re.I)
 FRAG_LISTED = re.compile(r"inactive\s+ingredients?\s*:?.{0,3000}?\b(?:fragrance|parfum|perfume|aroma)\b(?!\s*[-\s]*free)", re.I | re.S)
 TEAR = re.compile(r"\btear[\s-]*free\b", re.I)
-WR = re.compile(r"water\s+resistant\s*\(?\s*(40|80)\s+minutes", re.I)
+# the claim, or the Drug Facts direction every water-resistant label must print
+WR = re.compile(r"water\s+resistant\s*\(?\s*(40|80)\s+minutes|after\s+(40|80)\s+minutes\s+of\s+swimming", re.I)
 
 
 def text_of(xml):
@@ -49,7 +50,7 @@ def claims(sid):
                 rest = BOILER.sub(" ", t)
                 # SPF: the label's own number, not the boilerplate "SPF value of 15 or higher"
                 spfs = [int(m.group(1)) for m in SPF.finditer(BOILER.sub(" ", t)) if 2 <= int(m.group(1)) <= 100]
-                wr = [int(m.group(1)) for m in WR.finditer(t)]
+                wr = [int(m.group(1) or m.group(2)) for m in WR.finditer(t)]
                 return {"setid": sid, "broad_spectrum": bool(BS.search(rest)), "aging_alert": bool(ALERT.search(t)),
                         "spf": max(spfs) if spfs else None, "spray": bool(SPRAY.search(t)), "powder": bool(POWDER.search(t)),
                         "water_resistant_minutes": max(wr) if wr else None,
