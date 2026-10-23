@@ -48,6 +48,10 @@ def main():
     view = [json.loads(l) for l in open(os.path.join(ROOT, "data/views/baby_sunscreens.jsonl"), encoding="utf-8")]
     targets = [r for r in view if printed_list(text.get(r["setid"], {})) is None]
     targets += [{"setid": s, "title": "", "spl_version": None} for s in sys.argv[1:]]
+    extra = os.path.join(ROOT, "data/views/extra_image_targets.txt")
+    if os.path.exists(extra):
+        have = {t["setid"] for t in targets}
+        targets += [{"setid": s, "title": "", "spl_version": None} for s in open(extra).read().split() if s not in have]
     index = {}
     for r in targets:
         sid = r["setid"]
