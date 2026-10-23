@@ -475,13 +475,13 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
             # quote the scent only when it reads as one ("Fun Melon"), not as list words
             inci = re.search(r"(?i)ATE\b|ENE\b|OL\b|ICONE|ACID|EXTRACT|WAX|GLYCOL|SALICYLATE|SUNSCREEN|SPRAY|"
                              r"INGREDIENT|ANALYTIC|SOLUTION|\bMEN\b|\bTHE\b|DERMATOLOG|RECOMMENDED|ESSENTIAL|ARTIFICIAL", sc)
-            add("fragrance", ["\u201cfragrance\u201d named on the label" if inci else f"\u201c{sc} fragrance\u201d on the label"], raw=True)
+            add("fragrance", ["a fragrance named on the label" if inci else f"\u201c{sc} fragrance\u201d on the label"], raw=True)
     st = ((lc or {}).get("allergen_statement") or "").upper()
     for g, rx in (("soy", r"\bSOY"), ("milk", r"\bMILK\b"), ("wheat", r"\bWHEAT|\bGLUTEN"), ("tree_nut", r"\bTREE NUTS?\b|\bALMOND|\bMACADAMIA|\bCASHEW|\bWALNUT"),
                   ("peanut", r"\bPEANUT"), ("sesame", r"\bSESAME"), ("egg", r"\bEGGS?\b"),
                   ("fish_shellfish", r"\bFISH\b|\bSHELLFISH|\bCRUSTACEAN")):
         if st and re.search(rx, st) and g not in fl:
-            add(g, [f"Label allergen statement: {lc['allergen_statement'][:80]}"], raw=True)
+            add(g, [f"the label's allergen statement: \u201c{lc['allergen_statement'][:80]}\u201d"], raw=True)
     # a fragrance-free claim on one product of a multi-product filing says nothing of the others
     if lc and lc.get("fragrance_free_claim") and any(f in fl for f in ("fragrance", "essential_oil")) and not (
             int(c.get("product_count") or 1) > 1 or len([x for x in lc.get("spfs") or [] if x > 15]) >= 2):
