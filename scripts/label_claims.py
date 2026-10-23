@@ -48,7 +48,31 @@ def claims(sid):
     return None
 
 
+def incremental():
+    """Weekly, inside the scrape: read only labels that are new or have a new version
+    (data/canonical is this week's register), and keep the rest."""
+    path = os.path.join(ROOT, "data/views/label_claims.jsonl")
+    have = {json.loads(x)["setid"]: json.loads(x) for x in open(path)} if os.path.exists(path) else {}
+    cur = {}
+    for line in open(os.path.join(ROOT, "data/canonical/us_sunscreens.jsonl"), encoding="utf-8"):
+        r = json.loads(line)
+        cur[r["setid"]] = r.get("spl_version")
+    todo = [s for s, v in cur.items() if s not in have or str(have[s].get("spl_version")) != str(v)]
+    print(f"label claims: {len(todo)} new or changed labels to read", flush=True)
+    with cf.ThreadPoolExecutor(max_workers=4) as ex:
+        for sid, r in zip(todo, ex.map(claims, todo)):
+            if r:
+                r["spl_version"] = cur[sid]
+                have[sid] = r
+    with open(path, "w") as f:
+        for sid in sorted(have):
+            if sid in cur:
+                f.write(json.dumps(have[sid]) + "\n")
+
+
 def main():
+    if "--incremental" in sys.argv:
+        return incremental()
     want = []
     for line in open(os.path.join(ROOT, "data/master/us_master.jsonl"), encoding="utf-8"):
         r = json.loads(line)

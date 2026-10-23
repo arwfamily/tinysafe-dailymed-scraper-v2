@@ -177,6 +177,7 @@ jobs:
           python tests/test_us_master.py
           python scripts/inactive_union.py
           python scripts/recalls_fetch.py || echo "recall fetch failed; last week's recall file is used"
+          python scripts/label_claims.py --incremental || echo "label claims not refreshed; last week's are used"
           python scripts/us_master.py --run-date ${{ steps.mode.outputs.run_date }}
           python scripts/us_release.py --run-date ${{ steps.mode.outputs.run_date }}
           python scripts/reading_queue.py
