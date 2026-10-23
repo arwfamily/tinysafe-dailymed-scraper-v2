@@ -482,6 +482,12 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
                   ("fish_shellfish", r"\bFISH\b|\bSHELLFISH|\bCRUSTACEAN")):
         if st and re.search(rx, st) and g not in fl:
             add(g, [f"the label's allergen statement: \u201c{lc['allergen_statement'][:80]}\u201d"], raw=True)
+    # plain "Lecithin" does not say where it comes from (soy, sunflower or egg): the soy flag
+    # it gives says so, unless the filing or the label names the source
+    if "soy" in fl:
+        fl["soy"] = [e if re.search(r"(?i)SOY|GLYCINE|SOJA|filed with|allergen statement", e) or not re.search(
+            r"(?i)LECITHIN|PHOSPHATIDYLCHOLINE", e) else f"{e} (source not stated; lecithin is most often from soy)"
+                     for e in fl["soy"]]
     # a fragrance-free claim on one product of a multi-product filing says nothing of the others
     if lc and lc.get("fragrance_free_claim") and any(f in fl for f in ("fragrance", "essential_oil")) and not (
             int(c.get("product_count") or 1) > 1 or len([x for x in lc.get("spfs") or [] if x > 15]) >= 2):
