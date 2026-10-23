@@ -310,6 +310,24 @@ if os.path.isdir(_OCR_DIR):
                                                  source="label_image_ocr")
 
 
+# SPF (and spray/powder wording) read from the label images of labels whose text and
+# filing print no SPF (scripts/label_claims_ocr.py --target spf), same label version only
+_OCR_SPF = os.path.join(ROOT, "data/views/label_claims_ocr_spf")
+if os.path.isdir(_OCR_SPF):
+    for _f in sorted(os.listdir(_OCR_SPF)):
+        for _x in open(os.path.join(_OCR_SPF, _f), encoding="utf-8"):
+            _d = json.loads(_x)
+            _c = LABEL_CLAIMS.get(_d["setid"])
+            if _d.get("error") or not _c or str(_c.get("spl_version")) != str(_d.get("spl_version")):
+                continue
+            _u = dict(_c)
+            if not _c.get("spf") and _d.get("spf") and len([v for v in _d.get("spfs") or [] if v > 15]) <= 1:
+                _u.update(spf=_d["spf"], spf_source="label_image_ocr")
+            _u["spray"] = _c.get("spray") or _d.get("spray")
+            _u["powder"] = _c.get("powder") or _d.get("powder")
+            LABEL_CLAIMS[_d["setid"]] = _u
+
+
 US_MAX = {"AVOBENZONE": 3, "HOMOSALATE": 15, "OCTINOXATE": 7.5, "OCTISALATE": 5, "OCTOCRYLENE": 10, "OXYBENZONE": 6,
           "ENSULIZOLE": 4, "ZINC OXIDE": 25, "TITANIUM DIOXIDE": 25, "MERADIMATE": 5, "SULISOBENZONE": 10,
           "DIOXYBENZONE": 3, "CINOXATE": 3, "PADIMATE O": 8, "TROLAMINE SALICYLATE": 12, "BEMOTRIZINOL": 6}   # 21 CFR 352.10 / 2025 order
