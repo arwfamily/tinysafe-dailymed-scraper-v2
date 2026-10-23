@@ -341,6 +341,9 @@ def _dict_job(name):
 
 
 SOURCE_WORDS = {"SOYBEAN", "SOY", "EGG", "GLYCINE", "SOJA", "MAX"}
+# flags about what an ingredient is made from (the same in any form of it)
+SOURCE_FLAGS = {"soy", "egg", "milk", "wheat", "peanut", "tree_nut", "sesame", "fish_shellfish", "coconut", "shea",
+                "oat", "asteraceae", "lanolin", "propolis_beeswax", "animal_derived", "botanical_count", "latex"}
 
 
 def source_twins(printed, filed):
@@ -400,9 +403,9 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     for f, ev in inactive_flags(eng, list(dict.fromkeys(shown + struct))).items():
         add(f, ev)
     for p, f in twins:
-        for g in eng.flags(f)[0] & {"soy", "egg"}:
+        for g in eng.flags(f)[0] & SOURCE_FLAGS:
             if g not in fl:
-                add(g, [f"{p} (filed with the FDA as {f.lower()})"])
+                add(g, [p if g == "botanical_count" else f"{p} (filed with the FDA as {f.lower()})"])
     # non-UV actives (skin protectants such as dimethicone) read like inactives
     # every non-mineral active is read like an inactive too (dimethicone as a skin protectant gives
     # "silicone", drometrizole trisiloxane too); a declared UV active is never a HIDDEN booster
@@ -829,6 +832,12 @@ def build(run_date):
             # HYDROXYTOLUENE" for a printed "BHT", "PHENOXYETHANOL" for a misprinted
             # "Phenixyethanol") still gives its flags, cited by the printed name
             flag_struct = [f for f in struct if f not in shown and any(strict_twin(f, x) for x in shown)]
+            # what an ingredient comes from does not depend on its form: a filed "HAMAMELIS
+            # VIRGINIANA LEAF" for a printed witch hazel extract is still a plant, a filed
+            # "COLLAGEN, SOLUBLE, FISH SKIN" for a printed "Collagen Extract" still fish
+            twins = twins + [
+                (next(x for x in shown if same_display(f, x) or same_display(x, f)), f) for f in struct
+                if f not in shown and f not in flag_struct and any(same_display(f, x) or same_display(x, f) for x in shown)]
         fr = label_text_fragrance(sid, shown)
         if fr:
             shown = shown + [fr]
