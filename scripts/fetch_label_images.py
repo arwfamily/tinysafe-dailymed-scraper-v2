@@ -65,7 +65,10 @@ def main():
     for r in targets:
         sid = r["setid"]
         m = get(f"https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/{sid}/media.json")
-        media = (json.loads(m)["data"]["media"] if m else [])
+        try:
+            media = (json.loads(m)["data"]["media"] if m else [])
+        except Exception:  # noqa: BLE001
+            media = []
         imgs = []
         if not index_only:
             os.makedirs(os.path.join(OUT, sid), exist_ok=True)
@@ -79,7 +82,12 @@ def main():
             if index_only:
                 imgs.append({"name": x["name"], "sha1_original": hashlib.sha1(b).hexdigest()})
                 continue
-            im = Image.open(io.BytesIO(b)).convert("RGB")
+            try:
+                Image.MAX_IMAGE_PIXELS = None
+                im = Image.open(io.BytesIO(b)).convert("RGB")
+            except Exception as e:  # noqa: BLE001  one unreadable file never stops the batch
+                imgs.append({"name": x["name"], "error": f"unreadable image: {type(e).__name__}"})
+                continue
             s = (2000 if batch else 2400) / max(im.size)
             if s < 1:
                 im = im.resize((int(im.width * s), int(im.height * s)), Image.LANCZOS)
