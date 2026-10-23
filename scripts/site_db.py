@@ -106,6 +106,8 @@ def explained(release_dir):
             out[r["setid"]] = "last_good_read_kept"
         elif r.get("inactives_tidied") or r.get("filed_synonyms_dropped"):
             out[r["setid"]] = "list_split_repaired"
+        elif r.get("inactive_source") == "artwork":
+            out[r["setid"]] = "artwork_list"            # the package artwork, read twice (artwork_reads.jsonl)
         elif (r.get("inactives_printed_n") or 0) >= 5:
             out[r["setid"]] = "printed_list_only"       # checked flag by flag (quality_gate)
         elif r.get("inactives_added_from_label_text"):
