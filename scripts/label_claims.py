@@ -26,6 +26,10 @@ import dailymed_scraper as D  # noqa: E402
 BOILER = re.compile(r"broad[\s-]*spectrum\s+SPF\s+(?:value\s+)?(?:of\s+)?15\s+(?:or\s+)?(?:higher|more|greater)", re.I)
 BS = re.compile(r"broad[\s-]*spectrum", re.I)
 ALERT = re.compile(r"skin\s+cancer\s*/\s*skin\s+aging\s+alert", re.I)
+SPF = re.compile(r"\bSPF\s*-?\s*(\d{1,3})\s*(\+|plus)?", re.I)
+SPRAY = re.compile(r"\b(?:spray(?:ing)?\s+(?:liberally|evenly|generously|on|into|directly|until)|hold\s+(?:the\s+)?(?:can|container|bottle)\s+\d|do\s+not\s+spray|aerosol|continuous\s+spray|lotion\s+spray|sunscreen\s+spray)", re.I)
+POWDER = re.compile(r"\b(?:loose\s+powder|mineral\s+powder|powder\s+sunscreen|brush\s+(?:on|onto|over)|tap\s+(?:the\s+)?brush|swirl\s+(?:the\s+)?brush)", re.I)
+WR = re.compile(r"water\s+resistant\s*\(?\s*(40|80)\s+minutes", re.I)
 
 
 def text_of(xml):
@@ -40,8 +44,12 @@ def claims(sid):
             if xml:
                 t = text_of(xml)
                 rest = BOILER.sub(" ", t)
+                # SPF: the label's own number, not the boilerplate "SPF value of 15 or higher"
+                spfs = [int(m.group(1)) for m in SPF.finditer(BOILER.sub(" ", t)) if 2 <= int(m.group(1)) <= 100]
+                wr = [int(m.group(1)) for m in WR.finditer(t)]
                 return {"setid": sid, "broad_spectrum": bool(BS.search(rest)), "aging_alert": bool(ALERT.search(t)),
-                        "chars": len(t)}
+                        "spf": max(spfs) if spfs else None, "spray": bool(SPRAY.search(t)), "powder": bool(POWDER.search(t)),
+                        "water_resistant_minutes": max(wr) if wr else None, "chars": len(t)}
         except Exception as e:  # noqa: BLE001
             print("retry", sid, e, flush=True)
         time.sleep(5 * (i + 1))
