@@ -63,7 +63,7 @@ CORRECTIONS = os.path.join(ROOT, "data/corrections/spl_label_errors.jsonl")
 SCOPE_OVERRIDES = os.path.join(ROOT, "data/reference/scope_overrides.json")
 
 SCHEMA_VERSION = "1.0.0"
-RULES_VERSION = "v3.5 · 2026-10-22"
+RULES_VERSION = "v3.6 · 2026-10-23"
 THIN_MAX = 7
 EVIDENCE_CAP = 4
 MINERAL = ("ZINC OXIDE", "TITANIUM DIOXIDE")

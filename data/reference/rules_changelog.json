@@ -1,6 +1,12 @@
 {
  "changes": [
   {
+   "version": "v3.6",
+   "date": "2026-10-23",
+   "change": "The check now reads the ingredient list printed on the label, not names that appear only in the FDA filing. A filing name still counts when it is a printed ingredient under another name or says what it comes from (soy or egg lecithin, fish collagen). Strengths come from the printed Drug Facts; a strength the filing gives per volume is not converted. One filing that covers several products says so. Also: methyldibromo glutaronitrile (banned in EU cosmetics) is flagged; an SPF under 15 gets the not-broad-spectrum flag; propylene glycol esters are not propylene glycol; seed oils are not essential oils; pain-relief creams are no longer listed as sunscreens.",
+   "why": "A check of 736 labels against their printed cartons found warnings resting on names only the FDA filing had (often another scent or an older formula), strengths converted from the filing's units (13.2% shown for a printed 12%), and kits whose products were merged. Each fix is the same rule for every brand."
+  },
+  {
    "version": "v3.5",
    "date": "2026-10-22",
    "change": "Three label checks added to 'Act on it': a sunscreen combined with an insect repellent (AAP), ingredients the EU restricts for children under 3 (salicylic acid, boric acid and borates), and fully fluorinated PFAS ingredients (state cosmetic bans since 2025). Each label's full text is now read for its Broad Spectrum claim and for the FDA Skin Cancer/Skin Aging Alert, which marks a sunscreen that is not broad spectrum or is below SPF 15. The EU fragrance-allergen check now covers the full list as extended in 2023 (Regulation (EU) 2023/1545), such as camphor, menthol, vanillin and citrus peel oils; when a label has only these and no fragrance, the summary says 'Contains an EU-listed fragrance allergen'.",
