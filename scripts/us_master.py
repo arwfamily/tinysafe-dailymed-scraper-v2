@@ -581,7 +581,8 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     # an aroma chemical the dictionary reads as added for scent (ethylene brassylate, ...)
     # that no fragrance pattern names: still a fragrance
     scent = [n for n in shown if _dict_job(n) == "fragrance"]
-    if scent and not any(f in fl for f in ("fragrance", "essential_oil", "eu_fragrance_allergen")):
+    # (an EU-listed allergen among them does not make the others any less a fragrance)
+    if scent and not any(f in fl for f in ("fragrance", "essential_oil")):
         add("fragrance", scent)
     # the title's [labeler] is the company, not the product ("[EMPACK SPRAYTECH]" on a lotion)
     form = " ".join([c.get("dosage_form") or "", re.sub(r"\[[^\]]*\]", " ", c.get("title") or ""),
