@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-19",
  "git_tag": "us-data-2026-10-19",
- "released": "2026-10-23T06:16:56+00:00",
+ "released": "2026-10-23T15:10:14+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.6 · 2026-10-23",
  "source": {
@@ -41,7 +41,7 @@
     "needs_review": 1
    },
    "label_verified_share": 0.9735,
-   "inactives_7_or_fewer": 391,
+   "inactives_7_or_fewer": 390,
    "recalls": {
     "labels_matched": 15,
     "labels_needs_review": 0
@@ -70,7 +70,7 @@
     "non_english_label": 4
    },
    "label_verified_share": 0.9543,
-   "inactives_7_or_fewer": 148,
+   "inactives_7_or_fewer": 147,
    "recalls": {
     "labels_matched": 13,
     "labels_needs_review": 0
@@ -95,7 +95,7 @@
     "label_image_mismatch": 2
    },
    "label_verified_share": 0.9828,
-   "inactives_7_or_fewer": 35,
+   "inactives_7_or_fewer": 34,
    "recalls": {
     "labels_matched": 3,
     "labels_needs_review": 0
@@ -114,15 +114,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9549,
-   "sha256": "72484371e1a9a534e419e8f22442ce761b558f675fcd298f3b730a6c87d4e9a3"
+   "sha256": "c175834477aa26bbe846fe77677b9b02d54a9566a86bacc81eb2e7da038e6adb"
   },
   "us_mineral.jsonl": {
    "rows": 5182,
-   "sha256": "ddd7d2f2d48d6960e35b3be0ff877e1e3fea277f8fa243d35c57f7a46ab05a54"
+   "sha256": "df67718c25847e9a4eeb9e685cb1e5b32a957aacb912024ae35493f8c61b0c01"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "d634bd64f22660ffb6cec22d2dae838471b7fe78e2e145cd1551ebd944c20639"
+   "sha256": "17301664107ba0de3a6e89508c0550cfc8a7ca51823a61060199653e447f012b"
   },
   "us_out_of_scope.jsonl": {
    "rows": 4739,
