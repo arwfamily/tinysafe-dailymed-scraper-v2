@@ -39,7 +39,11 @@ REQUIRED = {"id": str, "n": str, "i": list, "v3": list, "z": list, "r": list, "t
 SYNTHETIC = re.compile(r"\bSYNTHETIC\b", re.I)
 RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026-10-22)
     "propolis_beeswax": SYNTHETIC, "animal_derived": SYNTHETIC, "lanolin": SYNTHETIC,
-    "essential_oil": re.compile(r"^(?!.*\b(OIL|OLEUM)\b)|\b(SEED|KERNEL|NUT|BRAN|GERM)\b.*\bOIL\b", re.I),  # extracts, waters; fixed seed oils (v3.6)
+    "essential_oil": re.compile(r"^(?!.*\b(OIL|OLEUM)\b)|\b(SEED|KERNEL|NUT|BRAN|GERM)\b.*\bOIL\b|"
+                                r"\bROSA\s+(MOSCHATA|CANINA|RUBIGINOSA)\b(?!.*FLOWER)", re.I),  # extracts, waters; fixed seed oils (v3.6); rosehip (v3.7)
+    "asteraceae": re.compile(r"PINASTER", re.I),          # pine bark matched "ASTER" (v3.7)
+    # a silicone grade filed with its cyclopentasiloxane carrier, printed as dimethicone (v3.7)
+    "d5_d6": re.compile(r"^(?!.*(CYCLO|SILOXANE|METHICONE\b(?<!DIMETHICONE))).*DIMETHICONE", re.I),
     "wheat": re.compile(r"\b(CORN|MAIZE|ZEA MAYS)\b.*GLUTEN", re.I),   # corn gluten is not wheat (v3.5)
     "propylene_glycol": re.compile(r"PROPYLENE ?GLY ?COL[ -]*(?:[A-Z]+ATE|MONO|DI[A-Z]+|ALGINATE|ESTER)", re.I),  # its esters (v3.6)
 }
