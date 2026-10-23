@@ -289,6 +289,16 @@ def thin_reason(u, chk):
     return "short_list"
 
 
+# the package artwork as a person read it (data/corrections/artwork_reads.jsonl, baby and kids
+# labels, 2026-10-23): where the filed label text and the artwork disagree on a warning, the
+# artwork matched the product on sale more often (15 of 23 settled against retailers), so its
+# list is used, unless a retailer check showed the filed text is the product sold now
+ARTWORK = {}
+_AP = os.path.join(ROOT, "data/corrections/artwork_reads.jsonl")
+if os.path.exists(_AP):
+    for _x in open(_AP, encoding="utf-8"):
+        _d = json.loads(_x)
+        ARTWORK[_d["setid"]] = _d
 NOT_WW = ("w/w_from_mass_per_volume", "v/v")
 ANALGESIC = {"TROLAMINE SALICYLATE", "MENTHOL", "CAMPHOR", "METHYL SALICYLATE", "LIDOCAINE", "LIDOCAINE HCL",
              "LIDOCAINE HYDROCHLORIDE", "CAPSAICIN", "HISTAMINE DIHYDROCHLORIDE"}
@@ -482,13 +492,24 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     applied = bool(re.search(r"\bSTICK\b", U)) or (c.get("dosage_form") or "").upper() in (
         "STICK", "CREAM", "GEL", "PASTE", "OINTMENT", "BALM")
     rollon = re.search(r"ROLL[ -]?ON|ROLLER ?BALL", U)
+    # the artwork, as a person read it, says what the product is (a pump lotion filed as a
+    # spray; a loose powder filed as a cream)
+    art = ARTWORK.get(c.get("setid"))
+    art_form = (art.get("form") or "") if art and art.get("readable") and (art.get("variants") or 1) == 1 and str(
+        art.get("spl_version")) == str(c.get("spl_version")) else ""
+    if art_form and not re.search(r"spray|powder", art_form):
+        rollon = True
+    if re.search(r"spray|powder", art_form):
+        claim = True
+        applied = False
     if not rollon and (SPRAY.search(form) or (claim and not applied)):
         add("spray_powder", [])
         if "talc" in fl:
             add("talc_inhalable", fl["talc"])
     # what the label itself says outside the ingredient list: a named scent ("Fun Melon
     # Fragrance") is a fragrance; an "Allergens: soybeans (glycerin)" statement is that allergen
-    for sc in (lc or {}).get("scent_claims") or []:
+    _a = ARTWORK.get(c.get("setid"))
+    for sc in ([] if _a and _a.get("use_list") else (lc or {}).get("scent_claims") or []):
         if not any(f in fl for f in ("fragrance", "essential_oil")) and not (c.get("product_count") or 1) > 1:
             # quote the scent only when it reads as one ("Fun Melon"), not as list words
             inci = re.search(r"(?i)ATE\b|ENE\b|OL\b|ICONE|ACID|EXTRACT|WAX|GLYCOL|SALICYLATE|SUNSCREEN|SPRAY|"
@@ -840,6 +861,11 @@ def build(run_date):
             acts = [dict(a, percent=_pr[a["name"]], percent_basis="label_text")
                     if a["name"] in _pr and (a.get("percent") is None or a.get("percent_basis") != "drug_facts_panel")
                     else a for a in acts]
+        _art = ARTWORK.get(sid) if str((ARTWORK.get(sid) or {}).get("spl_version")) == str(ver) else None
+        if _art and _art.get("readable") and (_art.get("variants") or 1) == 1 and _art.get("actives"):
+            _ap = PS.read(" ".join(f"{n} {p}%" for n, p in _art["actives"] if p is not None), [a["name"] for a in acts])
+            acts = [dict(a, percent=_ap[a["name"]], percent_basis="label_artwork")
+                    if a["name"] in _ap and _ap[a["name"]] <= US_MAX.get(a["name"], 100) else a for a in acts]
         ft, mp, cp, organic = filter_split(c, acts)
         # strengths that cannot give the printed SPF (all actives together under 5% w/w for
         # SPF 15+): the filing used the wrong unit or scale (e.g. 3 mg per 1 g for 3%), so the
@@ -859,6 +885,9 @@ def build(run_date):
         _spfs = [x for x in (LABEL_CLAIMS.get(sid) or {}).get("spfs") or [] if x > 15]
         if n_products == 1 and len(_spfs) >= 2:
             n_products = len(_spfs)
+        art = ARTWORK.get(sid) if str((ARTWORK.get(sid) or {}).get("spl_version")) == str(ver) else None
+        if art and art.get("readable") and (art.get("variants") or 1) > n_products and not art.get("filing_text_verified_current"):
+            n_products = art["variants"]
         multi = n_products > 1 or "KIT" in (c.get("dosage_form") or "").upper()
         acts_all = acts      # a kit's other products (an acne gel's salicylic acid) still give their flags
         if multi:
@@ -914,6 +943,9 @@ def build(run_date):
         # only the FDA filing has (often another variant or an older formula; 2026-10-22 label
         # audit) are not shown and give no flags
         pn = (u2 or {}).get("i_text_n") or 0
+        art_list = bool(art and art.get("use_list") and art.get("inactives"))
+        if art_list:
+            shown, pn = [x for x in art["inactives"] if not is_active(x, akeys_of(acts))], len(art["inactives"])
         extras_dropped = 0
         if pn >= 5 and len(shown) > pn:
             extras_dropped, shown = len(shown) - pn, shown[:pn]
@@ -935,7 +967,7 @@ def build(run_date):
                                    and set(re.findall(r"\d+", f)) != set(re.findall(r"\d+", x)))), None)
                 if x is not None:
                     twins = twins + [(x, f)]
-        fr = label_text_fragrance(sid, shown)
+        fr = None if art_list else label_text_fragrance(sid, shown)
         if fr:
             shown = shown + [fr]
         thin = len(shown) <= THIN_MAX
@@ -946,7 +978,10 @@ def build(run_date):
             "excluded_reason": excluded,
             "category": c.get("category"), "name": name, "title": c.get("title"),
             "brand": (legacy.get(sid) or {}).get("b") or c.get("labeler"), "labeler": c.get("labeler"),
-            "spf": c.get("spf") or (LABEL_CLAIMS.get(sid) or {}).get("spf") or title_spf(name, c.get("title")),
+            "spf": (art.get("spf") if art and art.get("readable") and (art.get("variants") or 1) == 1 and art.get("spf")
+                    and not art.get("filing_text_verified_current") else None)
+                   or c.get("spf") or (LABEL_CLAIMS.get(sid) or {}).get("spf") or title_spf(name, c.get("title"))
+                   or (art.get("spf") if art and art.get("readable") else None),
             "dosage_form": c.get("dosage_form"), "ndc_product": c.get("ndc_product"),
             "broad_spectrum": (None if sid not in LABEL_CLAIMS else
                                # both on one label (a kit, or a label error): unknown
@@ -963,7 +998,7 @@ def build(run_date):
             "mineral_pct": mp, "chemical_pct": cp,
             "is_mineral": ft not in ("chemical_only", "no_uv_filter"),
             "is_baby_kids": baby_kids_final(c, bdec)[0], "baby_kids_basis": baby_kids_final(c, bdec)[1],
-            "inactives": shown, "inactive_source": (u2 or {}).get("i_src", "structured"),
+            "inactives": shown, "inactive_source": "artwork" if art_list else (u2 or {}).get("i_src", "structured"),
             "inactives_filed_n": (u2 or {}).get("i_struct_n", 0), "inactives_printed_n": (u2 or {}).get("i_text_n", 0),
             "label_check": (chk or {}).get("status"), "label_check_date": (chk or {}).get("checked"),
             "label_check_stale": bool(L.stale(led, sid, ver)) and chk is None,
