@@ -46,6 +46,9 @@ ALLERGENS = re.compile(r"\ballergens?\s*:\s*([^.;|]{3,120})", re.I)
 # a scent named on the label ("Fun Melon Fragrance", "Coconut Vanilla scent"), not "fragrance free"
 SCENT = re.compile(r"\b((?:[A-Z][a-z]+\s){1,3})(?:[Ff]ragrance|FRAGRANCE|[Ss]cent(?:ed)?|SCENT(?:ED)?)\b(?![\s-]*(?i:free))")
 ACT = re.compile(r"active\s+ingredients?\b(.{0,600}?)(?=\bpurposes?\b|\buses?\b|\bwarnings?\b|$)", re.I | re.S)
+# the Drug Facts "Purpose" and "Uses" sections (is this product a sunscreen at all?)
+PURPOSE = re.compile(r"\bpurposes?\b\s*:?(.{0,200}?)(?=\buses?\b|\bwarnings?\b|\bdirections\b|$)", re.I | re.S)
+USES = re.compile(r"\buses?\b\s*:?(.{0,400}?)(?=\bwarnings?\b|\bdirections\b|\bdo not use\b|$)", re.I | re.S)
 
 
 def actives_text(t):
@@ -72,6 +75,9 @@ def claims(sid):
                         "spfs": sorted(set(spfs)),
                         # the printed Active ingredient(s) section, for the printed strengths
                         "actives_text": actives_text(t),
+                        "purpose": " || ".join(m.group(1).strip()[:200] for m in list(PURPOSE.finditer(t))[:3]) or None,
+                        "uses": " || ".join(m.group(1).strip()[:400] for m in list(USES.finditer(t))[:2]) or None,
+                        "_text": t[:40000],
                         "allergen_statement": "; ".join(m.group(1).strip() for m in ALLERGENS.finditer(t))[:300] or None,
                         "scent_claims": sorted({m.group(1).strip() for m in SCENT.finditer(t)
                                                 if not re.search(r"(?i)\b(no|free|without|added|natural|unscented)\b",
@@ -96,12 +102,16 @@ def incremental():
     with cf.ThreadPoolExecutor(max_workers=4) as ex:
         for sid, r in zip(todo, ex.map(claims, todo)):
             if r:
+                r.pop("_text", None)
                 r["spl_version"] = cur[sid]
                 have[sid] = r
     with open(path, "w") as f:
         for sid in sorted(have):
             if sid in cur:
                 f.write(json.dumps(have[sid]) + "\n")
+
+
+VER = {}
 
 
 def main():
@@ -112,6 +122,7 @@ def main():
         r = json.loads(line)
         if r.get("in_scope") and r.get("status") == "active":
             want.append(r["setid"])
+            VER[r["setid"]] = r.get("spl_version")
     os.makedirs("label_claims", exist_ok=True)
     out, failed = [], []
     with cf.ThreadPoolExecutor(max_workers=4) as ex:
@@ -119,9 +130,13 @@ def main():
             (out.append(r) if r else failed.append(sid))
             if n % 500 == 0:
                 print(n, "done", len(failed), "failed", flush=True)
-    with open("label_claims/claims.jsonl", "w") as f:
+    import gzip
+    with open("label_claims/claims.jsonl", "w") as f, gzip.open("label_claims/text.jsonl.gz", "wt", encoding="utf-8") as g:
         for r in out:
+            t = r.pop("_text", "")
+            r["spl_version"] = VER.get(r["setid"])
             f.write(json.dumps(r) + "\n")
+            g.write(json.dumps({"setid": r["setid"], "spl_version": r["spl_version"], "text": t}) + "\n")
     json.dump(failed, open("label_claims/failed.json", "w"))
     print(f"read {len(out)} of {len(want)}")
 

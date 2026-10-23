@@ -18,7 +18,8 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           cp label_claims/claims.jsonl data/views/label_claims.jsonl
-          git add data/views/label_claims.jsonl
+          cp label_claims/text.jsonl.gz data/views/label_text_all.jsonl.gz
+          git add data/views/label_claims.jsonl data/views/label_text_all.jsonl.gz
           git diff --cached --quiet && exit 0
           git commit -m "data: label claims (broad spectrum, aging alert)"
           for i in 1 2 3; do git pull --rebase --autostash origin main && git push origin HEAD:main && break; sleep 10; done
