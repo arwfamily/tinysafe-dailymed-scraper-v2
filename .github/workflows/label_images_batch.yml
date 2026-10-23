@@ -1,0 +1,32 @@
+name: Label images, adult batch (for the artwork check)
+on:
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: 'batch number (data/views/adult_batches/batch_N.txt)'
+        required: true
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install pillow
+      - name: Download
+        run: python scripts/fetch_label_images.py --targets data/views/adult_batches/batch_${{ github.event.inputs.batch }}.txt
+      - name: Push to its own branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mv label_images /tmp/label_images
+          git checkout --orphan label-images-b${{ github.event.inputs.batch }}
+          git rm -rq --cached . 2>/dev/null || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r /tmp/label_images .
+          git add label_images
+          git commit -qm "label images batch ${{ github.event.inputs.batch }}"
+          git push -f origin label-images-b${{ github.event.inputs.batch }}

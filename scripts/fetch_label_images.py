@@ -44,12 +44,21 @@ def main():
         sys.argv.remove("--index-only")
     if not index_only:
         from PIL import Image
-    text = {json.loads(l)["setid"]: json.loads(l) for l in open(os.path.join(ROOT, "data/views/baby_label_text.jsonl"), encoding="utf-8")}
-    view = [json.loads(l) for l in open(os.path.join(ROOT, "data/views/baby_sunscreens.jsonl"), encoding="utf-8")]
-    targets = [r for r in view if printed_list(text.get(r["setid"], {})) is None]
+    # --targets FILE: only the setids in FILE (an adult-label batch), images at most 2000 px
+    batch = None
+    if "--targets" in sys.argv:
+        i = sys.argv.index("--targets")
+        batch = sys.argv[i + 1]
+        del sys.argv[i:i + 2]
+    if batch:
+        targets = [{"setid": s, "title": "", "spl_version": None} for s in open(os.path.join(ROOT, batch)).read().split()]
+    else:
+        text = {json.loads(l)["setid"]: json.loads(l) for l in open(os.path.join(ROOT, "data/views/baby_label_text.jsonl"), encoding="utf-8")}
+        view = [json.loads(l) for l in open(os.path.join(ROOT, "data/views/baby_sunscreens.jsonl"), encoding="utf-8")]
+        targets = [r for r in view if printed_list(text.get(r["setid"], {})) is None]
     targets += [{"setid": s, "title": "", "spl_version": None} for s in sys.argv[1:]]
     extra = os.path.join(ROOT, "data/views/extra_image_targets.txt")
-    if os.path.exists(extra):
+    if os.path.exists(extra) and not batch:
         have = {t["setid"] for t in targets}
         targets += [{"setid": s, "title": "", "spl_version": None} for s in open(extra).read().split() if s not in have]
     index = {}
@@ -71,11 +80,11 @@ def main():
                 imgs.append({"name": x["name"], "sha1_original": hashlib.sha1(b).hexdigest()})
                 continue
             im = Image.open(io.BytesIO(b)).convert("RGB")
-            s = 2400 / max(im.size)
+            s = (2000 if batch else 2400) / max(im.size)
             if s < 1:
                 im = im.resize((int(im.width * s), int(im.height * s)), Image.LANCZOS)
             fn = re.sub(r"[^A-Za-z0-9._-]", "_", x["name"]).rsplit(".", 1)[0] + ".jpg"
-            im.save(os.path.join(OUT, sid, fn), quality=88)
+            im.save(os.path.join(OUT, sid, fn), quality=80 if batch else 88)
             imgs.append({"name": x["name"], "file": f"{sid}/{fn}", "sha1_original": hashlib.sha1(b).hexdigest()})
         index[sid] = {"title": r.get("title"), "spl_version": r.get("spl_version"), "images": imgs}
         time.sleep(0.3)
