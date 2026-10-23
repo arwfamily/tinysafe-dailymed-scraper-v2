@@ -41,7 +41,7 @@ RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026
     "propolis_beeswax": SYNTHETIC, "animal_derived": SYNTHETIC, "lanolin": SYNTHETIC,
     "essential_oil": re.compile(r"^(?!.*\b(OIL|OLEUM)\b)|\b(SEED|KERNEL|NUT|BRAN|GERM)\b.*\bOIL\b", re.I),  # extracts, waters; fixed seed oils (v3.6)
     "wheat": re.compile(r"\b(CORN|MAIZE|ZEA MAYS)\b.*GLUTEN", re.I),   # corn gluten is not wheat (v3.5)
-    "propylene_glycol": re.compile(r"PROPYLENE GLYCOL[ -]*(?:[A-Z]+ATE|MONO|DI[A-Z]+|ALGINATE|ESTER)", re.I),  # its esters (v3.6)
+    "propylene_glycol": re.compile(r"PROPYLENE ?GLY ?COL[ -]*(?:[A-Z]+ATE|MONO|DI[A-Z]+|ALGINATE|ESTER)", re.I),  # its esters (v3.6)
 }
 # product-level flags whose rule changed on purpose (rules v3.6, 2026-10-23 label audit):
 # a spray needs a spray filing or spray wording on a label that is not a stick/cream/roll-on;

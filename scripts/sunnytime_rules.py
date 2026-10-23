@@ -115,6 +115,9 @@ P = {
     "botanical_count": None,  # see is_botanical()
 }
 RX = {k: re.compile(v) for k, v in P.items() if v}
+# an ester of propylene glycol (dicaprylate/dicaprate, dibenzoate...), also run together or
+# split by a stray space as labels print it: not propylene glycol itself
+PG_ESTER = re.compile(r"PROPYLENE ?GLY ?COL[ -]*(?:[A-Z]+ATE|MONO[A-Z]*|DI[A-Z]+|ALGINATE|ESTERS?)\b")
 
 # Plants whose non-fixed oils are essential oils (genus, or common name).
 EO_GENERA = {"LAVANDULA", "ROSMARINUS", "SALVIA", "MENTHA", "EUCALYPTUS", "MELALEUCA", "LEPTOSPERMUM", "CYMBOPOGON",

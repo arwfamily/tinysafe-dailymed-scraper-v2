@@ -112,7 +112,7 @@ class Engine:
                 and not re.search(r"CARROT|DAUCUS|CORIAND", name.upper()):
             fs.discard("essential_oil")
         # propylene glycol itself, not an ester of it (propylene glycol dicaprylate/dicaprate)
-        if "propylene_glycol" in fs and not R.RX["propylene_glycol"].search(name.upper()):
+        if "propylene_glycol" in fs and R.PG_ESTER.search(name.upper()):
             fs.discard("propylene_glycol")
         fs.discard("chemical_filter_active")             # actives only
         # "Synthetic Beeswax", "Synthetic Wax": made in a lab, not from bees or animals

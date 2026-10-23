@@ -41,6 +41,7 @@ sys.path.insert(0, HERE)
 import ledger as L  # noqa: E402
 import scope_rules as S  # noqa: E402
 import sunnytime_rules as R  # noqa: E402
+import printed_strengths as PS  # noqa: E402
 from inactive_union import _ACTIVE_SYN, is_active, key, same_display  # noqa: E402
 from sunnytime_db import Engine, inactive_flags, no_preservative  # noqa: E402
 
@@ -756,6 +757,14 @@ def build(run_date):
         chk = L.current(led, sid, ver) if ver is not None else (
             max((led.get(sid) or {}).values(), key=lambda r: r.get("checked", ""), default=None))
         acts = actives(c, legacy.get(sid))
+        # the strengths the label prints (Drug Facts text), where the structured filing gave
+        # none or gave a converted / filed-unit number (agrees with the panel read on
+        # 15,176 of 15,177 actives where both exist: scripts/printed_strengths.py)
+        _pr = PS.read((LABEL_CLAIMS.get(sid) or {}).get("actives_text"), [a["name"] for a in acts])
+        if _pr and int(c.get("product_count") or 1) == 1:
+            acts = [dict(a, percent=_pr[a["name"]], percent_basis="label_text")
+                    if a["name"] in _pr and (a.get("percent") is None or a.get("percent_basis") != "drug_facts_panel")
+                    else a for a in acts]
         ft, mp, cp, organic = filter_split(c, acts)
         # strengths that cannot give the printed SPF (all actives together under 5% w/w for
         # SPF 15+): the filing used the wrong unit or scale (e.g. 3 mg per 1 g for 3%), so the
@@ -769,6 +778,7 @@ def build(run_date):
         # spray's, an acne serum's) is not this sunscreen's (2026-10-22 label audit)
         n_products = int(c.get("product_count") or 1)
         multi = n_products > 1 or "KIT" in (c.get("dosage_form") or "").upper()
+        acts_all = acts      # a kit's other products (an acne gel's salicylic acid) still give their flags
         if multi:
             uv = [a for a in acts if a["name"].upper() not in {x.upper() for x in c.get("non_uv_actives") or []}]
             acts = uv or acts
@@ -871,7 +881,7 @@ def build(run_date):
             "label_check": (chk or {}).get("status"), "label_check_date": (chk or {}).get("checked"),
             "label_check_stale": bool(L.stale(led, sid, ver)) and chk is None,
             "thin": thin, "thin_reason": treason,
-            "flags": flags(eng, meta, shown, flag_struct, acts, organic, c, thin, treason, twins),
+            "flags": flags(eng, meta, shown, flag_struct, acts_all if multi else acts, organic, c, thin, treason, twins),
             "filed_extras_dropped": extras_dropped or None,
             "multi_product": (n_products if n_products > 1 else "kit") if multi else None,
             "recalls": recalls.match(c, c.get("product_name") or name) if recalls.all else [],
