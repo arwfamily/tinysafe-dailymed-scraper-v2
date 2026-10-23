@@ -44,7 +44,16 @@ P = {
                              r"CINNAMAL|CINNAMYL ALCOHOL|AMYLCINNAM|HEXYL ?CINNAMAL|ANISE ALCOHOL|ANISYL ALCOHOL|"
                              r"BUTYLPHENYL METHYLPROPIONAL|ALPHA-ISOMETHYL IONONE|ISOMETHYL IONONE|HYDROXYISOHEXYL 3-CYCLOHEXENE|"
                              r"OAKMOSS|EVERNIA|TREEMOSS|METHYL 2-OCTYNOATE|ROSA .*FLOWER OIL|(?<!PRIM)\bROSE (FLOWER )?OIL|"
-                             r"PELARGONIUM GRAVEOLENS|LAVANDULA ANGUSTIFOLIA",
+                             r"PELARGONIUM GRAVEOLENS|LAVANDULA ANGUSTIFOLIA"
+                             r"|\bACETYL CEDRENE|\bAMYL SALICYLATE|\bANETHOLE|\bBENZALDEHYDE|(?<!BENZYLIDENE )(?<!-)\bCAMPHOR\b(?! BENZALKONIUM)|CARYOPHYLLENE|\bCARVONE"
+                             r"|DIMETHYL PHENETHYL ACETATE|HEXADECANOLACTONE|HEXAMETHYLINDANOPYRAN|(?<!-)\bMENTHOL\b|TRIMETHYLCYCLOPENTENYL METHYLISOPENTENOL"
+                             r"|SALICYLALDEHYDE|\bSANTALOL|\bSCLAREOL|TERPINEOL|TETRAMETHYL ACETYLOCTAHYDRONAPHTHALENES|TRIMETHYLBENZENEPROPANOL|(?<!ETHYL )\bVANILLIN"
+                             r"|EUGENYL ACETATE|GERANYL ACETATE|\bPINENE"
+                             r"|CANANGA ODORATA|YLANG|CINNAMOMUM CASSIA LEAF OIL|CINNAMOMUM ZEYLANICUM BARK OIL|CITRUS AURANTIUM[A-Z ()]*FLOWER OIL|NEROLI"
+                             r"|CITRUS AURANTIUM[A-Z ()]*PEEL OIL|BERGAMIA|BERGAMOT|CITRUS LIMON[A-Z ()]*PEEL OIL|LEMON PEEL OIL|ORANGE PEEL OIL|LEMONGRASS|CYMBOPOGON[A-Z ()]*OIL"
+                             r"|EUCALYPTUS GLOBULUS[A-Z ()]*OIL|EUCALYPTUS OIL|EUGENIA CARYOPHYLLUS|CLOVE (BUD |LEAF )?OIL|JASMIN|JUNIPERUS VIRGINIANA|LAURUS NOBILIS LEAF OIL"
+                             r"|LAVANDULA[A-Z ()]*(OIL|EXTRACT)|LAVENDER (OIL|EXTRACT)|MENTHA PIPERITA[A-Z ()]*OIL|PEPPERMINT OIL|MENTHA VIRIDIS[A-Z ()]*OIL|SPEARMINT OIL"
+                             r"|NARCISSUS|POGOSTEMON CABLIN|PATCHOULI|ROSA [A-Z ()]*FLOWER (OIL|EXTRACT)|SANTALUM ALBUM|SANDALWOOD OIL",  # + Regulation (EU) 2023/1545
     "essential_oil": None,  # see is_essential_oil()
     "asteraceae": r"CALENDULA|CHAMOMIL|MATRICARIA|ANTHEMIS|ECHINACEA|ARNICA|FEVERFEW|TANACETUM|TARAXACUM|DANDELION|"
                   r"ACHILLEA|YARROW|ARCTIUM|BURDOCK|HELICHRYSUM|IMMORTELLE|CENTAUREA|CORNFLOWER|SILYBUM|MILK THISTLE|"
@@ -267,4 +276,5 @@ class PlantIndex:
 # Flags where v3.1's name decisions are incomplete (evidence was capped at 4 names
 # per flag, so an unflagged name is not a decision): the patterns add to v3.1.
 ADDITIVE = {"essential_oil", "ethoxylated", "hidden_uv_booster", "microplastic_polymer", "fragrance",
-            "alkyl_glucoside", "sulfite", "isobornyl_acrylate", "insect_repellent", "under3_restricted", "pfas"}   # new in v3.4: v3.1 never had them
+            "alkyl_glucoside", "sulfite", "isobornyl_acrylate", "insect_repellent", "under3_restricted", "pfas",
+            "eu_fragrance_allergen"}   # the EU list grew in 2023 (Regulation (EU) 2023/1545)   # new in v3.4: v3.1 never had them

@@ -3,7 +3,7 @@
   {
    "version": "v3.5",
    "date": "2026-10-22",
-   "change": "Three label checks added to 'Act on it': a sunscreen combined with an insect repellent (AAP), ingredients the EU restricts for children under 3 (salicylic acid, boric acid and borates), and fully fluorinated PFAS ingredients (state cosmetic bans since 2025). Each label's full text is now read for its Broad Spectrum claim and for the FDA Skin Cancer/Skin Aging Alert, which marks a sunscreen that is not broad spectrum or is below SPF 15.",
+   "change": "Three label checks added to 'Act on it': a sunscreen combined with an insect repellent (AAP), ingredients the EU restricts for children under 3 (salicylic acid, boric acid and borates), and fully fluorinated PFAS ingredients (state cosmetic bans since 2025). Each label's full text is now read for its Broad Spectrum claim and for the FDA Skin Cancer/Skin Aging Alert, which marks a sunscreen that is not broad spectrum or is below SPF 15. The EU fragrance-allergen check now covers the full list as extended in 2023 (Regulation (EU) 2023/1545), such as camphor, menthol, vanillin and citrus peel oils; when a label has only these and no fragrance, the summary says 'Contains an EU-listed fragrance allergen'.",
    "why": "A review of what a baby-sunscreen check should catch found these on real labels and not yet covered."
   },
   {
