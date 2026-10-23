@@ -56,6 +56,22 @@ def actives_text(t):
     return " || ".join(m.group(1).strip()[:600] for m in list(ACT.finditer(t))[:3]) or None
 
 
+MKT = re.compile(r"<marketingAct>(.*?)</marketingAct>", re.S)
+
+
+def marketing(xml):
+    """Each product's marketing status in the SPL: [status, start, end] (end set once
+    the brand has told the FDA it stopped marketing the product)."""
+    out = []
+    for m in MKT.finditer(xml or ""):
+        b = m.group(1)
+        st = re.search(r'statusCode\s+code="(\w+)"', b)
+        lo = re.search(r'<low\s+value="(\d+)"', b)
+        hi = re.search(r'<high\s+value="(\d+)"', b)
+        out.append([st.group(1) if st else None, lo.group(1) if lo else None, hi.group(1) if hi else None])
+    return out[:20]
+
+
 def claims(sid):
     for i in range(3):
         try:
@@ -77,6 +93,7 @@ def claims(sid):
                         "actives_text": actives_text(t),
                         "purpose": " || ".join(m.group(1).strip()[:200] for m in list(PURPOSE.finditer(t))[:3]) or None,
                         "uses": " || ".join(m.group(1).strip()[:400] for m in list(USES.finditer(t))[:2]) or None,
+                        "marketing": marketing(xml),
                         "_text": t[:40000],
                         "allergen_statement": "; ".join(m.group(1).strip() for m in ALLERGENS.finditer(t))[:300] or None,
                         "scent_claims": sorted({m.group(1).strip() for m in SCENT.finditer(t)
