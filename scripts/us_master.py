@@ -298,6 +298,32 @@ if os.path.isdir(_OCR_DIR):
                                                  source="label_image_ocr")
 
 
+def title_spf(*names):
+    """The SPF printed in the product name or title ("SPF 50+", "SPF-30")."""
+    for n in names:
+        m = re.search(r"\bSPF\s*-?\s*(\d{1,3})", n or "", re.I)
+        if m and 2 <= int(m.group(1)) <= 100:
+            return int(m.group(1))
+    return None
+
+
+_DICT = {}
+
+
+def _dict_job(name):
+    """Main job of a label name in the ingredient dictionary (scripts/cosing)."""
+    if not _DICT:
+        sys.path.insert(0, os.path.join(HERE, "cosing"))
+        import dictionary as DICT
+        _DICT["names"] = sorted({n for line in open(UNION, encoding="utf-8") for n in
+                                 (json.loads(line).get("i_union") or [])})
+        _DICT["cache"] = DICT.build(_DICT["names"])          # one pass over every name
+        _DICT["build"] = DICT.build
+    if name not in _DICT["cache"]:
+        _DICT["cache"].update(_DICT["build"]([name]))
+    return (_DICT["cache"].get(name) or {}).get("job")
+
+
 def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
     fl = collections.OrderedDict()
 
@@ -320,7 +346,8 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
             if k not in seen:
                 seen.add(k)
                 out.append(n)
-        fl[f] = out[:EVIDENCE_CAP]
+        # every declared chemical active is listed; other flags cite up to EVIDENCE_CAP names
+        fl[f] = out if f == "chemical_filter_active" else out[:EVIDENCE_CAP]
     for f, ev in inactive_flags(eng, list(dict.fromkeys(shown + struct))).items():
         add(f, ev)
     # non-UV actives (skin protectants such as dimethicone) read like inactives
@@ -333,18 +360,23 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
         add(f, ev)
     if organic:
         add("chemical_filter_active", list(organic))
+    # an aroma chemical the dictionary reads as added for scent (ethylene brassylate, ...)
+    # that no fragrance pattern names: still a fragrance
+    scent = [n for n in shown if _dict_job(n) == "fragrance"]
+    if scent and not any(f in fl for f in ("fragrance", "essential_oil", "eu_fragrance_allergen")):
+        add("fragrance", scent)
     form = " ".join([c.get("dosage_form") or "", c.get("title") or "", c.get("product_name") or ""])
-    if SPRAY.search(form):
+    lc = LABEL_CLAIMS.get(c.get("setid"))
+    if SPRAY.search(form) or (lc and (lc.get("spray") or lc.get("powder"))):
         add("spray_powder", [])
         if "talc" in fl:
             add("talc_inhalable", fl["talc"])
-    lc = LABEL_CLAIMS.get(c.get("setid"))
     if lc and lc.get("aging_alert") and not lc.get("broad_spectrum"):
         # the FDA Skin Cancer/Skin Aging Alert is printed only by sunscreens that are not
         # broad spectrum (or are SPF 2-14): 21 CFR 201.327(d)
         add("not_broad_spectrum", [])
     wr = (c.get("label_flags") or {}).get("water_resistant_minutes")
-    if wr or WATER_RES.search(form):
+    if wr or WATER_RES.search(form) or (lc and lc.get("water_resistant_minutes")):
         add("water_resistant", [])
     if no_preservative(list(dict.fromkeys(shown + struct))) and not (thin and treason != "short_list"):
         add("no_preservative_water_base", [])
@@ -640,6 +672,15 @@ def build(run_date):
             max((led.get(sid) or {}).values(), key=lambda r: r.get("checked", ""), default=None))
         acts = actives(c, legacy.get(sid))
         ft, mp, cp, organic = filter_split(c, acts)
+        # strengths that cannot give the printed SPF (all actives together under 5% w/w for
+        # SPF 15+): the filing used the wrong unit or scale (e.g. 3 mg per 1 g for 3%), so the
+        # percentages are withheld rather than shown wrong
+        _spf = c.get("spf") or (LABEL_CLAIMS.get(sid) or {}).get("spf") or title_spf(c.get("title"), c.get("product_name"))
+        _pct = [a.get("percent") for a in acts]
+        pct_withheld = bool(acts and _spf and _spf >= 15 and None not in _pct and sum(_pct) < 5)
+        if pct_withheld:
+            acts = [dict(a, percent=None) for a in acts]
+            mp = cp = None
         # scope: the classifier says sunscreen drug, then scripts/scope_rules.py takes out
         # SPF makeup / lip / diaper products the classifier let through, and lets back in
         # makeup-format products whose name calls them a sunscreen ("Sunscreen Setting Spritz")
@@ -682,14 +723,16 @@ def build(run_date):
             "excluded_reason": excluded,
             "category": c.get("category"), "name": name, "title": c.get("title"),
             "brand": (legacy.get(sid) or {}).get("b") or c.get("labeler"), "labeler": c.get("labeler"),
-            "spf": c.get("spf"), "dosage_form": c.get("dosage_form"), "ndc_product": c.get("ndc_product"),
+            "spf": c.get("spf") or (LABEL_CLAIMS.get(sid) or {}).get("spf") or title_spf(name, c.get("title")),
+            "dosage_form": c.get("dosage_form"), "ndc_product": c.get("ndc_product"),
             "broad_spectrum": (None if sid not in LABEL_CLAIMS else
                                # both on one label (a kit, or a label error): unknown
                                None if LABEL_CLAIMS[sid].get("aging_alert") and LABEL_CLAIMS[sid].get("broad_spectrum") else
                                False if LABEL_CLAIMS[sid].get("aging_alert") else
                                True if LABEL_CLAIMS[sid].get("broad_spectrum") else None),
             "dailymed_url": c.get("dailymed_url"), "effective_date": c.get("effective_date"),
-            "actives": acts, "mineral_type": mineral_type(acts), "filter_type": ft,
+            "actives": acts, "actives_percent_withheld": pct_withheld or None,
+            "mineral_type": mineral_type(acts), "filter_type": ft,
             "mineral_pct": mp, "chemical_pct": cp,
             "is_mineral": ft not in ("chemical_only", "no_uv_filter"),
             "is_baby_kids": baby_kids_final(c, bdec)[0], "baby_kids_basis": baby_kids_final(c, bdec)[1],

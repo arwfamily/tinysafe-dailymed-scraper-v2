@@ -1,0 +1,1342 @@
+{
+ "MICROCOCCUS": {
+  "inci": "MICROCOCCUS",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "microbial lysate used as a skin conditioning active; 'skin protecting' is a claim",
+  "confidence": "low",
+  "read_b": {
+   "inci": "MICROCOCCUS",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "bacterial lysate used as a skin-conditioning active",
+   "confidence": "low"
+  }
+ },
+ "CITRUS AURANTIUM DULCIS PEEL OIL EXPRESSED": {
+  "inci": "CITRUS AURANTIUM DULCIS PEEL OIL EXPRESSED",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CITRUS AURANTIUM DULCIS PEEL OIL EXPRESSED",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CITRUS AURANTIFOLIA PEEL OIL EXPRESSED": {
+  "inci": "CITRUS AURANTIFOLIA PEEL OIL EXPRESSED",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CITRUS AURANTIFOLIA PEEL OIL EXPRESSED",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "BUTYLPHTHALIDE": {
+  "inci": "BUTYLPHTHALIDE",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "BUTYLPHTHALIDE",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "aroma chemical",
+   "confidence": "high"
+  }
+ },
+ "ALTEROMONAS EXOPOLYSACCHARIDES": {
+  "inci": "ALTEROMONAS EXOPOLYSACCHARIDES",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ALTEROMONAS EXOPOLYSACCHARIDES",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CITRUS LIMON FLOWER/LEAF/STEM OIL": {
+  "inci": "CITRUS LIMON FLOWER/LEAF/STEM OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CITRUS LIMON FLOWER/LEAF/STEM OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CURCUMA LONGA RHIZOME OIL": {
+  "inci": "CURCUMA LONGA RHIZOME OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": true,
+  "reason": "turmeric essential oil; added for scent like other essential oils",
+  "confidence": "low",
+  "read_b": {
+   "inci": "CURCUMA LONGA RHIZOME OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": true,
+   "reason": "essential oil, added for scent",
+   "confidence": "high"
+  }
+ },
+ "BIFIDOBACTERIUM": {
+  "inci": "BIFIDOBACTERIUM",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "probiotic lysate/ferment used as skin conditioning; 'skin protecting' is a claim",
+  "confidence": "low",
+  "read_b": {
+   "inci": "BIFIDOBACTERIUM",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "probiotic ferment/lysate used as skin conditioner",
+   "confidence": "low"
+  }
+ },
+ "COPPER TRIPEPTIDE-1 ACETATE": {
+  "inci": "COPPER TRIPEPTIDE-1 ACETATE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "signal peptide used as a skin conditioning active",
+  "confidence": "low",
+  "read_b": {
+   "inci": "COPPER TRIPEPTIDE-1 ACETATE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "peptide used as skin conditioner",
+   "confidence": "low"
+  }
+ },
+ "BASIC BLUE 9": {
+  "inci": "BASIC BLUE 9",
+  "job": "colorant",
+  "secondary": null,
+  "override": true,
+  "reason": "dye used to tint the product; CosIng lists only hair dyeing",
+  "confidence": "high",
+  "read_b": {
+   "inci": "BASIC BLUE 9",
+   "job": "colorant",
+   "secondary": null,
+   "override": true,
+   "reason": "dye; CosIng lists only hair dyeing",
+   "confidence": "high"
+  }
+ },
+ "HEA/SODIUM ACRYLOYLDIMETHYLTAURATE/STEARETH-20 METHACRYLATE COPOLYMER": {
+  "inci": "HEA/SODIUM ACRYLOYLDIMETHYLTAURATE/STEARETH-20 METHACRYLATE COPOLYMER",
+  "job": "thickener",
+  "secondary": "emulsion_stabiliser",
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HEA/SODIUM ACRYLOYLDIMETHYLTAURATE/STEARETH-20 METHACRYLATE COPOLYMER",
+   "job": "thickener",
+   "secondary": "emulsion_stabiliser",
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ETHYL LAUROYL ARGINATE": {
+  "inci": "ETHYL LAUROYL ARGINATE",
+  "job": "preservative",
+  "secondary": null,
+  "override": true,
+  "reason": "established antimicrobial preservative (LAE)",
+  "confidence": "low",
+  "read_b": {
+   "inci": "ETHYL LAUROYL ARGINATE",
+   "job": "preservative",
+   "secondary": null,
+   "override": true,
+   "reason": "antimicrobial preservative (LAE)",
+   "confidence": "high"
+  }
+ },
+ "LEPTOSPERMUM PETERSONII OIL": {
+  "inci": "LEPTOSPERMUM PETERSONII OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "LEPTOSPERMUM PETERSONII OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ABIES SIBIRICA NEEDLE OIL": {
+  "inci": "ABIES SIBIRICA NEEDLE OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ABIES SIBIRICA NEEDLE OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SOLANUM LYCOPERSICUM FRUIT JUICE": {
+  "inci": "SOLANUM LYCOPERSICUM FRUIT JUICE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SOLANUM LYCOPERSICUM FRUIT JUICE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CANANGA ODORATA LEAF OIL": {
+  "inci": "CANANGA ODORATA LEAF OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CANANGA ODORATA LEAF OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "DIETHYLHEXYL SODIUM SULFOSUCCINATE": {
+  "inci": "DIETHYLHEXYL SODIUM SULFOSUCCINATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "DIETHYLHEXYL SODIUM SULFOSUCCINATE",
+   "job": "emulsifier",
+   "secondary": "dispersing",
+   "override": false,
+   "reason": "surfactant left on skin",
+   "confidence": "low"
+  }
+ },
+ "ACETYL CARNOSINE": {
+  "inci": "ACETYL CARNOSINE",
+  "job": "antioxidant",
+  "secondary": null,
+  "override": true,
+  "reason": "used as an antioxidant/anti-glycation active",
+  "confidence": "low",
+  "read_b": {
+   "inci": "ACETYL CARNOSINE",
+   "job": "antioxidant",
+   "secondary": null,
+   "override": true,
+   "reason": "carnosine derivative used as antioxidant",
+   "confidence": "low"
+  }
+ },
+ "PHYLLOSTACHYS BAMBUSOIDES JUICE": {
+  "inci": "PHYLLOSTACHYS BAMBUSOIDES JUICE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PHYLLOSTACHYS BAMBUSOIDES JUICE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ORYZA SATIVA GERM OIL": {
+  "inci": "ORYZA SATIVA GERM OIL",
+  "job": "emollient",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ORYZA SATIVA GERM OIL",
+   "job": "emollient",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "LAVANDULA INTERMEDIA EXTRACT": {
+  "inci": "LAVANDULA INTERMEDIA EXTRACT",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "LAVANDULA INTERMEDIA EXTRACT",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "lavandin, aromatic",
+   "confidence": "high"
+  }
+ },
+ "DICHLOROBENZYL ALCOHOL": {
+  "inci": "DICHLOROBENZYL ALCOHOL",
+  "job": "preservative",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "DICHLOROBENZYL ALCOHOL",
+   "job": "preservative",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PROPYLENE GLYCOL MYRISTATE": {
+  "inci": "PROPYLENE GLYCOL MYRISTATE",
+  "job": "emollient",
+  "secondary": null,
+  "override": true,
+  "reason": "fatty ester used as an emollient on skin",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PROPYLENE GLYCOL MYRISTATE",
+   "job": "emollient",
+   "secondary": null,
+   "override": true,
+   "reason": "fatty ester emollient",
+   "confidence": "high"
+  }
+ },
+ "ACETYLNEURAMINIC ACID": {
+  "inci": "ACETYLNEURAMINIC ACID",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ACETYLNEURAMINIC ACID",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PROPYLENE GLYCOL OLEATE": {
+  "inci": "PROPYLENE GLYCOL OLEATE",
+  "job": "emollient",
+  "secondary": null,
+  "override": true,
+  "reason": "fatty ester used as an emollient on skin",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PROPYLENE GLYCOL OLEATE",
+   "job": "emollient",
+   "secondary": null,
+   "override": true,
+   "reason": "fatty ester emollient",
+   "confidence": "high"
+  }
+ },
+ "TEA-OLEATE": {
+  "inci": "TEA-OLEATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "TEA-OLEATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "surfactant left on skin",
+   "confidence": "high"
+  }
+ },
+ "AGARUM CRIBROSUM EXTRACT": {
+  "inci": "AGARUM CRIBROSUM EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "AGARUM CRIBROSUM EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CITRUS AURANTIFOLIA SEED OIL": {
+  "inci": "CITRUS AURANTIFOLIA SEED OIL",
+  "job": "emollient",
+  "secondary": null,
+  "override": true,
+  "reason": "fixed seed oil, used as an emollient",
+  "confidence": "low",
+  "read_b": {
+   "inci": "CITRUS AURANTIFOLIA SEED OIL",
+   "job": "emollient",
+   "secondary": null,
+   "override": true,
+   "reason": "fixed seed oil",
+   "confidence": "low"
+  }
+ },
+ "XYLITYL CAPRATE/CAPRYLATE": {
+  "inci": "XYLITYL CAPRATE/CAPRYLATE",
+  "job": "preservative_booster",
+  "secondary": "emulsion_stabiliser",
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "XYLITYL CAPRATE/CAPRYLATE",
+   "job": "preservative_booster",
+   "secondary": "emulsion_stabiliser",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "LACTOBACILLUS/SOYBEAN EXTRACT FERMENT FILTRATE": {
+  "inci": "LACTOBACILLUS/SOYBEAN EXTRACT FERMENT FILTRATE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "LACTOBACILLUS/SOYBEAN EXTRACT FERMENT FILTRATE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "LACTOBACILLUS/RYE FLOUR FERMENT": {
+  "inci": "LACTOBACILLUS/RYE FLOUR FERMENT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "LACTOBACILLUS/RYE FLOUR FERMENT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ROSMARINUS OFFICINALIS FLOWER OIL": {
+  "inci": "ROSMARINUS OFFICINALIS FLOWER OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ROSMARINUS OFFICINALIS FLOWER OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "OCIMUM TENUIFLORUM OIL": {
+  "inci": "OCIMUM TENUIFLORUM OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": true,
+  "reason": "holy basil essential oil; added for scent",
+  "confidence": "high",
+  "read_b": {
+   "inci": "OCIMUM TENUIFLORUM OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": true,
+   "reason": "essential oil, added for scent",
+   "confidence": "high"
+  }
+ },
+ "HYDROLYZED WHEY PROTEIN": {
+  "inci": "HYDROLYZED WHEY PROTEIN",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HYDROLYZED WHEY PROTEIN",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "BIS-PEG-15 DIMETHICONE/IPDI COPOLYMER": {
+  "inci": "BIS-PEG-15 DIMETHICONE/IPDI COPOLYMER",
+  "job": "film_former",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "BIS-PEG-15 DIMETHICONE/IPDI COPOLYMER",
+   "job": "film_former",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "OPUNTIA TUNA FRUIT EXTRACT": {
+  "inci": "OPUNTIA TUNA FRUIT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "OPUNTIA TUNA FRUIT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ORMENIS MULTICAULIS FLOWER OIL": {
+  "inci": "ORMENIS MULTICAULIS FLOWER OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ORMENIS MULTICAULIS FLOWER OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "MELALEUCA LEUCADENDRON CAJUPUTI LEAF OIL": {
+  "inci": "MELALEUCA LEUCADENDRON CAJUPUTI LEAF OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "MELALEUCA LEUCADENDRON CAJUPUTI LEAF OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CHAMOMILLA RECUTITA FLOWER/LEAF/STEM EXTRACT": {
+  "inci": "CHAMOMILLA RECUTITA FLOWER/LEAF/STEM EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CHAMOMILLA RECUTITA FLOWER/LEAF/STEM EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "MENTHANEDIOL": {
+  "inci": "MENTHANEDIOL",
+  "job": "other",
+  "secondary": null,
+  "override": true,
+  "reason": "cooling sensate (gives a cool feel on skin)",
+  "confidence": "low",
+  "read_b": {
+   "inci": "MENTHANEDIOL",
+   "job": "other",
+   "secondary": null,
+   "override": true,
+   "reason": "cooling sensate",
+   "confidence": "low"
+  }
+ },
+ "PINUS PINASTER LEAF EXTRACT": {
+  "inci": "PINUS PINASTER LEAF EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PINUS PINASTER LEAF EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CI 12085": {
+  "inci": "CI 12085",
+  "job": "colorant",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CI 12085",
+   "job": "colorant",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "TRIPOTASSIUM GLYCYRRHIZATE": {
+  "inci": "TRIPOTASSIUM GLYCYRRHIZATE",
+  "job": "soothing",
+  "secondary": null,
+  "override": true,
+  "reason": "glycyrrhizin salt, an established anti-irritant",
+  "confidence": "low",
+  "read_b": {
+   "inci": "TRIPOTASSIUM GLYCYRRHIZATE",
+   "job": "soothing",
+   "secondary": null,
+   "override": true,
+   "reason": "purified licorice compound, established anti-irritant",
+   "confidence": "low"
+  }
+ },
+ "PSIDIUM GUAJAVA FRUIT JUICE": {
+  "inci": "PSIDIUM GUAJAVA FRUIT JUICE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PSIDIUM GUAJAVA FRUIT JUICE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "STEARYLDIMONIUMHYDROXYPROPYL DECYLGLUCOSIDES CHLORIDE": {
+  "inci": "STEARYLDIMONIUMHYDROXYPROPYL DECYLGLUCOSIDES CHLORIDE",
+  "job": "emulsifier",
+  "secondary": "skin_conditioning",
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "STEARYLDIMONIUMHYDROXYPROPYL DECYLGLUCOSIDES CHLORIDE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "surfactant left on skin",
+   "confidence": "low"
+  }
+ },
+ "OCTYLDODECYL DIMER DILINOLEYL ALCOHOL/SUCCINIC ACID COPOLYMER": {
+  "inci": "OCTYLDODECYL DIMER DILINOLEYL ALCOHOL/SUCCINIC ACID COPOLYMER",
+  "job": "emollient",
+  "secondary": "film_former",
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "OCTYLDODECYL DIMER DILINOLEYL ALCOHOL/SUCCINIC ACID COPOLYMER",
+   "job": "emollient",
+   "secondary": "film_former",
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "GOSSYPIUM HIRSUTUM SEED EXTRACT": {
+  "inci": "GOSSYPIUM HIRSUTUM SEED EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "GOSSYPIUM HIRSUTUM SEED EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "HYDROLYZED HEMP SEED PROTEIN": {
+  "inci": "HYDROLYZED HEMP SEED PROTEIN",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HYDROLYZED HEMP SEED PROTEIN",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "BETA VULGARIS ROOT JUICE": {
+  "inci": "BETA VULGARIS ROOT JUICE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "BETA VULGARIS ROOT JUICE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "HYDROCHLORIC ACID": {
+  "inci": "HYDROCHLORIC ACID",
+  "job": "ph",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HYDROCHLORIC ACID",
+   "job": "ph",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CORIANDRUM SATIVUM EXTRACT": {
+  "inci": "CORIANDRUM SATIVUM EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CORIANDRUM SATIVUM EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "TEA-ISOSTEARATE": {
+  "inci": "TEA-ISOSTEARATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "TEA-ISOSTEARATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "surfactant left on skin",
+   "confidence": "high"
+  }
+ },
+ "CALCIUM CARBOXYMETHYL CELLULOSE": {
+  "inci": "CALCIUM CARBOXYMETHYL CELLULOSE",
+  "job": "thickener",
+  "secondary": "emulsion_stabiliser",
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CALCIUM CARBOXYMETHYL CELLULOSE",
+   "job": "thickener",
+   "secondary": "emulsion_stabiliser",
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "RIBES NIGRUM JUICE": {
+  "inci": "RIBES NIGRUM JUICE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "RIBES NIGRUM JUICE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "HYDROXYPROPYL METHACRYLATE": {
+  "inci": "HYDROXYPROPYL METHACRYLATE",
+  "job": "film_former",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HYDROXYPROPYL METHACRYLATE",
+   "job": "film_former",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "MENTHA CITRATA OIL": {
+  "inci": "MENTHA CITRATA OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "MENTHA CITRATA OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "QUERCUS MONGOLICA LEAF EXTRACT": {
+  "inci": "QUERCUS MONGOLICA LEAF EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "QUERCUS MONGOLICA LEAF EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ASARUM SIEBOLDII ROOT EXTRACT": {
+  "inci": "ASARUM SIEBOLDII ROOT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ASARUM SIEBOLDII ROOT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "EUCALYPTUS CITRIODORA OIL": {
+  "inci": "EUCALYPTUS CITRIODORA OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "EUCALYPTUS CITRIODORA OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "BUTYLENE GLYCOL STEARATE": {
+  "inci": "BUTYLENE GLYCOL STEARATE",
+  "job": "emollient",
+  "secondary": "emulsifier",
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "BUTYLENE GLYCOL STEARATE",
+   "job": "emollient",
+   "secondary": "emulsifier",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "MASLINIC ACID": {
+  "inci": "MASLINIC ACID",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "MASLINIC ACID",
+   "job": "skin_conditioning",
+   "secondary": "antioxidant",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "MENTHA PULEGIUM OIL": {
+  "inci": "MENTHA PULEGIUM OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "MENTHA PULEGIUM OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "DAUCUS CAROTA SATIVA ROOT POWDER": {
+  "inci": "DAUCUS CAROTA SATIVA ROOT POWDER",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "DAUCUS CAROTA SATIVA ROOT POWDER",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "ABIES BALSAMEA NEEDLE OIL": {
+  "inci": "ABIES BALSAMEA NEEDLE OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ABIES BALSAMEA NEEDLE OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SPILANTHES ACMELLA FLOWER/LEAF/STEM EXTRACT": {
+  "inci": "SPILANTHES ACMELLA FLOWER/LEAF/STEM EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "plant extract used as skin conditioning, not as a preservative",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SPILANTHES ACMELLA FLOWER/LEAF/STEM EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "plant extract used as skin conditioner, not a preservative",
+   "confidence": "low"
+  }
+ },
+ "PETROSELINUM CRISPUM SEED OIL": {
+  "inci": "PETROSELINUM CRISPUM SEED OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PETROSELINUM CRISPUM SEED OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "OENANTHE JAVANICA EXTRACT": {
+  "inci": "OENANTHE JAVANICA EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "plant extract used as skin conditioning, not as a preservative",
+  "confidence": "low",
+  "read_b": {
+   "inci": "OENANTHE JAVANICA EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "plant extract used as skin conditioner, not a preservative",
+   "confidence": "low"
+  }
+ },
+ "DENDROPANAX MORBIFERUS EXTRACT": {
+  "inci": "DENDROPANAX MORBIFERUS EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "DENDROPANAX MORBIFERUS EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PERFLUOROOCTYLETHYL TRIETHOXYSILANE": {
+  "inci": "PERFLUOROOCTYLETHYL TRIETHOXYSILANE",
+  "job": "mineral_coating",
+  "secondary": null,
+  "override": true,
+  "reason": "fluorosilane surface treatment for ZnO/TiO2 and pigments",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PERFLUOROOCTYLETHYL TRIETHOXYSILANE",
+   "job": "mineral_coating",
+   "secondary": null,
+   "override": true,
+   "reason": "surface treatment for ZnO/TiO2",
+   "confidence": "high"
+  }
+ },
+ "ACACIA DECURRENS/JOJOBA/SUNFLOWER SEED WAX POLYGLYCERYL-3 ESTERS": {
+  "inci": "ACACIA DECURRENS/JOJOBA/SUNFLOWER SEED WAX POLYGLYCERYL-3 ESTERS",
+  "job": "emollient",
+  "secondary": "emulsifier",
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "ACACIA DECURRENS/JOJOBA/SUNFLOWER SEED WAX POLYGLYCERYL-3 ESTERS",
+   "job": "emollient",
+   "secondary": "emulsifier",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "TETRAHYDROXYETHYL ETHYLENEDIAMINE": {
+  "inci": "TETRAHYDROXYETHYL ETHYLENEDIAMINE",
+  "job": "ph",
+  "secondary": "chelating",
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "TETRAHYDROXYETHYL ETHYLENEDIAMINE",
+   "job": "ph",
+   "secondary": "chelating",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "TRISODIUM NTA": {
+  "inci": "TRISODIUM NTA",
+  "job": "chelating",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "TRISODIUM NTA",
+   "job": "chelating",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "HELIANTHUS ANNUUS HYBRID OIL": {
+  "inci": "HELIANTHUS ANNUUS HYBRID OIL",
+  "job": "emollient",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HELIANTHUS ANNUUS HYBRID OIL",
+   "job": "emollient",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ULMUS FULVA BARK EXTRACT": {
+  "inci": "ULMUS FULVA BARK EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "plant extract described by its use (skin conditioning), not a moisturising claim",
+  "confidence": "low",
+  "read_b": {
+   "inci": "ULMUS FULVA BARK EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "plant extract described by use, not moisturising claim",
+   "confidence": "low"
+  }
+ },
+ "PEG-60 CASTOR OIL": {
+  "inci": "PEG-60 CASTOR OIL",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PEG-60 CASTOR OIL",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SODIUM ACRYLATE/SODIUM ACRYLOYLDIMETHYL TAURATE/ACRYLAMIDE COPOLYMER": {
+  "inci": "SODIUM ACRYLATE/SODIUM ACRYLOYLDIMETHYL TAURATE/ACRYLAMIDE COPOLYMER",
+  "job": "thickener",
+  "secondary": "emulsion_stabiliser",
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SODIUM ACRYLATE/SODIUM ACRYLOYLDIMETHYL TAURATE/ACRYLAMIDE COPOLYMER",
+   "job": "thickener",
+   "secondary": "emulsion_stabiliser",
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "COPPER CARBONATE HYDROXIDE": {
+  "inci": "COPPER CARBONATE HYDROXIDE",
+  "job": "other",
+  "secondary": null,
+  "override": true,
+  "reason": "copper mineral salt; not a recognised preservative in sunscreen",
+  "confidence": "low",
+  "read_b": {
+   "inci": "COPPER CARBONATE HYDROXIDE",
+   "job": "other",
+   "secondary": null,
+   "override": true,
+   "reason": "copper mineral; antimicrobial is not its role in sunscreen",
+   "confidence": "low"
+  }
+ },
+ "PRUNUS DOMESTICA FRUIT JUICE": {
+  "inci": "PRUNUS DOMESTICA FRUIT JUICE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PRUNUS DOMESTICA FRUIT JUICE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "GLYCERYL ADIPATE": {
+  "inci": "GLYCERYL ADIPATE",
+  "job": "emollient",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "GLYCERYL ADIPATE",
+   "job": "emollient",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CI 73015": {
+  "inci": "CI 73015",
+  "job": "colorant",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CI 73015",
+   "job": "colorant",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PRUNUS ARMENIACA JUICE": {
+  "inci": "PRUNUS ARMENIACA JUICE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "fruit juice described by its use (skin conditioning), not a moisturising claim",
+  "confidence": "low",
+  "read_b": {
+   "inci": "PRUNUS ARMENIACA JUICE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "fruit juice described by use, not moisturising claim",
+   "confidence": "low"
+  }
+ },
+ "PIROCTONE OLAMINE": {
+  "inci": "PIROCTONE OLAMINE",
+  "job": "preservative",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PIROCTONE OLAMINE",
+   "job": "preservative",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "FURFURYL TETRAHYDROPYRANYLADENINE": {
+  "inci": "FURFURYL TETRAHYDROPYRANYLADENINE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "FURFURYL TETRAHYDROPYRANYLADENINE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CYCLOHEPTASILOXANE": {
+  "inci": "CYCLOHEPTASILOXANE",
+  "job": "emollient",
+  "confidence": "low",
+  "how": "lead_rule"
+ },
+ "FIBROIN": {
+  "inci": "FIBROIN",
+  "job": "skin_conditioning",
+  "confidence": "low",
+  "how": "lead_rule"
+ }
+}
