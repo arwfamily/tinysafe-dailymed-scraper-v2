@@ -311,6 +311,23 @@ LABEL_CLAIMS = ({json.loads(x)["setid"]: json.loads(x) for x in open(LABEL_CLAIM
 _CANON_PATH = os.path.join(ROOT, "data/canonical/us_sunscreens.jsonl")
 _CANVER = ({json.loads(x)["setid"]: str(json.loads(x).get("spl_version")) for x in open(_CANON_PATH, encoding="utf-8") if x.strip()}
            if os.path.exists(_CANON_PATH) else {})
+# The SPF the label text prints, read again from the full label text with the stricter
+# pattern now in label_claims.py ("30 SPF 100% MINERAL" is SPF 30, not 100)
+_LT = os.path.join(ROOT, "data/views/label_text_all.jsonl.gz")
+if os.path.exists(_LT):
+    import gzip as _gz0
+    sys.path.insert(0, HERE)
+    from label_claims import SPF as _SPFRX, BOILER as _BOILRX  # noqa: E402
+    for _x in _gz0.open(_LT, "rt", encoding="utf-8"):
+        _d = json.loads(_x)
+        _c = LABEL_CLAIMS.get(_d["setid"])
+        if not _c or _CANVER.get(_d["setid"]) != str(_d.get("spl_version")):
+            continue
+        _v = sorted({int(m.group(1) or m.group(2)) for m in _SPFRX.finditer(_BOILRX.sub(" ", _d.get("text") or ""))
+                     if 2 <= int(m.group(1) or m.group(2)) <= 100})
+        LABEL_CLAIMS[_d["setid"]] = dict(_c, spf=max(_v) if _v else None, spfs=_v)
+
+
 # The label images, for what the label text does not print. A person's reading of the
 # artwork (data/corrections/claims_reads.jsonl) comes first; OCR is used only where it is
 # unambiguous, because a 2026-10-23 check against person reads found OCR wrong on 1 in 30
@@ -895,6 +912,15 @@ def label_text_fragrance(sid, shown):
     return "Fragrance (Parfum)" if "PARFUM" in text else "Fragrance"
 
 
+def _mkt_end(sid, run_date):
+    m = (LABEL_CLAIMS.get(sid) or {}).get("marketing") or []
+    day = str(run_date).replace("-", "")
+    if m and all(x[0] == "completed" and x[2] and x[2] < day for x in m):
+        e = max(x[2] for x in m)
+        return f"{e[:4]}-{e[4:6]}-{e[6:8]}"
+    return None
+
+
 def build(run_date):
     canon = jl(CANON)
     fixes = corrections()
@@ -1000,7 +1026,9 @@ def build(run_date):
         _cr = CLAIMS_READS.get(sid)
         if why is None and not (_spf or _lc0.get("spf")) and (
                 (_cr and _cr.get("is_sunscreen") is False) or
-                (_lc0.get("purpose") and not re.search(r"(?i)sun|\buv|spf|sunburn", _pur))):
+                (re.search(r"(?i)skin\s+lighten|bleach|antisep|disinfect|antimicrob|antibacter|hand\s+saniti|"
+                           r"analgesic|pain\s+reli|acne|skin\s+protectant|anti-?itch|antifungal", _lc0.get("purpose") or "")
+                 and not re.search(r"(?i)sunscreen|sun\s*burn|\bspf\b|sun\s+protect", _pur))):
             why = "not_a_sunscreen"
         in_scope = (c.get("category") == "sunscreen" or back_in) and why is None
         if in_scope:
@@ -1064,6 +1092,9 @@ def build(run_date):
         rec = {
             "setid": sid, "spl_version": ver, "status": "active", "first_seen": c.get("first_seen"),
             "last_seen": c.get("last_seen"), "in_scope": in_scope,
+            # the brand told the FDA it stopped marketing every product on this label (the SPL's
+            # marketing end date has passed); the label itself stays on DailyMed
+            "marketing_ended_on": _mkt_end(sid, run_date),
             "excluded_reason": excluded,
             "category": c.get("category"), "name": name, "title": c.get("title"),
             "brand": (legacy.get(sid) or {}).get("b") or c.get("labeler"), "labeler": c.get("labeler"),
