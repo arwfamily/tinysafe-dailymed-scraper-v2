@@ -18,7 +18,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import label_ocr as O  # noqa: E402
-from label_claims import ALERT, BOILER, BS  # noqa: E402
+from label_claims import ALERT, BOILER, BS, POWDER, SPF, SPRAY  # noqa: E402
 
 OUTDIR = os.path.join(ROOT, "data/views/label_claims_ocr")
 
@@ -40,23 +40,33 @@ def read(job):
             txt.append(O.ocr(b))
             n += 1
     t = re.sub(r"\s+", " ", " ".join(txt))
+    # the SPF the artwork prints (OCR reads "SPF50+", "SPF 30", "SPF-15"); the largest
+    # 2-100 value, as for label text; every value kept so a two-product artwork shows
+    spfs = sorted({int(m.group(1)) for m in SPF.finditer(BOILER.sub(" ", t)) if 2 <= int(m.group(1)) <= 100})
     return {"setid": sid, "spl_version": ver, "images_read": n,
-            "broad_spectrum": bool(BS.search(BOILER.sub(" ", t))), "aging_alert": bool(ALERT.search(t))}
+            "broad_spectrum": bool(BS.search(BOILER.sub(" ", t))), "aging_alert": bool(ALERT.search(t)),
+            "spf": max(spfs) if spfs else None, "spfs": spfs,
+            "spray": bool(SPRAY.search(t)), "powder": bool(POWDER.search(t))}
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--shard", type=int, default=0)
     ap.add_argument("--shards", type=int, default=1)
+    ap.add_argument("--target", choices=["claims", "spf"], default="claims",
+                    help="claims: labels whose text shows neither claim; spf: labels with no SPF in text or filing")
     a = ap.parse_args()
+    global OUTDIR
+    if a.target == "spf":
+        OUTDIR = OUTDIR + "_spf"
     claims = {json.loads(l)["setid"]: json.loads(l) for l in open(os.path.join(ROOT, "data/views/label_claims.jsonl"))}
     ver = {}
     for l in open(os.path.join(ROOT, "data/master/us_master.jsonl"), encoding="utf-8"):
         r = json.loads(l)
-        if r.get("in_scope") and r.get("status") == "active":
+        if r.get("in_scope") and r.get("status") == "active" and (a.target == "claims" or not r.get("spf")):
             ver[r["setid"]] = r.get("spl_version")
     todo = sorted((s, v) for s, v in ver.items()
-                  if s not in claims or not (claims[s].get("broad_spectrum") or claims[s].get("aging_alert")))
+                  if a.target == "spf" or s not in claims or not (claims[s].get("broad_spectrum") or claims[s].get("aging_alert")))
     mine = [j for i, j in enumerate(todo) if i % a.shards == a.shard]
     os.makedirs(OUTDIR, exist_ok=True)
     path = os.path.join(OUTDIR, f"shard_{a.shard}.jsonl")

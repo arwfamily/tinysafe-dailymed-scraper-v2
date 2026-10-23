@@ -12086,7 +12086,7 @@
   "not_broad_spectrum": {
    "t": "T1",
    "l": "Not broad spectrum, or below SPF 15",
-   "w": "The label carries the FDA Skin Cancer/Skin Aging Alert. The FDA requires it on sunscreens that are not broad spectrum or are below SPF 15: they have not been shown to reduce the risk of skin cancer or early skin aging.",
+   "w": "The label carries the FDA Skin Cancer/Skin Aging Alert, or its SPF is below 15. The FDA requires that alert on sunscreens that are not broad spectrum or are below SPF 15: they have not been shown to reduce the risk of skin cancer or early skin aging.",
    "s": "FDA, 21 CFR 201.327."
   },
   "hidden_uv_booster": {
