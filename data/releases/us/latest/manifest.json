@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-19",
  "git_tag": "us-data-2026-10-19",
- "released": "2026-10-23T01:26:58+00:00",
+ "released": "2026-10-23T04:14:39+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.5 · 2026-10-22",
  "source": {
@@ -17,14 +17,14 @@
  },
  "counts": {
   "us_all": {
-   "labels": 9586,
+   "labels": 9549,
    "status": {
-    "active": 9544,
+    "active": 9507,
     "discontinued": 42
    },
    "filter_type": {
     "mineral_only": 3915,
-    "chemical_only": 4384,
+    "chemical_only": 4347,
     "hybrid_chemical_primary": 825,
     "hybrid_mineral_primary": 390,
     "hybrid_equal": 23,
@@ -32,7 +32,7 @@
    },
    "label_check": {
     "confirmed": 1737,
-    "text_confirms_current": 7545,
+    "text_confirms_current": 7508,
     "no_list_on_label_images": 207,
     "image_unreadable": 24,
     "partial": 10,
@@ -40,8 +40,8 @@
     "non_english_label": 4,
     "needs_review": 1
    },
-   "label_verified_share": 0.9736,
-   "inactives_7_or_fewer": 345,
+   "label_verified_share": 0.9735,
+   "inactives_7_or_fewer": 391,
    "recalls": {
     "labels_matched": 15,
     "labels_needs_review": 0
@@ -70,7 +70,7 @@
     "non_english_label": 4
    },
    "label_verified_share": 0.9543,
-   "inactives_7_or_fewer": 134,
+   "inactives_7_or_fewer": 148,
    "recalls": {
     "labels_matched": 13,
     "labels_needs_review": 0
@@ -95,7 +95,7 @@
     "label_image_mismatch": 2
    },
    "label_verified_share": 0.9828,
-   "inactives_7_or_fewer": 31,
+   "inactives_7_or_fewer": 35,
    "recalls": {
     "labels_matched": 3,
     "labels_needs_review": 0
@@ -108,24 +108,25 @@
   "spf_lip_balm": 1209,
   "not_a_sunscreen": 460,
   "zinc_only_no_sun_claim": 70,
+  "topical_analgesic": 37,
   "calamine": 67
  },
  "files": {
   "us_all.jsonl": {
-   "rows": 9586,
-   "sha256": "37e9760488264d19a1f6b514f98f73607c3bfbb137cd6eb24ea0fdb2a8871086"
+   "rows": 9549,
+   "sha256": "e920d38ff6587c3484e3583ad7c1f956f34562279557adf42d504737c3765e22"
   },
   "us_mineral.jsonl": {
    "rows": 5182,
-   "sha256": "c58561c6aa5c02a395b6a5765da807938996b26a544c8bf8d37df3baaae2d17b"
+   "sha256": "4be99adc80098dad3d0b0ca9c30d0ea7396740c0c0f4d8826500823e81762a3b"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "4acf4fb4b7b103ed8927c29d9defcd1bd4fa5ea94e92ed4f44b75c134c8f4b6e"
+   "sha256": "5caa7808ec2f54047ee42ce5fbd094830f1f5fa4ba63cc0ad2cd3a45f1638471"
   },
   "us_out_of_scope.jsonl": {
-   "rows": 4702,
-   "sha256": "2b4384cb4eb8fea884a2b7227b431b179a4e7f418952fe9407120865c37cf3dc"
+   "rows": 4739,
+   "sha256": "d65e5a8d308a5953d186a7e436dbcb2f5330781a50cff78f14ba599f7ac1e41e"
   }
  }
 }

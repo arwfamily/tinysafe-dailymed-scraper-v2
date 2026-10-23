@@ -42,7 +42,15 @@ import ledger as L  # noqa: E402
 import scope_rules as S  # noqa: E402
 import sunnytime_rules as R  # noqa: E402
 import printed_strengths as PS  # noqa: E402
-from inactive_union import _ACTIVE_SYN, is_active, key, same_display  # noqa: E402
+import functools  # noqa: E402
+from inactive_union import _ACTIVE_SYN, is_active, key  # noqa: E402
+from inactive_union import same_display as _same_display  # noqa: E402
+
+
+@functools.lru_cache(maxsize=2_000_000)
+def same_display(a, b):
+    # the same pairs recur across thousands of labels; difflib is the slow part
+    return _same_display(a, b)
 from sunnytime_db import Engine, inactive_flags, no_preservative  # noqa: E402
 
 CANON = os.path.join(ROOT, "data/canonical/us_sunscreens.jsonl")
@@ -845,9 +853,12 @@ def build(run_date):
             # what an ingredient comes from does not depend on its form: a filed "HAMAMELIS
             # VIRGINIANA LEAF" for a printed witch hazel extract is still a plant, a filed
             # "COLLAGEN, SOLUBLE, FISH SKIN" for a printed "Collagen Extract" still fish
-            twins = twins + [
-                (next(x for x in shown if same_display(f, x) or same_display(x, f)), f) for f in struct
-                if f not in shown and f not in flag_struct and any(same_display(f, x) or same_display(x, f) for x in shown)]
+            for f in struct:
+                if f in shown or f in flag_struct:
+                    continue
+                x = next((x for x in shown if same_display(f, x) or same_display(x, f)), None)
+                if x is not None:
+                    twins = twins + [(x, f)]
         fr = label_text_fragrance(sid, shown)
         if fr:
             shown = shown + [fr]
