@@ -419,11 +419,13 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
         return next((x for x in shown if same_display(n, x) and f in eng.flags(x)[0]), None) or next(
             (x for x in shown if strict_twin(n, x)), n)
 
-    def add(f, ev):
+    def add(f, ev, raw=False):
         if f not in fl:
             fl[f] = []
         out, seen = [], set()
-        for n in fl[f] + [cite(x, f) for x in ev]:
+        # raw: evidence that already says where it comes from ("Lecithin (filed with the FDA
+        # as soybean lecithin)"), kept as written rather than mapped to a printed name
+        for n in fl[f] + [x if raw else cite(x, f) for x in ev]:
             k = key(n) or n.upper()
             if k not in seen:
                 seen.add(k)
@@ -435,7 +437,7 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     for p, f in twins:
         for g in eng.flags(f)[0] & SOURCE_FLAGS:
             if g not in fl:
-                add(g, [p if g == "botanical_count" else f"{p} (filed with the FDA as {f.lower()})"])
+                add(g, [p if g == "botanical_count" else f"{p} (filed with the FDA as {f.lower()})"], raw=True)
     # non-UV actives (skin protectants such as dimethicone) read like inactives
     # every non-mineral active is read like an inactive too (dimethicone as a skin protectant gives
     # "silicone", drometrizole trisiloxane too); a declared UV active is never a HIDDEN booster
@@ -469,14 +471,17 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     # what the label itself says outside the ingredient list: a named scent ("Fun Melon
     # Fragrance") is a fragrance; an "Allergens: soybeans (glycerin)" statement is that allergen
     for sc in (lc or {}).get("scent_claims") or []:
-        if not any(f in fl for f in ("fragrance", "essential_oil")):
-            add("fragrance", [f"\u201c{sc} fragrance\u201d on the label"])
+        if not any(f in fl for f in ("fragrance", "essential_oil")) and not (c.get("product_count") or 1) > 1:
+            # quote the scent only when it reads as one ("Fun Melon"), not as list words
+            inci = re.search(r"(?i)ATE\b|ENE\b|OL\b|ICONE|ACID|EXTRACT|WAX|GLYCOL|SALICYLATE|SUNSCREEN|SPRAY|"
+                             r"INGREDIENT|ANALYTIC|SOLUTION|\bMEN\b|\bTHE\b|DERMATOLOG|RECOMMENDED|ESSENTIAL|ARTIFICIAL", sc)
+            add("fragrance", ["\u201cfragrance\u201d named on the label" if inci else f"\u201c{sc} fragrance\u201d on the label"], raw=True)
     st = ((lc or {}).get("allergen_statement") or "").upper()
     for g, rx in (("soy", r"\bSOY"), ("milk", r"\bMILK\b"), ("wheat", r"\bWHEAT|\bGLUTEN"), ("tree_nut", r"\bTREE NUTS?\b|\bALMOND|\bMACADAMIA|\bCASHEW|\bWALNUT"),
                   ("peanut", r"\bPEANUT"), ("sesame", r"\bSESAME"), ("egg", r"\bEGGS?\b"),
                   ("fish_shellfish", r"\bFISH\b|\bSHELLFISH|\bCRUSTACEAN")):
         if st and re.search(rx, st) and g not in fl:
-            add(g, [f"Label allergen statement: {lc['allergen_statement'][:80]}"])
+            add(g, [f"Label allergen statement: {lc['allergen_statement'][:80]}"], raw=True)
     # a fragrance-free claim on one product of a multi-product filing says nothing of the others
     if lc and lc.get("fragrance_free_claim") and any(f in fl for f in ("fragrance", "essential_oil")) and not (
             int(c.get("product_count") or 1) > 1 or len([x for x in lc.get("spfs") or [] if x > 15]) >= 2):
