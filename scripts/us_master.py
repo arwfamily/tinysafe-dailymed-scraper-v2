@@ -319,8 +319,25 @@ _ACTIVE_WORDS = re.compile(r"%|OXIDE|AVOBENZONE|HOMOSALATE|OCTI|OCTOCRYLENE|OXYB
 
 def clean_name(n):
     """Drop parenthetical lists of actives from a product name ('... (Homosalate 5%, ...)')."""
-    out = re.sub(r"\s*\(([^()]*)\)", lambda m: "" if _ACTIVE_WORDS.search(m.group(1)) else m.group(0), n or "")
-    return re.sub(r"\s+", " ", out).strip() or n
+    n0 = n or ""
+    out, depth, start, buf = [], 0, 0, ""
+    for i, ch in enumerate(n0):            # outermost bracket groups, nested ones included
+        if ch == "(":
+            if depth == 0:
+                start = i
+            depth += 1
+        elif ch == ")" and depth:
+            depth -= 1
+            if depth == 0:
+                grp = n0[start:i + 1]
+                if not _ACTIVE_WORDS.search(grp):
+                    out.append(grp)
+                continue
+        if depth == 0:
+            out.append(ch)
+    if depth:                              # unbalanced: leave the name as it was
+        return re.sub(r"\s+", " ", n0).strip() or n
+    return re.sub(r"\s+", " ", "".join(out)).strip() or n
 
 
 def title_spf(*names):
