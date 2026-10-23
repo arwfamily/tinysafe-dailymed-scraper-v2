@@ -1,12 +1,12 @@
 {
- "release_id": "us-2026-10-19",
- "git_tag": "us-data-2026-10-19",
- "released": "2026-10-23T15:10:14+00:00",
+ "release_id": "us-2026-10-23",
+ "git_tag": "us-data-2026-10-23",
+ "released": "2026-10-23T18:07:17+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.6 · 2026-10-23",
  "source": {
   "register": "FDA DailyMed (SPL)",
-  "collected": "2026-10-19",
+  "collected": "2026-10-23",
   "scraper_commit": null,
   "run_id": null
  },
@@ -17,23 +17,23 @@
  },
  "counts": {
   "us_all": {
-   "labels": 9549,
+   "labels": 9461,
    "status": {
-    "active": 9507,
+    "active": 9419,
     "discontinued": 42
    },
    "filter_type": {
-    "mineral_only": 3915,
-    "chemical_only": 4347,
+    "mineral_only": 3883,
+    "chemical_only": 4293,
     "hybrid_chemical_primary": 825,
-    "hybrid_mineral_primary": 390,
-    "hybrid_equal": 23,
+    "hybrid_mineral_primary": 389,
+    "hybrid_equal": 22,
     "hybrid_pct_unknown": 7
    },
    "label_check": {
-    "confirmed": 1737,
-    "text_confirms_current": 7508,
-    "no_list_on_label_images": 207,
+    "confirmed": 1707,
+    "text_confirms_current": 7452,
+    "no_list_on_label_images": 205,
     "image_unreadable": 24,
     "partial": 10,
     "label_image_mismatch": 16,
@@ -41,36 +41,36 @@
     "needs_review": 1
    },
    "label_verified_share": 0.9735,
-   "inactives_7_or_fewer": 390,
+   "inactives_7_or_fewer": 367,
    "recalls": {
     "labels_matched": 15,
     "labels_needs_review": 0
    }
   },
   "us_mineral": {
-   "labels": 5182,
+   "labels": 5148,
    "status": {
-    "active": 5160,
+    "active": 5126,
     "discontinued": 22
    },
    "filter_type": {
-    "mineral_only": 3915,
+    "mineral_only": 3883,
     "hybrid_chemical_primary": 825,
-    "hybrid_mineral_primary": 390,
-    "hybrid_equal": 23,
+    "hybrid_mineral_primary": 389,
+    "hybrid_equal": 22,
     "hybrid_pct_unknown": 7
    },
    "label_check": {
-    "confirmed": 1224,
-    "text_confirms_current": 3693,
-    "no_list_on_label_images": 199,
+    "confirmed": 1214,
+    "text_confirms_current": 3671,
+    "no_list_on_label_images": 197,
     "image_unreadable": 20,
     "partial": 7,
     "label_image_mismatch": 13,
     "non_english_label": 4
    },
-   "label_verified_share": 0.9543,
-   "inactives_7_or_fewer": 147,
+   "label_verified_share": 0.9544,
+   "inactives_7_or_fewer": 126,
    "recalls": {
     "labels_matched": 13,
     "labels_needs_review": 0
@@ -106,27 +106,28 @@
   "spf_makeup": 2670,
   "diaper_cream": 226,
   "spf_lip_balm": 1209,
-  "not_a_sunscreen": 460,
+  "not_a_sunscreen": 507,
   "zinc_only_no_sun_claim": 70,
   "topical_analgesic": 37,
-  "calamine": 67
+  "calamine": 67,
+  "skin_lightener": 41
  },
  "files": {
   "us_all.jsonl": {
-   "rows": 9549,
-   "sha256": "c175834477aa26bbe846fe77677b9b02d54a9566a86bacc81eb2e7da038e6adb"
+   "rows": 9461,
+   "sha256": "22ab98d4d678596c339910added57c68d28828afa99bb54b406e1475413b7e89"
   },
   "us_mineral.jsonl": {
-   "rows": 5182,
-   "sha256": "df67718c25847e9a4eeb9e685cb1e5b32a957aacb912024ae35493f8c61b0c01"
+   "rows": 5148,
+   "sha256": "925c4d6e0cd42b16320c38485f25dc4a222c40e73c3178478cfcf7673173073d"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "17301664107ba0de3a6e89508c0550cfc8a7ca51823a61060199653e447f012b"
+   "sha256": "e81f61436f4a33f8df89f4c44cd26a65fb972da2f5d13f9881139833d9c3720e"
   },
   "us_out_of_scope.jsonl": {
-   "rows": 4739,
-   "sha256": "b2b266a3a606db9586f9810e8f5164e3979d60591ab6b2f068dd401788852d59"
+   "rows": 4827,
+   "sha256": "d4b55db94143f1cc0adb8a1eeeb8ae43efd2e26ab6e1c1e6f318d6856c52ac62"
   }
  }
 }
