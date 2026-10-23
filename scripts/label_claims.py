@@ -27,7 +27,7 @@ BOILER = re.compile(r"broad[\s-]*spectrum\s+SPF\s+(?:value\s+)?(?:of\s+)?15\s+(?
 BS = re.compile(r"broad[\s-]*spectrum", re.I)
 ALERT = re.compile(r"skin\s+cancer\s*/\s*skin\s+aging\s+alert", re.I)
 SPF = re.compile(r"\bSPF\s*-?\s*(\d{1,3})\s*(\+|plus)?", re.I)
-SPRAY = re.compile(r"\b(?:spray(?:ing)?\s+(?:liberally|evenly|generously|on|into|directly|until)|hold\s+(?:the\s+)?(?:can|container|bottle)\s+\d|do\s+not\s+spray|aerosol|continuous\s+spray|lotion\s+spray|sunscreen\s+spray)", re.I)
+SPRAY = re.compile(r"\b(?:spray(?:ing)?\s+(?:liberally|evenly|generously|on|into|directly|until)|hold\s+(?:the\s+)?(?:can|container|bottle)\s+\d|do\s+not\s+spray|aerosol|continuous\s+spray|lotion\s+spray|sunscreen\s+spray|non[\s-]*aerosol|mist\s+spray|spray\s+mist|pump\s+spray|spray\s+bottle)", re.I)
 POWDER = re.compile(r"\b(?:loose\s+powder|mineral\s+powder|powder\s+sunscreen|brush\s+(?:on|onto|over)|tap\s+(?:the\s+)?brush|swirl\s+(?:the\s+)?brush)", re.I)
 FREE = re.compile(r"\b(?:fragrance[\s-]*free|free\s+of\s+(?:added\s+)?fragrances?|no\s+(?:added\s+)?fragrances?|unscented|without\s+fragrance|0%\s+fragrance)\b", re.I)
 FRAG_LISTED = re.compile(r"inactive\s+ingredients?\s*:?.{0,3000}?\b(?:fragrance|parfum|perfume|aroma)\b(?!\s*[-\s]*free)", re.I | re.S)
@@ -39,6 +39,14 @@ WR = re.compile(r"water\s+resistant\s*\(?\s*(40|80)\s+minutes|after\s+(40|80)\s+
 def text_of(xml):
     t = re.sub(r"<[^>]+>", " ", xml or "")
     return re.sub(r"\s+", " ", html.unescape(t))
+
+
+ACT = re.compile(r"active\s+ingredients?\b(.{0,600}?)(?=\bpurposes?\b|\buses?\b|\bwarnings?\b|$)", re.I | re.S)
+
+
+def actives_text(t):
+    """Each printed Active ingredient(s) section (up to 3), joined by ' || '."""
+    return " || ".join(m.group(1).strip()[:600] for m in list(ACT.finditer(t))[:3]) or None
 
 
 def claims(sid):
@@ -55,7 +63,11 @@ def claims(sid):
                         "spf": max(spfs) if spfs else None, "spray": bool(SPRAY.search(t)), "powder": bool(POWDER.search(t)),
                         "water_resistant_minutes": max(wr) if wr else None,
                         "fragrance_free_claim": bool(FREE.search(t)), "fragrance_in_list": bool(FRAG_LISTED.search(t)),
-                        "tear_free_claim": bool(TEAR.search(t)), "chars": len(t)}
+                        "tear_free_claim": bool(TEAR.search(t)), "chars": len(t),
+                        # every SPF the label prints (more than one: one filing, several products)
+                        "spfs": sorted(set(spfs)),
+                        # the printed Active ingredient(s) section, for the printed strengths
+                        "actives_text": actives_text(t)}
         except Exception as e:  # noqa: BLE001
             print("retry", sid, e, flush=True)
         time.sleep(5 * (i + 1))
