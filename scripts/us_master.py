@@ -476,6 +476,11 @@ _CODE = re.compile(r"^[A-Z]\d{3,}[A-Z]?$")
 _CJK = re.compile(r"[\u3131-\uD7A3\u4E00-\u9FFF\u3040-\u30FF]")
 
 
+_NOTE = re.compile(r"\s*(?:\*+\s*=?\s*(?:certified\s+)?organic(?:\s+ingredients?)?|(?:certified\s+)?organic\s+ingredients?(?:\s*unless\s+otherwise\s+specified)?"
+                   r"|unless\s+otherwise\s+specified|may\s+contain(?:\s+one\s+or\s+more\s+of\s+(?:these|the\s+following)\s+ingredients)?\s*:?"
+                   r"|\(?\+/-\)?\s*:?\s*$|^with\s+1%\s+or\s+less\s+concentration\s*:|[|]|\s*º\s*organic)", re.I)
+
+
 def tidy_inactives(items):
     """Repair list-splitting leftovers in a printed list (2026-10-20 audit, 41 labels):
     a lone ',' or '(' ; a stereo qualifier split off its ingredient ('(+/-)-');
@@ -521,6 +526,17 @@ def tidy_inactives(items):
             changed = True
             i += 1
             continue
+        # "(St" + "Paul's Wort) Extract", "Lecithin (Syn" + ...: a parenthesis opened on a
+        # short abbreviation that the list split at its full stop
+        if re.search(r"\((?:St|Syn|Vit|Ext|Org)\.?$", x, re.I) and nxt and nxt.count(")") > nxt.count("("):
+            x, i, changed = x.rstrip(".") + ". " + nxt, i + 1, True
+        # footnotes, notes and headers glued onto a name
+        y = _NOTE.sub("", x).strip(" .,;|*º°†‡")
+        if y != x:
+            x, changed = y, True
+            if not re.sub(r"[^\w]", "", x):
+                i += 1
+                continue
         if x == "I" and nxt.lower().startswith("hexanedio"):
             changed = True
             i += 1
