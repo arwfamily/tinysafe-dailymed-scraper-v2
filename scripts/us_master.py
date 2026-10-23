@@ -41,6 +41,7 @@ sys.path.insert(0, HERE)
 import ledger as L  # noqa: E402
 import scope_rules as S  # noqa: E402
 import sunnytime_rules as R  # noqa: E402
+import spelling as SP  # noqa: E402
 import printed_strengths as PS  # noqa: E402
 import functools  # noqa: E402
 from inactive_union import _ACTIVE_SYN, is_active, key  # noqa: E402
@@ -310,8 +311,42 @@ LABEL_CLAIMS = ({json.loads(x)["setid"]: json.loads(x) for x in open(LABEL_CLAIM
 _CANON_PATH = os.path.join(ROOT, "data/canonical/us_sunscreens.jsonl")
 _CANVER = ({json.loads(x)["setid"]: str(json.loads(x).get("spl_version")) for x in open(_CANON_PATH, encoding="utf-8") if x.strip()}
            if os.path.exists(_CANON_PATH) else {})
-# labels whose text shows neither claim: the same tests on OCR of the label images
-# (scripts/label_claims_ocr.py), used only for the same label version
+# The label images, for what the label text does not print. A person's reading of the
+# artwork (data/corrections/claims_reads.jsonl) comes first; OCR is used only where it is
+# unambiguous, because a 2026-10-23 check against person reads found OCR wrong on 1 in 30
+# Broad Spectrum calls and 2 in 40 SPFs when taken at face value. Same label version only.
+_OCR_TEXT = {}
+_OCR_TEXT_DIR = os.path.join(ROOT, "data/views/label_ocr_text")
+if os.path.isdir(_OCR_TEXT_DIR):
+    import gzip as _gz
+    for _f in sorted(os.listdir(_OCR_TEXT_DIR)):
+        if _f.endswith(".gz"):
+            for _x in _gz.open(os.path.join(_OCR_TEXT_DIR, _f), "rt", encoding="utf-8"):
+                _d = json.loads(_x)
+                if _d.get("text") and _CANVER.get(_d["setid"]) == str(_d.get("spl_version")):
+                    _OCR_TEXT[_d["setid"]] = _d["text"]
+_BOIL = re.compile(r"broad[\s-]*spectrum\s+SPF\s+(?:value\s+)?(?:of\s+)?15\s+(?:or\s+)?(?:higher|more|greater)", re.I)
+# "Broad Spectrum SPF 50", "SPF 30 Broad Spectrum", "Broad Spectrum protection": the claim
+# itself, not the boilerplate
+_BS_STRONG = re.compile(r"broad[\s-]*spectrum\s*(?:uva\s*/\s*uvb\s*)?(?:sunscreen\s*)?(?:spf|sun\s*protection)|"
+                        r"spf\s*\d{1,3}\+?\s*(?:/\s*pa\+*\s*)?broad[\s-]*spectrum|broad[\s-]*spectrum\s+(?:protection|sunscreen)", re.I)
+_STD_SPF = {15, 20, 25, 30, 32, 35, 36, 40, 42, 43, 45, 46, 50, 55, 60, 65, 70, 75, 80, 85, 90, 100}
+
+
+def _ocr_spf(t):
+    """One SPF the OCR text prints at least twice (a standard value), or None."""
+    t = _BOIL.sub(" ", t)
+    v = [int(m.group(1)) for m in re.finditer(r"\bSPF\s*-?\s*(\d{1,3})\b", t, re.I)]
+    v += [int(m.group(1)) for m in re.finditer(r"\b(\d{2,3})\s*\+?\s*SPF\b", t, re.I)]
+    c = collections.Counter(x for x in v if 2 <= x <= 100)
+    if not c or len({x for x in c if x > 15}) > 1:
+        return None
+    top, n = c.most_common(1)[0]
+    if len(c) > 1 and top <= 15:
+        return None
+    return top if n >= 2 and top in _STD_SPF else None
+
+
 _OCR_DIR = os.path.join(ROOT, "data/views/label_claims_ocr")
 if os.path.isdir(_OCR_DIR):
     for _f in sorted(os.listdir(_OCR_DIR)):
@@ -321,12 +356,12 @@ if os.path.isdir(_OCR_DIR):
             if _d.get("error") or not _c or _CANVER.get(_d["setid"]) != str(_d.get("spl_version")):
                 continue
             if not (_c.get("broad_spectrum") or _c.get("aging_alert")):
-                LABEL_CLAIMS[_d["setid"]] = dict(_c, broad_spectrum=_d["broad_spectrum"], aging_alert=_d["aging_alert"],
-                                                 source="label_image_ocr")
+                _t = _BOIL.sub(" ", _OCR_TEXT.get(_d["setid"], ""))
+                _bs = bool(_d["broad_spectrum"] and _BS_STRONG.search(_t))
+                if _bs or _d["aging_alert"]:
+                    LABEL_CLAIMS[_d["setid"]] = dict(_c, broad_spectrum=_bs, aging_alert=_d["aging_alert"],
+                                                     source="label_image_ocr")
 
-
-# SPF (and spray/powder wording) read from the label images of labels whose text and
-# filing print no SPF (scripts/label_claims_ocr.py --target spf), same label version only
 _OCR_SPF = os.path.join(ROOT, "data/views/label_claims_ocr_spf")
 if os.path.isdir(_OCR_SPF):
     for _f in sorted(os.listdir(_OCR_SPF)):
@@ -336,11 +371,36 @@ if os.path.isdir(_OCR_SPF):
             if _d.get("error") or not _c or _CANVER.get(_d["setid"]) != str(_d.get("spl_version")):
                 continue
             _u = dict(_c)
-            if not _c.get("spf") and _d.get("spf") and len([v for v in _d.get("spfs") or [] if v > 15]) <= 1:
-                _u.update(spf=_d["spf"], spf_source="label_image_ocr")
+            _v = _ocr_spf(_OCR_TEXT.get(_d["setid"], ""))
+            if not _c.get("spf") and _v and _v == _d.get("spf"):
+                _u.update(spf=_v, spf_source="label_image_ocr")
             _u["spray"] = _c.get("spray") or _d.get("spray")
             _u["powder"] = _c.get("powder") or _d.get("powder")
             LABEL_CLAIMS[_d["setid"]] = _u
+
+# a person's reading of the label artwork for SPF, Broad Spectrum, the aging alert, the
+# form, and whether the product is a sunscreen at all
+CLAIMS_READS = {}
+_CR = os.path.join(ROOT, "data/corrections/claims_reads.jsonl")
+if os.path.exists(_CR):
+    for _x in open(_CR, encoding="utf-8"):
+        _d = json.loads(_x)
+        if _CANVER.get(_d["setid"]) != str(_d.get("spl_version")) or not _d.get("readable", True):
+            continue
+        CLAIMS_READS[_d["setid"]] = _d
+        _c = dict(LABEL_CLAIMS.get(_d["setid"]) or {"setid": _d["setid"]})
+        if not _c.get("spf") and _d.get("spf"):
+            _c.update(spf=_d["spf"], spf_source="label_image_person")
+        if _d.get("spfs"):
+            _c["spfs"] = sorted(set((_c.get("spfs") or []) + _d["spfs"]))
+        if not (_c.get("broad_spectrum") or _c.get("aging_alert")) or _c.get("source") == "label_image_ocr":
+            _c.update(broad_spectrum=bool(_d.get("broad_spectrum")), aging_alert=bool(_d.get("aging_alert")),
+                      source="label_image_person")
+        if re.search(r"spray", _d.get("form") or ""):
+            _c["spray"] = True
+        if re.search(r"powder", _d.get("form") or ""):
+            _c["powder"] = True
+        LABEL_CLAIMS[_d["setid"]] = _c
 
 
 US_MAX = {"AVOBENZONE": 3, "HOMOSALATE": 15, "OCTINOXATE": 7.5, "OCTISALATE": 5, "OCTOCRYLENE": 10, "OXYBENZONE": 6,
@@ -467,6 +527,16 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
         fl[f] = out if f == "chemical_filter_active" else out[:EVIDENCE_CAP]
     for f, ev in inactive_flags(eng, list(dict.fromkeys(shown + struct))).items():
         add(f, ev)
+    # a misspelled ingredient ("Phenoxyethenol", "Butyloctly Salicylate") is read by its
+    # corrected spelling; the evidence keeps the name as printed
+    fixes = {}
+    for n in shown:
+        k = SP.corrected(n)
+        if k:
+            fixes.setdefault(k, n)
+    if fixes:
+        for f, ev in inactive_flags(eng, list(fixes)).items():
+            add(f, [fixes.get(e, e) for e in ev])
     for p, f in twins:
         for g in eng.flags(f)[0] & SOURCE_FLAGS:
             if g not in fl:
@@ -647,7 +717,11 @@ _CJK = re.compile(r"[\u3131-\uD7A3\u4E00-\u9FFF\u3040-\u30FF]")
 
 _NOTE = re.compile(r"\s*(?:\*+\s*=?\s*(?:certified\s+)?organic(?:\s+ingredients?)?|(?:certified\s+)?organic\s+ingredients?(?:\s*unless\s+otherwise\s+specified)?"
                    r"|unless\s+otherwise\s+specified|may\s+contain(?:\s+one\s+or\s+more\s+of\s+(?:these|the\s+following)\s+ingredients)?\s*:?"
-                   r"|\(?\+/-\)?\s*:?\s*$|^with\s+1%\s+or\s+less\s+concentration\s*:|[|]|\s*º\s*organic)", re.I)
+                   r"|\(?\+/-\)?\s*:?\s*$|^with\s+1%\s+or\s+less\s+concentration\s*:|[|]|\s*º\s*organic"
+                   # the section header glued onto the first name ("Inactives Dimethicone",
+                   # "Inactive lngredlents Aqua", "SECTION Water")
+                   r"|^(?:inactives?|other)(?:\s*\(non-medicinal\))?(?:\s+[A-Za-z]{3,10}(?:ients?|ents|ents?))?\s*:?\s+(?=[A-Za-z])"
+                   r"|^section\s+(?=[A-Za-z]))", re.I)
 
 
 def tidy_inactives(items):
@@ -918,6 +992,16 @@ def build(run_date):
         back_in = c.get("category") == "makeup" and why is None and S.named_sunscreen(c.get("title"))
         if analgesic and why is None:
             why = "topical_analgesic"
+        # not sold as a sunscreen at all: a hand gel or wipe whose titanium dioxide is not there
+        # for the sun, a skin lightener with no SPF. Read from the Drug Facts "Purpose", or from
+        # a person's reading of the artwork; a label with any SPF stays in
+        _lc0 = LABEL_CLAIMS.get(sid) or {}
+        _pur = (_lc0.get("purpose") or "") + " " + (_lc0.get("uses") or "")
+        _cr = CLAIMS_READS.get(sid)
+        if why is None and not (_spf or _lc0.get("spf")) and (
+                (_cr and _cr.get("is_sunscreen") is False) or
+                (_lc0.get("purpose") and not re.search(r"(?i)sun|\buv|spf|sunburn", _pur))):
+            why = "not_a_sunscreen"
         in_scope = (c.get("category") == "sunscreen" or back_in) and why is None
         if in_scope:
             excluded = None
