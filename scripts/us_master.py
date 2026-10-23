@@ -283,6 +283,19 @@ def thin_reason(u, chk):
 LABEL_CLAIMS_PATH = os.path.join(ROOT, "data/views/label_claims.jsonl")
 LABEL_CLAIMS = ({json.loads(x)["setid"]: json.loads(x) for x in open(LABEL_CLAIMS_PATH, encoding="utf-8") if x.strip()}
                 if os.path.exists(LABEL_CLAIMS_PATH) else {})
+# labels whose text shows neither claim: the same tests on OCR of the label images
+# (scripts/label_claims_ocr.py), used only for the same label version
+_OCR_DIR = os.path.join(ROOT, "data/views/label_claims_ocr")
+if os.path.isdir(_OCR_DIR):
+    for _f in sorted(os.listdir(_OCR_DIR)):
+        for _x in open(os.path.join(_OCR_DIR, _f), encoding="utf-8"):
+            _d = json.loads(_x)
+            _c = LABEL_CLAIMS.get(_d["setid"])
+            if _d.get("error") or not _c or str(_c.get("spl_version")) != str(_d.get("spl_version")):
+                continue
+            if not (_c.get("broad_spectrum") or _c.get("aging_alert")):
+                LABEL_CLAIMS[_d["setid"]] = dict(_c, broad_spectrum=_d["broad_spectrum"], aging_alert=_d["aging_alert"],
+                                                 source="label_image_ocr")
 
 
 def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):

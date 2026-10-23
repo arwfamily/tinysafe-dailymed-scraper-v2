@@ -185,6 +185,7 @@ jobs:
           python scripts/site_db.py --old data/site/sunnytime_db.json --out data/site/sunnytime_db.json \
             --headline-json data/site/headline.json > data/site/gate_report.txt 2>&1 \
             || { echo "${{ steps.mode.outputs.run_date }}" > data/site/GATE_FAILED; }
+          python scripts/site_rules_page.py data/site/rules_page   # arwhouse.com/sunnytime/how-we-check
           {
             echo "## US release us-${{ steps.mode.outputs.run_date }}"
             python -c "import json;m=json.load(open('data/releases/us/latest/manifest.json'));print('\n'.join(f'- {k}: {v[\"labels\"]} labels, label-verified {v[\"label_verified_share\"]:.1%}' for k,v in m['counts'].items()))"
