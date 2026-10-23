@@ -41,6 +41,10 @@ def text_of(xml):
     return re.sub(r"\s+", " ", html.unescape(t))
 
 
+# "Allergens: soybeans (glycerin)" -- a label's own allergen statement
+ALLERGENS = re.compile(r"\ballergens?\s*:\s*([^.;|]{3,120})", re.I)
+# a scent named on the label ("Fun Melon Fragrance", "Coconut Vanilla scent"), not "fragrance free"
+SCENT = re.compile(r"\b((?:[A-Z][a-z]+\s){1,3})(?:[Ff]ragrance|FRAGRANCE|[Ss]cent(?:ed)?|SCENT(?:ED)?)\b(?![\s-]*(?i:free))")
 ACT = re.compile(r"active\s+ingredients?\b(.{0,600}?)(?=\bpurposes?\b|\buses?\b|\bwarnings?\b|$)", re.I | re.S)
 
 
@@ -67,7 +71,11 @@ def claims(sid):
                         # every SPF the label prints (more than one: one filing, several products)
                         "spfs": sorted(set(spfs)),
                         # the printed Active ingredient(s) section, for the printed strengths
-                        "actives_text": actives_text(t)}
+                        "actives_text": actives_text(t),
+                        "allergen_statement": "; ".join(m.group(1).strip() for m in ALLERGENS.finditer(t))[:300] or None,
+                        "scent_claims": sorted({m.group(1).strip() for m in SCENT.finditer(t)
+                                                if not re.search(r"(?i)\b(no|free|without|added|natural|unscented)\b",
+                                                                 m.group(1))})[:5] or None}
         except Exception as e:  # noqa: BLE001
             print("retry", sid, e, flush=True)
         time.sleep(5 * (i + 1))

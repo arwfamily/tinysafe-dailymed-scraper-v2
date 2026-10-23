@@ -399,7 +399,8 @@ def strict_twin(f, p):
     if not (same_display(f, p) or same_display(p, f)):
         return False
     # and the same numbers: Polysilicone-11 is not Polysilicone-15, PEG-8 is not PEG-100
-    if set(re.findall(r"\d+", f)) != set(re.findall(r"\d+", p)):
+    nf, np_ = set(re.findall(r"\d+", f)), set(re.findall(r"\d+", p))
+    if nf and np_ and nf != np_:
         return False
     return set(_FORMW.findall(f.upper())) == set(_FORMW.findall(p.upper()))
 
@@ -465,6 +466,17 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
         add("spray_powder", [])
         if "talc" in fl:
             add("talc_inhalable", fl["talc"])
+    # what the label itself says outside the ingredient list: a named scent ("Fun Melon
+    # Fragrance") is a fragrance; an "Allergens: soybeans (glycerin)" statement is that allergen
+    for sc in (lc or {}).get("scent_claims") or []:
+        if not any(f in fl for f in ("fragrance", "essential_oil")):
+            add("fragrance", [f"\u201c{sc} fragrance\u201d on the label"])
+    st = ((lc or {}).get("allergen_statement") or "").upper()
+    for g, rx in (("soy", r"\bSOY"), ("milk", r"\bMILK\b"), ("wheat", r"\bWHEAT|\bGLUTEN"), ("tree_nut", r"\bTREE NUTS?\b|\bALMOND|\bMACADAMIA|\bCASHEW|\bWALNUT"),
+                  ("peanut", r"\bPEANUT"), ("sesame", r"\bSESAME"), ("egg", r"\bEGGS?\b"),
+                  ("fish_shellfish", r"\bFISH\b|\bSHELLFISH|\bCRUSTACEAN")):
+        if st and re.search(rx, st) and g not in fl:
+            add(g, [f"Label allergen statement: {lc['allergen_statement'][:80]}"])
     # a fragrance-free claim on one product of a multi-product filing says nothing of the others
     if lc and lc.get("fragrance_free_claim") and any(f in fl for f in ("fragrance", "essential_oil")) and not (
             int(c.get("product_count") or 1) > 1 or len([x for x in lc.get("spfs") or [] if x > 15]) >= 2):
@@ -890,7 +902,8 @@ def build(run_date):
                 if f in shown or f in flag_struct:
                     continue
                 x = next((x for x in shown if (same_display(f, x) or same_display(x, f))
-                          and set(re.findall(r"\d+", f)) == set(re.findall(r"\d+", x))), None)
+                          and not (re.findall(r"\d+", f) and re.findall(r"\d+", x)
+                                   and set(re.findall(r"\d+", f)) != set(re.findall(r"\d+", x)))), None)
                 if x is not None:
                     twins = twins + [(x, f)]
         fr = label_text_fragrance(sid, shown)

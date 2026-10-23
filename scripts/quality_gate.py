@@ -104,6 +104,10 @@ def check(old, new, explained=None):
                     and not any(same_display(x, y) or same_display(y, x) for y in nn)]
             fl = {f[0] for f in q["v3"]} - {f[0] for f in p["v3"]}
             fl = {f for f in fl if not rule_retired(f, q["v3"])}
+            if p.get("mp"):
+                # several products in one filing: one product's fragrance-free claim is not a
+                # conflict with another's fragrance (rules v3.6)
+                fl.discard("fragrance_free_conflict")
             if printed_only:
                 # only the printed list is shown (and flagged): names the FDA filing alone
                 # had are dropped on purpose; a flag cited from a printed name may not go
