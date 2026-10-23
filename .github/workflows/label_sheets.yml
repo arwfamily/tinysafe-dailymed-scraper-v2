@@ -1,0 +1,31 @@
+name: Label contact sheets (for reading SPF and claims)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sheets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install pillow
+      - name: Bring in sheets already made
+        run: |
+          git fetch origin label-sheets && git show origin/label-sheets:label_sheets/index.json > /tmp/index.json 2>/dev/null || true
+          mkdir -p label_sheets && [ -s /tmp/index.json ] && cp /tmp/index.json label_sheets/index.json || true
+      - run: python scripts/label_sheets.py
+      - name: Push to the label-sheets branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mv label_sheets /tmp/label_sheets_new
+          git checkout label-sheets 2>/dev/null || git checkout --orphan label-sheets
+          git rm -rq --cached . 2>/dev/null || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git ! -name label_sheets -exec rm -rf {} +
+          mkdir -p label_sheets && cp -r /tmp/label_sheets_new/. label_sheets/
+          git add label_sheets
+          git commit -qm "label sheets $(date -u +%F)" || exit 0
+          git push origin label-sheets
