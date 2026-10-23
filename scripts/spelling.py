@@ -41,9 +41,15 @@ def corrected(name):
                 if c2 not in flat.replace(c2, "", 0) and c != _T[c2] and _T[c2].replace(" ", "") not in flat:
                     return _T[c2]
             continue
+        # text recognition reads i as l ("DLAZOLLDLNYL", "METHYLDLBROMO"): compare with i and l as one letter
+        c3 = c2.replace("l", "i").replace("1", "i")
         for k, t in _T.items():
             if k in flat:          # spelled right somewhere in the name: the rules already read it
                 continue
+            k3 = k.replace("l", "i")
+            if c3 == k3 or (abs(len(c3) - len(k3)) <= 2 and c3[:1] == k3[:1] and difflib.SequenceMatcher(None, c3, k3).ratio() >= 0.9):
+                if t != "propylene glycol" or not _ESTER.search(low):
+                    return t
             if t == "propylene glycol" and _ESTER.search(low):
                 continue
             if abs(len(c2) - len(k)) <= 2 and c2[0] == k[0] and difflib.SequenceMatcher(None, c2, k).ratio() >= 0.88:

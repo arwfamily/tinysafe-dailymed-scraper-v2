@@ -98,7 +98,7 @@ def explained(release_dir):
         r = json.loads(line)
         if not r.get("in_scope") and r.get("excluded_reason") and (r.get("scope_override") or r["excluded_reason"] in (
                 "spf_makeup", "spf_lip_balm", "diaper_cream", "not_a_sunscreen", "zinc_only_no_sun_claim",
-                "topical_analgesic")):
+                "topical_analgesic", "skin_lightener")):
             out[r["setid"]] = "scope:" + r["excluded_reason"]
         elif r.get("actives_corrected"):
             out[r["setid"]] = "actives_corrected"

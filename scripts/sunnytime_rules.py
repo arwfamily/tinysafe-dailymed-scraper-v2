@@ -22,7 +22,7 @@ import re
 P = {
     "hidden_uv_booster": r"ISOAMYL P-?METHOXYCINNAMATE|AMILOXATE|4-METHYLBENZYLIDENE CAMPHOR|ENZACAMENE|METHOXYCRYLENE|SYRINGYLIDENEMALONATE|POLYE?STER-8\b|\bBUT[YL]{2} ?OC?T?Y[LI] ?SA[LI]{1,2}CYLATE|BUTLOCTYL|BUTLY ?OCTYL|TRIDECYL SALICYLATE|"
                          r"BEMOTRIZINOL|BIS-?ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE|DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE|"
-                         r"ETHYL FERULATE|ETHYLHEXYL TRIAZONE|METHYLENE BIS-?BENZOTRIAZOLYL|BISOCTRIZOLE|ISCOTRIZINOL|"
+                         r"ETHYL FERULATE|ETHYLHEXYL TRIAZONE|METHYLENE BIS-?BENZOTRIAZOLYL|BENZOTRIAZOLYL DODECYL|BISOCTRIZOLE|ISCOTRIZINOL|"
                          r"DIETHYLHEXYL BUTAMIDO TRIAZONE|TRIS-BIPHENYL TRIAZINE|DROMETRIZOLE TRISILOXANE|POLYSILICONE-15|"
                          r"TEREPHTHALYLIDENE DICAMPHOR",
     "chemical_filter_in_inactives": r"\bOCTISALATE\b|\bOCTOCRYLENE\b|\bOCTINOXATE\b|\bENSULIZOLE\b|\bAVOBENZONE\b|"
@@ -60,7 +60,7 @@ P = {
                   r"ARTEMISIA|MUGWORT|WORMWOOD|BIDENS|SPILANTHES|ACMELLA|STEVIA|CYNARA|ARTICHOKE|CHICORY|CICHORIUM|"
                   r"BELLIS|DAISY|SANTOLINA|TAGETES|MARIGOLD|INULA|SAUSSUREA|ATRACTYLODES|SIEGESBECKIA|ECLIPTA|"
                   r"LACTUCA|CHRYSANTHEMUM|DENDRANTHEMA|SOLIDAGO|EUPATORIUM|"
-                  r"GRINDELIA|CARDUUS|ASTER\b",
+                  r"GRINDELIA|CARDUUS|LEONTOPODIUM|EDELWEISS|\bASTER\b",
     "oat": r"\bAVENA|\bOAT\b|OATMEAL|\bOATS\b",
     "peanut": r"PEANUT|ARACHIS",
     "tree_nut": r"ARGAN|MACADAMIA|ALMOND|AMYGDALUS|HAZELNUT|CORYLUS|WALNUT|JUGLANS|CASHEW|ANACARDIUM|PECAN|CARYA|"
@@ -76,7 +76,7 @@ P = {
     "capb": r"COCAMIDOPROPYL BETAINE",
     "propylene_glycol": r"(?<![A-Z])PROPYLENE GLYCOL(?![ -]*(?:[A-Z]+ATE|MONO[A-Z]*|DI[A-Z]+|ALGINATE|ESTERS?)\b)",
     # ACDS Allergen of the Year 2017 / 2024 / 2020 (rules v3.4)
-    "alkyl_glucoside": r"\b(DECYL|LAURYL|COCO|CAPRYLYL/CAPRYL|CAPRYLYL|CAPRYL|CETEARYL|ARACHIDYL|C12-20 ALKYL|MYRISTYL|BEHENYL|UNDECYL|OCTYL|C8-16 ALKYL)[- ]GLUCOSIDE\b|\bLAURYL POLYGLUCOSE\b",
+    "alkyl_glucoside": r"\b(DECYL|LAURYL|COCO|CAPRYLYL/CAPRYL|CAPRYLYL|CAPRYL|CETEARYL|ARACHIDYL|C12-?20 ALKYL|MYRISTYL|BEHENYL|UNDECYL|OCTYL|C8-?16 ALKYL)[- ]GLUCOSIDE\b|\bLAURYL POLYGLUCOSE\b",
     "sulfite": r"\b(SODIUM|POTASSIUM|AMMONIUM|CALCIUM)? ?(META)?BI?SULFITE\b|\bSULPHITE\b|\bSODIUM SULFITE\b",
     "isobornyl_acrylate": r"\bISOBORNYL ACRYLATE\b",
     # rules v3.5: label-detectable gaps found in the 2026-10-22 coverage review
@@ -144,6 +144,10 @@ def is_essential_oil(name):
         return False
     w = re.findall(r"[A-Z]+", u)
     fixed = re.search(r"\b(SEED|KERNEL|NUT|BRAN|GERM)\b.*\bOIL\b", u) and not re.search(r"CARROT|DAUCUS|CORIAND", u)
+    # rosehip oil (Rosa moschata / canina / rubiginosa) is pressed from the seeds: a fixed oil,
+    # unless the name says flower (rose otto)
+    fixed = fixed or (re.search(r"\bROSA\s+(MOSCHATA|CANINA|RUBIGINOSA|EGLANTERIA|AFFINIS)\b|ROSEHIP|ROSE HIP", u)
+                      and not re.search(r"\bFLOWER", u))
     if fixed or re.search(r"\bFRUIT OIL\b", u) and not (w and w[0] == "CITRUS"):
         return False
     return bool((w and w[0] in EO_GENERA) or EO_COMMON.search(re.sub(r"\(.*?\)", " ", (name or "").upper()))

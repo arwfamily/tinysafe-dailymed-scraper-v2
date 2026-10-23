@@ -314,6 +314,11 @@ _CANVER = ({json.loads(x)["setid"]: str(json.loads(x).get("spl_version")) for x 
 # The SPF the label text prints, read again from the full label text with the stricter
 # pattern now in label_claims.py ("30 SPF 100% MINERAL" is SPF 30, not 100)
 _LT = os.path.join(ROOT, "data/views/label_text_all.jsonl.gz")
+# "This product is not for use in the prevention of sunburn": a label that says it is no sunscreen
+_NOT_SUN = re.compile(r"not\s+(?:for\s+(?:use\s+(?:in|for)\s+)?(?:the\s+)?prevent(?:ion|ing)?\s+(?:of\s+)?sunburn|"
+                      r"intended\s+(?:to|for)\s+(?:prevent|protect)[a-z]*\s+(?:against\s+)?sunburn)|"
+                      r"(?:does|will)\s+not\s+protect\s+(?:you\s+)?(?:from|against)\s+sunburn", re.I)
+NOT_SUN = set()
 if os.path.exists(_LT):
     import gzip as _gz0
     sys.path.insert(0, HERE)
@@ -326,6 +331,8 @@ if os.path.exists(_LT):
         _v = sorted({int(m.group(1) or m.group(2)) for m in _SPFRX.finditer(_BOILRX.sub(" ", _d.get("text") or ""))
                      if 2 <= int(m.group(1) or m.group(2)) <= 100})
         LABEL_CLAIMS[_d["setid"]] = dict(_c, spf=max(_v) if _v else None, spfs=_v)
+        if _NOT_SUN.search(_d.get("text") or ""):
+            NOT_SUN.add(_d["setid"])
 
 
 # The label images, for what the label text does not print. A person's reading of the
@@ -542,6 +549,9 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
                 out.append(n)
         # every declared chemical active is listed; other flags cite up to EVIDENCE_CAP names
         fl[f] = out if f == "chemical_filter_active" else out[:EVIDENCE_CAP]
+    # a filed raw-material grade ("DIMETHICONE CROSSPOLYMER (450000 MPA.S AT 12% IN
+    # CYCLOPENTASILOXANE)") names the supplier's carrier, not an ingredient the label lists
+    struct = [re.sub(r"\s*\([^()]*(?:\bIN\b|MPA\.S|\bMW\b)[^()]*\)", "", x).strip() for x in struct]
     for f, ev in inactive_flags(eng, list(dict.fromkeys(shown + struct))).items():
         add(f, ev)
     # a misspelled ingredient ("Phenoxyethenol", "Butyloctly Salicylate") is read by its
@@ -607,6 +617,11 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
             inci = re.search(r"(?i)ATE\b|ENE\b|OL\b|ICONE|ACID|EXTRACT|WAX|GLYCOL|SALICYLATE|SUNSCREEN|SPRAY|"
                              r"INGREDIENT|ANALYTIC|SOLUTION|\bMEN\b|\bTHE\b|DERMATOLOG|RECOMMENDED|ESSENTIAL|ARTIFICIAL", sc)
             add("fragrance", ["a fragrance named on the label" if inci else f"\u201c{sc} fragrance\u201d on the label"], raw=True)
+    # an insect repellent printed among the label's actives (IR3535 7.5%) that the filing's
+    # ingredient table leaves out
+    _at = (lc or {}).get("actives_text") or ""
+    if "insect_repellent" not in fl and R.RX["insect_repellent"].search(_at.upper()):
+        add("insect_repellent", [f"the label's active ingredients: “{_at[:60]}”"], raw=True)
     st = ((lc or {}).get("allergen_statement") or "").upper()
     for g, rx in (("soy", r"\bSOY"), ("milk", r"\bMILK\b"), ("wheat", r"\bWHEAT|\bGLUTEN"), ("tree_nut", r"\bTREE NUTS?\b|\bALMOND|\bMACADAMIA|\bCASHEW|\bWALNUT"),
                   ("peanut", r"\bPEANUT"), ("sesame", r"\bSESAME"), ("egg", r"\bEGGS?\b"),
@@ -1024,6 +1039,10 @@ def build(run_date):
         _lc0 = LABEL_CLAIMS.get(sid) or {}
         _pur = (_lc0.get("purpose") or "") + " " + (_lc0.get("uses") or "")
         _cr = CLAIMS_READS.get(sid)
+        if why is None and acts and any(a["name"].upper() == "HYDROQUINONE" for a in acts):
+            why = "skin_lightener"       # a hydroquinone skin lightener, sunscreen actives or not
+        if why is None and sid in NOT_SUN:
+            why = "not_a_sunscreen"
         if why is None and not (_spf or _lc0.get("spf")) and (
                 (_cr and _cr.get("is_sunscreen") is False) or
                 (re.search(r"(?i)skin\s+lighten|bleach|antisep|disinfect|antimicrob|antibacter|hand\s+saniti|"
