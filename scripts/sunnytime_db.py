@@ -106,6 +106,14 @@ class Engine:
         # whatever v3.1 decided for the name (rules v3.3)
         if "essential_oil" in fs and not re.search(r"\bOIL\b|\bOLEUM\b", name.upper()):
             fs.discard("essential_oil")
+        # a seed, kernel or nut oil is a fixed oil (chia, sunflower), not an essential oil,
+        # whatever name v3.1 matched it to (2026-10-22 audit: Salvia hispanica seed oil)
+        if "essential_oil" in fs and re.search(r"\b(SEED|KERNEL|NUT|BRAN|GERM)\b.*\bOIL\b", name.upper()) \
+                and not re.search(r"CARROT|DAUCUS|CORIAND", name.upper()):
+            fs.discard("essential_oil")
+        # propylene glycol itself, not an ester of it (propylene glycol dicaprylate/dicaprate)
+        if "propylene_glycol" in fs and not R.RX["propylene_glycol"].search(name.upper()):
+            fs.discard("propylene_glycol")
         fs.discard("chemical_filter_active")             # actives only
         # "Synthetic Beeswax", "Synthetic Wax": made in a lab, not from bees or animals
         if R.SYNTHETIC.search(name.upper()):
@@ -116,7 +124,10 @@ class Engine:
 
 def no_preservative(names):
     u = [n.upper() for n in names]
-    return any(R.WATER.search(x) for x in u) and not any(R.PRESERVATIVE.search(x) for x in u)
+    # water-based: water is one of the main ingredients (lists run from most to least), not
+    # a trace at the end of an oil (2026-10-22 audit: a body oil with water listed last)
+    head = u[:max(3, len(u) // 3)]
+    return any(R.WATER.search(x) for x in head) and not any(R.PRESERVATIVE.search(x) for x in u)
 
 
 def thin_reason(u):

@@ -39,11 +39,18 @@ REQUIRED = {"id": str, "n": str, "i": list, "v3": list, "z": list, "r": list, "t
 SYNTHETIC = re.compile(r"\bSYNTHETIC\b", re.I)
 RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026-10-22)
     "propolis_beeswax": SYNTHETIC, "animal_derived": SYNTHETIC, "lanolin": SYNTHETIC,
-    "essential_oil": re.compile(r"^(?!.*\b(OIL|OLEUM)\b)", re.I),   # names with no "oil": extracts, flower waters
+    "essential_oil": re.compile(r"^(?!.*\b(OIL|OLEUM)\b)|\b(SEED|KERNEL|NUT|BRAN|GERM)\b.*\bOIL\b", re.I),  # extracts, waters; fixed seed oils (v3.6)
+    "propylene_glycol": re.compile(r"PROPYLENE GLYCOL[ -]*(?:[A-Z]+ATE|MONO|DI[A-Z]+|ALGINATE|ESTER)", re.I),  # its esters (v3.6)
 }
+# product-level flags whose rule changed on purpose (rules v3.6, 2026-10-23 label audit):
+# a spray needs a spray filing or spray wording on a label that is not a stick/cream/roll-on;
+# "water-based" needs water among the main ingredients
+RETIRED_PRODUCT = {"spray_powder", "no_preservative_water_base"}
 
 
 def rule_retired(flag, old_flags):
+    if flag in RETIRED_PRODUCT:
+        return True
     rx = RETIRED.get(flag)
     ev = next((f[1] for f in old_flags if f[0] == flag), None)
     return bool(rx and ev and all(rx.search(n) for n in ev))
@@ -86,7 +93,8 @@ def check(old, new, explained=None):
             q = o_by.get(p["id"])
             if not q or (versioned and str(q.get("v")) != str(p.get("v"))):
                 continue
-            if p["id"] in explained and not str(explained[p["id"]]).startswith("scope:"):
+            printed_only = explained.get(p["id"]) == "printed_list_only"
+            if p["id"] in explained and not str(explained[p["id"]]).startswith("scope:") and not printed_only:
                 continue                                   # reviewed correction / kept last good read
             on = [old["names"][i] for i in q["i"]]
             nn = [new["names"][i] for i in p["i"]]
@@ -95,6 +103,13 @@ def check(old, new, explained=None):
                     and not any(same_display(x, y) or same_display(y, x) for y in nn)]
             fl = {f[0] for f in q["v3"]} - {f[0] for f in p["v3"]}
             fl = {f for f in fl if not rule_retired(f, q["v3"])}
+            if printed_only:
+                # only the printed list is shown (and flagged): names the FDA filing alone
+                # had are dropped on purpose; a flag cited from a printed name may not go
+                def on_label(n):
+                    return any(same_display(n, y) or same_display(y, n) for y in nn)
+                fl = {f for f in fl if any(on_label(n) for g in q["v3"] if g[0] == f for n in g[1])}
+                gone = [x for x in gone if x in on[:q.get("i_text_n") or 0]] if q.get("i_text_n") else gone
             if gone:
                 lost_i += 1
                 if len(examples) < 10:

@@ -20,7 +20,7 @@ import re
 # ---- patterns for names v3.1 never saw -------------------------------------
 # Applied to the upper-cased name. Order inside a flag does not matter.
 P = {
-    "hidden_uv_booster": r"METHOXYCRYLENE|SYRINGYLIDENEMALONATE|POLYESTER-8\b|\bBUT[YL]{2} ?OC?T?Y[LI] ?SA[LI]{1,2}CYLATE|BUTLOCTYL|BUTLY ?OCTYL|TRIDECYL SALICYLATE|"
+    "hidden_uv_booster": r"ISOAMYL P-?METHOXYCINNAMATE|AMILOXATE|4-METHYLBENZYLIDENE CAMPHOR|ENZACAMENE|METHOXYCRYLENE|SYRINGYLIDENEMALONATE|POLYE?STER-8\b|\bBUT[YL]{2} ?OC?T?Y[LI] ?SA[LI]{1,2}CYLATE|BUTLOCTYL|BUTLY ?OCTYL|TRIDECYL SALICYLATE|"
                          r"BEMOTRIZINOL|BIS-?ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE|DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE|"
                          r"ETHYL FERULATE|ETHYLHEXYL TRIAZONE|METHYLENE BIS-?BENZOTRIAZOLYL|BISOCTRIZOLE|ISCOTRIZINOL|"
                          r"DIETHYLHEXYL BUTAMIDO TRIAZONE|TRIS-BIPHENYL TRIAZINE|DROMETRIZOLE TRISILOXANE|POLYSILICONE-15|"
@@ -66,21 +66,22 @@ P = {
     "tree_nut": r"ARGAN|MACADAMIA|ALMOND|AMYGDALUS|HAZELNUT|CORYLUS|WALNUT|JUGLANS|CASHEW|ANACARDIUM|PECAN|CARYA|"
                 r"PISTACH|BRAZIL NUT|BERTHOLLETIA|PINE NUT",
     "soy": r"\bSOY|SOYBEAN|GLYCINE SOJA|GLYCINE MAX",
-    "wheat": r"WHEAT|TRITICUM|HORDEUM|BARLEY|\bRYE\b|SECALE|GLUTEN",
+    "wheat": r"WHEAT|TRITICUM|HORDEUM|BARLEY|\bRYE\b|SECALE|(?<!CORN )(?<!MAIZE )GLUTEN",
     "milk": r"\bMILK\b(?! THISTLE)|\bLAC\b|WHEY|CASEIN|COLOSTRUM|LACTOSE|YOGURT|BUTTERMILK",
     "egg": r"\bEGG\b|\bOVUM\b|OVALBUMIN|EGG YOLK",
     "sesame": r"SESAM",
     "fish_shellfish": r"FISH|CHITOSAN|SHELLFISH|OYSTER|SHRIMP|CRAB|LOBSTER|SQUALENE \(SHARK|SHARK",
     "lanolin": r"LANOLIN|ADEPS LANAE|WOOL WAX|WOOL FAT",
-    "propolis_beeswax": r"\bHONEY\b|\bMEL\b|BEESWAX|CERA ALBA|CERA FLAVA|PROPOLIS|ROYAL JELLY|BEE VENOM|APIS MELLIFERA",
+    "propolis_beeswax": r"\bHONEY\b|\bMEL\b|BEESWAX|BEES WAX|CERA ALBA|^(?:WHITE|YELLOW) WAX\b|CERA FLAVA|PROPOLIS|ROYAL JELLY|BEE VENOM|APIS MELLIFERA",
     "capb": r"COCAMIDOPROPYL BETAINE",
-    "propylene_glycol": r"(?<![A-Z])PROPYLENE GLYCOL",
+    "propylene_glycol": r"(?<![A-Z])PROPYLENE GLYCOL(?![ -]*(?:[A-Z]+ATE|MONO[A-Z]*|DI[A-Z]+|ALGINATE|ESTERS?)\b)",
     # ACDS Allergen of the Year 2017 / 2024 / 2020 (rules v3.4)
     "alkyl_glucoside": r"\b(DECYL|LAURYL|COCO|CAPRYLYL/CAPRYL|CAPRYLYL|CAPRYL|CETEARYL|ARACHIDYL|C12-20 ALKYL|MYRISTYL|BEHENYL|UNDECYL|OCTYL|C8-16 ALKYL)[- ]GLUCOSIDE\b|\bLAURYL POLYGLUCOSE\b",
     "sulfite": r"\b(SODIUM|POTASSIUM|AMMONIUM|CALCIUM)? ?(META)?BI?SULFITE\b|\bSULPHITE\b|\bSODIUM SULFITE\b",
     "isobornyl_acrylate": r"\bISOBORNYL ACRYLATE\b",
     # rules v3.5: label-detectable gaps found in the 2026-10-22 coverage review
     "insect_repellent": r"\bDEET\b|DIETHYL-?M-?TOLUAMIDE|\bIR ?3535\b|ETHYL BUTYLACETYLAMINOPROPIONATE|PICARIDIN|ICARIDIN|HYDROXYETHYL ISOBUTYL PIPERIDINE CARBOXYLATE",
+    "mdbgn": r"METH?YLDIBROMO|MTHYLDIBROMO|DIBROMODICYANOBUTANE|DIBROMO ?GLUTARONITRILE",
     "under3_restricted": r"^SALICYLIC ACID$|\bBORIC ACID\b|\bSODIUM BORATE\b|\bBORAX\b|SODIUM TETRABORATE",
     "pfas": r"\bPTFE\b|POLYTETRAFLUOROETHYLENE|PERFLUORO|POLYPERFLUORO|FLUOROALCOHOL|TRIFLUOROPROPYL|PERFLUOROBUTYL|PERFLUOROHEXYL|FLUORINATED",
     "drying_alcohol": r"^ALCOHOL$|^ALCOHOL DENAT|^SD ALCOHOL|\bALCOHOL DENAT|\bSD ALCOHOL|^ETHANOL$|^ETHYL ALCOHOL$|"
@@ -276,5 +277,5 @@ class PlantIndex:
 # Flags where v3.1's name decisions are incomplete (evidence was capped at 4 names
 # per flag, so an unflagged name is not a decision): the patterns add to v3.1.
 ADDITIVE = {"essential_oil", "ethoxylated", "hidden_uv_booster", "microplastic_polymer", "fragrance",
-            "alkyl_glucoside", "sulfite", "isobornyl_acrylate", "insect_repellent", "under3_restricted", "pfas",
+            "alkyl_glucoside", "sulfite", "isobornyl_acrylate", "insect_repellent", "under3_restricted", "pfas", "mdbgn",
             "eu_fragrance_allergen"}   # the EU list grew in 2023 (Regulation (EU) 2023/1545)   # new in v3.4: v3.1 never had them

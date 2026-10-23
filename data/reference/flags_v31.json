@@ -12113,6 +12113,12 @@
    "w": "Among the most common contact allergens; the EU bans MI in leave-on cosmetics.",
    "s": "EU Regulation 2016/1198 (MI banned in leave-on); ACDS Allergen of the Year 2013."
   },
+  "mdbgn": {
+   "t": "T1",
+   "l": "Contains methyldibromo glutaronitrile, banned in EU cosmetics",
+   "w": "A preservative that causes skin allergy often enough that the EU banned it from leave-on products in 2007 and from all cosmetics in 2008. It is still allowed in the US.",
+   "s": "EU Cosmetics Regulation (EC) No 1223/2009, Annex II (prohibited substances); Commission Directives 2007/17/EC and 2008/42/EC."
+  },
   "formaldehyde_releaser": {
    "t": "T1",
    "l": "Contains a formaldehyde-releasing preservative",
@@ -12403,7 +12409,7 @@
   },
   "sodium_benzoate": {
    "t": "T3",
-   "l": "Preserved with sodium benzoate",
+   "l": "Preserved with sodium benzoate or benzoic acid",
    "w": "Can cause non-allergic redness (contact urticaria) in sensitive skin.",
    "s": "Contact Dermatitis literature."
   },

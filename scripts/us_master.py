@@ -280,6 +280,9 @@ def thin_reason(u, chk):
     return "short_list"
 
 
+NOT_WW = ("w/w_from_mass_per_volume", "v/v")
+ANALGESIC = {"TROLAMINE SALICYLATE", "MENTHOL", "CAMPHOR", "METHYL SALICYLATE", "LIDOCAINE", "LIDOCAINE HCL",
+             "LIDOCAINE HYDROCHLORIDE", "CAPSAICIN", "HISTAMINE DIHYDROCHLORIDE"}
 LABEL_CLAIMS_PATH = os.path.join(ROOT, "data/views/label_claims.jsonl")
 LABEL_CLAIMS = ({json.loads(x)["setid"]: json.loads(x) for x in open(LABEL_CLAIMS_PATH, encoding="utf-8") if x.strip()}
                 if os.path.exists(LABEL_CLAIMS_PATH) else {})
@@ -296,6 +299,19 @@ if os.path.isdir(_OCR_DIR):
             if not (_c.get("broad_spectrum") or _c.get("aging_alert")):
                 LABEL_CLAIMS[_d["setid"]] = dict(_c, broad_spectrum=_d["broad_spectrum"], aging_alert=_d["aging_alert"],
                                                  source="label_image_ocr")
+
+
+US_MAX = {"AVOBENZONE": 3, "HOMOSALATE": 15, "OCTINOXATE": 7.5, "OCTISALATE": 5, "OCTOCRYLENE": 10, "OXYBENZONE": 6,
+          "ENSULIZOLE": 4, "ZINC OXIDE": 25, "TITANIUM DIOXIDE": 25, "MERADIMATE": 5, "SULISOBENZONE": 10,
+          "DIOXYBENZONE": 3, "CINOXATE": 3, "PADIMATE O": 8, "TROLAMINE SALICYLATE": 12, "BEMOTRIZINOL": 6}   # 21 CFR 352.10 / 2025 order
+_ACTIVE_WORDS = re.compile(r"%|OXIDE|AVOBENZONE|HOMOSALATE|OCTI|OCTOCRYLENE|OXYBENZONE|ENSULIZOLE|SALICYLATE|MENTHOL|"
+                           r"CAMPHOR|DIMETHICONE|ALLANTOIN|PETROLATUM|BEMOTRIZINOL", re.I)
+
+
+def clean_name(n):
+    """Drop parenthetical lists of actives from a product name ('... (Homosalate 5%, ...)')."""
+    out = re.sub(r"\s*\(([^()]*)\)", lambda m: "" if _ACTIVE_WORDS.search(m.group(1)) else m.group(0), n or "")
+    return re.sub(r"\s+", " ", out).strip() or n
 
 
 def title_spf(*names):
@@ -324,7 +340,39 @@ def _dict_job(name):
     return (_DICT["cache"].get(name) or {}).get("job")
 
 
-def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
+SOURCE_WORDS = {"SOYBEAN", "SOY", "EGG", "GLYCINE", "SOJA", "MAX"}
+
+
+def source_twins(printed, filed):
+    """Filed names that are a printed ingredient plus its source: printed "Lecithin",
+    filed "LECITHIN, SOYBEAN"; printed "Phospholipids", filed "EGG PHOSPHOLIPIDS". The
+    filing says what the printed name does not (the soy or egg in it), so these still
+    give their allergen flag when only the printed list is shown."""
+    out = []
+    for f in filed:
+        F = set(re.findall(r"[A-Z]+", f.upper()))
+        if not F & SOURCE_WORDS:
+            continue
+        for p in printed:
+            P = set(re.findall(r"[A-Z]+", p.upper()))
+            if P and P <= F and (F - P) <= SOURCE_WORDS:
+                out.append((p, f))
+                break
+    return out
+
+
+_FORMW = re.compile(r"\b(OIL|WATER|EXTRACT|BUTTER|WAX|JUICE|POWDER|ACID)\b")
+
+
+def strict_twin(f, p):
+    """Filed name f is printed name p under another name: related by same_display and
+    of the same form (a rose OIL is not a rose flower WATER)."""
+    if not (same_display(f, p) or same_display(p, f)):
+        return False
+    return set(_FORMW.findall(f.upper())) == set(_FORMW.findall(p.upper()))
+
+
+def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     fl = collections.OrderedDict()
 
     def cite(n, f):
@@ -335,7 +383,8 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
         cited as the printed rose flower WATER)."""
         if n in shown:
             return n
-        return next((x for x in shown if same_display(n, x) and f in eng.flags(x)[0]), n)
+        return next((x for x in shown if same_display(n, x) and f in eng.flags(x)[0]), None) or next(
+            (x for x in shown if strict_twin(n, x)), n)
 
     def add(f, ev):
         if f not in fl:
@@ -350,6 +399,10 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
         fl[f] = out if f == "chemical_filter_active" else out[:EVIDENCE_CAP]
     for f, ev in inactive_flags(eng, list(dict.fromkeys(shown + struct))).items():
         add(f, ev)
+    for p, f in twins:
+        for g in eng.flags(f)[0] & {"soy", "egg"}:
+            if g not in fl:
+                add(g, [f"{p} (filed with the FDA as {f.lower()})"])
     # non-UV actives (skin protectants such as dimethicone) read like inactives
     # every non-mineral active is read like an inactive too (dimethicone as a skin protectant gives
     # "silicone", drometrizole trisiloxane too); a declared UV active is never a HIDDEN booster
@@ -365,9 +418,18 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason):
     scent = [n for n in shown if _dict_job(n) == "fragrance"]
     if scent and not any(f in fl for f in ("fragrance", "essential_oil", "eu_fragrance_allergen")):
         add("fragrance", scent)
-    form = " ".join([c.get("dosage_form") or "", c.get("title") or "", c.get("product_name") or ""])
+    # the title's [labeler] is the company, not the product ("[EMPACK SPRAYTECH]" on a lotion)
+    form = " ".join([c.get("dosage_form") or "", re.sub(r"\[[^\]]*\]", " ", c.get("title") or ""),
+                     re.sub(r"\[[^\]]*\]", " ", c.get("product_name") or "")])
     lc = LABEL_CLAIMS.get(c.get("setid"))
-    if SPRAY.search(form) or (lc and (lc.get("spray") or lc.get("powder"))):
+    # a roll-on is not sprayed, whatever form the filing chose; a stick or cream whose
+    # filed text borrows spray directions is not a spray either (2026-10-22 label audit)
+    U = form.upper()
+    claim = bool(lc and (lc.get("spray") or lc.get("powder")))
+    applied = bool(re.search(r"\bSTICK\b", U)) or (c.get("dosage_form") or "").upper() in (
+        "STICK", "CREAM", "GEL", "PASTE", "OINTMENT", "BALM")
+    rollon = re.search(r"ROLL[ -]?ON|ROLLER ?BALL", U)
+    if not rollon and (SPRAY.search(form) or (claim and not applied)):
         add("spray_powder", [])
         if "talc" in fl:
             add("talc_inhalable", fl["talc"])
@@ -545,6 +607,8 @@ def tidy_inactives(items):
             continue
         if re.fullmatch(r"(?:1,2-)?HexanedioI", x):
             x, changed = "1,2-Hexanediol", True
+        if "[?" in x or x.endswith("[") :
+            x, changed = x.replace("[?", "").rstrip("[ ").strip(), True
         if re.match(r"^C1 \d{5}", x):
             x, changed = "CI " + x[3:], True
         out.append(x)
@@ -695,15 +759,36 @@ def build(run_date):
         # percentages are withheld rather than shown wrong
         _spf = c.get("spf") or (LABEL_CLAIMS.get(sid) or {}).get("spf") or title_spf(c.get("title"), c.get("product_name"))
         _pct = [a.get("percent") for a in acts]
-        pct_withheld = bool(acts and _spf and _spf >= 15 and None not in _pct and sum(_pct) < 5)
+        pct_withheld = bool(acts and _spf and _spf >= 15 and None not in _pct and sum(_pct) < 5) or any(
+            a.get("percent") is not None and a["percent"] > US_MAX.get(a["name"], 100) * 1.01 for a in acts)
+        # one filing for several products (a kit, a set of scents, a brand's whole line): the
+        # filed strengths are of one product or a mix, and a non-sunscreen active (a nasal
+        # spray's, an acne serum's) is not this sunscreen's (2026-10-22 label audit)
+        n_products = int(c.get("product_count") or 1)
+        multi = n_products > 1 or "KIT" in (c.get("dosage_form") or "").upper()
+        if multi:
+            uv = [a for a in acts if a["name"].upper() not in {x.upper() for x in c.get("non_uv_actives") or []}]
+            acts = uv or acts
+            pct_withheld = True
+        # a strength computed from mass per volume (g per 100 mL) or volume per volume is not the
+        # w/w percentage the label prints (13.2 shown for a printed 12%): withheld, not converted
+        acts = [dict(a, percent=None, percent_withheld="not_w_w")
+                if a.get("percent") is not None and str(a.get("percent_basis")) in NOT_WW else a for a in acts]
+        some_withheld = any(a.get("percent_withheld") for a in acts)
         if pct_withheld:
             acts = [dict(a, percent=None) for a in acts]
+        if pct_withheld or some_withheld:
             mp = cp = None
+            pct_withheld = True
+        # a pain-relief cream (trolamine salicylate, menthol...) with no SPF is not a sunscreen
+        analgesic = bool(acts) and all(a["name"].upper() in ANALGESIC for a in acts) and not _spf
         # scope: the classifier says sunscreen drug, then scripts/scope_rules.py takes out
         # SPF makeup / lip / diaper products the classifier let through, and lets back in
         # makeup-format products whose name calls them a sunscreen ("Sunscreen Setting Spritz")
         why = S.scope_reason(c.get("title") or c.get("product_name"))
         back_in = c.get("category") == "makeup" and why is None and S.named_sunscreen(c.get("title"))
+        if analgesic and why is None:
+            why = "topical_analgesic"
         in_scope = (c.get("category") == "sunscreen" or back_in) and why is None
         if in_scope:
             excluded = None
@@ -716,7 +801,7 @@ def build(run_date):
         ov = overrides.get(sid)
         if ov:
             in_scope, excluded = ov["in_scope"], (None if ov["in_scope"] else ov["reason"])
-        name = (legacy.get(sid) or {}).get("n") or display_name(c)
+        name = clean_name((legacy.get(sid) or {}).get("n") or display_name(c))
         u = union.get(sid)
         if u is None and c.get("_delisted_on"):
             filed = [(i.get("name") if isinstance(i, dict) else str(i)) for i in c.get("inactive_ingredients") or []]
@@ -730,6 +815,20 @@ def build(run_date):
         shown, n_syn = drop_filed_synonyms(shown, (u2 or {}).get("i_text_n") or 0, c, syn)
         shown, n_rep = drop_repeated_extras(shown, (u2 or {}).get("i_text_n") or 0)
         n_syn += n_rep
+        # the printed label is what a parent holds: when its list was read (5+ names), names
+        # only the FDA filing has (often another variant or an older formula; 2026-10-22 label
+        # audit) are not shown and give no flags
+        pn = (u2 or {}).get("i_text_n") or 0
+        extras_dropped = 0
+        if pn >= 5 and len(shown) > pn:
+            extras_dropped, shown = len(shown) - pn, shown[:pn]
+        flag_struct = [] if pn >= 5 else struct
+        twins = source_twins(shown, struct) if pn >= 5 else []
+        if pn >= 5:
+            # a filed name that is a printed ingredient under its other name ("BUTYLATED
+            # HYDROXYTOLUENE" for a printed "BHT", "PHENOXYETHANOL" for a misprinted
+            # "Phenixyethanol") still gives its flags, cited by the printed name
+            flag_struct = [f for f in struct if f not in shown and any(strict_twin(f, x) for x in shown)]
         fr = label_text_fragrance(sid, shown)
         if fr:
             shown = shown + [fr]
@@ -749,7 +848,11 @@ def build(run_date):
                                False if LABEL_CLAIMS[sid].get("aging_alert") else
                                True if LABEL_CLAIMS[sid].get("broad_spectrum") else None),
             "dailymed_url": c.get("dailymed_url"), "effective_date": c.get("effective_date"),
-            "actives": acts, "actives_percent_withheld": pct_withheld or None,
+            "actives": acts,
+            # why strengths are not shown: several products in one filing, a filed amount that is
+            # not w/w, or filed strengths that cannot give the printed SPF
+            "actives_percent_withheld": ("multi_product" if multi else "not_w_w" if some_withheld
+                                         else "implausible" if pct_withheld else None),
             "mineral_type": mineral_type(acts), "filter_type": ft,
             "mineral_pct": mp, "chemical_pct": cp,
             "is_mineral": ft not in ("chemical_only", "no_uv_filter"),
@@ -759,7 +862,9 @@ def build(run_date):
             "label_check": (chk or {}).get("status"), "label_check_date": (chk or {}).get("checked"),
             "label_check_stale": bool(L.stale(led, sid, ver)) and chk is None,
             "thin": thin, "thin_reason": treason,
-            "flags": flags(eng, meta, shown, struct, acts, organic, c, thin, treason),
+            "flags": flags(eng, meta, shown, flag_struct, acts, organic, c, thin, treason, twins),
+            "filed_extras_dropped": extras_dropped or None,
+            "multi_product": (n_products if n_products > 1 else "kit") if multi else None,
             "recalls": recalls.match(c, c.get("product_name") or name) if recalls.all else [],
             "recall_checked": bool(recalls.all),
             "formulation_hash": c.get("formulation_hash"),

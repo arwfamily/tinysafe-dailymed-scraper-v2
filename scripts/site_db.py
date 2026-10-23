@@ -52,8 +52,13 @@ def build(release_dir):
              "i_text_n": r.get("inactives_printed_n"), "thin": r.get("thin"), "ft": r.get("filter_type"),
              "bk": 1 if r.get("is_baby_kids") else 0, "st": r.get("status"),
              "bs": {True: 1, False: 0}.get(r.get("broad_spectrum"))}
-        if r.get("actives_percent_withheld"):
-            p["pw"] = 1                                    # filed strengths implausible for the SPF
+        w = r.get("actives_percent_withheld")
+        if w:
+            # 1 filed strengths implausible for the SPF, 2 filed as an amount per volume (not the
+            # label's w/w %), 3 one filing for several products
+            p["pw"] = {"not_w_w": 2, "multi_product": 3}.get(w, 1)
+        if r.get("multi_product"):
+            p["mp"] = r["multi_product"]                    # product count, or "kit"
         if r.get("thin_reason"):
             p["thin_reason"] = r["thin_reason"]
         if r.get("label_check"):
@@ -92,7 +97,8 @@ def explained(release_dir):
     for line in open(MASTER, encoding="utf-8"):
         r = json.loads(line)
         if not r.get("in_scope") and r.get("excluded_reason") and (r.get("scope_override") or r["excluded_reason"] in (
-                "spf_makeup", "spf_lip_balm", "diaper_cream", "not_a_sunscreen", "zinc_only_no_sun_claim")):
+                "spf_makeup", "spf_lip_balm", "diaper_cream", "not_a_sunscreen", "zinc_only_no_sun_claim",
+                "topical_analgesic")):
             out[r["setid"]] = "scope:" + r["excluded_reason"]
         elif r.get("actives_corrected"):
             out[r["setid"]] = "actives_corrected"
@@ -100,6 +106,8 @@ def explained(release_dir):
             out[r["setid"]] = "last_good_read_kept"
         elif r.get("inactives_tidied") or r.get("filed_synonyms_dropped"):
             out[r["setid"]] = "list_split_repaired"
+        elif (r.get("inactives_printed_n") or 0) >= 5:
+            out[r["setid"]] = "printed_list_only"       # checked flag by flag (quality_gate)
         elif r.get("inactives_added_from_label_text"):
             out[r["setid"]] = "label_text_addition"
     return out
