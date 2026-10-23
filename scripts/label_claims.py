@@ -29,6 +29,9 @@ ALERT = re.compile(r"skin\s+cancer\s*/\s*skin\s+aging\s+alert", re.I)
 SPF = re.compile(r"\bSPF\s*-?\s*(\d{1,3})\s*(\+|plus)?", re.I)
 SPRAY = re.compile(r"\b(?:spray(?:ing)?\s+(?:liberally|evenly|generously|on|into|directly|until)|hold\s+(?:the\s+)?(?:can|container|bottle)\s+\d|do\s+not\s+spray|aerosol|continuous\s+spray|lotion\s+spray|sunscreen\s+spray)", re.I)
 POWDER = re.compile(r"\b(?:loose\s+powder|mineral\s+powder|powder\s+sunscreen|brush\s+(?:on|onto|over)|tap\s+(?:the\s+)?brush|swirl\s+(?:the\s+)?brush)", re.I)
+FREE = re.compile(r"\b(?:fragrance[\s-]*free|free\s+of\s+(?:added\s+)?fragrances?|no\s+(?:added\s+)?fragrances?|unscented|without\s+fragrance|0%\s+fragrance)\b", re.I)
+FRAG_LISTED = re.compile(r"inactive\s+ingredients?\s*:?.{0,3000}?\b(?:fragrance|parfum|perfume|aroma)\b(?!\s*[-\s]*free)", re.I | re.S)
+TEAR = re.compile(r"\btear[\s-]*free\b", re.I)
 WR = re.compile(r"water\s+resistant\s*\(?\s*(40|80)\s+minutes", re.I)
 
 
@@ -49,7 +52,9 @@ def claims(sid):
                 wr = [int(m.group(1)) for m in WR.finditer(t)]
                 return {"setid": sid, "broad_spectrum": bool(BS.search(rest)), "aging_alert": bool(ALERT.search(t)),
                         "spf": max(spfs) if spfs else None, "spray": bool(SPRAY.search(t)), "powder": bool(POWDER.search(t)),
-                        "water_resistant_minutes": max(wr) if wr else None, "chars": len(t)}
+                        "water_resistant_minutes": max(wr) if wr else None,
+                        "fragrance_free_claim": bool(FREE.search(t)), "fragrance_in_list": bool(FRAG_LISTED.search(t)),
+                        "tear_free_claim": bool(TEAR.search(t)), "chars": len(t)}
         except Exception as e:  # noqa: BLE001
             print("retry", sid, e, flush=True)
         time.sleep(5 * (i + 1))
