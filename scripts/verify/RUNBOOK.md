@@ -52,6 +52,9 @@ expected; a filing error is not) and note them in the report.
 Commit the data repo (`data/`, corrections) and push; `cp data/site/sunnytime_db.json <arwhouse>/sunnytime/db.json`;
 commit `sunnytime/db.json` and `sunnytime/index.html` (headline numbers only) and push.
 Never change any other site copy in this job: copy changes need the owner's approval.
+Then confirm the site actually deployed: `env -u GH_TOKEN gh api repos/arwfamily/arwhouse/commits/<sha>/status --jq '.statuses[]|[.context,.state,.description]'`
+must show `Vercel success` within about 5 minutes. If no status appears after 10 minutes, push an empty commit
+(`git commit --allow-empty -m "Redeploy"`) and check again; report it if it still does not deploy.
 
 ## 7. Report
 Send the owner a short summary in Korean: labels changed this week, read1/confirm/third counts,
