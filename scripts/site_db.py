@@ -106,6 +106,8 @@ def explained(release_dir):
             out[r["setid"]] = "last_good_read_kept"
         elif r.get("inactives_tidied") or r.get("filed_synonyms_dropped"):
             out[r["setid"]] = "list_split_repaired"
+        elif r.get("artwork_list_withheld") == "multi_product":
+            out[r["setid"]] = "multi_product_combined_list"  # the filing's list for all its products, as the site says (2026-10-24)
         elif r.get("inactive_source") == "artwork":
             out[r["setid"]] = "artwork_list"            # the package artwork, read twice (artwork_reads.jsonl)
         elif (r.get("inactives_printed_n") or 0) >= 5:
