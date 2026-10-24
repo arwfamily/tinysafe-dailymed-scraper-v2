@@ -108,6 +108,8 @@ def explained(release_dir):
             out[r["setid"]] = "list_split_repaired"
         elif r.get("artwork_list_withheld") == "multi_product":
             out[r["setid"]] = "multi_product_combined_list"  # the filing's list for all its products, as the site says (2026-10-24)
+        elif r.get("artwork_list_withheld") == "unread_words":
+            out[r["setid"]] = "artwork_list_withdrawn"       # the package read had words its reader could not read
         elif r.get("inactive_source") == "artwork":
             out[r["setid"]] = "artwork_list"            # the package artwork, read twice (artwork_reads.jsonl)
         elif (r.get("inactives_printed_n") or 0) >= 5:
