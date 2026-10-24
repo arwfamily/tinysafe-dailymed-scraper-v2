@@ -1,6 +1,12 @@
 {
  "changes": [
   {
+   "version": "v3.11",
+   "date": "2026-10-24",
+   "change": "Korean and international cartons often print a full ingredient list beside the US Drug Facts panel. 466 such packages were read twice by independent readers; the names both reads agree on (433 labels, 13,980 entries) are added to the list shown, never taking a name away, so fragrance, parabens, cyclic silicones, triclosan and extra UV filters printed only in that list now give their warnings. A kit with a mist or spray gives the spray warning; chestnut is a tree nut; PEG derivatives of plant oils are not plant extracts; a record showing Broad Spectrum SPF 15+ drops a contradicting alert-based warning.",
+   "why": "Accuracy: the post-fix audits (2026-10-24) found Korean and international full lists as the largest remaining source of missing warnings."
+  },
+  {
    "version": "v3.10",
    "date": "2026-10-24",
    "change": "505 products whose FDA filing names a contract manufacturer (Allure Labs, COSMAX, Prime Packaging, Fallien, Cross Brands and others) now show the brand and name printed on the package front, read from the filed artwork. Titanium dioxide or zinc oxide printed again as a colorant in the inactive list (CI 77891, 'may contain') is kept in the list. A misspelled single ingredient name ('Methyparaben', 'Proplyene Glycol') is shown spelled right.",
