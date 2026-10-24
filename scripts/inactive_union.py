@@ -382,6 +382,12 @@ def _latin(name):
 
 def same_display(filed, printed):
     """True when `filed` (a structured SPL name) is another name for `printed`."""
+    # two colorants with different Colour Index numbers are different ingredients, however alike
+    # their names ("Iron Oxides (CI 77491)" and "Iron Oxides (CI 77492)"; 2026-10-24 B-tier check)
+    _cf = set(re.findall(r"CI ?(\d{5})", (filed or "").upper()))
+    _cp = set(re.findall(r"CI ?(\d{5})", (printed or "").upper()))
+    if _cf and _cp and not (_cf & _cp):
+        return False
     if same(filed, printed):
         return True
     for p in re.split(r"\s+\(and\)\s+|\s+&\s+|\s+and\s+(?=[A-Z])", printed or "", flags=re.I):

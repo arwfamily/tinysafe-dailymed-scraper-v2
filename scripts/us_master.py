@@ -318,6 +318,15 @@ if os.path.exists(_FLP):
     for _x in open(_FLP, encoding="utf-8"):
         _d = json.loads(_x)
         FULL_LISTS[_d["setid"]] = _d
+# a second, independent reader's check of a record read once (data/corrections/confirm_reads.jsonl,
+# 2026-10-24): "confirmed" makes the evidence two agreeing reads
+CONFIRM = {}
+_CFP = os.path.join(ROOT, "data/corrections/confirm_reads.jsonl")
+if os.path.exists(_CFP):
+    for _x in open(_CFP, encoding="utf-8"):
+        _d = json.loads(_x)
+        if not _d.get("wrong_product") and (_d.get("variants") or 1) <= 1:
+            CONFIRM[_d["setid"]] = _d
 NAME_READS = {}
 _NRP = os.path.join(ROOT, "data/corrections/name_reads.jsonl")
 if os.path.exists(_NRP):
@@ -1346,6 +1355,18 @@ def build(run_date):
             if _added:
                 shown, pn = _have, 0
                 c = dict(c, _kit_names_added=_added)
+        _cf = CONFIRM.get(sid) if str((CONFIRM.get(sid) or {}).get("spl_version")) == str(ver) else None
+        if _cf and art and art.get("inactives"):
+            # a name the second reader found on the package that the first reader also listed
+            _have, _added = list(shown), 0
+            for x in _cf.get("on_artwork_not_shown") or []:
+                x = re.sub(r"\s*\(.*?(duplicate|listed|appears).*?\)\s*$", "", (x or "").strip(), flags=re.I)
+                if x and any(x == y or _same_display(x, y) or _same_display(y, x) for y in art["inactives"]) and not is_active(
+                        x, akeys_of(acts)) and not any(x == y or _same_display(x, y) or _same_display(y, x) for y in _have):
+                    _have.append(x); _added += 1
+            if _added:
+                shown = _have
+                c = dict(c, _confirm_added=_added)
         _fl = FULL_LISTS.get(sid)
         if _fl and str(_fl.get("spl_version")) == str(ver) and False:   # replacement off: a carton can print a US Drug Facts list AND a different Korean list
             # (The Cellin, Rendrevie); both are on the package, so the full list only adds (2026-10-24)
@@ -1430,7 +1451,7 @@ def build(run_date):
             # how this label's data was checked against the package: A the artwork read twice by
             # independent readers who agreed; B read once and it matched the filed label text;
             # C the filed label text only (no readable artwork, or readers disagreed)
-            "evidence_tier": ("A" if art and art.get("readable") and art.get("second_read") else
+            "evidence_tier": ("A" if art and art.get("readable") and (art.get("second_read") or (_cf and _cf.get("decision") == "confirmed")) else
                               "B" if art and art.get("readable") else "C"),
             "artwork_list_withheld": "multi_product" if (art and art.get("use_list") and art.get("inactives") and multi) else (art or {}).get("list_withheld"),
             "inactives_filed_n": (u2 or {}).get("i_struct_n", 0), "inactives_printed_n": (u2 or {}).get("i_text_n", 0),
@@ -1447,6 +1468,10 @@ def build(run_date):
         }
         if c.get("_actives_corrected"):
             rec["actives_corrected"] = c["_actives_corrected"]
+        if _cf and _cf.get("broad_spectrum") is True and (art or {}).get("broad_spectrum") is True and not rec.get("broad_spectrum"):
+            rec["broad_spectrum"] = True       # two readers each read "Broad Spectrum" on the package front
+        if c.get("_confirm_added"):
+            rec["confirm_names_added"] = c["_confirm_added"]
         # Broad Spectrum and SPF 15+ as the record shows them: the alert-based warning, read from
         # a filing field the package contradicts, does not stand (Avasol; 2026-10-24 audit)
         if rec.get("broad_spectrum") and isinstance(rec.get("spf"), (int, float)) and rec["spf"] >= 15:
