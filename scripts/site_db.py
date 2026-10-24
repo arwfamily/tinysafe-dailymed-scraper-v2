@@ -102,6 +102,8 @@ def explained(release_dir):
                 "spf_makeup", "spf_lip_balm", "diaper_cream", "not_a_sunscreen", "zinc_only_no_sun_claim",
                 "topical_analgesic", "skin_lightener")):
             out[r["setid"]] = "scope:" + r["excluded_reason"]
+        elif r.get("inactives_withheld"):
+            out[r["setid"]] = "implausible_list_withheld"   # hundreds of names for one product (2026-10-24)
         elif r.get("actives_corrected"):
             out[r["setid"]] = "actives_corrected"
         elif r.get("fetch_status") == "carried_forward":

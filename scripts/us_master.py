@@ -1402,6 +1402,12 @@ def build(run_date):
                 c = dict(c, _full_list_added=_added)
         shown, _pol = polish_names(shown)
         tidied = tidied or _pol
+        # one product filed with hundreds of inactives (Orgaplus Sun Stick EX: 547, its carton
+        # prints none; 2026-10-24 second reads) is a filer's whole ingredient catalogue, not this
+        # formula: the list is not shown, and no warning is drawn from it
+        _implausible_list = not multi and len(shown) > 150
+        if _implausible_list:
+            shown, struct, pn = [], [], 0
         extras_dropped = 0
         if pn >= 5 and len(shown) > pn:
             extras_dropped, shown = len(shown) - pn, shown[:pn]
@@ -1481,6 +1487,8 @@ def build(run_date):
         }
         if c.get("_actives_corrected"):
             rec["actives_corrected"] = c["_actives_corrected"]
+        if _implausible_list:
+            rec["inactives_withheld"] = "implausible_length"
         if _cf and _cf.get("broad_spectrum") is True and (art or {}).get("broad_spectrum") is True and not rec.get("broad_spectrum"):
             rec["broad_spectrum"] = True       # two readers each read "Broad Spectrum" on the package front
         if c.get("_confirm_added"):
