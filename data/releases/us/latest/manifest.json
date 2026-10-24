@@ -1,9 +1,9 @@
 {
  "release_id": "us-2026-10-24",
  "git_tag": "us-data-2026-10-24",
- "released": "2026-10-24T18:44:19+00:00",
+ "released": "2026-10-24T22:17:21+00:00",
  "schema_version": "1.0.0",
- "rules_version": "v3.11 · 2026-10-24",
+ "rules_version": "v3.12 · 2026-10-24",
  "source": {
   "register": "FDA DailyMed (SPL)",
   "collected": "2026-10-24",
@@ -41,7 +41,7 @@
     "needs_review": 1
    },
    "label_verified_share": 0.9735,
-   "inactives_7_or_fewer": 354,
+   "inactives_7_or_fewer": 356,
    "recalls": {
     "labels_matched": 15,
     "labels_needs_review": 0
@@ -115,15 +115,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9461,
-   "sha256": "c79af1d83982c32c444ea924fb3d3387441fcbee88b8b3ffa418910579ea0280"
+   "sha256": "9cf6cb3cb32646a8d73b7303e008ffe3db975aed824f812f660b17bc28fe5a6c"
   },
   "us_mineral.jsonl": {
    "rows": 5152,
-   "sha256": "7b109260b924ea7ea87efc8e74e02c1194cc1310c6ea3826761ab645acefa66b"
+   "sha256": "bce9f80ae6b91ee37ed9571368f6c8e98db7843107b411c988485431d181ef4d"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "21920b46180deb77abb3fe4b6d212b01e0acb8e12da2d4bc6b8a286917d75060"
+   "sha256": "928185d5ad4916e78b9bb7d407957a17df5c99b46597cc52238911def63147a0"
   },
   "us_out_of_scope.jsonl": {
    "rows": 4827,

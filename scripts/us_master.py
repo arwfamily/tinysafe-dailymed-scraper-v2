@@ -1380,7 +1380,12 @@ def build(run_date):
         _cf = CONFIRM.get(sid) if str((CONFIRM.get(sid) or {}).get("spl_version")) == str(ver) else None
         _t3 = THIRD.get(sid) if _cf and str((THIRD.get(sid) or {}).get("spl_version")) == str(ver) else None
         _t3names = {k for k, v in ((_t3 or {}).get("names") or {}).items() if v == "printed"}
-        if _cf and art and art.get("inactives") and _cf.get("decision") == "differs":
+        if _cf and art and art.get("inactives") and _cf.get("decision") == "differs" and False:
+            # OFF (2026-10-24 rebuild check): a rename is a removal, and a package can print a
+            # Drug Facts list and a different full list (Face It: ethylparaben only in the full
+            # list, methylparaben would have been dropped; Equate: a merged "lauryl laurate
+            # bis-PEG-12 dimethicone beeswax" lost lauryl laurate). The printed name is added
+            # instead (below), the filed one stays. Was:
             # a filed name both readers found NOT printed, where both found a close variant printed
             # instead (filed "Squalene" for a printed Squalane, "Methyl Lactate" for Menthyl
             # Lactate, "Gingko Biloba Root" for Ginkgo Biloba Leaf; 2026-10-24 second reads): the
