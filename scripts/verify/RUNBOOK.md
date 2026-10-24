@@ -48,7 +48,8 @@ BRIEF_third.md (packs tNNN, 4 per agent), then `weekly.py merge third WORK`.
 any unchanged label lost an ingredient or a warning. On a gate failure: do not publish; report the
 examples. Then
 `python3 scripts/verify/weekly.py report <arwhouse>/sunnytime/db.json data/site/sunnytime_db.json --out data/reports/weekly_YYYY-MM-DD_flag_changes.md`
-lists labels whose filing changed and lost a warning; read each one (a brand removing an ingredient is
+lists labels whose filing changed and lost a warning; and
+`python3 scripts/verify/selfcheck.py data/site/sunnytime_db.json --site <arwhouse>` must exit 0 (no placeholder or run-together ingredient names, every warning has its text, every photo its thumbnail); read each one (a brand removing an ingredient is
 expected; a filing error is not) and note them in the report.
 Commit the data repo (`data/`, corrections) and push; `cp data/site/sunnytime_db.json <arwhouse>/sunnytime/db.json`;
 commit `sunnytime/db.json`, new thumbnails in `sunnytime/p/`, and `sunnytime/index.html` (headline numbers only) and push.

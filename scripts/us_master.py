@@ -968,6 +968,19 @@ def polish_names(items):
     _n0 = len(items or [])
     items = [x for x in (items or []) if not _ph.search(x or "")]
     out, changed = [], len(items) != _n0
+    # a printed list whose bracket never closes ("Citrullus Lanatus (Watermelon Extract, Daucus
+    # Carota ...") was rejoined into one long name: the bracket is closed at its first comma and
+    # the rest split back into names (2026-10-24 self-check: Mirabella, Vshell, Phytogenic)
+    _fixed = []
+    for x in items:
+        if x and x.count("(") > x.count(")") and len(x) > 120 and "," in x:
+            head, _, rest = x.partition(",")
+            _fixed.append(head.strip() + (")" if head.count("(") > head.count(")") else ""))
+            _fixed += [y.strip() for y in re.split(r",\s*(?![^()]*\))", rest) if y.strip()]
+            changed = True
+        else:
+            _fixed.append(x)
+    items = _fixed
     i = 0
     while i < len(items):
         x = items[i]

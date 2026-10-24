@@ -150,6 +150,12 @@ def test_age_limit():
     assert M.age_limit("Keep out of reach of children. Age 50+ skin") is None
 
 
+def test_unclosed_bracket_split():
+    got, ch = M.polish_names(["Citrullus Lanatus (Watermelon Extract, Daucus Carota Sativa (Carrot) Extract, Dimethicone, "
+                              "Dodecane, Glycerin, Glyceryl Laurate, Glyceryl Stearate, Methylparaben"])
+    assert ch and got[0] == "Citrullus Lanatus (Watermelon Extract)" and "Methylparaben" in got and len(got) == 8, got
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
