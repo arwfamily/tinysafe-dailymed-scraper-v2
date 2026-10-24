@@ -30,6 +30,7 @@ Usage: python3 scripts/us_master.py [--run-date YYYY-MM-DD]
 import argparse
 import collections
 import datetime
+import html
 import json
 import os
 import re
@@ -795,6 +796,57 @@ _NOTE = re.compile(r"\s*(?:\*+\s*=?\s*(?:certified\s+)?organic(?:\s+ingredients?
                    r"|^section\s+(?=[A-Za-z]))", re.I)
 
 
+_HTMLENT = re.compile(r"&[A-Za-z]+;|&#\d+;")
+_LABEL_CODE = re.compile(r"\s*\[[A-Z]{1,4}\d{3,7}[A-Z]?\]", re.I)
+_MAY = re.compile(r"^\s*\[?\(?\s*(?:may\s+contain|\+/-)\s*(?:\(?\s*\+/-\s*\)?)?\s*[:\]]?\s*(?:/?\s*peut\s+contenir\s*(?:\[?\+/-\]?)?\s*:?)?\s*", re.I)
+
+
+def polish_names(items):
+    """Clean printed names without changing what they name (2026-10-24 audits): HTML entities
+    ('D&AMP;C Red No. 30'), a lot or formula code stuck on ('Citronellol. [S1762A]'),
+    '1' + '2-Hexanediol' split at its comma, and a 'May contain' colorant kept as a possible
+    ingredient ('Titanium Dioxide (CI 77891) (may contain)'). Returns (list, changed)."""
+    out, changed, items = [], False, list(items or [])
+    i = 0
+    while i < len(items):
+        x = items[i]
+        y = x
+        for _ in range(2):
+            if _HTMLENT.search(y):
+                y = html.unescape(y)
+        y = _LABEL_CODE.sub("", y).strip()
+        if y.count("]") > y.count("["):
+            y = re.sub(r"\s*\]+\s*$", "", y)
+        if re.fullmatch(r"\d", y.strip()) and i + 1 < len(items) and re.match(r"\d-", items[i + 1].strip()):
+            y, i = f"{y.strip()},{items[i + 1].strip()}", i + 1
+        m = _MAY.match(y)
+        if m and m.end() > 0 and re.search(r"may\s+contain|\+/-", y[:m.end()], re.I) and y[m.end():].strip():
+            y = y[m.end():].strip().rstrip("]").strip() + " (may contain)"
+        y = y.strip().rstrip(".").strip() if y.endswith(".") and not y.endswith("..") else y.strip()
+        if y != x:
+            changed = True
+        if y:
+            out.append(y)
+        i += 1
+    return out, changed
+
+
+_NAME_TYPO = {r"\bB(?:oa|ora|rao)d\b": "Broad", r"\bBrozer\b": "Bronzer", r"\bInfinte\b": "Infinite"}
+_FORM_WORD = r"Cream|Lotion|Stick|Spray|Gel|Oil|Powder|Balm|Serum|Sunscreen|Fluid|Mist|Cushion|Essence"
+
+
+def polish_display(n):
+    """A display name: entities decoded, known typos fixed, a form word printed twice
+    ('Cream Cream', 'Stick Stick') once (2026-10-24 audits)."""
+    for _ in range(2):
+        if _HTMLENT.search(n or ""):
+            n = html.unescape(n)
+    for a, b in _NAME_TYPO.items():
+        n = re.sub(a, b, n or "")
+    n = re.sub(rf"\b({_FORM_WORD})(\s+\1\b)+", r"\1", n or "", flags=re.I)
+    return re.sub(r"\s+", " ", n).strip()
+
+
 def tidy_inactives(items):
     """Repair list-splitting leftovers in a printed list (2026-10-20 audit, 41 labels):
     a lone ',' or '(' ; a stereo qualifier split off its ingredient ('(+/-)-');
@@ -1115,6 +1167,7 @@ def build(run_date):
         _nr = _nr if _nr and str(_nr.get("spl_version")) == str(ver) else None
         if _nr:
             name = " ".join(x for x in (_nr.get("brand"), _nr.get("product_name")) if x)
+        name = polish_display(name)
         u = union.get(sid)
         if u is None and c.get("_delisted_on"):
             filed = [(i.get("name") if isinstance(i, dict) else str(i)) for i in c.get("inactive_ingredients") or []]
@@ -1161,6 +1214,8 @@ def build(run_date):
             if _added:
                 shown, pn = _have, 0
                 c = dict(c, _kit_names_added=_added)
+        shown, _pol = polish_names(shown)
+        tidied = tidied or _pol
         extras_dropped = 0
         if pn >= 5 and len(shown) > pn:
             extras_dropped, shown = len(shown) - pn, shown[:pn]
@@ -1195,7 +1250,7 @@ def build(run_date):
             "marketing_ended_on": _mkt_end(sid, run_date),
             "excluded_reason": excluded,
             "category": c.get("category"), "name": name, "title": c.get("title"),
-            "brand": (_nr or {}).get("brand") or (legacy.get(sid) or {}).get("b") or c.get("labeler"), "labeler": c.get("labeler"),
+            "brand": polish_display((_nr or {}).get("brand") or (legacy.get(sid) or {}).get("b") or c.get("labeler") or ""), "labeler": c.get("labeler"),
             "spf": (art.get("spf") if art and art.get("readable") and (art.get("variants") or 1) == 1 and art.get("spf")
                     and not art.get("filing_text_verified_current") else None)
                    or c.get("spf") or (LABEL_CLAIMS.get(sid) or {}).get("spf") or title_spf(name, c.get("title"))
