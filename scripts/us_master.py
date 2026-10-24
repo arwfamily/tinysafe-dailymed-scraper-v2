@@ -801,6 +801,17 @@ _LABEL_CODE = re.compile(r"\s*\[[A-Z]{1,4}\d{3,7}[A-Z]?\]", re.I)
 _MAY = re.compile(r"^\s*\[?\(?\s*(?:may\s+contain|\+/-)\s*(?:\(?\s*\+/-\s*\)?)?\s*[:\]]?\s*(?:/?\s*peut\s+contenir\s*(?:\[?\+/-\]?)?\s*:?)?\s*", re.I)
 
 
+def _unent(t):
+    """HTML entities, also double-escaped ('&amp;Eacute;') or mis-cased ('&Rsquo;')."""
+    for _ in range(3):
+        if not _HTMLENT.search(t or ""):
+            break
+        t = html.unescape(t)
+        t = re.sub(r"&([A-Za-z]+);", lambda m: html.unescape("&" + m.group(1).lower() + ";")
+                   if html.unescape("&" + m.group(1).lower() + ";") != "&" + m.group(1).lower() + ";" else m.group(0), t)
+    return t
+
+
 def polish_names(items):
     """Clean printed names without changing what they name (2026-10-24 audits): HTML entities
     ('D&AMP;C Red No. 30'), a lot or formula code stuck on ('Citronellol. [S1762A]'),
@@ -811,17 +822,29 @@ def polish_names(items):
     while i < len(items):
         x = items[i]
         y = x
-        for _ in range(2):
-            if _HTMLENT.search(y):
-                y = html.unescape(y)
+        y = _unent(y)
         y = _LABEL_CODE.sub("", y).strip()
         if y.count("]") > y.count("["):
             y = re.sub(r"\s*\]+\s*$", "", y)
-        if re.fullmatch(r"\d", y.strip()) and i + 1 < len(items) and re.match(r"\d-", items[i + 1].strip()):
-            y, i = f"{y.strip()},{items[i + 1].strip()}", i + 1
-        m = _MAY.match(y)
-        if m and m.end() > 0 and re.search(r"may\s+contain|\+/-", y[:m.end()], re.I) and y[m.end():].strip():
-            y = y[m.end():].strip().rstrip("]").strip() + " (may contain)"
+        # a locant list split at its commas: '1' + '2-Hexanediol', 'Trans-1' + '3' + '3,3-Tetra...'
+        joined = False
+        while i + 1 < len(items):
+            nx = items[i + 1].strip()
+            lone_here = re.fullmatch(r"\d", y.strip()) and re.match(r"\d(?:[-,\s])", nx)
+            lone_next = re.fullmatch(r"\d", nx) and re.search(r"[-,]\d$", y.strip())
+            cont = joined and re.search(r"[-,]\d$", y.strip()) and re.match(r"\d,\d", nx)
+            if not (lone_here or lone_next or cont):
+                break
+            y, i, joined = f"{y.strip()},{nx}", i + 1, True
+        y = re.sub(r"^(1,2)\s+(Hexanediol|Pentanediol|Butanediol)", r"\1-\2", y, flags=re.I)
+        may = False
+        while True:
+            m = _MAY.match(y)
+            if not (m and m.end() > 0 and re.search(r"may\s+contain|\+/-|peut", y[:m.end()], re.I) and y[m.end():].strip()):
+                break
+            y, may = y[m.end():].strip().rstrip("]").strip(), True
+        if may or re.search(r"\(may contain\)$", y):
+            y = re.sub(r"\s*\(may contain\)$", "", y) + " (may contain)"
         y = y.strip().rstrip(".").strip() if y.endswith(".") and not y.endswith("..") else y.strip()
         if y != x:
             changed = True
@@ -838,9 +861,7 @@ _FORM_WORD = r"Cream|Lotion|Stick|Spray|Gel|Oil|Powder|Balm|Serum|Sunscreen|Flui
 def polish_display(n):
     """A display name: entities decoded, known typos fixed, a form word printed twice
     ('Cream Cream', 'Stick Stick') once (2026-10-24 audits)."""
-    for _ in range(2):
-        if _HTMLENT.search(n or ""):
-            n = html.unescape(n)
+    n = _unent(n or "")
     for a, b in _NAME_TYPO.items():
         n = re.sub(a, b, n or "")
     n = re.sub(rf"\b({_FORM_WORD})(\s+\1\b)+", r"\1", n or "", flags=re.I)
