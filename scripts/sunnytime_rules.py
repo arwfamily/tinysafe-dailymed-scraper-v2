@@ -24,16 +24,16 @@ P = {
                          r"BEMOTRIZINOL|BIS-?ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE|DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE|"
                          r"ETHYL FERULATE|ETHYLHEXYL TRIAZONE|METHYLENE BIS-?BENZOTRIAZOLYL|BENZOTRIAZOLYL DODECYL|BISOCTRIZOLE|ISCOTRIZINOL|"
                          r"DIETHYLHEXYL BUTAMIDO TRIAZONE|TRIS-BIPHENYL TRIAZINE|DROMETRIZOLE TRISILOXANE|POLYSILICONE-15|"
-                         r"TEREPHTHALYLIDENE DICAMPHOR",
+                         r"TEREPHTHALYLIDENE DICAMPHOR|DIETHYLHEXYL 2,6-NAPHTHALATE|DIETHYLHEXYL NAPHTHALATE",
     "chemical_filter_in_inactives": r"\bOCTISALATE\b|\bOCTOCRYLENE\b|\bOCTINOXATE\b|\bENSULIZOLE\b|\bAVOBENZONE\b|"
                                     r"ETHYLHEXYL METHOXYCINNAMATE|\bBENZOPHENONE(-3)?\b|\bHOMOSALATE\b|ETHYLHEXYL SALICYLATE|"
-                                    r"\bOXYBENZONE\b|BUTYL METHOXYDIBENZOYLMETHANE|OCTYL METHOXYCINNAMATE|(?<![A-Z])(?<!BUT\w{2} )(?<!BUT\w{3} )OCTYL SALICYLATE",
+                                    r"\bOXYBENZONE\b|BUTYL METHOXYDIBENZOYLMETHANE|PHENYLBENZIMIDAZOLE SULFONIC ACID|OCTYL METHOXYCINNAMATE|(?<![A-Z])(?<!BUT\w{2} )(?<!BUT\w{3} )OCTYL SALICYLATE",
     "mi_mci": r"METHYL ?ISOTHIAZOLINONE|METHYLCHLORO ?ISOTHIAZOLINONE",
     "formaldehyde_releaser": r"DMDM HYDANTOIN|DIAZOLIDINYL UREA|IMIDAZOLIDINYL UREA|QUATERNIUM-15|SODIUM HYDROXYMETHYLGLYCINATE|"
                              r"BRONOPOL|2-BROMO-2-NITROPROPANE|METHENAMINE",
     "ipbc": r"IODOPROPYNYL BUTYLCARBAMATE",
     "retinoid": r"\bRETIN(OL|YL|AL|OIC)|VITAMIN A\b",
-    "adult_active": r"SALICYLIC ACID|BAKUCHIOL|GLYCOLIC ACID|TRANEXAMIC|\bARBUTIN|(?<!BUTYL)HYDROQUINONE|DIHYDROXYACETONE|\bKOJIC",
+    "adult_active": r"SALICYLIC ACID|BAKUCHIOL|(?<!/)GLYCOLIC ACID(?! ?COPOLYMER)|TRANEXAMIC|\bARBUTIN|(?<!BUTYL)HYDROQUINONE|DIHYDROXYACETONE|\bKOJIC",
     "d4": r"CYCLOTETRASILOXANE|CYCLOMETHICONE 4\b",
     "triclosan": r"TRICLOSAN|TRICLOCARBAN",
     "formaldehyde": r"^FORMALDEHYDE$|^FORMALIN$",
@@ -76,14 +76,14 @@ P = {
     "capb": r"COCAMIDOPROPYL BETAINE",
     "propylene_glycol": r"(?<![A-Z])PROPYLENE GLYCOL(?![ -]*(?:[A-Z]+ATE|MONO[A-Z]*|DI[A-Z]+|ALGINATE|ESTERS?)\b)",
     # ACDS Allergen of the Year 2017 / 2024 / 2020 (rules v3.4)
-    "alkyl_glucoside": r"\b(DECYL|LAURYL|COCO|CAPRYLYL/CAPRYL|CAPRYLYL|CAPRYL|CETEARYL|ARACHIDYL|C12-?20 ALKYL|MYRISTYL|BEHENYL|UNDECYL|OCTYL|C8-?16 ALKYL)[- ]GLUCOSIDE\b|\bLAURYL POLYGLUCOSE\b",
+    "alkyl_glucoside": r"\b(DECYL|LAURYL|COCO|CAPRYLYL/CAPRYL|CAPRYLYL|CAPRYL|CETEARYL|ARACHIDYL|C12-?20 ALKYL|MYRISTYL|BEHENYL|UNDECYL|OCTYL|C8-?16 ALKYL)[- ]GLUCOSIDE\b|\bLAURYL POLYGLUCOSE\b|\bOLIGOGLUCOSIDE\b|DECYL ?GLUCOSIDE",
     "sulfite": r"\b(SODIUM|POTASSIUM|AMMONIUM|CALCIUM)? ?(META)?BI?SULFITE\b|\bSULPHITE\b|\bSODIUM SULFITE\b",
     "isobornyl_acrylate": r"\bISOBORNYL ACRYLATE\b",
     # rules v3.5: label-detectable gaps found in the 2026-10-22 coverage review
     "insect_repellent": r"\bDEET\b(?![- ]?FREE)|DIETHYL-?M?-?TOLUAMIDE|\bIR ?3535\b|ETHYL BUTYLACETYLAMINOPROPIONATE|PICARIDIN|ICARIDIN|HYDROXYETHYL ISOBUTYL PIPERIDINE CARBOXYLATE",
     "mdbgn": r"METH?YLDIBROMO|MTHYLDIBROMO|DIBROMODICYANOBUTANE|DIBROMO ?GLUTARONITRILE",
     "under3_restricted": r"^SALICYLIC ACID$|\bBORIC ACID\b|\bSODIUM BORATE\b|\bBORAX\b|SODIUM TETRABORATE",
-    "pfas": r"\bPTFE\b|POLYTETRAFLUOROETHYLENE|PERFLUORO|POLYPERFLUORO|FLUOROALCOHOL|TRIFLUOROPROPYL|PERFLUOROBUTYL|PERFLUOROHEXYL|FLUORINATED",
+    "pfas": r"\bPTFE\b|POLYTETRAFLUOROETHYLENE|PERFLUORO|PERFLOURO|POLYPERFLUORO|FLUOROALCOHOL|TRIFLUOROPROPYL|PERFLUOROBUTYL|PERFLUOROHEXYL|FLUORINATED",
     "drying_alcohol": r"^ALCOHOL$|^ALCOHOL DENAT|^SD ALCOHOL|\bALCOHOL DENAT|\bSD ALCOHOL|^ETHANOL$|^ETHYL ALCOHOL$|"
                       r"^DENATURED ALCOHOL|^ISOPROPYL ALCOHOL$|^ALCOHOL \(",
     "propyl_butyl_paraben": r"PROPYL ?PARABEN|BUTYL ?PARABEN|ISOBUTYL ?PARABEN|ISOPROPYL ?PARABEN",
@@ -286,6 +286,30 @@ class PlantIndex:
 # allergen and source families: the pattern is added even where the v3.1 name map gave the name
 # no such flag (v3.1 missed marigold, burdock, soy lecithin, almond oil, beeswax as "white wax",
 # coconut-derived surfactants; 2026-10-24 stratified audit)
+# names the v3.1 dictionary has but gives no flag, though the rule names them (a 2026-10-24
+# dictionary-vs-rule sweep after the final audit: BHT on 617 labels, avobenzone's INCI name
+# among inactives, TEA filed as "trolamine", emu oil, isopropyl alcohol, cyclomethicone 4)
+DICT_GAPS = {
+    "bht_bha": r"^BHT$|\(BHT\)|^BHT\b",
+    "chemical_filter_in_inactives": r"BUTYL METHOXYDIBENZOYLMETHANE|PHENYLBENZIMIDAZOLE SULFONIC ACID",
+    "ethanolamines": r"^TROLAMINE$|\bDEA-CETYL PHOSPHATE",
+    "synthetic_dye": r"\bEXT\.? VIOLET (NO\.? )?2\b|^ORANGE 4\b",
+    "animal_derived": r"\bEMU OIL\b|SNAIL SECRETION",
+    "drying_alcohol": r"^ISOPROPYL ALCOHOL$",
+    "d4": r"CYCLOMETHICONE 4\b",
+    # plain lecithin: the soy flag says the source is not stated (us_master); sknvcare, Solara
+    "soy": r"^(HYDROGENATED )?LECITHIN\*?$",
+    # Optiphen and Optiphen Plus / ND are phenoxyethanol blends (Optiphen BD is not)
+    "phenoxyethanol": r"\bOPTIPHEN\b(?! ?BD)",
+}
+_DICT_GAPS_RX = {f: re.compile(x, re.I) for f, x in DICT_GAPS.items()}
+
+
+def dict_gaps(name):
+    n = (name or "").strip()
+    return {f for f, rx in _DICT_GAPS_RX.items() if rx.search(n)}
+
+
 FAMILY_ADDITIVE = {"asteraceae", "soy", "tree_nut", "peanut", "wheat", "milk", "egg", "sesame", "fish_shellfish",
                    "coconut", "shea", "oat", "lanolin", "propolis_beeswax", "latex"}
 ADDITIVE = {"essential_oil", "ethoxylated", "hidden_uv_booster", "microplastic_polymer", "fragrance",

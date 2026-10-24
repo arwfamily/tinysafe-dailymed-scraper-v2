@@ -65,7 +65,7 @@ CORRECTIONS = os.path.join(ROOT, "data/corrections/spl_label_errors.jsonl")
 SCOPE_OVERRIDES = os.path.join(ROOT, "data/reference/scope_overrides.json")
 
 SCHEMA_VERSION = "1.0.0"
-RULES_VERSION = "v3.7 · 2026-10-24"
+RULES_VERSION = "v3.8 · 2026-10-24"
 THIN_MAX = 7
 EVIDENCE_CAP = 4
 MINERAL = ("ZINC OXIDE", "TITANIUM DIOXIDE")
@@ -550,6 +550,29 @@ def strict_twin(f, p):
     return set(_FORMW.findall(f.upper())) == set(_FORMW.findall(p.upper()))
 
 
+_FILTER_INCI = [  # INCI / EU names of the US monograph actives -> the filed active name
+    (r"BUTYL METHOXYDIBENZOYLMETHANE|AVOBENZONE", "AVOBENZONE"),
+    (r"PHENYLBENZIMIDAZOLE SULFONIC ACID|ENSULIZOLE", "ENSULIZOLE"),
+    (r"(ETHYLHEXYL|OCTYL) METHOXYCINNAMATE|OCTINOXATE", "OCTINOXATE"),
+    (r"(ETHYLHEXYL|OCTYL) SALICYLATE|OCTISALATE", "OCTISALATE"),
+    (r"BENZOPHENONE-?3|OXYBENZONE", "OXYBENZONE"),
+    (r"HOMOSALATE", "HOMOSALATE"), (r"OCTOCRYLENE", "OCTOCRYLENE"),
+    (r"ZINC OXIDE", "ZINC OXIDE"), (r"TITANIUM DIOXIDE", "TITANIUM DIOXIDE"),
+    (r"BENZOPHENONE-?4|SULISOBENZONE", "SULISOBENZONE"), (r"BENZOPHENONE-?8|DIOXYBENZONE", "DIOXYBENZONE"),
+    (r"MENTHYL ANTHRANILATE|MERADIMATE", "MERADIMATE"), (r"\bPABA\b|AMINOBENZOIC ACID", "AMINOBENZOIC ACID"),
+    (r"\bPADIMATE|ETHYLHEXYL DIMETHYL PABA", "PADIMATE O"), (r"TROLAMINE SALICYLATE", "TROLAMINE SALICYLATE"),
+    (r"CINOXATE", "CINOXATE"),
+]
+
+
+def filter_canon(n):
+    u = (n or "").upper()
+    for rx, canon in _FILTER_INCI:
+        if re.search(rx, u):
+            return canon
+    return None
+
+
 def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     fl = collections.OrderedDict()
 
@@ -580,7 +603,14 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     # a filed raw-material grade ("DIMETHICONE CROSSPOLYMER (450000 MPA.S AT 12% IN
     # CYCLOPENTASILOXANE)") names the supplier's carrier, not an ingredient the label lists
     struct = [re.sub(r"\s*\([^()]*(?:\bIN\b|MPA\.S|\bMW\b)[^()]*\)", "", x).strip() for x in struct]
+    _decl = {a["name"].upper() for a in acts}
     for f, ev in inactive_flags(eng, list(dict.fromkeys(shown + struct))).items():
+        if f == "chemical_filter_in_inactives":
+            # a declared active printed again under its INCI name (avobenzone as butyl
+            # methoxydibenzoylmethane) is not a filter hidden among the inactives
+            ev = [e for e in ev if filter_canon(e) not in _decl]
+            if not ev:
+                continue
         add(f, ev)
     # a misspelled ingredient ("Phenoxyethenol", "Butyloctly Salicylate") is read by its
     # corrected spelling; the evidence keeps the name as printed
@@ -611,8 +641,16 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     scent = [n for n in shown if _dict_job(n) == "fragrance"]
     # (an EU-listed allergen among them does not make the others any less a fragrance)
     _eu = {key(n) or n.upper() for n in fl.get("eu_fragrance_allergen", [])}
-    if any((key(n) or n.upper()) not in _eu for n in scent) and not any(f in fl for f in ("fragrance", "essential_oil")):
+    # (an essential oil elsewhere on the list does not account for synthetic aroma chemicals:
+    # COOLA's hexyl acetate, ionone and lactones; 2026-10-24 final audit)
+    # only the synthetic aroma chemicals themselves are cited: an essential oil keeps its own
+    # warning, an EU-listed allergen its own
+    _eo = {key(n) or n.upper() for n in fl.get("essential_oil", [])}
+    _syn = [n for n in scent if (key(n) or n.upper()) not in _eu | _eo and not re.search(r"(?i)\b(OIL|OLEUM)\b", n)]
+    if "fragrance" not in fl and "essential_oil" not in fl and any((key(n) or n.upper()) not in _eu for n in scent):
         add("fragrance", scent)
+    elif _syn and "fragrance" not in fl:
+        add("fragrance", _syn)
     # the title's [labeler] is the company, not the product ("[EMPACK SPRAYTECH]" on a lotion)
     form = " ".join([c.get("dosage_form") or "", re.sub(r"\[[^\]]*\]", " ", c.get("title") or ""),
                      re.sub(r"\[[^\]]*\]", " ", c.get("product_name") or "")])
@@ -631,6 +669,17 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
         art.get("spl_version")) == str(c.get("spl_version")) else ""
     if art_form and not re.search(r"spray|powder", art_form):
         rollon = True
+    _an = (art.get("notes") or "") if art_form == "" and art and art.get("readable") and (art.get("variants") or 1) == 1 and str(
+        art.get("spl_version")) == str(c.get("spl_version")) else None
+    if _an is not None:
+        if re.search(r"(?i)oil spray|spray oil|easy-to-apply spray|continuous spray|sunscreen spray|spray sunscreen", _an) and not re.search(
+                r"(?i)not (a |an )?spray|mousse|foam", _an):
+            # the package front says it is sprayed ("SUNSCREEN OIL SPRAY"), where the filing says oil
+            claim, applied = True, False
+        elif claim and not SPRAY.search(form) and not re.search(r"(?i)spray|aerosol|pressur|propellant|\bmist\b|pump|powder", _an):
+            # a spray word only in the label text, on a package a person read that shows no spray
+            # (TiZO's lotion; 2026-10-24 final audit)
+            claim = False
     if re.search(r"spray|powder", art_form):
         claim = True
         applied = False
@@ -642,6 +691,8 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     # Fragrance") is a fragrance; an "Allergens: soybeans (glycerin)" statement is that allergen
     _a = ARTWORK.get(c.get("setid"))
     for sc in ([] if _a and _a.get("use_list") else (lc or {}).get("scent_claims") or []):
+        if re.search(r"(?i)\b(artificial|synthetic|added|no|zero)\s*$", sc.strip() + " "):
+            continue      # "NO Artificial Fragrance" is not a named scent (Earth Mama; 2026-10-24 final audit)
         if not any(f in fl for f in ("fragrance", "essential_oil")) and not (c.get("product_count") or 1) > 1:
             # quote the scent only when it reads as one ("Fun Melon"), not as list words
             inci = re.search(r"(?i)ATE\b|ENE\b|OL\b|ICONE|ACID|EXTRACT|WAX|GLYCOL|SALICYLATE|SUNSCREEN|SPRAY|"
@@ -1106,6 +1157,23 @@ def build(run_date):
                     and len(_hit) == len(_art["actives"]) and 0 < len(_hit) < len(acts)):
                 c = dict(c, _actives_not_on_artwork=[a["name"] for a in acts if a["name"] not in _hit])
                 acts = [a for a in acts if a["name"] in _hit]
+            # ... and when the package prints actives the filing lacks (Mizon's titanium dioxide
+            # 18.7%) or other actives altogether (TiZO filed with three chemical filters, the
+            # tube prints zinc oxide 20%; 2026-10-24 final audit), the package's are shown
+            _ac = [(filter_canon(n), p) for n, p in _art["actives"]]
+            _fk = {(filter_canon(a["name"]) or a["name"].upper()): a for a in acts}
+            if (_art.get("actives_confirmed") and int(c.get("product_count") or 1) == 1 and _ac
+                    and all(k for k, _ in _ac) and len({k for k, _ in _ac}) == len(_ac)
+                    and {k for k, _ in _ac} != set(_fk)):
+                _new = []
+                for k, p in _ac:
+                    a = _fk.get(k) or {"name": k, "unii": None, "percent": None, "percent_basis": None}
+                    if p is not None and p <= US_MAX.get(k, 100):
+                        a = dict(a, percent=p, percent_basis="label_artwork")
+                    _new.append(a)
+                c = dict(c, _actives_not_on_artwork=[a["name"] for k, a in _fk.items() if k not in {x for x, _ in _ac}],
+                         _actives_from_artwork=[k for k, _ in _ac if k not in _fk])
+                acts = _new
         ft, mp, cp, organic = filter_split(c, acts)
         # strengths that cannot give the printed SPF (all actives together under 5% w/w for
         # SPF 15+): the filing used the wrong unit or scale (e.g. 3 mg per 1 g for 3%), so the
@@ -1223,6 +1291,9 @@ def build(run_date):
             shown, pn = _have, 0          # a combined list: no single printed list to trim it to
         _kr = KIT_READS.get(sid)
         if multi and _kr and str(_kr.get("spl_version")) == str(ver):
+            # the filing's text list is one product's; the names past it are the other products'
+            # (Attitude's kit showed only its lip balm; 2026-10-24 final audit): not trimmed
+            pn = 0
             # the site says the list is for all of the filing's products together: add what each
             # other product prints (a set's lip balm, a kit's second cream)
             _have, _added = list(shown), 0
@@ -1314,6 +1385,11 @@ def build(run_date):
         }
         if c.get("_actives_corrected"):
             rec["actives_corrected"] = c["_actives_corrected"]
+        if c.get("_actives_not_on_artwork") or c.get("_actives_from_artwork"):
+            # the package's actives, read twice and agreeing, where the filing differs
+            rec["actives_from_artwork"] = c.get("_actives_from_artwork") or []
+            rec["actives_not_on_artwork"] = c.get("_actives_not_on_artwork") or []
+            rec.setdefault("actives_corrected", "package artwork (two agreeing reads) differs from the filing")
         if ov:
             rec["scope_override"] = ov["why"]
         if fr:

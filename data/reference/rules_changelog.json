@@ -1,6 +1,12 @@
 {
  "changes": [
   {
+   "version": "v3.8",
+   "date": "2026-10-24",
+   "change": "A blind audit of 300 labels against their package artwork found rule gaps that each reached many labels, now fixed: BHT gave no warning (617 labels); avobenzone and ensulizole printed under their INCI names among the inactives gave no warning; Ext. Violet 2, trolamine, DEA-cetyl phosphate, emu oil, snail secretion, isopropyl alcohol, cyclomethicone 4, oligoglucosides, Optiphen and misspelled perfluoro- names now match; plain lecithin gives the soy warning with 'source not stated'; synthetic aroma chemicals give the fragrance warning even when an essential oil is also listed; diethylhexyl 2,6-naphthalate counts as a UV booster. A kit's list now keeps every product's ingredients. Where two reads of the package agree on the actives and the filing differs, the package's actives are shown. A strength misread (titanium dioxide 4% shown as 19.5% when the panel lists the names before the numbers) was fixed on 18 labels. 'Oil spray' on the package front marks a spray; a spray word only in label text on a package a person read as a lotion does not. 'No artificial fragrance' is no longer read as a named scent. A lactic/glycolic acid copolymer is not free glycolic acid.",
+   "why": "Accuracy: each change came from the final stratified audit (2026-10-24) or a sweep for the same gap across the database. Same rules for every product."
+  },
+  {
    "version": "v3.7",
    "date": "2026-10-24",
    "change": "Every warning's explanation and source were checked against the primary source (EU regulation text, CFR, FDA orders, ACDS, AAP/AAD, peer-reviewed papers): 46 explanations reworded to say no more than the source supports, all 64 citations made specific, and 20 rules now say plainly that they are our judgment. Matching fixed where four random label audits found gaps: plant-family and food-allergen names the old dictionary missed (marigold, burdock, soy lecithin, almond oil, beeswax, coconut-derived ingredients), Polycrylene as a UV absorber, sunscreen + insect repellent products, and three false matches (Ligularia fischeri as fish, Poria cocos as coconut, gardenia as jasmine). Broad Spectrum is no longer read from the Drug Facts direction sentence.",

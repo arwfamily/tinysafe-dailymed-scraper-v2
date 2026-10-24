@@ -19,7 +19,7 @@ SYN = {
     "OCTOCRYLENE": [], "HOMOSALATE": [], "ZINC OXIDE": [], "TITANIUM DIOXIDE": [],
 }
 NUM = r"(\d{1,2}(?:\.\d{1,3})?)"
-NAME_PCT = re.compile(r"([A-Z][A-Z0-9 \-]{2,45}?)[\s\(\)\-:\.…·,]*" + NUM + r"\s*%")
+NAME_PCT = re.compile(r"([A-Z][A-Z0-9 \-]{2,45}?)[\s\(\)\-:\.…·,\u2013\u2014]*" + NUM + r"\s*%")
 PCT_NAME = re.compile(NUM + r"\s*%\s*(?:W/W)?\s*([A-Z][A-Z \-]{2,40})")
 
 
@@ -40,10 +40,21 @@ def read(text, names):
         pairs = [(m.group(2), float(m.group(1))) for m in PCT_NAME.finditer(t)]
     else:
         pairs = [(m.group(1), float(m.group(2))) for m in NAME_PCT.finditer(t)]
+    # a run of names before one number ("Zinc Oxide Titanium Dioxide Zinc Oxide - 19.5%", where
+    # the panel lists the names and then each with its strength): the number is the last name's
+    def _last(nm):
+        best, end = None, -1
+        for n in names:
+            for a in [n] + SYN.get(n, []):
+                i = nm.rfind(a)
+                if i >= 0 and i + len(a) > end:
+                    best, end = n, i + len(a)
+        return best
     out = {}
     for n in names:
         alts = [n] + SYN.get(n, [])
-        vals = {v for nm, v in pairs if any(_close(nm.strip(), a) for a in alts) and 0 < v <= 25}
+        vals = {v for nm, v in pairs if any(_close(nm.strip(), a) for a in alts) and 0 < v <= 25
+                and _last(nm) in (None, n)}
         if len(vals) == 1:
             out[n] = vals.pop()
     return out
@@ -56,5 +67,7 @@ if __name__ == "__main__":
                    ["AVOBENZONE", "HOMOSALATE", "OCTISALATE", "OCTOCRYLENE", "OXYBENZONE"]),
                   (": Zinc Oxide - 18.6%", ["ZINC OXIDE"]), ("Non-nano Zinc Oxide 22%", ["ZINC OXIDE"]),
                   ("Titanium Dioxide 6.24%, Zinc Oxide 3.84%, Arbutin 2.00%", ["TITANIUM DIOXIDE", "ZINC OXIDE"]),
-                  ("Homosalate 10.0 Octocrylene 10.0", ["HOMOSALATE"])]:
+                  ("Homosalate 10.0 Octocrylene 10.0", ["HOMOSALATE"]),
+                  ("Zinc Oxide Titanium Dioxide Zinc Oxide - 19.5% ....... Sunscreen Titanium Dioxide \u2013 4.0%....... Sunscreen",
+                   ["TITANIUM DIOXIDE", "ZINC OXIDE"])]:
         print(read(t, ns))

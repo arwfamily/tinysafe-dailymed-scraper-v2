@@ -91,13 +91,15 @@ class Engine:
         if name in self.known:
             fs, how = self.v31_flags(name), "v3.1 name"
             fs |= R.pattern_flags(name, self.genera) & (R.ADDITIVE | R.FAMILY_ADDITIVE)
+            fs |= R.dict_gaps(name)
         else:
             twin = self.by_strong.get(strong_key(name))
             if twin is not None:
                 fs, how = self.v31_flags(twin), "same name as v3.1 '" + twin + "'"
                 fs |= R.pattern_flags(name, self.genera) & (R.ADDITIVE | R.FAMILY_ADDITIVE)
+                fs |= R.dict_gaps(name)
             else:
-                fs = R.pattern_flags(name, self.genera) | self.plants.flags(name)
+                fs = R.pattern_flags(name, self.genera) | self.plants.flags(name) | R.dict_gaps(name)
                 how = "pattern"
         for f in list(fs):
             if (name, f) in R.V32_NOT or (how.startswith("same") and (twin, f) in R.V32_NOT):
