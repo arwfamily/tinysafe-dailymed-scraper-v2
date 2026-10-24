@@ -726,6 +726,14 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
         fl["soy"] = [e if re.search(r"(?i)SOY|GLYCINE|SOJA|filed with|allergen statement", e) or not re.search(
             r"(?i)LECITHIN|PHOSPHATIDYLCHOLINE", e) else f"{e} (source not stated; lecithin is most often from soy)"
                      for e in fl["soy"]]
+        # a package that says it is soy-free: lecithin of unstated source is then not from soy
+        # (Derma E prints a crossed-out SOY; 2026-10-24 post-fix audit)
+        _sf = " ".join(str(x) for x in ((art or {}).get("notes"), (lc or {}).get("allergen_statement"),
+                                         (lc or {}).get("free_from"), (lc or {}).get("claims")) if x)
+        if re.search(r"(?i)\bsoy[- ]?free\b|\bno soy\b|free (of|from)[^.]{0,40}\bsoy\b|crossed[- ]out soy|soy crossed", _sf):
+            fl["soy"] = [e for e in fl["soy"] if "source not stated" not in e]
+            if not fl["soy"]:
+                del fl["soy"]
     # a fragrance-free claim on one product of a multi-product filing says nothing of the others
     if lc and lc.get("fragrance_free_claim") and any(f in fl for f in ("fragrance", "essential_oil")) and not (
             int(c.get("product_count") or 1) > 1 or len([x for x in lc.get("spfs") or [] if x > 15]) >= 2):

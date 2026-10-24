@@ -52,6 +52,7 @@ RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026
     # 2026-10-24 audit: Gardenia jasminoides (cape jasmine) is not jasmine, not an EU-listed allergen
     "eu_fragrance_allergen": re.compile(r"JASMINOIDES", re.I),
     # 2026-10-24 final audit: a lactic/glycolic acid copolymer (PLGA) is not free glycolic acid
+    "animal_derived": re.compile(r"^\s*SR[- ]", re.I),   # recombinant (2026-10-24)
     "adult_active": re.compile(r"GLYCOLIC ACID ?COPOLYMER", re.I),
 }
 # product-level flags whose rule changed on purpose (rules v3.6, 2026-10-23 label audit):

@@ -119,6 +119,10 @@ class Engine:
         fs.discard("chemical_filter_active")             # actives only
         # Gardenia jasminoides (cape jasmine) is not jasmine and not an EU-listed allergen, whatever
         # v3.1 decided for the name (2026-10-24 third audit, Rare Beauty)
+        # "sr-" names are synthetic recombinant proteins (Pacifica's vegan collagen, Sr-Hydrozoan
+        # Polypeptide-1): not taken from an animal (2026-10-24 post-fix audit)
+        if "animal_derived" in fs and re.match(r"\s*SR[- ]", name.upper()):
+            fs.discard("animal_derived")
         if "eu_fragrance_allergen" in fs and "JASMINOIDES" in name.upper() and not R.RX["eu_fragrance_allergen"].search(
                 name.upper().replace("JASMINOIDES", "")):
             fs.discard("eu_fragrance_allergen")
