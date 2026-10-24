@@ -12533,8 +12533,8 @@
   },
   "age_limit": {
    "t": "T1",
-   "l": "The label limits the age it is for",
-   "w": "The label itself limits who should use it, beyond the usual 'children under 6 months: ask a doctor'. We show its words so you can follow them; for a younger child, choose another product or ask your pediatrician.",
+   "l": "The label limits who can use it",
+   "w": "This label limits use by age, beyond the standard “children under 6 months: ask a doctor.” Its own words are shown here. For a younger child, choose another sunscreen or ask your pediatrician.",
    "s": "The product's own label text as filed with the FDA (DailyMed SPL), Directions or Warnings section.",
    "basis": "label"
   }
