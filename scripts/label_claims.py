@@ -24,6 +24,26 @@ sys.path.insert(0, HERE)
 import dailymed_scraper as D  # noqa: E402
 
 BOILER = re.compile(r"broad[\s-]*spectrum\s+SPF\s+(?:value\s+)?(?:of\s+)?15\s+(?:or\s+)?(?:higher|more|greater)", re.I)
+# the same direction / alert sentence as labels actually print it, typos included ("SPF of 15
+# of higher", "15 or nigher", "SPfof 15", "broad spectrum protection and an SPF rating of 15",
+# "use a broad-spectrum sunscreen of SPF 15 or higher"): 220 labels counted as Broad Spectrum
+# on this sentence alone (2026-10-24 random audit, CLE CCC Cream)
+BOILER_LOOSE = (
+    re.compile(r"(?:use|using|apply|with)\s+(?:a\s*)?(?:water[\s-]*resistant\s+)?(?:sunscreens?\s+(?:product\s+)?"
+               r"(?:with|that\s+(?:is|has))\s+(?:a\s+)?)?broad[\s-]*spectrum[^.■•\n]{0,80}?\b(?:SPF|spf)?\s*"
+               r"(?:value\s+|rating\s+)?(?:of\s*)?\d{1,2}\s*\+?\s*(?:(?:or|of|and|&)\s*)?"
+               r"(?:higher|more|greater|nigher|above|over|hiqher|highter)?", re.I),
+    re.compile(r"broad[\s-]*spectrum\s+(?:protection\s+and\s+an\s+)?SPF\s*(?:rating|value)?\s*(?:of\s*)?\d{1,2}\s*\+?\s*"
+               r"(?:(?:or|of)\s*)?(?:higher|more|greater|nigher|above)", re.I))
+
+
+def strip_boiler(t):
+    t = BOILER.sub(" ", t or "")
+    for rx in BOILER_LOOSE:
+        t = rx.sub(" ", t)
+    return t
+
+
 BS = re.compile(r"broad[\s-]*spectrum", re.I)
 ALERT = re.compile(r"skin\s+cancer\s*/\s*skin\s+aging\s+alert", re.I)
 # "SPF 30", "30 SPF", "50+SPF"; never "SPF 100% mineral" (a percentage) or "SPF 15 mg"
@@ -79,7 +99,7 @@ def claims(sid):
             xml = D.http_xml(f"{D.BASE}/spls/{sid}.xml")
             if xml:
                 t = text_of(xml)
-                rest = BOILER.sub(" ", t)
+                rest = strip_boiler(t)
                 # SPF: the label's own number, not the boilerplate "SPF value of 15 or higher"
                 spfs = [int(m.group(1) or m.group(2)) for m in SPF.finditer(BOILER.sub(" ", t)) if 2 <= int(m.group(1) or m.group(2)) <= 100]
                 wr = [int(m.group(1) or m.group(2)) for m in WR.finditer(t)]

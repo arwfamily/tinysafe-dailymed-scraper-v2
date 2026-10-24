@@ -322,7 +322,7 @@ NOT_SUN = set()
 if os.path.exists(_LT):
     import gzip as _gz0
     sys.path.insert(0, HERE)
-    from label_claims import SPF as _SPFRX, BOILER as _BOILRX  # noqa: E402
+    from label_claims import SPF as _SPFRX, BOILER as _BOILRX, BS as _BSRX, strip_boiler as _strip  # noqa: E402
     for _x in _gz0.open(_LT, "rt", encoding="utf-8"):
         _d = json.loads(_x)
         _c = LABEL_CLAIMS.get(_d["setid"])
@@ -330,7 +330,9 @@ if os.path.exists(_LT):
             continue
         _v = sorted({int(m.group(1) or m.group(2)) for m in _SPFRX.finditer(_BOILRX.sub(" ", _d.get("text") or ""))
                      if 2 <= int(m.group(1) or m.group(2)) <= 100})
-        LABEL_CLAIMS[_d["setid"]] = dict(_c, spf=max(_v) if _v else None, spfs=_v)
+        # Broad Spectrum from the text only when it is more than the directions sentence
+        _bs = _c.get("broad_spectrum") and bool(_BSRX.search(_strip(_d.get("text") or "")))
+        LABEL_CLAIMS[_d["setid"]] = dict(_c, spf=max(_v) if _v else None, spfs=_v, broad_spectrum=_bs)
         if _NOT_SUN.search(_d.get("text") or ""):
             NOT_SUN.add(_d["setid"])
 
@@ -425,6 +427,16 @@ if os.path.exists(_CR):
         if re.search(r"powder", _d.get("form") or ""):
             _c["powder"] = True
         LABEL_CLAIMS[_d["setid"]] = _c
+
+# the front panel's "Broad Spectrum" as a person read it from the artwork (artwork_reads.jsonl),
+# where the label text prints only the directions sentence; a read of "no" is not used here
+# (an unseen front panel reads as "no"), so such a label shows nothing rather than a claim
+for _sid, _d in ARTWORK.items():
+    _c = LABEL_CLAIMS.get(_sid)
+    if (_c and not _c.get("broad_spectrum") and _d.get("readable") and _d.get("broad_spectrum") is True
+            and (_d.get("variants") or 1) == 1 and _CANVER.get(_sid) == str(_d.get("spl_version"))
+            and _sid not in CLAIMS_READS):
+        LABEL_CLAIMS[_sid] = dict(_c, broad_spectrum=True, source=_c.get("source") or "label_image_person")
 
 
 US_MAX = {"AVOBENZONE": 3, "HOMOSALATE": 15, "OCTINOXATE": 7.5, "OCTISALATE": 5, "OCTOCRYLENE": 10, "OXYBENZONE": 6,
@@ -988,6 +1000,14 @@ def build(run_date):
             _ap = PS.read(" ".join(f"{n} {p}%" for n, p in _art["actives"] if p is not None), [a["name"] for a in acts])
             acts = [dict(a, percent=_ap[a["name"]], percent_basis="label_artwork")
                     if a["name"] in _ap and _ap[a["name"]] <= US_MAX.get(a["name"], 100) else a for a in acts]
+            # two reads agree on the package's actives and each one matched a filed active: a
+            # filed active neither read found is not on this package (Islander SPF 6 showed an
+            # oxybenzone the artwork does not print; 2026-10-24 random audit)
+            _hit = PS.read(" ".join(f"{n} 1%" for n, _p in _art["actives"]), [a["name"] for a in acts])
+            if (_art.get("actives_confirmed") and int(c.get("product_count") or 1) == 1
+                    and len(_hit) == len(_art["actives"]) and 0 < len(_hit) < len(acts)):
+                c = dict(c, _actives_not_on_artwork=[a["name"] for a in acts if a["name"] not in _hit])
+                acts = [a for a in acts if a["name"] in _hit]
         ft, mp, cp, organic = filter_split(c, acts)
         # strengths that cannot give the printed SPF (all actives together under 5% w/w for
         # SPF 15+): the filing used the wrong unit or scale (e.g. 3 mg per 1 g for 3%), so the
