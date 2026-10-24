@@ -301,6 +301,13 @@ if os.path.exists(_AP):
         _d = json.loads(_x)
         ARTWORK[_d["setid"]] = _d
 NOT_WW = ("w/w_from_mass_per_volume", "v/v")
+NAME_READS = {}
+_NRP = os.path.join(ROOT, "data/corrections/name_reads.jsonl")
+if os.path.exists(_NRP):
+    for _x in open(_NRP, encoding="utf-8"):
+        _d = json.loads(_x)
+        if _d.get("readable") and _d.get("product_name") and not _d.get("wrong_product") and (_d.get("variants") or 1) == 1:
+            NAME_READS[_d["setid"]] = _d
 ANALGESIC = {"TROLAMINE SALICYLATE", "MENTHOL", "CAMPHOR", "METHYL SALICYLATE", "LIDOCAINE", "LIDOCAINE HCL",
              "LIDOCAINE HYDROCHLORIDE", "CAPSAICIN", "HISTAMINE DIHYDROCHLORIDE"}
 LABEL_CLAIMS_PATH = os.path.join(ROOT, "data/views/label_claims.jsonl")
@@ -636,6 +643,16 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     _at = (lc or {}).get("actives_text") or ""
     if "insect_repellent" not in fl and R.RX["insect_repellent"].search(_at.upper()):
         add("insect_repellent", [f"the label's active ingredients: “{_at[:60]}”"], raw=True)
+    # an EPA-registered repellent (IR3535, picaridin) is often not in the FDA filing at all; the
+    # product's own name says it ("Sunscreen With Insect Repellent", "Bug Guard Plus IR3535");
+    # none of 13 such products carried the flag (2026-10-24 random audit, Avon Bug Guard)
+    _nm = " ".join([c.get("title") or "", c.get("product_name") or ""]).upper()
+    _acts = " ".join(a.get("name") or "" for a in c.get("active_ingredients") or []).upper()
+    if "insect_repellent" not in fl:
+        if R.RX["insect_repellent"].search(_acts):
+            add("insect_repellent", ["a filed active ingredient"], raw=True)
+        elif re.search(r"INSECT[ -]REPELLENT(?![- ]?FREE)|\bIR ?3535\b|\bBUG GUARD\b|MOSQUITO COAST", _nm):
+            add("insect_repellent", ["the product name"], raw=True)
     st = ((lc or {}).get("allergen_statement") or "").upper()
     for g, rx in (("soy", r"\bSOY"), ("milk", r"\bMILK\b"), ("wheat", r"\bWHEAT|\bGLUTEN"), ("tree_nut", r"\bTREE NUTS?\b|\bALMOND|\bMACADAMIA|\bCASHEW|\bWALNUT"),
                   ("peanut", r"\bPEANUT"), ("sesame", r"\bSESAME"), ("egg", r"\bEGGS?\b"),
@@ -1084,6 +1101,12 @@ def build(run_date):
         if ov:
             in_scope, excluded = ov["in_scope"], (None if ov["in_scope"] else ov["reason"])
         name = clean_name((legacy.get(sid) or {}).get("n") or display_name(c))
+        # the name the package front prints, where the filing gives only "Cream" or "Powder"
+        # (data/corrections/name_reads.jsonl; same label version only)
+        _nr = NAME_READS.get(sid)
+        _nr = _nr if _nr and str(_nr.get("spl_version")) == str(ver) else None
+        if _nr:
+            name = " ".join(x for x in (_nr.get("brand"), _nr.get("product_name")) if x)
         u = union.get(sid)
         if u is None and c.get("_delisted_on"):
             filed = [(i.get("name") if isinstance(i, dict) else str(i)) for i in c.get("inactive_ingredients") or []]
@@ -1101,7 +1124,10 @@ def build(run_date):
         # only the FDA filing has (often another variant or an older formula; 2026-10-22 label
         # audit) are not shown and give no flags
         pn = (u2 or {}).get("i_text_n") or 0
-        art_list = bool(art and art.get("use_list") and art.get("inactives"))
+        # one package's printed list does not stand for a filing of several products: the site
+        # tells the parent the list is for all of them together (Supergoop's 4-product mini set
+        # showed only its Zincscreen's list; 2026-10-24 random audit)
+        art_list = bool(art and art.get("use_list") and art.get("inactives") and not multi)
         if art_list:
             shown, pn = [x for x in art["inactives"] if not is_active(x, akeys_of(acts))], len(art["inactives"])
         extras_dropped = 0
@@ -1138,7 +1164,7 @@ def build(run_date):
             "marketing_ended_on": _mkt_end(sid, run_date),
             "excluded_reason": excluded,
             "category": c.get("category"), "name": name, "title": c.get("title"),
-            "brand": (legacy.get(sid) or {}).get("b") or c.get("labeler"), "labeler": c.get("labeler"),
+            "brand": (_nr or {}).get("brand") or (legacy.get(sid) or {}).get("b") or c.get("labeler"), "labeler": c.get("labeler"),
             "spf": (art.get("spf") if art and art.get("readable") and (art.get("variants") or 1) == 1 and art.get("spf")
                     and not art.get("filing_text_verified_current") else None)
                    or c.get("spf") or (LABEL_CLAIMS.get(sid) or {}).get("spf") or title_spf(name, c.get("title"))
