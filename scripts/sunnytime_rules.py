@@ -59,7 +59,7 @@ P = {
                   r"ACHILLEA|YARROW|ARCTIUM|BURDOCK|HELICHRYSUM|IMMORTELLE|CENTAUREA|CORNFLOWER|SILYBUM|MILK THISTLE|"
                   r"ARTEMISIA|MUGWORT|WORMWOOD|BIDENS|SPILANTHES|ACMELLA|STEVIA|CYNARA|ARTICHOKE|CHICORY|CICHORIUM|"
                   r"BELLIS|DAISY|SANTOLINA|TAGETES|MARIGOLD|INULA|SAUSSUREA|ATRACTYLODES|SIEGESBECKIA|ECLIPTA|"
-                  r"LACTUCA|LAPSANA|NIPPLEWORT|CHRYSANTHEMUM|DENDRANTHEMA|SOLIDAGO|EUPATORIUM|"
+                  r"(?<!ULVA )LACTUCA|LAPSANA|NIPPLEWORT|CHRYSANTHEMUM|DENDRANTHEMA|SOLIDAGO|EUPATORIUM|"
                   r"GRINDELIA|CARDUUS|LEONTOPODIUM|EDELWEISS|\bASTER\b",
     "oat": r"\bAVENA|\bOAT\b|OATMEAL|\bOATS\b",
     "peanut": r"PEANUT|ARACHIS",
@@ -283,6 +283,11 @@ class PlantIndex:
 
 # Flags where v3.1's name decisions are incomplete (evidence was capped at 4 names
 # per flag, so an unflagged name is not a decision): the patterns add to v3.1.
+# allergen and source families: the pattern is added even where the v3.1 name map gave the name
+# no such flag (v3.1 missed marigold, burdock, soy lecithin, almond oil, beeswax as "white wax",
+# coconut-derived surfactants; 2026-10-24 stratified audit)
+FAMILY_ADDITIVE = {"asteraceae", "soy", "tree_nut", "peanut", "wheat", "milk", "egg", "sesame", "fish_shellfish",
+                   "coconut", "shea", "oat", "lanolin", "propolis_beeswax", "latex"}
 ADDITIVE = {"essential_oil", "ethoxylated", "hidden_uv_booster", "microplastic_polymer", "fragrance",
             "alkyl_glucoside", "sulfite", "isobornyl_acrylate", "insect_repellent", "under3_restricted", "pfas", "mdbgn",
             "eu_fragrance_allergen"}   # the EU list grew in 2023 (Regulation (EU) 2023/1545)   # new in v3.4: v3.1 never had them

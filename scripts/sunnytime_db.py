@@ -90,12 +90,12 @@ class Engine:
             return self._cache[name]
         if name in self.known:
             fs, how = self.v31_flags(name), "v3.1 name"
-            fs |= R.pattern_flags(name, self.genera) & R.ADDITIVE
+            fs |= R.pattern_flags(name, self.genera) & (R.ADDITIVE | R.FAMILY_ADDITIVE)
         else:
             twin = self.by_strong.get(strong_key(name))
             if twin is not None:
                 fs, how = self.v31_flags(twin), "same name as v3.1 '" + twin + "'"
-                fs |= R.pattern_flags(name, self.genera) & R.ADDITIVE
+                fs |= R.pattern_flags(name, self.genera) & (R.ADDITIVE | R.FAMILY_ADDITIVE)
             else:
                 fs = R.pattern_flags(name, self.genera) | self.plants.flags(name)
                 how = "pattern"
