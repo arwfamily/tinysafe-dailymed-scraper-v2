@@ -332,7 +332,7 @@ if os.path.exists(_CFP):
                               or any(isinstance(a, (list, tuple)) and len(a) > 1 and isinstance(a[1], str)
                                      for a in (_d.get("actives") or []))
                               or re.search(r"low[- ]?res|blurr|partly|partial(ly)? (visible|legible)|cut off|cropped|roughly|"
-                                           r"can'?t vouch|not (fully |clearly )?legible|illegible|uncertain|not sure|unclear",
+                                           r"can'?t vouch|not (fully |clearly )?legible|illegible|uncertain|not sure|unclear|too small|no inactive (ingredient )?list|could ?n.?t (be )?(check|read|verif)|not (be )?(checked|verified)|unverifi",
                                            _d.get("notes") or "", re.I))
             CONFIRM[_d["setid"]] = _d
 NAME_READS = {}
