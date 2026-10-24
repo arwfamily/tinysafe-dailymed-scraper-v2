@@ -59,6 +59,8 @@ def build(release_dir):
             p["pw"] = {"not_w_w": 2, "multi_product": 3}.get(w, 1)
         if r.get("multi_product"):
             p["mp"] = r["multi_product"]                    # product count, or "kit"
+        if r.get("evidence_tier"):
+            p["ev"] = r["evidence_tier"]                    # A two package reads agreed, B one read = filing, C filing only
         if r.get("thin_reason"):
             p["thin_reason"] = r["thin_reason"]
         if r.get("label_check"):

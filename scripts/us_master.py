@@ -1218,6 +1218,11 @@ def build(run_date):
             "is_baby_kids": baby_kids_final(c, bdec)[0], "baby_kids_basis": baby_kids_final(c, bdec)[1],
             "inactives": shown, "inactive_source": "artwork" if art_list else (u2 or {}).get("i_src", "structured"),
             "kit_names_added": c.get("_kit_names_added") or 0,
+            # how this label's data was checked against the package: A the artwork read twice by
+            # independent readers who agreed; B read once and it matched the filed label text;
+            # C the filed label text only (no readable artwork, or readers disagreed)
+            "evidence_tier": ("A" if art and art.get("readable") and art.get("second_read") else
+                              "B" if art and art.get("readable") else "C"),
             "artwork_list_withheld": "multi_product" if (art and art.get("use_list") and art.get("inactives") and multi) else (art or {}).get("list_withheld"),
             "inactives_filed_n": (u2 or {}).get("i_struct_n", 0), "inactives_printed_n": (u2 or {}).get("i_text_n", 0),
             "label_check": (chk or {}).get("status"), "label_check_date": (chk or {}).get("checked"),
