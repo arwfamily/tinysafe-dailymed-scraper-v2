@@ -922,6 +922,11 @@ def polish_names(items):
         if may or re.search(r"\(may contain\)$", y):
             y = re.sub(r"\s*\(may contain\)$", "", y) + " (may contain)"
         y = y.strip().rstrip(".").strip() if y.endswith(".") and not y.endswith("..") else y.strip()
+        # a misspelling (filed or printed) of one known ingredient is shown spelled right
+        # ("Methyparaben", "Proplyene Glycol"; 2026-10-24 audit); blends and qualified names stay
+        _sp = SP.corrected(y) if not re.search(r"[()/,.;&]|\band\b|\d", y, re.I) else None
+        if _sp and _sp.lower() != y.lower() and len(_sp.split()) == len(y.split()):
+            y = _sp.upper() if y.isupper() else " ".join(w if w.isupper() and len(w) <= 3 else w.capitalize() for w in _sp.split())
         if y != x:
             changed = True
         if y:

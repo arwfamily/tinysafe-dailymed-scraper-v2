@@ -249,6 +249,10 @@ def active_keys(r):
 
 def is_active(name, akeys):
     n = (name or "").upper()
+    # the same mineral printed again as a colorant ("Titanium Dioxide (CI 77891)", "may contain")
+    # is on the label's inactive list too: kept (five tinted labels lost it; 2026-10-24 audit)
+    if re.search(r"\bCI ?7789[01]\b|\bCI ?77947\b|MAY CONTAIN|\+/-", n):
+        return False
     if key(n) in akeys:
         return True
     # "Zinc Oxide (CI 77947)", "CI 77891 (Titanium Dioxide)": any bracketed or bare part
