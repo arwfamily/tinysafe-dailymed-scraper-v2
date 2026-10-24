@@ -1410,6 +1410,10 @@ def build(run_date):
         }
         if c.get("_actives_corrected"):
             rec["actives_corrected"] = c["_actives_corrected"]
+        # SPF 2-14 read from the package or the name (not the filing's field): the same warning
+        if isinstance(rec.get("spf"), (int, float)) and 0 < rec["spf"] < 15 and not any(
+                f[0] == "not_broad_spectrum" for f in rec["flags"]):
+            rec["flags"] = rec["flags"] + [["not_broad_spectrum", [], meta.get("not_broad_spectrum", {}).get("l", "not_broad_spectrum")]]
         # a kit whose products print different SPFs (Kopari: mist 50, elixir 40, lip balm 30): the
         # lowest is shown, so no product is taken to protect more than it does
         if multi and _kr and str(_kr.get("spl_version")) == str(ver):
