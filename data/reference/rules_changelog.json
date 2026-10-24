@@ -1,6 +1,12 @@
 {
  "changes": [
   {
+   "version": "v3.7",
+   "date": "2026-10-24",
+   "change": "Every warning's explanation and source were checked against the primary source (EU regulation text, CFR, FDA orders, ACDS, AAP/AAD, peer-reviewed papers): 46 explanations reworded to say no more than the source supports, all 64 citations made specific, and 20 rules now say plainly that they are our judgment. Matching fixed where four random label audits found gaps: plant-family and food-allergen names the old dictionary missed (marigold, burdock, soy lecithin, almond oil, beeswax, coconut-derived ingredients), Polycrylene as a UV absorber, sunscreen + insect repellent products, and three false matches (Ligularia fischeri as fish, Poria cocos as coconut, gardenia as jasmine). Broad Spectrum is no longer read from the Drug Facts direction sentence.",
+   "why": "Accuracy: each change came from a source check or an audit of labels against their package artwork. Same rules for every product."
+  },
+  {
    "version": "v3.6",
    "date": "2026-10-23",
    "change": "The check now reads the ingredient list printed on the label, not names that appear only in the FDA filing. A filing name still counts when it is a printed ingredient under another name or says what it comes from (soy or egg lecithin, fish collagen). Strengths come from the printed Drug Facts; a strength the filing gives per volume is not converted. One filing that covers several products says so. Also: methyldibromo glutaronitrile (banned in EU cosmetics) is flagged; an SPF under 15 gets the not-broad-spectrum flag; propylene glycol esters are not propylene glycol; seed oils are not essential oils; pain-relief creams are no longer listed as sunscreens.",

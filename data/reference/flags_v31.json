@@ -12087,385 +12087,449 @@
    "t": "T1",
    "l": "Not broad spectrum, or below SPF 15",
    "w": "The label carries the FDA Skin Cancer/Skin Aging Alert, or its SPF is below 15. The FDA requires that alert on sunscreens that are not broad spectrum or are below SPF 15: they have not been shown to reduce the risk of skin cancer or early skin aging.",
-   "s": "FDA, 21 CFR 201.327."
+   "s": "21 CFR 201.327(d)(2) (Skin Cancer/Skin Aging Alert for sunscreens that are not broad spectrum, or broad spectrum with SPF 2 to <15), carried into OTC Monograph M020 by the CARES Act deemed final order OTC000006.",
+   "basis": "regulation"
   },
   "hidden_uv_booster": {
    "t": "T1",
    "l": "UV booster not listed as a sunscreen active",
-   "w": "Absorbs UV and can raise SPF while the label still reads 'mineral'.",
-   "s": "FDA OTC sunscreen monograph (only listed actives may claim SPF); TinySafe label analysis. Bemotrizinol became an FDA-approved active in June 2026 — if it appears among inactives, it is still a hidden filter."
+   "w": "We flag this because an ingredient that can absorb UV is listed as inactive, while the product may still be called 'mineral'. Only ingredients in the FDA sunscreen monograph count as sunscreen actives, and the label does not show whether this one adds to the SPF.",
+   "s": "OTC Monograph M020 (sunscreen deemed final order OTC000006): only listed actives may be used as sunscreen actives. Bemotrizinol added to the monograph by FDA final administrative order OTC000039, issued June 10, 2026 (corrected Aug 10, 2026), effective Aug 9, 2026; up to 6%, adults and children 6 months and older. 'Hidden booster' classification: TinySafe label analysis.",
+   "basis": "judgment"
   },
   "fragrance_free_conflict": {
    "t": "T1",
    "l": "Says fragrance-free, but lists a fragrance ingredient",
-   "w": "The label calls the product fragrance-free (or unscented) while its ingredient list includes a fragrance or an essential oil. The two statements on the same label disagree, so check the tube.",
-   "s": "The label itself (FDA DailyMed)."
+   "w": "We flag this because the label calls the product fragrance-free (or unscented) while its ingredient list includes a fragrance or an essential oil. The two statements on the same label disagree, so check the tube.",
+   "s": "The product's own label (FDA DailyMed SPL); TinySafe consistency check. There is no FDA regulatory definition of 'fragrance-free' or 'unscented' (not re-verified here).",
+   "basis": "judgment"
   },
   "chemical_filter_in_inactives": {
    "t": "T1",
    "l": "Chemical UV filter listed among inactive ingredients",
-   "w": "A chemical filter used without being declared as an active.",
-   "s": "FDA OTC monograph; FDA absorption studies (JAMA 2019, 2020)."
+   "w": "We flag this because a chemical UV filter appears among the inactive ingredients instead of being declared as a sunscreen active. It may be there as a stabilizer or at a level that adds no SPF; the label does not say which.",
+   "s": "OTC Monograph M020 / 21 CFR 201.327: sunscreen actives must be declared in Drug Facts. Reading an inactive-listed filter as undeclared is TinySafe label analysis.",
+   "basis": "judgment"
   },
   "mi_mci": {
    "t": "T1",
    "l": "Contains MI or MCI",
-   "w": "Among the most common contact allergens; the EU bans MI in leave-on cosmetics.",
-   "s": "EU Regulation 2016/1198 (MI banned in leave-on); ACDS Allergen of the Year 2013."
+   "w": "Methylisothiazolinone (MI) was the ACDS Allergen of the Year in 2013. The EU has banned MI in leave-on cosmetics since 12 Feb 2017 and limits the MCI/MI mixture to rinse-off products.",
+   "s": "Commission Regulation (EU) 2016/1198 (22 July 2016), Annex V entry 57: MI only in rinse-off products (max 0.01%), banned in leave-on from 12 Feb 2017. MCI/MI mixture (Annex V entry 39) restricted to rinse-off by Commission Regulation (EU) No 1003/2014 (later amended to a 0.0015% rinse-off cap - not re-verified). ACDS Allergen of the Year 2013: Castanedo-Tardana MP, Zug KA. Methylisothiazolinone. Dermatitis. 2013;24(1):2-6. doi:10.1097/DER.0b013e31827edc73.",
+   "basis": "regulation"
   },
   "mdbgn": {
    "t": "T1",
    "l": "Contains methyldibromo glutaronitrile, banned in EU cosmetics",
-   "w": "A preservative that causes skin allergy often enough that the EU banned it from leave-on products in 2007 and from all cosmetics in 2008. It is still allowed in the US.",
-   "s": "EU Cosmetics Regulation (EC) No 1223/2009, Annex II (prohibited substances); Commission Directives 2007/17/EC and 2008/42/EC."
+   "w": "A preservative that causes skin allergy; the EU decided in 2003 to remove it from leave-on products and in 2007 banned it from all cosmetics, with sales ending by June 2008. The US FDA has not banned it.",
+   "s": "Commission Directive 2003/83/EC (24 Sept 2003): leave-on prohibition (text not read - date per EUR-Lex metadata and Br J Dermatol 2004;151(4):817). Commission Directive 2007/17/EC (22 March 2007): prohibited from all cosmetics (deleted from Annex VI, ref. 36; not placed on the market from 23 March 2008, not sold after 23 June 2008). Today not an authorised preservative under Annex V of Regulation (EC) No 1223/2009.",
+   "basis": "regulation"
   },
   "formaldehyde_releaser": {
    "t": "T1",
    "l": "Contains a formaldehyde-releasing preservative",
    "w": "Slowly releases formaldehyde, a known contact allergen.",
-   "s": "ACDS Allergen of the Year 2015 (formaldehyde); EU Annex V labelling rule for releasers."
+   "s": "ACDS Allergen of the Year 2015 (formaldehyde): Ponten A, Bruze M. Formaldehyde. Dermatitis. 2015;26(1):3-6. doi:10.1097/DER.0000000000000075. EU: Commission Regulation (EU) 2022/1181 amending the Annex V preamble - 'releases formaldehyde' label required when total released formaldehyde is >=0.001%, applicable from 31 July 2024.",
+   "basis": "clinical_consensus"
   },
   "ipbc": {
    "t": "T1",
    "l": "Contains IPBC",
-   "w": "The EU does not allow it in leave-on products for children under three.",
-   "s": "EU Cosmetics Regulation Annex V (iodopropynyl butylcarbamate entry) — verify current entry text."
+   "w": "The EU does not allow it in any product for children under three except bath products, shower gels and shampoos. It is also not allowed in body lotions or body creams for any age.",
+   "s": "Regulation (EC) No 1223/2009, Annex V entry 56 (iodopropynyl butylcarbamate): max 0.02% rinse-off, 0.01% leave-on, 0.0075% deodorants; not in products for children under 3 except bath products/shower gels and shampoos; not in body lotion or body cream; not in oral or lip products. (Annex text checked via a CosIng mirror, not EUR-Lex directly.)",
+   "basis": "regulation"
   },
   "retinoid": {
    "t": "T1",
    "l": "Contains a retinoid",
-   "w": "An adult skincare active; increases sun sensitivity.",
-   "s": "EU Regulation 2024/996 (vitamin A limits); AAD guidance on retinoids and sun."
+   "w": "We flag retinoids as an adult skincare active; that is our judgment, not a rule. The EU caps retinol and its esters in cosmetics and requires a 'Contains Vitamin A' warning because of total vitamin A intake.",
+   "s": "Commission Regulation (EU) 2024/996 (Annex III): retinol, retinyl acetate, retinyl palmitate max 0.05% retinol equivalent in body lotion, 0.3% RE in other leave-on/rinse-off; warning 'Contains Vitamin A. Consider your daily intake before use'; compliant products from 1 Nov 2025, non-compliant withdrawn by 1 May 2027. 'Adult active' classification: TinySafe judgment.",
+   "basis": "judgment"
   },
   "adult_active": {
    "t": "T1",
    "l": "Contains an adult skincare active",
-   "w": "Exfoliants, brighteners and self-tanners aren't meant for baby skin.",
-   "s": "AAD; EU Annex III entries for arbutin and DHA."
+   "w": "We flag exfoliants, brighteners and self-tanners because we do not think they belong in baby sunscreen; that is our judgment, not a rule. The EU sets concentration limits for arbutin and the self-tanner DHA, not age limits.",
+   "s": "EU Annex III: arbutin (max 7% face cream) and alpha-arbutin (max 2% face cream, 0.5% body lotion) - Commission Regulation (EU) 2024/996; dihydroxyacetone (max 10% self-tanning) - Commission Regulation (EU) 2021/1099. US: DHA is a color additive, 21 CFR 73.2150. Classification: TinySafe judgment.",
+   "basis": "judgment"
   },
   "spray_powder": {
    "t": "T1",
    "l": "Spray or powder form",
-   "w": "Not recommended for children: it can be inhaled. The AAP advises against spraying sunscreen on a child's face.",
-   "s": "AAP HealthyChildren.org, Sun Safety; FDA sunscreen guidance."
+   "w": "We flag sprays and powders because they can be breathed in. The AAD advises never spraying near the face or mouth, and FDA has proposed extra inhalation testing for sprays and asked for more data on powders.",
+   "s": "AAD, 'How to use stick and spray sunscreens' (never spray near the face or mouth; spray onto hands then apply; do not inhale). FDA proposed rule (Feb 26, 2019) and proposed order OTC000008 (Sept 24, 2021): sprays proposed GRASE only with inhalation (particle-size), flammability and drying-time testing; powders need more data. Bemotrizinol order OTC000039 excludes powders and propellant aerosols.",
+   "basis": "judgment"
   },
   "d4": {
    "t": "T1",
    "l": "Contains D4 (cyclotetrasiloxane)",
-   "w": "Classified in the EU as toxic to reproduction; restricted in cosmetics.",
-   "s": "EU CLP classification (Repr. 2); EU REACH restriction; California AB 496."
+   "w": "The EU classifies D4 as toxic to reproduction and prohibits it in cosmetics. California's AB 496 adds it to the state cosmetics ban from Jan 1, 2027; the bill does not say whether that covers sunscreens sold as OTC drugs.",
+   "s": "EU Cosmetics Regulation Annex II entry 1388 (octamethylcyclotetrasiloxane, CAS 556-67-2), added by Commission Regulation (EU) 2019/831 - prohibited in cosmetics (CMR, CLP Repr. 2; classification not re-fetched). REACH Annex XVII (Commission Regulation (EU) 2024/1328): D4 max 0.1% in wash-off and leave-on cosmetics. California AB 496 (2023): cyclotetrasiloxane added to the Toxic-Free Cosmetics Act ban, effective Jan 1, 2027.",
+   "basis": "regulation"
   },
   "talc_inhalable": {
    "t": "T1",
    "l": "Contains talc in a spray or powder",
-   "w": "Talc's asbestos-contamination concern matters most when it can be inhaled; FDA proposed mandatory testing.",
-   "s": "FDA proposed rule on asbestos testing in talc-containing cosmetics (Dec 2024)."
+   "w": "We flag talc in sprays and powders, where it can be breathed in, because of concern about asbestos contamination in talc; giving it extra weight there is our judgment. FDA proposed asbestos testing for talc cosmetics in Dec 2024 but withdrew it in Nov 2025, so no testing rule is in force.",
+   "s": "FDA proposed rule 'Testing Methods for Detecting and Identifying Asbestos in Talc-Containing Cosmetic Products', 89 FR 105490 (Dec 27, 2024), Docket FDA-2023-N-4225 - WITHDRAWN Nov 28, 2025; FDA says it will re-propose under MoCRA sec. 3505.",
+   "basis": "judgment"
   },
   "triclosan": {
    "t": "T1",
    "l": "Contains triclosan or triclocarban",
-   "w": "Antimicrobials the FDA removed from OTC antiseptic washes.",
-   "s": "FDA final rule on consumer antiseptic washes (2016)."
+   "w": "Antimicrobials the FDA ruled in 2016 were not shown to be safe and effective in consumer antiseptic washes, because makers did not supply enough data. That rule covers rinse-off washes, not leave-on products.",
+   "s": "FDA final rule, Safety and Effectiveness of Consumer Antiseptics; Topical Antimicrobial Drug Products for OTC Human Use, 81 FR 61106 (Sept 6, 2016): 19 actives including triclosan and triclocarban not GRASE for consumer antiseptic washes. EU: triclosan/triclocarban restrictions updated by Regulation (EU) 2024/996.",
+   "basis": "regulation"
   },
   "formaldehyde": {
    "t": "T1",
    "l": "Contains formaldehyde",
    "w": "A known contact allergen and carcinogen.",
-   "s": "EU Annex II (banned 2019); ACDS."
+   "s": "Commission Regulation (EU) 2019/831 (22 May 2019): formaldehyde, paraformaldehyde and methylene glycol added to Annex II and deleted from Annex V entry 5 (application date and Annex III nail-hardener entry not verified). ACDS Allergen of the Year 2015: Ponten A, Bruze M. Formaldehyde. Dermatitis. 2015;26(1):3-6. doi:10.1097/DER.0000000000000075. Carcinogen: IARC Group 1 (Monographs vol. 100F; not re-fetched).",
+   "basis": "regulation"
   },
   "no_preservative_water_base": {
    "t": "T1",
    "l": "Water-based with no listed preservative",
-   "w": "Water-containing products need a preservative system or they can grow microbes.",
-   "s": "FDA guidance on cosmetic microbiological safety; recall history for contaminated lotions."
+   "w": "We flag this because water-based products need some way to stop microbes growing, and no preservative is listed. Some products protect themselves in other ways, such as low water content or airless packaging, which the label may not show.",
+   "s": "21 CFR 211.113(a) (written procedures to prevent objectionable microorganisms in non-sterile drug products); ISO 11930 and ISO 29621 (preservative efficacy / low-risk products); FDA BAM Chapter 23 (cosmetic microbiology methods). None requires a listed preservative (citations not fetched; unverified). Flag: TinySafe judgment.",
+   "basis": "judgment"
   },
   "phthalate": {
    "t": "T1",
    "l": "Contains a phthalate",
-   "w": "Endocrine-active plasticizers; restricted in the EU.",
-   "s": "EU Cosmetics Regulation Annex II."
+   "w": "The EU bans specific phthalates in cosmetics, such as dibutyl phthalate, diisobutyl phthalate and DEHP. Not every phthalate is banned; diethyl phthalate (DEP), common in fragrance, is not.",
+   "s": "EU Cosmetics Regulation (EC) No 1223/2009 Annex II: dibutyl phthalate (entry 675), diisobutyl phthalate (entry 1492, added by Regulation (EU) 2019/831); DEHP also prohibited (entry number not verified). Diethyl phthalate not prohibited (status not re-verified).",
+   "basis": "regulation"
   },
   "insect_repellent": {
    "t": "T1",
    "l": "Combined with an insect repellent",
    "w": "The American Academy of Pediatrics does not recommend products that combine sunscreen with an insect repellent such as DEET: sunscreen needs reapplying every two hours, repellent does not.",
-   "s": "AAP, insect and sun safety guidance."
+   "s": "AAP HealthyChildren, 'How to Choose an Insect Repellent for Your Child' (updated 6/21/2024): combination sunscreen/repellent products under 'Don't use'; AAP news release: 'AAP does not recommend products that combine sunscreen with DEET.' FDA 2019 proposed sunscreen rule: sunscreen-insect repellent combinations proposed Category II (not GRASE).",
+   "basis": "clinical_consensus"
   },
   "under3_restricted": {
    "t": "T1",
    "l": "Contains an ingredient the EU restricts for children under 3",
-   "w": "The EU does not allow salicylic acid (except in shampoo), or boric acid and borates, in products for children under three.",
-   "s": "EU Cosmetics Regulation Annex III (salicylic acid; boric acid and borates)."
+   "w": "The EU does not allow salicylic acid in products for children under three (the 2019 rule text exempts shampoos). Boric acid is now banned in EU cosmetics for all ages, and California bans boric acid and borates from Jan 1, 2027.",
+   "s": "Salicylic acid: Regulation (EC) No 1223/2009 Annex III entry 98 (amended by Regulation (EU) 2019/1966 and 2021/850) - not for preparations for children under 3 (2019/1966 text: 'except for shampoos'; survival of exception after 2021/850 not confirmed). Boric acid: prohibited, Annex II entry 1395 (2020); borate salts not individually verified. California AB 496: boric acid/borates banned from Jan 1, 2027.",
+   "basis": "regulation"
   },
   "pfas": {
    "t": "T1",
    "l": "Contains a PFAS ingredient (fully fluorinated)",
    "w": "Since 2025 several US states ban intentionally added PFAS in cosmetics. Whether those laws reach sunscreens, which the FDA regulates as drugs, differs by state.",
-   "s": "California AB 2771; Colorado, Maryland, Minnesota and Washington laws (2025); Maine and Vermont (2026)."
+   "s": "State laws banning intentionally added PFAS in cosmetics: California AB 2771, Colorado HB 22-1345, Maryland, Minnesota HF 2310 (Amara's Law), Washington HB 1047 (RCW 70A.560) - effective Jan 1, 2025 (Washington's 'intentionally added' rule from 2027); Maine (38 M.R.S. sec. 1614) and Vermont S.25 - Jan 1, 2026; Connecticut 2028. Coverage of OTC-drug sunscreens not confirmed for any state.",
+   "basis": "regulation"
   },
   "fragrance": {
    "t": "T2",
    "l": "Contains fragrance",
-   "w": "Fragrance is the most common cause of cosmetic contact allergy.",
-   "s": "ACDS Allergen of the Year 2007 (fragrance); AAD; pediatric dermatology consensus (JDD 2020) recommends fragrance-free for infants."
+   "w": "Fragrance is one of the most common causes of cosmetic contact allergy and was the ACDS Allergen of the Year in 2007. A 2020 expert panel on infant skincare advised that baby products be fragrance-free.",
+   "s": "ACDS Allergen of the Year 2007: Storrs FJ. Allergen of the Year: Fragrance. Dermatitis. 2007;18(1):3-7. doi:10.2310/6620.2007.06053. Expert panel paper: Schachner LA, Andriessen A, Benjamin L, et al. A Consensus About the Importance of Ceramide Containing Skincare for Normal and Sensitive Skin Conditions in Neonates and Infants. J Drugs Dermatol. 2020;19(8):769-776. doi:10.36849/JDD.2020.5252 (hosted by CeraVe/L'Oreal; funding not confirmed).",
+   "basis": "clinical_consensus"
   },
   "eu_fragrance_allergen": {
    "t": "T2",
    "l": "Contains an EU-listed fragrance allergen",
    "w": "On the EU list of substances that must be declared because they cause allergy in people.",
-   "s": "EU Cosmetics Regulation Annex III; Regulation (EU) 2023/1545 (56 added; labelling from July 2026/2028)."
+   "s": "Regulation (EC) No 1223/2009 Annex III fragrance allergen entries, expanded from 26 to about 80 by Commission Regulation (EU) 2023/1545 (26 July 2023): label if >0.001% leave-on / >0.01% rinse-off; new products from 31 July 2026, all products by 31 July 2028.",
+   "basis": "regulation"
   },
   "essential_oil": {
    "t": "T2",
    "l": "Contains an essential oil",
-   "w": "Aromatic oils are frequent sensitizers on baby skin, even when 'fragrance' isn't on the label.",
-   "s": "Contact Dermatitis literature on essential-oil allergy; SCCS opinions on lavender, tea tree."
+   "w": "Essential oils are a known cause of contact allergy, mostly documented in adult patch-test patients, and can be present even when 'fragrance' is not on the label. The EU's scientific committee rates tea tree oil a moderate skin sensitiser, safe only up to 0.1% in adult face cream.",
+   "s": "de Groot AC, Schmidt E. Essential Oils: Contact Allergy and Chemical Composition. CRC Press; 2016. SCCS/1681/25, Scientific Opinion on Tea Tree Oil (adopted 30 Oct 2025): moderate skin sensitiser; safe only up to 0.1% in face cream, adults only, no sprays.",
+   "basis": "peer_reviewed"
   },
   "asteraceae": {
    "t": "T3",
    "l": "Contains a plant from the ragweed (Asteraceae) family",
-   "w": "Chamomile, calendula and arnica are among the most frequently reported plant sensitizers.",
-   "s": "Contact Dermatitis reviews of Compositae/Asteraceae allergy; AAD."
+   "w": "The daisy family (Compositae, also called Asteraceae) is a well-known group of plant allergens. Arnica is a stronger sensitizer than German chamomile.",
+   "s": "Wallace CE, Elston DM. Asteraceae Dermatitis: Everyday Plants With Allergenic Potential. Cutis. 2024;114(4):E18-E21. Paulsen E. Contact sensitization from Compositae-containing herbal remedies and cosmetics. Contact Dermatitis. 2002 (title/volume not fully verified).",
+   "basis": "peer_reviewed"
   },
   "oat": {
    "t": "T3",
    "l": "Contains oat",
-   "w": "Oat sensitization is documented in children with eczema; also a food allergen.",
-   "s": "Boussault et al., Allergy 2007 (oat sensitization in atopic children)."
+   "w": "Oat sensitization has been documented in children with eczema. Oat is not a US major food allergen, and colloidal oatmeal is an FDA skin-protectant active, so this is a low-level caution.",
+   "s": "Boussault P, et al. Oat sensitization in children with atopic dermatitis: prevalence, risks and associated factors. Allergy. 2007 (PMID 17919139; volume/pages not verified).",
+   "basis": "peer_reviewed"
   },
   "peanut": {
    "t": "T2",
    "l": "Contains peanut",
-   "w": "Major food allergen.",
-   "s": "FALCPA/FASTER Act."
+   "w": "Peanut is a recognised major food allergen under US food labelling law (FALCPA). That law covers food, not skin products; we apply it to sunscreens as a caution.",
+   "s": "FALCPA, Pub. L. 108-282 (2004), sec. 201(qq) major food allergens (food labelling only). Topical relevance: Lack G, Fox D, Northstone K, Golding J. Factors associated with the development of peanut allergy in childhood. N Engl J Med. 2003;348(11):977-985.",
+   "basis": "regulation"
   },
   "tree_nut": {
    "t": "T2",
    "l": "Contains a tree-nut oil or extract",
-   "w": "Major food allergen; refined oils carry low but not zero risk.",
-   "s": "FALCPA; FARE guidance on refined oils."
+   "w": "Tree nuts are a recognised major food allergen under US food labelling law, which covers food, not skin products. Refined nut oils usually contain little protein, but the risk from skin use is not well studied.",
+   "s": "FALCPA, Pub. L. 108-282 (food labelling only); FDA 'Questions and Answers Regarding Food Allergens' Edition 5 (Jan 6, 2025) narrowed tree nuts to 12 (shea, coconut, kola and others removed). Refined oils: AAAAI Ask the Expert, 'Food allergy: nut oils in topical products'.",
+   "basis": "regulation"
   },
   "soy": {
    "t": "T2",
    "l": "Contains soy",
-   "w": "Major food allergen. Note: soy-derived tocopherol is not labelled as soy.",
-   "s": "FALCPA."
+   "w": "Soy is a recognised major food allergen under US food labelling law, which covers food, not skin products. Cosmetic ingredient names do not show their source, so soy-derived tocopherol is not labelled as soy.",
+   "s": "FALCPA, Pub. L. 108-282 (2004): soy is a major food allergen; highly refined oils exempt (food labelling only). Soy-derived tocopherol note: TinySafe label observation (INCI names do not state source).",
+   "basis": "regulation"
   },
   "wheat": {
    "t": "T2",
    "l": "Contains wheat or gluten",
-   "w": "Major food allergen (hydrolyzed wheat protein has caused sensitization through skin).",
-   "s": "FALCPA; Japanese HWP soap sensitization reports."
+   "w": "Wheat is a recognised major food allergen under US food labelling law, which covers food, not skin products. In Japan, hydrolyzed wheat protein in a facial soap was linked to wheat allergy in people who used it.",
+   "s": "FALCPA, Pub. L. 108-282 (food labelling only). Hydrolyzed wheat protein: Fukutomi Y, et al. Epidemiological link between wheat allergy and exposure to hydrolyzed wheat protein in facial soap. Allergy. 2014 (case-control study; Cha no Shizuku soap containing Glupearl 19S; volume/pages not verified).",
+   "basis": "peer_reviewed"
   },
   "milk": {
    "t": "T2",
    "l": "Contains milk",
-   "w": "Major food allergen.",
-   "s": "FALCPA."
+   "w": "Milk is a recognised major food allergen under US food labelling law, which covers food, not skin products. FDA's definition includes goat, sheep and other ruminant milk.",
+   "s": "FALCPA, Pub. L. 108-282 (food labelling only); FDA 'Questions and Answers Regarding Food Allergens' Edition 5 (Jan 2025) widened milk to include goat, sheep and other ruminants.",
+   "basis": "regulation"
   },
   "egg": {
    "t": "T2",
    "l": "Contains egg",
-   "w": "Major food allergen.",
-   "s": "FALCPA."
+   "w": "Egg is a recognised major food allergen under US food labelling law, which covers food, not skin products. FDA's definition includes duck, goose, quail and other birds' eggs.",
+   "s": "FALCPA, Pub. L. 108-282 (food labelling only); FDA 'Questions and Answers Regarding Food Allergens' Edition 5 (Jan 2025) widened egg to include duck, goose, quail and other birds.",
+   "basis": "regulation"
   },
   "sesame": {
    "t": "T2",
    "l": "Contains sesame",
-   "w": "Major food allergen (added 2023).",
-   "s": "FASTER Act 2021."
+   "w": "Sesame became the ninth major food allergen under US food labelling law on Jan 1, 2023. That law covers food, not skin products.",
+   "s": "FASTER Act of 2021, Pub. L. 117-11: sesame made the 9th major food allergen, effective Jan 1, 2023 (food labelling only; details known, not fetched this session).",
+   "basis": "regulation"
   },
   "fish_shellfish": {
    "t": "T2",
    "l": "Contains fish or shellfish derivatives",
-   "w": "Major food allergens.",
-   "s": "FALCPA."
+   "w": "Fish and crustacean shellfish (such as shrimp and crab) are recognised major food allergens under US food labelling law, which covers food, not skin products. Mollusc-derived ingredients are not on that list.",
+   "s": "FALCPA, Pub. L. 108-282: fish and crustacean shellfish are major food allergens (food labelling only; molluscs not included).",
+   "basis": "regulation"
   },
   "lanolin": {
    "t": "T2",
    "l": "Contains lanolin",
    "w": "A known contact allergen.",
-   "s": "ACDS Allergen of the Year 2023 (lanolin)."
+   "s": "ACDS Allergen of the Year 2023: Jenkins BA, Belsito DV. Lanolin. Dermatitis. 2023;34:4-12. doi:10.1089/derm.2022.0002.",
+   "basis": "clinical_consensus"
   },
   "propolis_beeswax": {
    "t": "T3",
    "l": "Contains bee-derived ingredients",
-   "w": "Propolis is a documented contact allergen.",
-   "s": "Contact Dermatitis literature on propolis."
+   "w": "This flag is driven by propolis, a documented contact allergen: in one patch-test study, about 1 to 6% of dermatitis patients reacted to it. Other bee ingredients such as beeswax and honey are included but are not the reason for the flag.",
+   "s": "Nyman GSA, Gimenez-Arnau AM, Grigaitiene J, Malinauskiene L, Paulsen E, Hagvall L. Patch Testing with Propolis of Different Geographical Origins in a Baseline Series. Acta Derm Venereol. 101(11):adv00591. doi:10.2340/actadv.v101.423 (1.3-5.8% positive in 1,470 dermatitis patients).",
+   "basis": "peer_reviewed"
   },
   "capb": {
    "t": "T2",
    "l": "Contains cocamidopropyl betaine",
-   "w": "A recognized contact allergen.",
-   "s": "ACDS Allergen of the Year 2004."
+   "w": "A recognized contact allergen and the ACDS Allergen of the Year in 2004. Reactions are largely blamed on manufacturing impurities (amidoamine and DMAPA).",
+   "s": "ACDS Allergen of the Year 2004 (cocamidopropyl betaine); review: Jacob SE, Amini S. Cocamidopropyl betaine. Dermatitis. 2008;19(3):157-160. doi:10.2310/6620.2008.06043.",
+   "basis": "clinical_consensus"
   },
   "propylene_glycol": {
    "t": "T2",
    "l": "Contains propylene glycol",
    "w": "Irritant and allergen in some children.",
-   "s": "ACDS Allergen of the Year 2018."
+   "s": "ACDS Allergen of the Year 2018: Jacob SE, Scheman A, McGowan MA. Propylene Glycol. Dermatitis. 2018;29(1):3-5. doi:10.1097/DER.0000000000000315.",
+   "basis": "clinical_consensus"
   },
   "alkyl_glucoside": {
    "t": "T2",
    "l": "Contains an alkyl glucoside (such as decyl glucoside)",
    "w": "A plant-derived emulsifier. The American Contact Dermatitis Society named alkyl glucosides Allergen of the Year in 2017.",
-   "s": "ACDS Allergen of the Year 2017."
+   "s": "ACDS Allergen of the Year 2017: Alfalah M, Loranger C, Sasseville D. Alkyl Glucosides. Dermatitis. 2017;28(1):3-4. doi:10.1097/DER.0000000000000234; Loranger C, Alfalah M, Ferrier Le Bouedec MC, Sasseville D. Alkyl Glucosides in Contact Dermatitis: A Systematic Review. Dermatitis. 2017;28(1):5-13. doi:10.1097/DER.0000000000000240.",
+   "basis": "clinical_consensus"
   },
   "sulfite": {
    "t": "T2",
    "l": "Contains a sulfite",
    "w": "Used to keep ingredients from oxidizing. The American Contact Dermatitis Society named sulfites Allergen of the Year in 2024.",
-   "s": "ACDS Allergen of the Year 2024."
+   "s": "ACDS Allergen of the Year 2024: Ekstein SF, Warshaw EM. Sulfites: Allergen of the Year 2024. Dermatitis. 2024;35(1):6-12. doi:10.1089/derm.2023.0154.",
+   "basis": "clinical_consensus"
   },
   "isobornyl_acrylate": {
    "t": "T2",
    "l": "Contains isobornyl acrylate",
-   "w": "An acrylate the American Contact Dermatitis Society named Allergen of the Year in 2020.",
-   "s": "ACDS Allergen of the Year 2020."
+   "w": "An acrylate the American Contact Dermatitis Society named Allergen of the Year in 2020, mainly because of reactions to glucose sensors and insulin pumps. It is rare in sunscreens.",
+   "s": "ACDS Allergen of the Year 2020: Aerts O, Herman A, Mowitz M, Bruze M, Goossens A. Isobornyl Acrylate. Dermatitis. 2020;31(1):4-12. doi:10.1097/DER.0000000000000549.",
+   "basis": "clinical_consensus"
   },
   "drying_alcohol": {
    "t": "T3",
    "l": "Contains drying alcohol",
-   "w": "Stings and dries; fatty alcohols (cetyl, stearyl) are not counted.",
-   "s": "AAD; NEA."
+   "w": "We flag drying alcohols because, in our judgment, they can sting and dry skin. Fatty alcohols such as cetyl and stearyl alcohol are not counted.",
+   "s": "TinySafe formulation judgment. No specific AAD or NEA document identified (searched, unverified).",
+   "basis": "judgment"
   },
   "propyl_butyl_paraben": {
    "t": "T1",
    "l": "Contains propyl- or butylparaben",
    "w": "The EU bans these in leave-on products for the diaper area of children under three.",
-   "s": "EU Regulation 1004/2014 (Cosmetics Regulation Annex V)."
+   "s": "Commission Regulation (EU) No 1004/2014 (18 Sept 2014), Annex V entry 12a: propyl- and butylparaben max 0.14% combined (as acid); not in leave-on products for the nappy area of children under 3; applies from 16 April 2015 (sale from 16 Oct 2015).",
+   "basis": "regulation"
   },
   "latex": {
    "t": "T2",
    "l": "Contains natural rubber latex",
-   "w": "Allergen.",
-   "s": "FDA latex labelling guidance."
+   "w": "Natural rubber latex proteins can cause allergic reactions. FDA's latex labelling rule applies to medical devices, not sunscreens; we cite it only as evidence of the allergy.",
+   "s": "21 CFR 801.437 (user labeling for medical devices containing natural rubber, 62 FR 51029, Sept 30, 1997) - a device rule, cited only as evidence that NRL proteins cause allergic reactions.",
+   "basis": "regulation"
   },
   "citrus_photosensitizer": {
    "t": "T1",
    "l": "Contains a phototoxic citrus derivative",
-   "w": "In sunlight these can cause skin reactions. The EU caps them in sunscreens at 1 mg/kg; the label does not say whether this oil is furocoumarin-free.",
-   "s": "EU Cosmetics Regulation Annex II entry 358; SCCS."
+   "w": "In sunlight these can cause skin reactions. The EU requires furocoumarins in sunscreens to stay below 1 mg/kg; the label does not say whether this oil is furocoumarin-free.",
+   "s": "Regulation (EC) No 1223/2009, Annex II entry 358: furocoumarins (e.g. trioxysalen, 8-MOP, 5-MOP) prohibited except normal content in natural essences; in sun protection and bronzing products furocoumarins shall be below 1 mg/kg.",
+   "basis": "regulation"
   },
   "phenoxyethanol": {
    "t": "T3",
    "l": "Preserved with phenoxyethanol",
-   "w": "Considered safe at ≤1%; some parents avoid it after France's 2012 advisory for under-threes (diaper area).",
-   "s": "CIR safety assessment; SCCS 2016; ANSM 2012 advisory."
+   "w": "The EU's scientific committee (SCCS) judged it safe at up to 1% for everyone, including children. Some parents avoid it because France's regulator advised in 2012 against its use in products for the diaper area of children under three.",
+   "s": "SCCS/1575/16, Opinion on phenoxyethanol (adopted 6 Oct 2016): safe at up to 1.0% for all consumers including children. ANSM (France) 2012 recommendation: not in products for the nappy area; max 0.4% in other products for under-3s. ANSM decision of 13 March 2019 required a 'do not use on the buttocks of children under 3' label on leave-on products (status after industry court challenge not confirmed).",
+   "basis": "regulation"
   },
   "methyl_ethyl_paraben": {
    "t": "T3",
    "l": "Preserved with methyl- or ethylparaben",
-   "w": "Considered safe by the SCCS; listed because parents ask.",
-   "s": "SCCS opinion 2013."
+   "w": "The EU's scientific committee (SCCS) considers methyl- and ethylparaben safe at permitted levels; listed because parents ask.",
+   "s": "SCCS/1652/23, Opinion on methylparaben (adopted 14 Dec 2023, corrigendum 28 Feb 2024): safe as a preservative up to 0.4% alone (0.8% total esters). Ethylparaben: SCCS 2011 parabens opinion - methyl- and ethylparaben safe at maximum authorised concentrations (opinion number not verified).",
+   "basis": "regulation"
   },
   "ethoxylated": {
    "t": "T3",
    "l": "Contains PEG or other ethoxylated ingredients",
-   "w": "Manufacturing can leave trace 1,4-dioxane; New York limits it in personal care.",
-   "s": "NY 1,4-dioxane law (2023); FDA guidance."
+   "w": "Manufacturing can leave trace 1,4-dioxane in these ingredients. New York caps it at 10 ppm in cosmetics from Dec 31, 2022 and 1 ppm in personal care products from Dec 31, 2023; the state does not say whether sunscreens sold as drugs are covered.",
+   "s": "New York ECL sec. 35-0105 / 37-0117 (1,4-dioxane): cosmetics max 10 ppm from Dec 31, 2022; personal care and household cleansing products max 2 ppm from Dec 31, 2022 and 1 ppm from Dec 31, 2023 (NYSDEC; OTC-drug coverage not stated).",
+   "basis": "regulation"
   },
   "ethanolamines": {
    "t": "T3",
    "l": "Contains an ethanolamine (TEA/DEA/MEA)",
    "w": "Can form nitrosamines with certain preservatives.",
-   "s": "CIR; EU Annex III entries."
+   "s": "Regulation (EC) No 1223/2009 Annex III entries 60 (fatty acid dialkanolamides), 61 (monoalkanolamines) and 62 (trialkanolamines): not to be used with nitrosating systems; max secondary amine content; max nitrosamine 50 ug/kg; nitrite-free containers. (Free DEA's own EU status not confirmed.)",
+   "basis": "regulation"
   },
   "bht_bha": {
    "t": "T3",
    "l": "Contains BHT or BHA",
-   "w": "Synthetic antioxidants some parents avoid.",
-   "s": "CIR; IARC (BHA)."
+   "w": "We list these synthetic antioxidants because some parents prefer to avoid them. BHA is rated possibly carcinogenic (IARC Group 2B) based on animal studies with oral doses, and the EU caps BHT at 0.8% in most cosmetics.",
+   "s": "BHA: IARC Group 2B (Monographs vol. 40, 1986; Suppl. 7, 1987). BHT: EU Annex III entry 325 (Regulation (EU) 2022/2195): max 0.001% mouthwash, 0.1% toothpaste, 0.8% other products. Preference flag: TinySafe judgment.",
+   "basis": "judgment"
   },
   "petrolatum_mineral_oil": {
    "t": "T3",
    "l": "Contains petrolatum or mineral oil",
-   "w": "Cosmetic-grade is well tolerated; listed because it feels heavy and some parents prefer to avoid.",
-   "s": "CIR; AAD (petrolatum for infant skin)."
+   "w": "We list it because some parents find it heavy and prefer to avoid it; this is a preference flag, not a safety concern. The AAD recommends petroleum jelly for diaper rash.",
+   "s": "AAD, 'Petroleum jelly' (recommends applying it at each diaper change for diaper rash). Preference flag: TinySafe judgment.",
+   "basis": "judgment"
   },
   "silicone": {
    "t": "T3",
    "l": "Contains silicones (non-cyclic)",
-   "w": "Texture and spread; not a safety flag.",
-   "s": "CIR."
+   "w": "Silicones are used for texture and spread; we list them for information, not as a safety flag.",
+   "s": "TinySafe informational flag. No specific CIR report cited or verified (a CIR dimethicone/siloxane safety assessment exists - not fetched).",
+   "basis": "judgment"
   },
   "iron_oxide_tint": {
    "t": "T3",
    "l": "Tinted with iron oxides",
    "w": "Mineral pigments; listed because tint changes how it looks on skin.",
-   "s": "FDA color additive list."
+   "s": "21 CFR 73.2250 (iron oxides, color additive for cosmetics, exempt from certification); 21 CFR 73.1200 (synthetic iron oxide, drugs).",
+   "basis": "judgment"
   },
   "synthetic_dye": {
    "t": "T3",
    "l": "Contains a synthetic dye",
-   "w": "Colour only; some dyes are reported sensitizers.",
-   "s": "FDA color additive list."
+   "w": "Added for colour only; we list synthetic dyes for information.",
+   "s": "21 CFR Parts 74 and 82 (certified color additives). Informational flag: TinySafe judgment.",
+   "basis": "judgment"
   },
   "sls_sles": {
    "t": "T3",
    "l": "Contains SLS or SLES",
-   "w": "Cleansing surfactants that can irritate.",
-   "s": "CIR."
+   "w": "Cleansing surfactants that can irritate skin, more so at higher concentrations.",
+   "s": "CIR. Final Report on the Safety Assessment of Sodium Laureth Sulfate and Ammonium Laureth Sulfate. J Am Coll Toxicol. 1983;2(5):1-34. doi:10.3109/10915818309140713. (Separate CIR SLS report, J Am Coll Toxicol 1983, not fetched.)",
+   "basis": "peer_reviewed"
   },
   "sodium_benzoate": {
    "t": "T3",
    "l": "Preserved with sodium benzoate or benzoic acid",
    "w": "Can cause non-allergic redness (contact urticaria) in sensitive skin.",
-   "s": "Contact Dermatitis literature."
+   "s": "CIR. Final report on the safety assessment of Benzyl Alcohol, Benzoic Acid, and Sodium Benzoate. Int J Toxicol. 2001 (PMID 11766131; discusses nonimmunologic contact urticaria; content not read, volume/pages unverified).",
+   "basis": "peer_reviewed"
   },
   "botanical_count": {
    "t": "T3",
    "l": "Contains plant extracts",
-   "w": "Counted by botanical name; plants are the most common sensitizers on baby skin.",
-   "s": "TinySafe label analysis; JDD 2020 pediatric consensus (sensitizer-free)."
+   "w": "We count plant extracts by botanical name as our own measure. A 2020 expert panel advised that baby skincare be free of sensitizing agents, but it did not single out plants.",
+   "s": "Schachner LA, et al. J Drugs Dermatol. 2020;19(8):769-776. doi:10.36849/JDD.2020.5252 ('sensitizing agent-free'; does not rank plants). Counting method: TinySafe label analysis.",
+   "basis": "judgment"
   },
   "microplastic_polymer": {
    "t": "T3",
    "l": "Contains a synthetic polymer powder (for texture)",
    "w": "A synthetic polymer powder added for texture and finish. The label names the ingredient; it does not show particle size or form.",
-   "s": "Ingredient function as listed in the EU CosIng ingredient database."
+   "s": "EU CosIng ingredient function entries. Context: EU REACH restriction on synthetic polymer microparticles, Commission Regulation (EU) 2023/2055 (not fetched).",
+   "basis": "judgment"
   },
   "animal_derived": {
    "t": "T3",
    "l": "Contains animal-derived ingredients",
    "w": "For families avoiding animal products.",
-   "s": "Label reading."
+   "s": "Label reading (TinySafe).",
+   "basis": "judgment"
   },
   "shea": {
    "t": "T3",
    "l": "Contains shea butter",
    "w": "Refined shea carries almost no allergenic protein; listed for families who avoid it.",
-   "s": "FARE."
+   "s": "Chawla KK, Bencharitiwong R, Ayuso R, Grishina G, Nowak-Wegrzyn A. J Allergy Clin Immunol. 2011;127(3):680-682 (shea nut butter has no detectable IgE-binding soluble proteins). FDA 'Questions and Answers Regarding Food Allergens' Edition 5 (Jan 2025) removed shea nut from the FALCPA tree-nut list.",
+   "basis": "peer_reviewed"
   },
   "coconut": {
    "t": "T3",
    "l": "Contains coconut-derived ingredients",
-   "w": "Coconut allergy is rare; listed for families who avoid it.",
-   "s": "FARE."
+   "w": "FDA no longer counts coconut as a tree nut for food allergen labelling. We list it for families who avoid it.",
+   "s": "FDA 'Questions and Answers Regarding Food Allergens' Edition 5 (Jan 6, 2025): coconut is no longer a FALCPA 'tree nut'. Preference flag: TinySafe judgment.",
+   "basis": "judgment"
   },
   "d5_d6": {
    "t": "T3",
    "l": "Contains cyclic silicones D5/D6",
-   "w": "Restricted in the EU for environmental persistence, not for skin safety.",
-   "s": "EU REACH restriction (2024)."
+   "w": "The EU limits D5 and D6 to 0.1% in leave-on cosmetics from 6 June 2027, because of environmental persistence, not skin safety.",
+   "s": "Commission Regulation (EU) 2024/1328 (16 May 2024) amending REACH Annex XVII: D5 and D6 max 0.1% in leave-on (and D6 in wash-off) cosmetics from 6 June 2027; D4/D5 already restricted in wash-off under Regulation (EU) 2018/35.",
+   "basis": "regulation"
   },
   "talc": {
    "t": "T3",
    "l": "Contains talc",
    "w": "In a lotion or cream; listed because parents ask.",
-   "s": "FDA talc testing rule (2024)."
+   "s": "FDA proposed rule, 89 FR 105490 (Dec 27, 2024), withdrawn Nov 28, 2025 (Docket FDA-2023-N-4225); no talc testing rule is in force. Flag: TinySafe judgment (parents ask).",
+   "basis": "judgment"
   },
   "water_resistant": {
    "t": "T3",
    "l": "Labelled water resistant",
-   "w": "Film formers keep it on in water and make it harder to wash off.",
-   "s": "FDA sunscreen labelling rule (40/80 minutes)."
+   "w": "FDA allows a 'Water Resistant (40 or 80 minutes)' claim only after a set water test, and the label must say when to reapply. We flag it because, in our judgment, the film formers that keep it on in water can also make it harder to wash off.",
+   "s": "21 CFR 201.327(a)(2)(i)-(ii) ('Water Resistant (40 minutes)' / '(80 minutes)', per test in 201.327(i)(7)); reapplication directions 201.327(e)(3). Film-former note: TinySafe judgment.",
+   "basis": "judgment"
   },
   "chemical_filter_active": {
    "t": "T1",
    "l": "Uses chemical UV filters",
-   "w": "Absorbed through skin; FDA has asked for more safety data on these filters before confirming them as generally safe and effective.",
-   "s": "FDA proposed rule (2019) and proposed order (2021); Matta et al., JAMA 2019/2020."
+   "w": "FDA studies found the chemical filters they tested are absorbed through skin, though FDA says that does not mean they are unsafe. FDA has asked for more safety data on 12 chemical filters, while bemotrizinol became generally recognized as safe and effective from Aug 9, 2026.",
+   "s": "FDA proposed rule (Feb 26, 2019) and proposed order OTC000008 (Sept 24, 2021): 12 organic filters (cinoxate, dioxybenzone, ensulizole, homosalate, meradimate, octinoxate, octisalate, octocrylene, padimate O, sulisobenzone, oxybenzone, avobenzone) need more data for GRASE; PABA and trolamine salicylate finalized not GRASE (OTC000008-1, Sept 10, 2026). Bemotrizinol GRASE: final order OTC000039 (effective Aug 9, 2026). Absorption: Matta MK, et al. JAMA. 2019, doi:10.1001/jama.2019.5586; Matta MK, et al. JAMA. 2020, doi:10.1001/jama.2019.20747. T1 tier: TinySafe judgment.",
+   "basis": "regulation"
   }
  }
 }
