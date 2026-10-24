@@ -46,6 +46,9 @@ RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026
     "d5_d6": re.compile(r"^(?!.*(CYCLO|SILOXANE|METHICONE\b(?<!DIMETHICONE))).*DIMETHICONE", re.I),
     "wheat": re.compile(r"\b(CORN|MAIZE|ZEA MAYS)\b.*GLUTEN", re.I),   # corn gluten is not wheat (v3.5)
     "propylene_glycol": re.compile(r"PROPYLENE ?GLY ?COL[ -]*(?:[A-Z]+ATE|MONO|DI[A-Z]+|ALGINATE|ESTER)", re.I),  # its esters (v3.6)
+    # 2026-10-23 random audit: Ligularia fischeri is a plant, Poria cocos a mushroom
+    "fish_shellfish": re.compile(r"LIGULARIA FIS(C?H|HC)ERI", re.I),
+    "coconut": re.compile(r"PORIA COCOS", re.I),
 }
 # product-level flags whose rule changed on purpose (rules v3.6, 2026-10-23 label audit):
 # a spray needs a spray filing or spray wording on a label that is not a stick/cream/roll-on;
