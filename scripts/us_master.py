@@ -335,6 +335,15 @@ if os.path.exists(_CFP):
                                            r"can'?t vouch|not (fully |clearly )?legible|illegible|uncertain|not sure|unclear|too small|no inactive (ingredient )?list|could ?n.?t (be )?(check|read|verif)|not (be )?(checked|verified)|unverifi",
                                            _d.get("notes") or "", re.I))
             CONFIRM[_d["setid"]] = _d
+# a third independent reader of what the first two disagreed on (data/corrections/third_reads.jsonl,
+# 2026-10-24), told neither earlier answer: a fact two of the three readers saw is used
+THIRD = {}
+_TRP = os.path.join(ROOT, "data/corrections/third_reads.jsonl")
+if os.path.exists(_TRP):
+    for _x in open(_TRP, encoding="utf-8"):
+        _d = json.loads(_x)
+        if not _d.get("wrong_product") and (_d.get("variants") or 1) <= 1:
+            THIRD[_d["setid"]] = _d
 NAME_READS = {}
 _NRP = os.path.join(ROOT, "data/corrections/name_reads.jsonl")
 if os.path.exists(_NRP):
@@ -1369,12 +1378,15 @@ def build(run_date):
                 shown, pn = _have, 0
                 c = dict(c, _kit_names_added=_added)
         _cf = CONFIRM.get(sid) if str((CONFIRM.get(sid) or {}).get("spl_version")) == str(ver) else None
-        if _cf and art and art.get("inactives"):
-            # a name the second reader found on the package that the first reader also listed
+        _t3 = THIRD.get(sid) if _cf and str((THIRD.get(sid) or {}).get("spl_version")) == str(ver) else None
+        _t3names = {k for k, v in ((_t3 or {}).get("names") or {}).items() if v == "printed"}
+        if _cf and art and (art.get("inactives") or _t3names):
+            # a name the second reader found on the package that the first reader also listed,
+            # or that the third reader found printed
             _have, _added = list(shown), 0
             for x in _cf.get("on_artwork_not_shown") or []:
-                x = re.sub(r"\s*\(.*?(duplicate|listed|appears).*?\)\s*$", "", (x or "").strip(), flags=re.I)
-                if x and any(x == y or _same_display(x, y) or _same_display(y, x) for y in art["inactives"]) and not is_active(
+                x = re.sub(r"\s*\(.*?(duplicate|listed|appears|missing|not shown).*?\)\s*$", "", (x or "").strip(), flags=re.I)
+                if x and (x in _t3names or any(x == y or _same_display(x, y) or _same_display(y, x) for y in art.get("inactives") or [])) and not is_active(
                         x, akeys_of(acts)) and not any(x == y or _same_display(x, y) or _same_display(y, x) for y in _have):
                     _have.append(x); _added += 1
             if _added:
@@ -1489,7 +1501,8 @@ def build(run_date):
             rec["actives_corrected"] = c["_actives_corrected"]
         if _implausible_list:
             rec["inactives_withheld"] = "implausible_length"
-        if _cf and _cf.get("broad_spectrum") is True and (art or {}).get("broad_spectrum") is True and not rec.get("broad_spectrum"):
+        if _cf and _cf.get("broad_spectrum") is True and ((art or {}).get("broad_spectrum") is True
+                                                            or (_t3 or {}).get("broad_spectrum") is True) and not rec.get("broad_spectrum"):
             rec["broad_spectrum"] = True       # two readers each read "Broad Spectrum" on the package front
         if c.get("_confirm_added"):
             rec["confirm_names_added"] = c["_confirm_added"]
