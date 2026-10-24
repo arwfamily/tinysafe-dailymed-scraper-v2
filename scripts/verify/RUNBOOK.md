@@ -43,14 +43,15 @@ BRIEF_confirm.md (packs cNNN, outputs WORK/confirm/out), then `weekly.py merge c
 BRIEF_third.md (packs tNNN, 4 per agent), then `weekly.py merge third WORK`.
 
 ## 6. Rebuild, gate, publish
-`python3 scripts/verify/image_names.py` (adds this week's package-image names for the product photos), then rebuild as in step 4. The site_db step prints the gate; it exits non-zero (and writes nothing) if
+`python3 scripts/verify/image_names.py` (adds this week's package-image names for the product photos) and
+`python3 scripts/verify/weekly.py thumbs --images WORK/images --site <arwhouse>` (their thumbnails, sunnytime/p/<setid>.webp), then rebuild as in step 4. The site_db step prints the gate; it exits non-zero (and writes nothing) if
 any unchanged label lost an ingredient or a warning. On a gate failure: do not publish; report the
 examples. Then
 `python3 scripts/verify/weekly.py report <arwhouse>/sunnytime/db.json data/site/sunnytime_db.json --out data/reports/weekly_YYYY-MM-DD_flag_changes.md`
 lists labels whose filing changed and lost a warning; read each one (a brand removing an ingredient is
 expected; a filing error is not) and note them in the report.
 Commit the data repo (`data/`, corrections) and push; `cp data/site/sunnytime_db.json <arwhouse>/sunnytime/db.json`;
-commit `sunnytime/db.json` and `sunnytime/index.html` (headline numbers only) and push.
+commit `sunnytime/db.json`, new thumbnails in `sunnytime/p/`, and `sunnytime/index.html` (headline numbers only) and push.
 Never change any other site copy in this job: copy changes need the owner's approval.
 Then confirm the site actually deployed: `env -u GH_TOKEN gh api repos/arwfamily/arwhouse/commits/<sha>/status --jq '.statuses[]|[.context,.state,.description]'`
 must show `Vercel success` within about 5 minutes. If no status appears after 10 minutes, push an empty commit

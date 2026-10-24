@@ -261,6 +261,30 @@ def report(a):
     print(txt)
 
 
+# ---------------------------------------------------------------- thumbs
+def thumbs(a):
+    """Small front-image thumbnails the site serves itself (DailyMed images do not load cross-site
+    in browsers): <site>/sunnytime/p/<setid>.webp for every label with image names and no thumb."""
+    from PIL import Image
+    IM = json.load(open(os.path.join(ROOT, "data/views/label_image_names.json")))
+    out_dir = os.path.join(a.site, "sunnytime/p"); os.makedirs(out_dir, exist_ok=True)
+    files = {}
+    for p in glob.glob(os.path.join(a.images, "**/label_images/*/*"), recursive=True):
+        files[(p.split("/")[-2], os.path.basename(p))] = p
+    made = 0
+    for sid, v in IM.items():
+        t = os.path.join(out_dir, sid + ".webp")
+        if os.path.exists(t):
+            continue
+        for n in v.get("names") or []:
+            src = files.get((sid, re.sub(r"[^A-Za-z0-9._-]", "_", n).rsplit(".", 1)[0] + ".jpg")) or files.get((sid, n))
+            if src:
+                im = Image.open(src).convert("RGB"); im.thumbnail((320, 320)); im.save(t, "WEBP", quality=62, method=6)
+                made += 1
+                break
+    print(json.dumps({"thumbnails_made": made}))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest="cmd", required=True)
@@ -269,8 +293,9 @@ def main():
         x = sp.add_parser(nm); x.add_argument("stage", choices=["read1", "confirm", "third"]); x.add_argument("work")
         x.add_argument("--images", default=None); x.add_argument("--targets", default=None)
     r = sp.add_parser("report"); r.add_argument("old"); r.add_argument("new"); r.add_argument("--out")
+    th = sp.add_parser("thumbs"); th.add_argument("--images", required=True); th.add_argument("--site", required=True)
     a = ap.parse_args()
-    {"targets": targets, "packs": packs, "merge": merge, "report": report}[a.cmd](a)
+    {"targets": targets, "packs": packs, "merge": merge, "report": report, "thumbs": thumbs}[a.cmd](a)
 
 
 if __name__ == "__main__":
