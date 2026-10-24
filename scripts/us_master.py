@@ -911,7 +911,12 @@ def polish_names(items):
     ('D&AMP;C Red No. 30'), a lot or formula code stuck on ('Citronellol. [S1762A]'),
     '1' + '2-Hexanediol' split at its comma, and a 'May contain' colorant kept as a possible
     ingredient ('Titanium Dioxide (CI 77891) (may contain)'). Returns (list, changed)."""
-    out, changed, items = [], False, list(items or [])
+    # a filer's placeholder in the ingredient field ("Please kindly refer to artwork", "Refer to
+    # list provided to customer"; 2026-10-24 second reads) names no ingredient
+    _ph = re.compile(r"^\s*(please\b|refer to\b|see (the )?(artwork|label|package|carton)\b|scan (for|the)\b)", re.I)
+    _n0 = len(items or [])
+    items = [x for x in (items or []) if not _ph.search(x or "")]
+    out, changed = [], len(items) != _n0
     i = 0
     while i < len(items):
         x = items[i]
