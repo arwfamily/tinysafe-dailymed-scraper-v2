@@ -21,8 +21,8 @@ If it is still running, check again every 15 minutes (up to 6 hours). If it fail
 ## 2. Fetch their package images (GitHub Actions has the network)
 `env -u GH_TOKEN gh api -X POST repos/arwfamily/tinysafe-dailymed-scraper-v2/actions/workflows/label_images_batch.yml/dispatches -f ref=main -f 'inputs[batch]=wYYYYMMDD'`;
 wait for it to finish (same runs query on `label_images_batch.yml`; about 20 minutes for 360 labels), then
-`git fetch origin label-images-bwYYYYMMDD && git --work-tree=WORK/images checkout origin/label-images-bwYYYYMMDD -- label_images`
-(or `git archive origin/label-images-bwYYYYMMDD | tar -x -C WORK/images`).
+`git fetch origin "+refs/heads/label-images-bwYYYYMMDD:refs/remotes/origin/label-images-bwYYYYMMDD" && mkdir -p WORK/images && git archive origin/label-images-bwYYYYMMDD | tar -x -C WORK/images`
+(the clone may track main only, so the refspec is spelled out).
 
 ## 3. read1
 `python3 scripts/verify/weekly.py packs read1 WORK --images WORK/images --targets data/views/adult_batches/batch_wYYYYMMDD.txt`
@@ -43,7 +43,7 @@ BRIEF_confirm.md (packs cNNN, outputs WORK/confirm/out), then `weekly.py merge c
 BRIEF_third.md (packs tNNN, 4 per agent), then `weekly.py merge third WORK`.
 
 ## 6. Rebuild, gate, publish
-Rebuild as in step 4. The site_db step prints the gate; it exits non-zero (and writes nothing) if
+`python3 scripts/verify/image_names.py` (adds this week's package-image names for the product photos), then rebuild as in step 4. The site_db step prints the gate; it exits non-zero (and writes nothing) if
 any unchanged label lost an ingredient or a warning. On a gate failure: do not publish; report the
 examples. Then
 `python3 scripts/verify/weekly.py report <arwhouse>/sunnytime/db.json data/site/sunnytime_db.json --out data/reports/weekly_YYYY-MM-DD_flag_changes.md`

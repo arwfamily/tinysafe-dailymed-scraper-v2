@@ -35,6 +35,9 @@ def build(release_dir):
     rows = [json.loads(x) for x in open(os.path.join(release_dir, "us_all.jsonl"), encoding="utf-8") if x.strip()]
     names, idx, out = [], {}, []
     as_of = manifest["source"]["collected"]
+    # package images DailyMed lists for each label (scripts/verify/image_names.py), front first
+    _imp = os.path.join(ROOT, "data/views/label_image_names.json")
+    IMGS = json.load(open(_imp, encoding="utf-8")) if os.path.exists(_imp) else {}
     for r in sorted(rows, key=lambda r: (r.get("status") != "active", r.get("name") or "")):
         ii = []
         for n in r.get("inactives") or []:
@@ -63,6 +66,8 @@ def build(release_dir):
             p["ev"] = r["evidence_tier"]                    # A two package reads agreed, B one read = filing, C filing only
         if r.get("thin_reason"):
             p["thin_reason"] = r["thin_reason"]
+        if r.get("status") == "active" and (IMGS.get(r["setid"]) or {}).get("names"):
+            p["im"] = IMGS[r["setid"]]["names"][:3]
         if r.get("label_check"):
             p["label_check"] = r["label_check"]
         if any(x["status"] == "needs_review" for x in recs):
