@@ -646,7 +646,8 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     # only the synthetic aroma chemicals themselves are cited: an essential oil keeps its own
     # warning, an EU-listed allergen its own
     _eo = {key(n) or n.upper() for n in fl.get("essential_oil", [])}
-    _syn = [n for n in scent if (key(n) or n.upper()) not in _eu | _eo and not re.search(r"(?i)\b(OIL|OLEUM)\b", n)]
+    _syn = [n for n in scent if (key(n) or n.upper()) not in _eu | _eo and not re.search(r"(?i)\b(OIL|OLEUM|EXTRACT|FLAVOU?R)\b", n)
+            and not R.RX["eu_fragrance_allergen"].search(n.upper())]
     if "fragrance" not in fl and "essential_oil" not in fl and any((key(n) or n.upper()) not in _eu for n in scent):
         add("fragrance", scent)
     elif _syn and "fragrance" not in fl:
