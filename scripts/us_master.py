@@ -326,6 +326,14 @@ if os.path.exists(_CFP):
     for _x in open(_CFP, encoding="utf-8"):
         _d = json.loads(_x)
         if not _d.get("wrong_product") and (_d.get("variants") or 1) <= 1:
+            # a confirmation the reader was not sure of (a field "unclear", a low-resolution or
+            # cut-off image) does not make a second agreeing read (2026-10-24)
+            _d["sure"] = not (_d.get("spf") == "unclear" or _d.get("broad_spectrum") == "unclear"
+                              or any(isinstance(a, (list, tuple)) and len(a) > 1 and isinstance(a[1], str)
+                                     for a in (_d.get("actives") or []))
+                              or re.search(r"low[- ]?res|blurr|partly|partial(ly)? (visible|legible)|cut off|cropped|roughly|"
+                                           r"can'?t vouch|not (fully |clearly )?legible|illegible|uncertain|not sure|unclear",
+                                           _d.get("notes") or "", re.I))
             CONFIRM[_d["setid"]] = _d
 NAME_READS = {}
 _NRP = os.path.join(ROOT, "data/corrections/name_reads.jsonl")
@@ -1451,7 +1459,7 @@ def build(run_date):
             # how this label's data was checked against the package: A the artwork read twice by
             # independent readers who agreed; B read once and it matched the filed label text;
             # C the filed label text only (no readable artwork, or readers disagreed)
-            "evidence_tier": ("A" if art and art.get("readable") and (art.get("second_read") or (_cf and _cf.get("decision") == "confirmed")) else
+            "evidence_tier": ("A" if art and art.get("readable") and (art.get("second_read") or (_cf and _cf.get("decision") == "confirmed" and _cf.get("sure"))) else
                               "B" if art and art.get("readable") else "C"),
             "artwork_list_withheld": "multi_product" if (art and art.get("use_list") and art.get("inactives") and multi) else (art or {}).get("list_withheld"),
             "inactives_filed_n": (u2 or {}).get("i_struct_n", 0), "inactives_printed_n": (u2 or {}).get("i_text_n", 0),
