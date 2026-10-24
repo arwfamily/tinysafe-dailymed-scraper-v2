@@ -301,6 +301,14 @@ if os.path.exists(_AP):
         _d = json.loads(_x)
         ARTWORK[_d["setid"]] = _d
 NOT_WW = ("w/w_from_mass_per_volume", "v/v")
+# every product of a multi-product filing as a person read it from the artwork
+# (data/corrections/kit_reads.jsonl, 2026-10-24): the filing often lists one product only
+KIT_READS = {}
+_KRP = os.path.join(ROOT, "data/corrections/kit_reads.jsonl")
+if os.path.exists(_KRP):
+    for _x in open(_KRP, encoding="utf-8"):
+        _d = json.loads(_x)
+        KIT_READS[_d["setid"]] = _d
 NAME_READS = {}
 _NRP = os.path.join(ROOT, "data/corrections/name_reads.jsonl")
 if os.path.exists(_NRP):
@@ -1139,6 +1147,20 @@ def build(run_date):
                         x == y or _same_display(x, y) or _same_display(y, x) for y in _have):
                     _have.append(x)
             shown, pn = _have, 0          # a combined list: no single printed list to trim it to
+        _kr = KIT_READS.get(sid)
+        if multi and _kr and str(_kr.get("spl_version")) == str(ver):
+            # the site says the list is for all of the filing's products together: add what each
+            # other product prints (a set's lip balm, a kit's second cream)
+            _have, _added = list(shown), 0
+            for _pr in _kr.get("products") or []:
+                for x in _pr.get("inactives") or []:
+                    x = (x or "").strip()
+                    if x and not is_active(x, akeys_of(acts)) and not any(
+                            x == y or _same_display(x, y) or _same_display(y, x) for y in _have):
+                        _have.append(x); _added += 1
+            if _added:
+                shown, pn = _have, 0
+                c = dict(c, _kit_names_added=_added)
         extras_dropped = 0
         if pn >= 5 and len(shown) > pn:
             extras_dropped, shown = len(shown) - pn, shown[:pn]
@@ -1195,6 +1217,7 @@ def build(run_date):
             "is_mineral": ft not in ("chemical_only", "no_uv_filter"),
             "is_baby_kids": baby_kids_final(c, bdec)[0], "baby_kids_basis": baby_kids_final(c, bdec)[1],
             "inactives": shown, "inactive_source": "artwork" if art_list else (u2 or {}).get("i_src", "structured"),
+            "kit_names_added": c.get("_kit_names_added") or 0,
             "artwork_list_withheld": "multi_product" if (art and art.get("use_list") and art.get("inactives") and multi) else (art or {}).get("list_withheld"),
             "inactives_filed_n": (u2 or {}).get("i_struct_n", 0), "inactives_printed_n": (u2 or {}).get("i_text_n", 0),
             "label_check": (chk or {}).get("status"), "label_check_date": (chk or {}).get("checked"),
