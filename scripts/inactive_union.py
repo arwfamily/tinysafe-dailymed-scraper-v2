@@ -159,8 +159,15 @@ def _same_core(a, b):
     if key(a) == key(b):
         return True
     ka, kb = key(a), key(b)
-    if min(len(ka), len(kb)) >= 8 and difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.92:
+    # a spelling variant is not another homologue: Methylparaben is not Ethylparaben, Ceteareth-10
+    # is not Ceteareth-20 (2026-10-24 rebuild check: a printed Methylparaben was taken as already
+    # shown because Ethylparaben was)
+    _alk = lambda s: re.findall(r"(?:ISO)?(?:METHYL|ETHYL|PROPYL|BUTYL|HEXYL|OCTYL)", (s or "").upper())  # noqa: E731
+    _homolog = _alk(ka) != _alk(kb) or re.findall(r"\d+", ka) != re.findall(r"\d+", kb)
+    if not _homolog and min(len(ka), len(kb)) >= 8 and difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.92:
         return True                                # spelling variants ("methylparaen")
+    if re.findall(r"\d+", ka) and re.findall(r"\d+", kb) and re.findall(r"\d+", ka) != re.findall(r"\d+", kb):
+        return False                               # Ceteareth-10 / Ceteareth-20, PEG-10 / PEG-100
     # "SUNFLOWER OIL" ~ "Helianthus Annuus (Sunflower) Seed Oil": the shorter name's
     # words must all be the longer name's bracketed common name (or its genus+species);
     # "DIMETHICONE" is NOT "PEG-10 DIMETHICONE", "ALCOHOL" is NOT "CETOSTEARYL ALCOHOL".
