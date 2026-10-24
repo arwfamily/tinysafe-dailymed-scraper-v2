@@ -885,6 +885,11 @@ def polish_names(items):
             lone_here = re.fullmatch(r"\d", y.strip()) and re.match(r"\d(?:[-,\s])", nx)
             lone_next = re.fullmatch(r"\d", nx) and re.search(r"[-,]\d$", y.strip())
             cont = joined and re.search(r"[-,]\d$", y.strip()) and re.match(r"\d,\d", nx)
+            # 'Diethylhexyl 2' + '6-Naphthalate' (USRx; 2026-10-24 post-fix audit)
+            named = re.search(r"[A-Za-z]\s\d$", y.strip()) and re.match(r"\d-[A-Za-z]+ate\b", nx, re.I)
+            if named:
+                y, i = f"{y.strip()},{nx}", i + 1
+                break
             if not (lone_here or lone_next or cont):
                 break
             y, i, joined = f"{y.strip()},{nx}", i + 1, True
@@ -1386,6 +1391,13 @@ def build(run_date):
         }
         if c.get("_actives_corrected"):
             rec["actives_corrected"] = c["_actives_corrected"]
+        # a kit whose products print different SPFs (Kopari: mist 50, elixir 40, lip balm 30): the
+        # lowest is shown, so no product is taken to protect more than it does
+        if multi and _kr and str(_kr.get("spl_version")) == str(ver):
+            _ks = sorted({p.get("spf") for p in _kr.get("products") or []
+                          if p.get("is_sunscreen") is not False and isinstance(p.get("spf"), (int, float)) and p.get("spf") > 0})
+            if len(_ks) > 1:
+                rec["spf"], rec["spf_range"] = _ks[0], [_ks[0], _ks[-1]]
         if c.get("_actives_not_on_artwork") or c.get("_actives_from_artwork"):
             # the package's actives, read twice and agreeing, where the filing differs
             rec["actives_from_artwork"] = c.get("_actives_from_artwork") or []
