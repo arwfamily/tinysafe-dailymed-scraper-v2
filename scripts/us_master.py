@@ -1428,6 +1428,10 @@ def build(run_date):
                           if p.get("is_sunscreen") is not False and isinstance(p.get("spf"), (int, float)) and p.get("spf") > 0})
             if len(_ks) > 1:
                 rec["spf"], rec["spf_range"] = _ks[0], [_ks[0], _ks[-1]]
+            # a kit with a mist or spray among its products (Supergoop's sets): the spray warning
+            _sp = [p.get("name") for p in _kr.get("products") or [] if re.search(r"(?i)\b(mist|spray|aerosol)\b", p.get("name") or "")]
+            if _sp and not any(f[0] == "spray_powder" for f in rec["flags"]):
+                rec["flags"] = rec["flags"] + [["spray_powder", [], meta.get("spray_powder", {}).get("l", "spray_powder")]]
         if c.get("_actives_not_on_artwork") or c.get("_actives_from_artwork"):
             # the package's actives, read twice and agreeing, where the filing differs
             rec["actives_from_artwork"] = c.get("_actives_from_artwork") or []
