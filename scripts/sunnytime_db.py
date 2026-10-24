@@ -115,6 +115,11 @@ class Engine:
         if "propylene_glycol" in fs and R.PG_ESTER.search(name.upper()):
             fs.discard("propylene_glycol")
         fs.discard("chemical_filter_active")             # actives only
+        # Gardenia jasminoides (cape jasmine) is not jasmine and not an EU-listed allergen, whatever
+        # v3.1 decided for the name (2026-10-24 third audit, Rare Beauty)
+        if "eu_fragrance_allergen" in fs and "JASMINOIDES" in name.upper() and not R.RX["eu_fragrance_allergen"].search(
+                name.upper().replace("JASMINOIDES", "")):
+            fs.discard("eu_fragrance_allergen")
         # "Synthetic Beeswax", "Synthetic Wax": made in a lab, not from bees or animals
         if R.SYNTHETIC.search(name.upper()):
             fs -= R.SOURCE_FLAGS
