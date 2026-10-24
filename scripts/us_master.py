@@ -1130,6 +1130,15 @@ def build(run_date):
         art_list = bool(art and art.get("use_list") and art.get("inactives") and not multi)
         if art_list:
             shown, pn = [x for x in art["inactives"] if not is_active(x, akeys_of(acts))], len(art["inactives"])
+        elif art and art.get("use_list") and art.get("inactives") and multi:
+            # the filing's list for all its products, plus what this one package prints that the
+            # filing lacks (a kit filed with one product's list; Jafra's set lost its booster)
+            _have = list(shown)
+            for x in art["inactives"]:
+                if not is_active(x, akeys_of(acts)) and not any(
+                        x == y or _same_display(x, y) or _same_display(y, x) for y in _have):
+                    _have.append(x)
+            shown, pn = _have, 0          # a combined list: no single printed list to trim it to
         extras_dropped = 0
         if pn >= 5 and len(shown) > pn:
             extras_dropped, shown = len(shown) - pn, shown[:pn]
