@@ -1,6 +1,12 @@
 {
  "changes": [
   {
+   "version": "v3.12",
+   "date": "2026-10-24",
+   "change": "Every label read once from its package artwork (5,388) was checked again by a second, independent reader. 4,555 matched; a match read with full confidence makes the label's evidence two agreeing reads (tier A: 6,229 labels, up from 2,087). Where the two readers differed, a third reader who was told neither answer settled Broad Spectrum and ingredient names: a fact two of three readers saw is used (Broad Spectrum now shown for 205 more labels; names printed on the package added to 81 lists, never taking one away). A filer's placeholder in the ingredient field ('Please kindly refer to artwork') is not shown as an ingredient; one product filed with hundreds of inactives is not shown a list. Methylparaben and Ethylparaben, or Ceteareth-10 and Ceteareth-20, are no longer taken for spelling variants of each other.",
+   "why": "Accuracy: the 2026-10-24 random audit found tier B (read once) as the largest group of labels without a second, independent check."
+  },
+  {
    "version": "v3.11",
    "date": "2026-10-24",
    "change": "Korean and international cartons often print a full ingredient list beside the US Drug Facts panel. 466 such packages were read twice by independent readers; the names both reads agree on (433 labels, 13,980 entries) are added to the list shown, never taking a name away, so fragrance, parabens, cyclic silicones, triclosan and extra UV filters printed only in that list now give their warnings. A kit with a mist or spray gives the spray warning; chestnut is a tree nut; PEG derivatives of plant oils are not plant extracts; a record showing Broad Spectrum SPF 15+ drops a contradicting alert-based warning.",
