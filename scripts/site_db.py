@@ -108,6 +108,8 @@ def explained(release_dir):
             out[r["setid"]] = "last_good_read_kept"
         elif r.get("inactives_tidied") or r.get("filed_synonyms_dropped"):
             out[r["setid"]] = "list_split_repaired"
+        elif r.get("full_list_replaced"):
+            out[r["setid"]] = "package_full_list"           # the package's full ingredient list, read twice (2026-10-24)
         elif r.get("artwork_list_withheld") == "multi_product":
             out[r["setid"]] = "multi_product_combined_list"  # the filing's list for all its products, as the site says (2026-10-24)
         elif r.get("artwork_list_withheld") == "unread_words":

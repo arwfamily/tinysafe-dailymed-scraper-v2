@@ -1347,7 +1347,13 @@ def build(run_date):
                 shown, pn = _have, 0
                 c = dict(c, _kit_names_added=_added)
         _fl = FULL_LISTS.get(sid)
-        if _fl and str(_fl.get("spl_version")) == str(ver):
+        if _fl and str(_fl.get("spl_version")) == str(ver) and not multi and _fl.get("complete") and len(_fl.get("names") or []) >= 5:
+            # one product, its package's full list read twice: that list is what the parent holds
+            # (GZE's carton prints another formula than the filing; 2026-10-24 audit)
+            shown = [x for x in _fl["names"] if not is_active(x, akeys_of(acts))]
+            pn = len(shown)
+            c = dict(c, _full_list_added=len(shown), _full_list_replaced=True)
+        elif _fl and str(_fl.get("spl_version")) == str(ver):
             # what the package's full list adds to the Drug Facts list (Dermafirm's fragrance and
             # D5, Face It's parabens; 2026-10-24 audit): added, nothing taken away
             _have, _added = list(shown), 0
@@ -1419,6 +1425,7 @@ def build(run_date):
             "inactives": shown, "inactive_source": "artwork" if art_list else (u2 or {}).get("i_src", "structured"),
             "kit_names_added": c.get("_kit_names_added") or 0,
             "full_list_names_added": c.get("_full_list_added") or 0,
+            "full_list_replaced": bool(c.get("_full_list_replaced")),
             # how this label's data was checked against the package: A the artwork read twice by
             # independent readers who agreed; B read once and it matched the filed label text;
             # C the filed label text only (no readable artwork, or readers disagreed)

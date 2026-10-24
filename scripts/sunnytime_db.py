@@ -121,6 +121,10 @@ class Engine:
         # v3.1 decided for the name (2026-10-24 third audit, Rare Beauty)
         # "sr-" names are synthetic recombinant proteins (Pacifica's vegan collagen, Sr-Hydrozoan
         # Polypeptide-1): not taken from an animal (2026-10-24 post-fix audit)
+        # a PEG/PPG derivative of a plant oil (PEG-40 hydrogenated castor oil) is a synthetic
+        # emulsifier, not a plant extract (2026-10-24 audits)
+        if "botanical_count" in fs and re.match(r"\s*(PEG|PPG)[- ]?\d", name.upper()):
+            fs.discard("botanical_count")
         if "animal_derived" in fs and re.match(r"\s*SR[- ]", name.upper()):
             fs.discard("animal_derived")
         if "eu_fragrance_allergen" in fs and "JASMINOIDES" in name.upper() and not R.RX["eu_fragrance_allergen"].search(
