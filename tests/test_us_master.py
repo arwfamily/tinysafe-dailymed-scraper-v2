@@ -119,6 +119,30 @@ def test_tidy_inactives():
     assert got == ["Rosmarinus Officinalis Leaf Oil (Natural Rosemary)", "Theobroma Cacao Seed Butter", "Tocopherol"], got
 
 
+def test_v312_rules():
+    """2026-10-24 (v3.12): rules added during the second- and third-read pass."""
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "scripts"))
+    from inactive_union import same, same_display
+    import sunnytime_rules as R
+    # a homologue is not a spelling variant
+    assert not same("METHYLPARABEN", "Ethylparaben") and not same_display("Ceteareth-10", "Ceteareth-20")
+    assert same("methylparaen", "Methylparaben") and same_display("TITANIUM DIOXIDE", "Titanium Dioxide (CI 77891)")
+    # a filer's placeholder is not an ingredient
+    got, ch = M.polish_names(["Water", "Please kindly refer to artwork", "Refer to list provided to customer", "Glycerin"])
+    assert got == ["Water", "Glycerin"] and ch, got
+    # an unsure second read does not make tier A
+    assert M.confirm_sure({"decision": "confirmed", "spf": 50, "broad_spectrum": True, "actives": [["Zinc Oxide", 20.0]], "notes": ""})
+    assert not M.confirm_sure({"spf": "unclear"})
+    assert not M.confirm_sure({"actives": [["Zinc Oxide", "unclear"]]})
+    assert not M.confirm_sure({"notes": "Low-resolution artwork; list read roughly"})
+    assert not M.confirm_sure({"notes": "the carton prints no inactive list"})
+    # ragweed is Asteraceae; expressed lemon/lime/grapefruit/bitter orange oils are phototoxic, lemongrass is not
+    assert R.RX["asteraceae"].search("AMBROSIA PERUVIANA LEAF EXTRACT")
+    c = R.RX["citrus_photosensitizer"]
+    assert c.search("CITRUS LIMON (LEMON) PEEL OIL") and c.search("CITRUS PARADISI (GRAPEFRUIT) PEEL OIL")
+    assert not c.search("CYMBOPOGON (LEMONGRASS) OIL") and not c.search("CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL")
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

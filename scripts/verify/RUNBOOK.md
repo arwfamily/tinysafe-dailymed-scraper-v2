@@ -6,11 +6,11 @@ second independent reader (confirm), and disagreements go to a third reader (thi
 published unless the quality gate passes.
 
 Repos: `arwfamily/tinysafe-dailymed-scraper-v2` (data, this repo) and `arwfamily/arwhouse` (site,
-`sunnytime/db.json`). Use `env -u GH_TOKEN gh ...` for GitHub CLI calls in a Claude cloud session.
+`sunnytime/db.json`). In a Claude cloud session use the REST API through `env -u GH_TOKEN gh api ...` (GraphQL, and so `gh workflow run`, is not available there).
 WORK below is a scratch folder outside both repos (e.g. the session scratchpad).
 
 ## 0. Wait for the weekly scrape
-`env -u GH_TOKEN gh run list --workflow scrape.yml -L 1` must show today's run `completed success`.
+`env -u GH_TOKEN gh api 'repos/arwfamily/tinysafe-dailymed-scraper-v2/actions/workflows/scrape.yml/runs?per_page=1' --jq '.workflow_runs[0]|[.status,.conclusion,.created_at]'` must show today's run `completed`/`success`.
 If it is still running, check again every 15 minutes (up to 6 hours). If it failed, stop and report
 (do not rebuild on a failed run). Then `git pull` in both repos.
 
@@ -19,8 +19,8 @@ If it is still running, check again every 15 minutes (up to 6 hours). If it fail
 `data/views/adult_batches/batch_wYYYYMMDD.txt`. Commit and push it (the image workflow reads it from main).
 
 ## 2. Fetch their package images (GitHub Actions has the network)
-`env -u GH_TOKEN gh workflow run label_images_batch.yml -f batch=wYYYYMMDD`; wait for it to finish
-(`gh run list --workflow label_images_batch.yml -L 1`), then
+`env -u GH_TOKEN gh api -X POST repos/arwfamily/tinysafe-dailymed-scraper-v2/actions/workflows/label_images_batch.yml/dispatches -f ref=main -f 'inputs[batch]=wYYYYMMDD'`;
+wait for it to finish (same runs query on `label_images_batch.yml`; about 20 minutes for 360 labels), then
 `git fetch origin label-images-bwYYYYMMDD && git --work-tree=WORK/images checkout origin/label-images-bwYYYYMMDD -- label_images`
 (or `git archive origin/label-images-bwYYYYMMDD | tar -x -C WORK/images`).
 

@@ -320,6 +320,18 @@ if os.path.exists(_FLP):
         FULL_LISTS[_d["setid"]] = _d
 # a second, independent reader's check of a record read once (data/corrections/confirm_reads.jsonl,
 # 2026-10-24): "confirmed" makes the evidence two agreeing reads
+def confirm_sure(d):
+    """A second read counts only when its reader was sure: no field "unclear", and no note of a
+    low-resolution, cut-off or unreadable image (2026-10-24)."""
+    _d = d
+    return not (_d.get("spf") == "unclear" or _d.get("broad_spectrum") == "unclear"
+            or any(isinstance(a, (list, tuple)) and len(a) > 1 and isinstance(a[1], str)
+                   for a in (_d.get("actives") or []))
+            or re.search(r"low[- ]?res|blurr|partly|partial(ly)? (visible|legible)|cut off|cropped|roughly|"
+                         r"can'?t vouch|not (fully |clearly )?legible|illegible|uncertain|not sure|unclear|too small|no inactive (ingredient )?list|could ?n.?t (be )?(check|read|verif)|not (be )?(checked|verified)|unverifi",
+                         _d.get("notes") or "", re.I))
+
+
 CONFIRM = {}
 _CFP = os.path.join(ROOT, "data/corrections/confirm_reads.jsonl")
 if os.path.exists(_CFP):
@@ -328,12 +340,7 @@ if os.path.exists(_CFP):
         if not _d.get("wrong_product") and (_d.get("variants") or 1) <= 1:
             # a confirmation the reader was not sure of (a field "unclear", a low-resolution or
             # cut-off image) does not make a second agreeing read (2026-10-24)
-            _d["sure"] = not (_d.get("spf") == "unclear" or _d.get("broad_spectrum") == "unclear"
-                              or any(isinstance(a, (list, tuple)) and len(a) > 1 and isinstance(a[1], str)
-                                     for a in (_d.get("actives") or []))
-                              or re.search(r"low[- ]?res|blurr|partly|partial(ly)? (visible|legible)|cut off|cropped|roughly|"
-                                           r"can'?t vouch|not (fully |clearly )?legible|illegible|uncertain|not sure|unclear|too small|no inactive (ingredient )?list|could ?n.?t (be )?(check|read|verif)|not (be )?(checked|verified)|unverifi",
-                                           _d.get("notes") or "", re.I))
+            _d["sure"] = confirm_sure(_d)
             CONFIRM[_d["setid"]] = _d
 # a third independent reader of what the first two disagreed on (data/corrections/third_reads.jsonl,
 # 2026-10-24), told neither earlier answer: a fact two of the three readers saw is used
