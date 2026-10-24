@@ -351,6 +351,15 @@ if os.path.exists(_TRP):
         _d = json.loads(_x)
         if not _d.get("wrong_product") and (_d.get("variants") or 1) <= 1:
             THIRD[_d["setid"]] = _d
+# a filed name neither earlier reader saw, put to a third reader as "is it printed in any list on
+# the package?" (data/corrections/absent_reads.jsonl, 2026-10-24)
+ABSENT = {}
+_ABP = os.path.join(ROOT, "data/corrections/absent_reads.jsonl")
+if os.path.exists(_ABP):
+    for _x in open(_ABP, encoding="utf-8"):
+        _d = json.loads(_x)
+        if not _d.get("wrong_product") and (_d.get("variants") or 1) <= 1:
+            ABSENT[_d["setid"]] = _d
 NAME_READS = {}
 _NRP = os.path.join(ROOT, "data/corrections/name_reads.jsonl")
 if os.path.exists(_NRP):
@@ -376,6 +385,29 @@ _NOT_SUN = re.compile(r"not\s+(?:for\s+(?:use\s+(?:in|for)\s+)?(?:the\s+)?preven
                       r"intended\s+(?:to|for)\s+(?:prevent|protect)[a-z]*\s+(?:against\s+)?sunburn)|"
                       r"(?:does|will)\s+not\s+protect\s+(?:you\s+)?(?:from|against)\s+sunburn", re.I)
 NOT_SUN = set()
+# an age limit the label itself prints beyond the standard "children under 6 months: ask a
+# doctor" ("not for use on children under 12", "for adult use only"; 2026-10-24 audit: No7, Boots,
+# Perricone showed none). The phrase is shown as the label prints it.
+AGE_LIMIT = {}
+_AGE_RX = re.compile(
+    r"(?:do\s+not\s+use|not\s+(?:to\s+be\s+used|for\s+use|intended|recommended|suitable)(?:\s+for\s+use)?)\s+"
+    r"(?:on|in|for|by)\s+(?:children|kids|babies|infants|a\s+child)"
+    r"(?:\s+(?:under|below|younger\s+than|less\s+than)\s+(?:the\s+age\s+of\s+)?\d+\s*(?:years?|yrs?|months?)(?:\s+of\s+age)?)?"
+    r"|for\s+adults?\s+(?:use\s+)?only|adults\s+only"
+    r"|for\s+ages?\s+(?:1[0-7]|[1-9])\s*(?:years?\s+)?(?:and\s+(?:up|older|over)|\+)", re.I)
+
+
+def age_limit(text):
+    """The first age limit the label text prints, or None."""
+    for m in _AGE_RX.finditer(text or ""):
+        ph = re.sub(r"\s+", " ", m.group(0)).strip()
+        tail = (text or "")[m.end():m.end() + 30].lower()
+        if re.search(r"\b6\s*months?\b", ph) and "ask a doctor" in tail:
+            continue                     # the standard direction, not a limit
+        return ph[0].upper() + ph[1:]
+    return None
+
+
 if os.path.exists(_LT):
     import gzip as _gz0
     sys.path.insert(0, HERE)
@@ -392,6 +424,9 @@ if os.path.exists(_LT):
         LABEL_CLAIMS[_d["setid"]] = dict(_c, spf=max(_v) if _v else None, spfs=_v, broad_spectrum=_bs)
         if _NOT_SUN.search(_d.get("text") or ""):
             NOT_SUN.add(_d["setid"])
+        _al = age_limit(_d.get("text") or "")
+        if _al:
+            AGE_LIMIT[_d["setid"]] = (_al, str(_d.get("spl_version")))
 
 
 # The label images, for what the label text does not print. A person's reading of the
@@ -1416,6 +1451,18 @@ def build(run_date):
                 _usedx.add(x); _usedy.add(y); _ren += 1
             if _ren:
                 c = dict(c, _confirm_renamed=_ren)
+        _ab = ABSENT.get(sid) if _cf and str((ABSENT.get(sid) or {}).get("spl_version")) == str(ver) else None
+        if _ab and art and art.get("inactives") and not multi:
+            # three readers agree a filed name is printed in no list on the package: it is taken
+            # out, but only a name that gives no warning (a filed misspelling or a duplicate; a
+            # warning is never removed on reads alone)
+            _nz2 = lambda x: re.sub(r"[^A-Z0-9]", "", (x or "").upper())  # noqa: E731
+            _first = {_nz2(x) for x in art["inactives"]}
+            _gone = {_nz2(k) for k, v in (_ab.get("names") or {}).items() if v == "not_printed"}
+            _keep = [x for x in shown if not (_nz2(x) in _gone and _nz2(x) not in _first and not eng.flags(x)[0])]
+            if len(_keep) < len(shown):
+                c = dict(c, _absent_removed=len(shown) - len(_keep))
+                shown = _keep
         if _cf and art and (art.get("inactives") or _t3names):
             # a name the second reader found on the package that the first reader also listed,
             # or that the third reader found printed
@@ -1542,6 +1589,13 @@ def build(run_date):
             rec["broad_spectrum"] = True       # two readers each read "Broad Spectrum" on the package front
         if c.get("_confirm_added"):
             rec["confirm_names_added"] = c["_confirm_added"]
+        _agl = AGE_LIMIT.get(sid)
+        if not (_agl and _agl[1] == str(ver)) and (art or {}).get("age_limit") and (_cf or {}).get("age_limit"):
+            _agl = (art["age_limit"], str(ver))     # both package readers saw an age limit
+        if _agl and _agl[1] == str(ver) and not any(f[0] == "age_limit" for f in rec["flags"]):
+            rec["flags"] = rec["flags"] + [["age_limit", [_agl[0]], meta.get("age_limit", {}).get("l", "age_limit")]]
+        if c.get("_absent_removed"):
+            rec["absent_names_removed"] = c["_absent_removed"]
         if c.get("_confirm_renamed"):
             rec["confirm_names_renamed"] = c["_confirm_renamed"]
         # Broad Spectrum and SPF 15+ as the record shows them: the alert-based warning, read from

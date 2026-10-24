@@ -143,6 +143,13 @@ def test_v312_rules():
     assert not c.search("CYMBOPOGON (LEMONGRASS) OIL") and not c.search("CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL")
 
 
+def test_age_limit():
+    assert M.age_limit("Do not use on children under 12 years of age.") == "Do not use on children under 12 years of age"
+    assert M.age_limit("For adult use only.") == "For adult use only"
+    assert M.age_limit("Children under 6 months: Ask a doctor") is None
+    assert M.age_limit("Keep out of reach of children. Age 50+ skin") is None
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

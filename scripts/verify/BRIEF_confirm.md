@@ -15,6 +15,8 @@ Decision per product:
 - If the images show another product, set "wrong_product": true; if several products or formulas, "variants": n.
 
 Write a JSON array to the output path, one object per product:
-{"setid", "spl_version" (copy), "decision", "spf": n|"unclear"|null, "broad_spectrum": true|false|"unclear", "actives": [[name, pct]]|null, "shown_not_on_artwork": [...], "on_artwork_not_shown": [...], "wrong_product": bool, "variants": n, "notes": short}
+{"setid", "spl_version" (copy), "decision", "spf": n|"unclear"|null, "broad_spectrum": true|false|"unclear", "actives": [[name, pct]]|null, "shown_not_on_artwork": [...], "on_artwork_not_shown": [...], "wrong_product": bool, "variants": n, "age_limit": "the label's own words" | null, "notes": short}
+
+"age_limit": an age limit the label prints (e.g. "not for use on children under 12", "for adult use only"), other than the standard "children under 6 months: ask a doctor"; null if none is printed.
 
 Reply only with counts: confirmed / differs / unreadable.

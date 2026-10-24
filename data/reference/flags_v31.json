@@ -12530,6 +12530,13 @@
    "w": "FDA studies found the chemical filters they tested are absorbed through skin, though FDA says that does not mean they are unsafe. FDA has asked for more safety data on 12 chemical filters, while bemotrizinol became generally recognized as safe and effective from Aug 9, 2026.",
    "s": "FDA proposed rule (Feb 26, 2019) and proposed order OTC000008 (Sept 24, 2021): 12 organic filters (cinoxate, dioxybenzone, ensulizole, homosalate, meradimate, octinoxate, octisalate, octocrylene, padimate O, sulisobenzone, oxybenzone, avobenzone) need more data for GRASE; PABA and trolamine salicylate finalized not GRASE (OTC000008-1, Sept 10, 2026). Bemotrizinol GRASE: final order OTC000039 (effective Aug 9, 2026). Absorption: Matta MK, et al. JAMA. 2019, doi:10.1001/jama.2019.5586; Matta MK, et al. JAMA. 2020, doi:10.1001/jama.2019.20747. T1 tier: TinySafe judgment.",
    "basis": "regulation"
+  },
+  "age_limit": {
+   "t": "T1",
+   "l": "The label limits the age it is for",
+   "w": "The label itself limits who should use it, beyond the usual 'children under 6 months: ask a doctor'. We show its words so you can follow them; for a younger child, choose another product or ask your pediatrician.",
+   "s": "The product's own label text as filed with the FDA (DailyMed SPL), Directions or Warnings section.",
+   "basis": "label"
   }
  }
 }

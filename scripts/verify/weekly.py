@@ -211,7 +211,7 @@ def merge(a):
                  "broad_spectrum": x.get("broad_spectrum"),
                  "actives": acts_norm(x.get("actives")) if agree_acts(x.get("actives"), r.get("actives")) else [],
                  "inactives": x.get("inactives"), "fragrance_free_claim": x.get("fragrance_free_claim"),
-                 "scent_named": x.get("scent_named"), "allergen_statement": x.get("allergen_statement"),
+                 "scent_named": x.get("scent_named"), "allergen_statement": x.get("allergen_statement"), "age_limit": x.get("age_limit"),
                  "use_list": False, "filing_text_verified_current": False, "second_read": False,
                  "notes": (x.get("notes") or "")[:2000], "source": "weekly"}
             out.append(e)

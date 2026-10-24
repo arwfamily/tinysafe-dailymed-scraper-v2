@@ -17,6 +17,7 @@ Write a JSON array to the output path you are given, one object per product:
  "fragrance_free_claim": true | false,      // "fragrance free", "unscented", "no fragrance" anywhere on the artwork
  "scent_named": "Fun Melon" | null,         // a scent named on the front ("Coconut scent", "... Fragrance")
  "allergen_statement": "Allergens: soybeans (glycerin)" | null,
+ "age_limit": "Do not use on children under 12" | null,   // an age limit the label prints, in its words, other than the standard "children under 6 months: ask a doctor"
  "notes": "anything that matters: several variants, unreadable parts, a footnote listing fragrance components, etc."
 }
 
