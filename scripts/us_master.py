@@ -1380,6 +1380,30 @@ def build(run_date):
         _cf = CONFIRM.get(sid) if str((CONFIRM.get(sid) or {}).get("spl_version")) == str(ver) else None
         _t3 = THIRD.get(sid) if _cf and str((THIRD.get(sid) or {}).get("spl_version")) == str(ver) else None
         _t3names = {k for k, v in ((_t3 or {}).get("names") or {}).items() if v == "printed"}
+        if _cf and art and art.get("inactives") and _cf.get("decision") == "differs":
+            # a filed name both readers found NOT printed, where both found a close variant printed
+            # instead (filed "Squalene" for a printed Squalane, "Methyl Lactate" for Menthyl
+            # Lactate, "Gingko Biloba Root" for Ginkgo Biloba Leaf; 2026-10-24 second reads): the
+            # printed name is shown in its place. Dissimilar extras are not removed.
+            import difflib
+            _nz = lambda s: re.sub(r"[^A-Z0-9]", "", (s or "").upper())  # noqa: E731
+            _ai = {_nz(x) for x in art["inactives"]}
+            _xs = [x for x in _cf.get("shown_not_on_artwork") or [] if _nz(x) not in _ai]
+            _ys = [re.sub(r"\s*\(.*?(duplicate|listed|appears|missing|not shown).*?\)\s*$", "", y or "", flags=re.I).strip()
+                   for y in _cf.get("on_artwork_not_shown") or []]
+            _ys = [y for y in _ys if y and _nz(y) in _ai and not is_active(y, akeys_of(acts))]
+            _pairs = sorted(((difflib.SequenceMatcher(None, _nz(x), _nz(y)).ratio(), x, y) for x in _xs for y in _ys), reverse=True)
+            _usedx, _usedy, _ren = set(), set(), 0
+            for _r, x, y in _pairs:
+                if _r < 0.7 or x in _usedx or y in _usedy:
+                    continue
+                _ix = next((i for i, s in enumerate(shown) if _nz(s) == _nz(x)), None)
+                if _ix is None or any(_nz(s) == _nz(y) for s in shown):
+                    continue
+                shown = shown[:_ix] + [y] + shown[_ix + 1:]
+                _usedx.add(x); _usedy.add(y); _ren += 1
+            if _ren:
+                c = dict(c, _confirm_renamed=_ren)
         if _cf and art and (art.get("inactives") or _t3names):
             # a name the second reader found on the package that the first reader also listed,
             # or that the third reader found printed
@@ -1506,6 +1530,8 @@ def build(run_date):
             rec["broad_spectrum"] = True       # two readers each read "Broad Spectrum" on the package front
         if c.get("_confirm_added"):
             rec["confirm_names_added"] = c["_confirm_added"]
+        if c.get("_confirm_renamed"):
+            rec["confirm_names_renamed"] = c["_confirm_renamed"]
         # Broad Spectrum and SPF 15+ as the record shows them: the alert-based warning, read from
         # a filing field the package contradicts, does not stand (Avasol; 2026-10-24 audit)
         if rec.get("broad_spectrum") and isinstance(rec.get("spf"), (int, float)) and rec["spf"] >= 15:

@@ -106,6 +106,8 @@ def explained(release_dir):
             out[r["setid"]] = "implausible_list_withheld"   # hundreds of names for one product (2026-10-24)
         elif r.get("actives_corrected"):
             out[r["setid"]] = "actives_corrected"
+        elif r.get("confirm_names_renamed"):
+            out[r["setid"]] = "second_read_rename"         # two readers: the printed name, not the filed one (2026-10-24)
         elif r.get("fetch_status") == "carried_forward":
             out[r["setid"]] = "last_good_read_kept"
         elif r.get("inactives_tidied") or r.get("filed_synonyms_dropped"):
