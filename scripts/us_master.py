@@ -310,6 +310,14 @@ if os.path.exists(_KRP):
     for _x in open(_KRP, encoding="utf-8"):
         _d = json.loads(_x)
         KIT_READS[_d["setid"]] = _d
+# the package's full ingredient list (a Korean or international carton prints one beside the
+# Drug Facts), read twice; only names both reads give (data/corrections/full_lists.jsonl)
+FULL_LISTS = {}
+_FLP = os.path.join(ROOT, "data/corrections/full_lists.jsonl")
+if os.path.exists(_FLP):
+    for _x in open(_FLP, encoding="utf-8"):
+        _d = json.loads(_x)
+        FULL_LISTS[_d["setid"]] = _d
 NAME_READS = {}
 _NRP = os.path.join(ROOT, "data/corrections/name_reads.jsonl")
 if os.path.exists(_NRP):
@@ -1338,6 +1346,19 @@ def build(run_date):
             if _added:
                 shown, pn = _have, 0
                 c = dict(c, _kit_names_added=_added)
+        _fl = FULL_LISTS.get(sid)
+        if _fl and str(_fl.get("spl_version")) == str(ver):
+            # what the package's full list adds to the Drug Facts list (Dermafirm's fragrance and
+            # D5, Face It's parabens; 2026-10-24 audit): added, nothing taken away
+            _have, _added = list(shown), 0
+            for x in _fl.get("names") or []:
+                x = (x or "").strip()
+                if x and not is_active(x, akeys_of(acts)) and not any(
+                        x == y or _same_display(x, y) or _same_display(y, x) for y in _have):
+                    _have.append(x); _added += 1
+            if _added:
+                shown, pn = _have, 0
+                c = dict(c, _full_list_added=_added)
         shown, _pol = polish_names(shown)
         tidied = tidied or _pol
         extras_dropped = 0
@@ -1397,6 +1418,7 @@ def build(run_date):
             "is_baby_kids": baby_kids_final(c, bdec)[0], "baby_kids_basis": baby_kids_final(c, bdec)[1],
             "inactives": shown, "inactive_source": "artwork" if art_list else (u2 or {}).get("i_src", "structured"),
             "kit_names_added": c.get("_kit_names_added") or 0,
+            "full_list_names_added": c.get("_full_list_added") or 0,
             # how this label's data was checked against the package: A the artwork read twice by
             # independent readers who agreed; B read once and it matched the filed label text;
             # C the filed label text only (no readable artwork, or readers disagreed)
@@ -1417,6 +1439,10 @@ def build(run_date):
         }
         if c.get("_actives_corrected"):
             rec["actives_corrected"] = c["_actives_corrected"]
+        # Broad Spectrum and SPF 15+ as the record shows them: the alert-based warning, read from
+        # a filing field the package contradicts, does not stand (Avasol; 2026-10-24 audit)
+        if rec.get("broad_spectrum") and isinstance(rec.get("spf"), (int, float)) and rec["spf"] >= 15:
+            rec["flags"] = [f for f in rec["flags"] if f[0] != "not_broad_spectrum"]
         # SPF 2-14 read from the package or the name (not the filing's field): the same warning
         if isinstance(rec.get("spf"), (int, float)) and 0 < rec["spf"] < 15 and not any(
                 f[0] == "not_broad_spectrum" for f in rec["flags"]):
