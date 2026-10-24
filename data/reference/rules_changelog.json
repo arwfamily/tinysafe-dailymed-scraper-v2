@@ -1,6 +1,12 @@
 {
  "changes": [
   {
+   "version": "v3.10",
+   "date": "2026-10-24",
+   "change": "505 products whose FDA filing names a contract manufacturer (Allure Labs, COSMAX, Prime Packaging, Fallien, Cross Brands and others) now show the brand and name printed on the package front, read from the filed artwork. Titanium dioxide or zinc oxide printed again as a colorant in the inactive list (CI 77891, 'may contain') is kept in the list. A misspelled single ingredient name ('Methyparaben', 'Proplyene Glycol') is shown spelled right.",
+   "why": "Accuracy: parents and experts look a product up by the brand on the package; the post-fix audit (2026-10-24) found these as its most common minor errors."
+  },
+  {
    "version": "v3.9",
    "date": "2026-10-24",
    "change": "A second blind audit of 300 different labels (after v3.8) found smaller gaps, now fixed: 'Diethylhexyl 2' + '6-Naphthalate' rejoined as one name (its UV booster warning was lost); coneflower counts as a ragweed-family plant; a kit whose products print different SPFs shows the lowest; a package that says soy-free drops the soy warning for lecithin of unstated source; 'sr-' recombinant proteins (vegan collagen) are not animal-derived; label footnotes stuck to a name ('*Denotes') are removed; when a printed name does not itself give a warning, the warning cites the FDA filing name it comes from; an SPF under 15 read from the package or the name gives the below-SPF-15 warning.",
