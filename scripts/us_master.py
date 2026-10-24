@@ -584,8 +584,17 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
         cited as the printed rose flower WATER)."""
         if n in shown:
             return n
-        return next((x for x in shown if same_display(n, x) and f in eng.flags(x)[0]), None) or next(
-            (x for x in shown if strict_twin(n, x)), n)
+        hit = next((x for x in shown if same_display(n, x) and f in eng.flags(x)[0]), None)
+        if hit:
+            return hit
+        tw = next((x for x in shown if strict_twin(n, x)), None)
+        if tw is None:
+            return n
+        if f in eng.flags(tw)[0] or f in SOURCE_FLAGS:
+            return tw
+        # the printed name does not itself give the flag (printed "Polyethylene", filed as a
+        # PEG; 2026-10-24 post-fix audit): say where the flag comes from
+        return f"{tw} (filed with the FDA as {n.lower()})"
 
     def add(f, ev, raw=False):
         if f not in fl:
