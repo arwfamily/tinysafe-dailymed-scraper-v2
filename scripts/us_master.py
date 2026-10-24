@@ -1347,7 +1347,8 @@ def build(run_date):
                 shown, pn = _have, 0
                 c = dict(c, _kit_names_added=_added)
         _fl = FULL_LISTS.get(sid)
-        if _fl and str(_fl.get("spl_version")) == str(ver) and not multi and _fl.get("complete") and len(_fl.get("names") or []) >= 5:
+        if _fl and str(_fl.get("spl_version")) == str(ver) and False:   # replacement off: a carton can print a US Drug Facts list AND a different Korean list
+            # (The Cellin, Rendrevie); both are on the package, so the full list only adds (2026-10-24)
             # one product, its package's full list read twice: that list is what the parent holds
             # (GZE's carton prints another formula than the filing; 2026-10-24 audit)
             shown = [x for x in _fl["names"] if not is_active(x, akeys_of(acts))]
