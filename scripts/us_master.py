@@ -1284,8 +1284,10 @@ def build(run_date):
         # (data/corrections/name_reads.jsonl; same label version only)
         _nr = NAME_READS.get(sid)
         _nr = _nr if _nr and str(_nr.get("spl_version")) == str(ver) else None
-        if _nr:
+        if _nr and _nr.get("product_name"):
             name = " ".join(x for x in (_nr.get("brand"), _nr.get("product_name")) if x)
+        elif _nr and _nr.get("brand") and _nr["brand"].lower() not in name.lower():
+            name = f"{_nr['brand']} {name}"     # only the brand was printed legibly
         name = polish_display(name)
         u = union.get(sid)
         if u is None and c.get("_delisted_on"):
