@@ -876,6 +876,8 @@ def polish_names(items):
         y = x
         y = _unent(y)
         y = _LABEL_CODE.sub("", y).strip()
+        # a label footnote stuck to the last name ("Tridecyl Salicylate. *Denotes ...")
+        y = re.sub(r"\.?\s*\*+\s*(Denotes|Certified|Organic\b|Ingredient).*$", "", y, flags=re.I).strip() or y
         if y.count("]") > y.count("["):
             y = re.sub(r"\s*\]+\s*$", "", y)
         # a locant list split at its commas: '1' + '2-Hexanediol', 'Trans-1' + '3' + '3,3-Tetra...'
