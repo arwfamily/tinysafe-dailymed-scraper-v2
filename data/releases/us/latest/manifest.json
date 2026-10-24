@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-24",
  "git_tag": "us-data-2026-10-24",
- "released": "2026-10-24T05:04:02+00:00",
+ "released": "2026-10-24T11:44:01+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.6 · 2026-10-23",
  "source": {
@@ -24,8 +24,8 @@
    },
    "filter_type": {
     "mineral_only": 3883,
-    "chemical_only": 4293,
-    "hybrid_chemical_primary": 840,
+    "chemical_only": 4294,
+    "hybrid_chemical_primary": 839,
     "hybrid_mineral_primary": 376,
     "hybrid_equal": 22,
     "hybrid_pct_unknown": 5
@@ -48,28 +48,28 @@
    }
   },
   "us_mineral": {
-   "labels": 5148,
+   "labels": 5147,
    "status": {
-    "active": 5126,
+    "active": 5125,
     "discontinued": 22
    },
    "filter_type": {
     "mineral_only": 3883,
-    "hybrid_chemical_primary": 840,
+    "hybrid_chemical_primary": 839,
     "hybrid_mineral_primary": 376,
     "hybrid_equal": 22,
     "hybrid_pct_unknown": 5
    },
    "label_check": {
     "confirmed": 1214,
-    "text_confirms_current": 3671,
+    "text_confirms_current": 3670,
     "no_list_on_label_images": 197,
     "image_unreadable": 20,
     "partial": 7,
     "label_image_mismatch": 13,
     "non_english_label": 4
    },
-   "label_verified_share": 0.9544,
+   "label_verified_share": 0.9543,
    "inactives_7_or_fewer": 123,
    "recalls": {
     "labels_matched": 13,
@@ -115,15 +115,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9461,
-   "sha256": "7944a4e323cbb60e90efa651d0c9de14a2f2b95109cb369d725c65798a20eda1"
+   "sha256": "0cb60d25556c10392f1ae3dbbc9698a4f615bac88d4a56ba99b1125944dac8b2"
   },
   "us_mineral.jsonl": {
-   "rows": 5148,
-   "sha256": "dadaf26593bc790dc779a76bf7a2c765ad897f095533ed8de253686ac743a1e0"
+   "rows": 5147,
+   "sha256": "b205881dd4aabfdc8eab5edfa20a8dd7843bfc5736f745307e915e06aa247df0"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "e81f61436f4a33f8df89f4c44cd26a65fb972da2f5d13f9881139833d9c3720e"
+   "sha256": "9e3624fbc7d1b044a57a8370d45f65fbdffbe723a9562b2db00d6879209e7f37"
   },
   "us_out_of_scope.jsonl": {
    "rows": 4827,
