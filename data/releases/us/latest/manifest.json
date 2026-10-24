@@ -1,9 +1,9 @@
 {
  "release_id": "us-2026-10-24",
  "git_tag": "us-data-2026-10-24",
- "released": "2026-10-24T16:17:15+00:00",
+ "released": "2026-10-24T17:01:47+00:00",
  "schema_version": "1.0.0",
- "rules_version": "v3.7 · 2026-10-24",
+ "rules_version": "v3.8 · 2026-10-24",
  "source": {
   "register": "FDA DailyMed (SPL)",
   "collected": "2026-10-24",
@@ -23,10 +23,10 @@
     "discontinued": 42
    },
    "filter_type": {
-    "mineral_only": 3883,
-    "chemical_only": 4294,
-    "hybrid_chemical_primary": 839,
-    "hybrid_mineral_primary": 376,
+    "mineral_only": 3882,
+    "chemical_only": 4289,
+    "hybrid_chemical_primary": 841,
+    "hybrid_mineral_primary": 380,
     "hybrid_equal": 22,
     "hybrid_pct_unknown": 5
    },
@@ -41,35 +41,35 @@
     "needs_review": 1
    },
    "label_verified_share": 0.9735,
-   "inactives_7_or_fewer": 368,
+   "inactives_7_or_fewer": 367,
    "recalls": {
     "labels_matched": 15,
     "labels_needs_review": 0
    }
   },
   "us_mineral": {
-   "labels": 5147,
+   "labels": 5152,
    "status": {
-    "active": 5125,
+    "active": 5130,
     "discontinued": 22
    },
    "filter_type": {
-    "mineral_only": 3883,
-    "hybrid_chemical_primary": 839,
-    "hybrid_mineral_primary": 376,
+    "mineral_only": 3882,
+    "hybrid_chemical_primary": 841,
+    "hybrid_mineral_primary": 380,
     "hybrid_equal": 22,
     "hybrid_pct_unknown": 5
    },
    "label_check": {
-    "confirmed": 1214,
-    "text_confirms_current": 3670,
+    "confirmed": 1215,
+    "text_confirms_current": 3674,
     "no_list_on_label_images": 197,
     "image_unreadable": 20,
     "partial": 7,
     "label_image_mismatch": 13,
     "non_english_label": 4
    },
-   "label_verified_share": 0.9543,
+   "label_verified_share": 0.9544,
    "inactives_7_or_fewer": 123,
    "recalls": {
     "labels_matched": 13,
@@ -95,7 +95,7 @@
     "label_image_mismatch": 2
    },
    "label_verified_share": 0.9828,
-   "inactives_7_or_fewer": 34,
+   "inactives_7_or_fewer": 33,
    "recalls": {
     "labels_matched": 3,
     "labels_needs_review": 0
@@ -115,15 +115,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9461,
-   "sha256": "b52adc8ed0c1f6968200f04d655666ece5d4bb4444912088d0cfa1321910f620"
+   "sha256": "c939e4e9bcece3c20a0104d54883e0136abce5131a832067e577628bce2f3c33"
   },
   "us_mineral.jsonl": {
-   "rows": 5147,
-   "sha256": "3f58052ab7ff119ccefbb5c3520c42a99054c098d9441371eeefa17f211aa4b4"
+   "rows": 5152,
+   "sha256": "1c194a3646f174429724b83d5e7bb8328c54479b291124a4164db1003b9f2c67"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "da5276b94d323e9d2b7200d779f0bc3b1cb26ac39d15f9e2d3984cd5c4f13167"
+   "sha256": "23935060b3b9b54f85d5a8a1fcc24bca0a891b85128466674be885900c302d59"
   },
   "us_out_of_scope.jsonl": {
    "rows": 4827,
