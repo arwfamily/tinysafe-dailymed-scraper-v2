@@ -454,6 +454,15 @@ if os.path.exists(_ABP):
         _d = json.loads(_x)
         if not _d.get("wrong_product") and (_d.get("variants") or 1) <= 1:
             ABSENT[_d["setid"]] = _d
+# a third, blind read of the SPF where the package reads and the label text disagreed
+# (data/corrections/spf_reads.jsonl, 2026-10-24): it agreed with the package in 25 of 26; where it
+# could not tell, the lower of the two printed values is shown (never more protection than printed)
+SPF_READS = {}
+_SPP = os.path.join(ROOT, "data/corrections/spf_reads.jsonl")
+if os.path.exists(_SPP):
+    for _x in open(_SPP, encoding="utf-8"):
+        _d = json.loads(_x)
+        SPF_READS[_d["setid"]] = _d
 NAME_READS = {}
 _NRP = os.path.join(ROOT, "data/corrections/name_reads.jsonl")
 if os.path.exists(_NRP):
@@ -861,7 +870,12 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     art = ARTWORK.get(c.get("setid"))
     art_form = (art.get("form") or "") if art and art.get("readable") and (art.get("variants") or 1) == 1 and str(
         art.get("spl_version")) == str(c.get("spl_version")) else ""
-    if art_form and not re.search(r"spray|powder", art_form):
+    _cf2 = CONFIRM.get(c.get("setid")) or {}
+    _twice = bool(art and (art.get("second_read") or (_cf2.get("decision") == "confirmed" and _cf2.get("sure")
+                                                      and str(_cf2.get("spl_version")) == str(c.get("spl_version")))))
+    if art_form and not re.search(r"spray|powder", art_form) and (_twice or not (SPRAY.search(form) or claim)):
+        # a spray filing is taken as not a spray only on two agreeing reads of the package
+        # (Glow Baby's one read said lotion; 2026-10-24 consistency audit)
         rollon = True
     # (not from a single weekly read: there a form that disagreed with the filing was left blank
     # on purpose, to wait for a second reader, and its notes must not decide it; 2026-10-24 review)
@@ -1065,6 +1079,15 @@ def _unent(t):
         t = re.sub(r"&([A-Za-z]+);", lambda m: html.unescape("&" + m.group(1).lower() + ";")
                    if html.unescape("&" + m.group(1).lower() + ";") != "&" + m.group(1).lower() + ";" else m.group(0), t)
     return t
+
+
+def _spf_lower(sid, ver, art, c):
+    """The lower SPF where a third reader could not settle the package read against the label."""
+    r = SPF_READS.get(sid)
+    if not r or str(r.get("spl_version")) != str(ver) or r.get("spf") != "unclear" or not art or not art.get("spf"):
+        return None
+    other = c.get("spf") or (LABEL_CLAIMS.get(sid) or {}).get("spf") or title_spf(c.get("name"), c.get("title"))
+    return min(x for x in (art["spf"], other) if x) if other else None
 
 
 def polish_names(items):
@@ -1704,7 +1727,7 @@ def build(run_date):
             "excluded_reason": excluded,
             "category": c.get("category"), "name": name, "title": c.get("title"),
             "brand": polish_display((_nr or {}).get("brand") or (legacy.get(sid) or {}).get("b") or c.get("labeler") or ""), "labeler": c.get("labeler"),
-            "spf": (art.get("spf") if art and art.get("readable") and (art.get("variants") or 1) == 1 and art.get("spf")
+            "spf": _spf_lower(sid, ver, art, c) or (art.get("spf") if art and art.get("readable") and (art.get("variants") or 1) == 1 and art.get("spf")
                     and not art.get("filing_text_verified_current") else None)
                    or c.get("spf") or (LABEL_CLAIMS.get(sid) or {}).get("spf") or title_spf(name, c.get("title"))
                    or (art.get("spf") if art and art.get("readable") else None),

@@ -22,8 +22,8 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "data/recalls/us_drug_recalls.jsonl")
 API = "https://api.fda.gov/drug/enforcement.json"
-TERMS = ['"sunscreen"', '"sun screen"', '"sunblock"', '"spf"', '"avobenzone"', '"oxybenzone"', '"octinoxate"',
-         '"homosalate"', '"octocrylene"', '"zinc oxide"', '"titanium dioxide"']
+TERMS = ['"sunscreen"', '"sun screen"', '"sunblock"', '"sun block"', '"spf"', '"broad spectrum"', '"uva"', '"tanning"', '"avobenzone"', '"oxybenzone"', '"octinoxate"',
+         '"homosalate"', '"octocrylene"', '"octisalate"', '"zinc oxide"', '"titanium dioxide"']
 UA = {"User-Agent": "TinySafe-research/1.0 (contact: support@tinysafe.app)"}
 
 
