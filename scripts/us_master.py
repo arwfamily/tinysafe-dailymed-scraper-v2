@@ -994,6 +994,8 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
                                for x in shown or []) and any(re.search(r"(?i)SOY[A-Z]*[^,]*LECITHIN|LECITHIN[^,]*SOY|GLYCINE[^,]*LECITHIN", x or "")
                                                              for x in (struct or []) + list(c.get("_filed_all") or [])):
         add("soy", [next(x for x in shown if re.search(r"(?i)LECITHIN", x or "")) + " (filed as soybean lecithin)"])
+    _sf = " ".join(str(x) for x in ((art or {}).get("notes"), (lc or {}).get("allergen_statement"),
+                                     (lc or {}).get("free_from"), (lc or {}).get("claims")) if x)
     if "soy" in fl:
         # the FDA filing names the lecithin's source as sunflower (Particle's "Lecithin" is filed
         # as sunflower lecithin; 2026-10-24 final audit): not soy
