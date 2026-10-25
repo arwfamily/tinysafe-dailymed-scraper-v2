@@ -1473,7 +1473,17 @@ def build(run_date):
             _nz2 = lambda x: re.sub(r"[^A-Z0-9]", "", (x or "").upper())  # noqa: E731
             _first = {_nz2(x) for x in art["inactives"]}
             _gone = {_nz2(k) for k, v in (_ab.get("names") or {}).items() if v == "not_printed"}
-            _keep = [x for x in shown if not (_nz2(x) in _gone and _nz2(x) not in _first and not eng.flags(x)[0])]
+            # and only when nothing is lost: another name in the list is the printed form of it (a
+            # filed duplicate or misspelling), or it is not an ingredient at all (a footnote). A
+            # filed name with no printed twin stays: it may be the real formula (2026-10-24 review)
+            import difflib as _dl
+            _junk = re.compile(r"\b(not labeled|labeled as|certified|organic ingredient|product)\b", re.I)
+
+            def _twin(x):
+                return any(_nz2(s) != _nz2(x) and _dl.SequenceMatcher(None, _nz2(s), _nz2(x)).ratio() >= 0.8
+                           for s in shown)
+            _keep = [x for x in shown if not (_nz2(x) in _gone and _nz2(x) not in _first and not eng.flags(x)[0]
+                                              and (_twin(x) or _junk.search(x)))]
             if len(_keep) < len(shown):
                 c = dict(c, _absent_removed=len(shown) - len(_keep))
                 shown = _keep
