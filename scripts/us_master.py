@@ -457,6 +457,14 @@ if os.path.exists(_ABP):
 # a third, blind read of the SPF where the package reads and the label text disagreed
 # (data/corrections/spf_reads.jsonl, 2026-10-24): it agreed with the package in 25 of 26; where it
 # could not tell, the lower of the two printed values is shown (never more protection than printed)
+# a reviewer's settlement of a disagreement between the site and the label text (fullcheck,
+# data/corrections/text_review.jsonl, 2026-10-24): the printed actives and printed names it found
+TEXT_REVIEW = {}
+_TRP2 = os.path.join(ROOT, "data/corrections/text_review.jsonl")
+if os.path.exists(_TRP2):
+    for _x in open(_TRP2, encoding="utf-8"):
+        _d = json.loads(_x)
+        TEXT_REVIEW[_d["setid"]] = _d
 BS_READS = {}
 _BSP = os.path.join(ROOT, "data/corrections/bs_reads.jsonl")
 if os.path.exists(_BSP):
@@ -1471,6 +1479,18 @@ def build(run_date):
                                                      if k not in {x for x, _ in _ac} and a["name"] in US_MAX],
                          _actives_from_artwork=[k for k, _ in _ac if k not in _fk])
                 acts = _new
+        _tr = TEXT_REVIEW.get(sid) if str((TEXT_REVIEW.get(sid) or {}).get("spl_version")) == str(ver) else None
+        if _tr and _tr.get("actives") and not _kitlike:
+            # the label's printed actives, as a reviewer read them where the site had them wrong
+            _new = []
+            for n, pc in _tr["actives"]:
+                k = filter_canon(n) or (n or "").upper()
+                if k and not any(a["name"] == k for a in _new):
+                    _new.append({"name": k, "unii": None, "percent": pc, "percent_basis": "label_text_review"})
+            _keep = [a for a in acts if a["name"] not in US_MAX and not any(a["name"] == b["name"] for b in _new)]
+            if _new:
+                c = dict(c, _actives_text_review=[a["name"] for a in _new])
+                acts = _new + _keep
         ft, mp, cp, organic = filter_split(c, acts)
         # strengths that cannot give the printed SPF (all actives together under 5% w/w for
         # SPF 15+): the filing used the wrong unit or scale (e.g. 3 mg per 1 g for 3%), so the
@@ -1706,6 +1726,19 @@ def build(run_date):
             if _added:
                 shown, pn = _have, 0
                 c = dict(c, _full_list_added=_added)
+        if _tr and _tr.get("add_inactives"):
+            # names the label prints that the site lacked (lists only gain names)
+            _have, _added = list(shown), 0
+            for x in _tr["add_inactives"]:
+                x = (x or "").strip()
+                if x and not is_active(x, akeys_of(acts)) and not any(
+                        x.upper() == y.upper() or _same_display(x, y) or _same_display(y, x) for y in _have):
+                    _have.append(x); _added += 1
+            if _added:
+                shown = _have
+                if pn:
+                    pn += _added
+                c = dict(c, _text_review_added=_added)
         _n_before = len(shown)
         shown, _pol = polish_names(shown)
         if any(len(x) > 100 and x.count(")") > x.count("(") for x in shown):

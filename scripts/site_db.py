@@ -111,7 +111,7 @@ def build(release_dir, thumbs_dir=None):
 def explained(release_dir):
     """Reviewed reasons a label may leave the site or change its list this week
     (see quality_gate.check)."""
-    from us_master import MASTER
+    from us_master import MASTER, TEXT_REVIEW
     out = {}
     for line in open(MASTER, encoding="utf-8"):
         r = json.loads(line)
@@ -119,6 +119,8 @@ def explained(release_dir):
                 "spf_makeup", "spf_lip_balm", "diaper_cream", "not_a_sunscreen", "zinc_only_no_sun_claim",
                 "topical_analgesic", "skin_lightener")):
             out[r["setid"]] = "scope:" + r["excluded_reason"]
+        elif r["setid"] in TEXT_REVIEW and TEXT_REVIEW[r["setid"]].get("actives"):
+            out[r["setid"]] = "text_review_actives"        # a reviewer read the label's printed actives (2026-10-24 fullcheck)
         elif r.get("inactives_withheld"):
             out[r["setid"]] = "implausible_list_withheld"   # hundreds of names for one product (2026-10-24)
         elif r.get("actives_corrected"):
