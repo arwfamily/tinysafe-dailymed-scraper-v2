@@ -454,6 +454,42 @@ if os.path.exists(_CFP):
             # cut-off image) does not make a second agreeing read (2026-10-24)
             _d["sure"] = confirm_sure(_d)
             CONFIRM[_d["setid"]] = _d
+CONFIRM_ALL = {}
+if os.path.exists(_CFP):
+    for _x in open(_CFP, encoding="utf-8"):
+        _d = json.loads(_x)
+        CONFIRM_ALL[_d["setid"]] = _d
+
+
+def _cf_disputed(sid, ver, rec):
+    """The second reader of this version saw another product, or (single product, sure) another
+    SPF or other actives / strengths than the record shows."""
+    d = CONFIRM_ALL.get(sid)
+    if not d or str(d.get("spl_version")) != str(ver):
+        return False
+    if d.get("wrong_product"):
+        return True
+    if d.get("decision") != "differs" or (d.get("variants") or 1) > 1 or not confirm_sure(d):
+        return False
+    if isinstance(d.get("spf"), (int, float)) and isinstance(rec.get("spf"), (int, float)) and d["spf"] != rec["spf"] \
+            and not rec.get("spf_range"):
+        return True
+    ra = {}
+    for a in rec.get("actives") or []:
+        if a.get("percent_withheld"):
+            return False
+        ra[filter_canon(a["name"]) or a["name"].upper()] = a.get("percent")
+    ca = {}
+    for it in d.get("actives") or []:
+        n, p = (it.get("name"), it.get("percent")) if isinstance(it, dict) else (list(it) + [None, None])[:2]
+        if not n or not isinstance(p, (int, float)):
+            return False
+        ca[filter_canon(n) or n.upper()] = p
+    if ca and ra and (ca.keys() != ra.keys() or any(isinstance(ra[k], (int, float)) and abs(ra[k] - ca[k]) > 0.051 for k in ca)):
+        return True
+    return False
+
+
 # a third independent reader of what the first two disagreed on (data/corrections/third_reads.jsonl,
 # 2026-10-24), told neither earlier answer: a fact two of the three readers saw is used
 THIRD = {}
@@ -1971,6 +2007,11 @@ def build(run_date):
                 and _bsr.get("broad_spectrum") is not True):
             rec["broad_spectrum"] = None
             rec["broad_spectrum_unconfirmed"] = True
+        # one package read is "B" only while a second reader of the same version did not find the
+        # images to show another product, another SPF or other actives; then it is "C" (2026-10-25)
+        if rec.get("evidence_tier") == "B" and _cf_disputed(sid, ver, rec):
+            rec["evidence_tier"] = "C"
+            rec["evidence_disputed"] = True
         if rec.get("broad_spectrum") and isinstance(rec.get("spf"), (int, float)) and rec["spf"] >= 15:
             rec["flags"] = [f for f in rec["flags"] if f[0] != "not_broad_spectrum"]
         # SPF 2-14 read from the package or the name (not the filing's field): the same warning
