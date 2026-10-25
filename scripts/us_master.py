@@ -483,6 +483,15 @@ if os.path.exists(_TRP2):
     for _x in open(_TRP2, encoding="utf-8"):
         _d = json.loads(_x)
         TEXT_REVIEW[_d["setid"]] = _d
+# facts printed only on the package (not in the label text) that two independent readers both
+# read: its form, an age limit, an allergen named as an ingredient (data/corrections/package_facts.jsonl,
+# 2026-10-25 final audit + second read)
+PKG_FACTS = {}
+_PFP = os.path.join(ROOT, "data/corrections/package_facts.jsonl")
+if os.path.exists(_PFP):
+    for _x in open(_PFP, encoding="utf-8"):
+        _d = json.loads(_x)
+        PKG_FACTS[_d["setid"]] = _d
 BS_READS = {}
 _BSP = os.path.join(ROOT, "data/corrections/bs_reads.jsonl")
 if os.path.exists(_BSP):
@@ -921,6 +930,9 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     # spray; Panama Jack, H-E-B Baby, No-Ad oil; 2026-10-25 final audit)
     _named = re.search(r"(?i)\b(LOTION|CREAM|OIL|STICK|BALM|GEL)\b", (c.get("product_name") or "") + " " + re.sub(r"\[[^\]]*\]", " ", c.get("title") or "")) \
         and not re.search(r"(?i)SPRAY|MIST|AEROSOL|POWDER", (c.get("product_name") or "") + " " + re.sub(r"\[[^\]]*\]", " ", c.get("title") or ""))
+    _pf = PKG_FACTS.get(c.get("setid")) or {}
+    if _pf.get("form") and str(_pf.get("spl_version")) == str(c.get("spl_version")) and not re.search(r"spray|powder|aerosol|mist", _pf["form"], re.I):
+        rollon = True                      # two readers: the package is a lotion/cream/oil, not sprayed
     if art_form and not re.search(r"spray|powder", art_form) and (_twice or _named or not (SPRAY.search(form) or claim)):
         # a spray filing is taken as not a spray only on two agreeing reads of the package
         # (Glow Baby's one read said lotion; 2026-10-24 consistency audit)
@@ -994,6 +1006,11 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
                                for x in shown or []) and any(re.search(r"(?i)SOY[A-Z]*[^,]*LECITHIN|LECITHIN(?:[^,]*|,\s*)SOY|GLYCINE[^,]*LECITHIN", x or "")
                                                              for x in (struct or []) + list(c.get("_filed_all") or [])):
         add("soy", [next(x for x in shown if re.search(r"(?i)LECITHIN", x or "")) + " (filed as soybean lecithin)"])
+    _pf2 = PKG_FACTS.get(c.get("setid")) or {}
+    if str(_pf2.get("spl_version")) == str(c.get("spl_version")):
+        for g, words in (_pf2.get("allergens") or {}).items():
+            if g not in fl and words:
+                add(g, [f"the package: \u201c{w}\u201d" for w in words], raw=True)
     _sf = " ".join(str(x) for x in ((art or {}).get("notes"), (lc or {}).get("allergen_statement"),
                                      (lc or {}).get("free_from"), (lc or {}).get("claims")) if x)
     if "soy" in fl:
@@ -1916,6 +1933,9 @@ def build(run_date):
         if c.get("_confirm_added"):
             rec["confirm_names_added"] = c["_confirm_added"]
         _agl = AGE_LIMIT.get(sid)
+        _pfa = PKG_FACTS.get(sid) or {}
+        if not (_agl and _agl[1] == str(ver)) and _pfa.get("age_limit") and str(_pfa.get("spl_version")) == str(ver):
+            _agl = (_pfa["age_limit"], str(ver))     # printed on the package, read by two readers
         if not (_agl and _agl[1] == str(ver)) and (art or {}).get("age_limit") and (_cf or {}).get("age_limit"):
             # both package readers saw an age limit (the standard "under 6 months" is no limit)
             _agl = (art["age_limit"], str(ver)) if age_limit(art["age_limit"]) or not re.search(
