@@ -1707,7 +1707,12 @@ def build(run_date):
                         x, akeys_of(acts)) and not any(x == y or _same_display(x, y) or _same_display(y, x) for y in _have):
                     _have.append(x); _added += 1
             if _added:
-                shown = _have
+                if pn:
+                    # with the printed names, so the cut to the printed count keeps them
+                    shown = shown[:pn] + _have[len(shown):] + shown[pn:]
+                    pn += _added
+                else:
+                    shown = _have
                 c = dict(c, _confirm_added=_added)
         _fl = FULL_LISTS.get(sid)
         if _fl and str(_fl.get("spl_version")) == str(ver) and False:   # replacement off: a carton can print a US Drug Facts list AND a different Korean list
@@ -1738,9 +1743,13 @@ def build(run_date):
                         x.upper() == y.upper() or _same_display(x, y) or _same_display(y, x) for y in _have):
                     _have.append(x); _added += 1
             if _added:
-                shown = _have
                 if pn:
+                    # placed with the printed names, so the cut to the printed count keeps them
+                    _new = _have[len(shown):]
+                    shown = shown[:pn] + _new + shown[pn:]
                     pn += _added
+                else:
+                    shown = _have
                 c = dict(c, _text_review_added=_added)
         _n_before = len(shown)
         shown, _pol = polish_names(shown)
