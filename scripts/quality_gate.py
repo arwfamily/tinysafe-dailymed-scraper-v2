@@ -162,7 +162,7 @@ def check(old, new, explained=None):
                 if len(examples) < 10:
                     examples.append({"id": p["id"], "lost_flags": sorted(fl)})
         report["explained_labels_losing_other_warnings"] = len(t1_review)
-        report["explained_examples"] = t1_review[:15]
+        report["explained_examples"] = t1_review[:100]
         report.update({"unchanged_labels_losing_inactives": lost_i, "unchanged_labels_losing_flags": lost_f,
                        "examples": examples, "versions_on_both_sides": versioned})
         if versioned and (lost_i or lost_f):

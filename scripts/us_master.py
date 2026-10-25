@@ -846,9 +846,10 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     # (an essential oil elsewhere on the list does not account for synthetic aroma chemicals:
     # COOLA's hexyl acetate, ionone and lactones; 2026-10-24 final audit)
     # only the synthetic aroma chemicals themselves are cited: an essential oil keeps its own
-    # warning, an EU-listed allergen its own
+    # warning, an EU-listed allergen its own; an undisclosed "Flavor" is a fragrance either way
+    # (Glo Skin's stick; 2026-10-24 gate)
     _eo = {key(n) or n.upper() for n in fl.get("essential_oil", [])}
-    _syn = [n for n in scent if (key(n) or n.upper()) not in _eu | _eo and not re.search(r"(?i)\b(OIL|OLEUM|EXTRACT|FLAVOU?R)\b", n)
+    _syn = [n for n in scent if (key(n) or n.upper()) not in _eu | _eo and not re.search(r"(?i)\b(OIL|OLEUM|EXTRACT)\b", n)
             and not R.RX["eu_fragrance_allergen"].search(n.upper())]
     if "fragrance" not in fl and "essential_oil" not in fl and any((key(n) or n.upper()) not in _eu for n in scent):
         add("fragrance", scent)
@@ -1657,8 +1658,11 @@ def build(run_date):
             _junk = re.compile(r"\b(not labeled|labeled as|certified|organic ingredient|product)\b", re.I)
 
             def _twin(x):
-                return any(_nz2(s) != _nz2(x) and _dl.SequenceMatcher(None, _nz2(s), _nz2(x)).ratio() >= 0.8
-                           for s in shown)
+                # the printed form of the same ingredient: alike, and no different number in it (a
+                # colorant's CI number, a PEG's chain length) - "Iron Oxides (CI 77491)" is no twin
+                # of a printed "Iron Oxides (CI 77492)" (2026-10-24 gate)
+                return any(_nz2(s) != _nz2(x) and re.findall(r"\d+", _nz2(s)) == re.findall(r"\d+", _nz2(x))
+                           and _dl.SequenceMatcher(None, _nz2(s), _nz2(x)).ratio() >= 0.8 for s in shown)
             _keep = [x for x in shown if not (_nz2(x) in _gone and _nz2(x) not in _first and not eng.flags(x)[0]
                                               and (_twin(x) or _junk.search(x)))]
             if len(_keep) < len(shown):
