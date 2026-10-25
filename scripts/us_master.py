@@ -1501,6 +1501,9 @@ def build(run_date):
             # no sunscreen active works below 0.5% (9.5 mg filed per 19 g for a printed 9.5%)
             a.get("percent") is not None and 0 < a["percent"] < 0.5 and a["name"] in US_MAX for a in acts) or any(
             a.get("percent") is not None and a["percent"] > US_MAX.get(a["name"], 100) * 1.01 for a in acts)
+        if c.get("_actives_text_review") and not any(
+                a.get("percent") is not None and a["percent"] > US_MAX.get(a["name"], 100) * 1.01 for a in acts):
+            pct_withheld = False     # the strengths the label prints, read by a reviewer: shown as printed
         # one filing for several products (a kit, a set of scents, a brand's whole line): the
         # filed strengths are of one product or a mix, and a non-sunscreen active (a nasal
         # spray's, an acne serum's) is not this sunscreen's (2026-10-22 label audit)
