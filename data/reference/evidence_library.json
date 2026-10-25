@@ -505,6 +505,202 @@
    "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-330/section-330.1",
    "date": "current",
    "strength": "federal regulation"
+  },
+  "aad_eczema_outdoor": {
+   "org": "American Academy of Dermatology",
+   "title": "Childhood eczema: outdoor triggers",
+   "url": "https://www.aad.org/public/diseases/eczema/childhood/triggers/outdoor",
+   "date": "accessed 2026-10",
+   "strength": "medical society guidance"
+  },
+  "aad_sun_babies": {
+   "org": "American Academy of Dermatology",
+   "title": "Sun protection for babies",
+   "url": "https://www.aad.org/public/diseases/skin-cancer/prevent/sun-babies",
+   "date": "accessed 2026-10",
+   "strength": "medical society guidance"
+  },
+  "aad_choose": {
+   "org": "American Academy of Dermatology",
+   "title": "How to choose the right sunscreen",
+   "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/choosing-right-sunscreen",
+   "date": "accessed 2026-10",
+   "strength": "medical society guidance"
+  },
+  "aad_dry_skin": {
+   "org": "American Academy of Dermatology",
+   "title": "Dermatologists' tips for relieving dry skin",
+   "url": "https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin",
+   "date": "updated 2026-01-02",
+   "strength": "medical society guidance"
+  },
+  "aad_psoriasis_flares": {
+   "org": "American Academy of Dermatology",
+   "title": "Psoriasis triggers: flares",
+   "url": "https://www.aad.org/public/diseases/psoriasis/triggers/flares",
+   "date": "accessed 2026-10",
+   "strength": "medical society guidance"
+  },
+  "aad_phototherapy": {
+   "org": "American Academy of Dermatology",
+   "title": "Psoriasis treatment: phototherapy",
+   "url": "https://www.aad.org/public/diseases/psoriasis/treatment/medications/phototherapy",
+   "date": "accessed 2026-10",
+   "strength": "medical society guidance"
+  },
+  "aap_rashes": {
+   "org": "American Academy of Pediatrics, Section on Dermatology",
+   "title": "Common summertime skin rashes in children (HealthyChildren.org)",
+   "url": "https://www.healthychildren.org/English/health-issues/conditions/skin/Pages/Common-Summertime-Skin-Rashes-in-Children.aspx",
+   "date": "accessed 2026-10",
+   "strength": "medical society guidance"
+  },
+  "aap_eczema_sports": {
+   "org": "American Academy of Pediatrics",
+   "title": "Sports and eczema (HealthyChildren.org)",
+   "url": "https://www.healthychildren.org/English/health-issues/conditions/skin/Pages/sports-and-eczema-how-to-help-your-child-prevent-flare-ups.aspx",
+   "date": "accessed 2026-10",
+   "strength": "medical society guidance"
+  },
+  "aap_eczema_teens": {
+   "org": "American Academy of Pediatrics",
+   "title": "Eczema in teens: skin and hair care tips (HealthyChildren.org)",
+   "url": "https://www.healthychildren.org/English/health-issues/conditions/skin/Pages/eczema-in-teens-skin-and-hair-care-tips.aspx",
+   "date": "accessed 2026-10",
+   "strength": "medical society guidance"
+  },
+  "nea_seal": {
+   "org": "National Eczema Association",
+   "title": "Seal of Acceptance criteria",
+   "url": "https://nationaleczema.org/eczema-products/seal-of-acceptance-criteria/",
+   "date": "modified 2026-08-25",
+   "strength": "patient-organization certification criteria"
+  },
+  "npf_otc": {
+   "org": "National Psoriasis Foundation",
+   "title": "Over-the-counter topicals",
+   "url": "https://www.psoriasis.org/over-the-counter/",
+   "date": "accessed 2026-10",
+   "strength": "patient organization"
+  },
+  "nacdg_children": {
+   "org": "North American Contact Dermatitis Group (Silverberg et al.)",
+   "title": "Age-related differences in patch testing results (1,871 children, 2001-2018)",
+   "url": "https://www.em-consulte.com/article/1507232/age-related-differences-in-patch-testing-results-a",
+   "date": "peer-reviewed",
+   "strength": "peer-reviewed study (referred patients)"
+  },
+  "pcdr_2015": {
+   "org": "Pediatric Contact Dermatitis Registry (Jacob et al.)",
+   "title": "Contact allergy in children with atopic dermatitis (1,142 cases)",
+   "url": "https://experts.llu.edu/en/publications/pediatric-contact-dermatitis-registry-data-on-contact-allergy-in--2/",
+   "date": "peer-reviewed",
+   "strength": "peer-reviewed study (referred patients)"
+  },
+  "acds_lanolin": {
+   "org": "American Contact Dermatitis Society review (Johnson et al.)",
+   "title": "Lanolin: 2023 Allergen of the Year",
+   "url": "https://mdedge.com/content/lanolin-2023-american-contact-dermatitis-society-allergen-year",
+   "date": "2023",
+   "strength": "peer-reviewed review"
+  },
+  "acds_pg": {
+   "org": "McGowan, Scheman, Jacob",
+   "title": "Propylene glycol in contact dermatitis: a systematic review (2018 Allergen of the Year)",
+   "url": "https://experts.llu.edu/en/publications/propylene-glycol-in-contact-dermatitis-a-systematic-review-a-syst/",
+   "date": "2018",
+   "strength": "peer-reviewed review"
+  },
+  "ekstein_2023": {
+   "org": "Ekstein and Hylwa, Dermatitis",
+   "title": "Sunscreens: a review of UV filters and their allergic potential",
+   "url": "https://www.healthpartners.com/knowledgeexchange/display/document-rn32616",
+   "date": "2023",
+   "strength": "peer-reviewed review"
+  },
+  "nacdg_sunscreen": {
+   "org": "North American Contact Dermatitis Group (Warshaw et al.)",
+   "title": "Patch test reactions associated with sunscreen products (23,908 patients, 2001-2010)",
+   "url": "https://experts.umn.edu/en/publications/patch-test-reactions-associated-with-sunscreen-products-and-the-i/",
+   "date": "peer-reviewed",
+   "strength": "peer-reviewed study (referred patients)"
+  },
+  "dermnet_sunscreen": {
+   "org": "DermNet (New Zealand)",
+   "title": "Sunscreen allergy",
+   "url": "https://dermnetnz.org/dermatitis/sunscreen-allergy.html",
+   "date": "2012",
+   "strength": "medical reference (dated)"
+  },
+  "niaid_risk": {
+   "org": "NIH / NIAID",
+   "title": "Risk factors for food allergy",
+   "url": "https://www.niaid.nih.gov/diseases-conditions/risk-factors-food-allergy",
+   "date": "accessed 2026-10",
+   "strength": "government information page"
+  },
+  "eu_salicylic": {
+   "org": "European Union",
+   "title": "Cosmetics Regulation Annex III entry 98, as amended by Regulation (EU) 2019/1966 (salicylic acid)",
+   "url": "https://eur-lex.europa.eu/eli/reg/2019/1966/oj",
+   "date": "2019-11-27",
+   "strength": "EU law"
+  },
+  "cir_salicylates": {
+   "org": "Cosmetic Ingredient Review Expert Panel",
+   "title": "Safety assessment of salicylic acid, butyloctyl salicylate ... and tridecyl salicylate, Int J Toxicol 22(Suppl 3):1-108 (record in EPA HERO)",
+   "url": "https://hero.epa.gov/hero/index.cfm/reference/details/reference_id/2529938",
+   "date": "2003",
+   "strength": "industry-funded expert safety panel"
+  },
+  "sccs_4mbc": {
+   "org": "EU Scientific Committee on Consumer Safety",
+   "title": "Opinion on 4-methylbenzylidene camphor (SCCS/1640/21)",
+   "url": "https://health.ec.europa.eu/publications/4-methylbenzylidene-camphor-4-mbc_en",
+   "date": "2022",
+   "strength": "EU scientific opinion"
+  },
+  "franklin_2021": {
+   "org": "Franklin Health Research Center (study in Int J Pediatr Adolesc Med)",
+   "title": "Scientists confirm essential oils unrelated to hormone disruption (press release)",
+   "url": "https://www.newswise.com/articles/scientists-confirm-essential-oils-unrelated-to-hormone-disruption",
+   "date": "2021-11-17",
+   "strength": "press release on a survey study (industry-linked center)"
+  },
+  "fda_m016": {
+   "org": "FDA",
+   "title": "OTC Monograph M016: skin protectant drug products (colloidal oatmeal)",
+   "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/monographs/OTCMonograph_M016SkinProtectantDrugProductsforOTCHumanUse09242021.pdf",
+   "date": "2021-09-24",
+   "strength": "federal monograph"
+  },
+  "nea_moist": {
+   "org": "National Eczema Association",
+   "title": "Moisturizing",
+   "url": "https://nationaleczema.org/treatments/moisturizing/",
+   "date": "accessed 2026-10",
+   "strength": "patient organization"
+  },
+  "pg_australia": {
+   "org": "Patel, Palmer, Nixon (reported by CosmeticsDesign)",
+   "title": "Propylene glycol sensitisation found to be uncommon (Australia, 2005-2020)",
+   "url": "https://www.cosmeticsdesign.com/Article/2023/06/02/propylene-glycol-sensitisation-found-to-be-uncommon-australia-study",
+   "date": "2023-06-02",
+   "strength": "study reported in trade press"
+  },
+  "sccs_bha": {
+   "org": "EU Scientific Committee on Consumer Safety (reported by CIRS)",
+   "title": "Final opinion on butylated hydroxyanisole (BHA)",
+   "url": "https://www.cirs-group.com/en/cosmetics/sccs-issued-final-opinion-on-butylated-hydroxyanisole-bha",
+   "date": "2026-04-16",
+   "strength": "EU scientific opinion (secondary report)"
+  },
+  "fda_hypo": {
+   "org": "FDA",
+   "title": "Hypoallergenic cosmetics",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-labeling-claims/hypoallergenic-cosmetics",
+   "date": "accessed 2026-10",
+   "strength": "agency guidance"
   }
  },
  "topics": [
@@ -514,7 +710,7 @@
    "title": "FDA recall",
    "facts": [
     {
-     "t": "Sunscreen products, including aerosol sprays, have been recalled in the US, for example for benzene contamination.",
+     "t": "Aerosol spray sunscreens are among the products FDA lists as recalled for benzene contamination.",
      "s": "fda_benzene_faq"
     }
    ]
@@ -553,7 +749,7 @@
      "s": "hc_tips"
     },
     {
-     "t": "FDA has proposed (not finalized) capping labeled SPF at 60+.",
+     "t": "FDA has proposed (not finalized) that the maximum labeled SPF be 60+.",
      "s": "fda_qa_2021"
     }
    ]
@@ -572,26 +768,26 @@
      "s": "aap_2021"
     },
     {
-     "t": "FDA has proposed (not finalized) that zinc oxide and titanium dioxide are generally recognized as safe and effective up to 25%.",
+     "t": "In 2021 FDA proposed (still not final) that zinc oxide and titanium dioxide are generally recognized as safe and effective at up to 25%.",
      "s": "fda_qa_2021"
     },
     {
-     "t": "For the 12 chemical filters, FDA has proposed that more safety data are needed.",
-     "s": "fda_qa_2021"
+     "t": "For 12 older chemical filters, FDA proposed in 2021 that more safety data are needed; FDA says this is not a conclusion that they are unsafe.",
+     "s": "fda_qa_2026"
     },
     {
-     "t": "In an FDA study in adults, six chemical filters (avobenzone, oxybenzone, octocrylene, homosalate, octisalate, octinoxate) reached the blood above the level at which FDA asks for more safety testing, after one application.",
+     "t": "In an FDA study in healthy adults who applied sunscreen to most of the body, six chemical filters (avobenzone, oxybenzone, octocrylene, homosalate, octisalate, octinoxate) reached blood levels above the point at which FDA asks for further safety studies, after one application. The authors said this does not mean people should stop using sunscreen.",
      "s": "jama_2020"
     }
    ],
    "other_side": [
     {
-     "t": "FDA: “The fact that an ingredient is absorbed through the skin and into the body does not mean the ingredient is unsafe.”",
-     "s": "fda_voices"
+     "t": "The AAD: “the science doesn't show that any sunscreen ingredients currently available in the U.S. are harmful to human health.”",
+     "s": "aad_faq"
     },
     {
-     "t": "FDA says its request for more data “does not represent a conclusion by the FDA” that those filters are unsafe.",
-     "s": "fda_qa_2026"
+     "t": "FDA: “The fact that an ingredient is absorbed through the skin and into the body does not mean the ingredient is unsafe.”",
+     "s": "fda_voices"
     },
     {
      "t": "The AAD says any of these sunscreens can protect you if it is broad spectrum, water resistant and SPF 30 or higher.",
@@ -603,13 +799,13 @@
     }
    ],
    "not_known": [
-    "The absorption studies were done in adults; no study measured it in children."
+    "FDA's absorption studies were done in adults; we found no comparable study in children."
    ]
   },
   {
    "id": "spray",
    "group": "glance",
-   "title": "Spray or powder",
+   "title": "Spray",
    "facts": [
     {
      "t": "FDA: spray sunscreens “should never be applied directly to your face.”",
@@ -624,14 +820,18 @@
      "s": "aap_maguiness"
     },
     {
-     "t": "FDA lists aerosol sunscreens among products recalled for benzene contamination, a contaminant that never appears on a label.",
+     "t": "FDA lists aerosol sunscreens among products recalled for benzene contamination; benzene is a contaminant, so it would not be listed on a label.",
      "s": "fda_benzene_faq"
+    },
+    {
+     "t": "The inhalation caution also applies to mineral sprays: the EU does not allow nano zinc oxide or nano titanium dioxide in products that could expose the lungs by inhalation, such as sprays.",
+     "s": "eu_nano_zno"
     }
    ],
    "other_side": [
     {
-     "t": "The EU does not allow nano zinc oxide or nano titanium dioxide in uses that could expose the lungs, which in practice means sprays, so mineral sprays face the same caution.",
-     "s": "eu_nano_zno"
+     "t": "FDA's 2021 proposal would keep sprays as an allowed sunscreen form, subject to testing to limit inhalation risk.",
+     "s": "fda_qa_2021"
     }
    ]
   },
@@ -641,11 +841,15 @@
    "title": "Age limits",
    "facts": [
     {
-     "t": "Every US sunscreen label says “children under 6 months: Ask a doctor.”",
+     "t": "US sunscreen labeling rules require the directions to say “children under 6 months: Ask a doctor.”",
      "s": "cfr_201_327"
     },
     {
-     "t": "FDA: “Sunscreen is not recommended for infants under six months old”; the best protection is shade.",
+     "t": "FDA: “Sunscreen is not recommended for infants under six months old.”",
+     "s": "fda_consumer"
+    },
+    {
+     "t": "FDA's infant page adds that “the best sun protection for these infants is to stay in the shade.”",
      "s": "fda_infants"
     },
     {
@@ -674,7 +878,7 @@
    ],
    "other_side": [
     {
-     "t": "Health Canada says sunscreen and insect repellents can be used safely together as separate products.",
+     "t": "Health Canada says sunscreen and insect repellent can be used safely together: apply the sunscreen first, then the repellent.",
      "s": "hc_tips"
     }
    ]
@@ -700,7 +904,11 @@
      "s": "cfr_201_327"
     },
     {
-     "t": "FDA and the AAP advise reapplying at least every 2 hours, and after swimming, sweating or towel drying.",
+     "t": "FDA: reapply at least every two hours, and more often if you're sweating or swimming.",
+     "s": "fda_consumer"
+    },
+    {
+     "t": "The AAP advises reapplying every 2 hours and after swimming, sweating or drying off with a towel.",
      "s": "aap_sun"
     }
    ]
@@ -719,11 +927,19 @@
      "s": "eu_2022_1176"
     },
     {
-     "t": "Hawaii has banned the sale of sunscreens containing oxybenzone without a prescription since January 1, 2021.",
+     "t": "Hawaii has banned the sale of sunscreens containing oxybenzone (or octinoxate) without a prescription since January 1, 2021, citing harm to coral reefs.",
      "s": "hawaii_104"
     }
    ],
    "other_side": [
+    {
+     "t": "The EU scientific committee found oxybenzone safe within those limits (6% face, hand and lip; 2.2% body).",
+     "s": "sccs_bp3"
+    },
+    {
+     "t": "The AAD: “the science doesn't show that any sunscreen ingredients currently available in the U.S. are harmful to human health.”",
+     "s": "aad_faq"
+    },
     {
      "t": "FDA: absorption into the body “does not mean the ingredient is unsafe.”",
      "s": "fda_voices"
@@ -748,13 +964,13 @@
      "s": "fda_m020"
     },
     {
-     "t": "Homosalate reached the blood above FDA's testing threshold in an FDA study in adults.",
+     "t": "Homosalate reached blood levels above FDA's further-testing threshold in an FDA study in healthy adults.",
      "s": "jama_2020"
     }
    ],
    "other_side": [
     {
-     "t": "FDA says absorption does not mean an ingredient is unsafe, and has proposed only that more data are needed for homosalate.",
+     "t": "FDA says its 2021 proposal that more data are needed for homosalate and other filters “does not represent a conclusion by the FDA” that they are unsafe.",
      "s": "fda_qa_2026"
     }
    ]
@@ -788,7 +1004,7 @@
     }
    ],
    "not_known": [
-    "How much benzophenone a child's skin absorbs from an aged sunscreen has not been measured."
+    "We found no study measuring how much benzophenone a child's skin absorbs from an aged sunscreen, or whether that amount causes harm."
    ]
   },
   {
@@ -797,7 +1013,7 @@
    "title": "Sale banned in Hawaii",
    "facts": [
     {
-     "t": "Hawaii bans the sale of sunscreens containing oxybenzone or octinoxate without a prescription (Act 104, from January 1, 2021), citing harm to coral.",
+     "t": "Hawaii bans the sale of sunscreens containing oxybenzone or octinoxate without a prescription (Act 104, from January 1, 2021), citing harm to coral reefs.",
      "s": "hawaii_104"
     }
    ]
@@ -808,48 +1024,69 @@
    "title": "SPF above 50",
    "facts": [
     {
-     "t": "The AAP recommends SPF “at least 15 (up to SPF 50).”",
-     "s": "aap_2021"
+     "t": "The AAP recommends SPF at least 15 “(up to SPF 50)” and says more research is needed to test whether SPF above 50 offers extra protection.",
+     "s": "aap_sun"
     },
     {
      "t": "FDA has proposed (not finalized) that the maximum labeled SPF be 60+.",
      "s": "fda_qa_2021"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "The AAD recommends SPF 30 or higher, with no upper limit.",
+     "s": "aad_faq"
     }
    ]
   },
   {
    "id": "uv_absorbing_inactive",
    "group": "label",
-   "title": "UV-absorbing ingredient listed as inactive",
+   "title": "Possible SPF booster listed as inactive",
    "facts": [
     {
-     "t": "Only the active ingredients in FDA's monograph may be used to make a sunscreen claim in the US.",
+     "t": "FDA's sunscreen monograph lists the active ingredients (UV filters) an over-the-counter sunscreen may use.",
      "s": "fda_m020"
+    },
+    {
+     "t": "A general FDA rule requires inactive ingredients in over-the-counter drugs to be safe in the amounts used and not to interfere with the product's effectiveness; it does not address SPF boosters specifically.",
+     "s": "cfr_330_1"
     },
     {
      "t": "This product lists {names} among its inactive ingredients.",
      "s": null
     },
     {
-     "t": "Its maker sells butyloctyl salicylate as an SPF booster and says it is “responsible for no more than 2 SPF units” at 5%.",
-     "s": "hallstar_bhb"
-    },
-    {
      "t": "{status}",
-     "s": "fda_m020"
+     "s": "eu_annex_vi"
     },
     {
-     "t": "Butyloctyl and tridecyl salicylate are salicylates, the same chemical family as the filters homosalate and octisalate, which reached the blood above FDA's testing threshold in an FDA study in adults.",
-     "s": "jama_2020"
+     "t": "Hallstar, which makes butyloctyl salicylate, says it is “responsible for no more than 2 SPF units” at 5%.",
+     "s": "hallstar_bhb"
     },
     {
      "t": "Vantage sells tridecyl salicylate as a “sunscreen booster” for zinc oxide and titanium dioxide.",
      "s": "vantage_tds"
+    },
+    {
+     "t": "Butyloctyl and tridecyl salicylate are salicylates, the same chemical group as the approved filters octisalate and homosalate; the Cosmetic Ingredient Review assessed them together.",
+     "s": "cir_salicylates"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "A 2003 Cosmetic Ingredient Review assessment that covered butyloctyl and tridecyl salicylate found these ingredients safe in cosmetics when formulated to avoid skin irritation and increased sun sensitivity (or with directions for daily sun protection).",
+     "s": "cir_salicylates"
+    },
+    {
+     "t": "Hallstar says butyloctyl salicylate is “not a sunscreen active ingredient but rather a unique cosmetic ester”.",
+     "s": "hallstar_bhb"
     }
    ],
    "not_known": [
-    "No published study has measured whether butyloctyl salicylate or tridecyl salicylate is absorbed into the body.",
-    "How much of this product's SPF, if any, comes from these ingredients cannot be told from the label."
+    "We found no published study measuring whether butyloctyl salicylate or tridecyl salicylate is absorbed into the body.",
+    "How much of this product's SPF, if any, comes from these ingredients cannot be told from the label.",
+    "We found no FDA rule, guidance or warning letter about SPF boosters."
    ]
   },
   {
@@ -862,8 +1099,8 @@
      "s": "eu_2024_996"
     },
     {
-     "t": "The EU scientific committee could not set a safe concentration because possible genotoxicity could not be ruled out.",
-     "s": "eu_2024_996"
+     "t": "The EU scientific committee found sufficient evidence that it may act as an endocrine disruptor, and could not set a safe concentration because data on possible genotoxicity were insufficient.",
+     "s": "sccs_4mbc"
     }
    ],
    "other_side": [
@@ -914,8 +1151,12 @@
      "s": "reginfo_mocra"
     },
     {
-     "t": "As of FDA's July 2026 regulatory agenda, that proposal was scheduled for November 2026.",
+     "t": "Trade press reported that FDA's July 2026 regulatory agenda projected that proposal for November 2026; it had not been published as of that report.",
      "s": "chemlinked_mocra"
+    },
+    {
+     "t": "FDA says diethyl phthalate (DEP) appears to be the only phthalate still commonly used in cosmetics, and it may be part of an ingredient listed as “fragrance”.",
+     "s": "fda_phthalates"
     }
    ],
    "other_side": [
@@ -939,8 +1180,14 @@
      "s": "niehs_2019"
     }
    ],
+   "other_side": [
+    {
+     "t": "A 2021 survey study of more than 550 children reported no link between lavender or tea tree oil use and hormone effects; it came from a research center that works with natural-products brands.",
+     "s": "franklin_2021"
+    }
+   ],
    "not_known": [
-    "Case reports cannot show the oils caused it; no safe or unsafe amount has been established."
+    "Case reports cannot show the oils caused it, and we found no established safe or unsafe amount."
    ]
   },
   {
@@ -971,14 +1218,14 @@
    "title": "Propyl- or butylparaben",
    "facts": [
     {
-     "t": "The EU bans propylparaben and butylparaben in leave-on products made for the diaper area of children under 3, because a risk for babies under 6 months could not be excluded.",
+     "t": "The EU bans propylparaben and butylparaben in leave-on products designed for the diaper area of children under 3, because a risk for babies under 6 months could not be excluded.",
      "s": "eu_parabens_diaper"
     }
    ],
    "other_side": [
     {
-     "t": "The EU scientific committee found methylparaben and ethylparaben safe at permitted levels.",
-     "s": "eu_parabens_ban"
+     "t": "Outside diaper-area products for young children, EU law allows propyl- and butylparaben up to 0.14% combined, a limit set on the EU scientific committee's safety advice.",
+     "s": "eu_parabens_diaper"
     }
    ]
   },
@@ -1003,7 +1250,7 @@
     }
    ],
    "not_known": [
-    "Whether the mouse finding applies to people has not been established; FDA has made no statement on it."
+    "The study was in mice and did not draw conclusions about people; we found no FDA statement on retinyl palmitate in sunscreen."
    ]
   },
   {
@@ -1012,12 +1259,22 @@
    "title": "Food-derived ingredients",
    "facts": [
     {
-     "t": "NIH peanut allergy guidelines single out infants with severe eczema, egg allergy, or both for early peanut introduction.",
+     "t": "NIH peanut allergy guidelines identify infants with severe eczema, egg allergy, or both as at highest risk of peanut allergy, and advise early introduction of peanut by mouth.",
      "s": "niaid_peanut"
     },
     {
-     "t": "A UK study found peanut-oil creams used on babies' rashes were associated with a higher risk of peanut allergy.",
+     "t": "A 2003 UK observational study found peanut-oil creams used on babies' rashes were associated with a higher risk of peanut allergy; the researchers said this needed confirmation and that parents should ask a doctor before changing creams.",
      "s": "bristol_2003"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "FDA lists colloidal oatmeal as an approved over-the-counter skin protectant.",
+     "s": "fda_m016"
+    },
+    {
+     "t": "The National Eczema Association lists oat among ingredients that can help soothe eczema-prone skin.",
+     "s": "nea_moist"
     }
    ],
    "not_known": [
@@ -1030,12 +1287,236 @@
    "title": "Citrus peel oil",
    "facts": [
     {
-     "t": "Furocoumarins, found naturally in some citrus oils, cause skin reactions in sunlight; EU law requires them to stay below 1 mg/kg in sun protection products.",
+     "t": "Furocoumarins, found naturally in some citrus oils, can make skin react to sunlight; EU law requires them to stay below 1 mg/kg in sun protection and bronzing products.",
      "s": "eu_furocoumarins"
     }
    ],
    "not_known": [
     "The label does not say whether this oil has had its furocoumarins removed."
+   ]
+  },
+  {
+   "id": "eczema_sunscreen",
+   "group": "profile",
+   "profile": "eczema",
+   "title": "For a child with eczema",
+   "facts": [
+    {
+     "t": "The AAD: “To prevent a flare due to sunscreen, use sunscreen that contains only these active ingredients: titanium dioxide, and/or zinc oxide.”",
+     "s": "aad_eczema_outdoor"
+    },
+    {
+     "t": "The same AAD page says the sunscreen should also be fragrance-free and broad-spectrum.",
+     "s": "aad_eczema_outdoor"
+    },
+    {
+     "t": "The AAD says sunscreens with titanium dioxide or zinc oxide are less likely to irritate a baby's sensitive skin.",
+     "s": "aad_sun_babies"
+    },
+    {
+     "t": "The AAP's dermatology section advises mineral-based, broad-spectrum, alcohol- and fragrance-free sunscreen for sensitive areas.",
+     "s": "aap_rashes"
+    },
+    {
+     "t": "The National Eczema Association's Seal considers only physical sunscreens containing titanium, zinc and iron, and requires products to be fragrance-free.",
+     "s": "nea_seal"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "An AAP page on eczema and sports recommends a broad-spectrum, oil-free, water-resistant sunscreen of at least SPF 15, without specifying mineral filters.",
+     "s": "aap_eczema_sports"
+    },
+    {
+     "t": "DermNet NZ notes that many allergies to sunscreen products are caused by inactive ingredients rather than the UV filter, which means a mineral sunscreen can still cause a reaction.",
+     "s": "dermnet_sunscreen"
+    }
+   ]
+  },
+  {
+   "id": "nea_exclusion",
+   "group": "profile",
+   "profile": "eczema",
+   "title": "On the National Eczema Association's exclusion list",
+   "facts": [
+    {
+     "t": "A product cannot carry the National Eczema Association's Seal if it contains any ingredient on its exclusion list, in any amount.",
+     "s": "nea_seal"
+    },
+    {
+     "t": "This product contains {names}.",
+     "s": null
+    }
+   ],
+   "other_side": [
+    {
+     "t": "The NEA says a product that works for one person may not work for another.",
+     "s": "nea_seal"
+    }
+   ]
+  },
+  {
+   "id": "uv_filter_allergy",
+   "group": "profile",
+   "profile": "eczema",
+   "title": "UV filters and skin allergy",
+   "facts": [
+    {
+     "t": "A 2023 review in the journal Dermatitis names oxybenzone as the most frequently reported contact and photocontact allergen among UV filters.",
+     "s": "ekstein_2023"
+    },
+    {
+     "t": "The same review found no reports of allergic or photoallergic contact dermatitis to zinc oxide or titanium dioxide.",
+     "s": "ekstein_2023"
+    },
+    {
+     "t": "For people with allergy-prone skin, the AAD advises avoiding sunscreen with fragrance, parabens or oxybenzone.",
+     "s": "aad_choose"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "Among 23,908 people referred for patch testing in North America, sunscreen was the source of an allergy for 0.9%.",
+     "s": "nacdg_sunscreen"
+    },
+    {
+     "t": "Fragrance and vitamin E were among the allergens behind those sunscreen reactions, so the other ingredients matter too.",
+     "s": "nacdg_sunscreen"
+    }
+   ]
+  },
+  {
+   "id": "drying_alcohol",
+   "group": "profile",
+   "profile": "eczema",
+   "title": "Alcohol",
+   "facts": [
+    {
+     "t": "An AAP page on eczema in teens lists alcohols such as ethanol among ingredients that may irritate the skin, and adds that each person may react differently or not at all.",
+     "s": "aap_eczema_teens"
+    },
+    {
+     "t": "The AAD lists alcohol among products to stop using for dry skin.",
+     "s": "aad_dry_skin"
+    }
+   ]
+  },
+  {
+   "id": "lanolin",
+   "group": "child",
+   "profile": "eczema",
+   "title": "Lanolin",
+   "facts": [
+    {
+     "t": "The American Contact Dermatitis Society named lanolin its 2023 Allergen of the Year; a review published with the designation lists children and people with eczema among higher-risk groups.",
+     "s": "acds_lanolin"
+    },
+    {
+     "t": "Among children referred for patch testing in a US registry, those with eczema reacted to lanolin more often than those without eczema.",
+     "s": "pcdr_2015"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "The same review describes lanolin as a rare sensitizer in people with healthy skin.",
+     "s": "acds_lanolin"
+    }
+   ]
+  },
+  {
+   "id": "capb",
+   "group": "child",
+   "profile": "eczema",
+   "title": "Cocamidopropyl betaine",
+   "facts": [
+    {
+     "t": "Among children referred for patch testing in a US registry, those with eczema reacted to cocamidopropyl betaine more often than those without eczema.",
+     "s": "pcdr_2015"
+    }
+   ]
+  },
+  {
+   "id": "propylene_glycol",
+   "group": "child",
+   "profile": "eczema",
+   "title": "Propylene glycol",
+   "facts": [
+    {
+     "t": "The American Contact Dermatitis Society named propylene glycol its 2018 Allergen of the Year; a systematic review calls it a weak sensitizer and an irritant.",
+     "s": "acds_pg"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "Among 6,761 people with suspected contact dermatitis patch tested in Australia (2005-2020), 0.31% reacted to propylene glycol, and about 0.13% had a reaction judged relevant.",
+     "s": "pg_australia"
+    }
+   ]
+  },
+  {
+   "id": "psoriasis_sun",
+   "group": "profile",
+   "profile": "psoriasis",
+   "title": "For a child with psoriasis",
+   "facts": [
+    {
+     "t": "The AAD says skin injuries, including sunburn, can trigger a psoriasis flare near or at the injury, about 10 to 14 days later.",
+     "s": "aad_psoriasis_flares"
+    },
+    {
+     "t": "The AAD recommends broad-spectrum, SPF 30+, water-resistant sunscreen on uncovered skin that is free of psoriasis.",
+     "s": "aad_psoriasis_flares"
+    },
+    {
+     "t": "The National Psoriasis Foundation recommends fragrance-free moisturizers.",
+     "s": "npf_otc"
+    }
+   ]
+  },
+  {
+   "id": "salicylic_psoriasis",
+   "group": "profile",
+   "profile": "psoriasis",
+   "title": "Salicylic acid",
+   "facts": [
+    {
+     "t": "The National Psoriasis Foundation says the body may absorb too much salicylic acid if it is used over large areas of skin.",
+     "s": "npf_otc"
+    },
+    {
+     "t": "The AAD says salicylic acid applied before phototherapy can make UVB treatment less effective.",
+     "s": "aad_phototherapy"
+    },
+    {
+     "t": "EU law does not allow salicylic acid in products for children under 3 (the only exception is shampoos, where it is used as a preservative).",
+     "s": "eu_salicylic"
+    }
+   ]
+  },
+  {
+   "id": "pediatric_contact_allergens",
+   "group": "profile",
+   "profile": "eczema",
+   "title": "Common allergens in children",
+   "facts": [
+    {
+     "t": "Among 1,871 children referred for patch testing in North America (2001-2018), the most common relevant allergens were nickel (17.3%), hydroperoxides of linalool (7.8%), methylisothiazolinone (7.7%), cobalt (7.0%) and fragrance mix I (4.9%).",
+     "s": "nacdg_children"
+    }
+   ],
+   "not_known": [
+    "These figures come from children already referred for testing, so they are not population rates."
+   ]
+  },
+  {
+   "id": "hypoallergenic",
+   "group": "label",
+   "title": "“Hypoallergenic”",
+   "facts": [
+    {
+     "t": "FDA says there are no federal standards for the term “hypoallergenic”; it means whatever a company wants it to mean.",
+     "s": "fda_hypo"
+    }
    ]
   },
   {
@@ -1048,7 +1529,7 @@
      "s": "sccs_phenoxyethanol"
     },
     {
-     "t": "France required a label against use on the diaper area of children under 3 in 2019; its highest administrative court annulled that decision in 2022 for lack of legal basis.",
+     "t": "In 2019 France required most leave-on products with phenoxyethanol to carry a label against use on the diaper area of children aged 3 and under; its highest administrative court annulled that decision in 2022 for lack of legal basis.",
      "s": "ce_2022"
     }
    ]
@@ -1063,7 +1544,7 @@
      "s": "fda_dioxane"
     },
     {
-     "t": "New York limits 1,4-dioxane to 10 ppm in cosmetics.",
+     "t": "New York limits 1,4-dioxane to 10 ppm in cosmetics and 1 ppm in personal care products; the state's guidance does not say whether over-the-counter sunscreens are covered.",
      "s": "ny_dioxane"
     }
    ],
@@ -1078,12 +1559,12 @@
    ]
   },
   {
-   "id": "bht_bha",
+   "id": "bha",
    "group": "pref",
-   "title": "BHT or BHA",
+   "title": "BHA",
    "facts": [
     {
-     "t": "The US National Toxicology Program lists BHA as reasonably anticipated to be a human carcinogen, based on animal studies.",
+     "t": "The US National Toxicology Program lists BHA as reasonably anticipated to be a human carcinogen, based on animal studies; it says human data are inadequate.",
      "s": "ntp_bha"
     },
     {
@@ -1093,7 +1574,18 @@
    ],
    "other_side": [
     {
-     "t": "The EU scientific committee found BHT safe up to 0.8% in cosmetics.",
+     "t": "In 2026 the EU scientific committee considered BHA safe up to 0.07% in leave-on and rinse-off cosmetics.",
+     "s": "sccs_bha"
+    }
+   ]
+  },
+  {
+   "id": "bht",
+   "group": "pref",
+   "title": "BHT",
+   "facts": [
+    {
+     "t": "The EU scientific committee found BHT safe up to 0.8% in cosmetics, while noting concerns about its potential endocrine-disrupting properties.",
      "s": "sccs_bht"
     }
    ]
@@ -1112,8 +1604,14 @@
      "s": "fr_talc_withdrawal"
     },
     {
-     "t": "WHO's cancer agency classified talc as probably carcinogenic (Group 2A) in 2024.",
+     "t": "WHO's cancer agency classified talc as probably carcinogenic (Group 2A) in 2024, based mainly on studies of ovarian cancer from genital use; this rates hazard, not the risk from a given product.",
      "s": "iarc_talc"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "Health Canada concluded most uses of talc are not a concern to human health; its concerns were breathing in loose powders and genital use.",
+     "s": "hc_talc"
     }
    ]
   },
@@ -1138,17 +1636,24 @@
    "title": "Nano zinc oxide or titanium dioxide",
    "facts": [
     {
-     "t": "FDA wrote that zinc oxide stays mainly in the outer dead layers of the skin, whatever its particle size.",
+     "t": "In its 2019 sunscreen proposal, FDA wrote that zinc oxide stays mainly in the outer dead layers of the skin, whatever its particle size.",
      "s": "fr_2019"
     },
     {
-     "t": "The EU allows nano zinc oxide and nano titanium dioxide up to 25%, but not in uses that could expose the lungs.",
+     "t": "The EU allows nano zinc oxide and nano titanium dioxide up to 25%, under conditions on purity and coating, but not in products that could expose the lungs by inhalation.",
      "s": "eu_nano_zno"
+    },
+    {
+     "t": "California lists titanium dioxide as airborne, unbound particles of respirable size under Proposition 65.",
+     "s": "prop65_tio2"
     },
     {
      "t": "Australia's TGA concluded these nanoparticles are not likely to cause harm in sunscreens.",
      "s": "tga_nano"
     }
+   ],
+   "not_known": [
+    "US labels are not required to say whether zinc oxide or titanium dioxide is nano-sized."
    ]
   }
  ]
