@@ -1088,6 +1088,20 @@ def polish_names(items):
             _fixed.append(head.strip() + (")" if head.count("(") > head.count(")") else ""))
             _fixed += [y.strip() for y in re.split(r",\s*(?![^()]*\))", rest) if y.strip()]
             changed = True
+        elif x and x.count(")") > x.count("(") and len(x) > 100 and "," in x:
+            # its opening bracket lost ("IRON OXIDES, TITANIUM DIOXIDE, ... FERROCYANIDE) (may
+            # contain)"): the colorants are split back out, each one still "may contain"
+            _may = bool(re.search(r"\(\s*may contain\s*\)\s*$", x, re.I))
+            body = re.sub(r"\s*\(\s*may contain\s*\)\s*$", "", x, flags=re.I)
+            while body.count(")") > body.count("(") and body.rstrip().endswith(")"):
+                body = body.rstrip()[:-1]
+            for y in re.split(r",\s*(?![^()]*\))", body):
+                y = y.strip()
+                if y.count(")") > y.count("("):
+                    y = re.sub(r"\)\s*$", "", y).strip()
+                if y:
+                    _fixed.append(y + (" (may contain)" if _may else ""))
+            changed = True
         else:
             _fixed.append(x)
     items = _fixed

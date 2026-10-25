@@ -155,6 +155,12 @@ def test_age_limit():
     assert M.age_limit("Keep out of reach of children. Age 50+ skin") is None
 
 
+def test_lost_open_bracket_split():
+    got, ch = M.polish_names(["Water", "IRON OXIDES, TITANIUM DIOXIDE, CHROMIUM OXIDE GREENS, FD&C YELLOW No. 5, "
+                                       "D&C RED No. 36, FERRIC AMMONIUM FERROCYANIDE) (may contain)"])
+    assert ch and len(got) == 7 and all(x.endswith("(may contain)") for x in got[1:]), got
+
+
 def test_unclosed_bracket_split():
     got, ch = M.polish_names(["Citrullus Lanatus (Watermelon Extract, Daucus Carota Sativa (Carrot) Extract, Dimethicone, "
                               "Dodecane, Glycerin, Glyceryl Laurate, Glyceryl Stearate, Methylparaben"])

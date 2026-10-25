@@ -29,7 +29,7 @@ NOTE = ("Inactive ingredients = the label's structured SPL table plus the printe
         "bk: product name says baby/kids. st: active | discontinued (no longer on DailyMed).")
 
 
-def build(release_dir):
+def build(release_dir, thumbs_dir=None):
     manifest = json.load(open(os.path.join(release_dir, "manifest.json"), encoding="utf-8"))
     meta = json.load(open(REF_FLAGS, encoding="utf-8"))["meta"]
     rows = [json.loads(x) for x in open(os.path.join(release_dir, "us_all.jsonl"), encoding="utf-8") if x.strip()]
@@ -66,7 +66,9 @@ def build(release_dir):
             p["ev"] = r["evidence_tier"]                    # A two package reads agreed, B one read = filing, C filing only
         if r.get("thin_reason"):
             p["thin_reason"] = r["thin_reason"]
-        if r.get("status") == "active" and (IMGS.get(r["setid"]) or {}).get("names"):
+        if r.get("status") == "active" and (IMGS.get(r["setid"]) or {}).get("names") and (
+                thumbs_dir is None or os.path.exists(os.path.join(thumbs_dir, r["setid"] + ".webp"))):
+            # (only with the site's own thumbnail: a photo it cannot show is not promised)
             p["im"] = IMGS[r["setid"]]["names"][:3]
         if r.get("label_check"):
             p["label_check"] = r["label_check"]
@@ -172,7 +174,7 @@ def main():
     old_p = a.old or (os.path.join(site, "sunnytime/db.json") if site else None)
     out_p = a.out or (os.path.join(site, "sunnytime/db.json") if site else None)
     idx_p = a.index or (os.path.join(site, "sunnytime/index.html") if site else None)
-    db = build(a.release)
+    db = build(a.release, os.path.join(os.path.dirname(idx_p), "p") if idx_p else None)
     h = headline(db)
     old = json.load(open(old_p, encoding="utf-8")) if old_p and os.path.exists(old_p) else None
     import quality_gate as G
