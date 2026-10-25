@@ -1638,8 +1638,13 @@ def build(run_date):
             if _added:
                 shown, pn = _have, 0
                 c = dict(c, _full_list_added=_added)
+        _n_before = len(shown)
         shown, _pol = polish_names(shown)
         tidied = tidied or _pol
+        if pn and len(shown) > _n_before:
+            # names split back out of one run-together name are printed names: the printed count
+            # grows with them (else the cut to the printed count below drops them again)
+            pn += len(shown) - _n_before
         # one product filed with hundreds of inactives (Orgaplus Sun Stick EX: 547, its carton
         # prints none; 2026-10-24 second reads) is a filer's whole ingredient catalogue, not this
         # formula: the list is not shown, and no warning is drawn from it
