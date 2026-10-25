@@ -239,7 +239,32 @@ def merge(a):
             for v in rows:
                 fh.write(json.dumps(v, ensure_ascii=False) + "\n")
         upsert("confirm_reads.jsonl", rows)
-        print(json.dumps({"confirm_reads": len(rows), **collections.Counter(v["decision"] for v in rows)}))
+        # where the first and the second reader read the same actives and strengths (or the same
+        # SPF) from the package, that agreed reading is used even if the filing differs (Dalba's
+        # five actives filed as one; 2026-10-25): two readers agree
+        sys.path.insert(0, os.path.join(ROOT, "scripts"))
+        from us_master import filter_canon
+        r1 = outputs(work, "read1")
+        ap = os.path.join(ROOT, "data/corrections/artwork_reads.jsonl")
+        arts = [json.loads(l) for l in open(ap, encoding="utf-8") if l.strip()]
+        by = {x["setid"]: x for x in arts}
+        upd = 0
+        for v in rows:
+            x1, e = r1.get(v["setid"]), by.get(v["setid"])
+            if not x1 or not e or v.get("wrong_product") or (v.get("variants") or 1) > 1 or (x1.get("variants") or 1) > 1 \
+                    or str(e.get("spl_version")) != str(v.get("spl_version")):
+                continue
+            a1 = {(filter_canon(n) or (n or "").upper()): p for n, p in acts_norm(x1.get("actives"))}
+            a2 = {(filter_canon(n) or (n or "").upper()): p for n, p in acts_norm(v.get("actives"))}
+            if a1 and a1.keys() == a2.keys() and all(a1[k] is not None and a2[k] is not None and abs(a1[k] - a2[k]) <= 0.05 for k in a1):
+                e["actives"] = acts_norm(x1.get("actives")); e["actives_confirmed"] = True; upd += 1
+            if isinstance(x1.get("spf"), (int, float)) and x1.get("spf") == v.get("spf") and not e.get("spf"):
+                e["spf"] = x1["spf"]
+        with open(ap, "w", encoding="utf-8") as fh:
+            for x in arts:
+                fh.write(json.dumps(x, ensure_ascii=False) + "\n")
+        print(json.dumps({"confirm_reads": len(rows), "actives_agreed_by_two_reads": upd,
+                          **collections.Counter(v["decision"] for v in rows)}))
     elif a.stage == "third":
         rows = []
         for s, v in outputs(work, "third").items():
