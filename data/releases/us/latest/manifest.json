@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-25",
  "git_tag": "us-data-2026-10-25",
- "released": "2026-10-25T04:48:52+00:00",
+ "released": "2026-10-25T12:53:20+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.12 · 2026-10-24",
  "source": {
@@ -23,11 +23,11 @@
     "discontinued": 42
    },
    "filter_type": {
-    "mineral_only": 3882,
-    "chemical_only": 4289,
-    "hybrid_chemical_primary": 846,
-    "hybrid_mineral_primary": 381,
-    "hybrid_equal": 17,
+    "mineral_only": 3879,
+    "chemical_only": 4287,
+    "hybrid_chemical_primary": 847,
+    "hybrid_mineral_primary": 383,
+    "hybrid_equal": 19,
     "hybrid_pct_unknown": 4
    },
    "label_check": {
@@ -48,20 +48,20 @@
    }
   },
   "us_mineral": {
-   "labels": 5152,
+   "labels": 5154,
    "status": {
-    "active": 5130,
+    "active": 5132,
     "discontinued": 22
    },
    "filter_type": {
-    "mineral_only": 3882,
-    "hybrid_chemical_primary": 846,
-    "hybrid_mineral_primary": 381,
-    "hybrid_equal": 17,
+    "mineral_only": 3879,
+    "hybrid_chemical_primary": 847,
+    "hybrid_mineral_primary": 383,
+    "hybrid_equal": 19,
     "hybrid_pct_unknown": 4
    },
    "label_check": {
-    "confirmed": 1215,
+    "confirmed": 1217,
     "text_confirms_current": 3674,
     "no_list_on_label_images": 197,
     "image_unreadable": 20,
@@ -115,15 +115,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9461,
-   "sha256": "ad10810aa4d307e2f78ffea58ea19046d192b3843216a18cf4facb49592637fb"
+   "sha256": "74430abd3b0b99d5b0b96e3884a7d570092db379af3f8e2dd8c6a4b3a3f7f408"
   },
   "us_mineral.jsonl": {
-   "rows": 5152,
-   "sha256": "dbdb6d761e3b776e0b8fd737d4c7f9700d3098fdf63c086e8fc8ce763fb3ea0b"
+   "rows": 5154,
+   "sha256": "8f13b976214e104147f19e0ec18b422976ae26669c7eb41cf5871d0f7b75af36"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "22c0ea90675c9585d67ef7c4c97b9ab61083feb5968648256378a9be0681644d"
+   "sha256": "a1c04cb7d6dfc41899020002f95bfc4c9a2b5fd5f5d5881e7fe0d4df6c19a71d"
   },
   "us_out_of_scope.jsonl": {
    "rows": 4827,
