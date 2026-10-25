@@ -59,6 +59,16 @@ Then confirm the site actually deployed: `env -u GH_TOKEN gh api repos/arwfamily
 must show `Vercel success` within about 5 minutes. If no status appears after 10 minutes, push an empty commit
 (`git commit --allow-empty -m "Redeploy"`) and check again; report it if it still does not deploy.
 
+`python3 scripts/verify/fullcheck.py data/site/sunnytime_db.json --out WORK/fullcheck.json` compares every
+published label with its own label text (actives and strengths, SPF, printed inactive names, fragrance,
+age limit). For each label whose filing changed this week and is listed there, run reviewers with
+scripts/verify/BRIEF_adjudicate.md (packs of 40, built as in the 2026-10-24 session: site_shows,
+label_text, issues, images) and add their "site_wrong" fixes to data/corrections/text_review.jsonl
+(only UV-filter actives; no names for a label whose list is withheld); then rebuild.
+A Broad Spectrum claim that rests on one package read (no claim in the label text, no second read)
+gets a second blind read (BRIEF_third with only the broad_spectrum question) into
+data/corrections/bs_reads.jsonl before it is shown.
+
 `python3 scripts/verify/weekly.py recalls` lists recall matches still "under review" (brand + name
 only). Judge each against its recall description (name, form, SPF, actives and strengths) and record
 the verdict in `data/reference/recall_reviews.json` (`same_product` / `not_this_product` + why); when
