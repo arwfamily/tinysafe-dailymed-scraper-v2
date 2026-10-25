@@ -67,7 +67,8 @@ RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026
 # product-level flags whose rule changed on purpose (rules v3.6, 2026-10-23 label audit):
 # a spray needs a spray filing or spray wording on a label that is not a stick/cream/roll-on;
 # "water-based" needs water among the main ingredients
-RETIRED_PRODUCT = {"spray_powder", "no_preservative_water_base", "talc_inhalable", "not_broad_spectrum"}  # last: dropped only when the record shows Broad Spectrum SPF 15+ (v3.11)
+RETIRED_PRODUCT = {"spray_powder", "no_preservative_water_base", "talc_inhalable", "not_broad_spectrum",
+                   "water_resistant"}  # water resistance: only a printed claim, not the reapply direction (2026-10-25)  # last: dropped only when the record shows Broad Spectrum SPF 15+ (v3.11)
 
 
 # warnings no reviewed correction may take away (they come from a non-sunscreen active or the

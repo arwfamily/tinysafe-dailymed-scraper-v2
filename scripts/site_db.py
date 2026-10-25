@@ -72,6 +72,11 @@ def build(release_dir, thumbs_dir=None):
             p["pw"] = {"not_w_w": 2, "multi_product": 3}.get(w, 1)
         if r.get("multi_product"):
             p["mp"] = r["multi_product"]                    # product count, or "kit"
+        # last confirmed against FDA DailyMed (weekly), and when the package was last read
+        if r.get("last_seen"):
+            p["ck"] = r["last_seen"]
+        if r.get("package_read"):
+            p["pr"] = r["package_read"]
         if r.get("evidence_tier"):
             p["ev"] = r["evidence_tier"]                    # A two package reads agreed, B one read = filing, C filing only
         if r.get("thin_reason"):

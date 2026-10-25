@@ -585,6 +585,22 @@ _AGE_RX = re.compile(
     r"(?:\s*(?:years?|yrs?))?|(?:6|six)\s*(?:years?|yrs?))(?:\s+of\s+age|\s+old)?\s*[:.,-]?\s*(?:ask|consult)\s+(?:a\s+)?(?:doctor|physician)", re.I)
 
 
+_WR_RX = re.compile(
+    r"(?<!not )(?<!non-)(?<!non )\bwater\s*(?:[/&,-]|and)?\s*(?:sweat\s*)?[- ]?resistan(?:t|ce)\b[^.;\n]{0,25}?\(?\s*(40|80)\s*(?:min|minutes)\b"
+    r"|\b(40|80)\s*(?:min|minutes)\.?\s*water\s*(?:[/&-]|and)?\s*(?:sweat\s*)?[- ]?resistan"
+    r"|retains?\s+(?:its\s+)?spf\s+(?:after|for)\s+(40|80)\s+minutes\s+of\s+activity\s+in\s+(?:the\s+)?water"
+    r"|\b(very)\s+water(?:\s*/\s*sweat)?[- ]?resistant", re.I)
+
+
+def water_resistant_claim(text):
+    """The minutes of a water-resistance claim the label prints, or None."""
+    best = None
+    for m in _WR_RX.finditer(text or ""):
+        v = 80 if m.group(4) else int(next(g for g in m.groups()[:3] if g))
+        best = max(best or 0, v)
+    return best
+
+
 def age_limit(text):
     """The first age limit the label text prints, or None."""
     for m in _AGE_RX.finditer(text or ""):
@@ -622,6 +638,10 @@ if os.path.exists(_LT):
         if not _bs and re.search(r"(?i)alerta\s+(?:de\s+)?c[aá]ncer[^.]{0,40}envejecimiento|skin\s+cancer\s*/\s*skin\s+ag(?:e)?ing\s+alert|"
                                  r"shown\s+only\s+to\s+(?:help\s+)?prevent\s+sunburn", _d.get("text") or ""):
             LABEL_CLAIMS[_d["setid"]]["aging_alert"] = True
+        # water resistance only where the label claims it ("Water Resistant (80 minutes)", "very water
+        # resistant", "water & sweat resistance (80 minutes)", "retains SPF after 80 minutes of activity
+        # in the water"), not from the reapply direction alone (2026-10-25 final audit)
+        LABEL_CLAIMS[_d["setid"]]["water_resistant_minutes"] = water_resistant_claim(_d.get("text") or "")
         if _NOT_SUN.search(_d.get("text") or ""):
             NOT_SUN.add(_d["setid"])
         LABEL_WORDS[_d["setid"]] = frozenset(_KEEPW.sub(" ", (_d.get("text") or "").upper()).split())
@@ -1316,10 +1336,46 @@ def polish_names(items):
             y = _sp.upper() if y.isupper() else " ".join(w if w.isupper() and len(w) <= 3 else w.capitalize() for w in _sp.split())
         if y != x:
             changed = True
+        # a section heading glued to the first name ("Inactive indredients Water", "Actives
+        # ingredients Octyldodecanol"; 2026-10-25 final audit)
+        _hd = re.sub(r"(?i)^(?:in)?actives?\s+in[a-z]{0,6}ients?\s*[:\-]?\s*", "", y).strip()
+        if _hd and _hd != y:
+            y, changed = _hd, True
         if y:
             out.append(y)
         i += 1
-    return out, changed
+    # a name split at a stray comma ("Psidium Guajava Fruit" + "Extract", "Bis-Ethylhexyloxyphenol
+    # Methoxyphenyl" + "Triazine"), or its last word left over beside the whole name ("Neopentyl
+    # Glycol Diheptanoate" + "Diheptanoate"; 2026-10-25 final audit): one name, once
+    _FRAG = re.compile(r"(?i)^(extract|juice|oil|copolymer|crosspolymer|diheptanoate|distearate|methylglucose|triazine|"
+                       r"esters?|benzoate|stearate|glucoside|hydroxide|polymer)$")
+    res = []
+    for k, x in enumerate(out):
+        if _FRAG.match(x.strip()):
+            w = x.strip().lower()
+            _nz = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())  # noqa: E731
+            whole = (res[-1].rstrip(" ,") + " " + x.strip()) if res else None
+            if whole and any(_nz(o) == _nz(whole) for o in out):
+                changed = True              # the whole name is listed too: the split pieces go
+                if res:
+                    res.pop()
+                continue
+            ends = [o for o in out if o is not x and _nz(o) != _nz(w) and re.search(
+                r"\b" + re.escape(w) + (r"\W*$" if w in ("extract", "juice", "oil") else r"\b"), o.lower())]
+            # a plant part left without its "Extract"/"Juice"/"Oil" ("... Fruit"): joined back;
+            # after a name that is already whole ("... Juice", "... Glycerin") it is a leftover
+            _whole_prev = bool(res) and (re.search(r"\b" + re.escape(w) + r"\W*$", res[-1].lower()) or (
+                w in ("extract", "juice", "oil") and re.search(
+                    r"(?i)(extract|juice|oil|water|butter|powder|wax|gel|acid|ate|ide|ol|ene|one|ine|ium|in)\W*$", res[-1])))
+            if ends and (_whole_prev or w not in ("extract", "juice", "oil")):
+                changed = True              # its whole name is already listed
+                continue
+            if res and not _whole_prev:
+                res[-1] = res[-1].rstrip(" ,") + " " + x.strip()
+                changed = True
+                continue
+        res.append(x)
+    return res, changed
 
 
 _NAME_TYPO = {r"\bB(?:oa|ora|rao)d\b": "Broad", r"\bBrozer\b": "Bronzer", r"\bInfinte\b": "Infinite"}
@@ -2038,6 +2094,10 @@ def build(run_date):
                 and not rec.get("multi_product"):
             rec["name"] = re.sub(r"\s{2,}", " ", re.sub(r"(?i),?\s*\bSPF\s*\d{1,3}\b\+?", "", _nm)).strip(" ,-")
             rec["name_spf_removed"] = _ns
+        # when the package was last read for this version (the first read or a confirming one)
+        _rds = [x.get("read") for x in (art, _cf) if x and str(x.get("spl_version")) == str(ver) and x.get("read")]
+        if _rds and rec.get("evidence_tier") in ("A", "B"):
+            rec["package_read"] = max(_rds)
         if rec.get("evidence_tier") == "B" and _cf_disputed(sid, ver, rec):
             rec["evidence_tier"] = "C"
             rec["evidence_disputed"] = True
