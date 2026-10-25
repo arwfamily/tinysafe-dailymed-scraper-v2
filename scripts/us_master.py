@@ -1174,6 +1174,21 @@ def _spf_lower(sid, ver, art, c):
     return min(x for x in (art["spf"], other) if x) if other else None
 
 
+def _dedupe_actives(acts):
+    """One active once, by its US name ("ETHYLHEXYL METHOXYCINNAMATE" filed beside, or for,
+    OCTINOXATE; 2026-10-25): the US name is shown, with the first strength given."""
+    out, seen = [], {}
+    for a in acts:
+        k = filter_canon(a["name"]) or a["name"]
+        if k in seen:
+            if out[seen[k]].get("percent") is None and a.get("percent") is not None:
+                out[seen[k]] = dict(out[seen[k]], percent=a["percent"], percent_basis=a.get("percent_basis"))
+            continue
+        seen[k] = len(out)
+        out.append(dict(a, name=k) if k in US_MAX else a)
+    return out
+
+
 def polish_names(items):
     """Clean printed names without changing what they name (2026-10-24 audits): HTML entities
     ('D&AMP;C Red No. 30'), a lot or formula code stuck on ('Citronellol. [S1762A]'),
@@ -1516,7 +1531,7 @@ def build(run_date):
         _spfs0 = [x for x in (LABEL_CLAIMS.get(sid) or {}).get("spfs") or [] if x > 15]
         _kitlike = (int(c.get("product_count") or 1) > 1 or "KIT" in (c.get("dosage_form") or "").upper()
                     or len(_spfs0) >= 2)
-        _nonuv = [a for a in acts if a["name"] not in US_MAX]
+        _nonuv = [a for a in acts if (filter_canon(a["name"]) or a["name"]) not in US_MAX]
         if _art and _art.get("readable") and (_art.get("variants") or 1) == 1 and _art.get("actives"):
             _ap = PS.read(" ".join(f"{n} {p}%" for n, p in _art["actives"] if p is not None), [a["name"] for a in acts])
             acts = [dict(a, percent=_ap[a["name"]], percent_basis="label_artwork")
@@ -1527,8 +1542,8 @@ def build(run_date):
             _hit = PS.read(" ".join(f"{n} 1%" for n, _p in _art["actives"]), [a["name"] for a in acts])
             if (_art.get("actives_confirmed") and not _kitlike
                     and len(_hit) == len(_art["actives"]) and 0 < len(_hit) < len(acts)):
-                c = dict(c, _actives_not_on_artwork=[a["name"] for a in acts if a["name"] not in _hit and a["name"] in US_MAX])
-                acts = [a for a in acts if a["name"] in _hit or a["name"] not in US_MAX]
+                c = dict(c, _actives_not_on_artwork=[a["name"] for a in acts if a["name"] not in _hit and (filter_canon(a["name"]) or a["name"]) in US_MAX])
+                acts = [a for a in acts if a["name"] in _hit or (filter_canon(a["name"]) or a["name"]) not in US_MAX]
             # ... and when the package prints actives the filing lacks (Mizon's titanium dioxide
             # 18.7%) or other actives altogether (TiZO filed with three chemical filters, the
             # tube prints zinc oxide 20%; 2026-10-24 final audit), the package's are shown
@@ -1543,7 +1558,7 @@ def build(run_date):
                     if p is not None and p <= US_MAX.get(k, 100):
                         a = dict(a, percent=p, percent_basis="label_artwork")
                     _new.append(a)
-                _new += [a for a in _nonuv if a not in _new]
+                _new += [a for a in _nonuv if a not in _new and (filter_canon(a["name"]) or a["name"]) not in {x["name"] for x in _new}]
                 c = dict(c, _actives_not_on_artwork=[a["name"] for k, a in _fk.items()
                                                      if k not in {x for x, _ in _ac} and a["name"] in US_MAX],
                          _actives_from_artwork=[k for k, _ in _ac if k not in _fk])
@@ -1891,8 +1906,8 @@ def build(run_date):
                                True if LABEL_CLAIMS[sid].get("broad_spectrum") else None),
             "dailymed_url": c.get("dailymed_url"), "effective_date": c.get("effective_date"),
             # a kit's other actives too (Obagi's hydroquinone 4%; 2026-10-25 final audit), with no %
-            "actives": acts + [dict(a, percent=None, percent_withheld="multi_product") for a in acts_all
-                               if multi and a["name"] not in {b["name"] for b in acts}],
+            "actives": _dedupe_actives(acts + [dict(a, percent=None, percent_withheld="multi_product") for a in acts_all
+                                               if multi and a["name"] not in {b["name"] for b in acts}]),
             # why strengths are not shown: several products in one filing, a filed amount that is
             # not w/w, or filed strengths that cannot give the printed SPF
             "actives_percent_withheld": ("multi_product" if multi else "not_w_w" if some_withheld
