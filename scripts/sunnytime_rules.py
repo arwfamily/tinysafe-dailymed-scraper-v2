@@ -317,4 +317,4 @@ FAMILY_ADDITIVE = {"asteraceae", "soy", "tree_nut", "peanut", "wheat", "milk", "
                    "coconut", "shea", "oat", "lanolin", "propolis_beeswax", "latex"}
 ADDITIVE = {"essential_oil", "ethoxylated", "hidden_uv_booster", "microplastic_polymer", "fragrance",
             "alkyl_glucoside", "sulfite", "isobornyl_acrylate", "insect_repellent", "under3_restricted", "pfas", "mdbgn",
-            "eu_fragrance_allergen"}   # the EU list grew in 2023 (Regulation (EU) 2023/1545)   # new in v3.4: v3.1 never had them
+            "eu_fragrance_allergen", "citrus_photosensitizer"}   # the EU list grew in 2023 (Regulation (EU) 2023/1545)   # new in v3.4: v3.1 never had them

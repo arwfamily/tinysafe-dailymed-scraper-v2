@@ -153,6 +153,10 @@ def test_age_limit():
     assert M.age_limit("Not intended for children under the age of 12.") == "Not intended for children under the age of 12"
     assert M.age_limit("Do not use on children under 12 months") == "Do not use on children under 12 months"
     assert M.age_limit("Keep out of reach of children. Age 50+ skin") is None
+    # 2026-10-25 final audit: an "ask a doctor" age other than the standard 6 months
+    assert M.age_limit("Children under 3 years of age: Ask a doctor.") == "Children under 3 years of age: Ask a doctor"
+    assert M.age_limit("children under the age of 6: Ask a doctor") is None
+    assert M.age_limit("children under 6 months of age: ask a doctor") is None
 
 
 def test_lost_open_bracket_split():

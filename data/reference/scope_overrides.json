@@ -6,6 +6,12 @@
    "reason": "not_a_sunscreen",
    "why": "acne spot treatment (sulfur, resorcinol); titanium dioxide is there as tint, no SPF or sunscreen claim in the name",
    "reviewed": "2026-10-19"
+  },
+  "c5d52f13-a649-9579-e053-2a95a90a062c": {
+   "in_scope": false,
+   "reason": "not_a_sunscreen",
+   "why": "BEE&YOU filing of nine products (propolis nasal sprays, an acne serum, a hand-sanitizer text) with three zinc SPF 50 sunscreens; one page cannot show the sunscreens apart from the rest (2026-10-25 final audit)",
+   "reviewed": "2026-10-25"
   }
  }
 }

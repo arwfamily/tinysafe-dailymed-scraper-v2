@@ -578,7 +578,11 @@ _AGE_RX = re.compile(
     r"|not\s+formulated\s+(?:to\s+be\s+(?:applied|used)\s+)?(?:to|for|on)\s+children"
     r"|suitable\s+for\s+children\s*\(?\s*(?:[1-9]|1[0-7])\s*\+?\s*(?:years?|yrs?)?\s*(?:old|and\s+(?:up|older))?\s*\)?"
     r"|adults?\s+(?:1[2-9]|2[01])\s*(?:years?\s+)?(?:of\s+age\s+)?(?:and|or)\s+(?:older|over)"
-    r"|for\s+ages?\s+(?:1[0-7]|[1-9])\s*(?:years?\s+)?(?:and\s+(?:up|older|over)|\+)", re.I)
+    r"|for\s+ages?\s+(?:1[0-7]|[1-9])\s*(?:years?\s+)?(?:and\s+(?:up|older|over)|\+)"
+    # "Children under 3 years of age: Ask a doctor" (Naked Sundays; 2026-10-25 final audit): any age
+    # other than the standard 6 months; a bare "under 6" with no unit is read as that standard line
+    r"|(?:children|kids)\s+under\s+(?:the\s+age\s+of\s+)?(?:(?:[1-57-9]|1[0-7]|one|two|three|four|five|seven|eight|nine|ten|eleven|twelve)"
+    r"(?:\s*(?:years?|yrs?))?|(?:6|six)\s*(?:years?|yrs?))(?:\s+of\s+age|\s+old)?\s*[:.,-]?\s*(?:ask|consult)\s+(?:a\s+)?(?:doctor|physician)", re.I)
 
 
 def age_limit(text):
@@ -613,7 +617,10 @@ if os.path.exists(_LT):
         LABEL_CLAIMS[_d["setid"]] = dict(_c, spf=max(_v) if _v else None, spfs=_v, broad_spectrum=_bs)
         # the Skin Cancer/Skin Aging Alert printed in Spanish ("Alerta de cáncer de piel /
         # envejecimiento de la piel"; Cyzone, 2026-10-25 final audit)
-        if not _bs and re.search(r"(?i)alerta\s+(?:de\s+)?c[aá]ncer[^.]{0,40}envejecimiento", _d.get("text") or ""):
+        # also "Skin Ageing Alert" (British spelling) and the alert's own sentence "has been shown only
+        # to help prevent sunburn, not skin cancer" (By Nature; 2026-10-25 final audit)
+        if not _bs and re.search(r"(?i)alerta\s+(?:de\s+)?c[aá]ncer[^.]{0,40}envejecimiento|skin\s+cancer\s*/\s*skin\s+ag(?:e)?ing\s+alert|"
+                                 r"shown\s+only\s+to\s+(?:help\s+)?prevent\s+sunburn", _d.get("text") or ""):
             LABEL_CLAIMS[_d["setid"]]["aging_alert"] = True
         if _NOT_SUN.search(_d.get("text") or ""):
             NOT_SUN.add(_d["setid"])
@@ -998,6 +1005,10 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     _a = ARTWORK.get(c.get("setid"))
     for sc in ([] if _a and _a.get("use_list") else (lc or {}).get("scent_claims") or []):
         if re.search(r"(?i)\b(artificial|synthetic|added|no|zero)\s*$", sc.strip() + " "):
+            continue
+        # the labeler's own name ("Tru Fragrance & Beauty LLC"), not a scent (Solar Dew; 2026-10-25 final audit)
+        _lab = re.search(r"\[([^\]]*)\]\s*$", c.get("title") or "")
+        if _lab and re.search(r"(?i)FRAGRANCE", _lab.group(1)) and (sc.strip().split() or [""])[-1].upper() in _lab.group(1).upper():
             continue      # "NO Artificial Fragrance" is not a named scent (Earth Mama; 2026-10-24 final audit)
         if not any(f in fl for f in ("fragrance", "essential_oil")) and not (c.get("product_count") or 1) > 1:
             # quote the scent only when it reads as one ("Fun Melon"), not as list words
