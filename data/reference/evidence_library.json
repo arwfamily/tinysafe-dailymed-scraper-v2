@@ -1,0 +1,1155 @@
+{
+ "version": "2026-10-25",
+ "note": "Evidence library for the Sunnytime Check result card (2026-10-25).",
+ "sources": {
+  "fda_consumer": {
+   "org": "FDA",
+   "title": "Sunscreen: How to Help Protect Your Skin from the Sun",
+   "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/sunscreen-how-help-protect-your-skin-sun",
+   "date": "updated 2026-10-16",
+   "strength": "agency guidance"
+  },
+  "fda_infants": {
+   "org": "FDA",
+   "title": "Should You Put Sunscreen on Infants? Not Usually",
+   "url": "https://www.fda.gov/consumers/consumer-updates/should-you-put-sunscreen-infants-not-usually",
+   "date": "current as of 2026-09-10",
+   "strength": "agency guidance"
+  },
+  "cfr_201_327": {
+   "org": "FDA",
+   "title": "21 CFR 201.327, sunscreen labeling (now OTC Monograph M020)",
+   "url": "https://www.law.cornell.edu/cfr/text/21/201.327",
+   "date": "2011 rule",
+   "strength": "federal regulation"
+  },
+  "fda_qa_2021": {
+   "org": "FDA",
+   "title": "Q&A: deemed final order and proposed order for OTC sunscreen",
+   "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fda-posts-deemed-final-order-and-proposed-order-over-counter-sunscreen",
+   "date": "2021-09-24",
+   "strength": "proposed order (not final)"
+  },
+  "fda_qa_2026": {
+   "org": "FDA",
+   "title": "Q&A: FDA's regulatory actions on OTC sunscreen",
+   "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen",
+   "date": "current as of 2026-09-10",
+   "strength": "agency guidance"
+  },
+  "fda_paba_final": {
+   "org": "FDA",
+   "title": "Final administrative order OTC000008: PABA and trolamine salicylate",
+   "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/Order/FinalAdministrativeOrderOTC000008-PABATrolamine.pdf",
+   "date": "issued 2026-09-11, effective 2027-09-11",
+   "strength": "final order"
+  },
+  "fda_bemo_final": {
+   "org": "FDA",
+   "title": "Final administrative order OTC000039: bemotrizinol",
+   "url": "https://www.accessdata.fda.gov/drugsatfda_docs/omuf/Order/OTC000039_Final_Administrative_Order.pdf",
+   "date": "issued 2026-06-10, effective 2026-08-09",
+   "strength": "final order"
+  },
+  "fda_voices": {
+   "org": "FDA",
+   "title": "Shedding More Light on Sunscreen Absorption (FDA Voices)",
+   "url": "https://www.fda.gov/news-events/fda-voices-perspectives-fda-experts/shedding-new-light-sunscreen-absorption/",
+   "date": "2019",
+   "strength": "agency commentary"
+  },
+  "jama_2020": {
+   "org": "JAMA (study by FDA scientists)",
+   "title": "Matta et al., Effect of Sunscreen Application on Plasma Concentration of Sunscreen Active Ingredients",
+   "url": "https://jamanetwork.com/journals/jama/fullarticle/2759002",
+   "date": "2020-01-21",
+   "strength": "peer-reviewed study (adults)"
+  },
+  "fda_benzene": {
+   "org": "FDA",
+   "title": "FDA alerts drug manufacturers to the risk of benzene contamination",
+   "url": "https://www.fda.gov/drugs/pharmaceutical-quality-resources/fda-alerts-drug-manufacturers-risk-benzene-contamination-certain-drugs",
+   "date": "current as of 2025-07-24",
+   "strength": "agency guidance"
+  },
+  "fda_benzene_faq": {
+   "org": "FDA",
+   "title": "Frequently asked questions about benzene contamination in drugs",
+   "url": "https://www.fda.gov/drugs/drug-safety-and-availability/frequently-asked-questions-benzene-contamination-drugs",
+   "date": "current as of 2025-03-12",
+   "strength": "agency guidance"
+  },
+  "fda_fragrance": {
+   "org": "FDA",
+   "title": "Fragrances in Cosmetics",
+   "url": "https://fda.gov/cosmetics/cosmetic-ingredients/fragrances-cosmetics",
+   "date": "current as of 2022-02-28",
+   "strength": "agency guidance"
+  },
+  "fda_phthalates": {
+   "org": "FDA",
+   "title": "Phthalates in Cosmetics",
+   "url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/phthalates-cosmetics",
+   "date": "current as of 2022-05-19",
+   "strength": "agency guidance"
+  },
+  "fda_dioxane": {
+   "org": "FDA",
+   "title": "1,4-Dioxane in Cosmetics: A Manufacturing Byproduct",
+   "url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/14-dioxane-cosmetics-manufacturing-byproduct",
+   "date": "current as of 2022-03-03",
+   "strength": "agency guidance"
+  },
+  "fda_talc": {
+   "org": "FDA",
+   "title": "Talc",
+   "url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/talc",
+   "date": "current as of 2026-01-16",
+   "strength": "agency guidance"
+  },
+  "fr_talc_withdrawal": {
+   "org": "FDA (Federal Register)",
+   "title": "Withdrawal of the proposed rule on testing methods for asbestos in talc-containing cosmetics",
+   "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-28/html/2025-21407.htm",
+   "date": "2025-11-28",
+   "strength": "federal notice"
+  },
+  "fda_2008_nipple": {
+   "org": "FDA (archived release)",
+   "title": "FDA warns consumers not to use Mommy's Bliss Nipple Cream",
+   "url": "https://corpora.tika.apache.org/base/docs/govdocs1/165/165466.html",
+   "date": "2008-05-30",
+   "strength": "agency warning (one product)"
+  },
+  "fr_2019": {
+   "org": "FDA",
+   "title": "Proposed rule: Sunscreen drug products for OTC human use (84 FR 6204), replaced by the 2021 proposed order",
+   "url": "https://www.govinfo.gov/content/pkg/FR-2019-02-26/html/2019-03019.htm",
+   "date": "2019-02-26",
+   "strength": "proposed rule (superseded proposal)"
+  },
+  "aap_sun": {
+   "org": "American Academy of Pediatrics",
+   "title": "Sun Safety: Information for Parents (HealthyChildren.org)",
+   "url": "https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Sun-Safety.aspx",
+   "date": "updated 2024-08-09",
+   "strength": "medical society guidance"
+  },
+  "aap_uv": {
+   "org": "American Academy of Pediatrics",
+   "title": "Ultraviolet Radiation Exposure (Council on Environmental Health)",
+   "url": "https://www.aap.org/en/patient-care/environmental-health/promoting-healthy-environments-for-children/ultraviolet-radiation/",
+   "date": "updated 2024-01-10",
+   "strength": "medical society guidance"
+  },
+  "aap_2021": {
+   "org": "American Academy of Pediatrics",
+   "title": "Get kids outdoors and use these safety tips (news release)",
+   "url": "https://www.aap.org/en/news-room/news-releases/health--safety-tips/american-academy-of-pediatrics-get-kids-outdoors-and-use-these-safety-tips-to-ward-off-insects-and-prevent-sunburn/",
+   "date": "2021-06-07",
+   "strength": "medical society guidance"
+  },
+  "aap_maguiness": {
+   "org": "Dr. Sheilagh Maguiness, pediatric dermatologist, on the AAP's HealthyChildren.org",
+   "title": "What's the best way to protect kids' skin from sunburn?",
+   "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/Whats-the-best-way-to-protect-kids-skin-from-sunburn.aspx",
+   "date": "updated 2024-08-09",
+   "strength": "expert article on an AAP site"
+  },
+  "aad_faq": {
+   "org": "American Academy of Dermatology",
+   "title": "Sunscreen FAQs",
+   "url": "https://www.aad.org/sun-protection/sunscreen-faqs",
+   "date": "updated 2025-02-11",
+   "strength": "medical society guidance"
+  },
+  "aad_eczema_products": {
+   "org": "American Academy of Dermatology",
+   "title": "Eczema-friendly products for children",
+   "url": "https://www.aad.org/public/diseases/eczema/childhood/triggers/friendly-products",
+   "date": "accessed 2026-10",
+   "strength": "medical society guidance"
+  },
+  "aad_petrolatum": {
+   "org": "American Academy of Dermatology",
+   "title": "Petroleum jelly",
+   "url": "https://aad.org/public/everyday-care/skin-care-secrets/routine/petroleum-jelly",
+   "date": "accessed 2026-10",
+   "strength": "medical society guidance"
+  },
+  "hc_tips": {
+   "org": "Health Canada",
+   "title": "Important sunscreen safety tips for Canadians",
+   "url": "https://recalls-rappels.canada.ca/en/alert-recall/important-sunscreen-safety-tips-canadians",
+   "date": "2018-06-01",
+   "strength": "agency guidance"
+  },
+  "cdc_sun": {
+   "org": "CDC",
+   "title": "Sun safety",
+   "url": "https://www.cdc.gov/cancer/skin/resources/files/sun-safety.txt",
+   "date": "undated",
+   "strength": "agency guidance"
+  },
+  "eu_2022_1176": {
+   "org": "European Union",
+   "title": "Regulation (EU) 2022/1176 (oxybenzone, octocrylene)",
+   "url": "https://lawplayer.com/eu/act/32022R1176",
+   "date": "2022-07-07",
+   "strength": "EU law"
+  },
+  "eu_2022_2195": {
+   "org": "European Union",
+   "title": "Regulation (EU) 2022/2195 (homosalate)",
+   "url": "https://lawplayer.com/eu/act/32022R2195",
+   "date": "2022-11-10",
+   "strength": "EU law"
+  },
+  "sccs_homosalate": {
+   "org": "EU Scientific Committee on Consumer Safety",
+   "title": "Opinion and addendum on homosalate",
+   "url": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_260.pdf",
+   "date": "2021-12-02",
+   "strength": "EU scientific opinion"
+  },
+  "sccs_bp3": {
+   "org": "EU Scientific Committee on Consumer Safety",
+   "title": "Opinion on benzophenone-3 (oxybenzone)",
+   "url": "https://health.ec.europa.eu/publications/benzophenone-3_en",
+   "date": "2021-03",
+   "strength": "EU scientific opinion"
+  },
+  "sccs_octocrylene": {
+   "org": "EU Scientific Committee on Consumer Safety",
+   "title": "Opinion on octocrylene",
+   "url": "https://health.ec.europa.eu/publications/octocrylene_en",
+   "date": "2021-03",
+   "strength": "EU scientific opinion"
+  },
+  "eu_2024_996": {
+   "org": "European Union",
+   "title": "Regulation (EU) 2024/996 (vitamin A limits; 4-methylbenzylidene camphor ban)",
+   "url": "https://lawplayer.com/eu/act/32024R0996",
+   "date": "2024-04-03",
+   "strength": "EU law"
+  },
+  "sccs_vitA": {
+   "org": "EU Scientific Committee on Consumer Safety",
+   "title": "Revised opinion on vitamin A (retinol, retinyl acetate, retinyl palmitate)",
+   "url": "https://health.ec.europa.eu/publications/revision-scientific-opinion-sccs157616-vitamin-retinol-retinyl-acetate-retinyl-palmitate_en",
+   "date": "2022-10",
+   "strength": "EU scientific opinion"
+  },
+  "eu_nano_zno": {
+   "org": "European Union",
+   "title": "Regulation (EU) 2016/621 (nano zinc oxide)",
+   "url": "https://www.legislation.gov.uk/eur/2016/621/introduction",
+   "date": "2016-04-21",
+   "strength": "EU law"
+  },
+  "eu_nano_tio2": {
+   "org": "European Union",
+   "title": "Regulation (EU) 2016/1143 (nano titanium dioxide)",
+   "url": "https://www.legislation.gov.uk/eur/2016/1143",
+   "date": "2016-07-13",
+   "strength": "EU law"
+  },
+  "eu_parabens_ban": {
+   "org": "European Union",
+   "title": "Regulation (EU) 358/2014 (five parabens prohibited)",
+   "url": "https://www.legislation.gov.uk/eur/2014/358/introduction",
+   "date": "2014-04-09",
+   "strength": "EU law"
+  },
+  "eu_parabens_diaper": {
+   "org": "European Union",
+   "title": "Regulation (EU) 1004/2014 (propyl- and butylparaben)",
+   "url": "https://eur-lex.europa.eu/eli/reg/2014/1004/oj",
+   "date": "2014-09-18",
+   "strength": "EU law"
+  },
+  "eu_mi": {
+   "org": "European Union",
+   "title": "Regulation (EU) 2016/1198 (methylisothiazolinone in leave-on products)",
+   "url": "https://www.legislation.gov.uk/eur/2016/1198/data.html",
+   "date": "2016-07-22, applies 2017-02-12",
+   "strength": "EU law"
+  },
+  "eu_fragrance_allergens": {
+   "org": "European Union",
+   "title": "Regulation (EU) 2023/1545 (fragrance allergen labelling)",
+   "url": "https://lawplayer.com/eu/act/32023R1545",
+   "date": "2023-07-26",
+   "strength": "EU law"
+  },
+  "eu_formaldehyde": {
+   "org": "European Union",
+   "title": "Regulation (EU) 2022/1181 (formaldehyde releasers labelling)",
+   "url": "https://lawplayer.com/eu/act/32022R1181",
+   "date": "2022-07-08",
+   "strength": "EU law"
+  },
+  "sccs_phenoxyethanol": {
+   "org": "EU Scientific Committee on Consumer Safety",
+   "title": "Opinion on phenoxyethanol",
+   "url": "https://health.ec.europa.eu/publications/phenoxyethanol_en",
+   "date": "2016-10-06",
+   "strength": "EU scientific opinion"
+  },
+  "ansm_pe": {
+   "org": "France ANSM",
+   "title": "Phenoxyethanol in cosmetic products (updated information)",
+   "url": "https://ansm.sante.fr/actualites/concentration-de-phenoxyethanol-dans-les-produits-cosmetiques-information-actualisee",
+   "date": "updated 2021-03-14",
+   "strength": "national agency decision"
+  },
+  "ce_2022": {
+   "org": "France Conseil d'État (copy published by FEBEA)",
+   "title": "Decision no. 429578 annulling the ANSM labelling decision",
+   "url": "https://www.febea.fr/emails/20221229_PHENOXYETHANOL_CONSEIL_ETAT_DECISION.pdf",
+   "date": "2022-12-29",
+   "strength": "court decision"
+  },
+  "hawaii_104": {
+   "org": "State of Hawaii",
+   "title": "Act 104 (SB 2571, 2018)",
+   "url": "https://www.legiscan.com/HI/text/SB2571/2018",
+   "date": "2018-07-03, sale ban from 2021-01-01",
+   "strength": "state law"
+  },
+  "prop65_bp": {
+   "org": "California OEHHA",
+   "title": "Proposition 65: benzophenone",
+   "url": "https://oehha.ca.gov/proposition-65/chemicals/benzophenone",
+   "date": "listed 2012-06-22",
+   "strength": "state law listing"
+  },
+  "prop65_bha": {
+   "org": "California OEHHA",
+   "title": "Proposition 65: butylated hydroxyanisole",
+   "url": "https://oehha.ca.gov/chemicals/butylated-hydroxyanisole",
+   "date": "listed 1990-01-01",
+   "strength": "state law listing"
+  },
+  "prop65_tio2": {
+   "org": "California OEHHA",
+   "title": "Proposition 65: titanium dioxide (airborne, unbound particles of respirable size)",
+   "url": "https://oehha.ca.gov/proposition-65/crnr/notice-intent-list-titanium-dioxide-airborne-unbound-particles-respirable-size",
+   "date": "listed 2011-09-02",
+   "strength": "state law listing"
+  },
+  "ntp_rp": {
+   "org": "US National Toxicology Program",
+   "title": "TR-568: photocarcinogenesis study of retinoic acid and retinyl palmitate",
+   "url": "https://ntp.niehs.nih.gov/go/tr568abs",
+   "date": "2012-08",
+   "strength": "government research (mice)"
+  },
+  "ntp_bha": {
+   "org": "US National Toxicology Program",
+   "title": "Report on Carcinogens: butylated hydroxyanisole",
+   "url": "https://ntp.niehs.nih.gov/ntp/roc/content/profiles/butylatedhydroxyanisole.pdf",
+   "date": "15th edition (2021)",
+   "strength": "government research"
+  },
+  "sccs_bht": {
+   "org": "EU Scientific Committee on Consumer Safety",
+   "title": "Opinion on butylated hydroxytoluene (BHT)",
+   "url": "https://health.ec.europa.eu/publications/butylated-hydroxytoluene-bht_en",
+   "date": "2021-12-02",
+   "strength": "EU scientific opinion"
+  },
+  "tga_bp": {
+   "org": "Australia TGA",
+   "title": "Safety review of benzophenone",
+   "url": "https://www.tga.gov.au/sites/default/files/2025-04/safety-review-benzophenone.docx",
+   "date": "2025-07",
+   "strength": "agency review"
+  },
+  "downs_2021": {
+   "org": "Sorbonne Université (study published in Chem. Res. Toxicol.)",
+   "title": "Study shows many sunscreens contain a carcinogenic compound",
+   "url": "https://sorbonne-universite.fr/en/news/study-shows-many-sunscreens-contain-carcinogenic-compound",
+   "date": "2021-03-08",
+   "strength": "university press release on a peer-reviewed study"
+  },
+  "iarc_talc": {
+   "org": "IARC (WHO)",
+   "title": "IARC Monographs evaluate talc (press release 352)",
+   "url": "https://www.iarc.who.int/wp-content/uploads/2024/07/pr352_E.pdf",
+   "date": "2024-07-05",
+   "strength": "WHO agency classification"
+  },
+  "hc_talc": {
+   "org": "Health Canada",
+   "title": "Assessment concludes that talc may be harmful to human health",
+   "url": "https://www.canada.ca/en/health-canada/news/2021/04/government-of-canada-assessment-concludes-that-talc-may-be-harmful-to-human-health.html",
+   "date": "2021-04-22",
+   "strength": "agency assessment"
+  },
+  "ny_dioxane": {
+   "org": "New York State DEC",
+   "title": "1,4-dioxane limits in household, personal care and cosmetic products",
+   "url": "https://dec.ny.gov/environmental-protection/help-for-businesses/household-personal-cosmetic-dioxane-limits",
+   "date": "accessed 2026-10",
+   "strength": "state law"
+  },
+  "nejm_2007": {
+   "org": "New England Journal of Medicine",
+   "title": "Henley et al., Prepubertal gynecomastia linked to lavender and tea tree oils",
+   "url": "https://e-lactancia.org/media/papers/LavandaGinecomasia-NEJmed2007.pdf",
+   "date": "2007-02-01",
+   "strength": "case reports + lab study"
+  },
+  "niehs_2019": {
+   "org": "NIEHS (NIH)",
+   "title": "Lavender, tea tree oils may cause abnormal breast growth in boys (Environmental Factor)",
+   "url": "https://factor.niehs.nih.gov/2019/9/feature/3-feature-lavender/index.htm",
+   "date": "2019-09",
+   "strength": "government research news"
+  },
+  "bristol_2003": {
+   "org": "University of Bristol (ALSPAC study in NEJM)",
+   "title": "Peanut allergy linked to skin creams",
+   "url": "https://www.bristol.ac.uk/news/2003/138.html",
+   "date": "2003",
+   "strength": "university release on an observational study"
+  },
+  "niaid_peanut": {
+   "org": "NIH / NIAID",
+   "title": "Addendum guidelines for the prevention of peanut allergy (clinician summary)",
+   "url": "https://www.niaid.nih.gov/sites/default/files/peanut-allergy-prevention-guidelines-clinician-summary.pdf",
+   "date": "2017-01",
+   "strength": "government clinical guideline"
+  },
+  "bfr_mineral": {
+   "org": "Germany BfR",
+   "title": "Highly refined mineral oils in cosmetics: health risks are not to be expected",
+   "url": "https://www.bfr.bund.de/cm/349/highly-refined-mineral-oils-in-cosmetics-health-risks-are-not-to-be-expected-according-to-current-knowledge.pdf",
+   "date": "2018-02-27",
+   "strength": "national agency assessment"
+  },
+  "tga_nano": {
+   "org": "Australia TGA",
+   "title": "Literature review on the safety of titanium dioxide and zinc oxide nanoparticles in sunscreens",
+   "url": "https://www.tga.gov.au/sites/default/files/nanoparticles-sunscreens-review-_2016.pdf",
+   "date": "2016-08",
+   "strength": "agency review"
+  },
+  "hallstar_bhb": {
+   "org": "Hallstar (ingredient maker)",
+   "title": "Butyloctyl Salicylate Q&A (HallBrite BHB)",
+   "url": "https://www.hallstarbeauty.com/butyloctyl-salicylate-qa/",
+   "date": "accessed 2026-10",
+   "strength": "manufacturer information"
+  },
+  "vantage_tds": {
+   "org": "Vantage Specialty Ingredients (ingredient maker)",
+   "title": "Jeechem TDS (tridecyl salicylate)",
+   "url": "https://www.vantagegrp.com/en/Product/JEECHEM-TDS",
+   "date": "accessed 2026-10",
+   "strength": "manufacturer information"
+  },
+  "tga_args": {
+   "org": "Australia TGA",
+   "title": "Australian Regulatory Guidelines for Sunscreens v3.0, permitted actives",
+   "url": "https://www.tga.gov.au/resources/resource/guidance/australian-regulatory-guidelines-sunscreens-args",
+   "date": "2023-05",
+   "strength": "agency guideline"
+  },
+  "reginfo_mocra": {
+   "org": "FDA (Unified Agenda)",
+   "title": "Fragrance allergen labeling for cosmetics (RIN 0910-AI90)",
+   "url": "https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202410&RIN=0910-AI90",
+   "date": "Fall 2024 agenda",
+   "strength": "federal regulatory agenda"
+  },
+  "chemlinked_mocra": {
+   "org": "ChemLinked (trade press)",
+   "title": "US FDA sets November 2026 timeline for fragrance allergen rule",
+   "url": "https://cosmetic.chemlinked.com/news/cosmetic-news/us-fda-sets-november-2026-timeline-for-formaldehyde-ban-and-fragrance-allergen-rule",
+   "date": "2026-07",
+   "strength": "trade press report"
+  },
+  "eu_furocoumarins": {
+   "org": "European Union",
+   "title": "Cosmetics Regulation (EC) 1223/2009, Annex II entry 358 (furocoumarins)",
+   "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_2.pdf",
+   "date": "consolidated",
+   "strength": "EU law"
+  },
+  "nicnas_polyester8": {
+   "org": "Australian Government (NICNAS, now AICIS)",
+   "title": "Public Report LTD/1842: polyester-8",
+   "url": "https://www.industrialchemicals.gov.au/sites/default/files/LTD1842%20Public%20Report%20PDF.pdf",
+   "date": "2016-07",
+   "strength": "government assessment"
+  },
+  "eu_annex_vi": {
+   "org": "European Union",
+   "title": "Cosmetics Regulation Annex VI, list of permitted UV filters (consolidated 18.05.2026)",
+   "url": "https://webgate.ec.europa.eu/reqs2/public/v2/requirement/auxi/eu/32009R1223_spcosmet_annex_6.pdf",
+   "date": "2026-05-18",
+   "strength": "EU law"
+  },
+  "fda_m020": {
+   "org": "FDA",
+   "title": "OTC Monograph M020: sunscreen drug products (list of permitted active ingredients)",
+   "url": "https://dps-admin.fda.gov/omuf/sites/omuf/files/monograph-documents/2022-09/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
+   "date": "2021-09-24, amended 2026",
+   "strength": "federal monograph"
+  },
+  "cfr_330_1": {
+   "org": "FDA",
+   "title": "21 CFR 330.1(e): inactive ingredients in OTC drugs",
+   "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-330/section-330.1",
+   "date": "current",
+   "strength": "federal regulation"
+  }
+ },
+ "topics": [
+  {
+   "id": "recall",
+   "group": "glance",
+   "title": "FDA recall",
+   "facts": [
+    {
+     "t": "Sunscreen products, including aerosol sprays, have been recalled in the US, for example for benzene contamination.",
+     "s": "fda_benzene_faq"
+    }
+   ]
+  },
+  {
+   "id": "broad_spectrum",
+   "group": "glance",
+   "title": "Broad Spectrum and SPF",
+   "facts": [
+    {
+     "t": "Under FDA labeling rules, “Broad Spectrum” means the product passed a test for UVA protection in addition to UVB.",
+     "s": "cfr_201_327"
+    },
+    {
+     "t": "Sunscreens that are not Broad Spectrum, or are below SPF 15, must carry the warning: “This product has been shown only to help prevent sunburn, not skin cancer or early skin aging.”",
+     "s": "fda_consumer"
+    },
+    {
+     "t": "FDA: choose a broad-spectrum sunscreen with an SPF of at least 15.",
+     "s": "fda_consumer"
+    },
+    {
+     "t": "The CDC: SPF 15 or higher, broad spectrum, every 2 hours.",
+     "s": "cdc_sun"
+    },
+    {
+     "t": "The AAP: at least SPF 15 “(up to SPF 50)”; “an SPF of 15 or 30 should be fine for most people.”",
+     "s": "aap_sun"
+    },
+    {
+     "t": "The American Academy of Dermatology recommends SPF 30 or higher.",
+     "s": "aad_faq"
+    },
+    {
+     "t": "Health Canada recommends SPF 30 or higher.",
+     "s": "hc_tips"
+    },
+    {
+     "t": "FDA has proposed (not finalized) capping labeled SPF at 60+.",
+     "s": "fda_qa_2021"
+    }
+   ]
+  },
+  {
+   "id": "filters",
+   "group": "glance",
+   "title": "Mineral or chemical UV filters",
+   "facts": [
+    {
+     "t": "The AAP's environmental health page says: “Mineral-based sunscreen (e.g., zinc oxide) is preferable to chemical-based sunscreen (e.g., oxybenzone).”",
+     "s": "aap_uv"
+    },
+    {
+     "t": "The AAP's 2021 safety tips say: “If possible, choose a sunscreen with the mineral ingredients zinc oxide or titanium dioxide.”",
+     "s": "aap_2021"
+    },
+    {
+     "t": "FDA has proposed (not finalized) that zinc oxide and titanium dioxide are generally recognized as safe and effective up to 25%.",
+     "s": "fda_qa_2021"
+    },
+    {
+     "t": "For the 12 chemical filters, FDA has proposed that more safety data are needed.",
+     "s": "fda_qa_2021"
+    },
+    {
+     "t": "In an FDA study in adults, six chemical filters (avobenzone, oxybenzone, octocrylene, homosalate, octisalate, octinoxate) reached the blood above the level at which FDA asks for more safety testing, after one application.",
+     "s": "jama_2020"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "FDA: “The fact that an ingredient is absorbed through the skin and into the body does not mean the ingredient is unsafe.”",
+     "s": "fda_voices"
+    },
+    {
+     "t": "FDA says its request for more data “does not represent a conclusion by the FDA” that those filters are unsafe.",
+     "s": "fda_qa_2026"
+    },
+    {
+     "t": "The AAD says any of these sunscreens can protect you if it is broad spectrum, water resistant and SPF 30 or higher.",
+     "s": "aad_faq"
+    },
+    {
+     "t": "The AAP: “using any sunscreen is better than not using sunscreen at all.”",
+     "s": "aap_sun"
+    }
+   ],
+   "not_known": [
+    "The absorption studies were done in adults; no study measured it in children."
+   ]
+  },
+  {
+   "id": "spray",
+   "group": "glance",
+   "title": "Spray or powder",
+   "facts": [
+    {
+     "t": "FDA: spray sunscreens “should never be applied directly to your face.”",
+     "s": "fda_consumer"
+    },
+    {
+     "t": "The AAD advises never spraying around the face or mouth or into the wind, to avoid inhaling it.",
+     "s": "aad_faq"
+    },
+    {
+     "t": "A pediatric dermatologist writing on the AAP's site says spray propellants “should not be inhaled by babies and children.”",
+     "s": "aap_maguiness"
+    },
+    {
+     "t": "FDA lists aerosol sunscreens among products recalled for benzene contamination, a contaminant that never appears on a label.",
+     "s": "fda_benzene_faq"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "The EU does not allow nano zinc oxide or nano titanium dioxide in uses that could expose the lungs, which in practice means sprays, so mineral sprays face the same caution.",
+     "s": "eu_nano_zno"
+    }
+   ]
+  },
+  {
+   "id": "age",
+   "group": "glance",
+   "title": "Age limits",
+   "facts": [
+    {
+     "t": "Every US sunscreen label says “children under 6 months: Ask a doctor.”",
+     "s": "cfr_201_327"
+    },
+    {
+     "t": "FDA: “Sunscreen is not recommended for infants under six months old”; the best protection is shade.",
+     "s": "fda_infants"
+    },
+    {
+     "t": "The AAP allows sunscreen on small areas such as the face if clothing and shade are not available.",
+     "s": "aap_sun"
+    },
+    {
+     "t": "Health Canada: “Do not put sunscreen on babies less than 6 months of age.”",
+     "s": "hc_tips"
+    }
+   ]
+  },
+  {
+   "id": "insect_repellent",
+   "group": "safety",
+   "title": "Combined with an insect repellent",
+   "facts": [
+    {
+     "t": "“AAP does not recommend products that combine sunscreen with DEET.”",
+     "s": "aap_2021"
+    },
+    {
+     "t": "The AAD does not recommend sunscreen with insect repellent either.",
+     "s": "aad_faq"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "Health Canada says sunscreen and insect repellents can be used safely together as separate products.",
+     "s": "hc_tips"
+    }
+   ]
+  },
+  {
+   "id": "paba_trolamine",
+   "group": "safety",
+   "title": "PABA or trolamine salicylate",
+   "facts": [
+    {
+     "t": "FDA issued a final order in September 2026 that sunscreens with PABA or trolamine salicylate as actives are not generally recognized as safe and effective; it takes effect in September 2027.",
+     "s": "fda_paba_final"
+    }
+   ]
+  },
+  {
+   "id": "water_resistant",
+   "group": "fact",
+   "title": "Water resistance",
+   "facts": [
+    {
+     "t": "FDA allows “Water Resistant (40 minutes)” or “(80 minutes)” only after a set water test.",
+     "s": "cfr_201_327"
+    },
+    {
+     "t": "FDA and the AAP advise reapplying at least every 2 hours, and after swimming, sweating or towel drying.",
+     "s": "aap_sun"
+    }
+   ]
+  },
+  {
+   "id": "oxybenzone",
+   "group": "filters",
+   "title": "Oxybenzone",
+   "facts": [
+    {
+     "t": "The AAP: “If possible, avoid the sunscreen ingredient oxybenzone because of concerns about mild hormonal properties.”",
+     "s": "aap_sun"
+    },
+    {
+     "t": "The EU limits oxybenzone to 6% in face, hand and lip products and 2.2% in body products and sprays.",
+     "s": "eu_2022_1176"
+    },
+    {
+     "t": "Hawaii has banned the sale of sunscreens containing oxybenzone without a prescription since January 1, 2021.",
+     "s": "hawaii_104"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "FDA: absorption into the body “does not mean the ingredient is unsafe.”",
+     "s": "fda_voices"
+    }
+   ]
+  },
+  {
+   "id": "homosalate_eu",
+   "group": "filters",
+   "title": "Homosalate above the EU limit",
+   "facts": [
+    {
+     "t": "The EU allows homosalate only in face products (not propellant sprays), up to 7.34%.",
+     "s": "eu_2022_2195"
+    },
+    {
+     "t": "That limit followed the EU scientific committee's opinion that homosalate is safe up to 7.34% in face cream and pump spray.",
+     "s": "sccs_homosalate"
+    },
+    {
+     "t": "The US allows up to 15%.",
+     "s": "fda_m020"
+    },
+    {
+     "t": "Homosalate reached the blood above FDA's testing threshold in an FDA study in adults.",
+     "s": "jama_2020"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "FDA says absorption does not mean an ingredient is unsafe, and has proposed only that more data are needed for homosalate.",
+     "s": "fda_qa_2026"
+    }
+   ]
+  },
+  {
+   "id": "octocrylene",
+   "group": "filters",
+   "title": "Octocrylene",
+   "facts": [
+    {
+     "t": "A 2021 study found benzophenone in all 15 octocrylene sunscreens tested, rising as the products aged.",
+     "s": "downs_2021"
+    },
+    {
+     "t": "California lists benzophenone under Proposition 65 as a chemical known to cause cancer.",
+     "s": "prop65_bp"
+    },
+    {
+     "t": "EU law requires benzophenone from octocrylene to be kept at trace levels.",
+     "s": "eu_2022_1176"
+    },
+    {
+     "t": "Australia's TGA recommended limiting benzophenone in sunscreens to 383 ppm.",
+     "s": "tga_bp"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "The EU scientific committee found octocrylene safe as a UV filter up to 10%.",
+     "s": "sccs_octocrylene"
+    }
+   ],
+   "not_known": [
+    "How much benzophenone a child's skin absorbs from an aged sunscreen has not been measured."
+   ]
+  },
+  {
+   "id": "hawaii",
+   "group": "fact",
+   "title": "Sale banned in Hawaii",
+   "facts": [
+    {
+     "t": "Hawaii bans the sale of sunscreens containing oxybenzone or octinoxate without a prescription (Act 104, from January 1, 2021), citing harm to coral.",
+     "s": "hawaii_104"
+    }
+   ]
+  },
+  {
+   "id": "spf_over_50",
+   "group": "fact",
+   "title": "SPF above 50",
+   "facts": [
+    {
+     "t": "The AAP recommends SPF “at least 15 (up to SPF 50).”",
+     "s": "aap_2021"
+    },
+    {
+     "t": "FDA has proposed (not finalized) that the maximum labeled SPF be 60+.",
+     "s": "fda_qa_2021"
+    }
+   ]
+  },
+  {
+   "id": "uv_absorbing_inactive",
+   "group": "label",
+   "title": "UV-absorbing ingredient listed as inactive",
+   "facts": [
+    {
+     "t": "Only the active ingredients in FDA's monograph may be used to make a sunscreen claim in the US.",
+     "s": "fda_m020"
+    },
+    {
+     "t": "This product lists {names} among its inactive ingredients.",
+     "s": null
+    },
+    {
+     "t": "Its maker sells butyloctyl salicylate as an SPF booster and says it is “responsible for no more than 2 SPF units” at 5%.",
+     "s": "hallstar_bhb"
+    },
+    {
+     "t": "{status}",
+     "s": "fda_m020"
+    },
+    {
+     "t": "Butyloctyl and tridecyl salicylate are salicylates, the same chemical family as the filters homosalate and octisalate, which reached the blood above FDA's testing threshold in an FDA study in adults.",
+     "s": "jama_2020"
+    },
+    {
+     "t": "Vantage sells tridecyl salicylate as a “sunscreen booster” for zinc oxide and titanium dioxide.",
+     "s": "vantage_tds"
+    }
+   ],
+   "not_known": [
+    "No published study has measured whether butyloctyl salicylate or tridecyl salicylate is absorbed into the body.",
+    "How much of this product's SPF, if any, comes from these ingredients cannot be told from the label."
+   ]
+  },
+  {
+   "id": "mbc_eu_ban",
+   "group": "label",
+   "title": "4-methylbenzylidene camphor",
+   "facts": [
+    {
+     "t": "The EU banned 4-methylbenzylidene camphor in cosmetics: none could be newly sold from May 1, 2025 and none at all from May 1, 2026.",
+     "s": "eu_2024_996"
+    },
+    {
+     "t": "The EU scientific committee could not set a safe concentration because possible genotoxicity could not be ruled out.",
+     "s": "eu_2024_996"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "Australia still listed it as a permitted sunscreen filter (up to 4%) in its 2023 guidelines.",
+     "s": "tga_args"
+    }
+   ]
+  },
+  {
+   "id": "bemotrizinol_inactive",
+   "group": "label",
+   "title": "Bemotrizinol listed as inactive",
+   "facts": [
+    {
+     "t": "FDA approved bemotrizinol as a sunscreen active ingredient (up to 6%), effective August 9, 2026.",
+     "s": "fda_bemo_final"
+    },
+    {
+     "t": "Data submitted with the application showed it is not readily absorbed through human skin.",
+     "s": "fda_bemo_final"
+    }
+   ]
+  },
+  {
+   "id": "fragrance",
+   "group": "child",
+   "title": "Fragrance",
+   "facts": [
+    {
+     "t": "US rules let companies list all fragrance components as one word, “Fragrance”.",
+     "s": "fda_fragrance"
+    },
+    {
+     "t": "FDA says some fragrance components may cause allergic reactions or sensitivities.",
+     "s": "fda_fragrance"
+    },
+    {
+     "t": "For children with eczema, the AAD advises fragrance-free rather than “unscented” products and a fragrance-free sunscreen.",
+     "s": "aad_eczema_products"
+    },
+    {
+     "t": "The EU requires named fragrance allergens to be listed individually above 0.001% in leave-on products.",
+     "s": "eu_fragrance_allergens"
+    },
+    {
+     "t": "The 2022 US law MoCRA required FDA to propose a similar fragrance allergen labeling rule by June 29, 2024.",
+     "s": "reginfo_mocra"
+    },
+    {
+     "t": "As of FDA's July 2026 regulatory agenda, that proposal was scheduled for November 2026.",
+     "s": "chemlinked_mocra"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "FDA says it does not have evidence that phthalates as used in cosmetics pose a safety risk.",
+     "s": "fda_phthalates"
+    }
+   ]
+  },
+  {
+   "id": "essential_oil_lavender",
+   "group": "child",
+   "title": "Lavender or tea tree oil",
+   "facts": [
+    {
+     "t": "A 2007 report described three healthy boys whose breast growth started while using lavender or tea tree oil products and stopped when the products were stopped.",
+     "s": "nejm_2007"
+    },
+    {
+     "t": "NIEHS researchers found chemicals in these oils with estrogen-like or anti-androgen activity in cell tests; an NIEHS scientist described such effects in children as very rare.",
+     "s": "niehs_2019"
+    }
+   ],
+   "not_known": [
+    "Case reports cannot show the oils caused it; no safe or unsafe amount has been established."
+   ]
+  },
+  {
+   "id": "mi_mci",
+   "group": "child",
+   "title": "MI or MCI preservative",
+   "facts": [
+    {
+     "t": "The EU has banned methylisothiazolinone in leave-on cosmetics since February 12, 2017, because no safe level for causing skin allergy was shown.",
+     "s": "eu_mi"
+    }
+   ]
+  },
+  {
+   "id": "formaldehyde_releaser",
+   "group": "child",
+   "title": "Formaldehyde-releasing preservative",
+   "facts": [
+    {
+     "t": "The EU requires products to be labeled “releases formaldehyde” when released formaldehyde exceeds 0.001%.",
+     "s": "eu_formaldehyde"
+    }
+   ]
+  },
+  {
+   "id": "parabens",
+   "group": "child",
+   "title": "Propyl- or butylparaben",
+   "facts": [
+    {
+     "t": "The EU bans propylparaben and butylparaben in leave-on products made for the diaper area of children under 3, because a risk for babies under 6 months could not be excluded.",
+     "s": "eu_parabens_diaper"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "The EU scientific committee found methylparaben and ethylparaben safe at permitted levels.",
+     "s": "eu_parabens_ban"
+    }
+   ]
+  },
+  {
+   "id": "retinyl_palmitate",
+   "group": "child",
+   "title": "Retinyl palmitate (vitamin A)",
+   "facts": [
+    {
+     "t": "In a 2012 government study, a cream with retinyl palmitate sped up skin tumors caused by simulated sunlight in hairless mice.",
+     "s": "ntp_rp"
+    },
+    {
+     "t": "EU law adopted in 2024 caps vitamin A in body lotion at 0.05% and requires the label “Contains Vitamin A. Consider your daily intake before use.”",
+     "s": "eu_2024_996"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "The EU scientific committee found vitamin A safe at those limits.",
+     "s": "sccs_vitA"
+    }
+   ],
+   "not_known": [
+    "Whether the mouse finding applies to people has not been established; FDA has made no statement on it."
+   ]
+  },
+  {
+   "id": "food_allergen_skin",
+   "group": "child",
+   "title": "Food-derived ingredients",
+   "facts": [
+    {
+     "t": "NIH peanut allergy guidelines single out infants with severe eczema, egg allergy, or both for early peanut introduction.",
+     "s": "niaid_peanut"
+    },
+    {
+     "t": "A UK study found peanut-oil creams used on babies' rashes were associated with a higher risk of peanut allergy.",
+     "s": "bristol_2003"
+    }
+   ],
+   "not_known": [
+    "The skin-exposure link comes from observational studies and is a hypothesis, not a proven cause. Refined oils may contain little protein; labels do not say."
+   ]
+  },
+  {
+   "id": "citrus_photosensitizer",
+   "group": "child",
+   "title": "Citrus peel oil",
+   "facts": [
+    {
+     "t": "Furocoumarins, found naturally in some citrus oils, cause skin reactions in sunlight; EU law requires them to stay below 1 mg/kg in sun protection products.",
+     "s": "eu_furocoumarins"
+    }
+   ],
+   "not_known": [
+    "The label does not say whether this oil has had its furocoumarins removed."
+   ]
+  },
+  {
+   "id": "phenoxyethanol",
+   "group": "pref",
+   "title": "Phenoxyethanol",
+   "facts": [
+    {
+     "t": "The EU scientific committee found phenoxyethanol safe as a preservative up to 1%, including for young children.",
+     "s": "sccs_phenoxyethanol"
+    },
+    {
+     "t": "France required a label against use on the diaper area of children under 3 in 2019; its highest administrative court annulled that decision in 2022 for lack of legal basis.",
+     "s": "ce_2022"
+    }
+   ]
+  },
+  {
+   "id": "ethoxylated",
+   "group": "pref",
+   "title": "PEG and other ethoxylated ingredients",
+   "facts": [
+    {
+     "t": "FDA says these ingredients can carry trace 1,4-dioxane, a manufacturing byproduct it calls a potential human carcinogen.",
+     "s": "fda_dioxane"
+    },
+    {
+     "t": "New York limits 1,4-dioxane to 10 ppm in cosmetics.",
+     "s": "ny_dioxane"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "FDA reports the EU committee considered trace levels of 10 ppm or less safe, and that levels have fallen over time.",
+     "s": "fda_dioxane"
+    }
+   ],
+   "not_known": [
+    "A label cannot show whether any 1,4-dioxane is present."
+   ]
+  },
+  {
+   "id": "bht_bha",
+   "group": "pref",
+   "title": "BHT or BHA",
+   "facts": [
+    {
+     "t": "The US National Toxicology Program lists BHA as reasonably anticipated to be a human carcinogen, based on animal studies.",
+     "s": "ntp_bha"
+    },
+    {
+     "t": "California lists BHA under Proposition 65.",
+     "s": "prop65_bha"
+    }
+   ],
+   "other_side": [
+    {
+     "t": "The EU scientific committee found BHT safe up to 0.8% in cosmetics.",
+     "s": "sccs_bht"
+    }
+   ]
+  },
+  {
+   "id": "talc",
+   "group": "pref",
+   "title": "Talc",
+   "facts": [
+    {
+     "t": "FDA says talc can be contaminated with asbestos, a known cause of cancer when inhaled.",
+     "s": "fda_talc"
+    },
+    {
+     "t": "FDA proposed asbestos testing of talc cosmetics in 2024 and withdrew the proposal in November 2025, saying it will issue a new one.",
+     "s": "fr_talc_withdrawal"
+    },
+    {
+     "t": "WHO's cancer agency classified talc as probably carcinogenic (Group 2A) in 2024.",
+     "s": "iarc_talc"
+    }
+   ]
+  },
+  {
+   "id": "petrolatum_mineral_oil",
+   "group": "pref",
+   "title": "Petrolatum or mineral oil",
+   "facts": [
+    {
+     "t": "Germany's BfR found no recognizable health risk from highly refined mineral oils on the skin.",
+     "s": "bfr_mineral"
+    },
+    {
+     "t": "The AAD recommends petroleum jelly for babies' diaper rash.",
+     "s": "aad_petrolatum"
+    }
+   ]
+  },
+  {
+   "id": "nano_minerals",
+   "group": "pref",
+   "title": "Nano zinc oxide or titanium dioxide",
+   "facts": [
+    {
+     "t": "FDA wrote that zinc oxide stays mainly in the outer dead layers of the skin, whatever its particle size.",
+     "s": "fr_2019"
+    },
+    {
+     "t": "The EU allows nano zinc oxide and nano titanium dioxide up to 25%, but not in uses that could expose the lungs.",
+     "s": "eu_nano_zno"
+    },
+    {
+     "t": "Australia's TGA concluded these nanoparticles are not likely to cause harm in sunscreens.",
+     "s": "tga_nano"
+    }
+   ]
+  }
+ ]
+}

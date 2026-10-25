@@ -1,0 +1,130 @@
+{
+ "Butyloctyl salicylate": {
+  "US": "not permitted",
+  "EU": "not permitted",
+  "AU": "not permitted",
+  "class": "Salicylate ester (2-butyloctyl ester of salicylic acid; C12 branched alcohol).",
+  "related": [
+   "Octisalate (ethylhexyl salicylate, C8 alcohol ester)",
+   "Homosalate",
+   "Trolamine salicylate"
+  ]
+ },
+ "Polyester-8": {
+  "US": "not permitted",
+  "EU": "not permitted",
+  "AU": "not permitted",
+  "class": "Polyester (adipic acid/neopentyl glycol) end-capped with 2-cyano-3,3-diphenylacrylate (the octocrylene chromophore); NICNAS chemical name includes '2-octyldodecyl ester, 2-cyano-3,3-diphenyl-2-propenoate'.",
+  "related": [
+   "Octocrylene (2-ethylhexyl 2-cyano-3,3-diphenylacrylate)"
+  ]
+ },
+ "Ethylhexyl methoxycrylene": {
+  "US": "not permitted",
+  "EU": "not permitted",
+  "AU": "not permitted",
+  "class": "Alkoxy crylene: 2-cyano-3,3-diphenylacrylate with a methoxy substituent (methoxy analog of octocrylene).",
+  "related": [
+   "Octocrylene"
+  ]
+ },
+ "Diethylhexyl syringylidenemalonate": {
+  "US": "not permitted",
+  "EU": "not permitted",
+  "AU": "not permitted",
+  "class": "Benzylidene (syringylidene) malonate diester with a hindered phenol (antioxidant).",
+  "related": [
+   "Polysilicone-15 (dimethicodiethylbenzalmalonate) - non-US filter, same benzalmalonate chromophore class"
+  ]
+ },
+ "Tridecyl salicylate": {
+  "US": "not permitted",
+  "EU": "not permitted",
+  "AU": "not permitted",
+  "class": "Salicylate ester (tridecyl, C13).",
+  "related": [
+   "Octisalate",
+   "Homosalate"
+  ]
+ },
+ "Diethylhexyl 2,6-naphthalate": {
+  "US": "not permitted",
+  "EU": "not permitted",
+  "AU": "not permitted",
+  "class": "Naphthalene dicarboxylate diester (naphthalate).",
+  "related": []
+ },
+ "Ethyl ferulate": {
+  "US": "not permitted",
+  "EU": "not permitted",
+  "AU": "not permitted",
+  "class": "Hydroxycinnamate ester (ethyl ester of ferulic acid).",
+  "related": [
+   "Octinoxate, amiloxate, cinoxate (cinnamates) - same cinnamate chromophore family (structural inference)"
+  ]
+ },
+ "Bis-ethylhexyloxyphenol methoxyphenyl triazine": {
+  "US": "permitted active (since Aug 2026)",
+  "EU": "permitted up to 10%",
+  "AU": "permitted up to 10%",
+  "class": "Hydroxyphenyl triazine.",
+  "related": [
+   "Is itself a US active since Aug 9, 2026"
+  ]
+ },
+ "Benzotriazolyl dodecyl p-cresol": {
+  "US": "not permitted",
+  "EU": "not permitted",
+  "AU": "not permitted",
+  "class": "2-(2-hydroxyphenyl)benzotriazole UV absorber.",
+  "related": [
+   "Same benzotriazole class as drometrizole trisiloxane and bisoctrizole (non-US filters)"
+  ]
+ },
+ "Polysilicone-15": {
+  "US": "not permitted",
+  "EU": "permitted up to 10%",
+  "AU": "permitted up to 10%",
+  "class": "Silicone polymer bearing benzalmalonate (dimethicodiethylbenzalmalonate) chromophores.",
+  "related": [
+   "None in US monograph; same benzalmalonate chromophore as DESM"
+  ]
+ },
+ "Diethylamino hydroxybenzoyl hexyl benzoate": {
+  "US": "not permitted",
+  "EU": "permitted up to 10%",
+  "AU": "permitted up to 10%",
+  "class": "Aminohydroxybenzophenone (benzoyl benzoate) UVA filter.",
+  "related": [
+   "Oxybenzone, dioxybenzone, sulisobenzone (benzophenone family - loose structural relation)"
+  ]
+ },
+ "Isoamyl p-methoxycinnamate": {
+  "US": "not permitted",
+  "EU": "permitted up to 10%",
+  "AU": "permitted up to 10%",
+  "class": "Cinnamate ester (p-methoxycinnamate).",
+  "related": [
+   "Octinoxate (ethylhexyl methoxycinnamate)",
+   "Cinoxate"
+  ]
+ },
+ "Ethylhexyl triazone": {
+  "US": "not permitted",
+  "EU": "permitted up to 5%",
+  "AU": "permitted up to 5%",
+  "class": "Triazine (trianilino-triazine) UVB filter.",
+  "related": [
+   "Bemotrizinol (triazine class)"
+  ]
+ },
+ "4-Methylbenzylidene camphor": {
+  "US": "not permitted",
+  "EU": "banned",
+  "AU": "permitted up to 4%",
+  "class": "Benzylidene camphor derivative.",
+  "related": [
+   "Ecamsule / terephthalylidene dicamphor sulfonic acid (camphor family; not a US monograph active)"
+  ]
+ }
+}
