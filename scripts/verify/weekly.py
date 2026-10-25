@@ -371,8 +371,8 @@ def main():
         x.add_argument("--images", default=None); x.add_argument("--targets", default=None)
     r = sp.add_parser("report"); r.add_argument("old"); r.add_argument("new"); r.add_argument("--out")
     th = sp.add_parser("thumbs"); th.add_argument("--images", required=True); th.add_argument("--site", required=True)
-    a = ap.parse_args()
     sp.add_parser("recalls")
+    a = ap.parse_args()
     {"targets": targets, "packs": packs, "merge": merge, "report": report, "thumbs": thumbs, "recalls": recalls}[a.cmd](a)
 
 

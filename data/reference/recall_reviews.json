@@ -776,6 +776,13 @@
     "why": "the recall is the Fragrance Free Sheer Blend SPF 50 in 50 mL and 236 mL bottles; this label is the Kids Sheer Blend (fragrance, 89 mL tube) - independent audit 2026-10-25",
     "reviewed": "2026-10-25"
    }
+  },
+  "0a0bfe4a-53b6-5b7c-e063-6394a90a23ec": {
+   "D-151-2013": {
+    "verdict": "not_this_product",
+    "why": "recall is the DayWear Sheer Tint Release moisturizer, NDC 11559-008; this label is the 24H-Moisture Creme, NDC 11559-064",
+    "reviewed": "2026-10-25"
+   }
   }
  }
 }
