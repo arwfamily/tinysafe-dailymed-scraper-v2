@@ -146,6 +146,7 @@ def test_v312_rules():
 def test_age_limit():
     assert M.age_limit("Do not use on children under 12 years of age.") == "Do not use on children under 12 years of age"
     assert M.age_limit("For adult use only.") == "For adult use only"
+    assert M.age_limit("Adults 18 years and older: apply liberally") == "Adults 18 years and older"
     assert M.age_limit("Children under 6 months: Ask a doctor") is None
     assert M.age_limit("Keep out of reach of children. Age 50+ skin") is None
 

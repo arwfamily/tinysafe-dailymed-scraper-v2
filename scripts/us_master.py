@@ -394,6 +394,7 @@ _AGE_RX = re.compile(
     r"(?:on|in|for|by)\s+(?:children|kids|babies|infants|a\s+child)"
     r"(?:\s+(?:under|below|younger\s+than|less\s+than)\s+(?:the\s+age\s+of\s+)?\d+\s*(?:years?|yrs?|months?)(?:\s+of\s+age)?)?"
     r"|for\s+adults?\s+(?:use\s+)?only|adults\s+only"
+    r"|adults?\s+(?:1[2-9]|2[01])\s*(?:years?\s+)?(?:of\s+age\s+)?(?:and|or)\s+(?:older|over)"
     r"|for\s+ages?\s+(?:1[0-7]|[1-9])\s*(?:years?\s+)?(?:and\s+(?:up|older|over)|\+)", re.I)
 
 
