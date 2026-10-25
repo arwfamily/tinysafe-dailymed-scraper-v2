@@ -91,3 +91,9 @@ decision. Commit messages end with the session's attribution lines.
   "under review" until it is reviewed in data/reference/recall_reviews.json.
 - A confirmation the reader was unsure of does not make tier A.
 - Reads are tied to spl_version; a changed label is read again.
+- A first read counts as a package check (tier B) only when every active and its % was legible and
+  the reader was sure; otherwise the label stays "filing only" (C). (2026-10-25)
+- A one-read label whose second reader saw another product, another SPF or other actives is C,
+  never B. (2026-10-25)
+- Filed images below about 400k pixels are rarely legible; read them only if time allows, and an
+  unreadable result keeps the label at C.
