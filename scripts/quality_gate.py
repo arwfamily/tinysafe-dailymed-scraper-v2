@@ -62,6 +62,11 @@ RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026
 RETIRED_PRODUCT = {"spray_powder", "no_preservative_water_base", "talc_inhalable", "not_broad_spectrum"}  # last: dropped only when the record shows Broad Spectrum SPF 15+ (v3.11)
 
 
+# warnings no reviewed correction may take away (they come from a non-sunscreen active or the
+# label's own words, never from a list a reader corrected)
+NEVER_LOST = {"adult_active", "under3_restricted", "insect_repellent", "age_limit"}
+
+
 def rule_retired(flag, old_flags):
     if flag in RETIRED_PRODUCT:
         return True
@@ -102,13 +107,24 @@ def check(old, new, explained=None):
         versioned = all("v" in p for p in old["p"])
         o_by = {p["id"]: p for p in old["p"]}
         lost_i = lost_f = 0
-        examples = []
+        examples, t1_review = [], []
         for p in new["p"]:
             q = o_by.get(p["id"])
             if not q or (versioned and str(q.get("v")) != str(p.get("v"))):
                 continue
             printed_only = explained.get(p["id"]) == "printed_list_only"
             if p["id"] in explained and not str(explained[p["id"]]).startswith("scope:") and not printed_only:
+                # a reviewed correction may change the list, but a warning that comes from a
+                # non-sunscreen active or the label's own age limit is never lost on one (Obagi
+                # kits lost hydroquinone's warning to an actives correction; 2026-10-24 review)
+                lost_never = ({f[0] for f in q["v3"]} - {f[0] for f in p["v3"]}) & NEVER_LOST
+                if lost_never:
+                    lost_f += 1
+                    if len(examples) < 10:
+                        examples.append({"id": p["id"], "lost_flags": sorted(lost_never), "explained": explained[p["id"]]})
+                lost_t1 = {f[0] for f in q["v3"]} - {f[0] for f in p["v3"]} - NEVER_LOST - RETIRED_PRODUCT
+                if lost_t1:
+                    t1_review.append({"id": p["id"], "lost_flags": sorted(lost_t1), "explained": explained[p["id"]]})
                 continue                                   # reviewed correction / kept last good read
             on = [old["names"][i] for i in q["i"]]
             nn = [new["names"][i] for i in p["i"]]
@@ -141,6 +157,8 @@ def check(old, new, explained=None):
                 lost_f += 1
                 if len(examples) < 10:
                     examples.append({"id": p["id"], "lost_flags": sorted(fl)})
+        report["explained_labels_losing_other_warnings"] = len(t1_review)
+        report["explained_examples"] = t1_review[:15]
         report.update({"unchanged_labels_losing_inactives": lost_i, "unchanged_labels_losing_flags": lost_f,
                        "examples": examples, "versions_on_both_sides": versioned})
         if versioned and (lost_i or lost_f):

@@ -23,14 +23,26 @@ def main():
     out = {}
     if os.path.exists(OUT):
         out = json.load(open(OUT))
-    # older branches first, so a later fetch of the same label wins
-    for ref in sorted(refs, key=lambda r: (not re.search(r"bw\d", r), r)):
+    # older branches first, so a later fetch of the same label wins: the numbered batches b0..bN
+    # in number order, then the dated ones (bf/bw + YYYYMMDD) by date
+    def _age(r):
+        m = re.search(r"label-images-b(?:[a-z]+)?(\d+)$", r)
+        dated = bool(re.search(r"label-images-b[a-z]+\d{8}$", r))
+        return (dated, int(m.group(1)) if m else -1, r)
+    for ref in sorted(refs, key=_age):
         br = ref.split("refs/heads/")[1]
-        try:
-            git("fetch", "-q", "origin", f"+{ref}:refs/remotes/origin/{br}")
-            idx = json.loads(git("show", f"origin/{br}:label_images/index.json"))
+        try:   # only the index is needed: read it through the REST API, without the image blobs
+            env = {k: v for k, v in os.environ.items() if k != "GH_TOKEN"}
+            idx = json.loads(subprocess.check_output(
+                ["gh", "api", "-H", "Accept: application/vnd.github.raw",
+                 f"repos/arwfamily/tinysafe-dailymed-scraper-v2/contents/label_images/index.json?ref={br}"],
+                text=True, env=env, stderr=subprocess.DEVNULL))
         except Exception:
-            continue
+            try:
+                git("fetch", "-q", "origin", f"+{ref}:refs/remotes/origin/{br}")
+                idx = json.loads(git("show", f"origin/{br}:label_images/index.json"))
+            except Exception:
+                continue
         for sid, v in idx.items():
             names = [i["name"] for i in v.get("images") or [] if i.get("file")]
             if not names:

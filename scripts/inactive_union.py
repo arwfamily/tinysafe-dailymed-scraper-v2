@@ -163,7 +163,10 @@ def _same_core(a, b):
     # is not Ceteareth-20 (2026-10-24 rebuild check: a printed Methylparaben was taken as already
     # shown because Ethylparaben was)
     _alk = lambda s: re.findall(r"(?:ISO)?(?:METHYL|ETHYL|PROPYL|BUTYL|HEXYL|OCTYL)", (s or "").upper())  # noqa: E731
-    _homolog = _alk(ka) != _alk(kb) or re.findall(r"\d+", ka) != re.findall(r"\d+", kb)
+    # one alkyl word swapped for another (methyl/ethyl paraben) is another ingredient; one dropped
+    # or misspelled ("Ethyhexylglycerin", "Butylocty Salicylate") is a typo of the same one
+    _aa, _ab = _alk(ka), _alk(kb)
+    _homolog = (len(_aa) == len(_ab) and _aa != _ab) or re.findall(r"\d+", ka) != re.findall(r"\d+", kb)
     if not _homolog and min(len(ka), len(kb)) >= 8 and difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.92:
         return True                                # spelling variants ("methylparaen")
     if re.findall(r"\d+", ka) and re.findall(r"\d+", kb) and re.findall(r"\d+", ka) != re.findall(r"\d+", kb):

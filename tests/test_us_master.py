@@ -148,6 +148,10 @@ def test_age_limit():
     assert M.age_limit("For adult use only.") == "For adult use only"
     assert M.age_limit("Adults 18 years and older: apply liberally") == "Adults 18 years and older"
     assert M.age_limit("Children under 6 months: Ask a doctor") is None
+    assert M.age_limit("Do not use on infants under 6 months.") is None
+    assert M.age_limit("Do not use on infants less than six months of age") is None
+    assert M.age_limit("Not intended for children under the age of 12.") == "Not intended for children under the age of 12"
+    assert M.age_limit("Do not use on children under 12 months") == "Do not use on children under 12 months"
     assert M.age_limit("Keep out of reach of children. Age 50+ skin") is None
 
 
@@ -155,6 +159,32 @@ def test_unclosed_bracket_split():
     got, ch = M.polish_names(["Citrullus Lanatus (Watermelon Extract, Daucus Carota Sativa (Carrot) Extract, Dimethicone, "
                               "Dodecane, Glycerin, Glyceryl Laurate, Glyceryl Stearate, Methylparaben"])
     assert ch and got[0] == "Citrullus Lanatus (Watermelon Extract)" and "Methylparaben" in got and len(got) == 8, got
+
+
+def test_recall_parent_company_and_spec():
+    # a parent company's recall of a brand it owns (S.C. Johnson recalling Babyganics, Dist. by KAS Direct)
+    r1 = {"recall_number": "R1", "recalling_firm": "Johnson, S C and Son, Inc", "brand": "",
+          "product_description": "Kids by babyganics SPF 50 totally tropical (titanium dioxide 3.5%, zinc oxide 7.25%) "
+                                 "packaged in 6 OZ spray bottles; Dist. by KAS Direct LLC, Racine, WI"}
+    # a recall filed under the old company name of the same product (J&J -> Kenvue)
+    r2 = {"recall_number": "R2", "recalling_firm": "Johnson & Johnson Consumer, Inc.", "brand": "",
+          "product_description": "Neutrogena Ultra Sheer body mist sunscreen BROAD SPECTRUM SPF 30, Avobenzone (3%), "
+                                 "Homosalate (8%), Octisalate (5%), Octocrylene (8%), Net Wt. 5.0 OZ aerosol can"}
+    idx = M.RecallIndex([r1, r2])
+    bg = {"setid": "x1", "labeler": "KAS Direct LLC dba BabyGanics", "spf": 50, "dosage_form": "SPRAY"}
+    got = idx.match(bg, "Kids SPF50 Plus Mineral Sunscreen Continuous Totally Tropical Spray",
+                    acts=[{"name": "ZINC OXIDE", "percent": 7.25}, {"name": "TITANIUM DIOXIDE", "percent": 3.5}])
+    assert [x["recall_number"] for x in got] == ["R1"], got
+    acts = [{"name": "AVOBENZONE", "percent": 3}, {"name": "HOMOSALATE", "percent": 8},
+            {"name": "OCTISALATE", "percent": 5}, {"name": "OCTOCRYLENE", "percent": 8}]
+    ng = {"setid": "x2", "labeler": "Kenvue Brands LLC", "spf": 30, "dosage_form": "SPRAY"}
+    got = idx.match(ng, "Neutrogena Ultra Sheer Body Mist Sunscreen Broad Spectrum SPF 30 Spray", acts=acts)
+    assert [(x["recall_number"], x["status"]) for x in got] == [("R2", "matched")], got
+    # another SPF, other strengths, or a lotion of the same line: not the recalled product
+    assert not idx.match(dict(ng, spf=45), "Neutrogena Ultra Sheer Body Mist Sunscreen SPF 45 Spray", acts=acts)
+    assert not idx.match(dict(ng, dosage_form="LOTION"), "Neutrogena Ultra Sheer Sunscreen SPF 30 Lotion", acts=acts)
+    assert not idx.match(ng, "Neutrogena Ultra Sheer Body Mist Sunscreen SPF 30 Spray",
+                         acts=acts[:3] + [{"name": "OCTOCRYLENE", "percent": 10}])
 
 
 if __name__ == "__main__":

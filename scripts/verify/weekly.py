@@ -161,10 +161,20 @@ def packs(a):
 
 # ---------------------------------------------------------------- merge
 def outputs(work, stage):
-    rows = {}
+    rows, bad = {}, []
     for f in sorted(glob.glob(os.path.join(work, stage, "out", "*.json"))):
-        for x in json.load(open(f)):
-            rows[x["setid"]] = x
+        try:
+            xs = json.load(open(f))
+        except ValueError:
+            bad.append(os.path.basename(f))     # a cut-off agent output: that pack is read again
+            continue
+        for x in xs if isinstance(xs, list) else []:
+            if isinstance(x, dict) and x.get("setid"):
+                if stage == "confirm" and x.get("decision") not in ("confirmed", "differs"):
+                    continue
+                rows[x["setid"]] = x
+    if bad:
+        print(json.dumps({"unreadable_outputs_skipped": bad, "redo": "relaunch these packs, then merge again"}), file=sys.stderr)
     return rows
 
 
@@ -272,9 +282,10 @@ def thumbs(a):
     for p in glob.glob(os.path.join(a.images, "**/label_images/*/*"), recursive=True):
         files[(p.split("/")[-2], os.path.basename(p))] = p
     made = 0
+    fresh = {k[0] for k in files}      # labels whose images were fetched this week: their thumb is redone
     for sid, v in IM.items():
         t = os.path.join(out_dir, sid + ".webp")
-        if os.path.exists(t):
+        if os.path.exists(t) and sid not in fresh:
             continue
         for n in v.get("names") or []:
             src = files.get((sid, re.sub(r"[^A-Za-z0-9._-]", "_", n).rsplit(".", 1)[0] + ".jpg")) or files.get((sid, n))
@@ -283,6 +294,29 @@ def thumbs(a):
                 made += 1
                 break
     print(json.dumps({"thumbnails_made": made}))
+
+
+# ---------------------------------------------------------------- recalls
+def recalls(a):
+    """Recall matches still waiting for a person (brand + name only, shown "under review"): each
+    with the recall's product description, to judge against the label (name, form, SPF, actives
+    and strengths, sizes) and record in data/reference/recall_reviews.json as same_product or
+    not_this_product, with the reason."""
+    rel = os.path.join(ROOT, "data/releases/us/latest/us_all.jsonl")
+    R = {json.loads(l)["recall_number"]: json.loads(l) for l in open(os.path.join(ROOT, "data/recalls/us_drug_recalls.jsonl"))}
+    out = []
+    for l in open(rel, encoding="utf-8"):
+        r = json.loads(l)
+        for x in r.get("recalls") or []:
+            if x.get("status") == "needs_review":
+                d = R.get(x["recall_number"]) or {}
+                out.append({"setid": r["setid"], "name": r.get("name"), "spf": r.get("spf"),
+                            "actives": [[y["name"], y.get("percent")] for y in r.get("actives") or []],
+                            "recall": x["recall_number"], "description": d.get("product_description"),
+                            "code_info": (d.get("code_info") or "")[:300]})
+    print(json.dumps({"needs_review": len(out)}))
+    for o in out:
+        print(json.dumps(o, ensure_ascii=False))
 
 
 def main():
@@ -295,7 +329,8 @@ def main():
     r = sp.add_parser("report"); r.add_argument("old"); r.add_argument("new"); r.add_argument("--out")
     th = sp.add_parser("thumbs"); th.add_argument("--images", required=True); th.add_argument("--site", required=True)
     a = ap.parse_args()
-    {"targets": targets, "packs": packs, "merge": merge, "report": report, "thumbs": thumbs}[a.cmd](a)
+    sp.add_parser("recalls")
+    {"targets": targets, "packs": packs, "merge": merge, "report": report, "thumbs": thumbs, "recalls": recalls}[a.cmd](a)
 
 
 if __name__ == "__main__":

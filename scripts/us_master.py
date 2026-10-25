@@ -202,7 +202,17 @@ _STOPW |= {"NET", "BOTTLE", "BOTTLES", "TUBE", "TUBES", "CAN", "CANS", "UPC", "N
            "LOT", "EXP", "DISTRIBUTED", "MANUFACTURED", "MADE", "PACK", "CARTON", "JAR", "PUMP", "SIZE", "TRAVEL",
            "COUNT", "PER", "UNITS", "LABEL", "LABELED", "PRODUCT", "PRODUCTS", "USA", "INC", "LTD", "CO",
            "AVOBENZONE", "HOMOSALATE", "OCTISALATE", "OCTOCRYLENE", "OCTINOXATE", "OXYBENZONE", "PROTECTION",
-           "PROTECT", "PLUS", "DAILY", "ULTRA", "MOISTURIZER", "MOISTURIZING", "SUN", "SUNBLOCK"}
+           "PROTECT", "PLUS", "DAILY", "ULTRA", "MOISTURIZER", "MOISTURIZING", "SUN", "SUNBLOCK", "CONTINUOUS",
+           "AEROSOL", "OZ"}
+
+
+_DISTBY = re.compile(r"(?:dist(?:ributed)?\.?|manufactured|mfd\.?|made|marketed)\s+(?:exclusively\s+)?(?:by|for)\s*:?\s*([^,;.]{3,60})", re.I)
+_GENERIC_FIRM = {"DIRECT", "BRANDS", "HEALTH", "CARE", "BEAUTY", "LABS", "LABORATORIES", "GROUP", "GLOBAL", "INTERNATIONAL",
+                 "COMPANY", "CORPORATION", "CORP", "HOLDINGS", "PRODUCTS", "SKIN", "SKINCARE", "COSMETICS", "PHARMA",
+                 "PHARMACEUTICALS", "NATURAL", "NATURALS", "ORGANICS", "ENTERPRISES", "INDUSTRIES", "AMERICA", "USA",
+                 "WORLD", "TRADING", "MANUFACTURING", "DBA", "THE", "AND", "NEW", "YORK", "PERSONAL", "CONSUMER",
+                 "JOHNSON", "SONS", "NORTH", "WEST", "EAST", "SOUTH", "UNITED", "STATES", "WALMART", "TARGET", "AMAZON",
+                 "WALGREENS", "WALGREEN", "KROGER", "COSTCO", "MEIJER", "PUBLIX", "HEB", "DOLLAR", "GENERAL", "FAMILY"}
 
 
 def _toks(s):
@@ -212,6 +222,62 @@ def _toks(s):
 def _hazards(text):
     hs = [h for h, rx in _HAZ if rx.search(text or "")]
     return hs or ["other"]
+
+
+_KEEPW = re.compile(r"[^A-Z0-9]+")
+_SPECSTOP = {"SUNSCREEN", "BROAD", "SPECTRUM", "SPF", "LOTION", "CREAM", "SPRAY", "STICK", "AEROSOL", "MIST", "CONTINUOUS",
+             "WITH", "AND", "THE", "FOR", "UVA", "UVB", "PROTECTION", "WATER", "RESISTANT", "MINUTES", "PLUS", "BY",
+             "SUNCREEN"}
+
+
+def _spec_words(s):
+    return {w for w in _KEEPW.sub(" ", (s or "").upper()).split() if len(w) >= 3 and not w.isdigit()
+            and not re.match(r"^SPF\d+$", w) and w not in _SPECSTOP}
+
+
+def _recall_spec(r):
+    if "_spec" in r:
+        return r["_spec"]
+    d = r.get("product_description") or ""
+    # one product per recall only (a retailer's list of many SKUs has several SPFs: not used)
+    spfs = {int(x) for x in re.findall(r"\bSPF\s*(\d{1,3})\b", d, re.I)}
+    if not spfs:
+        spfs = {int(x) for x in re.findall(r"\bSunscreen\s+(?:Spray|Lotion)\s+(\d{2,3})\b|\b(\d{2,3})\s+Sunscreen\b", d, re.I)
+                for x in x if x}
+    acts = {}
+    for m in re.finditer(r"([A-Za-z][A-Za-z \-]{3,40}?)\s*\(?\s*(\d{1,2}(?:\.\d{1,2})?)\s*%", d):
+        k = filter_canon(m.group(1))
+        if k:
+            acts.setdefault(k, float(m.group(2)))
+    head = re.split(r"\(|,|\bpackaged\b|\bNET\b|\bNet\b", d, maxsplit=1)[0]
+    spray = bool(re.search(r"spray|mist|aerosol|\bcan\b", d, re.I))
+    r["_spec"] = (spfs, acts, _spec_words(head), spray)
+    return r["_spec"]
+
+
+def _spec_match(r, c, name, acts):
+    spfs, racts, rwords, rspray = _recall_spec(r)
+    if len(spfs) != 1 or len(racts) < 1:
+        return False
+    if (c.get("spf") or -1) not in spfs:
+        return False
+    la = {}
+    for a in acts or []:
+        k = filter_canon(a["name"]) or a["name"].upper()
+        la[k] = a.get("percent")
+    if set(la) != set(racts) or any(la[k] is None or abs(la[k] - racts[k]) > 0.051 for k in racts):
+        return False
+    lw = _spec_words(name)
+    lw = {w for w in lw if not filter_canon(w)}
+    if len(lw) < 2 or not lw <= rwords:
+        return False
+    # and the recalled product's own words are on this label (a filing named only "Banana Boat
+    # Spray" is the Hair & Scalp spray only if its label says so)
+    tw = LABEL_WORDS.get(c.get("setid"))
+    if tw is not None and len({w for w in rwords if w in tw or w in lw}) < 0.8 * len(rwords):
+        return False
+    lspray = bool(re.search(r"SPRAY|AEROSOL|MIST", (c.get("dosage_form") or "") + " " + (name or "").upper()))
+    return lspray == rspray
 
 
 class RecallIndex:
@@ -229,8 +295,15 @@ class RecallIndex:
                 self.by_ndc[n].append(r)
             r["_toks"] = _toks(r.get("product_description")) | _toks(r.get("recalling_firm"))
             r["_firm"] = _toks(r.get("recalling_firm")) | _toks(r.get("brand"))
+            r["_firm0"] = set(r["_firm"])
+            # the firm on the package, where a parent company files the recall ("Johnson, S C and
+            # Son" recalling "babyganics ... Dist. by KAS Direct LLC"; 2026-10-24, the owner found
+            # Babyganics' 2025 recalls missing)
+            for m in _DISTBY.finditer(r.get("product_description") or ""):
+                r["_firm"] |= _toks(m.group(1))
+            r["_desc"] = r["_toks"]
 
-    def match(self, c, name):
+    def match(self, c, name, acts=None):
         found = {}
         for r in self.by_setid.get(c["setid"], []):
             found[r["recall_number"]] = ("matched", "setid", r)
@@ -240,13 +313,34 @@ class RecallIndex:
         firm = _toks(c.get("labeler")) | _toks(c.get("labeler_from_title"))
         words = _toks(name) - firm
         for r in self.all:
-            if r["recall_number"] in found or not (firm & r["_firm"]):
+            if r["recall_number"] in found:
                 continue
+            # matched not on the recalling firm itself but on the package's distributor or brand
+            _via_brand = not (firm & r["_firm0"])
+            if not (firm & r["_firm"]):
+                # or the label's own brand word (5+ letters, not a generic company word) is
+                # printed in the recalled product's description ("Kids by babyganics")
+                _bw = {w for w in firm if len(w) >= 5 and w not in _GENERIC_FIRM}
+                if not (_bw & r["_desc"]):
+                    continue
             # same firm AND the recalled product's own words are (mostly) this label's words
             rw = r["_toks"] - r["_firm"] - firm
             hit = words & rw
-            if len(hit) >= 3 and len(hit) >= 0.6 * min(len(rw), len(words)):
+            # (or, for a parent company's recall of a brand it owns, matched by the brand word on
+            # the package, two words when they are ALL of this label's own product words:
+            # "Totally Tropical", "Sheer Blend"; only "needs_review" until a person checks it)
+            if (len(hit) >= 3 and len(hit) >= 0.6 * min(len(rw), len(words))) or (_via_brand and len(words) >= 2 and hit >= words):
                 found[r["recall_number"]] = ("needs_review", "brand_and_name", r)
+        # the same product by its own description, whoever filed the recall (J&J's 2021 benzene
+        # recall of Neutrogena sprays now filed under Kenvue; Beiersdorf's Coppertone Sport
+        # sprays): the brand word, every word of this label's product name, the SPF, every
+        # active at the same strength and the same form (spray or not) all agree
+        if acts is not None:
+            for r in self.all:
+                if r["recall_number"] in found:
+                    continue
+                if _spec_match(r, c, name, acts):
+                    found[r["recall_number"]] = ("matched", "name_spf_actives_form", r)
         out = []
         for rid, (st, how, r) in sorted(found.items()):
             out.append({"recall_number": rid, "status": st, "matched_on": how, "date": r.get("recall_initiation_date"),
@@ -392,7 +486,8 @@ AGE_LIMIT = {}
 _AGE_RX = re.compile(
     r"(?:do\s+not\s+use|not\s+(?:to\s+be\s+used|for\s+use|intended|recommended|suitable)(?:\s+for\s+use)?)\s+"
     r"(?:on|in|for|by)\s+(?:children|kids|babies|infants|a\s+child)"
-    r"(?:\s+(?:under|below|younger\s+than|less\s+than)\s+(?:the\s+age\s+of\s+)?\d+\s*(?:years?|yrs?|months?)(?:\s+of\s+age)?)?"
+    r"(?:\s+(?:under|below|younger\s+than|less\s+than)\s+(?:the\s+age\s+of\s+)?"
+    r"(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)(?:\s*(?:years?|yrs?|months?))?(?:\s+of\s+age|\s+old)?)?"
     r"|for\s+adults?\s+(?:use\s+)?only|adults\s+only"
     r"|adults?\s+(?:1[2-9]|2[01])\s*(?:years?\s+)?(?:of\s+age\s+)?(?:and|or)\s+(?:older|over)"
     r"|for\s+ages?\s+(?:1[0-7]|[1-9])\s*(?:years?\s+)?(?:and\s+(?:up|older|over)|\+)", re.I)
@@ -402,13 +497,13 @@ def age_limit(text):
     """The first age limit the label text prints, or None."""
     for m in _AGE_RX.finditer(text or ""):
         ph = re.sub(r"\s+", " ", m.group(0)).strip()
-        tail = (text or "")[m.end():m.end() + 30].lower()
-        if re.search(r"\b6\s*months?\b", ph) and "ask a doctor" in tail:
-            continue                     # the standard direction, not a limit
+        if re.search(r"\b(?:6|six)\s*months?\b", ph, re.I):
+            continue                     # the standard direction (under 6 months: ask a doctor), not a limit
         return ph[0].upper() + ph[1:]
     return None
 
 
+LABEL_WORDS = {}     # every word of the current label text, for matching a recall's product words
 if os.path.exists(_LT):
     import gzip as _gz0
     sys.path.insert(0, HERE)
@@ -425,6 +520,7 @@ if os.path.exists(_LT):
         LABEL_CLAIMS[_d["setid"]] = dict(_c, spf=max(_v) if _v else None, spfs=_v, broad_spectrum=_bs)
         if _NOT_SUN.search(_d.get("text") or ""):
             NOT_SUN.add(_d["setid"])
+        LABEL_WORDS[_d["setid"]] = frozenset(_KEEPW.sub(" ", (_d.get("text") or "").upper()).split())
         _al = age_limit(_d.get("text") or "")
         if _al:
             AGE_LIMIT[_d["setid"]] = (_al, str(_d.get("spl_version")))
@@ -524,11 +620,22 @@ if os.path.exists(_CR):
 # the front panel's "Broad Spectrum" as a person read it from the artwork (artwork_reads.jsonl),
 # where the label text prints only the directions sentence; a read of "no" is not used here
 # (an unseen front panel reads as "no"), so such a label shows nothing rather than a claim
+def _cfb(sid, d):
+    """The second reader's Broad Spectrum answer for the same label version (None if none)."""
+    _f = CONFIRM.get(sid) or {}
+    return _f.get("broad_spectrum") if str(_f.get("spl_version")) == str(d.get("spl_version")) else None
+
+
 for _sid, _d in ARTWORK.items():
     _c = LABEL_CLAIMS.get(_sid)
     if (_c and not _c.get("broad_spectrum") and _d.get("readable") and _d.get("broad_spectrum") is True
             and (_d.get("variants") or 1) == 1 and _CANVER.get(_sid) == str(_d.get("spl_version"))
-            and _sid not in CLAIMS_READS):
+            and _sid not in CLAIMS_READS
+            # a second reader of the same version did not say no or unclear (Hawaiian Tropic Dry
+            # SPF 6 showed the claim on one read the second contradicted; 2026-10-24 review), and
+            # a read from the weekly job counts only once a second reader agreed
+            and (_cfb(_sid, _d) not in (False, "unclear"))
+            and (_d.get("source") != "weekly" or _d.get("second_read") or _cfb(_sid, _d) is True)):
         LABEL_CLAIMS[_sid] = dict(_c, broad_spectrum=True, source=_c.get("source") or "label_image_person")
 
 
@@ -756,8 +863,10 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
         art.get("spl_version")) == str(c.get("spl_version")) else ""
     if art_form and not re.search(r"spray|powder", art_form):
         rollon = True
+    # (not from a single weekly read: there a form that disagreed with the filing was left blank
+    # on purpose, to wait for a second reader, and its notes must not decide it; 2026-10-24 review)
     _an = (art.get("notes") or "") if art_form == "" and art and art.get("readable") and (art.get("variants") or 1) == 1 and str(
-        art.get("spl_version")) == str(c.get("spl_version")) else None
+        art.get("spl_version")) == str(c.get("spl_version")) and (art.get("source") != "weekly" or art.get("second_read")) else None
     if _an is not None:
         if re.search(r"(?i)oil spray|spray oil|easy-to-apply spray|continuous spray|sunscreen spray|spray sunscreen", _an) and not re.search(
                 r"(?i)not (a |an )?spray|mousse|foam", _an):
@@ -1270,6 +1379,14 @@ def build(run_date):
                     if a["name"] in _pr and (a.get("percent") is None or a.get("percent_basis") != "drug_facts_panel")
                     else a for a in acts]
         _art = ARTWORK.get(sid) if str((ARTWORK.get(sid) or {}).get("spl_version")) == str(ver) else None
+        # a kit or several products under one filing (decided again below as `multi`): the package
+        # reads never take a filed active away there, and an active that is no sunscreen filter
+        # (a kit's hydroquinone, an acne gel's salicylic acid) is never taken away at all: its
+        # warning must stay (2026-10-24 independent review)
+        _spfs0 = [x for x in (LABEL_CLAIMS.get(sid) or {}).get("spfs") or [] if x > 15]
+        _kitlike = (int(c.get("product_count") or 1) > 1 or "KIT" in (c.get("dosage_form") or "").upper()
+                    or len(_spfs0) >= 2)
+        _nonuv = [a for a in acts if a["name"] not in US_MAX]
         if _art and _art.get("readable") and (_art.get("variants") or 1) == 1 and _art.get("actives"):
             _ap = PS.read(" ".join(f"{n} {p}%" for n, p in _art["actives"] if p is not None), [a["name"] for a in acts])
             acts = [dict(a, percent=_ap[a["name"]], percent_basis="label_artwork")
@@ -1278,25 +1395,27 @@ def build(run_date):
             # filed active neither read found is not on this package (Islander SPF 6 showed an
             # oxybenzone the artwork does not print; 2026-10-24 random audit)
             _hit = PS.read(" ".join(f"{n} 1%" for n, _p in _art["actives"]), [a["name"] for a in acts])
-            if (_art.get("actives_confirmed") and int(c.get("product_count") or 1) == 1
+            if (_art.get("actives_confirmed") and not _kitlike
                     and len(_hit) == len(_art["actives"]) and 0 < len(_hit) < len(acts)):
-                c = dict(c, _actives_not_on_artwork=[a["name"] for a in acts if a["name"] not in _hit])
-                acts = [a for a in acts if a["name"] in _hit]
+                c = dict(c, _actives_not_on_artwork=[a["name"] for a in acts if a["name"] not in _hit and a["name"] in US_MAX])
+                acts = [a for a in acts if a["name"] in _hit or a["name"] not in US_MAX]
             # ... and when the package prints actives the filing lacks (Mizon's titanium dioxide
             # 18.7%) or other actives altogether (TiZO filed with three chemical filters, the
             # tube prints zinc oxide 20%; 2026-10-24 final audit), the package's are shown
             _ac = [(filter_canon(n), p) for n, p in _art["actives"]]
             _fk = {(filter_canon(a["name"]) or a["name"].upper()): a for a in acts}
-            if (_art.get("actives_confirmed") and int(c.get("product_count") or 1) == 1 and _ac
+            if (_art.get("actives_confirmed") and not _kitlike and _ac
                     and all(k for k, _ in _ac) and len({k for k, _ in _ac}) == len(_ac)
-                    and {k for k, _ in _ac} != set(_fk)):
+                    and {k for k, _ in _ac} != {k for k, a in _fk.items() if a["name"] in US_MAX}):
                 _new = []
                 for k, p in _ac:
                     a = _fk.get(k) or {"name": k, "unii": None, "percent": None, "percent_basis": None}
                     if p is not None and p <= US_MAX.get(k, 100):
                         a = dict(a, percent=p, percent_basis="label_artwork")
                     _new.append(a)
-                c = dict(c, _actives_not_on_artwork=[a["name"] for k, a in _fk.items() if k not in {x for x, _ in _ac}],
+                _new += [a for a in _nonuv if a not in _new]
+                c = dict(c, _actives_not_on_artwork=[a["name"] for k, a in _fk.items()
+                                                     if k not in {x for x, _ in _ac} and a["name"] in US_MAX],
                          _actives_from_artwork=[k for k, _ in _ac if k not in _fk])
                 acts = _new
         ft, mp, cp, organic = filter_split(c, acts)
@@ -1589,7 +1708,7 @@ def build(run_date):
             # how this label's data was checked against the package: A the artwork read twice by
             # independent readers who agreed; B read once and it matched the filed label text;
             # C the filed label text only (no readable artwork, or readers disagreed)
-            "evidence_tier": ("A" if art and art.get("readable") and (art.get("second_read") or (_cf and _cf.get("decision") == "confirmed" and _cf.get("sure"))) else
+            "evidence_tier": ("A" if art and art.get("readable") and (art.get("variants") or 1) == 1 and (art.get("second_read") or (_cf and _cf.get("decision") == "confirmed" and _cf.get("sure"))) else
                               "B" if art and art.get("readable") else "C"),
             "artwork_list_withheld": "multi_product" if (art and art.get("use_list") and art.get("inactives") and multi) else (art or {}).get("list_withheld"),
             "inactives_filed_n": (u2 or {}).get("i_struct_n", 0), "inactives_printed_n": (u2 or {}).get("i_text_n", 0),
@@ -1599,7 +1718,7 @@ def build(run_date):
             "flags": flags(eng, meta, shown, flag_struct, acts_all if multi else acts, organic, c, thin, treason, twins),
             "filed_extras_dropped": extras_dropped or None,
             "multi_product": (n_products if n_products > 1 else "kit") if multi else None,
-            "recalls": recalls.match(c, c.get("product_name") or name) if recalls.all else [],
+            "recalls": recalls.match(c, c.get("product_name") or name, acts=acts_all) if recalls.all else [],
             "recall_checked": bool(recalls.all),
             "formulation_hash": c.get("formulation_hash"),
             "fetch_status": c.get("fetch_status"),
@@ -1615,7 +1734,9 @@ def build(run_date):
             rec["confirm_names_added"] = c["_confirm_added"]
         _agl = AGE_LIMIT.get(sid)
         if not (_agl and _agl[1] == str(ver)) and (art or {}).get("age_limit") and (_cf or {}).get("age_limit"):
-            _agl = (art["age_limit"], str(ver))     # both package readers saw an age limit
+            # both package readers saw an age limit (the standard "under 6 months" is no limit)
+            _agl = (art["age_limit"], str(ver)) if age_limit(art["age_limit"]) or not re.search(
+                r"\b(?:6|six)\s*months?\b", art["age_limit"], re.I) else None
         if _agl and _agl[1] == str(ver) and not any(f[0] == "age_limit" for f in rec["flags"]):
             rec["flags"] = rec["flags"] + [["age_limit", [_agl[0]], meta.get("age_limit", {}).get("l", "age_limit")]]
         if c.get("_absent_removed"):

@@ -1,6 +1,6 @@
 {
  "note": "Recall matches made on brand + product words only (needs_review), reviewed against the recall's product description: name, dosage form, SPF, active ingredients and strengths, UPC vs NDC product code. same_product -> shown as a recall on record; not_this_product -> not shown.",
- "reviewed": "2026-10-20",
+ "reviewed": "2026-10-24",
  "labels": {
   "0806bdb9-961f-3146-e063-6294a90a4625": {
    "D-0010-2022": {
@@ -490,6 +490,124 @@
    "D-0209-2025": {
     "verdict": "same_product",
     "why": "Badger Adventure Sport mineral sunscreen with clear zinc, SPF 50, 25% zinc oxide (2.4 oz tin); recall: some tins shipped without the Drug Facts label"
+   }
+  },
+  "d5ffe993-de8f-4623-a010-9cb8dd70de07": {
+   "D-0275-2025": {
+    "verdict": "same_product",
+    "why": "Kids by babyganics SPF 50 Totally Tropical spray, zinc oxide 7.25% + titanium dioxide 3.5%: this label's product, name, form and strengths (recall filed by parent S.C. Johnson, Dist. by KAS Direct)",
+    "reviewed": "2026-10-24"
+   },
+   "D-0276-2025": {
+    "verdict": "same_product",
+    "why": "same Totally Tropical SPF 50 mineral spray in the 3 oz size, zinc oxide 7.25% + titanium dioxide 3.5% (parent S.C. Johnson)",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "edced0dc-dd43-4ac9-b816-f4edb45fc87b": {
+   "D-0298-2025": {
+    "verdict": "same_product",
+    "why": "babyganics Sheer Blend SPF 50 Mineral Sunscreen, zinc oxide 20%: this label's name, SPF and strength (parent S.C. Johnson, Dist. by KAS Direct)",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "d621c6ca-f801-436c-e053-2995a90a4e34": {
+   "D-0522-2024": {
+    "verdict": "same_product",
+    "why": "Bull Frog Amphibious Lotion SPF 50 with Water Armor Tech: this label's product name, form and SPF",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "f706f90c-eb79-2201-e053-6394a90a2ce4": {
+   "D-0522-2024": {
+    "verdict": "not_this_product",
+    "why": "the recall is the Amphibious Lotion; this label is the Quik spray",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "f70816a3-cc04-b000-e053-6294a90a0fae": {
+   "D-0522-2024": {
+    "verdict": "not_this_product",
+    "why": "the recall is the Amphibious Lotion; this label is the Quik spray",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "def3f67a-f94f-40ed-9f93-a1c60c87c6c7": {
+   "D-0100-2018": {
+    "verdict": "same_product",
+    "why": "Vertra Elemental Resistance SPF 50+, octinoxate 6%, oxybenzone 5%, titanium dioxide 6.3%, zinc oxide 9.9%: identical actives and strengths",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "345641f0-0148-4e30-843a-6516cf7bad1d": {
+   "D-0189-2026": {
+    "verdict": "not_this_product",
+    "why": "recall is the SPF 30 lotion (titanium dioxide 5%, octinoxate 4%, NDC 35192-012); this label is SPF 25, NDC 35192-006",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "acdf62f2-742e-5df9-e053-2a95a90a96c5": {
+   "D-1365-2022": {
+    "verdict": "not_this_product",
+    "why": "Walmart's storage recall lists Banana Boat, Hawaiian Tropic and Coppertone SKUs, no Equate dry oil",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "07d72e69-4178-3268-e054-00144ff88e88": {
+   "D-1078-2018": {
+    "verdict": "not_this_product",
+    "why": "recall is Sensitive Sheer Shield SPF 50+ tube; another Alba product",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "270c273b-7098-42db-e054-00144ff8d46c": {
+   "D-1078-2018": {
+    "verdict": "not_this_product",
+    "why": "recall is Sensitive Sheer Shield SPF 50+ tube; another Alba product",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "463e8172-8232-21b4-e054-00144ff88e88": {
+   "D-1078-2018": {
+    "verdict": "not_this_product",
+    "why": "recall is Sensitive Sheer Shield SPF 50+ tube; another Alba product",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "9e51ed3b-1b75-7e9d-e053-2a95a90a5f87": {
+   "D-0523-2024": {
+    "verdict": "not_this_product",
+    "why": "recall is the Aloe Gator SPF 40+ gel; this is an Aloe Up spray",
+    "reviewed": "2026-10-24"
+   },
+   "D-0530-2024": {
+    "verdict": "not_this_product",
+    "why": "recall is the Aloe Gator SPF 40+ gel; this is an Aloe Up spray",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "9e5211eb-dd24-ff9a-e053-2a95a90a7768": {
+   "D-0523-2024": {
+    "verdict": "not_this_product",
+    "why": "recall is the Aloe Gator SPF 40+ gel; this is an Aloe Up spray",
+    "reviewed": "2026-10-24"
+   },
+   "D-0530-2024": {
+    "verdict": "not_this_product",
+    "why": "recall is the Aloe Gator SPF 40+ gel; this is an Aloe Up spray",
+    "reviewed": "2026-10-24"
+   }
+  },
+  "9e524e0f-7005-d1a0-e053-2995a90ae34c": {
+   "D-0523-2024": {
+    "verdict": "not_this_product",
+    "why": "recall is the Aloe Gator SPF 40+ gel; this is an Aloe Up spray",
+    "reviewed": "2026-10-24"
+   },
+   "D-0530-2024": {
+    "verdict": "not_this_product",
+    "why": "recall is the Aloe Gator SPF 40+ gel; this is an Aloe Up spray",
+    "reviewed": "2026-10-24"
    }
   }
  }

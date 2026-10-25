@@ -34,7 +34,8 @@ Pop packs from WORK/read1/queue.txt. When all outputs exist:
 
 ## 4. Rebuild (so the site shows what read1 confirmed), then confirm
 `python3 scripts/us_master.py && python3 scripts/us_release.py && python3 scripts/reading_queue.py && python3 scripts/site_db.py --old <arwhouse>/sunnytime/db.json --out data/site/sunnytime_db.json --index <arwhouse>/sunnytime/index.html`
-(about 20 minutes; run it in the background).
+(about 20 minutes; run it in the background). If the gate fails here, stop: do not run confirm on the
+older site file; report the gate's examples and fix the cause first (the site keeps last week's data).
 `python3 scripts/verify/weekly.py packs confirm WORK --images WORK/images`, agents with
 BRIEF_confirm.md (packs cNNN, outputs WORK/confirm/out), then `weekly.py merge confirm WORK`.
 
@@ -58,6 +59,11 @@ Then confirm the site actually deployed: `env -u GH_TOKEN gh api repos/arwfamily
 must show `Vercel success` within about 5 minutes. If no status appears after 10 minutes, push an empty commit
 (`git commit --allow-empty -m "Redeploy"`) and check again; report it if it still does not deploy.
 
+`python3 scripts/verify/weekly.py recalls` lists recall matches still "under review" (brand + name
+only). Judge each against its recall description (name, form, SPF, actives and strengths) and record
+the verdict in `data/reference/recall_reviews.json` (`same_product` / `not_this_product` + why); when
+the description cannot tell (a skin type or size not stated), leave it under review. Rebuild if any changed.
+
 ## 7. Report
 Send the owner a short summary in Korean: labels changed this week, read1/confirm/third counts,
 tier A/B/C totals, gate result, any warnings lost by changed labels, and anything that needs a
@@ -65,6 +71,13 @@ decision. Commit messages end with the session's attribution lines.
 
 ## Rules that must not be loosened
 - A field read once that disagrees with the filing is not used until a second reader agrees.
-- Lists only gain names (a package can print two lists); nothing is renamed or removed on reads.
+- Lists only gain names (a package can print two lists); nothing is renamed on reads. The one
+  removal: a filed name three readers found printed nowhere, that gives no warning, AND whose
+  printed form is already in the list (a duplicate or misspelling) or that is a footnote.
+- A package read never takes a filed active away in a kit or multi-product filing, and never takes
+  away an active that is not a sunscreen filter (its warning must stay).
+- Recalls: a recall is shown on a label only when matched by setid, NDC, a person's review, or the
+  same brand + product words + SPF + every active strength + form. A brand + name match alone shows
+  "under review" until it is reviewed in data/reference/recall_reviews.json.
 - A confirmation the reader was unsure of does not make tier A.
 - Reads are tied to spl_version; a changed label is read again.
