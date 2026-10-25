@@ -991,7 +991,7 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     # a lecithin printed without its source that the FDA filing names as soybean lecithin
     # (Eminence's "plant-derived lecithin"; 2026-10-25 final audit): soy
     if "soy" not in fl and any(re.search(r"(?i)LECITHIN", x or "") and not re.search(r"(?i)SUNFLOWER|HELIANTHUS|EGG|RAPESEED|CANOLA", x or "")
-                               for x in shown or []) and any(re.search(r"(?i)SOY[A-Z]*[^,]*LECITHIN|LECITHIN[^,]*SOY|GLYCINE[^,]*LECITHIN", x or "")
+                               for x in shown or []) and any(re.search(r"(?i)SOY[A-Z]*[^,]*LECITHIN|LECITHIN(?:[^,]*|,\s*)SOY|GLYCINE[^,]*LECITHIN", x or "")
                                                              for x in (struct or []) + list(c.get("_filed_all") or [])):
         add("soy", [next(x for x in shown if re.search(r"(?i)LECITHIN", x or "")) + " (filed as soybean lecithin)"])
     _sf = " ".join(str(x) for x in ((art or {}).get("notes"), (lc or {}).get("allergen_statement"),
@@ -999,10 +999,10 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     if "soy" in fl:
         # the FDA filing names the lecithin's source as sunflower (Particle's "Lecithin" is filed
         # as sunflower lecithin; 2026-10-24 final audit): not soy
-        _sun = any(re.search(r"(?i)(SUNFLOWER|HELIANTHUS|EGG)[^,]*(LECITHIN|PHOSPHOLIPID)|LECITHIN[^,]*(SUNFLOWER|HELIANTHUS|EGG)", x or "")
+        _sun = any(re.search(r"(?i)(SUNFLOWER|HELIANTHUS|EGG)[^,]*(LECITHIN|PHOSPHOLIPID)|LECITHIN(?:[^,]*|,\s*)(SUNFLOWER|HELIANTHUS|EGG)", x or "")
                    for x in (struct or []) + list(c.get("_filed_all") or []) + list(shown or []))
         # an egg lecithin (Jafra, Dermalogica; 2026-10-25 final audit) is an egg ingredient
-        _egg = next((x for x in (struct or []) + list(c.get("_filed_all") or []) if re.search(r"(?i)EGG[^,]*(LECITHIN|PHOSPHOLIPID)|LECITHIN[^,]*EGG", x or "")), None)
+        _egg = next((x for x in (struct or []) + list(c.get("_filed_all") or []) if re.search(r"(?i)EGG[^,]*(LECITHIN|PHOSPHOLIPID)|LECITHIN(?:[^,]*|,\s*)EGG", x or "")), None)
         if _egg and "egg" not in fl:
             _pl = next((x for x in shown or [] if re.search(r"(?i)LECITHIN", x or "")), None)
             add("egg", [(_pl + " (filed as egg lecithin)") if _pl else _egg])
