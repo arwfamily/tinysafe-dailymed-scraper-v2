@@ -23,8 +23,12 @@ def text_inactives(t):
     rest = t[m.end():m.end() + 4000]
     e = END.search(rest)
     sec = rest[:e.start()] if e else rest[:1500]
-    parts = [p.strip(" .;:*") for p in re.split(r",\s*(?![^()]*\))", sec)]
-    return [p for p in parts if 2 < len(p) < 120 and not re.match(r"(?i)^(and|may contain|\+/-)$", p)]
+    parts = [p.strip(" .;:*") for p in re.split(r"(?<!\d),\s*|,\s+(?![^()]*\))|,(?!\d)(?![^()]*\))", sec)]
+    parts = [re.sub(r"(?i)^(may contain|\+/-)\s*:?\s*", "", p).strip() for p in parts]
+    return [p for p in parts if 2 < len(p) < 80 and not re.match(r"(?i)^(and|may contain|\+/-)$", p)
+            and not re.search(r"(?i)\b(www\.|inc\b|llc|ltd|suite|floor|road|street|ave\b|ny \d|ca \d|ontario|adverse|stop use|"
+                              r"principal|display panel|label|trademark|distributed|made in)\b", p)
+            and not re.search(r"\d+(\.\d+)?\s*%", p)]
 
 
 def text_actives(t):
@@ -34,7 +38,8 @@ def text_actives(t):
     seg = t[m.end():m.end() + 500]
     seg = re.split(r"Purpose|PURPOSE|Uses|USES|Inactive", seg)[0]
     out = {}
-    for mm in re.finditer(r"([A-Za-z][A-Za-z \-]{3,45}?)\s*\(?\s*(\d{1,2}(?:\.\d{1,3})?)\s*%", seg):
+    seg = re.sub(r"(\d)\.\s*%", r"\1%", seg)
+    for mm in re.finditer(r"([A-Za-z][A-Za-z \-]{3,45}?)\s*[(\[]?\s*(\d{1,2}(?:\.\d{1,3})?)\s*%", seg):
         k = U.filter_canon(mm.group(1))
         if k and k not in out:
             out[k] = float(mm.group(2))

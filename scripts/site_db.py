@@ -38,6 +38,16 @@ def build(release_dir, thumbs_dir=None):
     # package images DailyMed lists for each label (scripts/verify/image_names.py), front first
     _imp = os.path.join(ROOT, "data/views/label_image_names.json")
     IMGS = json.load(open(_imp, encoding="utf-8")) if os.path.exists(_imp) else {}
+    # a label whose filed images a reader found to show another product: no photo (a parent would
+    # take it for this one; Avon's Sport Refresh filed with its Kids lotion art; 2026-10-24)
+    WRONG = set()
+    for _f in ("artwork_reads", "confirm_reads", "third_reads", "bs_reads", "absent_reads", "no_artwork"):
+        _fp = os.path.join(ROOT, "data/corrections", _f + ".jsonl")
+        if os.path.exists(_fp):
+            for _l in open(_fp, encoding="utf-8"):
+                _d = json.loads(_l)
+                if _d.get("wrong_product") or _d.get("reason") == "wrong_product":
+                    WRONG.add(_d["setid"])
     for r in sorted(rows, key=lambda r: (r.get("status") != "active", r.get("name") or "")):
         ii = []
         for n in r.get("inactives") or []:
@@ -66,7 +76,7 @@ def build(release_dir, thumbs_dir=None):
             p["ev"] = r["evidence_tier"]                    # A two package reads agreed, B one read = filing, C filing only
         if r.get("thin_reason"):
             p["thin_reason"] = r["thin_reason"]
-        if r.get("status") == "active" and (IMGS.get(r["setid"]) or {}).get("names") and (
+        if r.get("status") == "active" and r["setid"] not in WRONG and (IMGS.get(r["setid"]) or {}).get("names") and (
                 thumbs_dir is None or os.path.exists(os.path.join(thumbs_dir, r["setid"] + ".webp"))):
             # (only with the site's own thumbnail: a photo it cannot show is not promised)
             p["im"] = IMGS[r["setid"]]["names"][:3]

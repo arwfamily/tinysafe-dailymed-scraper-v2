@@ -457,6 +457,12 @@ if os.path.exists(_ABP):
 # a third, blind read of the SPF where the package reads and the label text disagreed
 # (data/corrections/spf_reads.jsonl, 2026-10-24): it agreed with the package in 25 of 26; where it
 # could not tell, the lower of the two printed values is shown (never more protection than printed)
+BS_READS = {}
+_BSP = os.path.join(ROOT, "data/corrections/bs_reads.jsonl")
+if os.path.exists(_BSP):
+    for _x in open(_BSP, encoding="utf-8"):
+        _d = json.loads(_x)
+        BS_READS[_d["setid"]] = _d
 SPF_READS = {}
 _SPP = os.path.join(ROOT, "data/corrections/spf_reads.jsonl")
 if os.path.exists(_SPP):
@@ -1816,6 +1822,14 @@ def build(run_date):
             rec["confirm_names_renamed"] = c["_confirm_renamed"]
         # Broad Spectrum and SPF 15+ as the record shows them: the alert-based warning, read from
         # a filing field the package contradicts, does not stand (Avasol; 2026-10-24 audit)
+        # a second, blind read of "Broad Spectrum" where the claim rested on one read of the package
+        # (data/corrections/bs_reads.jsonl, 2026-10-24): kept only when the second reader saw it too;
+        # a disagreement or an unclear answer shows "not stated", never a claim
+        _bsr = BS_READS.get(sid)
+        if (_bsr and str(_bsr.get("spl_version")) == str(ver) and rec.get("broad_spectrum")
+                and _bsr.get("broad_spectrum") is not True):
+            rec["broad_spectrum"] = None
+            rec["broad_spectrum_unconfirmed"] = True
         if rec.get("broad_spectrum") and isinstance(rec.get("spf"), (int, float)) and rec["spf"] >= 15:
             rec["flags"] = [f for f in rec["flags"] if f[0] != "not_broad_spectrum"]
         # SPF 2-14 read from the package or the name (not the filing's field): the same warning
