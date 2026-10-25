@@ -207,6 +207,12 @@ def merge(a):
             if not r:
                 continue
             ver = str(r.get("spl_version"))
+            # a label whose Drug Facts actives could not be read (no US Drug Facts panel, a
+            # cosmetic-style list, blurred percentages) is not a package read that checked the
+            # filing: it stays "filing only" (2026-10-25)
+            if x.get("readable") and not x.get("wrong_product") and not (x.get("actives") and all(
+                    isinstance(p, (list, tuple)) and len(p) > 1 and isinstance(p[1], (int, float)) for p in x["actives"])):
+                x = dict(x, readable=False, notes="actives not legible on the package. " + (x.get("notes") or ""))
             if not x.get("readable") or x.get("wrong_product"):
                 na.append({"setid": s, "spl_version": ver, "read": TODAY,
                            "reason": "wrong_product" if x.get("wrong_product") else "unreadable", "notes": (x.get("notes") or "")[:500]})
