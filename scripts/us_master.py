@@ -1998,6 +1998,16 @@ def build(run_date):
         _pfa = PKG_FACTS.get(sid) or {}
         if not (_agl and _agl[1] == str(ver)) and _pfa.get("age_limit") and str(_pfa.get("spl_version")) == str(ver):
             _agl = (_pfa["age_limit"], str(ver))     # printed on the package, read by two readers
+        if str(_pfa.get("spl_version")) == str(ver):
+            # the SPF two readers saw printed on the package where the filing's own fields disagree
+            # (Australian Gold Instant Bronzer: package 50, name field 30; 2026-10-25 final audit)
+            if isinstance(_pfa.get("spf"), int):
+                rec["spf"] = _pfa["spf"]
+            # strengths the package contradicts (Lanemay: front "ZINC OXIDE 20%", filing 5%): withheld,
+            # never shown wrong
+            if _pfa.get("withhold_percent"):
+                rec["actives"] = [dict(a, percent=None) for a in rec.get("actives") or []]
+                rec["actives_percent_withheld"] = "package_conflict"
         if not (_agl and _agl[1] == str(ver)) and (art or {}).get("age_limit") and (_cf or {}).get("age_limit"):
             # both package readers saw an age limit (the standard "under 6 months" is no limit)
             _agl = (art["age_limit"], str(ver)) if age_limit(art["age_limit"]) or not re.search(

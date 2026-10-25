@@ -5,3 +5,5 @@
 {"setid": "89a13eb8-f6c0-42ad-b5cb-151eb450b96b", "spl_version": "2", "read": "2026-10-25", "readers": "final independent audit + blind second read, agreeing", "form": "oil"}
 {"setid": "e28f38a6-f4b5-44fc-8ad4-8b76b72ed327", "spl_version": "3", "read": "2026-10-25", "readers": "final independent audit + blind second read, agreeing", "form": "lotion"}
 {"setid": "61273611-ab7a-4216-aebe-2c8d89660281", "spl_version": "2", "read": "2026-10-25", "readers": "final independent audit + blind second read, agreeing", "form": "lotion"}
+{"setid": "ecfbb53a-0f05-9dcc-e053-2a95a90afb66", "spl_version": "2", "read": "2026-10-25", "readers": "final independent audit + blind second read, agreeing", "why": "package front prints 50 and BROAD SPECTRUM SPF 50; the filing's name field says SPF 30", "spf": 50}
+{"setid": "19f94284-5594-39ab-e063-6294a90a63bd", "spl_version": "1", "read": "2026-10-25", "readers": "final independent audit + blind second read, agreeing", "why": "package front prints ZINC OXIDE 20%; the filing gives 5%", "withhold_percent": true}
