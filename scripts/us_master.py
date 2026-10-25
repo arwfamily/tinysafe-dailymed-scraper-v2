@@ -992,14 +992,15 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     # (Eminence's "plant-derived lecithin"; 2026-10-25 final audit): soy
     if "soy" not in fl and any(re.search(r"(?i)LECITHIN", x or "") and not re.search(r"(?i)SUNFLOWER|HELIANTHUS|EGG|RAPESEED|CANOLA", x or "")
                                for x in shown or []) and any(re.search(r"(?i)SOY[A-Z]*[^,]*LECITHIN|LECITHIN[^,]*SOY|GLYCINE[^,]*LECITHIN", x or "")
-                                                             for x in struct or []):
+                                                             for x in (struct or []) + list(c.get("_filed_all") or [])):
         add("soy", [next(x for x in shown if re.search(r"(?i)LECITHIN", x or "")) + " (filed as soybean lecithin)"])
     if "soy" in fl:
         # the FDA filing names the lecithin's source as sunflower (Particle's "Lecithin" is filed
         # as sunflower lecithin; 2026-10-24 final audit): not soy
-        _sun = any(re.search(r"(?i)(SUNFLOWER|HELIANTHUS|EGG)[^,]*(LECITHIN|PHOSPHOLIPID)|LECITHIN[^,]*(SUNFLOWER|HELIANTHUS|EGG)", x or "") for x in (struct or []) + list(shown or []))
+        _sun = any(re.search(r"(?i)(SUNFLOWER|HELIANTHUS|EGG)[^,]*(LECITHIN|PHOSPHOLIPID)|LECITHIN[^,]*(SUNFLOWER|HELIANTHUS|EGG)", x or "")
+                   for x in (struct or []) + list(c.get("_filed_all") or []) + list(shown or []))
         # an egg lecithin (Jafra, Dermalogica; 2026-10-25 final audit) is an egg ingredient
-        _egg = next((x for x in (struct or []) if re.search(r"(?i)EGG[^,]*(LECITHIN|PHOSPHOLIPID)|LECITHIN[^,]*EGG", x or "")), None)
+        _egg = next((x for x in (struct or []) + list(c.get("_filed_all") or []) if re.search(r"(?i)EGG[^,]*(LECITHIN|PHOSPHOLIPID)|LECITHIN[^,]*EGG", x or "")), None)
         if _egg and "egg" not in fl:
             _pl = next((x for x in shown or [] if re.search(r"(?i)LECITHIN", x or "")), None)
             add("egg", [(_pl + " (filed as egg lecithin)") if _pl else _egg])
@@ -1895,7 +1896,7 @@ def build(run_date):
             "label_check": (chk or {}).get("status"), "label_check_date": (chk or {}).get("checked"),
             "label_check_stale": bool(L.stale(led, sid, ver)) and chk is None,
             "thin": thin, "thin_reason": treason,
-            "flags": flags(eng, meta, shown, flag_struct, acts_all if multi else acts, organic, c, thin, treason, twins),
+            "flags": flags(eng, meta, shown, flag_struct, acts_all if multi else acts, organic, dict(c, _filed_all=list(struct or [])), thin, treason, twins),
             "filed_extras_dropped": extras_dropped or None,
             "multi_product": (n_products if n_products > 1 else "kit") if multi else None,
             "recalls": recalls.match(c, c.get("product_name") or name, acts=acts_all) if recalls.all else [],
