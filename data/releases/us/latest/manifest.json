@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-24",
  "git_tag": "us-data-2026-10-24",
- "released": "2026-10-25T02:44:24+00:00",
+ "released": "2026-10-25T03:37:25+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.12 · 2026-10-24",
  "source": {
@@ -25,10 +25,10 @@
    "filter_type": {
     "mineral_only": 3882,
     "chemical_only": 4289,
-    "hybrid_chemical_primary": 844,
-    "hybrid_mineral_primary": 379,
-    "hybrid_equal": 20,
-    "hybrid_pct_unknown": 5
+    "hybrid_chemical_primary": 846,
+    "hybrid_mineral_primary": 381,
+    "hybrid_equal": 17,
+    "hybrid_pct_unknown": 4
    },
    "label_check": {
     "confirmed": 1707,
@@ -41,7 +41,7 @@
     "needs_review": 1
    },
    "label_verified_share": 0.9735,
-   "inactives_7_or_fewer": 343,
+   "inactives_7_or_fewer": 341,
    "recalls": {
     "labels_matched": 31,
     "labels_needs_review": 5
@@ -55,10 +55,10 @@
    },
    "filter_type": {
     "mineral_only": 3882,
-    "hybrid_chemical_primary": 844,
-    "hybrid_mineral_primary": 379,
-    "hybrid_equal": 20,
-    "hybrid_pct_unknown": 5
+    "hybrid_chemical_primary": 846,
+    "hybrid_mineral_primary": 381,
+    "hybrid_equal": 17,
+    "hybrid_pct_unknown": 4
    },
    "label_check": {
     "confirmed": 1215,
@@ -70,7 +70,7 @@
     "non_english_label": 4
    },
    "label_verified_share": 0.9544,
-   "inactives_7_or_fewer": 108,
+   "inactives_7_or_fewer": 107,
    "recalls": {
     "labels_matched": 16,
     "labels_needs_review": 3
@@ -95,7 +95,7 @@
     "label_image_mismatch": 2
    },
    "label_verified_share": 0.9828,
-   "inactives_7_or_fewer": 32,
+   "inactives_7_or_fewer": 30,
    "recalls": {
     "labels_matched": 5,
     "labels_needs_review": 1
@@ -115,15 +115,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9461,
-   "sha256": "748337cbbbf52eba1bf924e80650ffb08c081bfbd8d524c2c3513613ef01d2ff"
+   "sha256": "845c6d2e53078c81465c25beccc8ffd3548cbe2c585818c21e7a959b66b4336d"
   },
   "us_mineral.jsonl": {
    "rows": 5152,
-   "sha256": "bdf80465cf51c53282e5bed90f4bdae86e50cf3c3b364a32351c963b24f887af"
+   "sha256": "29193532542502ec9f139ed7b74f03655a6c4c9817d0eb8fb3f7981674cf2568"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "8414cba35e889709907a28563b71957397debe241c8911d5a1e4ac3aa8ef9fed"
+   "sha256": "7e6b6a69acc2ac3538ee48621cca5674aafbc87d7c9ff04aba45ea64a76cec0e"
   },
   "us_out_of_scope.jsonl": {
    "rows": 4827,
