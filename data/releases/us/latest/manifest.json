@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-25",
  "git_tag": "us-data-2026-10-25",
- "released": "2026-10-25T12:53:20+00:00",
+ "released": "2026-10-25T14:02:26+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.12 · 2026-10-24",
  "source": {
@@ -44,7 +44,7 @@
    "inactives_7_or_fewer": 341,
    "recalls": {
     "labels_matched": 47,
-    "labels_needs_review": 4
+    "labels_needs_review": 3
    }
   },
   "us_mineral": {
@@ -115,11 +115,11 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9461,
-   "sha256": "74430abd3b0b99d5b0b96e3884a7d570092db379af3f8e2dd8c6a4b3a3f7f408"
+   "sha256": "19fe849a1c506e69e0f53aba65a1971fc059764ef62cacdd34598055e3af55d6"
   },
   "us_mineral.jsonl": {
    "rows": 5154,
-   "sha256": "8f13b976214e104147f19e0ec18b422976ae26669c7eb41cf5871d0f7b75af36"
+   "sha256": "cfb248fb6bc7fcc62b00a34fc02997a762e916e9b8caa41c06852f758f4949dd"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
