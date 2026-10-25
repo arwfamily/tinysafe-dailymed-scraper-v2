@@ -1713,6 +1713,13 @@ def build(run_date):
             shown, _p2 = polish_names(shown)
             _pol = _pol or _p2
         tidied = tidied or _pol
+        # one ingredient once (a name added from the label text that polishing made equal to one
+        # already shown: "1,2-Hexanediol" twice; 2026-10-24 consistency audit)
+        _seen, _dd = set(), []
+        for x in shown:
+            if x.upper() not in _seen:
+                _seen.add(x.upper()); _dd.append(x)
+        shown = _dd
         if pn and len(shown) > _n_before:
             # names split back out of one run-together name are printed names: the printed count
             # grows with them (else the cut to the printed count below drops them again)

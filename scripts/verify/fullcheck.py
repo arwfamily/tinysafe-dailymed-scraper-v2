@@ -24,7 +24,8 @@ def text_inactives(t):
     e = END.search(rest)
     sec = rest[:e.start()] if e else rest[:1500]
     parts = [p.strip(" .;:*") for p in re.split(r"(?<!\d),\s*|,\s+(?![^()]*\))|,(?!\d)(?![^()]*\))", sec)]
-    parts = [re.sub(r"(?i)^(may contain|\+/-)\s*:?\s*", "", p).strip() for p in parts]
+    parts = [re.sub(r"(?i)^(section\s+)?(inactive\s+ingredients?\s*[-:]?\s*)?(may contain|\+/-)?\s*[:\[(]?\s*", "", p).strip() for p in parts]
+    parts = [re.sub(r"\s*\*.*$|\s+[A-Z]{1,3}\d{4,}\w*$|\.\s+.*$", "", p).strip() for p in parts]
     return [p for p in parts if 2 < len(p) < 80 and not re.match(r"(?i)^(and|may contain|\+/-)$", p)
             and not re.search(r"(?i)\b(www\.|inc\b|llc|ltd|suite|floor|road|street|ave\b|ny \d|ca \d|ontario|adverse|stop use|"
                               r"principal|display panel|label|trademark|distributed|made in)\b", p)
@@ -43,6 +44,11 @@ def text_actives(t):
         k = U.filter_canon(mm.group(1))
         if k and k not in out:
             out[k] = float(mm.group(2))
+    # "3% Avobenzone 10% Homosalate" (strength first)
+    for mm in re.finditer(r"(\d{1,2}(?:\.\d{1,3})?)\s*%\s*([A-Za-z][A-Za-z \-]{3,45}?)(?=\s*(?:\d|Purpose|PURPOSE|Sunscreen|,|$|\.))", seg):
+        k = U.filter_canon(mm.group(2))
+        if k and k not in out:
+            out[k] = float(mm.group(1))
     return out
 
 
