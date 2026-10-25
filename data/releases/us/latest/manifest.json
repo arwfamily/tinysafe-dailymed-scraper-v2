@@ -1,7 +1,7 @@
 {
  "release_id": "us-2026-10-25",
  "git_tag": "us-data-2026-10-25",
- "released": "2026-10-25T14:02:26+00:00",
+ "released": "2026-10-25T14:32:19+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.12 · 2026-10-24",
  "source": {
@@ -41,7 +41,7 @@
     "needs_review": 1
    },
    "label_verified_share": 0.9735,
-   "inactives_7_or_fewer": 341,
+   "inactives_7_or_fewer": 340,
    "recalls": {
     "labels_matched": 47,
     "labels_needs_review": 3
@@ -115,15 +115,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9461,
-   "sha256": "19fe849a1c506e69e0f53aba65a1971fc059764ef62cacdd34598055e3af55d6"
+   "sha256": "9b5e2c55797c7ac3b0f427a381f3982142508f807a2c5b9ff87e94abd9d5f8d5"
   },
   "us_mineral.jsonl": {
    "rows": 5154,
-   "sha256": "cfb248fb6bc7fcc62b00a34fc02997a762e916e9b8caa41c06852f758f4949dd"
+   "sha256": "49d8e04c2e55d9a941795a619432bc80289b9cc1abe180ed4be4d7a89fd2f04c"
   },
   "us_baby_kids.jsonl": {
    "rows": 583,
-   "sha256": "a1c04cb7d6dfc41899020002f95bfc4c9a2b5fd5f5d5881e7fe0d4df6c19a71d"
+   "sha256": "38256f0b20e5d1acf7be93b5d2cc6544bc96b0fa8573755ad2b1c32aa4e875ea"
   },
   "us_out_of_scope.jsonl": {
    "rows": 4827,
