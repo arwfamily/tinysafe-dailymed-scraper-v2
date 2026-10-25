@@ -156,9 +156,16 @@ def same(a, b):
 def _diff_brackets(a, b):
     """A short word before different brackets names different things: "Salt (Sodium Chloride)" is
     not "Salt (Sodium Benzoate)" (Sunsei lost its preservatives; 2026-10-24 audit)."""
-    _pa = set().union(*[tokens(m) for m in re.findall(r"\(([^()]*)\)", (a or "").upper())] or [set()])
-    _pb = set().union(*[tokens(m) for m in re.findall(r"\(([^()]*)\)", (b or "").upper())] or [set()])
-    return bool(_pa and _pb and not (_pa <= _pb or _pb <= _pa) and len(key(a)) <= 10 and key(a) == key(b))
+    if not (len(key(a)) <= 10 and key(a) == key(b)):
+        return False
+    _ma = re.findall(r"\(([^()]*)\)", (a or "").upper()); _mb = re.findall(r"\(([^()]*)\)", (b or "").upper())
+    if not _ma or not _mb:
+        return False
+    # the same bracket written another way ("CI 77491" / "CI77491") is the same
+    if {re.sub(r"[^A-Z0-9]", "", m) for m in _ma} & {re.sub(r"[^A-Z0-9]", "", m) for m in _mb}:
+        return False
+    _pa = set().union(*[tokens(m) for m in _ma]); _pb = set().union(*[tokens(m) for m in _mb])
+    return bool(_pa and _pb and not (_pa <= _pb or _pb <= _pa))
 
 
 def _same_core(a, b):
