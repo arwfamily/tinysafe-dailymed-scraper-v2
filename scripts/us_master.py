@@ -280,11 +280,23 @@ def _spec_match(r, c, name, acts):
     return lspray == rspray
 
 
+_MR = None
+
+
+def _MANUAL_RECALLS():
+    global _MR
+    if _MR is None:
+        _p = os.path.join(ROOT, "data/reference/recall_reviews.json")
+        _MR = json.load(open(_p, encoding="utf-8"))["labels"] if os.path.exists(_p) else {}
+    return _MR
+
+
 class RecallIndex:
     def __init__(self, recalls):
         self.by_setid = collections.defaultdict(list)
         self.by_ndc = collections.defaultdict(list)
         self.all = recalls
+        self.by_number = {r["recall_number"]: r for r in recalls}
         for r in recalls:
             for s in r.get("spl_set_id") or []:
                 self.by_setid[s].append(r)
@@ -341,6 +353,12 @@ class RecallIndex:
                     continue
                 if _spec_match(r, c, name, acts):
                     found[r["recall_number"]] = ("matched", "name_spf_actives_form", r)
+        # a recall a person matched to this label by hand (a retailer's list of SKUs, no product
+        # codes: Family Dollar's 2022 storage recall), recorded in recall_reviews.json
+        for rn, v in (_MANUAL_RECALLS().get(c["setid"]) or {}).items():
+            r = self.by_number.get(rn)
+            if r and rn not in found and v.get("verdict") == "same_product" and v.get("manual"):
+                found[rn] = ("matched", "reviewed", r)
         out = []
         for rid, (st, how, r) in sorted(found.items()):
             out.append({"recall_number": rid, "status": st, "matched_on": how, "date": r.get("recall_initiation_date"),
@@ -512,6 +530,8 @@ _AGE_RX = re.compile(
     r"(?:\s+(?:under|below|younger\s+than|less\s+than)\s+(?:the\s+age\s+of\s+)?"
     r"(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)(?:\s*(?:years?|yrs?|months?))?(?:\s+of\s+age|\s+old)?)?"
     r"|for\s+adults?\s+(?:use\s+)?only|adults\s+only"
+    r"|not\s+formulated\s+(?:to\s+be\s+(?:applied|used)\s+)?(?:to|for|on)\s+children"
+    r"|suitable\s+for\s+children\s*\(?\s*(?:[1-9]|1[0-7])\s*\+?\s*(?:years?|yrs?)?\s*(?:old|and\s+(?:up|older))?\s*\)?"
     r"|adults?\s+(?:1[2-9]|2[01])\s*(?:years?\s+)?(?:of\s+age\s+)?(?:and|or)\s+(?:older|over)"
     r"|for\s+ages?\s+(?:1[0-7]|[1-9])\s*(?:years?\s+)?(?:and\s+(?:up|older|over)|\+)", re.I)
 
@@ -534,6 +554,11 @@ if os.path.exists(_LT):
     for _x in _gz0.open(_LT, "rt", encoding="utf-8"):
         _d = json.loads(_x)
         _c = LABEL_CLAIMS.get(_d["setid"])
+        if _CANVER.get(_d["setid"]) == str(_d.get("spl_version")):
+            # the label's own age limit, whether or not its claims were read (2026-10-25 audit)
+            _al0 = age_limit(_d.get("text") or "")
+            if _al0:
+                AGE_LIMIT[_d["setid"]] = (_al0, str(_d.get("spl_version")))
         if not _c or _CANVER.get(_d["setid"]) != str(_d.get("spl_version")):
             continue
         _v = sorted({int(m.group(1) or m.group(2)) for m in _SPFRX.finditer(_BOILRX.sub(" ", _d.get("text") or ""))
@@ -541,6 +566,10 @@ if os.path.exists(_LT):
         # Broad Spectrum from the text only when it is more than the directions sentence
         _bs = _c.get("broad_spectrum") and bool(_BSRX.search(_strip(_d.get("text") or "")))
         LABEL_CLAIMS[_d["setid"]] = dict(_c, spf=max(_v) if _v else None, spfs=_v, broad_spectrum=_bs)
+        # the Skin Cancer/Skin Aging Alert printed in Spanish ("Alerta de cáncer de piel /
+        # envejecimiento de la piel"; Cyzone, 2026-10-25 final audit)
+        if not _bs and re.search(r"(?i)alerta\s+(?:de\s+)?c[aá]ncer[^.]{0,40}envejecimiento", _d.get("text") or ""):
+            LABEL_CLAIMS[_d["setid"]]["aging_alert"] = True
         if _NOT_SUN.search(_d.get("text") or ""):
             NOT_SUN.add(_d["setid"])
         LABEL_WORDS[_d["setid"]] = frozenset(_KEEPW.sub(" ", (_d.get("text") or "").upper()).split())
@@ -888,7 +917,11 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     _cf2 = CONFIRM.get(c.get("setid")) or {}
     _twice = bool(art and (art.get("second_read") or (_cf2.get("decision") == "confirmed" and _cf2.get("sure")
                                                       and str(_cf2.get("spl_version")) == str(c.get("spl_version")))))
-    if art_form and not re.search(r"spray|powder", art_form) and (_twice or not (SPRAY.search(form) or claim)):
+    # (or one read that agrees with the product's own name: "Sunscreen Lotion SPF 15" filed as a
+    # spray; Panama Jack, H-E-B Baby, No-Ad oil; 2026-10-25 final audit)
+    _named = re.search(r"(?i)\b(LOTION|CREAM|OIL|STICK|BALM|GEL)\b", (c.get("product_name") or "") + " " + re.sub(r"\[[^\]]*\]", " ", c.get("title") or "")) \
+        and not re.search(r"(?i)SPRAY|MIST|AEROSOL|POWDER", (c.get("product_name") or "") + " " + re.sub(r"\[[^\]]*\]", " ", c.get("title") or ""))
+    if art_form and not re.search(r"spray|powder", art_form) and (_twice or _named or not (SPRAY.search(form) or claim)):
         # a spray filing is taken as not a spray only on two agreeing reads of the package
         # (Glow Baby's one read said lotion; 2026-10-24 consistency audit)
         rollon = True
@@ -954,7 +987,23 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
         # (Derma E prints a crossed-out SOY; 2026-10-24 post-fix audit)
         _sf = " ".join(str(x) for x in ((art or {}).get("notes"), (lc or {}).get("allergen_statement"),
                                          (lc or {}).get("free_from"), (lc or {}).get("claims")) if x)
-        if re.search(r"(?i)\bsoy[- ]?free\b|\bno soy\b|free (of|from)[^.]{0,40}\bsoy\b|crossed[- ]out soy|soy crossed", _sf):
+        pass
+    # a lecithin printed without its source that the FDA filing names as soybean lecithin
+    # (Eminence's "plant-derived lecithin"; 2026-10-25 final audit): soy
+    if "soy" not in fl and any(re.search(r"(?i)LECITHIN", x or "") and not re.search(r"(?i)SUNFLOWER|HELIANTHUS|EGG|RAPESEED|CANOLA", x or "")
+                               for x in shown or []) and any(re.search(r"(?i)SOY[A-Z]*[^,]*LECITHIN|LECITHIN[^,]*SOY|GLYCINE[^,]*LECITHIN", x or "")
+                                                             for x in struct or []):
+        add("soy", [next(x for x in shown if re.search(r"(?i)LECITHIN", x or "")) + " (filed as soybean lecithin)"])
+    if "soy" in fl:
+        # the FDA filing names the lecithin's source as sunflower (Particle's "Lecithin" is filed
+        # as sunflower lecithin; 2026-10-24 final audit): not soy
+        _sun = any(re.search(r"(?i)(SUNFLOWER|HELIANTHUS|EGG)[^,]*(LECITHIN|PHOSPHOLIPID)|LECITHIN[^,]*(SUNFLOWER|HELIANTHUS|EGG)", x or "") for x in (struct or []) + list(shown or []))
+        # an egg lecithin (Jafra, Dermalogica; 2026-10-25 final audit) is an egg ingredient
+        _egg = next((x for x in (struct or []) if re.search(r"(?i)EGG[^,]*(LECITHIN|PHOSPHOLIPID)|LECITHIN[^,]*EGG", x or "")), None)
+        if _egg and "egg" not in fl:
+            _pl = next((x for x in shown or [] if re.search(r"(?i)LECITHIN", x or "")), None)
+            add("egg", [(_pl + " (filed as egg lecithin)") if _pl else _egg])
+        if _sun or re.search(r"(?i)\bsoy[- ]?free\b|\bno soy\b|free (of|from)[^.]{0,40}\bsoy\b|crossed[- ]out soy|soy crossed", _sf):
             fl["soy"] = [e for e in fl["soy"] if "source not stated" not in e]
             if not fl["soy"]:
                 del fl["soy"]
@@ -1821,7 +1870,9 @@ def build(run_date):
                                False if LABEL_CLAIMS[sid].get("aging_alert") else
                                True if LABEL_CLAIMS[sid].get("broad_spectrum") else None),
             "dailymed_url": c.get("dailymed_url"), "effective_date": c.get("effective_date"),
-            "actives": acts,
+            # a kit's other actives too (Obagi's hydroquinone 4%; 2026-10-25 final audit), with no %
+            "actives": acts + [dict(a, percent=None, percent_withheld="multi_product") for a in acts_all
+                               if multi and a["name"] not in {b["name"] for b in acts}],
             # why strengths are not shown: several products in one filing, a filed amount that is
             # not w/w, or filed strengths that cannot give the printed SPF
             "actives_percent_withheld": ("multi_product" if multi else "not_w_w" if some_withheld
