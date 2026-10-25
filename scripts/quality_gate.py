@@ -49,8 +49,12 @@ RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026
     # 2026-10-23 random audit: Ligularia fischeri is a plant, Poria cocos a mushroom
     "fish_shellfish": re.compile(r"LIGULARIA FIS(C?H|HC)ERI", re.I),
     "coconut": re.compile(r"PORIA COCOS", re.I),
+    # 2026-10-24 independent audit: PPG names are propoxylated, not ethoxylated; benzylidene camphor
+    # is a UV filter, not camphor; sacha inchi ("mountain peanut") is not peanut
+    "ethoxylated": re.compile(r"^(?!.*(\bPEG|POLYSORBATE|ETH-|LAURETH|STEARETH|POLYETHYLENE)).*\bPPG", re.I),
+    "peanut": re.compile(r"MOUNTAIN PEANUT|PLUKENETIA|SACHA INCHI", re.I),
     # 2026-10-24 audit: Gardenia jasminoides (cape jasmine) is not jasmine, not an EU-listed allergen
-    "eu_fragrance_allergen": re.compile(r"JASMINOIDES", re.I),
+    "eu_fragrance_allergen": re.compile(r"JASMINOIDES|BENZYLIDENC?E\s+CAMPHOR", re.I),
     # 2026-10-24 final audit: a lactic/glycolic acid copolymer (PLGA) is not free glycolic acid
     "animal_derived": re.compile(r"^\s*SR[- ]", re.I),   # recombinant (2026-10-24)
     "botanical_count": re.compile(r"^\s*(PEG|PPG)[- ]?\d", re.I),   # PEG plant-oil derivatives (2026-10-24)

@@ -1398,7 +1398,16 @@ def build(run_date):
         elif not c.get("active_ingredients"):
             # no read of this label gave its actives: the v3.1 db's, else the title's names
             z = (legacy.get(sid) or {}).get("z")
-            got = ([{"name": a[0].upper(), "unii": None, "percent_ww": a[1], "percent_basis": "v3.1_db"} for a in z]
+            # first the Drug Facts "Active ingredients" line of the label text itself (Tonymoly's
+            # spray filed none; the old db had 2 of its 4; 2026-10-24 independent audit)
+            _txt = ((LABEL_CLAIMS.get(sid) or {}).get("actives_text") or "").split("||")[0]
+            _ta = {}
+            for _m in re.finditer(r"([A-Za-z][A-Za-z \-]{3,45}?)\s*\(?\s*(\d{1,2}(?:\.\d{1,3})?)\s*%", _txt):
+                _k = filter_canon(_m.group(1))
+                if _k and _k not in _ta:
+                    _ta[_k] = float(_m.group(2))
+            got = ([{"name": k, "unii": None, "percent_ww": v, "percent_basis": "label_text"} for k, v in _ta.items()]
+                   if _ta else [{"name": a[0].upper(), "unii": None, "percent_ww": a[1], "percent_basis": "v3.1_db"} for a in z]
                    if z else title_actives(c))
             if got:
                 c = dict(c, active_ingredients=got)
@@ -1563,6 +1572,18 @@ def build(run_date):
         art_list = bool(art and art.get("use_list") and art.get("inactives") and not multi)
         if art_list:
             shown, pn = [x for x in art["inactives"] if not is_active(x, akeys_of(acts))], len(art["inactives"])
+            # what the filed label TEXT prints for this same version is a printed name too: kept
+            # when the package read lacks it (Walgreens Kids SPF 50: "Fragrance" in the text list,
+            # not in the package read; 2026-10-24 independent audit). Lists only gain names.
+            _pt = ((u2 or {}).get("i_union") or [])[:(u2 or {}).get("i_text_n") or 0]
+            _have = list(shown)
+            for x in _pt:
+                if x and not is_active(x, akeys_of(acts)) and not any(
+                        x == y or _same_display(x, y) or _same_display(y, x) for y in _have):
+                    _have.append(x)
+            if len(_have) > len(shown):
+                c = dict(c, _text_names_kept=len(_have) - len(shown))
+                shown, pn = _have, len(_have)
         elif art and art.get("use_list") and art.get("inactives") and multi:
             # the filing's list for all its products, plus what this one package prints that the
             # filing lacks (a kit filed with one product's list; Jafra's set lost its booster)

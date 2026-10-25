@@ -125,6 +125,21 @@ class Engine:
         # emulsifier, not a plant extract (2026-10-24 audits)
         if "botanical_count" in fs and re.match(r"\s*(PEG|PPG)[- ]?\d", name.upper()):
             fs.discard("botanical_count")
+        # 2026-10-24 independent audit: a PPG (propoxylated) name is not ethoxylated; 4-methyl-
+        # benzylidene camphor (also misprinted "benzylidence") is a UV filter, not camphor; sacha
+        # inchi ("mountain peanut", Plukenetia) is not peanut
+        _U = name.upper()
+        if "ethoxylated" in fs and re.search(r"\bPPG", _U) and "PEG" not in _U and not R.RX["ethoxylated"].search(
+                re.sub(r"\bPPG[- ]?\d*", " ", _U)):
+            fs.discard("ethoxylated")
+        if "eu_fragrance_allergen" in fs and re.search(r"BENZYLIDENC?E\s+CAMPHOR", _U) and not R.RX[
+                "eu_fragrance_allergen"].search(re.sub(r"\S*BENZYLIDENC?E\s+CAMPHOR", " ", _U)):
+            fs.discard("eu_fragrance_allergen")
+        if re.search(r"BENZYLIDENCE\s+CAMPHOR", _U):
+            fs.add("hidden_uv_booster")
+        if "peanut" in fs and re.search(r"MOUNTAIN PEANUT|PLUKENETIA|SACHA INCHI", _U) and not re.search(
+                r"ARACHIS|(?<!MOUNTAIN )PEANUT", _U):
+            fs.discard("peanut")
         if "animal_derived" in fs and re.match(r"\s*SR[- ]", name.upper()):
             fs.discard("animal_derived")
         if "eu_fragrance_allergen" in fs and "JASMINOIDES" in name.upper() and not R.RX["eu_fragrance_allergen"].search(

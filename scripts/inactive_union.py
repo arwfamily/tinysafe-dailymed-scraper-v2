@@ -153,11 +153,21 @@ def same(a, b):
     return False
 
 
+def _diff_brackets(a, b):
+    """A short word before different brackets names different things: "Salt (Sodium Chloride)" is
+    not "Salt (Sodium Benzoate)" (Sunsei lost its preservatives; 2026-10-24 audit)."""
+    _pa = set().union(*[tokens(m) for m in re.findall(r"\(([^()]*)\)", (a or "").upper())] or [set()])
+    _pb = set().union(*[tokens(m) for m in re.findall(r"\(([^()]*)\)", (b or "").upper())] or [set()])
+    return bool(_pa and _pb and not (_pa <= _pb or _pb <= _pa) and len(key(a)) <= 10 and key(a) == key(b))
+
+
 def _same_core(a, b):
     """Two names for one ingredient: equal loose keys, or one name's distinctive
     words all appear in the other ("SUNFLOWER OIL" ~ "Helianthus Annuus (Sunflower) Seed Oil")."""
     if key(a) == key(b):
-        return True
+        # a short word before different brackets names different things: "Salt (Sodium
+        # Chloride)" is not "Salt (Sodium Benzoate)" (Sunsei lost its preservatives; 2026-10-24 audit)
+        return not _diff_brackets(a, b)
     ka, kb = key(a), key(b)
     # a spelling variant is not another homologue: Methylparaben is not Ethylparaben, Ceteareth-10
     # is not Ceteareth-20 (2026-10-24 rebuild check: a printed Methylparaben was taken as already
@@ -397,6 +407,8 @@ def same_display(filed, printed):
     _cf = set(re.findall(r"CI ?(\d{5})", (filed or "").upper()))
     _cp = set(re.findall(r"CI ?(\d{5})", (printed or "").upper()))
     if _cf and _cp and not (_cf & _cp):
+        return False
+    if _diff_brackets(filed, printed):
         return False
     if same(filed, printed):
         return True
