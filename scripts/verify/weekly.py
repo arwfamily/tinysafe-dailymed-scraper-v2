@@ -233,8 +233,26 @@ def merge(a):
         print(json.dumps({"artwork_reads_added": len(out), "no_artwork": len(na)}))
     elif a.stage == "confirm":
         rows = []
+        shown = {}
+        for f in glob.glob(os.path.join(work, "confirm", "packs", "*.json")):
+            for it in json.load(open(f)):
+                shown[it["setid"]] = it.get("shown") or {}
+        sys.path.insert(0, os.path.join(ROOT, "scripts"))
+        from us_master import filter_canon as _fc
         for s, v in outputs(work, "confirm").items():
-            v["read"] = TODAY; rows.append(v)
+            v["read"] = TODAY
+            # "differs" only because our record had no Broad Spectrum value while the package prints
+            # it: every checked field matches, so it is a confirmation (the claim itself is filled
+            # from the two reads in the build)
+            sh = shown.get(s) or {}
+            if v.get("decision") == "differs" and not v.get("shown_not_on_artwork") and not v.get("on_artwork_not_shown") \
+                    and v.get("broad_spectrum") is True and sh.get("broad_spectrum") in (None, 0, False) \
+                    and (v.get("spf") in (None, "unclear") or v.get("spf") == sh.get("spf")):
+                a1 = {(_fc(n) or (n or "").upper()): p for n, p in acts_norm(v.get("actives"))}
+                a2 = {(_fc(n) or (n or "").upper()): p for n, p in acts_norm(sh.get("actives"))}
+                if not a1 or (a1.keys() == a2.keys() and all(a1[k] is None or a2[k] is None or abs(a1[k] - a2[k]) <= 0.05 for k in a1)):
+                    v["decision"], v["decision_note"] = "confirmed", "differed only in a Broad Spectrum value our record lacked"
+            rows.append(v)
         with open(os.path.join(work, "confirm", "merged.jsonl"), "w", encoding="utf-8") as fh:
             for v in rows:
                 fh.write(json.dumps(v, ensure_ascii=False) + "\n")
