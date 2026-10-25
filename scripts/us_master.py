@@ -2020,6 +2020,14 @@ def build(run_date):
             rec["broad_spectrum_unconfirmed"] = True
         # one package read is "B" only while a second reader of the same version did not find the
         # images to show another product, another SPF or other actives; then it is "C" (2026-10-25)
+        # a filed name printing another SPF than the one shown (OLITA "Baby Mineral Sunscreen, SPF 30",
+        # package SPF 50 read three times; 2026-10-25 final audit): the conflicting number leaves the name
+        _nm = rec.get("name") or ""
+        _ns = [int(x) for x in re.findall(r"(?i)\bSPF\s*(\d{1,3})\b", _nm)]
+        if isinstance(rec.get("spf"), (int, float)) and _ns and rec["spf"] not in _ns and not rec.get("spf_range") \
+                and not rec.get("multi_product"):
+            rec["name"] = re.sub(r"\s{2,}", " ", re.sub(r"(?i),?\s*\bSPF\s*\d{1,3}\b\+?", "", _nm)).strip(" ,-")
+            rec["name_spf_removed"] = _ns
         if rec.get("evidence_tier") == "B" and _cf_disputed(sid, ver, rec):
             rec["evidence_tier"] = "C"
             rec["evidence_disputed"] = True

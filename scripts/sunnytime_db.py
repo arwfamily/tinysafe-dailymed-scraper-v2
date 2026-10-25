@@ -135,6 +135,11 @@ class Engine:
         if "eu_fragrance_allergen" in fs and re.search(r"BENZYLIDENC?E\s+CAMPHOR", _U) and not R.RX[
                 "eu_fragrance_allergen"].search(re.sub(r"\S*BENZYLIDENC?E\s+CAMPHOR", " ", _U)):
             fs.discard("eu_fragrance_allergen")
+        # only expressed peel or whole-fruit citrus oils are phototoxic: not seed, flower (neroli),
+        # leaf/twig (petitgrain) or sweet orange oils (2026-10-25 final audit)
+        if "citrus_photosensitizer" in fs and re.search(r"\b(SEED|FLOWER|BLOSSOM|NEROLI|DULCIS|LEAF|TWIG|PETITGRAIN)\b",
+                                                        _U.split("(FILED WITH")[0]) and not re.search(r"BERGAMOT|BERGAMIA", _U.split("(FILED WITH")[0]):
+            fs.discard("citrus_photosensitizer")
         if re.search(r"BENZYLIDENCE\s+CAMPHOR", _U):
             fs.add("hidden_uv_booster")
         if "peanut" in fs and re.search(r"MOUNTAIN PEANUT|PLUKENETIA|SACHA INCHI", _U) and not re.search(

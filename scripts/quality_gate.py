@@ -60,6 +60,9 @@ RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026
     "animal_derived": re.compile(r"^\s*SR[- ]", re.I),   # recombinant (2026-10-24)
     "botanical_count": re.compile(r"^\s*(PEG|PPG)[- ]?\d", re.I),   # PEG plant-oil derivatives (2026-10-24)
     "adult_active": re.compile(r"GLYCOLIC ACID ?COPOLYMER", re.I),
+    # 2026-10-25 final audit: only expressed peel (or whole-fruit) oils carry furocoumarins; seed oils,
+    # flower oils (neroli), leaf/twig oils (petitgrain) and sweet orange do not
+    "citrus_photosensitizer": re.compile(r"^(?:(?!\(filed with).)*\b(SEED|FLOWER|BLOSSOM|NEROLI|DULCIS|LEAF|TWIG|PETITGRAIN)\b", re.I),
 }
 # product-level flags whose rule changed on purpose (rules v3.6, 2026-10-23 label audit):
 # a spray needs a spray filing or spray wording on a label that is not a stick/cream/roll-on;
