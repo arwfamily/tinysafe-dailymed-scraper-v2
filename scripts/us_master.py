@@ -586,17 +586,21 @@ _AGE_RX = re.compile(
 
 
 _WR_RX = re.compile(
-    r"(?<!not )(?<!non-)(?<!non )\bwater\s*(?:[/&,-]|and)?\s*(?:sweat\s*)?[- ]?resistan(?:t|ce)\b[^.;\n]{0,25}?\(?\s*(40|80)\s*(?:min|minutes)\b"
+    r"(?<!not )(?<!non-)(?<!non )\bwater\s*(?:[/&,-]|and)?\s*(?:sweat\s*)?[- ]?resistan(?:t|ce)\b[^.;\n]{0,25}?\(?\s*(40|80)\s*(?:mins?|minutes)\b"
     r"|\b(40|80)\s*(?:min|minutes)\.?\s*water\s*(?:[/&-]|and)?\s*(?:sweat\s*)?[- ]?resistan"
     r"|retains?\s+(?:its\s+)?spf\s+(?:after|for)\s+(40|80)\s+minutes\s+of\s+activity\s+in\s+(?:the\s+)?water"
-    r"|\b(very)\s+water(?:\s*/\s*sweat)?[- ]?resistant", re.I)
+    r"|\b(very)\s+water(?:\s*/\s*sweat)?[- ]?resistant"
+    # the monograph's direction for a water-resistant product only (21 CFR 201.327(e)): "reapply
+    # after 40 (80) minutes of swimming or sweating"; a product that is not water resistant says
+    # "use a water resistant sunscreen if swimming or sweating" instead
+    r"|after\s+(40|80)\s+minutes\s+of\s+swimming", re.I)
 
 
 def water_resistant_claim(text):
     """The minutes of a water-resistance claim the label prints, or None."""
     best = None
     for m in _WR_RX.finditer(text or ""):
-        v = 80 if m.group(4) else int(next(g for g in m.groups()[:3] if g))
+        v = 80 if m.group(4) else int(next(g for g in m.groups()[:3] + m.groups()[4:] if g))
         best = max(best or 0, v)
     return best
 
@@ -638,9 +642,9 @@ if os.path.exists(_LT):
         if not _bs and re.search(r"(?i)alerta\s+(?:de\s+)?c[aá]ncer[^.]{0,40}envejecimiento|skin\s+cancer\s*/\s*skin\s+ag(?:e)?ing\s+alert|"
                                  r"shown\s+only\s+to\s+(?:help\s+)?prevent\s+sunburn", _d.get("text") or ""):
             LABEL_CLAIMS[_d["setid"]]["aging_alert"] = True
-        # water resistance only where the label claims it ("Water Resistant (80 minutes)", "very water
+        # water resistance where the label claims it ("Water Resistant (80 minutes)", "very water
         # resistant", "water & sweat resistance (80 minutes)", "retains SPF after 80 minutes of activity
-        # in the water"), not from the reapply direction alone (2026-10-25 final audit)
+        # in the water") or gives the water-resistant product's reapply direction (2026-10-25 final audit)
         LABEL_CLAIMS[_d["setid"]]["water_resistant_minutes"] = water_resistant_claim(_d.get("text") or "")
         if _NOT_SUN.search(_d.get("text") or ""):
             NOT_SUN.add(_d["setid"])
