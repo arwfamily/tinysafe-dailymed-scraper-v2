@@ -1654,6 +1654,10 @@ def build(run_date):
                 c = dict(c, _full_list_added=_added)
         _n_before = len(shown)
         shown, _pol = polish_names(shown)
+        if any(len(x) > 100 and x.count(")") > x.count("(") for x in shown):
+            # a "may contain" group whose opening bracket the first pass took away: once more
+            shown, _p2 = polish_names(shown)
+            _pol = _pol or _p2
         tidied = tidied or _pol
         if pn and len(shown) > _n_before:
             # names split back out of one run-together name are printed names: the printed count
