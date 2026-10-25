@@ -213,6 +213,13 @@ def merge(a):
             if x.get("readable") and not x.get("wrong_product") and not (x.get("actives") and all(
                     isinstance(p, (list, tuple)) and len(p) > 1 and isinstance(p[1], (int, float)) for p in x["actives"])):
                 x = dict(x, readable=False, notes="actives not legible on the package. " + (x.get("notes") or ""))
+            # a reader who was not sure (low-resolution, blurred, uncertain digits or words) did not
+            # check the filing either
+            if x.get("readable") and not x.get("wrong_product"):
+                sys.path.insert(0, os.path.join(ROOT, "scripts"))
+                from us_master import confirm_sure as _sure
+                if not _sure(x):
+                    x = dict(x, readable=False, notes="reader not sure of the package text. " + (x.get("notes") or ""))
             if not x.get("readable") or x.get("wrong_product"):
                 na.append({"setid": s, "spl_version": ver, "read": TODAY,
                            "reason": "wrong_product" if x.get("wrong_product") else "unreadable", "notes": (x.get("notes") or "")[:500]})
