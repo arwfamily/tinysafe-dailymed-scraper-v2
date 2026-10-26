@@ -111,6 +111,15 @@ def build(release_dir, thumbs_dir=None):
                 if _d.get("broad_spectrum") not in (True, False):
                     continue
                 PKG_BS[_k] = 1 if (_d["broad_spectrum"] is True or PKG_BS.get(_k) == 1) else 0
+    # a propellant spray the FDA files only as "SPRAY": its label text warns that the contents are under
+    # pressure (2026-10-26 live audit: Equate Kids, Sun Shades, Coppertone Sport)
+    _tp = os.path.join(ROOT, "data/views/label_text_all.jsonl.gz")
+    if os.path.exists(_tp):
+        import gzip
+        for _l in gzip.open(_tp, "rt", encoding="utf-8"):
+            _d = json.loads(_l)
+            if re.search(r"(?i)contents?\s+under\s+pressure|do\s+not\s+puncture\s+or\s+incinerate", _d.get("text") or ""):
+                PKG_FORM.setdefault((_d["setid"], str(_d.get("spl_version"))), "aerosol")
     for r in sorted(rows, key=lambda r: (r.get("status") != "active", r.get("name") or "")):
         ii = []
         for n in r.get("inactives") or []:

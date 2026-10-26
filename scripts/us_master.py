@@ -67,7 +67,7 @@ SCOPE_OVERRIDES = os.path.join(ROOT, "data/reference/scope_overrides.json")
 SCHEMA_VERSION = "1.0.0"
 RULES_VERSION = "v3.13 · 2026-10-25"
 THIN_MAX = 7
-EVIDENCE_CAP = 4
+EVIDENCE_CAP = 12
 MINERAL = ("ZINC OXIDE", "TITANIUM DIOXIDE")
 EXCLUDED_REASON = {"makeup": "spf_makeup", "lip_balm": "spf_lip_balm", "diaper_cream": "diaper_cream",
                    "calamine": "calamine", "other": "not_a_sunscreen"}
@@ -1502,6 +1502,11 @@ def join_paren_fragments(items):
         y2 = y2.strip(" ,;")
         if y2 != y:
             y, changed = y2, True
+        # a lone counter-ion left by a cut-off list ("... Phenoxyethanol, Sodium" for Sodium
+        # Hydroxymethylglycinate; 2026-10-26 live audit): not an ingredient, and it hid the real name
+        if re.fullmatch(r"(?i)(?:di|tri)?(?:sodium|potassium|calcium|magnesium|zinc|ammonium)", y.strip()):
+            changed = True
+            continue
         # a placeholder where a list should be ("HYDRATING INACTIVES INACTIVES", "See package"): not an ingredient
         if re.fullmatch(r"(?i)(?:[a-z]+\s+)?(?:inactives?(?:\s+ingredients?)?\s*){1,3}|see (?:the )?(?:package|label|carton|box)\b.*|n/?a|none", y.strip()):
             changed = True
