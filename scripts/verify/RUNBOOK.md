@@ -54,7 +54,7 @@ lists labels whose filing changed and lost a warning; and
 expected; a filing error is not) and note them in the report.
 Commit the data repo (`data/`, corrections) and push; `cp data/site/sunnytime_db.json <arwhouse>/sunnytime/db.json`;
 `python3 scripts/verify/card_render_check.py <arwhouse>` must exit 0 (every product's card on arwhouse.com/sunscreen-check renders, with and without the child options, and every item has its sources panel);
-`python3 scripts/site_rules_page.py <arwhouse>` and `python3 scripts/site_corrections_page.py <arwhouse>` (both generated
+`python3 scripts/verify/card_invariants.py <arwhouse>` must print `violations 0` before any site commit (it renders all cards). `python3 scripts/site_rules_page.py <arwhouse>` and `python3 scripts/site_corrections_page.py <arwhouse>` (both generated
 from the data repo: the evidence library, flag texts, changelog, audits and reader reports);
 commit `sunnytime/db.json`, `sunnytime/evidence.json` (written by site_db next to index.html), new thumbnails in
 `sunnytime/p/`, `sunnytime/index.html` (headline numbers, intro count and audit line only),

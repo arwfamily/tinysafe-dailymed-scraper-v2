@@ -177,6 +177,7 @@ ul.f{{margin:8px 0 0;padding-left:18px}} ul.f li{{margin-bottom:6px;color:var(--
 <p class="sub">This check reads labels, so it can only report what a label says. Some things that matter for a child's sunscreen never appear on one:</p>
 <ul>
 <li><b>Contamination.</b> Benzene in some aerosol sprays, bacteria or mold in a bad batch. We show it when the FDA records a recall; we cannot test products ourselves.</li>
+<li><b>Recalls we show.</b> We show recalls by the maker or distributor of a product. A store pulling stock it stored badly (a store-level withdrawal) is not shown on product cards.</li>
 <li><b>Particle size.</b> US labels don't have to say whether zinc oxide or titanium dioxide is nano-sized.</li>
 <li><b>Heavy metals.</b> Mineral filters are mined; their purity is a manufacturing spec, not a label line.</li>
 <li><b>Whether the SPF holds up.</b> The SPF on the label is the brand's own test result. We report it as printed.</li>
