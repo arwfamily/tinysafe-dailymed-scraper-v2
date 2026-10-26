@@ -95,6 +95,22 @@ def build(release_dir, thumbs_dir=None):
         d = RC.get(rn) or {}
         m = re.search(r"distributed to specific .{0,200}", d.get("product_description") or "", re.I)
         return (m.group(0) if m else (d.get("code_info") or ""))[:160].strip()
+    # Broad Spectrum as read from the package image (same label version): 1 claim seen, 0 the package was
+    # read and shows none, for labels whose FDA text settles nothing (2026-10-26 random audit)
+    PKG_BS, PKG_FORM = {}, {}
+    for _f in ("artwork_reads", "claims_reads"):
+        _fp = os.path.join(ROOT, "data/corrections", _f + ".jsonl")
+        if os.path.exists(_fp):
+            for _l in open(_fp, encoding="utf-8"):
+                _d = json.loads(_l)
+                if _d.get("readable") is False:
+                    continue
+                _k = (_d["setid"], str(_d.get("spl_version")))
+                if _d.get("form") in ("aerosol spray", "non-aerosol spray"):
+                    PKG_FORM[_k] = "aerosol" if _d["form"] == "aerosol spray" else "pump"
+                if _d.get("broad_spectrum") not in (True, False):
+                    continue
+                PKG_BS[_k] = 1 if (_d["broad_spectrum"] is True or PKG_BS.get(_k) == 1) else 0
     for r in sorted(rows, key=lambda r: (r.get("status") != "active", r.get("name") or "")):
         ii = []
         for n in r.get("inactives") or []:
@@ -113,7 +129,11 @@ def build(release_dir, thumbs_dir=None):
              "i_text_n": r.get("inactives_printed_n"), "thin": r.get("thin"), "ft": r.get("filter_type"),
              "bk": 1 if r.get("is_baby_kids") else 0, "st": r.get("status"),
              "bs": {True: 1, False: 0}.get(r.get("broad_spectrum")),
-             "df": r.get("dosage_form")}                   # FDA dosage form (AEROSOL = propellant spray: EU conditions)
+             "df": r.get("dosage_form")}
+        if (r["setid"], str(r.get("spl_version"))) in PKG_FORM:
+            p["pf"] = PKG_FORM[(r["setid"], str(r.get("spl_version")))]   # aerosol or pump, from the package read
+        if p["bs"] is None and (r["setid"], str(r.get("spl_version"))) in PKG_BS:
+            p["bsp"] = PKG_BS[(r["setid"], str(r.get("spl_version")))]                   # FDA dosage form (AEROSOL = propellant spray: EU conditions)
         w = r.get("actives_percent_withheld")
         if w:
             # 1 filed strengths implausible for the SPF, 2 filed as an amount per volume (not the
@@ -143,6 +163,10 @@ def build(release_dir, thumbs_dir=None):
                _reach(x["recall_number"])]
               for x in recs if x["status"] == "matched" and _scope(x["recall_number"]) != "store"]
         # (a store pulling stock it kept badly is not a recall of the product: not on the card; see how-we-check)
+        _st = [x for x in recs if x["status"] == "matched" and _scope(x["recall_number"]) == "store"]
+        if _st:
+            # a store-level withdrawal on file: the card says "no maker recall", not "no recall"
+            p["rs"] = [(RC.get(_st[0]["recall_number"]) or {}).get("recalling_firm"), _st[0].get("date"), _st[0].get("recall_number")]
         if rd:
             p["rd"] = rd                                   # the FDA recall records behind "recall on record"
         if FC.get(r["setid"]):

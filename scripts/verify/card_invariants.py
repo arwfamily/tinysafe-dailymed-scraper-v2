@@ -7,9 +7,9 @@ class Q(http.server.SimpleHTTPRequestHandler):
     def log_message(self,*a):pass
 srv=http.server.ThreadingHTTPServer(("127.0.0.1",0),functools.partial(Q,directory=sys.argv[1]));threading.Thread(target=srv.serve_forever,daemon=True).start()
 base=f"http://127.0.0.1:{srv.server_address[1]}/sunscreen-check/"
-JS=r"""()=>{const out={n:0,err:[],bad:{},ex:{}};const B=(k,id,t)=>{(out.bad[k]=out.bad[k]||[]);if(out.bad[k].length<4)out.bad[k].push(id+' | '+t);out.bad[k+'#']=(out.bad[k+'#']||0)+1};
+JS=r"""([lo,hi])=>{const out={n:0,err:[],bad:{},ex:{}};const B=(k,id,t)=>{(out.bad[k]=out.bad[k]||[]);if(out.bad[k].length<4)out.bad[k].push(id+' | '+t);out.bad[k+'#']=(out.bad[k+'#']||0)+1};
  const X=(k,id)=>{if(!out.ex[k])out.ex[k]=id};
- for(const p of DB.p){if(p.st!=='active')continue;try{render(p)}catch(e){out.err.push(p.id+' '+e);continue}out.n++;
+for(const p of DB.p.slice(lo,hi)){if(p.st!=='active')continue;try{render(p)}catch(e){out.err.push(p.id+' '+e);continue}out.n++;
   const card=document.querySelector('#res .ncard');const sm=card.querySelector('.nsum');
   const nums=[...sm.querySelectorAll('button[data-j]')].map(b=>parseInt(b.textContent));const tot=parseInt(sm.querySelector('b').textContent);
   if(nums.reduce((a,b)=>a+b,0)!==tot)B('sum',p.id,tot+' vs '+nums);
@@ -29,7 +29,8 @@ JS=r"""()=>{const out={n:0,err:[],bad:{},ex:{}};const B=(k,id,t)=>{(out.bad[k]=o
   const f=formOf(p);if(f.face&&/\bBODY\b/i.test(p.n))B('facebody',p.id,p.n);
   if(f.prop&&cells.some(([c,t])=>/^EU within/.test(t))&&box.innerHTML.includes('Homosalate')){const hc=[...box.querySelectorAll('.nlr')].find(r=>/^Homosalate/.test(r.textContent));if(hc&&/EU within/.test(hc.textContent))B('prop_hom',p.id,p.n)}
   if(/No SPF booster listed as inactive/.test(txt)&&p.i.some(k=>jobOf(k,new Set())===JOB.uv_booster))B('booster_mismatch',p.id,p.n);
-  p.i.forEach(k=>{const nm=String(DB.names[k]);if(/^\s*\)/.test(nm)||/^\([^()]*\)$/.test(nm))B('paren_fragment',p.id,nm)});
+  if(p.rs&&/No FDA recall found/.test(txt))B('store_recall_wording',p.id,p.n);
+  p.i.forEach(k=>{const nm=String(DB.names[k]);if(/^(?:[A-Za-z]+\s+)?(?:INACTIVES?\s*){1,3}$/i.test(nm))B('placeholder_list',p.id,nm);if(/^\s*\)/.test(nm)||/^\([^()]*\)$/.test(nm))B('paren_fragment',p.id,nm)});
   const sm2=card.querySelector('.rht .small').textContent;if(p.d&&!sm2.includes(fmtD(p.d)))B('date',p.id,sm2);if(!p.d&&/Label on file [A-Z]/.test(sm2))B('date0',p.id,sm2);
   const stops=[...card.querySelectorAll('.ni.stop b')].map(b=>b.textContent);stops.forEach(t=>{if(!/FDA recall on record|PABA|Hydroquinone|insect repellent|methylbenzylidene/i.test(t))B('stop',p.id,t)});
   if(/Chemical UV filter listed as inactive/.test(txt)){const li=[...card.querySelectorAll('.ni b')].find(b=>/Chemical UV filter listed as inactive|chemical UV filter is listed as inactive/.test(b.textContent));const sub=li&&li.parentElement.querySelector('.nsub');if(sub&&A.some(a=>sub.textContent.toUpperCase().includes(a)&&!p.i.some(k=>String(DB.names[k]).toUpperCase()===a)))B('cfi_active',p.id,sub.textContent)}
@@ -47,6 +48,13 @@ with sync_playwright() as pw:
     b=pw.chromium.launch();errs=[]
     pg=b.new_page(viewport={'width':420,'height':900});pg.on('pageerror',lambda e:errs.append(str(e)))
     pg.goto(base);pg.wait_for_timeout(800);pg.evaluate("loadDB()");pg.wait_for_function("DB.p.length>0&&EV")
-    r=pg.evaluate(JS);print(json.dumps(r,indent=1)[:6000]);bad=sum(v for k,v in r['bad'].items() if k.endswith('#') and k!='stop#');print('violations',bad);sys.exit(1 if bad or r['err'] else 0)
+    # in chunks of 400 (one call over every card can stall a cloud browser)
+    r={"n":0,"err":[],"bad":{},"ex":{}};tot=pg.evaluate("DB.p.length")
+    for lo in range(0,tot,400):
+        x=pg.evaluate(JS,[lo,lo+400]);r["n"]+=x["n"];r["err"]+=x["err"]
+        for k,v in x["bad"].items():
+            r["bad"][k]=(r["bad"].get(k,0)+v) if k.endswith("#") else (r["bad"].get(k,[])+v)[:4]
+        for k,v in x["ex"].items():r["ex"].setdefault(k,v)
+    print(json.dumps(r,indent=1)[:6000]);bad=sum(v for k,v in r['bad'].items() if k.endswith('#') and k!='stop#');print('violations',bad);sys.exit(1 if bad or r['err'] else 0)
     print('pageerrors',errs[:3]);b.close()
 srv.shutdown()

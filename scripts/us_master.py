@@ -1115,11 +1115,11 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     # audit: 11 of 100 cards said "not labelled water resistant" for a package that says it)
     _pk = " ".join(str(x) for x in ((art or {}).get("notes"), (CLAIMS_READS.get(c.get("setid")) or {}).get("notes")) if x)
     _pk_wr = water_resistant_claim(_pk)
-    _m = re.search(r"(?i)resistente al agua\W{0,3}\(?\s*(40|80)\s*min", _pk)
+    _m = re.search(r"(?i)(?:resistente al agua|\bWR)\W{0,3}\(?\s*(40|80)\s*min", _pk)
     _pk_wr = _pk_wr or (int(_m.group(1)) if _m else None)
     _pk_any = bool(re.search(r"(?i)(?<!not )(?<!non-)\bwater[- ]resistant\b(?! sunscreen if)|resistente al agua", _pk))
     if wr or _pk_wr or _pk_any or WATER_RES.search(form):
-        _min = wr or _pk_wr
+        _min = _pk_wr or wr                     # the package decides the minutes (Inde Wild: package 40, directions 80)
         add("water_resistant", [f"{_min} minutes"] if _min else [], raw=True)
     if no_preservative(list(dict.fromkeys(shown + struct))) and not (thin and treason != "short_list"):
         add("no_preservative_water_base", [])
@@ -1502,6 +1502,10 @@ def join_paren_fragments(items):
         y2 = y2.strip(" ,;")
         if y2 != y:
             y, changed = y2, True
+        # a placeholder where a list should be ("HYDRATING INACTIVES INACTIVES", "See package"): not an ingredient
+        if re.fullmatch(r"(?i)(?:[a-z]+\s+)?(?:inactives?(?:\s+ingredients?)?\s*){1,3}|see (?:the )?(?:package|label|carton|box)\b.*|n/?a|none", y.strip()):
+            changed = True
+            continue
         if re.search(r"(?i)\b(?:ltd|l\.l\.c|llc|made in (?:usa|china|korea)|distributed by|manufactured (?:for|by|exclusively))\b", y) \
                 or re.fullmatch(r"[A-Z]?\d{3}[A-Za-z]{2}\d{2}", y):
             changed = True
@@ -1890,6 +1894,8 @@ def build(run_date):
                 if x and not is_active(x, akeys_of(acts)) and not any(
                         x == y or _same_display(x, y) or _same_display(y, x) for y in _have):
                     _have.append(x)
+            # (tried 2026-10-26: dropping text-only names lost an insect repellent and salicylic acid that
+            # the package read had missed; the quality gate stopped it. Lists only gain names.)
             if len(_have) > len(shown):
                 c = dict(c, _text_names_kept=len(_have) - len(shown))
                 shown, pn = _have, len(_have)

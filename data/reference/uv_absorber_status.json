@@ -126,5 +126,14 @@
   "related": [
    "Ecamsule / terephthalylidene dicamphor sulfonic acid (camphor family; not a US monograph active)"
   ]
+ },
+ "Methylene bis-benzotriazolyl tetramethylbutylphenol": {
+  "US": "not permitted",
+  "EU": "permitted up to 10%",
+  "AU": "not checked here",
+  "class": "Benzotriazole UV filter (bisoctrizole, Tinosorb M); EU Annex VI entries 23/23a (checked 2026-10-26).",
+  "related": [
+   "Drometrizole trisiloxane (benzotriazole family)"
+  ]
  }
 }
