@@ -783,6 +783,13 @@
     "why": "recall is the DayWear Sheer Tint Release moisturizer, NDC 11559-008; this label is the 24H-Moisture Creme, NDC 11559-064",
     "reviewed": "2026-10-25"
    }
+  },
+  "a2e569fa-d0d7-4873-be21-c3831a97aad3": {
+   "D-151-2013": {
+    "verdict": "not_this_product",
+    "why": "recall is the DayWear Sheer Tint Release moisturizer (all skin types), NDC 11559-008; this label is the DayWear Oily Skin lotion, NDC 11559-010",
+    "reviewed": "2026-10-26"
+   }
   }
  }
 }
