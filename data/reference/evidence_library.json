@@ -254,6 +254,20 @@
    "date": "2016-07-13",
    "strength": "EU law"
   },
+  "cutis_ppd": {
+   "org": "Cutis (Janusz, Schwartz)",
+   "title": "Botanical Briefs: Phytophotodermatitis",
+   "url": "https://community.the-hospitalist.org/content/botanical-briefs-phytophotodermatitis-occupational-and-recreational-dermatosis-limelight",
+   "date": "2021",
+   "strength": "peer-reviewed review"
+  },
+  "cir_amidoamines": {
+   "org": "Cosmetic Ingredient Review Expert Panel (Burnett et al.)",
+   "title": "Safety assessment of fatty acid amidopropyl dimethylamines (summarizes the 2010 CAPB assessment), Int J Toxicol 38(Suppl 1)",
+   "url": "https://journals.sagepub.com/doi/full/10.1177/1091581819836089",
+   "date": "2019",
+   "strength": "industry-funded expert safety panel"
+  },
   "eu_parabens_ban": {
    "org": "European Union",
    "title": "Regulation (EU) 358/2014 (five parabens prohibited)",
@@ -412,7 +426,7 @@
    "org": "University of Bristol (ALSPAC study in NEJM)",
    "title": "Peanut allergy linked to skin creams",
    "url": "https://www.bristol.ac.uk/news/2003/138.html",
-   "date": "2003",
+   "date": "2003-03-11",
    "strength": "university release on an observational study"
   },
   "niaid_peanut": {
@@ -587,18 +601,18 @@
    "org": "North American Contact Dermatitis Group (Silverberg et al.)",
    "title": "Age-related differences in patch testing results (1,871 children, 2001-2018)",
    "url": "https://www.em-consulte.com/article/1507232/age-related-differences-in-patch-testing-results-a",
-   "date": "peer-reviewed",
+   "date": "2022",
    "strength": "peer-reviewed study (referred patients)"
   },
   "pcdr_2015": {
    "org": "Pediatric Contact Dermatitis Registry (Jacob et al.)",
    "title": "Contact allergy in children with atopic dermatitis (1,142 cases)",
    "url": "https://experts.llu.edu/en/publications/pediatric-contact-dermatitis-registry-data-on-contact-allergy-in--2/",
-   "date": "peer-reviewed",
+   "date": "2017",
    "strength": "peer-reviewed study (referred patients)"
   },
   "acds_lanolin": {
-   "org": "American Contact Dermatitis Society review (Johnson et al.)",
+   "org": "Cutis review (Johnson, Norman, Adler, Yu)",
    "title": "Lanolin: 2023 Allergen of the Year",
    "url": "https://mdedge.com/content/lanolin-2023-american-contact-dermatitis-society-allergen-year",
    "date": "2023",
@@ -622,14 +636,14 @@
    "org": "North American Contact Dermatitis Group (Warshaw et al.)",
    "title": "Patch test reactions associated with sunscreen products (23,908 patients, 2001-2010)",
    "url": "https://experts.umn.edu/en/publications/patch-test-reactions-associated-with-sunscreen-products-and-the-i/",
-   "date": "peer-reviewed",
+   "date": "2013",
    "strength": "peer-reviewed study (referred patients)"
   },
   "dermnet_sunscreen": {
    "org": "DermNet (New Zealand)",
    "title": "Sunscreen allergy",
    "url": "https://dermnetnz.org/dermatitis/sunscreen-allergy.html",
-   "date": "2012",
+   "date": "2012, updated 2024",
    "strength": "medical reference (dated)"
   },
   "niaid_risk": {
@@ -641,7 +655,7 @@
   },
   "eu_salicylic": {
    "org": "European Union",
-   "title": "Cosmetics Regulation Annex III entry 98, as amended by Regulation (EU) 2019/1966 (salicylic acid)",
+   "title": "Cosmetics Regulation Annex III entry 98 and Annex V entry 3, as amended by Regulation (EU) 2019/1966 (salicylic acid)",
    "url": "https://eur-lex.europa.eu/eli/reg/2019/1966/oj",
    "date": "2019-11-27",
    "strength": "EU law"
@@ -682,11 +696,11 @@
    "strength": "patient organization"
   },
   "pg_australia": {
-   "org": "Patel, Palmer, Nixon (reported by CosmeticsDesign)",
-   "title": "Propylene glycol sensitisation found to be uncommon (Australia, 2005-2020)",
-   "url": "https://www.cosmeticsdesign.com/Article/2023/06/02/propylene-glycol-sensitisation-found-to-be-uncommon-australia-study",
-   "date": "2023-06-02",
-   "strength": "study reported in trade press"
+   "org": "Patel, Palmer, Nixon, Contact Dermatitis",
+   "title": "Propylene glycol: patch test results in Australia, 2005-2020",
+   "url": "https://doi.org/10.1111/cod.14325",
+   "date": "2023",
+   "strength": "peer-reviewed study (referred patients)"
   },
   "sccs_bha": {
    "org": "EU Scientific Committee on Consumer Safety (reported by CIRS)",
@@ -1239,13 +1253,13 @@
      "s": "ntp_rp"
     },
     {
-     "t": "EU law adopted in 2024 caps vitamin A in body lotion at 0.05% and requires the label “Contains Vitamin A. Consider your daily intake before use.”",
+     "t": "EU law adopted in 2024 caps vitamin A at 0.05% (retinol equivalent) in body lotion and 0.3% in other products, and requires the label “Contains Vitamin A. Consider your daily intake before use.”",
      "s": "eu_2024_996"
     }
    ],
    "other_side": [
     {
-     "t": "The EU scientific committee found vitamin A safe at those limits.",
+     "t": "The EU scientific committee found vitamin A safe in cosmetics at those limits, while noting that food and supplements alone may push the most-exposed 5% of people above the upper limit.",
      "s": "sccs_vitA"
     }
    ],
@@ -1259,7 +1273,7 @@
    "title": "Food-derived ingredients",
    "facts": [
     {
-     "t": "NIH peanut allergy guidelines identify infants with severe eczema, egg allergy, or both as at highest risk of peanut allergy, and advise early introduction of peanut by mouth.",
+     "t": "NIH peanut allergy guidelines identify infants with severe eczema, egg allergy, or both as at highest risk of peanut allergy, and advise that, after evaluation, peanut-containing foods be introduced as early as 4 to 6 months.",
      "s": "niaid_peanut"
     },
     {
@@ -1269,7 +1283,7 @@
    ],
    "other_side": [
     {
-     "t": "FDA lists colloidal oatmeal as an approved over-the-counter skin protectant.",
+     "t": "FDA’s over-the-counter monograph lists colloidal oatmeal as a skin protectant active ingredient.",
      "s": "fda_m016"
     },
     {
@@ -1287,7 +1301,11 @@
    "title": "Citrus peel oil",
    "facts": [
     {
-     "t": "Furocoumarins, found naturally in some citrus oils, can make skin react to sunlight; EU law requires them to stay below 1 mg/kg in sun protection and bronzing products.",
+     "t": "Furocoumarins, found naturally in some citrus oils such as bergamot and lime, can cause a skin reaction when the skin is then exposed to UVA light.",
+     "s": "cutis_ppd"
+    },
+    {
+     "t": "EU law requires furocoumarins to stay below 1 mg/kg in sun protection and bronzing products.",
      "s": "eu_furocoumarins"
     }
    ],
@@ -1328,7 +1346,7 @@
      "s": "aap_eczema_sports"
     },
     {
-     "t": "DermNet NZ notes that many allergies to sunscreen products are caused by inactive ingredients rather than the UV filter, which means a mineral sunscreen can still cause a reaction.",
+     "t": "DermNet NZ notes that many allergies to sunscreen products are caused by inactive ingredients, such as fragrances or preservatives, rather than the UV filter.",
      "s": "dermnet_sunscreen"
     }
    ]
@@ -1433,6 +1451,12 @@
      "t": "Among children referred for patch testing in a US registry, those with eczema reacted to cocamidopropyl betaine more often than those without eczema.",
      "s": "pcdr_2015"
     }
+   ],
+   "other_side": [
+    {
+     "t": "The Cosmetic Ingredient Review panel concluded in 2010 that it is safe in cosmetics when formulated to be non-sensitizing, and has linked sensitization concerns to manufacturing impurities (amidoamine and DMAPA).",
+     "s": "cir_amidoamines"
+    }
    ]
   },
   {
@@ -1448,7 +1472,7 @@
    ],
    "other_side": [
     {
-     "t": "Among 6,761 people with suspected contact dermatitis patch tested in Australia (2005-2020), 0.31% reacted to propylene glycol, and about 0.13% had a reaction judged relevant.",
+     "t": "Among 6,761 people with suspected contact dermatitis patch tested in Australia (2005-2020), 21 (0.31%) reacted to propylene glycol, and 9 of them had a reaction judged relevant.",
      "s": "pg_australia"
     }
    ]
@@ -1488,7 +1512,7 @@
      "s": "aad_phototherapy"
     },
     {
-     "t": "EU law does not allow salicylic acid in products for children under 3 (the only exception is shampoos, where it is used as a preservative).",
+     "t": "EU law does not allow salicylic acid in preparations for children under 3 (the only exception is shampoos, where it is used as a preservative).",
      "s": "eu_salicylic"
     }
    ]
@@ -1568,13 +1592,13 @@
      "s": "ntp_bha"
     },
     {
-     "t": "California lists BHA under Proposition 65.",
+     "t": "California lists BHA under Proposition 65 as a chemical known to cause cancer (since 1990).",
      "s": "prop65_bha"
     }
    ],
    "other_side": [
     {
-     "t": "In 2026 the EU scientific committee considered BHA safe up to 0.07% in leave-on and rinse-off cosmetics.",
+     "t": "In 2026 the EU scientific committee gave its opinion that BHA is safe on skin up to 0.07% in leave-on and rinse-off cosmetics; this is advice, not yet an EU legal limit.",
      "s": "sccs_bha"
     }
    ]
@@ -1585,7 +1609,7 @@
    "title": "BHT",
    "facts": [
     {
-     "t": "The EU scientific committee found BHT safe up to 0.8% in cosmetics, while noting concerns about its potential endocrine-disrupting properties.",
+     "t": "The EU scientific committee found BHT safe up to 0.8% in leave-on and rinse-off cosmetics (lower in mouthwash and toothpaste), a limit it set after considering concerns about BHT’s potential endocrine-disrupting properties.",
      "s": "sccs_bht"
     }
    ]
@@ -1604,7 +1628,7 @@
      "s": "fr_talc_withdrawal"
     },
     {
-     "t": "WHO's cancer agency classified talc as probably carcinogenic (Group 2A) in 2024, based mainly on studies of ovarian cancer from genital use; this rates hazard, not the risk from a given product.",
+     "t": "WHO's cancer agency classified talc as probably carcinogenic (Group 2A) in 2024, citing limited evidence in humans for ovarian cancer (from studies of genital use), sufficient evidence in animals and strong mechanistic evidence; it said asbestos contamination could not be ruled out in the human studies. This rates hazard, not the risk from a given product.",
      "s": "iarc_talc"
     }
    ],
@@ -1621,13 +1645,16 @@
    "title": "Petrolatum or mineral oil",
    "facts": [
     {
-     "t": "Germany's BfR found no recognizable health risk from highly refined mineral oils on the skin.",
+     "t": "Germany's BfR found no health risk to be expected from highly refined (pharmaceutical-grade) mineral oils applied to the skin.",
      "s": "bfr_mineral"
     },
     {
      "t": "The AAD recommends petroleum jelly for babies' diaper rash.",
      "s": "aad_petrolatum"
     }
+   ],
+   "not_known": [
+    "US labels do not say whether the mineral oil or petrolatum is highly refined."
    ]
   },
   {
@@ -1640,11 +1667,15 @@
      "s": "fr_2019"
     },
     {
-     "t": "The EU allows nano zinc oxide and nano titanium dioxide up to 25%, under conditions on purity and coating, but not in products that could expose the lungs by inhalation.",
+     "t": "The EU allows nano zinc oxide up to 25%, under conditions on purity and coating, but not in products that could expose the lungs by inhalation.",
      "s": "eu_nano_zno"
     },
     {
-     "t": "California lists titanium dioxide as airborne, unbound particles of respirable size under Proposition 65.",
+     "t": "The EU allows nano titanium dioxide up to 25% under similar conditions, also not in products that could expose the lungs by inhalation.",
+     "s": "eu_nano_tio2"
+    },
+    {
+     "t": "California lists titanium dioxide under Proposition 65 only in the form of airborne, unbound particles of respirable size.",
      "s": "prop65_tio2"
     },
     {
