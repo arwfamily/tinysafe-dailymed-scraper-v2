@@ -1,14 +1,14 @@
 {
  "release_id": "us-2026-10-26",
  "git_tag": "us-data-2026-10-26",
- "released": "2026-10-26T17:08:44+00:00",
+ "released": "2026-10-26T19:25:37+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.13 · 2026-10-25",
  "source": {
   "register": "FDA DailyMed (SPL)",
   "collected": "2026-10-26",
-  "scraper_commit": "d05f8ec39fdcea1b6a38047a98ce9e658dddfbd6",
-  "run_id": "40353479708"
+  "scraper_commit": null,
+  "run_id": null
  },
  "definitions": {
   "us_all": "Every label FDA DailyMed lists as a sunscreen drug. Out of scope, with the reason recorded in the master: SPF makeup (BB/CC creams, foundations, cushions, concealers, makeup powders, and primers or setting products not named as sunscreens; scripts/scope_rules.py), SPF lip products, diaper creams, calamine, and zinc-oxide products with no sun claim. Tinted sunscreens and tinted moisturizers are sunscreens. Labels that left DailyMed stay, with status 'discontinued'. A label DailyMed failed to serve this week keeps its last fully read record (fetch_status 'carried_forward').",
@@ -118,15 +118,15 @@
  "files": {
   "us_all.jsonl": {
    "rows": 9470,
-   "sha256": "2a5878417380795170496494f917082058db489db20b99b38bc0db13ee3e3c23"
+   "sha256": "4e7fc3daa97a4bcf55c6a4c3e0d20c604eebfb2b919531ef847fbed37e898a48"
   },
   "us_mineral.jsonl": {
    "rows": 5155,
-   "sha256": "7bbf255254d096d51c8cb77d7df5cc998143a8ec12cbff3f886e40060de2ce51"
+   "sha256": "24dc9ff7254d03b81f5f5d20d0f993ba943dff65fe26865abaaab6be4058f099"
   },
   "us_baby_kids.jsonl": {
    "rows": 582,
-   "sha256": "0815de409fb91e99ed0272f5414262e9487ce0cad57c480ca585586097ba4e1b"
+   "sha256": "1ebf002f7a7bc7ffd001d2e7c8f3e196d8a56cc470c16a13db5381d573aef818"
   },
   "us_out_of_scope.jsonl": {
    "rows": 4828,

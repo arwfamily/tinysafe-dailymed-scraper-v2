@@ -1467,6 +1467,59 @@ def tidy_inactives(items):
     return out, changed
 
 
+_PAREN_HEAD = re.compile(r"^\((?![-+±]|\d+\)|Z\)|E\)|R\)|S\)|Other\b|Organic\)|C\d+-C?\d+\))[^()]{2,80}\)")
+_PAREN_TAIL = re.compile(r"(?i)^(?:\s+(?:(?:flower|root|seed|fruit|leaf|leaves|peel|bark|stem|kernel|nut|berry|rhizome|callus|cell|sprout|herb|whole plant)\s+)*"
+                         r"(?:extract|oil|water|juice|powder|butter|wax|culture extract|ferment(?: filtrate)?))?"
+                         r"(?:\s*\((?:CI|C\.I\.|Cl)[^()]*\))*(?:\s*\(may contain\))?\s*$")
+
+
+def join_paren_fragments(items):
+    """A printed name split at its parenthesis: "Tocopherol" + "(Vitamin E)", "Glycyrrhiza Glabra" +
+    "(Licorice) Root Extract", "Iron Oxides" + "(CI 77499)" (2026-10-26: Blue Lizard Baby showed 31
+    for 30). Only a piece that is a parenthesis plus at most a plant part and Extract/Oil/Water, after a
+    name with no open parenthesis of its own. Also "Tocopheryl Acetate Vitamin E)" -> "(Vitamin E)".
+    Returns (list, changed)."""
+    out, changed = [], False
+    for x in items or []:
+        y = x.strip()
+        # a footnote marker, a header or a note in brackets ("(2)", "(Other minor components:)",
+        # "(SPF 30 moisturizing sunscreen lotion) water", "(Toutes les couleurs peuvent contenir): CI77891")
+        y2 = re.sub(r"(?i)^\((?:\d{1,2}|[ZE]|other minor components:?|[^()]*\b(?:SPF \d+|contenir|may contain|all shades)\b[^()]*)\)\s*[:\-]?\s*", "", y).strip()
+        if y2 != y:
+            y, changed = y2, True
+        m = _PAREN_HEAD.match(y)
+        if m and out and _PAREN_TAIL.match(y[m.end():]) and out[-1].count("(") == out[-1].count(")") \
+                and not out[-1].rstrip().endswith((",", "/")):
+            out[-1] = out[-1].rstrip() + " " + y
+            changed = True
+            continue
+        # leftovers of a "May contain (+/-): ..." split: the leading ")" / "(+/-):" goes
+        y2 = re.sub(r"^(?:\)\s*[:\-]?\s*|\((?:\+\s*[/\\]?\s*-|\+|-|±)\)\s*[:\-]?\s*)+", "", y).strip()
+        if y2 != y:
+            y, changed = y2, True
+        if not re.sub(r"(?i)\(may contain\)|[\W_]", "", y):
+            changed = True
+            continue
+        z = re.sub(r"^(.*\S)\s+((?:Vitamin|Vit\.?|CI|C\.I\.)\s?[^()]*)\)$", r"\1 (\2)", y) if y.count(")") > y.count("(") else y
+        if z == y and z.count(")") > z.count("("):
+            if "(" not in z and z.endswith(")"):
+                z = z[:-1].strip()                                 # "Zinc Oxide/CI 77947)"
+            elif "(" not in z:
+                z = re.sub(r"(\S+)\)", r"(\1)", z, count=1)       # "Carthamus Tinctorius Safflower) Seed Oil"
+            else:
+                d_, o_ = 0, []                                     # "Butyrospermum Parkii (Shea) Butter)": the extra ")" goes
+                for ch_ in z:
+                    if ch_ == ")" and d_ == 0:
+                        continue
+                    d_ += (ch_ == "(") - (ch_ == ")")
+                    o_.append(ch_)
+                z = re.sub(r"\s+", " ", "".join(o_)).strip()
+        if z != y:
+            y, changed = z, True
+        out.append(y)
+    return out, changed
+
+
 SYNONYMS = os.path.join(ROOT, "data/reference/inactive_synonyms.json")
 
 
@@ -1780,6 +1833,15 @@ def build(run_date):
             shown, tidied = list(struct), True       # a Korean-only reading: the English filed list is shown
         shown, ch = tidy_inactives(shown)
         tidied = tidied or ch
+        # (joined within the printed part only, so the count of printed names stays right)
+        _pn0 = (u2 or {}).get("i_text_n") or 0
+        if _pn0:
+            _pj, ch = join_paren_fragments(shown[:_pn0])
+            if ch:
+                shown, u2 = _pj + shown[_pn0:], dict(u2, i_text_n=len(_pj))
+        else:
+            shown, ch = join_paren_fragments(shown)
+        tidied = tidied or ch
         shown, n_syn = drop_filed_synonyms(shown, (u2 or {}).get("i_text_n") or 0, c, syn)
         shown, n_rep = drop_repeated_extras(shown, (u2 or {}).get("i_text_n") or 0)
         n_syn += n_rep
@@ -1793,6 +1855,10 @@ def build(run_date):
         art_list = bool(art and art.get("use_list") and art.get("inactives") and not multi)
         if art_list:
             shown, pn = [x for x in art["inactives"] if not is_active(x, akeys_of(acts))], len(art["inactives"])
+            _n0 = len(shown)
+            shown, _jp = join_paren_fragments(shown)
+            pn -= _n0 - len(shown)
+            tidied = tidied or _jp
             # what the filed label TEXT prints for this same version is a printed name too: kept
             # when the package read lacks it (Walgreens Kids SPF 50: "Fragrance" in the text list,
             # not in the package read; 2026-10-24 independent audit). Lists only gain names.
@@ -1987,6 +2053,12 @@ def build(run_date):
                                    and set(re.findall(r"\d+", f)) != set(re.findall(r"\d+", x)))), None)
                 if x is not None:
                     twins = twins + [(x, f)]
+        # the final list, as shown: a name split at its parenthesis, or a "May contain (+/-):" leftover, repaired
+        _n0 = len(shown)
+        shown, _jf = join_paren_fragments(shown)
+        if _jf:
+            tidied = True
+            pn = max(0, (pn or 0) - (_n0 - len(shown))) if pn else pn
         fr = None if art_list else label_text_fragrance(sid, shown)
         if fr:
             shown = shown + [fr]

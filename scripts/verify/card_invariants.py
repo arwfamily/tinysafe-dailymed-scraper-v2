@@ -28,6 +28,8 @@ JS=r"""()=>{const out={n:0,err:[],bad:{},ex:{}};const B=(k,id,t)=>{(out.bad[k]=o
   if(A.includes('HYDROQUINONE')&&nf.split(' · ').includes('Hydroquinone'))B('clear_but_present',p.id,'HQ');
   const f=formOf(p);if(f.face&&/\bBODY\b/i.test(p.n))B('facebody',p.id,p.n);
   if(f.prop&&cells.some(([c,t])=>/^EU within/.test(t))&&box.innerHTML.includes('Homosalate')){const hc=[...box.querySelectorAll('.nlr')].find(r=>/^Homosalate/.test(r.textContent));if(hc&&/EU within/.test(hc.textContent))B('prop_hom',p.id,p.n)}
+  if(/No SPF booster listed as inactive/.test(txt)&&p.i.some(k=>jobOf(k,new Set())===JOB.uv_booster))B('booster_mismatch',p.id,p.n);
+  p.i.forEach(k=>{const nm=String(DB.names[k]);if(/^\s*\)/.test(nm)||/^\([^()]*\)$/.test(nm))B('paren_fragment',p.id,nm)});
   const sm2=card.querySelector('.rht .small').textContent;if(p.d&&!sm2.includes(fmtD(p.d)))B('date',p.id,sm2);if(!p.d&&/Label on file [A-Z]/.test(sm2))B('date0',p.id,sm2);
   const stops=[...card.querySelectorAll('.ni.stop b')].map(b=>b.textContent);stops.forEach(t=>{if(!/FDA recall on record|PABA|Hydroquinone|insect repellent|methylbenzylidene/i.test(t))B('stop',p.id,t)});
   if(/Chemical UV filter listed as inactive/.test(txt)){const li=[...card.querySelectorAll('.ni b')].find(b=>/Chemical UV filter listed as inactive|chemical UV filter is listed as inactive/.test(b.textContent));const sub=li&&li.parentElement.querySelector('.nsub');if(sub&&A.some(a=>sub.textContent.toUpperCase().includes(a)&&!p.i.some(k=>String(DB.names[k]).toUpperCase()===a)))B('cfi_active',p.id,sub.textContent)}
