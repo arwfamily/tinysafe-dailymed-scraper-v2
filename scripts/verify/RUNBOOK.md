@@ -53,12 +53,12 @@ lists labels whose filing changed and lost a warning; and
 `python3 scripts/verify/selfcheck.py data/site/sunnytime_db.json --site <arwhouse>` must exit 0 (no placeholder or run-together ingredient names, every warning has its text, every photo its thumbnail); read each one (a brand removing an ingredient is
 expected; a filing error is not) and note them in the report.
 Commit the data repo (`data/`, corrections) and push; `cp data/site/sunnytime_db.json <arwhouse>/sunnytime/db.json`;
-`python3 scripts/verify/card_render_check.py <arwhouse>` must exit 0 (every product's card renders, with and without the child options, and every item has its sources panel);
+`python3 scripts/verify/card_render_check.py <arwhouse>` must exit 0 (every product's card on arwhouse.com/sunscreen-check renders, with and without the child options, and every item has its sources panel);
 `python3 scripts/site_rules_page.py <arwhouse>` and `python3 scripts/site_corrections_page.py <arwhouse>` (both generated
 from the data repo: the evidence library, flag texts, changelog, audits and reader reports);
 commit `sunnytime/db.json`, `sunnytime/evidence.json` (written by site_db next to index.html), new thumbnails in
 `sunnytime/p/`, `sunnytime/index.html` (headline numbers, intro count and audit line only),
-`sunnytime/how-we-check/index.html` and `sunnytime/corrections/index.html`, and push.
+`sunscreen-check/index.html` (numbers and accuracy line only), `sunscreen-check/how-we-check/index.html` and `sunscreen-check/corrections/index.html`, and push.
 Never change any other site copy in this job: copy changes need the owner's approval.
 
 ### Reader error reports (angela@arwhouse.com)
