@@ -660,10 +660,10 @@
   },
   "142c742e-4874-7392-e054-00144ff88e88": {
    "D-1365-2022": {
-    "verdict": "same_product",
+    "verdict": "not_this_product",
     "manual": true,
-    "why": "Family Dollar storage-temperature recall, SKU line \"COPPERTONE SPORT SPRAY SPF30 5.5OZ\": same brand, line, SPF and form (sold at specific Family Dollar stores 04/30-06/10/2022)",
-    "reviewed": "2026-10-25"
+    "why": "2020 Bayer filing; Coppertone moved to Beiersdorf in 2019 and the 2022 Family Dollar SKU matches the Beiersdorf filings of Coppertone Sport spray SPF 30, not this one",
+    "reviewed": "2026-10-26"
    }
   },
   "ca8d2e20-c1f1-ecf2-e053-2a95a90a790f": {
@@ -700,10 +700,10 @@
   },
   "13c9ab06-9903-728a-e054-00144ff88e88": {
    "D-1365-2022": {
-    "verdict": "same_product",
+    "verdict": "not_this_product",
     "manual": true,
-    "why": "Family Dollar storage-temperature recall, SKU line \"COPPERTONE KIDS SPRAY SPF 50 5.5 OZ\": same brand, line, SPF and form (sold at specific Family Dollar stores 04/30-06/10/2022)",
-    "reviewed": "2026-10-25"
+    "why": "2020 Bayer filing; Coppertone moved to Beiersdorf in 2019 and the 2022 Family Dollar SKU matches the Beiersdorf filings of Coppertone Kids spray SPF 50, not this one",
+    "reviewed": "2026-10-26"
    }
   },
   "c05388dc-4282-ee79-e053-2a95a90a376a": {
@@ -764,10 +764,10 @@
   },
   "3fd74c95-dd2d-4cb8-a52f-999710c19d03": {
    "D-1365-2022": {
-    "verdict": "same_product",
+    "verdict": "not_this_product",
     "manual": true,
-    "why": "Family Dollar storage-temperature recall, SKU line \"BANANA BOAT SPRT LTION SPF 50 8 FL OZ\": same brand, line, SPF and form (sold at specific Family Dollar stores 04/30-06/10/2022)",
-    "reviewed": "2026-10-25"
+    "why": "2010 KIK Custom Products filing (\"Banana Boat Sport Performance\"); the 2022 Family Dollar SKU \"BANANA BOAT SPRT LTION SPF 50\" is sold under the current brand owner (Edgewell), not this 2010 filing",
+    "reviewed": "2026-10-26"
    }
   },
   "8a143645-3b52-4797-9b26-dc9dd63be38f": {

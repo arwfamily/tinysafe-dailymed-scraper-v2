@@ -55,15 +55,46 @@ def build(release_dir, thumbs_dir=None):
         _last = {}
         for _l in open(_hp, encoding="utf-8"):
             _h = json.loads(_l)
-            _names = lambda h: {(a.get("name") or "").strip().upper() for a in (h.get("inactive_ingredients") or [])} | \
-                {"ACTIVE: " + (a.get("name") or "").strip().upper() + (f" {a['percent_ww']:g}%" if a.get("percent_ww") is not None else "") for a in (h.get("active_ingredients") or [])}  # noqa: E731
+            def _keys(h):
+                # diff on the FDA ingredient code (UNII) so a renamed or re-spelled name is not "added" (name if no code)
+                k = {}
+                for a in h.get("inactive_ingredients") or []:
+                    nm = (a.get("name") or "").strip().upper()
+                    k[a.get("unii") or "N:" + nm] = nm
+                for a in h.get("active_ingredients") or []:
+                    nm = (a.get("name") or "").strip().upper()
+                    pc = f" {a['percent_ww']:g}%" if a.get("percent_ww") is not None else ""
+                    k["A:" + (a.get("unii") or nm) + pc] = "ACTIVE: " + nm + pc
+                return k
             prev = _last.get(_h["setid"])
             if _h.get("change") == "reformulated" and prev is not None:
-                now = _names(_h)
-                was = _names(prev)
-                FC.setdefault(_h["setid"], []).append([_h["observed_on"], sorted(now - was)[:10], sorted(was - now)[:10]])
+                now, was = _keys(_h), _keys(prev)
+                add = sorted(now[k] for k in now.keys() - was.keys())
+                rem = sorted(was[k] for k in was.keys() - now.keys())
+                if add or rem:
+                    FC.setdefault(_h["setid"], []).append([_h["observed_on"], add[:10], rem[:10]])
             if _h.get("inactive_ingredients") or _h.get("active_ingredients"):
                 _last[_h["setid"]] = _h
+    # the FDA recall records (firm, which products, which lots), to say how far a recall reaches
+    RC = {}
+    _rp = os.path.join(ROOT, "data/recalls/us_drug_recalls.jsonl")
+    if os.path.exists(_rp):
+        for _l in open(_rp, encoding="utf-8"):
+            _d = json.loads(_l)
+            RC[_d["recall_number"]] = _d
+
+    def _scope(rn):
+        d = RC.get(rn) or {}
+        desc, code = d.get("product_description") or "", d.get("code_info") or ""
+        if re.search(r"distributed to specific .{0,40}stores", desc, re.I):
+            return "store"                                  # a store pulled stock it kept badly, not the maker's recall
+        if re.search(r"\b(lot|batch)\b", code, re.I):
+            return "lot"
+        return ""
+    def _reach(rn):
+        d = RC.get(rn) or {}
+        m = re.search(r"distributed to specific .{0,200}", d.get("product_description") or "", re.I)
+        return (m.group(0) if m else (d.get("code_info") or ""))[:160].strip()
     for r in sorted(rows, key=lambda r: (r.get("status") != "active", r.get("name") or "")):
         ii = []
         for n in r.get("inactives") or []:
@@ -72,7 +103,8 @@ def build(release_dir, thumbs_dir=None):
                 names.append(n)
             ii.append(idx[n])
         recs = r.get("recalls") or []
-        haz = sorted({h for x in recs if x["status"] == "matched" for h in x.get("hazards") or []})
+        haz = sorted({h for x in recs if x["status"] == "matched" and _scope(x["recall_number"]) != "store"
+                      for h in x.get("hazards") or []})
         p = {"id": r["setid"], "n": r.get("name"), "b": r.get("brand"), "s": r.get("spf"), "d": as_of,
              "m": r.get("mineral_type"), "z": [[a["name"], a.get("percent")] for a in r.get("actives") or []],
              "r": haz, "rk": 1 if (r.get("recall_checked") or haz) else 0, "v": r.get("spl_version"),
@@ -80,7 +112,8 @@ def build(release_dir, thumbs_dir=None):
              "i_src": r.get("inactive_source"), "i_struct_n": r.get("inactives_filed_n"),
              "i_text_n": r.get("inactives_printed_n"), "thin": r.get("thin"), "ft": r.get("filter_type"),
              "bk": 1 if r.get("is_baby_kids") else 0, "st": r.get("status"),
-             "bs": {True: 1, False: 0}.get(r.get("broad_spectrum"))}
+             "bs": {True: 1, False: 0}.get(r.get("broad_spectrum")),
+             "df": r.get("dosage_form")}                   # FDA dosage form (AEROSOL = propellant spray: EU conditions)
         w = r.get("actives_percent_withheld")
         if w:
             # 1 filed strengths implausible for the SPF, 2 filed as an amount per volume (not the
@@ -105,7 +138,9 @@ def build(release_dir, thumbs_dir=None):
             p["label_check"] = r["label_check"]
         if any(x["status"] == "needs_review" for x in recs):
             p["rr"] = 1                                    # a recall matched on brand + name only: under review
-        rd = [[x.get("recall_number"), x.get("date"), x.get("classification"), x.get("reason"), x.get("recall_status"), x.get("url")]
+        rd = [[x.get("recall_number"), x.get("date"), x.get("classification"), x.get("reason"), x.get("recall_status"), x.get("url"),
+               (RC.get(x["recall_number"]) or {}).get("recalling_firm"), _scope(x["recall_number"]),
+               _reach(x["recall_number"])]
               for x in recs if x["status"] == "matched"]
         if rd:
             p["rd"] = rd                                   # the FDA recall records behind "recall on record"
@@ -234,8 +269,29 @@ def evidence(site_dir):
         for g in json.load(open(lim_p, encoding="utf-8"))["ingredients"]:
             row = {"slug": g["slug"], "name": g["name"], "aka": g.get("also_known_as") or [],
                    "l": [[x["jurisdiction"], x["status"], x.get("max_percent"), x.get("notes"),
-                          (x.get("source") or {}).get("url"), (x.get("source") or {}).get("title")] for x in g["limits"]]}
+                          (x.get("source") or {}).get("url"), (x.get("source") or {}).get("title"),
+                          [[c.get("applies_to"), c.get("max_percent")] for c in x.get("conditions") or []]] for x in g["limits"]]}
             lim[g["matrix_key"]] = row
+        # UV filters some US labels file as actives that the evidence pages do not cover yet: the US status
+        # (not in FDA's monograph), the EU status (Annex VI, checked 2026-10-26); Australia not checked here
+        S = out["lib"]["sources"]
+        us = ["US", "not_listed", None, None, S["fda_m020"]["url"], S["fda_m020"]["title"], []]
+        eu = lambda st, mx, src="eu_annex_vi": ["EU", st, mx, None, S[src]["url"], S[src]["title"], []]  # noqa: E731
+        au = ["AU", "not_checked", None, None, None, None, []]
+        for key, name, aka, e in [
+                ("DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE", "DHHB", ["DHHB"], eu("permitted", 10.0)),
+                ("METHYLENE BIS BENZOTRIAZOLYL TETRAMETHYLBUTYLPHENOL", "Bisoctrizole", ["BISOCTRIZOLE"], eu("permitted", 10.0)),
+                ("DIETHYLHEXYL BUTAMIDO TRIAZONE", "Iscotrizinol", ["ISCOTRIZINOL"], eu("permitted", 10.0)),
+                ("ISOAMYL P METHOXYCINNAMATE", "Amiloxate", ["AMILOXATE", "ISOAMYL METHOXYCINNAMATE", "ISOPENTYL 4 METHOXYCINNAMATE"], eu("permitted", 10.0)),
+                ("POLYSILICONE 15", "Polysilicone-15", ["DIMETHICODIETHYLBENZALMALONATE"], eu("permitted", 10.0)),
+                ("ENZACAMENE", "Enzacamene (4-MBC)", ["4 METHYLBENZYLIDENE CAMPHOR", "3 4 METHYLBENZYLIDENE CAMPHOR"], eu("removed", None, "eu_2024_996")),
+                ("ETHYL METHOXYCINNAMATE", "Ethyl methoxycinnamate", [], eu("not_listed", None)),
+                ("BENZOPHENONE", "Benzophenone", [], eu("not_listed", None))]:
+            if key not in lim:
+                lim[key] = {"slug": None, "name": name, "aka": aka, "l": [us, e, au]}
+        for key, extra in (("TITANIUM DIOXIDE", ["CI 77891"]), ("ZINC OXIDE", ["CI 77947"])):
+            if key in lim:
+                lim[key]["aka"] = lim[key]["aka"] + extra
         out["limits"] = lim
     p = os.path.join(site_dir, "evidence.json")
     with open(p, "w", encoding="utf-8") as f:

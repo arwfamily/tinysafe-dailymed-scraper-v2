@@ -1,5 +1,5 @@
 {
- "version": "2026-10-25",
+ "version": "2026-10-26",
  "note": "Evidence library for the Sunnytime Check result card (2026-10-25).",
  "sources": {
   "fda_consumer": {
@@ -513,6 +513,20 @@
    "date": "commenced 2026-06-12",
    "strength": "federal regulation"
   },
+  "fda_recall_defs": {
+   "org": "FDA",
+   "title": "Recalls background and definitions",
+   "url": "https://www.fda.gov/safety/industry-guidance-recalls/recalls-background-and-definitions",
+   "date": "checked 2026-10-26",
+   "strength": "agency guidance"
+  },
+  "fda_enforcement": {
+   "org": "FDA",
+   "title": "Enforcement Report (recall records: firm, products, lots)",
+   "url": "https://www.accessdata.fda.gov/scripts/ires/index.cfm",
+   "date": "checked weekly",
+   "strength": "federal database"
+  },
   "dailymed": {
    "org": "US National Library of Medicine",
    "title": "DailyMed: FDA label filings and their versions",
@@ -778,6 +792,32 @@
    "id": "recall",
    "group": "glance",
    "title": "FDA recall",
+   "facts": [
+    {
+     "t": "FDA Class I: “a reasonable probability” that using the product “will cause serious adverse health consequences or death.”",
+     "s": "fda_recall_defs"
+    },
+    {
+     "t": "FDA Class II: the product “may cause temporary or medically reversible adverse health consequences,” or serious harm is remote.",
+     "s": "fda_recall_defs"
+    },
+    {
+     "t": "FDA Class III: using the product “is not likely to cause adverse health consequences.”",
+     "s": "fda_recall_defs"
+    },
+    {
+     "t": "Each FDA recall record names the firm that recalled and which products, sizes, lots or stores it covers.",
+     "s": "fda_enforcement"
+    }
+   ],
+   "not_known": [
+    "A recall on record does not mean the bottle you have was affected: check the lot, size or store in the record."
+   ]
+  },
+  {
+   "id": "recall_benzene",
+   "group": "glance",
+   "title": "Benzene recalls",
    "facts": [
     {
      "t": "Aerosol spray sunscreens are among the products FDA lists as recalled for benzene contamination.",
@@ -1164,7 +1204,7 @@
   {
    "id": "formula_change",
    "group": "label",
-   "title": "Formula change in the FDA filing",
+   "title": "Ingredient list changed in the FDA filing",
    "facts": [
     {
      "t": "DailyMed, the National Library of Medicine's database of FDA label filings, keeps a new version each time a label's filing changes.",
@@ -1172,6 +1212,7 @@
     }
    ],
    "not_known": [
+    "This can be a correction to the filing, not a new formula.",
     "A change in the filing does not show when the product on the shelf changed; older stock may still be sold, so check the tube."
    ]
   },
@@ -1181,8 +1222,8 @@
    "title": "Same ingredient list as other labels",
    "facts": [
     {
-     "t": "These labels list the same active ingredients at the same strengths and the same inactive ingredients in the same order.",
-     "s": null
+     "t": "These labels list the same active ingredients at the same strengths and the same inactive ingredients in the same order in their FDA filings.",
+     "s": "dailymed"
     }
    ],
    "not_known": [

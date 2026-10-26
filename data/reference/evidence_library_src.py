@@ -86,6 +86,8 @@ S = {  # sources: org, title, url, date, strength
  "maui_5306": ("Maui County", "Mineral-only sunscreen (Ordinance 5306)", "https://www.mauicounty.gov/2483/Sunscreen", "effective 2022-10-01", "county law"),
  "fda_hq": ("FDA", "FDA works to protect consumers from potentially harmful OTC skin lightening products", "https://www.fda.gov/drugs/drug-safety-and-availability/fda-works-protect-consumers-potentially-harmful-otc-skin-lightening-products", "2022-04-19", "agency notice"),
  "tga_pid": ("Australia TGA", "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026", "https://www.legislation.gov.au/F2026L00707/asmade", "commenced 2026-06-12", "federal regulation"),
+ "fda_recall_defs": ("FDA", "Recalls background and definitions", "https://www.fda.gov/safety/industry-guidance-recalls/recalls-background-and-definitions", "checked 2026-10-26", "agency guidance"),
+ "fda_enforcement": ("FDA", "Enforcement Report (recall records: firm, products, lots)", "https://www.accessdata.fda.gov/scripts/ires/index.cfm", "checked weekly", "federal database"),
  "dailymed": ("US National Library of Medicine", "DailyMed: FDA label filings and their versions", "https://dailymed.nlm.nih.gov/dailymed/", "checked weekly", "federal database"),
  "tga_args": ("Australia TGA", "Australian Regulatory Guidelines for Sunscreens v3.0, permitted actives", "https://www.tga.gov.au/resources/resource/guidance/australian-regulatory-guidelines-sunscreens-args", "2023-05", "agency guideline"),
  "reginfo_mocra": ("FDA (Unified Agenda)", "Fragrance allergen labeling for cosmetics (RIN 0910-AI90)", "https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202410&RIN=0910-AI90", "Fall 2024 agenda", "federal regulatory agenda"),
@@ -131,6 +133,12 @@ def f(text, src):
 TOPICS = [
  # ---------------- at a glance / safety ----------------
  dict(id="recall", group="glance", title="FDA recall",
+      facts=[f("FDA Class I: “a reasonable probability” that using the product “will cause serious adverse health consequences or death.”", "fda_recall_defs"),
+             f("FDA Class II: the product “may cause temporary or medically reversible adverse health consequences,” or serious harm is remote.", "fda_recall_defs"),
+             f("FDA Class III: using the product “is not likely to cause adverse health consequences.”", "fda_recall_defs"),
+             f("Each FDA recall record names the firm that recalled and which products, sizes, lots or stores it covers.", "fda_enforcement")],
+      not_known=["A recall on record does not mean the bottle you have was affected: check the lot, size or store in the record."]),
+ dict(id="recall_benzene", group="glance", title="Benzene recalls",
       facts=[f("Aerosol spray sunscreens are among the products FDA lists as recalled for benzene contamination.", "fda_benzene_faq")]),
  dict(id="broad_spectrum", group="glance", title="Broad Spectrum and SPF",
       facts=[f("Under FDA labeling rules, “Broad Spectrum” means the product passed a test for UVA protection in addition to UVB.", "cfr_201_327"),
@@ -214,11 +222,12 @@ TOPICS = [
              f("EU law lists the UV filters cosmetics may contain, each with a maximum concentration and any conditions of use.", "eu_annex_vi"),
              f("Australia lists the ingredients sunscreens may contain, with their limits.", "tga_pid")],
       not_known=["A limit in one country does not by itself show harm in another: each regulator sets limits on its own safety review."]),
- dict(id="formula_change", group="label", title="Formula change in the FDA filing",
+ dict(id="formula_change", group="label", title="Ingredient list changed in the FDA filing",
       facts=[f("DailyMed, the National Library of Medicine's database of FDA label filings, keeps a new version each time a label's filing changes.", "dailymed")],
-      not_known=["A change in the filing does not show when the product on the shelf changed; older stock may still be sold, so check the tube."]),
+      not_known=["This can be a correction to the filing, not a new formula.",
+                 "A change in the filing does not show when the product on the shelf changed; older stock may still be sold, so check the tube."]),
  dict(id="same_list", group="label", title="Same ingredient list as other labels",
-      facts=[f("These labels list the same active ingredients at the same strengths and the same inactive ingredients in the same order.", None)],
+      facts=[f("These labels list the same active ingredients at the same strengths and the same inactive ingredients in the same order in their FDA filings.", "dailymed")],
       not_known=["A matching list does not show who makes the product, or that the amounts of each inactive ingredient are the same."]),
  dict(id="spf_over_50", group="fact", title="SPF above 50",
       facts=[f("The AAP recommends SPF at least 15 “(up to SPF 50)” and says more research is needed to test whether SPF above 50 offers extra protection.", "aap_sun"),
@@ -365,7 +374,7 @@ TOPICS = [
 ]
 
 
-out = {"version": "2026-10-25", "note": __doc__.strip().split("\n")[0], "sources": {k: dict(zip(("org", "title", "url", "date", "strength"), v)) for k, v in S.items()},
+out = {"version": "2026-10-26", "note": __doc__.strip().split("\n")[0], "sources": {k: dict(zip(("org", "title", "url", "date", "strength"), v)) for k, v in S.items()},
        "topics": TOPICS}
 for t in TOPICS:
     for k in ("facts", "other_side"):
