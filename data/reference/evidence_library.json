@@ -506,6 +506,20 @@
    "date": "2022-04-19",
    "strength": "agency notice"
   },
+  "tga_pid": {
+   "org": "Australia TGA",
+   "title": "Therapeutic Goods (Permissible Ingredients) Determination (No. 2) 2026",
+   "url": "https://www.legislation.gov.au/F2026L00707/asmade",
+   "date": "commenced 2026-06-12",
+   "strength": "federal regulation"
+  },
+  "dailymed": {
+   "org": "US National Library of Medicine",
+   "title": "DailyMed: FDA label filings and their versions",
+   "url": "https://dailymed.nlm.nih.gov/dailymed/",
+   "date": "checked weekly",
+   "strength": "federal database"
+  },
   "tga_args": {
    "org": "Australia TGA",
    "title": "Australian Regulatory Guidelines for Sunscreens v3.0, permitted actives",
@@ -1104,6 +1118,75 @@
      "t": "FDA has received reports of serious side effects, including skin rashes, facial swelling and ochronosis, a skin discoloration that may be permanent.",
      "s": "fda_hq"
     }
+   ]
+  },
+  {
+   "id": "spf_below_30",
+   "group": "fact",
+   "title": "SPF below 30",
+   "facts": [
+    {
+     "t": "The American Academy of Dermatology recommends SPF 30 or higher.",
+     "s": "aad_faq"
+    },
+    {
+     "t": "The AAP: at least SPF 15 “(up to SPF 50)”; “an SPF of 15 or 30 should be fine for most people.”",
+     "s": "aap_sun"
+    },
+    {
+     "t": "FDA: choose a broad-spectrum sunscreen with an SPF of at least 15.",
+     "s": "fda_consumer"
+    }
+   ]
+  },
+  {
+   "id": "legal_limits",
+   "group": "fact",
+   "title": "Legal limits for UV filters",
+   "facts": [
+    {
+     "t": "FDA's sunscreen monograph lists the active ingredients (UV filters) an over-the-counter sunscreen may use, each with a maximum strength.",
+     "s": "fda_m020"
+    },
+    {
+     "t": "EU law lists the UV filters cosmetics may contain, each with a maximum concentration and any conditions of use.",
+     "s": "eu_annex_vi"
+    },
+    {
+     "t": "Australia lists the ingredients sunscreens may contain, with their limits.",
+     "s": "tga_pid"
+    }
+   ],
+   "not_known": [
+    "A limit in one country does not by itself show harm in another: each regulator sets limits on its own safety review."
+   ]
+  },
+  {
+   "id": "formula_change",
+   "group": "label",
+   "title": "Formula change in the FDA filing",
+   "facts": [
+    {
+     "t": "DailyMed, the National Library of Medicine's database of FDA label filings, keeps a new version each time a label's filing changes.",
+     "s": "dailymed"
+    }
+   ],
+   "not_known": [
+    "A change in the filing does not show when the product on the shelf changed; older stock may still be sold, so check the tube."
+   ]
+  },
+  {
+   "id": "same_list",
+   "group": "label",
+   "title": "Same ingredient list as other labels",
+   "facts": [
+    {
+     "t": "These labels list the same active ingredients at the same strengths and the same inactive ingredients in the same order.",
+     "s": null
+    }
+   ],
+   "not_known": [
+    "A matching list does not show who makes the product, or that the amounts of each inactive ingredient are the same."
    ]
   },
   {

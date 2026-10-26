@@ -48,6 +48,22 @@ def build(release_dir, thumbs_dir=None):
                 _d = json.loads(_l)
                 if _d.get("wrong_product") or _d.get("reason") == "wrong_product":
                     WRONG.add(_d["setid"])
+    # formula changes seen in the weekly history (data/history): what the FDA filing added or dropped
+    FC = {}
+    _hp = os.path.join(ROOT, "data/history/us_formulation_history.jsonl")
+    if os.path.exists(_hp):
+        _last = {}
+        for _l in open(_hp, encoding="utf-8"):
+            _h = json.loads(_l)
+            _names = lambda h: {(a.get("name") or "").strip().upper() for a in (h.get("inactive_ingredients") or [])} | \
+                {"ACTIVE: " + (a.get("name") or "").strip().upper() + (f" {a['percent_ww']:g}%" if a.get("percent_ww") is not None else "") for a in (h.get("active_ingredients") or [])}  # noqa: E731
+            prev = _last.get(_h["setid"])
+            if _h.get("change") == "reformulated" and prev is not None:
+                now = _names(_h)
+                was = _names(prev)
+                FC.setdefault(_h["setid"], []).append([_h["observed_on"], sorted(now - was)[:10], sorted(was - now)[:10]])
+            if _h.get("inactive_ingredients") or _h.get("active_ingredients"):
+                _last[_h["setid"]] = _h
     for r in sorted(rows, key=lambda r: (r.get("status") != "active", r.get("name") or "")):
         ii = []
         for n in r.get("inactives") or []:
@@ -89,6 +105,12 @@ def build(release_dir, thumbs_dir=None):
             p["label_check"] = r["label_check"]
         if any(x["status"] == "needs_review" for x in recs):
             p["rr"] = 1                                    # a recall matched on brand + name only: under review
+        rd = [[x.get("recall_number"), x.get("date"), x.get("classification"), x.get("reason"), x.get("recall_status"), x.get("url")]
+              for x in recs if x["status"] == "matched"]
+        if rd:
+            p["rd"] = rd                                   # the FDA recall records behind "recall on record"
+        if FC.get(r["setid"]):
+            p["fc"] = FC[r["setid"]]                       # [date, added, removed] in the FDA filing
         out.append(p)
     chp = os.path.join(ROOT, "data/reference/rules_changelog.json")
     changelog = json.load(open(chp, encoding="utf-8"))["changes"] if os.path.exists(chp) else []
@@ -206,6 +228,15 @@ def evidence(site_dir):
     out = {"lib": json.load(open(os.path.join(ref, "evidence_library.json"), encoding="utf-8")),
            "uvs": json.load(open(os.path.join(ref, "uv_absorber_status.json"), encoding="utf-8")),
            "nea": json.load(open(os.path.join(ref, "nea_exclusion.json"), encoding="utf-8"))["names"]}
+    lim_p = os.path.join(os.path.dirname(site_dir), "evidence", "data.json")
+    if os.path.exists(lim_p):
+        lim = {}
+        for g in json.load(open(lim_p, encoding="utf-8"))["ingredients"]:
+            row = {"slug": g["slug"], "name": g["name"], "aka": g.get("also_known_as") or [],
+                   "l": [[x["jurisdiction"], x["status"], x.get("max_percent"), x.get("notes"),
+                          (x.get("source") or {}).get("url"), (x.get("source") or {}).get("title")] for x in g["limits"]]}
+            lim[g["matrix_key"]] = row
+        out["limits"] = lim
     p = os.path.join(site_dir, "evidence.json")
     with open(p, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
