@@ -105,7 +105,7 @@ def build(release_dir, thumbs_dir=None):
         recs = r.get("recalls") or []
         haz = sorted({h for x in recs if x["status"] == "matched" and _scope(x["recall_number"]) != "store"
                       for h in x.get("hazards") or []})
-        p = {"id": r["setid"], "n": r.get("name"), "b": r.get("brand"), "s": r.get("spf"), "d": as_of,
+        p = {"id": r["setid"], "n": r.get("name"), "b": r.get("brand"), "s": r.get("spf"), "d": (lambda e: f"{e[:4]}-{e[4:6]}-{e[6:8]}" if e and len(str(e)) == 8 else None)(str(r.get("effective_date") or "")),  # the label version's own date (FDA effective date)
              "m": r.get("mineral_type"), "z": [[a["name"], a.get("percent")] for a in r.get("actives") or []],
              "r": haz, "rk": 1 if (r.get("recall_checked") or haz) else 0, "v": r.get("spl_version"),
              "i": ii, "v3": r.get("flags") or [],
@@ -141,7 +141,8 @@ def build(release_dir, thumbs_dir=None):
         rd = [[x.get("recall_number"), x.get("date"), x.get("classification"), x.get("reason"), x.get("recall_status"), x.get("url"),
                (RC.get(x["recall_number"]) or {}).get("recalling_firm"), _scope(x["recall_number"]),
                _reach(x["recall_number"])]
-              for x in recs if x["status"] == "matched"]
+              for x in recs if x["status"] == "matched" and _scope(x["recall_number"]) != "store"]
+        # (a store pulling stock it kept badly is not a recall of the product: not on the card; see how-we-check)
         if rd:
             p["rd"] = rd                                   # the FDA recall records behind "recall on record"
         if FC.get(r["setid"]):
@@ -285,10 +286,11 @@ def evidence(site_dir):
                 ("ISOAMYL P METHOXYCINNAMATE", "Amiloxate", ["AMILOXATE", "ISOAMYL METHOXYCINNAMATE", "ISOPENTYL 4 METHOXYCINNAMATE"], eu("permitted", 10.0)),
                 ("POLYSILICONE 15", "Polysilicone-15", ["DIMETHICODIETHYLBENZALMALONATE"], eu("permitted", 10.0)),
                 ("ENZACAMENE", "Enzacamene (4-MBC)", ["4 METHYLBENZYLIDENE CAMPHOR", "3 4 METHYLBENZYLIDENE CAMPHOR"], eu("removed", None, "eu_2024_996")),
-                ("ETHYL METHOXYCINNAMATE", "Ethyl methoxycinnamate", [], eu("not_listed", None)),
-                ("BENZOPHENONE", "Benzophenone", [], eu("not_listed", None))]:
+                ("ETHYL METHOXYCINNAMATE", "Ethyl methoxycinnamate", [], eu("not_listed", None))
+                ]:
             if key not in lim:
-                lim[key] = {"slug": None, "name": name, "aka": aka, "l": [us, e, au]}
+                a_ = ["AU", "under_review", None, None, S["tga_4mbc_2026"]["url"], S["tga_4mbc_2026"]["title"], []] if key == "ENZACAMENE" else au
+                lim[key] = {"slug": None, "name": name, "aka": aka, "l": [us, e, a_]}
         for key, extra in (("TITANIUM DIOXIDE", ["CI 77891"]), ("ZINC OXIDE", ["CI 77947"])):
             if key in lim:
                 lim[key]["aka"] = lim[key]["aka"] + extra
