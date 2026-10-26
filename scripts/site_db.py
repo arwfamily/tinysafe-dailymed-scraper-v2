@@ -156,11 +156,27 @@ def explained(release_dir):
 def headline(db):
     act = [p for p in db["p"] if p.get("st") == "active"]
     has = lambda p, f: any(x[0] == f for x in p["v3"])  # noqa: E731
-    return {
+    h = {
         "read": len(act),
         "booster": sum(1 for p in act if p.get("ft") == "mineral_only" and has(p, "hidden_uv_booster")),
         "recall": sum(1 for p in act if p["r"]),
     }
+    ap = os.path.join(ROOT, "data/verification/audit_history.jsonl")
+    if os.path.exists(ap):
+        rows = [json.loads(x) for x in open(ap, encoding="utf-8") if x.strip()]
+        rows = [r for r in rows if r.get("checked", 0) >= 300]
+        if rows:
+            h["audit"] = rows[-1]
+    return h
+
+
+def audit_line(a):
+    import datetime as _dt
+    d = _dt.date.fromisoformat(a["date"]).strftime("%B %Y")
+    pct = lambda x: f"{x * 100:.1f}".rstrip("0").rstrip(".")  # noqa: E731
+    return (f"How accurate is this? In our latest independent audit ({d}), {a['checked']} randomly picked labels "
+            f"were re-read against the package: {pct(a['rate'])}% had at least one error "
+            f"(95% range {pct(a['ci95'][0])} to {pct(a['ci95'][1])}%). We correct what the evidence confirms, and we audit again every month.")
 
 
 def patch_index(html, h):
@@ -169,12 +185,31 @@ def patch_index(html, h):
         if n != 1:
             raise SystemExit(f"index.html: stat '{label}' not found exactly once")
         return new
-    html = sub("FDA-registered sunscreens, read", h["read"], html)
-    html = sub("hide a UV booster", h["booster"], html)
+    html = sub("FDA-registered sunscreens, checked", h["read"], html)
+    html = sub("mineral sunscreens list a possible SPF booster as an inactive", h["booster"], html)
     html = sub("with a recall on record", h["recall"], html)
-    html = re.sub(r"[\d,]+ sunscreens · 3-tier rules v[\d.]+", f"{h['read']:,} sunscreens · 3-tier rules "
+    html, n = re.subn(r"(checked every one of the )[\d,]+( FDA-registered sunscreen labels)", r"\g<1>" + f"{h['read']:,}" + r"\2", html)
+    if n != 1:
+        raise SystemExit("index.html: intro count not found exactly once")
+    if h.get("audit"):
+        html, n = re.subn(r'(<p class="audit[^"]*"[^>]*>)[^<]*(</p>)', lambda m: m.group(1) + audit_line(h["audit"]) + m.group(2), html)
+        if n != 1:
+            raise SystemExit("index.html: audit line not found exactly once")
+    html = re.sub(r"[\d,]+ sunscreens · (?:3-tier )?rules v[\d.]+", f"{h['read']:,} sunscreens · rules "
                   + RULES_VERSION.split(" ")[0], html)
     return html
+
+
+def evidence(site_dir):
+    """The card's evidence: every sentence a parent reads, each with its source (data/reference)."""
+    ref = os.path.join(ROOT, "data/reference")
+    out = {"lib": json.load(open(os.path.join(ref, "evidence_library.json"), encoding="utf-8")),
+           "uvs": json.load(open(os.path.join(ref, "uv_absorber_status.json"), encoding="utf-8")),
+           "nea": json.load(open(os.path.join(ref, "nea_exclusion.json"), encoding="utf-8"))["names"]}
+    p = os.path.join(site_dir, "evidence.json")
+    with open(p, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
+    print("wrote", p)
 
 
 def main():
@@ -214,6 +249,7 @@ def main():
         html = open(idx_p, encoding="utf-8").read()
         open(idx_p, "w", encoding="utf-8").write(patch_index(html, h))
         print("rewrote the headline numbers in", idx_p)
+        evidence(os.path.dirname(idx_p))
 
 
 if __name__ == "__main__":

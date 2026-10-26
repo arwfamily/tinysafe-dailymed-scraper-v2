@@ -53,8 +53,19 @@ lists labels whose filing changed and lost a warning; and
 `python3 scripts/verify/selfcheck.py data/site/sunnytime_db.json --site <arwhouse>` must exit 0 (no placeholder or run-together ingredient names, every warning has its text, every photo its thumbnail); read each one (a brand removing an ingredient is
 expected; a filing error is not) and note them in the report.
 Commit the data repo (`data/`, corrections) and push; `cp data/site/sunnytime_db.json <arwhouse>/sunnytime/db.json`;
-commit `sunnytime/db.json`, new thumbnails in `sunnytime/p/`, and `sunnytime/index.html` (headline numbers only) and push.
+`python3 scripts/site_rules_page.py <arwhouse>` and `python3 scripts/site_corrections_page.py <arwhouse>` (both generated
+from the data repo: the evidence library, flag texts, changelog, audits and reader reports);
+commit `sunnytime/db.json`, `sunnytime/evidence.json` (written by site_db next to index.html), new thumbnails in
+`sunnytime/p/`, `sunnytime/index.html` (headline numbers, intro count and audit line only),
+`sunnytime/how-we-check/index.html` and `sunnytime/corrections/index.html`, and push.
 Never change any other site copy in this job: copy changes need the owner's approval.
+
+### Reader error reports (angela@arwhouse.com)
+Reports arrive by email to the owner. A report changes nothing by itself: two readers check the evidence
+(package photo or link) within 7 days, as for any correction. A brand's request to remove an item needs
+evidence that the ingredient is not in the product. Record every handled report, changed or not, as one line in
+`data/corrections/reader_reports.jsonl` ({date, product, setid, reported_by: parent|brand, what, fix}); the
+corrections page lists them. Never put the reporter's name or email in that file.
 Then confirm the site actually deployed: `env -u GH_TOKEN gh api repos/arwfamily/arwhouse/commits/<sha>/status --jq '.statuses[]|[.context,.state,.description]'`
 must show `Vercel success` within about 5 minutes. If no status appears after 10 minutes, push an empty commit
 (`git commit --allow-empty -m "Redeploy"`) and check again; report it if it still does not deploy.

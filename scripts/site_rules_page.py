@@ -7,6 +7,7 @@ Usage: site_rules_page.py <arwhouse checkout>
 """
 import html
 import json
+import re
 import os
 import sys
 
@@ -15,53 +16,90 @@ ROOT = os.path.dirname(HERE)
 META = json.load(open(os.path.join(ROOT, "data/reference/flags_v31.json")))["meta"]
 LOG = json.load(open(os.path.join(ROOT, "data/reference/rules_changelog.json")))["changes"]
 
-GROUPS = [
-    ("T1", "Act on it",
-     "The label hides what an ingredient does (a UV absorber that is not listed as an active), a regulator has "
-     "banned or restricted the ingredient in cosmetics or in products for young children, or pediatric guidance "
-     "advises against it for children."),
-    ("T2", "Check if your child reacts",
-     "The ingredient is on one of three named lists: the American Contact Dermatitis Society's Allergen of the "
-     "Year (any year, except a year the society named a non-allergen), the EU list of fragrance allergens that must "
-     "be named on labels, or the US major food allergens. Fragrance and essential oils are here because they are "
-     "how those fragrance allergens get into a product."),
-    ("T3", "Also in it",
-     "Everything else we can say for certain from the label. These are facts, not warnings. If you tell us your "
-     "child has eczema or a food allergy, the facts that match move up and are starred."),
+LIB = json.load(open(os.path.join(ROOT, "data/reference/evidence_library.json")))
+SRC = LIB["sources"]
+# the result card, in the order it shows (approved 2026-10-25)
+LAYOUT = [
+    ("At a glance", "The same checks on every product, in the same order, so two sunscreens can be compared side by side: "
+     "FDA recall, Broad Spectrum, the UV filters (mineral or chemical), spray or powder, an age limit or adult skincare active, "
+     "fragrance, and a possible SPF booster listed as an inactive ingredient."),
+    ("About the UV filters", "Each chemical filter on the label, with its official limits in the US and the EU, and where state or county law bans its sale."),
+    ("Label check", "What the label itself shows: a UV filter listed as an inactive, a fragrance-free claim next to a fragrance, an ingredient banned in EU cosmetics."),
+    ("Check for your child", "Ingredients that matter mainly for some children. Tap Eczema, Psoriasis, Food allergy or Under 3 and the ones that apply are highlighted, with the guidance written for that situation."),
+    ("Other ingredients some parents ask about", "Ingredients parents often ask about, with the official findings we found for each. Listed because parents ask, not because a rule flags them."),
 ]
-# what the result card says, in the result card's own words, for the three fixed questions
-TOP = [("Hidden UV booster", "Does the label list every ingredient that absorbs UV as an active?"),
-       ("Fragrance", "Does it contain fragrance, an essential oil or an EU-listed fragrance allergen?"),
-       ("Recalls", "Is there an FDA recall on record for this product?")]
-ORDER_SKIP = {"water_resistant"}   # a label fact, listed under T3 like the rest
+COLOURS = [("Green", "the check found nothing of that kind on the label"),
+           ("Amber", "pediatric or dermatology guidance (AAP, AAD) applies, the product is above an EU limit, an EU rule restricts the ingredient for young children, or the item matches what you told us about your child"),
+           ("Blue", "a fact to know: where a law bans its sale, how a rule elsewhere treats it, a study finding, or something the label leaves unclear"),
+           ("Red", "an FDA recall, an FDA order or warning that removes the ingredient or product type, or a combination pediatricians advise against")]
+GROUP_TITLES = [("glance", "At a glance"), ("safety", "FDA orders and pediatric guidance"), ("filters", "UV filters"),
+                ("fact", "Laws on sale and SPF"), ("label", "Label check"), ("child", "Check for your child"),
+                ("profile", "Eczema and psoriasis"), ("pref", "Other ingredients some parents ask about")]
+COVERED = {"chemical_filter_active", "spray_powder", "not_broad_spectrum", "age_limit", "fragrance", "essential_oil",
+           "eu_fragrance_allergen", "recall", "insect_repellent", "mi_mci", "formaldehyde_releaser", "propyl_butyl_paraben",
+           "retinoid", "citrus_photosensitizer", "lanolin", "capb", "propylene_glycol", "drying_alcohol", "phenoxyethanol",
+           "ethoxylated", "bht_bha", "talc", "petrolatum_mineral_oil", "fragrance_free_conflict", "water_resistant",
+           "peanut", "tree_nut", "soy", "wheat", "milk", "egg", "sesame", "fish_shellfish", "oat", "hidden_uv_booster"}
+CLEAN = re.compile(r"\s*\([^()]*(verif|fetch|mirror|checked|not read|title/volume)[^()]*\)", re.I)
 
 
 def e(s):
     return html.escape(s or "", quote=True)
 
 
+def src_html(k):
+    s = SRC.get(k)
+    if not s:
+        return ""
+    return (f' <a class="srcl" href="{e(s["url"])}" rel="noopener">{e(s["org"])} · {e(s["date"])}</a>'
+            + (f' <span class="st">{e(s["strength"])}</span>' if s.get("strength") else ""))
+
+
+def facts(arr):
+    out = []
+    for x in arr or []:
+        t = x["t"]
+        if "{" in t:      # filled per product on the card
+            t = (t.replace("{names}", "the ingredient named on the card")
+                  .replace("{status}", "Its status as a UV filter in the US, the EU and Australia is shown on the card."))
+        out.append(f"<li>{e(t)}{src_html(x.get('s'))}</li>")
+    return "".join(out)
+
+
+def topic_html(t):
+    h = f'<details><summary>{e(t["title"])}</summary><ul class="f">{facts(t.get("facts"))}</ul>'
+    if t.get("other_side"):
+        h += f'<p class="osh">What points the other way</p><ul class="f">{facts(t["other_side"])}</ul>'
+    if t.get("not_known"):
+        h += '<p class="osh">Not known</p><ul class="f">' + "".join(f"<li>{e(x)}</li>" for x in t["not_known"]) + "</ul>"
+    return h + "</details>"
+
+
 def main():
     site = sys.argv[1]
-    tiers = {t: [] for t, _, _ in GROUPS}
-    for k, v in META.items():
-        if v.get("t") in tiers:
-            tiers[v["t"]].append((k, v))
+    layout = "".join(f"<li><b>{e(a)}.</b> {e(b)}</li>" for a, b in LAYOUT)
+    colours = "".join(f"<li><b>{e(a)}</b>: {e(b)}.</li>" for a, b in COLOURS)
+    by = {}
+    for t in LIB["topics"]:
+        by.setdefault(t["group"], []).append(t)
     parts = []
-    for t, name, test in GROUPS:
-        items = "".join(
-            f'<details><summary>{e(v["l"])}</summary><p>{e(v.get("w"))}</p>'
-            f'<span class="src">Source: {e(v.get("s"))}</span></details>' for k, v in tiers[t])
-        parts.append(f'<h2>{e(name)}</h2><p class="sub">{e(test)}</p>{items}')
+    for g, title in GROUP_TITLES:
+        if by.get(g):
+            parts.append(f'<h3>{e(title)}</h3>' + "".join(topic_html(t) for t in by[g]))
+    other = "".join(
+        f'<details><summary>{e(v["l"])}</summary><p>{e(v.get("w"))}</p><span class="src">Source: {e(CLEAN.sub("", v.get("s") or ""))}</span>'
+        + ('<span class="src">This flag is our own judgment, not an official rule.</span>' if v.get("basis") == "judgment" else "")
+        + "</details>"
+        for k, v in META.items() if k not in COVERED and v.get("t") in ("T1", "T2", "T3") and v.get("w"))
     log = "".join(f'<li><b>{e(c["version"])} · {e(c["date"])}</b> {e(c["change"])} <span class="why">{e(c.get("why"))}</span></li>'
                   for c in LOG)
-    top = "".join(f"<li><b>{e(a)}.</b> {e(b)}</li>" for a, b in TOP)
     page = f'''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sunnytime — How the Sunscreen Check works</title>
-<meta name="description" content="The written rules behind the Sunnytime Sunscreen Check: what shows first, what each ingredient does, and the sources. The same rules for every brand, including ours.">
+<meta name="description" content="How the Sunnytime Sunscreen Check works: how a result is laid out, every fact it shows with its official source, and how the data is checked. The same rules for every brand, including ours.">
 <link rel="canonical" href="https://arwhouse.com/sunnytime/how-we-check">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
@@ -95,19 +133,41 @@ details p{{margin:8px 0 0;color:var(--ink2)}}
 .box p{{margin:0}}
 footer{{margin-top:60px;font-size:13px;color:var(--grey)}}
 a{{color:var(--sage)}}
+h3{{font-size:17px;font-weight:600;margin:28px 0 4px}}
+ul.f{{margin:8px 0 0;padding-left:18px}} ul.f li{{margin-bottom:6px;color:var(--ink2)}}
+.srcl{{font-size:12.5px;color:var(--sage);white-space:nowrap}}
+.st{{font-size:11.5px;color:var(--grey)}}
+.osh{{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--grey);margin:12px 0 0}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <nav><a class="word" href="/sunnytime">sunnytime</a><a class="back" href="/sunnytime#check">← Back to the Check</a></nav>
 <h1>How the Check works.</h1>
-<p class="lead">We don't score sunscreens. We read every label the FDA has on file, the printed Drug Facts and the filing behind it, and sort what we find with one written test for each group. The test is the same for every brand, including ours.</p>
-<div class="box"><p><b>Sunnytime is checked the same way.</b> We make a mineral sunscreen. When ours is on the FDA registry it goes through these exact rules, and what they find about it shows up like everyone else's, including the synthetic polymer powders it uses for texture.</p></div>
+<p class="lead">We don't score or rank sunscreens. We read every label the FDA has on file, the printed Drug Facts and the filing behind it, and show what we find as facts, each with its official source. What to avoid is your call. The rules are the same for every brand, including ours.</p>
+<div class="box"><p><b>Sunnytime is checked the same way.</b> I make a mineral sunscreen. When ours is on the FDA registry it goes through these exact rules, and what they find about it shows up like everyone else's, including the synthetic polymer powders it uses for texture.</p></div>
 
-<h2>The first three lines</h2>
-<p class="sub">Every result opens with the same three questions, in the same order, so you can compare two sunscreens at a glance.</p>
-<ul>{top}</ul>
+<h2>How a result is laid out</h2>
+<ul>{layout}</ul>
+<p class="sub">What the colours mean:</p>
+<ul>{colours}</ul>
+<p class="sub">Products are never ranked by how many items they have. Under every item, "Why this matters" lists the facts behind it, one sentence per source, then what points the other way and what no source has settled.</p>
+
+<h2>Every fact, with its source</h2>
+<p class="sub">These are the same sentences the result card shows. A law is called a law, a proposal a proposal, a recommendation a recommendation, and a single study a study.</p>
 {"".join(parts)}
+
+<h2>Other checks we run</h2>
+<p class="sub">Less common findings, each with the rule or reference it rests on. Where a flag is our own judgment rather than an official rule, it says so.</p>
+{other}
+
+<h2>How we check the data</h2>
+<ul>
+<li><b>Two readers.</b> Each label's actives, Broad Spectrum claim and ingredient list are read from the package artwork filed with the FDA. The card says whether two readers agreed, one reader read it, or only the FDA filing was available.</li>
+<li><b>Every week.</b> Every label is re-checked against FDA DailyMed, and the card shows the date.</li>
+<li><b>Every month.</b> An independent audit re-reads 300 randomly picked labels against the package. The error rate and its 95% range are shown on the Check.</li>
+<li><b>Corrections.</b> Anyone, parent or brand, can report an error from a product card or at angela@arwhouse.com, with a photo of the package or a link. Two readers check it within 7 days; one report alone never changes a card. <a href="/sunnytime/corrections">Every correction is listed.</a></li>
+</ul>
 
 <h2>What each ingredient does</h2>
 <p>Next to every ingredient we give its main job in a sunscreen. The source is the European Commission's CosIng ingredient register, which lists the functions each cosmetic ingredient is registered for. CosIng lists every function an ingredient may serve in any product, so for the most-used ingredients two people chose the main job separately and we kept it only when they agreed. For plant extracts we name what they are used as, not a benefit they promise.</p>
@@ -134,6 +194,7 @@ a{{color:var(--sage)}}
 <li>EU Cosmetics Regulation (EC) No 1223/2009, Annexes II, III and V, and Regulation (EU) 2023/1545</li>
 <li>US major food allergens: FALCPA, FASTER Act 2021, FDA food allergen guidance (January 2025)</li>
 <li>FDA recall enforcement reports</li>
+<li>Every source cited above, linked next to its sentence</li>
 </ul>
 <footer>Questions or a correction? angela@arwhouse.com · ARW House</footer>
 </div>

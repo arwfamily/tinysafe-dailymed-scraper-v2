@@ -1,6 +1,12 @@
 {
  "changes": [
   {
+   "version": "Card v4",
+   "date": "2026-10-25",
+   "change": "The result card was redesigned. Every item is now one fact with its official source, under 'Why this matters', with what points the other way and what is not known. Items are grouped as At a glance, About the UV filters, Label check, Check for your child (with Eczema, Psoriasis, Food allergy and Under 3 options) and Other ingredients some parents ask about. Colour follows the strength of the source: red only for an FDA recall, an FDA order or warning, or a combination pediatricians advise against. Sprays, chemical filters and 'possible SPF booster listed as inactive' are no longer shown in red. A green check is never shown where the ingredient list may be incomplete. Each card shows when it was last checked, and errors can be reported from it.",
+   "why": "An independent review of the check found warnings stronger than their sources, and a few green checks the label did not support. Every sentence on the card was then checked against its source by two further independent reviewers."
+  },
+  {
    "version": "v3.12",
    "date": "2026-10-24",
    "change": "Every label read once from its package artwork (5,388) was checked again by a second, independent reader. 4,555 matched; a match read with full confidence makes the label's evidence two agreeing reads (tier A: 6,229 labels, up from 2,087). Where the two readers differed, a third reader who was told neither answer settled Broad Spectrum and ingredient names: a fact two of three readers saw is used (Broad Spectrum now shown for 205 more labels; names printed on the package added to 81 lists, never taking one away). A filer's placeholder in the ingredient field ('Please kindly refer to artwork') is not shown as an ingredient; one product filed with hundreds of inactives is not shown a list. Methylparaben and Ethylparaben, or Ceteareth-10 and Ceteareth-20, are no longer taken for spelling variants of each other.",
