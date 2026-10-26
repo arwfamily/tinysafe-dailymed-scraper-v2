@@ -12,8 +12,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import site_db  # noqa: E402
 
 site = sys.argv[1]
-idx = os.path.join(site, "sunnytime/index.html")
 db = json.load(open(os.path.join(site, "sunnytime/db.json"), encoding="utf-8"))
-html = open(idx, encoding="utf-8").read()
-open(idx, "w", encoding="utf-8").write(site_db.patch_index(html, site_db.headline(db)))
-print("rewrote", idx)
+h = site_db.headline(db)
+for rel in ("sunnytime/index.html", "sunscreen-check/index.html"):
+    idx = os.path.join(site, rel)
+    if os.path.exists(idx):
+        html = open(idx, encoding="utf-8").read()
+        open(idx, "w", encoding="utf-8").write(site_db.patch_index(html, h))
+        print("rewrote", idx)

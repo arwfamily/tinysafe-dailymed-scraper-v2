@@ -250,6 +250,12 @@ def main():
         open(idx_p, "w", encoding="utf-8").write(patch_index(html, h))
         print("rewrote the headline numbers in", idx_p)
         evidence(os.path.dirname(idx_p))
+        # the Sunscreen Check's own page (arwhouse.com/sunscreen-check) carries the same numbers
+        chk = os.path.join(os.path.dirname(os.path.dirname(idx_p)), "sunscreen-check/index.html")
+        if os.path.exists(chk):
+            c = open(chk, encoding="utf-8").read()
+            open(chk, "w", encoding="utf-8").write(patch_index(c, h))
+            print("rewrote the headline numbers in", chk)
 
 
 if __name__ == "__main__":

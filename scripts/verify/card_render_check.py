@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the Sunscreen Check card for every product (no option selected, and all four selected) from a local
+"""Render the Sunscreen Check card (arwhouse.com/sunscreen-check) for every product (no option selected, and all four selected) from a local
 copy of the site, and fail if any card errors or any item lacks its 'Why this matters · sources' panel.
 
 Usage: card_render_check.py <arwhouse checkout>     (needs Python playwright; Chromium is preinstalled)
@@ -22,7 +22,7 @@ class Quiet(http.server.SimpleHTTPRequestHandler):
 
 srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), functools.partial(Quiet, directory=site))
 threading.Thread(target=srv.serve_forever, daemon=True).start()
-url = f"http://127.0.0.1:{srv.server_address[1]}/sunnytime/"
+url = f"http://127.0.0.1:{srv.server_address[1]}/sunscreen-check/"
 JS = """async()=>{const src=[...document.scripts].map(s=>s.textContent).find(t=>t.includes('function render(p){window.lastP=p;'));
   const a='function render(p){window.lastP=p;',z="res.classList.add('show');sug.innerHTML='';}";
   const i=src.indexOf(a),j=src.indexOf(z,i)+z.length;const R=(0,eval)('('+src.slice(i,j).replace('function render(p)','function(p)')+')');

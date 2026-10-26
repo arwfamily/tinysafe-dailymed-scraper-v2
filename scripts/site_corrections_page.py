@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""arwhouse.com/sunnytime/corrections: every correction to the Sunscreen Check.
+"""arwhouse.com/sunscreen-check/corrections: every correction to the Sunscreen Check.
 
 Reader reports: data/corrections/reader_reports.jsonl, one JSON object per line:
   {"date": "YYYY-MM-DD", "product": "...", "setid": "...", "reported_by": "parent|brand",
@@ -43,16 +43,16 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sunnytime — Corrections to the Sunscreen Check</title>
-<meta name="description" content="Every correction to the Sunnytime Sunscreen Check, from reader reports and from our monthly independent audits.">
-<link rel="canonical" href="https://arwhouse.com/sunnytime/corrections">
+<title>Corrections to the Sunscreen Check · ARW House</title>
+<meta name="description" content="Every correction to the Sunscreen Check, from reader reports and from our monthly independent audits.">
+<link rel="canonical" href="https://arwhouse.com/sunscreen-check/corrections">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 {css}
 </head>
 <body>
 <div class="wrap">
-<nav><a class="word" href="/sunnytime">sunnytime</a><a class="back" href="/sunnytime#check">← Back to the Check</a></nav>
+<nav><a class="word" href="/">ARW House</a><a class="back" href="/sunscreen-check">← Back to Sunscreen Check</a></nav>
 <h1>Corrections.</h1>
 <p class="lead">When something on the Sunscreen Check is wrong, we fix it and list it here. Anyone, parent or brand, can report an error from a product card or at <a href="mailto:angela@arwhouse.com">angela@arwhouse.com</a>, with a photo of the package or a link.</p>
 <div class="box"><p><b>How a report is handled.</b> Two readers check the evidence within 7 days. One report alone never changes a card. A brand's request to remove an item is accepted only with evidence that the ingredient is not in the product.</p></div>
@@ -61,12 +61,12 @@ def main():
 <h2>From our monthly audits</h2>
 <p class="sub">Each month an independent reviewer re-reads 300 randomly picked labels against the package artwork filed with the FDA. Errors confirmed on review are corrected.</p>
 <ul>{aud_html}</ul>
-<footer><a href="/sunnytime/how-we-check">How the Check works</a> · ARW House</footer>
+<footer><a href="/sunscreen-check/how-we-check">How the Check works</a> · ARW House</footer>
 </div>
 </body>
 </html>
 '''
-    out = os.path.join(site, "sunnytime/corrections/index.html")
+    out = os.path.join(site, "sunscreen-check/corrections/index.html")
     os.makedirs(os.path.dirname(out), exist_ok=True)
     open(out, "w", encoding="utf-8").write(page)
     print("wrote", out)

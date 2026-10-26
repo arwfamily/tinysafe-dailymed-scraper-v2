@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""arwhouse.com/sunnytime/how-we-check: the written rules behind the Sunscreen Check,
+"""arwhouse.com/sunscreen-check/how-we-check: the written rules behind the Sunscreen Check,
 generated from the same files the check uses (flags_v31.json meta, rules_changelog.json,
 the ingredient dictionary), so the page cannot drift from what the check does.
 
@@ -98,9 +98,9 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sunnytime — How the Sunscreen Check works</title>
-<meta name="description" content="How the Sunnytime Sunscreen Check works: how a result is laid out, every fact it shows with its official source, and how the data is checked. The same rules for every brand, including ours.">
-<link rel="canonical" href="https://arwhouse.com/sunnytime/how-we-check">
+<title>How the Sunscreen Check works · ARW House</title>
+<meta name="description" content="How the Sunscreen Check works: how a result is laid out, every fact it shows with its official source, and how the data is checked. The same rules for every brand, including ours.">
+<link rel="canonical" href="https://arwhouse.com/sunscreen-check/how-we-check">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <style>
@@ -142,7 +142,7 @@ ul.f{{margin:8px 0 0;padding-left:18px}} ul.f li{{margin-bottom:6px;color:var(--
 </head>
 <body>
 <div class="wrap">
-<nav><a class="word" href="/sunnytime">sunnytime</a><a class="back" href="/sunnytime#check">← Back to the Check</a></nav>
+<nav><a class="word" href="/">ARW House</a><a class="back" href="/sunscreen-check">← Back to Sunscreen Check</a></nav>
 <h1>How the Check works.</h1>
 <p class="lead">We don't score or rank sunscreens. We read every label the FDA has on file, the printed Drug Facts and the filing behind it, and show what we find as facts, each with its official source. What to avoid is your call. The rules are the same for every brand, including ours.</p>
 <div class="box"><p><b>Sunnytime is checked the same way.</b> I make a mineral sunscreen. When ours is on the FDA registry it goes through these exact rules, and what they find about it shows up like everyone else's, including the synthetic polymer powders it uses for texture.</p></div>
@@ -166,7 +166,7 @@ ul.f{{margin:8px 0 0;padding-left:18px}} ul.f li{{margin-bottom:6px;color:var(--
 <li><b>Two readers.</b> Each label's actives, Broad Spectrum claim and ingredient list are read from the package artwork filed with the FDA. The card says whether two readers agreed, one reader read it, or only the FDA filing was available.</li>
 <li><b>Every week.</b> Every label is re-checked against FDA DailyMed, and the card shows the date.</li>
 <li><b>Every month.</b> An independent audit re-reads 300 randomly picked labels against the package. The error rate and its 95% range are shown on the Check.</li>
-<li><b>Corrections.</b> Anyone, parent or brand, can report an error from a product card or at angela@arwhouse.com, with a photo of the package or a link. Two readers check it within 7 days; one report alone never changes a card. <a href="/sunnytime/corrections">Every correction is listed.</a></li>
+<li><b>Corrections.</b> Anyone, parent or brand, can report an error from a product card or at angela@arwhouse.com, with a photo of the package or a link. Two readers check it within 7 days; one report alone never changes a card. <a href="/sunscreen-check/corrections">Every correction is listed.</a></li>
 </ul>
 
 <h2>What each ingredient does</h2>
@@ -201,7 +201,7 @@ ul.f{{margin:8px 0 0;padding-left:18px}} ul.f li{{margin-bottom:6px;color:var(--
 </body>
 </html>
 '''
-    out = os.path.join(site, "sunnytime/how-we-check/index.html")
+    out = os.path.join(site, "sunscreen-check/how-we-check/index.html")
     os.makedirs(os.path.dirname(out), exist_ok=True)
     open(out, "w", encoding="utf-8").write(page)
     print("wrote", out)
