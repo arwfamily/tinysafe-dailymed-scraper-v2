@@ -188,7 +188,7 @@ def patch_index(html, h):
     html = sub("FDA-registered sunscreens, checked", h["read"], html)
     html = sub("mineral sunscreens list a possible SPF booster as an inactive", h["booster"], html)
     html = sub("with a recall on record", h["recall"], html)
-    html, n = re.subn(r"(checked every one of the )[\d,]+( FDA-registered sunscreen labels)", r"\g<1>" + f"{h['read']:,}" + r"\2", html)
+    html, n = re.subn(r"(I checked all )[\d,]+( FDA-registered sunscreen labels)", r"\g<1>" + f"{h['read']:,}" + r"\2", html)
     if n != 1:
         raise SystemExit("index.html: intro count not found exactly once")
     if h.get("audit"):
