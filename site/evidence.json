@@ -1,7 +1,7 @@
 {
  "built_on": "2026-10-26",
- "generated_at": "2026-10-26T16:36:08Z",
- "commit": "d05f8ec",
+ "generated_at": "2026-10-26T21:14:44Z",
+ "commit": "a28a0cc2",
  "contract": "docs/SITE_DATA_CONTRACT.md",
  "jurisdictions": [
   "US",
@@ -9302,11 +9302,11 @@
    "finding": "fragrance",
    "id": "US-BABY-FRAGRANCE",
    "status": "verified",
-   "sentence": "140 of the 447 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list fragrance (or parfum) as an ingredient. For children with eczema, the American Academy of Dermatology advises a sunscreen that is fragrance-free.",
-   "numerator": 140,
+   "sentence": "138 of the 447 baby and kids sunscreen formulas listed in the FDA's DailyMed label database list fragrance (or parfum) as an ingredient. For children with eczema, the American Academy of Dermatology advises a sunscreen that is fragrance-free.",
+   "numerator": 138,
    "denominator": 447,
    "population": "unique formulations of sunscreen labels that say baby or kids in the product name or on the front panel, plus the sunscreens of baby-care brands (Tubby Todd, Pipette, Mustela, Babo Botanicals, Babyganics, California Baby, Thinkbaby, Sqween, Putto; tinted and lip products excluded) (FDA DailyMed; selected by rule from the label, with edge cases decided by hand and every decision recorded with its reason; a claim such as 'suitable for children' alone does not count; labels that name a foreign distributor or importer and labels that do not meet US sunscreen limits as listed left out; a listing that bundles several products is split into its products)",
-   "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today. Three labels disagree with themselves about fragrance, so the count could be 139 to 142 depending on how they are read: Baby Bum Mineral SPF 50 face stick (setid 492c44e3) and Coppertone WaterBabies lotion (d915cb28) are counted because their Drug Facts text lists fragrance, although their label images say \"Fragrance Free\" and print an ingredient list without it; Jason Sun Kids (0c2dc068) is not counted, although the ingredient list transcribed from its label image prints \"Fragrance (Parfum)\".",
+   "caveat": "DailyMed lists drug labels submitted to the FDA, including labels for products made in US facilities for other markets. A listing is not proof that a product is on US shelves today. Where the package image was read, it decides: 4 label(s) whose package says \"Fragrance Free\" and prints no fragrance are not counted although the text filed with the FDA lists it (Baby Bum Mineral Spf50 Sunscreen; Walgreens Sun Kids Spf50; Coppertone Waterbabies Sunscreen Spf 50; True Natural Broad Spectrum Spf 50 All Natural Baby And Sensitive Skin Sunscreen); 2 label(s) whose package list prints fragrance are counted although the filed text does not (Jason Sun Kids Sunscreen Broad Spectrum Spf45; Walgreens Kids Spf 50).",
    "source": {
     "title": "FDA DailyMed SPL registry (structured product labels), ARW House analysis",
     "url": "https://github.com/arwfamily/tinysafe-dailymed-scraper-v2/blob/main/data/canonical/us_sunscreens.jsonl",
@@ -9322,7 +9322,7 @@
    },
    "detail": {
     "mineral": [
-     32,
+     30,
      245
     ],
     "other": [
@@ -9440,14 +9440,6 @@
       "title": "BABIENCE KIDS SUNSCREEN PINKFONG BABY SHARK SPF 50 (ENSULIZOLE, OCTINOXATE, OCTISALATE, TITANIUM DIOXIDE, ZINC OXIDE) LOTION [LG H&H CO., LTD.]",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4364c8d-8b74-130e-e053-2995a90ad1c1",
       "mineral": false,
-      "listed_in": [
-       "printed label"
-      ]
-     },
-     {
-      "title": "BABY BUM MINERAL SPF50 SUNSCREEN (ZINC OXIDE) STICK [SUN BUM LLC]",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=492c44e3-4369-4367-939b-def1fd87de01",
-      "mineral": true,
       "listed_in": [
        "printed label"
       ]
@@ -9617,15 +9609,6 @@
       "mineral": false,
       "listed_in": [
        "printed label"
-      ]
-     },
-     {
-      "title": "COPPERTONE WATERBABIES SUNSCREEN SPF 50 (AVOBENZONE 3%, HOMOSALATE 9%, OCTISALATE 4.5%, OCTOCRYLENE 9%) LOTION [BEIERSDORF INC]",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d915cb28-2813-5a38-e053-2a95a90a45c6",
-      "mineral": false,
-      "listed_in": [
-       "printed label",
-       "FDA filing"
       ]
      },
      {
@@ -9812,6 +9795,12 @@
       "listed_in": [
        "printed label"
       ]
+     },
+     {
+      "title": "JASON SUN KIDS SUNSCREEN BROAD SPECTRUM SPF45 (HOMOSALATE, OCTINOXATE, ETHYLHEXYL SALICYLATE, OCTOCRYLENE, BUTUL METHOXYDIBENZOYLMETHANE, TITANIUM DIOXIDE) LOTION [THE HAIN CELESTIAL GROUP, INC.]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c2dc068-ad7d-6a28-e054-00144ff88e88",
+      "mineral": false,
+      "listed_in": []
      },
      {
       "title": "KIDS DISAPPEARING COLOR SPF50 BROAD SPECTRUM SUNCREEN GREEN APPLE SCENTED (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [CVS PHARMACY]",
@@ -10305,14 +10294,6 @@
       ]
      },
      {
-      "title": "TRUE NATURAL BROAD SPECTRUM SPF 50 ALL NATURAL BABY AND SENSITIVE SKIN SUNSCREEN (ZINC OXIDE) LOTION [TRUE NATURE GROUP, INC.]",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=efdfe5b6-dfd6-475f-a696-1559488d58c9",
-      "mineral": true,
-      "listed_in": [
-       "printed label"
-      ]
-     },
-     {
       "title": "TRULY SOLAR BABY SUNCREEN SPF 45 (HOMOSALATE 15% OCTISALATE 5% OCTOCRYLENE 10% AVOBENZONE 3%) OIL [TRULY BEAUTY, INC]",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=38e6c6fc-d8b9-4196-96c7-0f6d5d06da02",
       "mineral": false,
@@ -10426,12 +10407,10 @@
       ]
      },
      {
-      "title": "WALGREENS SUN KIDS SPF50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [WALGREEN COMPANY]",
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8ef8c65a-902e-49eb-b81f-2b2dc0878d31",
+      "title": "WALGREENS KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [WALGREENS]",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d40f67e-78e9-4c4c-a8ca-464315c41af5",
       "mineral": false,
-      "listed_in": [
-       "printed label"
-      ]
+      "listed_in": []
      },
      {
       "title": "WEGMANS KIDS AND SPORT BROAD SPECTRUM SPF 50 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [WEGMANS FOOD MARKETS INC]",
@@ -10466,7 +10445,7 @@
       ]
      }
     ],
-    "printed_only": 125,
+    "printed_only": 122,
     "not_counted": "essential oils and other single scent ingredients; only fragrance, parfum or perfume"
    }
   }
