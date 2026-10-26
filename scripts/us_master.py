@@ -1110,9 +1110,17 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
         # the FDA Skin Cancer/Skin Aging Alert is printed only by sunscreens that are not
         # broad spectrum (or are SPF 2-14): 21 CFR 201.327(d)
         add("not_broad_spectrum", [])
-    wr = (c.get("label_flags") or {}).get("water_resistant_minutes")
-    if wr or WATER_RES.search(form) or (lc and lc.get("water_resistant_minutes")):
-        add("water_resistant", [])
+    wr = (c.get("label_flags") or {}).get("water_resistant_minutes") or (lc or {}).get("water_resistant_minutes")
+    # the package read too: a front-panel claim the filed label text does not carry (2026-10-26 random
+    # audit: 11 of 100 cards said "not labelled water resistant" for a package that says it)
+    _pk = " ".join(str(x) for x in ((art or {}).get("notes"), (CLAIMS_READS.get(c.get("setid")) or {}).get("notes")) if x)
+    _pk_wr = water_resistant_claim(_pk)
+    _m = re.search(r"(?i)resistente al agua\W{0,3}\(?\s*(40|80)\s*min", _pk)
+    _pk_wr = _pk_wr or (int(_m.group(1)) if _m else None)
+    _pk_any = bool(re.search(r"(?i)(?<!not )(?<!non-)\bwater[- ]resistant\b(?! sunscreen if)|resistente al agua", _pk))
+    if wr or _pk_wr or _pk_any or WATER_RES.search(form):
+        _min = wr or _pk_wr
+        add("water_resistant", [f"{_min} minutes"] if _min else [], raw=True)
     if no_preservative(list(dict.fromkeys(shown + struct))) and not (thin and treason != "short_list"):
         add("no_preservative_water_base", [])
     order = list(meta)
@@ -1487,6 +1495,20 @@ def join_paren_fragments(items):
         y2 = re.sub(r"(?i)^\((?:\d{1,2}|[ZE]|other minor components:?|[^()]*\b(?:SPF \d+|contenir|may contain|all shades)\b[^()]*)\)\s*[:\-]?\s*", "", y).strip()
         if y2 != y:
             y, changed = y2, True
+        # a heading, a footnote, marketing or company text read into the list (2026-10-26 random audit)
+        y2 = re.sub(r"(?i)^(?:ina[a-z]{2,6}|inactive|other)\s+in?gr[a-z]{0,8}\s*[:\-]\s*", "", y)
+        y2 = re.sub(r"\s*(?:\(\d\)|\*+|†|‡)$", "", y2)
+        y2 = re.sub(r"(?i)^((?:natural\s+)?(?:fragrance|parfum))\W*(?:product|formulated|plant|natural|derived|essential)\b.*$", r"\1", y2)
+        y2 = y2.strip(" ,;")
+        if y2 != y:
+            y, changed = y2, True
+        if re.search(r"(?i)\b(?:ltd|l\.l\.c|llc|made in (?:usa|china|korea)|distributed by|manufactured (?:for|by|exclusively))\b", y) \
+                or re.fullmatch(r"[A-Z]?\d{3}[A-Za-z]{2}\d{2}", y):
+            changed = True
+            continue
+        if out and re.sub(r"[^a-z0-9]", "", y.lower()) in {re.sub(r"[^a-z0-9]", "", o.lower()) for o in out}:
+            changed = True                      # the same name twice in one list
+            continue
         m = _PAREN_HEAD.match(y)
         if m and out and _PAREN_TAIL.match(y[m.end():]) and out[-1].count("(") == out[-1].count(")") \
                 and not out[-1].rstrip().endswith((",", "/")):
@@ -2059,7 +2081,23 @@ def build(run_date):
         if _jf:
             tidied = True
             pn = max(0, (pn or 0) - (_n0 - len(shown))) if pn else pn
-        fr = None if art_list else label_text_fragrance(sid, shown)
+        # a package read that says fragrance-free and prints no fragrance: a fragrance or fragrance
+        # allergen that only the filed text lists belongs to another version (Coppertone Water Babies,
+        # Sol Mate Baby, Fenty Hydra Vizor; 2026-10-26 random audit)
+        _ffc_pkg = bool(art and art.get("readable") and art.get("fragrance_free_claim") and len(art.get("inactives") or []) >= 5)
+        if _ffc_pkg:
+            _FR3 = {"fragrance", "eu_fragrance_allergen", "essential_oil"}
+            _al = art["inactives"]
+            _in_pkg = lambda x: any(x == y or _same_display(x, y) or _same_display(y, x) for y in _al)  # noqa: E731
+            if not any(_FR3 & set(eng.flags(y)[0]) for y in _al):
+                _sh = [x for x in shown if _in_pkg(x) or not (_FR3 & set(eng.flags(x)[0]))]
+                if len(_sh) < len(shown):
+                    c = dict(c, _fragrance_text_only_dropped=[x for x in shown if x not in _sh])
+                    pn = max(0, (pn or 0) - (len(shown) - len(_sh))) if pn else pn
+                    shown, tidied = _sh, True
+                    flag_struct = [f for f in flag_struct if not (_FR3 & set(eng.flags(f)[0]))]
+                    twins = [t for t in twins if t[0] in shown]
+        fr = None if (art_list or _ffc_pkg) else label_text_fragrance(sid, shown)
         if fr:
             shown = shown + [fr]
         thin = len(shown) <= THIN_MAX

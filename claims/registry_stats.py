@@ -1129,7 +1129,21 @@ def main():
         "method": "claims/registry_stats.py (PARABENS)", "verified_date": snapshot})
 
     # Fragrance
-    fr = [r for r in forms if where_listed(r, FRAGRANCE.pattern)]
+    # the package decides (as on the Sunscreen Check card): a readable package image that says
+    # fragrance-free and prints a list with no fragrance is not counted though the filed text lists it;
+    # one whose printed list names fragrance is counted though the filed text does not (2026-10-26)
+    _pk = {}
+    _ap = os.path.join(ROOT, "data", "corrections", "artwork_reads.jsonl")
+    if os.path.exists(_ap):
+        for _l in open(_ap, encoding="utf-8"):
+            _d = json.loads(_l)
+            if _d.get("readable") and len(_d.get("inactives") or []) >= 5:
+                _has = any(FRAGRANCE.search(str(x).upper()) for x in _d["inactives"])
+                _pk[_d["setid"]] = True if _has else (False if _d.get("fragrance_free_claim") else None)
+    fr_text = [r for r in forms if where_listed(r, FRAGRANCE.pattern)]
+    fr_pkg_out = [r for r in fr_text if _pk.get(r["setid"]) is False]
+    fr_pkg_in = [r for r in forms if _pk.get(r["setid"]) is True and r not in fr_text]
+    fr = [r for r in fr_text if r not in fr_pkg_out] + fr_pkg_in
     fr_min = sum(1 for r in fr if r.get("is_mineral_only_actives"))
     claims.append({
         "id": "US-BABY-FRAGRANCE", "status": "verified", "jurisdiction": "US",
@@ -1149,7 +1163,11 @@ def main():
                                 for r in sorted(fr, key=lambda r: r["title"])],
                    "printed_only": sum(1 for r in fr if where_listed(r, FRAGRANCE.pattern) == ["printed label"]),
                    "not_counted": "essential oils and other single scent ingredients; only fragrance, parfum or perfume"},
-        "caveat": CAVEAT + FRAGRANCE_CONFLICT_NOTE, "site_source": src,
+        "caveat": CAVEAT + (f" Where the package image was read, it decides: {len(fr_pkg_out)} label(s) whose package says "
+                            f"\"Fragrance Free\" and prints no fragrance are not counted although the text filed with the FDA lists it"
+                            + (f" ({'; '.join(re.split(r' \(| \[', r['title'])[0].title() for r in fr_pkg_out)})" if fr_pkg_out else "")
+                            + f"; {len(fr_pkg_in)} label(s) whose package list prints fragrance are counted although the filed text does not"
+                            + (f" ({'; '.join(re.split(r' \(| \[', r['title'])[0].title() for r in fr_pkg_in)})" if fr_pkg_in else "") + "."), "site_source": src,
         "method": "claims/registry_stats.py (FRAGRANCE)", "verified_date": snapshot})
 
     with open(LEDGER, encoding="utf-8") as f:

@@ -289,7 +289,7 @@ def evidence(site_dir):
                 ("ETHYL METHOXYCINNAMATE", "Ethyl methoxycinnamate", [], eu("not_listed", None))
                 ]:
             if key not in lim:
-                a_ = ["AU", "under_review", None, None, S["tga_4mbc_2026"]["url"], S["tga_4mbc_2026"]["title"], []] if key == "ENZACAMENE" else au
+                a_ = ["AU", "permitted", 4.0, "under TGA safety review (2026)", S["tga_4mbc_2026"]["url"], S["tga_4mbc_2026"]["title"], []] if key == "ENZACAMENE" else au
                 lim[key] = {"slug": None, "name": name, "aka": aka, "l": [us, e, a_]}
         for key, extra in (("TITANIUM DIOXIDE", ["CI 77891"]), ("ZINC OXIDE", ["CI 77947"])):
             if key in lim:
