@@ -492,6 +492,20 @@
    "date": "current as of 2025-11-18",
    "strength": "agency guidance"
   },
+  "maui_5306": {
+   "org": "Maui County",
+   "title": "Mineral-only sunscreen (Ordinance 5306)",
+   "url": "https://www.mauicounty.gov/2483/Sunscreen",
+   "date": "effective 2022-10-01",
+   "strength": "county law"
+  },
+  "fda_hq": {
+   "org": "FDA",
+   "title": "FDA works to protect consumers from potentially harmful OTC skin lightening products",
+   "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-works-protect-consumers-potentially-harmful-otc-skin-lightening-products",
+   "date": "2022-04-19",
+   "strength": "agency notice"
+  },
   "tga_args": {
    "org": "Australia TGA",
    "title": "Australian Regulatory Guidelines for Sunscreens v3.0, permitted actives",
@@ -1059,6 +1073,36 @@
     {
      "t": "Hawaii bans the sale of sunscreens containing oxybenzone or octinoxate without a prescription (Act 104, from January 1, 2021), citing harm to coral reefs.",
      "s": "hawaii_104"
+    }
+   ]
+  },
+  {
+   "id": "maui_county",
+   "group": "fact",
+   "title": "Sale banned on Maui",
+   "facts": [
+    {
+     "t": "Maui County bans the sale, distribution and use of non-mineral sunscreens without a prescription, from October 1, 2022.",
+     "s": "maui_5306"
+    }
+   ]
+  },
+  {
+   "id": "hydroquinone",
+   "group": "safety",
+   "title": "Hydroquinone",
+   "facts": [
+    {
+     "t": "FDA: “there are no FDA-approved or otherwise legally marketed OTC skin lightening products.”",
+     "s": "fda_hq"
+    },
+    {
+     "t": "FDA says over-the-counter hydroquinone products are deemed new drugs and are misbranded, and had to come off the market by September 23, 2020 unless FDA approved them.",
+     "s": "fda_hq"
+    },
+    {
+     "t": "FDA has received reports of serious side effects, including skin rashes, facial swelling and ochronosis, a skin discoloration that may be permanent.",
+     "s": "fda_hq"
     }
    ]
   },
