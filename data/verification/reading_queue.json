@@ -1,6 +1,388 @@
 {
 "generated": "2026-10-26",
-"count": 0,
-"by_reason": {},
-"labels": []
+"count": 54,
+"by_reason": {
+"label_changed": 46,
+"never_checked": 8
+},
+"labels": [
+{
+"setid": "0439b4b6-2792-3af1-e063-6294a90adcfe",
+"spl_version": "5",
+"name": "Hawaiian Tropic Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "051b7413-8f1b-7135-e063-6294a90a9364",
+"spl_version": "6",
+"name": "Hawaiian Tropic Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "05b7aa44-cf8f-d77a-e063-6394a90a850b",
+"spl_version": "9",
+"name": "Hawaiian Tropic Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "08f34b31-6337-ef7c-e063-6294a90a1c4c",
+"spl_version": "3",
+"name": "Hawaiian Tropic Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "0fb58346-a638-3091-e063-6394a90ad754",
+"spl_version": "3",
+"name": "Bondi Sands Fragrance Free SPF 50 Sunscreen Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "0fb5a140-838d-3226-e063-6294a90a8860",
+"spl_version": "3",
+"name": "Bondi Sands Fragrance Free Face SPF 50 Sunscreen Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "1c6b62cd-ebe3-4043-b256-0f3e0614b390",
+"spl_version": "13",
+"name": "Resilience Multi-Effect Tri-Peptide Face And Neck Creme Broad Spectrum SPF 15 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "1f91ba30-87b2-4bc9-bf1f-ca61ec355eb0",
+"spl_version": "3",
+"name": "Smart Care Sport Sunscreen SPF 50 Aerosol, Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "20538bc0-10c3-492c-952a-6797e46003f2",
+"spl_version": "5",
+"name": "Florida Glow SPF 30 Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "2861453a-12e9-faeb-e063-6394a90a527c",
+"spl_version": "3",
+"name": "Bondi Sands Broad Spectrum SPF 60 Sunny Cream Body Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "287aa255-4601-c5be-e063-6394a90a4d74",
+"spl_version": "3",
+"name": "Bondi Sands Broad Spectrum SPF 60 Sunny Cream Face Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "289efa6d-427b-8be6-e063-6394a90adae3",
+"spl_version": "3",
+"name": "Bondi Sands Broad Spectrum SPF 60 Sunny Drops Face Serum Solution/ Drops",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "2c28198b-2027-f0d0-e063-6294a90aa05b",
+"spl_version": "2",
+"name": "Sunceutical SPF 50 Mineral Body Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "33596253-413d-fba3-e063-6394a90a39e4",
+"spl_version": "2",
+"name": "Karyng Complete SPF Sunscreen Light/Medium (Sunscreen) Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "335eee1e-ef1c-41da-e063-6294a90ac273",
+"spl_version": "2",
+"name": "Karyng Complete SPF Sunscreen Medium/Dark (Sunscreen) Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "33ddaac7-925e-259c-e063-6294a90a120c",
+"spl_version": "2",
+"name": "Silk Mineral SPF 50 Sunscreen Face Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "364e9bac-85c4-afbd-e063-6394a90aba82",
+"spl_version": "6",
+"name": "Skin Medicinals Sm Clear Broad Spectrum SPF 50 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "3dd711c1-7758-31da-e063-6294a90a4f38",
+"spl_version": "2",
+"name": "Sheer Guard Natural Mineral Sunscreen Broad Spectrum SPF 50 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "3e115ef1-f039-4c72-e063-6394a90a7e64",
+"spl_version": "2",
+"name": "Daily Body Moisturizer Sunscreen Broad Spectrum SPF 50 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "3e4db4f8-cba5-dbfd-e063-6394a90ab0a0",
+"spl_version": "2",
+"name": "Protect And Hydrate Radiance Sunscreen Broad Spectrum SPF 50 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "3e9db4f5-d9d9-ddf3-e063-6394a90a99fc",
+"spl_version": "2",
+"name": "Oh My Bod Light Sunscreen Broad Spectrum SPF 50 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "3fa41ed1-2f7f-18e6-e063-6294a90a0a8b",
+"spl_version": "2",
+"name": "Sun Glazed SPF 30 Sunscreen Glow Oil",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "4443398b-4073-448e-e054-00144ff8d46c",
+"spl_version": "2",
+"name": "Younique Royalty Hydrating Day Cream SPF 20 Lotion Younique Royalty Renewing Day Cream SPF 20 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "46fa88a3-b187-41da-9373-005182ec1083",
+"spl_version": "14",
+"name": "Daywear Multi-Protection Antii-Oxidant 24H-Moisture Creme Broad Spectrum SPF 15 Normal/Combination Skin Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "47819f63-85e0-43fe-815c-86b924b3c42f",
+"spl_version": "2",
+"name": "Zinc Oxide 20% Cream",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "4bf1ca6b-5d87-40ee-97f4-89f1bfadcecb",
+"spl_version": "5",
+"name": "Florida Glow SPF 30 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "4f81e482-8111-451c-e063-6294a90ad148",
+"spl_version": "2",
+"name": "Zo Skin Health Daily Mineral Sunshade Broad-Spectrum Sunscreen Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "4f87e24f-e4ff-03a7-e063-6294a90a23b1",
+"spl_version": "3",
+"name": "Zo Skin Health Daily Mineral Sunshade Broad-Spectrum Sunscreen (Light Medium) Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "4f970778-97d6-40a9-e063-6394a90a6c89",
+"spl_version": "3",
+"name": "Zo Skin Health Daily Mineral Sunshade Broad-Spectrum Sunscreen SPF 45 (Deep) Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "5354c383-08f0-4b89-b36a-96a35f47be3c",
+"spl_version": "4",
+"name": "Zeus Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "56ab90db-51bd-ffb3-e063-6294a90a852b",
+"spl_version": "2",
+"name": "Hawaiian Tropic Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "56ac28e7-41f1-bd4e-e063-6294a90a0e7b",
+"spl_version": "2",
+"name": "Hawaiian Tropic Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "56af704a-bda9-49ed-a177-a8480d90458b",
+"spl_version": "5",
+"name": "Florida Glow SPF 15 Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "5d3125a2-3577-fd75-e063-6294a90a792d",
+"spl_version": "2",
+"name": "Maniscreen Hydrating Mineral Hand Sunscreen SPF 25 Fragrance-free Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "5dd1da6c-4a2c-7a37-e063-6294a90aa92e",
+"spl_version": "1",
+"name": "Rayplay Glissed SPF 30 Oil",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5ddc4775-41dc-0143-e063-6394a90a8b75",
+"spl_version": "1",
+"name": "Rejuran Skin Barrier Sunscreen Cream",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5dde7a00-33a6-fad3-e063-6294a90a1fbb",
+"spl_version": "1",
+"name": "Rejuran Skin Barrier Sun Stick",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5de5e422-76b4-6abb-e063-6294a90a230e",
+"spl_version": "1",
+"name": "Hawaiian Tropic Spray",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5e390ab2-9d8f-c882-e063-6294a90aee99",
+"spl_version": "1",
+"name": "Os-01 Face SPF Bs SPF 30 Light Cream",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "6456fc28-3df5-4d49-9f40-8ef2e4fdd9e5",
+"spl_version": "7",
+"name": "Obagi Sun Shield Tint Cool Sunscreen Broad Spectrum SPF 50 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "796f58f3-3008-4881-b075-a18292b64620",
+"spl_version": "1",
+"name": "Sunplus SPF 50 Mist Sunscreen Liquid",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "8e4953cd-8612-46cc-967b-56d3ac48cfbc",
+"spl_version": "1",
+"name": "Sunplus SPF 30 Mist Sunscreen Liquid",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "9398bad2-7270-4b6f-ab3a-21cb486377ec",
+"spl_version": "3",
+"name": "Smart Care Mineral-Enhanced Sunscreen SPF 50 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "a29e5a69-d17e-45ef-8dde-e99c6e4a2b22",
+"spl_version": "9",
+"name": "City Sunscreen Serum Broad Spectrum SPF 30 Supergoop Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "b1aacb4d-7ede-4aae-8d6a-afff2a057e46",
+"spl_version": "7",
+"name": "Obagi Sun Shield Tint Warm Sunscreen Broad Spectrum SPF 50 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "cea54600-5308-4b9f-98ca-fef0b26d79c1",
+"spl_version": "5",
+"name": "Florida Glow Face Shield SPF 55 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "d4133b2c-54e1-43de-98b4-7908a52f0905",
+"spl_version": "12",
+"name": "Redness Solutions Daily Protective Base Broad Spectrum SPF 15 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "d4d4bfcf-3674-4847-8ad8-1716a8e821ae",
+"spl_version": "5",
+"name": "Journee Firm Riche Broad Spectrum Sunscreen SPF 30 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "d68048b5-219c-414a-918f-b063b44fe7b5",
+"spl_version": "3",
+"name": "Smart Care Mineral-Enhanced Sunscreen SPF 50 Aerosol, Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "dc8d42f9-a619-3f84-e053-2a95a90a8cc7",
+"spl_version": "4",
+"name": "Hawaiian Tropic Everyday Active SPF30 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "dca2f4ce-1a3a-707e-e053-2995a90abad7",
+"spl_version": "11",
+"name": "Hydrating Glow Mist SPF 50 Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "dcb43ee0-5ab0-495a-8e68-90cab881337d",
+"spl_version": "5",
+"name": "Florida Glow SPF 50 Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "e120a659-0dfc-42ca-8158-58e8a0b457e5",
+"spl_version": "9",
+"name": "Journee Bio-Restorative Day Balm Broad-Spectrum Suncreen SPF 30 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "f1aa4a6b-3be5-4da8-93c0-f195c68da945",
+"spl_version": "2",
+"name": "Smart Care Sport Ultra Sunscreen SPF 50 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+}
+]
 }

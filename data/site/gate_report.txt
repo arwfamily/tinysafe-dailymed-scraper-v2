@@ -1,0 +1,49 @@
+[UNII] 23 search seeds (resolved 2026-10-26)
+[UNII] 3 unresolved, NOT searched: DIOXYBENZONE, CINOXATE, TROLAMINE SALICYLATE
+{
+ "headline": {
+  "read": 9421,
+  "booster": 1283,
+  "recall": 31,
+  "audit": {
+   "date": "2026-10-25",
+   "audit": "audit3",
+   "checked": 300,
+   "labels_with_high": 13,
+   "rate": 0.0433,
+   "ci95": [
+    0.0255,
+    0.0727
+   ],
+   "note": "raw reviewer count; 10 real after review (3 were not data errors: two package reads confirmed one, two were warning types the site does not cover); 7 fixed the same day, 2 more by two-reader package facts, 1 left (an ingredient the FDA filing lists)",
+   "high_setids": [
+    "b57d984c-c3f7-4ce2-82b9-905769a55617",
+    "1c04212c-117d-3a0a-e063-6394a90a1631",
+    "80e07a95-6249-49b2-8610-c430b9fcd5b4",
+    "19f94284-5594-39ab-e063-6294a90a63bd",
+    "04b1a617-e187-9f04-e063-6394a90a7c9c",
+    "43a6b8e3-49f7-2ac7-e054-00144ff88e88",
+    "0127f290-8c5e-4285-e063-6294a90ae128",
+    "2dda092d-cc09-468c-a805-7a7f78827d44",
+    "205d4823-1939-72cb-e063-6394a90a5102",
+    "ecfbb53a-0f05-9dcc-e053-2a95a90afb66",
+    "c5d52f13-a649-9579-e053-2a95a90a062c",
+    "1a2ab632-643f-1aa9-e063-6394a90a0c05",
+    "9c3cf35b-4bde-46e3-8abd-5f4d1ad6e486"
+   ],
+   "note_public": "10 were real errors on review. 9 were corrected within two days; 1 is an ingredient the FDA filing lists, which we show as filed."
+  }
+ },
+ "gate": {
+  "active_labels": 9421,
+  "active_labels_before": 9418,
+  "left_by_reviewed_scope_rule": 0,
+  "explained_labels_losing_other_warnings": 0,
+  "explained_examples": [],
+  "unchanged_labels_losing_inactives": 0,
+  "unchanged_labels_losing_flags": 0,
+  "examples": [],
+  "versions_on_both_sides": true
+ }
+}
+wrote data/site/sunnytime_db.json

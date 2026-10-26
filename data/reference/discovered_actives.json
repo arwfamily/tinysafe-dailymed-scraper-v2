@@ -1,6 +1,6 @@
 {
- "built_on": "2026-10-19",
- "products_examined": 14174,
+ "built_on": "2026-10-26",
+ "products_examined": 14171,
  "seeded_uniis": 23,
  "how_to_promote": "add the NAME to UV_FILTERS in scripts/resolve_uniis.py; the next run resolves it from DailyMed. Never paste the UNII by hand — let the resolver confirm it.",
  "candidates": [
@@ -10,14 +10,14 @@
    "name_variants": [
     "HYDROQUINONE"
    ],
-   "product_count": 70,
+   "product_count": 75,
    "co_occurs_with_seeds": {
-    "4Y5P7MUD51": 51,
-    "SOI2LOH54Z": 29,
+    "4Y5P7MUD51": 52,
+    "SOI2LOH54Z": 34,
     "95OOS7VE0Y": 3,
-    "V06SV4M95S": 10,
-    "4X49Y0596W": 10,
-    "15FIX9V2JP": 2,
+    "V06SV4M95S": 12,
+    "4X49Y0596W": 12,
+    "15FIX9V2JP": 4,
     "G63QQF2NOX": 1,
     "Z11006CMUZ": 7
    },
@@ -54,8 +54,8 @@
     "9e46328d-1d10-350b-e053-2995a90ad27e",
     "9b571d4e-03c8-5a37-e053-2a95a90add36",
     "3bbcb812-feff-3b00-e054-00144ff88e88",
-    "7eee940a-96c6-4d37-9991-fa84b1b4f02b",
-    "6f666277-c4c0-45ce-a478-9db2f21461a6"
+    "6f666277-c4c0-45ce-a478-9db2f21461a6",
+    "7eee940a-96c6-4d37-9991-fa84b1b4f02b"
    ]
   },
   {
@@ -105,9 +105,9 @@
    },
    "example_setids": [
     "3bbcb812-feff-3b00-e054-00144ff88e88",
-    "7eee940a-96c6-4d37-9991-fa84b1b4f02b",
     "6f666277-c4c0-45ce-a478-9db2f21461a6",
-    "1d5d54b7-3549-432b-a47d-b967ce7b5174",
+    "7eee940a-96c6-4d37-9991-fa84b1b4f02b",
+    "22a9f2ae-4035-4ede-b324-771da0551444",
     "7711e9f8-dedd-420c-bc6a-b940005f9899"
    ]
   },
@@ -126,7 +126,7 @@
     "ae76149e-29eb-5ee4-e053-2995a90a7957",
     "ae761576-fa56-2eea-e053-2a95a90a79c4",
     "ab7a0c8d-ab13-5f97-e053-2995a90aac34",
-    "aa878b4e-ec8c-1cf4-e053-2a95a90a86f6"
+    "aa878b4e-ec89-1cf4-e053-2a95a90a86f6"
    ]
   },
   {
@@ -168,8 +168,8 @@
     "19402859-2553-b06e-e063-6294a90ae4a0",
     "173a050f-1792-0468-e063-6294a90a264c",
     "17246ea4-733d-35e5-e063-6394a90a316f",
-    "148d43f8-68e0-eb89-e063-6394a90adce0",
-    "14508f1c-bedf-c367-e063-6294a90a1c7c"
+    "14508f1c-bedf-c367-e063-6294a90a1c7c",
+    "148d43f8-68e0-eb89-e063-6394a90adce0"
    ]
   },
   {
@@ -281,8 +281,8 @@
    },
    "example_setids": [
     "4d3a0a92-b0de-a1ea-e063-6294a90a8508",
-    "08b52f29-c1a0-c673-e063-6294a90a9a7a",
     "08b8003f-40be-3380-e063-6294a90a4f6b",
+    "08b52f29-c1a0-c673-e063-6294a90a9a7a",
     "08b7eeeb-09ae-ffe6-e063-6294a90aba90"
    ]
   },
@@ -866,8 +866,8 @@
     "TL2TJE8QTX": 2
    },
    "example_setids": [
-    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6",
-    "a7382d84-1d5f-4d09-962f-b26f265af65e"
+    "a7382d84-1d5f-4d09-962f-b26f265af65e",
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
    ]
   },
   {
@@ -899,8 +899,8 @@
     "SD418S06XD": 2
    },
    "example_setids": [
-    "22982b28-37df-ed81-e063-6394a90a77db",
-    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e",
+    "22982b28-37df-ed81-e063-6394a90a77db"
    ]
   },
   {
@@ -2482,62 +2482,6 @@
    ]
   },
   {
-   "unii": "789U1901C5",
-   "name": "COPPER",
-   "name_variants": [
-    "COPPER"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "TL2TJE8QTX": 1
-   },
-   "example_setids": [
-    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
-   ]
-  },
-  {
-   "unii": "9DLQ4CIU6V",
-   "name": "PROLINE",
-   "name_variants": [
-    "PROLINE"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "TL2TJE8QTX": 1
-   },
-   "example_setids": [
-    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
-   ]
-  },
-  {
-   "unii": "9NEZ333N27",
-   "name": "SODIUM",
-   "name_variants": [
-    "SODIUM"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "TL2TJE8QTX": 1
-   },
-   "example_setids": [
-    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
-   ]
-  },
-  {
-   "unii": "FB3DQM32F2",
-   "name": "COLLAGEN ALPHA-1(I) CHAIN BOVINE",
-   "name_variants": [
-    "COLLAGEN ALPHA-1(I) CHAIN BOVINE"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "TL2TJE8QTX": 1
-   },
-   "example_setids": [
-    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
-   ]
-  },
-  {
    "unii": "7THJ3EG9SY",
    "name": "CHOLINE HYDROXIDE",
    "name_variants": [
@@ -2692,6 +2636,90 @@
    ]
   },
   {
+   "unii": "789U1901C5",
+   "name": "COPPER",
+   "name_variants": [
+    "COPPER"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+   ]
+  },
+  {
+   "unii": "9DLQ4CIU6V",
+   "name": "PROLINE",
+   "name_variants": [
+    "PROLINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+   ]
+  },
+  {
+   "unii": "9NEZ333N27",
+   "name": "SODIUM",
+   "name_variants": [
+    "SODIUM"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+   ]
+  },
+  {
+   "unii": "FB3DQM32F2",
+   "name": "COLLAGEN ALPHA-1(I) CHAIN BOVINE",
+   "name_variants": [
+    "COLLAGEN ALPHA-1(I) CHAIN BOVINE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "TL2TJE8QTX": 1
+   },
+   "example_setids": [
+    "9619fedb-c1a6-4c4c-8bdb-b971b19f63f6"
+   ]
+  },
+  {
+   "unii": "6DRV3D37XS",
+   "name": "SAURURUS CHINENSIS WHOLE",
+   "name_variants": [
+    "SAURURUS CHINENSIS WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
+   ]
+  },
+  {
+   "unii": "7C42E2D7B0",
+   "name": "TARAXACUM OFFICINALE WHOLE",
+   "name_variants": [
+    "TARAXACUM OFFICINALE WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
+   ]
+  },
+  {
    "unii": "LP618AV2EA",
    "name": ".BETA.-BISABOLOL",
    "name_variants": [
@@ -2759,34 +2787,6 @@
    },
    "example_setids": [
     "22982b28-37df-ed81-e063-6394a90a77db"
-   ]
-  },
-  {
-   "unii": "6DRV3D37XS",
-   "name": "SAURURUS CHINENSIS WHOLE",
-   "name_variants": [
-    "SAURURUS CHINENSIS WHOLE"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "SD418S06XD": 1
-   },
-   "example_setids": [
-    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
-   ]
-  },
-  {
-   "unii": "7C42E2D7B0",
-   "name": "TARAXACUM OFFICINALE WHOLE",
-   "name_variants": [
-    "TARAXACUM OFFICINALE WHOLE"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "SD418S06XD": 1
-   },
-   "example_setids": [
-    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
    ]
   }
  ],

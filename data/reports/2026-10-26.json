@@ -1,0 +1,3116 @@
+{
+ "run_date": "2026-10-26",
+ "all_labels": {
+  "reformulated": 4,
+  "new": 10,
+  "metadata": 4,
+  "delisted": 14
+ },
+ "baby_labels": {
+  "delisted": 2
+ },
+ "baby_population_live": 583,
+ "new_baby_decisions": [],
+ "review_queue": 0,
+ "changes": [
+  {
+   "setid": "33596253-413d-fba3-e063-6394a90a39e4",
+   "change": "reformulated",
+   "product": "KARYNG COMPLETE SPF SUNSCREEN LIGHT/MEDIUM (SUNSCREEN) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33596253-413d-fba3-e063-6394a90a39e4",
+   "baby": false,
+   "added": [
+    "PINENE",
+    "BETA-CARYOPHYLLENE",
+    "LINALOOL, (+/-)-",
+    "LIMONENE, (+)-",
+    "GERANIOL",
+    "CITRAL",
+    "CITRUS PARADISI (GRAPEFRUIT) PEEL OIL"
+   ],
+   "removed": [
+    "CITRUS GRANDIS (GRAPEFRUIT) PEEL OIL"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "335eee1e-ef1c-41da-e063-6294a90ac273",
+   "change": "reformulated",
+   "product": "KARYNG COMPLETE SPF SUNSCREEN MEDIUM/DARK (SUNSCREEN) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=335eee1e-ef1c-41da-e063-6294a90ac273",
+   "baby": false,
+   "added": [
+    "PINENE",
+    "BETA-CARYOPHYLLENE",
+    "LINALOOL, (+/-)-",
+    "LIMONENE, (+)-",
+    "GERANIOL",
+    "CITRAL"
+   ],
+   "removed": [
+    "SODIUM C14-16 OLEFIN SULFONATE"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "98625cdb-30b5-44f1-ad57-9445e3fdbd4c",
+   "change": "new",
+   "product": "PASTY MAN TARGETED SUNSCREEN (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98625cdb-30b5-44f1-ad57-9445e3fdbd4c",
+   "baby": false,
+   "label_date": "20261008",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5e390ab2-9d8f-c882-e063-6294a90aee99",
+   "change": "new",
+   "product": "OS-01 FACE SPF BS SPF 30 LIGHT (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e390ab2-9d8f-c882-e063-6294a90aee99",
+   "baby": false,
+   "label_date": "20261019",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "4f81e482-8111-451c-e063-6294a90ad148",
+   "change": "metadata",
+   "product": "ZO SKIN HEALTH DAILY MINERAL SUNSHADE BROAD-SPECTRUM SUNSCREEN SPF 50 (FAIR) (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f81e482-8111-451c-e063-6294a90ad148",
+   "baby": false
+  },
+  {
+   "setid": "4f87e24f-e4ff-03a7-e063-6294a90a23b1",
+   "change": "metadata",
+   "product": "ZO SKIN HEALTH DAILY MINERAL SUNSHADE BROAD-SPECTRUM SUNSCREEN SPF 50 (LIGHT MEDIUM) (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f87e24f-e4ff-03a7-e063-6294a90a23b1",
+   "baby": false
+  },
+  {
+   "setid": "4f970778-97d6-40a9-e063-6394a90a6c89",
+   "change": "metadata",
+   "product": "ZO SKIN HEALTH DAILY MINERAL SUNSHADE BROAD-SPECTRUM SUNSCREEN SPF 50 (DEEP) (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f970778-97d6-40a9-e063-6394a90a6c89",
+   "baby": false
+  },
+  {
+   "setid": "5dd1da6c-4a2c-7a37-e063-6294a90aa92e",
+   "change": "new",
+   "product": "RAYPLAY GLISSED SPF 30 (HOMOSALATE, OCTOCRYLENE, OCTISALATE, AVOBENZONE) OIL",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5dd1da6c-4a2c-7a37-e063-6294a90aa92e",
+   "baby": false,
+   "label_date": "20261014",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ddc4775-41dc-0143-e063-6394a90a8b75",
+   "change": "new",
+   "product": "REJURAN SKIN BARRIER SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ddc4775-41dc-0143-e063-6394a90a8b75",
+   "baby": false,
+   "label_date": "20261014",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5dde7a00-33a6-fad3-e063-6294a90a1fbb",
+   "change": "new",
+   "product": "REJURAN SKIN BARRIER SUN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5dde7a00-33a6-fad3-e063-6294a90a1fbb",
+   "baby": false,
+   "label_date": "20261015",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "796f58f3-3008-4881-b075-a18292b64620",
+   "change": "new",
+   "product": "SUNPLUS SPF 50 MIST SUNSCREEN (AVOBENZONE, OCTISALATE, OCTOCRYLENE) LIQUID",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=796f58f3-3008-4881-b075-a18292b64620",
+   "baby": false,
+   "label_date": "20261019",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "8e4953cd-8612-46cc-967b-56d3ac48cfbc",
+   "change": "new",
+   "product": "SUNPLUS SPF 30 MIST SUNSCREEN (AVOBENZONE, OCTISALATE, OCTOCRYLENE) LIQUID",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8e4953cd-8612-46cc-967b-56d3ac48cfbc",
+   "baby": false,
+   "label_date": "20261019",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "dca2f4ce-1a3a-707e-e053-2995a90abad7",
+   "change": "metadata",
+   "product": "HYDRATING GLOW MIST SPF 50 (AVOBENZONE, OCTISALATE, OCTOCRYLENE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dca2f4ce-1a3a-707e-e053-2995a90abad7",
+   "baby": false
+  },
+  {
+   "setid": "5de5e422-76b4-6abb-e063-6294a90a230e",
+   "change": "new",
+   "product": "HAWAIIAN TROPIC (AVOBENZONE,OCTISALATE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5de5e422-76b4-6abb-e063-6294a90a230e",
+   "baby": false,
+   "label_date": "20261015",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5de9ca1a-3026-258c-e063-6394a90a1c1a",
+   "change": "new",
+   "product": "BEYOND BALM LIP SUNSCREEN BS SPF 35 (OCTOCRYLENE, OCTISALATE, AVOBENZONE) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5de9ca1a-3026-258c-e063-6394a90a1c1a",
+   "baby": false,
+   "label_date": "20261015",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "356661a8-b544-4cc1-9a01-76c1da229807",
+   "change": "reformulated",
+   "product": "AVON SUN SPORT REFRESH SUNSCREEN (HOMOSALATE, OCTINOXATE, OXYBENZONE, OCTISALATE, AVOBENZONE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=356661a8-b544-4cc1-9a01-76c1da229807",
+   "baby": false,
+   "added": [],
+   "removed": [],
+   "confidence": "high"
+  },
+  {
+   "setid": "47819f63-85e0-43fe-815c-86b924b3c42f",
+   "change": "new",
+   "product": "ZINC OXIDE 20% (SUNSCREEN SPF 30) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=47819f63-85e0-43fe-815c-86b924b3c42f",
+   "baby": false,
+   "label_date": "20261015",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "4443398b-4073-448e-e054-00144ff8d46c",
+   "change": "reformulated",
+   "product": "YOUNIQUE ROYALTY HYDRATING DAY CREAM SPF 20 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION YOUNIQUE ROYALTY RENEWING DAY CREAM SPF 20 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4443398b-4073-448e-e054-00144ff8d46c",
+   "baby": false,
+   "added": [],
+   "removed": [],
+   "confidence": "high"
+  },
+  {
+   "setid": "211c9930-4f91-cf8f-e063-6394a90a97b3",
+   "change": "delisted",
+   "product": "TIBENA EVERY DAY REAL SUN BLOCK (TITANIUM DIOXIDE, ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=211c9930-4f91-cf8f-e063-6394a90a97b3",
+   "baby": false
+  },
+  {
+   "setid": "94bab0bd-c0b7-42f5-9e3c-911408817aed",
+   "change": "delisted",
+   "product": "CLOBEZIN (CLOTRIMAZOLE AND BETAMETHASONE DIPROPIONATE, ZINC OXIDE) KIT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94bab0bd-c0b7-42f5-9e3c-911408817aed",
+   "baby": false
+  },
+  {
+   "setid": "d0e43651-4215-465b-9ace-1bc23126b109",
+   "change": "delisted",
+   "product": "MENTHOL AND ZINC OXIDE OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0e43651-4215-465b-9ace-1bc23126b109",
+   "baby": false
+  },
+  {
+   "setid": "421eda8f-62b2-30fb-e063-6394a90a4947",
+   "change": "delisted",
+   "product": "TIBENA EVERYTHING MULTI CUSHION SPF50 (HOMOSALATE, TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=421eda8f-62b2-30fb-e063-6394a90a4947",
+   "baby": false
+  },
+  {
+   "setid": "3e8b0a0b-846a-cce7-e063-6294a90a6bb3",
+   "change": "delisted",
+   "product": "RESTING BEACH FACE BROAD SPECTRUM SPF 30 SUNSCREEN SERUM (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e8b0a0b-846a-cce7-e063-6294a90a6bb3",
+   "baby": false
+  },
+  {
+   "setid": "30de3d87-6cc7-b779-e063-6294a90a72f4",
+   "change": "delisted",
+   "product": "CARMEX VARIETY PACK DAILY CARE MOISTURIZING LIP BALM SPF 15 (OCTINOXATE, OXYBENZONE, HOMOSALATE, OCTOCRYLENE, OCTISALATE, AVOBENZONE) KIT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30de3d87-6cc7-b779-e063-6294a90a72f4",
+   "baby": false
+  },
+  {
+   "setid": "d8ad45dc-e0ec-4324-b93e-8cf405d1d471",
+   "change": "delisted",
+   "product": "CARMEX VARIETY PACK DAILY CARE MOISTURIZING LIP BALM SPF 15 (OCTINOXATE, OXYBENZONE, HOMOSALATE, OCTOCRYLENE, OCTISALATE, AVOBENZONE) KIT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d8ad45dc-e0ec-4324-b93e-8cf405d1d471",
+   "baby": false
+  },
+  {
+   "setid": "4244cd1c-2a90-4a24-a373-a681a21f52d4",
+   "change": "delisted",
+   "product": "SMART CARE SPIDER-MAN KIDS SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4244cd1c-2a90-4a24-a373-a681a21f52d4",
+   "baby": true
+  },
+  {
+   "setid": "2a673856-655a-4547-af6d-273a52ff8814",
+   "change": "delisted",
+   "product": "SMART CARE SPORT ULTRA CLEAR SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2a673856-655a-4547-af6d-273a52ff8814",
+   "baby": false
+  },
+  {
+   "setid": "d810b762-9020-4028-a04b-187533a07676",
+   "change": "delisted",
+   "product": "SMART CARE BARBIE KIDS SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d810b762-9020-4028-a04b-187533a07676",
+   "baby": true
+  },
+  {
+   "setid": "2ab09ad7-0295-20ac-e063-6394a90afffe",
+   "change": "delisted",
+   "product": "TIBENA EVERY DAY REAL SUNSTICK UV SPF 52 (AVOBENZONE, ETHYLHEXYL SALICYLATE, HOMOSALATE, OCTOCRYLENE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ab09ad7-0295-20ac-e063-6394a90afffe",
+   "baby": false
+  },
+  {
+   "setid": "f564bbf0-3b5c-4a81-e053-2a95a90a7ea6",
+   "change": "delisted",
+   "product": "ANUBIS BARCELONA VITAL LINE (HYDROLYZED COLLAGEN) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f564bbf0-3b5c-4a81-e053-2a95a90a7ea6",
+   "baby": false
+  },
+  {
+   "setid": "ebe024f7-7c45-ad60-e053-2995a90a45d6",
+   "change": "delisted",
+   "product": "ANUBIS BARCELONA VITAL LINE (HYDROLYZED ELASTIN, HYDROLYSED COLLAGEN, COCOGLYCERIDES) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebe024f7-7c45-ad60-e053-2995a90a45d6",
+   "baby": false
+  },
+  {
+   "setid": "140840db-6676-4488-9358-d25fd4d60e1f",
+   "change": "delisted",
+   "product": "FLEXPOWER SUN BLOCK (DIMETHICONE) GEL",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=140840db-6676-4488-9358-d25fd4d60e1f",
+   "baby": false
+  }
+ ],
+ "printed_list_changes": [
+  {
+   "observed_on": "2026-10-26",
+   "setid": "01cc554b-9241-d891-e063-6394a90a8450",
+   "title": "KIDS MINERAL SUNSCREEN SPF50 (SUNSCREEN) SPRAY [HELLO BELLO]",
+   "change": "printed_list_changed",
+   "added": [
+    "C18-21 ALKANE",
+    "POLYESTER-8"
+   ],
+   "removed": [
+    "POLYESTER-8 C18-21 ALKANE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20251002",
+    "20251002"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01cc554b-9241-d891-e063-6394a90a8450"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "03fbbb81-bd8b-488a-b013-d06203bf5c7f",
+   "title": "BANANA BOAT ULTRAMIST KIDS TEAR FREE LOTION SPF 50 (HOMOSALATE AND OCTINOXATE AND OCTISALATE AND OCTOCRYLENE AND AVOBENZONE) SPRAY [ACCRA-PAC, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+     "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20100321",
+    "20100321"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03fbbb81-bd8b-488a-b013-d06203bf5c7f"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "0806bdb9-961f-3146-e063-6294a90a4625",
+   "title": "COPPERTONE WATERBABIES PURE AND SIMPLE SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) SPRAY [BEIERSDORF INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CETYL DIMETHICONE",
+    "POLYESTER-27"
+   ],
+   "removed": [
+    "POLYESTER-27 CETYL DIMETHICONE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20251231",
+    "20251231"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0806bdb9-961f-3146-e063-6294a90a4625"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "08134b95-1879-27e5-e063-6294a90a29af",
+   "title": "COPPERTONE PURE AND SIMPLE BABY SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) LOTION [BEIERSDORF INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-27",
+    "TOCOPHEROL"
+   ],
+   "removed": [
+    "POLYESTER-27 TOCOPHEROL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "4",
+    "4"
+   ],
+   "effective_date": [
+    "20251231",
+    "20251231"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08134b95-1879-27e5-e063-6294a90a29af"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "08147940-0e8b-c894-e063-6394a90af8ac",
+   "title": "COPPERTONE PURE AND SIMPLE KIDS SUNCREEN SPF 50 (ZINC OXIDE 24.08%) LOTION [BEIERSDORF INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-27",
+    "TOCOPHEROL"
+   ],
+   "removed": [
+    "POLYESTER-27 TOCOPHEROL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20251231",
+    "20251231"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08147940-0e8b-c894-e063-6394a90af8ac"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "088b7152-d3d1-9e74-e063-6394a90a4152",
+   "title": "COPPERTONE PURE AND SIMPLE BABY SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) AEROSOL, SPRAY [BEIERSDORF INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CETYL DIMETHICONE",
+    "POLYESTER-27"
+   ],
+   "removed": [
+    "POLYESTER-27 CETYL DIMETHICONE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20251231",
+    "20251231"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=088b7152-d3d1-9e74-e063-6394a90a4152"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "09037f54-a121-4132-957f-1c01f3a70ebc",
+   "title": "BANANA BOAT KIDS TEAR FREE CONTINUOUS SPF 50 (AVOBENZONE AND HOMOSALATE AND OCTINOXATE AND OCTISALATE AND OCTOCRYLENE) SPRAY [ACCRA-PAC, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+     "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20100318",
+    "20100318"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09037f54-a121-4132-957f-1c01f3a70ebc"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "09a97e3f-f6dc-eaa7-e063-6294a90ad274",
+   "title": "COPPERTONE PURE AND SIMPLE KIDS SUNSCREEN SPF 50 (ZINC OXIDE (24.08%)) SPRAY [BEIERSDORF INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CETYL DIMETHICONE",
+    "POLYESTER-27"
+   ],
+   "removed": [
+    "POLYESTER-27 CETYL DIMETHICONE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20251231",
+    "20251231"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09a97e3f-f6dc-eaa7-e063-6294a90ad274"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "10f60367-6681-a589-e063-6394a90a6bb8",
+   "title": "ARIZONA SUN KIDS SUNSCREEN SPF 30 (SUNSCREEN) LOTION [ARIZONA SUN PRODUCTS]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 60",
+    "TRIETHANOLAMINE"
+   ],
+   "removed": [
+    "POLYSORBATE 60 TRIETHANOLAMINE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20260409",
+    "20260409"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10f60367-6681-a589-e063-6394a90a6bb8"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "10f832e7-c2b5-b847-e063-6294a90a20d5",
+   "title": "ARIZONA SUN KIDS SUNSCREEN SPF 30 (SUNSCREEN) LOTION [ARIZONA SUN PRODUCTS]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 60",
+    "TRIETHANOLAMINE"
+   ],
+   "removed": [
+    "POLYSORBATE 60 TRIETHANOLAMINE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20260409",
+    "20260409"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10f832e7-c2b5-b847-e063-6294a90a20d5"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "116e71c4-f443-0b6c-e063-6394a90a0cdd",
+   "title": "ARIZONA SUN SUNSCREEN KIDS WATER RESISTANT SPF 30 (SUNSCREEN) LOTION [ARIZONA SUN PRODUCTS]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 60",
+    "SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL"
+   ],
+   "removed": [
+    "POLYSORBATE 60 SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL"
+   ],
+   "possible_spelling": [
+    [
+     "POLYSORBATE 60 SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+     "SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL"
+    ]
+   ],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20260409",
+    "20260409"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=116e71c4-f443-0b6c-e063-6394a90a0cdd"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "116ed17c-3b38-5e96-e063-6294a90a4246",
+   "title": "ARIZONA SUN SUNSCREEN KIDS WATER RESISTANT SPF 30 (SUNSCREEN) LOTION [ARIZONA SUN PRODUCTS]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 60",
+    "SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL"
+   ],
+   "removed": [
+    "POLYSORBATE 60 SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL"
+   ],
+   "possible_spelling": [
+    [
+     "POLYSORBATE 60 SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+     "SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL"
+    ]
+   ],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20260409",
+    "20260409"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=116ed17c-3b38-5e96-e063-6294a90a4246"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "17cc12c7-5af8-413f-b205-31ac150583e2",
+   "title": "COTZ BABY (ZINC OXIDE) CREAM [FALLIEN COSMECEUTICALS, LTD]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 20",
+    "SODIUM CHLORIDE"
+   ],
+   "removed": [
+    "POLYSORBATE 20 SODIUM CHLORIDE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20250109",
+    "20250109"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17cc12c7-5af8-413f-b205-31ac150583e2"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "1dc325bb-d520-4897-b8f8-3f0ecba2274c",
+   "title": "AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE (SUNSCREEN) LOTION [RETAIL BUSINESS SERVICES, LLC ]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-7",
+    "TOCOPHEROL"
+   ],
+   "removed": [
+    "POLYESTER-7 TOCOPHEROL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "6",
+    "6"
+   ],
+   "effective_date": [
+    "20260206",
+    "20260206"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1dc325bb-d520-4897-b8f8-3f0ecba2274c"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "1e86c2a9-a5c3-95cb-e063-6394a90a014d",
+   "title": "GOONGBE BABY EASY WASH SUNLOTION SPF 30 (ZINC OXIDE) LOTION [ZERO TO SEVEN INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "BEHENETH-25",
+    "CANDIDA BOMBICOLA/GLUCOSE/METHYL RAPESEEDATE FERMENT",
+    "POLYACRYLATE CROSSPOLYMER-6",
+    "TRIETHOXYCAPRYLYLSILANE"
+   ],
+   "removed": [
+    "BEHENETH-25 TRIETHOXYCAPRYLYLSILANE",
+    "POLYACRYLATE CROSSPOLYMER-6 CANDIDA BOMBICOLA/GLUCOSE/METHYL RAPESEEDATE FERMENT"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20260527",
+    "20260527"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e86c2a9-a5c3-95cb-e063-6394a90a014d"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "1eae935f-942b-4290-91de-8c608f70a7ed",
+   "title": "BABY SUNSCREEN SPF 50 (TITANIUM DIOXIDE 3.1% ZINC OXIDE 4.0%) LOTION [MEIJER]",
+   "change": "printed_list_changed",
+   "added": [
+    "LAURYL PEG-8 DIMETHICONE OCTYLDODECYLCITRATE CROSSPOLYMER PEG-8",
+    "PHENOXYETHANOLSODIUM CHLORIDE"
+   ],
+   "removed": [
+    "LAURYL PEG-8 DIMETHICONE OCTYLDODECYLCITRATE CROSSPOLYMER PEG-8 PHENOXYETHANOLSODIUM CHLORIDE"
+   ],
+   "possible_spelling": [
+    [
+     "LAURYL PEG-8 DIMETHICONE OCTYLDODECYLCITRATE CROSSPOLYMER PEG-8 PHENOXYETHANOLSODIUM CHLORIDE",
+     "LAURYL PEG-8 DIMETHICONE OCTYLDODECYLCITRATE CROSSPOLYMER PEG-8"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20180629",
+    "20180629"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1eae935f-942b-4290-91de-8c608f70a7ed"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "1fc52f3b-3a62-3fa5-e054-00144ff8d46c",
+   "title": "VMV HYPOALLERGENICS ARMADA BABY 50 (TITANIUM DIOXIDE, ZINC OXIDE) CREAM [SKIN SCIENCES LABORATORY INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "DIMETHICONE",
+    "PEG-10"
+   ],
+   "removed": [
+    "PEG-10 DIMETHICONE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20150915",
+    "20150915"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fc52f3b-3a62-3fa5-e054-00144ff8d46c"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "23fb7304-789d-1f94-e063-6394a90a7e62",
+   "title": "COPPERTONE KIDS SPORT SPF 60 SUNSCREEN (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) AEROSOL, SPRAY [BEIERSDORF INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "ETHYLHEXYL METHOXYCRYLENE",
+    "POLYESTER-8"
+   ],
+   "removed": [
+    "POLYESTER-8 ETHYLHEXYL METHOXYCRYLENE"
+   ],
+   "possible_spelling": [
+    [
+     "POLYESTER-8 ETHYLHEXYL METHOXYCRYLENE",
+     "ETHYLHEXYL METHOXYCRYLENE"
+    ]
+   ],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20251231",
+    "20251231"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23fb7304-789d-1f94-e063-6394a90a7e62"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "240dd76a-8f39-caec-e063-6294a90abbbc",
+   "title": "COPPERTONE KIDS SUNSCREEN SPF 60 (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%) LOTION [BEIERSDORF INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CETEARYL ALCOHOL",
+    "GLYCERETH-26",
+    "GLYCERIN",
+    "POLYESTER-7"
+   ],
+   "removed": [
+    "GLYCERETH-26 GLYCERIN",
+    "POLYESTER-7 CETEARYL ALCOHOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20251231",
+    "20251231"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=240dd76a-8f39-caec-e063-6294a90abbbc"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "2434de23-bcc9-4a83-9945-16fc3f2b8c61",
+   "title": "MEIJER BABY TEAR FREE SPF 50 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [MEIJER DISTRIBUTING INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "ALUMINA",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 ALUMINA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20160601",
+    "20160601"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2434de23-bcc9-4a83-9945-16fc3f2b8c61"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "25c59820-a08d-4abe-87ae-a787ac8b2ac2",
+   "title": "THINK KIDS MINERAL SPF 50 (ZINC OXIDE AND TITANIUM DIOXIDE) AEROSOL, SPRAY [THINKOPERATIONS,LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-8",
+    "SILICA"
+   ],
+   "removed": [
+    "POLYESTER-8 SILICA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "4",
+    "4"
+   ],
+   "effective_date": [
+    "20230530",
+    "20230530"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=25c59820-a08d-4abe-87ae-a787ac8b2ac2"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "269718e2-0a76-4b15-a0ab-b914bc809e41",
+   "title": "DAYLOGIC BABY SPF 60 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [RITE AID]",
+   "change": "printed_list_changed",
+   "added": [
+    "PEG-8",
+    "SODIUM CHLORIDE"
+   ],
+   "removed": [
+    "PEG-8 SODIUM CHLORIDE"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 SODIUM CHLORIDE",
+     "SODIUM CHLORIDE"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20160308",
+    "20160308"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=269718e2-0a76-4b15-a0ab-b914bc809e41"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "2986c76d-3346-487f-97c2-730a08ca8e3a",
+   "title": "ULTRASOLSUNSCREEN KIDS SUNSCREEN SPRAY LOTION SPF 30 (AVOBENZONE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [FISCHER PHARMACEUTICALS LTD]",
+   "change": "printed_list_changed",
+   "added": [
+    "BLUE NO 1",
+    "BUTYLPARABEN"
+   ],
+   "removed": [
+    "BLUE NO 1 BUTYLPARABEN"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20100128",
+    "20100128"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2986c76d-3346-487f-97c2-730a08ca8e3a"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "29eea350-5159-206b-e054-00144ff88e88",
+   "title": "TONYMOLY MY SUNNY KIDS AND MOM SUN CREAM (ZINC OXIDE) CREAM [TONYMOLY CO., LTD.]",
+   "change": "printed_list_changed",
+   "added": [
+    "ANTHEMIS NOBILIS FLOWER WATER",
+    "BIOSACCHARIDE GUM-1"
+   ],
+   "removed": [
+    "BIOSACCHARIDE GUM-1 ANTHEMIS NOBILIS FLOWER WATER"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20160204",
+    "20160204"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=29eea350-5159-206b-e054-00144ff88e88"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "2a9d4264-c51b-40ce-880b-bb61470f8002",
+   "title": "BANANA BOAT BABY SIN LAGRIMAS SPF 50 PUMP (HOMOSALATE AND OCTINOXATE AND OCTISALATE AND OCTOCRYLENE AND AVOBENZONE) SPRAY [ACCRA-PAC, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+     "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20100322",
+    "20100322"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2a9d4264-c51b-40ce-880b-bb61470f8002"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "2e394662-dd0a-4d0d-b4b0-568ecf7e2555",
+   "title": "KLENSKIN KIDS SHOWERON SUNSCREEN SPF-30 (AVOBENZONE, OCTOCRYLENE, OCTINOXATE) GEL [COLABS INTL. CORP]",
+   "change": "printed_list_changed",
+   "added": [
+    "PEG-150 PENTAERYTHRITYL TETRASTEARATE",
+    "PEG-6 CAPRYLIC/CAPRIC GLYCERIDES",
+    "PHENOXYETHANOL",
+    "POLYAMIDE-3",
+    "POLYQUATERNIUM 10",
+    "POLYSORBATE 20"
+   ],
+   "removed": [
+    "POLYAMIDE-3 PEG-6 CAPRYLIC/CAPRIC GLYCERIDES",
+    "POLYQUATERNIUM 10 PHENOXYETHANOL",
+    "POLYSORBATE 20 PEG-150 PENTAERYTHRITYL TETRASTEARATE"
+   ],
+   "possible_spelling": [
+    [
+     "POLYAMIDE-3 PEG-6 CAPRYLIC/CAPRIC GLYCERIDES",
+     "PEG-6 CAPRYLIC/CAPRIC GLYCERIDES"
+    ],
+    [
+     "POLYSORBATE 20 PEG-150 PENTAERYTHRITYL TETRASTEARATE",
+     "PEG-150 PENTAERYTHRITYL TETRASTEARATE"
+    ]
+   ],
+   "spl_version": [
+    "10",
+    "10"
+   ],
+   "effective_date": [
+    "20240115",
+    "20240115"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2e394662-dd0a-4d0d-b4b0-568ecf7e2555"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "2f7225d0-ddfa-e19a-e063-6294a90a52a8",
+   "title": "COTZ KIDS MINERAL SUN STICK (TITANIUM DIOXIDE, ZINC OXIDE) STICK [FALLIEN COSMECEUTICALS, LTD]",
+   "change": "printed_list_changed",
+   "added": [
+    "PEG-8",
+    "POLYGLYCERYL-3 DIISOSTEARATE"
+   ],
+   "removed": [
+    "PEG-8 POLYGLYCERYL-3 DIISOSTEARATE"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 POLYGLYCERYL-3 DIISOSTEARATE",
+     "POLYGLYCERYL-3 DIISOSTEARATE"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20250303",
+    "20250303"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f7225d0-ddfa-e19a-e063-6294a90a52a8"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "32794f16-2c4c-454d-aeae-aacf4ebd5792",
+   "title": "OP PROTECT AND NOURISH KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [SOLSKYN PERSONAL CARE LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-8",
+    "PROPYLENE GLYCOL"
+   ],
+   "removed": [
+    "POLYESTER-8 PROPYLENE GLYCOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20180215",
+    "20180215"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=32794f16-2c4c-454d-aeae-aacf4ebd5792"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "329918f2-5d77-494b-975d-597bbaab43e3",
+   "title": "PLAGENTRA BABY SUNCITY (OCTINOXATE, OCTISALATE, TITANIUM DIOXIDE) CREAM [C.A PHARM CO., LTD.]",
+   "change": "printed_list_changed",
+   "added": [
+    "ALKYL (C12-15) BENZOATE",
+    "HUMAN OLIGOPEPTIDE-1",
+    "OLIGOPEPTIDE-3",
+    "PEG-10 DIMETHICONE",
+    "POLYSORBATE 60",
+    "POLYSORBATE 80"
+   ],
+   "removed": [
+    "HUMAN OLIGOPEPTIDE-1 OLIGOPEPTIDE-3",
+    "POLYSORBATE 60 C12-15 ALKYL BENZOATE",
+    "POLYSORBATE 80 PEG-10 DIMETHICONE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20141208",
+    "20141208"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=329918f2-5d77-494b-975d-597bbaab43e3"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "3636693a-ba81-5d49-e063-6394a90a3006",
+   "title": "LEADER KIDS SPORT SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [CARDINAL HEALTH 110, LLC. DBA LEADER]",
+   "change": "printed_list_changed",
+   "added": [
+    "PEG-8",
+    "PEG-8 DIMETHICONE"
+   ],
+   "removed": [
+    "PEG-8 PEG-8 DIMETHICONE"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 PEG-8 DIMETHICONE",
+     "PEG-8 DIMETHICONE"
+    ]
+   ],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20260805",
+    "20260805"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3636693a-ba81-5d49-e063-6394a90a3006"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "36df811b-35d2-261d-e063-6394a90aa91e",
+   "title": "KIDSPRAY BROAD SPECTRUM SUNSCREEN SPF 40 (AVOBENZONE, OCTISALATE, AND OCTOCRYLENE) SPRAY [MDSOLARSCIENCES]",
+   "change": "printed_list_changed",
+   "added": [
+    "BUTYLOCTYL SALICYLATE",
+    "CAPRYLYL METHICONE",
+    "POLYESTER-8",
+    "SD ALCOHOL 40"
+   ],
+   "removed": [
+    "POLYESTER-8 CAPRYLYL METHICONE",
+    "SD ALCOHOL 40 BUTYLOCTYL SALICYLATE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20250605",
+    "20250605"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=36df811b-35d2-261d-e063-6394a90aa91e"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "38e6c6fc-d8b9-4196-96c7-0f6d5d06da02",
+   "title": "TRULY SOLAR BABY SUNCREEN SPF 45 (HOMOSALATE 15% OCTISALATE 5% OCTOCRYLENE 10% AVOBENZONE 3%) OIL [TRULY BEAUTY, INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "DIETHYLHEXYL 2 6-NAPHTHALATE",
+    "ISODODECANE",
+    "POLYAMIDE-3",
+    "POLYESTER-7",
+    "POLYESTER-8",
+    "VITIS VINIFERA (GRAPE) SEED OIL"
+   ],
+   "removed": [
+    "POLYAMIDE-3 VITIS VINIFERA (GRAPE) SEED OIL",
+    "POLYESTER-7 DIETHYLHEXYL 2 6-NAPHTHALATE",
+    "POLYESTER-8 ISODODECANE"
+   ],
+   "possible_spelling": [
+    [
+     "POLYAMIDE-3 VITIS VINIFERA (GRAPE) SEED OIL",
+     "VITIS VINIFERA (GRAPE) SEED OIL"
+    ],
+    [
+     "POLYESTER-7 DIETHYLHEXYL 2 6-NAPHTHALATE",
+     "DIETHYLHEXYL 2 6-NAPHTHALATE"
+    ]
+   ],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20260326",
+    "20260326"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=38e6c6fc-d8b9-4196-96c7-0f6d5d06da02"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "391a4ec3-b65b-4dbe-bc8f-cb67514c8ef1",
+   "title": "BABYGANICS SUNSCREEN 30 SPF (ZINC OXIDE, OCTINOXATE, AND OCTISALATE) SPRAY [KAS DIRECT LLC DBA BABYGANICS]",
+   "change": "printed_list_changed",
+   "added": [
+    "PHENETHYL ALCOHOL",
+    "POLYSORBATE 60",
+    "POLYSORBATE 80",
+    "SORBITAN ISOSTEARATE"
+   ],
+   "removed": [
+    "POLYSORBATE 60 SORBITAN ISOSTEARATE",
+    "POLYSORBATE 80 PHENETHYL ALCOHOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "5",
+    "5"
+   ],
+   "effective_date": [
+    "20241219",
+    "20241219"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=391a4ec3-b65b-4dbe-bc8f-cb67514c8ef1"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "3aa6550e-d1ed-4064-bf58-e694705669a8",
+   "title": "BANANA BOAT ULTRA MIST KIDS FPS 60 LATAM (HOMOSALATE AND OCTINOXATE AND OCTISALATE AND OCTOCRYLENE AND OXYBENZONE AND AVOBENZONE) SPRAY [ACCRA-PAC, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+     "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+    ]
+   ],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20100424",
+    "20100424"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3aa6550e-d1ed-4064-bf58-e694705669a8"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "3bba29ab-0e08-b751-e063-6294a90adb7b",
+   "title": "OCEAN POTION SUNCARE MINERAL 50 ZINC OXIDE CONTINUOUS SUNSCREEN (ZINC OXIDE) SPRAY [GNL BRANDS INTERNATIONAL, LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 60",
+    "POLYSORBATE 80",
+    "SODIUM BENZOATE"
+   ],
+   "removed": [
+    "POLYSORBATE 60 POLYSORBATE 80 SODIUM BENZOATE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20250806",
+    "20250806"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bba29ab-0e08-b751-e063-6294a90adb7b"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "3be777bd-9132-4a69-98de-12b62525ad2f",
+   "title": "GOAT MILK AND LAVENDER SUN FOR BABY SPF 20 PA PLUS PLUS (OCTINOXATE) LOTION [SKINFOOD CO., LTD.]",
+   "change": "printed_list_changed",
+   "added": [
+    "GLYCERYL STEARATE",
+    "POLYSORBATE 80"
+   ],
+   "removed": [
+    "POLYSORBATE 80 GLYCERYL STEARATE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20111004",
+    "20111004"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3be777bd-9132-4a69-98de-12b62525ad2f"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "3c470ff8-37d6-a729-e063-6294a90aa525",
+   "title": "BABY BUM MINERAL 50 SUNSCREEN ROLL-ON (TITANIUM DIOXIDE, ZINC OXIDE) LOTION BABY BUM MINERAL 50 SUNSCREEN (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [SUN BUM, LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-8",
+    "SILICA"
+   ],
+   "removed": [
+    "POLYESTER-8 SILICA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20250813",
+    "20250813"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c470ff8-37d6-a729-e063-6294a90aa525"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "3c8ec6df-04b8-45a1-9f23-f36622305e06",
+   "title": "ULTRASOLSUNSCREEN KIDS CLEAR CONTINUOUS SPRAY (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) AEROSOL, SPRAY [FISCHER PHARMACEUTICALS LTD]",
+   "change": "printed_list_changed",
+   "added": [
+    "SD ALCOHOL 40",
+    "TOCOPHERYL ACETATE"
+   ],
+   "removed": [
+    "SD ALCOHOL 40 TOCOPHERYL ACETATE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20100322",
+    "20100322"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c8ec6df-04b8-45a1-9f23-f36622305e06"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "3ca8742f-67cb-a25c-e063-6394a90a4638",
+   "title": "COTZ KIDS (ZINC OXIDE) CREAM [FALLIEN COSMECEUTICALS, LTD.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 20",
+    "SODIUM CHLORIDE"
+   ],
+   "removed": [
+    "POLYSORBATE 20 SODIUM CHLORIDE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20250818",
+    "20250818"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ca8742f-67cb-a25c-e063-6394a90a4638"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "3ca914e2-cd53-42bf-e063-6294a90a7082",
+   "title": "COTZ KIDS (ZINC OXIDE) CREAM [FALLIEN COSMECEUTICALS, LTD.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 20",
+    "SODIUM CHLORIDE"
+   ],
+   "removed": [
+    "POLYSORBATE 20 SODIUM CHLORIDE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20250818",
+    "20250818"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ca914e2-cd53-42bf-e063-6294a90a7082"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "4075f9dc-c25f-434f-a3fc-a7f896295c3d",
+   "title": "BABYGANICS SPF 50 PLUS SUNSCREEN (ZINC OXIDE, OCTISALATE, AND OCTOCRYLENE) SPRAY [KAS DIRECT LLC DBA BABYGANICS]",
+   "change": "printed_list_changed",
+   "added": [
+    "PHENETHYL ALCOHOL",
+    "POLYSORBATE 60",
+    "POLYSORBATE 80",
+    "VACCINIUM MACROCARPON (CRANBERRY) SEED OIL"
+   ],
+   "removed": [
+    "POLYSORBATE 60 VACCINIUM MACROCARPON (CRANBERRY) SEED OIL",
+    "POLYSORBATE 80 PHENETHYL ALCOHOL"
+   ],
+   "possible_spelling": [
+    [
+     "POLYSORBATE 60 VACCINIUM MACROCARPON (CRANBERRY) SEED OIL",
+     "VACCINIUM MACROCARPON (CRANBERRY) SEED OIL"
+    ]
+   ],
+   "spl_version": [
+    "4",
+    "4"
+   ],
+   "effective_date": [
+    "20241220",
+    "20241220"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4075f9dc-c25f-434f-a3fc-a7f896295c3d"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "416b804d-bebf-4c5c-9990-4e830dd37153",
+   "title": "RITE AID RENEWAL BABY SUNSCREEN SPF 60 (TITANIUM DIOXIDE ZINC OXIDE) LOTION [RITE AID CORPORATION]",
+   "change": "printed_list_changed",
+   "added": [
+    "PEG-8",
+    "SODIUM CHLORIDE"
+   ],
+   "removed": [
+    "PEG-8 SODIUM CHLORIDE"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 SODIUM CHLORIDE",
+     "SODIUM CHLORIDE"
+    ]
+   ],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20130806",
+    "20130806"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=416b804d-bebf-4c5c-9990-4e830dd37153"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "441a46f0-ecda-4448-e054-00144ff88e88",
+   "title": "BANANA BOAT (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "ALUMINA",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 ALUMINA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "9",
+    "9"
+   ],
+   "effective_date": [
+    "20241023",
+    "20241023"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=441a46f0-ecda-4448-e054-00144ff88e88"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "4665c6dc-7519-4218-97b3-8148e58931fb",
+   "title": "SOLMATE KIDS BROAD SPECTRUM SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, AND OXYBENZONE) LOTION [PRIME ENTERPRISES, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 20",
+    "PROPYLENE GLYCOL"
+   ],
+   "removed": [
+    "POLYSORBATE 20 PROPYLENE GLYCOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20200117",
+    "20200117"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4665c6dc-7519-4218-97b3-8148e58931fb"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "4e0450ca-147a-91d7-e063-6394a90ae73b",
+   "title": "BANANA BOAT (TITANIUM DIOXIDE,ZINC OXIDE) LOTION [EDGEWELL PERSONAL CARE BRANDS LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CAPRYLYL GLYCOL",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 CAPRYLYL GLYCOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 CAPRYLYL GLYCOL",
+     "CAPRYLYL GLYCOL"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20260325",
+    "20260325"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4e0450ca-147a-91d7-e063-6394a90ae73b"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "4f0bf232-645a-4f69-b386-3a138a5c9964",
+   "title": "KIDCREME MINERAL BROAD SPECTRUM SPF 40 SUNSCREEN UVA-UVB SUNCREEN (TITANIUM DIOXIDE AND ZINC OXIDE) CREAM [MDSOLARSCIENCES]",
+   "change": "printed_list_changed",
+   "added": [
+    "BUTYL OCTYL SALICYLATE POLYSILICONE-15",
+    "TETRAHEXYLDECYL ASCORBATE"
+   ],
+   "removed": [
+    "BUTYL OCTYL SALICYLATE POLYSILICONE-15 TETRAHEXYLDECYL ASCORBATE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20181025",
+    "20181025"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f0bf232-645a-4f69-b386-3a138a5c9964"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "4f5896a6-0639-5589-e063-6294a90a45a9",
+   "title": "BANANA BOAT (TITANIUM DIOXIDE,ZINC OXIDE) LOTION [EDGEWELL PERSONAL CARE BRANDS LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CAPRYLYL GLYCOL",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 CAPRYLYL GLYCOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 CAPRYLYL GLYCOL",
+     "CAPRYLYL GLYCOL"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20260413",
+    "20260413"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f5896a6-0639-5589-e063-6294a90a45a9"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "4fe04c4b-2751-0561-e063-6394a90af768",
+   "title": "JOHNSONS BABY MINERAL SUNSCREEN SPF 30 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "ALOE BARBADENSIS LEAF EXTRACT",
+    "STEARETH-21"
+   ],
+   "removed": [
+    "STEARETH-21 ALOE BARBADENSIS LEAF EXTRACT"
+   ],
+   "possible_spelling": [
+    [
+     "STEARETH-21 ALOE BARBADENSIS LEAF EXTRACT",
+     "ALOE BARBADENSIS LEAF EXTRACT"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20260422",
+    "20260422"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4fe04c4b-2751-0561-e063-6394a90af768"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "503a755c-5b86-37d3-e054-00144ff88e88",
+   "title": "FRUIT OF THE EARTH BLOCK UP KIDS SPF 50 MOISTURIZING SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) LOTION [FRUIT OF THE EARTH, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "CETEARYL ALCOHOL",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 CETEARYL ALCOHOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 CETEARYL ALCOHOL",
+     "CETEARYL ALCOHOL"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20170523",
+    "20170523"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=503a755c-5b86-37d3-e054-00144ff88e88"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "53d50644-b698-6474-e063-6394a90ac347",
+   "title": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CAPRYLYL GLYCOL",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 CAPRYLYL GLYCOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 CAPRYLYL GLYCOL",
+     "CAPRYLYL GLYCOL"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20260609",
+    "20260609"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53d50644-b698-6474-e063-6394a90ac347"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "597b78df-83cb-1b21-e063-6294a90a56a8",
+   "title": "AVOBENZONE, HOMOSALATE, OCTISALATE LOTION [TOPCO ASSOCIATES LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-7",
+    "SILICA"
+   ],
+   "removed": [
+    "POLYESTER-7 SILICA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20260820",
+    "20260820"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=597b78df-83cb-1b21-e063-6294a90a56a8"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "59e1a2b7-2ae2-f289-e063-6294a90aeb68",
+   "title": "COPPERTONE WATERBABIES PURE AND SIMPLE MINERAL SPF 50 (ZINC OXIDE 24.08%) LOTION [BEIERSDORF INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-27",
+    "TOCOPHEROL"
+   ],
+   "removed": [
+    "POLYESTER-27 TOCOPHEROL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20260825",
+    "20260825"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59e1a2b7-2ae2-f289-e063-6294a90aeb68"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "5af11bbe-0dec-416c-8f37-e93b14a940b6",
+   "title": "BANANA BOAT ULTRAMIST KIDS SPF 50 FACTOR DE PROTECCION SOLAR 50 (HOMOSALATE AND OCTINOXATE AND OCTISALATE AND OCTOCRYLENE AND AVOBENZONE) SPRAY [ACCRA-PAC, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+     "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20100321",
+    "20100321"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5af11bbe-0dec-416c-8f37-e93b14a940b6"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "5b177115-9f0c-48a4-9fea-1f547436a2c9",
+   "title": "KIDS DISAPPEARING COLOR SPF50 BROAD SPECTRUM SUNCREEN GREEN APPLE SCENTED (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [CVS PHARMACY]",
+   "change": "printed_list_changed",
+   "added": [
+    "BLUE 1",
+    "YELLOW 10"
+   ],
+   "removed": [
+    "YELLOW 10 BLUE 1"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20140121",
+    "20140121"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b177115-9f0c-48a4-9fea-1f547436a2c9"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "5b309bf0-4268-d9e4-e063-6294a90ad2d8",
+   "title": "AVEENO KIDS DAILY MOISTURE FACE MINERAL SUNSCREEN SPF 30 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "AVENA SATIVA (OAT) KERNEL EXTRACT",
+    "STEARETH-21"
+   ],
+   "removed": [
+    "STEARETH-21 AVENA SATIVA (OAT) KERNEL EXTRACT"
+   ],
+   "possible_spelling": [
+    [
+     "STEARETH-21 AVENA SATIVA (OAT) KERNEL EXTRACT",
+     "AVENA SATIVA (OAT) KERNEL EXTRACT"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20260911",
+    "20260911"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b309bf0-4268-d9e4-e063-6294a90ad2d8"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "5b3109da-3019-73c4-e063-6394a90abb08",
+   "title": "AVEENO BABY DAILY MOISTURE FACE MINERAL SUNSCREEN SPF30 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [KENVUE BRANDS LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "AVENA SATIVA (OAT) KERNEL EXTRACT",
+    "STEARETH-21"
+   ],
+   "removed": [
+    "STEARETH-21 AVENA SATIVA (OAT) KERNEL EXTRACT"
+   ],
+   "possible_spelling": [
+    [
+     "STEARETH-21 AVENA SATIVA (OAT) KERNEL EXTRACT",
+     "AVENA SATIVA (OAT) KERNEL EXTRACT"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20260911",
+    "20260911"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b3109da-3019-73c4-e063-6394a90abb08"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "5b9a32ab-4ab7-475d-e063-6294a90a49ba",
+   "title": "BANANA BOAT (TITANIUM DIOXIDE,ZINC OXIDE) LOTION [EDGEWELL PERSONAL CARE BRANDS LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CAPRYLYL GLYCOL",
+    "PEG 8"
+   ],
+   "removed": [
+    "PEG 8 CAPRYLYL GLYCOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG 8 CAPRYLYL GLYCOL",
+     "CAPRYLYL GLYCOL"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20260916",
+    "20260916"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b9a32ab-4ab7-475d-e063-6294a90a49ba"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "5c2a5ca3-e9eb-48ba-8698-592d2c7aa241",
+   "title": "SUN WAVE KIDS INSTA DRY SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [SUN LIFE BRANDS, LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "JOJOBA EXTRACT",
+    "POLYSORBATE 20"
+   ],
+   "removed": [
+    "POLYSORBATE 20 JOJOBA EXTRACT"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20260901",
+    "20260901"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c2a5ca3-e9eb-48ba-8698-592d2c7aa241"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "5c3ea09e-8bf0-7873-e063-6294a90a3fd3",
+   "title": "BANANA BABY (TITANIUM DIOXIDE,ZINC OXIDE) LOTION [EDGEWELL PERSONAL CARE BRANDS LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CAPRYLYL GLYCOL",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 CAPRYLYL GLYCOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 CAPRYLYL GLYCOL",
+     "CAPRYLYL GLYCOL"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20260924",
+    "20260924"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c3ea09e-8bf0-7873-e063-6294a90a3fd3"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "6053bc07-3060-4610-864d-d549df6dc926",
+   "title": "BLI HOLDINGS MIAMI BEACH KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, AND OXYBENZONE) LOTION [PRIME ENTERPRISES, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 20"
+   ],
+   "removed": [
+    "POLYSORBATE 20 PROPYLENE GLYCOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "4",
+    "4"
+   ],
+   "effective_date": [
+    "20200117",
+    "20200117"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6053bc07-3060-4610-864d-d549df6dc926"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "6055ba25-c346-4a18-bc72-ceac753f8a35",
+   "title": "SOLMATE BABY BROAD SPECTRUM SPF50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, AND OXYBENZONE) LOTION [PRIME ENTERPRISES, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 20",
+    "PROPYLENE GLYCOL"
+   ],
+   "removed": [
+    "POLYSORBATE 20 PROPYLENE GLYCOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20200117",
+    "20200117"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6055ba25-c346-4a18-bc72-ceac753f8a35"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "616d35f6-63d2-3d26-e053-2991aa0a5b44",
+   "title": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CAPRYLYL GLYCOL",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 CAPRYLYL GLYCOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 CAPRYLYL GLYCOL",
+     "CAPRYLYL GLYCOL"
+    ]
+   ],
+   "spl_version": [
+    "6",
+    "6"
+   ],
+   "effective_date": [
+    "20260108",
+    "20260108"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=616d35f6-63d2-3d26-e053-2991aa0a5b44"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "62016e94-b5d2-4ba2-ab9c-b0b2c1ead650",
+   "title": "ALOE UP KIDS SPORT SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [ALOE CARE INTERNATIONAL, LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 20",
+    "PROPANEDIOL"
+   ],
+   "removed": [
+    "POLYSORBATE 20 PROPANEDIOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "7",
+    "7"
+   ],
+   "effective_date": [
+    "20260126",
+    "20260126"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=62016e94-b5d2-4ba2-ab9c-b0b2c1ead650"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "644ec129-15c9-4ac1-8362-5b4c2e58ab9a",
+   "title": "AVOBENZONE, HOMOSALATE, OCTISALATE LOTION [THE KROGER CO.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-7",
+    "SILICA"
+   ],
+   "removed": [
+    "POLYESTER-7 SILICA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20260227",
+    "20260227"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=644ec129-15c9-4ac1-8362-5b4c2e58ab9a"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "64766ed9-bd47-498d-bf59-fb30a7bf7e89",
+   "title": "SUNSCREEN FOR BABIES SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE) LOTION [RETAIL BUSINESS SERVICES, LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-7",
+    "SILICA"
+   ],
+   "removed": [
+    "POLYESTER-7 SILICA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "4",
+    "4"
+   ],
+   "effective_date": [
+    "20260206",
+    "20260206"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=64766ed9-bd47-498d-bf59-fb30a7bf7e89"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "65c9c131-2545-4d88-aa9a-85197b654d74",
+   "title": "SEAWEED BATH CO PLAYFUL PAPAYA KIDS SUNSCREEN SPF 50 (ZINC OXIDE) LIQUID [THE SEAWEED BATH CO.]",
+   "change": "printed_list_changed",
+   "added": [
+    "CETEARETH-20",
+    "CITRIC ACID",
+    "POLYSORBATE-20",
+    "PROPANEDIOL"
+   ],
+   "removed": [
+    "CETEARETH-20 CITRIC ACID",
+    "POLYSORBATE-20 PROPANEDIOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20240619",
+    "20240619"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65c9c131-2545-4d88-aa9a-85197b654d74"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "678b9575-3271-9c42-e053-2a91aa0a5c91",
+   "title": "MIAMI BEACH KIDS SUNSCREEN BROAD SPECTRUM SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [PRIME ENTERPRISES INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 20",
+    "PROPYLENE GLYCOL"
+   ],
+   "removed": [
+    "POLYSORBATE 20 PROPYLENE GLYCOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20200117",
+    "20200117"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=678b9575-3271-9c42-e053-2a91aa0a5c91"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "6d0a8efb-4da9-4cb5-b1d3-c9dad05fa9a6",
+   "title": "BANANA BOAT ULTRAMIST BABY TEAR FREE CONTINUOUS SPF 50 (AVOBENZONE AND HOMOSALATE AND OCTINOXATE AND OCTISALATE AND OCTOCRYLENE) SPRAY [ACCRA-PAC, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+     "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20100318",
+    "20100318"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d0a8efb-4da9-4cb5-b1d3-c9dad05fa9a6"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "6d373e47-f918-444a-b3bb-bce99b42d502",
+   "title": "KIDS DISAPPEARING COLOR SPF50 BROAD SPECTRUM SUNCREEN PINK STRAWBERRY SCENTED (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE) SPRAY [CVS PHARMACY]",
+   "change": "printed_list_changed",
+   "added": [
+    "RED 33",
+    "YELLOW 5"
+   ],
+   "removed": [
+    "RED 33 YELLOW 5"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20140121",
+    "20140121"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d373e47-f918-444a-b3bb-bce99b42d502"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "7415511e-1ecf-4646-b64b-267fbf7d116b",
+   "title": "MEIJER KIDS TEAR FREE SPF 50 (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [MEIJER DISTRIBUTION, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "ALUMINA",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 ALUMINA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20160602",
+    "20160602"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7415511e-1ecf-4646-b64b-267fbf7d116b"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "764401f3-4219-6e9b-e053-2991aa0a3ed2",
+   "title": "BANANA BOAT (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [EDGEWELL PERSONAL CARE BRANDS, LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "PEG-8",
+    "PHENOXYETHANOL"
+   ],
+   "removed": [
+    "PEG-8 PHENOXYETHANOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 PHENOXYETHANOL",
+     "PHENOXYETHANOL"
+    ]
+   ],
+   "spl_version": [
+    "9",
+    "9"
+   ],
+   "effective_date": [
+    "20251106",
+    "20251106"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=764401f3-4219-6e9b-e053-2991aa0a3ed2"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "81cb6b2e-1ca3-4a83-a8df-9bfee61e79af",
+   "title": "EQUATE SUNSCREEN SPF 50 KIDS BROAD SPECTRUM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION [WAL-MART STORES INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "PEG-8",
+    "SILICA"
+   ],
+   "removed": [
+    "PEG-8 SILICA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "7",
+    "7"
+   ],
+   "effective_date": [
+    "20241016",
+    "20241016"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=81cb6b2e-1ca3-4a83-a8df-9bfee61e79af"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "82771f22-0197-40ba-97d2-2386152790ed",
+   "title": "365 WHOLE FOODS MARKET SUNSCREEN CLEAR COCONUT VANILLA SPF 50 (OCTOCRYLENE, OCTISALATE, AVOBENZONE, AND HOMOSALATE) AEROSOL, SPRAY 365 WHOLE FOODS MARKET KIDS CLEAR SUNSCREEN SPF 50 (OCTOCRYLENE, OCTISALATE, AVOBENZONE, AND HOMOSALATE) AEROSOL, SPRAY [WHOLE FOODS MARKET, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "FRAGRANCE (NATURAL) COMPLIES WITH ISO 9235"
+   ],
+   "removed": [],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20260615",
+    "20260615"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=82771f22-0197-40ba-97d2-2386152790ed"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "83186695-f093-45d0-e053-2a91aa0a827d",
+   "title": "IM SAFE FOR BABY AND SILVER (TITANIUM DIOXIDE) LOTION [NORMALEST CO., LTD.]",
+   "change": "printed_list_changed",
+   "added": [
+    "GLYCERETH-26",
+    "METHYL TRIMETHICONE"
+   ],
+   "removed": [
+    "GLYCERETH-26 METHYL TRIMETHICONE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20190306",
+    "20190306"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83186695-f093-45d0-e053-2a91aa0a827d"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "85524d39-732f-4123-adf5-83efb2bfd928",
+   "title": "KROGER KIDS TEAR FREE SPF50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [KROGER COMPANY]",
+   "change": "printed_list_changed",
+   "added": [
+    "CAPRYLYL GLYCOL",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 CAPRYLYL GLYCOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 CAPRYLYL GLYCOL",
+     "CAPRYLYL GLYCOL"
+    ]
+   ],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20160105",
+    "20160105"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85524d39-732f-4123-adf5-83efb2bfd928"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "89d05291-4ee5-48c6-be1d-7ac30f323bcb",
+   "title": "BANANA BOAT KIDS ULTRAMIST TEAR FREE SPF 30 (AVOBENZONE AND HOMOSALATE AND OCTISALATE AND OCTOCRYLENE) SPRAY [ACCRA-PAC, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "PEG-8",
+    "RETINYL PALMITATE (VITAMIN A)"
+   ],
+   "removed": [
+    "PEG-8 RETINYL PALMITATE (VITAMIN A)"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 RETINYL PALMITATE (VITAMIN A)",
+     "RETINYL PALMITATE (VITAMIN A)"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20100325",
+    "20100325"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89d05291-4ee5-48c6-be1d-7ac30f323bcb"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "9ec56c68-6fea-444b-aeed-0b5d60c42e75",
+   "title": "MINERAL KIDCREME SPF 50 (TITANIUM DIOXIDE AND ZINC OXIDE) CREAM [MDSOLARSCIENCES]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSILICONE-15",
+    "PUNICA GRANATUM EXTRACT (POMEGRANATE)"
+   ],
+   "removed": [
+    "POLYSILICONE-15 PUNICA GRANATUM EXTRACT (POMEGRANATE)"
+   ],
+   "possible_spelling": [
+    [
+     "POLYSILICONE-15 PUNICA GRANATUM EXTRACT (POMEGRANATE)",
+     "PUNICA GRANATUM EXTRACT (POMEGRANATE)"
+    ]
+   ],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20250605",
+    "20250605"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9ec56c68-6fea-444b-aeed-0b5d60c42e75"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "a1b1cdeb-e5fe-4ba1-8bb0-3c7a97dd93fe",
+   "title": "BABY DONNA SHEER SPF SUNSCREEN STICK (ZINC OXIDE) STICK [STREAM2SEA, LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CETEARYL ALCOHOL 50",
+    "HYDROGENATED CASTOR OIL"
+   ],
+   "removed": [
+    "CETEARYL ALCOHOL 50 HYDROGENATED CASTOR OIL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20250112",
+    "20250112"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a1b1cdeb-e5fe-4ba1-8bb0-3c7a97dd93fe"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "a4b9d7c0-dc09-4f0e-8b65-90ba180552bf",
+   "title": "SUNSCREEN FOR BABIES SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE) LOTION [NICE-PAK PRODUCTS, LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-7",
+    "SILICA"
+   ],
+   "removed": [
+    "POLYESTER-7 SILICA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20260313",
+    "20260313"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4b9d7c0-dc09-4f0e-8b65-90ba180552bf"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "a4d73025-9c5b-7455-e053-2995a90ab746",
+   "title": "ALOE UP KIDS BROAD SPECTRUM SPF 50 SUNSCREEN (OCTISALATE, AVOBENZONE, HOMOSALATE, OCTOCRYLENE, OCTINOXATE) GEL [PRIME ENTERPRISES INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "PEG-8",
+    "PHENOXYETHANOL",
+    "POLYSORBATE 20",
+    "PROPANEDIOL"
+   ],
+   "removed": [
+    "PEG-8 PHENOXYETHANOL",
+    "POLYSORBATE 20 PROPANEDIOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 PHENOXYETHANOL",
+     "PHENOXYETHANOL"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20200504",
+    "20200504"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4d73025-9c5b-7455-e053-2995a90ab746"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "aa977e07-83a9-3e6e-e053-2a95a90a25a9",
+   "title": "BEBAK BABY SUN (OXYBENZONE) LOTION [SORA KOZMETIK SANAYI TICARET ANONIM SIRKETI]",
+   "change": "printed_list_changed",
+   "added": [
+    "ALKYL (C12-15) BENZOATE",
+    "CETEARETH-20",
+    "OCTOCRYLENE",
+    "OXYBENZONE"
+   ],
+   "removed": [
+    "BENZOPHENONE-3 OCTOCRYLENE",
+    "CETEARETH-20 C12-15 ALKYL BENZOATE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20200716",
+    "20200716"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aa977e07-83a9-3e6e-e053-2a95a90a25a9"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "abcf9d29-c3eb-4326-b140-bcebbbad324e",
+   "title": "AUSTRALIAN GOLD BROAD SPECTRUM SPF 30 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, AND OXYBENZONE) LOTION [PRIME ENTERPRISES, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSILICONE-15",
+    "POLYSORBATE 20",
+    "PROPYLENE GLYCOL"
+   ],
+   "removed": [
+    "POLYSILICONE-15 POLYSORBATE 20 PROPYLENE GLYCOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20200117",
+    "20200117"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abcf9d29-c3eb-4326-b140-bcebbbad324e"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "af6b7f9f-9ca5-4c59-be78-d68286451ac3",
+   "title": "BABY DONNA SHEER SPF SUNSCREEN STICK (ZINC OXIDE) STICK [BABYDONNA LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "CETEARYL ALCOHOL 50",
+    "HYDROGENATED CASTOR OIL"
+   ],
+   "removed": [
+    "CETEARYL ALCOHOL 50 HYDROGENATED CASTOR OIL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20230228",
+    "20230228"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=af6b7f9f-9ca5-4c59-be78-d68286451ac3"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "b00bc346-ffcf-4a23-b46b-69c84988e004",
+   "title": "MEIJER BABY TEAR FREE SPF 50 CS (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [MEIJER DISTRIBUTION, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "CAPRYLYL GLYCOL",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 CAPRYLYL GLYCOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 CAPRYLYL GLYCOL",
+     "CAPRYLYL GLYCOL"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20160311",
+    "20160311"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b00bc346-ffcf-4a23-b46b-69c84988e004"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "b72caf9b-46df-f30c-e053-2995a90a9b6d",
+   "title": "KIDS BROAD SPECTRUM SPF 35 (ZINC OXIDE) CREAM [ALLURE LABS, LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 60",
+    "STEARIC ACID"
+   ],
+   "removed": [
+    "POLYSORBATE 60 STEARIC ACID"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20241205",
+    "20241205"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b72caf9b-46df-f30c-e053-2995a90a9b6d"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "ba4ae906-48c0-8384-e053-2995a90afb91",
+   "title": "BLUE LIZARD KIDS SPF 50 SUNSCREEN (OCTISALATE AND TITANIUM DIOXIDE AND ZINC OXIDE) LOTION [CROWN LABORATORIES]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYURETHANE-35",
+    "PROPANEDIOL"
+   ],
+   "removed": [
+    "POLYURETHANE-35 PROPANEDIOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "8",
+    "8"
+   ],
+   "effective_date": [
+    "20260501",
+    "20260501"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ba4ae906-48c0-8384-e053-2995a90afb91"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "ba98d6c9-89ca-4308-e053-2995a90a08e4",
+   "title": "TROPIC SUN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [PRIME ENTERPRISES, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 20",
+    "PROPYLENE GLYCOL"
+   ],
+   "removed": [
+    "POLYSORBATE 20 PROPYLENE GLYCOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20210205",
+    "20210205"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ba98d6c9-89ca-4308-e053-2995a90a08e4"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "bba219a4-de83-76fd-e053-2995a90a2d69",
+   "title": "EVEREDEN KIDS MINERAL SUNSCREEN SPF 30 (ZINC OXIDE) LOTION [EDEN BRANDS INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "OCTYLDODECANOL",
+    "PROPANEDIOL",
+    "STEARETH-2",
+    "STEARETH-21"
+   ],
+   "removed": [
+    "STEARETH-2 OCTYLDODECANOL",
+    "STEARETH-21 PROPANEDIOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "4",
+    "4"
+   ],
+   "effective_date": [
+    "20260701",
+    "20260701"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bba219a4-de83-76fd-e053-2995a90a2d69"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "bcebfcd8-e4f0-482e-abb7-4e7ca3cfa0b9",
+   "title": "BANANA BOAT BABY TEAR FREE LOTION SPF 50 (HOMOSALATE AND OCTINOXATE AND OCTISALATE AND OCTOCRYLENE AND AVOBENZONE) SPRAY [ACCRA-PAC, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER",
+     "C30-38 OLEFIN/ISOPROPYL MALEATE/MA COPOLYMER"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20100321",
+    "20100321"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bcebfcd8-e4f0-482e-abb7-4e7ca3cfa0b9"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "c0552256-d8cb-5473-e053-2995a90ad0d5",
+   "title": "COPPERTONE KIDS SUNSCREEN SPF 70 (AVOBENZONE 3%, HOMOSALATE 13%, OCTISALATE 5%, OCTOCRYLENE 10%, OXYBENZONE 6%) LOTION [BEIERSDORF INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "FRAGRANCE",
+    "OLETH-3"
+   ],
+   "removed": [
+    "OLETH-3 FRAGRANCE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "6",
+    "6"
+   ],
+   "effective_date": [
+    "20251231",
+    "20251231"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0552256-d8cb-5473-e053-2995a90ad0d5"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "c3bacceb-63a8-098c-e053-2995a90acd64",
+   "title": "TENDER MOMENTS BABY SUNSCREEN BROAD SPECTRUM SPF 50 WATER RESISTANT (40 MINUTES) (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) CREAM [DISTRIBUIDORA COMERCIAL JAFRA, S.A. DE C.V.]",
+   "change": "printed_list_changed",
+   "added": [
+    "GLYCERYL STEARATE",
+    "POLYESTER-8"
+   ],
+   "removed": [
+    "POLYESTER-8 GLYCERYL STEARATE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "6",
+    "6"
+   ],
+   "effective_date": [
+    "20250102",
+    "20250102"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c3bacceb-63a8-098c-e053-2995a90acd64"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "c3e3db90-8244-4c26-a1da-5f52b867c2d8",
+   "title": "SOLMATE BABY BROAD SPECTRUM SPF50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, AND OXYBENZONE) LOTION [PRIME ENTERPRISES, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 20",
+    "PROPYLENE GLYCOL"
+   ],
+   "removed": [
+    "POLYSORBATE 20 PROPYLENE GLYCOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20200117",
+    "20200117"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c3e3db90-8244-4c26-a1da-5f52b867c2d8"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "c7938795-685b-4b7c-84ce-0ea66b64576e",
+   "title": "OP PROTECT AND NOURISH BABIES AND SENSITIVE SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [SOLSKYN PERSONAL CARE LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-8",
+    "PROPYLENE GLYCOL"
+   ],
+   "removed": [
+    "POLYESTER-8 PROPYLENE GLYCOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20180215",
+    "20180215"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c7938795-685b-4b7c-84ce-0ea66b64576e"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "c7ba72c2-ea23-0bb9-e053-2a95a90a1d90",
+   "title": "FRUIT OF THE EARTH SUN TOWN CITY BABY SPF 50 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [FRUIT OF THE EARTH, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "NEOPENTYL GLYCOL DIHEPTANOATE",
+    "POLYESTER-7"
+   ],
+   "removed": [
+    "POLYESTER-7 NEOPENTYL GLYCOL DIHEPTANOATE"
+   ],
+   "possible_spelling": [
+    [
+     "POLYESTER-7 NEOPENTYL GLYCOL DIHEPTANOATE",
+     "NEOPENTYL GLYCOL DIHEPTANOATE"
+    ]
+   ],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20241017",
+    "20241017"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c7ba72c2-ea23-0bb9-e053-2a95a90a1d90"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "c8c251e1-ab0b-edba-e053-2995a90abfd4",
+   "title": "KIDZGOO NATURAL SUNSCREEN (ZINC OXIDE) LOTION [RENU LABORATORIES, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYGLYCERYL-3",
+    "POLYHYDROXYSTEARIC ACID"
+   ],
+   "removed": [
+    "POLYGLYCERYL-3 POLYHYDROXYSTEARIC ACID"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20210804",
+    "20210804"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8c251e1-ab0b-edba-e053-2995a90abfd4"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "cd56a2d6-ec92-4670-975b-3da28037773c",
+   "title": "WALGREENS BABY SPF50 (TITANIUM DIOXIDE AND ZINC OXIDE) LOTION [WALGREEN COMPANY]",
+   "change": "printed_list_changed",
+   "added": [
+    "DIMETHICONE",
+    "PEG 8"
+   ],
+   "removed": [
+    "PEG 8 DIMETHICONE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20170830",
+    "20170830"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd56a2d6-ec92-4670-975b-3da28037773c"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "cdb19c82-9845-eabc-e053-2a95a90a31f7",
+   "title": "EUCERIN BABY SENSITIVE MINERAL SPF 50 SUNSCREEN (ZINC OXIDE) LOTION [BEIERSDORF INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-27",
+    "TRIETHOXYCAPRYLYLSILANE"
+   ],
+   "removed": [
+    "POLYESTER-27 TRIETHOXYCAPRYLYLSILANE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "4",
+    "4"
+   ],
+   "effective_date": [
+    "20251231",
+    "20251231"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cdb19c82-9845-eabc-e053-2a95a90a31f7"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "ce9a2139-c5c2-43e2-bd51-1f14ace594d9",
+   "title": "AVOBENZONE, HOMOSALATE, OCTISALATE LOTION [OLD EAST MAIN CO.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-7",
+    "SILICA"
+   ],
+   "removed": [
+    "POLYESTER-7 SILICA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "4",
+    "4"
+   ],
+   "effective_date": [
+    "20260302",
+    "20260302"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ce9a2139-c5c2-43e2-bd51-1f14ace594d9"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "dc7701b5-0c73-b4df-e053-2a95a90a0f1b",
+   "title": "BANANA BOAT KIDS MINERAL PROTECTION SPF50 (TITANIUM DIOXIDE,ZINC OXIDE) LOTION [EDGEWELL PERSONAL CARE BRANDS LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "ALUMINA",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 ALUMINA"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "3",
+    "3"
+   ],
+   "effective_date": [
+    "20241027",
+    "20241027"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7701b5-0c73-b4df-e053-2a95a90a0f1b"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "dc8f21a7-3014-4e78-be64-ded63bea4ba4",
+   "title": "OP PROTECT AND NOURISH KIDS SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [SOLSKYN PERSONAL CARE LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-8",
+    "PROPYLENE GLYCOL"
+   ],
+   "removed": [
+    "POLYESTER-8 PROPYLENE GLYCOL"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20180215",
+    "20180215"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc8f21a7-3014-4e78-be64-ded63bea4ba4"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "dca478a0-c319-68d8-e053-2a95a90a10fc",
+   "title": "(S)UNDERCOVER SPF 50 (ZINC OXIDE) LOTION [TUBBY TODD]",
+   "change": "printed_list_changed",
+   "added": [
+    "NYLON-12",
+    "ORZA SATIVA (RICE) BRAN EXTRACT"
+   ],
+   "removed": [
+    "NYLON-12 ORZA SATIVA (RICE) BRAN EXTRACT"
+   ],
+   "possible_spelling": [
+    [
+     "NYLON-12 ORZA SATIVA (RICE) BRAN EXTRACT",
+     "ORZA SATIVA (RICE) BRAN EXTRACT"
+    ]
+   ],
+   "spl_version": [
+    "4",
+    "4"
+   ],
+   "effective_date": [
+    "20241223",
+    "20241223"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dca478a0-c319-68d8-e053-2a95a90a10fc"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "dca54a19-af25-ce47-e053-2a95a90a22db",
+   "title": "MINERAL MIST SPF-50 (TITANIUM DIOXIDE, ZINC OXIDE) SPRAY [TUBBY TODD]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-8",
+    "POLYHYDROXYSTEARIC ACID"
+   ],
+   "removed": [
+    "POLYESTER-8 POLYHYDROXYSTEARIC ACID"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "4",
+    "4"
+   ],
+   "effective_date": [
+    "20251207",
+    "20251207"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dca54a19-af25-ce47-e053-2a95a90a22db"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "e6b965a9-8dab-485f-b8f1-8f7dcb453e6e",
+   "title": "COTZ PEDIATRIC SPF 40 SUNSCREEN (ZINC OXIDE) LOTION [FALLIEN COSMECEUTICALS, LTD.]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYSORBATE 20",
+    "SODIUM CHLORIDE"
+   ],
+   "removed": [
+    "POLYSORBATE 20 SODIUM CHLORIDE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20121219",
+    "20121219"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6b965a9-8dab-485f-b8f1-8f7dcb453e6e"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "eafc00ce-12e7-921f-e053-2995a90a241a",
+   "title": "NEUTROGENA BEACH DEFENSE KIDS SUNSCREEN SPF 70 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) AEROSOL, SPRAY [KENVUE BRANDS LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+    "POLYESTER-7"
+   ],
+   "removed": [
+    "POLYESTER-7 ACRYLATES/OCTYLACRYLAMIDE COPOLYMER"
+   ],
+   "possible_spelling": [
+    [
+     "POLYESTER-7 ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+     "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER"
+    ]
+   ],
+   "spl_version": [
+    "7",
+    "7"
+   ],
+   "effective_date": [
+    "20251010",
+    "20251010"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eafc00ce-12e7-921f-e053-2995a90a241a"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "efa5c501-273c-5e97-e053-2995a90a865b",
+   "title": "BOB KIDS SUN BALM SPF 40 (ZINC OXIDE 23%) CREAM [SPF VENTURES, LLC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYURETHANE-100",
+    "RICE BRAN WAX"
+   ],
+   "removed": [
+    "POLYURETHANE-100 RICE BRAN WAX"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20250824",
+    "20250824"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=efa5c501-273c-5e97-e053-2995a90a865b"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "f01975b7-e2c9-452f-992c-2ad1ecd1febc",
+   "title": "WALGREENS BABY SPF50 (TITANIUM DIOXIDE AND ZINC OXIDE) LOTION [WALGREEN COMPANY]",
+   "change": "printed_list_changed",
+   "added": [
+    "DIMETHICONE",
+    "PEG 8"
+   ],
+   "removed": [
+    "PEG 8 DIMETHICONE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20170830",
+    "20170830"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f01975b7-e2c9-452f-992c-2ad1ecd1febc"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "f3463f81-9a65-3796-e053-2995a90a4f80",
+   "title": "WEGMANS KIDS AND SPORT BROAD SPECTRUM SPF 50 SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [WEGMANS FOOD MARKETS INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+    "NEOPENTYL GLYCOL DIHEPTANOATE",
+    "OLETH-3",
+    "POLYAMIDE-8"
+   ],
+   "removed": [
+    "OLETH-3 ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+    "POLYAMIDE-8 NEOPENTYL GLYCOL DIHEPTANOATE"
+   ],
+   "possible_spelling": [
+    [
+     "OLETH-3 ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+     "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER"
+    ],
+    [
+     "POLYAMIDE-8 NEOPENTYL GLYCOL DIHEPTANOATE",
+     "NEOPENTYL GLYCOL DIHEPTANOATE"
+    ]
+   ],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20241016",
+    "20241016"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f3463f81-9a65-3796-e053-2995a90a4f80"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "f3e1ea21-4a07-3e18-e053-2995a90a0fe7",
+   "title": "COPPERTONE KIDS ROLL-ON SUNSCREEN SPF 50 (ZINC OXIDE 24.08%) LOTION [BEIERSDORF INC]",
+   "change": "printed_list_changed",
+   "added": [
+    "POLYESTER-27",
+    "SODIUM SULFATE"
+   ],
+   "removed": [
+    "POLYESTER-27 SODIUM SULFATE"
+   ],
+   "possible_spelling": [],
+   "spl_version": [
+    "4",
+    "4"
+   ],
+   "effective_date": [
+    "20251231",
+    "20251231"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f3e1ea21-4a07-3e18-e053-2995a90a0fe7"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "f7a3f518-20ef-4c5f-89a1-0ee7200386bb",
+   "title": "MEIJER KIDS TEAR FREE SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY [MEIJER DISTRIBUTION, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "CAPRYLYL GLYCOL",
+    "PEG-8"
+   ],
+   "removed": [
+    "PEG-8 CAPRYLYL GLYCOL"
+   ],
+   "possible_spelling": [
+    [
+     "PEG-8 CAPRYLYL GLYCOL",
+     "CAPRYLYL GLYCOL"
+    ]
+   ],
+   "spl_version": [
+    "1",
+    "1"
+   ],
+   "effective_date": [
+    "20160311",
+    "20160311"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7a3f518-20ef-4c5f-89a1-0ee7200386bb"
+  },
+  {
+   "observed_on": "2026-10-26",
+   "setid": "fd786a06-88b7-fa35-e053-6394a90a84a5",
+   "title": "FRUIT OF THE EARTH LUV THAT SUN KIDS SUNSCREEN ULTRA SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION [FRUIT OF THE EARTH, INC.]",
+   "change": "printed_list_changed",
+   "added": [
+    "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+    "NEOPENTYL GLYCOL DIHEPTANOATE",
+    "OLETH-3",
+    "POLYAMIDE-8"
+   ],
+   "removed": [
+    "OLETH-3 ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+    "POLYAMIDE-8 NEOPENTYL GLYCOL DIHEPTANOATE"
+   ],
+   "possible_spelling": [
+    [
+     "OLETH-3 ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+     "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER"
+    ],
+    [
+     "POLYAMIDE-8 NEOPENTYL GLYCOL DIHEPTANOATE",
+     "NEOPENTYL GLYCOL DIHEPTANOATE"
+    ]
+   ],
+   "spl_version": [
+    "2",
+    "2"
+   ],
+   "effective_date": [
+    "20241018",
+    "20241018"
+   ],
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd786a06-88b7-fa35-e053-6394a90a84a5"
+  }
+ ],
+ "needs_transcription": [
+  {
+   "setid": "005a9e7c-e392-4b9a-911f-d7586f7ae94e",
+   "title": "REEF KIDS SPF 30 OXYBENZONE FREE (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) SPRAY [TROPICAL SEAS, INC.]",
+   "why": "image-only list not transcribed yet"
+  },
+  {
+   "setid": "0190eeaf-c5a0-3253-e063-6294a90a43c4",
+   "title": "BABY MINERAL SUNSCREEN SPF55 (ZINC OXIDE) LOTION [HELLO BELLO]",
+   "why": "image-only list not transcribed yet"
+  },
+  {
+   "setid": "0191b2e4-bcc5-541a-e063-6294a90a0e78",
+   "title": "BABY MINERAL SUNSCREEN PROBIOTICS SPF55 (ZINC OXIDE) LOTION [HELLO BELLO]",
+   "why": "image-only list not transcribed yet"
+  },
+  {
+   "setid": "01a50047-0d07-41c5-b35b-129aab5b4afd",
+   "title": "KROGER BABY SUNSCREEN SPF 70 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [THE KROGER CO]",
+   "why": "image-only list not transcribed yet"
+  },
+  {
+   "setid": "5d233008-96a5-44e6-e063-6294a90a9aaa",
+   "title": "ORGANIC KIDS SUNSCREEN (ZINC OXIDE SUNSCREEN) CREAM [VEGANIC SKN LIMITED]",
+   "why": "image-only list not transcribed yet"
+  }
+ ]
+}
