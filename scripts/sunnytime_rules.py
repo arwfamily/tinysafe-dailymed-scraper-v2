@@ -144,7 +144,12 @@ def is_essential_oil(name):
     """A volatile plant oil: a non-fixed oil of a plant that yields essential oils.
     Seed/kernel/nut/fruit 'oils' are fixed oils (sunflower, jojoba, olive) and do not count,
     except carrot seed and coriander, whose seed oils are essential oils."""
-    u = re.sub(r"\(.*?\)", " ", (name or "").upper())
+    full = (name or "").upper()
+    # the label itself says essential oil(s) ("Cedarwood Essential Oils", "fragrance (essential
+    # oils)", "pure essential oils"); coconut is a fixed oil whatever a label calls it (2026-10-25 review)
+    if re.search(r"\bESSENTIAL OILS?\b", full) and not re.search(r"\bCOCO(NUT|S)\b", full):
+        return True
+    u = re.sub(r"\(.*?\)", " ", full)
     if not re.search(r"\bOIL\b", u) or re.search(r"HYDROGENATED|UNSAPONIFIABLE|\bPEG\b|GLYCERIDE|ESTER", u):
         return False
     w = re.findall(r"[A-Z]+", u)

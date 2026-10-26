@@ -106,7 +106,7 @@ class Engine:
                 fs.discard(f)
         # an essential oil is an oil: an extract, a flower water (hydrosol) or a resin is not one,
         # whatever v3.1 decided for the name (rules v3.3)
-        if "essential_oil" in fs and not re.search(r"\bOIL\b|\bOLEUM\b", name.upper()):
+        if "essential_oil" in fs and not re.search(r"\bOILS?\b|\bOLEUM\b", name.upper()):
             fs.discard("essential_oil")
         # a seed, kernel or nut oil is a fixed oil (chia, sunflower), not an essential oil,
         # whatever name v3.1 matched it to (2026-10-22 audit: Salvia hispanica seed oil)

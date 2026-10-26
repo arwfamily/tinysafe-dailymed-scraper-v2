@@ -7,6 +7,12 @@
    "why": "An independent review of the check found warnings stronger than their sources, and a few green checks the label did not support. Every sentence on the card was then checked against its source by two further independent reviewers."
   },
   {
+   "version": "v3.13",
+   "date": "2026-10-25",
+   "change": "An ingredient the label itself calls an essential oil ('Cedarwood Essential Oils', 'fragrance (essential oils)') now counts as an essential oil even when the plant is not on our list; coconut stays a fixed oil whatever a label calls it.",
+   "why": "An independent review found a few labels naming essential oils that the check missed and showed 'No fragrance listed'."
+  },
+  {
    "version": "v3.12",
    "date": "2026-10-24",
    "change": "Every label read once from its package artwork (5,388) was checked again by a second, independent reader. 4,555 matched; a match read with full confidence makes the label's evidence two agreeing reads (tier A: 6,229 labels, up from 2,087). Where the two readers differed, a third reader who was told neither answer settled Broad Spectrum and ingredient names: a fact two of three readers saw is used (Broad Spectrum now shown for 205 more labels; names printed on the package added to 81 lists, never taking one away). A filer's placeholder in the ingredient field ('Please kindly refer to artwork') is not shown as an ingredient; one product filed with hundreds of inactives is not shown a list. Methylparaben and Ethylparaben, or Ceteareth-10 and Ceteareth-20, are no longer taken for spelling variants of each other.",

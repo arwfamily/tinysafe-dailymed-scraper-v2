@@ -197,6 +197,16 @@ def test_recall_parent_company_and_spec():
                          acts=acts[:3] + [{"name": "OCTOCRYLENE", "percent": 10}])
 
 
+
+def test_essential_oils_named_on_the_label():
+    import sunnytime_rules as R
+    assert R.is_essential_oil("Cedarwood Essential Oils")
+    assert R.is_essential_oil("fragrance (essential oils)")
+    assert R.is_essential_oil("Vanilla plantifolia (Vanilla essential oil)")
+    assert not R.is_essential_oil("Cocos nucifera (Coconut essential oil)")
+    assert not R.is_essential_oil("Helianthus Annuus Seed Oil")
+    assert not R.is_essential_oil("Lavandula Angustifolia Flower Extract")
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
