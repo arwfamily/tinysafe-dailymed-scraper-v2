@@ -62,6 +62,9 @@ RETIRED = {   # flag -> the cited names that no longer give it (rules v3.3, 2026
     "adult_active": re.compile(r"GLYCOLIC ACID ?COPOLYMER", re.I),
     # 2026-10-25 final audit: only expressed peel (or whole-fruit) oils carry furocoumarins; seed oils,
     # flower oils (neroli), leaf/twig oils (petitgrain) and sweet orange do not
+    # 2026-10-25 rules v3.13: a name the label calls an essential oil now gives "essential_oil" (the card shows
+    # "Contains essential oil"), so the dictionary no longer adds "fragrance" for the same name
+    "fragrance": re.compile(r"^(?!.*(FRAGRANCE|PARFUM|PERFUME)).*\bESSENTIAL OILS?\b", re.I),
     "citrus_photosensitizer": re.compile(r"^(?:(?!\(filed with).)*\b(SEED|FLOWER|BLOSSOM|NEROLI|DULCIS|LEAF|TWIG|PETITGRAIN)\b", re.I),
 }
 # product-level flags whose rule changed on purpose (rules v3.6, 2026-10-23 label audit):
