@@ -53,7 +53,7 @@
   },
   "fda_voices": {
    "org": "FDA",
-   "title": "Shedding More Light on Sunscreen Absorption (FDA Voices)",
+   "title": "Shedding New Light on Sunscreen Absorption (FDA Voices)",
    "url": "https://www.fda.gov/news-events/fda-voices-perspectives-fda-experts/shedding-new-light-sunscreen-absorption/",
    "date": "2019",
    "strength": "agency commentary"
@@ -137,7 +137,7 @@
   },
   "aap_uv": {
    "org": "American Academy of Pediatrics",
-   "title": "Ultraviolet Radiation Exposure (Council on Environmental Health)",
+   "title": "Ultraviolet Radiation Exposure",
    "url": "https://www.aap.org/en/patient-care/environmental-health/promoting-healthy-environments-for-children/ultraviolet-radiation/",
    "date": "updated 2024-01-10",
    "strength": "medical society guidance"
@@ -464,6 +464,34 @@
    "date": "accessed 2026-10",
    "strength": "manufacturer information"
   },
+  "tga_4mbc_2026": {
+   "org": "Australia TGA",
+   "title": "Safety review of 4-methylbenzylidene camphor (4-MBC)",
+   "url": "https://www.tga.gov.au/sites/default/files/2026-09/safety-review-4-methylbenzylidene-camphor-4-mbc.pdf",
+   "date": "2026-09",
+   "strength": "agency review"
+  },
+  "cir_salicylates_2025": {
+   "org": "Expert Panel for Cosmetic Ingredient Safety (CIR)",
+   "title": "Amended safety assessment of salicylic acid and salicylates, Int J Toxicol 44:5S-57S",
+   "url": "https://doi.org/10.1177/10915818251389456",
+   "date": "2025",
+   "strength": "industry-funded expert safety panel"
+  },
+  "eu_mci_mi": {
+   "org": "European Union",
+   "title": "Regulation (EU) 1003/2014 (MCI/MI mixture)",
+   "url": "https://eur-lex.europa.eu/eli/reg/2014/1003/oj",
+   "date": "2014-09-18, applies 2015-07-16",
+   "strength": "EU law"
+  },
+  "fda_parabens": {
+   "org": "FDA",
+   "title": "Parabens in Cosmetics",
+   "url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/parabens-cosmetics",
+   "date": "current as of 2025-11-18",
+   "strength": "agency guidance"
+  },
   "tga_args": {
    "org": "Australia TGA",
    "title": "Australian Regulatory Guidelines for Sunscreens v3.0, permitted actives",
@@ -510,7 +538,7 @@
    "org": "FDA",
    "title": "OTC Monograph M020: sunscreen drug products (list of permitted active ingredients)",
    "url": "https://dps-admin.fda.gov/omuf/sites/omuf/files/monograph-documents/2022-09/OTCMonograph_M020-SunscreenDrugProductsforOTCHumanUse09242021.pdf",
-   "date": "2021-09-24, amended 2026",
+   "date": "posted 2021-09-24 (FDA has amended the monograph since)",
    "strength": "federal monograph"
   },
   "cfr_330_1": {
@@ -834,17 +862,21 @@
      "s": "aap_maguiness"
     },
     {
-     "t": "FDA lists aerosol sunscreens among products recalled for benzene contamination; benzene is a contaminant, so it would not be listed on a label.",
+     "t": "FDA lists aerosol sunscreens among products recalled for benzene contamination; FDA says benzene is not usually used to make drugs, so it appears as a contaminant.",
      "s": "fda_benzene_faq"
     },
     {
-     "t": "The inhalation caution also applies to mineral sprays: the EU does not allow nano zinc oxide or nano titanium dioxide in products that could expose the lungs by inhalation, such as sprays.",
+     "t": "In the EU, nano zinc oxide may not be used in applications that could expose the user's lungs by inhalation.",
      "s": "eu_nano_zno"
+    },
+    {
+     "t": "The same EU condition applies to nano titanium dioxide.",
+     "s": "eu_nano_tio2"
     }
    ],
    "other_side": [
     {
-     "t": "FDA's 2021 proposal would keep sprays as an allowed sunscreen form, subject to testing to limit inhalation risk.",
+     "t": "FDA's 2021 proposal would keep sprays as an allowed sunscreen form, subject to testing and labeling requirements.",
      "s": "fda_qa_2021"
     }
    ]
@@ -855,7 +887,7 @@
    "title": "Age limits",
    "facts": [
     {
-     "t": "US sunscreen labeling rules require the directions to say “children under 6 months: Ask a doctor.”",
+     "t": "US sunscreen labeling rules require the directions to say “children under 6 months of age: Ask a doctor.”",
      "s": "cfr_201_327"
     },
     {
@@ -888,11 +920,9 @@
     {
      "t": "The AAD does not recommend sunscreen with insect repellent either.",
      "s": "aad_faq"
-    }
-   ],
-   "other_side": [
+    },
     {
-     "t": "Health Canada says sunscreen and insect repellent can be used safely together: apply the sunscreen first, then the repellent.",
+     "t": "Health Canada says sunscreen and insect repellent can be used safely together as separate products: apply the sunscreen first, then the repellent.",
      "s": "hc_tips"
     }
    ]
@@ -937,7 +967,7 @@
      "s": "aap_sun"
     },
     {
-     "t": "The EU limits oxybenzone to 6% in face, hand and lip products and 2.2% in body products and sprays.",
+     "t": "The EU limits oxybenzone to 6% in face, hand and lip products (not sprays) and 2.2% in body products, including sprays.",
      "s": "eu_2022_1176"
     },
     {
@@ -995,7 +1025,7 @@
    "title": "Octocrylene",
    "facts": [
     {
-     "t": "A 2021 study found benzophenone in all 15 octocrylene sunscreens tested, rising as the products aged.",
+     "t": "A 2021 study found benzophenone in the octocrylene-containing sunscreens and skin-care products it tested, and levels rose after an accelerated-aging test.",
      "s": "downs_2021"
     },
     {
@@ -1007,7 +1037,7 @@
      "s": "eu_2022_1176"
     },
     {
-     "t": "Australia's TGA recommended limiting benzophenone in sunscreens to 383 ppm.",
+     "t": "In a 2025 safety review, Australia's TGA recommended limiting benzophenone in sunscreens to 383 ppm; this is a recommendation, not yet a final rule.",
      "s": "tga_bp"
     }
    ],
@@ -1048,7 +1078,7 @@
    ],
    "other_side": [
     {
-     "t": "The AAD recommends SPF 30 or higher, with no upper limit.",
+     "t": "The AAD recommends SPF 30 or higher; it says higher SPFs block slightly more UVB rays, but no sunscreen blocks 100%.",
      "s": "aad_faq"
     }
    ]
@@ -1083,7 +1113,7 @@
      "s": "vantage_tds"
     },
     {
-     "t": "Butyloctyl and tridecyl salicylate are salicylates, the same chemical group as the approved filters octisalate and homosalate; the Cosmetic Ingredient Review assessed them together.",
+     "t": "Butyloctyl and tridecyl salicylate are salicylates, the same chemical group as the approved filters octisalate and homosalate; the Cosmetic Ingredient Review assessed them together with octisalate (ethylhexyl salicylate).",
      "s": "cir_salicylates"
     }
    ],
@@ -1091,6 +1121,10 @@
     {
      "t": "A 2003 Cosmetic Ingredient Review assessment that covered butyloctyl and tridecyl salicylate found these ingredients safe in cosmetics when formulated to avoid skin irritation and increased sun sensitivity (or with directions for daily sun protection).",
      "s": "cir_salicylates"
+    },
+    {
+     "t": "In 2025 the panel re-reviewed salicylic acid and 17 salicylates and found them safe as currently used in cosmetics when formulated to be non-irritating and non-sensitizing.",
+     "s": "cir_salicylates_2025"
     },
     {
      "t": "Hallstar says butyloctyl salicylate is “not a sunscreen active ingredient but rather a unique cosmetic ester”.",
@@ -1119,8 +1153,12 @@
    ],
    "other_side": [
     {
-     "t": "Australia still listed it as a permitted sunscreen filter (up to 4%) in its 2023 guidelines.",
+     "t": "Australia's 2023 sunscreen guidelines permitted it up to 4%.",
      "s": "tga_args"
+    },
+    {
+     "t": "Australia's TGA published a new safety review of it in September 2026.",
+     "s": "tga_4mbc_2026"
     }
    ]
   },
@@ -1186,7 +1224,7 @@
    "title": "Lavender or tea tree oil",
    "facts": [
     {
-     "t": "A 2007 report described three healthy boys whose breast growth started while using lavender or tea tree oil products and stopped when the products were stopped.",
+     "t": "A 2007 report described three healthy boys whose breast growth started while using products containing lavender oil (in one case also tea tree oil) and stopped when the products were stopped.",
      "s": "nejm_2007"
     },
     {
@@ -1212,6 +1250,10 @@
     {
      "t": "The EU has banned methylisothiazolinone in leave-on cosmetics since February 12, 2017, because no safe level for causing skin allergy was shown.",
      "s": "eu_mi"
+    },
+    {
+     "t": "The EU has banned the MCI/MI mixture in leave-on cosmetics since 2015.",
+     "s": "eu_mci_mi"
     }
    ]
   },
@@ -1240,6 +1282,10 @@
     {
      "t": "Outside diaper-area products for young children, EU law allows propyl- and butylparaben up to 0.14% combined, a limit set on the EU scientific committee's safety advice.",
      "s": "eu_parabens_diaper"
+    },
+    {
+     "t": "FDA: “At this time, we do not have information showing that parabens as they are used in cosmetics have an effect on human health.”",
+     "s": "fda_parabens"
     }
    ]
   },
