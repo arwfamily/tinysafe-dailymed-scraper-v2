@@ -1,0 +1,7708 @@
+{
+ "accepted": {
+  "D&C RED No. 36 (may contain)": {
+   "name": "D&C RED No. 36 (may contain)",
+   "kind": "INCI",
+   "inci": "CI 12085",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "D&C Red 36 = CI 12085",
+   "read_b": {
+    "name": "D&C RED No. 36 (may contain)",
+    "kind": "INCI",
+    "inci": "CI 12085",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "D&C Red 36"
+   }
+  },
+  "FERRIC AMMONIUM FERROCYANIDE (may contain)": {
+   "name": "FERRIC AMMONIUM FERROCYANIDE (may contain)",
+   "kind": "INCI",
+   "inci": "CI 77510",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "ferric ammonium ferrocyanide = CI 77510 (Prussian blue)",
+   "read_b": {
+    "name": "FERRIC AMMONIUM FERROCYANIDE (may contain)",
+    "kind": "INCI",
+    "inci": "CI 77510",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "ferric ammonium ferrocyanide"
+   }
+  },
+  "ALPHA.-BISABOLOL, (+)-": {
+   "name": "ALPHA.-BISABOLOL, (+)-",
+   "kind": "INCI",
+   "inci": "BISABOLOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "alpha-bisabolol stereoisomer",
+   "read_b": {
+    "name": "ALPHA.-BISABOLOL, (+)-",
+    "kind": "INCI",
+    "inci": "BISABOLOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "alpha-bisabolol"
+   }
+  },
+  "Cetyl Behenate": {
+   "name": "Cetyl Behenate",
+   "kind": "INCI",
+   "inci": "CETYL BEHENATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Cetyl Behenate",
+    "kind": "INCI",
+    "inci": "CETYL BEHENATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "C28-52 Olefin/Undecylenic Acid Copolymer": {
+   "name": "C28-52 Olefin/Undecylenic Acid Copolymer",
+   "kind": "INCI",
+   "inci": "C28-52 OLEFIN/UNDECYLENIC ACID COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "C28-52 Olefin/Undecylenic Acid Copolymer",
+    "kind": "INCI",
+    "inci": "C28-52 OLEFIN/UNDECYLENIC ACID COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "BETA.-CITRONELLOL, (R)-": {
+   "name": "BETA.-CITRONELLOL, (R)-",
+   "kind": "INCI",
+   "inci": "CITRONELLOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "citronellol stereoisomer",
+   "read_b": {
+    "name": "BETA.-CITRONELLOL, (R)-",
+    "kind": "INCI",
+    "inci": "CITRONELLOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "ALPHA.-BISABOLOL, (+/-)-": {
+   "name": "ALPHA.-BISABOLOL, (+/-)-",
+   "kind": "INCI",
+   "inci": "BISABOLOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "racemic alpha-bisabolol",
+   "read_b": {
+    "name": "ALPHA.-BISABOLOL, (+/-)-",
+    "kind": "INCI",
+    "inci": "BISABOLOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "isoamyl cocoate": {
+   "name": "isoamyl cocoate",
+   "kind": "INCI",
+   "inci": "ISOAMYL COCOATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "isoamyl cocoate",
+    "kind": "INCI",
+    "inci": "ISOAMYL COCOATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Oligopeptide-68": {
+   "name": "Oligopeptide-68",
+   "kind": "INCI",
+   "inci": "OLIGOPEPTIDE-68",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Oligopeptide-68",
+    "kind": "INCI",
+    "inci": "OLIGOPEPTIDE-68",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Dimethicone (Licorice) Root Extract": {
+   "name": "Dimethicone (Licorice) Root Extract",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "two ingredients run together (dimethicone + licorice root extract)",
+   "read_b": {
+    "name": "Dimethicone (Licorice) Root Extract",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "two ingredients garbled together"
+   }
+  },
+  "2-Butyloctyl Salicylate": {
+   "name": "2-Butyloctyl Salicylate",
+   "kind": "INCI",
+   "inci": "BUTYLOCTYL SALICYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "2-butyloctyl salicylate",
+   "read_b": {
+    "name": "2-Butyloctyl Salicylate",
+    "kind": "INCI",
+    "inci": "BUTYLOCTYL SALICYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Glycyrrhiza Glabra  Caramel": {
+   "name": "Glycyrrhiza Glabra  Caramel",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "licorice and caramel run together",
+   "read_b": {
+    "name": "Glycyrrhiza Glabra  Caramel",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "two ingredients run together"
+   }
+  },
+  "aqueous extracts of: aloe barbadensis leaf extract": {
+   "name": "aqueous extracts of: aloe barbadensis leaf extract",
+   "kind": "INCI",
+   "inci": "ALOE BARBADENSIS LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "aqueous extracts of: aloe barbadensis leaf extract",
+    "kind": "INCI",
+    "inci": "ALOE BARBADENSIS LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Picea Abies Wood Extract": {
+   "name": "Picea Abies Wood Extract",
+   "kind": "INCI",
+   "inci": "PICEA ABIES WOOD EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Picea Abies Wood Extract",
+    "kind": "INCI",
+    "inci": "PICEA ABIES WOOD EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "PEG-12 Dimethicone/PPG-20 Crosspolymer": {
+   "name": "PEG-12 Dimethicone/PPG-20 Crosspolymer",
+   "kind": "INCI",
+   "inci": "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "PEG-12 Dimethicone/PPG-20 Crosspolymer",
+    "kind": "INCI",
+    "inci": "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "D&C Red #34": {
+   "name": "D&C Red #34",
+   "kind": "INCI",
+   "inci": "CI 15880",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "D&C Red 34 = CI 15880",
+   "read_b": {
+    "name": "D&C Red #34",
+    "kind": "INCI",
+    "inci": "CI 15880",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "D&C Red 34"
+   }
+  },
+  "POTASSIUM METHOXYSALICYLATE": {
+   "name": "POTASSIUM METHOXYSALICYLATE",
+   "kind": "INCI",
+   "inci": "POTASSIUM METHOXYSALICYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "POTASSIUM METHOXYSALICYLATE",
+    "kind": "INCI",
+    "inci": "POTASSIUM METHOXYSALICYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Polyglyceryl-4 Diisostearate/Polyhydroxystearate/Sebac": {
+   "name": "Polyglyceryl-4 Diisostearate/Polyhydroxystearate/Sebac",
+   "kind": "INCI",
+   "inci": "POLYGLYCERYL-4 DIISOSTEARATE/POLYHYDROXYSTEARATE/SEBACATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "truncated",
+   "read_b": {
+    "name": "Polyglyceryl-4 Diisostearate/Polyhydroxystearate/Sebac",
+    "kind": "INCI",
+    "inci": "POLYGLYCERYL-4 DIISOSTEARATE/POLYHYDROXYSTEARATE/SEBACATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "truncated"
+   }
+  },
+  "polyglyceryl-4 laurate/succinate": {
+   "name": "polyglyceryl-4 laurate/succinate",
+   "kind": "INCI",
+   "inci": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "polyglyceryl-4 laurate/succinate",
+    "kind": "INCI",
+    "inci": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "caprylic/ capric tryglyceride": {
+   "name": "caprylic/ capric tryglyceride",
+   "kind": "INCI",
+   "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "caprylic/ capric tryglyceride",
+    "kind": "INCI",
+    "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "*CO Euphrasia Officinalis Extract": {
+   "name": "*CO Euphrasia Officinalis Extract",
+   "kind": "INCI",
+   "inci": "EUPHRASIA OFFICINALIS EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "*CO Euphrasia Officinalis Extract",
+    "kind": "INCI",
+    "inci": "EUPHRASIA OFFICINALIS EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "*CO Centella Asiatica Leaf Extract": {
+   "name": "*CO Centella Asiatica Leaf Extract",
+   "kind": "INCI",
+   "inci": "CENTELLA ASIATICA LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "*CO Centella Asiatica Leaf Extract",
+    "kind": "INCI",
+    "inci": "CENTELLA ASIATICA LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "*CO Glycerin": {
+   "name": "*CO Glycerin",
+   "kind": "INCI",
+   "inci": "GLYCERIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "*CO Glycerin",
+    "kind": "INCI",
+    "inci": "GLYCERIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "DISTEARYL PHTHALAMIC ACID": {
+   "name": "DISTEARYL PHTHALAMIC ACID",
+   "kind": "INCI",
+   "inci": "DISTEARYL PHTHALIC ACID AMIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "N,N-distearyl phthalamic acid",
+   "read_b": {
+    "name": "DISTEARYL PHTHALAMIC ACID",
+    "kind": "INCI",
+    "inci": "DISTEARYL PHTHALIC ACID AMIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "phthalamic acid = phthalic acid monoamide"
+   }
+  },
+  "Isopropylbenzyl Salicylate": {
+   "name": "Isopropylbenzyl Salicylate",
+   "kind": "INCI",
+   "inci": "ISOPROPYLBENZYL SALICYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Isopropylbenzyl Salicylate",
+    "kind": "INCI",
+    "inci": "ISOPROPYLBENZYL SALICYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Butyl Caprylyl Salicylate": {
+   "name": "Butyl Caprylyl Salicylate",
+   "kind": "INCI",
+   "inci": "BUTYLOCTYL SALICYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "probably garbled butyloctyl salicylate",
+   "read_b": {
+    "name": "Butyl Caprylyl Salicylate",
+    "kind": "INCI",
+    "inci": "BUTYLOCTYL SALICYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "probable typo of butyloctyl salicylate"
+   }
+  },
+  "LUTEIN": {
+   "name": "LUTEIN",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "antioxidant",
+   "confidence": "low",
+   "note": "lutein not listed in CosIng",
+   "read_b": {
+    "name": "LUTEIN",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "antioxidant",
+    "confidence": "low",
+    "note": "lutein; only XANTHOPHYLLS (broader) in CosIng"
+   }
+  },
+  "sodium thiosulfate": {
+   "name": "sodium thiosulfate",
+   "kind": "INCI",
+   "inci": "SODIUM THIOSULFATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "sodium thiosulfate",
+    "kind": "INCI",
+    "inci": "SODIUM THIOSULFATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Biocomplex2™ [Euterpe Oleracea (Acai)": {
+   "name": "Biocomplex2™ [Euterpe Oleracea (Acai)",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Euterpe oleracea",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "Biocomplex2™ [Euterpe Oleracea (Acai)",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Euterpe oleracea",
+    "category": null,
+    "confidence": "high",
+    "note": "acai, part cut off"
+   }
+  },
+  "Hydrogenated Polycyclopentadiene": {
+   "name": "Hydrogenated Polycyclopentadiene",
+   "kind": "INCI",
+   "inci": "HYDROGENATED POLYCYCLOPENTADIENE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Hydrogenated Polycyclopentadiene",
+    "kind": "INCI",
+    "inci": "HYDROGENATED POLYCYCLOPENTADIENE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Caprylic/Capri Triglyceride": {
+   "name": "Caprylic/Capri Triglyceride",
+   "kind": "INCI",
+   "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Caprylic/Capri Triglyceride",
+    "kind": "INCI",
+    "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Hydrolyzed Rhodophyceae Extract": {
+   "name": "Hydrolyzed Rhodophyceae Extract",
+   "kind": "INCI",
+   "inci": "HYDROLYZED RHODOPHYCEAE EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Hydrolyzed Rhodophyceae Extract",
+    "kind": "INCI",
+    "inci": "HYDROLYZED RHODOPHYCEAE EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Camilla Sinensis Leaf Extract": {
+   "name": "Camilla Sinensis Leaf Extract",
+   "kind": "INCI",
+   "inci": "CAMELLIA SINENSIS LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Camilla Sinensis Leaf Extract",
+    "kind": "INCI",
+    "inci": "CAMELLIA SINENSIS LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Leaf Extract": {
+   "name": "Leaf Extract",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "Leaf Extract",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "and caprylyl glycol": {
+   "name": "and caprylyl glycol",
+   "kind": "INCI",
+   "inci": "CAPRYLYL GLYCOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "and caprylyl glycol",
+    "kind": "INCI",
+    "inci": "CAPRYLYL GLYCOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "ethylexyiglycerin": {
+   "name": "ethylexyiglycerin",
+   "kind": "INCI",
+   "inci": "ETHYLHEXYLGLYCERIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "ethylexyiglycerin",
+    "kind": "INCI",
+    "inci": "ETHYLHEXYLGLYCERIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Trans-1,3": {
+   "name": "Trans-1,3",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment of trans-1,3,3,3-tetrafluoropropene",
+   "read_b": {
+    "name": "Trans-1,3",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment of trans-1,3,3,3-tetrafluoropropene"
+   }
+  },
+  "Glitter: Polyethylene Terephthalate": {
+   "name": "Glitter: Polyethylene Terephthalate",
+   "kind": "INCI",
+   "inci": "POLYETHYLENE TEREPHTHALATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Glitter: Polyethylene Terephthalate",
+    "kind": "INCI",
+    "inci": "POLYETHYLENE TEREPHTHALATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Isoamyl Cocoate": {
+   "name": "Isoamyl Cocoate",
+   "kind": "INCI",
+   "inci": "ISOAMYL COCOATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Isoamyl Cocoate",
+    "kind": "INCI",
+    "inci": "ISOAMYL COCOATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Rhus Verniciflua Peel Wax": {
+   "name": "Rhus Verniciflua Peel Wax",
+   "kind": "INCI",
+   "inci": "RHUS VERNICIFLUA PEEL WAX",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Rhus Verniciflua Peel Wax",
+    "kind": "INCI",
+    "inci": "RHUS VERNICIFLUA PEEL WAX",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Sunflower Lecithin": {
+   "name": "Sunflower Lecithin",
+   "kind": "INCI",
+   "inci": "LECITHIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "lecithin from sunflower",
+   "read_b": {
+    "name": "Sunflower Lecithin",
+    "kind": "INCI",
+    "inci": "LECITHIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "lecithin from sunflower"
+   }
+  },
+  "Polyglycerol Fatty Acid Esters": {
+   "name": "Polyglycerol Fatty Acid Esters",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "emulsifier",
+   "confidence": "low",
+   "note": "generic class, degree not given",
+   "read_b": {
+    "name": "Polyglycerol Fatty Acid Esters",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "emulsifier",
+    "confidence": "low",
+    "note": "generic class name"
+   }
+  },
+  "Vanilla (Vanilla planifolia) Flavor": {
+   "name": "Vanilla (Vanilla planifolia) Flavor",
+   "kind": "INCI",
+   "inci": "AROMA",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "flavor = AROMA",
+   "read_b": {
+    "name": "Vanilla (Vanilla planifolia) Flavor",
+    "kind": "INCI",
+    "inci": "AROMA",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "flavor = AROMA in EU INCI"
+   }
+  },
+  "c12-15 akyl benzoate": {
+   "name": "c12-15 akyl benzoate",
+   "kind": "INCI",
+   "inci": "C12-15 ALKYL BENZOATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "c12-15 akyl benzoate",
+    "kind": "INCI",
+    "inci": "C12-15 ALKYL BENZOATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "HIBISCUS ABELMOSCHUSS SEED EXTRACT": {
+   "name": "HIBISCUS ABELMOSCHUSS SEED EXTRACT",
+   "kind": "INCI",
+   "inci": "HIBISCUS ABELMOSCHUS SEED EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "HIBISCUS ABELMOSCHUSS SEED EXTRACT",
+    "kind": "INCI",
+    "inci": "HIBISCUS ABELMOSCHUS SEED EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "hydrgenated castor oil": {
+   "name": "hydrgenated castor oil",
+   "kind": "INCI",
+   "inci": "HYDROGENATED CASTOR OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "hydrgenated castor oil",
+    "kind": "INCI",
+    "inci": "HYDROGENATED CASTOR OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Calendula Officinalis": {
+   "name": "Calendula Officinalis",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Calendula officinalis",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "Calendula Officinalis",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Calendula officinalis",
+    "category": null,
+    "confidence": "high",
+    "note": "part/preparation not stated"
+   }
+  },
+  "Quercus Alba (Oak Bark) Extract": {
+   "name": "Quercus Alba (Oak Bark) Extract",
+   "kind": "INCI",
+   "inci": "QUERCUS ALBA BARK EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Quercus Alba (Oak Bark) Extract",
+    "kind": "INCI",
+    "inci": "QUERCUS ALBA BARK EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Laurylmethicone Copolyol": {
+   "name": "Laurylmethicone Copolyol",
+   "kind": "INCI",
+   "inci": "LAURYL PEG/PPG-18/18 METHICONE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "old name laurylmethicone copolyol",
+   "read_b": {
+    "name": "Laurylmethicone Copolyol",
+    "kind": "INCI",
+    "inci": "LAURYL PEG/PPG-18/18 METHICONE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "old CTFA name laurylmethicone copolyol"
+   }
+  },
+  "FD&C RED NO. 4": {
+   "name": "FD&C RED NO. 4",
+   "kind": "INCI",
+   "inci": "CI 14700",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "FD&C Red 4 = CI 14700",
+   "read_b": {
+    "name": "FD&C RED NO. 4",
+    "kind": "INCI",
+    "inci": "CI 14700",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "FD&C Red 4"
+   }
+  },
+  "Sambucus Nigra (Elderberry) Seed Oil": {
+   "name": "Sambucus Nigra (Elderberry) Seed Oil",
+   "kind": "INCI",
+   "inci": "SAMBUCUS NIGRA SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Sambucus Nigra (Elderberry) Seed Oil",
+    "kind": "INCI",
+    "inci": "SAMBUCUS NIGRA SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "sh-Polypeptide-11": {
+   "name": "sh-Polypeptide-11",
+   "kind": "INCI",
+   "inci": "SH-POLYPEPTIDE-11",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "sh-Polypeptide-11",
+    "kind": "INCI",
+    "inci": "SH-POLYPEPTIDE-11",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Aluminim Starch Octenylsuccinate": {
+   "name": "Aluminim Starch Octenylsuccinate",
+   "kind": "INCI",
+   "inci": "ALUMINUM STARCH OCTENYLSUCCINATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Aluminim Starch Octenylsuccinate",
+    "kind": "INCI",
+    "inci": "ALUMINUM STARCH OCTENYLSUCCINATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Methylaminoethanol": {
+   "name": "Methylaminoethanol",
+   "kind": "INCI",
+   "inci": "METHYLETHANOLAMINE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "N-methylaminoethanol",
+   "read_b": {
+    "name": "Methylaminoethanol",
+    "kind": "INCI",
+    "inci": "METHYLETHANOLAMINE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "N-methylaminoethanol"
+   }
+  },
+  "Verbascum Thapus (Mullein) Extract": {
+   "name": "Verbascum Thapus (Mullein) Extract",
+   "kind": "INCI",
+   "inci": "VERBASCUM THAPSUS EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Verbascum Thapus (Mullein) Extract",
+    "kind": "INCI",
+    "inci": "VERBASCUM THAPSUS EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Sodium Stearoyl Lacylate": {
+   "name": "Sodium Stearoyl Lacylate",
+   "kind": "INCI",
+   "inci": "SODIUM STEAROYL LACTYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Sodium Stearoyl Lacylate",
+    "kind": "INCI",
+    "inci": "SODIUM STEAROYL LACTYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Neem Oil": {
+   "name": "Neem Oil",
+   "kind": "INCI",
+   "inci": "MELIA AZADIRACHTA SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "neem oil",
+   "read_b": {
+    "name": "Neem Oil",
+    "kind": "INCI",
+    "inci": "MELIA AZADIRACHTA SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "neem oil"
+   }
+  },
+  "Sodium Argon": {
+   "name": "Sodium Argon",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "garbled",
+   "read_b": {
+    "name": "Sodium Argon",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "garbled"
+   }
+  },
+  "Marula (Sclerocarya Birrea) Seed Oil": {
+   "name": "Marula (Sclerocarya Birrea) Seed Oil",
+   "kind": "INCI",
+   "inci": "SCLEROCARYA BIRREA SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Marula (Sclerocarya Birrea) Seed Oil",
+    "kind": "INCI",
+    "inci": "SCLEROCARYA BIRREA SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Tris(Tetramethylhy- droxypiperidinol) Citrate": {
+   "name": "Tris(Tetramethylhy- droxypiperidinol) Citrate",
+   "kind": "INCI",
+   "inci": "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Tris(Tetramethylhy- droxypiperidinol) Citrate",
+    "kind": "INCI",
+    "inci": "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Saccharomyces/Selenium Ferment": {
+   "name": "Saccharomyces/Selenium Ferment",
+   "kind": "INCI",
+   "inci": "SACCHAROMYCES/SELENIUM FERMENT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Saccharomyces/Selenium Ferment",
+    "kind": "INCI",
+    "inci": "SACCHAROMYCES/SELENIUM FERMENT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "COCAMIDOPROPYLAMINE DIMETHYLAMINE": {
+   "name": "COCAMIDOPROPYLAMINE DIMETHYLAMINE",
+   "kind": "INCI",
+   "inci": "COCAMIDOPROPYL DIMETHYLAMINE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "garbled",
+   "read_b": {
+    "name": "COCAMIDOPROPYLAMINE DIMETHYLAMINE",
+    "kind": "INCI",
+    "inci": "COCAMIDOPROPYL DIMETHYLAMINE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "garbled name"
+   }
+  },
+  "CIS-B-OCIMENE": {
+   "name": "CIS-B-OCIMENE",
+   "kind": "INCI",
+   "inci": "OCIMENE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "cis-beta isomer of ocimene",
+   "read_b": {
+    "name": "CIS-B-OCIMENE",
+    "kind": "INCI",
+    "inci": "OCIMENE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "cis-beta isomer of ocimene"
+   }
+  },
+  "4-TERPINENOL": {
+   "name": "4-TERPINENOL",
+   "kind": "INCI",
+   "inci": "4-TERPINEOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "terpinen-4-ol",
+   "read_b": {
+    "name": "4-TERPINENOL",
+    "kind": "INCI",
+    "inci": "4-TERPINEOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "terpinen-4-ol"
+   }
+  },
+  "DEA-Ceryl Phosphate": {
+   "name": "DEA-Ceryl Phosphate",
+   "kind": "INCI",
+   "inci": "DEA-CETYL PHOSPHATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "DEA-Ceryl Phosphate",
+    "kind": "INCI",
+    "inci": "DEA-CETYL PHOSPHATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "VP/Acrylates/Lauryl Methacrylate Copolymer": {
+   "name": "VP/Acrylates/Lauryl Methacrylate Copolymer",
+   "kind": "INCI",
+   "inci": "VP/ACRYLATES/LAURYL METHACRYLATE COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "VP/Acrylates/Lauryl Methacrylate Copolymer",
+    "kind": "INCI",
+    "inci": "VP/ACRYLATES/LAURYL METHACRYLATE COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Marula Seed Oil": {
+   "name": "Marula Seed Oil",
+   "kind": "INCI",
+   "inci": "SCLEROCARYA BIRREA SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "marula seed oil",
+   "read_b": {
+    "name": "Marula Seed Oil",
+    "kind": "INCI",
+    "inci": "SCLEROCARYA BIRREA SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Citrus Reticulata (Tangerine) Peel": {
+   "name": "Citrus Reticulata (Tangerine) Peel",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Citrus reticulata",
+   "category": null,
+   "confidence": "high",
+   "note": "peel, preparation not specified",
+   "read_b": {
+    "name": "Citrus Reticulata (Tangerine) Peel",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Citrus reticulata",
+    "category": null,
+    "confidence": "high",
+    "note": "peel, preparation not stated"
+   }
+  },
+  "sebacic": {
+   "name": "sebacic",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment (sebacic acid/sebacate)",
+   "read_b": {
+    "name": "sebacic",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "avena sativa (oat)": {
+   "name": "avena sativa (oat)",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Avena sativa",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "avena sativa (oat)",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Avena sativa",
+    "category": null,
+    "confidence": "high",
+    "note": "part/preparation not stated"
+   }
+  },
+  "kernel extract": {
+   "name": "kernel extract",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "kernel extract",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "trifluoromethyl C1-C4alkyl dimethicone": {
+   "name": "trifluoromethyl C1-C4alkyl dimethicone",
+   "kind": "INCI",
+   "inci": "TRIFLUOROMETHYL C1-4 ALKYL DIMETHICONE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "trifluoromethyl C1-C4alkyl dimethicone",
+    "kind": "INCI",
+    "inci": "TRIFLUOROMETHYL C1-4 ALKYL DIMETHICONE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Erythrulose": {
+   "name": "Erythrulose",
+   "kind": "INCI",
+   "inci": "ERYTHRULOSE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Erythrulose",
+    "kind": "INCI",
+    "inci": "ERYTHRULOSE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Hydrolysed Soy Protein": {
+   "name": "Hydrolysed Soy Protein",
+   "kind": "INCI",
+   "inci": "HYDROLYZED SOY PROTEIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Hydrolysed Soy Protein",
+    "kind": "INCI",
+    "inci": "HYDROLYZED SOY PROTEIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Cedarwood Essential Oils": {
+   "name": "Cedarwood Essential Oils",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "cedarwood",
+   "category": null,
+   "confidence": "low",
+   "note": "several species possible",
+   "read_b": {
+    "name": "Cedarwood Essential Oils",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "cedarwood",
+    "category": null,
+    "confidence": "low",
+    "note": "species ambiguous"
+   }
+  },
+  "sh-Polypeptide-11 (FGF-1)": {
+   "name": "sh-Polypeptide-11 (FGF-1)",
+   "kind": "INCI",
+   "inci": "SH-POLYPEPTIDE-11",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "sh-Polypeptide-11 (FGF-1)",
+    "kind": "INCI",
+    "inci": "SH-POLYPEPTIDE-11",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "DEA-CERYL PHOSPHATE": {
+   "name": "DEA-CERYL PHOSPHATE",
+   "kind": "INCI",
+   "inci": "DEA-CETYL PHOSPHATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "DEA-CERYL PHOSPHATE",
+    "kind": "INCI",
+    "inci": "DEA-CETYL PHOSPHATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "KALAYA OIL": {
+   "name": "KALAYA OIL",
+   "kind": "INCI",
+   "inci": "EMU OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "Kalaya is an emu oil brand",
+   "read_b": {
+    "name": "KALAYA OIL",
+    "kind": "INCI",
+    "inci": "EMU OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "Kalaya is an emu oil brand"
+   }
+  },
+  "Pentasodium Tetracarboxymethyl Heptadecanoyl Dipeptide-12": {
+   "name": "Pentasodium Tetracarboxymethyl Heptadecanoyl Dipeptide-12",
+   "kind": "INCI",
+   "inci": "PENTASODIUM TETRACARBOXYMETHYL HEPTADECANOYL DIPEPTIDE-12",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Pentasodium Tetracarboxymethyl Heptadecanoyl Dipeptide-12",
+    "kind": "INCI",
+    "inci": "PENTASODIUM TETRACARBOXYMETHYL HEPTADECANOYL DIPEPTIDE-12",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "BUDDLEJA OFFICINALIS EXTRACT": {
+   "name": "BUDDLEJA OFFICINALIS EXTRACT",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Buddleja officinalis",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "BUDDLEJA OFFICINALIS EXTRACT",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Buddleja officinalis",
+    "category": null,
+    "confidence": "high",
+    "note": "flower or leaf not stated"
+   }
+  },
+  "Artemisia Capillaris Extract": {
+   "name": "Artemisia Capillaris Extract",
+   "kind": "INCI",
+   "inci": "ARTEMISIA CAPILLARIS EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Artemisia Capillaris Extract",
+    "kind": "INCI",
+    "inci": "ARTEMISIA CAPILLARIS EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE": {
+   "name": "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+   "kind": "INCI",
+   "inci": "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+    "kind": "INCI",
+    "inci": "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Organic Phytonutrient Blend™ [Aloe Barbadensis (Aloe) Juice": {
+   "name": "Organic Phytonutrient Blend™ [Aloe Barbadensis (Aloe) Juice",
+   "kind": "INCI",
+   "inci": "ALOE BARBADENSIS LEAF JUICE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Organic Phytonutrient Blend™ [Aloe Barbadensis (Aloe) Juice",
+    "kind": "INCI",
+    "inci": "ALOE BARBADENSIS LEAF JUICE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "C12-15": {
+   "name": "C12-15",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "C12-15",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "C9-15 FLUOROALCOHOL PHOSPHATES": {
+   "name": "C9-15 FLUOROALCOHOL PHOSPHATES",
+   "kind": "INCI",
+   "inci": "C9-15 FLUOROALCOHOL PHOSPHATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "C9-15 FLUOROALCOHOL PHOSPHATES",
+    "kind": "INCI",
+    "inci": "C9-15 FLUOROALCOHOL PHOSPHATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "rhus verniciflua peel wax": {
+   "name": "rhus verniciflua peel wax",
+   "kind": "INCI",
+   "inci": "RHUS VERNICIFLUA PEEL WAX",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "rhus verniciflua peel wax",
+    "kind": "INCI",
+    "inci": "RHUS VERNICIFLUA PEEL WAX",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "alpha-bisabolol": {
+   "name": "alpha-bisabolol",
+   "kind": "INCI",
+   "inci": "BISABOLOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "alpha-bisabolol",
+    "kind": "INCI",
+    "inci": "BISABOLOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Vinylchloride-methylacrylate copolymer": {
+   "name": "Vinylchloride-methylacrylate copolymer",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "film former",
+   "confidence": "low",
+   "note": "vinyl chloride/methyl acrylate copolymer not in CosIng",
+   "read_b": {
+    "name": "Vinylchloride-methylacrylate copolymer",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "film former",
+    "confidence": "low",
+    "note": "vinyl chloride/methyl acrylate copolymer"
+   }
+  },
+  "DELTA.-TOCOPHEROL": {
+   "name": "DELTA.-TOCOPHEROL",
+   "kind": "INCI",
+   "inci": "TOCOPHEROL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "delta isomer; INCI tocopherol covers tocopherols",
+   "read_b": {
+    "name": "DELTA.-TOCOPHEROL",
+    "kind": "INCI",
+    "inci": "TOCOPHEROL",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "delta isomer"
+   }
+  },
+  "Phenoxyethyl Caprylate": {
+   "name": "Phenoxyethyl Caprylate",
+   "kind": "INCI",
+   "inci": "PHENOXYETHYL CAPRYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Phenoxyethyl Caprylate",
+    "kind": "INCI",
+    "inci": "PHENOXYETHYL CAPRYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Hippophae Rhamnoides ( Seabuckthorn)": {
+   "name": "Hippophae Rhamnoides ( Seabuckthorn)",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Hippophae rhamnoides",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "Hippophae Rhamnoides ( Seabuckthorn)",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Hippophae rhamnoides",
+    "category": null,
+    "confidence": "high",
+    "note": "part/preparation not stated"
+   }
+  },
+  "thermus thermophilus ferment": {
+   "name": "thermus thermophilus ferment",
+   "kind": "INCI",
+   "inci": "THERMUS THERMOPHILLUS FERMENT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "thermus thermophilus ferment",
+    "kind": "INCI",
+    "inci": "THERMUS THERMOPHILLUS FERMENT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "CosIng spelling"
+   }
+  },
+  "TOXICODENDRON VERNICIFLUUM FRUIT RIND WAX": {
+   "name": "TOXICODENDRON VERNICIFLUUM FRUIT RIND WAX",
+   "kind": "INCI",
+   "inci": "RHUS VERNICIFLUA PEEL WAX",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "Toxicodendron vernicifluum = Rhus verniciflua",
+   "read_b": {
+    "name": "TOXICODENDRON VERNICIFLUUM FRUIT RIND WAX",
+    "kind": "INCI",
+    "inci": "RHUS VERNICIFLUA PEEL WAX",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "synonym"
+   }
+  },
+  "RHUS VERNICIFLUA PEEL WAX": {
+   "name": "RHUS VERNICIFLUA PEEL WAX",
+   "kind": "INCI",
+   "inci": "RHUS VERNICIFLUA PEEL WAX",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "RHUS VERNICIFLUA PEEL WAX",
+    "kind": "INCI",
+    "inci": "RHUS VERNICIFLUA PEEL WAX",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "CURRANT": {
+   "name": "CURRANT",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "currant",
+   "category": null,
+   "confidence": "low",
+   "note": "Ribes species not given",
+   "read_b": {
+    "name": "CURRANT",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "currant",
+    "category": null,
+    "confidence": "low",
+    "note": "Ribes species ambiguous"
+   }
+  },
+  "Picea Albies Wood Extract": {
+   "name": "Picea Albies Wood Extract",
+   "kind": "INCI",
+   "inci": "PICEA ABIES WOOD EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Picea Albies Wood Extract",
+    "kind": "INCI",
+    "inci": "PICEA ABIES WOOD EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Tetra(trimethylsiloxy)silane": {
+   "name": "Tetra(trimethylsiloxy)silane",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "silicone",
+   "confidence": "low",
+   "note": "no CosIng entry found",
+   "read_b": {
+    "name": "Tetra(trimethylsiloxy)silane",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "silicone",
+    "confidence": "low",
+    "note": "tetrakis(trimethylsiloxy)silane"
+   }
+  },
+  "Borage Officinalis Seed Oil": {
+   "name": "Borage Officinalis Seed Oil",
+   "kind": "INCI",
+   "inci": "BORAGO OFFICINALIS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Borage Officinalis Seed Oil",
+    "kind": "INCI",
+    "inci": "BORAGO OFFICINALIS SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Camellia Sinenensis Leaf Extract": {
+   "name": "Camellia Sinenensis Leaf Extract",
+   "kind": "INCI",
+   "inci": "CAMELLIA SINENSIS LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Camellia Sinenensis Leaf Extract",
+    "kind": "INCI",
+    "inci": "CAMELLIA SINENSIS LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Laminaria Digita Extract": {
+   "name": "Laminaria Digita Extract",
+   "kind": "INCI",
+   "inci": "LAMINARIA DIGITATA EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Laminaria Digita Extract",
+    "kind": "INCI",
+    "inci": "LAMINARIA DIGITATA EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Polyclyceryl-3 Lactate/Laurate": {
+   "name": "Polyclyceryl-3 Lactate/Laurate",
+   "kind": "INCI",
+   "inci": "POLYGLYCERYL-3 LACTATE/LAURATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Polyclyceryl-3 Lactate/Laurate",
+    "kind": "INCI",
+    "inci": "POLYGLYCERYL-3 LACTATE/LAURATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Polyglyceryl-4 Laurate/Succinate": {
+   "name": "Polyglyceryl-4 Laurate/Succinate",
+   "kind": "INCI",
+   "inci": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Polyglyceryl-4 Laurate/Succinate",
+    "kind": "INCI",
+    "inci": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "erythrulose": {
+   "name": "erythrulose",
+   "kind": "INCI",
+   "inci": "ERYTHRULOSE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "erythrulose",
+    "kind": "INCI",
+    "inci": "ERYTHRULOSE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Rosa spp. Flower Water": {
+   "name": "Rosa spp. Flower Water",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Rosa spp.",
+   "category": null,
+   "confidence": "low",
+   "note": "rose species not given",
+   "read_b": {
+    "name": "Rosa spp. Flower Water",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Rosa",
+    "category": null,
+    "confidence": "low",
+    "note": "species not stated; flower water"
+   }
+  },
+  "Vanilla Fragrance": {
+   "name": "Vanilla Fragrance",
+   "kind": "INCI",
+   "inci": "PARFUM",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Vanilla Fragrance",
+    "kind": "INCI",
+    "inci": "PARFUM",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Tropical Fragrance": {
+   "name": "Tropical Fragrance",
+   "kind": "INCI",
+   "inci": "PARFUM",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Tropical Fragrance",
+    "kind": "INCI",
+    "inci": "PARFUM",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "acrylonitrile/methyl methacrylate/vinylidene chloride copolymer": {
+   "name": "acrylonitrile/methyl methacrylate/vinylidene chloride copolymer",
+   "kind": "INCI",
+   "inci": "ACRYLONITRILE/METHYL METHACRYLATE/VINYLIDENE CHLORIDE COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "acrylonitrile/methyl methacrylate/vinylidene chloride copolymer",
+    "kind": "INCI",
+    "inci": "ACRYLONITRILE/METHYL METHACRYLATE/VINYLIDENE CHLORIDE COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "ARABIDOPSIS EXTRACT": {
+   "name": "ARABIDOPSIS EXTRACT",
+   "kind": "INCI",
+   "inci": "ARABIDOPSIS THALIANA EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "genus only",
+   "read_b": {
+    "name": "ARABIDOPSIS EXTRACT",
+    "kind": "INCI",
+    "inci": "ARABIDOPSIS THALIANA EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": ""
+   }
+  },
+  "ALUMINUM HYDROXIDE-STEARIC ACID": {
+   "name": "ALUMINUM HYDROXIDE-STEARIC ACID",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "two ingredients (aluminum hydroxide + stearic acid)",
+   "read_b": {
+    "name": "ALUMINUM HYDROXIDE-STEARIC ACID",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "mixture/coating of two substances"
+   }
+  },
+  "HEXYL TRIETHOXYSILYLETHYL": {
+   "name": "HEXYL TRIETHOXYSILYLETHYL",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment of a silicone name",
+   "read_b": {
+    "name": "HEXYL TRIETHOXYSILYLETHYL",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "TETRAHYXEYLDECYL ASCORBATE": {
+   "name": "TETRAHYXEYLDECYL ASCORBATE",
+   "kind": "INCI",
+   "inci": "TETRAHEXYLDECYL ASCORBATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "TETRAHYXEYLDECYL ASCORBATE",
+    "kind": "INCI",
+    "inci": "TETRAHEXYLDECYL ASCORBATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "POLYDIMETHYLSILOXYETHYL DIMETHICONE": {
+   "name": "POLYDIMETHYLSILOXYETHYL DIMETHICONE",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment of a longer silicone name",
+   "read_b": {
+    "name": "POLYDIMETHYLSILOXYETHYL DIMETHICONE",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment of a longer silicone name"
+   }
+  },
+  "Mandarin (Citrus nobilis) Peel Oil": {
+   "name": "Mandarin (Citrus nobilis) Peel Oil",
+   "kind": "INCI",
+   "inci": "CITRUS NOBILIS PEEL OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Mandarin (Citrus nobilis) Peel Oil",
+    "kind": "INCI",
+    "inci": "CITRUS NOBILIS PEEL OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Coconut Acids": {
+   "name": "Coconut Acids",
+   "kind": "INCI",
+   "inci": "COCONUT ACID",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Coconut Acids",
+    "kind": "INCI",
+    "inci": "COCONUT ACID",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Camomilla Sinensis Extract": {
+   "name": "Camomilla Sinensis Extract",
+   "kind": "INCI",
+   "inci": "CAMELLIA SINENSIS EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "garbled; could be chamomile",
+   "read_b": {
+    "name": "Camomilla Sinensis Extract",
+    "kind": "INCI",
+    "inci": "CAMELLIA SINENSIS EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "garbled; Sinensis suggests Camellia"
+   }
+  },
+  "Polyglycery1-10 Pentastearate": {
+   "name": "Polyglycery1-10 Pentastearate",
+   "kind": "INCI",
+   "inci": "POLYGLYCERYL-10 PENTASTEARATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Polyglycery1-10 Pentastearate",
+    "kind": "INCI",
+    "inci": "POLYGLYCERYL-10 PENTASTEARATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR"
+   }
+  },
+  "Methyl sothiazolinone": {
+   "name": "Methyl sothiazolinone",
+   "kind": "INCI",
+   "inci": "METHYLISOTHIAZOLINONE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Methyl sothiazolinone",
+    "kind": "INCI",
+    "inci": "METHYLISOTHIAZOLINONE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Beta Vulgaris Cicla Extract": {
+   "name": "Beta Vulgaris Cicla Extract",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Beta vulgaris",
+   "category": null,
+   "confidence": "low",
+   "note": "chard (cicla) extract, part not given",
+   "read_b": {
+    "name": "Beta Vulgaris Cicla Extract",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Beta vulgaris var. cicla",
+    "category": null,
+    "confidence": "low",
+    "note": "chard; no cicla INCI"
+   }
+  },
+  "Acrylates/ C12-22 Alkylmethacrylates Copolymer": {
+   "name": "Acrylates/ C12-22 Alkylmethacrylates Copolymer",
+   "kind": "INCI",
+   "inci": "ACRYLATES/C12-22 ALKYL METHACRYLATE COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Acrylates/ C12-22 Alkylmethacrylates Copolymer",
+    "kind": "INCI",
+    "inci": "ACRYLATES/C12-22 ALKYL METHACRYLATE COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "ext. violet 2": {
+   "name": "ext. violet 2",
+   "kind": "INCI",
+   "inci": "CI 60730",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "Ext. D&C Violet 2",
+   "read_b": {
+    "name": "ext. violet 2",
+    "kind": "INCI",
+    "inci": "CI 60730",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Ext. D&C Violet 2"
+   }
+  },
+  "Dimethylacrylamide/Acrylic Acid/Polystyrene Ethyl Methacrylate": {
+   "name": "Dimethylacrylamide/Acrylic Acid/Polystyrene Ethyl Methacrylate",
+   "kind": "INCI",
+   "inci": "DIMETHYLACRYLAMIDE/ACRYLIC ACID/POLYSTYRENE ETHYL METHACRYLATE COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Dimethylacrylamide/Acrylic Acid/Polystyrene Ethyl Methacrylate",
+    "kind": "INCI",
+    "inci": "DIMETHYLACRYLAMIDE/ACRYLIC ACID/POLYSTYRENE ETHYL METHACRYLATE COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "zerrea (corn) propanediol": {
+   "name": "zerrea (corn) propanediol",
+   "kind": "INCI",
+   "inci": "PROPANEDIOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "corn-derived propanediol",
+   "read_b": {
+    "name": "zerrea (corn) propanediol",
+    "kind": "INCI",
+    "inci": "PROPANEDIOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "corn-derived"
+   }
+  },
+  "imethylmethoxy chromanol": {
+   "name": "imethylmethoxy chromanol",
+   "kind": "INCI",
+   "inci": "DIMETHYLMETHOXY CHROMANOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "imethylmethoxy chromanol",
+    "kind": "INCI",
+    "inci": "DIMETHYLMETHOXY CHROMANOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "truncated"
+   }
+  },
+  "Tulipa Gesneriana/Kaufmanniana Meristem Cell Lysate Filtrate Extract": {
+   "name": "Tulipa Gesneriana/Kaufmanniana Meristem Cell Lysate Filtrate Extract",
+   "kind": "INCI",
+   "inci": "TULIPA GESNERIANA/KAURMANNIANA MERISTEM CELL LYSATE FILTRATE EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Tulipa Gesneriana/Kaufmanniana Meristem Cell Lysate Filtrate Extract",
+    "kind": "INCI",
+    "inci": "TULIPA GESNERIANA/KAURMANNIANA MERISTEM CELL LYSATE FILTRATE EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "CosIng spelling"
+   }
+  },
+  "Buddleja Davidii Callus Extract": {
+   "name": "Buddleja Davidii Callus Extract",
+   "kind": "INCI",
+   "inci": "BUDDLEJA DAVIDII CALLUS EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Buddleja Davidii Callus Extract",
+    "kind": "INCI",
+    "inci": "BUDDLEJA DAVIDII CALLUS EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "c12-18 alcohols": {
+   "name": "c12-18 alcohols",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "emollient",
+   "confidence": "low",
+   "note": "C12-18 fatty alcohol blend not listed",
+   "read_b": {
+    "name": "c12-18 alcohols",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "emollient",
+    "confidence": "low",
+    "note": "no C12-18 alcohols entry"
+   }
+  },
+  "VP/Elcosene Copolymer": {
+   "name": "VP/Elcosene Copolymer",
+   "kind": "INCI",
+   "inci": "VP/EICOSENE COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "VP/Elcosene Copolymer",
+    "kind": "INCI",
+    "inci": "VP/EICOSENE COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Heptahydrate": {
+   "name": "Heptahydrate",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment (hydrate suffix)",
+   "read_b": {
+    "name": "Heptahydrate",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "Niacinimide": {
+   "name": "Niacinimide",
+   "kind": "INCI",
+   "inci": "NIACINAMIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Niacinimide",
+    "kind": "INCI",
+    "inci": "NIACINAMIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "hydrolyzed rhodophyceae extract": {
+   "name": "hydrolyzed rhodophyceae extract",
+   "kind": "INCI",
+   "inci": "HYDROLYZED RHODOPHYCEAE EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "hydrolyzed rhodophyceae extract",
+    "kind": "INCI",
+    "inci": "HYDROLYZED RHODOPHYCEAE EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Poyglyceryl-4 Diisostearate/Polyhydroxystearate/Sebacate": {
+   "name": "Poyglyceryl-4 Diisostearate/Polyhydroxystearate/Sebacate",
+   "kind": "INCI",
+   "inci": "POLYGLYCERYL-4 DIISOSTEARATE/POLYHYDROXYSTEARATE/SEBACATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Poyglyceryl-4 Diisostearate/Polyhydroxystearate/Sebacate",
+    "kind": "INCI",
+    "inci": "POLYGLYCERYL-4 DIISOSTEARATE/POLYHYDROXYSTEARATE/SEBACATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "red iron oxide": {
+   "name": "red iron oxide",
+   "kind": "INCI",
+   "inci": "CI 77491",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "red iron oxide",
+    "kind": "INCI",
+    "inci": "CI 77491",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "sr-Rainbow Trout Oligopeptide-1": {
+   "name": "sr-Rainbow Trout Oligopeptide-1",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "skin conditioning",
+   "confidence": "low",
+   "note": "only as part of longer peptide names in CosIng",
+   "read_b": {
+    "name": "sr-Rainbow Trout Oligopeptide-1",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "skin conditioning",
+    "confidence": "low",
+    "note": "only as part of combined peptide entries"
+   }
+  },
+  "Istostearic Acid": {
+   "name": "Istostearic Acid",
+   "kind": "INCI",
+   "inci": "ISOSTEARIC ACID",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Istostearic Acid",
+    "kind": "INCI",
+    "inci": "ISOSTEARIC ACID",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "MICROCITRUS AUSTRALASICA FRUIT EXTRACT": {
+   "name": "MICROCITRUS AUSTRALASICA FRUIT EXTRACT",
+   "kind": "INCI",
+   "inci": "MICROCITRUS AUSTRALASICA FRUIT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "MICROCITRUS AUSTRALASICA FRUIT EXTRACT",
+    "kind": "INCI",
+    "inci": "MICROCITRUS AUSTRALASICA FRUIT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Tocopheral": {
+   "name": "Tocopheral",
+   "kind": "INCI",
+   "inci": "TOCOPHEROL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Tocopheral",
+    "kind": "INCI",
+    "inci": "TOCOPHEROL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Hydroxythyl Cellulose": {
+   "name": "Hydroxythyl Cellulose",
+   "kind": "INCI",
+   "inci": "HYDROXYETHYLCELLULOSE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Hydroxythyl Cellulose",
+    "kind": "INCI",
+    "inci": "HYDROXYETHYLCELLULOSE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Decapeptide-…": {
+   "name": "Decapeptide-…",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "truncated",
+   "read_b": {
+    "name": "Decapeptide-…",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "2-Methylpropan-2-ol": {
+   "name": "2-Methylpropan-2-ol",
+   "kind": "INCI",
+   "inci": "T-BUTYL ALCOHOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "2-methylpropan-2-ol",
+   "read_b": {
+    "name": "2-Methylpropan-2-ol",
+    "kind": "INCI",
+    "inci": "T-BUTYL ALCOHOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Caprylic/CapricTrisiyceride": {
+   "name": "Caprylic/CapricTrisiyceride",
+   "kind": "INCI",
+   "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "OCR",
+   "read_b": {
+    "name": "Caprylic/CapricTrisiyceride",
+    "kind": "INCI",
+    "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR"
+   }
+  },
+  "CarthamusTinctorius (Safflower) Seed Oilrubus Idaeus (Raspberry) Fruit ExtractSqualane": {
+   "name": "CarthamusTinctorius (Safflower) Seed Oilrubus Idaeus (Raspberry) Fruit ExtractSqualane",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "three ingredients run together",
+   "read_b": {
+    "name": "CarthamusTinctorius (Safflower) Seed Oilrubus Idaeus (Raspberry) Fruit ExtractSqualane",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "several ingredients run together"
+   }
+  },
+  "Ethylhexygiycerin": {
+   "name": "Ethylhexygiycerin",
+   "kind": "INCI",
+   "inci": "ETHYLHEXYLGLYCERIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "OCR",
+   "read_b": {
+    "name": "Ethylhexygiycerin",
+    "kind": "INCI",
+    "inci": "ETHYLHEXYLGLYCERIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR"
+   }
+  },
+  "StearylAicohol. Magnesium Aluminum silicate": {
+   "name": "StearylAicohol. Magnesium Aluminum silicate",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "two ingredients run together",
+   "read_b": {
+    "name": "StearylAicohol. Magnesium Aluminum silicate",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "two ingredients run together"
+   }
+  },
+  "inulin lauryicarbamate": {
+   "name": "inulin lauryicarbamate",
+   "kind": "INCI",
+   "inci": "INULIN LAURYL CARBAMATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "inulin lauryicarbamate",
+    "kind": "INCI",
+    "inci": "INULIN LAURYL CARBAMATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR"
+   }
+  },
+  "2-AMINO-1,3-PROPANEDIOL": {
+   "name": "2-AMINO-1,3-PROPANEDIOL",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "pH adjuster",
+   "confidence": "low",
+   "note": "serinol not in CosIng as such",
+   "read_b": {
+    "name": "2-AMINO-1,3-PROPANEDIOL",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "pH adjuster",
+    "confidence": "low",
+    "note": "serinol; not AMINOPROPANEDIOL isomer"
+   }
+  },
+  "PEG-12 dimethicone/PPG-20 crosspolymer": {
+   "name": "PEG-12 dimethicone/PPG-20 crosspolymer",
+   "kind": "INCI",
+   "inci": "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "PEG-12 dimethicone/PPG-20 crosspolymer",
+    "kind": "INCI",
+    "inci": "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "**Leptospermum scoparium (Manuka)Oil": {
+   "name": "**Leptospermum scoparium (Manuka)Oil",
+   "kind": "INCI",
+   "inci": "LEPTOSPERMUM SCOPARIUM BRANCH/LEAF OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "manuka oil",
+   "read_b": {
+    "name": "**Leptospermum scoparium (Manuka)Oil",
+    "kind": "INCI",
+    "inci": "LEPTOSPERMUM SCOPARIUM BRANCH/LEAF OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "*Propolis": {
+   "name": "*Propolis",
+   "kind": "INCI",
+   "inci": "PROPOLIS EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "propolis form not given",
+   "read_b": {
+    "name": "*Propolis",
+    "kind": "INCI",
+    "inci": "PROPOLIS EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "bare propolis"
+   }
+  },
+  "*Argania spinosa (Argan) Oil": {
+   "name": "*Argania spinosa (Argan) Oil",
+   "kind": "INCI",
+   "inci": "ARGANIA SPINOSA KERNEL OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "*Argania spinosa (Argan) Oil",
+    "kind": "INCI",
+    "inci": "ARGANIA SPINOSA KERNEL OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "*Calophyllum Inophyllum (Tamanu)Oil": {
+   "name": "*Calophyllum Inophyllum (Tamanu)Oil",
+   "kind": "INCI",
+   "inci": "CALOPHYLLUM INOPHYLLUM SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "*Calophyllum Inophyllum (Tamanu)Oil",
+    "kind": "INCI",
+    "inci": "CALOPHYLLUM INOPHYLLUM SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Love": {
+   "name": "Love",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "Love",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "Macadania Ternifolia Seed Oil": {
+   "name": "Macadania Ternifolia Seed Oil",
+   "kind": "INCI",
+   "inci": "MACADAMIA TERNIFOLIA SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Macadania Ternifolia Seed Oil",
+    "kind": "INCI",
+    "inci": "MACADAMIA TERNIFOLIA SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "ybenzoic acid": {
+   "name": "ybenzoic acid",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment",
+   "read_b": {
+    "name": "ybenzoic acid",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "and Phenoxyethanol": {
+   "name": "and Phenoxyethanol",
+   "kind": "INCI",
+   "inci": "PHENOXYETHANOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "and Phenoxyethanol",
+    "kind": "INCI",
+    "inci": "PHENOXYETHANOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Benzophenone-9": {
+   "name": "Benzophenone-9",
+   "kind": "INCI",
+   "inci": "BENZOPHENONE-9",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Benzophenone-9",
+    "kind": "INCI",
+    "inci": "BENZOPHENONE-9",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "CETYL PEG/PPG-10/1": {
+   "name": "CETYL PEG/PPG-10/1",
+   "kind": "INCI",
+   "inci": "CETYL PEG/PPG-10/1 DIMETHICONE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated",
+   "read_b": {
+    "name": "CETYL PEG/PPG-10/1",
+    "kind": "INCI",
+    "inci": "CETYL PEG/PPG-10/1 DIMETHICONE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "truncated"
+   }
+  },
+  "Tripleurospermum Maritima Extract": {
+   "name": "Tripleurospermum Maritima Extract",
+   "kind": "INCI",
+   "inci": "TRIPLEUROSPERMUM MARITIMUM EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Tripleurospermum Maritima Extract",
+    "kind": "INCI",
+    "inci": "TRIPLEUROSPERMUM MARITIMUM EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "S014": {
+   "name": "S014",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "S014",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "Methyldihydrojasmonate 2-Isobutyl-4-Methyltetrahydro-2h-Pyran-4-ol": {
+   "name": "Methyldihydrojasmonate 2-Isobutyl-4-Methyltetrahydro-2h-Pyran-4-ol",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "two fragrance chemicals run together",
+   "read_b": {
+    "name": "Methyldihydrojasmonate 2-Isobutyl-4-Methyltetrahydro-2h-Pyran-4-ol",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "two fragrance chemicals run together"
+   }
+  },
+  "ISOBUTYLENE/STYRENE COPOLYMER": {
+   "name": "ISOBUTYLENE/STYRENE COPOLYMER",
+   "kind": "INCI",
+   "inci": "ISOBUTYLENE/STYRENE COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "ISOBUTYLENE/STYRENE COPOLYMER",
+    "kind": "INCI",
+    "inci": "ISOBUTYLENE/STYRENE COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Essential oil": {
+   "name": "Essential oil",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "unspecified",
+   "read_b": {
+    "name": "Essential oil",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "Ceramides": {
+   "name": "Ceramides",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "skin conditioning",
+   "confidence": "low",
+   "note": "unspecified ceramides",
+   "read_b": {
+    "name": "Ceramides",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "skin conditioning",
+    "confidence": "low",
+    "note": "generic class"
+   }
+  },
+  "Vaccinium Myrtillus Fruit and leaf Extract": {
+   "name": "Vaccinium Myrtillus Fruit and leaf Extract",
+   "kind": "INCI",
+   "inci": "VACCINIUM MYRTILLUS FRUIT/LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Vaccinium Myrtillus Fruit and leaf Extract",
+    "kind": "INCI",
+    "inci": "VACCINIUM MYRTILLUS FRUIT/LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Acer Saccharinum Extract": {
+   "name": "Acer Saccharinum Extract",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Acer saccharinum",
+   "category": null,
+   "confidence": "low",
+   "note": "not in CosIng; maybe Acer saccharum",
+   "read_b": {
+    "name": "Acer Saccharinum Extract",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Acer saccharinum",
+    "category": null,
+    "confidence": "low",
+    "note": "no CosIng entry; part not stated"
+   }
+  },
+  "Camilla Sinesis Leaf Extract": {
+   "name": "Camilla Sinesis Leaf Extract",
+   "kind": "INCI",
+   "inci": "CAMELLIA SINENSIS LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Camilla Sinesis Leaf Extract",
+    "kind": "INCI",
+    "inci": "CAMELLIA SINENSIS LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "TRIS (TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE": {
+   "name": "TRIS (TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+   "kind": "INCI",
+   "inci": "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "TRIS (TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+    "kind": "INCI",
+    "inci": "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "CITRUS MEDICA LIMONUM (LEMON) EXTRACT": {
+   "name": "CITRUS MEDICA LIMONUM (LEMON) EXTRACT",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Citrus limon",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "CITRUS MEDICA LIMONUM (LEMON) EXTRACT",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Citrus limon",
+    "category": null,
+    "confidence": "high",
+    "note": "part/preparation not stated"
+   }
+  },
+  "SODIUM BENZOTRIAZOLYL BUTYLPHENOL SULFONATE": {
+   "name": "SODIUM BENZOTRIAZOLYL BUTYLPHENOL SULFONATE",
+   "kind": "INCI",
+   "inci": "SODIUM BENZOTRIAZOLYL BUTYLPHENOL SULFONATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "SODIUM BENZOTRIAZOLYL BUTYLPHENOL SULFONATE",
+    "kind": "INCI",
+    "inci": "SODIUM BENZOTRIAZOLYL BUTYLPHENOL SULFONATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Hydrogenated Polvdence": {
+   "name": "Hydrogenated Polvdence",
+   "kind": "INCI",
+   "inci": "HYDROGENATED POLYDECENE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "OCR",
+   "read_b": {
+    "name": "Hydrogenated Polvdence",
+    "kind": "INCI",
+    "inci": "HYDROGENATED POLYDECENE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "OCR"
+   }
+  },
+  "Madagascar Orange Essential Oil": {
+   "name": "Madagascar Orange Essential Oil",
+   "kind": "INCI",
+   "inci": "CITRUS AURANTIUM DULCIS PEEL OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "orange essential oil",
+   "read_b": {
+    "name": "Madagascar Orange Essential Oil",
+    "kind": "INCI",
+    "inci": "CITRUS AURANTIUM DULCIS PEEL OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "orange essential oil"
+   }
+  },
+  "Allontoin": {
+   "name": "Allontoin",
+   "kind": "INCI",
+   "inci": "ALLANTOIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Allontoin",
+    "kind": "INCI",
+    "inci": "ALLANTOIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "PEG-300": {
+   "name": "PEG-300",
+   "kind": "INCI",
+   "inci": "PEG-6",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "PEG-300 = PEG-6",
+   "read_b": {
+    "name": "PEG-300",
+    "kind": "INCI",
+    "inci": "PEG-6",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "PEG-300 = PEG-6"
+   }
+  },
+  "Arcylic Polymer": {
+   "name": "Arcylic Polymer",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "film former",
+   "confidence": "low",
+   "note": "unspecified acrylic polymer",
+   "read_b": {
+    "name": "Arcylic Polymer",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "film former",
+    "confidence": "low",
+    "note": "generic"
+   }
+  },
+  "Dimethione": {
+   "name": "Dimethione",
+   "kind": "INCI",
+   "inci": "DIMETHICONE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Dimethione",
+    "kind": "INCI",
+    "inci": "DIMETHICONE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "dl-panthenol": {
+   "name": "dl-panthenol",
+   "kind": "INCI",
+   "inci": "PANTHENOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "dl-panthenol",
+    "kind": "INCI",
+    "inci": "PANTHENOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "*CO Pongamia Glabra Seed Oil": {
+   "name": "*CO Pongamia Glabra Seed Oil",
+   "kind": "INCI",
+   "inci": "PONGAMIA GLABRA SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "*CO Pongamia Glabra Seed Oil",
+    "kind": "INCI",
+    "inci": "PONGAMIA GLABRA SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Fluorescent Brightener 230": {
+   "name": "Fluorescent Brightener 230",
+   "kind": "INCI",
+   "inci": "FLUORESCENT BRIGHTENER 230",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Fluorescent Brightener 230",
+    "kind": "INCI",
+    "inci": "FLUORESCENT BRIGHTENER 230",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "WATER (AQUA PURIFICATA) PURIFIED": {
+   "name": "WATER (AQUA PURIFICATA) PURIFIED",
+   "kind": "INCI",
+   "inci": "AQUA",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "WATER (AQUA PURIFICATA) PURIFIED",
+    "kind": "INCI",
+    "inci": "AQUA",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "vitamin A & E": {
+   "name": "vitamin A & E",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "two vitamins, unspecified",
+   "read_b": {
+    "name": "vitamin A & E",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "two vitamins"
+   }
+  },
+  "white petrolatum": {
+   "name": "white petrolatum",
+   "kind": "INCI",
+   "inci": "PETROLATUM",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "white petrolatum",
+    "kind": "INCI",
+    "inci": "PETROLATUM",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "ULVA PERTUSA EXTRACT": {
+   "name": "ULVA PERTUSA EXTRACT",
+   "kind": "INCI",
+   "inci": "ULVA PERTUSA EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "ULVA PERTUSA EXTRACT",
+    "kind": "INCI",
+    "inci": "ULVA PERTUSA EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Chlorella Vulgaris/Lupinus Albus Proteine Ferment": {
+   "name": "Chlorella Vulgaris/Lupinus Albus Proteine Ferment",
+   "kind": "INCI",
+   "inci": "CHLORELLA VULGARIS/LUPINUS ALBUS PROTEIN FERMENT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Chlorella Vulgaris/Lupinus Albus Proteine Ferment",
+    "kind": "INCI",
+    "inci": "CHLORELLA VULGARIS/LUPINUS ALBUS PROTEIN FERMENT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Butyl Methoxybenzoylmethane": {
+   "name": "Butyl Methoxybenzoylmethane",
+   "kind": "INCI",
+   "inci": "BUTYL METHOXYDIBENZOYLMETHANE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "avobenzone, typo",
+   "read_b": {
+    "name": "Butyl Methoxybenzoylmethane",
+    "kind": "INCI",
+    "inci": "BUTYL METHOXYDIBENZOYLMETHANE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "likely avobenzone, name garbled"
+   }
+  },
+  "Palmitoyl Pentapeptide-3": {
+   "name": "Palmitoyl Pentapeptide-3",
+   "kind": "INCI",
+   "inci": "PALMITOYL PENTAPEPTIDE-4",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "old name palmitoyl pentapeptide-3",
+   "read_b": {
+    "name": "Palmitoyl Pentapeptide-3",
+    "kind": "INCI",
+    "inci": "PALMITOYL PENTAPEPTIDE-4",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "old name"
+   }
+  },
+  "77492": {
+   "name": "77492",
+   "kind": "INCI",
+   "inci": "CI 77492",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "77492",
+    "kind": "INCI",
+    "inci": "CI 77492",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Mca (may contain)": {
+   "name": "Mca (may contain)",
+   "kind": "INCI",
+   "inci": "MICA",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "typo",
+   "read_b": {
+    "name": "Mca (may contain)",
+    "kind": "INCI",
+    "inci": "MICA",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "typo"
+   }
+  },
+  "Carborner": {
+   "name": "Carborner",
+   "kind": "INCI",
+   "inci": "CARBOMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Carborner",
+    "kind": "INCI",
+    "inci": "CARBOMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Tin Dioxide (CI 77861)": {
+   "name": "Tin Dioxide (CI 77861)",
+   "kind": "INCI",
+   "inci": "TIN OXIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Tin Dioxide (CI 77861)",
+    "kind": "INCI",
+    "inci": "TIN OXIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Disodium ED[cut off]": {
+   "name": "Disodium ED[cut off]",
+   "kind": "INCI",
+   "inci": "DISODIUM EDTA",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated",
+   "read_b": {
+    "name": "Disodium ED[cut off]",
+    "kind": "INCI",
+    "inci": "DISODIUM EDTA",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "truncated"
+   }
+  },
+  "Aloe Barbadensis Inner Leaf Extract": {
+   "name": "Aloe Barbadensis Inner Leaf Extract",
+   "kind": "INCI",
+   "inci": "ALOE BARBADENSIS LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "inner leaf",
+   "read_b": {
+    "name": "Aloe Barbadensis Inner Leaf Extract",
+    "kind": "INCI",
+    "inci": "ALOE BARBADENSIS LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "inner leaf"
+   }
+  },
+  "Hydroxyacetonephenone": {
+   "name": "Hydroxyacetonephenone",
+   "kind": "INCI",
+   "inci": "HYDROXYACETOPHENONE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Hydroxyacetonephenone",
+    "kind": "INCI",
+    "inci": "HYDROXYACETOPHENONE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Lauryl PEG-9": {
+   "name": "Lauryl PEG-9",
+   "kind": "INCI",
+   "inci": "LAURYL PEG-9 POLYDIMETHYLSILOXYETHYL DIMETHICONE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated",
+   "read_b": {
+    "name": "Lauryl PEG-9",
+    "kind": "INCI",
+    "inci": "LAURYL PEG-9 POLYDIMETHYLSILOXYETHYL DIMETHICONE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "truncated"
+   }
+  },
+  "Comellia Sinenis (Green Tea) Leaf": {
+   "name": "Comellia Sinenis (Green Tea) Leaf",
+   "kind": "INCI",
+   "inci": "CAMELLIA SINENSIS LEAF",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "typo",
+   "read_b": {
+    "name": "Comellia Sinenis (Green Tea) Leaf",
+    "kind": "INCI",
+    "inci": "CAMELLIA SINENSIS LEAF",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "typo; preparation not stated"
+   }
+  },
+  "Antioxidant Blend Extracts of Alaria Esculenta (Wakame Seaweed)": {
+   "name": "Antioxidant Blend Extracts of Alaria Esculenta (Wakame Seaweed)",
+   "kind": "INCI",
+   "inci": "ALARIA ESCULENTA EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Antioxidant Blend Extracts of Alaria Esculenta (Wakame Seaweed)",
+    "kind": "INCI",
+    "inci": "ALARIA ESCULENTA EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Isoarryl Cocoate": {
+   "name": "Isoarryl Cocoate",
+   "kind": "INCI",
+   "inci": "ISOAMYL COCOATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "OCR",
+   "read_b": {
+    "name": "Isoarryl Cocoate",
+    "kind": "INCI",
+    "inci": "ISOAMYL COCOATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR"
+   }
+  },
+  "Beta-Caryopyllene": {
+   "name": "Beta-Caryopyllene",
+   "kind": "INCI",
+   "inci": "BETA-CARYOPHYLLENE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Beta-Caryopyllene",
+    "kind": "INCI",
+    "inci": "BETA-CARYOPHYLLENE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Isoproplphthalimide": {
+   "name": "Isoproplphthalimide",
+   "kind": "INCI",
+   "inci": "ISOPROPYLPHTHALIMIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Isoproplphthalimide",
+    "kind": "INCI",
+    "inci": "ISOPROPYLPHTHALIMIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Saccharomy- ces/Selenium Ferment": {
+   "name": "Saccharomy- ces/Selenium Ferment",
+   "kind": "INCI",
+   "inci": "SACCHAROMYCES/SELENIUM FERMENT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Saccharomy- ces/Selenium Ferment",
+    "kind": "INCI",
+    "inci": "SACCHAROMYCES/SELENIUM FERMENT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER": {
+   "name": "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER",
+   "kind": "INCI",
+   "inci": "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER",
+    "kind": "INCI",
+    "inci": "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Dimethyl Tartrate": {
+   "name": "Dimethyl Tartrate",
+   "kind": "INCI",
+   "inci": "DIMETHYL TARTRATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Dimethyl Tartrate",
+    "kind": "INCI",
+    "inci": "DIMETHYL TARTRATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "1,2-Pentanediol": {
+   "name": "1,2-Pentanediol",
+   "kind": "INCI",
+   "inci": "PENTYLENE GLYCOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "1,2-Pentanediol",
+    "kind": "INCI",
+    "inci": "PENTYLENE GLYCOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Polyhydroxystearic Acide": {
+   "name": "Polyhydroxystearic Acide",
+   "kind": "INCI",
+   "inci": "POLYHYDROXYSTEARIC ACID",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Polyhydroxystearic Acide",
+    "kind": "INCI",
+    "inci": "POLYHYDROXYSTEARIC ACID",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "PEG-12 alkyl ether": {
+   "name": "PEG-12 alkyl ether",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "emulsifier",
+   "confidence": "low",
+   "note": "unspecified",
+   "read_b": {
+    "name": "PEG-12 alkyl ether",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "emulsifier",
+    "confidence": "low",
+    "note": "unclear"
+   }
+  },
+  "GOAT MILK EXTRACT": {
+   "name": "GOAT MILK EXTRACT",
+   "kind": "INCI",
+   "inci": "GOAT MILK EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "GOAT MILK EXTRACT",
+    "kind": "INCI",
+    "inci": "GOAT MILK EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "PALM OLIGOPEPTIDE": {
+   "name": "PALM OLIGOPEPTIDE",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "skin conditioning",
+   "confidence": "low",
+   "note": "unclear peptide",
+   "read_b": {
+    "name": "PALM OLIGOPEPTIDE",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "skin conditioning",
+    "confidence": "low",
+    "note": "no CosIng entry found"
+   }
+  },
+  "CL 77499": {
+   "name": "CL 77499",
+   "kind": "INCI",
+   "inci": "CI 77499",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "OCR",
+   "read_b": {
+    "name": "CL 77499",
+    "kind": "INCI",
+    "inci": "CI 77499",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR"
+   }
+  },
+  "2 benzylideneoctanal": {
+   "name": "2 benzylideneoctanal",
+   "kind": "INCI",
+   "inci": "HEXYL CINNAMAL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "2-benzylideneoctanal",
+   "read_b": {
+    "name": "2 benzylideneoctanal",
+    "kind": "INCI",
+    "inci": "HEXYL CINNAMAL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "3-cyclohexene-1-carboxaldehyde,4-(4-hydroxy-4-methylpentyl)": {
+   "name": "3-cyclohexene-1-carboxaldehyde,4-(4-hydroxy-4-methylpentyl)",
+   "kind": "INCI",
+   "inci": "HYDROXYISOHEXYL 3-CYCLOHEXENE CARBOXALDEHYDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "3-cyclohexene-1-carboxaldehyde,4-(4-hydroxy-4-methylpentyl)",
+    "kind": "INCI",
+    "inci": "HYDROXYISOHEXYL 3-CYCLOHEXENE CARBOXALDEHYDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "1,6-Nonadien-3-ol,3,7-dimethyl": {
+   "name": "1,6-Nonadien-3-ol,3,7-dimethyl",
+   "kind": "INCI",
+   "inci": "ETHYL LINALOOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "3,7-dimethylnona-1,6-dien-3-ol",
+   "read_b": {
+    "name": "1,6-Nonadien-3-ol,3,7-dimethyl",
+    "kind": "INCI",
+    "inci": "ETHYL LINALOOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "3-(4-isopropylphenyl)-2-methylpropanal": {
+   "name": "3-(4-isopropylphenyl)-2-methylpropanal",
+   "kind": "INCI",
+   "inci": "CYCLAMEN ALDEHYDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "3-(4-isopropylphenyl)-2-methylpropanal",
+    "kind": "INCI",
+    "inci": "CYCLAMEN ALDEHYDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Benzoic acid,2-hydroxy,3-hexenyl ester,(Z)": {
+   "name": "Benzoic acid,2-hydroxy,3-hexenyl ester,(Z)",
+   "kind": "INCI",
+   "inci": "CIS-3-HEXENYL SALICYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Benzoic acid,2-hydroxy,3-hexenyl ester,(Z)",
+    "kind": "INCI",
+    "inci": "CIS-3-HEXENYL SALICYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "CI 77?91": {
+   "name": "CI 77?91",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "CI number illegible (77491 or 77891)",
+   "read_b": {
+    "name": "CI 77?91",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "ambiguous CI number"
+   }
+  },
+  "cetyl stearyl alcohol": {
+   "name": "cetyl stearyl alcohol",
+   "kind": "INCI",
+   "inci": "CETEARYL ALCOHOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "cetyl stearyl alcohol",
+    "kind": "INCI",
+    "inci": "CETEARYL ALCOHOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "bis-ethylhexyl hydroxybenzyl methoxybenzotriazine": {
+   "name": "bis-ethylhexyl hydroxybenzyl methoxybenzotriazine",
+   "kind": "INCI",
+   "inci": "BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "garbled",
+   "read_b": {
+    "name": "bis-ethylhexyl hydroxybenzyl methoxybenzotriazine",
+    "kind": "INCI",
+    "inci": "BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "garbled name"
+   }
+  },
+  "yeast fermentation filtrate": {
+   "name": "yeast fermentation filtrate",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "skin conditioning",
+   "confidence": "low",
+   "note": "yeast unspecified",
+   "read_b": {
+    "name": "yeast fermentation filtrate",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "skin conditioning",
+    "confidence": "low",
+    "note": "unspecified yeast ferment"
+   }
+  },
+  "C20-22 alcohol phosphate": {
+   "name": "C20-22 alcohol phosphate",
+   "kind": "INCI",
+   "inci": "C20-22 ALKYL PHOSPHATE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "same substance",
+   "read_b": {
+    "name": "C20-22 alcohol phosphate",
+    "kind": "INCI",
+    "inci": "C20-22 ALKYL PHOSPHATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Hydroxypropyl Trimethylammonium Hyaluronate": {
+   "name": "Hydroxypropyl Trimethylammonium Hyaluronate",
+   "kind": "INCI",
+   "inci": "HYDROXYPROPYLTRIMONIUM HYALURONATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Hydroxypropyl Trimethylammonium Hyaluronate",
+    "kind": "INCI",
+    "inci": "HYDROXYPROPYLTRIMONIUM HYALURONATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "crosslinked polyacrylate polymer-6": {
+   "name": "crosslinked polyacrylate polymer-6",
+   "kind": "INCI",
+   "inci": "POLYACRYLATE CROSSPOLYMER-6",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "crosslinked polyacrylate polymer-6",
+    "kind": "INCI",
+    "inci": "POLYACRYLATE CROSSPOLYMER-6",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "C20-22 alcohol": {
+   "name": "C20-22 alcohol",
+   "kind": "INCI",
+   "inci": "C20-22 ALCOHOLS",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "C20-22 alcohol",
+    "kind": "INCI",
+    "inci": "C20-22 ALCOHOLS",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Butylhydroxytoluene": {
+   "name": "Butylhydroxytoluene",
+   "kind": "INCI",
+   "inci": "BHT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Butylhydroxytoluene",
+    "kind": "INCI",
+    "inci": "BHT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "octyl dimethicone": {
+   "name": "octyl dimethicone",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "silicone",
+   "confidence": "low",
+   "note": "no CosIng entry found",
+   "read_b": {
+    "name": "octyl dimethicone",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "silicone",
+    "confidence": "low",
+    "note": "no CosIng entry found"
+   }
+  },
+  "C11-13 Alkane": {
+   "name": "C11-13 Alkane",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "solvent",
+   "confidence": "low",
+   "note": "not same as C11-13 isoalkane",
+   "read_b": {
+    "name": "C11-13 Alkane",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "solvent",
+    "confidence": "low",
+    "note": "not same as C11-13 isoalkane"
+   }
+  },
+  "Trihepanoin": {
+   "name": "Trihepanoin",
+   "kind": "INCI",
+   "inci": "TRIHEPTANOIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Trihepanoin",
+    "kind": "INCI",
+    "inci": "TRIHEPTANOIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Dioctyl Car onate": {
+   "name": "Dioctyl Car onate",
+   "kind": "INCI",
+   "inci": "DICAPRYLYL CARBONATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "dioctyl carbonate",
+   "read_b": {
+    "name": "Dioctyl Car onate",
+    "kind": "INCI",
+    "inci": "DICAPRYLYL CARBONATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "dioctyl carbonate"
+   }
+  },
+  "Jojo a Esters": {
+   "name": "Jojo a Esters",
+   "kind": "INCI",
+   "inci": "JOJOBA ESTERS",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "OCR",
+   "read_b": {
+    "name": "Jojo a Esters",
+    "kind": "INCI",
+    "inci": "JOJOBA ESTERS",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR"
+   }
+  },
+  "Capryl/Capryl Glucoside": {
+   "name": "Capryl/Capryl Glucoside",
+   "kind": "INCI",
+   "inci": "CAPRYLYL/CAPRYL GLUCOSIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Capryl/Capryl Glucoside",
+    "kind": "INCI",
+    "inci": "CAPRYLYL/CAPRYL GLUCOSIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Carboxymethyl Hyaluronate Sodium": {
+   "name": "Carboxymethyl Hyaluronate Sodium",
+   "kind": "INCI",
+   "inci": "SODIUM CARBOXYMETHYL HYALURONATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Carboxymethyl Hyaluronate Sodium",
+    "kind": "INCI",
+    "inci": "SODIUM CARBOXYMETHYL HYALURONATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "sodium propoxyhydroxypropyl thiosulfate silicia": {
+   "name": "sodium propoxyhydroxypropyl thiosulfate silicia",
+   "kind": "INCI",
+   "inci": "SODIUM PROPOXYHYDROXYPROPYL THIOSULFATE SILICA",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "sodium propoxyhydroxypropyl thiosulfate silicia",
+    "kind": "INCI",
+    "inci": "SODIUM PROPOXYHYDROXYPROPYL THIOSULFATE SILICA",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "green & white tea": {
+   "name": "green & white tea",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Camellia sinensis",
+   "category": null,
+   "confidence": "low",
+   "note": "green and white tea",
+   "read_b": {
+    "name": "green & white tea",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Camellia sinensis",
+    "category": null,
+    "confidence": "high",
+    "note": "part/preparation not stated"
+   }
+  },
+  "fractionated coconut oil": {
+   "name": "fractionated coconut oil",
+   "kind": "INCI",
+   "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "fractionated coconut oil = MCT",
+   "read_b": {
+    "name": "fractionated coconut oil",
+    "kind": "INCI",
+    "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "fractionated coconut oil"
+   }
+  },
+  "non-nano zinc oxide": {
+   "name": "non-nano zinc oxide",
+   "kind": "INCI",
+   "inci": "ZINC OXIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "non-nano zinc oxide",
+    "kind": "INCI",
+    "inci": "ZINC OXIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Acrylates/Octlacarylamide Copolymer": {
+   "name": "Acrylates/Octlacarylamide Copolymer",
+   "kind": "INCI",
+   "inci": "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Acrylates/Octlacarylamide Copolymer",
+    "kind": "INCI",
+    "inci": "ACRYLATES/OCTYLACRYLAMIDE COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Laurate": {
+   "name": "Laurate",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "Laurate",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "triethoxylcaprylylsilane": {
+   "name": "triethoxylcaprylylsilane",
+   "kind": "INCI",
+   "inci": "TRIETHOXYCAPRYLYLSILANE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "triethoxylcaprylylsilane",
+    "kind": "INCI",
+    "inci": "TRIETHOXYCAPRYLYLSILANE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Polyglyceryl-2 Polyricinoleate": {
+   "name": "Polyglyceryl-2 Polyricinoleate",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "emulsifier",
+   "confidence": "low",
+   "note": "polyglyceryl-2 form not listed",
+   "read_b": {
+    "name": "Polyglyceryl-2 Polyricinoleate",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "emulsifier",
+    "confidence": "high",
+    "note": "no CosIng entry found"
+   }
+  },
+  "Heptapeptide-68 Amide Acetate": {
+   "name": "Heptapeptide-68 Amide Acetate",
+   "kind": "INCI",
+   "inci": "HEPTAPEPTIDE-68 AMIDE ACETATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Heptapeptide-68 Amide Acetate",
+    "kind": "INCI",
+    "inci": "HEPTAPEPTIDE-68 AMIDE ACETATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Trisononanoin": {
+   "name": "Trisononanoin",
+   "kind": "INCI",
+   "inci": "TRIISONONANOIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Trisononanoin",
+    "kind": "INCI",
+    "inci": "TRIISONONANOIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Mica Butyrospermum Parkii (Shea) Butter": {
+   "name": "Mica Butyrospermum Parkii (Shea) Butter",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "two ingredients run together",
+   "read_b": {
+    "name": "Mica Butyrospermum Parkii (Shea) Butter",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "two ingredients run together"
+   }
+  },
+  "d-alpha tocopheryl acetate": {
+   "name": "d-alpha tocopheryl acetate",
+   "kind": "INCI",
+   "inci": "TOCOPHERYL ACETATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "d-alpha tocopheryl acetate",
+    "kind": "INCI",
+    "inci": "TOCOPHERYL ACETATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Attalea Speciosa Starch (Babassu Starch)": {
+   "name": "Attalea Speciosa Starch (Babassu Starch)",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "thickener",
+   "confidence": "low",
+   "note": "babassu starch",
+   "read_b": {
+    "name": "Attalea Speciosa Starch (Babassu Starch)",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "thickener",
+    "confidence": "high",
+    "note": "no CosIng entry found"
+   }
+  },
+  "Glycyrrhiza Root Extract": {
+   "name": "Glycyrrhiza Root Extract",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Glycyrrhiza",
+   "category": null,
+   "confidence": "low",
+   "note": "licorice species not given",
+   "read_b": {
+    "name": "Glycyrrhiza Root Extract",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Glycyrrhiza",
+    "category": null,
+    "confidence": "low",
+    "note": "species not stated"
+   }
+  },
+  "Kudzu Glycoside": {
+   "name": "Kudzu Glycoside",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "plant-derived",
+   "confidence": "low",
+   "note": "no CosIng entry found",
+   "read_b": {
+    "name": "Kudzu Glycoside",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "plant-derived",
+    "confidence": "low",
+    "note": "kudzu glycoside"
+   }
+  },
+  "Hydroxy Kudzu Root Glycoside": {
+   "name": "Hydroxy Kudzu Root Glycoside",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "plant-derived",
+   "confidence": "low",
+   "note": "no CosIng entry found",
+   "read_b": {
+    "name": "Hydroxy Kudzu Root Glycoside",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "plant-derived",
+    "confidence": "low",
+    "note": "no CosIng entry found"
+   }
+  },
+  "Chlorophyll": {
+   "name": "Chlorophyll",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "colorant",
+   "confidence": "low",
+   "note": "only copper chlorophyll in CosIng",
+   "read_b": {
+    "name": "Chlorophyll",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "colorant",
+    "confidence": "low",
+    "note": "chlorophyll; CosIng has CI 75810/chlorophyllin"
+   }
+  },
+  "Petroleum jelly": {
+   "name": "Petroleum jelly",
+   "kind": "INCI",
+   "inci": "PETROLATUM",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Petroleum jelly",
+    "kind": "INCI",
+    "inci": "PETROLATUM",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "and Olea Europa (Olive) Leaf in Helianthus Annuus (Sunflower) Seed Oil": {
+   "name": "and Olea Europa (Olive) Leaf in Helianthus Annuus (Sunflower) Seed Oil",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "two ingredients run together",
+   "read_b": {
+    "name": "and Olea Europa (Olive) Leaf in Helianthus Annuus (Sunflower) Seed Oil",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "mixture"
+   }
+  },
+  "Carbonated Water": {
+   "name": "Carbonated Water",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "solvent",
+   "confidence": "low",
+   "note": "no CosIng entry found",
+   "read_b": {
+    "name": "Carbonated Water",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "solvent",
+    "confidence": "high",
+    "note": "no CosIng entry found"
+   }
+  },
+  "L-Alanine": {
+   "name": "L-Alanine",
+   "kind": "INCI",
+   "inci": "ALANINE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "L-Alanine",
+    "kind": "INCI",
+    "inci": "ALANINE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "L-Aspartic Acid": {
+   "name": "L-Aspartic Acid",
+   "kind": "INCI",
+   "inci": "ASPARTIC ACID",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "L-Aspartic Acid",
+    "kind": "INCI",
+    "inci": "ASPARTIC ACID",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Goji Fruit Extract": {
+   "name": "Goji Fruit Extract",
+   "kind": "INCI",
+   "inci": "LYCIUM BARBARUM FRUIT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "goji usually L. barbarum",
+   "read_b": {
+    "name": "Goji Fruit Extract",
+    "kind": "INCI",
+    "inci": "LYCIUM BARBARUM FRUIT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "goji species"
+   }
+  },
+  "Black Tea Leaf Extract": {
+   "name": "Black Tea Leaf Extract",
+   "kind": "INCI",
+   "inci": "CAMELLIA SINENSIS LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Black Tea Leaf Extract",
+    "kind": "INCI",
+    "inci": "CAMELLIA SINENSIS LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "L-Serine": {
+   "name": "L-Serine",
+   "kind": "INCI",
+   "inci": "SERINE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "L-Serine",
+    "kind": "INCI",
+    "inci": "SERINE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "White Tea Leaf Extract": {
+   "name": "White Tea Leaf Extract",
+   "kind": "INCI",
+   "inci": "CAMELLIA SINENSIS LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "White Tea Leaf Extract",
+    "kind": "INCI",
+    "inci": "CAMELLIA SINENSIS LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "L-Isoleucine": {
+   "name": "L-Isoleucine",
+   "kind": "INCI",
+   "inci": "ISOLEUCINE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "L-Isoleucine",
+    "kind": "INCI",
+    "inci": "ISOLEUCINE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Acai Fruit Extract": {
+   "name": "Acai Fruit Extract",
+   "kind": "INCI",
+   "inci": "EUTERPE OLERACEA FRUIT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Acai Fruit Extract",
+    "kind": "INCI",
+    "inci": "EUTERPE OLERACEA FRUIT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Vitamin K": {
+   "name": "Vitamin K",
+   "kind": "INCI",
+   "inci": "PHYTONADIONE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "vitamin K assumed K1",
+   "read_b": {
+    "name": "Vitamin K",
+    "kind": "INCI",
+    "inci": "PHYTONADIONE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "vitamin K1"
+   }
+  },
+  "Lemon Peel Oil": {
+   "name": "Lemon Peel Oil",
+   "kind": "INCI",
+   "inci": "CITRUS LIMON PEEL OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Lemon Peel Oil",
+    "kind": "INCI",
+    "inci": "CITRUS LIMON PEEL OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "L-Valine": {
+   "name": "L-Valine",
+   "kind": "INCI",
+   "inci": "VALINE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "L-Valine",
+    "kind": "INCI",
+    "inci": "VALINE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Rooibos Red Tea Extract": {
+   "name": "Rooibos Red Tea Extract",
+   "kind": "INCI",
+   "inci": "ASPALATHUS LINEARIS EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Rooibos Red Tea Extract",
+    "kind": "INCI",
+    "inci": "ASPALATHUS LINEARIS EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Lemon Peel Extract": {
+   "name": "Lemon Peel Extract",
+   "kind": "INCI",
+   "inci": "CITRUS LIMON PEEL EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Lemon Peel Extract",
+    "kind": "INCI",
+    "inci": "CITRUS LIMON PEEL EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "L-Phenylalanine": {
+   "name": "L-Phenylalanine",
+   "kind": "INCI",
+   "inci": "PHENYLALANINE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "L-Phenylalanine",
+    "kind": "INCI",
+    "inci": "PHENYLALANINE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "L-Threonine": {
+   "name": "L-Threonine",
+   "kind": "INCI",
+   "inci": "THREONINE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "L-Threonine",
+    "kind": "INCI",
+    "inci": "THREONINE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "L-Histidine": {
+   "name": "L-Histidine",
+   "kind": "INCI",
+   "inci": "HISTIDINE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "L-Histidine",
+    "kind": "INCI",
+    "inci": "HISTIDINE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Glycine Soja (Soybean) Isoflavone Aglycone": {
+   "name": "Glycine Soja (Soybean) Isoflavone Aglycone",
+   "kind": "INCI",
+   "inci": "SOY ISOFLAVONES",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "aglycone form",
+   "read_b": {
+    "name": "Glycine Soja (Soybean) Isoflavone Aglycone",
+    "kind": "INCI",
+    "inci": "SOY ISOFLAVONES",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "aglycone form"
+   }
+  },
+  "Tetrahexyldecyl…": {
+   "name": "Tetrahexyldecyl…",
+   "kind": "INCI",
+   "inci": "TETRAHEXYLDECYL ASCORBATE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated",
+   "read_b": {
+    "name": "Tetrahexyldecyl…",
+    "kind": "INCI",
+    "inci": "TETRAHEXYLDECYL ASCORBATE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "truncated"
+   }
+  },
+  "Tocopher…": {
+   "name": "Tocopher…",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "truncated",
+   "read_b": {
+    "name": "Tocopher…",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "truncated"
+   }
+  },
+  "Ethylhexyl…": {
+   "name": "Ethylhexyl…",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "truncated",
+   "read_b": {
+    "name": "Ethylhexyl…",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "truncated"
+   }
+  },
+  "Methyldibromo…": {
+   "name": "Methyldibromo…",
+   "kind": "INCI",
+   "inci": "METHYLDIBROMO GLUTARONITRILE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated",
+   "read_b": {
+    "name": "Methyldibromo…",
+    "kind": "INCI",
+    "inci": "METHYLDIBROMO GLUTARONITRILE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "truncated"
+   }
+  },
+  "…Barbadensis Leaf Extract": {
+   "name": "…Barbadensis Leaf Extract",
+   "kind": "INCI",
+   "inci": "ALOE BARBADENSIS LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated",
+   "read_b": {
+    "name": "…Barbadensis Leaf Extract",
+    "kind": "INCI",
+    "inci": "ALOE BARBADENSIS LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "truncated"
+   }
+  },
+  "…methicone Copolyol": {
+   "name": "…methicone Copolyol",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "truncated",
+   "read_b": {
+    "name": "…methicone Copolyol",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "truncated"
+   }
+  },
+  "Ethylhexyl Methoxycylene": {
+   "name": "Ethylhexyl Methoxycylene",
+   "kind": "INCI",
+   "inci": "ETHYLHEXYL METHOXYCRYLENE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Ethylhexyl Methoxycylene",
+    "kind": "INCI",
+    "inci": "ETHYLHEXYL METHOXYCRYLENE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Acetyl Peptides": {
+   "name": "Acetyl Peptides",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "skin conditioning",
+   "confidence": "low",
+   "note": "unspecified",
+   "read_b": {
+    "name": "Acetyl Peptides",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "skin conditioning",
+    "confidence": "low",
+    "note": "generic"
+   }
+  },
+  "Haematococcus pluvialis algae extract": {
+   "name": "Haematococcus pluvialis algae extract",
+   "kind": "INCI",
+   "inci": "HAEMATOCOCCUS PLUVIALIS EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Haematococcus pluvialis algae extract",
+    "kind": "INCI",
+    "inci": "HAEMATOCOCCUS PLUVIALIS EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "I": {
+   "name": "I",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "I",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "HexanedioI": {
+   "name": "HexanedioI",
+   "kind": "INCI",
+   "inci": "HEXANEDIOL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "OCR; could be 1,2-hexanediol",
+   "read_b": {
+    "name": "HexanedioI",
+    "kind": "INCI",
+    "inci": "HEXANEDIOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR"
+   }
+  },
+  "Capryly/Capryl Glucoside": {
+   "name": "Capryly/Capryl Glucoside",
+   "kind": "INCI",
+   "inci": "CAPRYLYL/CAPRYL GLUCOSIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Capryly/Capryl Glucoside",
+    "kind": "INCI",
+    "inci": "CAPRYLYL/CAPRYL GLUCOSIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Ethyl Fenilate": {
+   "name": "Ethyl Fenilate",
+   "kind": "INCI",
+   "inci": "ETHYL FERULATE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "OCR",
+   "read_b": {
+    "name": "Ethyl Fenilate",
+    "kind": "INCI",
+    "inci": "ETHYL FERULATE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "typo"
+   }
+  },
+  "Mica powder": {
+   "name": "Mica powder",
+   "kind": "INCI",
+   "inci": "MICA",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Mica powder",
+    "kind": "INCI",
+    "inci": "MICA",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Vitis Venifera (Grape) Seed Extract": {
+   "name": "Vitis Venifera (Grape) Seed Extract",
+   "kind": "INCI",
+   "inci": "VITIS VINIFERA SEED EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Vitis Venifera (Grape) Seed Extract",
+    "kind": "INCI",
+    "inci": "VITIS VINIFERA SEED EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "ethylenediamine/stearyl dimier dilinoleate copolymer": {
+   "name": "ethylenediamine/stearyl dimier dilinoleate copolymer",
+   "kind": "INCI",
+   "inci": "ETHYLENEDIAMINE/STEARYL DIMER DILINOLEATE COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "ethylenediamine/stearyl dimier dilinoleate copolymer",
+    "kind": "INCI",
+    "inci": "ETHYLENEDIAMINE/STEARYL DIMER DILINOLEATE COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Citrus Aurantifolia (Lime) Extract": {
+   "name": "Citrus Aurantifolia (Lime) Extract",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Citrus aurantifolia",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "Citrus Aurantifolia (Lime) Extract",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Citrus aurantifolia",
+    "category": null,
+    "confidence": "high",
+    "note": "part/preparation not stated"
+   }
+  },
+  "Bolus Alba (Kaolin Clay)": {
+   "name": "Bolus Alba (Kaolin Clay)",
+   "kind": "INCI",
+   "inci": "KAOLIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Bolus Alba (Kaolin Clay)",
+    "kind": "INCI",
+    "inci": "KAOLIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Na Benzoate": {
+   "name": "Na Benzoate",
+   "kind": "INCI",
+   "inci": "SODIUM BENZOATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Na Benzoate",
+    "kind": "INCI",
+    "inci": "SODIUM BENZOATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Na Chloride": {
+   "name": "Na Chloride",
+   "kind": "INCI",
+   "inci": "SODIUM CHLORIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Na Chloride",
+    "kind": "INCI",
+    "inci": "SODIUM CHLORIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Na Hyaluronate": {
+   "name": "Na Hyaluronate",
+   "kind": "INCI",
+   "inci": "SODIUM HYALURONATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Na Hyaluronate",
+    "kind": "INCI",
+    "inci": "SODIUM HYALURONATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Red 4 (may contain)": {
+   "name": "Red 4 (may contain)",
+   "kind": "INCI",
+   "inci": "CI 14700",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "assumed FD&C Red 4",
+   "read_b": {
+    "name": "Red 4 (may contain)",
+    "kind": "INCI",
+    "inci": "CI 14700",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "Red 4 assumed FD&C Red 4"
+   }
+  },
+  "Hawaiian Macadamia Ternifolia Seed Oil": {
+   "name": "Hawaiian Macadamia Ternifolia Seed Oil",
+   "kind": "INCI",
+   "inci": "MACADAMIA TERNIFOLIA SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Hawaiian Macadamia Ternifolia Seed Oil",
+    "kind": "INCI",
+    "inci": "MACADAMIA TERNIFOLIA SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Hawaiian Aleurites Moluccana (Kukui) Seed Oil": {
+   "name": "Hawaiian Aleurites Moluccana (Kukui) Seed Oil",
+   "kind": "INCI",
+   "inci": "ALEURITES MOLUCCANUS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Hawaiian Aleurites Moluccana (Kukui) Seed Oil",
+    "kind": "INCI",
+    "inci": "ALEURITES MOLUCCANUS SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Hawaiian Morinda Citrifolia (Noni) Fruit Juice": {
+   "name": "Hawaiian Morinda Citrifolia (Noni) Fruit Juice",
+   "kind": "INCI",
+   "inci": "MORINDA CITRIFOLIA FRUIT JUICE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Hawaiian Morinda Citrifolia (Noni) Fruit Juice",
+    "kind": "INCI",
+    "inci": "MORINDA CITRIFOLIA FRUIT JUICE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Tila Cordata Flower Extract": {
+   "name": "Tila Cordata Flower Extract",
+   "kind": "INCI",
+   "inci": "TILIA CORDATA FLOWER EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Tila Cordata Flower Extract",
+    "kind": "INCI",
+    "inci": "TILIA CORDATA FLOWER EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Citrus Aurantium (petitgrain cordillera) Oil": {
+   "name": "Citrus Aurantium (petitgrain cordillera) Oil",
+   "kind": "INCI",
+   "inci": "CITRUS AURANTIUM AMARA LEAF/TWIG OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "petitgrain oil",
+   "read_b": {
+    "name": "Citrus Aurantium (petitgrain cordillera) Oil",
+    "kind": "INCI",
+    "inci": "CITRUS AURANTIUM AMARA LEAF/TWIG OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "petitgrain"
+   }
+  },
+  "Citrus Aurantium (neroli) Oil": {
+   "name": "Citrus Aurantium (neroli) Oil",
+   "kind": "INCI",
+   "inci": "CITRUS AURANTIUM AMARA FLOWER OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "neroli oil",
+   "read_b": {
+    "name": "Citrus Aurantium (neroli) Oil",
+    "kind": "INCI",
+    "inci": "CITRUS AURANTIUM AMARA FLOWER OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "neroli"
+   }
+  },
+  "Lavendula Hybrida (lavendin) Oil": {
+   "name": "Lavendula Hybrida (lavendin) Oil",
+   "kind": "INCI",
+   "inci": "LAVANDULA HYBRIDA OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Lavendula Hybrida (lavendin) Oil",
+    "kind": "INCI",
+    "inci": "LAVANDULA HYBRIDA OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "ALPHA.-TERPINYL ACETATE, (+/-)-": {
+   "name": "ALPHA.-TERPINYL ACETATE, (+/-)-",
+   "kind": "INCI",
+   "inci": "A-TERPINYL ACETATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "ALPHA.-TERPINYL ACETATE, (+/-)-",
+    "kind": "INCI",
+    "inci": "A-TERPINYL ACETATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Glycine Soja (Soybean) Isoflavone Aglyone": {
+   "name": "Glycine Soja (Soybean) Isoflavone Aglyone",
+   "kind": "INCI",
+   "inci": "SOY ISOFLAVONES",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "aglycone form",
+   "read_b": {
+    "name": "Glycine Soja (Soybean) Isoflavone Aglyone",
+    "kind": "INCI",
+    "inci": "SOY ISOFLAVONES",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "aglycone form"
+   }
+  },
+  "Acrylates/ C10-30 Alkyl Acetate Crosspolymer": {
+   "name": "Acrylates/ C10-30 Alkyl Acetate Crosspolymer",
+   "kind": "INCI",
+   "inci": "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "typo",
+   "read_b": {
+    "name": "Acrylates/ C10-30 Alkyl Acetate Crosspolymer",
+    "kind": "INCI",
+    "inci": "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "typo"
+   }
+  },
+  "2-Acetyl-1,2,3,4,5,6,7,8-octahydro-2,3,8,8-tetramethylnaphthalene": {
+   "name": "2-Acetyl-1,2,3,4,5,6,7,8-octahydro-2,3,8,8-tetramethylnaphthalene",
+   "kind": "INCI",
+   "inci": "TETRAMETHYL ACETYLOCTAHYDRONAPHTHALENES",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "2-Acetyl-1,2,3,4,5,6,7,8-octahydro-2,3,8,8-tetramethylnaphthalene",
+    "kind": "INCI",
+    "inci": "TETRAMETHYL ACETYLOCTAHYDRONAPHTHALENES",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "PURIFED WATER": {
+   "name": "PURIFED WATER",
+   "kind": "INCI",
+   "inci": "AQUA",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "PURIFED WATER",
+    "kind": "INCI",
+    "inci": "AQUA",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "POLYGLYCERY-4 ISOSTERATE": {
+   "name": "POLYGLYCERY-4 ISOSTERATE",
+   "kind": "INCI",
+   "inci": "POLYGLYCERYL-4 ISOSTEARATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "POLYGLYCERY-4 ISOSTERATE",
+    "kind": "INCI",
+    "inci": "POLYGLYCERYL-4 ISOSTEARATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "HYALUROUNIC ACID (PLANT BASED)": {
+   "name": "HYALUROUNIC ACID (PLANT BASED)",
+   "kind": "INCI",
+   "inci": "HYALURONIC ACID",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "HYALUROUNIC ACID (PLANT BASED)",
+    "kind": "INCI",
+    "inci": "HYALURONIC ACID",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "CITRUS PARADISI (GRAPEFRUIT)": {
+   "name": "CITRUS PARADISI (GRAPEFRUIT)",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Citrus paradisi",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "CITRUS PARADISI (GRAPEFRUIT)",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Citrus paradisi",
+    "category": null,
+    "confidence": "high",
+    "note": "part/preparation not stated"
+   }
+  },
+  "BETA.-CITRONELLOL, (+/-)-": {
+   "name": "BETA.-CITRONELLOL, (+/-)-",
+   "kind": "INCI",
+   "inci": "CITRONELLOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "BETA.-CITRONELLOL, (+/-)-",
+    "kind": "INCI",
+    "inci": "CITRONELLOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "caramel color (may contain)": {
+   "name": "caramel color (may contain)",
+   "kind": "INCI",
+   "inci": "CARAMEL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "caramel color (may contain)",
+    "kind": "INCI",
+    "inci": "CARAMEL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Hydrogenated C6-14 Olefin Polymer": {
+   "name": "Hydrogenated C6-14 Olefin Polymer",
+   "kind": "INCI",
+   "inci": "HYDROGENATED POLY(C6-14 OLEFIN)",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Hydrogenated C6-14 Olefin Polymer",
+    "kind": "INCI",
+    "inci": "HYDROGENATED POLY(C6-14 OLEFIN)",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Retinyl [Vitamin A[": {
+   "name": "Retinyl [Vitamin A[",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "truncated retinyl ester",
+   "read_b": {
+    "name": "Retinyl [Vitamin A[",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "truncated retinyl ester"
+   }
+  },
+  "Glyceyl Stearate": {
+   "name": "Glyceyl Stearate",
+   "kind": "INCI",
+   "inci": "GLYCERYL STEARATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Glyceyl Stearate",
+    "kind": "INCI",
+    "inci": "GLYCERYL STEARATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Punica Grantum (Pomegranate) Fruit Extract": {
+   "name": "Punica Grantum (Pomegranate) Fruit Extract",
+   "kind": "INCI",
+   "inci": "PUNICA GRANATUM FRUIT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Punica Grantum (Pomegranate) Fruit Extract",
+    "kind": "INCI",
+    "inci": "PUNICA GRANATUM FRUIT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Ext. Violet 2": {
+   "name": "Ext. Violet 2",
+   "kind": "INCI",
+   "inci": "CI 60730",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "Ext. D&C Violet 2",
+   "read_b": {
+    "name": "Ext. Violet 2",
+    "kind": "INCI",
+    "inci": "CI 60730",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Cutyloctyl Salicylate": {
+   "name": "Cutyloctyl Salicylate",
+   "kind": "INCI",
+   "inci": "BUTYLOCTYL SALICYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "OCR",
+   "read_b": {
+    "name": "Cutyloctyl Salicylate",
+    "kind": "INCI",
+    "inci": "BUTYLOCTYL SALICYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR"
+   }
+  },
+  "F": {
+   "name": "F",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "F",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "A": {
+   "name": "A",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "A",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "Na Hyaluronate (hydrating)": {
+   "name": "Na Hyaluronate (hydrating)",
+   "kind": "INCI",
+   "inci": "SODIUM HYALURONATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Na Hyaluronate (hydrating)",
+    "kind": "INCI",
+    "inci": "SODIUM HYALURONATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Cetyl Octanoate (natural emollient)": {
+   "name": "Cetyl Octanoate (natural emollient)",
+   "kind": "INCI",
+   "inci": "CETYL ETHYLHEXANOATE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "old name cetyl octanoate",
+   "read_b": {
+    "name": "Cetyl Octanoate (natural emollient)",
+    "kind": "INCI",
+    "inci": "CETYL ETHYLHEXANOATE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "cetyl octanoate"
+   }
+  },
+  "E": {
+   "name": "E",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "E",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "POLY(METHYL ACRYLATE-CO-METHYL METHACRYLATE-CO-METHACRYLIC ACID 7:3:1; 280000 MW)": {
+   "name": "POLY(METHYL ACRYLATE-CO-METHYL METHACRYLATE-CO-METHACRYLIC ACID 7:3:1; 280000 MW)",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "film former",
+   "confidence": "low",
+   "note": "no CosIng entry found",
+   "read_b": {
+    "name": "POLY(METHYL ACRYLATE-CO-METHYL METHACRYLATE-CO-METHACRYLIC ACID 7:3:1; 280000 MW)",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "film former",
+    "confidence": "low",
+    "note": "methacrylate copolymer"
+   }
+  },
+  "d-alpha tocopherol / d-alpha tocophérol": {
+   "name": "d-alpha tocopherol / d-alpha tocophérol",
+   "kind": "INCI",
+   "inci": "TOCOPHEROL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "d-alpha tocopherol / d-alpha tocophérol",
+    "kind": "INCI",
+    "inci": "TOCOPHEROL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Acrylates/C10-30 Alkyl Acylate Crosspolymer": {
+   "name": "Acrylates/C10-30 Alkyl Acylate Crosspolymer",
+   "kind": "INCI",
+   "inci": "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Acrylates/C10-30 Alkyl Acylate Crosspolymer",
+    "kind": "INCI",
+    "inci": "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Oligopepetide-68": {
+   "name": "Oligopepetide-68",
+   "kind": "INCI",
+   "inci": "OLIGOPEPTIDE-68",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Oligopepetide-68",
+    "kind": "INCI",
+    "inci": "OLIGOPEPTIDE-68",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Potassium Methoxysalicylate": {
+   "name": "Potassium Methoxysalicylate",
+   "kind": "INCI",
+   "inci": "POTASSIUM METHOXYSALICYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Potassium Methoxysalicylate",
+    "kind": "INCI",
+    "inci": "POTASSIUM METHOXYSALICYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Retinyl [Vitamin A]": {
+   "name": "Retinyl [Vitamin A]",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "truncated retinyl ester",
+   "read_b": {
+    "name": "Retinyl [Vitamin A]",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "truncated retinyl ester"
+   }
+  },
+  "α-Lipoic Acid": {
+   "name": "α-Lipoic Acid",
+   "kind": "INCI",
+   "inci": "THIOCTIC ACID",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "α-Lipoic Acid",
+    "kind": "INCI",
+    "inci": "THIOCTIC ACID",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Nymphaes Coerulea Flower Extract": {
+   "name": "Nymphaes Coerulea Flower Extract",
+   "kind": "INCI",
+   "inci": "NYMPHAEA COERULEA FLOWER EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Nymphaes Coerulea Flower Extract",
+    "kind": "INCI",
+    "inci": "NYMPHAEA COERULEA FLOWER EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "C12-18 ALCOHOLS": {
+   "name": "C12-18 ALCOHOLS",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "emollient",
+   "confidence": "low",
+   "note": "C12-18 fatty alcohol blend not listed",
+   "read_b": {
+    "name": "C12-18 ALCOHOLS",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "emollient",
+    "confidence": "low",
+    "note": "no CosIng entry found"
+   }
+  },
+  "Alcohol Denatured (66.02% w/w)": {
+   "name": "Alcohol Denatured (66.02% w/w)",
+   "kind": "INCI",
+   "inci": "ALCOHOL DENAT.",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Alcohol Denatured (66.02% w/w)",
+    "kind": "INCI",
+    "inci": "ALCOHOL DENAT.",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Rosa Canina (Rosehip) Extract": {
+   "name": "Rosa Canina (Rosehip) Extract",
+   "kind": "INCI",
+   "inci": "ROSA CANINA FRUIT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "rosehip = fruit",
+   "read_b": {
+    "name": "Rosa Canina (Rosehip) Extract",
+    "kind": "INCI",
+    "inci": "ROSA CANINA FRUIT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Caprylic/Capric Tryglyceride": {
+   "name": "Caprylic/Capric Tryglyceride",
+   "kind": "INCI",
+   "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Caprylic/Capric Tryglyceride",
+    "kind": "INCI",
+    "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Berthorlletia Excelsa Seed Oil": {
+   "name": "Berthorlletia Excelsa Seed Oil",
+   "kind": "INCI",
+   "inci": "BERTHOLLETIA EXCELSA SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Berthorlletia Excelsa Seed Oil",
+    "kind": "INCI",
+    "inci": "BERTHOLLETIA EXCELSA SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Citrus Aurantium Dulcis (Orange) Extract": {
+   "name": "Citrus Aurantium Dulcis (Orange) Extract",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Citrus aurantium dulcis",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "Citrus Aurantium Dulcis (Orange) Extract",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Citrus aurantium dulcis",
+    "category": null,
+    "confidence": "high",
+    "note": "part/preparation not stated"
+   }
+  },
+  "disodi stearoyl glutamate": {
+   "name": "disodi stearoyl glutamate",
+   "kind": "INCI",
+   "inci": "DISODIUM STEAROYL GLUTAMATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "disodi stearoyl glutamate",
+    "kind": "INCI",
+    "inci": "DISODIUM STEAROYL GLUTAMATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "truncated"
+   }
+  },
+  "Aveena Sativa (Oat) Beta Glucan": {
+   "name": "Aveena Sativa (Oat) Beta Glucan",
+   "kind": "INCI",
+   "inci": "BETA-GLUCAN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "oat beta-glucan",
+   "read_b": {
+    "name": "Aveena Sativa (Oat) Beta Glucan",
+    "kind": "INCI",
+    "inci": "BETA-GLUCAN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "d-alpha tocopherol": {
+   "name": "d-alpha tocopherol",
+   "kind": "INCI",
+   "inci": "TOCOPHEROL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "d-alpha tocopherol",
+    "kind": "INCI",
+    "inci": "TOCOPHEROL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "ACRYLATES ETHYLHEXYL ACRYLATE": {
+   "name": "ACRYLATES ETHYLHEXYL ACRYLATE",
+   "kind": "INCI",
+   "inci": "ACRYLATES/ETHYLHEXYL ACRYLATE COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "copolymer vs crosspolymer",
+   "read_b": {
+    "name": "ACRYLATES ETHYLHEXYL ACRYLATE",
+    "kind": "INCI",
+    "inci": "ACRYLATES/ETHYLHEXYL ACRYLATE COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "slash missing"
+   }
+  },
+  "Dicparylyl Carbonate": {
+   "name": "Dicparylyl Carbonate",
+   "kind": "INCI",
+   "inci": "DICAPRYLYL CARBONATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Dicparylyl Carbonate",
+    "kind": "INCI",
+    "inci": "DICAPRYLYL CARBONATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "DL-Panthenol": {
+   "name": "DL-Panthenol",
+   "kind": "INCI",
+   "inci": "PANTHENOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "DL-Panthenol",
+    "kind": "INCI",
+    "inci": "PANTHENOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Tocopheryl Phosphates": {
+   "name": "Tocopheryl Phosphates",
+   "kind": "INCI",
+   "inci": "TOCOPHERYL PHOSPHATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Tocopheryl Phosphates",
+    "kind": "INCI",
+    "inci": "TOCOPHERYL PHOSPHATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "D-Alpha Tocopheryl Acetate": {
+   "name": "D-Alpha Tocopheryl Acetate",
+   "kind": "INCI",
+   "inci": "TOCOPHERYL ACETATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "D-Alpha Tocopheryl Acetate",
+    "kind": "INCI",
+    "inci": "TOCOPHERYL ACETATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Hawaiian Sea Salt": {
+   "name": "Hawaiian Sea Salt",
+   "kind": "INCI",
+   "inci": "SEA SALT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Hawaiian Sea Salt",
+    "kind": "INCI",
+    "inci": "SEA SALT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "ALOE BARBADENSIS LEAVE JUICE EXTRACT": {
+   "name": "ALOE BARBADENSIS LEAVE JUICE EXTRACT",
+   "kind": "INCI",
+   "inci": "ALOE BARBADENSIS LEAF JUICE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "leaf juice extract",
+   "read_b": {
+    "name": "ALOE BARBADENSIS LEAVE JUICE EXTRACT",
+    "kind": "INCI",
+    "inci": "ALOE BARBADENSIS LEAF JUICE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": ""
+   }
+  },
+  "VEGETABLE GLYCERIN": {
+   "name": "VEGETABLE GLYCERIN",
+   "kind": "INCI",
+   "inci": "GLYCERIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "VEGETABLE GLYCERIN",
+    "kind": "INCI",
+    "inci": "GLYCERIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Gardenia Tahitensis Flower Extract": {
+   "name": "Gardenia Tahitensis Flower Extract",
+   "kind": "INCI",
+   "inci": "GARDENIA TAITENSIS FLOWER EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Gardenia Tahitensis Flower Extract",
+    "kind": "INCI",
+    "inci": "GARDENIA TAITENSIS FLOWER EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "denat": {
+   "name": "denat",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "denat",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "Polyester-?": {
+   "name": "Polyester-?",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "Polyester-?",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "Chamomile (Anthemis Nobilis) Flower Extract": {
+   "name": "Chamomile (Anthemis Nobilis) Flower Extract",
+   "kind": "INCI",
+   "inci": "ANTHEMIS NOBILIS FLOWER EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Chamomile (Anthemis Nobilis) Flower Extract",
+    "kind": "INCI",
+    "inci": "ANTHEMIS NOBILIS FLOWER EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Dog Rose (Rosa Canina) Fruit Oil": {
+   "name": "Dog Rose (Rosa Canina) Fruit Oil",
+   "kind": "INCI",
+   "inci": "ROSA CANINA FRUIT OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Dog Rose (Rosa Canina) Fruit Oil",
+    "kind": "INCI",
+    "inci": "ROSA CANINA FRUIT OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Borage (Borago Officinalis) Seed Oil": {
+   "name": "Borage (Borago Officinalis) Seed Oil",
+   "kind": "INCI",
+   "inci": "BORAGO OFFICINALIS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Borage (Borago Officinalis) Seed Oil",
+    "kind": "INCI",
+    "inci": "BORAGO OFFICINALIS SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Alpha Hydroxy Acid (Fruit Base)": {
+   "name": "Alpha Hydroxy Acid (Fruit Base)",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "class name",
+   "read_b": {
+    "name": "Alpha Hydroxy Acid (Fruit Base)",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "mixture of acids"
+   }
+  },
+  "HYDROGENATED C6-14 OLEFIN POLYMERS": {
+   "name": "HYDROGENATED C6-14 OLEFIN POLYMERS",
+   "kind": "INCI",
+   "inci": "HYDROGENATED POLY(C6-14 OLEFIN)",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "HYDROGENATED C6-14 OLEFIN POLYMERS",
+    "kind": "INCI",
+    "inci": "HYDROGENATED POLY(C6-14 OLEFIN)",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "CAPRIC / CAPRYLICTRIGLYCERIDE": {
+   "name": "CAPRIC / CAPRYLICTRIGLYCERIDE",
+   "kind": "INCI",
+   "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "CAPRIC / CAPRYLICTRIGLYCERIDE",
+    "kind": "INCI",
+    "inci": "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Neacen": {
+   "name": "Neacen",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "garbled",
+   "read_b": {
+    "name": "Neacen",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "Polymethsilsesquioxane": {
+   "name": "Polymethsilsesquioxane",
+   "kind": "INCI",
+   "inci": "POLYMETHYLSILSESQUIOXANE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Polymethsilsesquioxane",
+    "kind": "INCI",
+    "inci": "POLYMETHYLSILSESQUIOXANE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "N-HEXANOYLSPHINGOSINE": {
+   "name": "N-HEXANOYLSPHINGOSINE",
+   "kind": "INCI",
+   "inci": "CAPROYL SPHINGOSINE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "hexanoyl = caproyl",
+   "read_b": {
+    "name": "N-HEXANOYLSPHINGOSINE",
+    "kind": "INCI",
+    "inci": "CAPROYL SPHINGOSINE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "hexanoyl = caproyl"
+   }
+  },
+  "OctenylSuccinate": {
+   "name": "OctenylSuccinate",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment",
+   "read_b": {
+    "name": "OctenylSuccinate",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "c12": {
+   "name": "c12",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "c12",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "CAMELIA SINENSIS EXTRACT": {
+   "name": "CAMELIA SINENSIS EXTRACT",
+   "kind": "INCI",
+   "inci": "CAMELLIA SINENSIS EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "CAMELIA SINENSIS EXTRACT",
+    "kind": "INCI",
+    "inci": "CAMELLIA SINENSIS EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "PERSEA GRATTISSIMA": {
+   "name": "PERSEA GRATTISSIMA",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Persea gratissima",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "PERSEA GRATTISSIMA",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Persea gratissima",
+    "category": null,
+    "confidence": "high",
+    "note": "part/preparation not stated"
+   }
+  },
+  "POTASSIM CETYL PHOSPHATE": {
+   "name": "POTASSIM CETYL PHOSPHATE",
+   "kind": "INCI",
+   "inci": "POTASSIUM CETYL PHOSPHATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "POTASSIM CETYL PHOSPHATE",
+    "kind": "INCI",
+    "inci": "POTASSIUM CETYL PHOSPHATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Glycerophosphoinositol Lysine": {
+   "name": "Glycerophosphoinositol Lysine",
+   "kind": "INCI",
+   "inci": "GLYCEROPHOSPHOINOSITOL LYSINE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Glycerophosphoinositol Lysine",
+    "kind": "INCI",
+    "inci": "GLYCEROPHOSPHOINOSITOL LYSINE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "pyridoxine hydrochloride": {
+   "name": "pyridoxine hydrochloride",
+   "kind": "INCI",
+   "inci": "PYRIDOXINE HCL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "pyridoxine hydrochloride",
+    "kind": "INCI",
+    "inci": "PYRIDOXINE HCL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "POLYGLYCERYL-4 LAURATE/SUCCINATE": {
+   "name": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+   "kind": "INCI",
+   "inci": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+    "kind": "INCI",
+    "inci": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Myristate": {
+   "name": "Myristate",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "Myristate",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "Sodium Ascorbyl Phospate": {
+   "name": "Sodium Ascorbyl Phospate",
+   "kind": "INCI",
+   "inci": "SODIUM ASCORBYL PHOSPHATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Sodium Ascorbyl Phospate",
+    "kind": "INCI",
+    "inci": "SODIUM ASCORBYL PHOSPHATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Isopropyl": {
+   "name": "Isopropyl",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "Isopropyl",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "picea abies wood extract": {
+   "name": "picea abies wood extract",
+   "kind": "INCI",
+   "inci": "PICEA ABIES WOOD EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "picea abies wood extract",
+    "kind": "INCI",
+    "inci": "PICEA ABIES WOOD EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "polyglyceryl-4 laurate / succinate": {
+   "name": "polyglyceryl-4 laurate / succinate",
+   "kind": "INCI",
+   "inci": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "polyglyceryl-4 laurate / succinate",
+    "kind": "INCI",
+    "inci": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "GLYCEROPHOSPHOINOSITOL LYSINE": {
+   "name": "GLYCEROPHOSPHOINOSITOL LYSINE",
+   "kind": "INCI",
+   "inci": "GLYCEROPHOSPHOINOSITOL LYSINE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "GLYCEROPHOSPHOINOSITOL LYSINE",
+    "kind": "INCI",
+    "inci": "GLYCEROPHOSPHOINOSITOL LYSINE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Sulisobenzone 1.0% (active)": {
+   "name": "Sulisobenzone 1.0% (active)",
+   "kind": "INCI",
+   "inci": "BENZOPHENONE-4",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "sulisobenzone",
+   "read_b": {
+    "name": "Sulisobenzone 1.0% (active)",
+    "kind": "INCI",
+    "inci": "BENZOPHENONE-4",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Octisalate 5.0% (active)": {
+   "name": "Octisalate 5.0% (active)",
+   "kind": "INCI",
+   "inci": "ETHYLHEXYL SALICYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "octisalate",
+   "read_b": {
+    "name": "Octisalate 5.0% (active)",
+    "kind": "INCI",
+    "inci": "ETHYLHEXYL SALICYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Avobenzone 2.95% (active)": {
+   "name": "Avobenzone 2.95% (active)",
+   "kind": "INCI",
+   "inci": "BUTYL METHOXYDIBENZOYLMETHANE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "avobenzone",
+   "read_b": {
+    "name": "Avobenzone 2.95% (active)",
+    "kind": "INCI",
+    "inci": "BUTYL METHOXYDIBENZOYLMETHANE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Tetrasodium ethylenediaminetetraacetate": {
+   "name": "Tetrasodium ethylenediaminetetraacetate",
+   "kind": "INCI",
+   "inci": "TETRASODIUM EDTA",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Tetrasodium ethylenediaminetetraacetate",
+    "kind": "INCI",
+    "inci": "TETRASODIUM EDTA",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "emulsifying wax (plant derived)": {
+   "name": "emulsifying wax (plant derived)",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "emulsifier",
+   "confidence": "low",
+   "note": "no CosIng entry found",
+   "read_b": {
+    "name": "emulsifying wax (plant derived)",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "emulsifier",
+    "confidence": "low",
+    "note": "blend"
+   }
+  },
+  "quillaja saponaria (soap bark) extract": {
+   "name": "quillaja saponaria (soap bark) extract",
+   "kind": "INCI",
+   "inci": "QUILLAJA SAPONARIA BARK EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "quillaja saponaria (soap bark) extract",
+    "kind": "INCI",
+    "inci": "QUILLAJA SAPONARIA BARK EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "coffea arabica (coffee) seed": {
+   "name": "coffea arabica (coffee) seed",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Coffea arabica",
+   "category": null,
+   "confidence": "high",
+   "note": "seed, preparation not given",
+   "read_b": {
+    "name": "coffea arabica (coffee) seed",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Coffea arabica",
+    "category": null,
+    "confidence": "high",
+    "note": "seed; preparation not stated"
+   }
+  },
+  "acrylates/c10-30 alkyl acrylates crosspolymer": {
+   "name": "acrylates/c10-30 alkyl acrylates crosspolymer",
+   "kind": "INCI",
+   "inci": "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "acrylates/c10-30 alkyl acrylates crosspolymer",
+    "kind": "INCI",
+    "inci": "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "GAMMA.-TOCOPHEROL": {
+   "name": "GAMMA.-TOCOPHEROL",
+   "kind": "INCI",
+   "inci": "TOCOPHEROL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "gamma isomer",
+   "read_b": {
+    "name": "GAMMA.-TOCOPHEROL",
+    "kind": "INCI",
+    "inci": "TOCOPHEROL",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "gamma isomer"
+   }
+  },
+  "BETA.-TOCOPHEROL": {
+   "name": "BETA.-TOCOPHEROL",
+   "kind": "INCI",
+   "inci": "TOCOPHEROL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "beta isomer",
+   "read_b": {
+    "name": "BETA.-TOCOPHEROL",
+    "kind": "INCI",
+    "inci": "TOCOPHEROL",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "beta isomer"
+   }
+  },
+  "Glycol Dimethacrylate": {
+   "name": "Glycol Dimethacrylate",
+   "kind": "INCI",
+   "inci": "GLYCOL DIMETHACRYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Glycol Dimethacrylate",
+    "kind": "INCI",
+    "inci": "GLYCOL DIMETHACRYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "GLYCOL DIMETHACRYLATE": {
+   "name": "GLYCOL DIMETHACRYLATE",
+   "kind": "INCI",
+   "inci": "GLYCOL DIMETHACRYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "GLYCOL DIMETHACRYLATE",
+    "kind": "INCI",
+    "inci": "GLYCOL DIMETHACRYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "GLYCEINE SOJA (SOYBEAN) ISOFLAVONE AGLYONE": {
+   "name": "GLYCEINE SOJA (SOYBEAN) ISOFLAVONE AGLYONE",
+   "kind": "INCI",
+   "inci": "SOY ISOFLAVONES",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "aglycone form",
+   "read_b": {
+    "name": "GLYCEINE SOJA (SOYBEAN) ISOFLAVONE AGLYONE",
+    "kind": "INCI",
+    "inci": "SOY ISOFLAVONES",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "aglycone form"
+   }
+  },
+  "Tocopherol Acetate9Vitamin E": {
+   "name": "Tocopherol Acetate9Vitamin E",
+   "kind": "INCI",
+   "inci": "TOCOPHERYL ACETATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Tocopherol Acetate9Vitamin E",
+    "kind": "INCI",
+    "inci": "TOCOPHERYL ACETATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR"
+   }
+  },
+  "oligopeptide-68": {
+   "name": "oligopeptide-68",
+   "kind": "INCI",
+   "inci": "OLIGOPEPTIDE-68",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "oligopeptide-68",
+    "kind": "INCI",
+    "inci": "OLIGOPEPTIDE-68",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "PVP?ejcosene": {
+   "name": "PVP?ejcosene",
+   "kind": "INCI",
+   "inci": "VP/EICOSENE COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "OCR",
+   "read_b": {
+    "name": "PVP?ejcosene",
+    "kind": "INCI",
+    "inci": "VP/EICOSENE COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR"
+   }
+  },
+  "Poly[...]": {
+   "name": "Poly[...]",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment/not an ingredient",
+   "read_b": {
+    "name": "Poly[...]",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "Bambusa Vulgaris Stem/Leaf Extract": {
+   "name": "Bambusa Vulgaris Stem/Leaf Extract",
+   "kind": "INCI",
+   "inci": "BAMBUSA VULGARIS LEAF/STEM EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Bambusa Vulgaris Stem/Leaf Extract",
+    "kind": "INCI",
+    "inci": "BAMBUSA VULGARIS LEAF/STEM EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Punica Granatum (Pomegranate) [Seed Oil]": {
+   "name": "Punica Granatum (Pomegranate) [Seed Oil]",
+   "kind": "INCI",
+   "inci": "PUNICA GRANATUM SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Punica Granatum (Pomegranate) [Seed Oil]",
+    "kind": "INCI",
+    "inci": "PUNICA GRANATUM SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "PICEA EXCELSA WOOD EXTRACT": {
+   "name": "PICEA EXCELSA WOOD EXTRACT",
+   "kind": "INCI",
+   "inci": "PICEA ABIES WOOD EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "Picea excelsa = Picea abies",
+   "read_b": {
+    "name": "PICEA EXCELSA WOOD EXTRACT",
+    "kind": "INCI",
+    "inci": "PICEA ABIES WOOD EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Picea excelsa synonym"
+   }
+  },
+  "D Limonene": {
+   "name": "D Limonene",
+   "kind": "INCI",
+   "inci": "LIMONENE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "D Limonene",
+    "kind": "INCI",
+    "inci": "LIMONENE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "2-(4-tert-Butylbenzyl) Propionaldehyde (Lilial)": {
+   "name": "2-(4-tert-Butylbenzyl) Propionaldehyde (Lilial)",
+   "kind": "INCI",
+   "inci": "BUTYLPHENYL METHYLPROPIONAL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "2-(4-tert-Butylbenzyl) Propionaldehyde (Lilial)",
+    "kind": "INCI",
+    "inci": "BUTYLPHENYL METHYLPROPIONAL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Brassica Campestris/Aleurites Fordii Oil Copolymer (from rapeseed and aleurites oils)": {
+   "name": "Brassica Campestris/Aleurites Fordii Oil Copolymer (from rapeseed and aleurites oils)",
+   "kind": "INCI",
+   "inci": "BRASSICA CAMPESTRIS/ALEURITES FORDI OIL COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Brassica Campestris/Aleurites Fordii Oil Copolymer (from rapeseed and aleurites oils)",
+    "kind": "INCI",
+    "inci": "BRASSICA CAMPESTRIS/ALEURITES FORDI OIL COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Simmondsia Chinensis (Jojoba) Esters (from natural plant)": {
+   "name": "Simmondsia Chinensis (Jojoba) Esters (from natural plant)",
+   "kind": "INCI",
+   "inci": "JOJOBA ESTERS",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Simmondsia Chinensis (Jojoba) Esters (from natural plant)",
+    "kind": "INCI",
+    "inci": "JOJOBA ESTERS",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "ETHYLEBE GLYCOL": {
+   "name": "ETHYLEBE GLYCOL",
+   "kind": "INCI",
+   "inci": "GLYCOL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "ethylene glycol, OCR",
+   "read_b": {
+    "name": "ETHYLEBE GLYCOL",
+    "kind": "INCI",
+    "inci": "GLYCOL",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "ethylene glycol, typo"
+   }
+  },
+  "GLYCETIN": {
+   "name": "GLYCETIN",
+   "kind": "INCI",
+   "inci": "GLYCERIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "GLYCETIN",
+    "kind": "INCI",
+    "inci": "GLYCERIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "and Xanthan Gum": {
+   "name": "and Xanthan Gum",
+   "kind": "INCI",
+   "inci": "XANTHAN GUM",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "and Xanthan Gum",
+    "kind": "INCI",
+    "inci": "XANTHAN GUM",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Gingko Biloba (Ginkgo) Leaf Extract": {
+   "name": "Gingko Biloba (Ginkgo) Leaf Extract",
+   "kind": "INCI",
+   "inci": "GINKGO BILOBA LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Gingko Biloba (Ginkgo) Leaf Extract",
+    "kind": "INCI",
+    "inci": "GINKGO BILOBA LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "PEG-11 METHYL ETHER DIMETHCONE": {
+   "name": "PEG-11 METHYL ETHER DIMETHCONE",
+   "kind": "INCI",
+   "inci": "PEG-11 METHYL ETHER DIMETHICONE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "PEG-11 METHYL ETHER DIMETHCONE",
+    "kind": "INCI",
+    "inci": "PEG-11 METHYL ETHER DIMETHICONE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Sodium Benzotriazolyl Butylphenol Sulfonate": {
+   "name": "Sodium Benzotriazolyl Butylphenol Sulfonate",
+   "kind": "INCI",
+   "inci": "SODIUM BENZOTRIAZOLYL BUTYLPHENOL SULFONATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Sodium Benzotriazolyl Butylphenol Sulfonate",
+    "kind": "INCI",
+    "inci": "SODIUM BENZOTRIAZOLYL BUTYLPHENOL SULFONATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Human Oligopeptide-9": {
+   "name": "Human Oligopeptide-9",
+   "kind": "INCI",
+   "inci": "SH-OLIGOPEPTIDE-9",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "human = sh- prefix",
+   "read_b": {
+    "name": "Human Oligopeptide-9",
+    "kind": "INCI",
+    "inci": "SH-OLIGOPEPTIDE-9",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "human oligopeptide naming"
+   }
+  },
+  "acacia": {
+   "name": "acacia",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "acacia",
+   "category": null,
+   "confidence": "low",
+   "note": "species not given",
+   "read_b": {
+    "name": "acacia",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "acacia",
+    "category": null,
+    "confidence": "low",
+    "note": "species and part not stated"
+   }
+  },
+  "Alusion (Aluminum Oxide)": {
+   "name": "Alusion (Aluminum Oxide)",
+   "kind": "INCI",
+   "inci": "ALUMINA",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Alusion (Aluminum Oxide)",
+    "kind": "INCI",
+    "inci": "ALUMINA",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "mica <iln36381>": {
+   "name": "mica <iln36381>",
+   "kind": "INCI",
+   "inci": "MICA",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "mica <iln36381>",
+    "kind": "INCI",
+    "inci": "MICA",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Mica CI77019": {
+   "name": "Mica CI77019",
+   "kind": "INCI",
+   "inci": "MICA",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Mica CI77019",
+    "kind": "INCI",
+    "inci": "MICA",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Siegesbeckia Orientalis (St. Paul's Wort) Extract": {
+   "name": "Siegesbeckia Orientalis (St. Paul's Wort) Extract",
+   "kind": "INCI",
+   "inci": "SIGESBECKIA ORIENTALIS EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Siegesbeckia Orientalis (St. Paul's Wort) Extract",
+    "kind": "INCI",
+    "inci": "SIGESBECKIA ORIENTALIS EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "and fragrance": {
+   "name": "and fragrance",
+   "kind": "INCI",
+   "inci": "PARFUM",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "and fragrance",
+    "kind": "INCI",
+    "inci": "PARFUM",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Lycium Chinensis (Goji Berry) Extract": {
+   "name": "Lycium Chinensis (Goji Berry) Extract",
+   "kind": "INCI",
+   "inci": "LYCIUM CHINENSE EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Lycium Chinensis (Goji Berry) Extract",
+    "kind": "INCI",
+    "inci": "LYCIUM CHINENSE EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Ranunculus Ficaria Root Extract": {
+   "name": "Ranunculus Ficaria Root Extract",
+   "kind": "INCI",
+   "inci": "RANUNCULUS FICARIA EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "root not specified in INCI",
+   "read_b": {
+    "name": "Ranunculus Ficaria Root Extract",
+    "kind": "INCI",
+    "inci": "RANUNCULUS FICARIA EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "root not in INCI"
+   }
+  },
+  "Organic Olive Squalane": {
+   "name": "Organic Olive Squalane",
+   "kind": "INCI",
+   "inci": "SQUALANE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Organic Olive Squalane",
+    "kind": "INCI",
+    "inci": "SQUALANE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "polyglyceryl-4": {
+   "name": "polyglyceryl-4",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment",
+   "read_b": {
+    "name": "polyglyceryl-4",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "isostearate": {
+   "name": "isostearate",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "fragment",
+   "read_b": {
+    "name": "isostearate",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment/unidentifiable"
+   }
+  },
+  "ISOAMYL P-METHOXYCINAMATE": {
+   "name": "ISOAMYL P-METHOXYCINAMATE",
+   "kind": "INCI",
+   "inci": "ISOAMYL P-METHOXYCINNAMATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "ISOAMYL P-METHOXYCINAMATE",
+    "kind": "INCI",
+    "inci": "ISOAMYL P-METHOXYCINNAMATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Anthemis Nobilis (Chamomile)": {
+   "name": "Anthemis Nobilis (Chamomile)",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Anthemis nobilis",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "Anthemis Nobilis (Chamomile)",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Anthemis nobilis",
+    "category": null,
+    "confidence": "high",
+    "note": "part/preparation not stated"
+   }
+  },
+  "Sodium Carboxylmethyl Beta-glucan": {
+   "name": "Sodium Carboxylmethyl Beta-glucan",
+   "kind": "INCI",
+   "inci": "SODIUM CARBOXYMETHYL BETA-GLUCAN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Sodium Carboxylmethyl Beta-glucan",
+    "kind": "INCI",
+    "inci": "SODIUM CARBOXYMETHYL BETA-GLUCAN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "methylsilsesquioxane resin": {
+   "name": "methylsilsesquioxane resin",
+   "kind": "INCI",
+   "inci": "POLYMETHYLSILSESQUIOXANE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "same substance",
+   "read_b": {
+    "name": "methylsilsesquioxane resin",
+    "kind": "INCI",
+    "inci": "POLYMETHYLSILSESQUIOXANE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": ""
+   }
+  },
+  "Aleurites Moluccana Seed (Kukui Nut) Oil": {
+   "name": "Aleurites Moluccana Seed (Kukui Nut) Oil",
+   "kind": "INCI",
+   "inci": "ALEURITES MOLUCCANUS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Aleurites Moluccana Seed (Kukui Nut) Oil",
+    "kind": "INCI",
+    "inci": "ALEURITES MOLUCCANUS SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "ehtylhexylglycerin": {
+   "name": "ehtylhexylglycerin",
+   "kind": "INCI",
+   "inci": "ETHYLHEXYLGLYCERIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "ehtylhexylglycerin",
+    "kind": "INCI",
+    "inci": "ETHYLHEXYLGLYCERIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "hand-filleted aloe vera": {
+   "name": "hand-filleted aloe vera",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Aloe barbadensis",
+   "category": null,
+   "confidence": "high",
+   "note": "plant, part/preparation not specified",
+   "read_b": {
+    "name": "hand-filleted aloe vera",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Aloe barbadensis",
+    "category": null,
+    "confidence": "high",
+    "note": "part/preparation not stated"
+   }
+  },
+  "quaking aspen tree bark": {
+   "name": "quaking aspen tree bark",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Populus tremuloides",
+   "category": null,
+   "confidence": "high",
+   "note": "bark, preparation not given",
+   "read_b": {
+    "name": "quaking aspen tree bark",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Populus tremuloides",
+    "category": null,
+    "confidence": "high",
+    "note": "bark; preparation not stated"
+   }
+  },
+  "acrylates/c10-30 alkly acrylate crosspolymer": {
+   "name": "acrylates/c10-30 alkly acrylate crosspolymer",
+   "kind": "INCI",
+   "inci": "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "acrylates/c10-30 alkly acrylate crosspolymer",
+    "kind": "INCI",
+    "inci": "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "betain": {
+   "name": "betain",
+   "kind": "INCI",
+   "inci": "BETAINE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "betain",
+    "kind": "INCI",
+    "inci": "BETAINE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "SODIUM STEARYL LACTATE": {
+   "name": "SODIUM STEARYL LACTATE",
+   "kind": "INCI",
+   "inci": "SODIUM STEAROYL LACTYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "garbled",
+   "read_b": {
+    "name": "SODIUM STEARYL LACTATE",
+    "kind": "INCI",
+    "inci": "SODIUM STEAROYL LACTYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "probable typo"
+   }
+  },
+  "Trihydroxycaprylylsilane": {
+   "name": "Trihydroxycaprylylsilane",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "silicone",
+   "confidence": "low",
+   "note": "no CosIng entry found",
+   "read_b": {
+    "name": "Trihydroxycaprylylsilane",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "silicone",
+    "confidence": "low",
+    "note": "no CosIng entry found"
+   }
+  },
+  "Noni (Morinda Citrifolia) Fruit Extract": {
+   "name": "Noni (Morinda Citrifolia) Fruit Extract",
+   "kind": "INCI",
+   "inci": "MORINDA CITRIFOLIA FRUIT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Noni (Morinda Citrifolia) Fruit Extract",
+    "kind": "INCI",
+    "inci": "MORINDA CITRIFOLIA FRUIT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Acetyl Rheum Rhaponticum Root Extract": {
+   "name": "Acetyl Rheum Rhaponticum Root Extract",
+   "kind": "INCI",
+   "inci": "ACETYL RHEUM RHAPONTICUM ROOT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "Acetyl Rheum Rhaponticum Root Extract",
+    "kind": "INCI",
+    "inci": "ACETYL RHEUM RHAPONTICUM ROOT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "avene thermal spring water (avene aqua)": {
+   "name": "avene thermal spring water (avene aqua)",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "solvent",
+   "confidence": "high",
+   "note": "Avene thermal spring water",
+   "read_b": {
+    "name": "avene thermal spring water (avene aqua)",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "solvent",
+    "confidence": "high",
+    "note": "Avene thermal spring water"
+   }
+  },
+  "RANUNCULUS FICARIA ROOT EXTRACT": {
+   "name": "RANUNCULUS FICARIA ROOT EXTRACT",
+   "kind": "INCI",
+   "inci": "RANUNCULUS FICARIA EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "root not specified in INCI",
+   "read_b": {
+    "name": "RANUNCULUS FICARIA ROOT EXTRACT",
+    "kind": "INCI",
+    "inci": "RANUNCULUS FICARIA EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "root not in INCI"
+   }
+  },
+  "LYCIUM CHINENSIS (WOLF BERRY) EXTRACT": {
+   "name": "LYCIUM CHINENSIS (WOLF BERRY) EXTRACT",
+   "kind": "INCI",
+   "inci": "LYCIUM CHINENSE EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "same substance",
+   "read_b": {
+    "name": "LYCIUM CHINENSIS (WOLF BERRY) EXTRACT",
+    "kind": "INCI",
+    "inci": "LYCIUM CHINENSE EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Acryloyldimethyltaurate/VP Copolymer": {
+   "name": "Acryloyldimethyltaurate/VP Copolymer",
+   "kind": "INCI",
+   "inci": "AMMONIUM ACRYLOYLDIMETHYLTAURATE/VP COPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "salt omitted",
+   "read_b": {
+    "name": "Acryloyldimethyltaurate/VP Copolymer",
+    "kind": "INCI",
+    "inci": "AMMONIUM ACRYLOYLDIMETHYLTAURATE/VP COPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "salt not stated"
+   }
+  },
+  "Diethylhexyl Syringylidenenmalonate": {
+   "name": "Diethylhexyl Syringylidenenmalonate",
+   "kind": "INCI",
+   "inci": "DIETHYLHEXYL SYRINGYLIDENEMALONATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Diethylhexyl Syringylidenenmalonate",
+    "kind": "INCI",
+    "inci": "DIETHYLHEXYL SYRINGYLIDENEMALONATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Erythrylose": {
+   "name": "Erythrylose",
+   "kind": "INCI",
+   "inci": "ERYTHRULOSE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Erythrylose",
+    "kind": "INCI",
+    "inci": "ERYTHRULOSE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Gardenia tahitensis (Tiare) Flower": {
+   "name": "Gardenia tahitensis (Tiare) Flower",
+   "kind": "INCI",
+   "inci": "GARDENIA TAITENSIS FLOWER",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "same substance",
+   "read_b": {
+    "name": "Gardenia tahitensis (Tiare) Flower",
+    "kind": "INCI",
+    "inci": "GARDENIA TAITENSIS FLOWER",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": ""
+   }
+  }
+ }
+}

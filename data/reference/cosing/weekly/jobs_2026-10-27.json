@@ -1,0 +1,2914 @@
+{
+ "DIPENTAERYTHRITYL TETRABEHENATE/POLYHYDROXYSTEARATE": {
+  "inci": "DIPENTAERYTHRITYL TETRABEHENATE/POLYHYDROXYSTEARATE",
+  "job": "emollient",
+  "secondary": "thickener",
+  "override": true,
+  "reason": "Behenate/polyhydroxystearate ester is an oil-phase emollient and oil thickener, not a humectant",
+  "confidence": "low",
+  "read_b": {
+   "inci": "DIPENTAERYTHRITYL TETRABEHENATE/POLYHYDROXYSTEARATE",
+   "job": "emollient",
+   "secondary": "thickener",
+   "override": true,
+   "reason": "wax ester used as emollient and oil structurant",
+   "confidence": "low"
+  }
+ },
+ "POTASSIUM ALUM": {
+  "inci": "POTASSIUM ALUM",
+  "job": "astringent",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "POTASSIUM ALUM",
+   "job": "astringent",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SODIUM LAUROYL OAT AMINO ACIDS": {
+  "inci": "SODIUM LAUROYL OAT AMINO ACIDS",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Surfactant left on skin acts as co-emulsifier, not cleanser",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SODIUM LAUROYL OAT AMINO ACIDS",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "surfactant left on skin acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "GLYCERETH-7": {
+  "inci": "GLYCERETH-7",
+  "job": "humectant",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "GLYCERETH-7",
+   "job": "humectant",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "OLEYL LACTATE": {
+  "inci": "OLEYL LACTATE",
+  "job": "emollient",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "OLEYL LACTATE",
+   "job": "emollient",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "LENS ESCULENTA SEED EXTRACT": {
+  "inci": "LENS ESCULENTA SEED EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Plant extract: used as skin conditioning, not a skin protectant",
+  "confidence": "high",
+  "read_b": {
+   "inci": "LENS ESCULENTA SEED EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "plant extract: used as skin conditioning, not a claimed benefit",
+   "confidence": "high"
+  }
+ },
+ "COCO-BETAINE": {
+  "inci": "COCO-BETAINE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Surfactant left on skin acts as co-emulsifier, not cleanser",
+  "confidence": "low",
+  "read_b": {
+   "inci": "COCO-BETAINE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "surfactant left on skin acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "SODIUM METHYL OLEOYL TAURATE": {
+  "inci": "SODIUM METHYL OLEOYL TAURATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Surfactant left on skin acts as co-emulsifier, not cleanser",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SODIUM METHYL OLEOYL TAURATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "surfactant left on skin acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "LIPASE": {
+  "inci": "LIPASE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "LIPASE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "MAGNOLIA BIONDII FLOWER EXTRACT": {
+  "inci": "MAGNOLIA BIONDII FLOWER EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "MAGNOLIA BIONDII FLOWER EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "POTASSIUM MYRISTATE": {
+  "inci": "POTASSIUM MYRISTATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "POTASSIUM MYRISTATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "POTASSIUM LAURATE": {
+  "inci": "POTASSIUM LAURATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "POTASSIUM LAURATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "HYDROLYZED DNA": {
+  "inci": "HYDROLYZED DNA",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HYDROLYZED DNA",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "COCAMIDOPROPYL HYDROXYSULTAINE": {
+  "inci": "COCAMIDOPROPYL HYDROXYSULTAINE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Surfactant left on skin acts as co-emulsifier, not cleanser",
+  "confidence": "low",
+  "read_b": {
+   "inci": "COCAMIDOPROPYL HYDROXYSULTAINE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "surfactant left on skin acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "SD ALCOHOL 39-C": {
+  "inci": "SD ALCOHOL 39-C",
+  "job": "solvent",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SD ALCOHOL 39-C",
+   "job": "solvent",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SODIUM LAUROYL METHYL ISETHIONATE": {
+  "inci": "SODIUM LAUROYL METHYL ISETHIONATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Surfactant left on skin acts as co-emulsifier, not cleanser",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SODIUM LAUROYL METHYL ISETHIONATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "surfactant left on skin acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "DEA-C8-18 PERFLUOROALKYLETHYL PHOSPHATE": {
+  "inci": "DEA-C8-18 PERFLUOROALKYLETHYL PHOSPHATE",
+  "job": "emulsifier",
+  "secondary": "mineral_coating",
+  "override": true,
+  "reason": "Fluorinated phosphate surfactant left on skin acts as emulsifier",
+  "confidence": "low",
+  "read_b": {
+   "inci": "DEA-C8-18 PERFLUOROALKYLETHYL PHOSPHATE",
+   "job": "emulsifier",
+   "secondary": "mineral_coating",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "COLLOIDAL PLATINUM": {
+  "inci": "COLLOIDAL PLATINUM",
+  "job": "antioxidant",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "COLLOIDAL PLATINUM",
+   "job": "antioxidant",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "CI 61565": {
+  "inci": "CI 61565",
+  "job": "colorant",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CI 61565",
+   "job": "colorant",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PRUNUS AMYGDALUS DULCIS OLEOSOMES": {
+  "inci": "PRUNUS AMYGDALUS DULCIS OLEOSOMES",
+  "job": "emollient",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PRUNUS AMYGDALUS DULCIS OLEOSOMES",
+   "job": "emollient",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "DOLICHOS BIFLORUS CALLUS EXTRACT": {
+  "inci": "DOLICHOS BIFLORUS CALLUS EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Plant callus extract: used as skin conditioning, not a skin protectant",
+  "confidence": "high",
+  "read_b": {
+   "inci": "DOLICHOS BIFLORUS CALLUS EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "plant extract: used as skin conditioning, not a claimed benefit",
+   "confidence": "high"
+  }
+ },
+ "SOLANUM LYCOPERSICUM LEAF CELL CULTURE EXTRACT": {
+  "inci": "SOLANUM LYCOPERSICUM LEAF CELL CULTURE EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SOLANUM LYCOPERSICUM LEAF CELL CULTURE EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "MACROPIPER EXCELSUM LEAF EXTRACT": {
+  "inci": "MACROPIPER EXCELSUM LEAF EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "MACROPIPER EXCELSUM LEAF EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ZINC PHENOLSULFONATE": {
+  "inci": "ZINC PHENOLSULFONATE",
+  "job": "astringent",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ZINC PHENOLSULFONATE",
+   "job": "astringent",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "YUCCA SCHIDIGERA ROOT EXTRACT": {
+  "inci": "YUCCA SCHIDIGERA ROOT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "YUCCA SCHIDIGERA ROOT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "BUTETH-3": {
+  "inci": "BUTETH-3",
+  "job": "solvent",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "BUTETH-3",
+   "job": "solvent",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "HYPERICUM PERFORATUM EXTRACT": {
+  "inci": "HYPERICUM PERFORATUM EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "HYPERICUM PERFORATUM EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SERICA POWDER": {
+  "inci": "SERICA POWDER",
+  "job": "slip",
+  "secondary": "absorbent",
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SERICA POWDER",
+   "job": "slip",
+   "secondary": "absorbent",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "DIPENTAERYTHRITYL HEXA C5-9 ACID ESTERS": {
+  "inci": "DIPENTAERYTHRITYL HEXA C5-9 ACID ESTERS",
+  "job": "emollient",
+  "secondary": null,
+  "override": true,
+  "reason": "Polyol ester oil; CosIng only says skin conditioning",
+  "confidence": "high",
+  "read_b": {
+   "inci": "DIPENTAERYTHRITYL HEXA C5-9 ACID ESTERS",
+   "job": "emollient",
+   "secondary": null,
+   "override": true,
+   "reason": "synthetic ester used as emollient; CosIng only says skin conditioning",
+   "confidence": "high"
+  }
+ },
+ "XYMENYNIC ACID": {
+  "inci": "XYMENYNIC ACID",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "XYMENYNIC ACID",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PHOENIX DACTYLIFERA SEED EXTRACT": {
+  "inci": "PHOENIX DACTYLIFERA SEED EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PHOENIX DACTYLIFERA SEED EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "HIERACIUM PILOSELLA EXTRACT": {
+  "inci": "HIERACIUM PILOSELLA EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HIERACIUM PILOSELLA EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "MYRISTIC/PALMITIC/STEARIC/RICINOLEIC/EICOSANEDIOIC GLYCERIDES": {
+  "inci": "MYRISTIC/PALMITIC/STEARIC/RICINOLEIC/EICOSANEDIOIC GLYCERIDES",
+  "job": "emollient",
+  "secondary": null,
+  "override": true,
+  "reason": "Mixed glyceride oil; CosIng only says skin conditioning",
+  "confidence": "low",
+  "read_b": {
+   "inci": "MYRISTIC/PALMITIC/STEARIC/RICINOLEIC/EICOSANEDIOIC GLYCERIDES",
+   "job": "emollient",
+   "secondary": "thickener",
+   "override": true,
+   "reason": "glyceride blend acts as emollient",
+   "confidence": "low"
+  }
+ },
+ "HEXADECANOLACTONE": {
+  "inci": "HEXADECANOLACTONE",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HEXADECANOLACTONE",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SCLAREOL": {
+  "inci": "SCLAREOL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SCLAREOL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PEG-5 ISONONANOATE": {
+  "inci": "PEG-5 ISONONANOATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PEG-5 ISONONANOATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SODIUM COCOYL GLYCINATE": {
+  "inci": "SODIUM COCOYL GLYCINATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Surfactant left on skin acts as co-emulsifier, not cleanser",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SODIUM COCOYL GLYCINATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "surfactant left on skin acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "PTEROCARPUS MARSUPIUM BARK EXTRACT": {
+  "inci": "PTEROCARPUS MARSUPIUM BARK EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "PTEROCARPUS MARSUPIUM BARK EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": "antioxidant",
+   "override": true,
+   "reason": "plant extract: used as skin conditioning, not a claimed benefit",
+   "confidence": "low"
+  }
+ },
+ "TETRAPEPTIDE-4": {
+  "inci": "TETRAPEPTIDE-4",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "TETRAPEPTIDE-4",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SAFFLOWER ACID": {
+  "inci": "SAFFLOWER ACID",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Fatty acid neutralised in-formula forms a soap emulsifier; left on skin",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SAFFLOWER ACID",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "fatty acid neutralised in situ as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "CITRUS AURANTIFOLIA JUICE": {
+  "inci": "CITRUS AURANTIFOLIA JUICE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CITRUS AURANTIFOLIA JUICE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ZANTHOXYLUM BUNGEANUM FRUIT EXTRACT": {
+  "inci": "ZANTHOXYLUM BUNGEANUM FRUIT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ZANTHOXYLUM BUNGEANUM FRUIT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PTEROCARPUS SOYAUXII WOOD EXTRACT": {
+  "inci": "PTEROCARPUS SOYAUXII WOOD EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Plant extract (padauk wood); astringent claim not its established use",
+  "confidence": "low",
+  "read_b": {
+   "inci": "PTEROCARPUS SOYAUXII WOOD EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "plant extract: used as skin conditioning, not a claimed benefit",
+   "confidence": "low"
+  }
+ },
+ "SPIRAEA ULMARIA LEAF EXTRACT": {
+  "inci": "SPIRAEA ULMARIA LEAF EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SPIRAEA ULMARIA LEAF EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "DIPTERYX ODORATA SEED EXTRACT": {
+  "inci": "DIPTERYX ODORATA SEED EXTRACT",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "DIPTERYX ODORATA SEED EXTRACT",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "TELOPEA SPECIOSISSIMA FLOWER/LEAF EXTRACT": {
+  "inci": "TELOPEA SPECIOSISSIMA FLOWER/LEAF EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "TELOPEA SPECIOSISSIMA FLOWER/LEAF EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "BRACHYCHITON ACERIFOLIUS FLOWER EXTRACT": {
+  "inci": "BRACHYCHITON ACERIFOLIUS FLOWER EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "BRACHYCHITON ACERIFOLIUS FLOWER EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "LIGUSTRUM LUCIDUM SEED EXTRACT": {
+  "inci": "LIGUSTRUM LUCIDUM SEED EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "LIGUSTRUM LUCIDUM SEED EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "BANKSIA SERRATA FLOWER EXTRACT": {
+  "inci": "BANKSIA SERRATA FLOWER EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "BANKSIA SERRATA FLOWER EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "RETINAL": {
+  "inci": "RETINAL",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "RETINAL",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "DAVIDSONIA PRURIENS FRUIT EXTRACT": {
+  "inci": "DAVIDSONIA PRURIENS FRUIT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "DAVIDSONIA PRURIENS FRUIT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ALGAE OLIGOSACCHARIDES": {
+  "inci": "ALGAE OLIGOSACCHARIDES",
+  "job": "humectant",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "ALGAE OLIGOSACCHARIDES",
+   "job": "humectant",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ACETYL HEXAPEPTIDE-51 AMIDE": {
+  "inci": "ACETYL HEXAPEPTIDE-51 AMIDE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ACETYL HEXAPEPTIDE-51 AMIDE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "MENTHA AUSTRALIS LEAF EXTRACT": {
+  "inci": "MENTHA AUSTRALIS LEAF EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "MENTHA AUSTRALIS LEAF EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CITRUS AUSTRALASICA FRUIT EXTRACT": {
+  "inci": "CITRUS AUSTRALASICA FRUIT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CITRUS AUSTRALASICA FRUIT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "POLYGLYCERYL-2 ISOSTEARATE/DIMER DILINOLEATE COPOLYMER": {
+  "inci": "POLYGLYCERYL-2 ISOSTEARATE/DIMER DILINOLEATE COPOLYMER",
+  "job": "emollient",
+  "secondary": "dispersing",
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "POLYGLYCERYL-2 ISOSTEARATE/DIMER DILINOLEATE COPOLYMER",
+   "job": "emollient",
+   "secondary": "dispersing",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "CITRUS AURANTIFOLIA PEEL": {
+  "inci": "CITRUS AURANTIFOLIA PEEL",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CITRUS AURANTIFOLIA PEEL",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "DIGLUCOSYL GALLIC ACID": {
+  "inci": "DIGLUCOSYL GALLIC ACID",
+  "job": "antioxidant",
+  "secondary": null,
+  "override": true,
+  "reason": "Gallic acid glucoside used as stable antioxidant; CosIng hair conditioning not relevant",
+  "confidence": "low",
+  "read_b": {
+   "inci": "DIGLUCOSYL GALLIC ACID",
+   "job": "antioxidant",
+   "secondary": null,
+   "override": true,
+   "reason": "gallic acid glucoside used as antioxidant/brightener on skin",
+   "confidence": "low"
+  }
+ },
+ "NYMPHAEA CAERULEA FLOWER WATER": {
+  "inci": "NYMPHAEA CAERULEA FLOWER WATER",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "NYMPHAEA CAERULEA FLOWER WATER",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ETHYLHEXYL ACRYLATE": {
+  "inci": "ETHYLHEXYL ACRYLATE",
+  "job": "film_former",
+  "secondary": null,
+  "override": true,
+  "reason": "Acrylate monomer/polymer component; binding in leave-on means film forming",
+  "confidence": "low",
+  "read_b": {
+   "inci": "ETHYLHEXYL ACRYLATE",
+   "job": "film_former",
+   "secondary": null,
+   "override": true,
+   "reason": "acrylate monomer residue of a film-forming polymer",
+   "confidence": "low"
+  }
+ },
+ "HEPTANOL": {
+  "inci": "HEPTANOL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HEPTANOL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "FUMARIA OFFICINALIS EXTRACT": {
+  "inci": "FUMARIA OFFICINALIS EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "FUMARIA OFFICINALIS EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "TRIPEPTIDE-2": {
+  "inci": "TRIPEPTIDE-2",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "TRIPEPTIDE-2",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SWERTIA CHIRATA EXTRACT": {
+  "inci": "SWERTIA CHIRATA EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Plant extract: used as skin conditioning, humectant claim not established",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SWERTIA CHIRATA EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "plant extract: used as skin conditioning, not a claimed benefit",
+   "confidence": "high"
+  }
+ },
+ "PEG-14 DIMETHICONE": {
+  "inci": "PEG-14 DIMETHICONE",
+  "job": "emulsifier",
+  "secondary": "slip",
+  "override": true,
+  "reason": "PEG-modified silicone is a surfactant/emulsifier",
+  "confidence": "low",
+  "read_b": {
+   "inci": "PEG-14 DIMETHICONE",
+   "job": "emulsifier",
+   "secondary": "slip",
+   "override": true,
+   "reason": "water-soluble silicone surfactant acts as co-emulsifier/wetting agent",
+   "confidence": "low"
+  }
+ },
+ "PEG-5M": {
+  "inci": "PEG-5M",
+  "job": "thickener",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PEG-5M",
+   "job": "thickener",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CHLOROTRIFLUOROPROPENE": {
+  "inci": "CHLOROTRIFLUOROPROPENE",
+  "job": "propellant",
+  "secondary": null,
+  "override": true,
+  "reason": "HFO-1233zd is an aerosol propellant in spray sunscreens",
+  "confidence": "low",
+  "read_b": {
+   "inci": "CHLOROTRIFLUOROPROPENE",
+   "job": "propellant",
+   "secondary": "solvent",
+   "override": true,
+   "reason": "low-boiling HFO used as aerosol propellant",
+   "confidence": "low"
+  }
+ },
+ "HYDROXYPROPYL GUAR": {
+  "inci": "HYDROXYPROPYL GUAR",
+  "job": "thickener",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HYDROXYPROPYL GUAR",
+   "job": "thickener",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "COCOYL HYDROXYETHYL IMIDAZOLINE": {
+  "inci": "COCOYL HYDROXYETHYL IMIDAZOLINE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Surfactant left on skin acts as co-emulsifier, not cleanser",
+  "confidence": "low",
+  "read_b": {
+   "inci": "COCOYL HYDROXYETHYL IMIDAZOLINE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "surfactant left on skin acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "STYRAX BENZOIN RESIN EXTRACT": {
+  "inci": "STYRAX BENZOIN RESIN EXTRACT",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "STYRAX BENZOIN RESIN EXTRACT",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "GLYCERETH-25 PCA ISOSTEARATE": {
+  "inci": "GLYCERETH-25 PCA ISOSTEARATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "GLYCERETH-25 PCA ISOSTEARATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "OLIGOPEPTIDE-32": {
+  "inci": "OLIGOPEPTIDE-32",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "OLIGOPEPTIDE-32",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CEDRUS ATLANTICA OIL/EXTRACT": {
+  "inci": "CEDRUS ATLANTICA OIL/EXTRACT",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CEDRUS ATLANTICA OIL/EXTRACT",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SOLANUM LYCOCARPUM FRUIT EXTRACT": {
+  "inci": "SOLANUM LYCOCARPUM FRUIT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SOLANUM LYCOCARPUM FRUIT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "POLYLACTIC ACID": {
+  "inci": "POLYLACTIC ACID",
+  "job": "slip",
+  "secondary": null,
+  "override": true,
+  "reason": "Polylactic acid microspheres used for texture/feel in leave-on",
+  "confidence": "low",
+  "read_b": {
+   "inci": "POLYLACTIC ACID",
+   "job": "slip",
+   "secondary": "absorbent",
+   "override": true,
+   "reason": "PLA microspheres used for soft feel, not abrasion, in leave-on",
+   "confidence": "low"
+  }
+ },
+ "LAURYL HYDROXYSULTAINE": {
+  "inci": "LAURYL HYDROXYSULTAINE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Surfactant left on skin acts as co-emulsifier, not cleanser",
+  "confidence": "low",
+  "read_b": {
+   "inci": "LAURYL HYDROXYSULTAINE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "surfactant left on skin acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "SODIUM COCOYL ALANINATE": {
+  "inci": "SODIUM COCOYL ALANINATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Surfactant left on skin acts as co-emulsifier, not cleanser",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SODIUM COCOYL ALANINATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "surfactant left on skin acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "NYMPHAEA COERULEA LEAF CELL EXTRACT": {
+  "inci": "NYMPHAEA COERULEA LEAF CELL EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "NYMPHAEA COERULEA LEAF CELL EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "NYMPHAEA ALBA LEAF CELL EXTRACT": {
+  "inci": "NYMPHAEA ALBA LEAF CELL EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Plant cell extract; perfuming/skin protecting not its use here",
+  "confidence": "high",
+  "read_b": {
+   "inci": "NYMPHAEA ALBA LEAF CELL EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "plant cell extract; not added for scent",
+   "confidence": "high"
+  }
+ },
+ "TRIMETHYLSILOXYPHENYL DIMETHICONE": {
+  "inci": "TRIMETHYLSILOXYPHENYL DIMETHICONE",
+  "job": "slip",
+  "secondary": "emollient",
+  "override": true,
+  "reason": "Phenyl silicone fluid for feel and spreadability",
+  "confidence": "low",
+  "read_b": {
+   "inci": "TRIMETHYLSILOXYPHENYL DIMETHICONE",
+   "job": "slip",
+   "secondary": "emollient",
+   "override": true,
+   "reason": "phenyl silicone used for feel on skin",
+   "confidence": "low"
+  }
+ },
+ "TRAPA JAPONICA FRUIT EXTRACT": {
+  "inci": "TRAPA JAPONICA FRUIT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "TRAPA JAPONICA FRUIT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "DIETHYL OXALATE": {
+  "inci": "DIETHYL OXALATE",
+  "job": "solvent",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "DIETHYL OXALATE",
+   "job": "solvent",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "LILIUM CANDIDUM LEAF CELL EXTRACT": {
+  "inci": "LILIUM CANDIDUM LEAF CELL EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "LILIUM CANDIDUM LEAF CELL EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "LAETIPORUS SULPHUREUS MYCELIUM EXTRACT": {
+  "inci": "LAETIPORUS SULPHUREUS MYCELIUM EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "LAETIPORUS SULPHUREUS MYCELIUM EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "DECAPEPTIDE-5": {
+  "inci": "DECAPEPTIDE-5",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "DECAPEPTIDE-5",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CITRUS MEDICA VULGARIS PEEL OIL": {
+  "inci": "CITRUS MEDICA VULGARIS PEEL OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CITRUS MEDICA VULGARIS PEEL OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "VITEX TRIFOLIA FRUIT EXTRACT": {
+  "inci": "VITEX TRIFOLIA FRUIT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "VITEX TRIFOLIA FRUIT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PIMPINELLA ANISUM SEED OIL": {
+  "inci": "PIMPINELLA ANISUM SEED OIL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PIMPINELLA ANISUM SEED OIL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "POGOSTEMON CABLIN LEAF EXTRACT": {
+  "inci": "POGOSTEMON CABLIN LEAF EXTRACT",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "POGOSTEMON CABLIN LEAF EXTRACT",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "CHOLESTERYL ISOSTEARATE": {
+  "inci": "CHOLESTERYL ISOSTEARATE",
+  "job": "emollient",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CHOLESTERYL ISOSTEARATE",
+   "job": "emollient",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PHASEOLUS RADIATUS EXTRACT": {
+  "inci": "PHASEOLUS RADIATUS EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PHASEOLUS RADIATUS EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "BIS-ISOBUTYL PEG/PPG-10/7/DIMETHICONE COPOLYMER": {
+  "inci": "BIS-ISOBUTYL PEG/PPG-10/7/DIMETHICONE COPOLYMER",
+  "job": "emulsifier",
+  "secondary": "dispersing",
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "BIS-ISOBUTYL PEG/PPG-10/7/DIMETHICONE COPOLYMER",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "STACHYS OFFICINALIS FLOWER/LEAF/STEM EXTRACT": {
+  "inci": "STACHYS OFFICINALIS FLOWER/LEAF/STEM EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "STACHYS OFFICINALIS FLOWER/LEAF/STEM EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "VACCINIUM CORYMBOSUM FRUIT EXTRACT": {
+  "inci": "VACCINIUM CORYMBOSUM FRUIT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "VACCINIUM CORYMBOSUM FRUIT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CALCIUM TITANIUM BOROSILICATE": {
+  "inci": "CALCIUM TITANIUM BOROSILICATE",
+  "job": "colorant",
+  "secondary": null,
+  "override": true,
+  "reason": "Glass-flake effect pigment for shimmer, not abrasive",
+  "confidence": "low",
+  "read_b": {
+   "inci": "CALCIUM TITANIUM BOROSILICATE",
+   "job": "colorant",
+   "secondary": null,
+   "override": true,
+   "reason": "glass flake substrate for shimmer effect pigments",
+   "confidence": "low"
+  }
+ },
+ "ISOPULEGOL": {
+  "inci": "ISOPULEGOL",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ISOPULEGOL",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CITRUS AURANTIUM BERGAMIA PEEL WATER": {
+  "inci": "CITRUS AURANTIUM BERGAMIA PEEL WATER",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CITRUS AURANTIUM BERGAMIA PEEL WATER",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CHRYSANTHEMUM COCCINEUM FLOWER EXTRACT": {
+  "inci": "CHRYSANTHEMUM COCCINEUM FLOWER EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "CHRYSANTHEMUM COCCINEUM FLOWER EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "HEXYL NICOTINATE": {
+  "inci": "HEXYL NICOTINATE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "HEXYL NICOTINATE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "nicotinate ester used as skin conditioning (circulation), not emollient",
+   "confidence": "low"
+  }
+ },
+ "PENTAPEPTIDE-34": {
+  "inci": "PENTAPEPTIDE-34",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PENTAPEPTIDE-34",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SMITHSONITE": {
+  "inci": "SMITHSONITE",
+  "job": "astringent",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SMITHSONITE",
+   "job": "astringent",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "GLYCERYL ETHYLHEXANOATE/STEARATE/ADIPATE": {
+  "inci": "GLYCERYL ETHYLHEXANOATE/STEARATE/ADIPATE",
+  "job": "emollient",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "GLYCERYL ETHYLHEXANOATE/STEARATE/ADIPATE",
+   "job": "emollient",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "MALACHITE EXTRACT": {
+  "inci": "MALACHITE EXTRACT",
+  "job": "antioxidant",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "MALACHITE EXTRACT",
+   "job": "antioxidant",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "PASSIFLORA EDULIS FLOWER EXTRACT": {
+  "inci": "PASSIFLORA EDULIS FLOWER EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PASSIFLORA EDULIS FLOWER EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PCA GLYCERYL OLEATE": {
+  "inci": "PCA GLYCERYL OLEATE",
+  "job": "emollient",
+  "secondary": "emulsifier",
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PCA GLYCERYL OLEATE",
+   "job": "emollient",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "LAURETH-8": {
+  "inci": "LAURETH-8",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "LAURETH-8",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "2-OLEAMIDO-1,3-OCTADECANEDIOL": {
+  "inci": "2-OLEAMIDO-1,3-OCTADECANEDIOL",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "2-OLEAMIDO-1,3-OCTADECANEDIOL",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CHAMOMILLA RECUTITA LEAF EXTRACT": {
+  "inci": "CHAMOMILLA RECUTITA LEAF EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CHAMOMILLA RECUTITA LEAF EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "DIGLYCERYL ADIPATE/CAPRATE/CAPRYLATE/HYDROXYSTEARATE/ISOSTEARATE/STEARATE": {
+  "inci": "DIGLYCERYL ADIPATE/CAPRATE/CAPRYLATE/HYDROXYSTEARATE/ISOSTEARATE/STEARATE",
+  "job": "emollient",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "DIGLYCERYL ADIPATE/CAPRATE/CAPRYLATE/HYDROXYSTEARATE/ISOSTEARATE/STEARATE",
+   "job": "emollient",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ISOPROPYLIDENEGLYCEROL": {
+  "inci": "ISOPROPYLIDENEGLYCEROL",
+  "job": "solvent",
+  "secondary": null,
+  "override": true,
+  "reason": "Solketal is a glycerol-derived solvent",
+  "confidence": "low",
+  "read_b": {
+   "inci": "ISOPROPYLIDENEGLYCEROL",
+   "job": "solvent",
+   "secondary": null,
+   "override": true,
+   "reason": "glycerol ketal used as solvent",
+   "confidence": "low"
+  }
+ },
+ "ETHYLENE DODECANEDIOATE": {
+  "inci": "ETHYLENE DODECANEDIOATE",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ETHYLENE DODECANEDIOATE",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SODIUM COCOAMPHOACETATE": {
+  "inci": "SODIUM COCOAMPHOACETATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Surfactant left on skin acts as co-emulsifier, not cleanser",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SODIUM COCOAMPHOACETATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "surfactant left on skin acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "PEG/PPG-120/10 TRIMETHYLOLPROPANE TRIOLEATE": {
+  "inci": "PEG/PPG-120/10 TRIMETHYLOLPROPANE TRIOLEATE",
+  "job": "thickener",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PEG/PPG-120/10 TRIMETHYLOLPROPANE TRIOLEATE",
+   "job": "thickener",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "LAURETH-2": {
+  "inci": "LAURETH-2",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "LAURETH-2",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ISOPROPYL TITANIUM TRIISOSTEARATE/TRIETHOXYCAPRYLYLSILANE CROSSPOLYMER": {
+  "inci": "ISOPROPYL TITANIUM TRIISOSTEARATE/TRIETHOXYCAPRYLYLSILANE CROSSPOLYMER",
+  "job": "mineral_coating",
+  "secondary": null,
+  "override": true,
+  "reason": "Titanate/silane surface treatment for ZnO/TiO2",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ISOPROPYL TITANIUM TRIISOSTEARATE/TRIETHOXYCAPRYLYLSILANE CROSSPOLYMER",
+   "job": "mineral_coating",
+   "secondary": null,
+   "override": true,
+   "reason": "titanate/silane crosspolymer is a surface treatment for ZnO/TiO2",
+   "confidence": "high"
+  }
+ },
+ "HYDROLYZED GINSENG SAPONINS": {
+  "inci": "HYDROLYZED GINSENG SAPONINS",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HYDROLYZED GINSENG SAPONINS",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CALCIUM HYDROXIDE": {
+  "inci": "CALCIUM HYDROXIDE",
+  "job": "ph",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CALCIUM HYDROXIDE",
+   "job": "ph",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "COLLOIDAL SULFUR": {
+  "inci": "COLLOIDAL SULFUR",
+  "job": "other",
+  "secondary": null,
+  "override": true,
+  "reason": "Sulfur is an acne/antimicrobial skin active, not a preservative here",
+  "confidence": "low",
+  "read_b": {
+   "inci": "COLLOIDAL SULFUR",
+   "job": "other",
+   "secondary": null,
+   "override": true,
+   "reason": "antimicrobial (anti-acne) agent; no matching job key",
+   "confidence": "low"
+  }
+ },
+ "SOLVENT YELLOW 29": {
+  "inci": "SOLVENT YELLOW 29",
+  "job": "colorant",
+  "secondary": null,
+  "override": true,
+  "reason": "Solvent dye used to tint the product",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SOLVENT YELLOW 29",
+   "job": "colorant",
+   "secondary": null,
+   "override": true,
+   "reason": "oil-soluble dye colours the product",
+   "confidence": "high"
+  }
+ },
+ "LACTOBACILLUS/LEMON PEEL FERMENT EXTRACT": {
+  "inci": "LACTOBACILLUS/LEMON PEEL FERMENT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "LACTOBACILLUS/LEMON PEEL FERMENT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": "preservative_booster",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "SUCROSE ACETATE ISOBUTYRATE": {
+  "inci": "SUCROSE ACETATE ISOBUTYRATE",
+  "job": "film_former",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SUCROSE ACETATE ISOBUTYRATE",
+   "job": "film_former",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "CETYL TRANEXAMATE MESYLATE": {
+  "inci": "CETYL TRANEXAMATE MESYLATE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CETYL TRANEXAMATE MESYLATE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PEG-16 SOY STEROL": {
+  "inci": "PEG-16 SOY STEROL",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PEG-16 SOY STEROL",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "PEG-80 SORBITAN LAURATE": {
+  "inci": "PEG-80 SORBITAN LAURATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "Polysorbate-type surfactant left on skin acts as emulsifier/solubiliser",
+  "confidence": "low",
+  "read_b": {
+   "inci": "PEG-80 SORBITAN LAURATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "surfactant left on skin acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "RAPESEED GLYCERIDES": {
+  "inci": "RAPESEED GLYCERIDES",
+  "job": "emollient",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "RAPESEED GLYCERIDES",
+   "job": "emollient",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "3-O-CETYL ASCORBIC ACID": {
+  "inci": "3-O-CETYL ASCORBIC ACID",
+  "job": "skin_conditioning",
+  "secondary": "antioxidant",
+  "override": false,
+  "reason": "disagreement resolved: job matching a CosIng function",
+  "confidence": "low",
+  "read_b": {
+   "inci": "3-O-CETYL ASCORBIC ACID",
+   "job": "antioxidant",
+   "secondary": null,
+   "override": true,
+   "reason": "vitamin C ester used as antioxidant",
+   "confidence": "low"
+  }
+ },
+ "BRASSICYL VALINATE ESYLATE": {
+  "inci": "BRASSICYL VALINATE ESYLATE",
+  "job": "emollient",
+  "secondary": "emulsion_stabiliser",
+  "override": false,
+  "reason": "disagreement resolved: job matching a CosIng function",
+  "confidence": "low",
+  "read_b": {
+   "inci": "BRASSICYL VALINATE ESYLATE",
+   "job": "emulsion_stabiliser",
+   "secondary": "emollient",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "LIMONIA ACIDISSIMA BARK EXTRACT": {
+  "inci": "LIMONIA ACIDISSIMA BARK EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "disagreement resolved: plant extract -> skin_conditioning; Plant (thanaka) bark extract; not an approved UV filter, described by use",
+  "confidence": "low",
+  "read_b": {
+   "inci": "LIMONIA ACIDISSIMA BARK EXTRACT",
+   "job": "uv_booster",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "SODIUM POLYGLUTAMATE CROSSPOLYMER": {
+  "inci": "SODIUM POLYGLUTAMATE CROSSPOLYMER",
+  "job": "film_former",
+  "secondary": "humectant",
+  "override": false,
+  "reason": "disagreement resolved: job matching a CosIng function",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SODIUM POLYGLUTAMATE CROSSPOLYMER",
+   "job": "humectant",
+   "secondary": "film_former",
+   "override": true,
+   "reason": "water-binding polymer used as moisturiser",
+   "confidence": "low"
+  }
+ },
+ "HESPERIDIN": {
+  "inci": "HESPERIDIN",
+  "job": "skin_conditioning",
+  "secondary": "antioxidant",
+  "override": true,
+  "reason": "disagreement resolved: job matching a CosIng function; Flavonoid used as skin conditioning/antioxidant, not an emollient",
+  "confidence": "low",
+  "read_b": {
+   "inci": "HESPERIDIN",
+   "job": "antioxidant",
+   "secondary": null,
+   "override": true,
+   "reason": "citrus flavonoid used as antioxidant, not emollient",
+   "confidence": "low"
+  }
+ },
+ "HYDROXYPROPYLTRIMONIUM HONEY": {
+  "inci": "HYDROXYPROPYLTRIMONIUM HONEY",
+  "job": "skin_conditioning",
+  "secondary": "humectant",
+  "override": true,
+  "reason": "disagreement resolved: job matching a CosIng function; honey derivative conditions skin",
+  "confidence": "low",
+  "read_b": {
+   "inci": "HYDROXYPROPYLTRIMONIUM HONEY",
+   "job": "humectant",
+   "secondary": null,
+   "override": true,
+   "reason": "Quaternised honey derivative; humectant conditioning on skin",
+   "confidence": "low"
+  }
+ },
+ "CETYL BEHENATE": {
+  "inci": "CETYL BEHENATE",
+  "job": "emollient",
+  "secondary": "thickener",
+  "override": true,
+  "reason": "CosIng lists no function; wax ester used as emollient/bodying agent",
+  "confidence": "low",
+  "read_b": {
+   "inci": "CETYL BEHENATE",
+   "job": "emollient",
+   "secondary": "thickener",
+   "override": true,
+   "reason": "Wax ester; CosIng lists no function",
+   "confidence": "low"
+  }
+ },
+ "ISOAMYL COCOATE": {
+  "inci": "ISOAMYL COCOATE",
+  "job": "emollient",
+  "secondary": null,
+  "override": true,
+  "reason": "CosIng lists no function; light ester emollient",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ISOAMYL COCOATE",
+   "job": "emollient",
+   "secondary": null,
+   "override": true,
+   "reason": "Light ester emollient; CosIng lists no function",
+   "confidence": "high"
+  }
+ },
+ "C28-52 OLEFIN/UNDECYLENIC ACID COPOLYMER": {
+  "inci": "C28-52 OLEFIN/UNDECYLENIC ACID COPOLYMER",
+  "job": "film_former",
+  "secondary": null,
+  "override": true,
+  "reason": "CosIng lists no function; polymer used for water resistance",
+  "confidence": "low",
+  "read_b": {
+   "inci": "C28-52 OLEFIN/UNDECYLENIC ACID COPOLYMER",
+   "job": "film_former",
+   "secondary": "thickener",
+   "override": true,
+   "reason": "Olefin copolymer wax for water resistance; CosIng lists no function",
+   "confidence": "low"
+  }
+ },
+ "PICEA ABIES WOOD EXTRACT": {
+  "inci": "PICEA ABIES WOOD EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "CosIng lists no function; plant extract",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PICEA ABIES WOOD EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Plant extract; CosIng lists no function",
+   "confidence": "high"
+  }
+ },
+ "OLIGOPEPTIDE-68": {
+  "inci": "OLIGOPEPTIDE-68",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Bleaching is not a sunscreen job; peptide used as skin conditioning",
+  "confidence": "low",
+  "read_b": {
+   "inci": "OLIGOPEPTIDE-68",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Brightening peptide; bleaching not an allowed job",
+   "confidence": "low"
+  }
+ },
+ "POLYGLYCERYL-4 LAURATE/SUCCINATE": {
+  "inci": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": true,
+  "reason": "CosIng lists no function; polyglyceryl ester emulsifier",
+  "confidence": "high",
+  "read_b": {
+   "inci": "POLYGLYCERYL-4 LAURATE/SUCCINATE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": true,
+   "reason": "Polyglyceryl ester emulsifier; CosIng lists no function",
+   "confidence": "high"
+  }
+ },
+ "RHUS VERNICIFLUA PEEL WAX": {
+  "inci": "RHUS VERNICIFLUA PEEL WAX",
+  "job": "thickener",
+  "secondary": "emollient",
+  "override": true,
+  "reason": "Not reported; plant wax used to structure and soften",
+  "confidence": "low",
+  "read_b": {
+   "inci": "RHUS VERNICIFLUA PEEL WAX",
+   "job": "thickener",
+   "secondary": "emollient",
+   "override": true,
+   "reason": "Japan wax structures the formula; CosIng not reported",
+   "confidence": "low"
+  }
+ },
+ "VITIS VINIFERA CALLUS CULTURE EXTRACT": {
+  "inci": "VITIS VINIFERA CALLUS CULTURE EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Not reported; plant cell culture extract",
+  "confidence": "high",
+  "read_b": {
+   "inci": "VITIS VINIFERA CALLUS CULTURE EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Plant cell culture extract; CosIng not reported",
+   "confidence": "high"
+  }
+ },
+ "POTASSIUM METHOXYSALICYLATE": {
+  "inci": "POTASSIUM METHOXYSALICYLATE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Bleaching is not a sunscreen job; used for even skin tone",
+  "confidence": "low",
+  "read_b": {
+   "inci": "POTASSIUM METHOXYSALICYLATE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Brightening active (4MSK); bleaching not an allowed job",
+   "confidence": "low"
+  }
+ },
+ "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE": {
+  "inci": "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+  "job": "photostabiliser",
+  "secondary": "antioxidant",
+  "override": true,
+  "reason": "Hindered-amine light stabiliser that protects the formula, not a UV filter",
+  "confidence": "low",
+  "read_b": {
+   "inci": "TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE",
+   "job": "photostabiliser",
+   "secondary": "antioxidant",
+   "override": true,
+   "reason": "HALS light stabiliser protecting the formula, not a sunscreen filter",
+   "confidence": "low"
+  }
+ },
+ "ERYTHRULOSE": {
+  "inci": "ERYTHRULOSE",
+  "job": "colorant",
+  "secondary": null,
+  "override": true,
+  "reason": "Self-tanning sugar that colours skin; tanning not an allowed key",
+  "confidence": "low",
+  "read_b": {
+   "inci": "ERYTHRULOSE",
+   "job": "colorant",
+   "secondary": null,
+   "override": true,
+   "reason": "Self-tanning sugar that develops skin color",
+   "confidence": "low"
+  }
+ },
+ "HYDROLYZED RHODOPHYCEAE EXTRACT": {
+  "inci": "HYDROLYZED RHODOPHYCEAE EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Not reported; algae extract",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HYDROLYZED RHODOPHYCEAE EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Algae extract; CosIng not reported",
+   "confidence": "high"
+  }
+ },
+ "SH-POLYPEPTIDE-11": {
+  "inci": "SH-POLYPEPTIDE-11",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "CosIng lists no function; peptide skin conditioning",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SH-POLYPEPTIDE-11",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Peptide; CosIng lists no function",
+   "confidence": "high"
+  }
+ },
+ "DISTEARYL PHTHALIC ACID AMIDE": {
+  "inci": "DISTEARYL PHTHALIC ACID AMIDE",
+  "job": "emollient",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "DISTEARYL PHTHALIC ACID AMIDE",
+   "job": "emollient",
+   "secondary": "thickener",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  }
+ },
+ "ISOPROPYLBENZYL SALICYLATE": {
+  "inci": "ISOPROPYLBENZYL SALICYLATE",
+  "job": "uv_booster",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ISOPROPYLBENZYL SALICYLATE",
+   "job": "uv_booster",
+   "secondary": null,
+   "override": false,
+   "reason": "UV absorber not approved as US active",
+   "confidence": "high"
+  }
+ },
+ "SODIUM THIOSULFATE": {
+  "inci": "SODIUM THIOSULFATE",
+  "job": "antioxidant",
+  "secondary": null,
+  "override": true,
+  "reason": "Reducing agent acts as antioxidant in formula",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SODIUM THIOSULFATE",
+   "job": "antioxidant",
+   "secondary": null,
+   "override": true,
+   "reason": "Reducing agent acting as antioxidant",
+   "confidence": "low"
+  }
+ },
+ "HYDROGENATED POLYCYCLOPENTADIENE": {
+  "inci": "HYDROGENATED POLYCYCLOPENTADIENE",
+  "job": "film_former",
+  "secondary": null,
+  "override": true,
+  "reason": "Depilatory is wrong; hydrocarbon resin used as water-resistant film former",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HYDROGENATED POLYCYCLOPENTADIENE",
+   "job": "film_former",
+   "secondary": null,
+   "override": true,
+   "reason": "Hydrocarbon resin for water resistance; depilatory irrelevant",
+   "confidence": "high"
+  }
+ },
+ "CITRUS NOBILIS": {
+  "inci": "CITRUS NOBILIS",
+  "job": "fragrance",
+  "secondary": null,
+  "override": true,
+  "reason": "Not reported; mandarin peel oil added for scent",
+  "confidence": "low",
+  "read_b": {
+   "inci": "CITRUS NOBILIS",
+   "job": "fragrance",
+   "secondary": null,
+   "override": true,
+   "reason": "Mandarin, most likely the peel oil used for scent",
+   "confidence": "low"
+  }
+ },
+ "SACCHAROMYCES/SELENIUM FERMENT": {
+  "inci": "SACCHAROMYCES/SELENIUM FERMENT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Not reported; ferment",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SACCHAROMYCES/SELENIUM FERMENT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Ferment; CosIng not reported",
+   "confidence": "high"
+  }
+ },
+ "QUERCUS ALBA BARK EXTRACT": {
+  "inci": "QUERCUS ALBA BARK EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "QUERCUS ALBA BARK EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": "astringent",
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SAMBUCUS NIGRA SEED OIL": {
+  "inci": "SAMBUCUS NIGRA SEED OIL",
+  "job": "emollient",
+  "secondary": null,
+  "override": true,
+  "reason": "CosIng lists no function; fixed seed oil",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SAMBUCUS NIGRA SEED OIL",
+   "job": "emollient",
+   "secondary": null,
+   "override": true,
+   "reason": "Fixed plant oil; CosIng lists no function",
+   "confidence": "high"
+  }
+ },
+ "METHYLETHANOLAMINE": {
+  "inci": "METHYLETHANOLAMINE",
+  "job": "ph",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "METHYLETHANOLAMINE",
+   "job": "ph",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "MELIA AZADIRACHTA SEED OIL": {
+  "inci": "MELIA AZADIRACHTA SEED OIL",
+  "job": "emollient",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "MELIA AZADIRACHTA SEED OIL",
+   "job": "emollient",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "COCAMIDOPROPYL DIMETHYLAMINE": {
+  "inci": "COCAMIDOPROPYL DIMETHYLAMINE",
+  "job": "emulsifier",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "COCAMIDOPROPYL DIMETHYLAMINE",
+   "job": "emulsifier",
+   "secondary": null,
+   "override": false,
+   "reason": "Leave-on surfactant acts as emulsifier",
+   "confidence": "low"
+  }
+ },
+ "OCIMENE": {
+  "inci": "OCIMENE",
+  "job": "fragrance",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "OCIMENE",
+   "job": "fragrance",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "SODIUM BENZOTRIAZOLYL BUTYLPHENOL SULFONATE": {
+  "inci": "SODIUM BENZOTRIAZOLYL BUTYLPHENOL SULFONATE",
+  "job": "uv_booster",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "SODIUM BENZOTRIAZOLYL BUTYLPHENOL SULFONATE",
+   "job": "uv_booster",
+   "secondary": "photostabiliser",
+   "override": false,
+   "reason": "UV absorber not approved as US active",
+   "confidence": "low"
+  }
+ },
+ "VP/ACRYLATES/LAURYL METHACRYLATE COPOLYMER": {
+  "inci": "VP/ACRYLATES/LAURYL METHACRYLATE COPOLYMER",
+  "job": "film_former",
+  "secondary": null,
+  "override": true,
+  "reason": "Hair fixing not relevant; polymer forms a water-resistant film",
+  "confidence": "high",
+  "read_b": {
+   "inci": "VP/ACRYLATES/LAURYL METHACRYLATE COPOLYMER",
+   "job": "film_former",
+   "secondary": null,
+   "override": true,
+   "reason": "Film-forming polymer for water resistance; hair fixing irrelevant",
+   "confidence": "high"
+  }
+ },
+ "PENTASODIUM TETRACARBOXYMETHYL HEPTADECANOYL DIPEPTIDE-12": {
+  "inci": "PENTASODIUM TETRACARBOXYMETHYL HEPTADECANOYL DIPEPTIDE-12",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Anti-sebum is not an allowed key; peptide skin conditioning",
+  "confidence": "low",
+  "read_b": {
+   "inci": "PENTASODIUM TETRACARBOXYMETHYL HEPTADECANOYL DIPEPTIDE-12",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Sebum-regulating peptide; anti-sebum not an allowed job",
+   "confidence": "low"
+  }
+ },
+ "ARTEMISIA CAPILLARIS EXTRACT": {
+  "inci": "ARTEMISIA CAPILLARIS EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "CosIng lists no function; plant extract",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ARTEMISIA CAPILLARIS EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Plant extract; CosIng lists no function",
+   "confidence": "high"
+  }
+ },
+ "ETHYLENEDIAMINE": {
+  "inci": "ETHYLENEDIAMINE",
+  "job": "ph",
+  "secondary": null,
+  "override": true,
+  "reason": "Not reported; amine likely used to adjust pH",
+  "confidence": "low",
+  "read_b": {
+   "inci": "ETHYLENEDIAMINE",
+   "job": "ph",
+   "secondary": null,
+   "override": true,
+   "reason": "Amine base, likely pH adjuster or polymer residue",
+   "confidence": "low"
+  }
+ },
+ "PHENOXYETHYL CAPRYLATE": {
+  "inci": "PHENOXYETHYL CAPRYLATE",
+  "job": "emollient",
+  "secondary": "solvent",
+  "override": true,
+  "reason": "CosIng lists no function; ester emollient that dissolves UV filters",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PHENOXYETHYL CAPRYLATE",
+   "job": "emollient",
+   "secondary": "solvent",
+   "override": true,
+   "reason": "Ester emollient that also dissolves UV filters",
+   "confidence": "high"
+  }
+ },
+ "GLYCOL DIMETHACRYLATE": {
+  "inci": "GLYCOL DIMETHACRYLATE",
+  "job": "other",
+  "secondary": null,
+  "override": true,
+  "reason": "Crosslinking monomer of a polymer powder, no own job on skin",
+  "confidence": "low",
+  "read_b": {
+   "inci": "GLYCOL DIMETHACRYLATE",
+   "job": "other",
+   "secondary": null,
+   "override": true,
+   "reason": "Crosslinking monomer, likely from a polymer",
+   "confidence": "low"
+  }
+ },
+ "LYCIUM CHINENSE EXTRACT": {
+  "inci": "LYCIUM CHINENSE EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "LYCIUM CHINENSE EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "BUDDLEJA DAVIDII CALLUS EXTRACT": {
+  "inci": "BUDDLEJA DAVIDII CALLUS EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Not reported; plant cell culture extract",
+  "confidence": "high",
+  "read_b": {
+   "inci": "BUDDLEJA DAVIDII CALLUS EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Plant callus extract; CosIng not reported",
+   "confidence": "high"
+  }
+ },
+ "MICROCITRUS AUSTRALASICA FRUIT EXTRACT": {
+  "inci": "MICROCITRUS AUSTRALASICA FRUIT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "CosIng lists no function; fruit extract",
+  "confidence": "low",
+  "read_b": {
+   "inci": "MICROCITRUS AUSTRALASICA FRUIT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Fruit extract; CosIng lists no function",
+   "confidence": "low"
+  }
+ },
+ "BENZOPHENONE-9": {
+  "inci": "BENZOPHENONE-9",
+  "job": "uv_booster",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "BENZOPHENONE-9",
+   "job": "uv_booster",
+   "secondary": null,
+   "override": false,
+   "reason": "UV absorber not approved as US active",
+   "confidence": "high"
+  }
+ },
+ "ISOBUTYLENE/STYRENE COPOLYMER": {
+  "inci": "ISOBUTYLENE/STYRENE COPOLYMER",
+  "job": "film_former",
+  "secondary": null,
+  "override": true,
+  "reason": "CosIng lists no function; polymer film former",
+  "confidence": "low",
+  "read_b": {
+   "inci": "ISOBUTYLENE/STYRENE COPOLYMER",
+   "job": "film_former",
+   "secondary": null,
+   "override": true,
+   "reason": "Polymer for water resistance; CosIng lists no function",
+   "confidence": "low"
+  }
+ },
+ "FLUORESCENT BRIGHTENER 230": {
+  "inci": "FLUORESCENT BRIGHTENER 230",
+  "job": "uv_booster",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "low",
+  "read_b": {
+   "inci": "FLUORESCENT BRIGHTENER 230",
+   "job": "uv_booster",
+   "secondary": null,
+   "override": false,
+   "reason": "Absorbs UV, not a US active; optical brightener",
+   "confidence": "low"
+  }
+ },
+ "ULVA PERTUSA EXTRACT": {
+  "inci": "ULVA PERTUSA EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Bleaching is not a sunscreen job; algae extract",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ULVA PERTUSA EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Algae extract; bleaching not an allowed job",
+   "confidence": "high"
+  }
+ },
+ "DIMETHYL TARTRATE": {
+  "inci": "DIMETHYL TARTRATE",
+  "job": "solvent",
+  "secondary": null,
+  "override": true,
+  "reason": "Not reported; small ester likely a solvent",
+  "confidence": "low",
+  "read_b": {
+   "inci": "DIMETHYL TARTRATE",
+   "job": "solvent",
+   "secondary": null,
+   "override": true,
+   "reason": "Ester solvent; CosIng not reported",
+   "confidence": "low"
+  }
+ },
+ "CAPRAE LAC EXTRACT": {
+  "inci": "CAPRAE LAC EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Not reported; goat milk extract",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CAPRAE LAC EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Goat milk extract; CosIng not reported",
+   "confidence": "high"
+  }
+ },
+ "SODIUM CARBOXYMETHYL HYALURONATE": {
+  "inci": "SODIUM CARBOXYMETHYL HYALURONATE",
+  "job": "humectant",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "SODIUM CARBOXYMETHYL HYALURONATE",
+   "job": "humectant",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "HEPTAPEPTIDE-68 AMIDE ACETATE": {
+  "inci": "HEPTAPEPTIDE-68 AMIDE ACETATE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Not reported; peptide skin conditioning",
+  "confidence": "high",
+  "read_b": {
+   "inci": "HEPTAPEPTIDE-68 AMIDE ACETATE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Peptide; CosIng not reported",
+   "confidence": "high"
+  }
+ },
+ "ACRYLATES/ETHYLHEXYL ACRYLATE COPOLYMER": {
+  "inci": "ACRYLATES/ETHYLHEXYL ACRYLATE COPOLYMER",
+  "job": "film_former",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ACRYLATES/ETHYLHEXYL ACRYLATE COPOLYMER",
+   "job": "film_former",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "TOCOPHERYL PHOSPHATE": {
+  "inci": "TOCOPHERYL PHOSPHATE",
+  "job": "antioxidant",
+  "secondary": "emulsifier",
+  "override": true,
+  "reason": "Vitamin E phosphate used as antioxidant in leave-on product",
+  "confidence": "low",
+  "read_b": {
+   "inci": "TOCOPHERYL PHOSPHATE",
+   "job": "antioxidant",
+   "secondary": null,
+   "override": true,
+   "reason": "Vitamin E derivative used as antioxidant",
+   "confidence": "high"
+  }
+ },
+ "CAPROYL SPHINGOSINE": {
+  "inci": "CAPROYL SPHINGOSINE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "CAPROYL SPHINGOSINE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "ACETYL RHEUM RHAPONTICUM ROOT EXTRACT": {
+  "inci": "ACETYL RHEUM RHAPONTICUM ROOT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Bleaching is not a sunscreen job; plant extract",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ACETYL RHEUM RHAPONTICUM ROOT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Plant extract; bleaching not an allowed job",
+   "confidence": "high"
+  }
+ },
+ "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER": {
+  "inci": "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER",
+  "job": "thickener",
+  "secondary": "slip",
+  "override": true,
+  "reason": "disagreement resolved: no usable CosIng function; CosIng lists no function; silicone elastomer that thickens and gives silky feel",
+  "confidence": "low",
+  "read_b": {
+   "inci": "PEG-12 DIMETHICONE/PPG-20 CROSSPOLYMER",
+   "job": "slip",
+   "secondary": "thickener",
+   "override": true,
+   "reason": "Silicone elastomer for feel; CosIng lists no function",
+   "confidence": "low"
+  }
+ },
+ "GLYCEROPHOSPHOINOSITOL LYSINE": {
+  "inci": "GLYCEROPHOSPHOINOSITOL LYSINE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "disagreement resolved: no usable CosIng function; CosIng lists no function; skin conditioning agent",
+  "confidence": "low",
+  "read_b": {
+   "inci": "GLYCEROPHOSPHOINOSITOL LYSINE",
+   "job": "soothing",
+   "secondary": null,
+   "override": true,
+   "reason": "Anti-inflammatory soothing active; CosIng lists no function",
+   "confidence": "low"
+  }
+ },
+ "ACRYLONITRILE/METHYL METHACRYLATE/VINYLIDENE CHLORIDE COPOLYMER": {
+  "inci": "ACRYLONITRILE/METHYL METHACRYLATE/VINYLIDENE CHLORIDE COPOLYMER",
+  "job": "absorbent",
+  "secondary": "slip",
+  "override": true,
+  "reason": "disagreement resolved: no usable CosIng function; Not reported; hollow polymer microspheres for light matte feel",
+  "confidence": "low",
+  "read_b": {
+   "inci": "ACRYLONITRILE/METHYL METHACRYLATE/VINYLIDENE CHLORIDE COPOLYMER",
+   "job": "slip",
+   "secondary": "absorbent",
+   "override": true,
+   "reason": "Hollow microspheres for light feel and matte finish",
+   "confidence": "low"
+  }
+ },
+ "DIMETHYLACRYLAMIDE": {
+  "inci": "DIMETHYLACRYLAMIDE",
+  "job": "other",
+  "secondary": null,
+  "override": true,
+  "reason": "disagreement resolved: no usable CosIng function; Monomer, likely from a polymer",
+  "confidence": "low",
+  "read_b": {
+   "inci": "DIMETHYLACRYLAMIDE",
+   "job": "thickener",
+   "secondary": null,
+   "override": true,
+   "reason": "Not reported; monomer of a thickening polymer",
+   "confidence": "low"
+  }
+ }
+}
