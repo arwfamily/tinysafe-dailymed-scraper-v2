@@ -1,6 +1,6 @@
 {
- "built_on": "2026-10-26",
- "products_examined": 14171,
+ "built_on": "2026-11-02",
+ "products_examined": 14199,
  "seeded_uniis": 23,
  "how_to_promote": "add the NAME to UV_FILTERS in scripts/resolve_uniis.py; the next run resolves it from DailyMed. Never paste the UNII by hand — let the resolver confirm it.",
  "candidates": [
@@ -281,8 +281,8 @@
    },
    "example_setids": [
     "4d3a0a92-b0de-a1ea-e063-6294a90a8508",
-    "08b8003f-40be-3380-e063-6294a90a4f6b",
     "08b52f29-c1a0-c673-e063-6294a90a9a7a",
+    "08b8003f-40be-3380-e063-6294a90a4f6b",
     "08b7eeeb-09ae-ffe6-e063-6294a90aba90"
    ]
   },
@@ -297,8 +297,8 @@
     "TL2TJE8QTX": 4
    },
    "example_setids": [
-    "fe274cab-a945-4379-a92c-c8f18bd63c1e",
     "0d65128b-8eb7-440b-870a-7e3be18152b3",
+    "fe274cab-a945-4379-a92c-c8f18bd63c1e",
     "e3f7cd1d-a5cd-4baf-a62b-c55e5768ccf2",
     "5d0feba6-f5c7-4b46-8da1-8effcc98c8ec"
    ]
@@ -884,8 +884,8 @@
     "ANQ870JD20": 2
    },
    "example_setids": [
-    "4e696d29-fbbb-4999-e063-6394a90a26a4",
-    "3dfe5db3-6a5b-24cd-e063-6394a90aa744"
+    "3dfe5db3-6a5b-24cd-e063-6394a90aa744",
+    "4e696d29-fbbb-4999-e063-6394a90a26a4"
    ]
   },
   {
@@ -899,8 +899,8 @@
     "SD418S06XD": 2
    },
    "example_setids": [
-    "22fdad80-587c-a7e6-e063-6394a90a5f6e",
-    "22982b28-37df-ed81-e063-6394a90a77db"
+    "22982b28-37df-ed81-e063-6394a90a77db",
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
    ]
   },
   {
@@ -2692,34 +2692,6 @@
    ]
   },
   {
-   "unii": "6DRV3D37XS",
-   "name": "SAURURUS CHINENSIS WHOLE",
-   "name_variants": [
-    "SAURURUS CHINENSIS WHOLE"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "SD418S06XD": 1
-   },
-   "example_setids": [
-    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
-   ]
-  },
-  {
-   "unii": "7C42E2D7B0",
-   "name": "TARAXACUM OFFICINALE WHOLE",
-   "name_variants": [
-    "TARAXACUM OFFICINALE WHOLE"
-   ],
-   "product_count": 1,
-   "co_occurs_with_seeds": {
-    "SD418S06XD": 1
-   },
-   "example_setids": [
-    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
-   ]
-  },
-  {
    "unii": "LP618AV2EA",
    "name": ".BETA.-BISABOLOL",
    "name_variants": [
@@ -2787,6 +2759,34 @@
    },
    "example_setids": [
     "22982b28-37df-ed81-e063-6394a90a77db"
+   ]
+  },
+  {
+   "unii": "6DRV3D37XS",
+   "name": "SAURURUS CHINENSIS WHOLE",
+   "name_variants": [
+    "SAURURUS CHINENSIS WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
+   ]
+  },
+  {
+   "unii": "7C42E2D7B0",
+   "name": "TARAXACUM OFFICINALE WHOLE",
+   "name_variants": [
+    "TARAXACUM OFFICINALE WHOLE"
+   ],
+   "product_count": 1,
+   "co_occurs_with_seeds": {
+    "SD418S06XD": 1
+   },
+   "example_setids": [
+    "22fdad80-587c-a7e6-e063-6394a90a5f6e"
    ]
   }
  ],

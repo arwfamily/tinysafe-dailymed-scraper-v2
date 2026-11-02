@@ -1,0 +1,347 @@
+{
+ "run_date": "2026-11-02",
+ "all_labels": {
+  "new": 30,
+  "metadata": 2,
+  "reformulated": 2,
+  "delisted": 2
+ },
+ "baby_labels": {},
+ "baby_population_live": 583,
+ "new_baby_decisions": [],
+ "review_queue": 0,
+ "changes": [
+  {
+   "setid": "5b79a488-6d60-28e9-e063-6294a90aaa9d",
+   "change": "new",
+   "product": "PRIMALLY PURE UNSCENTED SUNSCREEN SPF 30 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b79a488-6d60-28e9-e063-6294a90aaa9d",
+   "baby": false,
+   "label_date": "20260914",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5e2633f8-810a-18af-e063-6294a90ae20b",
+   "change": "new",
+   "product": "MANISCREEN HYDRATING MINERAL HAND SUNSCREEN SPF 25 VANILLA (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e2633f8-810a-18af-e063-6294a90ae20b",
+   "baby": false,
+   "label_date": "20261024",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5e26d821-073f-aeed-e063-6294a90afea4",
+   "change": "new",
+   "product": "MANISCREEN HYDRATING MINERAL HAND SUNSCREEN SPF 25 LAVENDER (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e26d821-073f-aeed-e063-6294a90afea4",
+   "baby": false,
+   "label_date": "20261024",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5dd55dcf-54f8-1caa-e063-6394a90a58fb",
+   "change": "new",
+   "product": "MANISCREEN HYDRATING MINERAL HAND SUNSCREEN SPF 25 CUCUMBER (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5dd55dcf-54f8-1caa-e063-6394a90a58fb",
+   "baby": false,
+   "label_date": "20261024",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5aff3d25-d034-0815-e063-6294a90a8664",
+   "change": "metadata",
+   "product": "HERA BLACK CUSHION FOUNDATION 29N1 (OCTINOXATE) LOTION HERA BLACK CUSHION FOUNDATION 43N1 (OCTINOXATE) LOTION HERA BLACK CUSHION FOUNDATION 31N1 (OCTINOXATE) LOTION HERA BLACK CUSHION FOUNDATION 37W1 (OCTINOXATE) LOTION HERA BLACK CUSHION FOUNDATION 45W1 (OCTINOXATE) LOTION HERA BLACK CUSHION ....... LOTION HERA BLACK CUSHION FOUNDATION 28C1 (OCTINOXATE) LOTION HERA BLACK CUSHION FOUNDATION 17N1 (OCTINOXATE, TITANIUM DIOXIDE, AND ZINC OXIDE) LOTION HERA BLACK CUSHION FOUNDATION 21W1 (OCTINOXATE, TITANIUM DIOXIDE, AND ZINC OXIDE) LOTION HERA BLACK CUSHION FOUNDATION 26N1 (OCTINOXATE, TITANIUM DIOXIDE, AND ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5aff3d25-d034-0815-e063-6294a90a8664",
+   "baby": false
+  },
+  {
+   "setid": "5e43fc0a-a70a-8027-e063-6394a90a255d",
+   "change": "new",
+   "product": "PERRICONE MD COLD PLASMA PLUS LIP THERAPY SPF 30 (ZINC OXIDE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e43fc0a-a70a-8027-e063-6394a90a255d",
+   "baby": false,
+   "label_date": "20261031",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5e27b9d4-1a47-c248-e063-6394a90af75d",
+   "change": "new",
+   "product": "MANISCREEN HYDRATING MINERAL HAND SUNSCREEN SPF 25 COCONUT (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e27b9d4-1a47-c248-e063-6394a90af75d",
+   "baby": false,
+   "label_date": "20261024",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5e27471d-b4c8-113c-e063-6294a90a9836",
+   "change": "new",
+   "product": "MANISCREEN HYDRATING MINERAL HAND SUNSCREEN SPF 25 ROSEWATER (ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e27471d-b4c8-113c-e063-6294a90a9836",
+   "baby": false,
+   "label_date": "20261024",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "f45b59b6-4991-155e-e053-2995a90a471c",
+   "change": "reformulated",
+   "product": "RMS SUPERNATURAL RADIANCE SERUM SPF 30 SUNSCREEN PURE AURA (ZINC OXIDE) EMULSION RMS SUPERNATURAL RADIANCE SERUM SPF 30 SUNSCREEN SOFT AURA (ZINC OXIDE) EMULSION RMS SUPERNATURAL RADIANCE SERUM SPF 30 SUNSCREEN MEDIUM AURA (ZINC OXIDE) EMULSION RMS SUPERNATURAL RADIANCE SERUM SPF 30 SUNSCREEN LIGHT AURA (ZINC OXIDE) EMULSION RMS SUPERNATURAL RADIANCE SERUM SPF 30 SUNSCREEN RICH AURA (ZINC OXIDE) EMULSION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f45b59b6-4991-155e-e053-2995a90a471c",
+   "baby": false,
+   "added": [
+    "C9-12 ALKANE"
+   ],
+   "removed": [
+    "SOYBEAN OIL"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "5ec7151e-4f83-4aca-e063-6294a90a9818",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 26N1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ec7151e-4f83-4aca-e063-6294a90a9818",
+   "baby": false,
+   "label_date": "20261026",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ec7276d-fcaf-65b2-e063-6394a90ac220",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 26W1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ec7276d-fcaf-65b2-e063-6394a90ac220",
+   "baby": false,
+   "label_date": "20261026",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ec73566-5d67-7153-e063-6394a90aba33",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 28C1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ec73566-5d67-7153-e063-6394a90aba33",
+   "baby": false,
+   "label_date": "20261026",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ec75100-153c-80cd-e063-6294a90a6d51",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 28N1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ec75100-153c-80cd-e063-6294a90a6d51",
+   "baby": false,
+   "label_date": "20261026",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ec77f7a-4621-ac0c-e063-6294a90a3f70",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 28O1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ec77f7a-4621-ac0c-e063-6294a90a3f70",
+   "baby": false,
+   "label_date": "20261026",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ec7ab15-9cc1-d53a-e063-6294a90a4111",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 29N1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ec7ab15-9cc1-d53a-e063-6294a90a4111",
+   "baby": false,
+   "label_date": "20261026",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ec83b87-08bc-7590-e063-6294a90a0b78",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 29W1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ec83b87-08bc-7590-e063-6294a90a0b78",
+   "baby": false,
+   "label_date": "20261026",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ec857a3-7fd1-6461-e063-6394a90aacd7",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 31C1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ec857a3-7fd1-6461-e063-6394a90aacd7",
+   "baby": false,
+   "label_date": "20261026",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ec871dc-f74e-765c-e063-6394a90a27a5",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 31N1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ec871dc-f74e-765c-e063-6394a90a27a5",
+   "baby": false,
+   "label_date": "20261026",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb338c7-e99c-887d-e063-6394a90a977c",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 17C2 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb338c7-e99c-887d-e063-6394a90a977c",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb19976-6983-3d9e-e063-6394a90a01ee",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 13N1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb19976-6983-3d9e-e063-6394a90a01ee",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb363fe-c2b2-9381-e063-6294a90ad038",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 17N1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb363fe-c2b2-9381-e063-6294a90ad038",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb39387-7f6b-ce78-e063-6394a90a15ae",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 17W1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb39387-7f6b-ce78-e063-6394a90a15ae",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb3c3ad-8a77-0655-e063-6394a90ae9e0",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 21C2 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb3c3ad-8a77-0655-e063-6394a90ae9e0",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb3ddb5-4e2b-17d4-e063-6394a90aaa55",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 21N1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb3ddb5-4e2b-17d4-e063-6394a90aaa55",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb415b3-b1ba-42b8-e063-6394a90a90d7",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 22N1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb415b3-b1ba-42b8-e063-6394a90a90d7",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb44e1b-b24b-6c83-e063-6394a90a4b52",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 23C2 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb44e1b-b24b-6c83-e063-6394a90a4b52",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb42062-f298-5186-e063-6294a90ab043",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 21W1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb42062-f298-5186-e063-6294a90ab043",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb468db-3c38-922d-e063-6294a90adef8",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 23W1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb468db-3c38-922d-e063-6294a90adef8",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb4f87a-b4dc-1aa5-e063-6294a90a2ec4",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 24O1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb4f87a-b4dc-1aa5-e063-6294a90a2ec4",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb4b8ca-eced-b7ff-e063-6394a90aaefe",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 24N1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb4b8ca-eced-b7ff-e063-6394a90aaefe",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5eb50784-444e-3bf3-e063-6294a90aa618",
+   "change": "new",
+   "product": "HERA SILKYSTAY FOUNDATION 25W1 (TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5eb50784-444e-3bf3-e063-6294a90aa618",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "187cd4ad-781f-b0e4-e063-6394a90a414b",
+   "change": "reformulated",
+   "product": "LIP RENEWAL SPF 50 (AVOBENZONE, HOMOSALATE, OCTINOXATE, OCTISALATE) PASTE",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=187cd4ad-781f-b0e4-e063-6394a90a414b",
+   "baby": false,
+   "added": [
+    "MENTHA ARVENSIS LEAF OIL",
+    "MENTHA PIPERITA (PEPPERMINT) OIL",
+    "CAPRYLIC/CAPRIC TRIGLYCERIDE",
+    "VITIS VINIFERA (GRAPE) SEED EXTRACT",
+    "CITRUS AURANTIFOLIA (LIME) OIL"
+   ],
+   "removed": [
+    "VITIS VINIFERA SEED",
+    "LIMONENE, (+)-",
+    "CITRAL"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "87ce977a-0ed2-451e-a0ac-976caf7424cc",
+   "change": "metadata",
+   "product": "BROWNKIND SHEER FACIAL SUNSCREEN SPF 40 (AVOBENZONE, OCTINOXATE, OCTISALATE, OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=87ce977a-0ed2-451e-a0ac-976caf7424cc",
+   "baby": false
+  },
+  {
+   "setid": "24b5d796-4d45-412f-a213-8b89b6d94606",
+   "change": "new",
+   "product": "BIOSHIELD BROAD-SPECTRUM DEWORMER (PRAZIQUANTEL PYRANTEL PAMOATE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24b5d796-4d45-412f-a213-8b89b6d94606",
+   "baby": false,
+   "label_date": "20261025",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "a6db9e3b-610b-4225-a7b5-2318567d937c",
+   "change": "delisted",
+   "product": "ACTIVE FE (.BETA.-CAROTENE, ASCORBIC ACID, CHOLECALCIFEROL, .ALPHA.-TOCOPHEROL ACETATE, DL-, THIAMINE HYDROCHLORIDE, RIBOFLAVIN, NIACINAMIDE, PYRIDOXINE HYDROCHLORIDE, FOLIC ACID, CYANOCOBALAMIN, IRON PENTACARBONYL, MAGNESIUM OXIDE, ZINC OXIDE, AND CUPRIC OXIDE) TABLET",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6db9e3b-610b-4225-a7b5-2318567d937c",
+   "baby": false
+  },
+  {
+   "setid": "d34669b8-acbc-7c93-e053-2a95a90adbe4",
+   "change": "delisted",
+   "product": "CHARLOTTE TILBURY BROAD SPECTRUM SPF 50 SUNSCREEN INVISIBLE UV FLAWLESS PRIMER (AVOBENZONE, OCTINOXATE, OCTISALATE, OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d34669b8-acbc-7c93-e053-2a95a90adbe4",
+   "baby": false
+  }
+ ]
+}
