@@ -271,24 +271,38 @@ def audit_line(a):
 
 
 def patch_index(html, h):
-    def sub(label, value, s):
-        new, n = re.subn(r"(<b>)[\d,]+(</b><span>" + re.escape(label) + r")", r"\g<1>" + f"{value:,}" + r"\2", s)
-        if n != 1:
-            raise SystemExit(f"index.html: stat '{label}' not found exactly once")
+    """The page's numbers and accuracy line, each rewritten where the page carries it. A page may
+    carry only some of them (the 2026-10 redesigns: the Sunnytime page computes its ledger live from
+    db.json and keeps no stat blocks; the Check keeps its intro count and audit line); none of them
+    appearing more than once is allowed. Returns the page unchanged when it carries none."""
+    def sub(rx, repl, s, what):
+        new, n = re.subn(rx, repl, s)
+        if n > 1:
+            raise SystemExit(f"index.html: {what} found {n} times")
         return new
-    html = sub("FDA-registered sunscreens, checked", h["read"], html)
-    html = sub("mineral sunscreens list a possible SPF booster as an inactive", h["booster"], html)
-    html = sub("with a recall on record", h["recall"], html)
-    html, n = re.subn(r"(I checked all )[\d,]+( FDA-registered sunscreen labels)", r"\g<1>" + f"{h['read']:,}" + r"\2", html)
-    if n != 1:
-        raise SystemExit("index.html: intro count not found exactly once")
+    for label, key in (("FDA-registered sunscreens, checked", "read"),
+                       ("mineral sunscreens list a possible SPF booster as an inactive", "booster"),
+                       ("with a recall on record", "recall")):
+        html = sub(r"(<b>)[\d,]+(</b><span>" + re.escape(label) + r")", r"\g<1>" + f"{h[key]:,}" + r"\2", html, f"stat '{label}'")
+    html = sub(r"(I checked all )[\d,]+( FDA-registered sunscreen labels)", r"\g<1>" + f"{h['read']:,}" + r"\2", html, "intro count")
     if h.get("audit"):
-        html, n = re.subn(r'(<p class="audit[^"]*"[^>]*>)[^<]*(</p>)', lambda m: m.group(1) + audit_line(h["audit"]) + m.group(2), html)
-        if n != 1:
-            raise SystemExit("index.html: audit line not found exactly once")
+        html = sub(r'(<p class="audit[^"]*"[^>]*>)[^<]*(</p>)', lambda m: m.group(1) + audit_line(h["audit"]) + m.group(2),
+                   html, "audit line")
     html = re.sub(r"[\d,]+ sunscreens · (?:3-tier )?rules v[\d.]+", f"{h['read']:,} sunscreens · rules "
                   + RULES_VERSION.split(" ")[0], html)
     return html
+
+
+def write_patched(path, h):
+    """Patch a page in memory first, then write it only if it changed (a failed patch never
+    leaves an empty page behind)."""
+    html = open(path, encoding="utf-8").read()
+    new = patch_index(html, h)
+    if new != html:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(new)
+        return True
+    return False
 
 
 def evidence(site_dir):
@@ -368,16 +382,14 @@ def main():
             json.dump(db, f, ensure_ascii=False, separators=(",", ":"))
         print("wrote", out_p)
     if idx_p and os.path.exists(idx_p):
-        html = open(idx_p, encoding="utf-8").read()
-        open(idx_p, "w", encoding="utf-8").write(patch_index(html, h))
-        print("rewrote the headline numbers in", idx_p)
+        if write_patched(idx_p, h):
+            print("rewrote the headline numbers in", idx_p)
         evidence(os.path.dirname(idx_p))
         # the Sunscreen Check's own page (arwhouse.com/sunscreen-check) carries the same numbers
         chk = os.path.join(os.path.dirname(os.path.dirname(idx_p)), "sunscreen-check/index.html")
         if os.path.exists(chk):
-            c = open(chk, encoding="utf-8").read()
-            open(chk, "w", encoding="utf-8").write(patch_index(c, h))
-            print("rewrote the headline numbers in", chk)
+            if write_patched(chk, h):
+                print("rewrote the headline numbers in", chk)
 
 
 if __name__ == "__main__":

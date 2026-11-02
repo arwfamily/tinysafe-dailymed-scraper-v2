@@ -605,6 +605,27 @@ def water_resistant_claim(text):
     return best
 
 
+# what a reader's note says about water resistance that is NOT a claim: "Not labeled water
+# resistant", "water resistant not claimed", "Directions mention (using) a water resistant sunscreen",
+# "use a water resistant product if swimming", a line that only "appears to" say it (2026-11-02 audit:
+# Sheglam Dew & Done shown "Labelled water resistant" from "not water resistant (directions tell
+# user to use a water resistant sunscreen)")
+_WR_NOT_CLAIM = re.compile(
+    r"\b(?:not|never|no)\b[^.;()'\"]{0,25}?\bwater[- ]resistan\w*"
+    r"|['\"]?\bwater[- ]resistant['\"]?\s+(?:is\s+|was\s+)?not\s+claimed"
+    r"|\b(?:use|uses|using)\s+(?:of\s+)?(?:a\s+|another\s+)?water[- ]resistant[- ]\w+"
+    r"|\bdirections?\b[^.;()]{0,50}?water[- ]resistant[- ]\w+"
+    r"|\bwater[- ]resistant[- ]sunscreen[- ]direction"
+    r"|\bappears?\s+to\b[^.;()]{0,30}?water[- ]resistant", re.I)
+_WR_ANY = re.compile(r"(?i)(?<!not )(?<!non-)\bwater[- ]resistant\b(?! sunscreen if)|resistente al agua")
+
+
+def package_says_water_resistant(note):
+    """A package reader's note claims water resistance (minutes or not), once its
+    statements that the package does NOT claim it are taken out."""
+    return bool(_WR_ANY.search(_WR_NOT_CLAIM.sub(" ", note or "")))
+
+
 def age_limit(text):
     """The first age limit the label text prints, or None."""
     for m in _AGE_RX.finditer(text or ""):
@@ -615,6 +636,24 @@ def age_limit(text):
     return None
 
 
+_INACTIVES_HEAD = re.compile(r"\bINACTIVES\s*:", re.I)
+_INACTIVES_STOP = re.compile(r"\b(?:DIRECTIONS|WARNINGS?|ACTIVES?\s*(?:INGREDIENTS?)?\s*:|QUESTIONS|OTHER INFORMATION|"
+                             r"EACH (?:GRAM|ML)|NDC|DESCRIPTION|CLINICAL PHARMACOLOGY|INDICATIONS|INACTIVES\s*:)|\b\d{5}-\d{3,4}-\d{1,2}\b", re.I)
+
+
+def inactives_blocks(text):
+    """The lists a kit's prescribing information prints under "Inactives:" for each of its
+    products (Obagi-C Rx kits: the serum's fragrance; 2026-11-02 audit). Each block runs to
+    the next heading or product code."""
+    out = []
+    for m in _INACTIVES_HEAD.finditer(text or ""):
+        rest = text[m.end():m.end() + 800]
+        k = _INACTIVES_STOP.search(rest)
+        out.append((rest[:k.start()] if k else rest).upper())
+    return out
+
+
+INACTIVES_BLOCKS = {}  # the "Inactives:" lists a kit's prescribing information prints, current label only
 LABEL_WORDS = {}     # every word of the current label text, for matching a recall's product words
 if os.path.exists(_LT):
     import gzip as _gz0
@@ -628,6 +667,9 @@ if os.path.exists(_LT):
             _al0 = age_limit(_d.get("text") or "")
             if _al0:
                 AGE_LIMIT[_d["setid"]] = (_al0, str(_d.get("spl_version")))
+            _ib = inactives_blocks(_d.get("text") or "")
+            if _ib:
+                INACTIVES_BLOCKS[_d["setid"]] = _ib
         if not _c or _CANVER.get(_d["setid"]) != str(_d.get("spl_version")):
             continue
         _v = sorted({int(m.group(1) or m.group(2)) for m in _SPFRX.finditer(_BOILRX.sub(" ", _d.get("text") or ""))
@@ -1117,7 +1159,7 @@ def flags(eng, meta, shown, struct, acts, organic, c, thin, treason, twins=()):
     _pk_wr = water_resistant_claim(_pk)
     _m = re.search(r"(?i)(?:resistente al agua|\bWR)\W{0,3}\(?\s*(40|80)\s*min", _pk)
     _pk_wr = _pk_wr or (int(_m.group(1)) if _m else None)
-    _pk_any = bool(re.search(r"(?i)(?<!not )(?<!non-)\bwater[- ]resistant\b(?! sunscreen if)|resistente al agua", _pk))
+    _pk_any = package_says_water_resistant(_pk)
     if wr or _pk_wr or _pk_any or WATER_RES.search(form):
         _min = _pk_wr or wr                     # the package decides the minutes (Inde Wild: package 40, directions 80)
         add("water_resistant", [f"{_min} minutes"] if _min else [], raw=True)
@@ -1644,7 +1686,7 @@ def label_text_fragrance(sid, shown):
     if any(_LT.FRAGRANCE.search(x.upper()) for x in shown):
         return None
     sec = _LT.printed_section(sid)
-    text = sec + " | " + _LT._FOOT.get(sid, "")
+    text = sec + " | " + _LT._FOOT.get(sid, "") + " | " + " | ".join(INACTIVES_BLOCKS.get(sid, []))
     m = _LT.FRAGRANCE.search(text)
     if not m:
         return None

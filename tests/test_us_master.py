@@ -207,6 +207,34 @@ def test_essential_oils_named_on_the_label():
     assert not R.is_essential_oil("Helianthus Annuus Seed Oil")
     assert not R.is_essential_oil("Lavandula Angustifolia Flower Extract")
 
+
+def test_package_water_resistant_note():
+    # 2026-11-02 audit: a reader's note saying the package does NOT claim it is no claim
+    W = M.package_says_water_resistant
+    assert not W("no Broad Spectrum claim anywhere; not water resistant (directions tell user to use a water resistant sunscreen). Inner label")
+    assert not W("Not labeled water resistant.")
+    assert not W("Not labelled water resistant on visible text.")
+    assert not W("Tube marked 'water resistant' not claimed; Directions say use a water resistant sunscreen if swimming.")
+    assert not W("No water resistance claim in Uses (Directions mention using a water resistant sunscreen).")
+    assert not W("directions refer to water resistant sunscreen")
+    assert not W("Bottle peel label has the water-resistant-sunscreen direction")
+    assert not W("lines are mostly unreadable (one appears to end 'water resistant')")
+    assert W("Front: 'Broad Spectrum Protection', 'Water Resistant', 'Great for Children & Adults!'")
+    assert W("Arizona Sun SPF 45 Oil-Free Water-Resistant Spray Sunscreen, 4 fl oz")
+    assert W("'Resistente al agua' without minutes")
+    assert W("Says 'UVA-UVB' and 'Water-Resistant Sun Protection' but never 'Broad Spectrum'")
+    assert W("water resistant, paraben free, UVA/UVB protection")
+
+
+def test_kit_inactives_blocks():
+    # 2026-11-02 audit: an Rx kit prints each product's list under "Inactives:"; the serum's fragrance counts
+    txt = ("Each gram of C-Clarifying Serum contains: Active: Hydroquinone, USP 4% Inactives: ascorbic acid, "
+           "dipropylene glycol, fragrance, propylene glycol, water 62032-105-36 Night Cream Each gram contains: "
+           "Active: Hydroquinone Inactives: cetyl alcohol, water DESCRIPTION Hydroquinone is 1,4-benzenediol")
+    b = M.inactives_blocks(txt)
+    assert len(b) == 2 and "FRAGRANCE" in b[0] and "FRAGRANCE" not in b[1] and "DESCRIPTION" not in b[1]
+    assert M.inactives_blocks("Inactive ingredients: water, fragrance") == []
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

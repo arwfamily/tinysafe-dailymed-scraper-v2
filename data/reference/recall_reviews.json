@@ -790,6 +790,34 @@
     "why": "recall is the DayWear Sheer Tint Release moisturizer (all skin types), NDC 11559-008; this label is the DayWear Oily Skin lotion, NDC 11559-010",
     "reviewed": "2026-10-26"
    }
+  },
+  "800e4a24-0172-e2a6-e053-2991aa0a7637": {
+   "D-0070-2019": {
+    "verdict": "same_product",
+    "manual": true,
+    "why": "Cicatricure Scar Cream + Sunscreen SPF 30, avobenzone 3%, octocrylene 10%, oxybenzone 6%, 0.7 oz tube; recall UPC 6 50067 00018 7 is the barcode on this label's carton (subpotent avobenzone/octocrylene, lot 163241K, 2018, terminated) - 2026-11-02 audit + blind second read",
+    "reviewed": "2026-11-02"
+   }
+  },
+  "e71b29e5-8495-42c1-84f6-431fea422512": {
+   "D-814-2013": {
+    "verdict": "same_product",
+    "manual": true,
+    "why": "LA MER The SPF 18 Fluid Tint, Broad Spectrum SPF 18, 1.7 fl oz/50 ml, Max Huber Research Labs: this label's name, firm, SPF, size and avobenzone 3% (shade Light 02; subpotent avobenzone, 2013, terminated) - 2026-11-02 audit + blind second read",
+    "reviewed": "2026-11-02"
+   },
+   "D-815-2013": {
+    "verdict": "same_product",
+    "manual": true,
+    "why": "LA MER The SPF 18 Fluid Tint, Broad Spectrum SPF 18, 1.7 fl oz/50 ml, Max Huber Research Labs: this label's name, firm, SPF, size and avobenzone 3% (shade Medium 03; subpotent avobenzone, 2013, terminated) - 2026-11-02 audit + blind second read",
+    "reviewed": "2026-11-02"
+   },
+   "D-816-2013": {
+    "verdict": "same_product",
+    "manual": true,
+    "why": "LA MER The SPF 18 Fluid Tint, Broad Spectrum SPF 18, 1.7 fl oz/50 ml, Max Huber Research Labs: this label's name, firm, SPF, size and avobenzone 3% (shade Dark 04; subpotent avobenzone, 2013, terminated) - 2026-11-02 audit + blind second read",
+    "reviewed": "2026-11-02"
+   }
   }
  }
 }

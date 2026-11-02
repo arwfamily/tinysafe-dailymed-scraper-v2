@@ -7,3 +7,4 @@
 {"setid": "61273611-ab7a-4216-aebe-2c8d89660281", "spl_version": "2", "read": "2026-10-25", "readers": "final independent audit + blind second read, agreeing", "form": "lotion"}
 {"setid": "ecfbb53a-0f05-9dcc-e053-2a95a90afb66", "spl_version": "2", "read": "2026-10-25", "readers": "final independent audit + blind second read, agreeing", "why": "package front prints 50 and BROAD SPECTRUM SPF 50; the filing's name field says SPF 30", "spf": 50}
 {"setid": "19f94284-5594-39ab-e063-6294a90a63bd", "spl_version": "1", "read": "2026-10-25", "readers": "final independent audit + blind second read, agreeing", "why": "package front prints ZINC OXIDE 20%; the filing gives 5%", "withhold_percent": true}
+{"setid": "41de09dc-544f-9780-e063-6394a90acd27", "spl_version": "1", "read": "2026-11-02", "readers": "monthly independent audit + blind second read, agreeing", "why": "package front banner and the filing's title print '7 YEARS TO ADULT'", "age_limit": "7 years to adult"}

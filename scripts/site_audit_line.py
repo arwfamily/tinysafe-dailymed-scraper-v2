@@ -17,6 +17,5 @@ h = site_db.headline(db)
 for rel in ("sunnytime/index.html", "sunscreen-check/index.html"):
     idx = os.path.join(site, rel)
     if os.path.exists(idx):
-        html = open(idx, encoding="utf-8").read()
-        open(idx, "w", encoding="utf-8").write(site_db.patch_index(html, h))
-        print("rewrote", idx)
+        if site_db.write_patched(idx, h):
+            print("rewrote", idx)
