@@ -1,9 +1,9 @@
 {
-"generated": "2026-11-02",
-"count": 54,
+"generated": "2026-11-03",
+"count": 119,
 "by_reason": {
-"label_changed": 46,
-"never_checked": 8
+"label_changed": 95,
+"never_checked": 24
 },
 "labels": [
 {
@@ -28,9 +28,30 @@
 "had_older_check": true
 },
 {
+"setid": "0828593a-fa3e-42ae-8f9f-59787843bf39",
+"spl_version": "3",
+"name": "SPF 30 Moisturizer With Aloe Vera Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "08f34b31-6337-ef7c-e063-6294a90a1c4c",
 "spl_version": "3",
 "name": "Hawaiian Tropic Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "0ad8187d-43a3-933b-e063-6294a90a20c4",
+"spl_version": "2",
+"name": "Banana Boat Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "0c238393-1035-19aa-e054-00144ff88e88",
+"spl_version": "8",
+"name": "Banana Boat Kids Free 50 Spray",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -45,6 +66,55 @@
 "setid": "0fb5a140-838d-3226-e063-6294a90a8860",
 "spl_version": "3",
 "name": "Bondi Sands Fragrance Free Face SPF 50 Sunscreen Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "0fc83618-9a6d-5ad1-e054-00144ff88e88",
+"spl_version": "8",
+"name": "Banana Boat Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "0fd69dcf-95e3-73bb-e054-00144ff8d46c",
+"spl_version": "9",
+"name": "Banana Boat Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "0fd8448c-5b3a-1a76-e054-00144ff88e88",
+"spl_version": "9",
+"name": "Banana Boat Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "0fda2f46-4322-1284-e054-00144ff8d46c",
+"spl_version": "10",
+"name": "Banana Boat Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "1266bd05-1971-a7f0-e063-6394a90a089c",
+"spl_version": "5",
+"name": "Thrive Daily Defense Sunscreen Balm SPF30 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "128e1a3a-df40-f51c-e063-6394a90a1902",
+"spl_version": "4",
+"name": "Thrive Daily Sunscreen For Sensitive Skin SPF 30 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "12d9e1d0-c59c-f770-e063-6294a90a8191",
+"spl_version": "3",
+"name": "Thrive Bodyshield 50 SPF 50 Cream",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -70,9 +140,30 @@
 "had_older_check": true
 },
 {
-"setid": "2861453a-12e9-faeb-e063-6394a90a527c",
+"setid": "23660e22-03c4-e722-e063-6394a90a433e",
+"spl_version": "5",
+"name": "Neutrogena Clear Body Sunscreen SPF 50 Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "247a323f-9a08-4717-8553-ebc9c519817b",
 "spl_version": "3",
+"name": "Kinesys Pro Sport Clear Mineral Sunscreen Stick Broad Spectrum SPF45 Stick",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "2861453a-12e9-faeb-e063-6394a90a527c",
+"spl_version": "4",
 "name": "Bondi Sands Broad Spectrum SPF 60 Sunny Cream Body Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "28660ce2-6805-41f3-e063-6394a90af45d",
+"spl_version": "2",
+"name": "Balibody SPF15 Bronze Shimmering Tanning Gel",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -91,9 +182,37 @@
 "had_older_check": true
 },
 {
+"setid": "2b3656d6-4b3a-9ef2-e063-6294a90acaa6",
+"spl_version": "3",
+"name": "Roc Multi Correxion - Even Tone And Lift - 5-In-1 Chest, Neck, And Face Cream Sunscreen - Broad Spectrum SPF 30 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "2c28198b-2027-f0d0-e063-6294a90aa05b",
 "spl_version": "2",
 "name": "Sunceutical SPF 50 Mineral Body Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "2c2c9b67-9588-efbe-e063-6294a90aa6a4",
+"spl_version": "2",
+"name": "Sunceutical SPF 50 Mineral Glow Serum Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "324d1a64-543f-44f7-b9e8-69e97fc9cff2",
+"spl_version": "2",
+"name": "Sun Juice Body Mist Sunscreen SPF30 - Coconut Cream Paradiso Spray",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "32d78048-d281-1d80-e063-6394a90aec19",
+"spl_version": "4",
+"name": "Blue Lizard Sensitive SPF 50 Sunscreen Lotion",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -122,6 +241,13 @@
 "setid": "364e9bac-85c4-afbd-e063-6394a90aba82",
 "spl_version": "6",
 "name": "Skin Medicinals Sm Clear Broad Spectrum SPF 50 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "39a5a3be-f9a7-4fa1-e054-00144ff88e88",
+"spl_version": "8",
+"name": "Banana Boat Spray",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -175,11 +301,25 @@
 "had_older_check": true
 },
 {
+"setid": "46feef09-69ae-41b4-e054-00144ff8d46c",
+"spl_version": "8",
+"name": "Banana Boat Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "47819f63-85e0-43fe-815c-86b924b3c42f",
 "spl_version": "2",
 "name": "Zinc Oxide 20% Cream",
 "reason": "never_checked",
 "had_older_check": false
+},
+{
+"setid": "47ded2d1-f057-28d1-e054-00144ff88e88",
+"spl_version": "6",
+"name": "Banana Boat Oil",
+"reason": "label_changed",
+"had_older_check": true
 },
 {
 "setid": "4bf1ca6b-5d87-40ee-97f4-89f1bfadcecb",
@@ -196,6 +336,13 @@
 "had_older_check": true
 },
 {
+"setid": "4f8756bf-5b0d-5269-e063-6294a90ae6dc",
+"spl_version": "3",
+"name": "Zo Skin Health Daily Mineral Sunshade Broad-Spectrum Sunscreen (Light) Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "4f87e24f-e4ff-03a7-e063-6294a90a23b1",
 "spl_version": "3",
 "name": "Zo Skin Health Daily Mineral Sunshade Broad-Spectrum Sunscreen (Light Medium) Lotion",
@@ -203,9 +350,30 @@
 "had_older_check": true
 },
 {
+"setid": "4f95cd0a-f996-648b-e063-6294a90adc28",
+"spl_version": "3",
+"name": "Zo Skin Health Daily Mineral Sunshade Broad-Spectrum Sunscreen (Medium) Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "4f968058-e851-86d0-e063-6294a90aa786",
+"spl_version": "3",
+"name": "Zo Skin Health Daily Mineral Sunshade Broad-Spectrum Sunscreen (Tan) Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "4f970778-97d6-40a9-e063-6394a90a6c89",
 "spl_version": "3",
 "name": "Zo Skin Health Daily Mineral Sunshade Broad-Spectrum Sunscreen SPF 45 (Deep) Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "50adf1db-118f-4843-b356-e23993160673",
+"spl_version": "5",
+"name": "Kinesys Spray",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -238,6 +406,48 @@
 "had_older_check": true
 },
 {
+"setid": "5a69f103-80fa-998e-e063-6394a90a59f8",
+"spl_version": "1",
+"name": "Neutrogena Ultra Sheer Set To Sun Face Mist Sunscreen SPF 50 Liquid",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5b2245e8-a877-e2ff-e063-6394a90a2935",
+"spl_version": "3",
+"name": "Jack Black Llc Ointment",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "5b27d9e6-2a78-80c1-e063-6394a90aa3e7",
+"spl_version": "2",
+"name": "Jack Black Ointment",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "5b79a488-6d60-28e9-e063-6294a90aaa9d",
+"spl_version": "1",
+"name": "Primally Pure Unscented Sunscreen SPF 30 Cream",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5b810982-7f2d-8c38-e063-6394a90aabb8",
+"spl_version": "1",
+"name": "Aveeno Positively Radiant Daily Moisturizer Sunscreen Broad Spectrum SPF 15 Lotion",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5ccc75c6-7058-c52f-e063-6394a90a21b7",
+"spl_version": "1",
+"name": "Sun Bum Mineral Liquid Tint SPF 30 Lotion",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
 "setid": "5d3125a2-3577-fd75-e063-6294a90a792d",
 "spl_version": "2",
 "name": "Maniscreen Hydrating Mineral Hand Sunscreen SPF 25 Fragrance-free Lotion",
@@ -245,9 +455,23 @@
 "had_older_check": true
 },
 {
+"setid": "5d4ee77c-7684-5e7e-e063-6294a90a4278",
+"spl_version": "1",
+"name": "Aveeno Sun Protection Lightweight Face Sunscreen Broad Spectrum SPF 50 Lotion",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
 "setid": "5dd1da6c-4a2c-7a37-e063-6294a90aa92e",
 "spl_version": "1",
 "name": "Rayplay Glissed SPF 30 Oil",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5dd55dcf-54f8-1caa-e063-6394a90a58fb",
+"spl_version": "1",
+"name": "Maniscreen Hydrating Mineral Hand Sunscreen SPF 25 Cucumber Lotion",
 "reason": "never_checked",
 "had_older_check": false
 },
@@ -273,11 +497,95 @@
 "had_older_check": false
 },
 {
+"setid": "5e2633f8-810a-18af-e063-6294a90ae20b",
+"spl_version": "1",
+"name": "Maniscreen Hydrating Mineral Hand Sunscreen SPF 25 Vanilla Lotion",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5e26d821-073f-aeed-e063-6294a90afea4",
+"spl_version": "1",
+"name": "Maniscreen Hydrating Mineral Hand Sunscreen SPF 25 Lavender Lotion",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5e27471d-b4c8-113c-e063-6294a90a9836",
+"spl_version": "1",
+"name": "Maniscreen Hydrating Mineral Hand Sunscreen SPF 25 Rosewater Lotion",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5e27b9d4-1a47-c248-e063-6394a90af75d",
+"spl_version": "1",
+"name": "Maniscreen Hydrating Mineral Hand Sunscreen SPF 25 Coconut Lotion",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
 "setid": "5e390ab2-9d8f-c882-e063-6294a90aee99",
 "spl_version": "1",
 "name": "Os-01 Face SPF Bs SPF 30 Light Cream",
 "reason": "never_checked",
 "had_older_check": false
+},
+{
+"setid": "5eff5191-0ab0-f84a-e063-6394a90a57e4",
+"spl_version": "1",
+"name": "Jack Black Ointment",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5f0001f3-7ba6-b561-e063-6294a90ab090",
+"spl_version": "1",
+"name": "Jack Black Ointment",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5f003362-621f-e6d0-e063-6294a90a8304",
+"spl_version": "1",
+"name": "Jack Black Ointment",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5f01177a-eba3-e3f9-e063-6294a90a5c34",
+"spl_version": "1",
+"name": "Blue Lizard Sensitive SPF 50 Stick",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5f01e030-c510-2e0b-e063-6394a90ac70d",
+"spl_version": "1",
+"name": "Blue Lizard Sport SPF 50 Stick",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "60e7ed8e-f421-4e08-97a8-af647200e4ae",
+"spl_version": "9",
+"name": "Kinesys Broad Spectrum SPF 30 Alcohol-Free Sunscreen - Mango Scent Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "616d35a1-a139-1974-e053-2a91aa0a20b6",
+"spl_version": "7",
+"name": "Banana Boat Stick",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "616d35f6-63d2-3d26-e053-2991aa0a5b44",
+"spl_version": "7",
+"name": "Banana Boat Stick",
+"reason": "label_changed",
+"had_older_check": true
 },
 {
 "setid": "6456fc28-3df5-4d49-9f40-8ef2e4fdd9e5",
@@ -294,6 +602,27 @@
 "had_older_check": false
 },
 {
+"setid": "807db1ff-a64a-44e4-a786-f88cd4518433",
+"spl_version": "12",
+"name": "Ray Defense Broad Spectrum SPF 30 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "87ce977a-0ed2-451e-a0ac-976caf7424cc",
+"spl_version": "3",
+"name": "Brownkind Sheer Facial Sunscreen SPF 40 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "8a1eefa6-619e-5d02-e053-2995a90a3d75",
+"spl_version": "7",
+"name": "Banana Boat Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "8e4953cd-8612-46cc-967b-56d3ac48cfbc",
 "spl_version": "1",
 "name": "Sunplus SPF 30 Mist Sunscreen Liquid",
@@ -301,9 +630,72 @@
 "had_older_check": false
 },
 {
+"setid": "8f64c4fa-92ee-4af0-ab1b-6c3673f9a622",
+"spl_version": "2",
+"name": "Alex Md Phd Sheer Mineral Sunscreen Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "92fdea59-c19d-627a-e053-2995a90aabdc",
+"spl_version": "6",
+"name": "Banana Boat Simply Protect Sensitive Mineral Enriched Sunscreen UVA/UVB Broad Spectrum SPF 50 Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "93873c34-5c72-43c8-b6c2-c65b596191d7",
+"spl_version": "2",
+"name": "Alex Md Phd Tinted Mineral Sunscreen Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "9398bad2-7270-4b6f-ab3a-21cb486377ec",
 "spl_version": "3",
 "name": "Smart Care Mineral-Enhanced Sunscreen SPF 50 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "981c7b3c-d7d6-483d-bf32-10d526be5b3f",
+"spl_version": "6",
+"name": "SPF 50 Face Sunscreen Bioelements Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "9948f5b8-43bd-1c99-e053-2a95a90a6121",
+"spl_version": "9",
+"name": "Blue Lizard Baby SPF 50 Stick",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "9983563c-1e63-0748-e053-2a95a90a971e",
+"spl_version": "8",
+"name": "Blue Lizard Kids SPF 50 Stick",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "998fe524-6469-4c9b-889b-3191882149ce",
+"spl_version": "9",
+"name": "Kinesys Broad Spectrum SPF 50 Alcohol Free Sunscreen Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "9adea1a4-efa6-4fe1-85e8-ed69fa098a87",
+"spl_version": "7",
+"name": "Kinesys Broad Spectrum SPF 30 Kids Alcohol-Free Sunscreen Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "9d20b230-2cce-4d90-e053-2995a90a4c03",
+"spl_version": "7",
+"name": "Blue Lizard Sensitive SPF 50 Sunscreen Lotion",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -315,6 +707,34 @@
 "had_older_check": true
 },
 {
+"setid": "ab7102ba-1020-3f51-e053-2995a90ae24d",
+"spl_version": "10",
+"name": "Banana Boat Sport Coolzone Clear Sunscreen Broad Spectrum SPF 30 Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "ab84b94b-8e04-605f-e053-2a95a90a8e34",
+"spl_version": "5",
+"name": "Banana Boat Sport Coolzone Clear Sunscreen Broad Spectrum SPF 50 Plus Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "ab8623e2-0539-3f8f-e053-2a95a90a39d5",
+"spl_version": "4",
+"name": "Banana Boat Deep Tanning Sunscreen SPF 4 Oil",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "b00148c0-7545-104a-e053-2995a90a0bde",
+"spl_version": "4",
+"name": "Banana Boat Ultra Defense Clear Sunscreen Broad Spectrum SPF 100 Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "b1aacb4d-7ede-4aae-8d6a-afff2a057e46",
 "spl_version": "7",
 "name": "Obagi Sun Shield Tint Warm Sunscreen Broad Spectrum SPF 50 Lotion",
@@ -322,9 +742,23 @@
 "had_older_check": true
 },
 {
+"setid": "c76746a5-e6d6-b146-e053-2995a90a1191",
+"spl_version": "4",
+"name": "Banana Boat Sport Ultra Sunscreen Roll-On UVA/UVB Broad Spectrum SPF 60 Plus Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "cea54600-5308-4b9f-98ca-fef0b26d79c1",
 "spl_version": "5",
 "name": "Florida Glow Face Shield SPF 55 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "d10272ea-aedd-5759-e053-2a95a90a3ab3",
+"spl_version": "4",
+"name": "Anti-Aging Complex Broad Spectrum SPF 30 Cream",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -371,6 +805,13 @@
 "had_older_check": true
 },
 {
+"setid": "e0949325-7de1-4da4-82b6-8004916412a0",
+"spl_version": "7",
+"name": "Kinesys Broad Spectrum SPF 30 Alcohol-Free Performance Sunscreen - Fragrance Free Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "e120a659-0dfc-42ca-8158-58e8a0b457e5",
 "spl_version": "9",
 "name": "Journee Bio-Restorative Day Balm Broad-Spectrum Suncreen SPF 30 Lotion",
@@ -381,6 +822,20 @@
 "setid": "f1aa4a6b-3be5-4da8-93c0-f195c68da945",
 "spl_version": "2",
 "name": "Smart Care Sport Ultra Sunscreen SPF 50 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "f45b59b6-4991-155e-e053-2995a90a471c",
+"spl_version": "4",
+"name": "Rms Supernatural Radiance Serum SPF 30 Sunscreen Medium Aura Emulsion Rms Supernatural Radiance Serum SPF 30 Sunscreen Light Aura Emulsion Rms Supernatural Radiance Serum SPF 30 Sunscreen Rich Aura Emulsion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "f57bc089-405b-cdcd-e053-2995a90a9d12",
+"spl_version": "4",
+"name": "Coretex Professional Outdoor Skin Protection Wallet Kit",
 "reason": "label_changed",
 "had_older_check": true
 }

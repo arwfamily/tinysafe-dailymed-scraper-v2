@@ -1,42 +1,51 @@
-[UNII] 23 search seeds (resolved 2026-10-26)
+[UNII] 23 search seeds (resolved 2026-11-03)
 [UNII] 3 unresolved, NOT searched: DIOXYBENZONE, CINOXATE, TROLAMINE SALICYLATE
 {
  "headline": {
-  "read": 9421,
-  "booster": 1283,
-  "recall": 31,
+  "read": 9412,
+  "booster": 1282,
+  "recall": 33,
   "audit": {
-   "date": "2026-10-25",
-   "audit": "audit3",
+   "date": "2026-11-02",
    "checked": 300,
-   "labels_with_high": 13,
-   "rate": 0.0433,
+   "labels_with_high": 9,
+   "rate": 0.03,
    "ci95": [
-    0.0255,
-    0.0727
+    0.0159,
+    0.056
    ],
-   "note": "raw reviewer count; 10 real after review (3 were not data errors: two package reads confirmed one, two were warning types the site does not cover); 7 fixed the same day, 2 more by two-reader package facts, 1 left (an ingredient the FDA filing lists)",
+   "by_field": {
+    "warnings|medium": 9,
+    "inactive_ingredients|low": 19,
+    "actives|medium": 1,
+    "warnings|high": 6,
+    "inactive_ingredients|medium": 4,
+    "warnings|low": 12,
+    "name|low": 1,
+    "recalls|high": 2,
+    "broad_spectrum|medium": 1,
+    "broad_spectrum|high": 1,
+    "photo|medium": 1
+   },
    "high_setids": [
-    "b57d984c-c3f7-4ce2-82b9-905769a55617",
-    "1c04212c-117d-3a0a-e063-6394a90a1631",
-    "80e07a95-6249-49b2-8610-c430b9fcd5b4",
-    "19f94284-5594-39ab-e063-6294a90a63bd",
-    "04b1a617-e187-9f04-e063-6394a90a7c9c",
-    "43a6b8e3-49f7-2ac7-e054-00144ff88e88",
-    "0127f290-8c5e-4285-e063-6294a90ae128",
-    "2dda092d-cc09-468c-a805-7a7f78827d44",
-    "205d4823-1939-72cb-e063-6394a90a5102",
-    "ecfbb53a-0f05-9dcc-e053-2a95a90afb66",
-    "c5d52f13-a649-9579-e053-2a95a90a062c",
-    "1a2ab632-643f-1aa9-e063-6394a90a0c05",
-    "9c3cf35b-4bde-46e3-8abd-5f4d1ad6e486"
+    "2abf69c5-07d7-252d-e063-6394a90a292b",
+    "d915cb28-2813-5a38-e053-2a95a90a45c6",
+    "9641b71a-81f2-4157-801b-162188392a91",
+    "800e4a24-0172-e2a6-e053-2991aa0a7637",
+    "b31837f7-721f-484e-89d5-4ad84ad0f400",
+    "b3190e6c-5eee-4ac8-e053-2a95a90afa29",
+    "c75f3010-d399-492b-910e-6552ba75bc1b",
+    "41de09dc-544f-9780-e063-6394a90acd27",
+    "e71b29e5-8495-42c1-84f6-431fea422512"
    ],
-   "note_public": "10 were real errors on review. 9 were corrected within two days; 1 is an ingredient the FDA filing lists, which we show as filed."
+   "audit": "audit4",
+   "note": "raw reviewer count 9/300; 5 real after review (1.7%, 95% 0.7-3.8%), each confirmed by a blind second reader: 'Labelled water resistant' shown from a package note that said the label is not water resistant (rule fix: a reader's note that the package does not claim it, or only quotes the directions, no longer counts; 55 labels lost the unsupported flag); an Obagi-C Rx kit missing its serum's printed fragrance (rule fix: a kit's 'Inactives:' lists are read for fragrance; 2 kits); Soodox '7 years to adult' age limit (package_facts); 2 missed recalls recorded by review (Cicatricure Scar Cream D-0070-2019 by its UPC; La Mer The SPF 18 Fluid Tint D-814/815/816-2013). 4 were not data errors: two earlier package reads the reviewer did not have show fragrance-free with no fragrance (Coppertone Waterbabies, Walgreens Kids), Broad Spectrum (Zinc Five-O Kids) and calendula printed (California Baby Summer Blend). All 5 fixed the same day.",
+   "note_public": "5 were real errors on review, and we corrected them."
   }
  },
  "gate": {
-  "active_labels": 9421,
-  "active_labels_before": 9418,
+  "active_labels": 9412,
+  "active_labels_before": 9421,
   "left_by_reviewed_scope_rule": 0,
   "explained_labels_losing_other_warnings": 0,
   "explained_examples": [],
