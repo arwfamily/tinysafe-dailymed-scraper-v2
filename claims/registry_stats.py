@@ -105,6 +105,11 @@ _ABROAD = [("Mexico", r"M[ÉE]XICO"), ("Canada", r"CANADA|\bON N\d|\bQC\b|ONTARI
 _US = re.compile(r"\bU\.?S\.?A\b|UNITED STATES|,\s?[A-Z]{2}\.?\s?\d{5}\b", re.I)
 
 
+
+def _short_title(r):
+    """A label title without its bracketed tail, title-cased (kept out of f-strings for Python 3.11)."""
+    return re.split(r" \(| \[", r["title"])[0].title()
+
 def other_market_text(setid):
     """Country of a non-US distributor/importer named on the label, when the
     label names no US distributor (label-text archive). 'Made in Canada' alone
@@ -1165,9 +1170,9 @@ def main():
                    "not_counted": "essential oils and other single scent ingredients; only fragrance, parfum or perfume"},
         "caveat": CAVEAT + (f" Where the package image was read, it decides: {len(fr_pkg_out)} label(s) whose package says "
                             f"\"Fragrance Free\" and prints no fragrance are not counted although the text filed with the FDA lists it"
-                            + (f" ({'; '.join(re.split(r' \(| \[', r['title'])[0].title() for r in fr_pkg_out)})" if fr_pkg_out else "")
+                            + (" (" + "; ".join(_short_title(r) for r in fr_pkg_out) + ")" if fr_pkg_out else "")
                             + f"; {len(fr_pkg_in)} label(s) whose package list prints fragrance are counted although the filed text does not"
-                            + (f" ({'; '.join(re.split(r' \(| \[', r['title'])[0].title() for r in fr_pkg_in)})" if fr_pkg_in else "") + "."), "site_source": src,
+                            + (" (" + "; ".join(_short_title(r) for r in fr_pkg_in) + ")" if fr_pkg_in else "") + "."), "site_source": src,
         "method": "claims/registry_stats.py (FRAGRANCE)", "verified_date": snapshot})
 
     with open(LEDGER, encoding="utf-8") as f:
