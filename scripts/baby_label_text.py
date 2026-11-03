@@ -7,6 +7,7 @@ audited against the label itself, not only against the parsed fields.
 Output: data/views/baby_label_text.jsonl, one line per label:
   {setid, spl_version, effective_date, title, text, sections: {title: text}}
 `text` is every section title and body in document order, whitespace-collapsed.
+A label DailyMed fails to serve keeps its last archived text (carried_forward: true).
 Standard library only.
 """
 import json
@@ -77,13 +78,32 @@ def main():
         ids += [r["setid"] for r in csv.DictReader(open(queue, encoding="utf-8"))]
     ids += [a for a in sys.argv[1:]]
     ids = sorted(set(ids))
+    prev = {}
+    if os.path.exists(OUT):
+        for l in open(OUT, encoding="utf-8"):
+            if l.strip():
+                r = json.loads(l)
+                if not r.get("error"):
+                    prev[r["setid"]] = r
     with ThreadPoolExecutor(4) as ex:
         rows = list(ex.map(extract, ids))
+    # DailyMed drops a few requests under load (2026-11-02: 11/583 failed and stopped the weekly run):
+    # one slower sequential pass, then the last good archive for a label that still fails
+    for i, r in enumerate(rows):
+        if r.get("error"):
+            time.sleep(5)
+            rows[i] = extract(r["setid"])
+    carried = []
+    for i, r in enumerate(rows):
+        if r.get("error") and r["setid"] in prev:
+            rows[i] = dict(prev[r["setid"]], carried_forward=True)
+            carried.append(r["setid"])
     bad = [r["setid"] for r in rows if r.get("error")]
     with open(OUT, "w", encoding="utf-8") as f:
         for r in rows:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
-    print(f"[label_text] {len(rows) - len(bad)}/{len(rows)} labels archived; failed: {bad[:10]}")
+    print(f"[label_text] {len(rows) - len(bad) - len(carried)}/{len(rows)} labels archived, "
+          f"{len(carried)} kept from the last archive; failed: {bad[:10]}")
     if len(bad) > 0.01 * len(rows):
         sys.exit(1)
 
