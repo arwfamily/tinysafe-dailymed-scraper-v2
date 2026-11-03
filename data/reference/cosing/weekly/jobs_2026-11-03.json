@@ -1,0 +1,34 @@
+{
+ "RIBES RUBRUM JUICE": {
+  "inci": "RIBES RUBRUM JUICE",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "RIBES RUBRUM JUICE",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "COCHLEARIA ARMORACIA ROOT EXTRACT": {
+  "inci": "COCHLEARIA ARMORACIA ROOT EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": true,
+  "reason": "Plant root extract listed only for fragrance in CosIng; in a leave-on sunscreen it is a botanical skin-conditioning additive, not a scent ingredient",
+  "confidence": "low",
+  "read_b": {
+   "inci": "COCHLEARIA ARMORACIA ROOT EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": true,
+   "reason": "Plant extract with CosIng perfuming/fragrance only; not added for scent, used as a botanical skin-conditioning extract",
+   "confidence": "low"
+  }
+ }
+}

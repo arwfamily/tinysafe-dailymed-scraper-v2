@@ -1,0 +1,1246 @@
+{
+ "accepted": {
+  "*CO Daucus Carota Sativa (Carrot) Root Extract": {
+   "name": "*CO Daucus Carota Sativa (Carrot) Root Extract",
+   "kind": "INCI",
+   "inci": "DAUCUS CAROTA SATIVA ROOT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "*CO = CO2/organic marker",
+   "read_b": {
+    "name": "*CO Daucus Carota Sativa (Carrot) Root Extract",
+    "kind": "INCI",
+    "inci": "DAUCUS CAROTA SATIVA ROOT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "prefix *CO stripped"
+   }
+  },
+  "*CO Carum Petroselinum (Parsley) Extract": {
+   "name": "*CO Carum Petroselinum (Parsley) Extract",
+   "kind": "INCI",
+   "inci": "CARUM PETROSELINUM EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "*CO Carum Petroselinum (Parsley) Extract",
+    "kind": "INCI",
+    "inci": "CARUM PETROSELINUM EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "prefix *CO stripped"
+   }
+  },
+  "*CO Cucumis Sativus (Cucumber) Seed Extract": {
+   "name": "*CO Cucumis Sativus (Cucumber) Seed Extract",
+   "kind": "INCI",
+   "inci": "CUCUMIS SATIVUS SEED EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "*CO Cucumis Sativus (Cucumber) Seed Extract",
+    "kind": "INCI",
+    "inci": "CUCUMIS SATIVUS SEED EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "prefix *CO stripped"
+   }
+  },
+  "3-Tetrafluoropropene": {
+   "name": "3-Tetrafluoropropene",
+   "kind": "INCI",
+   "inci": "TETRAFLUOROPROPENE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "fragment of 1,3,3,3-tetrafluoropropene propellant",
+   "read_b": {
+    "name": "3-Tetrafluoropropene",
+    "kind": "INCI",
+    "inci": "TETRAFLUOROPROPENE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "fragment of 1,3,3,3-tetrafluoropropene propellant"
+   }
+  },
+  "rincinus communis (castor) seed oil": {
+   "name": "rincinus communis (castor) seed oil",
+   "kind": "INCI",
+   "inci": "RICINUS COMMUNIS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "rincinus communis (castor) seed oil",
+    "kind": "INCI",
+    "inci": "RICINUS COMMUNIS SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo rincinus"
+   }
+  },
+  "olea europea (olive) oil": {
+   "name": "olea europea (olive) oil",
+   "kind": "INCI",
+   "inci": "OLEA EUROPAEA FRUIT OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "olea europea (olive) oil",
+    "kind": "INCI",
+    "inci": "OLEA EUROPAEA FRUIT OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "europea spelling"
+   }
+  },
+  "Red Myrrh Alcohol": {
+   "name": "Red Myrrh Alcohol",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "plant-derived",
+   "confidence": "low",
+   "note": "unidentified myrrh-derived material",
+   "read_b": {
+    "name": "Red Myrrh Alcohol",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "plant-derived",
+    "confidence": "low",
+    "note": "unclear; possibly red myrrh/opopanax tincture"
+   }
+  },
+  "Kalahari Melon Oil": {
+   "name": "Kalahari Melon Oil",
+   "kind": "INCI",
+   "inci": "CITRULLUS LANATUS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "Kalahari melon seed oil",
+   "read_b": {
+    "name": "Kalahari Melon Oil",
+    "kind": "INCI",
+    "inci": "CITRULLUS LANATUS SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Kalahari melon = Citrullus lanatus seed oil"
+   }
+  },
+  "Rice Bran (Oryza Saiva) Extract": {
+   "name": "Rice Bran (Oryza Saiva) Extract",
+   "kind": "INCI",
+   "inci": "ORYZA SATIVA BRAN EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Rice Bran (Oryza Saiva) Extract",
+    "kind": "INCI",
+    "inci": "ORYZA SATIVA BRAN EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo Saiva"
+   }
+  },
+  "Organic Phytonutrient Blend™ [Tilia Cordata (Linden) Flower Tea": {
+   "name": "Organic Phytonutrient Blend™ [Tilia Cordata (Linden) Flower Tea",
+   "kind": "INCI",
+   "inci": "TILIA CORDATA FLOWER EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "tea = infusion; blend prefix",
+   "read_b": {
+    "name": "Organic Phytonutrient Blend™ [Tilia Cordata (Linden) Flower Tea",
+    "kind": "INCI",
+    "inci": "TILIA CORDATA FLOWER EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "'tea' = infusion of flowers; blend header stripped"
+   }
+  },
+  "rosemary officinalis (rosemary) leaf extract": {
+   "name": "rosemary officinalis (rosemary) leaf extract",
+   "kind": "INCI",
+   "inci": "ROSMARINUS OFFICINALIS LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "rosemary officinalis (rosemary) leaf extract",
+    "kind": "INCI",
+    "inci": "ROSMARINUS OFFICINALIS LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "rosemary officinalis typo"
+   }
+  },
+  "brassica oleracea italic (broccoli) seed oil": {
+   "name": "brassica oleracea italic (broccoli) seed oil",
+   "kind": "INCI",
+   "inci": "BRASSICA OLERACEA ITALICA SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "brassica oleracea italic (broccoli) seed oil",
+    "kind": "INCI",
+    "inci": "BRASSICA OLERACEA ITALICA SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "italic typo"
+   }
+  },
+  "Vitellaria Paradoxa (Shea) Butter": {
+   "name": "Vitellaria Paradoxa (Shea) Butter",
+   "kind": "INCI",
+   "inci": "BUTYROSPERMUM PARKII BUTTER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "synonym",
+   "read_b": {
+    "name": "Vitellaria Paradoxa (Shea) Butter",
+    "kind": "INCI",
+    "inci": "BUTYROSPERMUM PARKII BUTTER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Vitellaria paradoxa synonym"
+   }
+  },
+  "theobruma cacao (cocoa) seed butter": {
+   "name": "theobruma cacao (cocoa) seed butter",
+   "kind": "INCI",
+   "inci": "THEOBROMA CACAO SEED BUTTER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "theobruma cacao (cocoa) seed butter",
+    "kind": "INCI",
+    "inci": "THEOBROMA CACAO SEED BUTTER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "theobruma typo"
+   }
+  },
+  "aqueous extracts of: butterfly nectars (buddleja davidii)": {
+   "name": "aqueous extracts of: butterfly nectars (buddleja davidii)",
+   "kind": "INCI",
+   "inci": "BUDDLEJA DAVIDII EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "'nectar' wording, part unclear",
+   "read_b": {
+    "name": "aqueous extracts of: butterfly nectars (buddleja davidii)",
+    "kind": "INCI",
+    "inci": "BUDDLEJA DAVIDII EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "aqueous extract, part unspecified"
+   }
+  },
+  "…leth-3": {
+   "name": "…leth-3",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "truncated fragment",
+   "read_b": {
+    "name": "…leth-3",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment (...leth-3)"
+   }
+  },
+  "Sea Moss Extract": {
+   "name": "Sea Moss Extract",
+   "kind": "INCI",
+   "inci": "CHONDRUS CRISPUS EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "sea moss usually Chondrus crispus, sometimes Gracilaria",
+   "read_b": {
+    "name": "Sea Moss Extract",
+    "kind": "INCI",
+    "inci": "CHONDRUS CRISPUS EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "sea moss usually Chondrus crispus; could be Gracilaria"
+   }
+  },
+  "Hordeum Distichon/Barley Extract/Extrait d'orge à deux rangs": {
+   "name": "Hordeum Distichon/Barley Extract/Extrait d'orge à deux rangs",
+   "kind": "INCI",
+   "inci": "HORDEUM DISTICHON EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "Hordeum Distichon/Barley Extract/Extrait d'orge à deux rangs",
+    "kind": "INCI",
+    "inci": "HORDEUM DISTICHON EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "bilingual label"
+   }
+  },
+  "mangifera indica (mango) butter": {
+   "name": "mangifera indica (mango) butter",
+   "kind": "INCI",
+   "inci": "MANGIFERA INDICA SEED BUTTER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "mangifera indica (mango) butter",
+    "kind": "INCI",
+    "inci": "MANGIFERA INDICA SEED BUTTER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "mango butter is seed butter"
+   }
+  },
+  "Glitter: Regenerated Cellulose": {
+   "name": "Glitter: Regenerated Cellulose",
+   "kind": "INCI",
+   "inci": "CELLULOSE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "regenerated cellulose glitter",
+   "read_b": {
+    "name": "Glitter: Regenerated Cellulose",
+    "kind": "INCI",
+    "inci": "CELLULOSE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "regenerated cellulose glitter"
+   }
+  },
+  "Butyrospermum Parki (Shea)Butter": {
+   "name": "Butyrospermum Parki (Shea)Butter",
+   "kind": "INCI",
+   "inci": "BUTYROSPERMUM PARKII BUTTER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Butyrospermum Parki (Shea)Butter",
+    "kind": "INCI",
+    "inci": "BUTYROSPERMUM PARKII BUTTER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo Parki"
+   }
+  },
+  "Malus Domestica (Apple) Extract": {
+   "name": "Malus Domestica (Apple) Extract",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Malus domestica",
+   "category": null,
+   "confidence": "high",
+   "note": "part unstated",
+   "read_b": {
+    "name": "Malus Domestica (Apple) Extract",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Malus domestica",
+    "category": null,
+    "confidence": "high",
+    "note": "apple extract, part unspecified"
+   }
+  },
+  "Rose oil": {
+   "name": "Rose oil",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Rosa",
+   "category": null,
+   "confidence": "low",
+   "note": "genus only: species (Rosa damascena/centifolia) and part unstated; independent check fixed plant from common name",
+   "read_b": {
+    "name": "Rose oil",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Rose",
+    "category": null,
+    "confidence": "low",
+    "note": "species (Rosa damascena/centifolia) and part unspecified"
+   }
+  },
+  "Bismuth": {
+   "name": "Bismuth",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "fragment, likely bismuth oxychloride",
+   "read_b": {
+    "name": "Bismuth",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "truncated; likely bismuth oxychloride"
+   }
+  },
+  "Aloe Oil": {
+   "name": "Aloe Oil",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "plant-derived",
+   "confidence": "low",
+   "note": "aloe oil macerate, no CosIng entry",
+   "read_b": {
+    "name": "Aloe Oil",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "plant-derived",
+    "confidence": "low",
+    "note": "aloe-infused oil, carrier unknown"
+   }
+  },
+  "Polysorbate 2[cut off]": {
+   "name": "Polysorbate 2[cut off]",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "truncated",
+   "read_b": {
+    "name": "Polysorbate 2[cut off]",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "truncated polysorbate"
+   }
+  },
+  "Citrullus Lanatus (Watermelon Extract)": {
+   "name": "Citrullus Lanatus (Watermelon Extract)",
+   "kind": "INCI",
+   "inci": "CITRULLUS LANATUS FRUIT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "part unstated, presumed fruit",
+   "read_b": {
+    "name": "Citrullus Lanatus (Watermelon Extract)",
+    "kind": "INCI",
+    "inci": "CITRULLUS LANATUS FRUIT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "watermelon extract"
+   }
+  },
+  "Juglans Regia Walnut Oil": {
+   "name": "Juglans Regia Walnut Oil",
+   "kind": "INCI",
+   "inci": "JUGLANS REGIA SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "Juglans Regia Walnut Oil",
+    "kind": "INCI",
+    "inci": "JUGLANS REGIA SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "walnut oil"
+   }
+  },
+  "CI 77019 (Vitamin C)": {
+   "name": "CI 77019 (Vitamin C)",
+   "kind": "INCI",
+   "inci": "MICA",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "CI 77019 is mica; label text contradictory",
+   "read_b": {
+    "name": "CI 77019 (Vitamin C)",
+    "kind": "INCI",
+    "inci": "MICA",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "CI 77019 is mica; '(Vitamin C)' is wrong on label"
+   }
+  },
+  "Ginger (ZINGIBER OFFICINALE) Root Extract": {
+   "name": "Ginger (ZINGIBER OFFICINALE) Root Extract",
+   "kind": "INCI",
+   "inci": "ZINGIBER OFFICINALE ROOT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "Ginger (ZINGIBER OFFICINALE) Root Extract",
+    "kind": "INCI",
+    "inci": "ZINGIBER OFFICINALE ROOT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Co os Nucifera (Coconut) Oil": {
+   "name": "Co os Nucifera (Coconut) Oil",
+   "kind": "INCI",
+   "inci": "COCOS NUCIFERA OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "OCR gap",
+   "read_b": {
+    "name": "Co os Nucifera (Coconut) Oil",
+    "kind": "INCI",
+    "inci": "COCOS NUCIFERA OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "OCR gap"
+   }
+  },
+  "soybean protein": {
+   "name": "soybean protein",
+   "kind": "INCI",
+   "inci": "GLYCINE SOJA PROTEIN",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "soybean protein",
+    "kind": "INCI",
+    "inci": "GLYCINE SOJA PROTEIN",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Acacia Senegal Extract": {
+   "name": "Acacia Senegal Extract",
+   "kind": "INCI",
+   "inci": "ACACIA SENEGAL GUM EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "part unstated; gum most likely",
+   "read_b": {
+    "name": "Acacia Senegal Extract",
+    "kind": "INCI",
+    "inci": "ACACIA SENEGAL GUM EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "bare acacia senegal extract not in CosIng; usually gum"
+   }
+  },
+  "Rosemary Oleoresin": {
+   "name": "Rosemary Oleoresin",
+   "kind": "INCI",
+   "inci": "ROSMARINUS OFFICINALIS LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "oleoresin is a leaf solvent extract",
+   "read_b": {
+    "name": "Rosemary Oleoresin",
+    "kind": "INCI",
+    "inci": "ROSMARINUS OFFICINALIS LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "oleresin is a leaf extract; no oleoresin INCI"
+   }
+  },
+  "Olive Fruit Oil": {
+   "name": "Olive Fruit Oil",
+   "kind": "INCI",
+   "inci": "OLEA EUROPAEA FRUIT OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "Olive Fruit Oil",
+    "kind": "INCI",
+    "inci": "OLEA EUROPAEA FRUIT OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Marsh Mallow/ Althea Extract": {
+   "name": "Marsh Mallow/ Althea Extract",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Althaea officinalis",
+   "category": null,
+   "confidence": "high",
+   "note": "part unstated",
+   "read_b": {
+    "name": "Marsh Mallow/ Althea Extract",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Althaea officinalis",
+    "category": null,
+    "confidence": "high",
+    "note": "part unspecified (root/leaf/flower)"
+   }
+  },
+  "Basil Leaf Extract": {
+   "name": "Basil Leaf Extract",
+   "kind": "INCI",
+   "inci": "OCIMUM BASILICUM LEAF EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "Basil Leaf Extract",
+    "kind": "INCI",
+    "inci": "OCIMUM BASILICUM LEAF EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Manifera Indica (Mango) Fruit Extract": {
+   "name": "Manifera Indica (Mango) Fruit Extract",
+   "kind": "INCI",
+   "inci": "MANGIFERA INDICA FRUIT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Manifera Indica (Mango) Fruit Extract",
+    "kind": "INCI",
+    "inci": "MANGIFERA INDICA FRUIT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo Manifera"
+   }
+  },
+  "Castor (Ricinus Communis) Seed Oil": {
+   "name": "Castor (Ricinus Communis) Seed Oil",
+   "kind": "INCI",
+   "inci": "RICINUS COMMUNIS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "Castor (Ricinus Communis) Seed Oil",
+    "kind": "INCI",
+    "inci": "RICINUS COMMUNIS SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Rubus Ideaus* (Raspberry) Seed Oil": {
+   "name": "Rubus Ideaus* (Raspberry) Seed Oil",
+   "kind": "INCI",
+   "inci": "RUBUS IDAEUS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Rubus Ideaus* (Raspberry) Seed Oil",
+    "kind": "INCI",
+    "inci": "RUBUS IDAEUS SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo Ideaus"
+   }
+  },
+  "Simmpndsia Chinensis (Jojoba) Seed Oil": {
+   "name": "Simmpndsia Chinensis (Jojoba) Seed Oil",
+   "kind": "INCI",
+   "inci": "SIMMONDSIA CHINENSIS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Simmpndsia Chinensis (Jojoba) Seed Oil",
+    "kind": "INCI",
+    "inci": "SIMMONDSIA CHINENSIS SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Coffee (Coffea arabica) Seed Oil": {
+   "name": "Coffee (Coffea arabica) Seed Oil",
+   "kind": "INCI",
+   "inci": "COFFEA ARABICA SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "Coffee (Coffea arabica) Seed Oil",
+    "kind": "INCI",
+    "inci": "COFFEA ARABICA SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Lavendula Angustifolia (lavender) Oil": {
+   "name": "Lavendula Angustifolia (lavender) Oil",
+   "kind": "INCI",
+   "inci": "LAVANDULA ANGUSTIFOLIA OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Lavendula Angustifolia (lavender) Oil",
+    "kind": "INCI",
+    "inci": "LAVANDULA ANGUSTIFOLIA OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Lavendula typo"
+   }
+  },
+  "SIMMONDSIA CHINESES (JOJOBA) SEED OIL": {
+   "name": "SIMMONDSIA CHINESES (JOJOBA) SEED OIL",
+   "kind": "INCI",
+   "inci": "SIMMONDSIA CHINENSIS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "SIMMONDSIA CHINESES (JOJOBA) SEED OIL",
+    "kind": "INCI",
+    "inci": "SIMMONDSIA CHINENSIS SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Euphorbia Cerifera": {
+   "name": "Euphorbia Cerifera",
+   "kind": "INCI",
+   "inci": "EUPHORBIA CERIFERA WAX",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated; candelilla wax presumed",
+   "read_b": {
+    "name": "Euphorbia Cerifera",
+    "kind": "INCI",
+    "inci": "EUPHORBIA CERIFERA WAX",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "candelilla; wax implied"
+   }
+  },
+  "Organic Phytonutrient Blend™ [Ribes Rubrum (Red Currant) Juice": {
+   "name": "Organic Phytonutrient Blend™ [Ribes Rubrum (Red Currant) Juice",
+   "kind": "INCI",
+   "inci": "RIBES RUBRUM JUICE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "blend prefix",
+   "read_b": {
+    "name": "Organic Phytonutrient Blend™ [Ribes Rubrum (Red Currant) Juice",
+    "kind": "INCI",
+    "inci": "RIBES RUBRUM JUICE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "blend header stripped"
+   }
+  },
+  "Centaurea Cyanus (Cornflower) Extract": {
+   "name": "Centaurea Cyanus (Cornflower) Extract",
+   "kind": "INCI",
+   "inci": "CENTAUREA CYANUS FLOWER EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "cornflower extract = flower",
+   "read_b": {
+    "name": "Centaurea Cyanus (Cornflower) Extract",
+    "kind": "INCI",
+    "inci": "CENTAUREA CYANUS FLOWER EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "cornflower extract is flower"
+   }
+  },
+  "Hamamelis Virginia (Witch Hazel) Extract": {
+   "name": "Hamamelis Virginia (Witch Hazel) Extract",
+   "kind": "INCI",
+   "inci": "HAMAMELIS VIRGINIANA EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Hamamelis Virginia (Witch Hazel) Extract",
+    "kind": "INCI",
+    "inci": "HAMAMELIS VIRGINIANA EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Virginia typo"
+   }
+  },
+  "rice lipids": {
+   "name": "rice lipids",
+   "kind": "INCI",
+   "inci": "ORYZA SATIVA LIPIDS",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "rice lipids",
+    "kind": "INCI",
+    "inci": "ORYZA SATIVA LIPIDS",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Sesame (Sesamum Indicum) Seed oil": {
+   "name": "Sesame (Sesamum Indicum) Seed oil",
+   "kind": "INCI",
+   "inci": "SESAMUM INDICUM SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "Sesame (Sesamum Indicum) Seed oil",
+    "kind": "INCI",
+    "inci": "SESAMUM INDICUM SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Vanilli": {
+   "name": "Vanilli",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated vanilla fragment",
+   "read_b": {
+    "name": "Vanilli",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "truncated (vanilla/vanillin)"
+   }
+  },
+  "Cetearyl glycol": {
+   "name": "Cetearyl glycol",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "emollient",
+   "confidence": "low",
+   "note": "not in CosIng; maybe cetearyl alcohol typo",
+   "read_b": {
+    "name": "Cetearyl glycol",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "emollient",
+    "confidence": "low",
+    "note": "no such INCI; garbled"
+   }
+  },
+  "30 alkyl acrylate crosspolymer": {
+   "name": "30 alkyl acrylate crosspolymer",
+   "kind": "INCI",
+   "inci": "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated",
+   "read_b": {
+    "name": "30 alkyl acrylate crosspolymer",
+    "kind": "INCI",
+    "inci": "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "fragment"
+   }
+  },
+  "ANTHEMIS NOBILIS (CHAMOMILE) EXTRACT": {
+   "name": "ANTHEMIS NOBILIS (CHAMOMILE) EXTRACT",
+   "kind": "INCI",
+   "inci": "ANTHEMIS NOBILIS FLOWER EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "ANTHEMIS NOBILIS (CHAMOMILE) EXTRACT",
+    "kind": "INCI",
+    "inci": "ANTHEMIS NOBILIS FLOWER EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "only flower extract exists"
+   }
+  },
+  "calcium sodium phos-": {
+   "name": "calcium sodium phos-",
+   "kind": "INCI",
+   "inci": "CALCIUM SODIUM PHOSPHOSILICATE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated",
+   "read_b": {
+    "name": "calcium sodium phos-",
+    "kind": "INCI",
+    "inci": "CALCIUM SODIUM PHOSPHOSILICATE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "truncated"
+   }
+  },
+  "Hydrcithin": {
+   "name": "Hydrcithin",
+   "kind": "INCI",
+   "inci": "HYDROGENATED LECITHIN",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "garbled",
+   "read_b": {
+    "name": "Hydrcithin",
+    "kind": "INCI",
+    "inci": "HYDROGENATED LECITHIN",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "OCR-garbled"
+   }
+  },
+  "Carcia Papaya (Papaya) Fruit Extract": {
+   "name": "Carcia Papaya (Papaya) Fruit Extract",
+   "kind": "INCI",
+   "inci": "CARICA PAPAYA FRUIT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Carcia Papaya (Papaya) Fruit Extract",
+    "kind": "INCI",
+    "inci": "CARICA PAPAYA FRUIT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo Carcia"
+   }
+  },
+  "Olea Europea (Olive Fruit) Oil": {
+   "name": "Olea Europea (Olive Fruit) Oil",
+   "kind": "INCI",
+   "inci": "OLEA EUROPAEA FRUIT OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "Olea Europea (Olive Fruit) Oil",
+    "kind": "INCI",
+    "inci": "OLEA EUROPAEA FRUIT OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "aqueous extracts of: coconut (cocos nucifera) water": {
+   "name": "aqueous extracts of: coconut (cocos nucifera) water",
+   "kind": "INCI",
+   "inci": "COCOS NUCIFERA WATER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "aqueous extracts of: coconut (cocos nucifera) water",
+    "kind": "INCI",
+    "inci": "COCOS NUCIFERA WATER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "Cetyl Diglyceryl Tris(Trimethylsiloxy)Silylethyl": {
+   "name": "Cetyl Diglyceryl Tris(Trimethylsiloxy)Silylethyl",
+   "kind": "INCI",
+   "inci": "CETYL DIGLYCERYL TRIS(TRIMETHYLSILOXY)SILYLETHYL DIMETHICONE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated, unique completion",
+   "read_b": {
+    "name": "Cetyl Diglyceryl Tris(Trimethylsiloxy)Silylethyl",
+    "kind": "INCI",
+    "inci": "CETYL DIGLYCERYL TRIS(TRIMETHYLSILOXY)SILYLETHYL DIMETHICONE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "truncated"
+   }
+  },
+  "Lauryl Polyglyceryl-3": {
+   "name": "Lauryl Polyglyceryl-3",
+   "kind": "INCI",
+   "inci": "LAURYL POLYGLYCERYL-3 POLYDIMETHYLSILOXYETHYL DIMETHICONE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated, unique completion",
+   "read_b": {
+    "name": "Lauryl Polyglyceryl-3",
+    "kind": "INCI",
+    "inci": "LAURYL POLYGLYCERYL-3 POLYDIMETHYLSILOXYETHYL DIMETHICONE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "truncated"
+   }
+  },
+  "stearate-20": {
+   "name": "stearate-20",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "fragment (PEG-20 stearate / steareth-20?)",
+   "read_b": {
+    "name": "stearate-20",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "fragment; steareth-20 or PEG-20 stearate"
+   }
+  },
+  "chamomilla (matricaria) flower extract": {
+   "name": "chamomilla (matricaria) flower extract",
+   "kind": "INCI",
+   "inci": "CHAMOMILLA RECUTITA FLOWER EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "",
+   "read_b": {
+    "name": "chamomilla (matricaria) flower extract",
+    "kind": "INCI",
+    "inci": "CHAMOMILLA RECUTITA FLOWER EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": ""
+   }
+  },
+  "bio-extracted horseradish root": {
+   "name": "bio-extracted horseradish root",
+   "kind": "INCI",
+   "inci": "COCHLEARIA ARMORACIA ROOT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "'bio-extracted' may be ferment",
+   "read_b": {
+    "name": "bio-extracted horseradish root",
+    "kind": "INCI",
+    "inci": "COCHLEARIA ARMORACIA ROOT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "'bio-extracted' may be ferment"
+   }
+  },
+  "vegetable wax": {
+   "name": "vegetable wax",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "emollient",
+   "confidence": "low",
+   "note": "unspecified plant wax",
+   "read_b": {
+    "name": "vegetable wax",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "emollient",
+    "confidence": "low",
+    "note": "unspecified vegetable wax"
+   }
+  },
+  "hamamelis virginiana (witch hazel) distillate": {
+   "name": "hamamelis virginiana (witch hazel) distillate",
+   "kind": "INCI",
+   "inci": "HAMAMELIS VIRGINIANA WATER",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "distillate = water",
+   "read_b": {
+    "name": "hamamelis virginiana (witch hazel) distillate",
+    "kind": "INCI",
+    "inci": "HAMAMELIS VIRGINIANA WATER",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "distillate = water"
+   }
+  },
+  "Heliantus Annuus (Sunflower) Seed Oil": {
+   "name": "Heliantus Annuus (Sunflower) Seed Oil",
+   "kind": "INCI",
+   "inci": "HELIANTHUS ANNUUS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Heliantus Annuus (Sunflower) Seed Oil",
+    "kind": "INCI",
+    "inci": "HELIANTHUS ANNUUS SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  },
+  "Diaminobutyloyl Hydroxythreonine": {
+   "name": "Diaminobutyloyl Hydroxythreonine",
+   "kind": "INCI",
+   "inci": "PALMITOYL DIPEPTIDE-5 DIAMINOBUTYROYL HYDROXYTHREONINE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "truncated peptide name",
+   "read_b": {
+    "name": "Diaminobutyloyl Hydroxythreonine",
+    "kind": "INCI",
+    "inci": "PALMITOYL DIPEPTIDE-5 DIAMINOBUTYROYL HYDROXYTHREONINE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "truncated/typo"
+   }
+  },
+  "Elaeis guineesis (Palm) Oil": {
+   "name": "Elaeis guineesis (Palm) Oil",
+   "kind": "INCI",
+   "inci": "ELAEIS GUINEENSIS OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "typo",
+   "read_b": {
+    "name": "Elaeis guineesis (Palm) Oil",
+    "kind": "INCI",
+    "inci": "ELAEIS GUINEENSIS OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "typo"
+   }
+  }
+ }
+}
