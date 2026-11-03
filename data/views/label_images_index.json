@@ -1,44 +1,4 @@
 {
- "005a9e7c-e392-4b9a-911f-d7586f7ae94e": {
-  "title": "REEF KIDS SPF 30 OXYBENZONE FREE (OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) SPRAY [TROPICAL SEAS, INC.]",
-  "spl_version": "8",
-  "images": [
-   {
-    "name": "rb30spray6oz.jpg",
-    "sha1_original": "59c428cce4e9c099274103ff35f34467e0167989"
-   }
-  ]
- },
- "0190eeaf-c5a0-3253-e063-6294a90a43c4": {
-  "title": "BABY MINERAL SUNSCREEN SPF55 (ZINC OXIDE) LOTION [HELLO BELLO]",
-  "spl_version": "2",
-  "images": [
-   {
-    "name": "HelloBello_sunscreen_dieline_109C_March2022_AO.jpg",
-    "sha1_original": "e950452c4ddd5ada3f00dc0affb4cfa65ea1d4af"
-   }
-  ]
- },
- "0191b2e4-bcc5-541a-e063-6294a90a0e78": {
-  "title": "BABY MINERAL SUNSCREEN PROBIOTICS SPF55 (ZINC OXIDE) LOTION [HELLO BELLO]",
-  "spl_version": "2",
-  "images": [
-   {
-    "name": "HelloBello-Dieline-Sunscreen-Lotion Probiotics-SPF55-3oz.jpg",
-    "sha1_original": "5c5c53e9776f748cec4cd07fd193b40f28bae574"
-   }
-  ]
- },
- "01a50047-0d07-41c5-b35b-129aab5b4afd": {
-  "title": "KROGER BABY SUNSCREEN SPF 70 (AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE) LOTION [THE KROGER CO]",
-  "spl_version": "2",
-  "images": [
-   {
-    "name": "utntyhrled.jpg",
-    "sha1_original": "87d246c3bacde514199c567583d75b50a4eb4d31"
-   }
-  ]
- },
  "0329bfae-3f38-4fcd-be77-f92c67657bb5": {
   "title": "BANANA BOAT KIDS TEAR FREE SUNSCREEN SPF 60 (HOMOSALATE AND OCTINOXATE AND OCTISALATE AND AVOBENZONE AND OCTOCRYLENE) SPRAY [ACCRA-PAC, INC.]",
   "spl_version": "1",
@@ -224,7 +184,12 @@
  "13c9ab06-9903-728a-e054-00144ff88e88": {
   "title": "COPPERTONE KIDS SPF 50 (COPPERTONE KIDS) SPRAY [BAYER HEALTHCARE LLC.]",
   "spl_version": "3",
-  "images": []
+  "images": [
+   {
+    "name": "PF7945OCT_13_5_BR_CT_Kids_SPF50_C_Spray_177ml_Can_Clean.jpg",
+    "sha1_original": "101f946d9f0c64f2cb86c384f76fbbdad172bdc5"
+   }
+  ]
  },
  "16cc5178-e4c7-38eb-e063-6294a90a66de": {
   "title": "AUSSIEZINC MINERAL SUNSCREEN SPF50 BABY (ZINC OXIDE) CREAM [VEGANIC SKN LIMITED]",
@@ -1288,7 +1253,7 @@
  },
  "9adea1a4-efa6-4fe1-85e8-ed69fa098a87": {
   "title": "KINESYS BROAD SPECTRUM SPF 30 KIDS ALCOHOL-FREE SUNSCREEN (OCTINOXATE, OCTOCRYLENE, OCTISALATE, AND AVOBENZONE) SPRAY [WILC HEALTHCARE INC]",
-  "spl_version": "6",
+  "spl_version": "7",
   "images": [
    {
     "name": "SPF30 KIDS 4Oz_US_Front.jpg",

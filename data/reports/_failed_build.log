@@ -1,0 +1,7 @@
+[baby_track] 2026-11-03: 0 new decisions, queue 0, baby live 580, changes all={'metadata': 5, 'new': 44, 'reformulated': 3, 'delisted': 30} baby={'delisted': 3}
+  File "/home/runner/work/tinysafe-dailymed-scraper-v2/tinysafe-dailymed-scraper-v2/claims/registry_stats.py", line 1168
+    + (f" ({'; '.join(re.split(r' \(| \[', r['title'])[0].title() for r in fr_pkg_out)})" if fr_pkg_out else "")
+                                                                                          ^^
+SyntaxError: f-string expression part cannot include a backslash
+wrote /home/runner/work/tinysafe-dailymed-scraper-v2/tinysafe-dailymed-scraper-v2/site/evidence.json: 20 ingredients, 60 cells, 24 verified registry claims, 11 findings
+rendered 34 pages into /home/runner/work/tinysafe-dailymed-scraper-v2/tinysafe-dailymed-scraper-v2/site/evidence (checks passed)
