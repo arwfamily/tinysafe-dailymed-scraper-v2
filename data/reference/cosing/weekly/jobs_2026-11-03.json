@@ -30,5 +30,21 @@
    "reason": "Plant extract with CosIng perfuming/fragrance only; not added for scent, used as a botanical skin-conditioning extract",
    "confidence": "low"
   }
+ },
+ "PROPYLENE GLYCOL PROPYL ETHER": {
+  "inci": "PROPYLENE GLYCOL PROPYL ETHER",
+  "job": "solvent",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "PROPYLENE GLYCOL PROPYL ETHER",
+   "job": "solvent",
+   "secondary": null,
+   "override": false,
+   "reason": "Glycol ether solvent",
+   "confidence": "high"
+  }
  }
 }

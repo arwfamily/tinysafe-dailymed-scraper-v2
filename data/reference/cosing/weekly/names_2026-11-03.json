@@ -1507,6 +1507,132 @@
     "note": "BISABOLOL INCI is alpha-bisabolol; beta isomer is a different substance"
    },
    "agreement": "2 of 3 reads (third read broke a tie)"
+  },
+  "Inactie ingredients Alcohol Denat": {
+   "name": "Inactie ingredients Alcohol Denat",
+   "kind": "INCI",
+   "inci": "ALCOHOL DENAT.",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "Header 'Inactive ingredients' (typo) fused onto first ingredient Alcohol Denat.",
+   "read_b": {
+    "name": "Inactie ingredients Alcohol Denat",
+    "kind": "INCI",
+    "inci": "ALCOHOL DENAT.",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Header 'Inactive ingredients' (typo) run together with first ingredient Alcohol Denat."
+   }
+  },
+  "Tallow from 100% Grass-Fed Cows": {
+   "name": "Tallow from 100% Grass-Fed Cows",
+   "kind": "INCI",
+   "inci": "TALLOW",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "Beef tallow; source description dropped",
+   "read_b": {
+    "name": "Tallow from 100% Grass-Fed Cows",
+    "kind": "INCI",
+    "inci": "TALLOW",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Beef tallow; sourcing words dropped"
+   }
+  },
+  "Octane-1,2-diol": {
+   "name": "Octane-1,2-diol",
+   "kind": "INCI",
+   "inci": "CAPRYLYL GLYCOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "1,2-octanediol is caprylyl glycol (CosIng OCTANEDIOL is a different isomer)",
+   "read_b": {
+    "name": "Octane-1,2-diol",
+    "kind": "INCI",
+    "inci": "CAPRYLYL GLYCOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "1,2-octanediol is caprylyl glycol (CosIng OCTANEDIOL is a different isomer)"
+   }
+  },
+  "Alkyl (C12–15) Benzoate": {
+   "name": "Alkyl (C12–15) Benzoate",
+   "kind": "INCI",
+   "inci": "C12-15 ALKYL BENZOATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "Word order/format variant",
+   "read_b": {
+    "name": "Alkyl (C12–15) Benzoate",
+    "kind": "INCI",
+    "inci": "C12-15 ALKYL BENZOATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Word order variant"
+   }
+  },
+  "Eicosanol": {
+   "name": "Eicosanol",
+   "kind": "INCI",
+   "inci": "ARACHIDYL ALCOHOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "1-Eicosanol = arachidyl alcohol",
+   "read_b": {
+    "name": "Eicosanol",
+    "kind": "INCI",
+    "inci": "ARACHIDYL ALCOHOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "1-Eicosanol is arachidyl alcohol"
+   }
+  },
+  "Propandiol": {
+   "name": "Propandiol",
+   "kind": "INCI",
+   "inci": "PROPANEDIOL",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "Typo for Propanediol",
+   "read_b": {
+    "name": "Propandiol",
+    "kind": "INCI",
+    "inci": "PROPANEDIOL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Typo of Propanediol"
+   }
+  },
+  "Benzyl Bonzoate": {
+   "name": "Benzyl Bonzoate",
+   "kind": "INCI",
+   "inci": "BENZYL BENZOATE",
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "Typo for Benzyl Benzoate",
+   "read_b": {
+    "name": "Benzyl Bonzoate",
+    "kind": "INCI",
+    "inci": "BENZYL BENZOATE",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Typo of Benzyl Benzoate"
+   }
   }
  }
 }
