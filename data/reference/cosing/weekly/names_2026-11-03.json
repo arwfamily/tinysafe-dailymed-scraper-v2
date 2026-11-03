@@ -1241,6 +1241,272 @@
     "confidence": "high",
     "note": "typo"
    }
+  },
+  "Sandlewood Essential Oil": {
+   "name": "Sandlewood Essential Oil",
+   "kind": "INCI",
+   "inci": "SANTALUM ALBUM OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "species unstated; S. album most common",
+   "read_b": {
+    "name": "Sandlewood Essential Oil",
+    "kind": "INCI",
+    "inci": "SANTALUM ALBUM OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "Typo for sandalwood; species not stated (could be S. spicatum)"
+   },
+   "agreement": "2 of 3 reads (third read broke a tie)"
+  },
+  "Sambucus Nigra (Elderberry) Extarct": {
+   "name": "Sambucus Nigra (Elderberry) Extarct",
+   "kind": "INCI",
+   "inci": "SAMBUCUS NIGRA FRUIT EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "elderberry=fruit; typo",
+   "read_b": {
+    "name": "Sambucus Nigra (Elderberry) Extarct",
+    "kind": "INCI",
+    "inci": "SAMBUCUS NIGRA FRUIT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Typo 'Extarct'; elderberry = fruit"
+   },
+   "agreement": "2 of 3 reads (third read broke a tie)"
+  },
+  "p-hydroxybenzyl acetate": {
+   "name": "p-hydroxybenzyl acetate",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "fragrance",
+   "confidence": "low",
+   "note": "no CosIng entry; maybe anisyl acetate confusion",
+   "read_b": {
+    "name": "p-hydroxybenzyl acetate",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "fragrance",
+    "confidence": "low",
+    "note": "4-hydroxybenzyl acetate; no CosIng entry found"
+   },
+   "agreement": "2 of 3 reads (third read broke a tie)"
+  },
+  "Quince Seed Extract": {
+   "name": "Quince Seed Extract",
+   "kind": "INCI",
+   "inci": "PYRUS CYDONIA SEED EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "",
+   "read_b": {
+    "name": "Quince Seed Extract",
+    "kind": "INCI",
+    "inci": "PYRUS CYDONIA SEED EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Quince = Pyrus cydonia / Cydonia oblonga"
+   },
+   "agreement": "2 of 3 reads (third read broke a tie)"
+  },
+  "ALPHA.N-(METHOXYCARBONYL)-L-ARGININE": {
+   "name": "ALPHA.N-(METHOXYCARBONYL)-L-ARGININE",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "skin conditioning",
+   "confidence": "low",
+   "note": "no CosIng entry found",
+   "read_b": {
+    "name": "ALPHA.N-(METHOXYCARBONYL)-L-ARGININE",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "skin conditioning",
+    "confidence": "low",
+    "note": "N-alpha-methoxycarbonyl arginine; no CosIng entry found"
+   },
+   "agreement": "2 of 3 reads (third read broke a tie)"
+  },
+  "Peony Root Extract": {
+   "name": "Peony Root Extract",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Peony",
+   "category": null,
+   "confidence": "low",
+   "note": "Paeonia lactiflora/albiflora/suffruticosa root extract",
+   "read_b": {
+    "name": "Peony Root Extract",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "peony (Paeonia spp.)",
+    "category": null,
+    "confidence": "low",
+    "note": "Root extract exists for P. lactiflora, albiflora, officinalis, suffruticosa; species not stated"
+   },
+   "agreement": "2 of 3 reads (third read broke a tie)"
+  },
+  "Glycyrrhiza Glabra Extract": {
+   "name": "Glycyrrhiza Glabra Extract",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Glycyrrhiza glabra",
+   "category": null,
+   "confidence": "low",
+   "note": "part unstated (usually root)",
+   "read_b": {
+    "name": "Glycyrrhiza Glabra Extract",
+    "kind": "INCI",
+    "inci": "GLYCYRRHIZA GLABRA ROOT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "Licorice extract almost always root; leaf extract also exists"
+   },
+   "agreement": "independent check: part/degree not on the label, so no single INCI"
+  },
+  "Mandarin Orange Peel Extract": {
+   "name": "Mandarin Orange Peel Extract",
+   "kind": "INCI",
+   "inci": "CITRUS NOBILIS PEEL EXTRACT",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "mandarin may be C. reticulata",
+   "read_b": {
+    "name": "Mandarin Orange Peel Extract",
+    "kind": "INCI",
+    "inci": "CITRUS NOBILIS PEEL EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "INCI common name for Citrus nobilis is Mandarin Orange"
+   },
+   "agreement": "2 of 3 reads (third read broke a tie)"
+  },
+  "Carum Petroselinum (Parsley)": {
+   "name": "Carum Petroselinum (Parsley)",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Carum petroselinum",
+   "category": null,
+   "confidence": "low",
+   "note": "parsley, part/preparation unspecified",
+   "read_b": {
+    "name": "Carum Petroselinum (Parsley)",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Carum petroselinum",
+    "category": null,
+    "confidence": "high",
+    "note": "Part/preparation not stated"
+   },
+   "agreement": "2 of 3 reads (third read broke a tie)"
+  },
+  "Geranium Maculatum (Wild Geranium) Flower Extract": {
+   "name": "Geranium Maculatum (Wild Geranium) Flower Extract",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "plant-derived",
+   "confidence": "low",
+   "note": "only GERANIUM MACULATUM EXTRACT (no part) in CosIng",
+   "read_b": {
+    "name": "Geranium Maculatum (Wild Geranium) Flower Extract",
+    "kind": "INCI",
+    "inci": "GERANIUM MACULATUM EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "No flower-specific INCI; only GERANIUM MACULATUM EXTRACT exists"
+   },
+   "agreement": "independent check: part/degree not on the label, so no single INCI"
+  },
+  "Polyglyceryl Polyricinoleate": {
+   "name": "Polyglyceryl Polyricinoleate",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "emulsifier",
+   "confidence": "low",
+   "note": "polyglyceryl number missing (-3, -4, -6...)",
+   "read_b": {
+    "name": "Polyglyceryl Polyricinoleate",
+    "kind": "INCI",
+    "inci": "POLYGLYCERYL-3 POLYRICINOLEATE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "Polymerization degree missing; PGPR usually -3 but -4/-5/-6/-10 exist"
+   },
+   "agreement": "independent check: part/degree not on the label, so no single INCI"
+  },
+  "SIMMONDSIA CHIMENSIS (JOJOBA) SEED OIL": {
+   "name": "SIMMONDSIA CHIMENSIS (JOJOBA) SEED OIL",
+   "kind": "INCI",
+   "inci": "SIMMONDSIA CHINENSIS SEED OIL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "typo",
+   "read_b": {
+    "name": "SIMMONDSIA CHIMENSIS (JOJOBA) SEED OIL",
+    "kind": "INCI",
+    "inci": "SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL",
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Typo chimensis->chinensis"
+   },
+   "agreement": "2 of 3 reads (third read broke a tie)"
+  },
+  "glycyrrhiza glabra (licorice) extract": {
+   "name": "glycyrrhiza glabra (licorice) extract",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Glycyrrhiza glabra",
+   "category": null,
+   "confidence": "low",
+   "note": "part unstated (usually root)",
+   "read_b": {
+    "name": "glycyrrhiza glabra (licorice) extract",
+    "kind": "INCI",
+    "inci": "GLYCYRRHIZA GLABRA (LICORICE) ROOT EXTRACT",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "Licorice extract almost always root; leaf extract also exists"
+   },
+   "agreement": "independent check: part/degree not on the label, so no single INCI"
+  },
+  ".BETA.-BISABOLOL": {
+   "name": ".BETA.-BISABOLOL",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "soothing",
+   "confidence": "low",
+   "note": "beta isomer; CosIng BISABOLOL is alpha",
+   "read_b": {
+    "name": ".BETA.-BISABOLOL",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "soothing",
+    "confidence": "low",
+    "note": "BISABOLOL INCI is alpha-bisabolol; beta isomer is a different substance"
+   },
+   "agreement": "2 of 3 reads (third read broke a tie)"
   }
  }
 }
