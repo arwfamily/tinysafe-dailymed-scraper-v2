@@ -1,7 +1,7 @@
 {
- "read": 9412,
- "booster": 1282,
- "recall": 33,
+ "read": 9411,
+ "booster": 1283,
+ "recall": 32,
  "audit": {
   "date": "2026-11-02",
   "checked": 300,
@@ -39,6 +39,6 @@
   "note": "raw reviewer count 9/300; 5 real after review (1.7%, 95% 0.7-3.8%), each confirmed by a blind second reader: 'Labelled water resistant' shown from a package note that said the label is not water resistant (rule fix: a reader's note that the package does not claim it, or only quotes the directions, no longer counts; 55 labels lost the unsupported flag); an Obagi-C Rx kit missing its serum's printed fragrance (rule fix: a kit's 'Inactives:' lists are read for fragrance; 2 kits); Soodox '7 years to adult' age limit (package_facts); 2 missed recalls recorded by review (Cicatricure Scar Cream D-0070-2019 by its UPC; La Mer The SPF 18 Fluid Tint D-814/815/816-2013). 4 were not data errors: two earlier package reads the reviewer did not have show fragrance-free with no fragrance (Coppertone Waterbabies, Walgreens Kids), Broad Spectrum (Zinc Five-O Kids) and calendula printed (California Baby Summer Blend). All 5 fixed the same day.",
   "note_public": "5 were real errors on review, and we corrected them."
  },
- "release_id": "us-2026-11-03",
- "as_of": "2026-11-03"
+ "release_id": "us-2026-11-09",
+ "as_of": "2026-11-09"
 }

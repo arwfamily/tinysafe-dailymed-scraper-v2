@@ -1,9 +1,9 @@
 {
-"generated": "2026-11-03",
-"count": 119,
+"generated": "2026-11-09",
+"count": 148,
 "by_reason": {
-"label_changed": 95,
-"never_checked": 24
+"label_changed": 114,
+"never_checked": 34
 },
 "labels": [
 {
@@ -52,6 +52,13 @@
 "setid": "0c238393-1035-19aa-e054-00144ff88e88",
 "spl_version": "8",
 "name": "Banana Boat Kids Free 50 Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "0e87b791-6ac1-dd60-e063-6394a90a658c",
+"spl_version": "3",
+"name": "Elta Md Uv Aox Eye Cream",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -119,6 +126,41 @@
 "had_older_check": true
 },
 {
+"setid": "1365c6d8-64cb-3cb3-e063-6394a90a9d64",
+"spl_version": "4",
+"name": "Itp Daily Bawse Clean, Tinted Sunscreen Serum SPF 28 Dew You Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "13badac4-e310-9589-e063-6394a90ab06b",
+"spl_version": "4",
+"name": "Itp Daily Bawse Clean, Tinted Sunscreen Serum SPF 28 On The Glow Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "13bb8426-27cd-fbc9-e063-6294a90a8bf8",
+"spl_version": "4",
+"name": "Itp Daily Bawse Clean, Tinted Sunscreen Serum SPF 28 Golden Hour Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "13f40485-b98e-e804-e063-6394a90af2af",
+"spl_version": "3",
+"name": "Illuminating SPF 50 Plus Drops Broad Spectrum Sunscreen Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "1b33b4fb-1deb-69f7-e063-6294a90a9cc0",
+"spl_version": "5",
+"name": "Invisible Sunscreen SPF 40 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "1c6b62cd-ebe3-4043-b256-0f3e0614b390",
 "spl_version": "13",
 "name": "Resilience Multi-Effect Tri-Peptide Face And Neck Creme Broad Spectrum SPF 15 Cream",
@@ -155,7 +197,7 @@
 },
 {
 "setid": "2861453a-12e9-faeb-e063-6394a90a527c",
-"spl_version": "4",
+"spl_version": "5",
 "name": "Bondi Sands Broad Spectrum SPF 60 Sunny Cream Body Lotion",
 "reason": "label_changed",
 "had_older_check": true
@@ -203,6 +245,20 @@
 "had_older_check": true
 },
 {
+"setid": "30a5ec14-63d7-e678-e063-6294a90abb57",
+"spl_version": "2",
+"name": "Vertra Invisible Sunscreen Face Stick Broad Spectrum SPF 45 Stick",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "30caf1dd-142d-85d3-e063-6394a90a0c88",
+"spl_version": "2",
+"name": "Vertra Mineral Sunscreen Broad Spectrum SPF 50 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "324d1a64-543f-44f7-b9e8-69e97fc9cff2",
 "spl_version": "2",
 "name": "Sun Juice Body Mist Sunscreen SPF30 - Coconut Cream Paradiso Spray",
@@ -238,6 +294,13 @@
 "had_older_check": true
 },
 {
+"setid": "3443b456-530d-48d4-8baf-577af5445d1a",
+"spl_version": "5",
+"name": "Md Acne Oil Free SPF 30 Sunscreen Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "364e9bac-85c4-afbd-e063-6394a90aba82",
 "spl_version": "6",
 "name": "Skin Medicinals Sm Clear Broad Spectrum SPF 50 Cream",
@@ -248,6 +311,13 @@
 "setid": "39a5a3be-f9a7-4fa1-e054-00144ff88e88",
 "spl_version": "8",
 "name": "Banana Boat Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "3bf31626-5580-457b-8a59-cc37f4ab0767",
+"spl_version": "7",
+"name": "Skin Balancing Ultra Sheer Daily Defence SPF 30 Paulas Choice Cream",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -320,6 +390,27 @@
 "name": "Banana Boat Oil",
 "reason": "label_changed",
 "had_older_check": true
+},
+{
+"setid": "498b16c8-ba54-4a0a-8dbc-4b5cc368e214",
+"spl_version": "6",
+"name": "SPF 50 Face Sunscreen Bioelements Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "4abcf59f-2535-5735-e063-6394a90ab506",
+"spl_version": "3",
+"name": "Innisfree Daily Uv Defense Sunscreen Lotion",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "4b5f84f6-acbf-8a7b-e063-6394a90a188e",
+"spl_version": "4",
+"name": "Innisfree Daily Uv Defense Invisible Sunscreen Stick",
+"reason": "never_checked",
+"had_older_check": false
 },
 {
 "setid": "4bf1ca6b-5d87-40ee-97f4-89f1bfadcecb",
@@ -413,6 +504,13 @@
 "had_older_check": false
 },
 {
+"setid": "5a8f4d9c-d53c-545c-e063-6294a90a5941",
+"spl_version": "1",
+"name": "Bubble And Co Daily Defense Sunscreen Cream",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
 "setid": "5b2245e8-a877-e2ff-e063-6394a90a2935",
 "spl_version": "3",
 "name": "Jack Black Llc Ointment",
@@ -441,6 +539,20 @@
 "had_older_check": false
 },
 {
+"setid": "5baecb8b-dbb1-817b-e063-6294a90a813d",
+"spl_version": "1",
+"name": "Glowscreen SPF 50 - Sunset Lotion Glowscreen SPF 50 - Daybreak Lotion Glowscreen SPF 50 - Sunrise Lotion Glowscreen SPF 50 - Golden Hour Lotion",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5c54fc0d-6c50-e362-e063-6294a90a2503",
+"spl_version": "2",
+"name": "Avobenzone, Homosalate, Octisalate Lotion",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
 "setid": "5ccc75c6-7058-c52f-e063-6394a90a21b7",
 "spl_version": "1",
 "name": "Sun Bum Mineral Liquid Tint SPF 30 Lotion",
@@ -458,6 +570,13 @@
 "setid": "5d4ee77c-7684-5e7e-e063-6294a90a4278",
 "spl_version": "1",
 "name": "Aveeno Sun Protection Lightweight Face Sunscreen Broad Spectrum SPF 50 Lotion",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5dcf3bdd-d247-0e69-e063-6394a90a975b",
+"spl_version": "1",
+"name": "Waterbabies Pure And Simple SPF 50 Sunscreen Stick",
 "reason": "never_checked",
 "had_older_check": false
 },
@@ -532,6 +651,13 @@
 "had_older_check": false
 },
 {
+"setid": "5e5e9208-e6a9-ffb5-e063-6394a90acfe5",
+"spl_version": "1",
+"name": "Round Lab Birch Juice Moisturizing Uvlock SPF 50 Set (box) Kit",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
 "setid": "5eff5191-0ab0-f84a-e063-6394a90a57e4",
 "spl_version": "1",
 "name": "Jack Black Ointment",
@@ -563,6 +689,20 @@
 "setid": "5f01e030-c510-2e0b-e063-6394a90ac70d",
 "spl_version": "1",
 "name": "Blue Lizard Sport SPF 50 Stick",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5f511b96-50e3-8ca5-e063-6394a90a1175",
+"spl_version": "1",
+"name": "Os-01 Face SPF Bs SPF 30 Light / Medium Cream",
+"reason": "never_checked",
+"had_older_check": false
+},
+{
+"setid": "5f609600-a3f5-96db-e063-6394a90ab843",
+"spl_version": "2",
+"name": "La Roche Posay Laboratoire Dermatologique Innovation Anthelios Uv Defense Invisible Sunscreen Broad Spectrum SPF 50 Antioxidant Protection Plus Liquid",
 "reason": "never_checked",
 "had_older_check": false
 },
@@ -693,16 +833,16 @@
 "had_older_check": true
 },
 {
-"setid": "9d20b230-2cce-4d90-e053-2995a90a4c03",
-"spl_version": "7",
-"name": "Blue Lizard Sensitive SPF 50 Sunscreen Lotion",
+"setid": "a29e5a69-d17e-45ef-8dde-e99c6e4a2b22",
+"spl_version": "9",
+"name": "City Sunscreen Serum Broad Spectrum SPF 30 Supergoop Cream",
 "reason": "label_changed",
 "had_older_check": true
 },
 {
-"setid": "a29e5a69-d17e-45ef-8dde-e99c6e4a2b22",
-"spl_version": "9",
-"name": "City Sunscreen Serum Broad Spectrum SPF 30 Supergoop Cream",
+"setid": "a84d246b-1153-85ff-e053-2995a90a270a",
+"spl_version": "6",
+"name": "Impeccable Skin Moisturizing Face Sunscreen Broad Spectrum SPF 30 Cream",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -742,6 +882,27 @@
 "had_older_check": true
 },
 {
+"setid": "b69a75e0-8724-35ae-e053-2a95a90a5f34",
+"spl_version": "5",
+"name": "Vertra Pearl White Face Stick SPF 50 Stick",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "b6c316c3-661b-6428-e053-2a95a90a1a6b",
+"spl_version": "5",
+"name": "Vertra S Dorian Kona Gold Signature Face Stick SPF 38 Stick",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "c11197f4-cee0-04b3-e053-2995a90a1ba8",
+"spl_version": "5",
+"name": "Daily SPF Facial Sunscreenlotion Broad Spectrum SPF 32 Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "c76746a5-e6d6-b146-e053-2995a90a1191",
 "spl_version": "4",
 "name": "Banana Boat Sport Ultra Sunscreen Roll-On UVA/UVB Broad Spectrum SPF 60 Plus Lotion",
@@ -754,6 +915,13 @@
 "name": "Florida Glow Face Shield SPF 55 Lotion",
 "reason": "label_changed",
 "had_older_check": true
+},
+{
+"setid": "cf4f3f3f-db69-406b-bfb3-7187b9e04b2f",
+"spl_version": "1",
+"name": "2PM Reset Mist SPF 50 Orange Slice Liquid",
+"reason": "never_checked",
+"had_older_check": false
 },
 {
 "setid": "d10272ea-aedd-5759-e053-2a95a90a3ab3",
@@ -777,9 +945,37 @@
 "had_older_check": true
 },
 {
+"setid": "d4d9ad73-6394-2391-e053-2a95a90a2df6",
+"spl_version": "5",
+"name": "Coppertone Sport Sunscreen SPF 40 Stick",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "d658fdc7-9dac-47bf-8e83-1433a29a6cf6",
+"spl_version": "7",
+"name": "Resist Wrinkle Defense SPF 30 Paulas Choice Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
 "setid": "d68048b5-219c-414a-918f-b063b44fe7b5",
 "spl_version": "3",
 "name": "Smart Care Mineral-Enhanced Sunscreen SPF 50 Aerosol, Spray",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "d739bc43-d76e-9258-e053-2a95a90a3d2c",
+"spl_version": "5",
+"name": "Silk SPF Facial Sunscreen Fluid Hybrid Broad Spectrum SPF 30 UVA/UVB Cream",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "d8c7b82d-6151-2199-e053-2a95a90a6c20",
+"spl_version": "6",
+"name": "Sunscreen Broad Spectrum SPF 30 Light Tropical Scent Cream",
 "reason": "label_changed",
 "had_older_check": true
 },
@@ -815,6 +1011,13 @@
 "setid": "e120a659-0dfc-42ca-8158-58e8a0b457e5",
 "spl_version": "9",
 "name": "Journee Bio-Restorative Day Balm Broad-Spectrum Suncreen SPF 30 Lotion",
+"reason": "label_changed",
+"had_older_check": true
+},
+{
+"setid": "f161d754-0c32-2fbe-e053-2a95a90a6b47",
+"spl_version": "7",
+"name": "Roc Multi Correxion Even Tone Lift Daily Moisturizer SPF30 Lotion",
 "reason": "label_changed",
 "had_older_check": true
 },

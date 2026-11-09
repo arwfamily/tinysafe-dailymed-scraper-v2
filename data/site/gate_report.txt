@@ -1,10 +1,10 @@
-[UNII] 23 search seeds (resolved 2026-11-03)
+[UNII] 23 search seeds (resolved 2026-11-09)
 [UNII] 3 unresolved, NOT searched: DIOXYBENZONE, CINOXATE, TROLAMINE SALICYLATE
 {
  "headline": {
-  "read": 9412,
-  "booster": 1282,
-  "recall": 33,
+  "read": 9411,
+  "booster": 1283,
+  "recall": 32,
   "audit": {
    "date": "2026-11-02",
    "checked": 300,
@@ -44,8 +44,8 @@
   }
  },
  "gate": {
-  "active_labels": 9412,
-  "active_labels_before": 9421,
+  "active_labels": 9411,
+  "active_labels_before": 9412,
   "left_by_reviewed_scope_rule": 0,
   "explained_labels_losing_other_warnings": 0,
   "explained_examples": [],
