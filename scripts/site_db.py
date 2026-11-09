@@ -12,6 +12,7 @@ Usage: python3 scripts/site_db.py --site ../arwhouse [--check]
        --check: build into memory, run the quality gate against the live db.json, write nothing
 """
 import argparse
+import collections
 import json
 import os
 import re
@@ -111,6 +112,30 @@ def build(release_dir, thumbs_dir=None):
                 if _d.get("broad_spectrum") not in (True, False):
                     continue
                 PKG_BS[_k] = 1 if (_d["broad_spectrum"] is True or PKG_BS.get(_k) == 1) else 0
+    # a package claim one reader saw while a second reader of the same version saw no claim or could
+    # not tell (confirm, third or the blind Broad Spectrum read) is not shown: one reader alone is not
+    # enough when another disagrees (2026-11-09; the same rule us_master applies to the record's claim)
+    _yes, _no, _twice = collections.Counter(), collections.Counter(), set()
+    for _f in ("artwork_reads", "claims_reads", "confirm_reads", "third_reads", "bs_reads"):
+        _fp = os.path.join(ROOT, "data/corrections", _f + ".jsonl")
+        if os.path.exists(_fp):
+            for _l in open(_fp, encoding="utf-8"):
+                _d = json.loads(_l)
+                _k = (_d["setid"], str(_d.get("spl_version")))
+                if _f == "artwork_reads" and _d.get("readable") is False:
+                    continue
+                if _f == "artwork_reads" and _d.get("second_read") and _d.get("broad_spectrum") is True:
+                    _twice.add(_k)
+                if _d.get("broad_spectrum") is True:
+                    _yes[_k] += 1
+                elif _d.get("broad_spectrum") in (False, "unclear"):
+                    _no[_k] += 1
+    PKG_BS_DROPPED = sorted(k for k, v in PKG_BS.items()
+                            if (v == 1 and k not in _twice and _yes[k] < 2 and _no[k] > 0)
+                            or (v == 0 and _yes[k] > 0))   # and "no claim found" while a reader saw one
+    for _k in PKG_BS_DROPPED:
+        del PKG_BS[_k]
+    print(f"package Broad Spectrum not shown (second reader disagrees): {len(PKG_BS_DROPPED)}", file=sys.stderr)
     # a propellant spray the FDA files only as "SPRAY": its label text warns that the contents are under
     # pressure (2026-10-26 live audit: Equate Kids, Sun Shades, Coppertone Sport)
     _tp = os.path.join(ROOT, "data/views/label_text_all.jsonl.gz")
