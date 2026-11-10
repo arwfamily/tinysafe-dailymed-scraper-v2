@@ -1,0 +1,22 @@
+{
+ "accepted": {
+  "Capryloyl Glycerin": {
+   "name": "Capryloyl Glycerin",
+   "kind": "INCI",
+   "inci": "GLYCERYL CAPRYLATE",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "Capryloyl glycerin = monocaprylin = glyceryl caprylate",
+   "read_b": {
+    "name": "Capryloyl Glycerin",
+    "kind": "INCI",
+    "inci": "GLYCERYL CAPRYLATE",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "Synonym for glyceryl monocaprylate; may be fragment of CAPRYLOYL GLYCERIN/SEBACIC ACID COPOLYMER"
+   }
+  }
+ }
+}

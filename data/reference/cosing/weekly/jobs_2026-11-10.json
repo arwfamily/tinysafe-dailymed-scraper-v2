@@ -1,0 +1,42 @@
+{
+ "MONARDA DIDYMA CALLUS EXTRACT": {
+  "inci": "MONARDA DIDYMA CALLUS EXTRACT",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "MONARDA DIDYMA CALLUS EXTRACT",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ },
+ "HAMAMELIS VIRGINIANA FLOWER WATER": {
+  "inci": "HAMAMELIS VIRGINIANA FLOWER WATER",
+  "job": "skin_conditioning",
+  "secondary": "astringent",
+  "override": false,
+  "reason": "Readers split astringent/skin_conditioning; weekly rule: plant extract/flower water takes skin_conditioning (CosIng lists SKIN CONDITIONING)",
+  "confidence": "low",
+  "read_b": {
+   "inci": "HAMAMELIS VIRGINIANA FLOWER WATER",
+   "job": "skin_conditioning",
+   "secondary": "astringent",
+   "override": false,
+   "reason": "",
+   "confidence": "low"
+  },
+  "read_a": {
+   "inci": "HAMAMELIS VIRGINIANA FLOWER WATER",
+   "job": "astringent",
+   "secondary": "skin_conditioning",
+   "override": false,
+   "reason": "Witch hazel water's established cosmetic use is as an astringent toner; CosIng lists astringent",
+   "confidence": "low"
+  }
+ }
+}
