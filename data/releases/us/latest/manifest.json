@@ -1,14 +1,14 @@
 {
- "release_id": "us-2026-11-09",
- "git_tag": "us-data-2026-11-09",
- "released": "2026-11-09T22:37:53+00:00",
+ "release_id": "us-2026-11-16",
+ "git_tag": "us-data-2026-11-16",
+ "released": "2026-11-16T20:43:20+00:00",
  "schema_version": "1.0.0",
  "rules_version": "v3.13 · 2026-10-25",
  "source": {
   "register": "FDA DailyMed (SPL)",
-  "collected": "2026-11-09",
-  "scraper_commit": null,
-  "run_id": null
+  "collected": "2026-11-16",
+  "scraper_commit": "1648a3c32af099ddf31bb4b2a7d09801ef96e71c",
+  "run_id": "43937620490"
  },
  "definitions": {
   "us_all": "Every label FDA DailyMed lists as a sunscreen drug. Out of scope, with the reason recorded in the master: SPF makeup (BB/CC creams, foundations, cushions, concealers, makeup powders, and primers or setting products not named as sunscreens; scripts/scope_rules.py), SPF lip products, diaper creams, calamine, and zinc-oxide products with no sun claim. Tinted sunscreens and tinted moisturizers are sunscreens. Labels that left DailyMed stay, with status 'discontinued'. A label DailyMed failed to serve this week keeps its last fully read record (fetch_status 'carried_forward').",
@@ -17,31 +17,31 @@
  },
  "counts": {
   "us_all": {
-   "labels": 9496,
+   "labels": 9505,
    "status": {
-    "active": 9411,
-    "discontinued": 85
+    "active": 9377,
+    "discontinued": 128
    },
    "filter_type": {
-    "mineral_only": 3879,
-    "chemical_only": 4283,
+    "mineral_only": 3847,
+    "chemical_only": 4280,
     "hybrid_chemical_primary": 844,
-    "hybrid_mineral_primary": 381,
+    "hybrid_mineral_primary": 382,
     "hybrid_equal": 19,
     "hybrid_pct_unknown": 5
    },
    "label_check": {
-    "confirmed": 1699,
-    "text_confirms_current": 7304,
-    "not_checked_yet": 148,
-    "no_list_on_label_images": 205,
-    "image_unreadable": 24,
+    "confirmed": 1692,
+    "text_confirms_current": 7215,
+    "not_checked_yet": 212,
+    "no_list_on_label_images": 204,
+    "image_unreadable": 23,
     "partial": 10,
     "label_image_mismatch": 16,
     "non_english_label": 4,
     "needs_review": 1
    },
-   "label_verified_share": 0.9577,
+   "label_verified_share": 0.9509,
    "inactives_7_or_fewer": 340,
    "recalls": {
     "labels_matched": 45,
@@ -49,29 +49,29 @@
    }
   },
   "us_mineral": {
-   "labels": 5166,
+   "labels": 5168,
    "status": {
-    "active": 5128,
-    "discontinued": 38
+    "active": 5097,
+    "discontinued": 71
    },
    "filter_type": {
-    "mineral_only": 3879,
+    "mineral_only": 3847,
     "hybrid_chemical_primary": 844,
-    "hybrid_mineral_primary": 381,
+    "hybrid_mineral_primary": 382,
     "hybrid_equal": 19,
     "hybrid_pct_unknown": 5
    },
    "label_check": {
-    "confirmed": 1211,
-    "text_confirms_current": 3612,
+    "confirmed": 1205,
+    "text_confirms_current": 3549,
     "no_list_on_label_images": 197,
-    "not_checked_yet": 64,
-    "image_unreadable": 20,
+    "not_checked_yet": 103,
+    "image_unreadable": 19,
     "partial": 7,
     "label_image_mismatch": 13,
     "non_english_label": 4
    },
-   "label_verified_share": 0.9419,
+   "label_verified_share": 0.9341,
    "inactives_7_or_fewer": 108,
    "recalls": {
     "labels_matched": 15,
@@ -79,26 +79,26 @@
    }
   },
   "us_baby_kids": {
-   "labels": 583,
+   "labels": 584,
    "status": {
-    "active": 577,
+    "active": 578,
     "discontinued": 6
    },
    "filter_type": {
-    "chemical_only": 248,
+    "chemical_only": 249,
     "mineral_only": 297,
     "hybrid_chemical_primary": 22,
     "hybrid_equal": 1,
     "hybrid_mineral_primary": 9
    },
    "label_check": {
-    "text_confirms_current": 480,
-    "not_checked_yet": 9,
+    "text_confirms_current": 473,
+    "not_checked_yet": 17,
     "confirmed": 78,
     "no_list_on_label_images": 8,
     "label_image_mismatch": 2
    },
-   "label_verified_share": 0.9671,
+   "label_verified_share": 0.9533,
    "inactives_7_or_fewer": 30,
    "recalls": {
     "labels_matched": 11,
@@ -107,31 +107,31 @@
   }
  },
  "out_of_scope": {
-  "spf_makeup": 2710,
+  "spf_makeup": 2711,
   "diaper_cream": 213,
-  "spf_lip_balm": 1212,
-  "not_a_sunscreen": 611,
-  "zinc_only_no_sun_claim": 44,
+  "spf_lip_balm": 1213,
+  "not_a_sunscreen": 612,
+  "zinc_only_no_sun_claim": 47,
   "topical_analgesic": 37,
   "skin_lightener": 41,
   "calamine": 6
  },
  "files": {
   "us_all.jsonl": {
-   "rows": 9496,
-   "sha256": "fd442054c42474fb28307a462cfc1fc6b65acf7b67f9b732cfebeb1c26400bc2"
+   "rows": 9505,
+   "sha256": "9bbd33086b38155e044d138310310c398dadeff3ef1d3027c7326f084e56641d"
   },
   "us_mineral.jsonl": {
-   "rows": 5166,
-   "sha256": "42f972cb9e2cd6997660caf83455486fd1f6772af2af0016e4fa7a6c1efcfd8d"
+   "rows": 5168,
+   "sha256": "5303570169ad9775c5b58863da844ec6cb14f876ea22f11b96c95d4583de953d"
   },
   "us_baby_kids.jsonl": {
-   "rows": 583,
-   "sha256": "007863d499f7cee12860edacd10584d121ca97785465e47af046ab7f8ccb58cb"
+   "rows": 584,
+   "sha256": "d73caebbd2e7d477cf2699aa402cf86ff862d2fb8a5136ad908fe49f6ae8f26f"
   },
   "us_out_of_scope.jsonl": {
-   "rows": 4874,
-   "sha256": "f3ee0b2edd78711bc5b1d057973fc3a4ba85f5ced3b36f2546dc0a419232d961"
+   "rows": 4880,
+   "sha256": "15925d7d2e6e15561f1325fa7e3a5420438e985a556be2c21e85cba67399fd10"
   }
  }
 }

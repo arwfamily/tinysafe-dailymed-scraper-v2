@@ -21,7 +21,7 @@
  },
  "05bbe530-df26-e598-e063-6394a90a0c59": {
   "title": "BANANA BOAT (ZINC OXIDE) STICK [EDGEWELL PERSONAL CARE BRANDS LLC]",
-  "spl_version": "3",
+  "spl_version": "4",
   "images": [
    {
     "name": "63354-164-61 - Back Card.jpg",
@@ -143,11 +143,11 @@
  },
  "0d82121d-1dc2-cd99-e063-6394a90aa766": {
   "title": "ATTITUDE SUNLY KIDS MINERAL SUNSCREEN STICK UNSCENTED SPF 30 (ZINC OXIDE) STICK [9055-7588 QUEBEC INC. DBA ATTITUDE]",
-  "spl_version": "2",
+  "spl_version": "3",
   "images": [
    {
-    "name": "Label 16098-03.jpg",
-    "sha1_original": "fb746bcbc3e47c4ce30f7c2b6d8d19d2fe663dbe"
+    "name": "16098-04_etiquette.jpg",
+    "sha1_original": "a76b2e9b978595af0f7955dac6516e5dbbbdef7b"
    }
   ]
  },
@@ -163,11 +163,11 @@
  },
  "0d85b0a1-3705-2829-e063-6394a90a0ed7": {
   "title": "ATTITUDE SUNLY TINTED MINERAL SUNSCREEN FACE STICK UNSCENTED SPF 30 (ZINC OXIDE) STICK [9055-7588 QUEBEC INC. DBA ATTITUDE]",
-  "spl_version": "2",
+  "spl_version": "3",
   "images": [
    {
-    "name": "Label 16097-03.jpg",
-    "sha1_original": "91607504d787aa0d13f7d02158ed523df5f97832"
+    "name": "16097-04_etiquette.jpg",
+    "sha1_original": "2ca0456641a71366d830d487a7b6ae1b4f1b8e87"
    }
   ]
  },
@@ -3772,16 +3772,7 @@
  "de211188-af52-2ad6-e053-2995a90a1ec9": {
   "title": "",
   "spl_version": null,
-  "images": [
-   {
-    "name": "ART_PP05169.jpg",
-    "sha1_original": "d1a7acf651e90ed4b6fdd3af3b81f269941a072a"
-   },
-   {
-    "name": "ART_SP12481.jpg",
-    "sha1_original": "5fe951345f4b724a55b769389194ecfb171847f4"
-   }
-  ]
+  "images": []
  },
  "e20dd234-8d8f-da10-e053-2995a90acd1b": {
   "title": "",
