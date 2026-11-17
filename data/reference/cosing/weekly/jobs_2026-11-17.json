@@ -1,0 +1,18 @@
+{
+ "ASCOPHYLLUM NODOSUM": {
+  "inci": "ASCOPHYLLUM NODOSUM",
+  "job": "skin_conditioning",
+  "secondary": null,
+  "override": false,
+  "reason": "",
+  "confidence": "high",
+  "read_b": {
+   "inci": "ASCOPHYLLUM NODOSUM",
+   "job": "skin_conditioning",
+   "secondary": null,
+   "override": false,
+   "reason": "",
+   "confidence": "high"
+  }
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "accepted": {
+  "SECTION": {
+   "name": "SECTION",
+   "kind": "NOT_INGREDIENT",
+   "inci": null,
+   "plant": null,
+   "category": null,
+   "confidence": "high",
+   "note": "label header word",
+   "read_b": {
+    "name": "SECTION",
+    "kind": "NOT_INGREDIENT",
+    "inci": null,
+    "plant": null,
+    "category": null,
+    "confidence": "high",
+    "note": "Label header word"
+   }
+  },
+  "vegetable glycerite": {
+   "name": "vegetable glycerite",
+   "kind": "NO_COSING",
+   "inci": null,
+   "plant": null,
+   "category": "humectant",
+   "confidence": "low",
+   "note": "glycerin-based herbal extract, plants not specified; could also mean vegetable glycerin [audit: category plant-derived -> humectant]",
+   "read_b": {
+    "name": "vegetable glycerite",
+    "kind": "NO_COSING",
+    "inci": null,
+    "plant": null,
+    "category": "plant-derived",
+    "confidence": "low",
+    "note": "Glycerin extract of unspecified plant(s); no single INCI"
+   }
+  },
+  "HOUTTUYNIA CORDATA WHOLE": {
+   "name": "HOUTTUYNIA CORDATA WHOLE",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Houttuynia cordata",
+   "category": null,
+   "confidence": "high",
+   "note": "whole plant, preparation unspecified",
+   "read_b": {
+    "name": "HOUTTUYNIA CORDATA WHOLE",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Houttuynia cordata",
+    "category": null,
+    "confidence": "high",
+    "note": "Whole plant, preparation not stated; no whole-plant INCI"
+   }
+  },
+  "PENTADESMA BUTYRACEA WHOLE": {
+   "name": "PENTADESMA BUTYRACEA WHOLE",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Pentadesma butyracea",
+   "category": null,
+   "confidence": "high",
+   "note": "whole plant, preparation unspecified",
+   "read_b": {
+    "name": "PENTADESMA BUTYRACEA WHOLE",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Pentadesma butyracea",
+    "category": null,
+    "confidence": "high",
+    "note": "Whole plant per FDA name; likely seed butter but not stated"
+   }
+  },
+  "CENTELLA ASIATICA WHOLE": {
+   "name": "CENTELLA ASIATICA WHOLE",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Centella asiatica",
+   "category": null,
+   "confidence": "high",
+   "note": "whole plant, preparation unspecified",
+   "read_b": {
+    "name": "CENTELLA ASIATICA WHOLE",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Centella asiatica",
+    "category": null,
+    "confidence": "high",
+    "note": "Whole plant, preparation not stated"
+   }
+  }
+ }
+}
