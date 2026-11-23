@@ -1,0 +1,721 @@
+{
+ "run_date": "2026-11-23",
+ "all_labels": {
+  "new": 18,
+  "reformulated": 10,
+  "metadata": 1,
+  "delisted": 47
+ },
+ "baby_labels": {
+  "new": 1,
+  "reformulated": 1
+ },
+ "baby_population_live": 582,
+ "new_baby_decisions": [
+  {
+   "setid": "602dbf18-9652-944c-e063-6394a90a23e8",
+   "decision": "include",
+   "stage": "auto",
+   "reason": "auto-rule v1: baby/kids word in product name, sunscreen, not a kit",
+   "decided_on": "2026-11-23",
+   "title": "COPPERTONE KIDS SPORT SUNSCREEN SPF 70 (AVOBENZONE 3%, HOMOSALATE 13%, OCTISALATE 5%, OCTOCRYLENE 10%, OXYBENZONE 6%) LOTION [BEIERSDORF INC]",
+   "dailymed_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=602dbf18-9652-944c-e063-6394a90a23e8"
+  }
+ ],
+ "review_queue": 0,
+ "changes": [
+  {
+   "setid": "5de6cb85-f40f-71be-e063-6294a90a2e04",
+   "change": "new",
+   "product": "SKINCENTRY FOUNDATIONS ZINC OXIDE (ZINC OXIDE) PASTE",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5de6cb85-f40f-71be-e063-6294a90a2e04",
+   "baby": false,
+   "label_date": "20261015",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "f23209c3-1a97-40dc-8be4-75342beb3d2b",
+   "change": "new",
+   "product": "DIAPER RASH (ZINC OXIDE CREAM) OINTMENT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f23209c3-1a97-40dc-8be4-75342beb3d2b",
+   "baby": false,
+   "label_date": "20261117",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5fe8683a-0563-5926-e063-6394a90acf04",
+   "change": "new",
+   "product": "MELAO PURE MINERAL SUNSCREEN (ZINC OXIDE,TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fe8683a-0563-5926-e063-6394a90acf04",
+   "baby": false,
+   "label_date": "20261111",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ff72e4c-529a-69f0-e063-6394a90a5801",
+   "change": "new",
+   "product": "MELAO PURE MINERAL SUNSCREEN (ZINC OXIDE,TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ff72e4c-529a-69f0-e063-6394a90a5801",
+   "baby": false,
+   "label_date": "20261112",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "f7e6b956-4cf3-47a4-8e79-9b4a6edbf1f2",
+   "change": "new",
+   "product": "ESSENTIAL SHEER SPF 50 (ZINC OXIDE OCTINOXATE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7e6b956-4cf3-47a4-8e79-9b4a6edbf1f2",
+   "baby": false,
+   "label_date": "20261112",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "6067fd5d-a94b-443f-e063-6294a90a084f",
+   "change": "new",
+   "product": "ZECU (BEMOTRIZINOL, OCTINOXATE, TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6067fd5d-a94b-443f-e063-6294a90a084f",
+   "baby": false,
+   "label_date": "20261116",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5f94ed17-3809-6bce-e063-6294a90ae7c3",
+   "change": "new",
+   "product": "COSRX (ULTRA-LIGHT CLEAR OIL-FREE SUNSCREEN) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f94ed17-3809-6bce-e063-6294a90ae7c3",
+   "baby": false,
+   "label_date": "20261105",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "0f113048-adfb-7d2a-e063-6294a90a2012",
+   "change": "reformulated",
+   "product": "COPPERTONE TANNING SUNSCREEN SPF 8 (AVOBENZONE 2%, HOMOSALATE 5%, OCTISALATE 4.5%, OCTOCRYLENE 3%) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0f113048-adfb-7d2a-e063-6294a90a2012",
+   "baby": false,
+   "added": [
+    "BEESWAX",
+    "PENTYLENE GLYCOL",
+    "EDETATE DISODIUM"
+   ],
+   "removed": [
+    "SYNTHETIC BEESWAX",
+    "DISODIUM EDTA-COPPER"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "d8b0d5ad-a82c-5304-e053-2a95a90afa63",
+   "change": "reformulated",
+   "product": "COPPERTONE SUNSCREEN SPF 50 (AVOBENZONE 3%, HOMOSALATE 10%, OCTISALATE 4.5%, OCTOCRYLENE 8%) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d8b0d5ad-a82c-5304-e053-2a95a90afa63",
+   "baby": false,
+   "added": [
+    "GLYCERYL MONOSTEARATE",
+    "BEESWAX",
+    "PENTYLENE GLYCOL",
+    "EDETATE DISODIUM",
+    "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER (60000 MPA.S)",
+    "PEG-100 STEARATE"
+   ],
+   "removed": [
+    "SYNTHETIC BEESWAX",
+    "CARBOMER INTERPOLYMER TYPE A (55000 CPS)",
+    "DISODIUM EDTA-COPPER",
+    "GLYCERYL STEARATE SE",
+    "PEG-20 STEARATE"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "5ffb7479-b326-2a1d-e063-6394a90a9a38",
+   "change": "new",
+   "product": "DR.ROSA VITA-HYDRO CLOUD SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ffb7479-b326-2a1d-e063-6394a90a9a38",
+   "baby": false,
+   "label_date": "20261111",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "602af698-329b-7faa-e063-6294a90a8f35",
+   "change": "new",
+   "product": "COPPERTONE DAILY PROTECT SUNSCREEN SPF 50 (AVOBENZONE 3%, HOMOSALATE 9%, OCTISALATE 4.5%, OCTOCRYLENE 9%) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=602af698-329b-7faa-e063-6294a90a8f35",
+   "baby": false,
+   "label_date": "20261113",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "602dbf18-9652-944c-e063-6394a90a23e8",
+   "change": "new",
+   "product": "COPPERTONE KIDS SPORT SUNSCREEN SPF 70 (AVOBENZONE 3%, HOMOSALATE 13%, OCTISALATE 5%, OCTOCRYLENE 10%, OXYBENZONE 6%) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=602dbf18-9652-944c-e063-6394a90a23e8",
+   "baby": true,
+   "label_date": "20261113",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "cfc21b1a-4a26-1573-e053-2995a90a2d50",
+   "change": "reformulated",
+   "product": "COOLA CLASSIC SUNSCREEN FRAGRANCE FREE (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cfc21b1a-4a26-1573-e053-2995a90a2d50",
+   "baby": false,
+   "added": [
+    "CITRUS BERGAMIA LEAF"
+   ],
+   "removed": [
+    "MONARDA DIDYMA LEAF"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "f3d163b4-6774-4c2e-e053-2a95a90afd59",
+   "change": "reformulated",
+   "product": "COPPERTONE OIL FREE AND SHINE CONTROL FACE SUNSCREEN SPF 45 (AVOBENZONE 3%, HOMOSALATE 10%, OCTISALATE 5%, OCTOCRYLENE 10%) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f3d163b4-6774-4c2e-e053-2a95a90afd59",
+   "baby": false,
+   "added": [
+    "EDETATE DISODIUM",
+    "SILICON DIOXIDE",
+    "GLYCERYL DIBEHENATE"
+   ],
+   "removed": [
+    "TITANIUM DIOXIDE",
+    "DISODIUM EDTA-COPPER",
+    "ETHYLHEXYLGLYCERYL BEHENATE"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "28f08236-1f01-d759-e063-6294a90adcfa",
+   "change": "reformulated",
+   "product": "BANANA BOAT (AVOBENZONE,OCTISALATE,OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28f08236-1f01-d759-e063-6294a90adcfa",
+   "baby": true,
+   "added": [
+    "ALOE BARBADENSIS LEAF JUICE"
+   ],
+   "removed": [
+    "ALOE BARBADENSIS LEAF JUICE"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "287a61d8-0056-6211-e063-6394a90aa3da",
+   "change": "metadata",
+   "product": "INTELLIGENT ELIXIRS TINTED BROAD SPECTRUM SPF 30 - GOLDEN (AVOBENZONE, OCTISALATE, OCTINOXATE) LOTION INTELLIGENT ELIXIRS TINTED BROAD SPECTRUM SPF 30 - NATURAL (AVOBENZONE, OCTISALATE, OCTINOXATE) LOTION INTELLIGENT ELIXIRS TINTED BROAD SPECTRUM SPF 30 - TAN (AVOBENZONE, OCTISALATE, OCTINOXATE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=287a61d8-0056-6211-e063-6394a90aa3da",
+   "baby": false
+  },
+  {
+   "setid": "4edac8d8-523f-8b8b-e063-6294a90a1a25",
+   "change": "reformulated",
+   "product": "CELIMAX PORE SKIN CLARIFYING DAILY SUNSCREEN (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4edac8d8-523f-8b8b-e063-6294a90a1a25",
+   "baby": false,
+   "added": [
+    "VINYLPYRROLIDONE/EICOSENE COPOLYMER",
+    "POLYETHER-1 (2800 MPA.S)",
+    ".ALPHA.-TOCOPHEROL, DL-",
+    "DIMETHICONE/VINYL DIMETHICONE CROSSPOLYMER (HARD PARTICLE)"
+   ],
+   "removed": [
+    "TOCOPHEROL"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "5b9487d6-b900-8cfa-e063-6294a90ac450",
+   "change": "new",
+   "product": "AVEENO POSITIVELY RADIANT DAILY MOISTURIZER SUNSCREEN BROAD SPECTRUM SPF 30 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b9487d6-b900-8cfa-e063-6294a90ac450",
+   "baby": false,
+   "label_date": "20260916",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "6004f6d1-1bc6-2e55-e063-6394a90a2ced",
+   "change": "new",
+   "product": "HYDRATING GLOW MIST WITH PENTAVITIN SPF 50 BROAD SPECTRUM (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6004f6d1-1bc6-2e55-e063-6394a90a2ced",
+   "baby": false,
+   "label_date": "20261111",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ff22d3a-c00c-f8bf-e063-6294a90ac124",
+   "change": "new",
+   "product": "ROUND LAB BIRCH JUICE MOISTURIZING UVLOCK SPF 50 SET (BLISTER) (AVOBENZONE, HOMOSALATE, OCTISALATE) KIT",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ff22d3a-c00c-f8bf-e063-6294a90ac124",
+   "baby": false,
+   "label_date": "20261110",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "60054205-4380-66b0-e063-6394a90ad4f2",
+   "change": "new",
+   "product": "GOLDEN GLOW SHIMMER MIST (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) SPRAY",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=60054205-4380-66b0-e063-6394a90ad4f2",
+   "baby": false,
+   "label_date": "20261111",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "a57bcf44-580d-520e-e053-2a95a90a6923",
+   "change": "reformulated",
+   "product": "CLEAR SMART SHINE CONTROL SUNSCREEN BROAD SPECTRUM SPF 25 (AVOBENZONE,HOMOSALATE,OCTISALATE,OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a57bcf44-580d-520e-e053-2a95a90a6923",
+   "baby": false,
+   "added": [
+    "PHENOXYETHANOL"
+   ],
+   "removed": [],
+   "confidence": "high"
+  },
+  {
+   "setid": "d89df7a5-7741-3e1d-e053-2995a90ae275",
+   "change": "reformulated",
+   "product": "COPPERTONE SPORT SUNSCREEN SPF 30 (AVOBENZONE 3%, HOMOSALATE 8%, OCTISALATE 4.5%, OCTOCRYLENE 6%) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d89df7a5-7741-3e1d-e053-2995a90ae275",
+   "baby": false,
+   "added": [
+    "GLYCERYL STEARATE",
+    "BEESWAX",
+    "PENTYLENE GLYCOL",
+    "EDETATE DISODIUM",
+    "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER (60000 MPA.S)",
+    "PEG-100 STEARATE"
+   ],
+   "removed": [
+    "SYNTHETIC BEESWAX",
+    "CARBOMER INTERPOLYMER TYPE A (55000 CPS)",
+    "DISODIUM EDTA-COPPER",
+    "SODIUM ASCORBYL PHOSPHATE",
+    "GLYCERYL STEARATE SE",
+    "PEG-20 STEARATE",
+    "TOCOPHEROL"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "df498e82-e1c9-51eb-e053-2a95a90a49b6",
+   "change": "reformulated",
+   "product": "COPPERTONE SPORT SUNSCREEN SPF 100 (AVOBENZONE 3%, HOMOSALATE 15%, OCTISALATE 5%, OCTOCRYLENE 10%, OXYBENZONE 6%) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df498e82-e1c9-51eb-e053-2a95a90a49b6",
+   "baby": false,
+   "added": [
+    "PENTYLENE GLYCOL",
+    "POLYAMIDE-8 (4500 MW)",
+    "EDETATE DISODIUM",
+    "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER (60000 MPA.S)"
+   ],
+   "removed": [
+    "CARBOMER INTERPOLYMER TYPE A (55000 CPS)",
+    "DISODIUM EDTA-COPPER"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "e468d703-fa6c-095a-e053-2a95a90a5194",
+   "change": "reformulated",
+   "product": "COPPERTONE SPORT SUNSCREEN SPF 70 (AVOBENZONE 3%, HOMOSALATE 13%, OCTISALATE 5%, OCTOCRYLENE 10%, OXYBENZONE 6%) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e468d703-fa6c-095a-e053-2a95a90a5194",
+   "baby": false,
+   "added": [
+    "PENTYLENE GLYCOL",
+    "POLYAMIDE-8 (4500 MW)",
+    "EDETATE DISODIUM",
+    "ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER (60000 MPA.S)"
+   ],
+   "removed": [
+    "VITAMIN A PALMITATE",
+    "CARBOMER INTERPOLYMER TYPE A (55000 CPS)",
+    "DISODIUM EDTA-COPPER"
+   ],
+   "confidence": "high"
+  },
+  {
+   "setid": "faecc95e-4a1a-46e8-b813-a3106be4caea",
+   "change": "new",
+   "product": "DMGE EXTREMOLYTE DAILY FACE SUNSCREEN SPF 50 (AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=faecc95e-4a1a-46e8-b813-a3106be4caea",
+   "baby": false,
+   "label_date": "20261112",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "5ff159e4-c90d-f437-e063-6294a90a6b1d",
+   "change": "new",
+   "product": "WELDERS MINERAL SUNSCREEN (ZINC OXIDE, OCTINOXATE, OXYBENZONE, AND OCTISALATE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ff159e4-c90d-f437-e063-6294a90a6b1d",
+   "baby": false,
+   "label_date": "20261110",
+   "found_by": "unii_search"
+  },
+  {
+   "setid": "f2372d30-16e2-4d46-b2b4-3d1bf19c7a7b",
+   "change": "new",
+   "product": "WATTZ PERFORMANCE MINERAL SUNSCREEN SPF 30 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f2372d30-16e2-4d46-b2b4-3d1bf19c7a7b",
+   "baby": false,
+   "label_date": "20261115",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "01cbbb80-9ef0-4c6d-886e-878a08b134f4",
+   "change": "new",
+   "product": "OZIPCO BROAD SPECTRUM DEWORMER (FENBENDAZOLE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01cbbb80-9ef0-4c6d-886e-878a08b134f4",
+   "baby": false,
+   "label_date": "20261115",
+   "found_by": "title_enumeration"
+  },
+  {
+   "setid": "d739bc43-d76e-9258-e053-2a95a90a3d2c",
+   "change": "delisted",
+   "product": "SILK SPF FACIAL SUNSCREEN FLUID HYBRID BROAD SPECTRUM SPF 30 UVA/UVB (ZINC OXIDE AND HOMOSALATE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d739bc43-d76e-9258-e053-2a95a90a3d2c",
+   "baby": false
+  },
+  {
+   "setid": "07104cbf-0446-a053-e063-6394a90ab41f",
+   "change": "delisted",
+   "product": "WONDERSCREEN BROAD SPECTRUM SPF 30 SHADE 1 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=07104cbf-0446-a053-e063-6394a90ab41f",
+   "baby": false
+  },
+  {
+   "setid": "07503a1f-d530-e3bb-e063-6294a90a8ae3",
+   "change": "delisted",
+   "product": "WONDERSCREEN TINTED BROAD SPECTRUM SPF 30 SHADE 3 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=07503a1f-d530-e3bb-e063-6294a90a8ae3",
+   "baby": false
+  },
+  {
+   "setid": "f2a59fa4-f19c-a15f-e053-2a95a90a6ace",
+   "change": "delisted",
+   "product": "WONDERSCREEN TINTED BROAD SPECTRUM SPF 30 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f2a59fa4-f19c-a15f-e053-2a95a90a6ace",
+   "baby": false
+  },
+  {
+   "setid": "e38deed3-e1e2-0b1d-e053-2a95a90a547f",
+   "change": "delisted",
+   "product": "WONDERSCREEN BROAD SPECTRUM SPF 30 (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e38deed3-e1e2-0b1d-e053-2a95a90a547f",
+   "baby": false
+  },
+  {
+   "setid": "ffe94015-dd30-d0fd-e053-6294a90a2a84",
+   "change": "delisted",
+   "product": "CREAM (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ffe94015-dd30-d0fd-e053-6294a90a2a84",
+   "baby": false
+  },
+  {
+   "setid": "ffd4136a-bdd6-cc9d-e053-6294a90a251d",
+   "change": "delisted",
+   "product": "CREAM (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ffd4136a-bdd6-cc9d-e053-6294a90a251d",
+   "baby": false
+  },
+  {
+   "setid": "bbf52284-8b44-575d-e053-2995a90aac74",
+   "change": "delisted",
+   "product": "CREAM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bbf52284-8b44-575d-e053-2995a90aac74",
+   "baby": false
+  },
+  {
+   "setid": "bc01841f-9b4d-065e-e053-2a95a90abe71",
+   "change": "delisted",
+   "product": "CREAM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc01841f-9b4d-065e-e053-2a95a90abe71",
+   "baby": false
+  },
+  {
+   "setid": "bc01bd0b-1a39-1ec1-e053-2995a90aff4f",
+   "change": "delisted",
+   "product": "CREAM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc01bd0b-1a39-1ec1-e053-2995a90aff4f",
+   "baby": false
+  },
+  {
+   "setid": "bc02885a-2063-0a19-e053-2a95a90aa8ce",
+   "change": "delisted",
+   "product": "CREAM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc02885a-2063-0a19-e053-2a95a90aa8ce",
+   "baby": false
+  },
+  {
+   "setid": "bc023f3f-711d-5623-e053-2995a90a983c",
+   "change": "delisted",
+   "product": "CREAM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc023f3f-711d-5623-e053-2995a90a983c",
+   "baby": false
+  },
+  {
+   "setid": "bc03491d-149f-bd0c-e053-2995a90a1355",
+   "change": "delisted",
+   "product": "CREAM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc03491d-149f-bd0c-e053-2995a90a1355",
+   "baby": false
+  },
+  {
+   "setid": "bc2bd616-272c-94d0-e053-2a95a90a598e",
+   "change": "delisted",
+   "product": "POWDER (ZINC OXIDE, TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc2bd616-272c-94d0-e053-2a95a90a598e",
+   "baby": false
+  },
+  {
+   "setid": "bc315495-0f87-2718-e053-2a95a90a372a",
+   "change": "delisted",
+   "product": "CREAM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc315495-0f87-2718-e053-2a95a90a372a",
+   "baby": false
+  },
+  {
+   "setid": "bc313e54-5b22-b922-e053-2a95a90a4542",
+   "change": "delisted",
+   "product": "CREAM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc313e54-5b22-b922-e053-2a95a90a4542",
+   "baby": false
+  },
+  {
+   "setid": "bc316379-8d87-6553-e053-2a95a90a63d2",
+   "change": "delisted",
+   "product": "CREAM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc316379-8d87-6553-e053-2a95a90a63d2",
+   "baby": false
+  },
+  {
+   "setid": "bc31711a-fc08-72e8-e053-2995a90a94bd",
+   "change": "delisted",
+   "product": "CREAM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc31711a-fc08-72e8-e053-2995a90a94bd",
+   "baby": false
+  },
+  {
+   "setid": "bcd4656b-f50c-71ca-e053-2995a90a928b",
+   "change": "delisted",
+   "product": "CREAM (TITANIUM DIOXIDE, ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bcd4656b-f50c-71ca-e053-2995a90a928b",
+   "baby": false
+  },
+  {
+   "setid": "e7757228-2747-0ae5-e053-2a95a90ac31c",
+   "change": "delisted",
+   "product": "CREAM (ZINC OXIDE, TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e7757228-2747-0ae5-e053-2a95a90ac31c",
+   "baby": false
+  },
+  {
+   "setid": "e7760899-8b4a-9a2a-e053-2995a90a2fd5",
+   "change": "delisted",
+   "product": "CREAM (ZINC OXIDE, TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e7760899-8b4a-9a2a-e053-2995a90a2fd5",
+   "baby": false
+  },
+  {
+   "setid": "e776f37b-869b-5861-e053-2995a90a19f5",
+   "change": "delisted",
+   "product": "CREAM (ZINC OXIDE, TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e776f37b-869b-5861-e053-2995a90a19f5",
+   "baby": false
+  },
+  {
+   "setid": "ddce5f61-93eb-d7e7-e053-2a95a90aa3db",
+   "change": "delisted",
+   "product": "MOISTURIZER (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ddce5f61-93eb-d7e7-e053-2a95a90aa3db",
+   "baby": false
+  },
+  {
+   "setid": "de594e52-8679-2d54-e053-2995a90afb1e",
+   "change": "delisted",
+   "product": "CREAM (ZINC OXIDE, TITANIUM DIOXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de594e52-8679-2d54-e053-2995a90afb1e",
+   "baby": false
+  },
+  {
+   "setid": "de59c3df-f3ef-2f24-e053-2a95a90acaa0",
+   "change": "delisted",
+   "product": "CREAM (ZINC OXIDE, TITANIUM DIOSXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de59c3df-f3ef-2f24-e053-2a95a90acaa0",
+   "baby": false
+  },
+  {
+   "setid": "d550fbe8-cb48-1037-e053-2995a90a0cac",
+   "change": "delisted",
+   "product": "POWDER (ZINC OXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d550fbe8-cb48-1037-e053-2995a90a0cac",
+   "baby": false
+  },
+  {
+   "setid": "de9a861a-8c16-495f-9c11-356473b8cc95",
+   "change": "delisted",
+   "product": "SHISEIDO URBAN ENVIRONMENT OIL-FREE UV PROTECTOR (OCTINOXATE, OCTOCRYLENE, AND ZINC OXIDE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de9a861a-8c16-495f-9c11-356473b8cc95",
+   "baby": false
+  },
+  {
+   "setid": "8c40daa5-a3fc-51f3-e053-2995a90a6483",
+   "change": "delisted",
+   "product": "BABY BUM (ZINC OXIDE AND LANOLIN) PASTE",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8c40daa5-a3fc-51f3-e053-2995a90a6483",
+   "baby": false
+  },
+  {
+   "setid": "fb4dfdf9-2ee4-42ed-8d95-07f7e1b24495",
+   "change": "delisted",
+   "product": "SHISEIDO URBAN ENVIRONMENT UV PROTECTION (OCTINOXATE, OCTOCRYLENE, AND ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fb4dfdf9-2ee4-42ed-8d95-07f7e1b24495",
+   "baby": false
+  },
+  {
+   "setid": "08b52f29-c1a0-c673-e063-6294a90a9a7a",
+   "change": "delisted",
+   "product": "POWDER (TITANIUM DIOXIDE) POWDER",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08b52f29-c1a0-c673-e063-6294a90a9a7a",
+   "baby": false
+  },
+  {
+   "setid": "197e8a7b-1179-d625-e063-6294a90ae12d",
+   "change": "delisted",
+   "product": "MYMEDIC SUNSCREEN (HOMOSALATE, TITANIUM DIOXIDE, ETHYLHEXYL SALICYLATE, PHENYLBENZIMIDAZOLE SULFONIC ACID) PATCH",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=197e8a7b-1179-d625-e063-6294a90ae12d",
+   "baby": false
+  },
+  {
+   "setid": "6ee0284e-739d-4aad-9352-9ea9c106efa4",
+   "change": "delisted",
+   "product": "FOREVER SKIN GLOW 24H WEAR RADIANT PERFECTION SKIN CARING FOUNDATION WITH SUNSCREEN BROAD SPECTRUM SPF 35 LASTING HYDRATION 2WP (OCTINOXATE, TITANIUM DIOXIDE) EMULSION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ee0284e-739d-4aad-9352-9ea9c106efa4",
+   "baby": false
+  },
+  {
+   "setid": "c59b4ece-0534-4072-afe8-2142a43c6bb2",
+   "change": "delisted",
+   "product": "FOREVER SKIN VEIL EXTREME WEAR AND MOISTURIZING PRIMER CORRECTION, PROTECTION, ILLUMINATION WITH SUNSCREEN FLORAL EXTRACT-ENRICHED BROAD SPECTRUM SPF20 (OCTISALATE, TITANIUM DIOXIDE) EMULSION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c59b4ece-0534-4072-afe8-2142a43c6bb2",
+   "baby": false
+  },
+  {
+   "setid": "51e55ec8-b9f3-4475-b34f-e4eb6e46491b",
+   "change": "delisted",
+   "product": "SHISEIDO URBAN ENVIRONMENT TINTED UV PROTECTOR 1 (ENSULIZOLE, OCTINOXATE, AND TITANIUM DIOXIDE) CREAM SHISEIDO URBAN ENVIRONMENT TINTED UV PROTECTOR 2 (ENSULIZOLE, OCTINOXATE, AND TITANIUM DIOXIDE) CREAM SHISEIDO URBAN ENVIRONMENT TINTED UV PROTECTOR 3 (ENSULIZOLE, OCTINOXATE, AND TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51e55ec8-b9f3-4475-b34f-e4eb6e46491b",
+   "baby": false
+  },
+  {
+   "setid": "c6db6494-d13c-418a-8477-9eb17ce9bd4a",
+   "change": "delisted",
+   "product": "SHISEIDO WASO COLOR-SMART DAY MOISTURIZER OIL-FREE (OCTINOXATE AND TITANIUM DIOXIDE) EMULSION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c6db6494-d13c-418a-8477-9eb17ce9bd4a",
+   "baby": false
+  },
+  {
+   "setid": "ba1e618b-589f-4151-9e84-716a50ec8c2a",
+   "change": "delisted",
+   "product": "SHISEIDO SUN PROTECTION LIP TREATMENT (OCTINOXATE AND TITANIUM DIOXIDE) LIPSTICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ba1e618b-589f-4151-9e84-716a50ec8c2a",
+   "baby": false
+  },
+  {
+   "setid": "7d9598f1-cbee-4e87-a8f1-067e01fd8833",
+   "change": "delisted",
+   "product": "CLE DE PEAU BEAUTE UV PROTECTIVE TINTED IVORY (OCTINOXATE, OCTOCRYLENE, AND TITANIUM DIOXIDE) CREAM CLE DE PEAU BEAUTE UV PROTECTIVE TINTED OCHER (OCTINOXATE, OCTOCRYLENE, AND TITANIUM DIOXIDE) CREAM CLE DE PEAU BEAUTE UV PROTECTIVE TINTED DARK (OCTINOXATE, OCTOCRYLENE, AND TITANIUM DIOXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7d9598f1-cbee-4e87-a8f1-067e01fd8833",
+   "baby": false
+  },
+  {
+   "setid": "073f8b95-6f46-4341-817f-22f5b4f32542",
+   "change": "delisted",
+   "product": "FIRMARINE MOISTURIZER SPF 30 (AVOBENZONE, OCTINOXATE, AND OCTISALATE) LOTION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=073f8b95-6f46-4341-817f-22f5b4f32542",
+   "baby": false
+  },
+  {
+   "setid": "6a708c60-6797-47f6-8839-065bd9b7f67d",
+   "change": "delisted",
+   "product": "CLE DE PEAU BEAUTE UV PROTECTIVE N (AVOBENZONE, HOMOSALATE, OCTISALATE, AND OCTOCRYLENE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a708c60-6797-47f6-8839-065bd9b7f67d",
+   "baby": false
+  },
+  {
+   "setid": "d4b3eb40-c9d7-f356-e053-2a95a90a9a57",
+   "change": "delisted",
+   "product": "MOISTURIZER (AVOBENZONE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b3eb40-c9d7-f356-e053-2a95a90a9a57",
+   "baby": false
+  },
+  {
+   "setid": "8e2deaf1-4d71-47e4-ab6e-cc1599b68a41",
+   "change": "delisted",
+   "product": "LAURA MERCIER TINTED MOISTURIZER NATURAL SKIN PERFECTOR BROAD SPECTRUM SPF 30 SUNSCREEN 0N1 PETAL (AVOBENZONE, OCTINOXATE, OCTOCRYLENE, AND OXYBENZONE) CREAM LAURA MERCIER TINTED MOISTURIZER NATURAL SKIN PERFECTOR BROAD SPECTRUM SPF 30 SUNSCREEN 0W1 PEARL (AVOBENZONE, OCTINOXATE, OCTOCRYLENE, AND OXYBENZONE) CREAM LAURA MERCIER TINTED MOISTURIZER NATURAL SKIN PERFECTOR BROAD SPE .......CACAO (AVOBENZONE, OCTINOXATE, OCTOCRYLENE, AND OXYBENZONE) CREAM LAURA MERCIER TINTED MOISTURIZER NATURAL SKIN PERFECTOR BROAD SPECTRUM SPF 30 SUNSCREEN 6W1 GANACHE (AVOBENZONE, OCTINOXATE, OCTOCRYLENE, AND OXYBENZONE) CREAM LAURA MERCIER TINTED MOISTURIZER NATURAL SKIN PERFECTOR BROAD SPECTRUM SPF 30 SUNSCREEN 6N1 MOCHA (AVOBENZONE, OCTINOXATE, OCTOCRYLENE, AND OXYBENZONE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8e2deaf1-4d71-47e4-ab6e-cc1599b68a41",
+   "baby": false
+  },
+  {
+   "setid": "46133b89-9f93-4342-adaa-3e10f5193aba",
+   "change": "delisted",
+   "product": "CLE DE PEAU BEAUTE PROTECTIVE FORTIFYING N (AVOBENZONE, OCTINOXATE, OCTOCRYLENE, AND OXYBENZONE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46133b89-9f93-4342-adaa-3e10f5193aba",
+   "baby": false
+  },
+  {
+   "setid": "d15bce1c-e7cf-4e85-9830-136a3dd41689",
+   "change": "delisted",
+   "product": "EOS LIP BALM SUNSCREEN BROAD SPECTRUM SPF 15 (AVOBENZONE, HOMOSALATE AND OCTOCRYLENE) STICK",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d15bce1c-e7cf-4e85-9830-136a3dd41689",
+   "baby": false
+  },
+  {
+   "setid": "5f5e61e3-ea93-401b-b55c-1eb0a711e738",
+   "change": "delisted",
+   "product": "CAPTURE TOTALE C.E.L.L. ENERGY SUPER POTENT SERUM FOUNDATION BROAD SPECTRUM SPF 20 7N (ENSULIZOLE, OCTISALATE) EMULSION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f5e61e3-ea93-401b-b55c-1eb0a711e738",
+   "baby": false
+  },
+  {
+   "setid": "c044849f-94ab-4d91-aac5-e3e9631bc8b1",
+   "change": "delisted",
+   "product": "CAPTURE TOTALE C.E.L.L. ENERGY SUPER POTENT SERUM FOUNDATION BROAD SPECTRUM SPF 20 6N (ENSULIZOLE, OCTISALATE) EMULSION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c044849f-94ab-4d91-aac5-e3e9631bc8b1",
+   "baby": false
+  },
+  {
+   "setid": "cfd207af-d650-4333-a79a-c8f4878e8f9a",
+   "change": "delisted",
+   "product": "CAPTURE TOTALE C.E.L.L. ENERGY SUPER POTENT SERUM FOUNDATION BROAD SPECTRUM SPF 20 5N (ENSULIZOLE, OCTISALATE) EMULSION",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cfd207af-d650-4333-a79a-c8f4878e8f9a",
+   "baby": false
+  },
+  {
+   "setid": "d038eb6f-ab84-4502-aa15-0cf21a9a8f0c",
+   "change": "delisted",
+   "product": "GOOD NEIGHBOR PHARMACY DIAPER RASH (ZINC OXIDE) CREAM",
+   "dailymed": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d038eb6f-ab84-4502-aa15-0cf21a9a8f0c",
+   "baby": false
+  }
+ ],
+ "printed_list_changes": [],
+ "needs_transcription": [
+  {
+   "setid": "0d82121d-1dc2-cd99-e063-6394a90aa766",
+   "title": "ATTITUDE SUNLY KIDS MINERAL SUNSCREEN STICK UNSCENTED SPF 30 (ZINC OXIDE) STICK [9055-7588 QUEBEC INC. DBA ATTITUDE]",
+   "why": "label image changed since transcription"
+  },
+  {
+   "setid": "0d85b0a1-3705-2829-e063-6394a90a0ed7",
+   "title": "ATTITUDE SUNLY TINTED MINERAL SUNSCREEN FACE STICK UNSCENTED SPF 30 (ZINC OXIDE) STICK [9055-7588 QUEBEC INC. DBA ATTITUDE]",
+   "why": "label image changed since transcription"
+  },
+  {
+   "setid": "5d233008-96a5-44e6-e063-6294a90a9aaa",
+   "title": "ORGANIC KIDS SUNSCREEN (ZINC OXIDE SUNSCREEN) CREAM [VEGANIC SKN LIMITED]",
+   "why": "image-only list not transcribed yet"
+  }
+ ]
+}
