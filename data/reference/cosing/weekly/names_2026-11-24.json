@@ -1,0 +1,76 @@
+{
+ "accepted": {
+  "Rosehip Fruit": {
+   "name": "Rosehip Fruit",
+   "kind": "INCI",
+   "inci": "ROSA CANINA FRUIT",
+   "plant": "Rosa canina",
+   "category": null,
+   "confidence": "low",
+   "note": "Rosehip usually Rosa canina but may be Rosa rubiginosa; preparation unstated",
+   "read_b": {
+    "name": "Rosehip Fruit",
+    "kind": "INCI",
+    "inci": "ROSA CANINA FRUIT",
+    "plant": "Rosa canina",
+    "category": null,
+    "confidence": "low",
+    "note": "Rosehip usually Rosa canina, but could be Rosa rubiginosa/moschata; preparation (extract/oil) unstated"
+   }
+  },
+  "Methyl-A-Ionone": {
+   "name": "Methyl-A-Ionone",
+   "kind": "INCI",
+   "inci": "METHYL ALPHA-IONONE ISOMERS",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "Methyl alpha-ionone; could also be ALPHA-METHYL-ALPHA-IONONE or ALPHA-ISOMETHYL IONONE",
+   "read_b": {
+    "name": "Methyl-A-Ionone",
+    "kind": "INCI",
+    "inci": "METHYL ALPHA-IONONE ISOMERS",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "Methyl alpha-ionone; could instead mean ALPHA-ISOMETHYL IONONE"
+   }
+  },
+  "B5": {
+   "name": "B5",
+   "kind": "INCI",
+   "inci": "PANTHENOL",
+   "plant": null,
+   "category": null,
+   "confidence": "low",
+   "note": "Fragment of 'Vitamin B5'/'Pro-Vitamin B5', normally panthenol on labels",
+   "read_b": {
+    "name": "B5",
+    "kind": "INCI",
+    "inci": "PANTHENOL",
+    "plant": null,
+    "category": null,
+    "confidence": "low",
+    "note": "Vitamin B5 in cosmetics usually panthenol; could be pantothenic acid"
+   }
+  },
+  "SILYBUM MARIANUM SEED": {
+   "name": "SILYBUM MARIANUM SEED",
+   "kind": "PLANT",
+   "inci": null,
+   "plant": "Silybum marianum",
+   "category": null,
+   "confidence": "high",
+   "note": "Milk thistle seed; preparation (extract vs oil) unstated",
+   "read_b": {
+    "name": "SILYBUM MARIANUM SEED",
+    "kind": "PLANT",
+    "inci": null,
+    "plant": "Silybum marianum",
+    "category": null,
+    "confidence": "high",
+    "note": "Milk thistle seed; preparation (oil vs extract) not stated"
+   }
+  }
+ }
+}
