@@ -2083,6 +2083,14 @@ def build(run_date):
                 else:
                     shown = _have
                 c = dict(c, _text_review_added=_added)
+        # printed names the label text runs together with a bullet operator ("WATER∙ DIMETHICONE∙
+        # GLYCERIN"; Cle de Peau Body N, 2026-11-23): split back into the names it prints, which
+        # stay printed names (nothing renamed or removed)
+        if pn and any("∙" in x for x in shown[:pn]):
+            _pp = []
+            for x in shown[:pn]:
+                _pp += [y.strip(" .") for y in x.split("∙") if y.strip(" .")] if "∙" in x else [x]
+            shown, pn, tidied = _pp + shown[pn:], len(_pp), True
         _n_before = len(shown)
         shown, _pol = polish_names(shown)
         if any(len(x) > 100 and x.count(")") > x.count("(") for x in shown):
@@ -2108,6 +2116,19 @@ def build(run_date):
         if _implausible_list:
             shown, struct, pn = [], [], 0
         extras_dropped = 0
+        if pn >= 5 and len(shown) > pn and _cf and art and art.get("inactives"):
+            # a filed name both package readers saw printed (the first read lists it, the second
+            # found it missing from what we show) is a printed name: it is kept with the printed
+            # names, not cut as a filed extra (lists only gain names two readers saw; Cle de Peau
+            # Body N, whose label text prints part of the carton's list; 2026-11-23)
+            _two = [re.sub(r"\s*\(.*?(duplicate|listed|appears|missing|not shown).*?\)\s*$", "", (x or "").strip(), flags=re.I)
+                    for x in _cf.get("on_artwork_not_shown") or []]
+            _two = [x for x in _two if x and any(x == y or _same_display(x, y) or _same_display(y, x)
+                                                 for y in art.get("inactives") or [])]
+            _mv = [s for s in shown[pn:] if any(s == x or _same_display(s, x) or _same_display(x, s) for x in _two)]
+            if _mv:
+                shown = shown[:pn] + _mv + [s for s in shown[pn:] if s not in _mv]
+                pn += len(_mv)
         if pn >= 5 and len(shown) > pn:
             extras_dropped, shown = len(shown) - pn, shown[:pn]
         flag_struct = [] if pn >= 5 else struct

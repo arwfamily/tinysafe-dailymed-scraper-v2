@@ -1,0 +1,4 @@
+# Warnings lost by labels whose filing changed (2026-11-23)
+
+- Intelligent Elixirs Tinted Broad Spectrum SPF 30 - Golden Lotion Intelligent Elixirs Tinted Broad Spectrum SPF 30 - Natural Lotion Intelligent Elixirs Tinted Broad Spectrum SPF 30 - Tan Lotion (287a61d8-0056-6211-e063-6394a90aa3da, version 2 -> 3): lost botanical_count; names no longer listed: HYDROGENATED JOJOBA OIL/JOJOBA OIL, RANDOMIZED (IODINE VALUE 57-61), Zinc Oxice CI 77947 (may contain)
+- Weightless Protection SPF 45 (Sunscreen Broad Spectrum) Lotion (b6bee26d-bffd-a8ee-e053-2a95a90affc5, version 7 -> 8): lost coconut, eu_fragrance_allergen, microplastic_polymer; names no longer listed: Avena Sativa (Oat) Bran Extract, Bisabolol, Butylene Glycol, Butyloctyl Salicylate, Caffeine, Caprylic/Capric Triglyceride, Caprylyl Methicone, Citrus Aurantium Dulcis (Orange) Peel Extract
